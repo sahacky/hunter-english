@@ -16,7 +16,7 @@ OUT = ROOT / "data/traps.json"
 
 # (lt_id, slug, title_ru, wrong_en, right_en, explanation_ru, тема)
 TRAPS = [
-    ("ЛТ-01", "missing-to-be", "Пропуск to be",
+    ("ЛТ-01", "no-to-be", "Пропуск to be",
      "I hungry. She doctor.", "I'm hungry. She's a doctor.",
      "В русском связка «есть/является» опускается, в английском to be в настоящем времени обязателен всегда. "
      "Не забудь и неопределённый артикль перед профессией: She's a doctor.",

@@ -9,6 +9,11 @@
 | NGSL 1.2 / NGSL-Spoken 1.2 (Browne, Culligan & Phillips) | CC BY-SA 4.0 | https://www.newgeneralservicelist.com/       |
 | FrequencyWords / OpenSubtitles 2018 (hermitdave)         | MIT          | https://github.com/hermitdave/FrequencyWords |
 
+Производные словарные данные в `data/words/` — CC BY-SA 4.0 (ShareAlike
+Wiktionary/NGSL). Уровни CEFR в `data/words/` выведены агентом из частотных
+рангов NGSL (самостоятельная производная работа); разметка Oxford 3000/5000
+не используется и не публикуется.
+
 ## Переводы и примеры
 
 | Источник                                  | Лицензия     | Ссылка               |
@@ -21,6 +26,7 @@
 | Источник                   | Лицензия                         |
 | -------------------------- | -------------------------------- |
 | Piper voice `cori` (en_GB) | датасет public domain (LibriVox) |
+| Piper voices repo + piper-tts | MIT (rhasspy/piper-voices, OHF-voice/piper1-gpl) |
 | Kokoro `bm_george`         | Apache 2.0                       |
 
 ## Цитаты
