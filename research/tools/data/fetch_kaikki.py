@@ -1,25 +1,31 @@
 #!/usr/bin/env python3
-"""Батч-скачка переводов Wiktionary через kaikki.org (M0.5 сырьё, возобновляемо).
+"""Батч-скачка переводов Wiktionary через kaikki.org (возобновляемо).
 
-Для каждого слова из target_words.txt качает meaning-JSONL:
+Для каждого слова из списка качает meaning-JSONL:
   https://kaikki.org/dictionary/English/meaning/<a>/<ab>/<word>.jsonl
 Файлы складываются в data/raw/kaikki/words/. Существующие пропускаются,
-429/5xx — экспоненциальная пауза. Запуск: python3 research/tools/data/fetch_kaikki.py
+429/5xx — экспоненциальная пауза.
+
+Запуск: python3 research/tools/data/fetch_kaikki.py [target_list.txt]
+(по умолчанию data/raw/kaikki/target_words.txt)
 """
 import sys
 import time
+import urllib.parse
 import urllib.request
 from pathlib import Path
 
 RAW = Path(__file__).resolve().parents[3] / "data/raw"
-TARGETS = (RAW / "kaikki/target_words.txt").read_text(encoding="utf-8").split()
+LIST_PATH = Path(sys.argv[1]) if len(sys.argv) > 1 else RAW / "kaikki/target_words.txt"
+TARGETS = LIST_PATH.read_text(encoding="utf-8").split()
 OUTDIR = RAW / "kaikki/words"
 OUTDIR.mkdir(parents=True, exist_ok=True)
 BASE = "https://kaikki.org/dictionary/English/meaning/{a}/{ab}/{w}.jsonl"
 
 
 def fetch(word: str) -> tuple[bool, str]:
-    url = BASE.format(a=word[0], ab=word[:2], w=word)
+    q = urllib.parse.quote(word)
+    url = BASE.format(a=word[0], ab=word[:2], w=q)
     req = urllib.request.Request(url, headers={"User-Agent": "hunter-english-data/0.1"})
     try:
         with urllib.request.urlopen(req, timeout=30) as r:
@@ -40,6 +46,7 @@ def main():
             done += 1
             continue
         pause = 2
+        info = ""
         for attempt in range(4):
             ok, info = fetch(w)
             if ok:
