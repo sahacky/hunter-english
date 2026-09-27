@@ -1,22 +1,20 @@
 # WAL — Hunter English
 
 ## Current Phase
-M0: Ресёрч — IN PROGRESS (почти завершён)
+M0: Ресёрч — DONE → следующий M1: Дизайн и спецификации
 
 ## Completed
 - Бутстрап: PROMT.md прочитан и перенесён в `example_rules/`; созданы AGENTS.md (вход для любых агентов → BOOT/WAL/PLANS), BOOT.md, WAL.md, PLANS.md, CLAUDE.md (`@AGENTS.md`)
-- Ресёрч: `research/01`, `02`, `03`, `04` (+ `tools/bebris/`), `05` (+ `data/quotes-sample.json`, `tools/quotes/*.py`), `06`, `07`
+- Ресёрч M0 завершён, выжимка — `research/00-summary.md`; файлы `research/01`, `02`, `03`, `04` (+ `tools/bebris/`), `05` (+ `data/quotes-sample.json`, `tools/quotes/*.py`), `06`, `07`
 - `gh` авторизован (аккаунт sahacky, classic-токен repo+workflow в ~/.config/gh/hosts.yml); push в origin/main работает
 
 ## In Progress
 - —
 
 ## TODO
-- M0: файл-источник от разработчика (пришлёт в конце ресёрча)
-- M0: выбор британского голоса (образцы: https://rhasspy.github.io/piper-samples/ → en_GB cori/alba)
-- M0: `research/00-summary.md`
 - (опц.) Докачать 25 уроков Бебриса (список в 04, раздел «Не охвачено»), проверить Present Perfect (уроки 2.26–2.45)
-- Затем M1 (дизайн) → M2 (инициализация: git, Vite, CI, Supabase)
+- M1: начать с plan://M1#1 — программа курса по рангам E→S (читать research/00-summary.md, 01 §5, 03, 04 §4)
+- Затем M2 (инициализация: Vite, CI, Supabase, хостинг)
 
 ## Known Issues
 - Git инициализирован, первый коммит запушен в приватный `sahacky/hunter-english` (main); .gitignore базовый — дополнить в M2
@@ -28,14 +26,14 @@ M0: Ресёрч — IN PROGRESS (почти завершён)
 - Стек: Vite + React + TS + Supabase (GitHub OAuth) + Dexie + ts-fsrs + react-i18next + PWA; тесты Vitest/Playwright
 - Репо **приватный** `sahacky/hunter-english` (передумали с публичного). ⚠️ GitHub Pages для приватного репо требует GitHub Pro — хостинг решить в M2 (Pro / Cloudflare Pages / сделать публичным)
 - UI локали ru + en с первого дня; учебный контент — в `data/`, не в i18n
-- Голос en-GB (предзаписанный Piper + фолбэк Web Speech)
+- Голос en-GB: Piper `cori` (high) основной + Kokoro `bm_george` мужской; предзаписанное аудио + фолбэк Web Speech
 - Ранги E→S = CEFR, повышение только через «Врата»; XP только за реальную работу
 - Без лимита токенов, чекпоинты WAL; интернет свободно (без секретов наружу)
 - 15 новых карточек/день (~10 слов + 5 фраз), FSRS retention 0.90
 
 ## Decisions Pending
-- Выбор голоса Piper (cori / alba) или Kokoro bf_emma
 - AI-собеседник (Claude API через Supabase Edge Function) — отложено
+- Хостинг при приватном репо (GitHub Pro / Cloudflare Pages / публичный репо) — в M2
 
 ## Watch out:
 - В коммитах/PR НИКАКИХ упоминаний ИИ/Claude (без Co-Authored-By, Generated with и т.п.)
@@ -53,3 +51,4 @@ M0: Ресёрч — IN PROGRESS (почти завершён)
 | 2026-09-27 | Создан .gitignore, CLAUDE.md в игноре | Решение разработчика |
 | 2026-09-27 | Создан приватный репо, первый коммит; правило «без упоминаний ИИ» | Решение разработчика |
 | 2026-09-27 | Готова карта курса Бебриса (04) | Субагент завершён |
+| 2026-09-27 | M0 завершён: резюме, выбран голос, файл-источник снят | Решение разработчика |
