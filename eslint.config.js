@@ -1,4 +1,5 @@
 import js from '@eslint/js'
+import globals from 'globals'
 import typescriptEslint from '@typescript-eslint/eslint-plugin'
 import typescriptParser from '@typescript-eslint/parser'
 import reactHooks from 'eslint-plugin-react-hooks'
@@ -11,10 +12,7 @@ export default [
     languageOptions: {
       parser: typescriptParser,
       parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
-      globals: {
-        document: 'readonly',
-        window: 'readonly',
-      },
+      globals: globals.browser,
     },
     plugins: {
       '@typescript-eslint': typescriptEslint,
