@@ -48,6 +48,28 @@
 - [x] Hotfix CI: `npm ci` падал (vite 8 ↔ plugin-react 4), тесты/typecheck падали (нет `@testing-library/dom`, `@types/node`) → Vite 7, недостающие пакеты, Prettier в lint, typecheck конфигов, Node 22 + permissions/concurrency в workflows
 - [x] `CREDITS.md`, лицензии (MIT для кода, CC BY-SA 4.0 для `data/`)
 
+## M3: Пайплайн данных {#M3}
+> Контракт — specs/05 (§0–§9). Сырьё в `data/raw/` (в git не попадает). Ветка: `feature/m3-data-pipeline`, merge — только при зелёном CI.
+- [ ] 3.1 Схемы JSON draft-07 в `data/schemas/` (word, phrase, exercise, lesson, quote, phrasebook_dialog, trap) из specs/05 + схема trap добавлена в спеку; валидатор `scripts/validate-data.mjs` (`npm run validate:data`: ajv + ajv-formats + кросс-ссылки) + шаг в CI
+- [ ] 3.2 Примеры en-ru: Tatoeba (CC BY 2.0 FR) — скрипт скачивания/извлечения пар, индекс «лемма → пример EN+RU» в `data/raw/` (не коммитится)
+- [ ] 3.3 Аудио-инфраструктура: Piper en_GB `cori` (piper-tts + модель с HF) + генератор `research/tools/audio/gen_audio.py` → `audio/…/*.opus` (ffmpeg)
+- [ ] 3.4 Слова: `build_words.py` — `data/words/words-0001-0719.json` (NGSL-Spoken) + `words-0720-2806.json` (NGSL): POS и переводы 1–3 из kaikki, CEFR (Oxford-разметка локально — только внутренний пайплайн; иначе вывод из ранга), теги (`irregular-verb`, `phrasal-*` по curated-спискам), примеры (Tatoeba/цитаты), `freq_rank_ngsl`/`freq_rank_spoken`
+- [ ] 3.5 Цитаты: `build_quotes.py` — `research/data/quotes-ru-merged.json` (274) → `data/quotes/<тайтл>.json` (id `q-<slug>-NNNN`, ≤60/файл); дозаполнение `translation_ru` (note: «needs review»), `auto_vocab.top1000` — расчёт по топ-1000 NGSL, `link_playphrase`
+- [ ] 3.6 Ловушки: `data/traps.json` из research/03 §4 (ЛТ-01…ЛТ-22 → `trap-*`, решает открытый вопрос 6 спеки)
+- [ ] 3.7 Аудио всех слов из `data/words/` (Piper cori, Opus) + `data/manifest.json` (генератор, specs/05 §7)
+- [ ] 3.8 Валидация: `npm run validate:data` зелёный; `npm test`, `npm run lint && npm run typecheck`, `npm audit --audit-level=high` чисто; `data/README.md` и `CREDITS.md` обновлены
+- [ ] 3.9 Ревью ветки суб-агентами (методика AITS) + исправление находок
+- [ ] 3.10 Merge в `main` при зелёном CI, push
+
+> Решения M3 (приняты агентом по канону спек, 2026-09-27):
+> 1. **Аудио коммитится в репо**: слова ~2 800 файлов Opus (24 kHz mono, ~16 kbps) ≈ 10–15 МБ — приемлемо для git; цитаты/фразы — позже (M6+), при росте — GitHub Releases (закрывает открытый вопрос 7 спеки для MVP).
+> 2. **CEFR**: из локальной Oxford-разметки (только как вход пайплайна, разрешено спекой 05 §1), без неё — вывод из частотного ранга (1–500 → A1, 501–1000 → A1/A2, 1001–2000 → A2, 2001–2806 → B1), иначе `null`.
+> 3. **Слова без RU-перевода в kaikki** в `data/words/` не попадают (требование схемы `translation_ru` обязательна); отчёт — в логе сборки.
+> 4. **Неправильные/фразовые глаголы — теги** слова (`irregular-verb`, `phrasal-<verb>`), curated-списки внутри скрипта сборки; отдельной сущности нет (схема word `additionalProperties: false`, формы глагола — материал уроков M5+).
+> 5. **Разбивка data/words — по диапазонам спеки §0** (spoken 719 / NGSL до 2806) — закрыт открытый вопрос 5; `words-2807-5000.json` — M11.
+> 6. **Докачка kaikki до полного NGSL** (было 1800 слов) — фоном, возобновляемым скриптом M0.5; слова без дампов обрабатываются так же, как п.3.
+> 7. **Переводы цитат**, отсутствующие в merged (148 из 274), дозаполняются агентом с пометкой `note: "translation needs review"` (спека 05 §5 — «M3 дозаполняет»; ручная сверка при курации M8/M11).
+
 ## Черновик следующих майлстоунов (детализировать после M1)
 > Решение разработчика (2026-09-27): сторонние сервисы (Supabase и пр.) — в самый конец, после MVP. Прогресс MVP — только локально (Dexie/IndexedDB) + экспорт/импорт JSON.
 - M3: Пайплайн данных — слова (NGSL-S → NGSL → FrequencyWords), переводы (Wiktionary/kaikki — сырьё уже в data/raw), примеры (Tatoeba), неправильные/фразовые глаголы, цитаты (из quotes-ru-merged), аудио (Piper en-GB)
@@ -75,3 +97,4 @@
 | 2026-09-27 | Хостинг отложен до конца (репо станет публичным), PR #1 смержен | Решение разработчика |
 | 2026-09-27 | Сторонние сервисы (Supabase) перенесены в M12 — после MVP; прогресс MVP только локально (Dexie + экспорт/импорт) | Решение разработчика |
 | 2026-09-27 | M0.5 отмечен выполненным (работа была сделана, чекбоксы не проставлены); M2 закрыт hotfix-ом CI; хостинг решён (Pages при публичном репо); добавлены архитектурные «швы» в M4–M5; M12 = Supabase для себя и друзей | Ревью после PR #1, решения разработчика |
+| 2026-09-27 | M3 детализирован (3.1–3.10) с решениями по аудио/CEFR/тегам/разбивке; закрыты открытые вопросы 5, 6, 7 спеки 05 | Разработчик делегировал автономную работу (merge/push разрешены) |

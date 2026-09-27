@@ -1,7 +1,7 @@
 # WAL — Hunter English
 
 ## Current Phase
-M2 закрыт (кроме branch protection — отложено до публичного репо). Следующий: **M3 — пайплайн данных**
+**M3 — пайплайн данных** (детализация plan://M3#M3, контракт specs/05). Ветка `feature/m3-data-pipeline`
 
 ## Completed
 - Бутстрап: AGENTS.md (вход для любых агентов → BOOT/WAL/PLANS), BOOT.md, WAL.md, PLANS.md, CLAUDE.md (`@AGENTS.md`, локальный)
@@ -11,10 +11,10 @@ M2 закрыт (кроме branch protection — отложено до публ
 - M2: скаффолд Vite+React+TS, i18n ru/en, hash-роутинг, Vitest+Playwright, CI/deploy; hotfix CI (PR #1 был смержен с красным CI — `npm ci` падал): Vite 7, `@testing-library/dom`, `@types/node`, Prettier в lint, typecheck конфигов, Node 22, `supabase-js` и `/login` убраны до M12. Все проверки зелёные локально, включая e2e
 
 ## In Progress
-- Ничего. Следующая задача — M3 (детализировать задачи M3 в PLANS с разработчиком перед стартом)
+- M3 (ветка `feature/m3-data-pipeline`): 3.1 схемы+валидатор → 3.2 Tatoeba-примеры → 3.3 Piper-аудио → 3.4 слова → 3.5 цитаты → 3.6 ловушки → 3.7 аудио+manifest → 3.8 валидация → 3.9 ревью → 3.10 merge. Решения 1–7 — в PLANS под M3
 
 ## TODO
-- M3: сверить, чего не хватает в базе (есть: слова+переводы 1800, цитаты 274 с RU), докачать (Tatoeba-примеры, аудио Piper, до 5000 слов), собрать `data/` по схемам specs/05 + `npm run validate:data`
+- M4: Карточки SRS (ts-fsrs, Dexie, `ProgressRepository`) — следующий майлстоун после M3
 - (опц.) Докачать 25 уроков Бебриса (research/04 «Не охвачено»), проверить Present Perfect (уроки 2.26–2.45)
 - (опц., отдельной задачей) Обновить стек: React 19, react-router 7 (снимет audit moderate), i18next 26, Vite 8 + plugin-react 6, пакет `typescript-eslint`
 
@@ -74,3 +74,4 @@ M2 закрыт (кроме branch protection — отложено до публ
 | 2026-09-27 | PR #1 смержен в main (M0.5+M1+M2); хостинг отложен: репо станет публичным в конце | Решение разработчика |
 | 2026-09-27 | Сторонние сервисы → M12 (после MVP); MVP = офлайн-first на Dexie | Решение разработчика |
 | 2026-09-27 | Ревью после PR #1: CI был красный, WAL ошибочно писал «зелёные» → hotfix CI; M2 закрыт; зафиксированы local-first «швы», M12 = Supabase для себя и друзей, продуктовый вариант — в Pending; WAL очищен от устаревшего | Ревью по запросу разработчика |
+| 2026-09-27 | M3 детализирован в PLANS (3.1–3.10, решения 1–7); старт ветки `feature/m3-data-pipeline`; разработчик разрешил merge/push без запроса | Делегирование автономной работы |
