@@ -1,7 +1,7 @@
 # WAL — Hunter English
 
 ## Current Phase
-**M3 — пайплайн данных** (детализация plan://M3#M3, контракт specs/05). Ветка `feature/m3-data-pipeline`
+**M3 закрыт** (PR #3 смержен). Следующий: **M4 — карточки SRS** (ts-fsrs, Dexie, `ProgressRepository` по «швам»)
 
 ## Completed
 - Бутстрап: AGENTS.md (вход для любых агентов → BOOT/WAL/PLANS), BOOT.md, WAL.md, PLANS.md, CLAUDE.md (`@AGENTS.md`, локальный)
@@ -11,7 +11,7 @@
 - M2: скаффолд Vite+React+TS, i18n ru/en, hash-роутинг, Vitest+Playwright, CI/deploy; hotfix CI (PR #1 был смержен с красным CI — `npm ci` падал): Vite 7, `@testing-library/dom`, `@types/node`, Prettier в lint, typecheck конфигов, Node 22, `supabase-js` и `/login` убраны до M12. Все проверки зелёные локально, включая e2e
 
 ## In Progress
-- M3 (ветка `feature/m3-data-pipeline`): выполнено 3.1–3.8. Датасет: слова 4024 записи (2830 лемм, дроп 36+9), цитаты 274/15 файлов, ловушки 22, аудио 4024 opus (17 МБ), manifest 21 файл. validate:data + lint + typecheck + test + audit — зелёные. Осталось: 3.9 ревью ветки → 3.10 merge в main
+- Ничего активного. M3 смержен (PR #3, CI зелёный) после AITS-ревью: датасет — слова 3 989 записей (2 830 лемм, CURATED-курация, CEFR из ранга, id lemma-pos, фикс-чанки), цитаты 274/15 (auto_vocab единый, 28≥0.9), ловушки 22, аудио 3 989 opus с гейтом длительности, манифест с sha256; валидатор с уникальностью id и строгим манифест-гейтом; README-runbook
 
 ## TODO
 - M4: Карточки SRS (ts-fsrs, Dexie, `ProgressRepository`) — следующий майлстоун после M3
@@ -79,4 +79,5 @@
 | 2026-09-27 | M3: 3.1–3.3, 3.5, 3.6 выполнены (схемы/валидатор/CI, Tatoeba-индекс, Piper-генератор, цитаты 274 с полными RU, 22 ловушки); validate:data и lint зелёные на готовых файлах | Автономная сессия M3, параллельные саб-агенты |
 | 2026-09-27 | M3: датасет собран и провалидирован (3.4–3.8); kaikki докачан 2830/2830; финальные проверки зелёные | Автономная сессия M3 |
 | 2026-09-27 | AITS-ревью M3: 2 блокера (Oxford CEFR в данных; джанк-переводы топ-1000) и 13 мажоров исправлены; датасет пересобран (3 989 слов/3989 аудио/274 цитаты/22 ловушки); git-автор починен | Ревью 9 ролей + медиатор + 3 синтезатора |
+| 2026-09-27 | M3 закрыт: PR #3 смержен в main при зелёном CI; git-автор ветки переписан на noreply (был literal-плейсхолдер); для старой истории main — rewrite перед публикацией репо (Known Issues) | Автономная сессия M3, merge разрешён разработчиком |
 | 2026-09-27 | M3#3.1: 8 схем draft-07 в `data/schemas/` (вкл. envelope и trap), §6.5 trap в спеке 05, `scripts/validate-data.mjs` (ajv + кросс-ссылки + аудио) → `npm run validate:data`, шаг Validate data в CI; ajv/ajv-formats в devDeps | План M3#3.1 |

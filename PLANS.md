@@ -59,7 +59,7 @@
 - [x] 3.7 Аудио всех слов из `data/words/` (Piper cori, Opus) + `data/manifest.json` (генератор, specs/05 §7)
 - [x] 3.8 Валидация: `npm run validate:data` зелёный (схемы + кросс-ссылки + манифест + уникальность id); `npm test`, `npm run lint && npm run typecheck`, `npm audit --audit-level=high` чисто; `README.md` (runbook), `data/README.md`, `CREDITS.md` актуализированы
 - [x] 3.9 Ревью ветки по методике AITS (9 ролей → медиатор → 3 синтезатора): 2 блокера + 13 мажоров исправлены (CEFR из ранга, курация топ-1000 CURATED-слоем, lemma-pos id, фикс-чанки, гейт длительности аудио, уникальность id и манифест в валидаторе, единый auto_vocab, README-runbook, git-автор)
-- [ ] 3.10 Merge в `main` при зелёном CI, push
+- [x] 3.10 Merge в `main` при зелёном CI, push (PR #3)
 
 > Решения M3 (приняты агентом по канону спек, 2026-09-27):
 > 1. **Аудио коммитится в репо**: слова ~2 800 файлов Opus (24 kHz mono, ~16 kbps) ≈ 10–15 МБ — приемлемо для git; цитаты/фразы — позже (M6+), при росте — GitHub Releases (закрывает открытый вопрос 7 спеки для MVP).
