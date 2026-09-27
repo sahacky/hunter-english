@@ -33,7 +33,6 @@ export default function App() {
         <Route path="quotes" element={<Placeholder page="quotes" />} />
         <Route path="phrasebook" element={<Placeholder page="phrasebook" />} />
         <Route path="settings" element={<Placeholder page="settings" />} />
-        <Route path="login" element={<Placeholder page="login" />} />
         <Route path="*" element={<Placeholder page="notFound" />} />
       </Route>
     </Routes>
