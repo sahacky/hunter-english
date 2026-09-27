@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-27T19:31:30Z",
+  "files": [
+    {
+      "path": "quotes/attack-on-titan.json",
+      "kind": "quotes",
+      "schema_version": 1,
+      "items": 17
+    },
+    {
+      "path": "quotes/berserk.json",
+      "kind": "quotes",
+      "schema_version": 1,
+      "items": 19
+    },
+    {
+      "path": "quotes/black-mirror.json",
+      "kind": "quotes",
+      "schema_version": 1,
+      "items": 20
+    },
+    {
+      "path": "quotes/breaking-bad.json",
+      "kind": "quotes",
+      "schema_version": 1,
+      "items": 21
+    },
+    {
+      "path": "quotes/fma-fma-b.json",
+      "kind": "quotes",
+      "schema_version": 1,
+      "items": 21
+    },
+    {
+      "path": "quotes/game-of-thrones.json",
+      "kind": "quotes",
+      "schema_version": 1,
+      "items": 23
+    },
+    {
+      "path": "quotes/igry.json",
+      "kind": "quotes",
+      "schema_version": 1,
+      "items": 16
+    },
+    {
+      "path": "quotes/jujutsu-kaisen.json",
+      "kind": "quotes",
+      "schema_version": 1,
+      "items": 16
+    },
+    {
+      "path": "quotes/lord-of-the-rings.json",
+      "kind": "quotes",
+      "schema_version": 1,
+      "items": 21
+    },
+    {
+      "path": "quotes/memy.json",
+      "kind": "quotes",
+      "schema_version": 1,
+      "items": 10
+    },
+    {
+      "path": "quotes/solo-leveling.json",
+      "kind": "quotes",
+      "schema_version": 1,
+      "items": 14
+    },
+    {
+      "path": "quotes/star-wars.json",
+      "kind": "quotes",
+      "schema_version": 1,
+      "items": 19
+    },
+    {
+      "path": "quotes/stranger-things.json",
+      "kind": "quotes",
+      "schema_version": 1,
+      "items": 21
+    },
+    {
+      "path": "quotes/supernatural.json",
+      "kind": "quotes",
+      "schema_version": 1,
+      "items": 25
+    },
+    {
+      "path": "quotes/the-100.json",
+      "kind": "quotes",
+      "schema_version": 1,
+      "items": 11
+    },
+    {
+      "path": "traps.json",
+      "kind": "traps",
+      "schema_version": 1,
+      "items": 22
+    },
+    {
+      "path": "words/words-0001-0719.json",
+      "kind": "words",
+      "schema_version": 1,
+      "items": 1187
+    },
+    {
+      "path": "words/words-0203-1209.json",
+      "kind": "words",
+      "schema_version": 1,
+      "items": 794
+    },
+    {
+      "path": "words/words-1210-1827.json",
+      "kind": "words",
+      "schema_version": 1,
+      "items": 792
+    },
+    {
+      "path": "words/words-1828-2440.json",
+      "kind": "words",
+      "schema_version": 1,
+      "items": 784
+    },
+    {
+      "path": "words/words-2440-2809.json",
+      "kind": "words",
+      "schema_version": 1,
+      "items": 467
+    }
+  ]
+}

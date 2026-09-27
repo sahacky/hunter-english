@@ -15,8 +15,14 @@ data/
 
 Каждый файл: `{ "schema_version": 1, "kind": "word|phrase|lesson|quote|phrasebook_dialog", "items": [...] }`.
 
-Статус (M2): папка пуста — наполнение в M3 из локального `data/raw/`
-(NGSL 2806, NGSL-Spoken 719, переводы kaikki на 1800 слов, цитаты 274 с русским переводом в
-`research/data/quotes-ru-merged.json`). Сырьё в `data/raw/` не коммитится.
+Статус (M3): папка наполнена пайплайном `research/tools/`:
+- `words/` — 4 024 записи (NGSL-Spoken 719 лемм + NGSL до 2 806; переводы kaikki, CEFR, примеры Tatoeba/цитат);
+- `quotes/` — 274 цитаты по 15 тайтлам (RU-переводы у всех);
+- `traps.json` — 22 ловушки русскоязычных;
+- `manifest.json` — манифест сборки для PWA;
+- `../audio/words/cori/` — 4 024 файла Opus (Piper en_GB cori).
 
-Валидация схем — `npm run validate:data` (добавляется вместе с первыми файлами данных).
+Сырьё в `data/raw/` не коммитится; сборка воспроизводится скриптами
+`research/tools/data/build_*.py` и `research/tools/audio/gen_audio.py`.
+
+Валидация схем — `npm run validate:data` (ajv draft-07 + кросс-ссылки, запускается в CI).
