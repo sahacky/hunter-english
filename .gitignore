@@ -1,0 +1,21 @@
+# Локальный файл Claude Code (только @AGENTS.md) — не публикуется
+CLAUDE.md
+
+# Секреты и окружение
+.env
+.env.local
+.env.*.local
+
+# Зависимости и сборка
+node_modules/
+dist/
+coverage/
+
+# Python
+__pycache__/
+.venv/
+
+# Локальное
+.human/
+tmp/
+.DS_Store
