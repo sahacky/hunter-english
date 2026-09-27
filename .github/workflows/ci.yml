@@ -24,6 +24,8 @@ jobs:
       - run: npm ci
       - run: npm run lint
       - run: npm run typecheck
+      - name: Validate data
+        run: npm run validate:data
       - run: npm test
       - run: npm audit --audit-level=high
       - run: npm run build

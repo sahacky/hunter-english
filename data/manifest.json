@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-27T20:58:47Z",
+  "files": [
+    {
+      "path": "quotes/attack-on-titan.json",
+      "kind": "quotes",
+      "schema_version": 1,
+      "items": 17,
+      "sha256": "88be3f2429cc07d62012ec2801f8b9929435f0dbf38e80f28ea6cc74a3109eb8"
+    },
+    {
+      "path": "quotes/berserk.json",
+      "kind": "quotes",
+      "schema_version": 1,
+      "items": 19,
+      "sha256": "a4e550f9e1fda4012d87bda3521bf726401b8bb656bfcf3bcbb8a13de71ad7ce"
+    },
+    {
+      "path": "quotes/black-mirror.json",
+      "kind": "quotes",
+      "schema_version": 1,
+      "items": 20,
+      "sha256": "47635d28c66a21c791594fad2d488a8087b755850fd1de7332217187ddc8b695"
+    },
+    {
+      "path": "quotes/breaking-bad.json",
+      "kind": "quotes",
+      "schema_version": 1,
+      "items": 21,
+      "sha256": "74ed91f45ba953cb398f85fd113e61527e70f1ee400c4afa00b2bd2b65e81a2c"
+    },
+    {
+      "path": "quotes/fma-fma-b.json",
+      "kind": "quotes",
+      "schema_version": 1,
+      "items": 21,
+      "sha256": "ff6de1ecfa52f985e21caa949e0176a827ddacf9dff466ef629c4f10faceb2b1"
+    },
+    {
+      "path": "quotes/game-of-thrones.json",
+      "kind": "quotes",
+      "schema_version": 1,
+      "items": 23,
+      "sha256": "a8e3db0404fd5718a6e36120c2191cfa96afb52f60a0f9a19bbeb2ae1e95abfc"
+    },
+    {
+      "path": "quotes/igry.json",
+      "kind": "quotes",
+      "schema_version": 1,
+      "items": 16,
+      "sha256": "921da3fc9f20470f419c2cdb97defb2134ab1a2be118f323a69a19956392225e"
+    },
+    {
+      "path": "quotes/jujutsu-kaisen.json",
+      "kind": "quotes",
+      "schema_version": 1,
+      "items": 16,
+      "sha256": "ba6e8615a37377905e9f9ef014e13062d528fc8955b256c48b7f5c038867484a"
+    },
+    {
+      "path": "quotes/lord-of-the-rings.json",
+      "kind": "quotes",
+      "schema_version": 1,
+      "items": 21,
+      "sha256": "3eb089979cf0522b84cc33157d8724fffde9decb7def13ee98a81ecdcde535e6"
+    },
+    {
+      "path": "quotes/memy.json",
+      "kind": "quotes",
+      "schema_version": 1,
+      "items": 10,
+      "sha256": "0835339f5e9dcac833e19696f393652ed5ce8ed798b1d9c33e5c952137a84faf"
+    },
+    {
+      "path": "quotes/solo-leveling.json",
+      "kind": "quotes",
+      "schema_version": 1,
+      "items": 14,
+      "sha256": "1d9669636da3fdbcf5b0f5d5720eadff11360fb1839e757c7f0c4dcdef820f17"
+    },
+    {
+      "path": "quotes/star-wars.json",
+      "kind": "quotes",
+      "schema_version": 1,
+      "items": 19,
+      "sha256": "a415fb987a772c3ea1167a97594811a3819af133018c8319e917a1f2dc44429a"
+    },
+    {
+      "path": "quotes/stranger-things.json",
+      "kind": "quotes",
+      "schema_version": 1,
+      "items": 21,
+      "sha256": "59f398999f0e844a6fe0384c13a90a215e818e1081a142b9f00127a1749aa224"
+    },
+    {
+      "path": "quotes/supernatural.json",
+      "kind": "quotes",
+      "schema_version": 1,
+      "items": 25,
+      "sha256": "4cb10ed20f6e311eccc48bd7a99117c65acdd2f993b494ed6ce8d70eac6d9b13"
+    },
+    {
+      "path": "quotes/the-100.json",
+      "kind": "quotes",
+      "schema_version": 1,
+      "items": 11,
+      "sha256": "93bbc91804eacc16fbaa1bbfba13d6d700df69cc561e6b1f1ec8c941ae4b5fcd"
+    },
+    {
+      "path": "traps.json",
+      "kind": "traps",
+      "schema_version": 1,
+      "items": 22,
+      "sha256": "3c5412e06fefd143e52c28024e162b3575071d2f6929ec3dd748cd658d865498"
+    },
+    {
+      "path": "words/words-0001-0500.json",
+      "kind": "words",
+      "schema_version": 1,
+      "items": 786,
+      "sha256": "3d55a2b816f2889640bf85054633327a4de6020304d6bdad6f6bc6493cabb7be"
+    },
+    {
+      "path": "words/words-0501-1000.json",
+      "kind": "words",
+      "schema_version": 1,
+      "items": 739,
+      "sha256": "86579f573fe226930dc488ed16bfca5cff73c943449dd90ec743ab9c08f411ec"
+    },
+    {
+      "path": "words/words-1001-1500.json",
+      "kind": "words",
+      "schema_version": 1,
+      "items": 717,
+      "sha256": "0a7c4dd8e4a6a160022f32019fe5bbcf35b1ad34332801b48a85695cc1721f72"
+    },
+    {
+      "path": "words/words-1501-2000.json",
+      "kind": "words",
+      "schema_version": 1,
+      "items": 668,
+      "sha256": "e41b5685edf3590f895ccca7c4e9b98ef1fccddbf04c7c26b698239510724aff"
+    },
+    {
+      "path": "words/words-2001-2400.json",
+      "kind": "words",
+      "schema_version": 1,
+      "items": 528,
+      "sha256": "e1bdfdbe69c8ceb659f16c52c39be9d794353d5914ca51ae566998c94e00dd78"
+    },
+    {
+      "path": "words/words-2401-2809.json",
+      "kind": "words",
+      "schema_version": 1,
+      "items": 527,
+      "sha256": "ae75c86ee455b43117add8527fe51fd3cef070778c96ff79c43ed9a883c5007f"
+    },
+    {
+      "path": "words/words-spoken-only.json",
+      "kind": "words",
+      "schema_version": 1,
+      "items": 24,
+      "sha256": "8261f1425e7432fb8d62aefacc7b273e456079e0d2178648a441d9f4d961cd7f"
+    }
+  ]
+}

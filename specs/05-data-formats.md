@@ -5,7 +5,7 @@
 ## 0. Общие положения {#data-common}
 
 - Все учебные данные лежат в `data/` репозитория в виде JSON (UTF-8, LF). Лицензия `data/` — **CC BY-SA 4.0**, источники — в `CREDITS.md`. Oxford 3000/5000, видео/аудио из тайтлов, тексты песен в `data/` **не попадают** (см. WAL → Watch out).
-- Каждая сущность описывается **JSON Schema draft-07**. Схемы из этой спеки в M2 выносятся в файлы `data/schemas/<name>.schema.json` и не редактируются вручную при использовании — правки только через эту спеку.
+- Каждая сущность описывается **JSON Schema draft-07**. Схемы из этой спеки вынесены в файлы `data/schemas/<name>.schema.json` (M3) и не редактируются вручную при использовании — правки только через эту спеку.
 - Каждый **файл** данных имеет поле `schema_version` (целое, начинается с 1). Правила версионирования — [§8](#data-versioning).
 - Строки EN хранятся как есть (апострофы прямые `'`); RU-переводы — без ударений (нормализация Unicode NFC, ударения из kaikki снимаются).
 - ID сущностей — строка `[a-z0-9-]`, стабильная между релизами (на неё ссылается прогресс пользователя, см. `db://table-card_states`).
@@ -28,7 +28,7 @@ data/
 
 | Каталог | Файлы | Принцип |
 |---|---|---|
-| `data/words/` | `words-0001-0719.json` (NGSL-Spoken, 719 лемм), `words-0720-2806.json` (NGSL, 2806 лемм), `words-2807-5000.json` (FrequencyWords) | по диапазону `freq_rank_ngsl` |
+| `data/words/` | фиксированные диапазоны `freq_rank_ngsl`: `words-0001-0500.json`, `words-0501-1000.json`, `words-1001-1500.json`, `words-1501-2000.json`, `words-2001-2400.json`, `words-2401-2809.json` + `words-spoken-only.json` (леммы только NGSL-Spoken с sentinel-рангом); `words-2807-5000.json` появится в M11 | по диапазону `freq_rank_ngsl`; имена файлов стабильны при пересборках |
 | `data/phrases/` | `phrases-e.json`, `phrases-d.json`, … | по рангу |
 | `data/lessons/` | `lessons-e.json`, `exercises-e.json`, … | уроки и упражнения отдельно, по рангу |
 | `data/quotes/` | `supernatural.json`, `game-of-thrones.json`, … | по тайтлу, ≤ 40–60 цитат в файле |
@@ -52,14 +52,14 @@ data/
 
 | Поле | Тип | Обяз. | Описание |
 |---|---|---|---|
-| `id` | string | ✅ | лемма + `-` + POS, напр. `house`, `take-verb` |
+| `id` | string | ✅ | всегда `лемма-POS`, напр. `house-noun`, `take-verb` (id не зависит от набора POS в исходнике — стабильность card_id; смена id = мажорная версия по §7) |
 | `lemma` | string | ✅ | словарная форма, lowercase |
-| `translation_ru` | string[] (1–3) | ✅ | главные переводы, сгруппированы по значению (kaikki → ручная курация) |
+| `translation_ru` | string[] (1–3) | ✅ | главные переводы, сгруппированы по значению (kaikki → ручная курация; CURATED-слой build_words для функциональных лемм) |
 | `part_of_speech` | enum | ✅ | `noun, verb, adjective, adverb, preposition, pronoun, conjunction, interjection, determiner, phrase` |
-| `cefr_level` | enum \| null | ✅ | `A1…C2` или `null`; заполняется из открытых источников (English Vocabulary Profile) или выводится из частотного ранга; локальная Oxford-разметка — только внутренний пайплайн |
-| `freq_rank_ngsl` | integer ≥ 1 | ✅ | ранг по `NGSL_12_stats.csv` |
+| `cefr_level` | enum \| null | ✅ | `A1…C2` или `null`; в M3 выводится **только из частотного ранга** (1–500 A1, 501–1000 A2, 1001–2000 B1, 2001+ B2); Oxford-разметка не публикуется (Watch out в WAL) |
+| `freq_rank_ngsl` | integer ≥ 1 | ✅ | ранг по `NGSL_12_stats.csv`; у spoken-only лемм — sentinel `100000+freq_rank_spoken` (сортировать по `freq_rank_spoken`) |
 | `freq_rank_spoken` | integer ≥ 1 | — | ранг по NGSL-Spoken (если слово входит в разговорные 719) |
-| `tags` | string[] | ✅ | напр. `ngsl`, `spoken-top719`, `irregular-verb`, `phrasal-phave`, `trap:to-home` |
+| `tags` | string[] | ✅ | напр. `ngsl`, `spoken-top719`, `irregular-verb`, `phrasal-have` (M5+), `trap:to-home` |
 | `example_en` / `example_ru` | string | ✅ | фраза-пример (Tatoeba / урок / цитата); EN и RU заполняются парой |
 | `audio` | object | ✅ | `{ "en_gb": "<путь>" }` — путь в `audio/`, формат `audio/words/cori/<id>.opus` |
 
@@ -98,7 +98,7 @@ data/
 
 ```json
 {
-  "id": "house",
+  "id": "house-noun",
   "lemma": "house",
   "translation_ru": ["дом", "палата", "династия"],
   "part_of_speech": "noun",
@@ -108,7 +108,7 @@ data/
   "tags": ["ngsl", "spoken-top719"],
   "example_en": "The house is big.",
   "example_ru": "Дом большой.",
-  "audio": { "en_gb": "audio/words/cori/house.opus" }
+  "audio": { "en_gb": "audio/words/cori/house-noun.opus" }
 }
 ```
 
@@ -482,7 +482,7 @@ data/
 
 | Поле | Тип | Обяз. | Описание |
 |---|---|---|---|
-| `id` | string | ✅ | `q-<тайтл>-<номер>`, напр. `q-supernatural-0007` |
+| `id` | string | ✅ | `q-<тайтл>-<номер>`, напр. `q-supernatural-0007`; нумерация сквозная по тайтлу, правило **append-only**: новые цитаты добавляются в конец тайтла, существующие номера не переиспользуются и не сдвигаются (на id опирается прогресс M4) |
 | `title` | string | ✅ | тайтл («Supernatural») |
 | `source_url` | string (uri) | ✅ | Wikiquote / IMDb / подборка |
 | `season_episode` | string | ✅ | `S01E01 «Pilot»` |
@@ -626,6 +626,56 @@ data/
 
 ---
 
+## 6.5. trap — ловушка русскоязычного {#schema-trap} (URI: `data://schema-trap`)
+
+Запись каталога ловушек `data/traps.json` (`kind: traps`; номера каталога — `research/03 §4`, соответствие ЛТ ↔ slug — [§0](#data-common)). На ловушку ссылаются уроки (`lesson.trap_id`, `grammar_point.trap_id`) и упражнение `find_error` (`payload.trap_id`).
+
+| Поле | Тип | Обяз. | Описание |
+|---|---|---|---|
+| `id` | string | ✅ | slug `trap-<основа>`, напр. `trap-no-to-be` |
+| `lt_id` | string | ✅ | номер каталога из research/03 §4, напр. `ЛТ-01` |
+| `title_ru` | string | ✅ | короткое название ловушки по-русски |
+| `wrong_en` | string | ✅ | типичная ошибка |
+| `right_en` | string | ✅ | правильный вариант |
+| `explanation_ru` | string | ✅ | короткое объяснение по-русски |
+| `tags` | string[] | ✅ | теги темы (`to-be`, `preposition`, …) |
+
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "urn:hunter-english:data:trap:v1",
+  "title": "trap",
+  "type": "object",
+  "required": ["id", "lt_id", "title_ru", "wrong_en", "right_en", "explanation_ru", "tags"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "pattern": "^trap-[a-z0-9-]+$" },
+    "lt_id": { "type": "string", "pattern": "^ЛТ-[0-9]{2}$", "description": "номер ловушки в каталоге research/03 §4" },
+    "title_ru": { "type": "string", "minLength": 1 },
+    "wrong_en": { "type": "string", "description": "типичная ошибка" },
+    "right_en": { "type": "string", "description": "правильный вариант" },
+    "explanation_ru": { "type": "string", "description": "короткое объяснение по-русски" },
+    "tags": { "type": "array", "items": { "type": "string" } }
+  }
+}
+```
+
+Живой пример:
+
+```json
+{
+  "id": "trap-no-to-be",
+  "lt_id": "ЛТ-01",
+  "title_ru": "Пропуск to be",
+  "wrong_en": "I hungry.",
+  "right_en": "I'm hungry.",
+  "explanation_ru": "В английском нельзя сказать «я голоден» без глагола-связки: в настоящем времени нужен am/is/are.",
+  "tags": ["to-be"]
+}
+```
+
+---
+
 ## 7. Версионирование данных {#data-versioning}
 
 - `schema_version: <int>` — в **каждом** файле данных (в обёртке, [§0](#data-common)). Старт — `1`.
@@ -641,7 +691,7 @@ data/
 
 ```
 NGSL-Spoken (719) ─┐
-NGSL 1.2 (2806)  ──┼→ target_words.txt (1800+, с дедупликацией) → kaikki (Wiktionary, CC BY-SA)
+NGSL 1.2 (2809)  ──┼→ target_words_full.txt (union, build_target_words.py --full) → kaikki (Wiktionary, CC BY-SA)
 FrequencyWords   ──┘        │                       │
                              ▼                       ▼
                     авто-отбор 1–3 переводов   ручная курация (топ-1000 — всё вручную)
@@ -656,14 +706,14 @@ FrequencyWords   ──┘        │                       │
 
 | Файл | Что | Статус |
 |---|---|---|
-| `raw/ngsl/NGSL_12_stats.csv` | NGSL 1.2, 2 806 лемм с частотным рангом | ✅ |
+| `raw/ngsl/NGSL_12_stats.csv` | NGSL 1.2, 2 809 лемм с частотным рангом (в тексте проекта исторически фигурирует 2806 — канон по CSV) | ✅ |
 | `raw/ngsl/NGSL-Spoken_12_stats.csv` | NGSL-Spoken, 719 лемм | ✅ |
 | `raw/frequencywords/en_50k.txt` | субтитры OpenSubtitles, 50k (MIT) | ✅ |
 | `raw/oxford/full-word.json` | Oxford 5000 (word, POS, CEFR, mp3) — **только локально, © OUP, не публиковать** | ✅ |
 | `raw/kaikki/target_words.txt` | 1 800 целевых слов для перевода | ✅ |
 | `raw/kaikki/words/*.jsonl` | ответы kaikki по слову (лог `fetch.log`) | 🔄 качается (~180/1800 на 2026-09-27) |
 
-Этапы после докачки (M3): автоотбор переводов → ручная курация (топ-1000 вручную) → сборка файлов `data/words/` → примеры (Tatoeba CC BY 2.0 FR, цитаты, уроки) → разметка CEFR из открытых источников (English Vocabulary Profile) или вывод из частотного ранга (локальная Oxford-разметка — только внутренний пайплайн) → генерация аудио → `manifest.json`. Атрибуция всех источников — `CREDITS.md`; производные словарные данные — CC BY-SA 4.0 (требование ShareAlike Wiktionary/NGSL).
+Этапы (реализация M3, `research/tools/`): автоотбор переводов kaikki → CURATED-слой ручной курации (`build_words.py`: функциональные леммы — одна запись с главной POS, ручные переводы/примеры; топ-1000 покрывается курацией) → сборка файлов `data/words/` фиксированными диапазонами → примеры (Tatoeba CC BY 2.0 FR, цитаты) → **CEFR выводится только из частотного ранга** (Oxford-разметка не используется и не публикуется — Watch out в WAL) → генерация аудио (Piper cori, гейт длительности 0.3–2.5 с) → `manifest.json` (с sha256 файлов). Атрибуция всех источников — `CREDITS.md`; производные словарные данные — CC BY-SA 4.0 (требование ShareAlike Wiktionary/NGSL).
 
 Цитаты: из `research/data/quotes-ru-merged.json` (274, источник) → досев и курация до ~300 для MVP → разбивка по тайтлам в `data/quotes/`, дозаполнение `translation_ru`, добавление `link_playphrase`, ручная сверка `est_rank`.
 
@@ -672,18 +722,18 @@ FrequencyWords   ──┘        │                       │
 - **Инструмент:** ajv (draft-07), скрипт `scripts/validate-data.mjs` + `npm run validate:data` — **код появляется в M2** (там же ajv попадает в devDependencies). До M2 валидация — прогон схем из этой спеки вручную/разово.
 - Что проверяет (два слоя):
   1. **Схемы (ajv):** каждый файл `data/**/*.json` — против обёртки ([§0](#data-common)); каждый элемент `items` — против схемы своего `kind` (§1–§6). Формат `format: "uri"` — с ajv-formats.
-  2. **Кросс-ссылки (свой код в скрипте, ajv это не умеет):** `lesson.exercises[].id` существуют в `exercises-*.json`; `grammar_point.phrase_ids` и `payload.phrase_id` существуют в `phrases-*.json`; `trap_id` есть в `traps.json`; `audio.*` файлы существуют на диске; `quotes_topic`/`phrasebook_topic` известны; у каждой цитаты `auto_vocab.top1000 ≥ 0.9` помечена как показываемая (информативно).
-- **CI:** шаг `npm run validate:data` в GitHub Actions до деплоя; падение валидации = коммит в `data/` не проходит PR. Pre-commit hook — тот же скрипт только по изменённым файлам.
+  2. **Кросс-ссылки (свой код в скрипте, ajv это не умеет):** `lesson.exercises[].id` существуют в `exercises-*.json`; `grammar_point.phrase_ids` и `payload.phrase_id` существуют в `phrases-*.json`; `trap_id` есть в `traps.json`; `audio.*` файлы существуют на диске; `quotes_topic`/`phrasebook_topic` известны (при появлении lessons/phrasebook — M5/M8); у каждой цитаты `auto_vocab.top1000 ≥ 0.9` — информативная отметка готовности к показу. Проверки манифеста и уникальности id по всем сущностям — реализованы (M3).
+- **CI:** шаг `npm run validate:data` в GitHub Actions до деплоя; падение валидации = коммит в `data/` не проходит PR. Pre-commit hook — тот же скрипт только по изменённым файлам (не реализован; правки data/ проходят через CI-шаг в PR).
 - Exit code ≠ 0 + список ошибок с путями `файл#/items/3/translation_ru` — без «warnings, которые можно игнорировать».
 
 ---
 
 ## Открытые вопросы {#data-open-questions}
 
-1. `translation_ru` цитаты: обязательное в `data/quotes/` (так в этой спеке) — подтверить, что M3 дозаполнит 148 записей без RU (274 − 126), либо оставить optional до B-ранга.
+1. ~~`translation_ru` цитаты~~ — ЗАКРЫТО в M3: все 274 записи имеют перевод; 148 дозаполненных помечены `note: "translation needs review"` (сверка при курации M8/M11).
 2. `link_playphrase`: hash-URL поиска PlayPhrase не документирован — проверить стабильность ссылок; возможен фолбэк на getyarn.io.
 3. Формат `vocab_band`: объект `{list, from, to}` vs строковый id полосы — финализируется в программе курса (plan://M1#course-map).
-4. Слова вне NGSL-Spoken: оставлять ли `freq_rank_spoken` отсутствующим (так в схеме) или вводить sentinel — влияет на сортировку в UI.
-5. Разбивка `data/words/` по 500 слов vs по спискам (spoken / ngsl / subtitles) — влияет на PWA-кэширование, решить в M3.
-6. Каталог `traps.json`: нужна ли отдельная полная схема (сейчас trap_id — просто строка-ссылка) — решить при создании каталога в M3.
-7. Аудио для цитат/фраз: отдельный репо или GitHub Releases при росте ~75 МБ (research/07 §4 оставлял вопрос открытым).
+4. ~~Слова вне NGSL-Spoken~~ — ЗАКРЫТО в M3: `freq_rank_spoken` отсутствует у не-spoken слов; у spoken-only лемм (без ранга NGSL) `freq_rank_ngsl` = sentinel `100000+spoken_rank`, файл `words-spoken-only.json`; сортировка в UI — по `freq_rank_spoken ?? freq_rank_ngsl`.
+5. ~~Разбивка `data/words/`~~ — ЗАКРЫТО в M3: фиксированные диапазоны `freq_rank_ngsl` (см. §0), имена файлов стабильны при пересборках.
+6. ~~Каталог `traps.json`~~ — ЗАКРЫТО в M3: полная схема §6.5.
+7. Аудио для цитат/фраз: слова — в репо (`audio/words/cori`, ~17 МБ на 4 тыс. записей); при росте (цитаты/фразы в M6+) — GitHub Releases; валидатору заложить режим `VALIDATE_AUDIO=local|remote|off` до переезда.

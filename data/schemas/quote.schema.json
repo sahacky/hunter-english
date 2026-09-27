@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "urn:hunter-english:data:quote:v1",
+  "title": "quote",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "source_url",
+    "season_episode",
+    "speaker",
+    "text",
+    "translation_ru",
+    "grammar_tags",
+    "est_rank",
+    "auto_vocab",
+    "confidence"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "pattern": "^q-[a-z0-9-]+$" },
+    "title": { "type": "string", "minLength": 1 },
+    "source_url": { "type": "string", "format": "uri" },
+    "season_episode": { "type": "string", "minLength": 1 },
+    "speaker": { "type": "string", "minLength": 1 },
+    "text": { "type": "string", "minLength": 1 },
+    "translation_ru": { "type": "string", "minLength": 1 },
+    "grammar_tags": { "type": "array", "items": { "type": "string" } },
+    "est_rank": { "enum": ["E", "D", "C", "B", "A", "S"] },
+    "auto_vocab": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["top1000"],
+      "properties": { "top1000": { "type": "number", "minimum": 0, "maximum": 1 } }
+    },
+    "confidence": { "type": "string", "minLength": 1 },
+    "note": { "type": "string" },
+    "link_playphrase": { "type": "string", "format": "uri" },
+    "audio": {
+      "type": "object",
+      "required": ["en_gb"],
+      "additionalProperties": false,
+      "properties": { "en_gb": { "type": "string", "pattern": "^audio/" } }
+    }
+  }
+}

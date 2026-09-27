@@ -1,0 +1,488 @@
+{
+ "schema_version": 1,
+ "kind": "quotes",
+ "items": [
+  {
+   "id": "q-supernatural-0001",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_1)",
+   "season_episode": "S01E01 «Pilot»",
+   "speaker": "Dean",
+   "text": "I can't do this alone.",
+   "translation_ru": "Я не могу делать это один.",
+   "grammar_tags": [
+    "can/can't"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.8
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20can%27t%20do%20this%20alone."
+  },
+  {
+   "id": "q-supernatural-0002",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_1)",
+   "season_episode": "S01E01 «Pilot»",
+   "speaker": "Sam",
+   "text": "Yes, you can!",
+   "translation_ru": "Да, можешь!",
+   "grammar_tags": [
+    "can/can't",
+    "short answer"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 1.0
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "ответ на предыдущую реплику; translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Yes%2C%20you%20can%21"
+  },
+  {
+   "id": "q-supernatural-0003",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_1)",
+   "season_episode": "S01E01 «Pilot»",
+   "speaker": "Dean",
+   "text": "Yeah... Well, I don't want to.",
+   "translation_ru": "Ага... Что ж, а я не хочу.",
+   "grammar_tags": [
+    "Present Simple (negative)",
+    "want to"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.83
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Yeah...%20Well%2C%20I%20don%27t%20want%20to."
+  },
+  {
+   "id": "q-supernatural-0004",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_1)",
+   "season_episode": "S01E01 «Pilot»",
+   "speaker": "Dean",
+   "text": "Sorry, I can't hear you. The music's too loud.",
+   "translation_ru": "Извини, не слышу тебя. Музыка слишком громкая.",
+   "grammar_tags": [
+    "can/can't",
+    "to be",
+    "too + adj"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 0.67
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Sorry%2C%20I%20can%27t%20hear%20you.%20The%20music%27s%20too%20loud."
+  },
+  {
+   "id": "q-supernatural-0005",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_1)",
+   "season_episode": "S01E08 «Bugs»",
+   "speaker": "Sam",
+   "text": "I want to find Dad.",
+   "translation_ru": "Я хочу найти отца.",
+   "grammar_tags": [
+    "want to + verb"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.8
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20want%20to%20find%20Dad."
+  },
+  {
+   "id": "q-supernatural-0006",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_1)",
+   "season_episode": "S01E10 «Asylum»",
+   "speaker": "Sam",
+   "text": "It doesn't matter what he wants.",
+   "translation_ru": "Неважно, чего хочет он.",
+   "grammar_tags": [
+    "Present Simple (3rd person, negative)"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 0.67
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=It%20doesn%27t%20matter%20what%20he%20wants."
+  },
+  {
+   "id": "q-supernatural-0007",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_4)",
+   "season_episode": "S04E21 «When the Levee Breaks»",
+   "speaker": "Bobby",
+   "text": "Don't test me.",
+   "translation_ru": "Не испытывай меня.",
+   "grammar_tags": [
+    "Imperative (negative)"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.33
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Don%27t%20test%20me."
+  },
+  {
+   "id": "q-supernatural-0008",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_8)",
+   "season_episode": "S08E20 «Pac-Man Fever»",
+   "speaker": "Dean",
+   "text": "I know. Believe me, I know.",
+   "translation_ru": "Я знаю. Поверь мне, я знаю.",
+   "grammar_tags": [
+    "Present Simple",
+    "Imperative"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.83
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20know.%20Believe%20me%2C%20I%20know."
+  },
+  {
+   "id": "q-supernatural-0009",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_5)",
+   "season_episode": "S05E05 «Fallen Idols»",
+   "speaker": "Sam",
+   "text": "That's not the point.",
+   "translation_ru": "Дело не в этом.",
+   "grammar_tags": [
+    "to be (negative)"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.75
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=That%27s%20not%20the%20point."
+  },
+  {
+   "id": "q-supernatural-0010",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_4)",
+   "season_episode": "S04E10 «Heaven and Hell»",
+   "speaker": "Sam",
+   "text": "Is he working a job?",
+   "translation_ru": "У него сейчас какое-то дело?",
+   "grammar_tags": [
+    "Present Continuous (question)"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 0.6
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "job = «дело» охотников (сленг сериала); translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Is%20he%20working%20a%20job%3F"
+  },
+  {
+   "id": "q-supernatural-0011",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_6)",
+   "season_episode": "S06E10 «Caged Heat»",
+   "speaker": "Samuel",
+   "text": "I just want you to understand.",
+   "translation_ru": "Я просто хочу, чтобы ты понял.",
+   "grammar_tags": [
+    "want + object + to"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 1.0
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20just%20want%20you%20to%20understand."
+  },
+  {
+   "id": "q-supernatural-0012",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_3)",
+   "season_episode": "S03E16 «No Rest for the Wicked»",
+   "speaker": "Sam",
+   "text": "You don't mean that. We're--we're family.",
+   "translation_ru": "Ты так не думаешь. Мы же... мы же семья.",
+   "grammar_tags": [
+    "Present Simple (negative)",
+    "to be"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.57
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=You%20don%27t%20mean%20that.%20We%27re--we%27re%20family."
+  },
+  {
+   "id": "q-supernatural-0013",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_2)",
+   "season_episode": "S02E11 «Playthings»",
+   "speaker": "Dean",
+   "text": "Dude, this is sweet! I never get to work jobs like this.",
+   "translation_ru": "Чувак, это здорово! Мне такие дела редко попадаются.",
+   "grammar_tags": [
+    "to be",
+    "Present Simple",
+    "adverb never"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 0.67
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "разговорное: dude, sweet; translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Dude%2C%20this%20is%20sweet%21%20I%20never%20get%20to%20work%20jobs%20like%20this."
+  },
+  {
+   "id": "q-supernatural-0014",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_8)",
+   "season_episode": "S08E22 «Clip Show»",
+   "speaker": "Crowley",
+   "text": "Saving people, hunting things. The family business.",
+   "translation_ru": "Спасать людей, охотиться на тварей — семейный бизнес.",
+   "grammar_tags": [
+    "-ing form (gerund)",
+    "noun phrase"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 0.57
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "фрагмент более длинной реплики. Кроули цитирует девиз братьев; оригинальная реплика Дина — S01E02, внутри длинного монолога",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Saving%20people%2C%20hunting%20things.%20The%20family%20business."
+  },
+  {
+   "id": "q-supernatural-0015",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural",
+   "season_episode": "Castiel (5.19 99 Problems)",
+   "speaker": "Castiel",
+   "text": "I found a liquor store. And I drank it!",
+   "translation_ru": "Я нашёл винный магазин. И я выпил его!",
+   "grammar_tags": [
+    "Past Simple",
+    "артикли",
+    "юмор на буквальном понимании"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.67
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20found%20a%20liquor%20store.%20And%20I%20drank%20it%21"
+  },
+  {
+   "id": "q-supernatural-0016",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural",
+   "season_episode": "Castiel (4.01 Lazarus Rising)",
+   "speaker": "Castiel",
+   "text": "You have no faith",
+   "translation_ru": "В тебе нет веры.",
+   "grammar_tags": [
+    "have got/have + отрицание"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.75
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=You%20have%20no%20faith"
+  },
+  {
+   "id": "q-supernatural-0017",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural",
+   "season_episode": "Castiel (5.22 Swan Song)",
+   "speaker": "Castiel",
+   "text": "Hey, assbutt!",
+   "translation_ru": "Эй, задница-ангел! (оск. «ослоЖОПа»)",
+   "grammar_tags": [
+    "Возглас-обращение",
+    "лексика оскорблений (мягких)"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.0
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Hey%2C%20assbutt%21"
+  },
+  {
+   "id": "q-supernatural-0018",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural",
+   "season_episode": "Dean, цитируя Bobby (10.17 Inside Man)",
+   "speaker": "Dean, цитируя Bobby",
+   "text": "Family don't end in blood",
+   "translation_ru": "Семья не заканчивается на крови.",
+   "grammar_tags": [
+    "Отрицание",
+    "«нестандартное» don't с 3 л. (речь персонажа!)",
+    "идиома"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.6
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Family%20don%27t%20end%20in%20blood"
+  },
+  {
+   "id": "q-supernatural-0019",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural",
+   "season_episode": "Dean (10.19 The Werther Project)",
+   "speaker": "Dean",
+   "text": "We're stronger together than apart",
+   "translation_ru": "Вместе мы сильнее, чем поодиночке.",
+   "grammar_tags": [
+    "Сравнительная степень + than"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 0.4
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=We%27re%20stronger%20together%20than%20apart"
+  },
+  {
+   "id": "q-supernatural-0020",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural",
+   "season_episode": "Dean (9.22/9.23)",
+   "speaker": "Dean",
+   "text": "There ain't no me if there ain't no you",
+   "translation_ru": "Меня не будет, если не будет тебя.",
+   "grammar_tags": [
+    "Двойное отрицание (ain't no) — показать разницу с нормой"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.67
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=There%20ain%27t%20no%20me%20if%20there%20ain%27t%20no%20you"
+  },
+  {
+   "id": "q-supernatural-0021",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural",
+   "season_episode": "Dean (2.20 In My Time of Dying)",
+   "speaker": "Dean",
+   "text": "You always have a choice",
+   "translation_ru": "У тебя всегда есть выбор.",
+   "grammar_tags": [
+    "Present Simple + always (наречие частотности)"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 1.0
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=You%20always%20have%20a%20choice"
+  },
+  {
+   "id": "q-supernatural-0022",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural",
+   "season_episode": "Dean (6.07 Caged Heat)",
+   "speaker": "Dean",
+   "text": "Karma's a bitch, bitch",
+   "translation_ru": "Карма — стерва, стерва.",
+   "grammar_tags": [
+    "be + существительное",
+    "разговорная лексика"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.25
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Karma%27s%20a%20bitch%2C%20bitch"
+  },
+  {
+   "id": "q-supernatural-0023",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural",
+   "season_episode": "Dean (3.03 Bad Day at Black Rock)",
+   "speaker": "Dean",
+   "text": "I'm Batman",
+   "translation_ru": "Я — Бэтмен.",
+   "grammar_tags": [
+    "be + имя",
+    "Present Simple"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.0
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%27m%20Batman"
+  },
+  {
+   "id": "q-supernatural-0024",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural",
+   "season_episode": "Dean (1.01 Pilot)",
+   "speaker": "Dean",
+   "text": "Driver picks the music, shotgun shuts his cakehole",
+   "translation_ru": "Водитель выбирает музыку, пассажир заткнётся.",
+   "grammar_tags": [
+    "Present Simple (0-условие «правил»)",
+    "идиома cakehole"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.25
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Driver%20picks%20the%20music%2C%20shotgun%20shuts%20his%20cakehole"
+  },
+  {
+   "id": "q-supernatural-0025",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural",
+   "season_episode": "Dean (2.20)",
+   "speaker": "Dean",
+   "text": "You can either roll over and die or keep fighting",
+   "translation_ru": "Можешь либо сдаться и умереть, либо продолжать драться.",
+   "grammar_tags": [
+    "either…or",
+    "модальный can + инфинитив"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.8
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=You%20can%20either%20roll%20over%20and%20die%20or%20keep%20fighting"
+  }
+ ]
+}

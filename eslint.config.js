@@ -29,6 +29,12 @@ export default [
     },
   },
   {
+    files: ['scripts/**/*.mjs'],
+    languageOptions: {
+      globals: globals.node,
+    },
+  },
+  {
     ignores: ['dist/', 'coverage/', 'node_modules/', 'playwright-report/', 'test-results/'],
   },
 ]

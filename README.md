@@ -1,0 +1,71 @@
+# Hunter English
+
+Веб-приложение для изучения английского с нуля (A0) до продвинутого (C1) для
+русскоязычного пользователя. Цель — путешествия: понимать людей на слух и отвечать.
+Методика: короткое правило → построение фраз RU→EN → диктант → shadowing →
+интервальные повторения (FSRS). Мотивация в стиле Solo Leveling: ты — «Охотник»,
+ранги E→S, «Врата», XP и стрики. Озвучка — британский английский (Piper `cori`).
+
+## Стек
+
+Vite + React + TypeScript · Dexie (IndexedDB, офлайн-first) · ts-fsrs ·
+react-i18next (ru/en) · Vitest + Playwright · GitHub Actions.
+Supabase — только в M12 (после MVP). Подробности: `AGENTS.md` (единая точка
+входа для людей и агентов), roadmap — `PLANS.md`, текущее состояние — `WAL.md`.
+
+## Структура
+
+| Каталог | Что это | Править руками? |
+|---|---|---|
+| `research/` | ресёрч, методика, лицензии; `research/tools/` — скрипты пайплайна данных | да (источник правды) |
+| `specs/` | спецификации (курс, уроки, SRS, геймификация, форматы данных, экраны, дизайн) | да, через план |
+| `data/` | учебные данные (CC BY-SA 4.0), генерируются пайплайном | `data/raw/` — нет (gitignored), остальное перегенерируется |
+| `audio/` | озвучка слов (Piper en_GB `cori`, Opus) | генерируется `research/tools/audio/gen_audio.py` |
+| `src/` | код приложения | да |
+| `scripts/` | служебные скрипты (`validate-data.mjs`) | да |
+
+## Сборка данных с нуля
+
+Нужны: Node 22, Python 3.10+, ffmpeg в PATH, `pip3 install --user piper-tts`.
+Сырьё (`data/raw/`, в git не попадает): NGSL CSV, kaikki-дампы, Tatoeba-экспорты.
+Порядок (каждый шаг возобновляемый):
+
+```bash
+# 1. Целевой список слов (union NGSL+Spoken)
+python3 research/tools/data/build_target_words.py --full
+# 2. Скачка переводов Wiktionary (kaikki.org, ~1.2 c/слово)
+python3 research/tools/data/fetch_kaikki.py
+# 3. Экспорты Tatoeba -> /tmp/opencode/tatoeba/ (sentences_detailed.tar.bz2, links.tar.bz2)
+#    https://downloads.tatoeba.org/exports/ ; затем индекс примеров:
+python3 research/tools/data/build_examples.py
+# 4. Слова: data/words/*.json (переводы, CEFR, теги, примеры)
+python3 research/tools/data/build_words.py
+# 5. Аудио: Piper en_GB cori (модель rhasspy/piper-voices -> data/raw/models/piper/)
+python3 research/tools/audio/gen_audio.py --words 'data/words/*.json'
+# 6. Цитаты и ловушки
+python3 research/tools/quotes/build_quotes.py
+python3 research/tools/data/build_traps.py
+# 7. Манифест и валидация
+python3 research/tools/data/build_manifest.py
+npm run validate:data
+```
+
+Схема данных и контракты — `specs/05-data-formats.md`; источники и лицензии —
+`CREDITS.md`; статус данных — `data/README.md`.
+
+## Разработка
+
+```bash
+npm ci
+npm run dev          # дев-сервер
+npm test             # vitest
+npm run test:e2e     # playwright (нужен npx playwright install chromium)
+npm run lint && npm run typecheck
+npm run validate:data
+```
+
+## Лицензии
+
+Код — MIT (`LICENSE`). Учебные данные `data/` — CC BY-SA 4.0 (наследуется от
+NGSL/Wiktionary/kaikki); цитаты — короткие выдержки с указанием источника
+(право цитирования). Полный список — `CREDITS.md`.

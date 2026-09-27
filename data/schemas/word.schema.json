@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "urn:hunter-english:data:word:v1",
+  "title": "word",
+  "type": "object",
+  "required": [
+    "id",
+    "lemma",
+    "translation_ru",
+    "part_of_speech",
+    "cefr_level",
+    "freq_rank_ngsl",
+    "tags",
+    "example_en",
+    "example_ru",
+    "audio"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "lemma": { "type": "string", "minLength": 1 },
+    "translation_ru": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 3,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "part_of_speech": {
+      "enum": [
+        "noun",
+        "verb",
+        "adjective",
+        "adverb",
+        "preposition",
+        "pronoun",
+        "conjunction",
+        "interjection",
+        "determiner",
+        "phrase"
+      ]
+    },
+    "cefr_level": { "enum": ["A1", "A2", "B1", "B2", "C1", "C2", null] },
+    "freq_rank_ngsl": { "type": "integer", "minimum": 1 },
+    "freq_rank_spoken": { "type": "integer", "minimum": 1 },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "example_en": { "type": "string", "minLength": 1 },
+    "example_ru": { "type": "string", "minLength": 1 },
+    "audio": {
+      "type": "object",
+      "required": ["en_gb"],
+      "additionalProperties": false,
+      "properties": { "en_gb": { "type": "string", "pattern": "^audio/" } }
+    }
+  }
+}

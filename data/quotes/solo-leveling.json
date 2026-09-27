@@ -1,0 +1,276 @@
+{
+ "schema_version": 1,
+ "kind": "quotes",
+ "items": [
+  {
+   "id": "q-solo-leveling-0001",
+   "title": "Solo Leveling",
+   "source_url": "https://screenrant.com/solo-leveling-best-jinwoo-quotes/",
+   "season_episode": "аниме, фирменная фраза",
+   "speaker": "Sung Jinwoo",
+   "text": "Arise.",
+   "translation_ru": "Восстань.",
+   "grammar_tags": [
+    "Imperative"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.0
+   },
+   "confidence": "Screen Rant; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
+   "note": "arise — книжное слово, но ключевое для фанатов",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Arise."
+  },
+  {
+   "id": "q-solo-leveling-0002",
+   "title": "Solo Leveling",
+   "source_url": "https://screenrant.com/solo-leveling-best-jinwoo-quotes/",
+   "season_episode": "аниме",
+   "speaker": "Sung Jinwoo",
+   "text": "I've been leveling up this whole time.",
+   "translation_ru": "Я всё это время качал уровень.",
+   "grammar_tags": [
+    "Present Perfect Continuous"
+   ],
+   "est_rank": "B",
+   "auto_vocab": {
+    "top1000": 0.57
+   },
+   "confidence": "Screen Rant; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
+   "note": "translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%27ve%20been%20leveling%20up%20this%20whole%20time."
+  },
+  {
+   "id": "q-solo-leveling-0003",
+   "title": "Solo Leveling",
+   "source_url": "https://screenrant.com/solo-leveling-best-jinwoo-quotes/",
+   "season_episode": "аниме S2 (финал)",
+   "speaker": "Sung Jinwoo",
+   "text": "On to the next target.",
+   "translation_ru": "Следующая цель.",
+   "grammar_tags": [
+    "prepositional phrase"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 1.0
+   },
+   "confidence": "Screen Rant; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
+   "note": "translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=On%20to%20the%20next%20target."
+  },
+  {
+   "id": "q-solo-leveling-0004",
+   "title": "Solo Leveling",
+   "source_url": "https://screenrant.com/solo-leveling-best-jinwoo-quotes/",
+   "season_episode": "аниме S2 (Чеджу)",
+   "speaker": "Sung Jinwoo",
+   "text": "Fancy that. A talking bug.",
+   "translation_ru": "Надо же. Говорящий жук.",
+   "grammar_tags": [
+    "-ing adjective"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.4
+   },
+   "confidence": "Screen Rant; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
+   "note": "translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Fancy%20that.%20A%20talking%20bug."
+  },
+  {
+   "id": "q-solo-leveling-0005",
+   "title": "Solo Leveling",
+   "source_url": "https://screenrant.com/solo-leveling-best-jinwoo-quotes/",
+   "season_episode": "аниме",
+   "speaker": "Sung Jinwoo",
+   "text": "Because it's only the strong who survive!",
+   "translation_ru": "Потому что выживают только сильные!",
+   "grammar_tags": [
+    "to be",
+    "the + adjective",
+    "relative clause who"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.71
+   },
+   "confidence": "Screen Rant; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
+   "note": "translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Because%20it%27s%20only%20the%20strong%20who%20survive%21"
+  },
+  {
+   "id": "q-solo-leveling-0006",
+   "title": "Solo Leveling",
+   "source_url": "https://screenrant.com/solo-leveling-best-jinwoo-quotes/",
+   "season_episode": "аниме S2",
+   "speaker": "Sung Jinwoo",
+   "text": "I'm borrowing this girl.",
+   "translation_ru": "Я одолжу у вас эту девушку.",
+   "grammar_tags": [
+    "Present Continuous"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 0.5
+   },
+   "confidence": "Screen Rant; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
+   "note": "translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%27m%20borrowing%20this%20girl."
+  },
+  {
+   "id": "q-solo-leveling-0007",
+   "title": "Solo Leveling",
+   "source_url": "https://screenrant.com/solo-leveling-best-jinwoo-quotes/",
+   "season_episode": "аниме S2 (красные врата)",
+   "speaker": "Sung Jinwoo",
+   "text": "Is it OK if I take all of these magic beasts?",
+   "translation_ru": "Можно я заберу всех этих магических зверей?",
+   "grammar_tags": [
+    "Is it OK if...? (permission)"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 0.55
+   },
+   "confidence": "Screen Rant; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
+   "note": "полезная конструкция для путешествий; translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Is%20it%20OK%20if%20I%20take%20all%20of%20these%20magic%20beasts%3F"
+  },
+  {
+   "id": "q-solo-leveling-0008",
+   "title": "Solo Leveling",
+   "source_url": "https://screenrant.com/solo-leveling-best-jinwoo-quotes/",
+   "season_episode": "аниме S1",
+   "speaker": "Sung Jinwoo",
+   "text": "I don't even need to get angry to kill filth like you.",
+   "translation_ru": "Чтобы убить мразь вроде тебя, мне даже злиться не нужно.",
+   "grammar_tags": [
+    "Present Simple (negative)",
+    "to-infinitive"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.75
+   },
+   "confidence": "Screen Rant; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
+   "note": "translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20don%27t%20even%20need%20to%20get%20angry%20to%20kill%20filth%20like%20you."
+  },
+  {
+   "id": "q-solo-leveling-0009",
+   "title": "Solo Leveling",
+   "source_url": "https://screenrant.com/solo-leveling-best-jinwoo-quotes/",
+   "season_episode": "Jinwoo (вебтун гл. 148, эпиграф страницы фан-вики)",
+   "speaker": "Jinwoo",
+   "text": "I'm going to protect my family, even if it means turning all the hunters in the world against me",
+   "translation_ru": "Я защищу свою семью, даже если это значит, что все охотники мира ополчатся на меня.",
+   "grammar_tags": [
+    "be going to",
+    "even if",
+    "mean + gerund"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.63
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%27m%20going%20to%20protect%20my%20family%2C%20even%20if%20it%20means%20turning%20all%20the%20hunters%20in%20the%20world%20against%20me"
+  },
+  {
+   "id": "q-solo-leveling-0010",
+   "title": "Solo Leveling",
+   "source_url": "https://screenrant.com/solo-leveling-best-jinwoo-quotes/",
+   "season_episode": "Слоган франшизы (офиц. англ. название)",
+   "speaker": "Слоган франшизы",
+   "text": "I alone level up",
+   "translation_ru": "Только я прокачиваюсь.",
+   "grammar_tags": [
+    "Инверсия",
+    "phrasal level up"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 1.0
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20alone%20level%20up"
+  },
+  {
+   "id": "q-solo-leveling-0011",
+   "title": "Solo Leveling",
+   "source_url": "https://screenrant.com/solo-leveling-best-jinwoo-quotes/",
+   "season_episode": "Рассказчик о Jinwoo",
+   "speaker": "Рассказчик о Jinwoo",
+   "text": "The weakest hunter of all mankind",
+   "translation_ru": "Слабейший охотник всего человечества.",
+   "grammar_tags": [
+    "Превосходная степень",
+    "of-родительный"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 0.5
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=The%20weakest%20hunter%20of%20all%20mankind"
+  },
+  {
+   "id": "q-solo-leveling-0012",
+   "title": "Solo Leveling",
+   "source_url": "https://screenrant.com/solo-leveling-best-jinwoo-quotes/",
+   "season_episode": "System (первое сообщение, ранние главы)",
+   "speaker": "System",
+   "text": "You have acquired the qualifications to be a Player. Will you accept?",
+   "translation_ru": "Вы получили право стать Игроком. Принимаете?",
+   "grammar_tags": [
+    "Present Perfect",
+    "will-вопрос (приглашение)"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.83
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=You%20have%20acquired%20the%20qualifications%20to%20be%20a%20Player.%20Will%20you%20accept%3F"
+  },
+  {
+   "id": "q-solo-leveling-0013",
+   "title": "Solo Leveling",
+   "source_url": "https://screenrant.com/solo-leveling-best-jinwoo-quotes/",
+   "season_episode": "Jinwoo (арка Jeju)",
+   "speaker": "Jinwoo",
+   "text": "A mere insect",
+   "translation_ru": "Простое насекомое.",
+   "grammar_tags": [
+    "mere + существительное",
+    "презрение одним словом"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 0.33
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=A%20mere%20insect"
+  },
+  {
+   "id": "q-solo-leveling-0014",
+   "title": "Solo Leveling",
+   "source_url": "https://screenrant.com/solo-leveling-best-jinwoo-quotes/",
+   "season_episode": "Jinwoo (адапт. реплика S2, дубляж)",
+   "speaker": "Jinwoo",
+   "text": "Don't worry about me. I'm stronger than yesterday",
+   "translation_ru": "Не волнуйся за меня. Я сильнее, чем вчера.",
+   "grammar_tags": [
+    "worry about",
+    "сравнительная степень + than"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 0.5
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Don%27t%20worry%20about%20me.%20I%27m%20stronger%20than%20yesterday"
+  }
+ ]
+}
