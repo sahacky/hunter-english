@@ -34,18 +34,18 @@
 
 ## M2: Инициализация проекта {#M2}
 - [x] git init, первый коммит (research + файлы управления)
-- [ ] Дополнить .gitignore, добавить .env.example
+- [x] Дополнить .gitignore, добавить .env.example
 - [x] Создать приватный репозиторий `sahacky/hunter-english`
-- [ ] Защитить `main` (branch protection)
-- [ ] Решить хостинг для приватного репо: GitHub Pro / Cloudflare Pages / сделать репо публичным
-- [ ] Vite + React + TypeScript
-- [ ] ESLint + Prettier, `npm run lint`, `npm run typecheck`
-- [ ] Vitest (`npm test`) + Playwright (`npm run test:e2e`)
-- [ ] i18n: react-i18next, `src/locales/ru.json` + `en.json`, дефолт `ru`
-- [ ] Hash-роутинг, базовый layout
-- [ ] GitHub Actions: lint + test + audit + build + деплой (по решению о хостинге)
-- [ ] Supabase: проект, GitHub OAuth App, вход/выход в приложении
-- [ ] `CREDITS.md`, лицензии (MIT для кода, CC BY-SA 4.0 для `data/`)
+- [ ] Защитить `main` (branch protection) — ⚠️ 403 на приватном репо без Pro; сделать вместе с решением о хостинге
+- [ ] Решить хостинг для приватного репо: GitHub Pro / Cloudflare Pages / сделать репо публичным — deploy.yml готов, деплой включится сам при публичном репо
+- [x] Vite + React + TypeScript
+- [x] ESLint + Prettier, `npm run lint`, `npm run typecheck`
+- [x] Vitest (`npm test`) + Playwright (`npm run test:e2e`)
+- [x] i18n: react-i18next, `src/locales/ru.json` + `en.json`, дефолт `ru`
+- [x] Hash-роутинг, базовый layout
+- [x] GitHub Actions: lint + test + audit + build + деплой (гейт по видимости репо)
+- [ ] Supabase: проект, GitHub OAuth App, вход/выход в приложении — ⚠️ нужен аккаунт разработчика на supabase.com; клиент уже вшит (graceful fallback без сети)
+- [x] `CREDITS.md`, лицензии (MIT для кода, CC BY-SA 4.0 для `data/`)
 
 ## Черновик следующих майлстоунов (детализировать после M1)
 - M3: Пайплайн данных — слова (NGSL-S → NGSL → FrequencyWords), переводы (Wiktionary), примеры (Tatoeba), неправильные/фразовые глаголы, цитаты, аудио (Piper en-GB)
@@ -66,4 +66,5 @@
 | 2026-09-27 | M2: репо приватный (было публичный), добавлена задача выбора хостинга и branch protection отдельно | Решение разработчика |
 | 2026-09-27 | Добавлен M0.5: слияние параллельного ресёрча + фоновая заготовка сырых данных (обработка остаётся в M3) | Решение разработчика: базу начать готовить заранее |
 | 2026-09-27 | M1 закрыт: 8 спеков в specs/ (двухэтапное ревью, BLOCKER/MAJOR исправлены); M0.5 сырьё докачано (kaikki 1800/1800) | Делегирование разработки AI-агентам по решению разработчика |
+| 2026-09-27 | M2: скаффолд готов (Vite+React+TS, i18n, роутинг, тесты, CI), все проверки зелёные; ожидают разработчика: хостинг/branch protection/Supabase-проект | Автономная сессия AI-агентов |
 | 2026-09-27 | M0 завершён: файл-источник снят, голос выбран, резюме готово | Решение разработчика |
