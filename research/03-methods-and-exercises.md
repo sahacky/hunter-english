@@ -109,6 +109,7 @@ Retention в FSRS держим **0,90** (дефолт). Выше 0,95 нагру
 | Порядок в вопросе | Where you live? | Where do you live? | E–D |
 | Косвенный вопрос | Tell me where is the station? | Tell me where the station is. | B |
 | Запятая перед that | I think, that… | I think that… | пунктуация |
+| very перед глаголом | I very like it. | I like it very much. | D (дополнение из параллельного ресёрча) |
 
 ---
 

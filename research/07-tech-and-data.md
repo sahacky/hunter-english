@@ -50,7 +50,17 @@
 
 ---
 
-## 3. Технический стек (предложение)
+## 3.1. Прямые ссылки на датасеты (дополнено в M0.5, из параллельного ресёрча)
+
+| Что | Прямая ссылка | Примечание |
+|---|---|---|
+| NGSL 1.2 stats (word, SFI, дисперсия) | `https://www.newgeneralservicelist.com/s/NGSL_12_stats.csv` | CSV с частотным рангом |
+| Oxford 5000 JSON (word, POS, CEFR A1–C1, mp3) | `https://raw.githubusercontent.com/tyypgzl/Oxford-5000-words/main/full-word.json` | ⚠️ **только локально** (© OUP): для сверки уровней и списка mp3. В репо данные не класть |
+| COCA top-5000 | `https://www.wordfrequency.info/samples/wordFrequency.xlsx` | письменная частота, доп. сверка к NGSL + OpenSubtitles; условие — указание источника |
+
+Сырьё складывается в `data/raw/` (в `.gitignore`, не коммитится). Статус заготовки — см. WAL.
+
+## 4. Технический стек (предложение)
 
 | Слой | Выбор | Почему |
 |---|---|---|
