@@ -1,0 +1,4281 @@
+[
+ {
+  "title": "Supernatural",
+  "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_1)",
+  "season_episode": "S01E01 «Pilot»",
+  "speaker": "Dean",
+  "text": "I can't do this alone.",
+  "grammar_tags": [
+   "can/can't"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Supernatural",
+  "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_1)",
+  "season_episode": "S01E01 «Pilot»",
+  "speaker": "Sam",
+  "text": "Yes, you can!",
+  "grammar_tags": [
+   "can/can't",
+   "short answer"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "ответ на предыдущую реплику"
+ },
+ {
+  "title": "Supernatural",
+  "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_1)",
+  "season_episode": "S01E01 «Pilot»",
+  "speaker": "Dean",
+  "text": "Yeah... Well, I don't want to.",
+  "grammar_tags": [
+   "Present Simple (negative)",
+   "want to"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Supernatural",
+  "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_1)",
+  "season_episode": "S01E01 «Pilot»",
+  "speaker": "Dean",
+  "text": "Sorry, I can't hear you. The music's too loud.",
+  "grammar_tags": [
+   "can/can't",
+   "to be",
+   "too + adj"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 0.91
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Supernatural",
+  "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_1)",
+  "season_episode": "S01E08 «Bugs»",
+  "speaker": "Sam",
+  "text": "I want to find Dad.",
+  "grammar_tags": [
+   "want to + verb"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Supernatural",
+  "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_1)",
+  "season_episode": "S01E10 «Asylum»",
+  "speaker": "Sam",
+  "text": "It doesn't matter what he wants.",
+  "grammar_tags": [
+   "Present Simple (3rd person, negative)"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Supernatural",
+  "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_4)",
+  "season_episode": "S04E21 «When the Levee Breaks»",
+  "speaker": "Bobby",
+  "text": "Don't test me.",
+  "grammar_tags": [
+   "Imperative (negative)"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Supernatural",
+  "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_8)",
+  "season_episode": "S08E20 «Pac-Man Fever»",
+  "speaker": "Dean",
+  "text": "I know. Believe me, I know.",
+  "grammar_tags": [
+   "Present Simple",
+   "Imperative"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Supernatural",
+  "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_5)",
+  "season_episode": "S05E05 «Fallen Idols»",
+  "speaker": "Sam",
+  "text": "That's not the point.",
+  "grammar_tags": [
+   "to be (negative)"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Supernatural",
+  "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_4)",
+  "season_episode": "S04E10 «Heaven and Hell»",
+  "speaker": "Sam",
+  "text": "Is he working a job?",
+  "grammar_tags": [
+   "Present Continuous (question)"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "job = «дело» охотников (сленг сериала)"
+ },
+ {
+  "title": "Supernatural",
+  "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_6)",
+  "season_episode": "S06E10 «Caged Heat»",
+  "speaker": "Samuel",
+  "text": "I just want you to understand.",
+  "grammar_tags": [
+   "want + object + to"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Supernatural",
+  "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_3)",
+  "season_episode": "S03E16 «No Rest for the Wicked»",
+  "speaker": "Sam",
+  "text": "You don't mean that. We're--we're family.",
+  "grammar_tags": [
+   "Present Simple (negative)",
+   "to be"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Supernatural",
+  "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_2)",
+  "season_episode": "S02E11 «Playthings»",
+  "speaker": "Dean",
+  "text": "Dude, this is sweet! I never get to work jobs like this.",
+  "grammar_tags": [
+   "to be",
+   "Present Simple",
+   "adverb never"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "разговорное: dude, sweet"
+ },
+ {
+  "title": "Supernatural",
+  "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_8)",
+  "season_episode": "S08E22 «Clip Show»",
+  "speaker": "Crowley",
+  "text": "Saving people, hunting things. The family business.",
+  "grammar_tags": [
+   "-ing form (gerund)",
+   "noun phrase"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 0.86
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "фрагмент более длинной реплики. Кроули цитирует девиз братьев; оригинальная реплика Дина — S01E02, внутри длинного монолога",
+  "translation_ru": "Спасать людей, охотиться на тварей — семейный бизнес."
+ },
+ {
+  "title": "Game of Thrones",
+  "source_url": "https://en.wikiquote.org/wiki/Game_of_Thrones/Season_1",
+  "season_episode": "S01E01 «Winter is Coming»",
+  "speaker": "Ned Stark",
+  "text": "He won't be a boy forever. And winter is coming.",
+  "grammar_tags": [
+   "will/won't",
+   "Present Continuous (future meaning)"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 0.91
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "«Winter is coming» — отдельная карточка-фрагмент",
+  "translation_ru": "Зима близко."
+ },
+ {
+  "title": "Game of Thrones",
+  "source_url": "https://en.wikiquote.org/wiki/Game_of_Thrones/Season_2",
+  "season_episode": "S02E07 «A Man Without Honor»",
+  "speaker": "Ygritte",
+  "text": "You know nothing, Jon Snow.",
+  "grammar_tags": [
+   "Present Simple"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "translation_ru": "Ты ничего не знаешь, Джон Сноу."
+ },
+ {
+  "title": "Game of Thrones",
+  "source_url": "https://en.wikiquote.org/wiki/Game_of_Thrones/Season_1",
+  "season_episode": "S01E08 «The Pointy End»",
+  "speaker": "Syrio Forel",
+  "text": "What do we say to the god of death?",
+  "grammar_tags": [
+   "Present Simple (question)",
+   "wh-question"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "пара с «Not today.»",
+  "translation_ru": "Что мы говорим богу смерти? — Не сегодня."
+ },
+ {
+  "title": "Game of Thrones",
+  "source_url": "https://en.wikiquote.org/wiki/Game_of_Thrones/Season_1",
+  "season_episode": "S01E08 «The Pointy End»",
+  "speaker": "Arya Stark",
+  "text": "Not today.",
+  "grammar_tags": [
+   "short answer"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Game of Thrones",
+  "source_url": "https://en.wikiquote.org/wiki/Game_of_Thrones/Season_6",
+  "season_episode": "S06E05 «The Door»",
+  "speaker": "Meera Reed",
+  "text": "Hold the door!",
+  "grammar_tags": [
+   "Imperative"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Game of Thrones",
+  "source_url": "https://en.wikiquote.org/wiki/Game_of_Thrones/Season_1",
+  "season_episode": "S01E01 «Winter is Coming»",
+  "speaker": "Jon Snow",
+  "text": "I'm not a Stark.",
+  "grammar_tags": [
+   "to be (negative)"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "фрагмент более длинной реплики."
+ },
+ {
+  "title": "Game of Thrones",
+  "source_url": "https://en.wikiquote.org/wiki/Game_of_Thrones/Season_5",
+  "season_episode": "S05E09 «The Dance of Dragons»",
+  "speaker": "Stannis Baratheon",
+  "text": "My family stays with me.",
+  "grammar_tags": [
+   "Present Simple (3rd person -s)"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Game of Thrones",
+  "source_url": "https://en.wikiquote.org/wiki/Game_of_Thrones/Season_1",
+  "season_episode": "S01E07 «You Win or You Die»",
+  "speaker": "Cersei Lannister",
+  "text": "Do you love your children?",
+  "grammar_tags": [
+   "Present Simple (question)"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Game of Thrones",
+  "source_url": "https://en.wikiquote.org/wiki/Game_of_Thrones/Season_3",
+  "season_episode": "S03E10 «Mhysa»",
+  "speaker": "Arya Stark",
+  "text": "But I'm hungry.",
+  "grammar_tags": [
+   "to be + adjective"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Game of Thrones",
+  "source_url": "https://en.wikiquote.org/wiki/Game_of_Thrones/Season_6",
+  "season_episode": "S06E04 «Book of the Stranger»",
+  "speaker": "Jon Snow",
+  "text": "There's nothing to forgive.",
+  "grammar_tags": [
+   "there is"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Game of Thrones",
+  "source_url": "https://en.wikiquote.org/wiki/Game_of_Thrones/Season_1",
+  "season_episode": "S01E05 «The Wolf and the Lion»",
+  "speaker": "Cersei Lannister",
+  "text": "What do you want?",
+  "grammar_tags": [
+   "wh-question",
+   "Present Simple"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Game of Thrones",
+  "source_url": "https://en.wikiquote.org/wiki/Game_of_Thrones/Season_3",
+  "season_episode": "S03E09 «The Rains of Castamere»",
+  "speaker": "Roose Bolton",
+  "text": "The Lannisters send their regards.",
+  "grammar_tags": [
+   "Present Simple"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "regards — слово уровня B1"
+ },
+ {
+  "title": "Game of Thrones",
+  "source_url": "https://en.wikiquote.org/wiki/Game_of_Thrones/Season_4",
+  "season_episode": "S04E07 «Mockingbird»",
+  "speaker": "Tyrion Lannister",
+  "text": "You might be surprised. A Lannister always pays his debts.",
+  "grammar_tags": [
+   "might",
+   "Present Simple + always"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 0.89
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Breaking Bad",
+  "source_url": "https://en.wikiquote.org/wiki/Breaking_Bad_(season_5)",
+  "season_episode": "S05E07 «Say My Name»",
+  "speaker": "Walter",
+  "text": "That's right. Now... say my name.",
+  "grammar_tags": [
+   "Imperative",
+   "to be"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Breaking Bad",
+  "source_url": "https://en.wikiquote.org/wiki/Breaking_Bad_(season_4)",
+  "season_episode": "S04E06 «Cornered»",
+  "speaker": "Walter",
+  "text": "I am not in danger, Skyler. I am the danger!",
+  "grammar_tags": [
+   "to be (negative)",
+   "articles a/the"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 0.78
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "фрагмент длинного монолога S04E06",
+  "translation_ru": "Я не в опасности, Скайлер. Я и есть опасность."
+ },
+ {
+  "title": "Breaking Bad",
+  "source_url": "https://en.wikiquote.org/wiki/Breaking_Bad_(season_4)",
+  "season_episode": "S04E06 «Cornered»",
+  "speaker": "Walter",
+  "text": "I am the one who knocks!",
+  "grammar_tags": [
+   "to be",
+   "relative clause who"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 0.83
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "фрагмент того же монолога",
+  "translation_ru": "Парень открывает дверь — и его убивают. И ты думаешь такое обо мне? Нет. Я тот, кто стучит!"
+ },
+ {
+  "title": "Breaking Bad",
+  "source_url": "https://en.wikiquote.org/wiki/Breaking_Bad_(season_2)",
+  "season_episode": "S02E02 «Grilled»",
+  "speaker": "Walter",
+  "text": "We need a plan.",
+  "grammar_tags": [
+   "Present Simple",
+   "need"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Breaking Bad",
+  "source_url": "https://en.wikiquote.org/wiki/Breaking_Bad_(season_4)",
+  "season_episode": "S04E13 «Face Off»",
+  "speaker": "Walter",
+  "text": "It's over. We're safe.",
+  "grammar_tags": [
+   "to be"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Breaking Bad",
+  "source_url": "https://en.wikiquote.org/wiki/Breaking_Bad_(season_4)",
+  "season_episode": "S04E13 «Face Off»",
+  "speaker": "Walter",
+  "text": "I won.",
+  "grammar_tags": [
+   "Past Simple (irregular)"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Breaking Bad",
+  "source_url": "https://en.wikiquote.org/wiki/Breaking_Bad_(season_5)",
+  "season_episode": "S05E16 «Felina»",
+  "speaker": "Walter",
+  "text": "I did it for me. I liked it. I was good at it.",
+  "grammar_tags": [
+   "Past Simple",
+   "was"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "фрагмент реплики S05E16",
+  "translation_ru": "Я делал это для себя. Мне это нравилось. У меня получалось. И я был живым."
+ },
+ {
+  "title": "Breaking Bad",
+  "source_url": "https://en.wikiquote.org/wiki/Breaking_Bad_(season_2)",
+  "season_episode": "S02E07 «Negro Y Azul»",
+  "speaker": "Walter",
+  "text": "You're damn right.",
+  "grammar_tags": [
+   "to be"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "грубоватое: damn"
+ },
+ {
+  "title": "Breaking Bad",
+  "source_url": "https://en.wikiquote.org/wiki/Breaking_Bad_(season_2)",
+  "season_episode": "S02E01 «Seven-Thirty-Seven»",
+  "speaker": "Walter",
+  "text": "Don't touch them!",
+  "grammar_tags": [
+   "Imperative (negative)"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Breaking Bad",
+  "source_url": "https://en.wikiquote.org/wiki/Breaking_Bad_(season_2)",
+  "season_episode": "S02E05 «Breakage»",
+  "speaker": "Walter",
+  "text": "I want you to handle it.",
+  "grammar_tags": [
+   "want + object + to"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Breaking Bad",
+  "source_url": "https://en.wikiquote.org/wiki/Breaking_Bad_(season_1)",
+  "season_episode": "S01E06 «Crazy Handful of Nothin»",
+  "speaker": "Tuco",
+  "text": "What's your name?",
+  "grammar_tags": [
+   "wh-question",
+   "to be"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "полезно для путешествий"
+ },
+ {
+  "title": "Breaking Bad",
+  "source_url": "https://en.wikiquote.org/wiki/Breaking_Bad_(season_1)",
+  "season_episode": "S01E01 «Pilot»",
+  "speaker": "Jesse",
+  "text": "Why are you here?",
+  "grammar_tags": [
+   "wh-question",
+   "to be"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Breaking Bad",
+  "source_url": "https://en.wikiquote.org/wiki/Breaking_Bad_(season_5)",
+  "season_episode": "S05E08 «Gliding Over All»",
+  "speaker": "Walter",
+  "text": "How much is this?",
+  "grammar_tags": [
+   "How much",
+   "to be"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "фраза путешественника"
+ },
+ {
+  "title": "Breaking Bad",
+  "source_url": "https://en.wikiquote.org/wiki/Breaking_Bad_(season_5)",
+  "season_episode": "S05E08 «Gliding Over All»",
+  "speaker": "Lydia",
+  "text": "Yes, I have it.",
+  "grammar_tags": [
+   "have"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Stranger Things",
+  "source_url": "https://en.wikiquote.org/wiki/Stranger_Things/Season_2",
+  "season_episode": "S02E05 «Chapter Five: Dig Dug»",
+  "speaker": "Lucas",
+  "text": "Friends don't lie.",
+  "grammar_tags": [
+   "Present Simple (negative)"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "фрагмент реплики S02E05",
+  "translation_ru": "Друзья не врут."
+ },
+ {
+  "title": "Stranger Things",
+  "source_url": "https://en.wikiquote.org/wiki/Stranger_Things/Season_1",
+  "season_episode": "S01E06 «Chapter Six: The Monster»",
+  "speaker": "Dustin",
+  "text": "SHE'S OUR FRIEND AND SHE'S CRAZY!",
+  "grammar_tags": [
+   "to be",
+   "possessive our"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "фрагмент; в источнике капсом",
+  "translation_ru": "Она наша подруга, и она чокнутая!"
+ },
+ {
+  "title": "Stranger Things",
+  "source_url": "https://en.wikiquote.org/wiki/Stranger_Things/Season_5",
+  "season_episode": "S05E06 «Chapter Six: Escape from Camazotz»",
+  "speaker": "Nancy",
+  "text": "I love you, Jonathan Byers.",
+  "grammar_tags": [
+   "Present Simple"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Stranger Things",
+  "source_url": "https://en.wikiquote.org/wiki/Stranger_Things/Season_2",
+  "season_episode": "S02E02 «Chapter Two: Trick or Treat, Freak»",
+  "speaker": "Max",
+  "text": "It's not that bad.",
+  "grammar_tags": [
+   "to be (negative)"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Stranger Things",
+  "source_url": "https://en.wikiquote.org/wiki/Stranger_Things/Season_2",
+  "season_episode": "S02E05 «Chapter Five: Dig Dug»",
+  "speaker": "Becky Ives",
+  "text": "I... I don't understand.",
+  "grammar_tags": [
+   "Present Simple (negative)"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "фраза путешественника"
+ },
+ {
+  "title": "Stranger Things",
+  "source_url": "https://en.wikiquote.org/wiki/Stranger_Things/Season_2",
+  "season_episode": "S02E05 «Chapter Five: Dig Dug»",
+  "speaker": "Lucas",
+  "text": "You don't believe me.",
+  "grammar_tags": [
+   "Present Simple (negative)"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Stranger Things",
+  "source_url": "https://en.wikiquote.org/wiki/Stranger_Things/Season_4",
+  "season_episode": "S04E02 «Chapter Two: Vecna's Curse»",
+  "speaker": "Eddie",
+  "text": "What are you doing here?",
+  "grammar_tags": [
+   "Present Continuous (question)"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Stranger Things",
+  "source_url": "https://en.wikiquote.org/wiki/Stranger_Things/Season_5",
+  "season_episode": "S05E08 «Chapter Eight: The Rightside Up»",
+  "speaker": "Mike",
+  "text": "Please don't leave me, El. Please don't do this.",
+  "grammar_tags": [
+   "Imperative (negative)",
+   "please"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Stranger Things",
+  "source_url": "https://en.wikiquote.org/wiki/Stranger_Things/Season_3",
+  "season_episode": "S03E08 «Chapter Eight: The Battle of Starcourt»",
+  "speaker": "Suzie",
+  "text": "I want to hear it.",
+  "grammar_tags": [
+   "want to"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Stranger Things",
+  "source_url": "https://en.wikiquote.org/wiki/Stranger_Things/Season_3",
+  "season_episode": "S03E05 «Chapter Five: The Flayed»",
+  "speaker": "Joyce",
+  "text": "What is your problem?!",
+  "grammar_tags": [
+   "wh-question",
+   "to be"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Stranger Things",
+  "source_url": "https://en.wikiquote.org/wiki/Stranger_Things/Season_3",
+  "season_episode": "S03E02 «Chapter Two: The Mall Rats»",
+  "speaker": "Eleven",
+  "text": "You lie. Why do you lie? I dump your ass!",
+  "grammar_tags": [
+   "Present Simple",
+   "question with do"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 0.9
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "грубое: ass; ломаный английский Одиннадцатой"
+ },
+ {
+  "title": "Stranger Things",
+  "source_url": "https://en.wikiquote.org/wiki/Stranger_Things/Season_5",
+  "season_episode": "S05E03 «Chapter Three: The Turnbow Trap»",
+  "speaker": "Will",
+  "text": "And I’m not a kid anymore.",
+  "grammar_tags": [
+   "to be (negative)",
+   "anymore"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "фрагмент реплики S05E03"
+ },
+ {
+  "title": "The 100",
+  "source_url": "https://en.wikiquote.org/wiki/The_100_(TV_series)",
+  "season_episode": "S01E01 «Pilot»",
+  "speaker": "Octavia Blake",
+  "text": "We're back, Bitches!",
+  "grammar_tags": [
+   "to be"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "грубое"
+ },
+ {
+  "title": "The 100",
+  "source_url": "https://en.wikiquote.org/wiki/The_100_(TV_series)",
+  "season_episode": "S05E13 «Damocles, Part 2»",
+  "speaker": "Clarke Griffin and Bellamy Blake",
+  "text": "May we meet again.",
+  "grammar_tags": [
+   "may (wish)"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "ритуальная фраза сериала"
+ },
+ {
+  "title": "The 100",
+  "source_url": "https://en.wikiquote.org/wiki/The_100_(TV_series)",
+  "season_episode": "S01E01 «Pilot»",
+  "speaker": "Clarke Griffin",
+  "text": "We're not alone.",
+  "grammar_tags": [
+   "to be (negative)"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "The 100",
+  "source_url": "https://en.wikiquote.org/wiki/The_100_(TV_series)",
+  "season_episode": "S01E03 «Earth Kills»",
+  "speaker": "Finn Collins",
+  "text": "This is Earth. Everything's Toxic.",
+  "grammar_tags": [
+   "to be",
+   "everything + is"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "The 100",
+  "source_url": "https://en.wikiquote.org/wiki/The_100_(TV_series)",
+  "season_episode": "S01E09 «Unity Day»",
+  "speaker": "Octavia Blake",
+  "text": "I trust him, Clarke.",
+  "grammar_tags": [
+   "Present Simple"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "The 100",
+  "source_url": "https://en.wikiquote.org/wiki/The_100_(TV_series)",
+  "season_episode": "S04E10 «Die All, Die Merrily»",
+  "speaker": "Octavia Blake",
+  "text": "Your fight is over.",
+  "grammar_tags": [
+   "to be"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "The 100",
+  "source_url": "https://en.wikiquote.org/wiki/The_100_(TV_series)",
+  "season_episode": "S03E04 «Watch the Thrones»",
+  "speaker": "Lexa",
+  "text": "I'm the Commander. No one fights for me.",
+  "grammar_tags": [
+   "to be",
+   "Present Simple (3rd person)"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "The 100",
+  "source_url": "https://en.wikiquote.org/wiki/The_100_(TV_series)",
+  "season_episode": "S01E09 «Unity Day»",
+  "speaker": "Clarke Griffin",
+  "text": "I'm just trying to keep us alive.",
+  "grammar_tags": [
+   "Present Continuous"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "The 100",
+  "source_url": "https://en.wikiquote.org/wiki/The_100_(TV_series)",
+  "season_episode": "S01E01 «Pilot»",
+  "speaker": "Abigail Griffin",
+  "text": "Earth, Clarke. You get to go to Earth.",
+  "grammar_tags": [
+   "Present Simple",
+   "get to"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "The 100",
+  "source_url": "https://en.wikiquote.org/wiki/The_100_(TV_series)",
+  "season_episode": "S01E01 «Pilot»",
+  "speaker": "Clarke Griffin",
+  "text": "They dropped us on the wrong damn mountain.",
+  "grammar_tags": [
+   "Past Simple"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 0.88
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "грубоватое: damn"
+ },
+ {
+  "title": "The 100",
+  "source_url": "https://en.wikiquote.org/wiki/The_100_(TV_series)",
+  "season_episode": "S02E16 «Blood Must Have Blood, Part 2»",
+  "speaker": "Bellamy Blake",
+  "text": "My sister... my responsibility.",
+  "grammar_tags": [
+   "possessive my"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Black Mirror",
+  "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+  "season_episode": "S01E02 «Fifteen Million Merits»",
+  "speaker": "Bing",
+  "text": "It's not stuff. It's truth.",
+  "grammar_tags": [
+   "to be"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Black Mirror",
+  "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+  "season_episode": "S01E01 «The National Anthem»",
+  "speaker": "Martin",
+  "text": "I'm sorry, I can't help you.",
+  "grammar_tags": [
+   "can/can't",
+   "to be"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Black Mirror",
+  "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+  "season_episode": "S01E01 «The National Anthem»",
+  "speaker": "Michael",
+  "text": "You don't know that.",
+  "grammar_tags": [
+   "Present Simple (negative)"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Black Mirror",
+  "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+  "season_episode": "S04E04 «Hang the DJ»",
+  "speaker": "Coach",
+  "text": "Everything happens for a reason.",
+  "grammar_tags": [
+   "Present Simple (3rd person -s)"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "translation_ru": "Всё случается не просто так."
+ },
+ {
+  "title": "Black Mirror",
+  "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+  "season_episode": "S02E03 «The Waldo Moment»",
+  "speaker": "Gwendolyn",
+  "text": "It doesn't work like that.",
+  "grammar_tags": [
+   "Present Simple (3rd person, negative)"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Black Mirror",
+  "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+  "season_episode": "S03E02 «Playtest»",
+  "speaker": "Cooper",
+  "text": "Is that a problem?",
+  "grammar_tags": [
+   "to be (question)"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Black Mirror",
+  "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+  "season_episode": "S03E06 «Hated in the Nation»",
+  "speaker": "Blue",
+  "text": "Maybe you're old.",
+  "grammar_tags": [
+   "to be"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Black Mirror",
+  "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+  "season_episode": "S04E06 «Black Museum»",
+  "speaker": "Rachel",
+  "text": "I can't believe there's two of you!",
+  "grammar_tags": [
+   "can't believe",
+   "there is"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "разговорное there's two (норма: there are)"
+ },
+ {
+  "title": "Black Mirror",
+  "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+  "season_episode": "S04E06 «Black Museum»",
+  "speaker": "DCI Kano",
+  "text": "You can make friends with people.",
+  "grammar_tags": [
+   "can"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Black Mirror",
+  "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+  "season_episode": "S02E01 «Be Right Back»",
+  "speaker": "Martha",
+  "text": "Yeah, well, you aren't you, are you?",
+  "grammar_tags": [
+   "to be",
+   "tag question"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Black Mirror",
+  "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+  "season_episode": "S01E01 «The National Anthem»",
+  "speaker": "Jane",
+  "text": "I know people. We love humiliation. We can't not laugh.",
+  "grammar_tags": [
+   "Present Simple",
+   "can't"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 0.91
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "humiliation — B2"
+ },
+ {
+  "title": "Lord of the Rings",
+  "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings:_The_Fellowship_of_the_Ring",
+  "season_episode": "The Lord of the Rings: The Fellowship of the Ring",
+  "speaker": "Gandalf the Grey",
+  "text": "Fly, you fools!",
+  "grammar_tags": [
+   "Imperative"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 0.67
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "translation_ru": "Бегите, глупцы!"
+ },
+ {
+  "title": "Lord of the Rings",
+  "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings:_The_Fellowship_of_the_Ring",
+  "season_episode": "The Lord of the Rings: The Fellowship of the Ring",
+  "speaker": "Frodo",
+  "text": "I will take the Ring to Mordor. Though... I do not know the way.",
+  "grammar_tags": [
+   "will",
+   "Present Simple (negative)"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Lord of the Rings",
+  "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings:_The_Fellowship_of_the_Ring",
+  "season_episode": "The Lord of the Rings: The Fellowship of the Ring",
+  "speaker": "Pippin",
+  "text": "We had one, yes. What about second breakfast?",
+  "grammar_tags": [
+   "Past Simple (had)",
+   "What about...?"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 0.88
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "translation_ru": "А как же второй завтрак?"
+ },
+ {
+  "title": "Lord of the Rings",
+  "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings:_The_Fellowship_of_the_Ring",
+  "season_episode": "The Lord of the Rings: The Fellowship of the Ring",
+  "speaker": "Frodo",
+  "text": "Sam... I'm glad you're with me.",
+  "grammar_tags": [
+   "to be + adjective"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "translation_ru": "Я рад, что ты со мной."
+ },
+ {
+  "title": "Lord of the Rings",
+  "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings:_The_Fellowship_of_the_Ring",
+  "season_episode": "The Lord of the Rings: The Fellowship of the Ring",
+  "speaker": "Frodo",
+  "text": "I cannot do this alone.",
+  "grammar_tags": [
+   "can/cannot"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "перекличка с Supernatural S01E01"
+ },
+ {
+  "title": "Lord of the Rings",
+  "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King",
+  "season_episode": "The Lord of the Rings: The Return of the King",
+  "speaker": "Samwise",
+  "text": "I can't carry it for you...BUT I CAN CARRY YOU!",
+  "grammar_tags": [
+   "can/can't"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "фрагмент реплики"
+ },
+ {
+  "title": "Lord of the Rings",
+  "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King",
+  "season_episode": "The Lord of the Rings: The Return of the King",
+  "speaker": "Aragorn",
+  "text": "I do not fear death.",
+  "grammar_tags": [
+   "Present Simple (negative)"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Lord of the Rings",
+  "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings:_The_Fellowship_of_the_Ring",
+  "season_episode": "The Lord of the Rings: The Fellowship of the Ring",
+  "speaker": "Galadriel",
+  "text": "Even the smallest person can change the course of the future.",
+  "grammar_tags": [
+   "can",
+   "superlative"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "translation_ru": "Даже самый маленький может изменить ход будущего."
+ },
+ {
+  "title": "Lord of the Rings",
+  "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King",
+  "season_episode": "The Lord of the Rings: The Return of the King",
+  "speaker": "Elrond",
+  "text": "Nothing is certain.",
+  "grammar_tags": [
+   "to be"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Lord of the Rings",
+  "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King",
+  "season_episode": "The Lord of the Rings: The Return of the King",
+  "speaker": "Aragorn",
+  "text": "My friends...you bow to no one.",
+  "grammar_tags": [
+   "Present Simple"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 0.86
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Lord of the Rings",
+  "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings:_The_Two_Towers",
+  "season_episode": "The Lord of the Rings: The Two Towers",
+  "speaker": "Aragorn",
+  "text": "It's a long way.",
+  "grammar_tags": [
+   "to be"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "фраза путешественника"
+ },
+ {
+  "title": "Lord of the Rings",
+  "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King",
+  "season_episode": "The Lord of the Rings: The Return of the King",
+  "speaker": "Samwise",
+  "text": "I'm on your side, Mr. Frodo.",
+  "grammar_tags": [
+   "to be",
+   "prepositions"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 0.83
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Lord of the Rings",
+  "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King",
+  "season_episode": "The Lord of the Rings: The Return of the King",
+  "speaker": "Frodo",
+  "text": "I'm glad to be with you, Samwise Gamgee, here at the end of all things.",
+  "grammar_tags": [
+   "to be + adjective",
+   "to-infinitive"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Star Wars",
+  "source_url": "https://en.wikiquote.org/wiki/Star_Wars_(film)",
+  "season_episode": "Star Wars (film)",
+  "speaker": "Han Solo",
+  "text": "May the Force be with you.",
+  "grammar_tags": [
+   "may (wish)"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "translation_ru": "Да пребудет с тобой Сила."
+ },
+ {
+  "title": "Star Wars",
+  "source_url": "https://en.wikiquote.org/wiki/The_Empire_Strikes_Back",
+  "season_episode": "The Empire Strikes Back",
+  "speaker": "Vader",
+  "text": "No. I am your father.",
+  "grammar_tags": [
+   "to be"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "translation_ru": "Нет. Я твой отец."
+ },
+ {
+  "title": "Star Wars",
+  "source_url": "https://en.wikiquote.org/wiki/The_Empire_Strikes_Back",
+  "season_episode": "The Empire Strikes Back",
+  "speaker": "Leia",
+  "text": "I love you.",
+  "grammar_tags": [
+   "Present Simple"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "пара с «I know.»",
+  "translation_ru": "Я люблю тебя. — Я знаю."
+ },
+ {
+  "title": "Star Wars",
+  "source_url": "https://en.wikiquote.org/wiki/The_Empire_Strikes_Back",
+  "season_episode": "The Empire Strikes Back",
+  "speaker": "Han",
+  "text": "I know.",
+  "grammar_tags": [
+   "Present Simple"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Star Wars",
+  "source_url": "https://en.wikiquote.org/wiki/The_Empire_Strikes_Back",
+  "season_episode": "The Empire Strikes Back",
+  "speaker": "Yoda",
+  "text": "No! Try not. Do... or do not. There is no try.",
+  "grammar_tags": [
+   "Imperative",
+   "there is"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "translation_ru": "Делай или не делай. Попытки не существует."
+ },
+ {
+  "title": "Star Wars",
+  "source_url": "https://en.wikiquote.org/wiki/Star_Wars_(film)",
+  "season_episode": "Star Wars (film)",
+  "speaker": "Luke Skywalker",
+  "text": "I have a very bad feeling about this.",
+  "grammar_tags": [
+   "have"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "повторяется во всех фильмах"
+ },
+ {
+  "title": "Star Wars",
+  "source_url": "https://en.wikiquote.org/wiki/Star_Wars_(film)",
+  "season_episode": "Star Wars (film)",
+  "speaker": "Obi-Wan Kenobi",
+  "text": "Use the Force, Luke.",
+  "grammar_tags": [
+   "Imperative"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "translation_ru": "Используй Силу, Люк."
+ },
+ {
+  "title": "Star Wars",
+  "source_url": "https://en.wikiquote.org/wiki/Star_Wars_(film)",
+  "season_episode": "Star Wars (film)",
+  "speaker": "Darth Vader",
+  "text": "The Force is strong with this one.",
+  "grammar_tags": [
+   "to be"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "translation_ru": "Сила сильна в этом."
+ },
+ {
+  "title": "Star Wars",
+  "source_url": "https://en.wikiquote.org/wiki/The_Empire_Strikes_Back",
+  "season_episode": "The Empire Strikes Back",
+  "speaker": "Yoda",
+  "text": "That is why you fail.",
+  "grammar_tags": [
+   "Present Simple",
+   "that is why"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "translation_ru": "Вот почему ты проигрываешь."
+ },
+ {
+  "title": "Star Wars",
+  "source_url": "https://en.wikiquote.org/wiki/Return_of_the_Jedi",
+  "season_episode": "Return of the Jedi",
+  "speaker": "Ackbar",
+  "text": "It's a trap!",
+  "grammar_tags": [
+   "to be",
+   "article a"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 0.75
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "мем"
+ },
+ {
+  "title": "Star Wars",
+  "source_url": "https://en.wikiquote.org/wiki/The_Empire_Strikes_Back",
+  "season_episode": "The Empire Strikes Back",
+  "speaker": "Obi-Wan",
+  "text": "That boy is our last hope.",
+  "grammar_tags": [
+   "to be"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Star Wars",
+  "source_url": "https://en.wikiquote.org/wiki/Return_of_the_Jedi",
+  "season_episode": "Return of the Jedi",
+  "speaker": "Luke",
+  "text": "He's my father.",
+  "grammar_tags": [
+   "to be"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Star Wars",
+  "source_url": "https://en.wikiquote.org/wiki/The_Empire_Strikes_Back",
+  "season_episode": "The Empire Strikes Back",
+  "speaker": "Han",
+  "text": "Never tell me the odds!",
+  "grammar_tags": [
+   "Imperative (never)"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 0.8
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "odds — B2",
+  "translation_ru": "Никогда не говори мне о вероятностях!"
+ },
+ {
+  "title": "Star Wars",
+  "source_url": "https://en.wikiquote.org/wiki/The_Empire_Strikes_Back",
+  "season_episode": "The Empire Strikes Back",
+  "speaker": "Vader",
+  "text": "Search your feelings. You know it to be true.",
+  "grammar_tags": [
+   "Imperative",
+   "Present Simple"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Berserk",
+  "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+  "season_episode": "манга: раздел «Guts»",
+  "speaker": "Guts",
+  "text": "Do whatever you want now. But if you disturb me, I'll kill you.",
+  "grammar_tags": [
+   "Imperative",
+   "First Conditional"
+  ],
+  "est_rank": "B",
+  "auto_vocab": {
+   "top1000": 0.93
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "раздел манги (перевод манги, не дубляж)"
+ },
+ {
+  "title": "Berserk",
+  "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+  "season_episode": "манга: раздел «Guts»",
+  "speaker": "Guts",
+  "text": "I'd rather fight for my life than live it.",
+  "grammar_tags": [
+   "would rather"
+  ],
+  "est_rank": "B",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "раздел манги",
+  "translation_ru": "Лучше я буду драться за свою жизнь, чем просто жить её."
+ },
+ {
+  "title": "Berserk",
+  "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+  "season_episode": "манга: раздел «Guts»",
+  "speaker": "Guts",
+  "text": "In the end the winner is still the last man standing.",
+  "grammar_tags": [
+   "to be",
+   "superlative/last"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 0.91
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "раздел манги",
+  "translation_ru": "В конце концов победитель — всё ещё тот, кто остался на ногах."
+ },
+ {
+  "title": "Berserk",
+  "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+  "season_episode": "манга: раздел «Guts»",
+  "speaker": "Guts",
+  "text": "When you meet your God, tell him to leave me alone.",
+  "grammar_tags": [
+   "Imperative",
+   "when-clause"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "раздел манги",
+  "translation_ru": "Когда встретишь своего бога, скажи ему, чтобы он оставил меня в покое."
+ },
+ {
+  "title": "Berserk",
+  "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+  "season_episode": "манга: раздел «Griffith»",
+  "speaker": "Griffith",
+  "text": "A dream... It's something you do for yourself, not for others.",
+  "grammar_tags": [
+   "to be",
+   "Present Simple"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "раздел манги"
+ },
+ {
+  "title": "Berserk",
+  "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+  "season_episode": "аниме 1997: «Bonfire of Dreams»",
+  "speaker": "Guts",
+  "text": "Alright! Let's have a drink.",
+  "grammar_tags": [
+   "Let's"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "аниме 1997, серия «Bonfire of Dreams»"
+ },
+ {
+  "title": "Berserk",
+  "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+  "season_episode": "аниме 1997: «First Battle»",
+  "speaker": "Griffith",
+  "text": "From now on, he is a member of the Hawks!",
+  "grammar_tags": [
+   "to be"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "аниме 1997, «First Battle»"
+ },
+ {
+  "title": "Berserk",
+  "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+  "season_episode": "аниме 1997: «Prepared For Death»",
+  "speaker": "Casca",
+  "text": "You know nothing about women!",
+  "grammar_tags": [
+   "Present Simple"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "аниме 1997"
+ },
+ {
+  "title": "Berserk",
+  "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+  "season_episode": "аниме 1997: «The Advent»",
+  "speaker": "Guts",
+  "text": "Casca! It's me. Guts!",
+  "grammar_tags": [
+   "to be"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 0.6
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "аниме 1997, «The Advent»"
+ },
+ {
+  "title": "Berserk",
+  "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+  "season_episode": "аниме 1997: «The Advent»",
+  "speaker": "Guts",
+  "text": "Who the hell are you?",
+  "grammar_tags": [
+   "wh-question",
+   "to be"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "грубоватое: the hell"
+ },
+ {
+  "title": "FMA / FMA:B",
+  "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist_(anime)",
+  "season_episode": "Recurring Quotes",
+  "speaker": "Alphonse",
+  "text": "Humankind cannot gain anything without first giving something in return.",
+  "grammar_tags": [
+   "can/cannot",
+   "without + -ing"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 0.9
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "фрагмент вступления (FMA 2003 и Brotherhood)",
+  "translation_ru": "Человек не может ничего получить, ничего не отдав взамен. Чтобы получить, должно быть потеряно нечто равной ценности."
+ },
+ {
+  "title": "FMA / FMA:B",
+  "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist:_Brotherhood_(anime)",
+  "season_episode": "S01E01 «Fullmetal Alchemist»",
+  "speaker": "Edward",
+  "text": "DON'T CALL ME LITTLE!",
+  "grammar_tags": [
+   "Imperative (negative)"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "фрагмент более длинной реплики. Brotherhood; в источнике капсом"
+ },
+ {
+  "title": "FMA / FMA:B",
+  "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist:_Brotherhood_(anime)",
+  "season_episode": "S01E01 «Fullmetal Alchemist»",
+  "speaker": "Alphonse Elric",
+  "text": "I'm his younger brother, Alphonse.",
+  "grammar_tags": [
+   "to be",
+   "comparative younger"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "фрагмент более длинной реплики. Brotherhood 1.01, фрагмент"
+ },
+ {
+  "title": "FMA / FMA:B",
+  "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist:_Brotherhood_(anime)",
+  "season_episode": "S01E03 «City of Heresy»",
+  "speaker": "Edward",
+  "text": "Stand up and walk. Keep moving forward. You've got two good legs.",
+  "grammar_tags": [
+   "Imperative",
+   "have got"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 0.92
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "фрагмент более длинной реплики. Brotherhood 1.03, фрагмент"
+ },
+ {
+  "title": "FMA / FMA:B",
+  "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist_(anime)",
+  "season_episode": "S01E47 «Sealing the Homunculus»",
+  "speaker": "Alphonse",
+  "text": "Brother, you don't understand.",
+  "grammar_tags": [
+   "Present Simple (negative)"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "FMA 2003"
+ },
+ {
+  "title": "FMA / FMA:B",
+  "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist:_Brotherhood_(anime)",
+  "season_episode": "S01E20 «Father Before the Grave»",
+  "speaker": "Alphonse",
+  "text": "I'm sorry, brother.",
+  "grammar_tags": [
+   "to be"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "Brotherhood"
+ },
+ {
+  "title": "FMA / FMA:B",
+  "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist_(anime)",
+  "season_episode": "S01E24 «Bonding Memories (Affixing Memories)»",
+  "speaker": "Alphonse",
+  "text": "Brother, I could never... I could never hate you!",
+  "grammar_tags": [
+   "could"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "FMA 2003"
+ },
+ {
+  "title": "FMA / FMA:B",
+  "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist_(anime)",
+  "season_episode": "S01E41 «Holy Mother»",
+  "speaker": "Alphonse",
+  "text": "Is it from my brother? Is he okay?",
+  "grammar_tags": [
+   "to be (question)"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "FMA 2003"
+ },
+ {
+  "title": "FMA / FMA:B",
+  "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist:_Brotherhood_(anime)",
+  "season_episode": "S01E64 «Journey's End»",
+  "speaker": "Edward",
+  "text": "Equivalent exchange!",
+  "grammar_tags": [
+   "noun phrase"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 0.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "Brotherhood; ключевой термин (B2-лексика)"
+ },
+ {
+  "title": "FMA / FMA:B",
+  "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist:_Brotherhood_(anime)",
+  "season_episode": "S01E01 «Fullmetal Alchemist»",
+  "speaker": "Edward",
+  "text": "What a nasty thing to do.",
+  "grammar_tags": [
+   "What a ...!"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 0.83
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "Brotherhood 1.01"
+ },
+ {
+  "title": "FMA / FMA:B",
+  "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist:_Brotherhood_(anime)",
+  "season_episode": "S01E01 «Fullmetal Alchemist»",
+  "speaker": "Isaac",
+  "text": "Water freezes, water boils. Either way, you're just as dead.",
+  "grammar_tags": [
+   "Present Simple (3rd person -s)"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 0.82
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "фрагмент более длинной реплики. Brotherhood 1.01"
+ },
+ {
+  "title": "FMA / FMA:B",
+  "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist_(anime)",
+  "season_episode": "S01E42 «His Name is Unknown»",
+  "speaker": "Alphonse",
+  "text": "Brother, please do something.",
+  "grammar_tags": [
+   "Imperative",
+   "please"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "note": "FMA 2003"
+ },
+ {
+  "title": "Attack on Titan",
+  "source_url": "https://en.wikiquote.org/wiki/Attack_on_Titan",
+  "season_episode": "Return to Shiganshina (chapters 71-90, episodes 50-59)",
+  "speaker": "Levi, to Erwin",
+  "text": "Give up on your dreams and die!",
+  "grammar_tags": [
+   "Imperative",
+   "phrasal verb give up"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "translation_ru": "Откажись от мечты и умри!"
+ },
+ {
+  "title": "Attack on Titan",
+  "source_url": "https://en.wikiquote.org/wiki/Attack_on_Titan",
+  "season_episode": "Quotes to be Organized",
+  "speaker": "Armin",
+  "text": "Someone who can't sacrifice anything, can't ever change anything.",
+  "grammar_tags": [
+   "can/can't",
+   "relative clause who"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 0.91
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "translation_ru": "Тот, кто ничем не может пожертвовать, ничего никогда не изменит."
+ },
+ {
+  "title": "Attack on Titan",
+  "source_url": "https://en.wikiquote.org/wiki/Attack_on_Titan",
+  "season_episode": "Quotes to be Organized",
+  "speaker": "Eren",
+  "text": "Because I was born into this world!",
+  "grammar_tags": [
+   "was born"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "translation_ru": "Потому что я родился в этом мире!"
+ },
+ {
+  "title": "Attack on Titan",
+  "source_url": "https://en.wikiquote.org/wiki/Attack_on_Titan",
+  "season_episode": "Female Titan (chapters 19-34, episodes 14-25)",
+  "speaker": "Erwin",
+  "text": "Sorry, that was a strange thing to ask.",
+  "grammar_tags": [
+   "Past Simple (was)"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "verbatim (Wikiquote)"
+ },
+ {
+  "title": "Attack on Titan",
+  "source_url": "https://en.wikiquote.org/wiki/Attack_on_Titan",
+  "season_episode": "Female Titan (chapters 19-34, episodes 14-25)",
+  "speaker": "Erwin",
+  "text": "Who’s the real enemy here?",
+  "grammar_tags": [
+   "wh-question",
+   "to be"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 0.83
+  },
+  "confidence": "verbatim (Wikiquote)",
+  "translation_ru": "Кто здесь настоящий враг?"
+ },
+ {
+  "title": "Attack on Titan",
+  "source_url": "https://www.imdb.com/title/tt2560140/quotes/",
+  "season_episode": "",
+  "speaker": "Eren Jaeger",
+  "text": "I just keep moving forward. Until I destroy my enemies.",
+  "grammar_tags": [
+   "Present Simple",
+   "until-clause"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 0.8
+  },
+  "confidence": "IMDb (англ. дубляж/сабы, пользовательский ввод)"
+ },
+ {
+  "title": "Attack on Titan",
+  "source_url": "https://www.imdb.com/title/tt2560140/quotes/",
+  "season_episode": "",
+  "speaker": "Mikasa Ackermann",
+  "text": "This world is cruel... But it's also very beautiful.",
+  "grammar_tags": [
+   "to be",
+   "adverbs also/very"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 0.9
+  },
+  "confidence": "IMDb"
+ },
+ {
+  "title": "Attack on Titan",
+  "source_url": "https://www.imdb.com/title/tt2560140/quotes/",
+  "season_episode": "",
+  "speaker": "Eren Jaeger",
+  "text": "Fight!",
+  "grammar_tags": [
+   "Imperative"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "IMDb",
+  "note": "«Tatakae» в англ. версии"
+ },
+ {
+  "title": "Attack on Titan",
+  "source_url": "https://www.imdb.com/title/tt2560140/quotes/",
+  "season_episode": "",
+  "speaker": "Soldier",
+  "text": "May I please have some of that Potato?",
+  "grammar_tags": [
+   "May I...? (polite request)"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "IMDb",
+  "note": "сцена Саши с картошкой; вежливая просьба — полезно в кафе"
+ },
+ {
+  "title": "Attack on Titan",
+  "source_url": "https://www.imdb.com/title/tt2560140/quotes/",
+  "season_episode": "",
+  "speaker": "Eren Jaeger",
+  "text": "You're a disease!",
+  "grammar_tags": [
+   "to be",
+   "article a"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "IMDb"
+ },
+ {
+  "title": "Attack on Titan",
+  "source_url": "https://www.imdb.com/title/tt2560140/quotes/",
+  "season_episode": "",
+  "speaker": "Eren Jaeger",
+  "text": "I'll stay alive to keep his memory alive.",
+  "grammar_tags": [
+   "will",
+   "to-infinitive of purpose"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "IMDb"
+ },
+ {
+  "title": "Berserk",
+  "source_url": "https://www.imdb.com/title/tt0318871/quotes/",
+  "season_episode": "аниме 1997",
+  "speaker": "Guts / Judeau",
+  "text": "What kind of a man is he? — Griffith? I don't know.",
+  "grammar_tags": [
+   "wh-question",
+   "Present Simple (negative)"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 0.92
+  },
+  "confidence": "IMDb",
+  "note": "мини-диалог из двух реплик"
+ },
+ {
+  "title": "Berserk",
+  "source_url": "https://www.imdb.com/title/tt0318871/quotes/",
+  "season_episode": "аниме 1997",
+  "speaker": "Guts",
+  "text": "Every sword belongs in its sheath.",
+  "grammar_tags": [
+   "Present Simple (3rd person -s)"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 0.5
+  },
+  "confidence": "IMDb",
+  "note": "фрагмент реплики; sheath — редкое слово"
+ },
+ {
+  "title": "Jujutsu Kaisen",
+  "source_url": "https://screenrant.com/best-jujutsu-kaisen-quotes/",
+  "season_episode": "манга, гл. 221 (в аниме — позже)",
+  "speaker": "Satoru Gojo",
+  "text": "Nah, I'd win.",
+  "grammar_tags": [
+   "would ('d)"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 0.75
+  },
+  "confidence": "статья Screen Rant; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
+  "note": "мем; у фразы спорная история перевода — см. KYM nah-id-win"
+ },
+ {
+  "title": "Jujutsu Kaisen",
+  "source_url": "https://screenrant.com/best-jujutsu-kaisen-quotes/",
+  "season_episode": "аниме S2",
+  "speaker": "Satoru Gojo",
+  "text": "Throughout Heaven and Earth, I alone am the honored one.",
+  "grammar_tags": [
+   "to be"
+  ],
+  "est_rank": "B",
+  "auto_vocab": {
+   "top1000": 0.88
+  },
+  "confidence": "статья Screen Rant; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
+  "translation_ru": "Под небом и на земле я один — достойный."
+ },
+ {
+  "title": "Jujutsu Kaisen",
+  "source_url": "https://screenrant.com/best-jujutsu-kaisen-quotes/",
+  "season_episode": "Jujutsu Kaisen 0",
+  "speaker": "Satoru Gojo",
+  "text": "Love is the most twisted curse of all.",
+  "grammar_tags": [
+   "to be",
+   "superlative"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 0.75
+  },
+  "confidence": "Screen Rant + ComicBook; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован"
+ },
+ {
+  "title": "Jujutsu Kaisen",
+  "source_url": "https://comicbook.com/anime/news/best-jujutsu-kaisen-quotes-ranked/",
+  "season_episode": "аниме S2E1 «Hidden Inventory»",
+  "speaker": "Satoru Gojo",
+  "text": "You cryin'?",
+  "grammar_tags": [
+   "Present Continuous (разговорный, без are)"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 0.5
+  },
+  "confidence": "ComicBook (указан англ. дубляж); уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
+  "note": "разговорное опущение are"
+ },
+ {
+  "title": "Jujutsu Kaisen",
+  "source_url": "https://comicbook.com/anime/news/best-jujutsu-kaisen-quotes-ranked/",
+  "season_episode": "аниме S2",
+  "speaker": "Satoru Gojo",
+  "text": "We're the strongest.",
+  "grammar_tags": [
+   "to be",
+   "superlative"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "ComicBook; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован"
+ },
+ {
+  "title": "Jujutsu Kaisen",
+  "source_url": "https://comicbook.com/anime/news/best-jujutsu-kaisen-quotes-ranked/",
+  "season_episode": "",
+  "speaker": "Aoi Todo",
+  "text": "What kind of woman is your type?",
+  "grammar_tags": [
+   "wh-question",
+   "to be"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "ComicBook; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован"
+ },
+ {
+  "title": "Jujutsu Kaisen",
+  "source_url": "https://comicbook.com/anime/news/best-jujutsu-kaisen-quotes-ranked/",
+  "season_episode": "",
+  "speaker": "Kento Nanami",
+  "text": "Being a child is not a sin.",
+  "grammar_tags": [
+   "-ing subject",
+   "to be (negative)"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 0.86
+  },
+  "confidence": "ComicBook; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован"
+ },
+ {
+  "title": "Jujutsu Kaisen",
+  "source_url": "https://comicbook.com/anime/news/best-jujutsu-kaisen-quotes-ranked/",
+  "season_episode": "аниме S2 (Шибуя)",
+  "speaker": "Kento Nanami",
+  "text": "Itadori, you've got it from here.",
+  "grammar_tags": [
+   "have got"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 0.86
+  },
+  "confidence": "ComicBook; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован"
+ },
+ {
+  "title": "Jujutsu Kaisen",
+  "source_url": "https://jujutsu-kaisen.fandom.com/wiki/Yuji_Itadori",
+  "season_episode": "гл. 87 / эп. 32",
+  "speaker": "Yuji Itadori",
+  "text": "Smart people usually don't brag about being smart.",
+  "grammar_tags": [
+   "Present Simple (negative)",
+   "adverb usually",
+   "about + -ing"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 0.89
+  },
+  "confidence": "Jujutsu Kaisen Wiki (Fandom), раздел Quotes — перевод манги"
+ },
+ {
+  "title": "Solo Leveling",
+  "source_url": "https://screenrant.com/solo-leveling-best-jinwoo-quotes/",
+  "season_episode": "аниме, фирменная фраза",
+  "speaker": "Sung Jinwoo",
+  "text": "Arise.",
+  "grammar_tags": [
+   "Imperative"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 0.0
+  },
+  "confidence": "Screen Rant; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
+  "note": "arise — книжное слово, но ключевое для фанатов",
+  "translation_ru": "Восстань."
+ },
+ {
+  "title": "Solo Leveling",
+  "source_url": "https://screenrant.com/solo-leveling-best-jinwoo-quotes/",
+  "season_episode": "аниме",
+  "speaker": "Sung Jinwoo",
+  "text": "I've been leveling up this whole time.",
+  "grammar_tags": [
+   "Present Perfect Continuous"
+  ],
+  "est_rank": "B",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "Screen Rant; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован"
+ },
+ {
+  "title": "Solo Leveling",
+  "source_url": "https://screenrant.com/solo-leveling-best-jinwoo-quotes/",
+  "season_episode": "аниме S2 (финал)",
+  "speaker": "Sung Jinwoo",
+  "text": "On to the next target.",
+  "grammar_tags": [
+   "prepositional phrase"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "Screen Rant; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован"
+ },
+ {
+  "title": "Solo Leveling",
+  "source_url": "https://screenrant.com/solo-leveling-best-jinwoo-quotes/",
+  "season_episode": "аниме S2 (Чеджу)",
+  "speaker": "Sung Jinwoo",
+  "text": "Fancy that. A talking bug.",
+  "grammar_tags": [
+   "-ing adjective"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 0.6
+  },
+  "confidence": "Screen Rant; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован"
+ },
+ {
+  "title": "Solo Leveling",
+  "source_url": "https://screenrant.com/solo-leveling-best-jinwoo-quotes/",
+  "season_episode": "аниме",
+  "speaker": "Sung Jinwoo",
+  "text": "Because it's only the strong who survive!",
+  "grammar_tags": [
+   "to be",
+   "the + adjective",
+   "relative clause who"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 0.88
+  },
+  "confidence": "Screen Rant; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован"
+ },
+ {
+  "title": "Solo Leveling",
+  "source_url": "https://screenrant.com/solo-leveling-best-jinwoo-quotes/",
+  "season_episode": "аниме S2",
+  "speaker": "Sung Jinwoo",
+  "text": "I'm borrowing this girl.",
+  "grammar_tags": [
+   "Present Continuous"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 0.8
+  },
+  "confidence": "Screen Rant; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован"
+ },
+ {
+  "title": "Solo Leveling",
+  "source_url": "https://screenrant.com/solo-leveling-best-jinwoo-quotes/",
+  "season_episode": "аниме S2 (красные врата)",
+  "speaker": "Sung Jinwoo",
+  "text": "Is it OK if I take all of these magic beasts?",
+  "grammar_tags": [
+   "Is it OK if...? (permission)"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 0.82
+  },
+  "confidence": "Screen Rant; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
+  "note": "полезная конструкция для путешествий"
+ },
+ {
+  "title": "Solo Leveling",
+  "source_url": "https://screenrant.com/solo-leveling-best-jinwoo-quotes/",
+  "season_episode": "аниме S1",
+  "speaker": "Sung Jinwoo",
+  "text": "I don't even need to get angry to kill filth like you.",
+  "grammar_tags": [
+   "Present Simple (negative)",
+   "to-infinitive"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 0.92
+  },
+  "confidence": "Screen Rant; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован"
+ },
+ {
+  "title": "Игры",
+  "source_url": "https://www.polygon.com/best-video-game-quotes/",
+  "season_episode": "The Legend of Zelda (1986)",
+  "speaker": "old man",
+  "text": "It's dangerous to go alone! Take this.",
+  "grammar_tags": [
+   "to be + adj + to-infinitive",
+   "Imperative"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "Polygon (топ-100)"
+ },
+ {
+  "title": "Игры",
+  "source_url": "https://www.polygon.com/best-video-game-quotes/",
+  "season_episode": "Diablo (1996)",
+  "speaker": "Deckard Cain",
+  "text": "Stay awhile, and listen.",
+  "grammar_tags": [
+   "Imperative"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 0.75
+  },
+  "confidence": "Polygon"
+ },
+ {
+  "title": "Игры",
+  "source_url": "https://www.polygon.com/best-video-game-quotes/",
+  "season_episode": "The Elder Scrolls V: Skyrim (2011)",
+  "speaker": "стражники",
+  "text": "I used to be an adventurer like you. Then I took an arrow in the knee.",
+  "grammar_tags": [
+   "used to",
+   "Past Simple"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 0.81
+  },
+  "confidence": "Polygon"
+ },
+ {
+  "title": "Игры",
+  "source_url": "https://www.polygon.com/best-video-game-quotes/",
+  "season_episode": "Portal (2007)",
+  "speaker": "надпись на стене",
+  "text": "The cake is a lie.",
+  "grammar_tags": [
+   "to be"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 0.8
+  },
+  "confidence": "Polygon"
+ },
+ {
+  "title": "Игры",
+  "source_url": "https://www.polygon.com/best-video-game-quotes/",
+  "season_episode": "Super Mario Bros. (1985)",
+  "speaker": "Toad",
+  "text": "Thank you Mario! But our princess is in another castle!",
+  "grammar_tags": [
+   "to be",
+   "prepositions in"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 0.78
+  },
+  "confidence": "Polygon"
+ },
+ {
+  "title": "Игры",
+  "source_url": "https://www.polygon.com/best-video-game-quotes/",
+  "season_episode": "God of War (2018)",
+  "speaker": "Kratos",
+  "text": "Don't be sorry. Be better.",
+  "grammar_tags": [
+   "Imperative (be)",
+   "comparative better"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "Polygon"
+ },
+ {
+  "title": "Игры",
+  "source_url": "https://www.polygon.com/best-video-game-quotes/",
+  "season_episode": "Grand Theft Auto: San Andreas (2004)",
+  "speaker": "CJ",
+  "text": "Ah shit, here we go again.",
+  "grammar_tags": [
+   "here we go"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "Polygon",
+  "note": "грубое: shit"
+ },
+ {
+  "title": "Игры",
+  "source_url": "https://www.polygon.com/best-video-game-quotes/",
+  "season_episode": "Undertale (2015)",
+  "speaker": "Frisk",
+  "text": "Despite everything, it's still you.",
+  "grammar_tags": [
+   "to be",
+   "despite"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "Polygon"
+ },
+ {
+  "title": "Игры",
+  "source_url": "https://www.polygon.com/best-video-game-quotes/",
+  "season_episode": "Fallout (серия)",
+  "speaker": "рассказчик",
+  "text": "War. War never changes.",
+  "grammar_tags": [
+   "Present Simple (3rd person -s)",
+   "never"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "Polygon"
+ },
+ {
+  "title": "Игры",
+  "source_url": "https://www.polygon.com/best-video-game-quotes/",
+  "season_episode": "Dark Souls (2011)",
+  "speaker": "Solaire",
+  "text": "Praise the sun!",
+  "grammar_tags": [
+   "Imperative"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 0.67
+  },
+  "confidence": "Polygon",
+  "note": "praise — B1"
+ },
+ {
+  "title": "Игры",
+  "source_url": "https://www.polygon.com/best-video-game-quotes/",
+  "season_episode": "The Legend of Zelda: Ocarina of Time (1998)",
+  "speaker": "Navi",
+  "text": "Hey! Listen!",
+  "grammar_tags": [
+   "Imperative"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "Polygon"
+ },
+ {
+  "title": "Игры",
+  "source_url": "https://www.polygon.com/best-video-game-quotes/",
+  "season_episode": "Star Fox 64 (1997)",
+  "speaker": "Peppy",
+  "text": "Do a barrel roll!",
+  "grammar_tags": [
+   "Imperative"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 0.5
+  },
+  "confidence": "Polygon"
+ },
+ {
+  "title": "Игры",
+  "source_url": "https://www.polygon.com/best-video-game-quotes/",
+  "season_episode": "Mortal Kombat (1992)",
+  "speaker": "Scorpion",
+  "text": "Get over here!",
+  "grammar_tags": [
+   "Imperative",
+   "phrasal verb"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "Polygon"
+ },
+ {
+  "title": "Игры",
+  "source_url": "https://www.polygon.com/best-video-game-quotes/",
+  "season_episode": "Souls-серия",
+  "speaker": "экран смерти",
+  "text": "You died.",
+  "grammar_tags": [
+   "Past Simple"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "Polygon"
+ },
+ {
+  "title": "Игры",
+  "source_url": "https://www.polygon.com/best-video-game-quotes/",
+  "season_episode": "The Oregon Trail",
+  "speaker": "игра",
+  "text": "You have died of dysentery.",
+  "grammar_tags": [
+   "Present Perfect"
+  ],
+  "est_rank": "B",
+  "auto_vocab": {
+   "top1000": 0.8
+  },
+  "confidence": "Polygon"
+ },
+ {
+  "title": "Игры",
+  "source_url": "https://www.polygon.com/best-video-game-quotes/",
+  "season_episode": "Pokémon",
+  "speaker": "Youngster",
+  "text": "Hi! I like shorts! They're comfy and easy to wear!",
+  "grammar_tags": [
+   "Present Simple",
+   "to be + adj + to-infinitive"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 0.91
+  },
+  "confidence": "Polygon"
+ },
+ {
+  "title": "Мемы",
+  "source_url": "https://knowyourmeme.com/memes/this-is-fine",
+  "season_episode": "веб-комикс Gunshow (K.C. Green)",
+  "speaker": "собака",
+  "text": "This is fine.",
+  "grammar_tags": [
+   "to be"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "KYM"
+ },
+ {
+  "title": "Мемы",
+  "source_url": "https://knowyourmeme.com/memes/one-does-not-simply-walk-into-mordor",
+  "season_episode": "LOTR: Братство Кольца",
+  "speaker": "Boromir",
+  "text": "One does not simply walk into Mordor.",
+  "grammar_tags": [
+   "Present Simple (negative, 3rd person)"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "KYM + IMDb (tt0120737)",
+  "note": "в Wikiquote-странице фильма этой строки нет, есть на IMDb"
+ },
+ {
+  "title": "Мемы",
+  "source_url": "https://knowyourmeme.com/memes/im-gonna-do-whats-called-a-pro-gamer-move",
+  "season_episode": "",
+  "speaker": "",
+  "text": "I'm gonna do what's called a pro gamer move.",
+  "grammar_tags": [
+   "going to (gonna)"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 0.82
+  },
+  "confidence": "KYM",
+  "note": "разговорное gonna"
+ },
+ {
+  "title": "Мемы",
+  "source_url": "https://knowyourmeme.com/memes/how-do-you-do-fellow-kids",
+  "season_episode": "30 Rock",
+  "speaker": "Steve Buscemi",
+  "text": "How do you do, fellow kids?",
+  "grammar_tags": [
+   "How do you do (формула)"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 0.83
+  },
+  "confidence": "KYM"
+ },
+ {
+  "title": "Мемы",
+  "source_url": "https://knowyourmeme.com/memes/is-this-a-pigeon",
+  "season_episode": "аниме The Brave Fighter of Sun Fighbird",
+  "speaker": "",
+  "text": "Is this a pigeon?",
+  "grammar_tags": [
+   "to be (question)"
+  ],
+  "est_rank": "E",
+  "auto_vocab": {
+   "top1000": 0.75
+  },
+  "confidence": "KYM / Wikipedia",
+  "note": "аниме-мем"
+ },
+ {
+  "title": "Мемы",
+  "source_url": "https://knowyourmeme.com/memes/people-die-if-they-are-killed",
+  "season_episode": "Fate/stay night (англ. фан-перевод)",
+  "speaker": "Shirou Emiya",
+  "text": "People die if they are killed.",
+  "grammar_tags": [
+   "Zero Conditional",
+   "Passive"
+  ],
+  "est_rank": "B",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "KYM",
+  "note": "аниме-мем; точная формулировка в оригинальном переводе — уточнить"
+ },
+ {
+  "title": "Мемы",
+  "source_url": "https://knowyourmeme.com/memes/nah-id-win",
+  "season_episode": "Jujutsu Kaisen, гл. 221",
+  "speaker": "Satoru Gojo",
+  "text": "Nah, I'd win.",
+  "grammar_tags": [
+   "would ('d)"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 0.75
+  },
+  "confidence": "KYM",
+  "note": "аниме-мем, дублирует JJK"
+ },
+ {
+  "title": "Мемы",
+  "source_url": "https://en.wikiquote.org/wiki/Star_Wars:_Episode_III_%E2%80%93_Revenge_of_the_Sith",
+  "season_episode": "Star Wars: Episode III",
+  "speaker": "Obi-Wan",
+  "text": "It's over, Anakin! I have the high ground!",
+  "grammar_tags": [
+   "to be",
+   "have"
+  ],
+  "est_rank": "D",
+  "auto_vocab": {
+   "top1000": 1.0
+  },
+  "confidence": "Wikiquote (Episode III, в капсе) + мем"
+ },
+ {
+  "title": "Мемы",
+  "source_url": "https://www.polygon.com/best-video-game-quotes/",
+  "season_episode": "Zero Wing (1991)",
+  "speaker": "CATS",
+  "text": "All your base are belong to us.",
+  "grammar_tags": [
+   "анти-пример: сломанная грамматика"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 0.86
+  },
+  "confidence": "Polygon (#14)",
+  "note": "показывать как «найди ошибку»"
+ },
+ {
+  "title": "Мемы",
+  "source_url": "https://www.polygon.com/best-video-game-quotes/",
+  "season_episode": "Call of Duty: Advanced Warfare (2014)",
+  "speaker": "подсказка",
+  "text": "Press 'F' to pay respects.",
+  "grammar_tags": [
+   "Imperative",
+   "to-infinitive of purpose"
+  ],
+  "est_rank": "C",
+  "auto_vocab": {
+   "top1000": 0.8
+  },
+  "confidence": "Polygon"
+ },
+ {
+  "title": "Supernatural",
+  "source_url": null,
+  "season_episode": "Castiel (5.19 99 Problems)",
+  "speaker": "Castiel",
+  "text": "I found a liquor store. And I drank it!",
+  "translation_ru": "Я нашёл винный магазин. И я выпил его!",
+  "grammar_tags": [
+   "Past Simple",
+   "артикли",
+   "юмор на буквальном понимании"
+  ],
+  "est_rank": "E",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Supernatural",
+  "source_url": null,
+  "season_episode": "Castiel (4.01 Lazarus Rising)",
+  "speaker": "Castiel",
+  "text": "You have no faith",
+  "translation_ru": "В тебе нет веры.",
+  "grammar_tags": [
+   "have got/have + отрицание"
+  ],
+  "est_rank": "E",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Supernatural",
+  "source_url": null,
+  "season_episode": "Castiel (5.22 Swan Song)",
+  "speaker": "Castiel",
+  "text": "Hey, assbutt!",
+  "translation_ru": "Эй, задница-ангел! (оск. «ослоЖОПа»)",
+  "grammar_tags": [
+   "Возглас-обращение",
+   "лексика оскорблений (мягких)"
+  ],
+  "est_rank": "E",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Supernatural",
+  "source_url": null,
+  "season_episode": "Dean, цитируя Bobby (10.17 Inside Man)",
+  "speaker": "Dean, цитируя Bobby",
+  "text": "Family don't end in blood",
+  "translation_ru": "Семья не заканчивается на крови.",
+  "grammar_tags": [
+   "Отрицание",
+   "«нестандартное» don't с 3 л. (речь персонажа!)",
+   "идиома"
+  ],
+  "est_rank": "C",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Supernatural",
+  "source_url": null,
+  "season_episode": "Dean (10.19 The Werther Project)",
+  "speaker": "Dean",
+  "text": "We're stronger together than apart",
+  "translation_ru": "Вместе мы сильнее, чем поодиночке.",
+  "grammar_tags": [
+   "Сравнительная степень + than"
+  ],
+  "est_rank": "D",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Supernatural",
+  "source_url": null,
+  "season_episode": "Dean (9.22/9.23)",
+  "speaker": "Dean",
+  "text": "There ain't no me if there ain't no you",
+  "translation_ru": "Меня не будет, если не будет тебя.",
+  "grammar_tags": [
+   "Двойное отрицание (ain't no) — показать разницу с нормой"
+  ],
+  "est_rank": "C",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Supernatural",
+  "source_url": null,
+  "season_episode": "Dean (2.20 In My Time of Dying)",
+  "speaker": "Dean",
+  "text": "You always have a choice",
+  "translation_ru": "У тебя всегда есть выбор.",
+  "grammar_tags": [
+   "Present Simple + always (наречие частотности)"
+  ],
+  "est_rank": "E",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Supernatural",
+  "source_url": null,
+  "season_episode": "Dean (6.07 Caged Heat)",
+  "speaker": "Dean",
+  "text": "Karma's a bitch, bitch",
+  "translation_ru": "Карма — стерва, стерва.",
+  "grammar_tags": [
+   "be + существительное",
+   "разговорная лексика"
+  ],
+  "est_rank": "E",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Supernatural",
+  "source_url": null,
+  "season_episode": "Dean (3.03 Bad Day at Black Rock)",
+  "speaker": "Dean",
+  "text": "I'm Batman",
+  "translation_ru": "Я — Бэтмен.",
+  "grammar_tags": [
+   "be + имя",
+   "Present Simple"
+  ],
+  "est_rank": "E",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Supernatural",
+  "source_url": null,
+  "season_episode": "Dean (1.01 Pilot)",
+  "speaker": "Dean",
+  "text": "Driver picks the music, shotgun shuts his cakehole",
+  "translation_ru": "Водитель выбирает музыку, пассажир заткнётся.",
+  "grammar_tags": [
+   "Present Simple (0-условие «правил»)",
+   "идиома cakehole"
+  ],
+  "est_rank": "C",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Supernatural",
+  "source_url": null,
+  "season_episode": "Dean (2.20)",
+  "speaker": "Dean",
+  "text": "You can either roll over and die or keep fighting",
+  "translation_ru": "Можешь либо сдаться и умереть, либо продолжать драться.",
+  "grammar_tags": [
+   "either…or",
+   "модальный can + инфинитив"
+  ],
+  "est_rank": "C",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Game of Thrones",
+  "source_url": null,
+  "season_episode": "Cersei (1.07; девиз страницы)",
+  "speaker": "Cersei",
+  "text": "When you play the game of thrones, you win or you die. There is no middle ground",
+  "translation_ru": "Играя в игру престолов, ты либо выигрываешь, либо умираешь.",
+  "grammar_tags": [
+   "Zero conditional (when…)",
+   "either–or через or"
+  ],
+  "est_rank": "C",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Game of Thrones",
+  "source_url": null,
+  "season_episode": "Ned (1.01)",
+  "speaker": "Ned",
+  "text": "The man who passes the sentence should swing the sword",
+  "translation_ru": "Тот, кто выносит приговор, должен сам поднимать меч.",
+  "grammar_tags": [
+   "Relative clause who…",
+   "модальный should"
+  ],
+  "est_rank": "C",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Game of Thrones",
+  "source_url": null,
+  "season_episode": "Tyrion (1.01)",
+  "speaker": "Tyrion",
+  "text": "Never forget what you are",
+  "translation_ru": "Никогда не забывай, кто ты.",
+  "grammar_tags": [
+   "Императив с never",
+   "косвенный вопрос what you are"
+  ],
+  "est_rank": "C",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Game of Thrones",
+  "source_url": null,
+  "season_episode": "Jaime (1.01)",
+  "speaker": "Jaime",
+  "text": "The things I do for love",
+  "translation_ru": "Вот что я делаю ради любви.",
+  "grammar_tags": [
+   "Present Simple",
+   "эмфатический порядок слов"
+  ],
+  "est_rank": "D",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Game of Thrones",
+  "source_url": null,
+  "season_episode": "Tyrion (1.02)",
+  "speaker": "Tyrion",
+  "text": "A mind needs books like a sword needs a whetstone",
+  "translation_ru": "Уму нужны книги, как мечу — точильный камень.",
+  "grammar_tags": [
+   "like-сравнение",
+   "параллельная структура"
+  ],
+  "est_rank": "C",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Game of Thrones",
+  "source_url": null,
+  "season_episode": "Tywin (1.07)",
+  "speaker": "Tywin",
+  "text": "The lion does not concern himself with the opinions of the sheep",
+  "translation_ru": "Лев не интересуется мнением овец.",
+  "grammar_tags": [
+   "does not",
+   "возвратная конструкция concern oneself with"
+  ],
+  "est_rank": "C",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Game of Thrones",
+  "source_url": null,
+  "season_episode": "Tywin (1.07; форма девиза: A Lannister always pays his debts)",
+  "speaker": "Tywin",
+  "text": "Lannisters pay their debts!",
+  "translation_ru": "Ланнистеры всегда платят по долгам.",
+  "grammar_tags": [
+   "Present Simple",
+   "притяжательные",
+   "девиз"
+  ],
+  "est_rank": "D",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Game of Thrones",
+  "source_url": null,
+  "season_episode": "Littlefinger (3.06 The Climb)",
+  "speaker": "Littlefinger",
+  "text": "Chaos is a ladder",
+  "translation_ru": "Хаос — это лестница.",
+  "grammar_tags": [
+   "be + существительное",
+   "метафора"
+  ],
+  "est_rank": "D",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Game of Thrones",
+  "source_url": null,
+  "season_episode": "Jaqen H'ghar / девиз (S2E10, S3)",
+  "speaker": "Jaqen H'ghar / девиз",
+  "text": "Valar Morghulis. — All men must die",
+  "translation_ru": "Валар Моргулис — все люди должны умереть.",
+  "grammar_tags": [
+   "Модальный must (обязательность)"
+  ],
+  "est_rank": "C",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Game of Thrones",
+  "source_url": null,
+  "season_episode": "Daenerys (1.06)",
+  "speaker": "Daenerys",
+  "text": "He was no dragon. Fire cannot kill a dragon",
+  "translation_ru": "Он не был драконом. Огонь не может убить дракона.",
+  "grammar_tags": [
+   "Past Simple отрицание (no)",
+   "модальный cannot"
+  ],
+  "est_rank": "D",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Breaking Bad",
+  "source_url": null,
+  "season_episode": "Walter /_declared_ (5.07)",
+  "speaker": "Walter /_declared_",
+  "text": "Say my name. — You're Heisenberg. — You're goddamn right",
+  "translation_ru": "Скажи моё имя. — Ты Хайзенберг. — Чёрт возьми, правильно.",
+  "grammar_tags": [
+   "Императив",
+   "be",
+   "разговорное усиление"
+  ],
+  "est_rank": "E",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Breaking Bad",
+  "source_url": null,
+  "season_episode": "Walter (5.09)",
+  "speaker": "Walter",
+  "text": "Tread lightly",
+  "translation_ru": "Иди осторожнее / Не зарывайся.",
+  "grammar_tags": [
+   "Императив",
+   "фразовый глагол tread"
+  ],
+  "est_rank": "C",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Breaking Bad",
+  "source_url": null,
+  "season_episode": "Mike (3.12)",
+  "speaker": "Mike",
+  "text": "No more half measures",
+  "translation_ru": "Больше никаких полумер.",
+  "grammar_tags": [
+   "Отрицание no more + существительное"
+  ],
+  "est_rank": "D",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Breaking Bad",
+  "source_url": null,
+  "season_episode": "Hector Salamanca (3.07)",
+  "speaker": "Hector Salamanca",
+  "text": "Family is all",
+  "translation_ru": "Семья — это всё.",
+  "grammar_tags": [
+   "be",
+   "Present Simple"
+  ],
+  "est_rank": "E",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Breaking Bad",
+  "source_url": null,
+  "season_episode": "Jesse Pinkman",
+  "speaker": "Jesse Pinkman",
+  "text": "Yeah, science!» — коронное)",
+  "translation_ru": "Да, наука! / Да, сука!",
+  "grammar_tags": [
+   "Возглас-подтверждение yeah"
+  ],
+  "est_rank": "E",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Breaking Bad",
+  "source_url": null,
+  "season_episode": "Walter (3.05)",
+  "speaker": "Walter",
+  "text": "You need to respect the chemistry",
+  "translation_ru": "Нужно уважать химию.",
+  "grammar_tags": [
+   "Модальный need to"
+  ],
+  "est_rank": "D",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Breaking Bad",
+  "source_url": null,
+  "season_episode": "Walter (5.06)",
+  "speaker": "Walter",
+  "text": "My business isn't meth. My business is empire",
+  "translation_ru": "Моё дело — не мет. Моё дело — империя.",
+  "grammar_tags": [
+   "be + отрицание",
+   "контраст",
+   "лексика бизнеса"
+  ],
+  "est_rank": "D",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Stranger Things",
+  "source_url": null,
+  "season_episode": "Hopper (1.01)",
+  "speaker": "Hopper",
+  "text": "Mornings are for coffee and contemplation",
+  "translation_ru": "Утро — для кофе и размышлений.",
+  "grammar_tags": [
+   "be for + gerund",
+   "лексика «взрослого» дня"
+  ],
+  "est_rank": "C",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Stranger Things",
+  "source_url": null,
+  "season_episode": "Dustin (1.03)",
+  "speaker": "Dustin",
+  "text": "Why do we need weapons? We have her",
+  "translation_ru": "Зачем нам оружие? У нас есть она.",
+  "grammar_tags": [
+   "Спецвопрос why + Present Simple"
+  ],
+  "est_rank": "E",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Stranger Things",
+  "source_url": null,
+  "season_episode": "Lucas / Dustin (1.03)",
+  "speaker": "Lucas / Dustin",
+  "text": "She shut ONE door! — With her mind!",
+  "translation_ru": "Она закрыла одну дверь! — Своим разумом!",
+  "grammar_tags": [
+   "Past Simple",
+   "with + существительное (инструмент)"
+  ],
+  "est_rank": "D",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Stranger Things",
+  "source_url": null,
+  "season_episode": "Eleven (1.06)",
+  "speaker": "Eleven",
+  "text": "I opened the Gate. I'm the monster",
+  "translation_ru": "Я открыла Врата. Я — монстр.",
+  "grammar_tags": [
+   "Past Simple",
+   "be + существительное"
+  ],
+  "est_rank": "E",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Stranger Things",
+  "source_url": null,
+  "season_episode": "Mike (1.06)",
+  "speaker": "Mike",
+  "text": "You're not the monster. You saved me",
+  "translation_ru": "Ты не монстр. Ты спас меня.",
+  "grammar_tags": [
+   "be отрицание + Past Simple — пара к №6"
+  ],
+  "est_rank": "E",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Stranger Things",
+  "source_url": null,
+  "season_episode": "Eleven / Mike (1.08)",
+  "speaker": "Eleven / Mike",
+  "text": "Promise? — Promise",
+  "translation_ru": "Обещаешь? — Обещаю.",
+  "grammar_tags": [
+   "Present Simple-вопрос односложным ответом"
+  ],
+  "est_rank": "E",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Stranger Things",
+  "source_url": null,
+  "season_episode": "Eleven (1.08)",
+  "speaker": "Eleven",
+  "text": "Goodbye, Mike",
+  "translation_ru": "Прощай, Майк.",
+  "grammar_tags": [
+   "Формула прощания + обращение"
+  ],
+  "est_rank": "E",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Stranger Things",
+  "source_url": null,
+  "season_episode": "Jonathan (1.04)",
+  "speaker": "Jonathan",
+  "text": "People don't say what they're really thinking",
+  "translation_ru": "Люди не говорят, что думают на самом деле.",
+  "grammar_tags": [
+   "Present Simple + придаточное what"
+  ],
+  "est_rank": "C",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Stranger Things",
+  "source_url": null,
+  "season_episode": "Mr. Clarke (1.05)",
+  "speaker": "Mr. Clarke",
+  "text": "Science is neat, but I'm afraid it's not very forgiving",
+  "translation_ru": "Наука — это классно, но она, боюсь, не очень-то прощает.",
+  "grammar_tags": [
+   "but-контраст",
+   "I'm afraid (вводная)",
+   "отрицание"
+  ],
+  "est_rank": "C",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Black Mirror",
+  "source_url": null,
+  "season_episode": "Carrie/обезьяна (4.06 Black Museum)",
+  "speaker": "Carrie/обезьяна",
+  "text": "Monkey needs a hug. / Monkey loves you",
+  "translation_ru": "Обезьянке нужен обнимашка. / Обезьянка любит тебя.",
+  "grammar_tags": [
+   "Present Simple 3 л. ед.ч. — идеальная пара фраз"
+  ],
+  "est_rank": "E",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Black Mirror",
+  "source_url": null,
+  "season_episode": "Аноним (3.03)",
+  "speaker": "Аноним",
+  "text": "Shut up and dance. (название эпизода 3.03, фраза-лозунг в сюжете)",
+  "translation_ru": "Заткнись и танцуй.",
+  "grammar_tags": [
+   "Imperative + and",
+   "фразовый шаблон угрозы"
+  ],
+  "est_rank": "D",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Black Mirror",
+  "source_url": null,
+  "season_episode": "Bing (1.02 Fifteen Million Merits)",
+  "speaker": "Bing",
+  "text": "I just want something real to happen. Just once",
+  "translation_ru": "Я просто хочу, чтобы случилось что-то настоящее. Хотя бы раз.",
+  "grammar_tags": [
+   "want + obj + to-inf",
+   "something real"
+  ],
+  "est_rank": "C",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Black Mirror",
+  "source_url": null,
+  "season_episode": "Matt (White Christmas)",
+  "speaker": "Matt",
+  "text": "People want to be noticed. They don't like to be shut out. It makes them feel invisible",
+  "translation_ru": "Люди хотят, чтобы их замечали. Им не нравится, когда их отталкивают. Они чувствуют себя невидимыми.",
+  "grammar_tags": [
+   "want + to be V3 (пассив)",
+   "make sb feel"
+  ],
+  "est_rank": "C",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Black Mirror",
+  "source_url": null,
+  "season_episode": "Lacie (3.01 Nosedive)",
+  "speaker": "Lacie",
+  "text": "I don't like your aura",
+  "translation_ru": "Мне не нравится твоя аура.",
+  "grammar_tags": [
+   "like + don't",
+   "притяжательные"
+  ],
+  "est_rank": "E",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Black Mirror",
+  "source_url": null,
+  "season_episode": "Man in Jail (3.01)",
+  "speaker": "Man in Jail",
+  "text": "It'd be a dull world without wondering",
+  "translation_ru": "Мир был бы скучным без любопытства.",
+  "grammar_tags": [
+   "would (сокр. 'd)",
+   "безличное it"
+  ],
+  "est_rank": "C",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Black Mirror",
+  "source_url": null,
+  "season_episode": "Shou Saito (3.02 Playtest)",
+  "speaker": "Shou Saito",
+  "text": "You are still alive",
+  "translation_ru": "Ты всё ещё жив.",
+  "grammar_tags": [
+   "be + still (наречие)"
+  ],
+  "est_rank": "E",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Black Mirror",
+  "source_url": null,
+  "season_episode": "Matt (White Christmas)",
+  "speaker": "Matt",
+  "text": "That's why 90% of seduction is just listening",
+  "translation_ru": "Вот почему 90% обольщения — это просто умение слушать.",
+  "grammar_tags": [
+   "that's why",
+   "% + of + gerund"
+  ],
+  "est_rank": "C",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Black Mirror",
+  "source_url": null,
+  "season_episode": "Amanda (7.01 Common People)",
+  "speaker": "Amanda",
+  "text": "It becomes honey. Kids love honey",
+  "translation_ru": "Это становится мёдом. Дети любят мёд.",
+  "grammar_tags": [
+   "Present Simple 3 л.",
+   "becomes → превращение"
+  ],
+  "est_rank": "E",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Lord of the Rings",
+  "source_url": null,
+  "season_episode": "Gandalf",
+  "speaker": "Gandalf",
+  "text": "You shall not pass!",
+  "translation_ru": "Ты не пройдёшь!",
+  "grammar_tags": [
+   "Модальный shall (запрет)",
+   "отрицание — культовая интонация"
+  ],
+  "est_rank": "E",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Lord of the Rings",
+  "source_url": null,
+  "season_episode": "Gandalf",
+  "speaker": "Gandalf",
+  "text": "Keep it secret. Keep it safe",
+  "translation_ru": "Храни это в секрете. Храни это в безопасности.",
+  "grammar_tags": [
+   "Императив keep + дополнение (параллелизм)"
+  ],
+  "est_rank": "E",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Lord of the Rings",
+  "source_url": null,
+  "season_episode": "Надпись/Gandalf",
+  "speaker": "Надпись/Gandalf",
+  "text": "One Ring to rule them all",
+  "translation_ru": "Кольцо, чтоб править всеми.",
+  "grammar_tags": [
+   "to-infinitive цели",
+   "them all"
+  ],
+  "est_rank": "D",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Lord of the Rings",
+  "source_url": null,
+  "season_episode": "Gandalf",
+  "speaker": "Gandalf",
+  "text": "All we have to decide is what to do with the time that is given to us",
+  "translation_ru": "Всё, что нам остаётся — решить, как распорядиться отпущенным нам временем.",
+  "grammar_tags": [
+   "have to",
+   "what to do",
+   "придаточное that is given (пассив)"
+  ],
+  "est_rank": "C",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Lord of the Rings",
+  "source_url": null,
+  "season_episode": "Arwen",
+  "speaker": "Arwen",
+  "text": "If you want him, come and claim him!",
+  "translation_ru": "Если хочешь его — приди и забери его!",
+  "grammar_tags": [
+   "Условное if + императив"
+  ],
+  "est_rank": "E",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Lord of the Rings",
+  "source_url": null,
+  "season_episode": "Aragorn, Legolas, Gimli",
+  "speaker": "Aragorn, Legolas, Gimli",
+  "text": "You have my sword. / And my bow. / And my axe!",
+  "translation_ru": "Мой меч — твой. / И мой лук. / И мой топор!",
+  "grammar_tags": [
+   "have + притяжательные",
+   "наращивание and"
+  ],
+  "est_rank": "E",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Lord of the Rings",
+  "source_url": null,
+  "season_episode": "Bilbo",
+  "speaker": "Bilbo",
+  "text": "It's a dangerous business, Frodo, going out your door",
+  "translation_ru": "Это опасное дело, Фродо — выходить за порог.",
+  "grammar_tags": [
+   "it + gerund-комментарий"
+  ],
+  "est_rank": "C",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Lord of the Rings",
+  "source_url": null,
+  "season_episode": "Gandalf",
+  "speaker": "Gandalf",
+  "text": "Even the very wise cannot see all ends",
+  "translation_ru": "Даже самые мудрые не могут видеть всех концов.",
+  "grammar_tags": [
+   "even",
+   "cannot",
+   "превосходные"
+  ],
+  "est_rank": "C",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Star Wars",
+  "source_url": null,
+  "season_episode": "Leia (ANH)",
+  "speaker": "Leia",
+  "text": "Help me, Obi-Wan Kenobi. You're my only hope",
+  "translation_ru": "Помоги мне, Оби-Ван Кеноби. Ты моя последняя надежда.",
+  "grammar_tags": [
+   "Императив help",
+   "be + притяжательные"
+  ],
+  "est_rank": "E",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Star Wars",
+  "source_url": null,
+  "season_episode": "Luke (ANH, повторяется во всех фильмах)",
+  "speaker": "Luke",
+  "text": "I have a bad feeling about this",
+  "translation_ru": "У меня плохое предчувствие насчёт этого.",
+  "grammar_tags": [
+   "have + feel/существительное",
+   "about this"
+  ],
+  "est_rank": "E",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Star Wars",
+  "source_url": null,
+  "season_episode": "Obi-Wan (ANH)",
+  "speaker": "Obi-Wan",
+  "text": "These aren't the droids you're looking for",
+  "translation_ru": "Это не те дроиды, которых вы ищете.",
+  "grammar_tags": [
+   "aren't",
+   "сокращённое придаточное (which are)"
+  ],
+  "est_rank": "D",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Star Wars",
+  "source_url": null,
+  "season_episode": "Vader (ANH)",
+  "speaker": "Vader",
+  "text": "I find your lack of faith disturbing",
+  "translation_ru": "Меня беспокоит твоё отсутствие веры.",
+  "grammar_tags": [
+   "find + obj + прилагательное (complex object)"
+  ],
+  "est_rank": "C",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Star Wars",
+  "source_url": null,
+  "season_episode": "Yoda (ESB)",
+  "speaker": "Yoda",
+  "text": "Size matters not",
+  "translation_ru": "Размер не имеет значения.",
+  "grammar_tags": [
+   "Инверсия Йоды",
+   "matter (глагол)"
+  ],
+  "est_rank": "C",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "FMA / FMA:B",
+  "source_url": null,
+  "season_episode": "Gluttony (1.01)",
+  "speaker": "Gluttony",
+  "text": "Can I eat him?",
+  "translation_ru": "Можно я его съем?",
+  "grammar_tags": [
+   "Модальный can (разрешение)",
+   "вопрос"
+  ],
+  "est_rank": "E",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "FMA / FMA:B",
+  "source_url": null,
+  "season_episode": "Edward (1.02)",
+  "speaker": "Edward",
+  "text": "Walk on your own. Move forward. You've got a good strong pair of legs, Rose. You should get up and use them",
+  "translation_ru": "Иди сама. Двигайся вперёд. У тебя есть свои крепкие ноги, Роуз. Встань и пользуйся ими.",
+  "grammar_tags": [
+   "Императивы",
+   "have got",
+   "should"
+  ],
+  "est_rank": "C",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "FMA / FMA:B",
+  "source_url": null,
+  "season_episode": "Edward (1.02)",
+  "speaker": "Edward",
+  "text": "Can't find a door, make your own!",
+  "translation_ru": "Не находишь дверь — сделай свою!",
+  "grammar_tags": [
+   "Эллипсис if",
+   "императив make"
+  ],
+  "est_rank": "D",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "FMA / FMA:B",
+  "source_url": null,
+  "season_episode": "Alphonse (1.08)",
+  "speaker": "Alphonse",
+  "text": "I want my body back. I want to feel human again",
+  "translation_ru": "Я хочу вернуть своё тело. Я хочу снова чувствовать себя человеком.",
+  "grammar_tags": [
+   "want + obj + back / want to V"
+  ],
+  "est_rank": "D",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "FMA / FMA:B",
+  "source_url": null,
+  "season_episode": "Edward (1.08)",
+  "speaker": "Edward",
+  "text": "We're not gods. We're humans",
+  "translation_ru": "Мы не боги. Мы люди.",
+  "grammar_tags": [
+   "be + множественное число"
+  ],
+  "est_rank": "E",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "FMA / FMA:B",
+  "source_url": null,
+  "season_episode": "Edward (1.02 и по всему сериалу)",
+  "speaker": "Edward",
+  "text": "Who are you calling a mousy little pipsqueak?!",
+  "translation_ru": "Кого это ты назвал серенькой малявкой?!",
+  "grammar_tags": [
+   "Вопрос к объекту (who…calling)",
+   "running gag про рост"
+  ],
+  "est_rank": "C",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "FMA / FMA:B",
+  "source_url": null,
+  "season_episode": "Alphonse (1.06)",
+  "speaker": "Alphonse",
+  "text": "I don't want to be in this suit anymore. I want to feel things again",
+  "translation_ru": "Я больше не хочу быть в этой броне. Я хочу снова что-то чувствовать.",
+  "grammar_tags": [
+   "not…anymore",
+   "want to V"
+  ],
+  "est_rank": "D",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "FMA / FMA:B",
+  "source_url": null,
+  "season_episode": "Edward (коронное, дубляж)",
+  "speaker": "Edward",
+  "text": "Stop jerking me around!",
+  "translation_ru": "Хватит меня дурить!",
+  "grammar_tags": [
+   "stop + gerund",
+   "фразовый jerk around"
+  ],
+  "est_rank": "D",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "FMA / FMA:B",
+  "source_url": null,
+  "season_episode": "Edward (1.04)",
+  "speaker": "Edward",
+  "text": "Flowers wither, Majahal",
+  "translation_ru": "Цветы вянут, Маджахал.",
+  "grammar_tags": [
+   "Present Simple (истина)",
+   "обращение"
+  ],
+  "est_rank": "E",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Berserk",
+  "source_url": null,
+  "season_episode": "Judeau",
+  "speaker": "Judeau",
+  "text": "It's okay to cry",
+  "translation_ru": "Поплакать — не стыдно.",
+  "grammar_tags": [
+   "It's okay to V — шаблон утешения"
+  ],
+  "est_rank": "E",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Berserk",
+  "source_url": null,
+  "season_episode": "Griffith (1997, Band of the Hawk)",
+  "speaker": "Griffith",
+  "text": "Don't worry. I will get what I want",
+  "translation_ru": "Не волнуйся. Я получу то, что хочу.",
+  "grammar_tags": [
+   "Императив don't worry",
+   "will + придаточное what"
+  ],
+  "est_rank": "E",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Berserk",
+  "source_url": null,
+  "season_episode": "Griffith (First Battle)",
+  "speaker": "Griffith",
+  "text": "And so, now you belong to me, Guts",
+  "translation_ru": "И вот теперь ты принадлежишь мне, Гатс.",
+  "grammar_tags": [
+   "belong to",
+   "Present Simple"
+  ],
+  "est_rank": "D",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Berserk",
+  "source_url": null,
+  "season_episode": "Guts (1997, The Black Swordsman)",
+  "speaker": "Guts",
+  "text": "We are mortal and fragile. But even if we are tortured or wounded, we'll fight to survive",
+  "translation_ru": "Мы смертны и хрупки. Но даже под пыткой и в ране — мы будем драться, чтобы выжить.",
+  "grammar_tags": [
+   "even if (уступка)",
+   "пассив are tortured",
+   "will"
+  ],
+  "est_rank": "C",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Berserk",
+  "source_url": null,
+  "season_episode": "Godo (финальная реплика 1997)",
+  "speaker": "Godo",
+  "text": "Don't get yourself killed",
+  "translation_ru": "Погибнуть не дай себе. / Не сгиньми зря.",
+  "grammar_tags": [
+   "get + oneself + V3 (каузатив-рефлексив)"
+  ],
+  "est_rank": "C",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Berserk",
+  "source_url": null,
+  "season_episode": "Griffith (манга)",
+  "speaker": "Griffith",
+  "text": "A dream is something you do for yourself, not for others",
+  "translation_ru": "Мечта — это то, что ты делаешь для себя, а не для других.",
+  "grammar_tags": [
+   "something + придаточное",
+   "контраст for yourself/for others"
+  ],
+  "est_rank": "C",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Berserk",
+  "source_url": null,
+  "season_episode": "Guts (манга)",
+  "speaker": "Guts",
+  "text": "You have the strongest armor, because you are the weakest!",
+  "translation_ru": "У тебя самая крепкая броня, потому что ты слабейший!",
+  "grammar_tags": [
+   "because",
+   "превосходные степени",
+   "антитеза"
+  ],
+  "est_rank": "C",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Attack on Titan",
+  "source_url": null,
+  "season_episode": "Armin (1.01, пролог)",
+  "speaker": "Armin",
+  "text": "On that day, mankind received a grim reminder",
+  "translation_ru": "В тот день человечество получило мрачное напоминание.",
+  "grammar_tags": [
+   "Past Simple",
+   "on that day",
+   "фраза-опенинг"
+  ],
+  "est_rank": "C",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Attack on Titan",
+  "source_url": null,
+  "season_episode": "Falco (S4)",
+  "speaker": "Falco",
+  "text": "Hey, you… It's dangerous here. Go, fly somewhere far away",
+  "translation_ru": "Эй, ты… Здесь опасно. Лети куда-нибудь подальше.",
+  "grammar_tags": [
+   "It's + прилагательное",
+   "императив somewhere"
+  ],
+  "est_rank": "E",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Attack on Titan",
+  "source_url": null,
+  "season_episode": "Reiner (S2)",
+  "speaker": "Reiner",
+  "text": "It's too late now… I don't know what's right anymore",
+  "translation_ru": "Слишком поздно… Я больше не знаю, что правильно.",
+  "grammar_tags": [
+   "too + прилагательное",
+   "what's right",
+   "not…anymore"
+  ],
+  "est_rank": "C",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Attack on Titan",
+  "source_url": null,
+  "season_episode": "Gabi (S4, эп. 77)",
+  "speaker": "Gabi",
+  "text": "There were never any Devils on this island. Just people. People like us",
+  "translation_ru": "На этом острове никогда не было дьяволов. Только люди. Такие, как мы.",
+  "grammar_tags": [
+   "there were",
+   "never/any",
+   "like us (сравнение)"
+  ],
+  "est_rank": "C",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Attack on Titan",
+  "source_url": null,
+  "season_episode": "Kaya (S4)",
+  "speaker": "Kaya",
+  "text": "How can people we've never met hate us so much? (адапт. реплики Kaya, эп. 70)",
+  "translation_ru": "Как могут люди, которых мы никогда не видели, ненавидеть нас так сильно?",
+  "grammar_tags": [
+   "can + придаточное с пассивным оборотом (we've never met)"
+  ],
+  "est_rank": "C",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Attack on Titan",
+  "source_url": null,
+  "season_episode": "Mikasa (1.01, дубляж)",
+  "speaker": "Mikasa",
+  "text": "The world is cruel. And also very beautiful",
+  "translation_ru": "Мир жесток. И к тому же очень красив.",
+  "grammar_tags": [
+   "be + прилагательное",
+   "also",
+   "антитеза"
+  ],
+  "est_rank": "D",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Jujutsu Kaisen",
+  "source_url": null,
+  "season_episode": "Gojo (эп. 7, дубляж)",
+  "speaker": "Gojo",
+  "text": "Don't worry. I'm the strongest",
+  "translation_ru": "Не волнуйся. Я сильнейший.",
+  "grammar_tags": [
+   "Императив don't worry + превосходная степень"
+  ],
+  "est_rank": "E",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Jujutsu Kaisen",
+  "source_url": null,
+  "season_episode": "Sukuna → Jogo (эп. 17, дубляж)",
+  "speaker": "Sukuna → Jogo",
+  "text": "Stand proud. You're strong",
+  "translation_ru": "Будь гордым. Ты силён.",
+  "grammar_tags": [
+   "Императив stand proud",
+   "be + прилагательное"
+  ],
+  "est_rank": "E",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Jujutsu Kaisen",
+  "source_url": null,
+  "season_episode": "Todo (Goodwill Event, дубляж)",
+  "speaker": "Todo",
+  "text": "What kind of women do you like?",
+  "translation_ru": "Какие женщины тебе нравятся?",
+  "grammar_tags": [
+   "what kind of…",
+   "Present Simple вопрос"
+  ],
+  "est_rank": "E",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Jujutsu Kaisen",
+  "source_url": null,
+  "season_episode": "Дедушка Итадори → Юдзи (эп. 1, дубляж)",
+  "speaker": "Дедушка Итадори → Юдзи",
+  "text": "You're a strong kid, so help people. Die surrounded by people",
+  "translation_ru": "Ты сильный, так что помогай людям. Умри в окружении людей.",
+  "grammar_tags": [
+   "so (следствие)",
+   "императив",
+   "пассив surrounded by"
+  ],
+  "est_rank": "D",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Jujutsu Kaisen",
+  "source_url": null,
+  "season_episode": "Nanami (дубляж)",
+  "speaker": "Nanami",
+  "text": "Dying to win and risking death to win are completely different",
+  "translation_ru": "Умереть ради победы и рисковать смертью ради победы — совершенно разные вещи.",
+  "grammar_tags": [
+   "Gerund-подлежащее (сравнение)"
+  ],
+  "est_rank": "C",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Jujutsu Kaisen",
+  "source_url": null,
+  "season_episode": "Megumi (эп. 23, дубляж)",
+  "speaker": "Megumi",
+  "text": "I'm not a hero. I'm a jujutsu sorcerer",
+  "translation_ru": "Я не герой. Я маг.",
+  "grammar_tags": [
+   "be + отрицание/утверждение (контраст)"
+  ],
+  "est_rank": "E",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Jujutsu Kaisen",
+  "source_url": null,
+  "season_episode": "Sukuna (дубляж, ранние эпизоды)",
+  "speaker": "Sukuna",
+  "text": "It's your fault for being weak",
+  "translation_ru": "Это твоя вина — быть слабым.",
+  "grammar_tags": [
+   "fault for + gerund"
+  ],
+  "est_rank": "C",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Solo Leveling",
+  "source_url": null,
+  "season_episode": "Jinwoo (вебтун гл. 148, эпиграф страницы фан-вики)",
+  "speaker": "Jinwoo",
+  "text": "I'm going to protect my family, even if it means turning all the hunters in the world against me",
+  "translation_ru": "Я защищу свою семью, даже если это значит, что все охотники мира ополчатся на меня.",
+  "grammar_tags": [
+   "be going to",
+   "even if",
+   "mean + gerund"
+  ],
+  "est_rank": "C",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Solo Leveling",
+  "source_url": null,
+  "season_episode": "Слоган франшизы (офиц. англ. название)",
+  "speaker": "Слоган франшизы",
+  "text": "I alone level up",
+  "translation_ru": "Только я прокачиваюсь.",
+  "grammar_tags": [
+   "Инверсия",
+   "phrasal level up"
+  ],
+  "est_rank": "C",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Solo Leveling",
+  "source_url": null,
+  "season_episode": "Рассказчик о Jinwoo",
+  "speaker": "Рассказчик о Jinwoo",
+  "text": "The weakest hunter of all mankind",
+  "translation_ru": "Слабейший охотник всего человечества.",
+  "grammar_tags": [
+   "Превосходная степень",
+   "of-родительный"
+  ],
+  "est_rank": "D",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Solo Leveling",
+  "source_url": null,
+  "season_episode": "System (первое сообщение, ранние главы)",
+  "speaker": "System",
+  "text": "You have acquired the qualifications to be a Player. Will you accept?",
+  "translation_ru": "Вы получили право стать Игроком. Принимаете?",
+  "grammar_tags": [
+   "Present Perfect",
+   "will-вопрос (приглашение)"
+  ],
+  "est_rank": "C",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Solo Leveling",
+  "source_url": null,
+  "season_episode": "Jinwoo (арка Jeju)",
+  "speaker": "Jinwoo",
+  "text": "A mere insect",
+  "translation_ru": "Простое насекомое.",
+  "grammar_tags": [
+   "mere + существительное",
+   "презрение одним словом"
+  ],
+  "est_rank": "D",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Solo Leveling",
+  "source_url": null,
+  "season_episode": "Jinwoo (адапт. реплика S2, дубляж)",
+  "speaker": "Jinwoo",
+  "text": "Don't worry about me. I'm stronger than yesterday",
+  "translation_ru": "Не волнуйся за меня. Я сильнее, чем вчера.",
+  "grammar_tags": [
+   "worry about",
+   "сравнительная степень + than"
+  ],
+  "est_rank": "D",
+  "auto_vocab": null,
+  "confidence": "verbatim (parallel research) — needs source check"
+ }
+]
