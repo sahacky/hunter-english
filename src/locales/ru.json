@@ -1,0 +1,31 @@
+{
+  "app": {
+    "title": "Hunter English",
+    "tagline": "Система обучения: ранг E → S"
+  },
+  "nav": {
+    "label": "Основная навигация",
+    "dashboard": "Дашборд",
+    "lesson": "Урок",
+    "srs": "Повторение",
+    "ranks": "Ранги",
+    "gates": "Врата",
+    "quotes": "Цитаты",
+    "phrasebook": "Разговорник",
+    "settings": "Настройки",
+    "login": "Вход",
+    "notFound": "Страница не найдена"
+  },
+  "dashboard": {
+    "greeting": "Добро пожаловать, Охотник"
+  },
+  "common": {
+    "loading": "Загрузка…",
+    "inDevelopment": "Раздел в разработке — спецификации в specs/",
+    "backToDashboard": "На дашборд"
+  },
+  "notFound": {
+    "title": "404",
+    "text": "Такой страницы нет. Проверь адрес."
+  }
+}
