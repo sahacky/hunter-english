@@ -11,7 +11,7 @@
 - M2: скаффолд Vite+React+TS, i18n ru/en, hash-роутинг, Vitest+Playwright, CI/deploy; hotfix CI (PR #1 был смержен с красным CI — `npm ci` падал): Vite 7, `@testing-library/dom`, `@types/node`, Prettier в lint, typecheck конфигов, Node 22, `supabase-js` и `/login` убраны до M12. Все проверки зелёные локально, включая e2e
 
 ## In Progress
-- M3 (ветка `feature/m3-data-pipeline`): выполнено 3.1 (схемы+валидатор+CI), 3.2 (Tatoeba 2820/2830 лемм), 3.3 (Piper cori 1.8 + gen_audio.py, ~0.13 с/слово), 3.5 (цитаты: 15 файлов/274 записи, +148 переводов «needs review»), 3.6 (traps.json: 22 ловушки). Далее: 3.4 слова → 3.7 аудио+manifest → 3.8 валидация → 3.9 ревью → 3.10 merge. Решения 1–7 — в PLANS под M3
+- M3 (ветка `feature/m3-data-pipeline`): выполнено 3.1–3.8. Датасет: слова 4024 записи (2830 лемм, дроп 36+9), цитаты 274/15 файлов, ловушки 22, аудио 4024 opus (17 МБ), manifest 21 файл. validate:data + lint + typecheck + test + audit — зелёные. Осталось: 3.9 ревью ветки → 3.10 merge в main
 
 ## TODO
 - M4: Карточки SRS (ts-fsrs, Dexie, `ProgressRepository`) — следующий майлстоун после M3
@@ -77,4 +77,5 @@
 | 2026-09-27 | Ревью после PR #1: CI был красный, WAL ошибочно писал «зелёные» → hotfix CI; M2 закрыт; зафиксированы local-first «швы», M12 = Supabase для себя и друзей, продуктовый вариант — в Pending; WAL очищен от устаревшего | Ревью по запросу разработчика |
 | 2026-09-27 | M3 детализирован в PLANS (3.1–3.10, решения 1–7); старт ветки `feature/m3-data-pipeline`; разработчик разрешил merge/push без запроса | Делегирование автономной работы |
 | 2026-09-27 | M3: 3.1–3.3, 3.5, 3.6 выполнены (схемы/валидатор/CI, Tatoeba-индекс, Piper-генератор, цитаты 274 с полными RU, 22 ловушки); validate:data и lint зелёные на готовых файлах | Автономная сессия M3, параллельные саб-агенты |
+| 2026-09-27 | M3: датасет собран и провалидирован (3.4–3.8); kaikki докачан 2830/2830; финальные проверки зелёные | Автономная сессия M3 |
 | 2026-09-27 | M3#3.1: 8 схем draft-07 в `data/schemas/` (вкл. envelope и trap), §6.5 trap в спеке 05, `scripts/validate-data.mjs` (ajv + кросс-ссылки + аудио) → `npm run validate:data`, шаг Validate data в CI; ajv/ajv-formats в devDeps | План M3#3.1 |
