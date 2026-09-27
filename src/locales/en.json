@@ -1,0 +1,31 @@
+{
+  "app": {
+    "title": "Hunter English",
+    "tagline": "Training system: rank E → S"
+  },
+  "nav": {
+    "label": "Main navigation",
+    "dashboard": "Dashboard",
+    "lesson": "Lesson",
+    "srs": "Review",
+    "ranks": "Ranks",
+    "gates": "Gates",
+    "quotes": "Quotes",
+    "phrasebook": "Phrasebook",
+    "settings": "Settings",
+    "login": "Sign in",
+    "notFound": "Page not found"
+  },
+  "dashboard": {
+    "greeting": "Welcome, Hunter"
+  },
+  "common": {
+    "loading": "Loading…",
+    "inDevelopment": "Section in development — see specs/",
+    "backToDashboard": "Back to dashboard"
+  },
+  "notFound": {
+    "title": "404",
+    "text": "This page does not exist. Check the address."
+  }
+}

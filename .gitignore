@@ -1,21 +1,24 @@
-# Локальный файл Claude Code (только @AGENTS.md) — не публикуется
-CLAUDE.md
-
-# Секреты и окружение
-.env
-.env.local
-.env.*.local
-
-# Зависимости и сборка
+# Зависимости / сборка
 node_modules/
 dist/
 coverage/
 
-# Python
-__pycache__/
-.venv/
+# Тесты
+playwright-report/
+test-results/
+blob-report/
 
-# Локальное
-.human/
-tmp/
+# Секреты (конвенция Vite)
+.env
+.env.*
+!.env.example
+
+# Сырьё данных (создаётся скриптами research/tools/data, не коммитится)
+data/raw/
+
+# Локальные файлы агентов
+CLAUDE.md
+
+# Служебное
+*.log
 .DS_Store

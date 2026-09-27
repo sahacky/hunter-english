@@ -1,0 +1,35 @@
+# Деплой статики. Репозиторий приватный: GitHub Pages требует GitHub Pro.
+# Варианты (см. WAL, Decisions Pending):
+#   1) GitHub Pro — включить Pages (Settings → Pages → GitHub Actions), джоб активируется автоматически;
+#   2) Cloudflare Pages (бесплатно) — подключить репозиторий, build: `npm run build`, output: `dist`;
+#   3) сделать репо публичным — джоб ниже заработает сам (условие по видимости репо).
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy-pages:
+    if: github.event.repository.private == false
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist/
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,95 @@
+:root {
+  color-scheme: dark;
+  --bg: #070b14;
+  --surface: #0c1c34;
+  --surface-2: #12263f;
+  --border: #1d3a5f;
+  --text: #e8f1fb;
+  --text-dim: #8aa5c2;
+  --primary: #4fc3f7;
+  --accent-2: #a78bfa;
+  --danger: #ff5d6c;
+  --warn: #ffc857;
+  --success: #4ade80;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Onest, 'Golos Text', system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.app-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.app-title {
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--primary);
+}
+
+.app-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.app-nav a {
+  color: var(--text-dim);
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.app-nav a:hover {
+  color: var(--text);
+  background: var(--surface-2);
+}
+
+.app-nav a.active {
+  color: var(--bg);
+  background: var(--primary);
+}
+
+.app-main {
+  flex: 1;
+  padding: 24px 0;
+}
+
+.panel {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  padding: 24px;
+}
+
+.dim {
+  color: var(--text-dim);
+}
+
+.app-footer {
+  padding: 12px 0;
+  font-size: 0.85rem;
+}
