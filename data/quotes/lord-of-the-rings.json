@@ -1,351 +1,405 @@
 {
-  "schema_version": 1,
-  "kind": "quotes",
-  "items": [
-    {
-      "id": "q-lord-of-the-rings-0001",
-      "title": "Lord of the Rings",
-      "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings:_The_Fellowship_of_the_Ring",
-      "season_episode": "The Lord of the Rings: The Fellowship of the Ring",
-      "speaker": "Gandalf the Grey",
-      "text": "Fly, you fools!",
-      "translation_ru": "Бегите, глупцы!",
-      "grammar_tags": ["Imperative"],
-      "est_rank": "D",
-      "auto_vocab": {
-        "top1000": 0.67
-      },
-      "confidence": "verbatim (Wikiquote)",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=Fly%2C%20you%20fools%21"
-    },
-    {
-      "id": "q-lord-of-the-rings-0002",
-      "title": "Lord of the Rings",
-      "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings:_The_Fellowship_of_the_Ring",
-      "season_episode": "The Lord of the Rings: The Fellowship of the Ring",
-      "speaker": "Frodo",
-      "text": "I will take the Ring to Mordor. Though... I do not know the way.",
-      "translation_ru": "Я отнесу Кольцо в Мордор. Вот только... я не знаю дороги.",
-      "grammar_tags": ["will", "Present Simple (negative)"],
-      "est_rank": "C",
-      "auto_vocab": {
-        "top1000": 1.0
-      },
-      "confidence": "verbatim (Wikiquote)",
-      "note": "translation needs review",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=I%20will%20take%20the%20Ring%20to%20Mordor.%20Though...%20I%20do%20not%20know%20the%20way."
-    },
-    {
-      "id": "q-lord-of-the-rings-0003",
-      "title": "Lord of the Rings",
-      "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings:_The_Fellowship_of_the_Ring",
-      "season_episode": "The Lord of the Rings: The Fellowship of the Ring",
-      "speaker": "Pippin",
-      "text": "We had one, yes. What about second breakfast?",
-      "translation_ru": "А как же второй завтрак?",
-      "grammar_tags": ["Past Simple (had)", "What about...?"],
-      "est_rank": "C",
-      "auto_vocab": {
-        "top1000": 0.88
-      },
-      "confidence": "verbatim (Wikiquote)",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=We%20had%20one%2C%20yes.%20What%20about%20second%20breakfast%3F"
-    },
-    {
-      "id": "q-lord-of-the-rings-0004",
-      "title": "Lord of the Rings",
-      "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings:_The_Fellowship_of_the_Ring",
-      "season_episode": "The Lord of the Rings: The Fellowship of the Ring",
-      "speaker": "Frodo",
-      "text": "Sam... I'm glad you're with me.",
-      "translation_ru": "Я рад, что ты со мной.",
-      "grammar_tags": ["to be + adjective"],
-      "est_rank": "E",
-      "auto_vocab": {
-        "top1000": 1.0
-      },
-      "confidence": "verbatim (Wikiquote)",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=Sam...%20I%27m%20glad%20you%27re%20with%20me."
-    },
-    {
-      "id": "q-lord-of-the-rings-0005",
-      "title": "Lord of the Rings",
-      "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings:_The_Fellowship_of_the_Ring",
-      "season_episode": "The Lord of the Rings: The Fellowship of the Ring",
-      "speaker": "Frodo",
-      "text": "I cannot do this alone.",
-      "translation_ru": "Я не могу сделать это в одиночку.",
-      "grammar_tags": ["can/cannot"],
-      "est_rank": "E",
-      "auto_vocab": {
-        "top1000": 1.0
-      },
-      "confidence": "verbatim (Wikiquote)",
-      "note": "перекличка с Supernatural S01E01; translation needs review",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=I%20cannot%20do%20this%20alone."
-    },
-    {
-      "id": "q-lord-of-the-rings-0006",
-      "title": "Lord of the Rings",
-      "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King",
-      "season_episode": "The Lord of the Rings: The Return of the King",
-      "speaker": "Samwise",
-      "text": "I can't carry it for you...BUT I CAN CARRY YOU!",
-      "translation_ru": "Я не могу нести это за тебя... НО Я МОГУ НЕСТИ ТЕБЯ!",
-      "grammar_tags": ["can/can't"],
-      "est_rank": "D",
-      "auto_vocab": {
-        "top1000": 1.0
-      },
-      "confidence": "verbatim (Wikiquote)",
-      "note": "фрагмент реплики; translation needs review",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=I%20can%27t%20carry%20it%20for%20you...BUT%20I%20CAN%20CARRY%20YOU%21"
-    },
-    {
-      "id": "q-lord-of-the-rings-0007",
-      "title": "Lord of the Rings",
-      "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King",
-      "season_episode": "The Lord of the Rings: The Return of the King",
-      "speaker": "Aragorn",
-      "text": "I do not fear death.",
-      "translation_ru": "Я не страшусь смерти.",
-      "grammar_tags": ["Present Simple (negative)"],
-      "est_rank": "D",
-      "auto_vocab": {
-        "top1000": 1.0
-      },
-      "confidence": "verbatim (Wikiquote)",
-      "note": "translation needs review",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=I%20do%20not%20fear%20death."
-    },
-    {
-      "id": "q-lord-of-the-rings-0008",
-      "title": "Lord of the Rings",
-      "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings:_The_Fellowship_of_the_Ring",
-      "season_episode": "The Lord of the Rings: The Fellowship of the Ring",
-      "speaker": "Galadriel",
-      "text": "Even the smallest person can change the course of the future.",
-      "translation_ru": "Даже самый маленький может изменить ход будущего.",
-      "grammar_tags": ["can", "superlative"],
-      "est_rank": "C",
-      "auto_vocab": {
-        "top1000": 1.0
-      },
-      "confidence": "verbatim (Wikiquote)",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=Even%20the%20smallest%20person%20can%20change%20the%20course%20of%20the%20future."
-    },
-    {
-      "id": "q-lord-of-the-rings-0009",
-      "title": "Lord of the Rings",
-      "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King",
-      "season_episode": "The Lord of the Rings: The Return of the King",
-      "speaker": "Elrond",
-      "text": "Nothing is certain.",
-      "translation_ru": "Ничего нельзя знать наверняка.",
-      "grammar_tags": ["to be"],
-      "est_rank": "D",
-      "auto_vocab": {
-        "top1000": 1.0
-      },
-      "confidence": "verbatim (Wikiquote)",
-      "note": "translation needs review",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=Nothing%20is%20certain."
-    },
-    {
-      "id": "q-lord-of-the-rings-0010",
-      "title": "Lord of the Rings",
-      "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King",
-      "season_episode": "The Lord of the Rings: The Return of the King",
-      "speaker": "Aragorn",
-      "text": "My friends...you bow to no one.",
-      "translation_ru": "Друзья мои... вы не склоняетесь ни перед кем.",
-      "grammar_tags": ["Present Simple"],
-      "est_rank": "D",
-      "auto_vocab": {
-        "top1000": 0.86
-      },
-      "confidence": "verbatim (Wikiquote)",
-      "note": "translation needs review",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=My%20friends...you%20bow%20to%20no%20one."
-    },
-    {
-      "id": "q-lord-of-the-rings-0011",
-      "title": "Lord of the Rings",
-      "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings:_The_Two_Towers",
-      "season_episode": "The Lord of the Rings: The Two Towers",
-      "speaker": "Aragorn",
-      "text": "It's a long way.",
-      "translation_ru": "Путь неблизкий.",
-      "grammar_tags": ["to be"],
-      "est_rank": "E",
-      "auto_vocab": {
-        "top1000": 1.0
-      },
-      "confidence": "verbatim (Wikiquote)",
-      "note": "фраза путешественника; translation needs review",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=It%27s%20a%20long%20way."
-    },
-    {
-      "id": "q-lord-of-the-rings-0012",
-      "title": "Lord of the Rings",
-      "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King",
-      "season_episode": "The Lord of the Rings: The Return of the King",
-      "speaker": "Samwise",
-      "text": "I'm on your side, Mr. Frodo.",
-      "translation_ru": "Я на твоей стороне, мистер Фродо.",
-      "grammar_tags": ["to be", "prepositions"],
-      "est_rank": "E",
-      "auto_vocab": {
-        "top1000": 0.83
-      },
-      "confidence": "verbatim (Wikiquote)",
-      "note": "translation needs review",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=I%27m%20on%20your%20side%2C%20Mr.%20Frodo."
-    },
-    {
-      "id": "q-lord-of-the-rings-0013",
-      "title": "Lord of the Rings",
-      "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King",
-      "season_episode": "The Lord of the Rings: The Return of the King",
-      "speaker": "Frodo",
-      "text": "I'm glad to be with you, Samwise Gamgee, here at the end of all things.",
-      "translation_ru": "Я рад быть с тобой, Сэмуайз Гэмджи, здесь, в конце всего сущего.",
-      "grammar_tags": ["to be + adjective", "to-infinitive"],
-      "est_rank": "C",
-      "auto_vocab": {
-        "top1000": 1.0
-      },
-      "confidence": "verbatim (Wikiquote)",
-      "note": "translation needs review",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=I%27m%20glad%20to%20be%20with%20you%2C%20Samwise%20Gamgee%2C%20here%20at%20the%20end%20of%20all%20things."
-    },
-    {
-      "id": "q-lord-of-the-rings-0014",
-      "title": "Lord of the Rings",
-      "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings",
-      "season_episode": "Gandalf",
-      "speaker": "Gandalf",
-      "text": "You shall not pass!",
-      "translation_ru": "Ты не пройдёшь!",
-      "grammar_tags": ["Модальный shall (запрет)", "отрицание — культовая интонация"],
-      "est_rank": "E",
-      "auto_vocab": {
-        "top1000": 1.0
-      },
-      "confidence": "verbatim (parallel research) — needs source check",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=You%20shall%20not%20pass%21"
-    },
-    {
-      "id": "q-lord-of-the-rings-0015",
-      "title": "Lord of the Rings",
-      "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings",
-      "season_episode": "Gandalf",
-      "speaker": "Gandalf",
-      "text": "Keep it secret. Keep it safe",
-      "translation_ru": "Храни это в секрете. Храни это в безопасности.",
-      "grammar_tags": ["Императив keep + дополнение (параллелизм)"],
-      "est_rank": "E",
-      "auto_vocab": {
-        "top1000": 0.67
-      },
-      "confidence": "verbatim (parallel research) — needs source check",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=Keep%20it%20secret.%20Keep%20it%20safe"
-    },
-    {
-      "id": "q-lord-of-the-rings-0016",
-      "title": "Lord of the Rings",
-      "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings",
-      "season_episode": "Надпись/Gandalf",
-      "speaker": "Надпись/Gandalf",
-      "text": "One Ring to rule them all",
-      "translation_ru": "Кольцо, чтоб править всеми.",
-      "grammar_tags": ["to-infinitive цели", "them all"],
-      "est_rank": "D",
-      "auto_vocab": {
-        "top1000": 0.83
-      },
-      "confidence": "verbatim (parallel research) — needs source check",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=One%20Ring%20to%20rule%20them%20all"
-    },
-    {
-      "id": "q-lord-of-the-rings-0017",
-      "title": "Lord of the Rings",
-      "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings",
-      "season_episode": "Gandalf",
-      "speaker": "Gandalf",
-      "text": "All we have to decide is what to do with the time that is given to us",
-      "translation_ru": "Всё, что нам остаётся — решить, как распорядиться отпущенным нам временем.",
-      "grammar_tags": ["have to", "what to do", "придаточное that is given (пассив)"],
-      "est_rank": "C",
-      "auto_vocab": {
-        "top1000": 0.76
-      },
-      "confidence": "verbatim (parallel research) — needs source check",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=All%20we%20have%20to%20decide%20is%20what%20to%20do%20with%20the%20time%20that%20is%20given%20to%20us"
-    },
-    {
-      "id": "q-lord-of-the-rings-0018",
-      "title": "Lord of the Rings",
-      "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings",
-      "season_episode": "Arwen",
-      "speaker": "Arwen",
-      "text": "If you want him, come and claim him!",
-      "translation_ru": "Если хочешь его — приди и забери его!",
-      "grammar_tags": ["Условное if + императив"],
-      "est_rank": "E",
-      "auto_vocab": {
-        "top1000": 0.75
-      },
-      "confidence": "verbatim (parallel research) — needs source check",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=If%20you%20want%20him%2C%20come%20and%20claim%20him%21"
-    },
-    {
-      "id": "q-lord-of-the-rings-0019",
-      "title": "Lord of the Rings",
-      "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings",
-      "season_episode": "Aragorn, Legolas, Gimli",
-      "speaker": "Aragorn, Legolas, Gimli",
-      "text": "You have my sword. / And my bow. / And my axe!",
-      "translation_ru": "Мой меч — твой. / И мой лук. / И мой топор!",
-      "grammar_tags": ["have + притяжательные", "наращивание and"],
-      "est_rank": "E",
-      "auto_vocab": {
-        "top1000": 0.4
-      },
-      "confidence": "verbatim (parallel research) — needs source check",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=You%20have%20my%20sword.%20%2F%20And%20my%20bow.%20%2F%20And%20my%20axe%21"
-    },
-    {
-      "id": "q-lord-of-the-rings-0020",
-      "title": "Lord of the Rings",
-      "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings",
-      "season_episode": "Bilbo",
-      "speaker": "Bilbo",
-      "text": "It's a dangerous business, Frodo, going out your door",
-      "translation_ru": "Это опасное дело, Фродо — выходить за порог.",
-      "grammar_tags": ["it + gerund-комментарий"],
-      "est_rank": "C",
-      "auto_vocab": {
-        "top1000": 0.44
-      },
-      "confidence": "verbatim (parallel research) — needs source check",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=It%27s%20a%20dangerous%20business%2C%20Frodo%2C%20going%20out%20your%20door"
-    },
-    {
-      "id": "q-lord-of-the-rings-0021",
-      "title": "Lord of the Rings",
-      "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings",
-      "season_episode": "Gandalf",
-      "speaker": "Gandalf",
-      "text": "Even the very wise cannot see all ends",
-      "translation_ru": "Даже самые мудрые не могут видеть всех концов.",
-      "grammar_tags": ["even", "cannot", "превосходные"],
-      "est_rank": "C",
-      "auto_vocab": {
-        "top1000": 0.62
-      },
-      "confidence": "verbatim (parallel research) — needs source check",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=Even%20the%20very%20wise%20cannot%20see%20all%20ends"
-    }
-  ]
+ "schema_version": 1,
+ "kind": "quotes",
+ "items": [
+  {
+   "id": "q-lord-of-the-rings-0001",
+   "title": "Lord of the Rings",
+   "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings:_The_Fellowship_of_the_Ring",
+   "season_episode": "The Lord of the Rings: The Fellowship of the Ring",
+   "speaker": "Gandalf the Grey",
+   "text": "Fly, you fools!",
+   "translation_ru": "Бегите, глупцы!",
+   "grammar_tags": [
+    "Imperative"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 0.67
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Fly%2C%20you%20fools%21"
+  },
+  {
+   "id": "q-lord-of-the-rings-0002",
+   "title": "Lord of the Rings",
+   "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings:_The_Fellowship_of_the_Ring",
+   "season_episode": "The Lord of the Rings: The Fellowship of the Ring",
+   "speaker": "Frodo",
+   "text": "I will take the Ring to Mordor. Though... I do not know the way.",
+   "translation_ru": "Я отнесу Кольцо в Мордор. Вот только... я не знаю дороги.",
+   "grammar_tags": [
+    "will",
+    "Present Simple (negative)"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.93
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20will%20take%20the%20Ring%20to%20Mordor.%20Though...%20I%20do%20not%20know%20the%20way."
+  },
+  {
+   "id": "q-lord-of-the-rings-0003",
+   "title": "Lord of the Rings",
+   "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings:_The_Fellowship_of_the_Ring",
+   "season_episode": "The Lord of the Rings: The Fellowship of the Ring",
+   "speaker": "Pippin",
+   "text": "We had one, yes. What about second breakfast?",
+   "translation_ru": "А как же второй завтрак?",
+   "grammar_tags": [
+    "Past Simple (had)",
+    "What about...?"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.75
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=We%20had%20one%2C%20yes.%20What%20about%20second%20breakfast%3F"
+  },
+  {
+   "id": "q-lord-of-the-rings-0004",
+   "title": "Lord of the Rings",
+   "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings:_The_Fellowship_of_the_Ring",
+   "season_episode": "The Lord of the Rings: The Fellowship of the Ring",
+   "speaker": "Frodo",
+   "text": "Sam... I'm glad you're with me.",
+   "translation_ru": "Я рад, что ты со мной.",
+   "grammar_tags": [
+    "to be + adjective"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.17
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Sam...%20I%27m%20glad%20you%27re%20with%20me."
+  },
+  {
+   "id": "q-lord-of-the-rings-0005",
+   "title": "Lord of the Rings",
+   "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings:_The_Fellowship_of_the_Ring",
+   "season_episode": "The Lord of the Rings: The Fellowship of the Ring",
+   "speaker": "Frodo",
+   "text": "I cannot do this alone.",
+   "translation_ru": "Я не могу сделать это в одиночку.",
+   "grammar_tags": [
+    "can/cannot"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.8
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "перекличка с Supernatural S01E01; translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20cannot%20do%20this%20alone."
+  },
+  {
+   "id": "q-lord-of-the-rings-0006",
+   "title": "Lord of the Rings",
+   "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King",
+   "season_episode": "The Lord of the Rings: The Return of the King",
+   "speaker": "Samwise",
+   "text": "I can't carry it for you...BUT I CAN CARRY YOU!",
+   "translation_ru": "Я не могу нести это за тебя... НО Я МОГУ НЕСТИ ТЕБЯ!",
+   "grammar_tags": [
+    "can/can't"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 0.91
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "фрагмент реплики; translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20can%27t%20carry%20it%20for%20you...BUT%20I%20CAN%20CARRY%20YOU%21"
+  },
+  {
+   "id": "q-lord-of-the-rings-0007",
+   "title": "Lord of the Rings",
+   "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King",
+   "season_episode": "The Lord of the Rings: The Return of the King",
+   "speaker": "Aragorn",
+   "text": "I do not fear death.",
+   "translation_ru": "Я не страшусь смерти.",
+   "grammar_tags": [
+    "Present Simple (negative)"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 1.0
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20do%20not%20fear%20death."
+  },
+  {
+   "id": "q-lord-of-the-rings-0008",
+   "title": "Lord of the Rings",
+   "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings:_The_Fellowship_of_the_Ring",
+   "season_episode": "The Lord of the Rings: The Fellowship of the Ring",
+   "speaker": "Galadriel",
+   "text": "Even the smallest person can change the course of the future.",
+   "translation_ru": "Даже самый маленький может изменить ход будущего.",
+   "grammar_tags": [
+    "can",
+    "superlative"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.91
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Even%20the%20smallest%20person%20can%20change%20the%20course%20of%20the%20future."
+  },
+  {
+   "id": "q-lord-of-the-rings-0009",
+   "title": "Lord of the Rings",
+   "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King",
+   "season_episode": "The Lord of the Rings: The Return of the King",
+   "speaker": "Elrond",
+   "text": "Nothing is certain.",
+   "translation_ru": "Ничего нельзя знать наверняка.",
+   "grammar_tags": [
+    "to be"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 0.67
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Nothing%20is%20certain."
+  },
+  {
+   "id": "q-lord-of-the-rings-0010",
+   "title": "Lord of the Rings",
+   "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King",
+   "season_episode": "The Lord of the Rings: The Return of the King",
+   "speaker": "Aragorn",
+   "text": "My friends...you bow to no one.",
+   "translation_ru": "Друзья мои... вы не склоняетесь ни перед кем.",
+   "grammar_tags": [
+    "Present Simple"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 0.57
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=My%20friends...you%20bow%20to%20no%20one."
+  },
+  {
+   "id": "q-lord-of-the-rings-0011",
+   "title": "Lord of the Rings",
+   "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings:_The_Two_Towers",
+   "season_episode": "The Lord of the Rings: The Two Towers",
+   "speaker": "Aragorn",
+   "text": "It's a long way.",
+   "translation_ru": "Путь неблизкий.",
+   "grammar_tags": [
+    "to be"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.75
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "фраза путешественника; translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=It%27s%20a%20long%20way."
+  },
+  {
+   "id": "q-lord-of-the-rings-0012",
+   "title": "Lord of the Rings",
+   "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King",
+   "season_episode": "The Lord of the Rings: The Return of the King",
+   "speaker": "Samwise",
+   "text": "I'm on your side, Mr. Frodo.",
+   "translation_ru": "Я на твоей стороне, мистер Фродо.",
+   "grammar_tags": [
+    "to be",
+    "prepositions"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.33
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%27m%20on%20your%20side%2C%20Mr.%20Frodo."
+  },
+  {
+   "id": "q-lord-of-the-rings-0013",
+   "title": "Lord of the Rings",
+   "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King",
+   "season_episode": "The Lord of the Rings: The Return of the King",
+   "speaker": "Frodo",
+   "text": "I'm glad to be with you, Samwise Gamgee, here at the end of all things.",
+   "translation_ru": "Я рад быть с тобой, Сэмуайз Гэмджи, здесь, в конце всего сущего.",
+   "grammar_tags": [
+    "to be + adjective",
+    "to-infinitive"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.67
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%27m%20glad%20to%20be%20with%20you%2C%20Samwise%20Gamgee%2C%20here%20at%20the%20end%20of%20all%20things."
+  },
+  {
+   "id": "q-lord-of-the-rings-0014",
+   "title": "Lord of the Rings",
+   "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings",
+   "season_episode": "Gandalf",
+   "speaker": "Gandalf",
+   "text": "You shall not pass!",
+   "translation_ru": "Ты не пройдёшь!",
+   "grammar_tags": [
+    "Модальный shall (запрет)",
+    "отрицание — культовая интонация"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 1.0
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=You%20shall%20not%20pass%21"
+  },
+  {
+   "id": "q-lord-of-the-rings-0015",
+   "title": "Lord of the Rings",
+   "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings",
+   "season_episode": "Gandalf",
+   "speaker": "Gandalf",
+   "text": "Keep it secret. Keep it safe",
+   "translation_ru": "Храни это в секрете. Храни это в безопасности.",
+   "grammar_tags": [
+    "Императив keep + дополнение (параллелизм)"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.67
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Keep%20it%20secret.%20Keep%20it%20safe"
+  },
+  {
+   "id": "q-lord-of-the-rings-0016",
+   "title": "Lord of the Rings",
+   "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings",
+   "season_episode": "Надпись/Gandalf",
+   "speaker": "Надпись/Gandalf",
+   "text": "One Ring to rule them all",
+   "translation_ru": "Кольцо, чтоб править всеми.",
+   "grammar_tags": [
+    "to-infinitive цели",
+    "them all"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 0.83
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=One%20Ring%20to%20rule%20them%20all"
+  },
+  {
+   "id": "q-lord-of-the-rings-0017",
+   "title": "Lord of the Rings",
+   "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings",
+   "season_episode": "Gandalf",
+   "speaker": "Gandalf",
+   "text": "All we have to decide is what to do with the time that is given to us",
+   "translation_ru": "Всё, что нам остаётся — решить, как распорядиться отпущенным нам временем.",
+   "grammar_tags": [
+    "have to",
+    "what to do",
+    "придаточное that is given (пассив)"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.76
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=All%20we%20have%20to%20decide%20is%20what%20to%20do%20with%20the%20time%20that%20is%20given%20to%20us"
+  },
+  {
+   "id": "q-lord-of-the-rings-0018",
+   "title": "Lord of the Rings",
+   "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings",
+   "season_episode": "Arwen",
+   "speaker": "Arwen",
+   "text": "If you want him, come and claim him!",
+   "translation_ru": "Если хочешь его — приди и забери его!",
+   "grammar_tags": [
+    "Условное if + императив"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.75
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=If%20you%20want%20him%2C%20come%20and%20claim%20him%21"
+  },
+  {
+   "id": "q-lord-of-the-rings-0019",
+   "title": "Lord of the Rings",
+   "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings",
+   "season_episode": "Aragorn, Legolas, Gimli",
+   "speaker": "Aragorn, Legolas, Gimli",
+   "text": "You have my sword. / And my bow. / And my axe!",
+   "translation_ru": "Мой меч — твой. / И мой лук. / И мой топор!",
+   "grammar_tags": [
+    "have + притяжательные",
+    "наращивание and"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.4
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=You%20have%20my%20sword.%20%2F%20And%20my%20bow.%20%2F%20And%20my%20axe%21"
+  },
+  {
+   "id": "q-lord-of-the-rings-0020",
+   "title": "Lord of the Rings",
+   "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings",
+   "season_episode": "Bilbo",
+   "speaker": "Bilbo",
+   "text": "It's a dangerous business, Frodo, going out your door",
+   "translation_ru": "Это опасное дело, Фродо — выходить за порог.",
+   "grammar_tags": [
+    "it + gerund-комментарий"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.44
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=It%27s%20a%20dangerous%20business%2C%20Frodo%2C%20going%20out%20your%20door"
+  },
+  {
+   "id": "q-lord-of-the-rings-0021",
+   "title": "Lord of the Rings",
+   "source_url": "https://en.wikiquote.org/wiki/The_Lord_of_the_Rings",
+   "season_episode": "Gandalf",
+   "speaker": "Gandalf",
+   "text": "Even the very wise cannot see all ends",
+   "translation_ru": "Даже самые мудрые не могут видеть всех концов.",
+   "grammar_tags": [
+    "even",
+    "cannot",
+    "превосходные"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.62
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Even%20the%20very%20wise%20cannot%20see%20all%20ends"
+  }
+ ]
 }

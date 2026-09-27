@@ -1,322 +1,373 @@
 {
-  "schema_version": 1,
-  "kind": "quotes",
-  "items": [
-    {
-      "id": "q-berserk-0001",
-      "title": "Berserk",
-      "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
-      "season_episode": "манга: раздел «Guts»",
-      "speaker": "Guts",
-      "text": "Do whatever you want now. But if you disturb me, I'll kill you.",
-      "translation_ru": "Делай что хочешь. Но если помешаешь мне — я тебя убью.",
-      "grammar_tags": ["Imperative", "First Conditional"],
-      "est_rank": "B",
-      "auto_vocab": {
-        "top1000": 0.93
-      },
-      "confidence": "verbatim (Wikiquote)",
-      "note": "раздел манги (перевод манги, не дубляж); translation needs review",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=Do%20whatever%20you%20want%20now.%20But%20if%20you%20disturb%20me%2C%20I%27ll%20kill%20you."
-    },
-    {
-      "id": "q-berserk-0002",
-      "title": "Berserk",
-      "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
-      "season_episode": "манга: раздел «Guts»",
-      "speaker": "Guts",
-      "text": "I'd rather fight for my life than live it.",
-      "translation_ru": "Лучше я буду драться за свою жизнь, чем просто жить её.",
-      "grammar_tags": ["would rather"],
-      "est_rank": "B",
-      "auto_vocab": {
-        "top1000": 1.0
-      },
-      "confidence": "verbatim (Wikiquote)",
-      "note": "раздел манги",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=I%27d%20rather%20fight%20for%20my%20life%20than%20live%20it."
-    },
-    {
-      "id": "q-berserk-0003",
-      "title": "Berserk",
-      "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
-      "season_episode": "манга: раздел «Guts»",
-      "speaker": "Guts",
-      "text": "In the end the winner is still the last man standing.",
-      "translation_ru": "В конце концов победитель — всё ещё тот, кто остался на ногах.",
-      "grammar_tags": ["to be", "superlative/last"],
-      "est_rank": "C",
-      "auto_vocab": {
-        "top1000": 0.91
-      },
-      "confidence": "verbatim (Wikiquote)",
-      "note": "раздел манги",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=In%20the%20end%20the%20winner%20is%20still%20the%20last%20man%20standing."
-    },
-    {
-      "id": "q-berserk-0004",
-      "title": "Berserk",
-      "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
-      "season_episode": "манга: раздел «Guts»",
-      "speaker": "Guts",
-      "text": "When you meet your God, tell him to leave me alone.",
-      "translation_ru": "Когда встретишь своего бога, скажи ему, чтобы он оставил меня в покое.",
-      "grammar_tags": ["Imperative", "when-clause"],
-      "est_rank": "C",
-      "auto_vocab": {
-        "top1000": 1.0
-      },
-      "confidence": "verbatim (Wikiquote)",
-      "note": "раздел манги",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=When%20you%20meet%20your%20God%2C%20tell%20him%20to%20leave%20me%20alone."
-    },
-    {
-      "id": "q-berserk-0005",
-      "title": "Berserk",
-      "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
-      "season_episode": "манга: раздел «Griffith»",
-      "speaker": "Griffith",
-      "text": "A dream... It's something you do for yourself, not for others.",
-      "translation_ru": "Мечта... Это то, что ты делаешь для себя, а не для других.",
-      "grammar_tags": ["to be", "Present Simple"],
-      "est_rank": "D",
-      "auto_vocab": {
-        "top1000": 1.0
-      },
-      "confidence": "verbatim (Wikiquote)",
-      "note": "раздел манги; translation needs review",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=A%20dream...%20It%27s%20something%20you%20do%20for%20yourself%2C%20not%20for%20others."
-    },
-    {
-      "id": "q-berserk-0006",
-      "title": "Berserk",
-      "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
-      "season_episode": "аниме 1997: «Bonfire of Dreams»",
-      "speaker": "Guts",
-      "text": "Alright! Let's have a drink.",
-      "translation_ru": "Ладно! Выпьем.",
-      "grammar_tags": ["Let's"],
-      "est_rank": "E",
-      "auto_vocab": {
-        "top1000": 1.0
-      },
-      "confidence": "verbatim (Wikiquote)",
-      "note": "аниме 1997, серия «Bonfire of Dreams»; translation needs review",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=Alright%21%20Let%27s%20have%20a%20drink."
-    },
-    {
-      "id": "q-berserk-0007",
-      "title": "Berserk",
-      "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
-      "season_episode": "аниме 1997: «First Battle»",
-      "speaker": "Griffith",
-      "text": "From now on, he is a member of the Hawks!",
-      "translation_ru": "Отныне он — член Соколов!",
-      "grammar_tags": ["to be"],
-      "est_rank": "D",
-      "auto_vocab": {
-        "top1000": 1.0
-      },
-      "confidence": "verbatim (Wikiquote)",
-      "note": "аниме 1997, «First Battle»; translation needs review",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=From%20now%20on%2C%20he%20is%20a%20member%20of%20the%20Hawks%21"
-    },
-    {
-      "id": "q-berserk-0008",
-      "title": "Berserk",
-      "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
-      "season_episode": "аниме 1997: «Prepared For Death»",
-      "speaker": "Casca",
-      "text": "You know nothing about women!",
-      "translation_ru": "Ты ничего не понимаешь в женщинах!",
-      "grammar_tags": ["Present Simple"],
-      "est_rank": "E",
-      "auto_vocab": {
-        "top1000": 1.0
-      },
-      "confidence": "verbatim (Wikiquote)",
-      "note": "аниме 1997; translation needs review",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=You%20know%20nothing%20about%20women%21"
-    },
-    {
-      "id": "q-berserk-0009",
-      "title": "Berserk",
-      "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
-      "season_episode": "аниме 1997: «The Advent»",
-      "speaker": "Guts",
-      "text": "Casca! It's me. Guts!",
-      "translation_ru": "Каска! Это я. Гатс!",
-      "grammar_tags": ["to be"],
-      "est_rank": "E",
-      "auto_vocab": {
-        "top1000": 0.6
-      },
-      "confidence": "verbatim (Wikiquote)",
-      "note": "аниме 1997, «The Advent»; translation needs review",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=Casca%21%20It%27s%20me.%20Guts%21"
-    },
-    {
-      "id": "q-berserk-0010",
-      "title": "Berserk",
-      "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
-      "season_episode": "аниме 1997: «The Advent»",
-      "speaker": "Guts",
-      "text": "Who the hell are you?",
-      "translation_ru": "Кто ты, чёрт возьми, такой?",
-      "grammar_tags": ["wh-question", "to be"],
-      "est_rank": "E",
-      "auto_vocab": {
-        "top1000": 1.0
-      },
-      "confidence": "verbatim (Wikiquote)",
-      "note": "грубоватое: the hell; translation needs review",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=Who%20the%20hell%20are%20you%3F"
-    },
-    {
-      "id": "q-berserk-0011",
-      "title": "Berserk",
-      "source_url": "https://www.imdb.com/title/tt0318871/quotes/",
-      "season_episode": "аниме 1997",
-      "speaker": "Guts / Judeau",
-      "text": "What kind of a man is he? — Griffith? I don't know.",
-      "translation_ru": "Что он за человек? — Гриффит? Не знаю.",
-      "grammar_tags": ["wh-question", "Present Simple (negative)"],
-      "est_rank": "E",
-      "auto_vocab": {
-        "top1000": 0.92
-      },
-      "confidence": "IMDb",
-      "note": "мини-диалог из двух реплик; translation needs review",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=What%20kind%20of%20a%20man%20is%20he%3F%20%E2%80%94%20Griffith%3F%20I%20don%27t%20know."
-    },
-    {
-      "id": "q-berserk-0012",
-      "title": "Berserk",
-      "source_url": "https://www.imdb.com/title/tt0318871/quotes/",
-      "season_episode": "аниме 1997",
-      "speaker": "Guts",
-      "text": "Every sword belongs in its sheath.",
-      "translation_ru": "Каждый меч должен быть в своих ножнах.",
-      "grammar_tags": ["Present Simple (3rd person -s)"],
-      "est_rank": "C",
-      "auto_vocab": {
-        "top1000": 0.5
-      },
-      "confidence": "IMDb",
-      "note": "фрагмент реплики; sheath — редкое слово; translation needs review",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=Every%20sword%20belongs%20in%20its%20sheath."
-    },
-    {
-      "id": "q-berserk-0013",
-      "title": "Berserk",
-      "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
-      "season_episode": "Judeau",
-      "speaker": "Judeau",
-      "text": "It's okay to cry",
-      "translation_ru": "Поплакать — не стыдно.",
-      "grammar_tags": ["It's okay to V — шаблон утешения"],
-      "est_rank": "E",
-      "auto_vocab": {
-        "top1000": 0.5
-      },
-      "confidence": "verbatim (parallel research) — needs source check",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=It%27s%20okay%20to%20cry"
-    },
-    {
-      "id": "q-berserk-0014",
-      "title": "Berserk",
-      "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
-      "season_episode": "Griffith (1997, Band of the Hawk)",
-      "speaker": "Griffith",
-      "text": "Don't worry. I will get what I want",
-      "translation_ru": "Не волнуйся. Я получу то, что хочу.",
-      "grammar_tags": ["Императив don't worry", "will + придаточное what"],
-      "est_rank": "E",
-      "auto_vocab": {
-        "top1000": 0.88
-      },
-      "confidence": "verbatim (parallel research) — needs source check",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=Don%27t%20worry.%20I%20will%20get%20what%20I%20want"
-    },
-    {
-      "id": "q-berserk-0015",
-      "title": "Berserk",
-      "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
-      "season_episode": "Griffith (First Battle)",
-      "speaker": "Griffith",
-      "text": "And so, now you belong to me, Guts",
-      "translation_ru": "И вот теперь ты принадлежишь мне, Гатс.",
-      "grammar_tags": ["belong to", "Present Simple"],
-      "est_rank": "D",
-      "auto_vocab": {
-        "top1000": 0.62
-      },
-      "confidence": "verbatim (parallel research) — needs source check",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=And%20so%2C%20now%20you%20belong%20to%20me%2C%20Guts"
-    },
-    {
-      "id": "q-berserk-0016",
-      "title": "Berserk",
-      "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
-      "season_episode": "Guts (1997, The Black Swordsman)",
-      "speaker": "Guts",
-      "text": "We are mortal and fragile. But even if we are tortured or wounded, we'll fight to survive",
-      "translation_ru": "Мы смертны и хрупки. Но даже под пыткой и в ране — мы будем драться, чтобы выжить.",
-      "grammar_tags": ["even if (уступка)", "пассив are tortured", "will"],
-      "est_rank": "C",
-      "auto_vocab": {
-        "top1000": 0.53
-      },
-      "confidence": "verbatim (parallel research) — needs source check",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=We%20are%20mortal%20and%20fragile.%20But%20even%20if%20we%20are%20tortured%20or%20wounded%2C%20we%27ll%20fight%20to%20survive"
-    },
-    {
-      "id": "q-berserk-0017",
-      "title": "Berserk",
-      "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
-      "season_episode": "Godo (финальная реплика 1997)",
-      "speaker": "Godo",
-      "text": "Don't get yourself killed",
-      "translation_ru": "Погибнуть не дай себе. / Не сгиньми зря.",
-      "grammar_tags": ["get + oneself + V3 (каузатив-рефлексив)"],
-      "est_rank": "C",
-      "auto_vocab": {
-        "top1000": 0.5
-      },
-      "confidence": "verbatim (parallel research) — needs source check",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=Don%27t%20get%20yourself%20killed"
-    },
-    {
-      "id": "q-berserk-0018",
-      "title": "Berserk",
-      "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
-      "season_episode": "Griffith (манга)",
-      "speaker": "Griffith",
-      "text": "A dream is something you do for yourself, not for others",
-      "translation_ru": "Мечта — это то, что ты делаешь для себя, а не для других.",
-      "grammar_tags": ["something + придаточное", "контраст for yourself/for others"],
-      "est_rank": "C",
-      "auto_vocab": {
-        "top1000": 0.82
-      },
-      "confidence": "verbatim (parallel research) — needs source check",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=A%20dream%20is%20something%20you%20do%20for%20yourself%2C%20not%20for%20others"
-    },
-    {
-      "id": "q-berserk-0019",
-      "title": "Berserk",
-      "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
-      "season_episode": "Guts (манга)",
-      "speaker": "Guts",
-      "text": "You have the strongest armor, because you are the weakest!",
-      "translation_ru": "У тебя самая крепкая броня, потому что ты слабейший!",
-      "grammar_tags": ["because", "превосходные степени", "антитеза"],
-      "est_rank": "C",
-      "auto_vocab": {
-        "top1000": 0.6
-      },
-      "confidence": "verbatim (parallel research) — needs source check",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=You%20have%20the%20strongest%20armor%2C%20because%20you%20are%20the%20weakest%21"
-    }
-  ]
+ "schema_version": 1,
+ "kind": "quotes",
+ "items": [
+  {
+   "id": "q-berserk-0001",
+   "title": "Berserk",
+   "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+   "season_episode": "манга: раздел «Guts»",
+   "speaker": "Guts",
+   "text": "Do whatever you want now. But if you disturb me, I'll kill you.",
+   "translation_ru": "Делай что хочешь. Но если помешаешь мне — я тебя убью.",
+   "grammar_tags": [
+    "Imperative",
+    "First Conditional"
+   ],
+   "est_rank": "B",
+   "auto_vocab": {
+    "top1000": 0.77
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "раздел манги (перевод манги, не дубляж); translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Do%20whatever%20you%20want%20now.%20But%20if%20you%20disturb%20me%2C%20I%27ll%20kill%20you."
+  },
+  {
+   "id": "q-berserk-0002",
+   "title": "Berserk",
+   "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+   "season_episode": "манга: раздел «Guts»",
+   "speaker": "Guts",
+   "text": "I'd rather fight for my life than live it.",
+   "translation_ru": "Лучше я буду драться за свою жизнь, чем просто жить её.",
+   "grammar_tags": [
+    "would rather"
+   ],
+   "est_rank": "B",
+   "auto_vocab": {
+    "top1000": 0.78
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "раздел манги",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%27d%20rather%20fight%20for%20my%20life%20than%20live%20it."
+  },
+  {
+   "id": "q-berserk-0003",
+   "title": "Berserk",
+   "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+   "season_episode": "манга: раздел «Guts»",
+   "speaker": "Guts",
+   "text": "In the end the winner is still the last man standing.",
+   "translation_ru": "В конце концов победитель — всё ещё тот, кто остался на ногах.",
+   "grammar_tags": [
+    "to be",
+    "superlative/last"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.73
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "раздел манги",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=In%20the%20end%20the%20winner%20is%20still%20the%20last%20man%20standing."
+  },
+  {
+   "id": "q-berserk-0004",
+   "title": "Berserk",
+   "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+   "season_episode": "манга: раздел «Guts»",
+   "speaker": "Guts",
+   "text": "When you meet your God, tell him to leave me alone.",
+   "translation_ru": "Когда встретишь своего бога, скажи ему, чтобы он оставил меня в покое.",
+   "grammar_tags": [
+    "Imperative",
+    "when-clause"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.64
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "раздел манги",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=When%20you%20meet%20your%20God%2C%20tell%20him%20to%20leave%20me%20alone."
+  },
+  {
+   "id": "q-berserk-0005",
+   "title": "Berserk",
+   "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+   "season_episode": "манга: раздел «Griffith»",
+   "speaker": "Griffith",
+   "text": "A dream... It's something you do for yourself, not for others.",
+   "translation_ru": "Мечта... Это то, что ты делаешь для себя, а не для других.",
+   "grammar_tags": [
+    "to be",
+    "Present Simple"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 0.82
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "раздел манги; translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=A%20dream...%20It%27s%20something%20you%20do%20for%20yourself%2C%20not%20for%20others."
+  },
+  {
+   "id": "q-berserk-0006",
+   "title": "Berserk",
+   "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+   "season_episode": "аниме 1997: «Bonfire of Dreams»",
+   "speaker": "Guts",
+   "text": "Alright! Let's have a drink.",
+   "translation_ru": "Ладно! Выпьем.",
+   "grammar_tags": [
+    "Let's"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.6
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "аниме 1997, серия «Bonfire of Dreams»; translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Alright%21%20Let%27s%20have%20a%20drink."
+  },
+  {
+   "id": "q-berserk-0007",
+   "title": "Berserk",
+   "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+   "season_episode": "аниме 1997: «First Battle»",
+   "speaker": "Griffith",
+   "text": "From now on, he is a member of the Hawks!",
+   "translation_ru": "Отныне он — член Соколов!",
+   "grammar_tags": [
+    "to be"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 0.8
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "аниме 1997, «First Battle»; translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=From%20now%20on%2C%20he%20is%20a%20member%20of%20the%20Hawks%21"
+  },
+  {
+   "id": "q-berserk-0008",
+   "title": "Berserk",
+   "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+   "season_episode": "аниме 1997: «Prepared For Death»",
+   "speaker": "Casca",
+   "text": "You know nothing about women!",
+   "translation_ru": "Ты ничего не понимаешь в женщинах!",
+   "grammar_tags": [
+    "Present Simple"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.8
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "аниме 1997; translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=You%20know%20nothing%20about%20women%21"
+  },
+  {
+   "id": "q-berserk-0009",
+   "title": "Berserk",
+   "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+   "season_episode": "аниме 1997: «The Advent»",
+   "speaker": "Guts",
+   "text": "Casca! It's me. Guts!",
+   "translation_ru": "Каска! Это я. Гатс!",
+   "grammar_tags": [
+    "to be"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.0
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "аниме 1997, «The Advent»; translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Casca%21%20It%27s%20me.%20Guts%21"
+  },
+  {
+   "id": "q-berserk-0010",
+   "title": "Berserk",
+   "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+   "season_episode": "аниме 1997: «The Advent»",
+   "speaker": "Guts",
+   "text": "Who the hell are you?",
+   "translation_ru": "Кто ты, чёрт возьми, такой?",
+   "grammar_tags": [
+    "wh-question",
+    "to be"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.6
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "грубоватое: the hell; translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Who%20the%20hell%20are%20you%3F"
+  },
+  {
+   "id": "q-berserk-0011",
+   "title": "Berserk",
+   "source_url": "https://www.imdb.com/title/tt0318871/quotes/",
+   "season_episode": "аниме 1997",
+   "speaker": "Guts / Judeau",
+   "text": "What kind of a man is he? — Griffith? I don't know.",
+   "translation_ru": "Что он за человек? — Гриффит? Не знаю.",
+   "grammar_tags": [
+    "wh-question",
+    "Present Simple (negative)"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.73
+   },
+   "confidence": "IMDb",
+   "note": "мини-диалог из двух реплик; translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=What%20kind%20of%20a%20man%20is%20he%3F%20%E2%80%94%20Griffith%3F%20I%20don%27t%20know."
+  },
+  {
+   "id": "q-berserk-0012",
+   "title": "Berserk",
+   "source_url": "https://www.imdb.com/title/tt0318871/quotes/",
+   "season_episode": "аниме 1997",
+   "speaker": "Guts",
+   "text": "Every sword belongs in its sheath.",
+   "translation_ru": "Каждый меч должен быть в своих ножнах.",
+   "grammar_tags": [
+    "Present Simple (3rd person -s)"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.33
+   },
+   "confidence": "IMDb",
+   "note": "фрагмент реплики; sheath — редкое слово; translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Every%20sword%20belongs%20in%20its%20sheath."
+  },
+  {
+   "id": "q-berserk-0013",
+   "title": "Berserk",
+   "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+   "season_episode": "Judeau",
+   "speaker": "Judeau",
+   "text": "It's okay to cry",
+   "translation_ru": "Поплакать — не стыдно.",
+   "grammar_tags": [
+    "It's okay to V — шаблон утешения"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.5
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=It%27s%20okay%20to%20cry"
+  },
+  {
+   "id": "q-berserk-0014",
+   "title": "Berserk",
+   "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+   "season_episode": "Griffith (1997, Band of the Hawk)",
+   "speaker": "Griffith",
+   "text": "Don't worry. I will get what I want",
+   "translation_ru": "Не волнуйся. Я получу то, что хочу.",
+   "grammar_tags": [
+    "Императив don't worry",
+    "will + придаточное what"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.88
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Don%27t%20worry.%20I%20will%20get%20what%20I%20want"
+  },
+  {
+   "id": "q-berserk-0015",
+   "title": "Berserk",
+   "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+   "season_episode": "Griffith (First Battle)",
+   "speaker": "Griffith",
+   "text": "And so, now you belong to me, Guts",
+   "translation_ru": "И вот теперь ты принадлежишь мне, Гатс.",
+   "grammar_tags": [
+    "belong to",
+    "Present Simple"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 0.62
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=And%20so%2C%20now%20you%20belong%20to%20me%2C%20Guts"
+  },
+  {
+   "id": "q-berserk-0016",
+   "title": "Berserk",
+   "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+   "season_episode": "Guts (1997, The Black Swordsman)",
+   "speaker": "Guts",
+   "text": "We are mortal and fragile. But even if we are tortured or wounded, we'll fight to survive",
+   "translation_ru": "Мы смертны и хрупки. Но даже под пыткой и в ране — мы будем драться, чтобы выжить.",
+   "grammar_tags": [
+    "even if (уступка)",
+    "пассив are tortured",
+    "will"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.53
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=We%20are%20mortal%20and%20fragile.%20But%20even%20if%20we%20are%20tortured%20or%20wounded%2C%20we%27ll%20fight%20to%20survive"
+  },
+  {
+   "id": "q-berserk-0017",
+   "title": "Berserk",
+   "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+   "season_episode": "Godo (финальная реплика 1997)",
+   "speaker": "Godo",
+   "text": "Don't get yourself killed",
+   "translation_ru": "Погибнуть не дай себе. / Не сгиньми зря.",
+   "grammar_tags": [
+    "get + oneself + V3 (каузатив-рефлексив)"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.5
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Don%27t%20get%20yourself%20killed"
+  },
+  {
+   "id": "q-berserk-0018",
+   "title": "Berserk",
+   "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+   "season_episode": "Griffith (манга)",
+   "speaker": "Griffith",
+   "text": "A dream is something you do for yourself, not for others",
+   "translation_ru": "Мечта — это то, что ты делаешь для себя, а не для других.",
+   "grammar_tags": [
+    "something + придаточное",
+    "контраст for yourself/for others"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.82
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=A%20dream%20is%20something%20you%20do%20for%20yourself%2C%20not%20for%20others"
+  },
+  {
+   "id": "q-berserk-0019",
+   "title": "Berserk",
+   "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+   "season_episode": "Guts (манга)",
+   "speaker": "Guts",
+   "text": "You have the strongest armor, because you are the weakest!",
+   "translation_ru": "У тебя самая крепкая броня, потому что ты слабейший!",
+   "grammar_tags": [
+    "because",
+    "превосходные степени",
+    "антитеза"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.6
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=You%20have%20the%20strongest%20armor%2C%20because%20you%20are%20the%20weakest%21"
+  }
+ ]
 }

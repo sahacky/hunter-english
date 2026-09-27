@@ -1,22 +1,24 @@
 #!/usr/bin/env python3
 """Примеры «английская фраза + русский перевод» из Tatoeba (CC BY 2.0 FR).
 
-Читает экспорты Tatoeba в /tmp/opencode/tatoeba/ (sentences_detailed.csv,
-links.csv) и для каждой целевой леммы из data/raw/kaikki/target_words_full.txt
-подбирает лучшую пару прямых переводов eng<->rus: минимальная «сложность» —
-максимум слов фразы из топ-3000 NGSL (взвешенно по рангу), затем короткость.
+Читает экспорты Tatoeba из каталога --tatoeba-dir (по умолчанию
+/tmp/opencode/tatoeba; файлы sentences_detailed.csv, links.csv) и для каждой
+целевой леммы из data/raw/kaikki/target_words_full.txt подбирает лучшую пару
+прямых переводов eng<->rus: минимальная «сложность» — максимум слов фразы
+из топ-3000 NGSL (взвешенно по рангу), затем короткость.
 
 Выход: data/raw/tatoeba/examples.json — {"<lemma>": {"en": ..., "ru": ...,
 "tatoeba_id": N}}; леммы без кандидата не включаются. Печатает статистику
 покрытия по диапазонам ранга.
 """
+import argparse
 import csv
 import json
 import re
+import sys
 from pathlib import Path
 
 RAW = Path(__file__).resolve().parents[3] / "data/raw"
-TATOEBA = Path("/tmp/opencode/tatoeba")
 OUT = RAW / "tatoeba/examples.json"
 
 TOP_N = 3000
@@ -44,11 +46,11 @@ def load_ranks() -> dict[str, int]:
     return ranks
 
 
-def load_pairs() -> tuple[dict[int, str], dict[int, str]]:
+def load_pairs(tatoeba: Path) -> tuple[dict[int, str], dict[int, str]]:
     """eng_id -> en text / ru text для симметричных прямых ссылок."""
     print("чтение sentences_detailed.csv ...")
     lang_text: dict[int, tuple[str, str]] = {}
-    with (TATOEBA / "sentences_detailed.csv").open(encoding="utf-8") as f:
+    with (tatoeba / "sentences_detailed.csv").open(encoding="utf-8") as f:
         for row in csv.reader(f, delimiter="\t"):
             if len(row) < 3 or row[1] not in ("eng", "rus"):
                 continue
@@ -60,7 +62,7 @@ def load_pairs() -> tuple[dict[int, str], dict[int, str]]:
 
     print("чтение links.csv ...")
     links: dict[int, set[int]] = {}
-    with (TATOEBA / "links.csv").open(encoding="utf-8") as f:
+    with (tatoeba / "links.csv").open(encoding="utf-8") as f:
         for row in csv.reader(f, delimiter="\t"):
             if len(row) != 2:
                 continue
@@ -129,15 +131,20 @@ def complexity(text: str, ranks: dict[str, int]) -> tuple[float, int]:
 
 
 def main() -> None:
+    ap = argparse.ArgumentParser(description="Примеры фраз из экспортов Tatoeba")
+    ap.add_argument("--tatoeba-dir", type=Path, default=Path("/tmp/opencode/tatoeba"),
+                    help="каталог с sentences_detailed.csv и links.csv")
+    args = ap.parse_args()
+
     ranks = load_ranks()
-    targets = [
-        w.strip().lower()
-        for w in (RAW / "kaikki/target_words_full.txt").read_text(encoding="utf-8").splitlines()
-        if w.strip()
-    ]
+    target_path = RAW / "kaikki/target_words_full.txt"
+    targets = [w.strip().lower() for w in target_path.read_text(encoding="utf-8").splitlines() if w.strip()]
+    if not targets:
+        sys.exit(f"пустой список целевых лемм: {target_path} — "
+                 f"сначала запусти research/tools/data/build_target_words.py --full")
     print(f"целевых лемм: {len(targets)}")
 
-    en_map, ru_map = load_pairs()
+    en_map, ru_map = load_pairs(args.tatoeba_dir)
 
     forms_index: dict[str, list[str]] = {}
     for lemma in targets:

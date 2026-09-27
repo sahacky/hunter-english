@@ -1,354 +1,408 @@
 {
-  "schema_version": 1,
-  "kind": "quotes",
-  "items": [
-    {
-      "id": "q-fma-fma-b-0001",
-      "title": "FMA / FMA:B",
-      "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist_(anime)",
-      "season_episode": "Recurring Quotes",
-      "speaker": "Alphonse",
-      "text": "Humankind cannot gain anything without first giving something in return.",
-      "translation_ru": "Человек не может ничего получить, ничего не отдав взамен. Чтобы получить, должно быть потеряно нечто равной ценности.",
-      "grammar_tags": ["can/cannot", "without + -ing"],
-      "est_rank": "C",
-      "auto_vocab": {
-        "top1000": 0.9
-      },
-      "confidence": "verbatim (Wikiquote)",
-      "note": "фрагмент вступления (FMA 2003 и Brotherhood)",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=Humankind%20cannot%20gain%20anything%20without%20first%20giving%20something%20in%20return."
-    },
-    {
-      "id": "q-fma-fma-b-0002",
-      "title": "FMA / FMA:B",
-      "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist:_Brotherhood_(anime)",
-      "season_episode": "S01E01 «Fullmetal Alchemist»",
-      "speaker": "Edward",
-      "text": "DON'T CALL ME LITTLE!",
-      "translation_ru": "НЕ НАЗЫВАЙ МЕНЯ МАЛЫШКОЙ!",
-      "grammar_tags": ["Imperative (negative)"],
-      "est_rank": "E",
-      "auto_vocab": {
-        "top1000": 1.0
-      },
-      "confidence": "verbatim (Wikiquote)",
-      "note": "фрагмент более длинной реплики. Brotherhood; в источнике капсом; translation needs review",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=DON%27T%20CALL%20ME%20LITTLE%21"
-    },
-    {
-      "id": "q-fma-fma-b-0003",
-      "title": "FMA / FMA:B",
-      "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist:_Brotherhood_(anime)",
-      "season_episode": "S01E01 «Fullmetal Alchemist»",
-      "speaker": "Alphonse Elric",
-      "text": "I'm his younger brother, Alphonse.",
-      "translation_ru": "Я его младший брат, Альфонс.",
-      "grammar_tags": ["to be", "comparative younger"],
-      "est_rank": "E",
-      "auto_vocab": {
-        "top1000": 1.0
-      },
-      "confidence": "verbatim (Wikiquote)",
-      "note": "фрагмент более длинной реплики. Brotherhood 1.01, фрагмент; translation needs review",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=I%27m%20his%20younger%20brother%2C%20Alphonse."
-    },
-    {
-      "id": "q-fma-fma-b-0004",
-      "title": "FMA / FMA:B",
-      "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist:_Brotherhood_(anime)",
-      "season_episode": "S01E03 «City of Heresy»",
-      "speaker": "Edward",
-      "text": "Stand up and walk. Keep moving forward. You've got two good legs.",
-      "translation_ru": "Встань и иди. Двигайся вперёд. У тебя две здоровые ноги.",
-      "grammar_tags": ["Imperative", "have got"],
-      "est_rank": "D",
-      "auto_vocab": {
-        "top1000": 0.92
-      },
-      "confidence": "verbatim (Wikiquote)",
-      "note": "фрагмент более длинной реплики. Brotherhood 1.03, фрагмент; translation needs review",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=Stand%20up%20and%20walk.%20Keep%20moving%20forward.%20You%27ve%20got%20two%20good%20legs."
-    },
-    {
-      "id": "q-fma-fma-b-0005",
-      "title": "FMA / FMA:B",
-      "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist_(anime)",
-      "season_episode": "S01E47 «Sealing the Homunculus»",
-      "speaker": "Alphonse",
-      "text": "Brother, you don't understand.",
-      "translation_ru": "Брат, ты не понимаешь.",
-      "grammar_tags": ["Present Simple (negative)"],
-      "est_rank": "E",
-      "auto_vocab": {
-        "top1000": 1.0
-      },
-      "confidence": "verbatim (Wikiquote)",
-      "note": "FMA 2003; translation needs review",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=Brother%2C%20you%20don%27t%20understand."
-    },
-    {
-      "id": "q-fma-fma-b-0006",
-      "title": "FMA / FMA:B",
-      "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist:_Brotherhood_(anime)",
-      "season_episode": "S01E20 «Father Before the Grave»",
-      "speaker": "Alphonse",
-      "text": "I'm sorry, brother.",
-      "translation_ru": "Прости, брат.",
-      "grammar_tags": ["to be"],
-      "est_rank": "E",
-      "auto_vocab": {
-        "top1000": 1.0
-      },
-      "confidence": "verbatim (Wikiquote)",
-      "note": "Brotherhood; translation needs review",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=I%27m%20sorry%2C%20brother."
-    },
-    {
-      "id": "q-fma-fma-b-0007",
-      "title": "FMA / FMA:B",
-      "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist_(anime)",
-      "season_episode": "S01E24 «Bonding Memories (Affixing Memories)»",
-      "speaker": "Alphonse",
-      "text": "Brother, I could never... I could never hate you!",
-      "translation_ru": "Брат, я не мог... Я никогда не смогу тебя ненавидеть!",
-      "grammar_tags": ["could"],
-      "est_rank": "C",
-      "auto_vocab": {
-        "top1000": 1.0
-      },
-      "confidence": "verbatim (Wikiquote)",
-      "note": "FMA 2003; translation needs review",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=Brother%2C%20I%20could%20never...%20I%20could%20never%20hate%20you%21"
-    },
-    {
-      "id": "q-fma-fma-b-0008",
-      "title": "FMA / FMA:B",
-      "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist_(anime)",
-      "season_episode": "S01E41 «Holy Mother»",
-      "speaker": "Alphonse",
-      "text": "Is it from my brother? Is he okay?",
-      "translation_ru": "Это от брата? С ним всё в порядке?",
-      "grammar_tags": ["to be (question)"],
-      "est_rank": "E",
-      "auto_vocab": {
-        "top1000": 1.0
-      },
-      "confidence": "verbatim (Wikiquote)",
-      "note": "FMA 2003; translation needs review",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=Is%20it%20from%20my%20brother%3F%20Is%20he%20okay%3F"
-    },
-    {
-      "id": "q-fma-fma-b-0009",
-      "title": "FMA / FMA:B",
-      "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist:_Brotherhood_(anime)",
-      "season_episode": "S01E64 «Journey's End»",
-      "speaker": "Edward",
-      "text": "Equivalent exchange!",
-      "translation_ru": "Равноценный обмен!",
-      "grammar_tags": ["noun phrase"],
-      "est_rank": "C",
-      "auto_vocab": {
-        "top1000": 0.0
-      },
-      "confidence": "verbatim (Wikiquote)",
-      "note": "Brotherhood; ключевой термин (B2-лексика); translation needs review",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=Equivalent%20exchange%21"
-    },
-    {
-      "id": "q-fma-fma-b-0010",
-      "title": "FMA / FMA:B",
-      "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist:_Brotherhood_(anime)",
-      "season_episode": "S01E01 «Fullmetal Alchemist»",
-      "speaker": "Edward",
-      "text": "What a nasty thing to do.",
-      "translation_ru": "Что за мерзость.",
-      "grammar_tags": ["What a ...!"],
-      "est_rank": "D",
-      "auto_vocab": {
-        "top1000": 0.83
-      },
-      "confidence": "verbatim (Wikiquote)",
-      "note": "Brotherhood 1.01; translation needs review",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=What%20a%20nasty%20thing%20to%20do."
-    },
-    {
-      "id": "q-fma-fma-b-0011",
-      "title": "FMA / FMA:B",
-      "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist:_Brotherhood_(anime)",
-      "season_episode": "S01E01 «Fullmetal Alchemist»",
-      "speaker": "Isaac",
-      "text": "Water freezes, water boils. Either way, you're just as dead.",
-      "translation_ru": "Вода замерзает, вода кипит. В любом случае тебе конец.",
-      "grammar_tags": ["Present Simple (3rd person -s)"],
-      "est_rank": "C",
-      "auto_vocab": {
-        "top1000": 0.82
-      },
-      "confidence": "verbatim (Wikiquote)",
-      "note": "фрагмент более длинной реплики. Brotherhood 1.01; translation needs review",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=Water%20freezes%2C%20water%20boils.%20Either%20way%2C%20you%27re%20just%20as%20dead."
-    },
-    {
-      "id": "q-fma-fma-b-0012",
-      "title": "FMA / FMA:B",
-      "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist_(anime)",
-      "season_episode": "S01E42 «His Name is Unknown»",
-      "speaker": "Alphonse",
-      "text": "Brother, please do something.",
-      "translation_ru": "Брат, ну сделай что-нибудь.",
-      "grammar_tags": ["Imperative", "please"],
-      "est_rank": "E",
-      "auto_vocab": {
-        "top1000": 1.0
-      },
-      "confidence": "verbatim (Wikiquote)",
-      "note": "FMA 2003; translation needs review",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=Brother%2C%20please%20do%20something."
-    },
-    {
-      "id": "q-fma-fma-b-0013",
-      "title": "FMA / FMA:B",
-      "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist",
-      "season_episode": "Gluttony (1.01)",
-      "speaker": "Gluttony",
-      "text": "Can I eat him?",
-      "translation_ru": "Можно я его съем?",
-      "grammar_tags": ["Модальный can (разрешение)", "вопрос"],
-      "est_rank": "E",
-      "auto_vocab": {
-        "top1000": 0.75
-      },
-      "confidence": "verbatim (parallel research) — needs source check",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=Can%20I%20eat%20him%3F"
-    },
-    {
-      "id": "q-fma-fma-b-0014",
-      "title": "FMA / FMA:B",
-      "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist",
-      "season_episode": "Edward (1.02)",
-      "speaker": "Edward",
-      "text": "Walk on your own. Move forward. You've got a good strong pair of legs, Rose. You should get up and use them",
-      "translation_ru": "Иди сама. Двигайся вперёд. У тебя есть свои крепкие ноги, Роуз. Встань и пользуйся ими.",
-      "grammar_tags": ["Императивы", "have got", "should"],
-      "est_rank": "C",
-      "auto_vocab": {
-        "top1000": 0.68
-      },
-      "confidence": "verbatim (parallel research) — needs source check",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=Walk%20on%20your%20own.%20Move%20forward.%20You%27ve%20got%20a%20good%20strong%20pair%20of%20legs%2C%20Rose.%20You%20should%20get%20up%20and%20use%20them"
-    },
-    {
-      "id": "q-fma-fma-b-0015",
-      "title": "FMA / FMA:B",
-      "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist",
-      "season_episode": "Edward (1.02)",
-      "speaker": "Edward",
-      "text": "Can't find a door, make your own!",
-      "translation_ru": "Не находишь дверь — сделай свою!",
-      "grammar_tags": ["Эллипсис if", "императив make"],
-      "est_rank": "D",
-      "auto_vocab": {
-        "top1000": 0.71
-      },
-      "confidence": "verbatim (parallel research) — needs source check",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=Can%27t%20find%20a%20door%2C%20make%20your%20own%21"
-    },
-    {
-      "id": "q-fma-fma-b-0016",
-      "title": "FMA / FMA:B",
-      "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist",
-      "season_episode": "Alphonse (1.08)",
-      "speaker": "Alphonse",
-      "text": "I want my body back. I want to feel human again",
-      "translation_ru": "Я хочу вернуть своё тело. Я хочу снова чувствовать себя человеком.",
-      "grammar_tags": ["want + obj + back / want to V"],
-      "est_rank": "D",
-      "auto_vocab": {
-        "top1000": 0.91
-      },
-      "confidence": "verbatim (parallel research) — needs source check",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=I%20want%20my%20body%20back.%20I%20want%20to%20feel%20human%20again"
-    },
-    {
-      "id": "q-fma-fma-b-0017",
-      "title": "FMA / FMA:B",
-      "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist",
-      "season_episode": "Edward (1.08)",
-      "speaker": "Edward",
-      "text": "We're not gods. We're humans",
-      "translation_ru": "Мы не боги. Мы люди.",
-      "grammar_tags": ["be + множественное число"],
-      "est_rank": "E",
-      "auto_vocab": {
-        "top1000": 0.2
-      },
-      "confidence": "verbatim (parallel research) — needs source check",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=We%27re%20not%20gods.%20We%27re%20humans"
-    },
-    {
-      "id": "q-fma-fma-b-0018",
-      "title": "FMA / FMA:B",
-      "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist",
-      "season_episode": "Edward (1.02 и по всему сериалу)",
-      "speaker": "Edward",
-      "text": "Who are you calling a mousy little pipsqueak?!",
-      "translation_ru": "Кого это ты назвал серенькой малявкой?!",
-      "grammar_tags": ["Вопрос к объекту (who…calling)", "running gag про рост"],
-      "est_rank": "C",
-      "auto_vocab": {
-        "top1000": 0.5
-      },
-      "confidence": "verbatim (parallel research) — needs source check",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=Who%20are%20you%20calling%20a%20mousy%20little%20pipsqueak%3F%21"
-    },
-    {
-      "id": "q-fma-fma-b-0019",
-      "title": "FMA / FMA:B",
-      "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist",
-      "season_episode": "Alphonse (1.06)",
-      "speaker": "Alphonse",
-      "text": "I don't want to be in this suit anymore. I want to feel things again",
-      "translation_ru": "Я больше не хочу быть в этой броне. Я хочу снова что-то чувствовать.",
-      "grammar_tags": ["not…anymore", "want to V"],
-      "est_rank": "D",
-      "auto_vocab": {
-        "top1000": 0.73
-      },
-      "confidence": "verbatim (parallel research) — needs source check",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=I%20don%27t%20want%20to%20be%20in%20this%20suit%20anymore.%20I%20want%20to%20feel%20things%20again"
-    },
-    {
-      "id": "q-fma-fma-b-0020",
-      "title": "FMA / FMA:B",
-      "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist",
-      "season_episode": "Edward (коронное, дубляж)",
-      "speaker": "Edward",
-      "text": "Stop jerking me around!",
-      "translation_ru": "Хватит меня дурить!",
-      "grammar_tags": ["stop + gerund", "фразовый jerk around"],
-      "est_rank": "D",
-      "auto_vocab": {
-        "top1000": 0.5
-      },
-      "confidence": "verbatim (parallel research) — needs source check",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=Stop%20jerking%20me%20around%21"
-    },
-    {
-      "id": "q-fma-fma-b-0021",
-      "title": "FMA / FMA:B",
-      "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist",
-      "season_episode": "Edward (1.04)",
-      "speaker": "Edward",
-      "text": "Flowers wither, Majahal",
-      "translation_ru": "Цветы вянут, Маджахал.",
-      "grammar_tags": ["Present Simple (истина)", "обращение"],
-      "est_rank": "E",
-      "auto_vocab": {
-        "top1000": 0.0
-      },
-      "confidence": "verbatim (parallel research) — needs source check",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=Flowers%20wither%2C%20Majahal"
-    }
-  ]
+ "schema_version": 1,
+ "kind": "quotes",
+ "items": [
+  {
+   "id": "q-fma-fma-b-0001",
+   "title": "FMA / FMA:B",
+   "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist_(anime)",
+   "season_episode": "Recurring Quotes",
+   "speaker": "Alphonse",
+   "text": "Humankind cannot gain anything without first giving something in return.",
+   "translation_ru": "Человек не может ничего получить, ничего не отдав взамен. Чтобы получить, должно быть потеряно нечто равной ценности.",
+   "grammar_tags": [
+    "can/cannot",
+    "without + -ing"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.7
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "фрагмент вступления (FMA 2003 и Brotherhood)",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Humankind%20cannot%20gain%20anything%20without%20first%20giving%20something%20in%20return."
+  },
+  {
+   "id": "q-fma-fma-b-0002",
+   "title": "FMA / FMA:B",
+   "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist:_Brotherhood_(anime)",
+   "season_episode": "S01E01 «Fullmetal Alchemist»",
+   "speaker": "Edward",
+   "text": "DON'T CALL ME LITTLE!",
+   "translation_ru": "НЕ НАЗЫВАЙ МЕНЯ МАЛЫШКОЙ!",
+   "grammar_tags": [
+    "Imperative (negative)"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.5
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "фрагмент более длинной реплики. Brotherhood; в источнике капсом; translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=DON%27T%20CALL%20ME%20LITTLE%21"
+  },
+  {
+   "id": "q-fma-fma-b-0003",
+   "title": "FMA / FMA:B",
+   "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist:_Brotherhood_(anime)",
+   "season_episode": "S01E01 «Fullmetal Alchemist»",
+   "speaker": "Alphonse Elric",
+   "text": "I'm his younger brother, Alphonse.",
+   "translation_ru": "Я его младший брат, Альфонс.",
+   "grammar_tags": [
+    "to be",
+    "comparative younger"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.2
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "фрагмент более длинной реплики. Brotherhood 1.01, фрагмент; translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%27m%20his%20younger%20brother%2C%20Alphonse."
+  },
+  {
+   "id": "q-fma-fma-b-0004",
+   "title": "FMA / FMA:B",
+   "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist:_Brotherhood_(anime)",
+   "season_episode": "S01E03 «City of Heresy»",
+   "speaker": "Edward",
+   "text": "Stand up and walk. Keep moving forward. You've got two good legs.",
+   "translation_ru": "Встань и иди. Двигайся вперёд. У тебя две здоровые ноги.",
+   "grammar_tags": [
+    "Imperative",
+    "have got"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 0.58
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "фрагмент более длинной реплики. Brotherhood 1.03, фрагмент; translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Stand%20up%20and%20walk.%20Keep%20moving%20forward.%20You%27ve%20got%20two%20good%20legs."
+  },
+  {
+   "id": "q-fma-fma-b-0005",
+   "title": "FMA / FMA:B",
+   "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist_(anime)",
+   "season_episode": "S01E47 «Sealing the Homunculus»",
+   "speaker": "Alphonse",
+   "text": "Brother, you don't understand.",
+   "translation_ru": "Брат, ты не понимаешь.",
+   "grammar_tags": [
+    "Present Simple (negative)"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.75
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "FMA 2003; translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Brother%2C%20you%20don%27t%20understand."
+  },
+  {
+   "id": "q-fma-fma-b-0006",
+   "title": "FMA / FMA:B",
+   "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist:_Brotherhood_(anime)",
+   "season_episode": "S01E20 «Father Before the Grave»",
+   "speaker": "Alphonse",
+   "text": "I'm sorry, brother.",
+   "translation_ru": "Прости, брат.",
+   "grammar_tags": [
+    "to be"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.67
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "Brotherhood; translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%27m%20sorry%2C%20brother."
+  },
+  {
+   "id": "q-fma-fma-b-0007",
+   "title": "FMA / FMA:B",
+   "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist_(anime)",
+   "season_episode": "S01E24 «Bonding Memories (Affixing Memories)»",
+   "speaker": "Alphonse",
+   "text": "Brother, I could never... I could never hate you!",
+   "translation_ru": "Брат, я не мог... Я никогда не смогу тебя ненавидеть!",
+   "grammar_tags": [
+    "could"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.89
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "FMA 2003; translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Brother%2C%20I%20could%20never...%20I%20could%20never%20hate%20you%21"
+  },
+  {
+   "id": "q-fma-fma-b-0008",
+   "title": "FMA / FMA:B",
+   "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist_(anime)",
+   "season_episode": "S01E41 «Holy Mother»",
+   "speaker": "Alphonse",
+   "text": "Is it from my brother? Is he okay?",
+   "translation_ru": "Это от брата? С ним всё в порядке?",
+   "grammar_tags": [
+    "to be (question)"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.62
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "FMA 2003; translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Is%20it%20from%20my%20brother%3F%20Is%20he%20okay%3F"
+  },
+  {
+   "id": "q-fma-fma-b-0009",
+   "title": "FMA / FMA:B",
+   "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist:_Brotherhood_(anime)",
+   "season_episode": "S01E64 «Journey's End»",
+   "speaker": "Edward",
+   "text": "Equivalent exchange!",
+   "translation_ru": "Равноценный обмен!",
+   "grammar_tags": [
+    "noun phrase"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.0
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "Brotherhood; ключевой термин (B2-лексика); translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Equivalent%20exchange%21"
+  },
+  {
+   "id": "q-fma-fma-b-0010",
+   "title": "FMA / FMA:B",
+   "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist:_Brotherhood_(anime)",
+   "season_episode": "S01E01 «Fullmetal Alchemist»",
+   "speaker": "Edward",
+   "text": "What a nasty thing to do.",
+   "translation_ru": "Что за мерзость.",
+   "grammar_tags": [
+    "What a ...!"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 0.83
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "Brotherhood 1.01; translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=What%20a%20nasty%20thing%20to%20do."
+  },
+  {
+   "id": "q-fma-fma-b-0011",
+   "title": "FMA / FMA:B",
+   "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist:_Brotherhood_(anime)",
+   "season_episode": "S01E01 «Fullmetal Alchemist»",
+   "speaker": "Isaac",
+   "text": "Water freezes, water boils. Either way, you're just as dead.",
+   "translation_ru": "Вода замерзает, вода кипит. В любом случае тебе конец.",
+   "grammar_tags": [
+    "Present Simple (3rd person -s)"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.7
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "фрагмент более длинной реплики. Brotherhood 1.01; translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Water%20freezes%2C%20water%20boils.%20Either%20way%2C%20you%27re%20just%20as%20dead."
+  },
+  {
+   "id": "q-fma-fma-b-0012",
+   "title": "FMA / FMA:B",
+   "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist_(anime)",
+   "season_episode": "S01E42 «His Name is Unknown»",
+   "speaker": "Alphonse",
+   "text": "Brother, please do something.",
+   "translation_ru": "Брат, ну сделай что-нибудь.",
+   "grammar_tags": [
+    "Imperative",
+    "please"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 1.0
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "FMA 2003; translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Brother%2C%20please%20do%20something."
+  },
+  {
+   "id": "q-fma-fma-b-0013",
+   "title": "FMA / FMA:B",
+   "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist",
+   "season_episode": "Gluttony (1.01)",
+   "speaker": "Gluttony",
+   "text": "Can I eat him?",
+   "translation_ru": "Можно я его съем?",
+   "grammar_tags": [
+    "Модальный can (разрешение)",
+    "вопрос"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.75
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Can%20I%20eat%20him%3F"
+  },
+  {
+   "id": "q-fma-fma-b-0014",
+   "title": "FMA / FMA:B",
+   "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist",
+   "season_episode": "Edward (1.02)",
+   "speaker": "Edward",
+   "text": "Walk on your own. Move forward. You've got a good strong pair of legs, Rose. You should get up and use them",
+   "translation_ru": "Иди сама. Двигайся вперёд. У тебя есть свои крепкие ноги, Роуз. Встань и пользуйся ими.",
+   "grammar_tags": [
+    "Императивы",
+    "have got",
+    "should"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.68
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Walk%20on%20your%20own.%20Move%20forward.%20You%27ve%20got%20a%20good%20strong%20pair%20of%20legs%2C%20Rose.%20You%20should%20get%20up%20and%20use%20them"
+  },
+  {
+   "id": "q-fma-fma-b-0015",
+   "title": "FMA / FMA:B",
+   "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist",
+   "season_episode": "Edward (1.02)",
+   "speaker": "Edward",
+   "text": "Can't find a door, make your own!",
+   "translation_ru": "Не находишь дверь — сделай свою!",
+   "grammar_tags": [
+    "Эллипсис if",
+    "императив make"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 0.71
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Can%27t%20find%20a%20door%2C%20make%20your%20own%21"
+  },
+  {
+   "id": "q-fma-fma-b-0016",
+   "title": "FMA / FMA:B",
+   "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist",
+   "season_episode": "Alphonse (1.08)",
+   "speaker": "Alphonse",
+   "text": "I want my body back. I want to feel human again",
+   "translation_ru": "Я хочу вернуть своё тело. Я хочу снова чувствовать себя человеком.",
+   "grammar_tags": [
+    "want + obj + back / want to V"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 0.91
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20want%20my%20body%20back.%20I%20want%20to%20feel%20human%20again"
+  },
+  {
+   "id": "q-fma-fma-b-0017",
+   "title": "FMA / FMA:B",
+   "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist",
+   "season_episode": "Edward (1.08)",
+   "speaker": "Edward",
+   "text": "We're not gods. We're humans",
+   "translation_ru": "Мы не боги. Мы люди.",
+   "grammar_tags": [
+    "be + множественное число"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.2
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=We%27re%20not%20gods.%20We%27re%20humans"
+  },
+  {
+   "id": "q-fma-fma-b-0018",
+   "title": "FMA / FMA:B",
+   "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist",
+   "season_episode": "Edward (1.02 и по всему сериалу)",
+   "speaker": "Edward",
+   "text": "Who are you calling a mousy little pipsqueak?!",
+   "translation_ru": "Кого это ты назвал серенькой малявкой?!",
+   "grammar_tags": [
+    "Вопрос к объекту (who…calling)",
+    "running gag про рост"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.5
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Who%20are%20you%20calling%20a%20mousy%20little%20pipsqueak%3F%21"
+  },
+  {
+   "id": "q-fma-fma-b-0019",
+   "title": "FMA / FMA:B",
+   "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist",
+   "season_episode": "Alphonse (1.06)",
+   "speaker": "Alphonse",
+   "text": "I don't want to be in this suit anymore. I want to feel things again",
+   "translation_ru": "Я больше не хочу быть в этой броне. Я хочу снова что-то чувствовать.",
+   "grammar_tags": [
+    "not…anymore",
+    "want to V"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 0.73
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20don%27t%20want%20to%20be%20in%20this%20suit%20anymore.%20I%20want%20to%20feel%20things%20again"
+  },
+  {
+   "id": "q-fma-fma-b-0020",
+   "title": "FMA / FMA:B",
+   "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist",
+   "season_episode": "Edward (коронное, дубляж)",
+   "speaker": "Edward",
+   "text": "Stop jerking me around!",
+   "translation_ru": "Хватит меня дурить!",
+   "grammar_tags": [
+    "stop + gerund",
+    "фразовый jerk around"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 0.5
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Stop%20jerking%20me%20around%21"
+  },
+  {
+   "id": "q-fma-fma-b-0021",
+   "title": "FMA / FMA:B",
+   "source_url": "https://en.wikiquote.org/wiki/Fullmetal_Alchemist",
+   "season_episode": "Edward (1.04)",
+   "speaker": "Edward",
+   "text": "Flowers wither, Majahal",
+   "translation_ru": "Цветы вянут, Маджахал.",
+   "grammar_tags": [
+    "Present Simple (истина)",
+    "обращение"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.0
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Flowers%20wither%2C%20Majahal"
+  }
+ ]
 }

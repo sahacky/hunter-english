@@ -1,270 +1,312 @@
 {
-  "schema_version": 1,
-  "kind": "quotes",
-  "items": [
-    {
-      "id": "q-jujutsu-kaisen-0001",
-      "title": "Jujutsu Kaisen",
-      "source_url": "https://screenrant.com/best-jujutsu-kaisen-quotes/",
-      "season_episode": "манга, гл. 221 (в аниме — позже)",
-      "speaker": "Satoru Gojo",
-      "text": "Nah, I'd win.",
-      "translation_ru": "Не, я бы выиграл.",
-      "grammar_tags": ["would ('d)"],
-      "est_rank": "C",
-      "auto_vocab": {
-        "top1000": 0.75
-      },
-      "confidence": "статья Screen Rant; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
-      "note": "мем; у фразы спорная история перевода — см. KYM nah-id-win; translation needs review",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=Nah%2C%20I%27d%20win."
-    },
-    {
-      "id": "q-jujutsu-kaisen-0002",
-      "title": "Jujutsu Kaisen",
-      "source_url": "https://screenrant.com/best-jujutsu-kaisen-quotes/",
-      "season_episode": "аниме S2",
-      "speaker": "Satoru Gojo",
-      "text": "Throughout Heaven and Earth, I alone am the honored one.",
-      "translation_ru": "Под небом и на земле я один — достойный.",
-      "grammar_tags": ["to be"],
-      "est_rank": "B",
-      "auto_vocab": {
-        "top1000": 0.88
-      },
-      "confidence": "статья Screen Rant; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=Throughout%20Heaven%20and%20Earth%2C%20I%20alone%20am%20the%20honored%20one."
-    },
-    {
-      "id": "q-jujutsu-kaisen-0003",
-      "title": "Jujutsu Kaisen",
-      "source_url": "https://screenrant.com/best-jujutsu-kaisen-quotes/",
-      "season_episode": "Jujutsu Kaisen 0",
-      "speaker": "Satoru Gojo",
-      "text": "Love is the most twisted curse of all.",
-      "translation_ru": "Любовь — самая извращённая из всех проклятий.",
-      "grammar_tags": ["to be", "superlative"],
-      "est_rank": "C",
-      "auto_vocab": {
-        "top1000": 0.75
-      },
-      "confidence": "Screen Rant + ComicBook; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
-      "note": "translation needs review",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=Love%20is%20the%20most%20twisted%20curse%20of%20all."
-    },
-    {
-      "id": "q-jujutsu-kaisen-0004",
-      "title": "Jujutsu Kaisen",
-      "source_url": "https://comicbook.com/anime/news/best-jujutsu-kaisen-quotes-ranked/",
-      "season_episode": "аниме S2E1 «Hidden Inventory»",
-      "speaker": "Satoru Gojo",
-      "text": "You cryin'?",
-      "translation_ru": "Ты плачешь?",
-      "grammar_tags": ["Present Continuous (разговорный, без are)"],
-      "est_rank": "D",
-      "auto_vocab": {
-        "top1000": 0.5
-      },
-      "confidence": "ComicBook (указан англ. дубляж); уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
-      "note": "разговорное опущение are; translation needs review",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=You%20cryin%27%3F"
-    },
-    {
-      "id": "q-jujutsu-kaisen-0005",
-      "title": "Jujutsu Kaisen",
-      "source_url": "https://comicbook.com/anime/news/best-jujutsu-kaisen-quotes-ranked/",
-      "season_episode": "аниме S2",
-      "speaker": "Satoru Gojo",
-      "text": "We're the strongest.",
-      "translation_ru": "Мы — сильнейшие.",
-      "grammar_tags": ["to be", "superlative"],
-      "est_rank": "E",
-      "auto_vocab": {
-        "top1000": 1.0
-      },
-      "confidence": "ComicBook; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
-      "note": "translation needs review",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=We%27re%20the%20strongest."
-    },
-    {
-      "id": "q-jujutsu-kaisen-0006",
-      "title": "Jujutsu Kaisen",
-      "source_url": "https://comicbook.com/anime/news/best-jujutsu-kaisen-quotes-ranked/",
-      "season_episode": "аниме (эпизод не указан)",
-      "speaker": "Aoi Todo",
-      "text": "What kind of woman is your type?",
-      "translation_ru": "Какая женщина — твой тип?",
-      "grammar_tags": ["wh-question", "to be"],
-      "est_rank": "D",
-      "auto_vocab": {
-        "top1000": 1.0
-      },
-      "confidence": "ComicBook; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
-      "note": "translation needs review",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=What%20kind%20of%20woman%20is%20your%20type%3F"
-    },
-    {
-      "id": "q-jujutsu-kaisen-0007",
-      "title": "Jujutsu Kaisen",
-      "source_url": "https://comicbook.com/anime/news/best-jujutsu-kaisen-quotes-ranked/",
-      "season_episode": "аниме (эпизод не указан)",
-      "speaker": "Kento Nanami",
-      "text": "Being a child is not a sin.",
-      "translation_ru": "Быть ребёнком — не грех.",
-      "grammar_tags": ["-ing subject", "to be (negative)"],
-      "est_rank": "C",
-      "auto_vocab": {
-        "top1000": 0.86
-      },
-      "confidence": "ComicBook; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
-      "note": "translation needs review",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=Being%20a%20child%20is%20not%20a%20sin."
-    },
-    {
-      "id": "q-jujutsu-kaisen-0008",
-      "title": "Jujutsu Kaisen",
-      "source_url": "https://comicbook.com/anime/news/best-jujutsu-kaisen-quotes-ranked/",
-      "season_episode": "аниме S2 (Шибуя)",
-      "speaker": "Kento Nanami",
-      "text": "Itadori, you've got it from here.",
-      "translation_ru": "Итадори, дальше сам.",
-      "grammar_tags": ["have got"],
-      "est_rank": "C",
-      "auto_vocab": {
-        "top1000": 0.86
-      },
-      "confidence": "ComicBook; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
-      "note": "translation needs review",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=Itadori%2C%20you%27ve%20got%20it%20from%20here."
-    },
-    {
-      "id": "q-jujutsu-kaisen-0009",
-      "title": "Jujutsu Kaisen",
-      "source_url": "https://jujutsu-kaisen.fandom.com/wiki/Yuji_Itadori",
-      "season_episode": "гл. 87 / эп. 32",
-      "speaker": "Yuji Itadori",
-      "text": "Smart people usually don't brag about being smart.",
-      "translation_ru": "Умные люди обычно не хвастаются своим умом.",
-      "grammar_tags": ["Present Simple (negative)", "adverb usually", "about + -ing"],
-      "est_rank": "C",
-      "auto_vocab": {
-        "top1000": 0.89
-      },
-      "confidence": "Jujutsu Kaisen Wiki (Fandom), раздел Quotes — перевод манги",
-      "note": "translation needs review",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=Smart%20people%20usually%20don%27t%20brag%20about%20being%20smart."
-    },
-    {
-      "id": "q-jujutsu-kaisen-0010",
-      "title": "Jujutsu Kaisen",
-      "source_url": "https://screenrant.com/best-jujutsu-kaisen-quotes/",
-      "season_episode": "Gojo (эп. 7, дубляж)",
-      "speaker": "Gojo",
-      "text": "Don't worry. I'm the strongest",
-      "translation_ru": "Не волнуйся. Я сильнейший.",
-      "grammar_tags": ["Императив don't worry + превосходная степень"],
-      "est_rank": "E",
-      "auto_vocab": {
-        "top1000": 0.4
-      },
-      "confidence": "verbatim (parallel research) — needs source check",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=Don%27t%20worry.%20I%27m%20the%20strongest"
-    },
-    {
-      "id": "q-jujutsu-kaisen-0011",
-      "title": "Jujutsu Kaisen",
-      "source_url": "https://screenrant.com/best-jujutsu-kaisen-quotes/",
-      "season_episode": "Sukuna → Jogo (эп. 17, дубляж)",
-      "speaker": "Sukuna → Jogo",
-      "text": "Stand proud. You're strong",
-      "translation_ru": "Будь гордым. Ты силён.",
-      "grammar_tags": ["Императив stand proud", "be + прилагательное"],
-      "est_rank": "E",
-      "auto_vocab": {
-        "top1000": 0.5
-      },
-      "confidence": "verbatim (parallel research) — needs source check",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=Stand%20proud.%20You%27re%20strong"
-    },
-    {
-      "id": "q-jujutsu-kaisen-0012",
-      "title": "Jujutsu Kaisen",
-      "source_url": "https://screenrant.com/best-jujutsu-kaisen-quotes/",
-      "season_episode": "Todo (Goodwill Event, дубляж)",
-      "speaker": "Todo",
-      "text": "What kind of women do you like?",
-      "translation_ru": "Какие женщины тебе нравятся?",
-      "grammar_tags": ["what kind of…", "Present Simple вопрос"],
-      "est_rank": "E",
-      "auto_vocab": {
-        "top1000": 0.86
-      },
-      "confidence": "verbatim (parallel research) — needs source check",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=What%20kind%20of%20women%20do%20you%20like%3F"
-    },
-    {
-      "id": "q-jujutsu-kaisen-0013",
-      "title": "Jujutsu Kaisen",
-      "source_url": "https://screenrant.com/best-jujutsu-kaisen-quotes/",
-      "season_episode": "Дедушка Итадори → Юдзи (эп. 1, дубляж)",
-      "speaker": "Дедушка Итадори → Юдзи",
-      "text": "You're a strong kid, so help people. Die surrounded by people",
-      "translation_ru": "Ты сильный, так что помогай людям. Умри в окружении людей.",
-      "grammar_tags": ["so (следствие)", "императив", "пассив surrounded by"],
-      "est_rank": "D",
-      "auto_vocab": {
-        "top1000": 0.82
-      },
-      "confidence": "verbatim (parallel research) — needs source check",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=You%27re%20a%20strong%20kid%2C%20so%20help%20people.%20Die%20surrounded%20by%20people"
-    },
-    {
-      "id": "q-jujutsu-kaisen-0014",
-      "title": "Jujutsu Kaisen",
-      "source_url": "https://screenrant.com/best-jujutsu-kaisen-quotes/",
-      "season_episode": "Nanami (дубляж)",
-      "speaker": "Nanami",
-      "text": "Dying to win and risking death to win are completely different",
-      "translation_ru": "Умереть ради победы и рисковать смертью ради победы — совершенно разные вещи.",
-      "grammar_tags": ["Gerund-подлежащее (сравнение)"],
-      "est_rank": "C",
-      "auto_vocab": {
-        "top1000": 0.73
-      },
-      "confidence": "verbatim (parallel research) — needs source check",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=Dying%20to%20win%20and%20risking%20death%20to%20win%20are%20completely%20different"
-    },
-    {
-      "id": "q-jujutsu-kaisen-0015",
-      "title": "Jujutsu Kaisen",
-      "source_url": "https://screenrant.com/best-jujutsu-kaisen-quotes/",
-      "season_episode": "Megumi (эп. 23, дубляж)",
-      "speaker": "Megumi",
-      "text": "I'm not a hero. I'm a jujutsu sorcerer",
-      "translation_ru": "Я не герой. Я маг.",
-      "grammar_tags": ["be + отрицание/утверждение (контраст)"],
-      "est_rank": "E",
-      "auto_vocab": {
-        "top1000": 0.38
-      },
-      "confidence": "verbatim (parallel research) — needs source check",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=I%27m%20not%20a%20hero.%20I%27m%20a%20jujutsu%20sorcerer"
-    },
-    {
-      "id": "q-jujutsu-kaisen-0016",
-      "title": "Jujutsu Kaisen",
-      "source_url": "https://screenrant.com/best-jujutsu-kaisen-quotes/",
-      "season_episode": "Sukuna (дубляж, ранние эпизоды)",
-      "speaker": "Sukuna",
-      "text": "It's your fault for being weak",
-      "translation_ru": "Это твоя вина — быть слабым.",
-      "grammar_tags": ["fault for + gerund"],
-      "est_rank": "C",
-      "auto_vocab": {
-        "top1000": 0.17
-      },
-      "confidence": "verbatim (parallel research) — needs source check",
-      "link_playphrase": "https://www.playphrase.me/#/search?q=It%27s%20your%20fault%20for%20being%20weak"
-    }
-  ]
+ "schema_version": 1,
+ "kind": "quotes",
+ "items": [
+  {
+   "id": "q-jujutsu-kaisen-0001",
+   "title": "Jujutsu Kaisen",
+   "source_url": "https://screenrant.com/best-jujutsu-kaisen-quotes/",
+   "season_episode": "манга, гл. 221 (в аниме — позже)",
+   "speaker": "Satoru Gojo",
+   "text": "Nah, I'd win.",
+   "translation_ru": "Не, я бы выиграл.",
+   "grammar_tags": [
+    "would ('d)"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.33
+   },
+   "confidence": "статья Screen Rant; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
+   "note": "мем; у фразы спорная история перевода — см. KYM nah-id-win; translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Nah%2C%20I%27d%20win."
+  },
+  {
+   "id": "q-jujutsu-kaisen-0002",
+   "title": "Jujutsu Kaisen",
+   "source_url": "https://screenrant.com/best-jujutsu-kaisen-quotes/",
+   "season_episode": "аниме S2",
+   "speaker": "Satoru Gojo",
+   "text": "Throughout Heaven and Earth, I alone am the honored one.",
+   "translation_ru": "Под небом и на земле я один — достойный.",
+   "grammar_tags": [
+    "to be"
+   ],
+   "est_rank": "B",
+   "auto_vocab": {
+    "top1000": 0.6
+   },
+   "confidence": "статья Screen Rant; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Throughout%20Heaven%20and%20Earth%2C%20I%20alone%20am%20the%20honored%20one."
+  },
+  {
+   "id": "q-jujutsu-kaisen-0003",
+   "title": "Jujutsu Kaisen",
+   "source_url": "https://screenrant.com/best-jujutsu-kaisen-quotes/",
+   "season_episode": "Jujutsu Kaisen 0",
+   "speaker": "Satoru Gojo",
+   "text": "Love is the most twisted curse of all.",
+   "translation_ru": "Любовь — самая извращённая из всех проклятий.",
+   "grammar_tags": [
+    "to be",
+    "superlative"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.62
+   },
+   "confidence": "Screen Rant + ComicBook; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
+   "note": "translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Love%20is%20the%20most%20twisted%20curse%20of%20all."
+  },
+  {
+   "id": "q-jujutsu-kaisen-0004",
+   "title": "Jujutsu Kaisen",
+   "source_url": "https://comicbook.com/anime/news/best-jujutsu-kaisen-quotes-ranked/",
+   "season_episode": "аниме S2E1 «Hidden Inventory»",
+   "speaker": "Satoru Gojo",
+   "text": "You cryin'?",
+   "translation_ru": "Ты плачешь?",
+   "grammar_tags": [
+    "Present Continuous (разговорный, без are)"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 0.5
+   },
+   "confidence": "ComicBook (указан англ. дубляж); уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
+   "note": "разговорное опущение are; translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=You%20cryin%27%3F"
+  },
+  {
+   "id": "q-jujutsu-kaisen-0005",
+   "title": "Jujutsu Kaisen",
+   "source_url": "https://comicbook.com/anime/news/best-jujutsu-kaisen-quotes-ranked/",
+   "season_episode": "аниме S2",
+   "speaker": "Satoru Gojo",
+   "text": "We're the strongest.",
+   "translation_ru": "Мы — сильнейшие.",
+   "grammar_tags": [
+    "to be",
+    "superlative"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.33
+   },
+   "confidence": "ComicBook; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
+   "note": "translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=We%27re%20the%20strongest."
+  },
+  {
+   "id": "q-jujutsu-kaisen-0006",
+   "title": "Jujutsu Kaisen",
+   "source_url": "https://comicbook.com/anime/news/best-jujutsu-kaisen-quotes-ranked/",
+   "season_episode": "аниме (эпизод не указан)",
+   "speaker": "Aoi Todo",
+   "text": "What kind of woman is your type?",
+   "translation_ru": "Какая женщина — твой тип?",
+   "grammar_tags": [
+    "wh-question",
+    "to be"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 0.71
+   },
+   "confidence": "ComicBook; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
+   "note": "translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=What%20kind%20of%20woman%20is%20your%20type%3F"
+  },
+  {
+   "id": "q-jujutsu-kaisen-0007",
+   "title": "Jujutsu Kaisen",
+   "source_url": "https://comicbook.com/anime/news/best-jujutsu-kaisen-quotes-ranked/",
+   "season_episode": "аниме (эпизод не указан)",
+   "speaker": "Kento Nanami",
+   "text": "Being a child is not a sin.",
+   "translation_ru": "Быть ребёнком — не грех.",
+   "grammar_tags": [
+    "-ing subject",
+    "to be (negative)"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.57
+   },
+   "confidence": "ComicBook; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
+   "note": "translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Being%20a%20child%20is%20not%20a%20sin."
+  },
+  {
+   "id": "q-jujutsu-kaisen-0008",
+   "title": "Jujutsu Kaisen",
+   "source_url": "https://comicbook.com/anime/news/best-jujutsu-kaisen-quotes-ranked/",
+   "season_episode": "аниме S2 (Шибуя)",
+   "speaker": "Kento Nanami",
+   "text": "Itadori, you've got it from here.",
+   "translation_ru": "Итадори, дальше сам.",
+   "grammar_tags": [
+    "have got"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.5
+   },
+   "confidence": "ComicBook; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
+   "note": "translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Itadori%2C%20you%27ve%20got%20it%20from%20here."
+  },
+  {
+   "id": "q-jujutsu-kaisen-0009",
+   "title": "Jujutsu Kaisen",
+   "source_url": "https://jujutsu-kaisen.fandom.com/wiki/Yuji_Itadori",
+   "season_episode": "гл. 87 / эп. 32",
+   "speaker": "Yuji Itadori",
+   "text": "Smart people usually don't brag about being smart.",
+   "translation_ru": "Умные люди обычно не хвастаются своим умом.",
+   "grammar_tags": [
+    "Present Simple (negative)",
+    "adverb usually",
+    "about + -ing"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.38
+   },
+   "confidence": "Jujutsu Kaisen Wiki (Fandom), раздел Quotes — перевод манги",
+   "note": "translation needs review",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Smart%20people%20usually%20don%27t%20brag%20about%20being%20smart."
+  },
+  {
+   "id": "q-jujutsu-kaisen-0010",
+   "title": "Jujutsu Kaisen",
+   "source_url": "https://screenrant.com/best-jujutsu-kaisen-quotes/",
+   "season_episode": "Gojo (эп. 7, дубляж)",
+   "speaker": "Gojo",
+   "text": "Don't worry. I'm the strongest",
+   "translation_ru": "Не волнуйся. Я сильнейший.",
+   "grammar_tags": [
+    "Императив don't worry + превосходная степень"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.4
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Don%27t%20worry.%20I%27m%20the%20strongest"
+  },
+  {
+   "id": "q-jujutsu-kaisen-0011",
+   "title": "Jujutsu Kaisen",
+   "source_url": "https://screenrant.com/best-jujutsu-kaisen-quotes/",
+   "season_episode": "Sukuna → Jogo (эп. 17, дубляж)",
+   "speaker": "Sukuna → Jogo",
+   "text": "Stand proud. You're strong",
+   "translation_ru": "Будь гордым. Ты силён.",
+   "grammar_tags": [
+    "Императив stand proud",
+    "be + прилагательное"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.5
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Stand%20proud.%20You%27re%20strong"
+  },
+  {
+   "id": "q-jujutsu-kaisen-0012",
+   "title": "Jujutsu Kaisen",
+   "source_url": "https://screenrant.com/best-jujutsu-kaisen-quotes/",
+   "season_episode": "Todo (Goodwill Event, дубляж)",
+   "speaker": "Todo",
+   "text": "What kind of women do you like?",
+   "translation_ru": "Какие женщины тебе нравятся?",
+   "grammar_tags": [
+    "what kind of…",
+    "Present Simple вопрос"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.86
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=What%20kind%20of%20women%20do%20you%20like%3F"
+  },
+  {
+   "id": "q-jujutsu-kaisen-0013",
+   "title": "Jujutsu Kaisen",
+   "source_url": "https://screenrant.com/best-jujutsu-kaisen-quotes/",
+   "season_episode": "Дедушка Итадори → Юдзи (эп. 1, дубляж)",
+   "speaker": "Дедушка Итадори → Юдзи",
+   "text": "You're a strong kid, so help people. Die surrounded by people",
+   "translation_ru": "Ты сильный, так что помогай людям. Умри в окружении людей.",
+   "grammar_tags": [
+    "so (следствие)",
+    "императив",
+    "пассив surrounded by"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 0.82
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=You%27re%20a%20strong%20kid%2C%20so%20help%20people.%20Die%20surrounded%20by%20people"
+  },
+  {
+   "id": "q-jujutsu-kaisen-0014",
+   "title": "Jujutsu Kaisen",
+   "source_url": "https://screenrant.com/best-jujutsu-kaisen-quotes/",
+   "season_episode": "Nanami (дубляж)",
+   "speaker": "Nanami",
+   "text": "Dying to win and risking death to win are completely different",
+   "translation_ru": "Умереть ради победы и рисковать смертью ради победы — совершенно разные вещи.",
+   "grammar_tags": [
+    "Gerund-подлежащее (сравнение)"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.73
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Dying%20to%20win%20and%20risking%20death%20to%20win%20are%20completely%20different"
+  },
+  {
+   "id": "q-jujutsu-kaisen-0015",
+   "title": "Jujutsu Kaisen",
+   "source_url": "https://screenrant.com/best-jujutsu-kaisen-quotes/",
+   "season_episode": "Megumi (эп. 23, дубляж)",
+   "speaker": "Megumi",
+   "text": "I'm not a hero. I'm a jujutsu sorcerer",
+   "translation_ru": "Я не герой. Я маг.",
+   "grammar_tags": [
+    "be + отрицание/утверждение (контраст)"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.38
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%27m%20not%20a%20hero.%20I%27m%20a%20jujutsu%20sorcerer"
+  },
+  {
+   "id": "q-jujutsu-kaisen-0016",
+   "title": "Jujutsu Kaisen",
+   "source_url": "https://screenrant.com/best-jujutsu-kaisen-quotes/",
+   "season_episode": "Sukuna (дубляж, ранние эпизоды)",
+   "speaker": "Sukuna",
+   "text": "It's your fault for being weak",
+   "translation_ru": "Это твоя вина — быть слабым.",
+   "grammar_tags": [
+    "fault for + gerund"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.17
+   },
+   "confidence": "verbatim (parallel research) — needs source check",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=It%27s%20your%20fault%20for%20being%20weak"
+  }
+ ]
 }
