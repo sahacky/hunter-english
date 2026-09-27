@@ -6,7 +6,7 @@
 - [x] Методика обучения, CEFR, времена, словарь, Anki/FSRS, голос, конкуренты → `research/01-research.md`
 - [x] Решения (сервер/Supabase, британский голос, геймификация, старт с нуля) → `research/02-decisions-and-research.md`
 - [x] Упражнения, проверка ответов, нагрузка SRS, ловушки для русских, шаблон урока → `research/03-methods-and-exercises.md`
-- [ ] Карта курса Бебриса → наши уроки/ранги → `research/04-bebris-map.md` (субагент в работе)
+- [x] Карта курса Бебриса → наши уроки/ранги → `research/04-bebris-map.md` (153 видео по субтитрам; 25 не скачались из-за 429)
 - [x] Доступность цитат по тайтлам + 180 образцов → `research/05-quotes-availability.md`, `research/data/quotes-sample.json`
 - [x] UI/UX конкурентов, стиль System window, черновик экранов → `research/06-ui-ux-competitors.md`
 - [x] Переводы (Wiktionary), лицензии, стек, синхронизация → `research/07-tech-and-data.md`

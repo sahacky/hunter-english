@@ -5,17 +5,17 @@ M0: Ресёрч — IN PROGRESS (почти завершён)
 
 ## Completed
 - Бутстрап: PROMT.md прочитан и перенесён в `example_rules/`; созданы AGENTS.md (вход для любых агентов → BOOT/WAL/PLANS), BOOT.md, WAL.md, PLANS.md, CLAUDE.md (`@AGENTS.md`)
-- Ресёрч: `research/01`, `02`, `03`, `05` (+ `data/quotes-sample.json`, `tools/quotes/*.py`), `06`, `07`
-- `gh` авторизован (аккаунт sahacky, токен в keyring)
+- Ресёрч: `research/01`, `02`, `03`, `04` (+ `tools/bebris/`), `05` (+ `data/quotes-sample.json`, `tools/quotes/*.py`), `06`, `07`
+- `gh` авторизован (аккаунт sahacky, classic-токен repo+workflow в ~/.config/gh/hosts.yml); push в origin/main работает
 
 ## In Progress
-- `research/04-bebris-map.md` — субагент разбирает плейлист Бебриса (1033 видео)
+- —
 
 ## TODO
 - M0: файл-источник от разработчика (пришлёт в конце ресёрча)
 - M0: выбор британского голоса (образцы: https://rhasspy.github.io/piper-samples/ → en_GB cori/alba)
 - M0: `research/00-summary.md`
-- Закоммитить `research/04-bebris-map.md`, когда субагент закончит
+- (опц.) Докачать 25 уроков Бебриса (список в 04, раздел «Не охвачено»), проверить Present Perfect (уроки 2.26–2.45)
 - Затем M1 (дизайн) → M2 (инициализация: git, Vite, CI, Supabase)
 
 ## Known Issues
@@ -52,3 +52,4 @@ M0: Ресёрч — IN PROGRESS (почти завершён)
 | 2026-09-27 | AGENTS.md — единый вход для всех агентов, добавлен CLAUDE.md | Не только Claude работает с проектом |
 | 2026-09-27 | Создан .gitignore, CLAUDE.md в игноре | Решение разработчика |
 | 2026-09-27 | Создан приватный репо, первый коммит; правило «без упоминаний ИИ» | Решение разработчика |
+| 2026-09-27 | Готова карта курса Бебриса (04) | Субагент завершён |
