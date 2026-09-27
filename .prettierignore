@@ -1,3 +1,5 @@
 *.md
 # генерируются Python-скриптами research/tools
 research/data/
+# Генерируемые файлы данных (research/tools) — не форматировать
+data/words/
