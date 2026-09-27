@@ -626,6 +626,56 @@ data/
 
 ---
 
+## 6.5. trap — ловушка русскоязычного {#schema-trap} (URI: `data://schema-trap`)
+
+Запись каталога ловушек `data/traps.json` (`kind: traps`; номера каталога — `research/03 §4`, соответствие ЛТ ↔ slug — [§0](#data-common)). На ловушку ссылаются уроки (`lesson.trap_id`, `grammar_point.trap_id`) и упражнение `find_error` (`payload.trap_id`).
+
+| Поле | Тип | Обяз. | Описание |
+|---|---|---|---|
+| `id` | string | ✅ | slug `trap-<основа>`, напр. `trap-no-to-be` |
+| `lt_id` | string | ✅ | номер каталога из research/03 §4, напр. `ЛТ-01` |
+| `title_ru` | string | ✅ | короткое название ловушки по-русски |
+| `wrong_en` | string | ✅ | типичная ошибка |
+| `right_en` | string | ✅ | правильный вариант |
+| `explanation_ru` | string | ✅ | короткое объяснение по-русски |
+| `tags` | string[] | ✅ | теги темы (`to-be`, `preposition`, …) |
+
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "urn:hunter-english:data:trap:v1",
+  "title": "trap",
+  "type": "object",
+  "required": ["id", "lt_id", "title_ru", "wrong_en", "right_en", "explanation_ru", "tags"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "pattern": "^trap-[a-z0-9-]+$" },
+    "lt_id": { "type": "string", "pattern": "^ЛТ-[0-9]{2}$", "description": "номер ловушки в каталоге research/03 §4" },
+    "title_ru": { "type": "string", "minLength": 1 },
+    "wrong_en": { "type": "string", "description": "типичная ошибка" },
+    "right_en": { "type": "string", "description": "правильный вариант" },
+    "explanation_ru": { "type": "string", "description": "короткое объяснение по-русски" },
+    "tags": { "type": "array", "items": { "type": "string" } }
+  }
+}
+```
+
+Живой пример:
+
+```json
+{
+  "id": "trap-no-to-be",
+  "lt_id": "ЛТ-01",
+  "title_ru": "Пропуск to be",
+  "wrong_en": "I hungry.",
+  "right_en": "I'm hungry.",
+  "explanation_ru": "В английском нельзя сказать «я голоден» без глагола-связки: в настоящем времени нужен am/is/are.",
+  "tags": ["to-be"]
+}
+```
+
+---
+
 ## 7. Версионирование данных {#data-versioning}
 
 - `schema_version: <int>` — в **каждом** файле данных (в обёртке, [§0](#data-common)). Старт — `1`.

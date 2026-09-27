@@ -1,0 +1,86 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "urn:hunter-english:data:lesson:v1",
+  "title": "lesson",
+  "type": "object",
+  "required": [
+    "id",
+    "rank",
+    "module",
+    "title",
+    "grammar_point",
+    "vocab_band",
+    "phrasebook_topic",
+    "trap_id",
+    "quotes_topic",
+    "exercises",
+    "bebris_video"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "pattern": "^les-(e|d|c|b|a|s)-[0-9]{2}$" },
+    "rank": { "enum": ["E", "D", "C", "B", "A", "S"] },
+    "module": { "type": "string", "pattern": "^mod-(e|d|c|b|a|s)-[0-9]+$" },
+    "title": { "type": "string", "minLength": 1 },
+    "grammar_point": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title_ru", "rule_md", "phrase_ids"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^gp-" },
+        "title_ru": { "type": "string" },
+        "rule_md": { "type": "string", "description": "1 экран по-русски, markdown" },
+        "phrase_ids": {
+          "type": "array",
+          "minItems": 3,
+          "items": { "type": "string", "pattern": "^ph-" }
+        },
+        "trap_id": { "type": ["string", "null"] }
+      }
+    },
+    "vocab_band": {
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["list", "from", "to"],
+          "properties": {
+            "list": { "enum": ["ngsl-spoken", "ngsl", "subtitles"] },
+            "from": { "type": "integer", "minimum": 1 },
+            "to": { "type": "integer", "minimum": 1 }
+          }
+        }
+      ]
+    },
+    "phrasebook_topic": { "type": ["string", "null"] },
+    "trap_id": { "type": ["string", "null"] },
+    "quotes_topic": { "type": ["string", "null"] },
+    "exercises": {
+      "type": "array",
+      "minItems": 5,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id"],
+        "properties": { "id": { "type": "string", "pattern": "^ex-" } }
+      }
+    },
+    "bebris_video": {
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["lesson", "playlist_index", "youtube_id", "title"],
+          "properties": {
+            "lesson": { "type": "string" },
+            "playlist_index": { "type": ["integer", "null"] },
+            "youtube_id": { "type": ["string", "null"] },
+            "title": { "type": ["string", "null"] }
+          }
+        }
+      ]
+    }
+  }
+}
