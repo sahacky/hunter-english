@@ -11,7 +11,7 @@
 - M2: скаффолд Vite+React+TS, i18n ru/en, hash-роутинг, Vitest+Playwright, CI/deploy; hotfix CI (PR #1 был смержен с красным CI — `npm ci` падал): Vite 7, `@testing-library/dom`, `@types/node`, Prettier в lint, typecheck конфигов, Node 22, `supabase-js` и `/login` убраны до M12. Все проверки зелёные локально, включая e2e
 
 ## In Progress
-- M3 (ветка `feature/m3-data-pipeline`): 3.1 схемы+валидатор → 3.2 Tatoeba-примеры → 3.3 Piper-аудио → 3.4 слова → 3.5 цитаты → 3.6 ловушки → 3.7 аудио+manifest → 3.8 валидация → 3.9 ревью → 3.10 merge. Решения 1–7 — в PLANS под M3
+- M3 (ветка `feature/m3-data-pipeline`): **3.1 выполнена** (схемы draft-07 в `data/schemas/`, §6.5 trap в спеке, `npm run validate:data` с кросс-ссылками, шаг в CI) → далее 3.2 Tatoeba-примеры → 3.3 Piper-аудио → 3.4 слова → 3.5 цитаты → 3.6 ловушки → 3.7 аудио+manifest → 3.8 валидация → 3.9 ревью → 3.10 merge. Решения 1–7 — в PLANS под M3
 
 ## TODO
 - M4: Карточки SRS (ts-fsrs, Dexie, `ProgressRepository`) — следующий майлстоун после M3
@@ -19,6 +19,7 @@
 - (опц., отдельной задачей) Обновить стек: React 19, react-router 7 (снимет audit moderate), i18next 26, Vite 8 + plugin-react 6, пакет `typescript-eslint`
 
 ## Known Issues
+- `data/quotes/*.json` (задача 3.5, ещё в работе): 148 пустых `translation_ru` — `validate:data` и `prettier --check` на них падают до дозаполнения/форматирования в 3.5/3.8; это ожидаемое поведение валидатора
 - `npm audit`: 2 moderate в `react-router-dom@6` (порог high не превышен); исправление только в v7
 - `research/tools/quotes/merge_ru.py:17` — дефолтный путь с чужой машины (`/home/llm/...`); передавать путь аргументом
 - `research/tools/data/fetch_kaikki.py` — слова в URL не экранируются (для слов с `'`); лишний `import sys`; нет `requirements.txt`
@@ -75,3 +76,4 @@
 | 2026-09-27 | Сторонние сервисы → M12 (после MVP); MVP = офлайн-first на Dexie | Решение разработчика |
 | 2026-09-27 | Ревью после PR #1: CI был красный, WAL ошибочно писал «зелёные» → hotfix CI; M2 закрыт; зафиксированы local-first «швы», M12 = Supabase для себя и друзей, продуктовый вариант — в Pending; WAL очищен от устаревшего | Ревью по запросу разработчика |
 | 2026-09-27 | M3 детализирован в PLANS (3.1–3.10, решения 1–7); старт ветки `feature/m3-data-pipeline`; разработчик разрешил merge/push без запроса | Делегирование автономной работы |
+| 2026-09-27 | M3#3.1: 8 схем draft-07 в `data/schemas/` (вкл. envelope и trap), §6.5 trap в спеке 05, `scripts/validate-data.mjs` (ajv + кросс-ссылки + аудио) → `npm run validate:data`, шаг Validate data в CI; ajv/ajv-formats в devDeps | План M3#3.1 |

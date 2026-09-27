@@ -50,7 +50,7 @@
 
 ## M3: Пайплайн данных {#M3}
 > Контракт — specs/05 (§0–§9). Сырьё в `data/raw/` (в git не попадает). Ветка: `feature/m3-data-pipeline`, merge — только при зелёном CI.
-- [ ] 3.1 Схемы JSON draft-07 в `data/schemas/` (word, phrase, exercise, lesson, quote, phrasebook_dialog, trap) из specs/05 + схема trap добавлена в спеку; валидатор `scripts/validate-data.mjs` (`npm run validate:data`: ajv + ajv-formats + кросс-ссылки) + шаг в CI
+- [x] 3.1 Схемы JSON draft-07 в `data/schemas/` (word, phrase, exercise, lesson, quote, phrasebook_dialog, trap) из specs/05 + схема trap добавлена в спеку; валидатор `scripts/validate-data.mjs` (`npm run validate:data`: ajv + ajv-formats + кросс-ссылки) + шаг в CI
 - [ ] 3.2 Примеры en-ru: Tatoeba (CC BY 2.0 FR) — скрипт скачивания/извлечения пар, индекс «лемма → пример EN+RU» в `data/raw/` (не коммитится)
 - [ ] 3.3 Аудио-инфраструктура: Piper en_GB `cori` (piper-tts + модель с HF) + генератор `research/tools/audio/gen_audio.py` → `audio/…/*.opus` (ffmpeg)
 - [ ] 3.4 Слова: `build_words.py` — `data/words/words-0001-0719.json` (NGSL-Spoken) + `words-0720-2806.json` (NGSL): POS и переводы 1–3 из kaikki, CEFR (Oxford-разметка локально — только внутренний пайплайн; иначе вывод из ранга), теги (`irregular-verb`, `phrasal-*` по curated-спискам), примеры (Tatoeba/цитаты), `freq_rank_ngsl`/`freq_rank_spoken`
@@ -98,3 +98,4 @@
 | 2026-09-27 | Сторонние сервисы (Supabase) перенесены в M12 — после MVP; прогресс MVP только локально (Dexie + экспорт/импорт) | Решение разработчика |
 | 2026-09-27 | M0.5 отмечен выполненным (работа была сделана, чекбоксы не проставлены); M2 закрыт hotfix-ом CI; хостинг решён (Pages при публичном репо); добавлены архитектурные «швы» в M4–M5; M12 = Supabase для себя и друзей | Ревью после PR #1, решения разработчика |
 | 2026-09-27 | M3 детализирован (3.1–3.10) с решениями по аудио/CEFR/тегам/разбивке; закрыты открытые вопросы 5, 6, 7 спеки 05 | Разработчик делегировал автономную работу (merge/push разрешены) |
+| 2026-09-27 | M3#3.1 выполнена: схемы в `data/schemas/` + §6.5 trap в спеке, `validate:data` (ajv, кросс-ссылки, аудио) и шаг в CI | План M3#3.1 |
