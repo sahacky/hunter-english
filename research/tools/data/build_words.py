@@ -250,8 +250,12 @@ def main():
         pos_counts[lemma] = pos_counts.get(lemma, 0) + 1
     words = []
     for (lemma, pos), e in entries.items():
-        item = OrderedDict(id=lemma if pos_counts[lemma] == 1 else f"{lemma}-{pos}", **e)
-        item.move_to_end("id", last=False)
+        wid = lemma if pos_counts[lemma] == 1 else f"{lemma}-{pos}"
+        item = OrderedDict(
+            id=wid,
+            **e,
+            audio=OrderedDict(en_gb=f"audio/words/cori/{wid}.opus"),
+        )
         words.append((item, lemma))
 
     OUT.mkdir(parents=True, exist_ok=True)
