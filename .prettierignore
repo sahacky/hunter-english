@@ -3,3 +3,6 @@
 research/data/
 # Генерируемые файлы данных (research/tools) — не форматировать
 data/words/
+data/quotes/
+data/traps.json
+data/manifest.json

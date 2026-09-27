@@ -8,8 +8,8 @@ import addFormats from 'ajv-formats'
 // Конфигурация видов данных. Новый kind = запись здесь + схема в data/schemas.
 // ---------------------------------------------------------------------------
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..')
-const DATA_DIR = join(ROOT, 'data')
-const SCHEMAS_DIR = join(DATA_DIR, 'schemas')
+const DATA_DIR = resolve(process.argv[2] ?? join(ROOT, 'data'))
+const SCHEMAS_DIR = join(ROOT, 'data', 'schemas')
 
 /** kind из обёртки → имя схемы сущности в data/schemas/ */
 const KIND_TO_SCHEMA = {
@@ -39,10 +39,15 @@ const EXERCISE_FILE_RE = /^exercises-.+\.json$/
 const SKIPPED = new Set(['schemas', 'raw', 'manifest.json'])
 
 const errors = []
-const infos = []
 
 function fail(path, message) {
   errors.push(`${path} — ${message}`)
+}
+
+/** сообщение об ошибке JSON.parse без содержимого файла (только позиция) */
+function describeJsonError(e) {
+  const m = /position (\d+)/i.exec(e.message)
+  return m ? `невалидный JSON (позиция ${m[1]})` : 'невалидный JSON'
 }
 
 function listDataFiles(dir) {
@@ -58,14 +63,28 @@ function listDataFiles(dir) {
 
 function loadSchema(name) {
   const file = join(SCHEMAS_DIR, `${name}.schema.json`)
-  if (!existsSync(file)) fail(file, `не найдена схема ${name}.schema.json`)
-  return JSON.parse(readFileSync(file, 'utf8'))
+  let text
+  try {
+    text = readFileSync(file, 'utf8')
+  } catch {
+    console.error(`${relative(ROOT, file)} — схема не найдена`)
+    process.exit(1)
+  }
+  try {
+    return JSON.parse(text)
+  } catch (e) {
+    console.error(`${relative(ROOT, file)} — ${describeJsonError(e)}`)
+    process.exit(1)
+  }
 }
 
 /** ожидаемый kind файла по его расположению; строка-ошибка, если расположение неизвестно */
 function expectedKind(relPath) {
   const parts = relPath.split(sep)
-  if (parts.length === 1) return { kind: 'traps' } // data/traps.json — единственный файл в корне data/
+  if (parts.length === 1)
+    return parts[0] === 'traps.json'
+      ? { kind: 'traps' }
+      : { error: 'неизвестный файл в data/ — в корне допустим только traps.json' }
   const [dir, file] = parts
   if (dir === LESSONS_DIR) {
     if (LESSON_FILE_RE.test(file)) return { kind: 'lessons' }
@@ -99,14 +118,6 @@ function collectAudio(value, instancePath, out = []) {
   return out
 }
 
-function collectStrings(value, out = []) {
-  if (typeof value === 'string') out.push(value)
-  else if (Array.isArray(value)) for (const item of value) collectStrings(item, out)
-  else if (value && typeof value === 'object')
-    for (const child of Object.values(value)) collectStrings(child, out)
-  return out
-}
-
 const ajv = new Ajv({ allErrors: true })
 addFormats(ajv)
 const validateEnvelope = ajv.compile(loadSchema('envelope'))
@@ -123,7 +134,20 @@ if (dataFiles.length === 0) {
 
 // --- Проход 1: обёртка + схема kind + сбор id для кросс-ссылок -------------
 const parsed = []
-const ids = { phrases: new Set(), exercises: new Set(), traps: new Set() }
+/** id → { at: 'файл#/items/i', kind } — глобальная уникальность по всем kind */
+const idOwner = new Map()
+
+/** регистрирует id; повтор в любом файле — ошибка */
+function registerId(id, at, kind) {
+  const prev = idOwner.get(id)
+  if (prev) {
+    fail(at, `дубликат id "${id}" — уже объявлен в ${prev.at}`)
+    return
+  }
+  idOwner.set(id, { at, kind })
+}
+
+const refExists = (kind, id) => idOwner.get(id)?.kind === kind
 
 for (const file of dataFiles) {
   const relPath = relative(ROOT, file)
@@ -131,7 +155,15 @@ for (const file of dataFiles) {
   try {
     doc = JSON.parse(readFileSync(file, 'utf8'))
   } catch (e) {
-    fail(relPath, `невалидный JSON: ${e.message}`)
+    fail(relPath, describeJsonError(e))
+    continue
+  }
+
+  if (!Array.isArray(doc) && typeof doc === 'object' && doc !== null && doc.schema_version !== 1) {
+    fail(
+      relPath,
+      `schema_version ${doc.schema_version} не поддерживается: поддерживается только 1 (миграция по specs/05 §7)`,
+    )
     continue
   }
 
@@ -154,35 +186,33 @@ for (const file of dataFiles) {
     )
     continue
   }
-  if (!KIND_TO_SCHEMA[doc.kind]) {
-    fail(relPath, `неизвестный kind "${doc.kind}" — добавьте его в KIND_TO_SCHEMA`)
-    continue
-  }
 
   const validateItem = validators[doc.kind]
   doc.items.forEach((item, index) => {
+    if (typeof item?.id === 'string') registerId(item.id, `${relPath}#/items/${index}`, doc.kind)
     if (validateItem(item)) return
     for (const err of validateItem.errors) {
       fail(`${relPath}#/items/${index}${err.instancePath}`, err.message)
     }
   })
 
-  parsed.push({ relPath, kind: doc.kind, items: doc.items })
-  for (const item of doc.items) {
-    if (typeof item?.id === 'string') {
-      const bucket = { phrases: 'phrases', exercises: 'exercises', traps: 'traps' }[doc.kind]
-      if (bucket) ids[bucket].add(item.id)
-    }
-  }
+  parsed.push({
+    relPath,
+    dataRel: relative(DATA_DIR, file).split(sep).join('/'),
+    kind: doc.kind,
+    schemaVersion: doc.schema_version,
+    itemsCount: doc.items.length,
+    items: doc.items,
+  })
 }
 
 // --- Проход 2: кросс-ссылки -------------------------------------------------
 const checkPhraseRef = (refPath, phraseId) => {
-  if (!ids.phrases.has(phraseId))
+  if (!refExists('phrases', phraseId))
     fail(refPath, `фраза "${phraseId}" не найдена в data/phrases/phrases-*.json`)
 }
 const checkTrapRef = (refPath, trapId) => {
-  if (!ids.traps.has(trapId)) fail(refPath, `ловушка "${trapId}" не найдена в data/traps.json`)
+  if (!refExists('traps', trapId)) fail(refPath, `ловушка "${trapId}" не найдена в data/traps.json`)
 }
 
 for (const { relPath, kind, items } of parsed) {
@@ -190,7 +220,7 @@ for (const { relPath, kind, items } of parsed) {
     const base = `${relPath}#/items/${index}`
     if (kind === 'lessons') {
       for (const [i, ex] of (item.exercises ?? []).entries()) {
-        if (!ids.exercises.has(ex.id))
+        if (!refExists('exercises', ex.id))
           fail(
             `${base}/exercises/${i}/id`,
             `упражнение "${ex.id}" не найдено в data/lessons/exercises-*.json`,
@@ -217,14 +247,28 @@ for (const { relPath, kind, items } of parsed) {
         checkTrapRef(`${base}/payload/trap_id`, payload.trap_id)
     }
     for (const { instancePath, file } of collectAudio(item, base)) {
-      if (!existsSync(join(ROOT, file)))
+      const abs = resolve(ROOT, file)
+      if (!abs.startsWith(ROOT + sep)) {
+        fail(instancePath, `путь аудио "${file}" выходит за пределы репозитория`)
+        continue
+      }
+      let st
+      try {
+        st = statSync(abs)
+      } catch {
         fail(instancePath, `файл аудио "${file}" не найден на диске`)
+        continue
+      }
+      if (!st.isFile()) fail(instancePath, `"${file}" не является обычным файлом`)
     }
   })
 }
 
 // data/traps.json отсутствует, но на ловушки кто-то ссылается — битые ссылки
-if (!ids.traps.size && parsed.some(({ kind }) => kind === 'lessons' || kind === 'exercises')) {
+if (
+  !parsed.some(({ kind }) => kind === 'traps') &&
+  parsed.some(({ kind }) => kind === 'lessons' || kind === 'exercises')
+) {
   const refsTrap = parsed.some(({ kind, items }) =>
     kind === 'lessons'
       ? items.some(
@@ -236,21 +280,72 @@ if (!ids.traps.size && parsed.some(({ kind }) => kind === 'lessons' || kind === 
     fail('data/traps.json', 'файл ловушек отсутствует, но на trap_id есть ссылки в данных')
 }
 
-// --- Манифест (информативно, не фейл) ---------------------------------------
+// --- Манифест: каждый файл данных учтён, каждая запись существует -----------
 const manifestFile = join(DATA_DIR, 'manifest.json')
-if (existsSync(manifestFile)) {
-  const known = new Set(collectStrings(JSON.parse(readFileSync(manifestFile, 'utf8'))))
-  for (const { relPath } of parsed) {
-    if (!known.has(relPath))
-      infos.push(`${relPath} отсутствует в data/manifest.json (манифест перегенерируется)`)
+const manifestRel = relative(ROOT, manifestFile)
+let manifest = null
+try {
+  manifest = JSON.parse(readFileSync(manifestFile, 'utf8'))
+} catch (e) {
+  fail(
+    manifestRel,
+    e?.code === 'ENOENT'
+      ? 'файл не найден — перегенерируйте data/manifest.json'
+      : describeJsonError(e),
+  )
+}
+
+if (manifest) {
+  const entries = manifest.files
+  if (!Array.isArray(entries)) {
+    fail(manifestRel, 'ожидался массив files')
+  } else {
+    const byPath = new Map()
+    for (const [i, entry] of entries.entries()) {
+      if (!entry || typeof entry !== 'object' || typeof entry.path !== 'string') {
+        fail(manifestRel, `files[${i}] — запись без поля path`)
+        continue
+      }
+      byPath.set(entry.path, entry)
+    }
+
+    for (const { relPath, dataRel, kind, schemaVersion, itemsCount } of parsed) {
+      const entry = byPath.get(dataRel)
+      if (!entry) {
+        fail(relPath, 'отсутствует в data/manifest.json')
+        continue
+      }
+      if (entry.kind !== kind) fail(relPath, `в манифесте kind="${entry.kind}", в файле "${kind}"`)
+      if (entry.schema_version !== schemaVersion)
+        fail(
+          relPath,
+          `в манифесте schema_version=${entry.schema_version}, в файле ${schemaVersion}`,
+        )
+      if (entry.items !== itemsCount)
+        fail(relPath, `в манифесте items=${entry.items}, в файле ${itemsCount}`)
+    }
+
+    for (const path of byPath.keys()) {
+      if (!existsSync(join(DATA_DIR, path)))
+        fail(`${manifestRel}#files`, `запись "${path}" без файла на диске`)
+    }
   }
 }
 
 // --- Итог --------------------------------------------------------------------
-for (const info of infos) console.warn(`info: ${info}`)
 if (errors.length > 0) {
   console.error(`Ошибок валидации: ${errors.length} (файлов данных: ${parsed.length})`)
   for (const message of errors) console.error(message)
   process.exit(1)
 }
+
+let quotesReady = 0
+for (const { kind, items } of parsed) {
+  if (kind !== 'quotes') continue
+  for (const item of items) {
+    const top = item?.auto_vocab?.top1000
+    if (typeof top === 'number' && top >= 0.9) quotesReady += 1
+  }
+}
+console.log(`${quotesReady} цитат готовы к показу (top1000 ≥ 0.9)`)
 console.log(`OK: файлов данных ${parsed.length}, ошибок нет`)
