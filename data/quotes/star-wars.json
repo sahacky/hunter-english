@@ -1,0 +1,318 @@
+{
+  "schema_version": 1,
+  "kind": "quotes",
+  "items": [
+    {
+      "id": "q-star-wars-0001",
+      "title": "Star Wars",
+      "source_url": "https://en.wikiquote.org/wiki/Star_Wars_(film)",
+      "season_episode": "Star Wars (film)",
+      "speaker": "Han Solo",
+      "text": "May the Force be with you.",
+      "translation_ru": "Да пребудет с тобой Сила.",
+      "grammar_tags": ["may (wish)"],
+      "est_rank": "D",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=May%20the%20Force%20be%20with%20you."
+    },
+    {
+      "id": "q-star-wars-0002",
+      "title": "Star Wars",
+      "source_url": "https://en.wikiquote.org/wiki/The_Empire_Strikes_Back",
+      "season_episode": "The Empire Strikes Back",
+      "speaker": "Vader",
+      "text": "No. I am your father.",
+      "translation_ru": "Нет. Я твой отец.",
+      "grammar_tags": ["to be"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=No.%20I%20am%20your%20father."
+    },
+    {
+      "id": "q-star-wars-0003",
+      "title": "Star Wars",
+      "source_url": "https://en.wikiquote.org/wiki/The_Empire_Strikes_Back",
+      "season_episode": "The Empire Strikes Back",
+      "speaker": "Leia",
+      "text": "I love you.",
+      "translation_ru": "Я люблю тебя. — Я знаю.",
+      "grammar_tags": ["Present Simple"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "пара с «I know.»",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=I%20love%20you."
+    },
+    {
+      "id": "q-star-wars-0004",
+      "title": "Star Wars",
+      "source_url": "https://en.wikiquote.org/wiki/The_Empire_Strikes_Back",
+      "season_episode": "The Empire Strikes Back",
+      "speaker": "Han",
+      "text": "I know.",
+      "translation_ru": "Я знаю.",
+      "grammar_tags": ["Present Simple"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=I%20know."
+    },
+    {
+      "id": "q-star-wars-0005",
+      "title": "Star Wars",
+      "source_url": "https://en.wikiquote.org/wiki/The_Empire_Strikes_Back",
+      "season_episode": "The Empire Strikes Back",
+      "speaker": "Yoda",
+      "text": "No! Try not. Do... or do not. There is no try.",
+      "translation_ru": "Делай или не делай. Попытки не существует.",
+      "grammar_tags": ["Imperative", "there is"],
+      "est_rank": "D",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=No%21%20Try%20not.%20Do...%20or%20do%20not.%20There%20is%20no%20try."
+    },
+    {
+      "id": "q-star-wars-0006",
+      "title": "Star Wars",
+      "source_url": "https://en.wikiquote.org/wiki/Star_Wars_(film)",
+      "season_episode": "Star Wars (film)",
+      "speaker": "Luke Skywalker",
+      "text": "I have a very bad feeling about this.",
+      "translation_ru": "У меня очень скверное предчувствие насчёт этого.",
+      "grammar_tags": ["have"],
+      "est_rank": "D",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "повторяется во всех фильмах; translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=I%20have%20a%20very%20bad%20feeling%20about%20this."
+    },
+    {
+      "id": "q-star-wars-0007",
+      "title": "Star Wars",
+      "source_url": "https://en.wikiquote.org/wiki/Star_Wars_(film)",
+      "season_episode": "Star Wars (film)",
+      "speaker": "Obi-Wan Kenobi",
+      "text": "Use the Force, Luke.",
+      "translation_ru": "Используй Силу, Люк.",
+      "grammar_tags": ["Imperative"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Use%20the%20Force%2C%20Luke."
+    },
+    {
+      "id": "q-star-wars-0008",
+      "title": "Star Wars",
+      "source_url": "https://en.wikiquote.org/wiki/Star_Wars_(film)",
+      "season_episode": "Star Wars (film)",
+      "speaker": "Darth Vader",
+      "text": "The Force is strong with this one.",
+      "translation_ru": "Сила сильна в этом.",
+      "grammar_tags": ["to be"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=The%20Force%20is%20strong%20with%20this%20one."
+    },
+    {
+      "id": "q-star-wars-0009",
+      "title": "Star Wars",
+      "source_url": "https://en.wikiquote.org/wiki/The_Empire_Strikes_Back",
+      "season_episode": "The Empire Strikes Back",
+      "speaker": "Yoda",
+      "text": "That is why you fail.",
+      "translation_ru": "Вот почему ты проигрываешь.",
+      "grammar_tags": ["Present Simple", "that is why"],
+      "est_rank": "D",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=That%20is%20why%20you%20fail."
+    },
+    {
+      "id": "q-star-wars-0010",
+      "title": "Star Wars",
+      "source_url": "https://en.wikiquote.org/wiki/Return_of_the_Jedi",
+      "season_episode": "Return of the Jedi",
+      "speaker": "Ackbar",
+      "text": "It's a trap!",
+      "translation_ru": "Это ловушка!",
+      "grammar_tags": ["to be", "article a"],
+      "est_rank": "D",
+      "auto_vocab": {
+        "top1000": 0.75
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "мем; translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=It%27s%20a%20trap%21"
+    },
+    {
+      "id": "q-star-wars-0011",
+      "title": "Star Wars",
+      "source_url": "https://en.wikiquote.org/wiki/The_Empire_Strikes_Back",
+      "season_episode": "The Empire Strikes Back",
+      "speaker": "Obi-Wan",
+      "text": "That boy is our last hope.",
+      "translation_ru": "Этот мальчик — наша последняя надежда.",
+      "grammar_tags": ["to be"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=That%20boy%20is%20our%20last%20hope."
+    },
+    {
+      "id": "q-star-wars-0012",
+      "title": "Star Wars",
+      "source_url": "https://en.wikiquote.org/wiki/Return_of_the_Jedi",
+      "season_episode": "Return of the Jedi",
+      "speaker": "Luke",
+      "text": "He's my father.",
+      "translation_ru": "Он мой отец.",
+      "grammar_tags": ["to be"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=He%27s%20my%20father."
+    },
+    {
+      "id": "q-star-wars-0013",
+      "title": "Star Wars",
+      "source_url": "https://en.wikiquote.org/wiki/The_Empire_Strikes_Back",
+      "season_episode": "The Empire Strikes Back",
+      "speaker": "Han",
+      "text": "Never tell me the odds!",
+      "translation_ru": "Никогда не говори мне о вероятностях!",
+      "grammar_tags": ["Imperative (never)"],
+      "est_rank": "C",
+      "auto_vocab": {
+        "top1000": 0.8
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "odds — B2",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Never%20tell%20me%20the%20odds%21"
+    },
+    {
+      "id": "q-star-wars-0014",
+      "title": "Star Wars",
+      "source_url": "https://en.wikiquote.org/wiki/The_Empire_Strikes_Back",
+      "season_episode": "The Empire Strikes Back",
+      "speaker": "Vader",
+      "text": "Search your feelings. You know it to be true.",
+      "translation_ru": "Прислушайся к своим чувствам. Ты знаешь, что это правда.",
+      "grammar_tags": ["Imperative", "Present Simple"],
+      "est_rank": "C",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Search%20your%20feelings.%20You%20know%20it%20to%20be%20true."
+    },
+    {
+      "id": "q-star-wars-0015",
+      "title": "Star Wars",
+      "source_url": "https://en.wikiquote.org/wiki/Star_Wars",
+      "season_episode": "Leia (ANH)",
+      "speaker": "Leia",
+      "text": "Help me, Obi-Wan Kenobi. You're my only hope",
+      "translation_ru": "Помоги мне, Оби-Ван Кеноби. Ты моя последняя надежда.",
+      "grammar_tags": ["Императив help", "be + притяжательные"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 0.33
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Help%20me%2C%20Obi-Wan%20Kenobi.%20You%27re%20my%20only%20hope"
+    },
+    {
+      "id": "q-star-wars-0016",
+      "title": "Star Wars",
+      "source_url": "https://en.wikiquote.org/wiki/Star_Wars",
+      "season_episode": "Luke (ANH, повторяется во всех фильмах)",
+      "speaker": "Luke",
+      "text": "I have a bad feeling about this",
+      "translation_ru": "У меня плохое предчувствие насчёт этого.",
+      "grammar_tags": ["have + feel/существительное", "about this"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 0.86
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=I%20have%20a%20bad%20feeling%20about%20this"
+    },
+    {
+      "id": "q-star-wars-0017",
+      "title": "Star Wars",
+      "source_url": "https://en.wikiquote.org/wiki/Star_Wars",
+      "season_episode": "Obi-Wan (ANH)",
+      "speaker": "Obi-Wan",
+      "text": "These aren't the droids you're looking for",
+      "translation_ru": "Это не те дроиды, которых вы ищете.",
+      "grammar_tags": ["aren't", "сокращённое придаточное (which are)"],
+      "est_rank": "D",
+      "auto_vocab": {
+        "top1000": 0.29
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=These%20aren%27t%20the%20droids%20you%27re%20looking%20for"
+    },
+    {
+      "id": "q-star-wars-0018",
+      "title": "Star Wars",
+      "source_url": "https://en.wikiquote.org/wiki/Star_Wars",
+      "season_episode": "Vader (ANH)",
+      "speaker": "Vader",
+      "text": "I find your lack of faith disturbing",
+      "translation_ru": "Меня беспокоит твоё отсутствие веры.",
+      "grammar_tags": ["find + obj + прилагательное (complex object)"],
+      "est_rank": "C",
+      "auto_vocab": {
+        "top1000": 0.57
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=I%20find%20your%20lack%20of%20faith%20disturbing"
+    },
+    {
+      "id": "q-star-wars-0019",
+      "title": "Star Wars",
+      "source_url": "https://en.wikiquote.org/wiki/Star_Wars",
+      "season_episode": "Yoda (ESB)",
+      "speaker": "Yoda",
+      "text": "Size matters not",
+      "translation_ru": "Размер не имеет значения.",
+      "grammar_tags": ["Инверсия Йоды", "matter (глагол)"],
+      "est_rank": "C",
+      "auto_vocab": {
+        "top1000": 0.67
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Size%20matters%20not"
+    }
+  ]
+}

@@ -836,7 +836,7 @@
   "source_url": "https://en.wikiquote.org/wiki/Stranger_Things/Season_5",
   "season_episode": "S05E03 «Chapter Three: The Turnbow Trap»",
   "speaker": "Will",
-  "text": "And I’m not a kid anymore.",
+  "text": "And I'm not a kid anymore.",
   "grammar_tags": [
    "to be (negative)",
    "anymore"
@@ -2059,7 +2059,7 @@
   "source_url": "https://en.wikiquote.org/wiki/Attack_on_Titan",
   "season_episode": "Female Titan (chapters 19-34, episodes 14-25)",
   "speaker": "Erwin",
-  "text": "Who’s the real enemy here?",
+  "text": "Who's the real enemy here?",
   "grammar_tags": [
    "wh-question",
    "to be"
@@ -2074,7 +2074,7 @@
  {
   "title": "Attack on Titan",
   "source_url": "https://www.imdb.com/title/tt2560140/quotes/",
-  "season_episode": "",
+  "season_episode": "аниме, финальный сезон (эпизод не указан)",
   "speaker": "Eren Jaeger",
   "text": "I just keep moving forward. Until I destroy my enemies.",
   "grammar_tags": [
@@ -2090,7 +2090,7 @@
  {
   "title": "Attack on Titan",
   "source_url": "https://www.imdb.com/title/tt2560140/quotes/",
-  "season_episode": "",
+  "season_episode": "аниме (эпизод не указан)",
   "speaker": "Mikasa Ackermann",
   "text": "This world is cruel... But it's also very beautiful.",
   "grammar_tags": [
@@ -2106,7 +2106,7 @@
  {
   "title": "Attack on Titan",
   "source_url": "https://www.imdb.com/title/tt2560140/quotes/",
-  "season_episode": "",
+  "season_episode": "аниме (эпизод не указан)",
   "speaker": "Eren Jaeger",
   "text": "Fight!",
   "grammar_tags": [
@@ -2122,7 +2122,7 @@
  {
   "title": "Attack on Titan",
   "source_url": "https://www.imdb.com/title/tt2560140/quotes/",
-  "season_episode": "",
+  "season_episode": "аниме (эпизод не указан)",
   "speaker": "Soldier",
   "text": "May I please have some of that Potato?",
   "grammar_tags": [
@@ -2138,7 +2138,7 @@
  {
   "title": "Attack on Titan",
   "source_url": "https://www.imdb.com/title/tt2560140/quotes/",
-  "season_episode": "",
+  "season_episode": "аниме (эпизод не указан)",
   "speaker": "Eren Jaeger",
   "text": "You're a disease!",
   "grammar_tags": [
@@ -2154,7 +2154,7 @@
  {
   "title": "Attack on Titan",
   "source_url": "https://www.imdb.com/title/tt2560140/quotes/",
-  "season_episode": "",
+  "season_episode": "аниме (эпизод не указан)",
   "speaker": "Eren Jaeger",
   "text": "I'll stay alive to keep his memory alive.",
   "grammar_tags": [
@@ -2283,7 +2283,7 @@
  {
   "title": "Jujutsu Kaisen",
   "source_url": "https://comicbook.com/anime/news/best-jujutsu-kaisen-quotes-ranked/",
-  "season_episode": "",
+  "season_episode": "аниме (эпизод не указан)",
   "speaker": "Aoi Todo",
   "text": "What kind of woman is your type?",
   "grammar_tags": [
@@ -2299,7 +2299,7 @@
  {
   "title": "Jujutsu Kaisen",
   "source_url": "https://comicbook.com/anime/news/best-jujutsu-kaisen-quotes-ranked/",
-  "season_episode": "",
+  "season_episode": "аниме (эпизод не указан)",
   "speaker": "Kento Nanami",
   "text": "Being a child is not a sin.",
   "grammar_tags": [
@@ -2754,8 +2754,8 @@
  {
   "title": "Мемы",
   "source_url": "https://knowyourmeme.com/memes/im-gonna-do-whats-called-a-pro-gamer-move",
-  "season_episode": "",
-  "speaker": "",
+  "season_episode": "интернет-мем",
+  "speaker": "автор неизвестен",
   "text": "I'm gonna do what's called a pro gamer move.",
   "grammar_tags": [
    "going to (gonna)"
@@ -2786,7 +2786,7 @@
   "title": "Мемы",
   "source_url": "https://knowyourmeme.com/memes/is-this-a-pigeon",
   "season_episode": "аниме The Brave Fighter of Sun Fighbird",
-  "speaker": "",
+  "speaker": "Fighbird",
   "text": "Is this a pigeon?",
   "grammar_tags": [
    "to be (question)"
@@ -3257,14 +3257,15 @@
   "source_url": null,
   "season_episode": "Jesse Pinkman",
   "speaker": "Jesse Pinkman",
-  "text": "Yeah, science!» — коронное)",
+  "text": "Yeah, science!",
   "translation_ru": "Да, наука! / Да, сука!",
   "grammar_tags": [
    "Возглас-подтверждение yeah"
   ],
   "est_rank": "E",
   "auto_vocab": null,
-  "confidence": "verbatim (parallel research) — needs source check"
+  "confidence": "verbatim (parallel research) — needs source check",
+  "note": "русская пометка ресёрча убрана из реплики"
  },
  {
   "title": "Breaking Bad",
@@ -3446,7 +3447,7 @@
   "source_url": null,
   "season_episode": "Аноним (3.03)",
   "speaker": "Аноним",
-  "text": "Shut up and dance. (название эпизода 3.03, фраза-лозунг в сюжете)",
+  "text": "Shut up and dance.",
   "translation_ru": "Заткнись и танцуй.",
   "grammar_tags": [
    "Imperative + and",
@@ -3454,7 +3455,8 @@
   ],
   "est_rank": "D",
   "auto_vocab": null,
-  "confidence": "verbatim (parallel research) — needs source check"
+  "confidence": "verbatim (parallel research) — needs source check",
+  "note": "(название эпизода 3.03, фраза-лозунг в сюжете)"
  },
  {
   "title": "Black Mirror",
@@ -4060,14 +4062,15 @@
   "source_url": null,
   "season_episode": "Kaya (S4)",
   "speaker": "Kaya",
-  "text": "How can people we've never met hate us so much? (адапт. реплики Kaya, эп. 70)",
+  "text": "How can people we've never met hate us so much?",
   "translation_ru": "Как могут люди, которых мы никогда не видели, ненавидеть нас так сильно?",
   "grammar_tags": [
    "can + придаточное с пассивным оборотом (we've never met)"
   ],
   "est_rank": "C",
   "auto_vocab": null,
-  "confidence": "verbatim (parallel research) — needs source check"
+  "confidence": "verbatim (parallel research) — needs source check",
+  "note": "(адапт. реплики Kaya, эп. 70)"
  },
  {
   "title": "Attack on Titan",

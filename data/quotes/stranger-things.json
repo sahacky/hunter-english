@@ -1,0 +1,354 @@
+{
+  "schema_version": 1,
+  "kind": "quotes",
+  "items": [
+    {
+      "id": "q-stranger-things-0001",
+      "title": "Stranger Things",
+      "source_url": "https://en.wikiquote.org/wiki/Stranger_Things/Season_2",
+      "season_episode": "S02E05 «Chapter Five: Dig Dug»",
+      "speaker": "Lucas",
+      "text": "Friends don't lie.",
+      "translation_ru": "Друзья не врут.",
+      "grammar_tags": ["Present Simple (negative)"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "фрагмент реплики S02E05",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Friends%20don%27t%20lie."
+    },
+    {
+      "id": "q-stranger-things-0002",
+      "title": "Stranger Things",
+      "source_url": "https://en.wikiquote.org/wiki/Stranger_Things/Season_1",
+      "season_episode": "S01E06 «Chapter Six: The Monster»",
+      "speaker": "Dustin",
+      "text": "SHE'S OUR FRIEND AND SHE'S CRAZY!",
+      "translation_ru": "Она наша подруга, и она чокнутая!",
+      "grammar_tags": ["to be", "possessive our"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "фрагмент; в источнике капсом",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=SHE%27S%20OUR%20FRIEND%20AND%20SHE%27S%20CRAZY%21"
+    },
+    {
+      "id": "q-stranger-things-0003",
+      "title": "Stranger Things",
+      "source_url": "https://en.wikiquote.org/wiki/Stranger_Things/Season_5",
+      "season_episode": "S05E06 «Chapter Six: Escape from Camazotz»",
+      "speaker": "Nancy",
+      "text": "I love you, Jonathan Byers.",
+      "translation_ru": "Я люблю тебя, Джонатан Байерс.",
+      "grammar_tags": ["Present Simple"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=I%20love%20you%2C%20Jonathan%20Byers."
+    },
+    {
+      "id": "q-stranger-things-0004",
+      "title": "Stranger Things",
+      "source_url": "https://en.wikiquote.org/wiki/Stranger_Things/Season_2",
+      "season_episode": "S02E02 «Chapter Two: Trick or Treat, Freak»",
+      "speaker": "Max",
+      "text": "It's not that bad.",
+      "translation_ru": "Всё не так уж плохо.",
+      "grammar_tags": ["to be (negative)"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=It%27s%20not%20that%20bad."
+    },
+    {
+      "id": "q-stranger-things-0005",
+      "title": "Stranger Things",
+      "source_url": "https://en.wikiquote.org/wiki/Stranger_Things/Season_2",
+      "season_episode": "S02E05 «Chapter Five: Dig Dug»",
+      "speaker": "Becky Ives",
+      "text": "I... I don't understand.",
+      "translation_ru": "Я... Я не понимаю.",
+      "grammar_tags": ["Present Simple (negative)"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "фраза путешественника; translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=I...%20I%20don%27t%20understand."
+    },
+    {
+      "id": "q-stranger-things-0006",
+      "title": "Stranger Things",
+      "source_url": "https://en.wikiquote.org/wiki/Stranger_Things/Season_2",
+      "season_episode": "S02E05 «Chapter Five: Dig Dug»",
+      "speaker": "Lucas",
+      "text": "You don't believe me.",
+      "translation_ru": "Ты мне не веришь.",
+      "grammar_tags": ["Present Simple (negative)"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=You%20don%27t%20believe%20me."
+    },
+    {
+      "id": "q-stranger-things-0007",
+      "title": "Stranger Things",
+      "source_url": "https://en.wikiquote.org/wiki/Stranger_Things/Season_4",
+      "season_episode": "S04E02 «Chapter Two: Vecna's Curse»",
+      "speaker": "Eddie",
+      "text": "What are you doing here?",
+      "translation_ru": "Что ты здесь делаешь?",
+      "grammar_tags": ["Present Continuous (question)"],
+      "est_rank": "D",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=What%20are%20you%20doing%20here%3F"
+    },
+    {
+      "id": "q-stranger-things-0008",
+      "title": "Stranger Things",
+      "source_url": "https://en.wikiquote.org/wiki/Stranger_Things/Season_5",
+      "season_episode": "S05E08 «Chapter Eight: The Rightside Up»",
+      "speaker": "Mike",
+      "text": "Please don't leave me, El. Please don't do this.",
+      "translation_ru": "Пожалуйста, не бросай меня, Эл. Пожалуйста, не надо.",
+      "grammar_tags": ["Imperative (negative)", "please"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Please%20don%27t%20leave%20me%2C%20El.%20Please%20don%27t%20do%20this."
+    },
+    {
+      "id": "q-stranger-things-0009",
+      "title": "Stranger Things",
+      "source_url": "https://en.wikiquote.org/wiki/Stranger_Things/Season_3",
+      "season_episode": "S03E08 «Chapter Eight: The Battle of Starcourt»",
+      "speaker": "Suzie",
+      "text": "I want to hear it.",
+      "translation_ru": "Я хочу это услышать.",
+      "grammar_tags": ["want to"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=I%20want%20to%20hear%20it."
+    },
+    {
+      "id": "q-stranger-things-0010",
+      "title": "Stranger Things",
+      "source_url": "https://en.wikiquote.org/wiki/Stranger_Things/Season_3",
+      "season_episode": "S03E05 «Chapter Five: The Flayed»",
+      "speaker": "Joyce",
+      "text": "What is your problem?!",
+      "translation_ru": "Да что с тобой не так?!",
+      "grammar_tags": ["wh-question", "to be"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=What%20is%20your%20problem%3F%21"
+    },
+    {
+      "id": "q-stranger-things-0011",
+      "title": "Stranger Things",
+      "source_url": "https://en.wikiquote.org/wiki/Stranger_Things/Season_3",
+      "season_episode": "S03E02 «Chapter Two: The Mall Rats»",
+      "speaker": "Eleven",
+      "text": "You lie. Why do you lie? I dump your ass!",
+      "translation_ru": "Ты врёшь. Зачем ты врёшь? Я тебя бросаю!",
+      "grammar_tags": ["Present Simple", "question with do"],
+      "est_rank": "D",
+      "auto_vocab": {
+        "top1000": 0.9
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "грубое: ass; ломаный английский Одиннадцатой; translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=You%20lie.%20Why%20do%20you%20lie%3F%20I%20dump%20your%20ass%21"
+    },
+    {
+      "id": "q-stranger-things-0012",
+      "title": "Stranger Things",
+      "source_url": "https://en.wikiquote.org/wiki/Stranger_Things/Season_5",
+      "season_episode": "S05E03 «Chapter Three: The Turnbow Trap»",
+      "speaker": "Will",
+      "text": "And I'm not a kid anymore.",
+      "translation_ru": "И я уже не ребёнок.",
+      "grammar_tags": ["to be (negative)", "anymore"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "фрагмент реплики S05E03; translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=And%20I%27m%20not%20a%20kid%20anymore."
+    },
+    {
+      "id": "q-stranger-things-0013",
+      "title": "Stranger Things",
+      "source_url": "https://en.wikiquote.org/wiki/Stranger_Things",
+      "season_episode": "Hopper (1.01)",
+      "speaker": "Hopper",
+      "text": "Mornings are for coffee and contemplation",
+      "translation_ru": "Утро — для кофе и размышлений.",
+      "grammar_tags": ["be for + gerund", "лексика «взрослого» дня"],
+      "est_rank": "C",
+      "auto_vocab": {
+        "top1000": 0.33
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Mornings%20are%20for%20coffee%20and%20contemplation"
+    },
+    {
+      "id": "q-stranger-things-0014",
+      "title": "Stranger Things",
+      "source_url": "https://en.wikiquote.org/wiki/Stranger_Things",
+      "season_episode": "Dustin (1.03)",
+      "speaker": "Dustin",
+      "text": "Why do we need weapons? We have her",
+      "translation_ru": "Зачем нам оружие? У нас есть она.",
+      "grammar_tags": ["Спецвопрос why + Present Simple"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 0.75
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Why%20do%20we%20need%20weapons%3F%20We%20have%20her"
+    },
+    {
+      "id": "q-stranger-things-0015",
+      "title": "Stranger Things",
+      "source_url": "https://en.wikiquote.org/wiki/Stranger_Things",
+      "season_episode": "Lucas / Dustin (1.03)",
+      "speaker": "Lucas / Dustin",
+      "text": "She shut ONE door! — With her mind!",
+      "translation_ru": "Она закрыла одну дверь! — Своим разумом!",
+      "grammar_tags": ["Past Simple", "with + существительное (инструмент)"],
+      "est_rank": "D",
+      "auto_vocab": {
+        "top1000": 0.71
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=She%20shut%20ONE%20door%21%20%E2%80%94%20With%20her%20mind%21"
+    },
+    {
+      "id": "q-stranger-things-0016",
+      "title": "Stranger Things",
+      "source_url": "https://en.wikiquote.org/wiki/Stranger_Things",
+      "season_episode": "Eleven (1.06)",
+      "speaker": "Eleven",
+      "text": "I opened the Gate. I'm the monster",
+      "translation_ru": "Я открыла Врата. Я — монстр.",
+      "grammar_tags": ["Past Simple", "be + существительное"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 0.43
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=I%20opened%20the%20Gate.%20I%27m%20the%20monster"
+    },
+    {
+      "id": "q-stranger-things-0017",
+      "title": "Stranger Things",
+      "source_url": "https://en.wikiquote.org/wiki/Stranger_Things",
+      "season_episode": "Mike (1.06)",
+      "speaker": "Mike",
+      "text": "You're not the monster. You saved me",
+      "translation_ru": "Ты не монстр. Ты спас меня.",
+      "grammar_tags": ["be отрицание + Past Simple — пара к №6"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 0.43
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=You%27re%20not%20the%20monster.%20You%20saved%20me"
+    },
+    {
+      "id": "q-stranger-things-0018",
+      "title": "Stranger Things",
+      "source_url": "https://en.wikiquote.org/wiki/Stranger_Things",
+      "season_episode": "Eleven / Mike (1.08)",
+      "speaker": "Eleven / Mike",
+      "text": "Promise? — Promise",
+      "translation_ru": "Обещаешь? — Обещаю.",
+      "grammar_tags": ["Present Simple-вопрос односложным ответом"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Promise%3F%20%E2%80%94%20Promise"
+    },
+    {
+      "id": "q-stranger-things-0019",
+      "title": "Stranger Things",
+      "source_url": "https://en.wikiquote.org/wiki/Stranger_Things",
+      "season_episode": "Eleven (1.08)",
+      "speaker": "Eleven",
+      "text": "Goodbye, Mike",
+      "translation_ru": "Прощай, Майк.",
+      "grammar_tags": ["Формула прощания + обращение"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 0.0
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Goodbye%2C%20Mike"
+    },
+    {
+      "id": "q-stranger-things-0020",
+      "title": "Stranger Things",
+      "source_url": "https://en.wikiquote.org/wiki/Stranger_Things",
+      "season_episode": "Jonathan (1.04)",
+      "speaker": "Jonathan",
+      "text": "People don't say what they're really thinking",
+      "translation_ru": "Люди не говорят, что думают на самом деле.",
+      "grammar_tags": ["Present Simple + придаточное what"],
+      "est_rank": "C",
+      "auto_vocab": {
+        "top1000": 0.57
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=People%20don%27t%20say%20what%20they%27re%20really%20thinking"
+    },
+    {
+      "id": "q-stranger-things-0021",
+      "title": "Stranger Things",
+      "source_url": "https://en.wikiquote.org/wiki/Stranger_Things",
+      "season_episode": "Mr. Clarke (1.05)",
+      "speaker": "Mr. Clarke",
+      "text": "Science is neat, but I'm afraid it's not very forgiving",
+      "translation_ru": "Наука — это классно, но она, боюсь, не очень-то прощает.",
+      "grammar_tags": ["but-контраст", "I'm afraid (вводная)", "отрицание"],
+      "est_rank": "C",
+      "auto_vocab": {
+        "top1000": 0.4
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Science%20is%20neat%2C%20but%20I%27m%20afraid%20it%27s%20not%20very%20forgiving"
+    }
+  ]
+}

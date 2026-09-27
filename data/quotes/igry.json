@@ -1,0 +1,278 @@
+{
+  "schema_version": 1,
+  "kind": "quotes",
+  "items": [
+    {
+      "id": "q-igry-0001",
+      "title": "Игры",
+      "source_url": "https://www.polygon.com/best-video-game-quotes/",
+      "season_episode": "The Legend of Zelda (1986)",
+      "speaker": "old man",
+      "text": "It's dangerous to go alone! Take this.",
+      "translation_ru": "Опасно ходить одному! Возьми это.",
+      "grammar_tags": ["to be + adj + to-infinitive", "Imperative"],
+      "est_rank": "D",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "Polygon (топ-100)",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=It%27s%20dangerous%20to%20go%20alone%21%20Take%20this."
+    },
+    {
+      "id": "q-igry-0002",
+      "title": "Игры",
+      "source_url": "https://www.polygon.com/best-video-game-quotes/",
+      "season_episode": "Diablo (1996)",
+      "speaker": "Deckard Cain",
+      "text": "Stay awhile, and listen.",
+      "translation_ru": "Побудь здесь и послушай.",
+      "grammar_tags": ["Imperative"],
+      "est_rank": "D",
+      "auto_vocab": {
+        "top1000": 0.75
+      },
+      "confidence": "Polygon",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Stay%20awhile%2C%20and%20listen."
+    },
+    {
+      "id": "q-igry-0003",
+      "title": "Игры",
+      "source_url": "https://www.polygon.com/best-video-game-quotes/",
+      "season_episode": "The Elder Scrolls V: Skyrim (2011)",
+      "speaker": "стражники",
+      "text": "I used to be an adventurer like you. Then I took an arrow in the knee.",
+      "translation_ru": "Раньше я, как и ты, был искателем приключений. А потом мне прострелили колено.",
+      "grammar_tags": ["used to", "Past Simple"],
+      "est_rank": "C",
+      "auto_vocab": {
+        "top1000": 0.81
+      },
+      "confidence": "Polygon",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=I%20used%20to%20be%20an%20adventurer%20like%20you.%20Then%20I%20took%20an%20arrow%20in%20the%20knee."
+    },
+    {
+      "id": "q-igry-0004",
+      "title": "Игры",
+      "source_url": "https://www.polygon.com/best-video-game-quotes/",
+      "season_episode": "Portal (2007)",
+      "speaker": "надпись на стене",
+      "text": "The cake is a lie.",
+      "translation_ru": "Торт — ложь.",
+      "grammar_tags": ["to be"],
+      "est_rank": "D",
+      "auto_vocab": {
+        "top1000": 0.8
+      },
+      "confidence": "Polygon",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=The%20cake%20is%20a%20lie."
+    },
+    {
+      "id": "q-igry-0005",
+      "title": "Игры",
+      "source_url": "https://www.polygon.com/best-video-game-quotes/",
+      "season_episode": "Super Mario Bros. (1985)",
+      "speaker": "Toad",
+      "text": "Thank you Mario! But our princess is in another castle!",
+      "translation_ru": "Спасибо, Марио! Но наша принцесса в другом замке!",
+      "grammar_tags": ["to be", "prepositions in"],
+      "est_rank": "D",
+      "auto_vocab": {
+        "top1000": 0.78
+      },
+      "confidence": "Polygon",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Thank%20you%20Mario%21%20But%20our%20princess%20is%20in%20another%20castle%21"
+    },
+    {
+      "id": "q-igry-0006",
+      "title": "Игры",
+      "source_url": "https://www.polygon.com/best-video-game-quotes/",
+      "season_episode": "God of War (2018)",
+      "speaker": "Kratos",
+      "text": "Don't be sorry. Be better.",
+      "translation_ru": "Не извиняйся. Будь лучше.",
+      "grammar_tags": ["Imperative (be)", "comparative better"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "Polygon",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Don%27t%20be%20sorry.%20Be%20better."
+    },
+    {
+      "id": "q-igry-0007",
+      "title": "Игры",
+      "source_url": "https://www.polygon.com/best-video-game-quotes/",
+      "season_episode": "Grand Theft Auto: San Andreas (2004)",
+      "speaker": "CJ",
+      "text": "Ah shit, here we go again.",
+      "translation_ru": "Вот дерьмо, опять всё сначала.",
+      "grammar_tags": ["here we go"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "Polygon",
+      "note": "грубое: shit; translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Ah%20shit%2C%20here%20we%20go%20again."
+    },
+    {
+      "id": "q-igry-0008",
+      "title": "Игры",
+      "source_url": "https://www.polygon.com/best-video-game-quotes/",
+      "season_episode": "Undertale (2015)",
+      "speaker": "Frisk",
+      "text": "Despite everything, it's still you.",
+      "translation_ru": "Несмотря ни на что, это всё ещё ты.",
+      "grammar_tags": ["to be", "despite"],
+      "est_rank": "C",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "Polygon",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Despite%20everything%2C%20it%27s%20still%20you."
+    },
+    {
+      "id": "q-igry-0009",
+      "title": "Игры",
+      "source_url": "https://www.polygon.com/best-video-game-quotes/",
+      "season_episode": "Fallout (серия)",
+      "speaker": "рассказчик",
+      "text": "War. War never changes.",
+      "translation_ru": "Война. Война никогда не меняется.",
+      "grammar_tags": ["Present Simple (3rd person -s)", "never"],
+      "est_rank": "D",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "Polygon",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=War.%20War%20never%20changes."
+    },
+    {
+      "id": "q-igry-0010",
+      "title": "Игры",
+      "source_url": "https://www.polygon.com/best-video-game-quotes/",
+      "season_episode": "Dark Souls (2011)",
+      "speaker": "Solaire",
+      "text": "Praise the sun!",
+      "translation_ru": "Славь солнце!",
+      "grammar_tags": ["Imperative"],
+      "est_rank": "C",
+      "auto_vocab": {
+        "top1000": 0.67
+      },
+      "confidence": "Polygon",
+      "note": "praise — B1; translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Praise%20the%20sun%21"
+    },
+    {
+      "id": "q-igry-0011",
+      "title": "Игры",
+      "source_url": "https://www.polygon.com/best-video-game-quotes/",
+      "season_episode": "The Legend of Zelda: Ocarina of Time (1998)",
+      "speaker": "Navi",
+      "text": "Hey! Listen!",
+      "translation_ru": "Эй! Слушай!",
+      "grammar_tags": ["Imperative"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "Polygon",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Hey%21%20Listen%21"
+    },
+    {
+      "id": "q-igry-0012",
+      "title": "Игры",
+      "source_url": "https://www.polygon.com/best-video-game-quotes/",
+      "season_episode": "Star Fox 64 (1997)",
+      "speaker": "Peppy",
+      "text": "Do a barrel roll!",
+      "translation_ru": "Сделай бочку!",
+      "grammar_tags": ["Imperative"],
+      "est_rank": "C",
+      "auto_vocab": {
+        "top1000": 0.5
+      },
+      "confidence": "Polygon",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Do%20a%20barrel%20roll%21"
+    },
+    {
+      "id": "q-igry-0013",
+      "title": "Игры",
+      "source_url": "https://www.polygon.com/best-video-game-quotes/",
+      "season_episode": "Mortal Kombat (1992)",
+      "speaker": "Scorpion",
+      "text": "Get over here!",
+      "translation_ru": "Иди сюда!",
+      "grammar_tags": ["Imperative", "phrasal verb"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "Polygon",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Get%20over%20here%21"
+    },
+    {
+      "id": "q-igry-0014",
+      "title": "Игры",
+      "source_url": "https://www.polygon.com/best-video-game-quotes/",
+      "season_episode": "Souls-серия",
+      "speaker": "экран смерти",
+      "text": "You died.",
+      "translation_ru": "Ты умер.",
+      "grammar_tags": ["Past Simple"],
+      "est_rank": "C",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "Polygon",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=You%20died."
+    },
+    {
+      "id": "q-igry-0015",
+      "title": "Игры",
+      "source_url": "https://www.polygon.com/best-video-game-quotes/",
+      "season_episode": "The Oregon Trail",
+      "speaker": "игра",
+      "text": "You have died of dysentery.",
+      "translation_ru": "Вы умерли от дизентерии.",
+      "grammar_tags": ["Present Perfect"],
+      "est_rank": "B",
+      "auto_vocab": {
+        "top1000": 0.8
+      },
+      "confidence": "Polygon",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=You%20have%20died%20of%20dysentery."
+    },
+    {
+      "id": "q-igry-0016",
+      "title": "Игры",
+      "source_url": "https://www.polygon.com/best-video-game-quotes/",
+      "season_episode": "Pokémon",
+      "speaker": "Youngster",
+      "text": "Hi! I like shorts! They're comfy and easy to wear!",
+      "translation_ru": "Привет! Я люблю шорты! Они удобные и их легко носить!",
+      "grammar_tags": ["Present Simple", "to be + adj + to-infinitive"],
+      "est_rank": "D",
+      "auto_vocab": {
+        "top1000": 0.91
+      },
+      "confidence": "Polygon",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Hi%21%20I%20like%20shorts%21%20They%27re%20comfy%20and%20easy%20to%20wear%21"
+    }
+  ]
+}

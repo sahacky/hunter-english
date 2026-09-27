@@ -1,0 +1,337 @@
+{
+  "schema_version": 1,
+  "kind": "quotes",
+  "items": [
+    {
+      "id": "q-black-mirror-0001",
+      "title": "Black Mirror",
+      "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+      "season_episode": "S01E02 «Fifteen Million Merits»",
+      "speaker": "Bing",
+      "text": "It's not stuff. It's truth.",
+      "translation_ru": "Это не вещи. Это правда.",
+      "grammar_tags": ["to be"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=It%27s%20not%20stuff.%20It%27s%20truth."
+    },
+    {
+      "id": "q-black-mirror-0002",
+      "title": "Black Mirror",
+      "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+      "season_episode": "S01E01 «The National Anthem»",
+      "speaker": "Martin",
+      "text": "I'm sorry, I can't help you.",
+      "translation_ru": "Извини, я не могу тебе помочь.",
+      "grammar_tags": ["can/can't", "to be"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=I%27m%20sorry%2C%20I%20can%27t%20help%20you."
+    },
+    {
+      "id": "q-black-mirror-0003",
+      "title": "Black Mirror",
+      "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+      "season_episode": "S01E01 «The National Anthem»",
+      "speaker": "Michael",
+      "text": "You don't know that.",
+      "translation_ru": "Ты этого не знаешь.",
+      "grammar_tags": ["Present Simple (negative)"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=You%20don%27t%20know%20that."
+    },
+    {
+      "id": "q-black-mirror-0004",
+      "title": "Black Mirror",
+      "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+      "season_episode": "S04E04 «Hang the DJ»",
+      "speaker": "Coach",
+      "text": "Everything happens for a reason.",
+      "translation_ru": "Всё случается не просто так.",
+      "grammar_tags": ["Present Simple (3rd person -s)"],
+      "est_rank": "D",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Everything%20happens%20for%20a%20reason."
+    },
+    {
+      "id": "q-black-mirror-0005",
+      "title": "Black Mirror",
+      "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+      "season_episode": "S02E03 «The Waldo Moment»",
+      "speaker": "Gwendolyn",
+      "text": "It doesn't work like that.",
+      "translation_ru": "Так это не работает.",
+      "grammar_tags": ["Present Simple (3rd person, negative)"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=It%20doesn%27t%20work%20like%20that."
+    },
+    {
+      "id": "q-black-mirror-0006",
+      "title": "Black Mirror",
+      "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+      "season_episode": "S03E02 «Playtest»",
+      "speaker": "Cooper",
+      "text": "Is that a problem?",
+      "translation_ru": "Это проблема?",
+      "grammar_tags": ["to be (question)"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Is%20that%20a%20problem%3F"
+    },
+    {
+      "id": "q-black-mirror-0007",
+      "title": "Black Mirror",
+      "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+      "season_episode": "S03E06 «Hated in the Nation»",
+      "speaker": "Blue",
+      "text": "Maybe you're old.",
+      "translation_ru": "Может, ты просто старый.",
+      "grammar_tags": ["to be"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Maybe%20you%27re%20old."
+    },
+    {
+      "id": "q-black-mirror-0008",
+      "title": "Black Mirror",
+      "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+      "season_episode": "S04E06 «Black Museum»",
+      "speaker": "Rachel",
+      "text": "I can't believe there's two of you!",
+      "translation_ru": "Не могу поверить, что вас двое!",
+      "grammar_tags": ["can't believe", "there is"],
+      "est_rank": "D",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "разговорное there's two (норма: there are); translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=I%20can%27t%20believe%20there%27s%20two%20of%20you%21"
+    },
+    {
+      "id": "q-black-mirror-0009",
+      "title": "Black Mirror",
+      "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+      "season_episode": "S04E06 «Black Museum»",
+      "speaker": "DCI Kano",
+      "text": "You can make friends with people.",
+      "translation_ru": "С людьми можно подружиться.",
+      "grammar_tags": ["can"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=You%20can%20make%20friends%20with%20people."
+    },
+    {
+      "id": "q-black-mirror-0010",
+      "title": "Black Mirror",
+      "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+      "season_episode": "S02E01 «Be Right Back»",
+      "speaker": "Martha",
+      "text": "Yeah, well, you aren't you, are you?",
+      "translation_ru": "Ну да, только ты ведь уже не ты, правда?",
+      "grammar_tags": ["to be", "tag question"],
+      "est_rank": "C",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Yeah%2C%20well%2C%20you%20aren%27t%20you%2C%20are%20you%3F"
+    },
+    {
+      "id": "q-black-mirror-0011",
+      "title": "Black Mirror",
+      "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+      "season_episode": "S01E01 «The National Anthem»",
+      "speaker": "Jane",
+      "text": "I know people. We love humiliation. We can't not laugh.",
+      "translation_ru": "Я знаю людей. Мы любим унижение. Мы не можем не смеяться.",
+      "grammar_tags": ["Present Simple", "can't"],
+      "est_rank": "C",
+      "auto_vocab": {
+        "top1000": 0.91
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "humiliation — B2; translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=I%20know%20people.%20We%20love%20humiliation.%20We%20can%27t%20not%20laugh."
+    },
+    {
+      "id": "q-black-mirror-0012",
+      "title": "Black Mirror",
+      "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+      "season_episode": "Carrie/обезьяна (4.06 Black Museum)",
+      "speaker": "Carrie/обезьяна",
+      "text": "Monkey needs a hug. / Monkey loves you",
+      "translation_ru": "Обезьянке нужен обнимашка. / Обезьянка любит тебя.",
+      "grammar_tags": ["Present Simple 3 л. ед.ч. — идеальная пара фраз"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 0.29
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Monkey%20needs%20a%20hug.%20%2F%20Monkey%20loves%20you"
+    },
+    {
+      "id": "q-black-mirror-0013",
+      "title": "Black Mirror",
+      "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+      "season_episode": "Аноним (3.03)",
+      "speaker": "Аноним",
+      "text": "Shut up and dance.",
+      "translation_ru": "Заткнись и танцуй.",
+      "grammar_tags": ["Imperative + and", "фразовый шаблон угрозы"],
+      "est_rank": "D",
+      "auto_vocab": {
+        "top1000": 0.75
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "note": "(название эпизода 3.03, фраза-лозунг в сюжете)",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Shut%20up%20and%20dance."
+    },
+    {
+      "id": "q-black-mirror-0014",
+      "title": "Black Mirror",
+      "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+      "season_episode": "Bing (1.02 Fifteen Million Merits)",
+      "speaker": "Bing",
+      "text": "I just want something real to happen. Just once",
+      "translation_ru": "Я просто хочу, чтобы случилось что-то настоящее. Хотя бы раз.",
+      "grammar_tags": ["want + obj + to-inf", "something real"],
+      "est_rank": "C",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=I%20just%20want%20something%20real%20to%20happen.%20Just%20once"
+    },
+    {
+      "id": "q-black-mirror-0015",
+      "title": "Black Mirror",
+      "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+      "season_episode": "Matt (White Christmas)",
+      "speaker": "Matt",
+      "text": "People want to be noticed. They don't like to be shut out. It makes them feel invisible",
+      "translation_ru": "Люди хотят, чтобы их замечали. Им не нравится, когда их отталкивают. Они чувствуют себя невидимыми.",
+      "grammar_tags": ["want + to be V3 (пассив)", "make sb feel"],
+      "est_rank": "C",
+      "auto_vocab": {
+        "top1000": 0.65
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=People%20want%20to%20be%20noticed.%20They%20don%27t%20like%20to%20be%20shut%20out.%20It%20makes%20them%20feel%20invisible"
+    },
+    {
+      "id": "q-black-mirror-0016",
+      "title": "Black Mirror",
+      "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+      "season_episode": "Lacie (3.01 Nosedive)",
+      "speaker": "Lacie",
+      "text": "I don't like your aura",
+      "translation_ru": "Мне не нравится твоя аура.",
+      "grammar_tags": ["like + don't", "притяжательные"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 0.4
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=I%20don%27t%20like%20your%20aura"
+    },
+    {
+      "id": "q-black-mirror-0017",
+      "title": "Black Mirror",
+      "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+      "season_episode": "Man in Jail (3.01)",
+      "speaker": "Man in Jail",
+      "text": "It'd be a dull world without wondering",
+      "translation_ru": "Мир был бы скучным без любопытства.",
+      "grammar_tags": ["would (сокр. 'd)", "безличное it"],
+      "est_rank": "C",
+      "auto_vocab": {
+        "top1000": 0.57
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=It%27d%20be%20a%20dull%20world%20without%20wondering"
+    },
+    {
+      "id": "q-black-mirror-0018",
+      "title": "Black Mirror",
+      "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+      "season_episode": "Shou Saito (3.02 Playtest)",
+      "speaker": "Shou Saito",
+      "text": "You are still alive",
+      "translation_ru": "Ты всё ещё жив.",
+      "grammar_tags": ["be + still (наречие)"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 0.5
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=You%20are%20still%20alive"
+    },
+    {
+      "id": "q-black-mirror-0019",
+      "title": "Black Mirror",
+      "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+      "season_episode": "Matt (White Christmas)",
+      "speaker": "Matt",
+      "text": "That's why 90% of seduction is just listening",
+      "translation_ru": "Вот почему 90% обольщения — это просто умение слушать.",
+      "grammar_tags": ["that's why", "% + of + gerund"],
+      "est_rank": "C",
+      "auto_vocab": {
+        "top1000": 0.43
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=That%27s%20why%2090%25%20of%20seduction%20is%20just%20listening"
+    },
+    {
+      "id": "q-black-mirror-0020",
+      "title": "Black Mirror",
+      "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+      "season_episode": "Amanda (7.01 Common People)",
+      "speaker": "Amanda",
+      "text": "It becomes honey. Kids love honey",
+      "translation_ru": "Это становится мёдом. Дети любят мёд.",
+      "grammar_tags": ["Present Simple 3 л.", "becomes → превращение"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 0.33
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=It%20becomes%20honey.%20Kids%20love%20honey"
+    }
+  ]
+}

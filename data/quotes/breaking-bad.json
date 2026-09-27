@@ -1,0 +1,357 @@
+{
+  "schema_version": 1,
+  "kind": "quotes",
+  "items": [
+    {
+      "id": "q-breaking-bad-0001",
+      "title": "Breaking Bad",
+      "source_url": "https://en.wikiquote.org/wiki/Breaking_Bad_(season_5)",
+      "season_episode": "S05E07 «Say My Name»",
+      "speaker": "Walter",
+      "text": "That's right. Now... say my name.",
+      "translation_ru": "Именно. А теперь... скажи моё имя.",
+      "grammar_tags": ["Imperative", "to be"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=That%27s%20right.%20Now...%20say%20my%20name."
+    },
+    {
+      "id": "q-breaking-bad-0002",
+      "title": "Breaking Bad",
+      "source_url": "https://en.wikiquote.org/wiki/Breaking_Bad_(season_4)",
+      "season_episode": "S04E06 «Cornered»",
+      "speaker": "Walter",
+      "text": "I am not in danger, Skyler. I am the danger!",
+      "translation_ru": "Я не в опасности, Скайлер. Я и есть опасность.",
+      "grammar_tags": ["to be (negative)", "articles a/the"],
+      "est_rank": "D",
+      "auto_vocab": {
+        "top1000": 0.78
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "фрагмент длинного монолога S04E06",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=I%20am%20not%20in%20danger%2C%20Skyler.%20I%20am%20the%20danger%21"
+    },
+    {
+      "id": "q-breaking-bad-0003",
+      "title": "Breaking Bad",
+      "source_url": "https://en.wikiquote.org/wiki/Breaking_Bad_(season_4)",
+      "season_episode": "S04E06 «Cornered»",
+      "speaker": "Walter",
+      "text": "I am the one who knocks!",
+      "translation_ru": "Парень открывает дверь — и его убивают. И ты думаешь такое обо мне? Нет. Я тот, кто стучит!",
+      "grammar_tags": ["to be", "relative clause who"],
+      "est_rank": "C",
+      "auto_vocab": {
+        "top1000": 0.83
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "фрагмент того же монолога",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=I%20am%20the%20one%20who%20knocks%21"
+    },
+    {
+      "id": "q-breaking-bad-0004",
+      "title": "Breaking Bad",
+      "source_url": "https://en.wikiquote.org/wiki/Breaking_Bad_(season_2)",
+      "season_episode": "S02E02 «Grilled»",
+      "speaker": "Walter",
+      "text": "We need a plan.",
+      "translation_ru": "Нам нужен план.",
+      "grammar_tags": ["Present Simple", "need"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=We%20need%20a%20plan."
+    },
+    {
+      "id": "q-breaking-bad-0005",
+      "title": "Breaking Bad",
+      "source_url": "https://en.wikiquote.org/wiki/Breaking_Bad_(season_4)",
+      "season_episode": "S04E13 «Face Off»",
+      "speaker": "Walter",
+      "text": "It's over. We're safe.",
+      "translation_ru": "Всё кончено. Мы в безопасности.",
+      "grammar_tags": ["to be"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=It%27s%20over.%20We%27re%20safe."
+    },
+    {
+      "id": "q-breaking-bad-0006",
+      "title": "Breaking Bad",
+      "source_url": "https://en.wikiquote.org/wiki/Breaking_Bad_(season_4)",
+      "season_episode": "S04E13 «Face Off»",
+      "speaker": "Walter",
+      "text": "I won.",
+      "translation_ru": "Я выиграл.",
+      "grammar_tags": ["Past Simple (irregular)"],
+      "est_rank": "C",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=I%20won."
+    },
+    {
+      "id": "q-breaking-bad-0007",
+      "title": "Breaking Bad",
+      "source_url": "https://en.wikiquote.org/wiki/Breaking_Bad_(season_5)",
+      "season_episode": "S05E16 «Felina»",
+      "speaker": "Walter",
+      "text": "I did it for me. I liked it. I was good at it.",
+      "translation_ru": "Я делал это для себя. Мне это нравилось. У меня получалось. И я был живым.",
+      "grammar_tags": ["Past Simple", "was"],
+      "est_rank": "C",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "фрагмент реплики S05E16",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=I%20did%20it%20for%20me.%20I%20liked%20it.%20I%20was%20good%20at%20it."
+    },
+    {
+      "id": "q-breaking-bad-0008",
+      "title": "Breaking Bad",
+      "source_url": "https://en.wikiquote.org/wiki/Breaking_Bad_(season_2)",
+      "season_episode": "S02E07 «Negro Y Azul»",
+      "speaker": "Walter",
+      "text": "You're damn right.",
+      "translation_ru": "Чёрт возьми, точно.",
+      "grammar_tags": ["to be"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "грубоватое: damn; translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=You%27re%20damn%20right."
+    },
+    {
+      "id": "q-breaking-bad-0009",
+      "title": "Breaking Bad",
+      "source_url": "https://en.wikiquote.org/wiki/Breaking_Bad_(season_2)",
+      "season_episode": "S02E01 «Seven-Thirty-Seven»",
+      "speaker": "Walter",
+      "text": "Don't touch them!",
+      "translation_ru": "Не трогай их!",
+      "grammar_tags": ["Imperative (negative)"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Don%27t%20touch%20them%21"
+    },
+    {
+      "id": "q-breaking-bad-0010",
+      "title": "Breaking Bad",
+      "source_url": "https://en.wikiquote.org/wiki/Breaking_Bad_(season_2)",
+      "season_episode": "S02E05 «Breakage»",
+      "speaker": "Walter",
+      "text": "I want you to handle it.",
+      "translation_ru": "Я хочу, чтобы ты этим занялся.",
+      "grammar_tags": ["want + object + to"],
+      "est_rank": "D",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=I%20want%20you%20to%20handle%20it."
+    },
+    {
+      "id": "q-breaking-bad-0011",
+      "title": "Breaking Bad",
+      "source_url": "https://en.wikiquote.org/wiki/Breaking_Bad_(season_1)",
+      "season_episode": "S01E06 «Crazy Handful of Nothin»",
+      "speaker": "Tuco",
+      "text": "What's your name?",
+      "translation_ru": "Как тебя зовут?",
+      "grammar_tags": ["wh-question", "to be"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "полезно для путешествий; translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=What%27s%20your%20name%3F"
+    },
+    {
+      "id": "q-breaking-bad-0012",
+      "title": "Breaking Bad",
+      "source_url": "https://en.wikiquote.org/wiki/Breaking_Bad_(season_1)",
+      "season_episode": "S01E01 «Pilot»",
+      "speaker": "Jesse",
+      "text": "Why are you here?",
+      "translation_ru": "Зачем ты здесь?",
+      "grammar_tags": ["wh-question", "to be"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Why%20are%20you%20here%3F"
+    },
+    {
+      "id": "q-breaking-bad-0013",
+      "title": "Breaking Bad",
+      "source_url": "https://en.wikiquote.org/wiki/Breaking_Bad_(season_5)",
+      "season_episode": "S05E08 «Gliding Over All»",
+      "speaker": "Walter",
+      "text": "How much is this?",
+      "translation_ru": "Сколько это стоит?",
+      "grammar_tags": ["How much", "to be"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "фраза путешественника; translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=How%20much%20is%20this%3F"
+    },
+    {
+      "id": "q-breaking-bad-0014",
+      "title": "Breaking Bad",
+      "source_url": "https://en.wikiquote.org/wiki/Breaking_Bad_(season_5)",
+      "season_episode": "S05E08 «Gliding Over All»",
+      "speaker": "Lydia",
+      "text": "Yes, I have it.",
+      "translation_ru": "Да, у меня есть.",
+      "grammar_tags": ["have"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Yes%2C%20I%20have%20it."
+    },
+    {
+      "id": "q-breaking-bad-0015",
+      "title": "Breaking Bad",
+      "source_url": "https://en.wikiquote.org/wiki/Breaking_Bad",
+      "season_episode": "Walter /_declared_ (5.07)",
+      "speaker": "Walter /_declared_",
+      "text": "Say my name. — You're Heisenberg. — You're goddamn right",
+      "translation_ru": "Скажи моё имя. — Ты Хайзенберг. — Чёрт возьми, правильно.",
+      "grammar_tags": ["Императив", "be", "разговорное усиление"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 0.38
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Say%20my%20name.%20%E2%80%94%20You%27re%20Heisenberg.%20%E2%80%94%20You%27re%20goddamn%20right"
+    },
+    {
+      "id": "q-breaking-bad-0016",
+      "title": "Breaking Bad",
+      "source_url": "https://en.wikiquote.org/wiki/Breaking_Bad",
+      "season_episode": "Walter (5.09)",
+      "speaker": "Walter",
+      "text": "Tread lightly",
+      "translation_ru": "Иди осторожнее / Не зарывайся.",
+      "grammar_tags": ["Императив", "фразовый глагол tread"],
+      "est_rank": "C",
+      "auto_vocab": {
+        "top1000": 0.0
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Tread%20lightly"
+    },
+    {
+      "id": "q-breaking-bad-0017",
+      "title": "Breaking Bad",
+      "source_url": "https://en.wikiquote.org/wiki/Breaking_Bad",
+      "season_episode": "Mike (3.12)",
+      "speaker": "Mike",
+      "text": "No more half measures",
+      "translation_ru": "Больше никаких полумер.",
+      "grammar_tags": ["Отрицание no more + существительное"],
+      "est_rank": "D",
+      "auto_vocab": {
+        "top1000": 0.75
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=No%20more%20half%20measures"
+    },
+    {
+      "id": "q-breaking-bad-0018",
+      "title": "Breaking Bad",
+      "source_url": "https://en.wikiquote.org/wiki/Breaking_Bad",
+      "season_episode": "Hector Salamanca (3.07)",
+      "speaker": "Hector Salamanca",
+      "text": "Family is all",
+      "translation_ru": "Семья — это всё.",
+      "grammar_tags": ["be", "Present Simple"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 0.67
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Family%20is%20all"
+    },
+    {
+      "id": "q-breaking-bad-0019",
+      "title": "Breaking Bad",
+      "source_url": "https://en.wikiquote.org/wiki/Breaking_Bad",
+      "season_episode": "Jesse Pinkman",
+      "speaker": "Jesse Pinkman",
+      "text": "Yeah, science!",
+      "translation_ru": "Да, наука! / Да, сука!",
+      "grammar_tags": ["Возглас-подтверждение yeah"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "note": "русская пометка ресёрча убрана из реплики",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Yeah%2C%20science%21"
+    },
+    {
+      "id": "q-breaking-bad-0020",
+      "title": "Breaking Bad",
+      "source_url": "https://en.wikiquote.org/wiki/Breaking_Bad",
+      "season_episode": "Walter (3.05)",
+      "speaker": "Walter",
+      "text": "You need to respect the chemistry",
+      "translation_ru": "Нужно уважать химию.",
+      "grammar_tags": ["Модальный need to"],
+      "est_rank": "D",
+      "auto_vocab": {
+        "top1000": 0.83
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=You%20need%20to%20respect%20the%20chemistry"
+    },
+    {
+      "id": "q-breaking-bad-0021",
+      "title": "Breaking Bad",
+      "source_url": "https://en.wikiquote.org/wiki/Breaking_Bad",
+      "season_episode": "Walter (5.06)",
+      "speaker": "Walter",
+      "text": "My business isn't meth. My business is empire",
+      "translation_ru": "Моё дело — не мет. Моё дело — империя.",
+      "grammar_tags": ["be + отрицание", "контраст", "лексика бизнеса"],
+      "est_rank": "D",
+      "auto_vocab": {
+        "top1000": 0.25
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=My%20business%20isn%27t%20meth.%20My%20business%20is%20empire"
+    }
+  ]
+}

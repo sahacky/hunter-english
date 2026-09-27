@@ -1,0 +1,386 @@
+{
+  "schema_version": 1,
+  "kind": "quotes",
+  "items": [
+    {
+      "id": "q-game-of-thrones-0001",
+      "title": "Game of Thrones",
+      "source_url": "https://en.wikiquote.org/wiki/Game_of_Thrones/Season_1",
+      "season_episode": "S01E01 «Winter is Coming»",
+      "speaker": "Ned Stark",
+      "text": "He won't be a boy forever. And winter is coming.",
+      "translation_ru": "Зима близко.",
+      "grammar_tags": ["will/won't", "Present Continuous (future meaning)"],
+      "est_rank": "C",
+      "auto_vocab": {
+        "top1000": 0.91
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "«Winter is coming» — отдельная карточка-фрагмент",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=He%20won%27t%20be%20a%20boy%20forever.%20And%20winter%20is%20coming."
+    },
+    {
+      "id": "q-game-of-thrones-0002",
+      "title": "Game of Thrones",
+      "source_url": "https://en.wikiquote.org/wiki/Game_of_Thrones/Season_2",
+      "season_episode": "S02E07 «A Man Without Honor»",
+      "speaker": "Ygritte",
+      "text": "You know nothing, Jon Snow.",
+      "translation_ru": "Ты ничего не знаешь, Джон Сноу.",
+      "grammar_tags": ["Present Simple"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=You%20know%20nothing%2C%20Jon%20Snow."
+    },
+    {
+      "id": "q-game-of-thrones-0003",
+      "title": "Game of Thrones",
+      "source_url": "https://en.wikiquote.org/wiki/Game_of_Thrones/Season_1",
+      "season_episode": "S01E08 «The Pointy End»",
+      "speaker": "Syrio Forel",
+      "text": "What do we say to the god of death?",
+      "translation_ru": "Что мы говорим богу смерти? — Не сегодня.",
+      "grammar_tags": ["Present Simple (question)", "wh-question"],
+      "est_rank": "D",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "пара с «Not today.»",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=What%20do%20we%20say%20to%20the%20god%20of%20death%3F"
+    },
+    {
+      "id": "q-game-of-thrones-0004",
+      "title": "Game of Thrones",
+      "source_url": "https://en.wikiquote.org/wiki/Game_of_Thrones/Season_1",
+      "season_episode": "S01E08 «The Pointy End»",
+      "speaker": "Arya Stark",
+      "text": "Not today.",
+      "translation_ru": "Не сегодня.",
+      "grammar_tags": ["short answer"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Not%20today."
+    },
+    {
+      "id": "q-game-of-thrones-0005",
+      "title": "Game of Thrones",
+      "source_url": "https://en.wikiquote.org/wiki/Game_of_Thrones/Season_6",
+      "season_episode": "S06E05 «The Door»",
+      "speaker": "Meera Reed",
+      "text": "Hold the door!",
+      "translation_ru": "Держи дверь!",
+      "grammar_tags": ["Imperative"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Hold%20the%20door%21"
+    },
+    {
+      "id": "q-game-of-thrones-0006",
+      "title": "Game of Thrones",
+      "source_url": "https://en.wikiquote.org/wiki/Game_of_Thrones/Season_1",
+      "season_episode": "S01E01 «Winter is Coming»",
+      "speaker": "Jon Snow",
+      "text": "I'm not a Stark.",
+      "translation_ru": "Я не Старк.",
+      "grammar_tags": ["to be (negative)"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "фрагмент более длинной реплики.; translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=I%27m%20not%20a%20Stark."
+    },
+    {
+      "id": "q-game-of-thrones-0007",
+      "title": "Game of Thrones",
+      "source_url": "https://en.wikiquote.org/wiki/Game_of_Thrones/Season_5",
+      "season_episode": "S05E09 «The Dance of Dragons»",
+      "speaker": "Stannis Baratheon",
+      "text": "My family stays with me.",
+      "translation_ru": "Моя семья остаётся со мной.",
+      "grammar_tags": ["Present Simple (3rd person -s)"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=My%20family%20stays%20with%20me."
+    },
+    {
+      "id": "q-game-of-thrones-0008",
+      "title": "Game of Thrones",
+      "source_url": "https://en.wikiquote.org/wiki/Game_of_Thrones/Season_1",
+      "season_episode": "S01E07 «You Win or You Die»",
+      "speaker": "Cersei Lannister",
+      "text": "Do you love your children?",
+      "translation_ru": "Вы любите своих детей?",
+      "grammar_tags": ["Present Simple (question)"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Do%20you%20love%20your%20children%3F"
+    },
+    {
+      "id": "q-game-of-thrones-0009",
+      "title": "Game of Thrones",
+      "source_url": "https://en.wikiquote.org/wiki/Game_of_Thrones/Season_3",
+      "season_episode": "S03E10 «Mhysa»",
+      "speaker": "Arya Stark",
+      "text": "But I'm hungry.",
+      "translation_ru": "Но я хочу есть.",
+      "grammar_tags": ["to be + adjective"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=But%20I%27m%20hungry."
+    },
+    {
+      "id": "q-game-of-thrones-0010",
+      "title": "Game of Thrones",
+      "source_url": "https://en.wikiquote.org/wiki/Game_of_Thrones/Season_6",
+      "season_episode": "S06E04 «Book of the Stranger»",
+      "speaker": "Jon Snow",
+      "text": "There's nothing to forgive.",
+      "translation_ru": "Тут нечего прощать.",
+      "grammar_tags": ["there is"],
+      "est_rank": "D",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=There%27s%20nothing%20to%20forgive."
+    },
+    {
+      "id": "q-game-of-thrones-0011",
+      "title": "Game of Thrones",
+      "source_url": "https://en.wikiquote.org/wiki/Game_of_Thrones/Season_1",
+      "season_episode": "S01E05 «The Wolf and the Lion»",
+      "speaker": "Cersei Lannister",
+      "text": "What do you want?",
+      "translation_ru": "Чего ты хочешь?",
+      "grammar_tags": ["wh-question", "Present Simple"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=What%20do%20you%20want%3F"
+    },
+    {
+      "id": "q-game-of-thrones-0012",
+      "title": "Game of Thrones",
+      "source_url": "https://en.wikiquote.org/wiki/Game_of_Thrones/Season_3",
+      "season_episode": "S03E09 «The Rains of Castamere»",
+      "speaker": "Roose Bolton",
+      "text": "The Lannisters send their regards.",
+      "translation_ru": "Ланнистеры передают привет.",
+      "grammar_tags": ["Present Simple"],
+      "est_rank": "C",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "regards — слово уровня B1; translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=The%20Lannisters%20send%20their%20regards."
+    },
+    {
+      "id": "q-game-of-thrones-0013",
+      "title": "Game of Thrones",
+      "source_url": "https://en.wikiquote.org/wiki/Game_of_Thrones/Season_4",
+      "season_episode": "S04E07 «Mockingbird»",
+      "speaker": "Tyrion Lannister",
+      "text": "You might be surprised. A Lannister always pays his debts.",
+      "translation_ru": "Ты можешь удивиться. Ланнистер всегда платит свои долги.",
+      "grammar_tags": ["might", "Present Simple + always"],
+      "est_rank": "C",
+      "auto_vocab": {
+        "top1000": 0.89
+      },
+      "confidence": "verbatim (Wikiquote)",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=You%20might%20be%20surprised.%20A%20Lannister%20always%20pays%20his%20debts."
+    },
+    {
+      "id": "q-game-of-thrones-0014",
+      "title": "Game of Thrones",
+      "source_url": "https://en.wikiquote.org/wiki/Game_of_Thrones",
+      "season_episode": "Cersei (1.07; девиз страницы)",
+      "speaker": "Cersei",
+      "text": "When you play the game of thrones, you win or you die. There is no middle ground",
+      "translation_ru": "Играя в игру престолов, ты либо выигрываешь, либо умираешь.",
+      "grammar_tags": ["Zero conditional (when…)", "either–or через or"],
+      "est_rank": "C",
+      "auto_vocab": {
+        "top1000": 0.88
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=When%20you%20play%20the%20game%20of%20thrones%2C%20you%20win%20or%20you%20die.%20There%20is%20no%20middle%20ground"
+    },
+    {
+      "id": "q-game-of-thrones-0015",
+      "title": "Game of Thrones",
+      "source_url": "https://en.wikiquote.org/wiki/Game_of_Thrones",
+      "season_episode": "Ned (1.01)",
+      "speaker": "Ned",
+      "text": "The man who passes the sentence should swing the sword",
+      "translation_ru": "Тот, кто выносит приговор, должен сам поднимать меч.",
+      "grammar_tags": ["Relative clause who…", "модальный should"],
+      "est_rank": "C",
+      "auto_vocab": {
+        "top1000": 0.6
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=The%20man%20who%20passes%20the%20sentence%20should%20swing%20the%20sword"
+    },
+    {
+      "id": "q-game-of-thrones-0016",
+      "title": "Game of Thrones",
+      "source_url": "https://en.wikiquote.org/wiki/Game_of_Thrones",
+      "season_episode": "Tyrion (1.01)",
+      "speaker": "Tyrion",
+      "text": "Never forget what you are",
+      "translation_ru": "Никогда не забывай, кто ты.",
+      "grammar_tags": ["Императив с never", "косвенный вопрос what you are"],
+      "est_rank": "C",
+      "auto_vocab": {
+        "top1000": 0.8
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Never%20forget%20what%20you%20are"
+    },
+    {
+      "id": "q-game-of-thrones-0017",
+      "title": "Game of Thrones",
+      "source_url": "https://en.wikiquote.org/wiki/Game_of_Thrones",
+      "season_episode": "Jaime (1.01)",
+      "speaker": "Jaime",
+      "text": "The things I do for love",
+      "translation_ru": "Вот что я делаю ради любви.",
+      "grammar_tags": ["Present Simple", "эмфатический порядок слов"],
+      "est_rank": "D",
+      "auto_vocab": {
+        "top1000": 0.83
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=The%20things%20I%20do%20for%20love"
+    },
+    {
+      "id": "q-game-of-thrones-0018",
+      "title": "Game of Thrones",
+      "source_url": "https://en.wikiquote.org/wiki/Game_of_Thrones",
+      "season_episode": "Tyrion (1.02)",
+      "speaker": "Tyrion",
+      "text": "A mind needs books like a sword needs a whetstone",
+      "translation_ru": "Уму нужны книги, как мечу — точильный камень.",
+      "grammar_tags": ["like-сравнение", "параллельная структура"],
+      "est_rank": "C",
+      "auto_vocab": {
+        "top1000": 0.5
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=A%20mind%20needs%20books%20like%20a%20sword%20needs%20a%20whetstone"
+    },
+    {
+      "id": "q-game-of-thrones-0019",
+      "title": "Game of Thrones",
+      "source_url": "https://en.wikiquote.org/wiki/Game_of_Thrones",
+      "season_episode": "Tywin (1.07)",
+      "speaker": "Tywin",
+      "text": "The lion does not concern himself with the opinions of the sheep",
+      "translation_ru": "Лев не интересуется мнением овец.",
+      "grammar_tags": ["does not", "возвратная конструкция concern oneself with"],
+      "est_rank": "C",
+      "auto_vocab": {
+        "top1000": 0.67
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=The%20lion%20does%20not%20concern%20himself%20with%20the%20opinions%20of%20the%20sheep"
+    },
+    {
+      "id": "q-game-of-thrones-0020",
+      "title": "Game of Thrones",
+      "source_url": "https://en.wikiquote.org/wiki/Game_of_Thrones",
+      "season_episode": "Tywin (1.07; форма девиза: A Lannister always pays his debts)",
+      "speaker": "Tywin",
+      "text": "Lannisters pay their debts!",
+      "translation_ru": "Ланнистеры всегда платят по долгам.",
+      "grammar_tags": ["Present Simple", "притяжательные", "девиз"],
+      "est_rank": "D",
+      "auto_vocab": {
+        "top1000": 0.25
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Lannisters%20pay%20their%20debts%21"
+    },
+    {
+      "id": "q-game-of-thrones-0021",
+      "title": "Game of Thrones",
+      "source_url": "https://en.wikiquote.org/wiki/Game_of_Thrones",
+      "season_episode": "Littlefinger (3.06 The Climb)",
+      "speaker": "Littlefinger",
+      "text": "Chaos is a ladder",
+      "translation_ru": "Хаос — это лестница.",
+      "grammar_tags": ["be + существительное", "метафора"],
+      "est_rank": "D",
+      "auto_vocab": {
+        "top1000": 0.25
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Chaos%20is%20a%20ladder"
+    },
+    {
+      "id": "q-game-of-thrones-0022",
+      "title": "Game of Thrones",
+      "source_url": "https://en.wikiquote.org/wiki/Game_of_Thrones",
+      "season_episode": "Jaqen H'ghar / девиз (S2E10, S3)",
+      "speaker": "Jaqen H'ghar / девиз",
+      "text": "Valar Morghulis. — All men must die",
+      "translation_ru": "Валар Моргулис — все люди должны умереть.",
+      "grammar_tags": ["Модальный must (обязательность)"],
+      "est_rank": "C",
+      "auto_vocab": {
+        "top1000": 0.5
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Valar%20Morghulis.%20%E2%80%94%20All%20men%20must%20die"
+    },
+    {
+      "id": "q-game-of-thrones-0023",
+      "title": "Game of Thrones",
+      "source_url": "https://en.wikiquote.org/wiki/Game_of_Thrones",
+      "season_episode": "Daenerys (1.06)",
+      "speaker": "Daenerys",
+      "text": "He was no dragon. Fire cannot kill a dragon",
+      "translation_ru": "Он не был драконом. Огонь не может убить дракона.",
+      "grammar_tags": ["Past Simple отрицание (no)", "модальный cannot"],
+      "est_rank": "D",
+      "auto_vocab": {
+        "top1000": 0.56
+      },
+      "confidence": "verbatim (parallel research) — needs source check",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=He%20was%20no%20dragon.%20Fire%20cannot%20kill%20a%20dragon"
+    }
+  ]
+}

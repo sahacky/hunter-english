@@ -1,0 +1,176 @@
+{
+  "schema_version": 1,
+  "kind": "quotes",
+  "items": [
+    {
+      "id": "q-memy-0001",
+      "title": "Мемы",
+      "source_url": "https://knowyourmeme.com/memes/this-is-fine",
+      "season_episode": "веб-комикс Gunshow (K.C. Green)",
+      "speaker": "собака",
+      "text": "This is fine.",
+      "translation_ru": "Всё нормально.",
+      "grammar_tags": ["to be"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "KYM",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=This%20is%20fine."
+    },
+    {
+      "id": "q-memy-0002",
+      "title": "Мемы",
+      "source_url": "https://knowyourmeme.com/memes/one-does-not-simply-walk-into-mordor",
+      "season_episode": "LOTR: Братство Кольца",
+      "speaker": "Boromir",
+      "text": "One does not simply walk into Mordor.",
+      "translation_ru": "Нельзя просто так пойти в Мордор.",
+      "grammar_tags": ["Present Simple (negative, 3rd person)"],
+      "est_rank": "C",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "KYM + IMDb (tt0120737)",
+      "note": "в Wikiquote-странице фильма этой строки нет, есть на IMDb; translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=One%20does%20not%20simply%20walk%20into%20Mordor."
+    },
+    {
+      "id": "q-memy-0003",
+      "title": "Мемы",
+      "source_url": "https://knowyourmeme.com/memes/im-gonna-do-whats-called-a-pro-gamer-move",
+      "season_episode": "интернет-мем",
+      "speaker": "автор неизвестен",
+      "text": "I'm gonna do what's called a pro gamer move.",
+      "translation_ru": "Сейчас я сделаю то, что называется про-геймерским ходом.",
+      "grammar_tags": ["going to (gonna)"],
+      "est_rank": "C",
+      "auto_vocab": {
+        "top1000": 0.82
+      },
+      "confidence": "KYM",
+      "note": "разговорное gonna; translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=I%27m%20gonna%20do%20what%27s%20called%20a%20pro%20gamer%20move."
+    },
+    {
+      "id": "q-memy-0004",
+      "title": "Мемы",
+      "source_url": "https://knowyourmeme.com/memes/how-do-you-do-fellow-kids",
+      "season_episode": "30 Rock",
+      "speaker": "Steve Buscemi",
+      "text": "How do you do, fellow kids?",
+      "translation_ru": "Как дела, молодёжь?",
+      "grammar_tags": ["How do you do (формула)"],
+      "est_rank": "D",
+      "auto_vocab": {
+        "top1000": 0.83
+      },
+      "confidence": "KYM",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=How%20do%20you%20do%2C%20fellow%20kids%3F"
+    },
+    {
+      "id": "q-memy-0005",
+      "title": "Мемы",
+      "source_url": "https://knowyourmeme.com/memes/is-this-a-pigeon",
+      "season_episode": "аниме The Brave Fighter of Sun Fighbird",
+      "speaker": "Fighbird",
+      "text": "Is this a pigeon?",
+      "translation_ru": "Это голубь?",
+      "grammar_tags": ["to be (question)"],
+      "est_rank": "E",
+      "auto_vocab": {
+        "top1000": 0.75
+      },
+      "confidence": "KYM / Wikipedia",
+      "note": "аниме-мем; translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Is%20this%20a%20pigeon%3F"
+    },
+    {
+      "id": "q-memy-0006",
+      "title": "Мемы",
+      "source_url": "https://knowyourmeme.com/memes/people-die-if-they-are-killed",
+      "season_episode": "Fate/stay night (англ. фан-перевод)",
+      "speaker": "Shirou Emiya",
+      "text": "People die if they are killed.",
+      "translation_ru": "Люди умирают, если их убить.",
+      "grammar_tags": ["Zero Conditional", "Passive"],
+      "est_rank": "B",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "KYM",
+      "note": "аниме-мем; точная формулировка в оригинальном переводе — уточнить; translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=People%20die%20if%20they%20are%20killed."
+    },
+    {
+      "id": "q-memy-0007",
+      "title": "Мемы",
+      "source_url": "https://knowyourmeme.com/memes/nah-id-win",
+      "season_episode": "Jujutsu Kaisen, гл. 221",
+      "speaker": "Satoru Gojo",
+      "text": "Nah, I'd win.",
+      "translation_ru": "Не, я бы выиграл.",
+      "grammar_tags": ["would ('d)"],
+      "est_rank": "C",
+      "auto_vocab": {
+        "top1000": 0.75
+      },
+      "confidence": "KYM",
+      "note": "аниме-мем, дублирует JJK; translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Nah%2C%20I%27d%20win."
+    },
+    {
+      "id": "q-memy-0008",
+      "title": "Мемы",
+      "source_url": "https://en.wikiquote.org/wiki/Star_Wars:_Episode_III_%E2%80%93_Revenge_of_the_Sith",
+      "season_episode": "Star Wars: Episode III",
+      "speaker": "Obi-Wan",
+      "text": "It's over, Anakin! I have the high ground!",
+      "translation_ru": "Всё кончено, Энакин! У меня позиция выше!",
+      "grammar_tags": ["to be", "have"],
+      "est_rank": "D",
+      "auto_vocab": {
+        "top1000": 1.0
+      },
+      "confidence": "Wikiquote (Episode III, в капсе) + мем",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=It%27s%20over%2C%20Anakin%21%20I%20have%20the%20high%20ground%21"
+    },
+    {
+      "id": "q-memy-0009",
+      "title": "Мемы",
+      "source_url": "https://www.polygon.com/best-video-game-quotes/",
+      "season_episode": "Zero Wing (1991)",
+      "speaker": "CATS",
+      "text": "All your base are belong to us.",
+      "translation_ru": "Все ваши базы принадлежат нам.",
+      "grammar_tags": ["анти-пример: сломанная грамматика"],
+      "est_rank": "C",
+      "auto_vocab": {
+        "top1000": 0.86
+      },
+      "confidence": "Polygon (#14)",
+      "note": "показывать как «найди ошибку»; translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=All%20your%20base%20are%20belong%20to%20us."
+    },
+    {
+      "id": "q-memy-0010",
+      "title": "Мемы",
+      "source_url": "https://www.polygon.com/best-video-game-quotes/",
+      "season_episode": "Call of Duty: Advanced Warfare (2014)",
+      "speaker": "подсказка",
+      "text": "Press 'F' to pay respects.",
+      "translation_ru": "Нажми 'F', чтобы выразить уважение.",
+      "grammar_tags": ["Imperative", "to-infinitive of purpose"],
+      "est_rank": "C",
+      "auto_vocab": {
+        "top1000": 0.8
+      },
+      "confidence": "Polygon",
+      "note": "translation needs review",
+      "link_playphrase": "https://www.playphrase.me/#/search?q=Press%20%27F%27%20to%20pay%20respects."
+    }
+  ]
+}
