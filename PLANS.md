@@ -51,11 +51,11 @@
 ## M3: Пайплайн данных {#M3}
 > Контракт — specs/05 (§0–§9). Сырьё в `data/raw/` (в git не попадает). Ветка: `feature/m3-data-pipeline`, merge — только при зелёном CI.
 - [x] 3.1 Схемы JSON draft-07 в `data/schemas/` (word, phrase, exercise, lesson, quote, phrasebook_dialog, trap) из specs/05 + схема trap добавлена в спеку; валидатор `scripts/validate-data.mjs` (`npm run validate:data`: ajv + ajv-formats + кросс-ссылки) + шаг в CI
-- [ ] 3.2 Примеры en-ru: Tatoeba (CC BY 2.0 FR) — скрипт скачивания/извлечения пар, индекс «лемма → пример EN+RU» в `data/raw/` (не коммитится)
-- [ ] 3.3 Аудио-инфраструктура: Piper en_GB `cori` (piper-tts + модель с HF) + генератор `research/tools/audio/gen_audio.py` → `audio/…/*.opus` (ffmpeg)
+- [x] 3.2 Примеры en-ru: Tatoeba (CC BY 2.0 FR) — скрипт скачивания/извлечения пар, индекс «лемма → пример EN+RU» в `data/raw/` (не коммитится)
+- [x] 3.3 Аудио-инфраструктура: Piper en_GB `cori` (piper-tts + модель с HF) + генератор `research/tools/audio/gen_audio.py` → `audio/…/*.opus` (ffmpeg)
 - [ ] 3.4 Слова: `build_words.py` — `data/words/words-0001-0719.json` (NGSL-Spoken) + `words-0720-2806.json` (NGSL): POS и переводы 1–3 из kaikki, CEFR (Oxford-разметка локально — только внутренний пайплайн; иначе вывод из ранга), теги (`irregular-verb`, `phrasal-*` по curated-спискам), примеры (Tatoeba/цитаты), `freq_rank_ngsl`/`freq_rank_spoken`
-- [ ] 3.5 Цитаты: `build_quotes.py` — `research/data/quotes-ru-merged.json` (274) → `data/quotes/<тайтл>.json` (id `q-<slug>-NNNN`, ≤60/файл); дозаполнение `translation_ru` (note: «needs review»), `auto_vocab.top1000` — расчёт по топ-1000 NGSL, `link_playphrase`
-- [ ] 3.6 Ловушки: `data/traps.json` из research/03 §4 (ЛТ-01…ЛТ-22 → `trap-*`, решает открытый вопрос 6 спеки)
+- [x] 3.5 Цитаты: `build_quotes.py` — `research/data/quotes-ru-merged.json` (274) → `data/quotes/<тайтл>.json` (id `q-<slug>-NNNN`, ≤60/файл); дозаполнение `translation_ru` (note: «needs review»), `auto_vocab.top1000` — расчёт по топ-1000 NGSL, `link_playphrase`
+- [x] 3.6 Ловушки: `data/traps.json` из research/03 §4 (ЛТ-01…ЛТ-22 → `trap-*`, решает открытый вопрос 6 спеки)
 - [ ] 3.7 Аудио всех слов из `data/words/` (Piper cori, Opus) + `data/manifest.json` (генератор, specs/05 §7)
 - [ ] 3.8 Валидация: `npm run validate:data` зелёный; `npm test`, `npm run lint && npm run typecheck`, `npm audit --audit-level=high` чисто; `data/README.md` и `CREDITS.md` обновлены
 - [ ] 3.9 Ревью ветки суб-агентами (методика AITS) + исправление находок
