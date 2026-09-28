@@ -4391,6 +4391,2206 @@
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0439.opus"
       }
+    },
+    {
+      "id": "ph-e-0440",
+      "text_en": "I work in an office.",
+      "translation_ru": "Я работаю в офисе.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["I work in an office."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0440.opus"
+      }
+    },
+    {
+      "id": "ph-e-0441",
+      "text_en": "I live in Moscow.",
+      "translation_ru": "Я живу в Москве.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["I live in Moscow."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0441.opus"
+      }
+    },
+    {
+      "id": "ph-e-0442",
+      "text_en": "I know English.",
+      "translation_ru": "Я знаю английский.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["I know English."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0442.opus"
+      }
+    },
+    {
+      "id": "ph-e-0443",
+      "text_en": "I want a coffee.",
+      "translation_ru": "Я хочу кофе.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["I want a coffee."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0443.opus"
+      }
+    },
+    {
+      "id": "ph-e-0444",
+      "text_en": "I like this city.",
+      "translation_ru": "Мне нравится этот город.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["I like this city."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0444.opus"
+      }
+    },
+    {
+      "id": "ph-e-0445",
+      "text_en": "I need help.",
+      "translation_ru": "Мне нужна помощь.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["I need help."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0445.opus"
+      }
+    },
+    {
+      "id": "ph-e-0446",
+      "text_en": "I speak Russian.",
+      "translation_ru": "Я говорю по-русски.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["I speak Russian."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0446.opus"
+      }
+    },
+    {
+      "id": "ph-e-0447",
+      "text_en": "I understand you.",
+      "translation_ru": "Я тебя понимаю.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["I understand you."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0447.opus"
+      }
+    },
+    {
+      "id": "ph-e-0448",
+      "text_en": "We work every day.",
+      "translation_ru": "Мы работаем каждый день.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["We work every day."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0448.opus"
+      }
+    },
+    {
+      "id": "ph-e-0449",
+      "text_en": "We live in Russia.",
+      "translation_ru": "Мы живём в России.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["We live in Russia."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0449.opus"
+      }
+    },
+    {
+      "id": "ph-e-0450",
+      "text_en": "We know this place.",
+      "translation_ru": "Мы знаем это место.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["We know this place."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0450.opus"
+      }
+    },
+    {
+      "id": "ph-e-0451",
+      "text_en": "We want to see the city.",
+      "translation_ru": "Мы хотим посмотреть город.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["We want to see the city."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0451.opus"
+      }
+    },
+    {
+      "id": "ph-e-0452",
+      "text_en": "We like tea.",
+      "translation_ru": "Мы любим чай.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["We like tea."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0452.opus"
+      }
+    },
+    {
+      "id": "ph-e-0453",
+      "text_en": "You work a lot.",
+      "translation_ru": "Ты много работаешь.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["You work a lot."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0453.opus"
+      }
+    },
+    {
+      "id": "ph-e-0454",
+      "text_en": "You live here.",
+      "translation_ru": "Ты живёшь здесь.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["You live here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0454.opus"
+      }
+    },
+    {
+      "id": "ph-e-0455",
+      "text_en": "You know the answer.",
+      "translation_ru": "Ты знаешь ответ.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["You know the answer."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0455.opus"
+      }
+    },
+    {
+      "id": "ph-e-0456",
+      "text_en": "You want a ticket.",
+      "translation_ru": "Ты хочешь билет.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["You want a ticket."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0456.opus"
+      }
+    },
+    {
+      "id": "ph-e-0457",
+      "text_en": "You like coffee.",
+      "translation_ru": "Ты любишь кофе.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["You like coffee."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0457.opus"
+      }
+    },
+    {
+      "id": "ph-e-0458",
+      "text_en": "They work together.",
+      "translation_ru": "Они работают вместе.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["They work together."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0458.opus"
+      }
+    },
+    {
+      "id": "ph-e-0459",
+      "text_en": "They live in London.",
+      "translation_ru": "Они живут в Лондоне.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["They live in London."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0459.opus"
+      }
+    },
+    {
+      "id": "ph-e-0460",
+      "text_en": "They know my brother.",
+      "translation_ru": "Они знают моего брата.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["They know my brother."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0460.opus"
+      }
+    },
+    {
+      "id": "ph-e-0461",
+      "text_en": "They want to help.",
+      "translation_ru": "Они хотят помочь.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["They want to help."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0461.opus"
+      }
+    },
+    {
+      "id": "ph-e-0462",
+      "text_en": "They like music.",
+      "translation_ru": "Они любят музыку.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["They like music."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0462.opus"
+      }
+    },
+    {
+      "id": "ph-e-0463",
+      "text_en": "I want to learn English.",
+      "translation_ru": "Я хочу выучить английский.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["I want to learn English."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0463.opus"
+      }
+    },
+    {
+      "id": "ph-e-0464",
+      "text_en": "I like to read books.",
+      "translation_ru": "Я люблю читать книги.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["I like to read books."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0464.opus"
+      }
+    },
+    {
+      "id": "ph-e-0465",
+      "text_en": "I work from home.",
+      "translation_ru": "Я работаю из дома.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["I work from home."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0465.opus"
+      }
+    },
+    {
+      "id": "ph-e-0466",
+      "text_en": "I live with my family.",
+      "translation_ru": "Я живу с семьёй.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["I live with my family."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0466.opus"
+      }
+    },
+    {
+      "id": "ph-e-0467",
+      "text_en": "We want to travel.",
+      "translation_ru": "Мы хотим путешествовать.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["We want to travel."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0467.opus"
+      }
+    },
+    {
+      "id": "ph-e-0468",
+      "text_en": "We need a plan.",
+      "translation_ru": "Нам нужен план.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["We need a plan."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0468.opus"
+      }
+    },
+    {
+      "id": "ph-e-0469",
+      "text_en": "We understand the rules.",
+      "translation_ru": "Мы понимаем правила.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["We understand the rules."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0469.opus"
+      }
+    },
+    {
+      "id": "ph-e-0470",
+      "text_en": "You need a ticket.",
+      "translation_ru": "Тебе нужен билет.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["You need a ticket."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0470.opus"
+      }
+    },
+    {
+      "id": "ph-e-0471",
+      "text_en": "You speak fast.",
+      "translation_ru": "Ты говоришь быстро.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["You speak fast."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0471.opus"
+      }
+    },
+    {
+      "id": "ph-e-0472",
+      "text_en": "They need money.",
+      "translation_ru": "Им нужны деньги.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["They need money."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0472.opus"
+      }
+    },
+    {
+      "id": "ph-e-0473",
+      "text_en": "They speak English.",
+      "translation_ru": "Они говорят по-английски.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["They speak English."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0473.opus"
+      }
+    },
+    {
+      "id": "ph-e-0474",
+      "text_en": "I know this song.",
+      "translation_ru": "Я знаю эту песню.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["I know this song."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0474.opus"
+      }
+    },
+    {
+      "id": "ph-e-0475",
+      "text_en": "I like your name.",
+      "translation_ru": "Мне нравится твоё имя.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["I like your name."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0475.opus"
+      }
+    },
+    {
+      "id": "ph-e-0476",
+      "text_en": "We like this hotel.",
+      "translation_ru": "Нам нравится этот отель.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["We like this hotel."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0476.opus"
+      }
+    },
+    {
+      "id": "ph-e-0477",
+      "text_en": "I want to stay here.",
+      "translation_ru": "Я хочу остаться здесь.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["I want to stay here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0477.opus"
+      }
+    },
+    {
+      "id": "ph-e-0478",
+      "text_en": "People need water.",
+      "translation_ru": "Людям нужна вода.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["People need water."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0478.opus"
+      }
+    },
+    {
+      "id": "ph-e-0479",
+      "text_en": "I live near the park.",
+      "translation_ru": "Я живу возле парка.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["I live near the park."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0479.opus"
+      }
+    },
+    {
+      "id": "ph-e-0480",
+      "text_en": "We work for a big company.",
+      "translation_ru": "Мы работаем в большой компании.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["We work for a big company."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0480.opus"
+      }
+    },
+    {
+      "id": "ph-e-0481",
+      "text_en": "I know what you mean.",
+      "translation_ru": "Я понимаю, о чём ты.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["I know what you mean."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0481.opus"
+      }
+    },
+    {
+      "id": "ph-e-0482",
+      "text_en": "They want a new house.",
+      "translation_ru": "Они хотят новый дом.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["They want a new house."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0482.opus"
+      }
+    },
+    {
+      "id": "ph-e-0483",
+      "text_en": "I like it here.",
+      "translation_ru": "Мне здесь нравится.",
+      "grammar_point_id": "gp-e-11",
+      "variants": ["I like it here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0483.opus"
+      }
+    },
+    {
+      "id": "ph-e-0484",
+      "text_en": "He works in a bank.",
+      "translation_ru": "Он работает в банке.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["He works in a bank."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0484.opus"
+      }
+    },
+    {
+      "id": "ph-e-0485",
+      "text_en": "He lives here.",
+      "translation_ru": "Он живёт здесь.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["He lives here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0485.opus"
+      }
+    },
+    {
+      "id": "ph-e-0486",
+      "text_en": "He knows the answer.",
+      "translation_ru": "Он знает ответ.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["He knows the answer."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0486.opus"
+      }
+    },
+    {
+      "id": "ph-e-0487",
+      "text_en": "He wants a coffee.",
+      "translation_ru": "Он хочет кофе.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["He wants a coffee."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0487.opus"
+      }
+    },
+    {
+      "id": "ph-e-0488",
+      "text_en": "He likes music.",
+      "translation_ru": "Он любит музыку.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["He likes music."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0488.opus"
+      }
+    },
+    {
+      "id": "ph-e-0489",
+      "text_en": "He needs help.",
+      "translation_ru": "Ему нужна помощь.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["He needs help."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0489.opus"
+      }
+    },
+    {
+      "id": "ph-e-0490",
+      "text_en": "He speaks English.",
+      "translation_ru": "Он говорит по-английски.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["He speaks English."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0490.opus"
+      }
+    },
+    {
+      "id": "ph-e-0491",
+      "text_en": "She works in a school.",
+      "translation_ru": "Она работает в школе.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["She works in a school."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0491.opus"
+      }
+    },
+    {
+      "id": "ph-e-0492",
+      "text_en": "She lives in Paris.",
+      "translation_ru": "Она живёт в Париже.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["She lives in Paris."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0492.opus"
+      }
+    },
+    {
+      "id": "ph-e-0493",
+      "text_en": "She knows my sister.",
+      "translation_ru": "Она знает мою сестру.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["She knows my sister."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0493.opus"
+      }
+    },
+    {
+      "id": "ph-e-0494",
+      "text_en": "She wants tea.",
+      "translation_ru": "Она хочет чай.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["She wants tea."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0494.opus"
+      }
+    },
+    {
+      "id": "ph-e-0495",
+      "text_en": "She likes this book.",
+      "translation_ru": "Ей нравится эта книга.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["She likes this book."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0495.opus"
+      }
+    },
+    {
+      "id": "ph-e-0496",
+      "text_en": "It works.",
+      "translation_ru": "Это работает.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["It works."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0496.opus"
+      }
+    },
+    {
+      "id": "ph-e-0497",
+      "text_en": "It opens at nine.",
+      "translation_ru": "Он открывается в девять.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["It opens at nine."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0497.opus"
+      }
+    },
+    {
+      "id": "ph-e-0498",
+      "text_en": "It closes at six.",
+      "translation_ru": "Он закрывается в шесть.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["It closes at six."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0498.opus"
+      }
+    },
+    {
+      "id": "ph-e-0499",
+      "text_en": "The shop opens at ten.",
+      "translation_ru": "Магазин открывается в десять.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["The shop opens at ten."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0499.opus"
+      }
+    },
+    {
+      "id": "ph-e-0500",
+      "text_en": "The museum closes at five.",
+      "translation_ru": "Музей закрывается в пять.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["The museum closes at five."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0500.opus"
+      }
+    },
+    {
+      "id": "ph-e-0501",
+      "text_en": "The train leaves at eight.",
+      "translation_ru": "Поезд отправляется в восемь.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["The train leaves at eight."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0501.opus"
+      }
+    },
+    {
+      "id": "ph-e-0502",
+      "text_en": "The bus stops here.",
+      "translation_ru": "Автобус останавливается здесь.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["The bus stops here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0502.opus"
+      }
+    },
+    {
+      "id": "ph-e-0503",
+      "text_en": "My family stays with me.",
+      "translation_ru": "Моя семья остаётся со мной.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["My family stays with me."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0503.opus"
+      }
+    },
+    {
+      "id": "ph-e-0504",
+      "text_en": "He goes to work at seven.",
+      "translation_ru": "Он идёт на работу в семь.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["He goes to work at seven."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0504.opus"
+      }
+    },
+    {
+      "id": "ph-e-0505",
+      "text_en": "She goes to school.",
+      "translation_ru": "Она ходит в школу.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["She goes to school."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0505.opus"
+      }
+    },
+    {
+      "id": "ph-e-0506",
+      "text_en": "He watches TV in the evening.",
+      "translation_ru": "Он смотрит телевизор вечером.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["He watches TV in the evening."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0506.opus"
+      }
+    },
+    {
+      "id": "ph-e-0507",
+      "text_en": "She reads books.",
+      "translation_ru": "Она читает книги.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["She reads books."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0507.opus"
+      }
+    },
+    {
+      "id": "ph-e-0508",
+      "text_en": "He plays football.",
+      "translation_ru": "Он играет в футбол.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["He plays football."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0508.opus"
+      }
+    },
+    {
+      "id": "ph-e-0509",
+      "text_en": "She cooks dinner.",
+      "translation_ru": "Она готовит ужин.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["She cooks dinner."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0509.opus"
+      }
+    },
+    {
+      "id": "ph-e-0510",
+      "text_en": "He drives a bus.",
+      "translation_ru": "Он водит автобус.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["He drives a bus."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0510.opus"
+      }
+    },
+    {
+      "id": "ph-e-0511",
+      "text_en": "She teaches English.",
+      "translation_ru": "Она преподаёт английский.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["She teaches English."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0511.opus"
+      }
+    },
+    {
+      "id": "ph-e-0512",
+      "text_en": "It rains a lot here.",
+      "translation_ru": "Здесь часто идёт дождь.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["It rains a lot here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0512.opus"
+      }
+    },
+    {
+      "id": "ph-e-0513",
+      "text_en": "He sleeps well.",
+      "translation_ru": "Он хорошо спит.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["He sleeps well."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0513.opus"
+      }
+    },
+    {
+      "id": "ph-e-0514",
+      "text_en": "She sings beautifully.",
+      "translation_ru": "Она красиво поёт.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["She sings beautifully."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0514.opus"
+      }
+    },
+    {
+      "id": "ph-e-0515",
+      "text_en": "My father works every day.",
+      "translation_ru": "Мой отец работает каждый день.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["My father works every day."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0515.opus"
+      }
+    },
+    {
+      "id": "ph-e-0516",
+      "text_en": "My mother likes flowers.",
+      "translation_ru": "Моя мама любит цветы.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["My mother likes flowers."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0516.opus"
+      }
+    },
+    {
+      "id": "ph-e-0517",
+      "text_en": "My brother studies at university.",
+      "translation_ru": "Мой брат учится в университете.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["My brother studies at university."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0517.opus"
+      }
+    },
+    {
+      "id": "ph-e-0518",
+      "text_en": "Anna speaks two languages.",
+      "translation_ru": "Анна говорит на двух языках.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["Anna speaks two languages."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0518.opus"
+      }
+    },
+    {
+      "id": "ph-e-0519",
+      "text_en": "Ivan lives in Kazan.",
+      "translation_ru": "Иван живёт в Казани.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["Ivan lives in Kazan."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0519.opus"
+      }
+    },
+    {
+      "id": "ph-e-0520",
+      "text_en": "On Monday I work.",
+      "translation_ru": "В понедельник я работаю.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["On Monday I work."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0520.opus"
+      }
+    },
+    {
+      "id": "ph-e-0521",
+      "text_en": "On Tuesday she rests.",
+      "translation_ru": "Во вторник она отдыхает.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["On Tuesday she rests."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0521.opus"
+      }
+    },
+    {
+      "id": "ph-e-0522",
+      "text_en": "From Monday to Friday.",
+      "translation_ru": "С понедельника по пятницу.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["From Monday to Friday."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0522.opus"
+      }
+    },
+    {
+      "id": "ph-e-0523",
+      "text_en": "He starts work at nine.",
+      "translation_ru": "Он начинает работу в девять.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["He starts work at nine."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0523.opus"
+      }
+    },
+    {
+      "id": "ph-e-0524",
+      "text_en": "She finishes at five.",
+      "translation_ru": "Она заканчивает в пять.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["She finishes at five."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0524.opus"
+      }
+    },
+    {
+      "id": "ph-e-0525",
+      "text_en": "The film starts at eight.",
+      "translation_ru": "Фильм начинается в восемь.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["The film starts at eight."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0525.opus"
+      }
+    },
+    {
+      "id": "ph-e-0526",
+      "text_en": "It sounds good.",
+      "translation_ru": "Звучит хорошо.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["It sounds good."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0526.opus"
+      }
+    },
+    {
+      "id": "ph-e-0527",
+      "text_en": "He knows nothing.",
+      "translation_ru": "Он ничего не знает.",
+      "grammar_point_id": "gp-e-12",
+      "variants": ["He knows nothing."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0527.opus"
+      }
+    },
+    {
+      "id": "ph-e-0528",
+      "text_en": "I don't work on Sunday.",
+      "translation_ru": "Я не работаю в воскресенье.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["I don't work on Sunday."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0528.opus"
+      }
+    },
+    {
+      "id": "ph-e-0529",
+      "text_en": "I don't live in Moscow.",
+      "translation_ru": "Я не живу в Москве.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["I don't live in Moscow."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0529.opus"
+      }
+    },
+    {
+      "id": "ph-e-0530",
+      "text_en": "I don't know.",
+      "translation_ru": "Я не знаю.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["I don't know."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0530.opus"
+      }
+    },
+    {
+      "id": "ph-e-0531",
+      "text_en": "I don't want it.",
+      "translation_ru": "Я не хочу этого.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["I don't want it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0531.opus"
+      }
+    },
+    {
+      "id": "ph-e-0532",
+      "text_en": "I don't like coffee.",
+      "translation_ru": "Я не люблю кофе.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["I don't like coffee."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0532.opus"
+      }
+    },
+    {
+      "id": "ph-e-0533",
+      "text_en": "I don't need money.",
+      "translation_ru": "Мне не нужны деньги.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["I don't need money."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0533.opus"
+      }
+    },
+    {
+      "id": "ph-e-0534",
+      "text_en": "I don't speak English well.",
+      "translation_ru": "Я плохо говорю по-английски.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["I don't speak English well."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0534.opus"
+      }
+    },
+    {
+      "id": "ph-e-0535",
+      "text_en": "I don't understand.",
+      "translation_ru": "Я не понимаю.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["I don't understand."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0535.opus"
+      }
+    },
+    {
+      "id": "ph-e-0536",
+      "text_en": "I don't understand you.",
+      "translation_ru": "Я тебя не понимаю.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["I don't understand you."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0536.opus"
+      }
+    },
+    {
+      "id": "ph-e-0537",
+      "text_en": "We don't work today.",
+      "translation_ru": "Мы сегодня не работаем.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["We don't work today."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0537.opus"
+      }
+    },
+    {
+      "id": "ph-e-0538",
+      "text_en": "We don't live here.",
+      "translation_ru": "Мы не живём здесь.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["We don't live here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0538.opus"
+      }
+    },
+    {
+      "id": "ph-e-0539",
+      "text_en": "We don't know him.",
+      "translation_ru": "Мы его не знаем.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["We don't know him."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0539.opus"
+      }
+    },
+    {
+      "id": "ph-e-0540",
+      "text_en": "We don't want to go.",
+      "translation_ru": "Мы не хотим идти.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["We don't want to go."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0540.opus"
+      }
+    },
+    {
+      "id": "ph-e-0541",
+      "text_en": "We don't like this weather.",
+      "translation_ru": "Нам не нравится эта погода.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["We don't like this weather."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0541.opus"
+      }
+    },
+    {
+      "id": "ph-e-0542",
+      "text_en": "You don't understand me.",
+      "translation_ru": "Ты меня не понимаешь.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["You don't understand me."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0542.opus"
+      }
+    },
+    {
+      "id": "ph-e-0543",
+      "text_en": "You don't know him.",
+      "translation_ru": "Ты его не знаешь.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["You don't know him."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0543.opus"
+      }
+    },
+    {
+      "id": "ph-e-0544",
+      "text_en": "You don't need this.",
+      "translation_ru": "Тебе это не нужно.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["You don't need this."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0544.opus"
+      }
+    },
+    {
+      "id": "ph-e-0545",
+      "text_en": "You don't work here.",
+      "translation_ru": "Ты здесь не работаешь.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["You don't work here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0545.opus"
+      }
+    },
+    {
+      "id": "ph-e-0546",
+      "text_en": "They don't speak Russian.",
+      "translation_ru": "Они не говорят по-русски.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["They don't speak Russian."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0546.opus"
+      }
+    },
+    {
+      "id": "ph-e-0547",
+      "text_en": "They don't live in Russia.",
+      "translation_ru": "Они не живут в России.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["They don't live in Russia."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0547.opus"
+      }
+    },
+    {
+      "id": "ph-e-0548",
+      "text_en": "They don't know the city.",
+      "translation_ru": "Они не знают город.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["They don't know the city."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0548.opus"
+      }
+    },
+    {
+      "id": "ph-e-0549",
+      "text_en": "They don't want money.",
+      "translation_ru": "Им не нужны деньги.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["They don't want money."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0549.opus"
+      }
+    },
+    {
+      "id": "ph-e-0550",
+      "text_en": "I don't have time.",
+      "translation_ru": "У меня нет времени.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["I don't have time."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0550.opus"
+      }
+    },
+    {
+      "id": "ph-e-0551",
+      "text_en": "I don't have a car.",
+      "translation_ru": "У меня нет машины.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["I don't have a car."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0551.opus"
+      }
+    },
+    {
+      "id": "ph-e-0552",
+      "text_en": "I don't eat meat.",
+      "translation_ru": "Я не ем мясо.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["I don't eat meat."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0552.opus"
+      }
+    },
+    {
+      "id": "ph-e-0553",
+      "text_en": "I don't drink coffee.",
+      "translation_ru": "Я не пью кофе.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["I don't drink coffee."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0553.opus"
+      }
+    },
+    {
+      "id": "ph-e-0554",
+      "text_en": "I don't watch TV.",
+      "translation_ru": "Я не смотрю телевизор.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["I don't watch TV."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0554.opus"
+      }
+    },
+    {
+      "id": "ph-e-0555",
+      "text_en": "I don't smoke.",
+      "translation_ru": "Я не курю.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["I don't smoke."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0555.opus"
+      }
+    },
+    {
+      "id": "ph-e-0556",
+      "text_en": "We don't understand the rule.",
+      "translation_ru": "Мы не понимаем правило.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["We don't understand the rule."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0556.opus"
+      }
+    },
+    {
+      "id": "ph-e-0557",
+      "text_en": "Friends don't lie.",
+      "translation_ru": "Друзья не лгут.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["Friends don't lie."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0557.opus"
+      }
+    },
+    {
+      "id": "ph-e-0558",
+      "text_en": "I don't like winter.",
+      "translation_ru": "Я не люблю зиму.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["I don't like winter."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0558.opus"
+      }
+    },
+    {
+      "id": "ph-e-0559",
+      "text_en": "I don't want to go.",
+      "translation_ru": "Я не хочу идти.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["I don't want to go."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0559.opus"
+      }
+    },
+    {
+      "id": "ph-e-0560",
+      "text_en": "I don't want to work today.",
+      "translation_ru": "Я не хочу сегодня работать.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["I don't want to work today."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0560.opus"
+      }
+    },
+    {
+      "id": "ph-e-0561",
+      "text_en": "I don't think so.",
+      "translation_ru": "Я так не думаю.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["I don't think so."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0561.opus"
+      }
+    },
+    {
+      "id": "ph-e-0562",
+      "text_en": "I don't mean it.",
+      "translation_ru": "Я не это имею в виду.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["I don't mean it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0562.opus"
+      }
+    },
+    {
+      "id": "ph-e-0563",
+      "text_en": "Sorry, I don't know.",
+      "translation_ru": "Извини, я не знаю.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["Sorry, I don't know."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0563.opus"
+      }
+    },
+    {
+      "id": "ph-e-0564",
+      "text_en": "Sorry, we don't understand.",
+      "translation_ru": "Извините, мы не понимаем.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["Sorry, we don't understand."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0564.opus"
+      }
+    },
+    {
+      "id": "ph-e-0565",
+      "text_en": "They don't like tourists.",
+      "translation_ru": "Они не любят туристов.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["They don't like tourists."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0565.opus"
+      }
+    },
+    {
+      "id": "ph-e-0566",
+      "text_en": "I don't see it.",
+      "translation_ru": "Я этого не вижу.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["I don't see it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0566.opus"
+      }
+    },
+    {
+      "id": "ph-e-0567",
+      "text_en": "I don't hear you.",
+      "translation_ru": "Я тебя не слышу.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["I don't hear you."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0567.opus"
+      }
+    },
+    {
+      "id": "ph-e-0568",
+      "text_en": "We don't have milk.",
+      "translation_ru": "У нас нет молока.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["We don't have milk."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0568.opus"
+      }
+    },
+    {
+      "id": "ph-e-0569",
+      "text_en": "I don't want to sleep.",
+      "translation_ru": "Я не хочу спать.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["I don't want to sleep."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0569.opus"
+      }
+    },
+    {
+      "id": "ph-e-0570",
+      "text_en": "It doesn't interest me.",
+      "translation_ru": "Меня это не интересует.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["It doesn't interest me."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0570.opus"
+      }
+    },
+    {
+      "id": "ph-e-0571",
+      "text_en": "I don't agree.",
+      "translation_ru": "Я не согласен.",
+      "grammar_point_id": "gp-e-13",
+      "variants": ["I don't agree."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0571.opus"
+      }
+    },
+    {
+      "id": "ph-e-0572",
+      "text_en": "He doesn't work here.",
+      "translation_ru": "Он здесь не работает.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["He doesn't work here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0572.opus"
+      }
+    },
+    {
+      "id": "ph-e-0573",
+      "text_en": "He doesn't live in Moscow.",
+      "translation_ru": "Он не живёт в Москве.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["He doesn't live in Moscow."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0573.opus"
+      }
+    },
+    {
+      "id": "ph-e-0574",
+      "text_en": "He doesn't know me.",
+      "translation_ru": "Он меня не знает.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["He doesn't know me."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0574.opus"
+      }
+    },
+    {
+      "id": "ph-e-0575",
+      "text_en": "He doesn't want coffee.",
+      "translation_ru": "Он не хочет кофе.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["He doesn't want coffee."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0575.opus"
+      }
+    },
+    {
+      "id": "ph-e-0576",
+      "text_en": "He doesn't like tea.",
+      "translation_ru": "Он не любит чай.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["He doesn't like tea."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0576.opus"
+      }
+    },
+    {
+      "id": "ph-e-0577",
+      "text_en": "She doesn't speak English.",
+      "translation_ru": "Она не говорит по-английски.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["She doesn't speak English."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0577.opus"
+      }
+    },
+    {
+      "id": "ph-e-0578",
+      "text_en": "She doesn't work today.",
+      "translation_ru": "Она сегодня не работает.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["She doesn't work today."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0578.opus"
+      }
+    },
+    {
+      "id": "ph-e-0579",
+      "text_en": "She doesn't know the answer.",
+      "translation_ru": "Она не знает ответ.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["She doesn't know the answer."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0579.opus"
+      }
+    },
+    {
+      "id": "ph-e-0580",
+      "text_en": "She doesn't like cold weather.",
+      "translation_ru": "Ей не нравится холодная погода.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["She doesn't like cold weather."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0580.opus"
+      }
+    },
+    {
+      "id": "ph-e-0581",
+      "text_en": "It doesn't work.",
+      "translation_ru": "Это не работает.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["It doesn't work."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0581.opus"
+      }
+    },
+    {
+      "id": "ph-e-0582",
+      "text_en": "It doesn't matter.",
+      "translation_ru": "Это не важно.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["It doesn't matter."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0582.opus"
+      }
+    },
+    {
+      "id": "ph-e-0583",
+      "text_en": "It doesn't open on Sunday.",
+      "translation_ru": "Он не открывается в воскресенье.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["It doesn't open on Sunday."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0583.opus"
+      }
+    },
+    {
+      "id": "ph-e-0584",
+      "text_en": "The shop doesn't work today.",
+      "translation_ru": "Магазин сегодня не работает.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["The shop doesn't work today."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0584.opus"
+      }
+    },
+    {
+      "id": "ph-e-0585",
+      "text_en": "The bus doesn't stop here.",
+      "translation_ru": "Автобус здесь не останавливается.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["The bus doesn't stop here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0585.opus"
+      }
+    },
+    {
+      "id": "ph-e-0586",
+      "text_en": "The museum doesn't open on Monday.",
+      "translation_ru": "Музей не открывается в понедельник.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["The museum doesn't open on Monday."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0586.opus"
+      }
+    },
+    {
+      "id": "ph-e-0587",
+      "text_en": "My father doesn't smoke.",
+      "translation_ru": "Мой отец не курит.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["My father doesn't smoke."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0587.opus"
+      }
+    },
+    {
+      "id": "ph-e-0588",
+      "text_en": "My mother doesn't drive.",
+      "translation_ru": "Моя мама не водит машину.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["My mother doesn't drive."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0588.opus"
+      }
+    },
+    {
+      "id": "ph-e-0589",
+      "text_en": "My friend doesn't eat meat.",
+      "translation_ru": "Мой друг не ест мясо.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["My friend doesn't eat meat."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0589.opus"
+      }
+    },
+    {
+      "id": "ph-e-0590",
+      "text_en": "Anna doesn't watch TV.",
+      "translation_ru": "Анна не смотрит телевизор.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["Anna doesn't watch TV."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0590.opus"
+      }
+    },
+    {
+      "id": "ph-e-0591",
+      "text_en": "Ivan doesn't like football.",
+      "translation_ru": "Иван не любит футбол.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["Ivan doesn't like football."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0591.opus"
+      }
+    },
+    {
+      "id": "ph-e-0592",
+      "text_en": "He doesn't understand me.",
+      "translation_ru": "Он меня не понимает.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["He doesn't understand me."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0592.opus"
+      }
+    },
+    {
+      "id": "ph-e-0593",
+      "text_en": "She doesn't want to go.",
+      "translation_ru": "Она не хочет идти.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["She doesn't want to go."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0593.opus"
+      }
+    },
+    {
+      "id": "ph-e-0594",
+      "text_en": "He doesn't need help.",
+      "translation_ru": "Ему не нужна помощь.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["He doesn't need help."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0594.opus"
+      }
+    },
+    {
+      "id": "ph-e-0595",
+      "text_en": "She doesn't have a phone.",
+      "translation_ru": "У неё нет телефона.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["She doesn't have a phone."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0595.opus"
+      }
+    },
+    {
+      "id": "ph-e-0596",
+      "text_en": "He doesn't have time.",
+      "translation_ru": "У него нет времени.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["He doesn't have time."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0596.opus"
+      }
+    },
+    {
+      "id": "ph-e-0597",
+      "text_en": "It doesn't cost much.",
+      "translation_ru": "Это стоит немного.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["It doesn't cost much."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0597.opus"
+      }
+    },
+    {
+      "id": "ph-e-0598",
+      "text_en": "This word doesn't exist.",
+      "translation_ru": "Такого слова не существует.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["This word doesn't exist."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0598.opus"
+      }
+    },
+    {
+      "id": "ph-e-0599",
+      "text_en": "The plan doesn't work.",
+      "translation_ru": "План не работает.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["The plan doesn't work."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0599.opus"
+      }
+    },
+    {
+      "id": "ph-e-0600",
+      "text_en": "He doesn't drink tea.",
+      "translation_ru": "Он не пьёт чай.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["He doesn't drink tea."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0600.opus"
+      }
+    },
+    {
+      "id": "ph-e-0601",
+      "text_en": "She doesn't read newspapers.",
+      "translation_ru": "Она не читает газеты.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["She doesn't read newspapers."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0601.opus"
+      }
+    },
+    {
+      "id": "ph-e-0602",
+      "text_en": "He doesn't play tennis.",
+      "translation_ru": "Он не играет в теннис.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["He doesn't play tennis."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0602.opus"
+      }
+    },
+    {
+      "id": "ph-e-0603",
+      "text_en": "She doesn't cook on Sunday.",
+      "translation_ru": "Она не готовит в воскресенье.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["She doesn't cook on Sunday."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0603.opus"
+      }
+    },
+    {
+      "id": "ph-e-0604",
+      "text_en": "My sister doesn't like fish.",
+      "translation_ru": "Моя сестра не любит рыбу.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["My sister doesn't like fish."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0604.opus"
+      }
+    },
+    {
+      "id": "ph-e-0605",
+      "text_en": "My brother doesn't work.",
+      "translation_ru": "Мой брат не работает.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["My brother doesn't work."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0605.opus"
+      }
+    },
+    {
+      "id": "ph-e-0606",
+      "text_en": "The baby doesn't sleep.",
+      "translation_ru": "Ребёнок не спит.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["The baby doesn't sleep."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0606.opus"
+      }
+    },
+    {
+      "id": "ph-e-0607",
+      "text_en": "He doesn't want to talk.",
+      "translation_ru": "Он не хочет разговаривать.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["He doesn't want to talk."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0607.opus"
+      }
+    },
+    {
+      "id": "ph-e-0608",
+      "text_en": "She doesn't want to stay.",
+      "translation_ru": "Она не хочет оставаться.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["She doesn't want to stay."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0608.opus"
+      }
+    },
+    {
+      "id": "ph-e-0609",
+      "text_en": "He doesn't know the city.",
+      "translation_ru": "Он не знает город.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["He doesn't know the city."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0609.opus"
+      }
+    },
+    {
+      "id": "ph-e-0610",
+      "text_en": "It doesn't sound right.",
+      "translation_ru": "Это звучит неправильно.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["It doesn't sound right."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0610.opus"
+      }
+    },
+    {
+      "id": "ph-e-0611",
+      "text_en": "That doesn't make sense.",
+      "translation_ru": "Это не имеет смысла.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["That doesn't make sense."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0611.opus"
+      }
+    },
+    {
+      "id": "ph-e-0612",
+      "text_en": "He doesn't mean it.",
+      "translation_ru": "Он не это имеет в виду.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["He doesn't mean it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0612.opus"
+      }
+    },
+    {
+      "id": "ph-e-0613",
+      "text_en": "She doesn't agree.",
+      "translation_ru": "Она не согласна.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["She doesn't agree."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0613.opus"
+      }
+    },
+    {
+      "id": "ph-e-0614",
+      "text_en": "It doesn't happen often.",
+      "translation_ru": "Это случается не часто.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["It doesn't happen often."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0614.opus"
+      }
+    },
+    {
+      "id": "ph-e-0615",
+      "text_en": "He doesn't live here anymore.",
+      "translation_ru": "Он больше здесь не живёт.",
+      "grammar_point_id": "gp-e-14",
+      "variants": ["He doesn't live here anymore."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0615.opus"
+      }
+    },
+    {
+      "id": "ph-e-0616",
+      "text_en": "I work, but she doesn't.",
+      "translation_ru": "Я работаю, а она нет.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["I work, but she doesn't."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0616.opus"
+      }
+    },
+    {
+      "id": "ph-e-0617",
+      "text_en": "He knows, but they don't.",
+      "translation_ru": "Он знает, а они нет.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["He knows, but they don't."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0617.opus"
+      }
+    },
+    {
+      "id": "ph-e-0618",
+      "text_en": "I live here and he lives there.",
+      "translation_ru": "Я живу здесь, а он там.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["I live here and he lives there."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0618.opus"
+      }
+    },
+    {
+      "id": "ph-e-0619",
+      "text_en": "We don't understand this rule.",
+      "translation_ru": "Мы не понимаем это правило.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["We don't understand this rule."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0619.opus"
+      }
+    },
+    {
+      "id": "ph-e-0620",
+      "text_en": "Does it matter? — It doesn't matter.",
+      "translation_ru": "Это важно? — Это не важно.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["Does it matter? — It doesn't matter."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0620.opus"
+      }
+    },
+    {
+      "id": "ph-e-0621",
+      "text_en": "My friend doesn't speak English.",
+      "translation_ru": "Мой друг не говорит по-английски.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["My friend doesn't speak English."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0621.opus"
+      }
+    },
+    {
+      "id": "ph-e-0622",
+      "text_en": "Help! I'm lost.",
+      "translation_ru": "Помогите! Я потерялся.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["Help! I'm lost."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0622.opus"
+      }
+    },
+    {
+      "id": "ph-e-0623",
+      "text_en": "I don't understand.",
+      "translation_ru": "Я не понимаю.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["I don't understand."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0623.opus"
+      }
+    },
+    {
+      "id": "ph-e-0624",
+      "text_en": "Please speak slowly.",
+      "translation_ru": "Пожалуйста, говорите медленнее.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["Please speak slowly."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0624.opus"
+      }
+    },
+    {
+      "id": "ph-e-0625",
+      "text_en": "Where is the police station?",
+      "translation_ru": "Где полицейский участок?",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["Where is the police station?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0625.opus"
+      }
+    },
+    {
+      "id": "ph-e-0626",
+      "text_en": "Where is the hospital?",
+      "translation_ru": "Где больница?",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["Where is the hospital?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0626.opus"
+      }
+    },
+    {
+      "id": "ph-e-0627",
+      "text_en": "I need a doctor.",
+      "translation_ru": "Мне нужен врач.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["I need a doctor."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0627.opus"
+      }
+    },
+    {
+      "id": "ph-e-0628",
+      "text_en": "Call the police!",
+      "translation_ru": "Вызовите полицию!",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["Call the police!"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0628.opus"
+      }
+    },
+    {
+      "id": "ph-e-0629",
+      "text_en": "It is an emergency.",
+      "translation_ru": "Это чрезвычайная ситуация.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["It is an emergency."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0629.opus"
+      }
+    },
+    {
+      "id": "ph-e-0630",
+      "text_en": "I work in a bank, and my sister works in a school.",
+      "translation_ru": "Я работаю в банке, а моя сестра — в школе.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["I work in a bank, and my sister works in a school."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0630.opus"
+      }
+    },
+    {
+      "id": "ph-e-0631",
+      "text_en": "He likes coffee, but she likes tea.",
+      "translation_ru": "Он любит кофе, а она чай.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["He likes coffee, but she likes tea."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0631.opus"
+      }
+    },
+    {
+      "id": "ph-e-0632",
+      "text_en": "They don't know where it is.",
+      "translation_ru": "Они не знают, где это.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["They don't know where it is."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0632.opus"
+      }
+    },
+    {
+      "id": "ph-e-0633",
+      "text_en": "We want to help you.",
+      "translation_ru": "Мы хотим помочь тебе.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["We want to help you."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0633.opus"
+      }
+    },
+    {
+      "id": "ph-e-0634",
+      "text_en": "The shop opens at nine and closes at six.",
+      "translation_ru": "Магазин открывается в девять и закрывается в шесть.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["The shop opens at nine and closes at six."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0634.opus"
+      }
+    },
+    {
+      "id": "ph-e-0635",
+      "text_en": "I don't want to stay home.",
+      "translation_ru": "Я не хочу сидеть дома.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["I don't want to stay home."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0635.opus"
+      }
+    },
+    {
+      "id": "ph-e-0636",
+      "text_en": "She doesn't want to go with us.",
+      "translation_ru": "Она не хочет идти с нами.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["She doesn't want to go with us."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0636.opus"
+      }
+    },
+    {
+      "id": "ph-e-0637",
+      "text_en": "Do you understand me now?",
+      "translation_ru": "Ты меня сейчас понимаешь?",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["Do you understand me now?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0637.opus"
+      }
+    },
+    {
+      "id": "ph-e-0638",
+      "text_en": "I know this street.",
+      "translation_ru": "Я знаю эту улицу.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["I know this street."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0638.opus"
+      }
+    },
+    {
+      "id": "ph-e-0639",
+      "text_en": "This bus doesn't go to the station.",
+      "translation_ru": "Этот автобус не идёт к вокзалу.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["This bus doesn't go to the station."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0639.opus"
+      }
+    },
+    {
+      "id": "ph-e-0640",
+      "text_en": "We need a map.",
+      "translation_ru": "Нам нужна карта.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["We need a map."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0640.opus"
+      }
+    },
+    {
+      "id": "ph-e-0641",
+      "text_en": "He works from nine to five.",
+      "translation_ru": "Он работает с девяти до пяти.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["He works from nine to five."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0641.opus"
+      }
+    },
+    {
+      "id": "ph-e-0642",
+      "text_en": "They live near the airport.",
+      "translation_ru": "Они живут рядом с аэропортом.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["They live near the airport."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0642.opus"
+      }
+    },
+    {
+      "id": "ph-e-0643",
+      "text_en": "I don't like this weather.",
+      "translation_ru": "Мне не нравится эта погода.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["I don't like this weather."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0643.opus"
+      }
+    },
+    {
+      "id": "ph-e-0644",
+      "text_en": "It works now!",
+      "translation_ru": "Теперь работает!",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["It works now!"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0644.opus"
+      }
+    },
+    {
+      "id": "ph-e-0645",
+      "text_en": "My phone doesn't work.",
+      "translation_ru": "Мой телефон не работает.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["My phone doesn't work."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0645.opus"
+      }
+    },
+    {
+      "id": "ph-e-0646",
+      "text_en": "Everything works fine.",
+      "translation_ru": "Всё работает хорошо.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["Everything works fine."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0646.opus"
+      }
+    },
+    {
+      "id": "ph-e-0647",
+      "text_en": "I want to go home.",
+      "translation_ru": "Я хочу домой.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["I want to go home."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0647.opus"
+      }
+    },
+    {
+      "id": "ph-e-0648",
+      "text_en": "We don't have time.",
+      "translation_ru": "У нас нет времени.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["We don't have time."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0648.opus"
+      }
+    },
+    {
+      "id": "ph-e-0649",
+      "text_en": "She knows the answer, but she doesn't say it.",
+      "translation_ru": "Она знает ответ, но не говорит его.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["She knows the answer, but she doesn't say it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0649.opus"
+      }
+    },
+    {
+      "id": "ph-e-0650",
+      "text_en": "Nobody knows.",
+      "translation_ru": "Никто не знает.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["Nobody knows."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0650.opus"
+      }
+    },
+    {
+      "id": "ph-e-0651",
+      "text_en": "Everybody wants to help.",
+      "translation_ru": "Все хотят помочь.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["Everybody wants to help."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0651.opus"
+      }
+    },
+    {
+      "id": "ph-e-0652",
+      "text_en": "It rains here in autumn.",
+      "translation_ru": "Здесь идёт дождь осенью.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["It rains here in autumn."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0652.opus"
+      }
+    },
+    {
+      "id": "ph-e-0653",
+      "text_en": "He doesn't believe me.",
+      "translation_ru": "Он мне не верит.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["He doesn't believe me."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0653.opus"
+      }
+    },
+    {
+      "id": "ph-e-0654",
+      "text_en": "I don't remember.",
+      "translation_ru": "Я не помню.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["I don't remember."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0654.opus"
+      }
+    },
+    {
+      "id": "ph-e-0655",
+      "text_en": "We start at eight.",
+      "translation_ru": "Мы начинаем в восемь.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["We start at eight."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0655.opus"
+      }
+    },
+    {
+      "id": "ph-e-0656",
+      "text_en": "The lesson ends at six.",
+      "translation_ru": "Урок заканчивается в шесть.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["The lesson ends at six."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0656.opus"
+      }
+    },
+    {
+      "id": "ph-e-0657",
+      "text_en": "I like my work.",
+      "translation_ru": "Мне нравится моя работа.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["I like my work."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0657.opus"
+      }
+    },
+    {
+      "id": "ph-e-0658",
+      "text_en": "They want to learn Russian.",
+      "translation_ru": "Они хотят выучить русский.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["They want to learn Russian."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0658.opus"
+      }
+    },
+    {
+      "id": "ph-e-0659",
+      "text_en": "Something doesn't work.",
+      "translation_ru": "Что-то не работает.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["Something doesn't work."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0659.opus"
+      }
     }
   ]
 }

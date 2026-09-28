@@ -165,7 +165,7 @@
           "id": "ex-e-0047"
         },
         {
-          "id": "ex-e-0471"
+          "id": "ex-e-0706"
         }
       ],
       "bebris_video": {
@@ -338,7 +338,7 @@
           "id": "ex-e-0094"
         },
         {
-          "id": "ex-e-0472"
+          "id": "ex-e-0707"
         }
       ],
       "bebris_video": {
@@ -511,7 +511,7 @@
           "id": "ex-e-0141"
         },
         {
-          "id": "ex-e-0473"
+          "id": "ex-e-0708"
         }
       ],
       "bebris_video": {
@@ -684,7 +684,7 @@
           "id": "ex-e-0188"
         },
         {
-          "id": "ex-e-0474"
+          "id": "ex-e-0709"
         }
       ],
       "bebris_video": {
@@ -853,7 +853,7 @@
           "id": "ex-e-0235"
         },
         {
-          "id": "ex-e-0475"
+          "id": "ex-e-0710"
         }
       ],
       "bebris_video": null
@@ -1685,6 +1685,865 @@
         },
         {
           "id": "ex-e-0470"
+        }
+      ],
+      "bebris_video": null
+    },
+    {
+      "id": "les-e-11",
+      "rank": "E",
+      "module": "mod-e-3",
+      "title": "Present Simple: (+) I / we / you / they",
+      "grammar_point": {
+        "id": "gp-e-11",
+        "title_ru": "Present Simple — утверждение",
+        "rule_md": "Present Simple — утверждение: подлежащее + глагол в начальной форме.\n\n- **I / we / you / they** work, live, know, want, like.\n- I work in an office. They live in London.\n\nПовседневные, регулярные действия. Глагол не меняется для I/we/you/they.",
+        "phrase_ids": ["ph-e-0440", "ph-e-0441", "ph-e-0442", "ph-e-0443", "ph-e-0444"],
+        "trap_id": null
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 481,
+        "to": 540
+      },
+      "phrasebook_topic": null,
+      "trap_id": null,
+      "quotes_topic": "work",
+      "exercises": [
+        {
+          "id": "ex-e-0471"
+        },
+        {
+          "id": "ex-e-0472"
+        },
+        {
+          "id": "ex-e-0473"
+        },
+        {
+          "id": "ex-e-0474"
+        },
+        {
+          "id": "ex-e-0475"
+        },
+        {
+          "id": "ex-e-0476"
+        },
+        {
+          "id": "ex-e-0477"
+        },
+        {
+          "id": "ex-e-0478"
+        },
+        {
+          "id": "ex-e-0479"
+        },
+        {
+          "id": "ex-e-0480"
+        },
+        {
+          "id": "ex-e-0481"
+        },
+        {
+          "id": "ex-e-0482"
+        },
+        {
+          "id": "ex-e-0483"
+        },
+        {
+          "id": "ex-e-0484"
+        },
+        {
+          "id": "ex-e-0485"
+        },
+        {
+          "id": "ex-e-0486"
+        },
+        {
+          "id": "ex-e-0487"
+        },
+        {
+          "id": "ex-e-0488"
+        },
+        {
+          "id": "ex-e-0489"
+        },
+        {
+          "id": "ex-e-0490"
+        },
+        {
+          "id": "ex-e-0491"
+        },
+        {
+          "id": "ex-e-0492"
+        },
+        {
+          "id": "ex-e-0493"
+        },
+        {
+          "id": "ex-e-0494"
+        },
+        {
+          "id": "ex-e-0495"
+        },
+        {
+          "id": "ex-e-0496"
+        },
+        {
+          "id": "ex-e-0497"
+        },
+        {
+          "id": "ex-e-0498"
+        },
+        {
+          "id": "ex-e-0499"
+        },
+        {
+          "id": "ex-e-0500"
+        },
+        {
+          "id": "ex-e-0501"
+        },
+        {
+          "id": "ex-e-0502"
+        },
+        {
+          "id": "ex-e-0503"
+        },
+        {
+          "id": "ex-e-0504"
+        },
+        {
+          "id": "ex-e-0505"
+        },
+        {
+          "id": "ex-e-0506"
+        },
+        {
+          "id": "ex-e-0507"
+        },
+        {
+          "id": "ex-e-0508"
+        },
+        {
+          "id": "ex-e-0509"
+        },
+        {
+          "id": "ex-e-0510"
+        },
+        {
+          "id": "ex-e-0511"
+        },
+        {
+          "id": "ex-e-0512"
+        },
+        {
+          "id": "ex-e-0513"
+        },
+        {
+          "id": "ex-e-0514"
+        },
+        {
+          "id": "ex-e-0515"
+        },
+        {
+          "id": "ex-e-0516"
+        },
+        {
+          "id": "ex-e-0517"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "1.1",
+        "playlist_index": 1,
+        "youtube_id": "Hp9wUEDasY4",
+        "title": null
+      }
+    },
+    {
+      "id": "les-e-12",
+      "rank": "E",
+      "module": "mod-e-3",
+      "title": "Present Simple: he/she/it + -s",
+      "grammar_point": {
+        "id": "gp-e-12",
+        "title_ru": "Present Simple — третье лицо (-s)",
+        "rule_md": "Present Simple с he / she / it: глагол получает **-s**.\n\n- He work**s** in a bank. She live**s** in Paris. It open**s** at nine.\n- После шипящих: -es (watches, goes); y → ies (studies).\n\n⚠️ Ловушка ЛТ-03: «He live here» — нельзя! He live**s** here.",
+        "phrase_ids": ["ph-e-0484", "ph-e-0485", "ph-e-0486", "ph-e-0487", "ph-e-0488"],
+        "trap_id": "trap-third-person-s"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 541,
+        "to": 600
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-third-person-s",
+      "quotes_topic": "work",
+      "exercises": [
+        {
+          "id": "ex-e-0518"
+        },
+        {
+          "id": "ex-e-0519"
+        },
+        {
+          "id": "ex-e-0520"
+        },
+        {
+          "id": "ex-e-0521"
+        },
+        {
+          "id": "ex-e-0522"
+        },
+        {
+          "id": "ex-e-0523"
+        },
+        {
+          "id": "ex-e-0524"
+        },
+        {
+          "id": "ex-e-0525"
+        },
+        {
+          "id": "ex-e-0526"
+        },
+        {
+          "id": "ex-e-0527"
+        },
+        {
+          "id": "ex-e-0528"
+        },
+        {
+          "id": "ex-e-0529"
+        },
+        {
+          "id": "ex-e-0530"
+        },
+        {
+          "id": "ex-e-0531"
+        },
+        {
+          "id": "ex-e-0532"
+        },
+        {
+          "id": "ex-e-0533"
+        },
+        {
+          "id": "ex-e-0534"
+        },
+        {
+          "id": "ex-e-0535"
+        },
+        {
+          "id": "ex-e-0536"
+        },
+        {
+          "id": "ex-e-0537"
+        },
+        {
+          "id": "ex-e-0538"
+        },
+        {
+          "id": "ex-e-0539"
+        },
+        {
+          "id": "ex-e-0540"
+        },
+        {
+          "id": "ex-e-0541"
+        },
+        {
+          "id": "ex-e-0542"
+        },
+        {
+          "id": "ex-e-0543"
+        },
+        {
+          "id": "ex-e-0544"
+        },
+        {
+          "id": "ex-e-0545"
+        },
+        {
+          "id": "ex-e-0546"
+        },
+        {
+          "id": "ex-e-0547"
+        },
+        {
+          "id": "ex-e-0548"
+        },
+        {
+          "id": "ex-e-0549"
+        },
+        {
+          "id": "ex-e-0550"
+        },
+        {
+          "id": "ex-e-0551"
+        },
+        {
+          "id": "ex-e-0552"
+        },
+        {
+          "id": "ex-e-0553"
+        },
+        {
+          "id": "ex-e-0554"
+        },
+        {
+          "id": "ex-e-0555"
+        },
+        {
+          "id": "ex-e-0556"
+        },
+        {
+          "id": "ex-e-0557"
+        },
+        {
+          "id": "ex-e-0558"
+        },
+        {
+          "id": "ex-e-0559"
+        },
+        {
+          "id": "ex-e-0560"
+        },
+        {
+          "id": "ex-e-0561"
+        },
+        {
+          "id": "ex-e-0562"
+        },
+        {
+          "id": "ex-e-0563"
+        },
+        {
+          "id": "ex-e-0564"
+        },
+        {
+          "id": "ex-e-0711"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "1.2",
+        "playlist_index": 3,
+        "youtube_id": "nXI9CN5a6ew",
+        "title": null
+      }
+    },
+    {
+      "id": "les-e-13",
+      "rank": "E",
+      "module": "mod-e-3",
+      "title": "Present Simple: отрицание don't",
+      "grammar_point": {
+        "id": "gp-e-13",
+        "title_ru": "Present Simple — отрицание (don't)",
+        "rule_md": "Отрицание Present Simple: **don't** + глагол.\n\n- I / we / you / they **don't** work. I don't know. We don't understand.\n\n⚠️ Ловушка ЛТ-04: «I no speak English» — нельзя! I **don't** speak English.",
+        "phrase_ids": ["ph-e-0528", "ph-e-0529", "ph-e-0530", "ph-e-0531", "ph-e-0532"],
+        "trap_id": "trap-no-do-negative"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 601,
+        "to": 660
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-no-do-negative",
+      "quotes_topic": "negation",
+      "exercises": [
+        {
+          "id": "ex-e-0565"
+        },
+        {
+          "id": "ex-e-0566"
+        },
+        {
+          "id": "ex-e-0567"
+        },
+        {
+          "id": "ex-e-0568"
+        },
+        {
+          "id": "ex-e-0569"
+        },
+        {
+          "id": "ex-e-0570"
+        },
+        {
+          "id": "ex-e-0571"
+        },
+        {
+          "id": "ex-e-0572"
+        },
+        {
+          "id": "ex-e-0573"
+        },
+        {
+          "id": "ex-e-0574"
+        },
+        {
+          "id": "ex-e-0575"
+        },
+        {
+          "id": "ex-e-0576"
+        },
+        {
+          "id": "ex-e-0577"
+        },
+        {
+          "id": "ex-e-0578"
+        },
+        {
+          "id": "ex-e-0579"
+        },
+        {
+          "id": "ex-e-0580"
+        },
+        {
+          "id": "ex-e-0581"
+        },
+        {
+          "id": "ex-e-0582"
+        },
+        {
+          "id": "ex-e-0583"
+        },
+        {
+          "id": "ex-e-0584"
+        },
+        {
+          "id": "ex-e-0585"
+        },
+        {
+          "id": "ex-e-0586"
+        },
+        {
+          "id": "ex-e-0587"
+        },
+        {
+          "id": "ex-e-0588"
+        },
+        {
+          "id": "ex-e-0589"
+        },
+        {
+          "id": "ex-e-0590"
+        },
+        {
+          "id": "ex-e-0591"
+        },
+        {
+          "id": "ex-e-0592"
+        },
+        {
+          "id": "ex-e-0593"
+        },
+        {
+          "id": "ex-e-0594"
+        },
+        {
+          "id": "ex-e-0595"
+        },
+        {
+          "id": "ex-e-0596"
+        },
+        {
+          "id": "ex-e-0597"
+        },
+        {
+          "id": "ex-e-0598"
+        },
+        {
+          "id": "ex-e-0599"
+        },
+        {
+          "id": "ex-e-0600"
+        },
+        {
+          "id": "ex-e-0601"
+        },
+        {
+          "id": "ex-e-0602"
+        },
+        {
+          "id": "ex-e-0603"
+        },
+        {
+          "id": "ex-e-0604"
+        },
+        {
+          "id": "ex-e-0605"
+        },
+        {
+          "id": "ex-e-0606"
+        },
+        {
+          "id": "ex-e-0607"
+        },
+        {
+          "id": "ex-e-0608"
+        },
+        {
+          "id": "ex-e-0609"
+        },
+        {
+          "id": "ex-e-0610"
+        },
+        {
+          "id": "ex-e-0611"
+        },
+        {
+          "id": "ex-e-0712"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "1.8",
+        "playlist_index": 17,
+        "youtube_id": "8O2JICbDthQ",
+        "title": null
+      }
+    },
+    {
+      "id": "les-e-14",
+      "rank": "E",
+      "module": "mod-e-3",
+      "title": "Present Simple: doesn't (глагол без -s)",
+      "grammar_point": {
+        "id": "gp-e-14",
+        "title_ru": "Present Simple — отрицание 3-го лица",
+        "rule_md": "Отрицание с he / she / it: **doesn't** + глагол БЕЗ -s.\n\n- He doesn't work. She doesn't know. It doesn't work.\n- Ошибка: «He doesn't works» — после doesn't глагол чистый.\n\nЗакрепление ЛТ-03/ЛТ-04: does + чистый глагол, don't + чистый глагол.",
+        "phrase_ids": ["ph-e-0572", "ph-e-0573", "ph-e-0574", "ph-e-0575", "ph-e-0576"],
+        "trap_id": "trap-third-person-s"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 661,
+        "to": 719
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-third-person-s",
+      "quotes_topic": "negation",
+      "exercises": [
+        {
+          "id": "ex-e-0612"
+        },
+        {
+          "id": "ex-e-0613"
+        },
+        {
+          "id": "ex-e-0614"
+        },
+        {
+          "id": "ex-e-0615"
+        },
+        {
+          "id": "ex-e-0616"
+        },
+        {
+          "id": "ex-e-0617"
+        },
+        {
+          "id": "ex-e-0618"
+        },
+        {
+          "id": "ex-e-0619"
+        },
+        {
+          "id": "ex-e-0620"
+        },
+        {
+          "id": "ex-e-0621"
+        },
+        {
+          "id": "ex-e-0622"
+        },
+        {
+          "id": "ex-e-0623"
+        },
+        {
+          "id": "ex-e-0624"
+        },
+        {
+          "id": "ex-e-0625"
+        },
+        {
+          "id": "ex-e-0626"
+        },
+        {
+          "id": "ex-e-0627"
+        },
+        {
+          "id": "ex-e-0628"
+        },
+        {
+          "id": "ex-e-0629"
+        },
+        {
+          "id": "ex-e-0630"
+        },
+        {
+          "id": "ex-e-0631"
+        },
+        {
+          "id": "ex-e-0632"
+        },
+        {
+          "id": "ex-e-0633"
+        },
+        {
+          "id": "ex-e-0634"
+        },
+        {
+          "id": "ex-e-0635"
+        },
+        {
+          "id": "ex-e-0636"
+        },
+        {
+          "id": "ex-e-0637"
+        },
+        {
+          "id": "ex-e-0638"
+        },
+        {
+          "id": "ex-e-0639"
+        },
+        {
+          "id": "ex-e-0640"
+        },
+        {
+          "id": "ex-e-0641"
+        },
+        {
+          "id": "ex-e-0642"
+        },
+        {
+          "id": "ex-e-0643"
+        },
+        {
+          "id": "ex-e-0644"
+        },
+        {
+          "id": "ex-e-0645"
+        },
+        {
+          "id": "ex-e-0646"
+        },
+        {
+          "id": "ex-e-0647"
+        },
+        {
+          "id": "ex-e-0648"
+        },
+        {
+          "id": "ex-e-0649"
+        },
+        {
+          "id": "ex-e-0650"
+        },
+        {
+          "id": "ex-e-0651"
+        },
+        {
+          "id": "ex-e-0652"
+        },
+        {
+          "id": "ex-e-0653"
+        },
+        {
+          "id": "ex-e-0654"
+        },
+        {
+          "id": "ex-e-0655"
+        },
+        {
+          "id": "ex-e-0656"
+        },
+        {
+          "id": "ex-e-0657"
+        },
+        {
+          "id": "ex-e-0658"
+        },
+        {
+          "id": "ex-e-0713"
+        },
+        {
+          "id": "ex-e-0714"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "1.9",
+        "playlist_index": 19,
+        "youtube_id": "82Z289SJSYA",
+        "title": null
+      }
+    },
+    {
+      "id": "les-e-15",
+      "rank": "E",
+      "module": "mod-e-3",
+      "title": "Повторение №3 + контрольная-тренировка",
+      "grammar_point": {
+        "id": "gp-e-15",
+        "title_ru": "Повторение: Present Simple +/−, Экстренные-I",
+        "rule_md": "Повторение E-11…E-14 — коротко:\n\n- **+**: I work. He work**s**.\n- **−**: I **don't** work. He **doesn't** work (глагол без -s!).\n- Экстренные фразы: Help! I'm lost. I don't understand. Where is the police station?\n\nКонтрольная-тренировка: найди ошибку + поставь время.",
+        "phrase_ids": ["ph-e-0616", "ph-e-0617", "ph-e-0618", "ph-e-0619", "ph-e-0620"],
+        "trap_id": null
+      },
+      "vocab_band": null,
+      "phrasebook_topic": null,
+      "trap_id": null,
+      "quotes_topic": "emergency",
+      "exercises": [
+        {
+          "id": "ex-e-0659"
+        },
+        {
+          "id": "ex-e-0660"
+        },
+        {
+          "id": "ex-e-0661"
+        },
+        {
+          "id": "ex-e-0662"
+        },
+        {
+          "id": "ex-e-0663"
+        },
+        {
+          "id": "ex-e-0664"
+        },
+        {
+          "id": "ex-e-0665"
+        },
+        {
+          "id": "ex-e-0666"
+        },
+        {
+          "id": "ex-e-0667"
+        },
+        {
+          "id": "ex-e-0668"
+        },
+        {
+          "id": "ex-e-0669"
+        },
+        {
+          "id": "ex-e-0670"
+        },
+        {
+          "id": "ex-e-0671"
+        },
+        {
+          "id": "ex-e-0672"
+        },
+        {
+          "id": "ex-e-0673"
+        },
+        {
+          "id": "ex-e-0674"
+        },
+        {
+          "id": "ex-e-0675"
+        },
+        {
+          "id": "ex-e-0676"
+        },
+        {
+          "id": "ex-e-0677"
+        },
+        {
+          "id": "ex-e-0678"
+        },
+        {
+          "id": "ex-e-0679"
+        },
+        {
+          "id": "ex-e-0680"
+        },
+        {
+          "id": "ex-e-0681"
+        },
+        {
+          "id": "ex-e-0682"
+        },
+        {
+          "id": "ex-e-0683"
+        },
+        {
+          "id": "ex-e-0684"
+        },
+        {
+          "id": "ex-e-0685"
+        },
+        {
+          "id": "ex-e-0686"
+        },
+        {
+          "id": "ex-e-0687"
+        },
+        {
+          "id": "ex-e-0688"
+        },
+        {
+          "id": "ex-e-0689"
+        },
+        {
+          "id": "ex-e-0690"
+        },
+        {
+          "id": "ex-e-0691"
+        },
+        {
+          "id": "ex-e-0692"
+        },
+        {
+          "id": "ex-e-0693"
+        },
+        {
+          "id": "ex-e-0694"
+        },
+        {
+          "id": "ex-e-0695"
+        },
+        {
+          "id": "ex-e-0696"
+        },
+        {
+          "id": "ex-e-0697"
+        },
+        {
+          "id": "ex-e-0698"
+        },
+        {
+          "id": "ex-e-0699"
+        },
+        {
+          "id": "ex-e-0700"
+        },
+        {
+          "id": "ex-e-0701"
+        },
+        {
+          "id": "ex-e-0702"
+        },
+        {
+          "id": "ex-e-0703"
+        },
+        {
+          "id": "ex-e-0704"
+        },
+        {
+          "id": "ex-e-0705"
+        },
+        {
+          "id": "ex-e-0715"
+        },
+        {
+          "id": "ex-e-0716"
         }
       ],
       "bebris_video": null

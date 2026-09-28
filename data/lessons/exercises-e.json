@@ -8596,6 +8596,4326 @@
     },
     {
       "id": "ex-e-0471",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "I ___ in an office.",
+        "gap_answers": ["work"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0472",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "We ___ in Russia.",
+        "gap_answers": ["live"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0473",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "They ___ English.",
+        "gap_answers": ["speak"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0474",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Мы живём в России.",
+        "options": [
+          "We live in Russia.",
+          "I like this city.",
+          "We understand the rules.",
+          "They need money."
+        ],
+        "correct": 0
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-e-0475",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Мы понимаем правила.",
+        "options": [
+          "They need money.",
+          "We live in Russia.",
+          "We understand the rules.",
+          "I like this city."
+        ],
+        "correct": 2
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-e-0476",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Мне нравится этот город.",
+        "options": [
+          "We live in Russia.",
+          "They need money.",
+          "We understand the rules.",
+          "I like this city."
+        ],
+        "correct": 3
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-e-0477",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Им нужны деньги.",
+        "options": [
+          "I like this city.",
+          "We live in Russia.",
+          "They need money.",
+          "We understand the rules."
+        ],
+        "correct": 2
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-e-0478",
+      "type": "match_pairs",
+      "payload": {
+        "kind": "match_pairs",
+        "pairs": [
+          {
+            "en": "You speak fast.",
+            "ru": "Ты говоришь быстро."
+          },
+          {
+            "en": "We know this place.",
+            "ru": "Мы знаем это место."
+          },
+          {
+            "en": "We need a plan.",
+            "ru": "Нам нужен план."
+          },
+          {
+            "en": "I need help.",
+            "ru": "Мне нужна помощь."
+          },
+          {
+            "en": "They work together.",
+            "ru": "Они работают вместе."
+          }
+        ]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-e-0479",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Мы любим чай.",
+        "phrase_id": "ph-e-0452",
+        "tokens": ["tea", "You", "like", "We", "People"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0480",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Ты любишь кофе.",
+        "phrase_id": "ph-e-0457",
+        "tokens": ["like", "coffee", "People", "You", "need"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0481",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Людям нужна вода.",
+        "phrase_id": "ph-e-0478",
+        "tokens": ["People", "need", "You", "water", "like"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0482",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Мне нужна помощь.",
+        "phrase_id": "ph-e-0445",
+        "tokens": ["I", "You", "like", "help", "need"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0483",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Я знаю эту песню.",
+        "phrase_id": "ph-e-0474",
+        "tokens": ["this", "You", "know", "I", "song", "like"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0484",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Я понимаю, о чём ты.",
+        "phrase_id": "ph-e-0481",
+        "tokens": ["You", "know", "you", "what", "I", "like", "mean"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0485",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Они живут в Лондоне.",
+        "phrase_id": "ph-e-0459",
+        "tokens": ["in", "London", "They", "You", "live", "like"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0486",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Мне здесь нравится.",
+        "phrase_id": "ph-e-0483",
+        "tokens": ["You", "People", "here", "I", "it", "like"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0487",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Мы работаем в большой компании.",
+        "phrase_id": "ph-e-0480"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0488",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Они хотят новый дом.",
+        "phrase_id": "ph-e-0482"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0489",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Я тебя понимаю.",
+        "phrase_id": "ph-e-0447"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0490",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Нам нравится этот отель.",
+        "phrase_id": "ph-e-0476"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-e-0491",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Я знаю английский.",
+        "phrase_id": "ph-e-0442"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0492",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Ты говоришь быстро.",
+        "phrase_id": "ph-e-0471"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0493",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Я работаю в офисе.",
+        "phrase_id": "ph-e-0440"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0494",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Мы работаем каждый день.",
+        "phrase_id": "ph-e-0448"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-e-0495",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Мы понимаем правила.",
+        "phrase_id": "ph-e-0469"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0496",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Ты знаешь ответ.",
+        "phrase_id": "ph-e-0455"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0497",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Мы хотим путешествовать.",
+        "phrase_id": "ph-e-0467"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0498",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Я живу с семьёй.",
+        "phrase_id": "ph-e-0466"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-e-0499",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Им нужны деньги.",
+        "phrase_id": "ph-e-0472"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0500",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Я хочу кофе.",
+        "phrase_id": "ph-e-0443"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0501",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Ты живёшь здесь.",
+        "phrase_id": "ph-e-0454"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0502",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Мы хотим посмотреть город.",
+        "phrase_id": "ph-e-0451"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-e-0503",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "I ___ in an office.",
+        "marker": "present-simple",
+        "gap_answers": ["work"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0504",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "They ___ in London.",
+        "marker": "present-simple",
+        "gap_answers": ["live"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0505",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "We ___ tea.",
+        "marker": "present-simple",
+        "gap_answers": ["like"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0506",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-e-0442"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0507",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-e-0454"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0508",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-e-0446"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0509",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-e-0462"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0510",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-e-0445"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0511",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-e-0455"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0512",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-e-0456"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0513",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-e-0440"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0514",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-e-0446"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0515",
+      "type": "answer_question",
+      "payload": {
+        "kind": "answer_question",
+        "question_en": "Where do you live?",
+        "phrase_id": "ph-e-0441"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-e-0516",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "You ___ nothing, Jon Snow.",
+        "gap_answers": ["know"],
+        "quote": {
+          "title": "Game of Thrones",
+          "season_episode": "S02E07 «A Man Without Honor»"
+        }
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact",
+        "hint_ru": "Вспомни цитату из урока"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0517",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "I ___. Believe me, I know.",
+        "gap_answers": ["know"],
+        "quote": {
+          "title": "Supernatural",
+          "season_episode": "S08E20 «Pac-Man Fever»"
+        }
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact",
+        "hint_ru": "Вспомни цитату из урока"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0518",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "He ___ in a bank.",
+        "gap_answers": ["works"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0519",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "She ___ in Paris.",
+        "gap_answers": ["lives"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0520",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "It ___ at nine.",
+        "gap_answers": ["opens"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0521",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Она хочет чай.",
+        "options": [
+          "He knows nothing.",
+          "She wants tea.",
+          "She cooks dinner.",
+          "She teaches English."
+        ],
+        "correct": 1
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-e-0522",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Она готовит ужин.",
+        "options": [
+          "She cooks dinner.",
+          "She teaches English.",
+          "She wants tea.",
+          "He knows nothing."
+        ],
+        "correct": 0
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-e-0523",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Он ничего не знает.",
+        "options": [
+          "She wants tea.",
+          "She cooks dinner.",
+          "He knows nothing.",
+          "She teaches English."
+        ],
+        "correct": 2
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-e-0524",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Она преподаёт английский.",
+        "options": [
+          "She teaches English.",
+          "She cooks dinner.",
+          "She wants tea.",
+          "He knows nothing."
+        ],
+        "correct": 0
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-e-0525",
+      "type": "match_pairs",
+      "payload": {
+        "kind": "match_pairs",
+        "pairs": [
+          {
+            "en": "It sounds good.",
+            "ru": "Звучит хорошо."
+          },
+          {
+            "en": "He speaks English.",
+            "ru": "Он говорит по-английски."
+          },
+          {
+            "en": "From Monday to Friday.",
+            "ru": "С понедельника по пятницу."
+          },
+          {
+            "en": "He lives here.",
+            "ru": "Он живёт здесь."
+          },
+          {
+            "en": "He likes music.",
+            "ru": "Он любит музыку."
+          }
+        ]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-e-0526",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Он ничего не знает.",
+        "phrase_id": "ph-e-0527",
+        "tokens": ["sleeps", "nothing", "knows", "brother", "He"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0527",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Он хорошо спит.",
+        "phrase_id": "ph-e-0513",
+        "tokens": ["knows", "sleeps", "brother", "well", "He"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0528",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Мой брат учится в университете.",
+        "phrase_id": "ph-e-0517",
+        "tokens": ["studies", "brother", "My", "knows", "sleeps", "university", "at"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0529",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Он идёт на работу в семь.",
+        "phrase_id": "ph-e-0504",
+        "tokens": ["to", "goes", "He", "knows", "sleeps", "at", "seven", "work"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0530",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Он смотрит телевизор вечером.",
+        "phrase_id": "ph-e-0506",
+        "tokens": ["knows", "sleeps", "evening", "He", "in", "TV", "watches", "the"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0531",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Это работает.",
+        "phrase_id": "ph-e-0496",
+        "tokens": ["knows", "works", "It", "sleeps"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0532",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Магазин открывается в десять.",
+        "phrase_id": "ph-e-0499",
+        "tokens": ["The", "knows", "at", "shop", "ten", "opens", "sleeps"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0533",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Он работает в банке.",
+        "phrase_id": "ph-e-0484",
+        "tokens": ["bank", "sleeps", "works", "He", "in", "knows", "a"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0534",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Ему нужна помощь.",
+        "phrase_id": "ph-e-0489"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0535",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Иван живёт в Казани.",
+        "phrase_id": "ph-e-0519"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0536",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Он живёт здесь.",
+        "phrase_id": "ph-e-0485"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0537",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Он знает ответ.",
+        "phrase_id": "ph-e-0486"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-e-0538",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Она хочет чай.",
+        "phrase_id": "ph-e-0494"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0539",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Автобус останавливается здесь.",
+        "phrase_id": "ph-e-0502"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0540",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Здесь часто идёт дождь.",
+        "phrase_id": "ph-e-0512"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0541",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Моя семья остаётся со мной.",
+        "phrase_id": "ph-e-0503"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-e-0542",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Он водит автобус.",
+        "phrase_id": "ph-e-0510"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0543",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Моя мама любит цветы.",
+        "phrase_id": "ph-e-0516"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0544",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Анна говорит на двух языках.",
+        "phrase_id": "ph-e-0518"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0545",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Во вторник она отдыхает.",
+        "phrase_id": "ph-e-0521"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-e-0546",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "В понедельник я работаю.",
+        "phrase_id": "ph-e-0520"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0547",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Она красиво поёт.",
+        "phrase_id": "ph-e-0514"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0548",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Музей закрывается в пять.",
+        "phrase_id": "ph-e-0500"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0549",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Он говорит по-английски.",
+        "phrase_id": "ph-e-0490"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-e-0550",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "He ___ in a bank.",
+        "marker": "3rd-person",
+        "gap_answers": ["works"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0551",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "She ___ to school.",
+        "marker": "3rd-person",
+        "gap_answers": ["goes"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0552",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "It ___ at nine.",
+        "marker": "3rd-person",
+        "gap_answers": ["opens"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0553",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-e-0485"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0554",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-e-0489"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0555",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-e-0508"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0556",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-e-0513"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0557",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-e-0490"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0558",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-e-0526"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0559",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-e-0511"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0560",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-e-0484"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0561",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-e-0487"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0562",
+      "type": "answer_question",
+      "payload": {
+        "kind": "answer_question",
+        "question_en": "Where does he work?",
+        "phrase_id": "ph-e-0484"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-e-0563",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "My family ___ with me.",
+        "gap_answers": ["stays"],
+        "quote": {
+          "title": "Game of Thrones",
+          "season_episode": "S05E09 «The Dance of Dragons»"
+        }
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact",
+        "hint_ru": "Вспомни цитату из урока"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0564",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "I'm the Commander. No one ___ for me.",
+        "gap_answers": ["fights"],
+        "quote": {
+          "title": "The 100",
+          "season_episode": "S03E04 «Watch the Thrones»"
+        }
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact",
+        "hint_ru": "Вспомни цитату из урока"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0565",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "I ___ know.",
+        "gap_answers": ["don't"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0566",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "We ___ understand.",
+        "gap_answers": ["don't"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0567",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "They ___ live in Russia.",
+        "gap_answers": ["don't"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0568",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Мы его не знаем.",
+        "options": [
+          "Friends don't lie.",
+          "It doesn't interest me.",
+          "We don't know him.",
+          "I don't understand you."
+        ],
+        "correct": 2
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-e-0569",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Меня это не интересует.",
+        "options": [
+          "It doesn't interest me.",
+          "I don't understand you.",
+          "We don't know him.",
+          "Friends don't lie."
+        ],
+        "correct": 0
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-e-0570",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Друзья не лгут.",
+        "options": [
+          "Friends don't lie.",
+          "We don't know him.",
+          "It doesn't interest me.",
+          "I don't understand you."
+        ],
+        "correct": 0
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-e-0571",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Я тебя не понимаю.",
+        "options": [
+          "We don't know him.",
+          "Friends don't lie.",
+          "I don't understand you.",
+          "It doesn't interest me."
+        ],
+        "correct": 2
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-e-0572",
+      "type": "match_pairs",
+      "payload": {
+        "kind": "match_pairs",
+        "pairs": [
+          {
+            "en": "You don't work here.",
+            "ru": "Ты здесь не работаешь."
+          },
+          {
+            "en": "I don't like winter.",
+            "ru": "Я не люблю зиму."
+          },
+          {
+            "en": "You don't know him.",
+            "ru": "Ты его не знаешь."
+          },
+          {
+            "en": "I don't understand.",
+            "ru": "Я не понимаю."
+          },
+          {
+            "en": "They don't speak Russian.",
+            "ru": "Они не говорят по-русски."
+          }
+        ]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-e-0573",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Друзья не лгут.",
+        "phrase_id": "ph-e-0557",
+        "tokens": ["Friends", "work", "lie", "don't", "want"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0574",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Я не понимаю.",
+        "phrase_id": "ph-e-0535",
+        "tokens": ["Friends", "understand", "want", "I", "don't"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0575",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Я не знаю.",
+        "phrase_id": "ph-e-0530",
+        "tokens": ["I", "want", "Friends", "don't", "know"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0576",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Извините, мы не понимаем.",
+        "phrase_id": "ph-e-0564",
+        "tokens": ["understand", "want", "Friends", "don't", "Sorry,", "we"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0577",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Мы не хотим идти.",
+        "phrase_id": "ph-e-0540",
+        "tokens": ["don't", "We", "work", "want", "to", "go", "Friends"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0578",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Я не работаю в воскресенье.",
+        "phrase_id": "ph-e-0528",
+        "tokens": ["don't", "want", "I", "work", "Friends", "on", "Sunday"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0579",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "У меня нет времени.",
+        "phrase_id": "ph-e-0550",
+        "tokens": ["have", "Friends", "want", "I", "don't", "time"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0580",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Они не любят туристов.",
+        "phrase_id": "ph-e-0565",
+        "tokens": ["tourists", "don't", "They", "Friends", "like", "want"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0581",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Я тебя не понимаю.",
+        "phrase_id": "ph-e-0536"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0582",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Я не люблю кофе.",
+        "phrase_id": "ph-e-0532"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0583",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Мне не нужны деньги.",
+        "phrase_id": "ph-e-0533"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0584",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Я не это имею в виду.",
+        "phrase_id": "ph-e-0562"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-e-0585",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Мы сегодня не работаем.",
+        "phrase_id": "ph-e-0537"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0586",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Я тебя не слышу.",
+        "phrase_id": "ph-e-0567"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0587",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Я не хочу сегодня работать.",
+        "phrase_id": "ph-e-0560"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0588",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Им не нужны деньги.",
+        "phrase_id": "ph-e-0549"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-e-0589",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Я не хочу спать.",
+        "phrase_id": "ph-e-0569"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0590",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Я не курю.",
+        "phrase_id": "ph-e-0555"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0591",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Я не пью кофе.",
+        "phrase_id": "ph-e-0553"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0592",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Они не живут в России.",
+        "phrase_id": "ph-e-0547"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-e-0593",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Мы его не знаем.",
+        "phrase_id": "ph-e-0539"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0594",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "У меня нет машины.",
+        "phrase_id": "ph-e-0551"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0595",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Тебе это не нужно.",
+        "phrase_id": "ph-e-0544"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0596",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "У нас нет молока.",
+        "phrase_id": "ph-e-0568"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-e-0597",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "I ___ work on Sunday.",
+        "marker": "negative",
+        "gap_answers": ["don't", "do not"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0598",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "We ___ know him.",
+        "marker": "negative",
+        "gap_answers": ["don't", "do not"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0599",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "They ___ want money.",
+        "marker": "negative",
+        "gap_answers": ["don't", "do not"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0600",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-e-0536"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0601",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-e-0531"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0602",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-e-0532"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0603",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-e-0533"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0604",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-e-0530"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0605",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-e-0544"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0606",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-e-0528"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0607",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-e-0563"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0608",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-e-0555"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0609",
+      "type": "answer_question",
+      "payload": {
+        "kind": "answer_question",
+        "question_en": "Do you understand me?",
+        "phrase_id": "ph-e-0535"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-e-0610",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "Friends ___ lie.",
+        "gap_answers": ["don't"],
+        "quote": {
+          "title": "Stranger Things",
+          "season_episode": "S02E05 «Chapter Five: Dig Dug»"
+        }
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact",
+        "hint_ru": "Вспомни цитату из урока"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0611",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "Yeah... Well, I ___ want to.",
+        "gap_answers": ["don't"],
+        "quote": {
+          "title": "Supernatural",
+          "season_episode": "S01E01 «Pilot»"
+        }
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact",
+        "hint_ru": "Вспомни цитату из урока"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0612",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "He ___ work here.",
+        "gap_answers": ["doesn't"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0613",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "She ___ speak English.",
+        "gap_answers": ["doesn't"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0614",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "It ___ work.",
+        "gap_answers": ["doesn't"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0615",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Это звучит неправильно.",
+        "options": [
+          "It doesn't sound right.",
+          "Ivan doesn't like football.",
+          "She doesn't agree.",
+          "He doesn't drink tea."
+        ],
+        "correct": 0
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-e-0616",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Иван не любит футбол.",
+        "options": [
+          "He doesn't drink tea.",
+          "She doesn't agree.",
+          "Ivan doesn't like football.",
+          "It doesn't sound right."
+        ],
+        "correct": 2
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-e-0617",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Она не согласна.",
+        "options": [
+          "He doesn't drink tea.",
+          "She doesn't agree.",
+          "Ivan doesn't like football.",
+          "It doesn't sound right."
+        ],
+        "correct": 1
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-e-0618",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Он не пьёт чай.",
+        "options": [
+          "Ivan doesn't like football.",
+          "She doesn't agree.",
+          "He doesn't drink tea.",
+          "It doesn't sound right."
+        ],
+        "correct": 2
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-e-0619",
+      "type": "match_pairs",
+      "payload": {
+        "kind": "match_pairs",
+        "pairs": [
+          {
+            "en": "She doesn't work today.",
+            "ru": "Она сегодня не работает."
+          },
+          {
+            "en": "She doesn't speak English.",
+            "ru": "Она не говорит по-английски."
+          },
+          {
+            "en": "This word doesn't exist.",
+            "ru": "Такого слова не существует."
+          },
+          {
+            "en": "It doesn't work.",
+            "ru": "Это не работает."
+          },
+          {
+            "en": "He doesn't need help.",
+            "ru": "Ему не нужна помощь."
+          }
+        ]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-e-0620",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Моя сестра не любит рыбу.",
+        "phrase_id": "ph-e-0604",
+        "tokens": ["She", "My", "fish", "doesn't", "want", "sister", "like"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0621",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Он не хочет разговаривать.",
+        "phrase_id": "ph-e-0607",
+        "tokens": ["to", "She", "He", "sister", "want", "doesn't", "talk"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0622",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Она не согласна.",
+        "phrase_id": "ph-e-0613",
+        "tokens": ["She", "want", "sister", "doesn't", "agree"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0623",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Анна не смотрит телевизор.",
+        "phrase_id": "ph-e-0590",
+        "tokens": ["sister", "want", "watch", "Anna", "TV", "doesn't"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0624",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Она не готовит в воскресенье.",
+        "phrase_id": "ph-e-0603",
+        "tokens": ["cook", "She", "sister", "Sunday", "on", "want", "doesn't"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0625",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Он меня не понимает.",
+        "phrase_id": "ph-e-0592",
+        "tokens": ["He", "doesn't", "me", "sister", "understand", "want"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0626",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "План не работает.",
+        "phrase_id": "ph-e-0599",
+        "tokens": ["The", "doesn't", "plan", "want", "sister", "work"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0627",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Магазин сегодня не работает.",
+        "phrase_id": "ph-e-0584",
+        "tokens": ["today", "doesn't", "want", "work", "sister", "The", "shop"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0628",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Иван не любит футбол.",
+        "phrase_id": "ph-e-0591"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0629",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Такого слова не существует.",
+        "phrase_id": "ph-e-0598"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0630",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Ему не нужна помощь.",
+        "phrase_id": "ph-e-0594"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0631",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Это звучит неправильно.",
+        "phrase_id": "ph-e-0610"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-e-0632",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Ребёнок не спит.",
+        "phrase_id": "ph-e-0606"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0633",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Он не знает город.",
+        "phrase_id": "ph-e-0609"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0634",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "У неё нет телефона.",
+        "phrase_id": "ph-e-0595"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0635",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Он не это имеет в виду.",
+        "phrase_id": "ph-e-0612"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-e-0636",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Она не хочет оставаться.",
+        "phrase_id": "ph-e-0608"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0637",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Он не пьёт чай.",
+        "phrase_id": "ph-e-0600"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0638",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Она сегодня не работает.",
+        "phrase_id": "ph-e-0578"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0639",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Он не живёт в Москве.",
+        "phrase_id": "ph-e-0573"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-e-0640",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Это стоит немного.",
+        "phrase_id": "ph-e-0597"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0641",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Он не открывается в воскресенье.",
+        "phrase_id": "ph-e-0583"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0642",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "У него нет времени.",
+        "phrase_id": "ph-e-0596"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0643",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Он не играет в теннис.",
+        "phrase_id": "ph-e-0602"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-e-0644",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "He ___ work here.",
+        "marker": "3rd-negative",
+        "gap_answers": ["doesn't", "does not"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0645",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "She ___ like tea.",
+        "marker": "3rd-negative",
+        "gap_answers": ["doesn't", "does not"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0646",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "It ___ work.",
+        "marker": "3rd-negative",
+        "gap_answers": ["doesn't", "does not"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0647",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-e-0577"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0648",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-e-0587"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0649",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-e-0572"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0650",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-e-0578"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0651",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-e-0582"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0652",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-e-0597"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0653",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-e-0575"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0654",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-e-0584"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0655",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-e-0613"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0656",
+      "type": "answer_question",
+      "payload": {
+        "kind": "answer_question",
+        "question_en": "Does he work here?",
+        "phrase_id": "ph-e-0572"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-e-0657",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "It ___ work like that.",
+        "gap_answers": ["doesn't"],
+        "quote": {
+          "title": "Black Mirror",
+          "season_episode": "S02E03 «The Waldo Moment»"
+        }
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact",
+        "hint_ru": "Вспомни цитату из урока"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0658",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "I... I ___ understand.",
+        "gap_answers": ["don't"],
+        "quote": {
+          "title": "Stranger Things",
+          "season_episode": "S02E05 «Chapter Five: Dig Dug»"
+        }
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact",
+        "hint_ru": "Вспомни цитату из урока"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0659",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "I ___, but she doesn't.",
+        "gap_answers": ["work"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0660",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "He ___ in a bank.",
+        "gap_answers": ["works"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0661",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "I ___ understand.",
+        "gap_answers": ["don't"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0662",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Никто не знает.",
+        "options": [
+          "We don't have time.",
+          "It is an emergency.",
+          "We start at eight.",
+          "Nobody knows."
+        ],
+        "correct": 3
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-e-0663",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Мы начинаем в восемь.",
+        "options": [
+          "Nobody knows.",
+          "We don't have time.",
+          "It is an emergency.",
+          "We start at eight."
+        ],
+        "correct": 3
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-e-0664",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Это чрезвычайная ситуация.",
+        "options": [
+          "We don't have time.",
+          "Nobody knows.",
+          "We start at eight.",
+          "It is an emergency."
+        ],
+        "correct": 3
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-e-0665",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "У нас нет времени.",
+        "options": [
+          "Nobody knows.",
+          "It is an emergency.",
+          "We don't have time.",
+          "We start at eight."
+        ],
+        "correct": 2
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-e-0666",
+      "type": "match_pairs",
+      "payload": {
+        "kind": "match_pairs",
+        "pairs": [
+          {
+            "en": "Everything works fine.",
+            "ru": "Всё работает хорошо."
+          },
+          {
+            "en": "I need a doctor.",
+            "ru": "Мне нужен врач."
+          },
+          {
+            "en": "It works now!",
+            "ru": "Теперь работает!"
+          },
+          {
+            "en": "I don't remember.",
+            "ru": "Я не помню."
+          },
+          {
+            "en": "Help! I'm lost.",
+            "ru": "Помогите! Я потерялся."
+          }
+        ]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-e-0667",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Мой телефон не работает.",
+        "phrase_id": "ph-e-0645",
+        "tokens": ["doesn't", "phone", "My", "work", "want", "works"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0668",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Теперь работает!",
+        "phrase_id": "ph-e-0644",
+        "tokens": ["want", "phone", "now", "It", "works"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0669",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Я хочу домой.",
+        "phrase_id": "ph-e-0647",
+        "tokens": ["works", "to", "I", "home", "want", "go", "phone"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0670",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Мой друг не говорит по-английски.",
+        "phrase_id": "ph-e-0621",
+        "tokens": ["My", "doesn't", "works", "friend", "English", "speak", "phone"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0671",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Она не хочет идти с нами.",
+        "phrase_id": "ph-e-0636",
+        "tokens": ["want", "with", "works", "go", "phone", "to", "doesn't", "She", "us"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0672",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Урок заканчивается в шесть.",
+        "phrase_id": "ph-e-0656",
+        "tokens": ["The", "ends", "phone", "at", "lesson", "works", "six"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0673",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Где полицейский участок?",
+        "phrase_id": "ph-e-0625",
+        "tokens": ["Where", "police", "station", "phone", "works", "is", "the"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0674",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Нам нужна карта.",
+        "phrase_id": "ph-e-0640",
+        "tokens": ["phone", "We", "need", "a", "works", "map"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0675",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Они живут рядом с аэропортом.",
+        "phrase_id": "ph-e-0642"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0676",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Помогите! Я потерялся.",
+        "phrase_id": "ph-e-0622"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0677",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "У нас нет времени.",
+        "phrase_id": "ph-e-0648"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0678",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Всё работает хорошо.",
+        "phrase_id": "ph-e-0646"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-e-0679",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Я работаю в банке, а моя сестра — в школе.",
+        "phrase_id": "ph-e-0630"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0680",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Этот автобус не идёт к вокзалу.",
+        "phrase_id": "ph-e-0639"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0681",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Они не знают, где это.",
+        "phrase_id": "ph-e-0632"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0682",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Они хотят выучить русский.",
+        "phrase_id": "ph-e-0658"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-e-0683",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Я работаю, а она нет.",
+        "phrase_id": "ph-e-0616"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0684",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Он знает, а они нет.",
+        "phrase_id": "ph-e-0617"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0685",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Все хотят помочь.",
+        "phrase_id": "ph-e-0651"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0686",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Что-то не работает.",
+        "phrase_id": "ph-e-0659"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-e-0687",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Я не хочу сидеть дома.",
+        "phrase_id": "ph-e-0635"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0688",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Он работает с девяти до пяти.",
+        "phrase_id": "ph-e-0641"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0689",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Я знаю эту улицу.",
+        "phrase_id": "ph-e-0638"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0690",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Он любит кофе, а она чай.",
+        "phrase_id": "ph-e-0631"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-e-0691",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "He ___ from nine to five.",
+        "marker": "3rd-person",
+        "gap_answers": ["works"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0692",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "We ___ have time.",
+        "marker": "negative",
+        "gap_answers": ["don't", "do not"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0693",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "She ___ the answer.",
+        "marker": "3rd-person",
+        "gap_answers": ["knows"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0694",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-e-0644"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0695",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-e-0622"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0696",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-e-0646"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0697",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-e-0627"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0698",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-e-0623"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0699",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-e-0628"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0700",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-e-0652"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0701",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-e-0656"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0702",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-e-0658"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0703",
+      "type": "answer_question",
+      "payload": {
+        "kind": "answer_question",
+        "question_en": "Do you want to go home?",
+        "phrase_id": "ph-e-0647"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-e-0704",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "You ___ know that.",
+        "gap_answers": ["don't"],
+        "quote": {
+          "title": "Black Mirror",
+          "season_episode": "S01E01 «The National Anthem»"
+        }
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact",
+        "hint_ru": "Вспомни цитату из урока"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0705",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "I ___ to find Dad.",
+        "gap_answers": ["want"],
+        "quote": {
+          "title": "Supernatural",
+          "season_episode": "S01E08 «Bugs»"
+        }
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact",
+        "hint_ru": "Вспомни цитату из урока"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0706",
       "type": "find_error",
       "payload": {
         "kind": "find_error",
@@ -8614,7 +12934,7 @@
       }
     },
     {
-      "id": "ex-e-0472",
+      "id": "ex-e-0707",
       "type": "find_error",
       "payload": {
         "kind": "find_error",
@@ -8633,7 +12953,7 @@
       }
     },
     {
-      "id": "ex-e-0473",
+      "id": "ex-e-0708",
       "type": "find_error",
       "payload": {
         "kind": "find_error",
@@ -8652,7 +12972,7 @@
       }
     },
     {
-      "id": "ex-e-0474",
+      "id": "ex-e-0709",
       "type": "find_error",
       "payload": {
         "kind": "find_error",
@@ -8671,7 +12991,7 @@
       }
     },
     {
-      "id": "ex-e-0475",
+      "id": "ex-e-0710",
       "type": "find_error",
       "payload": {
         "kind": "find_error",
@@ -8683,6 +13003,120 @@
         "normalization": "default",
         "typo": "allow",
         "accepted": ["I am not sure."]
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0711",
+      "type": "find_error",
+      "payload": {
+        "kind": "find_error",
+        "wrong_en": "He live here.",
+        "hint_ru": "Он живёт здесь.",
+        "phrase_id": "ph-e-0485"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "accepted": ["He lives here."]
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0712",
+      "type": "find_error",
+      "payload": {
+        "kind": "find_error",
+        "wrong_en": "I no speak English.",
+        "hint_ru": "Я плохо говорю по-английски.",
+        "phrase_id": "ph-e-0534"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "accepted": ["I don't speak English well."]
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0713",
+      "type": "find_error",
+      "payload": {
+        "kind": "find_error",
+        "wrong_en": "It not matter.",
+        "hint_ru": "Это не важно.",
+        "phrase_id": "ph-e-0582"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "accepted": ["It doesn't matter."]
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0714",
+      "type": "find_error",
+      "payload": {
+        "kind": "find_error",
+        "wrong_en": "He doesn't works.",
+        "hint_ru": "Он здесь не работает.",
+        "phrase_id": "ph-e-0572"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "accepted": ["He doesn't work here."]
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0715",
+      "type": "find_error",
+      "payload": {
+        "kind": "find_error",
+        "wrong_en": "She don't like fish.",
+        "hint_ru": "Моя сестра не любит рыбу.",
+        "phrase_id": "ph-e-0604"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "accepted": ["My sister doesn't like fish."]
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0716",
+      "type": "find_error",
+      "payload": {
+        "kind": "find_error",
+        "wrong_en": "He work every day.",
+        "hint_ru": "Мой отец работает каждый день.",
+        "phrase_id": "ph-e-0515"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "accepted": ["My father works every day."]
       },
       "meta": {
         "skill": "grammar",
