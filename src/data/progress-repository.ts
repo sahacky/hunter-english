@@ -5,12 +5,14 @@
 // это бустрап контента (тысячи карточек создаются один раз локально, серверу они не нужны).
 
 import type { ProgressRepository } from '../domain/progress'
+import type { LessonProgress } from '../domain/lesson/types'
 import type { CardState, ReviewLogEntry } from '../domain/srs/types'
 import {
   HunterDb,
   LOCAL_USER_ID,
   db as defaultDb,
   type CardStateRow,
+  type LessonProgressRow,
   type ReviewLogRow,
 } from './db'
 
@@ -68,5 +70,26 @@ export class DexieProgressRepository implements ProgressRepository {
       .aboveOrEqual(iso)
       .filter((entry) => entry.state === 0)
       .count()
+  }
+
+  async getLessonProgress(lessonId: string): Promise<LessonProgress | null> {
+    const row = await this.db.lesson_progress.get([LOCAL_USER_ID, lessonId])
+    if (!row) return null
+    const { user_id: _user_id, ...progress } = row
+    return progress
+  }
+
+  async putLessonProgress(progress: LessonProgress): Promise<void> {
+    const row: LessonProgressRow = { ...progress, user_id: LOCAL_USER_ID }
+    await this.db.transaction('rw', this.db.lesson_progress, this.db.sync_queue, async () => {
+      await this.db.lesson_progress.put(row)
+      await this.db.sync_queue.add({
+        table: 'lesson_progress',
+        op: 'upsert',
+        payload: row,
+        tries: 0,
+        created_at: progress.updated_at,
+      })
+    })
   }
 }

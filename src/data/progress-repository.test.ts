@@ -1,6 +1,7 @@
-// Implements: plan://M4#4.2 — тесты ProgressRepository на fake-indexeddb
+// Implements: plan://M4#4.2, plan://M5#5.2 — тесты ProgressRepository на fake-indexeddb
 import 'fake-indexeddb/auto'
 import { beforeEach, describe, expect, it } from 'vitest'
+import type { LessonProgress } from '../domain/lesson/types'
 import { applyAnswer } from '../domain/srs/scheduler'
 import type { CardState, Note } from '../domain/srs/types'
 import { uuidv7 } from '../lib/uuidv7'
@@ -118,6 +119,44 @@ describe('DexieProgressRepository', () => {
     await repo.saveAnswer(second.next, second.log)
     // второй ответ уже не на новой карточке (state до ответа = Learning)
     expect(await repo.countNewAnsweredSince(NOW.toISOString())).toBe(1)
+  })
+
+  it('lesson_progress: put/get чекпоинта и запись в sync_queue', async () => {
+    expect(await repo.getLessonProgress('les-e-01')).toBeNull()
+
+    const progress: LessonProgress = {
+      lesson_id: 'les-e-01',
+      status: 'in_progress',
+      score: null,
+      checkpoint: {
+        passIndex: 0,
+        stepIndex: 2,
+        scores: [{ stepIndex: 1, total: 2, answered: 2, firstTryCorrect: 2 }],
+        srsEnqueued: [],
+        passesDone: 0,
+        results: { 'ex-e-0001': { attempts: 1, outcome: 'correct' } },
+      },
+      completed_at: null,
+      updated_at: NOW.toISOString(),
+    }
+    await repo.putLessonProgress(progress)
+
+    const stored = await repo.getLessonProgress('les-e-01')
+    expect(stored).toEqual(progress)
+
+    const completed: LessonProgress = {
+      ...progress,
+      status: 'completed',
+      score: 92,
+      completed_at: NOW.toISOString(),
+      updated_at: new Date(NOW.getTime() + 60_000).toISOString(),
+    }
+    await repo.putLessonProgress(completed)
+    expect(await repo.getLessonProgress('les-e-01')).toEqual(completed)
+
+    const queued = await db.sync_queue.where('table').equals('lesson_progress').toArray()
+    expect(queued.length).toBe(2)
+    expect(queued.every((row) => row.op === 'upsert')).toBe(true)
   })
 })
 

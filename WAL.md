@@ -12,9 +12,10 @@
 - M4: карточки SRS (PR #4) — домен `src/domain/srs/` (scheduler: applyAnswer, день 4:00, flood-guard 15/8/4/0, wake-up rule-2, buildQueue; REVIEW-маркер про шаги ts-fsrs), `ProgressRepository` (шов) + Dexie `src/data/db.ts` (зеркало specs/06 §3, sync_queue, append-only review_log) + `src/lib/uuidv7.ts`, контент-лоадер `src/content/words.ts` (ленивые чанки, createFirstCards rule-1), экран `src/screens/SrsScreen.tsx` (пробел/1/2, блоки по 20, живая очередь, счётчики, мгновенный saveAnswer, лимит новых между сессиями); 47 тестов; ревью 3 суб-агентов → блокер/мажоры исправлены
 - M5: детализация внесена в PLANS (5.1–5.7, решения 1–6 подтверждены разработчиком); ветка `feature/m5-lessons`
 - M5#5.1: домен проверки `src/domain/check/` (types / normalize / levenshtein / align / checker): нормализация, сокращения (can't=cannot=can not через expand в [can,not]), EXCEPTIONS+typoLimit, DP-выравнивание diff (match/typo/extra/missing), judge: trapWrong §4.3 + строгие ЛТ-06/17/19 §4.7, judgeVoice 0.85/0.80 §4.8; 47 unit-тестов; гейты зелёные (94 теста суммарно)
+- M5#5.2: домен урока `src/domain/lesson/` (types / steps / xp / runner): groupIntoSteps (тип → шаг, cloze+quote → «Из сериала», card игнор), evaluateStep (warmup ≥70%, listening <60% retrySuggested), xpForOutcome (1-я/50% floor/0, disputed+self_reported полный), recordAnswer/advanceStep/finishPass/passAccuracy/totalXp, computeLessonStatus (locked/available/in_progress/completed/review_due, ≥90% learned, lapsed ≥30%), isLessonPassed; ProgressRepository + get/putLessonProgress (Dexie, sync_queue 'lesson_progress', LessonProgressRow); шаг 7 завершается явным finishPass; 27 новых тестов, всего 121
 
 ## In Progress
-- M5#5.2: домен урока `src/domain/lesson/` (runner шагов 1–7, чекпоинты, состояния, XP) — следующая задача
+- M5#5.3: контент-лоадер фраз/уроков/упражнений + расширение `validate:data` (кросс-ссылки specs/05 §9)
 
 ## TODO
 - M5: Движок уроков и упражнений (ранг E) — детализация в PLANS, затем реализация
@@ -97,3 +98,4 @@
 | 2026-09-28 | M4#4.6: ревью 3 суб-агентами (спеки/React/адверсариал) → блокер (сброс счётчика блока) и мажоры (гонка двойного ответа, живая очередь, дневной лимит новых между сессиями, wake-up только для ru-en/speak) исправлены; 47 тестов; PR #4 смержен при зелёном CI; ветки удалены | Автономная сессия, merge/push разрешены |
 | 2026-09-28 | Детализация M5 внесена в PLANS (5.1–5.7 + решения 1–6: пилот контента — модуль E1, голос фолбэк-first, оркестрация дня вне M5, опечатка = полный XP, разговорник/бонус — позже, аудио цитат не генерим); ветка `feature/m5-lessons` | План следующего майлстоуна, ожидает подтверждения разработчика |
 | 2026-09-28 | Решения M5 1–6 подтверждены разработчиком; M5#5.1 выполнена: `src/domain/check/` + 47 unit-тестов (test/lint/typecheck/validate:data/audit зелёные); REVIEW-маркер: артикль в знаменателе голосовой проверки (спека буквально, пересмотр M6) | Автономная сессия, merge/push разрешены |
+| 2026-09-28 | M5#5.2 выполнена: `src/domain/lesson/` + расширение ProgressRepository (lesson_progress); 27 новых тестов (всего 121), гейты зелёные; разработчик: автономный режим до конца M5 + контроль CI после пушей | Автономная сессия |

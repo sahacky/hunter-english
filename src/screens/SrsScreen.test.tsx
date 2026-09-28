@@ -55,6 +55,8 @@ function delayRepo(inner: DexieProgressRepository, ms: number): ProgressReposito
       await new Promise((resolve) => setTimeout(resolve, ms))
       await inner.saveAnswer(next, log)
     },
+    getLessonProgress: (lessonId) => inner.getLessonProgress(lessonId),
+    putLessonProgress: (progress) => inner.putLessonProgress(progress),
   }
 }
 
