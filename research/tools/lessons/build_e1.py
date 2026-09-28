@@ -326,6 +326,12 @@ LESSONS = [
         "quotes_topic": "greetings",
         "bebris_video": {"lesson": "1.26", "playlist_index": 69, "youtube_id": "bB4K-WblSIk", "title": None},
         "answer_question": [("Are you Ivan?", "I am Ivan.")],
+        "find_error": [("I hungry.", "I am hungry.")],
+        "verb_tense": [
+            ("She ___ from Japan.", "is", ["is"]),
+            ("We ___ friends.", "are", ["are"]),
+            ("I ___ Ivan.", "am", ["am"]),
+        ],
     },
     {
         "id": "les-e-02", "module": "mod-e-1",
@@ -345,6 +351,12 @@ LESSONS = [
         "quotes_topic": "family",
         "bebris_video": {"lesson": "1.27", "playlist_index": 71, "youtube_id": "EmmoAPtgllA", "title": None},
         "answer_question": [("Is it a big city?", "It is a big city.")],
+        "find_error": [("I have brother.", "I have a brother.")],
+        "verb_tense": [
+            ("She is ___ artist.", "a/an", ["an", "a"]),
+            ("It is ___ big city.", "a/an", ["a"]),
+            ("He is ___ doctor.", "a/an", ["a"]),
+        ],
     },
     {
         "id": "les-e-03", "module": "mod-e-1",
@@ -364,6 +376,12 @@ LESSONS = [
         "quotes_topic": "family",
         "bebris_video": {"lesson": "1.30", "playlist_index": 79, "youtube_id": "9omB2YuL1Z8", "title": None},
         "answer_question": [("Is he here?", "He is not here.")],
+        "find_error": [("He not is here.", "He is not here.")],
+        "verb_tense": [
+            ("They ___ not ready.", "are", ["are"]),
+            ("It ___ not true.", "is", ["is"]),
+            ("We ___ not late.", "are", ["are"]),
+        ],
     },
     {
         "id": "les-e-04", "module": "mod-e-1",
@@ -383,6 +401,12 @@ LESSONS = [
         "quotes_topic": "questions",
         "bebris_video": {"lesson": "1.31", "playlist_index": 82, "youtube_id": "mRQMPhB6c_Y", "title": None},
         "answer_question": [("Are you tired?", "Yes, I am.")],
+        "find_error": [("You is tired?", "Are you tired?")],
+        "verb_tense": [
+            ("___ you hungry?", "are", ["Are"]),
+            ("___ she your sister?", "is", ["Is"]),
+            ("___ I late?", "am", ["Am"]),
+        ],
     },
     {
         "id": "les-e-05", "module": "mod-e-1",
@@ -402,6 +426,12 @@ LESSONS = [
         "quotes_topic": "small-talk",
         "bebris_video": None,
         "answer_question": [("How are you?", "I am fine, thank you.")],
+        "find_error": [("I not am sure.", "I am not sure.")],
+        "verb_tense": [
+            ("I ___ from Russia, and you?", "am", ["am"]),
+            ("It ___ not far.", "is", ["is"]),
+            ("___ you new here?", "are", ["Are"]),
+        ],
     },
 ]
 
@@ -453,10 +483,14 @@ def build():
             audio_rows.append((pid, en))
 
         def phrase_by_text(text: str):
+            # find_error/answer_question могут ссылаться на фразы любых уроков (схема §3)
             for item in lesson_phrase_items:
                 if item["text_en"] == text:
                     return item
-            raise SystemExit(f"фраза {text!r} не найдена в пуле {spec['id']}")
+            for item in phrases_out:
+                if item["text_en"] == text:
+                    return item
+            raise SystemExit(f"фраза {text!r} не найдена в пулах")
 
         lesson_exercises = []
 
@@ -552,6 +586,18 @@ def build():
                 })
             lesson_exercises.append({"id": eid})
 
+        # --- Построение+: время глагола; найди ошибку — отложенным проходом ----
+        for sentence, marker, answers in spec.get("verb_tense", []):
+            eid = next_ex()
+            exercises_out.append({
+                "id": eid, "type": "verb_tense",
+                "payload": {"kind": "verb_tense", "sentence_with_gap": sentence,
+                            "marker": marker, "gap_answers": answers},
+                "answer": {"normalization": "default", "typo": "exact"},
+                "meta": {"skill": "grammar", "xp": 3},
+            })
+            lesson_exercises.append({"id": eid})
+
         # --- Шаг 4: слух — диктант -------------------------------------------
         dict_pool = sorted(lesson_phrase_items, key=lambda p: len(p["text_en"].split()))
         dict_pool = [p for p in dict_pool if 3 <= len(p["text_en"].split()) <= 6][: DICT_COUNT * 2]
@@ -631,6 +677,24 @@ def build():
             "exercises": lesson_exercises,
             "bebris_video": spec["bebris_video"],
         })
+
+    # find_error ссылается на фразы любых уроков — генерируем после всех пулов
+    for li, spec in enumerate(LESSONS):
+        for wrong, right in spec.get("find_error", []):
+            target = next((item for item in phrases_out if item["text_en"] == right), None)
+            if target is None:
+                raise SystemExit(f"фраза {right!r} не найдена в пулах (find_error {spec['id']})")
+            eid = next_ex()
+            exercises_out.append({
+                "id": eid, "type": "find_error",
+                "payload": {"kind": "find_error", "wrong_en": wrong,
+                            "hint_ru": target["translation_ru"],
+                            "phrase_id": target["id"]},
+                "answer": {"normalization": "default", "typo": "allow",
+                           "accepted": [right]},
+                "meta": {"skill": "grammar", "xp": 3},
+            })
+            lessons_out[li]["exercises"].append({"id": eid})
 
     (DATA / "phrases").mkdir(exist_ok=True)
     (DATA / "phrases" / "phrases-e.json").write_text(

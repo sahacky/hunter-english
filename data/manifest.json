@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-28T15:11:30Z",
+  "generated_at": "2026-09-28T16:23:45Z",
   "files": [
     {
       "path": "lessons/exercises-e.json",
       "kind": "exercises",
       "schema_version": 1,
-      "items": 220,
-      "sha256": "6a8823df6730c37e26811bd7313f8cb79dbb9c86040491d2976c41ba7d4254ae"
+      "items": 240,
+      "sha256": "9ddaa798e3d5f4d4458c8e49b7b7b627f9247fb809fcffa32d56756cd2336f21"
     },
     {
       "path": "lessons/lessons-e.json",
       "kind": "lessons",
       "schema_version": 1,
       "items": 5,
-      "sha256": "6863e0a453bf6a6f092e9a4a65101bab028ed8e9cadcc74f9911c205074df436"
+      "sha256": "9dfe7769a525a80fb9090b70f762d85181636b558914ea3ffcd4a0e4bd617e7c"
     },
     {
       "path": "phrasebook/emergency.json",
