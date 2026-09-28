@@ -1,0 +1,793 @@
+{
+  "schema_version": 1,
+  "kind": "lessons",
+  "items": [
+    {
+      "id": "les-e-01",
+      "rank": "E",
+      "module": "mod-e-1",
+      "title": "to be: am / is / are. Знакомство",
+      "grammar_point": {
+        "id": "gp-e-01",
+        "title_ru": "Глагол to be в настоящем времени",
+        "rule_md": "По-русски «я — Иван» можно сказать без глагола. По-английски — нельзя: нужен глагол-связка **to be**.\n\n- **I am** Ivan. — Я Иван.\n- **He / She / It is** from Canada. — Он из Канады.\n- **You / We / They are** friends. — Мы друзья.\n\nСокращения: I am = I'm, he is = he's, we are = we're.\n\n⚠️ Ловушка ЛТ-01: «I hungry» — так нельзя! Нужен am/is/are: I'm hungry.",
+        "phrase_ids": ["ph-e-0001", "ph-e-0002", "ph-e-0003", "ph-e-0004", "ph-e-0005"],
+        "trap_id": "trap-no-to-be"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 1,
+        "to": 60
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-no-to-be",
+      "quotes_topic": "greetings",
+      "exercises": [
+        {
+          "id": "ex-e-0001"
+        },
+        {
+          "id": "ex-e-0002"
+        },
+        {
+          "id": "ex-e-0003"
+        },
+        {
+          "id": "ex-e-0004"
+        },
+        {
+          "id": "ex-e-0005"
+        },
+        {
+          "id": "ex-e-0006"
+        },
+        {
+          "id": "ex-e-0007"
+        },
+        {
+          "id": "ex-e-0008"
+        },
+        {
+          "id": "ex-e-0009"
+        },
+        {
+          "id": "ex-e-0010"
+        },
+        {
+          "id": "ex-e-0011"
+        },
+        {
+          "id": "ex-e-0012"
+        },
+        {
+          "id": "ex-e-0013"
+        },
+        {
+          "id": "ex-e-0014"
+        },
+        {
+          "id": "ex-e-0015"
+        },
+        {
+          "id": "ex-e-0016"
+        },
+        {
+          "id": "ex-e-0017"
+        },
+        {
+          "id": "ex-e-0018"
+        },
+        {
+          "id": "ex-e-0019"
+        },
+        {
+          "id": "ex-e-0020"
+        },
+        {
+          "id": "ex-e-0021"
+        },
+        {
+          "id": "ex-e-0022"
+        },
+        {
+          "id": "ex-e-0023"
+        },
+        {
+          "id": "ex-e-0024"
+        },
+        {
+          "id": "ex-e-0025"
+        },
+        {
+          "id": "ex-e-0026"
+        },
+        {
+          "id": "ex-e-0027"
+        },
+        {
+          "id": "ex-e-0028"
+        },
+        {
+          "id": "ex-e-0029"
+        },
+        {
+          "id": "ex-e-0030"
+        },
+        {
+          "id": "ex-e-0031"
+        },
+        {
+          "id": "ex-e-0032"
+        },
+        {
+          "id": "ex-e-0033"
+        },
+        {
+          "id": "ex-e-0034"
+        },
+        {
+          "id": "ex-e-0035"
+        },
+        {
+          "id": "ex-e-0036"
+        },
+        {
+          "id": "ex-e-0037"
+        },
+        {
+          "id": "ex-e-0038"
+        },
+        {
+          "id": "ex-e-0039"
+        },
+        {
+          "id": "ex-e-0040"
+        },
+        {
+          "id": "ex-e-0041"
+        },
+        {
+          "id": "ex-e-0042"
+        },
+        {
+          "id": "ex-e-0043"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "1.26",
+        "playlist_index": 69,
+        "youtube_id": "bB4K-WblSIk",
+        "title": null
+      }
+    },
+    {
+      "id": "les-e-02",
+      "rank": "E",
+      "module": "mod-e-1",
+      "title": "to be + прилагательное / существительное. Артикль a / an",
+      "grammar_point": {
+        "id": "gp-e-02",
+        "title_ru": "to be + свойство; артикль a/an",
+        "rule_md": "После to be можно ставить прилагательное или существительное: I am **tired**. She is a **doctor**.\n\nПеред одним исчисляемым существительным нужен артикль **a**: I am a student. He is a good doctor.\n\nПеред гласным звуком — **an**: She is an artist. It is an old house.\n\n⚠️ Ловушка ЛТ-06: «I have brother» — нельзя! Артикль обязателен: I have **a** brother.",
+        "phrase_ids": ["ph-e-0044", "ph-e-0045", "ph-e-0046", "ph-e-0047", "ph-e-0048"],
+        "trap_id": "trap-articles"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 61,
+        "to": 120
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-articles",
+      "quotes_topic": "family",
+      "exercises": [
+        {
+          "id": "ex-e-0044"
+        },
+        {
+          "id": "ex-e-0045"
+        },
+        {
+          "id": "ex-e-0046"
+        },
+        {
+          "id": "ex-e-0047"
+        },
+        {
+          "id": "ex-e-0048"
+        },
+        {
+          "id": "ex-e-0049"
+        },
+        {
+          "id": "ex-e-0050"
+        },
+        {
+          "id": "ex-e-0051"
+        },
+        {
+          "id": "ex-e-0052"
+        },
+        {
+          "id": "ex-e-0053"
+        },
+        {
+          "id": "ex-e-0054"
+        },
+        {
+          "id": "ex-e-0055"
+        },
+        {
+          "id": "ex-e-0056"
+        },
+        {
+          "id": "ex-e-0057"
+        },
+        {
+          "id": "ex-e-0058"
+        },
+        {
+          "id": "ex-e-0059"
+        },
+        {
+          "id": "ex-e-0060"
+        },
+        {
+          "id": "ex-e-0061"
+        },
+        {
+          "id": "ex-e-0062"
+        },
+        {
+          "id": "ex-e-0063"
+        },
+        {
+          "id": "ex-e-0064"
+        },
+        {
+          "id": "ex-e-0065"
+        },
+        {
+          "id": "ex-e-0066"
+        },
+        {
+          "id": "ex-e-0067"
+        },
+        {
+          "id": "ex-e-0068"
+        },
+        {
+          "id": "ex-e-0069"
+        },
+        {
+          "id": "ex-e-0070"
+        },
+        {
+          "id": "ex-e-0071"
+        },
+        {
+          "id": "ex-e-0072"
+        },
+        {
+          "id": "ex-e-0073"
+        },
+        {
+          "id": "ex-e-0074"
+        },
+        {
+          "id": "ex-e-0075"
+        },
+        {
+          "id": "ex-e-0076"
+        },
+        {
+          "id": "ex-e-0077"
+        },
+        {
+          "id": "ex-e-0078"
+        },
+        {
+          "id": "ex-e-0079"
+        },
+        {
+          "id": "ex-e-0080"
+        },
+        {
+          "id": "ex-e-0081"
+        },
+        {
+          "id": "ex-e-0082"
+        },
+        {
+          "id": "ex-e-0083"
+        },
+        {
+          "id": "ex-e-0084"
+        },
+        {
+          "id": "ex-e-0085"
+        },
+        {
+          "id": "ex-e-0086"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "1.27",
+        "playlist_index": 71,
+        "youtube_id": "EmmoAPtgllA",
+        "title": null
+      }
+    },
+    {
+      "id": "les-e-03",
+      "rank": "E",
+      "module": "mod-e-1",
+      "title": "to be: отрицание isn't / aren't",
+      "grammar_point": {
+        "id": "gp-e-03",
+        "title_ru": "Отрицание с to be",
+        "rule_md": "Отрицание с to be — частица **not** после глагола:\n\n- I am **not** a teacher. (сокращение только I'm not)\n- He / She / It **is not** = **isn't** here.\n- You / We / They **are not** = **aren't** ready.\n\nСемья: mother, father, brother, sister, parents, family.\n\nМножественное число без артикля: My parents are doctors. My friends are students.",
+        "phrase_ids": ["ph-e-0087", "ph-e-0088", "ph-e-0089", "ph-e-0090", "ph-e-0091"],
+        "trap_id": "trap-articles"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 121,
+        "to": 180
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-articles",
+      "quotes_topic": "family",
+      "exercises": [
+        {
+          "id": "ex-e-0087"
+        },
+        {
+          "id": "ex-e-0088"
+        },
+        {
+          "id": "ex-e-0089"
+        },
+        {
+          "id": "ex-e-0090"
+        },
+        {
+          "id": "ex-e-0091"
+        },
+        {
+          "id": "ex-e-0092"
+        },
+        {
+          "id": "ex-e-0093"
+        },
+        {
+          "id": "ex-e-0094"
+        },
+        {
+          "id": "ex-e-0095"
+        },
+        {
+          "id": "ex-e-0096"
+        },
+        {
+          "id": "ex-e-0097"
+        },
+        {
+          "id": "ex-e-0098"
+        },
+        {
+          "id": "ex-e-0099"
+        },
+        {
+          "id": "ex-e-0100"
+        },
+        {
+          "id": "ex-e-0101"
+        },
+        {
+          "id": "ex-e-0102"
+        },
+        {
+          "id": "ex-e-0103"
+        },
+        {
+          "id": "ex-e-0104"
+        },
+        {
+          "id": "ex-e-0105"
+        },
+        {
+          "id": "ex-e-0106"
+        },
+        {
+          "id": "ex-e-0107"
+        },
+        {
+          "id": "ex-e-0108"
+        },
+        {
+          "id": "ex-e-0109"
+        },
+        {
+          "id": "ex-e-0110"
+        },
+        {
+          "id": "ex-e-0111"
+        },
+        {
+          "id": "ex-e-0112"
+        },
+        {
+          "id": "ex-e-0113"
+        },
+        {
+          "id": "ex-e-0114"
+        },
+        {
+          "id": "ex-e-0115"
+        },
+        {
+          "id": "ex-e-0116"
+        },
+        {
+          "id": "ex-e-0117"
+        },
+        {
+          "id": "ex-e-0118"
+        },
+        {
+          "id": "ex-e-0119"
+        },
+        {
+          "id": "ex-e-0120"
+        },
+        {
+          "id": "ex-e-0121"
+        },
+        {
+          "id": "ex-e-0122"
+        },
+        {
+          "id": "ex-e-0123"
+        },
+        {
+          "id": "ex-e-0124"
+        },
+        {
+          "id": "ex-e-0125"
+        },
+        {
+          "id": "ex-e-0126"
+        },
+        {
+          "id": "ex-e-0127"
+        },
+        {
+          "id": "ex-e-0128"
+        },
+        {
+          "id": "ex-e-0129"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "1.30",
+        "playlist_index": 79,
+        "youtube_id": "9omB2YuL1Z8",
+        "title": null
+      }
+    },
+    {
+      "id": "les-e-04",
+      "rank": "E",
+      "module": "mod-e-1",
+      "title": "to be: вопрос Are you…? + краткие ответы",
+      "grammar_point": {
+        "id": "gp-e-04",
+        "title_ru": "Вопрос с to be и краткие ответы",
+        "rule_md": "Вопрос с to be: глагол выходит на первое место.\n\n- **Are** you tired? **Are** they here?\n- **Is** she your sister? **Is** it true?\n- **Am** I late?\n\nКраткие ответы — глагол, не повторяем всё: Yes, I am. / No, I'm not. Yes, it is. / No, it isn't.\n\nСостояния: hungry, thirsty, tired, busy, cold, happy.",
+        "phrase_ids": ["ph-e-0131", "ph-e-0132", "ph-e-0133", "ph-e-0134", "ph-e-0135"],
+        "trap_id": null
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 181,
+        "to": 240
+      },
+      "phrasebook_topic": null,
+      "trap_id": null,
+      "quotes_topic": "questions",
+      "exercises": [
+        {
+          "id": "ex-e-0130"
+        },
+        {
+          "id": "ex-e-0131"
+        },
+        {
+          "id": "ex-e-0132"
+        },
+        {
+          "id": "ex-e-0133"
+        },
+        {
+          "id": "ex-e-0134"
+        },
+        {
+          "id": "ex-e-0135"
+        },
+        {
+          "id": "ex-e-0136"
+        },
+        {
+          "id": "ex-e-0137"
+        },
+        {
+          "id": "ex-e-0138"
+        },
+        {
+          "id": "ex-e-0139"
+        },
+        {
+          "id": "ex-e-0140"
+        },
+        {
+          "id": "ex-e-0141"
+        },
+        {
+          "id": "ex-e-0142"
+        },
+        {
+          "id": "ex-e-0143"
+        },
+        {
+          "id": "ex-e-0144"
+        },
+        {
+          "id": "ex-e-0145"
+        },
+        {
+          "id": "ex-e-0146"
+        },
+        {
+          "id": "ex-e-0147"
+        },
+        {
+          "id": "ex-e-0148"
+        },
+        {
+          "id": "ex-e-0149"
+        },
+        {
+          "id": "ex-e-0150"
+        },
+        {
+          "id": "ex-e-0151"
+        },
+        {
+          "id": "ex-e-0152"
+        },
+        {
+          "id": "ex-e-0153"
+        },
+        {
+          "id": "ex-e-0154"
+        },
+        {
+          "id": "ex-e-0155"
+        },
+        {
+          "id": "ex-e-0156"
+        },
+        {
+          "id": "ex-e-0157"
+        },
+        {
+          "id": "ex-e-0158"
+        },
+        {
+          "id": "ex-e-0159"
+        },
+        {
+          "id": "ex-e-0160"
+        },
+        {
+          "id": "ex-e-0161"
+        },
+        {
+          "id": "ex-e-0162"
+        },
+        {
+          "id": "ex-e-0163"
+        },
+        {
+          "id": "ex-e-0164"
+        },
+        {
+          "id": "ex-e-0165"
+        },
+        {
+          "id": "ex-e-0166"
+        },
+        {
+          "id": "ex-e-0167"
+        },
+        {
+          "id": "ex-e-0168"
+        },
+        {
+          "id": "ex-e-0169"
+        },
+        {
+          "id": "ex-e-0170"
+        },
+        {
+          "id": "ex-e-0171"
+        },
+        {
+          "id": "ex-e-0172"
+        },
+        {
+          "id": "ex-e-0173"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "1.31",
+        "playlist_index": 82,
+        "youtube_id": "mRQMPhB6c_Y",
+        "title": null
+      }
+    },
+    {
+      "id": "les-e-05",
+      "rank": "E",
+      "module": "mod-e-1",
+      "title": "Повторение №1 (E-01…E-04) + мини-контроль",
+      "grammar_point": {
+        "id": "gp-e-05",
+        "title_ru": "Повторение: to be +, −, ?; Small talk",
+        "rule_md": "Повторение E-01…E-04 — коротко:\n\n- **+**: I am Ivan. She is a doctor. We are friends.\n- **−**: I am not tired. He isn't here. They aren't ready.\n- **?**: Are you hungry? Is it true? Am I late? — Yes, I am. / No, it isn't.\n- Артикль: a student, an artist, a big city.\n\nSmall talk: How are you? — I'm fine, thanks. And you?",
+        "phrase_ids": ["ph-e-0175", "ph-e-0176", "ph-e-0177", "ph-e-0178", "ph-e-0179"],
+        "trap_id": null
+      },
+      "vocab_band": null,
+      "phrasebook_topic": null,
+      "trap_id": null,
+      "quotes_topic": "small-talk",
+      "exercises": [
+        {
+          "id": "ex-e-0174"
+        },
+        {
+          "id": "ex-e-0175"
+        },
+        {
+          "id": "ex-e-0176"
+        },
+        {
+          "id": "ex-e-0177"
+        },
+        {
+          "id": "ex-e-0178"
+        },
+        {
+          "id": "ex-e-0179"
+        },
+        {
+          "id": "ex-e-0180"
+        },
+        {
+          "id": "ex-e-0181"
+        },
+        {
+          "id": "ex-e-0182"
+        },
+        {
+          "id": "ex-e-0183"
+        },
+        {
+          "id": "ex-e-0184"
+        },
+        {
+          "id": "ex-e-0185"
+        },
+        {
+          "id": "ex-e-0186"
+        },
+        {
+          "id": "ex-e-0187"
+        },
+        {
+          "id": "ex-e-0188"
+        },
+        {
+          "id": "ex-e-0189"
+        },
+        {
+          "id": "ex-e-0190"
+        },
+        {
+          "id": "ex-e-0191"
+        },
+        {
+          "id": "ex-e-0192"
+        },
+        {
+          "id": "ex-e-0193"
+        },
+        {
+          "id": "ex-e-0194"
+        },
+        {
+          "id": "ex-e-0195"
+        },
+        {
+          "id": "ex-e-0196"
+        },
+        {
+          "id": "ex-e-0197"
+        },
+        {
+          "id": "ex-e-0198"
+        },
+        {
+          "id": "ex-e-0199"
+        },
+        {
+          "id": "ex-e-0200"
+        },
+        {
+          "id": "ex-e-0201"
+        },
+        {
+          "id": "ex-e-0202"
+        },
+        {
+          "id": "ex-e-0203"
+        },
+        {
+          "id": "ex-e-0204"
+        },
+        {
+          "id": "ex-e-0205"
+        },
+        {
+          "id": "ex-e-0206"
+        },
+        {
+          "id": "ex-e-0207"
+        },
+        {
+          "id": "ex-e-0208"
+        },
+        {
+          "id": "ex-e-0209"
+        },
+        {
+          "id": "ex-e-0210"
+        },
+        {
+          "id": "ex-e-0211"
+        },
+        {
+          "id": "ex-e-0212"
+        },
+        {
+          "id": "ex-e-0213"
+        },
+        {
+          "id": "ex-e-0214"
+        },
+        {
+          "id": "ex-e-0215"
+        },
+        {
+          "id": "ex-e-0216"
+        },
+        {
+          "id": "ex-e-0217"
+        }
+      ],
+      "bebris_video": null
+    }
+  ]
+}

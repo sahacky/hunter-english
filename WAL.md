@@ -15,8 +15,9 @@
 - M5#5.2: домен урока `src/domain/lesson/` (types / steps / xp / runner): groupIntoSteps (тип → шаг, cloze+quote → «Из сериала», card игнор), evaluateStep (warmup ≥70%, listening <60% retrySuggested), xpForOutcome (1-я/50% floor/0, disputed+self_reported полный), recordAnswer/advanceStep/finishPass/passAccuracy/totalXp, computeLessonStatus (locked/available/in_progress/completed/review_due, ≥90% learned, lapsed ≥30%), isLessonPassed; ProgressRepository + get/putLessonProgress (Dexie, sync_queue 'lesson_progress', LessonProgressRow); шаг 7 завершается явным finishPass; 27 новых тестов, всего 121
 - M5#5.3: контент-лоадер `src/content/lessons.ts` (типы phrase/exercise/lesson по specs/05 §2–4, ленивые glob-чанки, courseToLessonId E-01↔les-e-01, exercisePhraseIds — все ссылки payload, assembleLesson — шаги+привязка фраз, loadLessonView); валидатор: phrasebook_topic известность (пассивна до M8, quotes_topic — реестр тем в M8); 8 новых тестов (129); открыт draft PR #5 — CI зелёный, проверять после каждого пуша
 
+- M5#5.4: контент пилота E1 — `research/tools/lessons/build_e1.py` (детерминированный seed, авто-вывод упражнений из пулов): 218 фраз (43+43+44+44+44), 217 упражнений (шаблон 1–6: cloze правила, разогрев choose+match, построение 24 = 8 wb + 16 tr/sp, диктант 5, речь shadowing 4 + answer_question 1, цитаты 2), 5 уроков; аудио 218 opus Piper cori (1 outlier ph-e-0198 — длинная фраза >2.5с, файл записан); фразы → deck 'phrases' (step 7 экрана); слова НЕ дублируются — они уже в колоде из M4 (loadWordNotes); интерливинг-флаг в данных не нужен (выбор фраз — в билдере, schema additionalProperties:false); манифест пересобран
 ## In Progress
-- M5#5.4: контент пилота E1 (E-01…E-05) — phrases-e.json, exercises-e.json, lessons-e.json, аудио фраз (Piper cori)
+- M5#5.5: экран урока `/#/lesson/:id` + компоненты упражнений
 
 ## TODO
 - M5: Движок уроков и упражнений (ранг E) — детализация в PLANS, затем реализация
@@ -100,3 +101,5 @@
 | 2026-09-28 | Детализация M5 внесена в PLANS (5.1–5.7 + решения 1–6: пилот контента — модуль E1, голос фолбэк-first, оркестрация дня вне M5, опечатка = полный XP, разговорник/бонус — позже, аудио цитат не генерим); ветка `feature/m5-lessons` | План следующего майлстоуна, ожидает подтверждения разработчика |
 | 2026-09-28 | Решения M5 1–6 подтверждены разработчиком; M5#5.1 выполнена: `src/domain/check/` + 47 unit-тестов (test/lint/typecheck/validate:data/audit зелёные); REVIEW-маркер: артикль в знаменателе голосовой проверки (спека буквально, пересмотр M6) | Автономная сессия, merge/push разрешены |
 | 2026-09-28 | M5#5.2 выполнена: `src/domain/lesson/` + расширение ProgressRepository (lesson_progress); 27 новых тестов (всего 121), гейты зелёные; разработчик: автономный режим до конца M5 + контроль CI после пушей | Автономная сессия |
+| 2026-09-28 | M5#5.3 выполнена: контент-лоадер `src/content/lessons.ts` + phrasebook_topic в валидаторе; 8 тестов; draft PR #5 открыт, CI зелёный | Автономная сессия |
+| 2026-09-28 | M5#5.4 выполнена: пилот E1 — 218 фраз/217 упражнений/5 уроков/218 аудио; validate:data зелёный (26 файлов); решения: фразы в deck phrases, слова не дублируются (M4), интерливинг без флага в данных | Автономная сессия |

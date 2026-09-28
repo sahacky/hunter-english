@@ -1,7 +1,28 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-27T20:58:47Z",
+  "generated_at": "2026-09-28T11:40:17Z",
   "files": [
+    {
+      "path": "lessons/exercises-e.json",
+      "kind": "exercises",
+      "schema_version": 1,
+      "items": 217,
+      "sha256": "6266e5ea3801ec4b9ee2f99a642b458fb2f4b16c9c23631b5dbc88a113f18555"
+    },
+    {
+      "path": "lessons/lessons-e.json",
+      "kind": "lessons",
+      "schema_version": 1,
+      "items": 5,
+      "sha256": "e6e8d97ca34c1f4675bbe4389346536cfc7b990612c0c9d65ff5abaaaa0ddf53"
+    },
+    {
+      "path": "phrases/phrases-e.json",
+      "kind": "phrases",
+      "schema_version": 1,
+      "items": 218,
+      "sha256": "1c6c57bc1db5ec269c17d555b36e02c63214f06a9995dd51b57d55cb1aa2dade"
+    },
     {
       "path": "quotes/attack-on-titan.json",
       "kind": "quotes",

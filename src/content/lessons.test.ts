@@ -6,6 +6,9 @@ import {
   courseToLessonId,
   exercisePhraseIds,
   lessonToCourseId,
+  loadLessonView,
+  loadLessons,
+  loadPhrases,
   type ExerciseItem,
   type LessonItem,
   type PhraseItem,
@@ -143,5 +146,51 @@ describe('assembleLesson (specs/02 §2 + specs/05 §3–§4)', () => {
   it('урок без упражнений блока — шаг пропущен', () => {
     const view = assembleLesson(lesson(['ex-e-0004']), byId, phraseById)
     expect(view.steps.map(({ index }) => index)).toEqual([3, 7])
+  })
+})
+
+describe('loadLessonView (реальные data/ пилота E1)', () => {
+  it('собирает все 5 уроков E1 полными шагами шаблона', async () => {
+    for (const lessonId of ['les-e-01', 'les-e-02', 'les-e-03', 'les-e-04', 'les-e-05']) {
+      const view = await loadLessonView(lessonId)
+      expect(view, lessonId).not.toBeNull()
+      expect(view?.lesson.rank).toBe('E')
+      expect(view?.steps.map(({ kind }) => kind)).toEqual([
+        'rule',
+        'warmup',
+        'build',
+        'listening',
+        'speaking',
+        'quotes',
+        'deck',
+      ])
+      const buildPhrases = (view?.content[3] ?? []).map(({ phrase }) => phrase?.id)
+      expect(
+        buildPhrases.every((id) => typeof id === 'string'),
+        lessonId,
+      ).toBe(true)
+      expect((view?.content[3] ?? []).length).toBeGreaterThanOrEqual(20)
+      expect((view?.content[6] ?? []).length).toBe(2)
+    }
+  })
+
+  it('пул фраз каждого урока ≥40, все фразы с аудио и уникальными id', async () => {
+    const phrases = await loadPhrases()
+    expect(phrases.length).toBeGreaterThanOrEqual(200)
+    expect(new Set(phrases.map(({ id }) => id)).size).toBe(phrases.length)
+    expect(phrases.every(({ audio }) => audio?.en_gb?.startsWith('audio/phrases/cori/'))).toBe(true)
+
+    const lessons = await loadLessons()
+    expect(lessons.length).toBe(5)
+    const phraseById = new Set(phrases.map(({ id }) => id))
+    for (const lesson of lessons) {
+      const lessonPhrases = phrases.filter(
+        ({ grammar_point_id }) => grammar_point_id === lesson.grammar_point.id,
+      )
+      expect(lessonPhrases.length, lesson.id).toBeGreaterThanOrEqual(40)
+      for (const pid of lesson.grammar_point.phrase_ids) {
+        expect(phraseById.has(pid), `${lesson.id} → ${pid}`).toBe(true)
+      }
+    }
   })
 })
