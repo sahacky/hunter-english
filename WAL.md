@@ -1,10 +1,10 @@
 # WAL — Hunter English
 
 ## Current Phase
-**M8 закрыт** (полный ранг E: 24 урока / 1054 фразы / 1145 упражнений / 1054 аудио; разговорник 2 главы; find_error+verb_tense; Врата E-D на полном ранге; контент-ревью исправлено). Следующий — **M9 «PWA и мобильная адаптация»** (`vite-plugin-pwa`, кэш данных/аудио, нижний таб-бар <768px — specs/07 §1) — детализировать в PLANS → реализация. До M9 (из M7): AI-собеседник — M12 (опц.). Голосовые диалог-сценки разговорника — M10 полировка.
+**M9 закрыт** (PR #13, CI зелёный): vite-plugin-pwa 1.3.0 autoUpdate (регистрация через `virtual:pwa-register` в main.tsx — reload открытой вкладки при активации новой версии), manifest+иконки (генератор `research/tools/icons/gen_icons.py`), precache app shell (42 файла, ~2.5 МБ), аудио — runtime CacheFirst `audio-cache` (10k/90д, вне precache), `audio/` → `dist/audio` скриптом `scripts/copy-audio.mjs` в build; мобильный лейаут <768.98px: таб-бар 5 пунктов (/,/srs,/ranks,/phrasebook,/settings) с SVG-иконками 24px, safe-area, тач ≥44px; бейдж «офлайн» (OnlineBadge/useOnlineStatus); вход в Врата с /#/ranks (ссылка `Врата E → D`); e2e офлайн (setOffline → shell+аудио из кэша) и мобильный smoke 390×844. Следующий — **M10 «Полировка → MVP»** (выход-диалоги, beforeunload-flush, тосты, настройки: голос/скорость/тема/локаль, Hard/Easy, экспорт/импорт JSON — Known Issues M4/M5) — детализировать в PLANS → реализация.
 
 ## Superseded
-**M7 закрыт** (PR #7 смержен, CI зелёный): домен геймификации (уровни 100+25×(n−1), капы XP дня, стрик+заморозки, квесты, Врата ≥80/85 + 72ч), хранилище user_stats/item_progress, XP-шина (SRS +1/+2, урок: категории+капы, +25/+10 бонус, повтор 50%), дашборд (квест/статус/«Начать день»/цитата дня), `/#/ranks` (титулы), `/#/gates/E-D` (intro/exam/result, рантайм-генерация из данных E, ранг-ап +200). Следующий — **M8 «Контент ранга E→D + разговорник»**: детализировать в PLANS (данные: уроки E-06…E-24 по specs/01 §5, phrasebook data/phrasebook + экран `/#/phrasebook`, контрольные юнитов, find_error/tense/transform упражнения).
+**M8 закрыт** (полный ранг E: 24 урока / 1054 фразы / 1145 упражнений / 1054 аудио; разговорник 2 главы; find_error+verb_tense; Врата E-D на полном ранге; контент-ревью исправлено).
 
 ## Completed
 - Бутстрап: AGENTS.md (вход для любых агентов → BOOT/WAL/PLANS), BOOT.md, WAL.md, PLANS.md, CLAUDE.md (`@AGENTS.md`, локальный)
@@ -12,6 +12,7 @@
 - M0.5: цитаты с RU → `research/data/quotes-ru-merged.json` (274); сырьё в `data/raw/` (NGSL 2806, NGSL-Spoken 719, en_50k, Oxford 5000 локально, kaikki 1800/1800)
 - M1: 8 спеков в `specs/` (01 курс, 02 урок/упражнения, 03 SRS, 04 геймификация, 05 JSON-схемы, 06 БД+sync, 07 экраны, 08 дизайн-система), BLOCKER/MAJOR исправлены
 - M2: скаффолд Vite+React+TS, i18n ru/en, hash-роутинг, Vitest+Playwright, CI/deploy; hotfix CI (PR #1 был смержен с красным CI — `npm ci` падал): Vite 7, `@testing-library/dom`, `@types/node`, Prettier в lint, typecheck конфигов, Node 22, `supabase-js` и `/login` убраны до M12. Все проверки зелёные локально, включая e2e
+- M7: закрыт (PR #7) — см. старый WAL в git-истории при необходимости
 - M4: карточки SRS (PR #4) — домен `src/domain/srs/` (scheduler: applyAnswer, день 4:00, flood-guard 15/8/4/0, wake-up rule-2, buildQueue; REVIEW-маркер про шаги ts-fsrs), `ProgressRepository` (шов) + Dexie `src/data/db.ts` (зеркало specs/06 §3, sync_queue, append-only review_log) + `src/lib/uuidv7.ts`, контент-лоадер `src/content/words.ts` (ленивые чанки, createFirstCards rule-1), экран `src/screens/SrsScreen.tsx` (пробел/1/2, блоки по 20, живая очередь, счётчики, мгновенный saveAnswer, лимит новых между сессиями); 47 тестов; ревью 3 суб-агентов → блокер/мажоры исправлены
 - M5: детализация внесена в PLANS (5.1–5.7, решения 1–6 подтверждены разработчиком); ветка `feature/m5-lessons`
 - M5#5.1: домен проверки `src/domain/check/` (types / normalize / levenshtein / align / checker): нормализация, сокращения (can't=cannot=can not через expand в [can,not]), EXCEPTIONS+typoLimit, DP-выравнивание diff (match/typo/extra/missing), judge: trapWrong §4.3 + строгие ЛТ-06/17/19 §4.7, judgeVoice 0.85/0.80 §4.8; 47 unit-тестов; гейты зелёные (94 теста суммарно)
@@ -31,10 +32,11 @@
 - M6: детализация 6.1–6.5 + решения 1–5; `src/lib/tts.ts` (speak/stopSpeak, en-GB выбор голоса с самовалидацией кэша), judgeVoice: артикли из обеих сторон + speech_threshold из данных + fallback артикль-only фраз, VoiceExercise: 5-попыточный «Сдаться» (0 XP) + волна (CSS, reduced-motion), SrsScreen: 🔊/🐢 R/S + stopSpeak на unmount, цитаты шага 6 — TTS с «…»; ревью: гонка play() в tts (захват элемента в catch), гарды повторов/модификаторов клавиш, diff голоса по «голым» токенам, missing `+слово`, dead audio.ts удалён; 149 тестов + 5 e2e; PR #6 смержен
 - M5#5.7: e2e smoke урока (5 тестов, Playwright; NOTE: перед локальным e2e — `npm run build`, preview отдаёт dist); ревью 3 суб-агентов → 4 блокера (hint-dead-end, нулевая сводка финала, двойной onAnswer word-bank/voice) + мажоры исправлены: recordAnswer идемпотентен + диспут корректирует точность, self_reported не растит точность, ловушки подключены к CheckTask (trapWrong + строгие ЛТ-06/17/19), answer.typo=exact → exactTypos, judgeDictation прощает только пропущенные артикли (≤2), статус финала через computeLessonStatus (свежие фразы → in_progress «почти готов», повтор не затирает оригинал), persist-очередь «последний выигрывает», error-фаза, 404 на невалидный ?step, фразы в /#/srs (loadPhraseNotes), контент: answer_question в E-01..03, дедуп пар по RU, дистракторы без коллизий перевода, \b-границы цитат; 140 тестов
 ## In Progress
-- (пусто) — следующая сессия: детализация M9 «PWA и мобильная адаптация» → реализация
+- (пусто) — следующая сессия: детализация M10 «Полировка → MVP» → реализация
 
 ## TODO
-- M5: Движок уроков и упражнений (ранг E) — детализация в PLANS, затем реализация
+- M10: Полировка (детализировать по Known Issues: выход-диалоги, beforeunload, тосты, экран настроек, Hard/Easy, экспорт/импорт)
+- M11: Дополнительный контент (ранги D→C, добор до 5000 слов, остальные тайтлы, экран Цитат)
 - (опц.) Докачать 25 уроков Бебриса (research/04 «Не охвачено»), проверить Present Perfect (уроки 2.26–2.45)
 - (опц., отдельной задачей) Обновить стек: React 19, react-router 7 (снимет audit moderate), i18next 26, Vite 8 + plugin-react 6, пакет `typescript-eslint`
 
@@ -44,10 +46,13 @@
 - M4: счётчик пробуждений `wokenToday` не учитывается между сессиями — обратные карточки (ru-en/speak) материализуются с M6+, до тех пор недостижимо
 - M4: подпись «Hard/Easy можно включить в настройках» (specs/03 §6) и показ интервалов на кнопках — добавить при появлении экрана настроек
 - M4: `srs.progress` (Пройдено N из M) — M = длина начальной очереди; из-за живой очереди N может превысить M (косметика, не ломает логику)
+- M9: e2e офлайн-тест считает, что SW активен по факту регистрации; проверка `ready`-состояния опущена (poll на serviceWorkers) — достаточно для smoke
+- M9: иконки перегенерировать при смене мотивации: `python3 research/tools/icons/gen_icons.py` (Pillow)
 - `npm audit`: 2 moderate в `react-router-dom@6` (порог high не превышен); исправление только в v7
 - `research/tools/quotes/merge_ru.py:17` — дефолтный путь с чужой машины (`/home/llm/...`); передавать путь аргументом
 - `research/tools/data/fetch_kaikki.py` — слова в URL не экранируются (для слов с `'`); лишний `import sys`; нет `requirements.txt`
-- e2e (Playwright) не запускается в CI; локально нужен `npx playwright install chromium` один раз
+- e2e (Playwright) не запускается в CI; локально нужен `npx playwright install chromium` один раз; с M9 webServer сам делает `npm run build` перед preview
+- M9: `npm run test:e2e` теперь собирает dist при каждом запуске (build в webServer) — медленнее, но без рассинхрона dist/источников
 - M4: новые зависимости — `dexie` (runtime) и `fake-indexeddb` (devDep, тесты репозитория); API ts-fsrs сверен по node_modules (факт: 4.7.1 — fsrs(), generatorParameters(), createEmptyCard(), Rating, State; learning_steps в параметрах НЕТ, шаги: New Again=1м/Hard=5м/Good=10м, Relearning-шаг 5м; fuzz детерминирован seed'ом время+reps)
 - `src/App.tsx` 404 берёт `nav.notFound`; ключи `notFound.*`, `common.loading`, `common.backToDashboard` пока не используются
 - По AoT, JJK, Solo Leveling цитаты только ручным сбором; фанатские источники помечены «⚠ сверить с дубляжом»
@@ -77,6 +82,7 @@
 
 ## Watch out:
 - ⚠️ M8#8.5 случайно закоммичен напрямую в main (e90de9c) вместо feature-ветки — CI зелёный, коммит атомарен; LESSON: после каждого merge сразу создавать новую ветку до любых правок
+- M9: не поднимать `vite-plugin-pwa` мажорно без сверки с Vite-версией (1.3.0 ↔ Vite 7); аудио НИКОГДА не класть в `globPatterns` precache (23 МБ)
 - В коммитах/PR НИКАКИХ упоминаний ИИ/Claude (без Co-Authored-By, Generated with и т.п.)
 - **Не мержить в `main` при красном CI** (branch protection нет — дисциплина вручную). Проверять `gh run list` / статус PR перед merge
 - Не использовать `--legacy-peer-deps` / `--force` для npm: конфликт peer-зависимостей = ошибка, которую надо чинить версиями
@@ -124,3 +130,4 @@
 | 2026-09-28 | M6 закрыт: 6.1–6.5 выполнены, adversarial-ревью исправлено (блокер гонки play(), мажоры), PR #6 смержен при зелёном CI; ветка удалена | Автономная сессия |
 | 2026-09-28 | M7 закрыт: 7.1–7.7 выполнены, ревью исправлено, PR #7 смержен при зелёном CI; ветка удалена | Автономная сессия |
 | 2026-09-28 | M8 закрыт: 8.1–8.8 выполнены (8.5 — случайный коммит в main e90de9c, CI зелёный; остальные через PR #8–#12); контент-ревью исправлено | Автономная сессия |
+| 2026-09-28 | M9 закрыт: 9.1–9.6 выполнены (детализация + реализация + ревью одним заходом); адверсариал-ревью: 4 мажора (Врата с мобилы → ссылка с /#/ranks; safe-area top/left/right; autoUpdate-reload открытых вкладок через virtual:pwa-register; офлайн-e2e) и 3 минора (webServer build, 767.98px, apple-touch full-bleed) исправлены; PR #13 смержен при зелёном CI; ветка удалена | Автономная сессия |
