@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "kind": "phrasebook",
+  "items": [
+    {
+      "id": "pb-smalltalk-01",
+      "rank": "E",
+      "topic": "smalltalk",
+      "situation_ru": "Первая встреча: приветствие и знакомство",
+      "user_role": "traveler",
+      "lines": [
+        {
+          "role": "local",
+          "text_en": "Hello!",
+          "translation_ru": "Привет!"
+        },
+        {
+          "role": "traveler",
+          "text_en": "Hi! My name is Ivan.",
+          "translation_ru": "Привет! Меня зовут Иван.",
+          "accepted": ["Hi! My name is Ivan.", "Hi, my name is Ivan.", "Hello! My name is Ivan."]
+        },
+        {
+          "role": "local",
+          "text_en": "Nice to meet you, Ivan. I am Anna.",
+          "translation_ru": "Приятно познакомиться, Иван. Я Анна."
+        },
+        {
+          "role": "traveler",
+          "text_en": "Nice to meet you too. How are you?",
+          "translation_ru": "Мне тоже приятно. Как дела?",
+          "accepted": ["Nice to meet you too. How are you?"]
+        },
+        {
+          "role": "local",
+          "text_en": "I am fine, thanks. And you?",
+          "translation_ru": "Хорошо, спасибо. А ты?"
+        },
+        {
+          "role": "traveler",
+          "text_en": "Not bad, thank you.",
+          "translation_ru": "Неплохо, спасибо.",
+          "accepted": ["Not bad, thank you.", "Not bad, thanks."]
+        }
+      ]
+    },
+    {
+      "id": "pb-smalltalk-02",
+      "rank": "E",
+      "topic": "smalltalk",
+      "situation_ru": "Small talk: откуда ты, чем занимаешься",
+      "user_role": "traveler",
+      "lines": [
+        {
+          "role": "local",
+          "text_en": "Where are you from?",
+          "translation_ru": "Откуда ты?"
+        },
+        {
+          "role": "traveler",
+          "text_en": "I am from Russia. And you?",
+          "translation_ru": "Я из России. А ты?",
+          "accepted": ["I am from Russia. And you?", "I'm from Russia. And you?"]
+        },
+        {
+          "role": "local",
+          "text_en": "I am from Canada. What do you do?",
+          "translation_ru": "Я из Канады. Чем ты занимаешься?"
+        },
+        {
+          "role": "traveler",
+          "text_en": "I am a student. Are you a teacher?",
+          "translation_ru": "Я студент. Ты учитель?",
+          "accepted": ["I am a student. Are you a teacher?", "I'm a student. Are you a teacher?"]
+        },
+        {
+          "role": "local",
+          "text_en": "No, I am a doctor.",
+          "translation_ru": "Нет, я врач."
+        },
+        {
+          "role": "traveler",
+          "text_en": "It is nice to talk to you. See you later!",
+          "translation_ru": "Приятно было поговорить. До встречи!",
+          "accepted": ["It is nice to talk to you. See you later!"]
+        }
+      ]
+    }
+  ]
+}

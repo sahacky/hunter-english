@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-28T12:33:38Z",
+  "generated_at": "2026-09-28T15:11:30Z",
   "files": [
     {
       "path": "lessons/exercises-e.json",
@@ -15,6 +15,20 @@
       "schema_version": 1,
       "items": 5,
       "sha256": "6863e0a453bf6a6f092e9a4a65101bab028ed8e9cadcc74f9911c205074df436"
+    },
+    {
+      "path": "phrasebook/emergency.json",
+      "kind": "phrasebook",
+      "schema_version": 1,
+      "items": 2,
+      "sha256": "463e780b8833c642f4a7f164a2e490a218a828b7b0e44afab7972045812c6858"
+    },
+    {
+      "path": "phrasebook/smalltalk.json",
+      "kind": "phrasebook",
+      "schema_version": 1,
+      "items": 2,
+      "sha256": "3ae1528757c74c1ca9c37fb780ac67a3e2e0c1ff38831e105a346cc872b07ff3"
     },
     {
       "path": "phrases/phrases-e.json",
