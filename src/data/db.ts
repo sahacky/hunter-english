@@ -18,9 +18,20 @@ export interface ReviewLogRow extends ReviewLogEntry {
 
 export type LessonProgressRow = LessonProgress & { user_id: string }
 
+export type UserStatsRow = import('../domain/game/types').UserStats & { user_id: string }
+
+/** item_progress (specs/06 §3): kind-зависимый payload. */
+export interface ItemProgressRow {
+  user_id: string
+  item_id: string
+  kind: 'quest_day' | 'gate_attempts' | 'achievement'
+  data: unknown
+  updated_at: string
+}
+
 export interface SyncQueueRow {
   seq?: number
-  table: 'card_states' | 'review_log' | 'lesson_progress'
+  table: 'card_states' | 'review_log' | 'lesson_progress' | 'user_stats' | 'item_progress'
   op: 'upsert' | 'insert'
   payload: unknown
   tries: number
@@ -36,6 +47,8 @@ export class HunterDb extends Dexie {
   card_states!: Table<CardStateRow, [string, string]>
   review_log!: Table<ReviewLogRow, string>
   lesson_progress!: Table<LessonProgressRow, [string, string]>
+  user_stats!: Table<UserStatsRow, string>
+  item_progress!: Table<ItemProgressRow, [string, string, string]>
   sync_queue!: Table<SyncQueueRow, number>
   meta!: Table<MetaRow, string>
 

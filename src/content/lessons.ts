@@ -245,6 +245,34 @@ interface TrapsFile {
 
 const trapsModule = import.meta.glob('/data/traps.json') as Record<string, () => Promise<TrapsFile>>
 
+/** Цитата — схема specs/05 §5 (поля, нужные UI). */
+export interface QuoteItem {
+  id: string
+  title: string
+  season_episode: string
+  speaker: string
+  text: string
+  translation_ru: string
+  auto_vocab: { top1000: number }
+}
+
+interface QuotesFile {
+  schema_version: number
+  kind: 'quotes'
+  items: QuoteItem[]
+}
+
+const quoteModules = import.meta.glob('/data/quotes/*.json') as Record<
+  string,
+  () => Promise<QuotesFile>
+>
+
+/** Все цитаты всех тайтлов. */
+export async function loadQuotes(): Promise<QuoteItem[]> {
+  const files = await Promise.all(Object.values(quoteModules).map((load) => load()))
+  return files.flatMap((file) => file.items)
+}
+
 /** Каталог ловушек: slug → запись (для CheckTask ловушек, specs/02 §4.3/§4.7). */
 export async function loadTraps(): Promise<Map<string, TrapItem>> {
   const files = await Promise.all(Object.values(trapsModule).map((load) => load()))

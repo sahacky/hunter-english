@@ -57,6 +57,12 @@ function delayRepo(inner: DexieProgressRepository, ms: number): ProgressReposito
     },
     getLessonProgress: (lessonId) => inner.getLessonProgress(lessonId),
     putLessonProgress: (progress) => inner.putLessonProgress(progress),
+    getStats: () => inner.getStats(),
+    putStats: (stats) => inner.putStats(stats),
+    getQuestDay: (iso) => inner.getQuestDay(iso),
+    putQuestDay: (state) => inner.putQuestDay(state),
+    getGateAttempt: (gate) => inner.getGateAttempt(gate),
+    putGateAttempt: (attempt) => inner.putGateAttempt(attempt),
   }
 }
 
@@ -103,7 +109,8 @@ describe('SrsScreen', () => {
     expect(logs[0].rating).toBe(3)
     expect(logs[0].session_id).not.toBeNull()
     expect(logs[0].duration_ms).toBeGreaterThanOrEqual(0)
-    expect((await db.sync_queue.toArray()).length).toBe(2)
+    // ответ пишет: card_states + review_log + quest_day + user_stats (plan://M7#7.3)
+    expect((await db.sync_queue.toArray()).length).toBe(4)
   })
 
   it('счётчики учу/повтор/новые живые, learning возвращается в очередь', async () => {
