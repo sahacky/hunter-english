@@ -16,6 +16,7 @@ import { loadPhraseNotes } from '../content/lessons'
 import type { ProgressRepository } from '../domain/progress'
 import { DexieProgressRepository } from '../data/progress-repository'
 import { uuidv7 } from '../lib/uuidv7'
+import { speak, stopSpeak } from '../lib/tts'
 
 const BLOCK_SIZE = 20
 
@@ -101,6 +102,9 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
     cardShownAt.current = Date.now()
   }, [queue[0]?.card.card_id, phase.kind])
 
+  // уход с экрана останавливает озвучку (plan://M6#6.3, ревью)
+  useEffect(() => stopSpeak, [])
+
   const answer = useCallback(
     async (rating: 1 | 3) => {
       const entry = queue[0]
@@ -142,14 +146,23 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
   useEffect(() => {
     if (phase.kind !== 'review') return
     const onKey = (event: KeyboardEvent) => {
-      // пробел на сфокусированной кнопке — штатная активация кнопки
-      if (event.target instanceof HTMLElement && event.target.tagName === 'BUTTON') return
+      const key = event.key.toLowerCase()
+      const onControl = event.target instanceof HTMLElement && event.target.tagName === 'BUTTON'
+      if (event.repeat || event.ctrlKey || event.metaKey || event.altKey) return
+      // пробел на сфокусированной кнопке — её штатная активация; остальные клавиши (r/s/1/2) работают всегда
       if (event.code === 'Space') {
+        if (onControl) return
         event.preventDefault()
         setRevealed(true)
-      } else if (!event.repeat && revealed && event.key === '1') {
+        return
+      }
+      if (key === 'r') {
+        speak(entry.note.en, { src: entry.note.audio })
+      } else if (key === 's') {
+        speak(entry.note.en, { src: entry.note.audio, rate: 0.75 })
+      } else if (revealed && event.key === '1') {
         void answer(1)
-      } else if (!event.repeat && revealed && event.key === '2') {
+      } else if (revealed && event.key === '2') {
         void answer(3)
       }
     }
@@ -166,7 +179,10 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
     }
   }, [queue])
 
-  const finish = () => setPhase({ kind: 'done', empty: false })
+  const finish = () => {
+    stopSpeak()
+    setPhase({ kind: 'done', empty: false })
+  }
 
   if (phase.kind === 'loading') {
     return (
@@ -242,6 +258,22 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
         <p className="srs-front" lang="en">
           {entry.note.en}
         </p>
+        <div className="lesson-audio" aria-label={t('srs.audioLabel')}>
+          <button
+            type="button"
+            className="srs-btn"
+            onClick={() => speak(entry.note.en, { src: entry.note.audio })}
+          >
+            🔊 <kbd>R</kbd>
+          </button>
+          <button
+            type="button"
+            className="srs-btn"
+            onClick={() => speak(entry.note.en, { src: entry.note.audio, rate: 0.75 })}
+          >
+            🐢 <kbd>S</kbd>
+          </button>
+        </div>
         {revealed ? (
           <p className="srs-back" lang="ru">
             {entry.note.ru}

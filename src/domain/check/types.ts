@@ -39,6 +39,11 @@ export interface CheckTask {
    * вовсе — слова проверяются точным совпадением (cloze-пропуски, выбор).
    */
   exactTypos?: boolean
+  /**
+   * `answer.speech_threshold` из данных (specs/05 §3): базовый порог мягкой
+   * голосовой проверки (specs/02 §4.8); для длинных фраз действует 0.80.
+   */
+  speechThreshold?: number
 }
 
 /** Результат проверки одного задания. */

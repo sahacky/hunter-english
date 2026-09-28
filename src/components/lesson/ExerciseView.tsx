@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next'
 import { judge, judgeDictation, judgeVoice } from '../../domain/check/checker'
 import type { CheckResult, CheckTask } from '../../domain/check/types'
 import type { ExerciseOutcome } from '../../domain/lesson/types'
-import { playAudio } from '../../lib/audio'
+import { speak } from '../../lib/tts'
 import { cancelListening, isSpeechSupported, listenOnce } from '../../lib/speech'
 import type { ExerciseItem, PhraseItem, TrapItem } from '../../content/lessons'
 
@@ -43,20 +43,31 @@ function taskFor(
     trapLtId: trap?.lt_id ?? null,
     trapWrong: trap?.wrong_en ?? null,
     exactTypos: exercise.answer.typo === 'exact',
+    speechThreshold: exercise.answer.speech_threshold,
   }
 }
 
 /** Аудио-кнопки 🔊/🐢 с клавишами R/S (specs/07 §5.1) и лимитом прослушиваний ≤3 (specs/02 §3 №5). */
-function AudioButtons({ src, limitPlays = 0 }: { src: string; limitPlays?: number }) {
+function AudioButtons({
+  text,
+  src,
+  limitPlays = 0,
+}: {
+  text: string
+  /** Предзаписанный файл; нет файла — TTS-фолбэк (M6#6.1). */
+  src?: string
+  limitPlays?: number
+}) {
   const [plays, setPlays] = useState(0)
   const exhausted = limitPlays > 0 && plays >= limitPlays
   const play = (rate: number) => {
     if (exhausted) return
     setPlays((n) => n + 1)
-    playAudio(src, rate)
+    speak(text, { src, rate })
   }
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
+      if (event.repeat || event.ctrlKey || event.metaKey || event.altKey) return
       if (event.target instanceof HTMLInputElement) return
       const key = event.key.toLowerCase()
       if (key === 'r') play(1)
@@ -151,7 +162,10 @@ export function InputCheckExercise({
         {title}
       </p>
       {mode === 'dictation' && phrase?.audio?.en_gb && (
-        <AudioButtons src={phrase.audio.en_gb} limitPlays={3} />
+        <AudioButtons text={phrase.text_en} src={phrase.audio.en_gb} limitPlays={3} />
+      )}
+      {mode === 'cloze' && Boolean(exercise.payload.quote) && (
+        <AudioButtons text={String(p.text_with_gap ?? '').replace(/_+/, '…')} />
       )}
       <form
         className="lesson-input-row"
@@ -547,6 +561,7 @@ export function VoiceExercise({
         finish(nextAttempts <= 1 ? 'correct' : 'correct_retry', nextAttempts)
       }
     } catch {
+      setAttempts((n) => n + 1)
       setFeedback(null)
     } finally {
       setListening(false)
@@ -580,7 +595,16 @@ export function VoiceExercise({
       <p className="lesson-prompt" lang={mode === 'speak' ? 'ru' : 'en'}>
         {prompt}
       </p>
-      {mode === 'shadowing' && phrase?.audio?.en_gb && <AudioButtons src={phrase.audio.en_gb} />}
+      {mode === 'shadowing' && phrase?.audio?.en_gb && (
+        <AudioButtons text={phrase.text_en} src={phrase.audio.en_gb} />
+      )}
+      {listening && (
+        <div className="lesson-wave" aria-hidden="true">
+          {Array.from({ length: 12 }, (_, i) => (
+            <span key={i} className="lesson-wave-bar" />
+          ))}
+        </div>
+      )}
       <div className="lesson-actions">
         {supported && (
           <button
@@ -590,6 +614,18 @@ export function VoiceExercise({
             disabled={done || listening}
           >
             {listening ? t('lesson.listening') : t('lesson.sayIt')} 🎙
+          </button>
+        )}
+        {!done && attempts >= 5 && mode !== 'answer' && (
+          <button
+            type="button"
+            className="srs-btn"
+            onClick={() => {
+              finish('skip', attempts)
+              onNext()
+            }}
+          >
+            {t('lesson.giveUp')} (0 XP)
           </button>
         )}
         {!supported && <p className="dim">{t('lesson.speechUnavailable')}</p>}
@@ -691,7 +727,9 @@ export function FeedbackPlate({
         <p className="lesson-diff" lang="en">
           {result.diff.map((token, index) => (
             <span key={index} className={`lesson-diff-${token.status}`}>
-              {token.status === 'missing' ? `+${token.ref ?? ''}` : (token.word ?? '')}
+              {token.status === 'missing'
+                ? `+${token.word ?? token.ref ?? ''}`
+                : (token.word ?? '')}
               {token.status === 'typo' && token.ref ? ` → ${token.ref}` : ''}
             </span>
           ))}

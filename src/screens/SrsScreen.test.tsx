@@ -161,6 +161,9 @@ describe('SrsScreen', () => {
     await screen.findByText('house')
     for (let i = 0; i < 20; i += 1) {
       await screen.findByText(notes[i].en, { selector: '.srs-front' }, { timeout: 4000 })
+      // озвучка карточки 🔊/🐢 с клавишами R/S (plan://M6#6.3, specs/07 §3.5)
+      expect(screen.getByRole('button', { name: /R/ })).toBeInTheDocument()
+      expect(screen.getByRole('button', { name: /S/ })).toBeInTheDocument()
       fireEvent.click(screen.getByRole('button', { name: /Показать ответ/ }))
       fireEvent.click(screen.getByRole('button', { name: /Вспомнил/ }))
     }
