@@ -1,7 +1,7 @@
 # WAL — Hunter English
 
 ## Current Phase
-**M3 закрыт** (PR #3 смержен). Следующий: **M4 — карточки SRS** (ts-fsrs, Dexie, `ProgressRepository` по «швам»)
+**M4 — карточки SRS**, ветка `feature/m4-srs` (детализация plan://M4#M4, 4.1–4.6). M3 смержен (PR #3), его ветки удалены. Контракт домена готов: `src/domain/srs/types.ts` (незакоммиченных изменений нет — всё запушено)
 
 ## Completed
 - Бутстрап: AGENTS.md (вход для любых агентов → BOOT/WAL/PLANS), BOOT.md, WAL.md, PLANS.md, CLAUDE.md (`@AGENTS.md`, локальный)
@@ -11,7 +11,12 @@
 - M2: скаффолд Vite+React+TS, i18n ru/en, hash-роутинг, Vitest+Playwright, CI/deploy; hotfix CI (PR #1 был смержен с красным CI — `npm ci` падал): Vite 7, `@testing-library/dom`, `@types/node`, Prettier в lint, typecheck конфигов, Node 22, `supabase-js` и `/login` убраны до M12. Все проверки зелёные локально, включая e2e
 
 ## In Progress
-- Ничего активного. M3 смержен (PR #3, CI зелёный) после AITS-ревью: датасет — слова 3 989 записей (2 830 лемм, CURATED-курация, CEFR из ранга, id lemma-pos, фикс-чанки), цитаты 274/15 (auto_vocab единый, 28≥0.9), ловушки 22, аудио 3 989 opus с гейтом длительности, манифест с sha256; валидатор с уникальностью id и строгим манифест-гейтом; README-runbook
+- M4 (ветка `feature/m4-srs`, запушена): сделано — детализация 4.1–4.6 в PLANS, контракт типов `src/domain/srs/types.ts` (CardType/Note/CardState/ReviewLogEntry/Queue*, лимиты rule-1/2, YOUNG_MATURE=21). **Дальше по порядку**:
+  1. 4.1 ядро `src/domain/srs/scheduler.ts`: обёртка ts-fsrs (параметры specs/03 §2), applyAnswer→CardState+log, day-boundary 4:00, buildQueue (learning → review young→mature → new), flood-guard 50/120/200, лимит 15 новых, wake-up ≤5/день (rule-2: обратные card'ы когда пассив ≥7 дней по scheduled_days) + unit-тесты
+  2. 4.2 `src/data/`: Dexie-схема по specs/06 §3 (зеркала + sync_queue + meta; user_id='local' в MVP), ProgressRepository (ensureCards/getQueue/saveAnswer в транзакции: upsert card + append review_log), uuidv7 утилита, тесты на fake-indexeddb
+  3. 4.3 контент: data/words/*.json через `import.meta.glob('/data/words/*.json')` → Note{en=lemma, ru=translation_ru[0], audio}, создание en-ru карточек по rule-1
+  4. 4.4 экран `/srs` (заменить Placeholder в App.tsx): 2 кнопки (1=Again, 2=Good, пробел=показать ответ), блоки по 20, счётчики красный/зелёный/синий, сохранение сразу; i18n-ключи ru+en
+  5. 4.5 гейты (test/lint/typecheck/validate:data/audit) → 4.6 ревью → merge PR
 
 ## TODO
 - M4: Карточки SRS (ts-fsrs, Dexie, `ProgressRepository`) — следующий майлстоун после M3
@@ -24,11 +29,13 @@
 - `research/tools/quotes/merge_ru.py:17` — дефолтный путь с чужой машины (`/home/llm/...`); передавать путь аргументом
 - `research/tools/data/fetch_kaikki.py` — слова в URL не экранируются (для слов с `'`); лишний `import sys`; нет `requirements.txt`
 - e2e (Playwright) не запускается в CI; локально нужен `npx playwright install chromium` один раз
+- M4: новые зависимости — `dexie` (runtime) и `fake-indexeddb` (devDep, тесты репозитория); `ts-fsrs@^4.5` уже в package.json — сверить фактический API по node_modules/@types перед использованием (v4: fsrs(), generatorParameters(), createEmptyCard(), Rating, State)
 - `src/App.tsx` 404 берёт `nav.notFound`; ключи `notFound.*`, `common.loading`, `common.backToDashboard` пока не используются
 - По AoT, JJK, Solo Leveling цитаты только ручным сбором; фанатские источники помечены «⚠ сверить с дубляжом»
 - IMDb: ToS запрещает автоматический сбор — только ручная выборка
 - `data/raw/` не в git: kaikki-дампы пересоздаются `research/tools/data/fetch_kaikki.py` (возобновляемо)
 - (M12) Supabase free засыпает после 7 дней без активности
+- `gh` CLI в окружении НЕТ — GitHub API через `curl -H "Authorization: Bearer $(cat ~/tok)"` (PR #3 создан и смержен так)
 
 ## Decisions Made
 - Стек: Vite + React + TS + Dexie + ts-fsrs + react-i18next + PWA; тесты Vitest/Playwright; Supabase — только в M12
@@ -80,4 +87,5 @@
 | 2026-09-27 | M3: датасет собран и провалидирован (3.4–3.8); kaikki докачан 2830/2830; финальные проверки зелёные | Автономная сессия M3 |
 | 2026-09-27 | AITS-ревью M3: 2 блокера (Oxford CEFR в данных; джанк-переводы топ-1000) и 13 мажоров исправлены; датасет пересобран (3 989 слов/3989 аудио/274 цитаты/22 ловушки); git-автор починен | Ревью 9 ролей + медиатор + 3 синтезатора |
 | 2026-09-27 | M3 закрыт: PR #3 смержен в main при зелёном CI; git-автор ветки переписан на noreply (был literal-плейсхолдер); для старой истории main — rewrite перед публикацией репо (Known Issues) | Автономная сессия M3, merge разрешён разработчиком |
+| 2026-09-27 | Чекпоинт перед новой сессией: M4 стартовал (ветка feature/m4-srs запушена, детализация 4.1–4.6, контракт src/domain/srs/types.ts); порядок работ — в In Progress | Ограничение токенов сессии |
 | 2026-09-27 | M3#3.1: 8 схем draft-07 в `data/schemas/` (вкл. envelope и trap), §6.5 trap в спеке 05, `scripts/validate-data.mjs` (ajv + кросс-ссылки + аудио) → `npm run validate:data`, шаг Validate data в CI; ajv/ajv-formats в devDeps | План M3#3.1 |
