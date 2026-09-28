@@ -1,7 +1,7 @@
 # WAL — Hunter English
 
 ## Current Phase
-**M4 — карточки SRS**, ветка `feature/m4-srs` (детализация plan://M4#M4, 4.1–4.6). M3 смержен (PR #3), его ветки удалены. Контракт домена готов: `src/domain/srs/types.ts` (незакоммиченных изменений нет — всё запушено)
+**M4 закрыт** (PR #4 смержен при зелёном CI, ветки удалены). Следующий майлстоун — **M5 «Движок уроков и упражнений (ранг E)»**: начать с детализации M5 в PLANS (по образцу детализаций M3/M4), затем реализация. Контракты: specs/02 (урок/упражнения), specs/01 (программа E), specs/05 (схемы уроков), specs/07 (экраны).
 
 ## Completed
 - Бутстрап: AGENTS.md (вход для любых агентов → BOOT/WAL/PLANS), BOOT.md, WAL.md, PLANS.md, CLAUDE.md (`@AGENTS.md`, локальный)
@@ -9,18 +9,21 @@
 - M0.5: цитаты с RU → `research/data/quotes-ru-merged.json` (274); сырьё в `data/raw/` (NGSL 2806, NGSL-Spoken 719, en_50k, Oxford 5000 локально, kaikki 1800/1800)
 - M1: 8 спеков в `specs/` (01 курс, 02 урок/упражнения, 03 SRS, 04 геймификация, 05 JSON-схемы, 06 БД+sync, 07 экраны, 08 дизайн-система), BLOCKER/MAJOR исправлены
 - M2: скаффолд Vite+React+TS, i18n ru/en, hash-роутинг, Vitest+Playwright, CI/deploy; hotfix CI (PR #1 был смержен с красным CI — `npm ci` падал): Vite 7, `@testing-library/dom`, `@types/node`, Prettier в lint, typecheck конфигов, Node 22, `supabase-js` и `/login` убраны до M12. Все проверки зелёные локально, включая e2e
+- M4: карточки SRS (PR #4) — домен `src/domain/srs/` (scheduler: applyAnswer, день 4:00, flood-guard 15/8/4/0, wake-up rule-2, buildQueue; REVIEW-маркер про шаги ts-fsrs), `ProgressRepository` (шов) + Dexie `src/data/db.ts` (зеркало specs/06 §3, sync_queue, append-only review_log) + `src/lib/uuidv7.ts`, контент-лоадер `src/content/words.ts` (ленивые чанки, createFirstCards rule-1), экран `src/screens/SrsScreen.tsx` (пробел/1/2, блоки по 20, живая очередь, счётчики, мгновенный saveAnswer, лимит новых между сессиями); 47 тестов; ревью 3 суб-агентов → блокер/мажоры исправлены
 
 ## In Progress
-- M4 (ветка `feature/m4-srs`): 4.1–4.4 готовы — ядро планировщика (scheduler.ts, applyAnswer/dayStart 4:00/flood-guard/buildQueue/wake-up, REVIEW-маркер про шаги ts-fsrs), Dexie-репозиторий + uuidv7 (db.ts зеркалит specs/06 §3, user_id='local', saveAnswer = транзакция upsert+append+sync_queue), загрузчик слов (ленивый glob, ~3 989 Note, createFirstCards rule-1), экран `/srs` (фазы loading→очередь→блок 20→финал; пробел/1/2; счётчики Anki-цветами; мгновенный saveAnswer; i18n ru/en; repo/notes инъекция для тестов). Гейты локально зелёные: test 42 / lint / typecheck / validate:data / audit. **Дальше**:
-  5. 4.6 ревью ветки суб-агентами + исправления + merge PR в main при зелёном CI (gh нет — GitHub API через `curl -H "Authorization: Bearer $(cat ~/tok)"`)
+- (пусто) — следующая сессия: детализация M5 в PLANS → подтверждение разработчика → реализация
 
 ## TODO
-- M4: Карточки SRS (ts-fsrs, Dexie, `ProgressRepository`) — следующий майлстоун после M3
+- M5: Движок уроков и упражнений (ранг E) — детализация в PLANS, затем реализация
 - (опц.) Докачать 25 уроков Бебриса (research/04 «Не охвачено»), проверить Present Perfect (уроки 2.26–2.45)
 - (опц., отдельной задачей) Обновить стек: React 19, react-router 7 (снимет audit moderate), i18next 26, Vite 8 + plugin-react 6, пакет `typescript-eslint`
 
 ## Known Issues
-- `data/quotes/*.json` (задача 3.5, ещё в работе): 148 пустых `translation_ru` — `validate:data` и `prettier --check` на них падают до дозаполнения/форматирования в 3.5/3.8; это ожидаемое поведение валидатора
+- M4: порядок новых карточек внутри колоды — алфавитный по `card_id` (все созданы одним instant; спека порядок новых внутри не регламентирует, interleaving по колодам соблюдён)
+- M4: счётчик пробуждений `wokenToday` не учитывается между сессиями — обратные карточки (ru-en/speak) материализуются с M6+, до тех пор недостижимо
+- M4: подпись «Hard/Easy можно включить в настройках» (specs/03 §6) и показ интервалов на кнопках — добавить при появлении экрана настроек
+- M4: `srs.progress` (Пройдено N из M) — M = длина начальной очереди; из-за живой очереди N может превысить M (косметика, не ломает логику)
 - `npm audit`: 2 moderate в `react-router-dom@6` (порог high не превышен); исправление только в v7
 - `research/tools/quotes/merge_ru.py:17` — дефолтный путь с чужой машины (`/home/llm/...`); передавать путь аргументом
 - `research/tools/data/fetch_kaikki.py` — слова в URL не экранируются (для слов с `'`); лишний `import sys`; нет `requirements.txt`
@@ -46,6 +49,7 @@
 - Разработка делегируется AI-агентам; каждый значимый этап — ревью и исправления
 
 ## Decisions Pending
+- specs/03 §2/§5: минутные шаги (learning/relearning steps) — синхронизировать спеку с фактом ts-fsrs 4.7 (шаги заданы библиотекой, REVIEW-маркер в scheduler.ts) или вернуться к обсуждению; решение за разработчиком
 - Если проект станет продуктом (много пользователей): свой бэкенд Django + Postgres в Docker, регионы РФ (152-ФЗ, ЮKassa, VK/Яндекс ID) и позже глобальный (Stripe/Paddle, Google/Apple); юр. проверка лицензий (цитаты, голос `cori`, NGSL CC BY-SA) — не планировать без решения разработчика
 - AI-собеседник — отложено (M12, опционально)
 - Утверждение визуального стиля разработчиком (открытые вопросы specs/08)
@@ -88,3 +92,4 @@
 | 2026-09-28 | M4#4.1 выполнена: `src/domain/srs/scheduler.ts` + 28 unit-тестов (test/lint/typecheck/validate:data/audit зелёные); API ts-fsrs 4.7.1 сверен — learning_steps не конфигурируются (REVIEW-маркер в коде) | Автономная сессия, merge/push разрешены |
 | 2026-09-28 | M4#4.2–4.3 выполнены: Dexie-репозиторий + uuidv7 (+dexie/fake-indexeddb; eslint no-unused-vars varsIgnorePattern '^_'), загрузчик слов (ленивые чанки) + createFirstCards; 37 тестов зелёные | Автономная сессия |
 | 2026-09-28 | M4#4.4–4.5 выполнены: экран /srs (бутрап+очередь+блоки 20+финал, клавиши пробел/1/2, счётчики, i18n), локальные гейты зелёные (42 теста) | Автономная сессия |
+| 2026-09-28 | M4#4.6: ревью 3 суб-агентами (спеки/React/адверсариал) → блокер (сброс счётчика блока) и мажоры (гонка двойного ответа, живая очередь, дневной лимит новых между сессиями, wake-up только для ru-en/speak) исправлены; 47 тестов; PR #4 смержен при зелёном CI; ветки удалены | Автономная сессия, merge/push разрешены |
