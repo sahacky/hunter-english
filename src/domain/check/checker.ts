@@ -137,32 +137,37 @@ function stripArticles(tokens: readonly string[]): string[] {
 
 /**
  * Мягкая проверка распознанной речи (specs/02 §4.8): сравнение по словам,
- * порог 0.85 (0.80 для фраз длиннее 8 слов).
+ * порог 0.85 (0.80 для фраз длиннее 8 слов); порог из данных —
+ * `answer.speech_threshold` (specs/05 §3), если задан.
  * M6#6.2 (решение M6#2): артикли a/an/the исключаются из ОБОИХ сторон —
  * распознавание регулярно их глотает, знаменатель считается по не-артикльным
  * словам эталона (REVIEW-маркер M5 снят; кандидат на правку specs/02 §4.8).
+ * Diff строится по тем же «голым» токенам — вердикт и подсветка не спорят.
  * VERDICT_RETRY ошибкой не считается: попытки не ограничены (§4.8).
  */
 export function judgeVoice(recognized: string, task: CheckTask): CheckResult {
   const userTokens = stripArticles(expandTokens(tokenize(recognized)))
+  const baseThreshold = task.speechThreshold ?? VOICE_RATIO
   let best: { ratio: number; candidate: Candidate } | null = null
   for (const ref of task.accepted) {
     const refTokens = expandTokens(tokenize(ref))
     const refBare = stripArticles(refTokens)
-    if (refBare.length === 0) continue
-    const pool = [...userTokens]
+    // эталон из одних артиклей — сравниваем без раздевания (латентный случай данных)
+    const effective = refBare.length > 0 ? refBare : refTokens
+    const compareAgainst = refBare.length > 0 ? userTokens : expandTokens(tokenize(recognized))
+    if (effective.length === 0) continue
+    const pool = [...compareAgainst]
     let matched = 0
-    for (const word of refBare) {
+    for (const word of effective) {
       const index = pool.indexOf(word)
       if (index >= 0) {
         matched += 1
         pool.splice(index, 1)
       }
     }
-    const ratio = matched / refBare.length
-    const long = refBare.length > VOICE_LONG_PHRASE
-    const threshold = long ? VOICE_RATIO_LONG : VOICE_RATIO
-    const candidate = buildCandidate(userTokens, refTokens, ref, task.exactTypos === true)
+    const ratio = matched / effective.length
+    const threshold = effective.length > VOICE_LONG_PHRASE ? VOICE_RATIO_LONG : baseThreshold
+    const candidate = buildCandidate(compareAgainst, effective, ref, task.exactTypos === true)
     if (!best || ratio > best.ratio) best = { ratio, candidate }
     if (ratio >= threshold) {
       return toResult('correct', candidate, false)

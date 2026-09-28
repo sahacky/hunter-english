@@ -102,6 +102,9 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
     cardShownAt.current = Date.now()
   }, [queue[0]?.card.card_id, phase.kind])
 
+  // уход с экрана останавливает озвучку (plan://M6#6.3, ревью)
+  useEffect(() => stopSpeak, [])
+
   const answer = useCallback(
     async (rating: 1 | 3) => {
       const entry = queue[0]
@@ -143,18 +146,23 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
   useEffect(() => {
     if (phase.kind !== 'review') return
     const onKey = (event: KeyboardEvent) => {
-      // пробел на сфокусированной кнопке — штатная активация кнопки
-      if (event.target instanceof HTMLElement && event.target.tagName === 'BUTTON') return
+      const key = event.key.toLowerCase()
+      const onControl = event.target instanceof HTMLElement && event.target.tagName === 'BUTTON'
+      if (event.repeat || event.ctrlKey || event.metaKey || event.altKey) return
+      // пробел на сфокусированной кнопке — её штатная активация; остальные клавиши (r/s/1/2) работают всегда
       if (event.code === 'Space') {
+        if (onControl) return
         event.preventDefault()
         setRevealed(true)
-      } else if (!event.repeat && event.key.toLowerCase() === 'r') {
+        return
+      }
+      if (key === 'r') {
         speak(entry.note.en, { src: entry.note.audio })
-      } else if (!event.repeat && event.key.toLowerCase() === 's') {
+      } else if (key === 's') {
         speak(entry.note.en, { src: entry.note.audio, rate: 0.75 })
-      } else if (!event.repeat && revealed && event.key === '1') {
+      } else if (revealed && event.key === '1') {
         void answer(1)
-      } else if (!event.repeat && revealed && event.key === '2') {
+      } else if (revealed && event.key === '2') {
         void answer(3)
       }
     }

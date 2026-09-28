@@ -418,6 +418,7 @@ export default function LessonScreen({
       if (onControl) return
       if (phase.kind !== 'step') return
       if (step?.kind === 'rule' && !ruleShown) {
+        stopSpeak()
         setRuleShown(true)
         return
       }
@@ -545,7 +546,15 @@ export default function LessonScreen({
         </p>
       </header>
 
-      {isRuleStep && !ruleShown && <RuleCard view={view} onUnderstood={() => setRuleShown(true)} />}
+      {isRuleStep && !ruleShown && (
+        <RuleCard
+          view={view}
+          onUnderstood={() => {
+            stopSpeak()
+            setRuleShown(true)
+          }}
+        />
+      )}
 
       {(ruleShown || !isRuleStep) && current && (
         <ExerciseRouter

@@ -122,4 +122,58 @@ describe('tts шлюз (plan://M6#6.1)', () => {
     speak('hello', { src: 'audio/missing.opus' })
     await vi.waitFor(() => expect(speakFn).toHaveBeenCalled())
   })
+
+  it('ревью M6#1: отклонённый play() старого элемента не трогает новое воспроизведение', async () => {
+    vi.useFakeTimers()
+    try {
+      const rejectHolder: { reject?: (e: Error) => void } = {}
+      const paused: string[] = []
+      const Ctor = vi.fn(function AudioLike(this: never, src: string) {
+        return {
+          src,
+          playbackRate: 1,
+          play: () =>
+            new Promise<void>((_resolve, reject) => {
+              if (src === 'audio/first.opus') rejectHolder.reject = reject
+              else _resolve()
+            }),
+          pause: () => paused.push(src),
+        }
+      })
+      vi.stubGlobal('Audio', Ctor)
+      const { speakFn } = mockSpeechApi([{ lang: 'en-GB', name: 'UK' }])
+      mockUtterance()
+      speak('first', { src: 'audio/first.opus' })
+      speak('second', { src: 'audio/second.opus' })
+      // первый элемент прерывается вторым — его play() отклоняется позже
+      rejectHolder.reject?.(new Error('interrupted'))
+      await Promise.resolve()
+      expect(speakFn).not.toHaveBeenCalled() // «first» не озвучился TTS поверх «second»
+      expect(paused).toContain('audio/first.opus')
+    } finally {
+      vi.useRealTimers()
+    }
+  })
+
+  it('ревью M6#1: stopSpeak до отклонения play() не включает TTS', async () => {
+    const rejectHolder: { reject?: (e: Error) => void } = {}
+    const Ctor = vi.fn(function AudioLike(this: never, _src: string) {
+      return {
+        playbackRate: 1,
+        play: () =>
+          new Promise<void>((_resolve, reject) => {
+            rejectHolder.reject = reject
+          }),
+        pause: vi.fn(),
+      }
+    })
+    vi.stubGlobal('Audio', Ctor)
+    const { speakFn } = mockSpeechApi([{ lang: 'en-GB', name: 'UK' }])
+    mockUtterance()
+    speak('cancelled', { src: 'audio/x.opus' })
+    stopSpeak()
+    rejectHolder.reject?.(new Error('aborted'))
+    await Promise.resolve()
+    expect(speakFn).not.toHaveBeenCalled()
+  })
 })

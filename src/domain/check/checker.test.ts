@@ -205,6 +205,18 @@ describe('judgeVoice (specs/02 §4.8)', () => {
     expect(dropped.verdict).toBe('correct')
     const full = judgeVoice('give me the map', task(['Give me the map']))
     expect(full.verdict).toBe('correct')
+    // diff согласован с вердиктом: принятый ответ без красных missing-артиклей
+    const missing = dropped.diff.filter((t) => t.status === 'missing')
+    expect(missing).toEqual([])
+  })
+
+  it('speech_threshold из данных переопределяет базовый порог', () => {
+    // 5 из 6 слов = 0.83: дефолт 0.85 — retry, порог 0.8 из данных — correct
+    const ref = 'i want to go home now'
+    const strict = judgeVoice('want to go home now', task([ref]))
+    expect(strict.verdict).toBe('retry')
+    const lenient = judgeVoice('want to go home now', task([ref], { speechThreshold: 0.8 }))
+    expect(lenient.verdict).toBe('correct')
   })
 
   it('judge в режиме voice уходит в голосовую проверку', () => {

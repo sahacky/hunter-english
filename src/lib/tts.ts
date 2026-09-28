@@ -57,13 +57,16 @@ export function speak(text: string, options: SpeakOptions = {}): boolean {
   const rate = options.rate ?? 1
   stopSpeak()
   if (options.src) {
-    audioEl = new Audio(options.src)
-    audioEl.playbackRate = rate
-    const playback = audioEl.play()
+    const el = new Audio(options.src)
+    audioEl = el
+    el.playbackRate = rate
+    const playback = el.play()
     if (playback && typeof playback.catch === 'function') {
       playback.catch(() => {
-        // файл недоступен/автоплей заблокирован → пробуем TTS-фолбэк
+        // актуален ли ещё этот элемент (могли начать новое воспроизведение/отменить)
+        if (audioEl !== el) return
         audioEl = null
+        // pause()-во-загрузки даёт AbortError — это отмена, а не «файла нет»
         speakViaTts(text, rate)
       })
     }

@@ -43,6 +43,7 @@ function taskFor(
     trapLtId: trap?.lt_id ?? null,
     trapWrong: trap?.wrong_en ?? null,
     exactTypos: exercise.answer.typo === 'exact',
+    speechThreshold: exercise.answer.speech_threshold,
   }
 }
 
@@ -66,6 +67,7 @@ function AudioButtons({
   }
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
+      if (event.repeat || event.ctrlKey || event.metaKey || event.altKey) return
       if (event.target instanceof HTMLInputElement) return
       const key = event.key.toLowerCase()
       if (key === 'r') play(1)
@@ -559,6 +561,7 @@ export function VoiceExercise({
         finish(nextAttempts <= 1 ? 'correct' : 'correct_retry', nextAttempts)
       }
     } catch {
+      setAttempts((n) => n + 1)
       setFeedback(null)
     } finally {
       setListening(false)
@@ -724,7 +727,9 @@ export function FeedbackPlate({
         <p className="lesson-diff" lang="en">
           {result.diff.map((token, index) => (
             <span key={index} className={`lesson-diff-${token.status}`}>
-              {token.status === 'missing' ? `+${token.ref ?? ''}` : (token.word ?? '')}
+              {token.status === 'missing'
+                ? `+${token.word ?? token.ref ?? ''}`
+                : (token.word ?? '')}
               {token.status === 'typo' && token.ref ? ` → ${token.ref}` : ''}
             </span>
           ))}
