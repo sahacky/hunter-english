@@ -4,6 +4,7 @@ import { Layout } from './components/Layout'
 import Dashboard from './screens/Dashboard'
 import GatesScreen from './screens/GatesScreen'
 import LessonScreen from './screens/LessonScreen'
+import PhrasebookScreen, { PhrasebookSituationScreen } from './screens/PhrasebookScreen'
 import RanksScreen from './screens/RanksScreen'
 import SrsScreen from './screens/SrsScreen'
 
@@ -27,7 +28,8 @@ export default function App() {
         <Route path="ranks" element={<RanksScreen />} />
         <Route path="gates/:id?" element={<GatesScreen />} />
         <Route path="quotes" element={<Placeholder page="quotes" />} />
-        <Route path="phrasebook" element={<Placeholder page="phrasebook" />} />
+        <Route path="phrasebook" element={<PhrasebookScreen />} />
+        <Route path="phrasebook/:situation" element={<PhrasebookSituationScreen />} />
         <Route path="settings" element={<Placeholder page="settings" />} />
         <Route path="*" element={<Placeholder page="notFound" />} />
       </Route>

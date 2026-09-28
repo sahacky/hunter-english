@@ -167,5 +167,27 @@
     "retryWeak": "Retake weak sections",
     "sectionProgress": "{{section}} · section {{index}} of {{total}}",
     "totalFailHint": "Sections passed but the total is under 85% — retake the full exam after the cooldown."
+  },
+  "phrasebook": {
+    "title": "Phrasebook",
+    "locked": "chapters not ready yet",
+    "notFound": "No such situation in the phrasebook.",
+    "showAnswer": "Show the answer",
+    "back": "Back to situations",
+    "doneTitle": "Situation complete",
+    "doneText": "All dialogs of the situation are covered.",
+    "dialogProgress": "dialog {{current}} of {{total}}",
+    "situations": {
+      "smalltalk": "Small talk",
+      "emergency": "Emergencies",
+      "directions": "Directions",
+      "taxi": "Taxi and transport",
+      "shop": "Shopping",
+      "airport": "Airport",
+      "passport": "Passport control",
+      "hotel": "Hotel",
+      "restaurant": "Restaurant",
+      "pharmacy": "Pharmacy and doctor"
+    }
   }
 }

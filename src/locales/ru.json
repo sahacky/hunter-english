@@ -167,5 +167,27 @@
     "retryWeak": "Пересдать слабые секции",
     "sectionProgress": "{{section}} · секция {{index}} из {{total}}",
     "totalFailHint": "Секции сданы, но сумма ниже 85% — пересдаётся экзамен целиком после кулдауна."
+  },
+  "phrasebook": {
+    "title": "Разговорник",
+    "locked": "главы пока не готовы",
+    "notFound": "Такой ситуации нет в разговорнике.",
+    "showAnswer": "Показать ответ",
+    "back": "К списку ситуаций",
+    "doneTitle": "Ситуация пройдена",
+    "doneText": "Все диалоги ситуации разобраны.",
+    "dialogProgress": "диалог {{current}} из {{total}}",
+    "situations": {
+      "smalltalk": "Small talk",
+      "emergency": "Экстренные ситуации",
+      "directions": "Ориентирование",
+      "taxi": "Такси и транспорт",
+      "shop": "Магазин",
+      "airport": "Аэропорт",
+      "passport": "Паспортный контроль",
+      "hotel": "Отель",
+      "restaurant": "Ресторан",
+      "pharmacy": "Аптека и врач"
+    }
   }
 }

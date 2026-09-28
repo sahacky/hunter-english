@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "kind": "phrasebook",
+  "items": [
+    {
+      "id": "pb-emergency-01",
+      "rank": "E",
+      "topic": "emergency",
+      "situation_ru": "Я не понимаю / говорите медленнее",
+      "user_role": "traveler",
+      "lines": [
+        {
+          "role": "local",
+          "text_en": "Good afternoon. Do you need help?",
+          "translation_ru": "Добрый день. Вам помочь?"
+        },
+        {
+          "role": "traveler",
+          "text_en": "Sorry, I don't understand. Please speak slowly.",
+          "translation_ru": "Извините, я не понимаю. Пожалуйста, говорите медленнее.",
+          "accepted": [
+            "Sorry, I don't understand. Please speak slowly.",
+            "I don't understand. Please speak slowly."
+          ]
+        },
+        {
+          "role": "local",
+          "text_en": "Sure. Do you need help?",
+          "translation_ru": "Конечно. Вам помочь?"
+        },
+        {
+          "role": "traveler",
+          "text_en": "Yes, please. I don't speak English well.",
+          "translation_ru": "Да, пожалуйста. Я плохо говорю по-английски.",
+          "accepted": ["Yes, please. I don't speak English well."]
+        },
+        {
+          "role": "local",
+          "text_en": "No problem. I can help you.",
+          "translation_ru": "Без проблем. Я могу помочь."
+        }
+      ]
+    },
+    {
+      "id": "pb-emergency-02",
+      "rank": "E",
+      "topic": "emergency",
+      "situation_ru": "Экстренная ситуация: помощь и полиция",
+      "user_role": "traveler",
+      "lines": [
+        {
+          "role": "traveler",
+          "text_en": "Help me, please!",
+          "translation_ru": "Помогите мне, пожалуйста!",
+          "accepted": ["Help me, please!", "Help me!"]
+        },
+        {
+          "role": "local",
+          "text_en": "What is the problem?",
+          "translation_ru": "В чём проблема?"
+        },
+        {
+          "role": "traveler",
+          "text_en": "I am lost. Where is the police station?",
+          "translation_ru": "Я потерялся. Где полицейский участок?",
+          "accepted": [
+            "I am lost. Where is the police station?",
+            "I'm lost. Where is the police station?"
+          ]
+        },
+        {
+          "role": "local",
+          "text_en": "It is near the station. Follow me.",
+          "translation_ru": "Это рядом с вокзалом. Идите за мной."
+        },
+        {
+          "role": "traveler",
+          "text_en": "Thank you very much!",
+          "translation_ru": "Большое спасибо!",
+          "accepted": ["Thank you very much!", "Thanks a lot!"]
+        }
+      ]
+    }
+  ]
+}
