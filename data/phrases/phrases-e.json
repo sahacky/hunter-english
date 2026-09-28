@@ -6591,6 +6591,2206 @@
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0659.opus"
       }
+    },
+    {
+      "id": "ph-e-0660",
+      "text_en": "Do you work here?",
+      "translation_ru": "Ты здесь работаешь?",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["Do you work here?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0660.opus"
+      }
+    },
+    {
+      "id": "ph-e-0661",
+      "text_en": "Do you live in Moscow?",
+      "translation_ru": "Ты живёшь в Москве?",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["Do you live in Moscow?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0661.opus"
+      }
+    },
+    {
+      "id": "ph-e-0662",
+      "text_en": "Do you know him?",
+      "translation_ru": "Ты его знаешь?",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["Do you know him?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0662.opus"
+      }
+    },
+    {
+      "id": "ph-e-0663",
+      "text_en": "Do you like coffee?",
+      "translation_ru": "Ты любишь кофе?",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["Do you like coffee?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0663.opus"
+      }
+    },
+    {
+      "id": "ph-e-0664",
+      "text_en": "Do you want tea?",
+      "translation_ru": "Ты хочешь чай?",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["Do you want tea?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0664.opus"
+      }
+    },
+    {
+      "id": "ph-e-0665",
+      "text_en": "Do you speak English?",
+      "translation_ru": "Ты говоришь по-английски?",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["Do you speak English?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0665.opus"
+      }
+    },
+    {
+      "id": "ph-e-0666",
+      "text_en": "Do you understand me?",
+      "translation_ru": "Ты меня понимаешь?",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["Do you understand me?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0666.opus"
+      }
+    },
+    {
+      "id": "ph-e-0667",
+      "text_en": "Do you have a pen?",
+      "translation_ru": "У тебя есть ручка?",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["Do you have a pen?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0667.opus"
+      }
+    },
+    {
+      "id": "ph-e-0668",
+      "text_en": "Do you have time?",
+      "translation_ru": "У тебя есть время?",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["Do you have time?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0668.opus"
+      }
+    },
+    {
+      "id": "ph-e-0669",
+      "text_en": "Do you have children?",
+      "translation_ru": "У тебя есть дети?",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["Do you have children?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0669.opus"
+      }
+    },
+    {
+      "id": "ph-e-0670",
+      "text_en": "Do you like this city?",
+      "translation_ru": "Тебе нравится этот город?",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["Do you like this city?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0670.opus"
+      }
+    },
+    {
+      "id": "ph-e-0671",
+      "text_en": "Do you like music?",
+      "translation_ru": "Ты любишь музыку?",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["Do you like music?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0671.opus"
+      }
+    },
+    {
+      "id": "ph-e-0672",
+      "text_en": "Do you want to stay?",
+      "translation_ru": "Хочешь остаться?",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["Do you want to stay?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0672.opus"
+      }
+    },
+    {
+      "id": "ph-e-0673",
+      "text_en": "Do you want to go?",
+      "translation_ru": "Хочешь пойти?",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["Do you want to go?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0673.opus"
+      }
+    },
+    {
+      "id": "ph-e-0674",
+      "text_en": "Do you need help?",
+      "translation_ru": "Тебе нужна помощь?",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["Do you need help?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0674.opus"
+      }
+    },
+    {
+      "id": "ph-e-0675",
+      "text_en": "Do you need money?",
+      "translation_ru": "Тебе нужны деньги?",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["Do you need money?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0675.opus"
+      }
+    },
+    {
+      "id": "ph-e-0676",
+      "text_en": "Do I know you?",
+      "translation_ru": "Я тебя знаю?",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["Do I know you?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0676.opus"
+      }
+    },
+    {
+      "id": "ph-e-0677",
+      "text_en": "Do I work today?",
+      "translation_ru": "Я сегодня работаю?",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["Do I work today?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0677.opus"
+      }
+    },
+    {
+      "id": "ph-e-0678",
+      "text_en": "Do we need tickets?",
+      "translation_ru": "Нам нужны билеты?",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["Do we need tickets?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0678.opus"
+      }
+    },
+    {
+      "id": "ph-e-0679",
+      "text_en": "Do we have time?",
+      "translation_ru": "У нас есть время?",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["Do we have time?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0679.opus"
+      }
+    },
+    {
+      "id": "ph-e-0680",
+      "text_en": "Do they live here?",
+      "translation_ru": "Они живут здесь?",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["Do they live here?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0680.opus"
+      }
+    },
+    {
+      "id": "ph-e-0681",
+      "text_en": "Do they speak Russian?",
+      "translation_ru": "Они говорят по-русски?",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["Do they speak Russian?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0681.opus"
+      }
+    },
+    {
+      "id": "ph-e-0682",
+      "text_en": "Do they know the answer?",
+      "translation_ru": "Они знают ответ?",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["Do they know the answer?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0682.opus"
+      }
+    },
+    {
+      "id": "ph-e-0683",
+      "text_en": "Yes, I do.",
+      "translation_ru": "Да.",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["Yes, I do."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0683.opus"
+      }
+    },
+    {
+      "id": "ph-e-0684",
+      "text_en": "No, I don't.",
+      "translation_ru": "Нет.",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["No, I don't."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0684.opus"
+      }
+    },
+    {
+      "id": "ph-e-0685",
+      "text_en": "Yes, I work here.",
+      "translation_ru": "Да, я здесь работаю.",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["Yes, I work here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0685.opus"
+      }
+    },
+    {
+      "id": "ph-e-0686",
+      "text_en": "No, I don't work today.",
+      "translation_ru": "Нет, я сегодня не работаю.",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["No, I don't work today."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0686.opus"
+      }
+    },
+    {
+      "id": "ph-e-0687",
+      "text_en": "Yes, I like it.",
+      "translation_ru": "Да, мне нравится.",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["Yes, I like it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0687.opus"
+      }
+    },
+    {
+      "id": "ph-e-0688",
+      "text_en": "No, I don't like coffee.",
+      "translation_ru": "Нет, я не люблю кофе.",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["No, I don't like coffee."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0688.opus"
+      }
+    },
+    {
+      "id": "ph-e-0689",
+      "text_en": "Yes, they do.",
+      "translation_ru": "Да.",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["Yes, they do."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0689.opus"
+      }
+    },
+    {
+      "id": "ph-e-0690",
+      "text_en": "No, they don't.",
+      "translation_ru": "Нет.",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["No, they don't."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0690.opus"
+      }
+    },
+    {
+      "id": "ph-e-0691",
+      "text_en": "Do you open on Sunday?",
+      "translation_ru": "Вы работаете в воскресенье?",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["Do you open on Sunday?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0691.opus"
+      }
+    },
+    {
+      "id": "ph-e-0692",
+      "text_en": "Do you accept cards?",
+      "translation_ru": "Вы принимаете карты?",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["Do you accept cards?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0692.opus"
+      }
+    },
+    {
+      "id": "ph-e-0693",
+      "text_en": "Do you know this place?",
+      "translation_ru": "Вы знаете это место?",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["Do you know this place?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0693.opus"
+      }
+    },
+    {
+      "id": "ph-e-0694",
+      "text_en": "Where do you live?",
+      "translation_ru": "Где ты живёшь?",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["Where do you live?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0694.opus"
+      }
+    },
+    {
+      "id": "ph-e-0695",
+      "text_en": "What do you want?",
+      "translation_ru": "Что ты хочешь?",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["What do you want?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0695.opus"
+      }
+    },
+    {
+      "id": "ph-e-0696",
+      "text_en": "Why do you ask?",
+      "translation_ru": "Почему ты спрашиваешь?",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["Why do you ask?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0696.opus"
+      }
+    },
+    {
+      "id": "ph-e-0697",
+      "text_en": "How do you know?",
+      "translation_ru": "Откуда ты знаешь?",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["How do you know?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0697.opus"
+      }
+    },
+    {
+      "id": "ph-e-0698",
+      "text_en": "Do you like it here?",
+      "translation_ru": "Тебе здесь нравится?",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["Do you like it here?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0698.opus"
+      }
+    },
+    {
+      "id": "ph-e-0699",
+      "text_en": "Do you remember me?",
+      "translation_ru": "Ты меня помнишь?",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["Do you remember me?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0699.opus"
+      }
+    },
+    {
+      "id": "ph-e-0700",
+      "text_en": "Do you believe me?",
+      "translation_ru": "Ты мне веришь?",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["Do you believe me?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0700.opus"
+      }
+    },
+    {
+      "id": "ph-e-0701",
+      "text_en": "Don't you understand?",
+      "translation_ru": "Разве ты не понимаешь?",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["Don't you understand?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0701.opus"
+      }
+    },
+    {
+      "id": "ph-e-0702",
+      "text_en": "Do you want coffee or tea?",
+      "translation_ru": "Ты хочешь кофе или чай?",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["Do you want coffee or tea?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0702.opus"
+      }
+    },
+    {
+      "id": "ph-e-0703",
+      "text_en": "What do you do on Sunday?",
+      "translation_ru": "Что ты делаешь в воскресенье?",
+      "grammar_point_id": "gp-e-16",
+      "variants": ["What do you do on Sunday?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0703.opus"
+      }
+    },
+    {
+      "id": "ph-e-0704",
+      "text_en": "Does he work here?",
+      "translation_ru": "Он здесь работает?",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["Does he work here?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0704.opus"
+      }
+    },
+    {
+      "id": "ph-e-0705",
+      "text_en": "Does he live in Moscow?",
+      "translation_ru": "Он живёт в Москве?",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["Does he live in Moscow?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0705.opus"
+      }
+    },
+    {
+      "id": "ph-e-0706",
+      "text_en": "Does he know you?",
+      "translation_ru": "Он тебя знает?",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["Does he know you?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0706.opus"
+      }
+    },
+    {
+      "id": "ph-e-0707",
+      "text_en": "Does he like coffee?",
+      "translation_ru": "Он любит кофе?",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["Does he like coffee?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0707.opus"
+      }
+    },
+    {
+      "id": "ph-e-0708",
+      "text_en": "Does he speak English?",
+      "translation_ru": "Он говорит по-английски?",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["Does he speak English?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0708.opus"
+      }
+    },
+    {
+      "id": "ph-e-0709",
+      "text_en": "Does she work today?",
+      "translation_ru": "Она сегодня работает?",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["Does she work today?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0709.opus"
+      }
+    },
+    {
+      "id": "ph-e-0710",
+      "text_en": "Does she live here?",
+      "translation_ru": "Она живёт здесь?",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["Does she live here?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0710.opus"
+      }
+    },
+    {
+      "id": "ph-e-0711",
+      "text_en": "Does she know the answer?",
+      "translation_ru": "Она знает ответ?",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["Does she know the answer?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0711.opus"
+      }
+    },
+    {
+      "id": "ph-e-0712",
+      "text_en": "Does she like music?",
+      "translation_ru": "Она любит музыку?",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["Does she like music?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0712.opus"
+      }
+    },
+    {
+      "id": "ph-e-0713",
+      "text_en": "Does she teach English?",
+      "translation_ru": "Она преподаёт английский?",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["Does she teach English?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0713.opus"
+      }
+    },
+    {
+      "id": "ph-e-0714",
+      "text_en": "Does it work?",
+      "translation_ru": "Это работает?",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["Does it work?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0714.opus"
+      }
+    },
+    {
+      "id": "ph-e-0715",
+      "text_en": "Does it open on Sunday?",
+      "translation_ru": "Он открывается в воскресенье?",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["Does it open on Sunday?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0715.opus"
+      }
+    },
+    {
+      "id": "ph-e-0716",
+      "text_en": "Does it cost much?",
+      "translation_ru": "Это дорого?",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["Does it cost much?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0716.opus"
+      }
+    },
+    {
+      "id": "ph-e-0717",
+      "text_en": "Does the bus stop here?",
+      "translation_ru": "Автобус здесь останавливается?",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["Does the bus stop here?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0717.opus"
+      }
+    },
+    {
+      "id": "ph-e-0718",
+      "text_en": "Does the shop close at six?",
+      "translation_ru": "Магазин закрывается в шесть?",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["Does the shop close at six?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0718.opus"
+      }
+    },
+    {
+      "id": "ph-e-0719",
+      "text_en": "Does your father work?",
+      "translation_ru": "Твой отец работает?",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["Does your father work?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0719.opus"
+      }
+    },
+    {
+      "id": "ph-e-0720",
+      "text_en": "Does your mother drive?",
+      "translation_ru": "Твоя мама водит машину?",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["Does your mother drive?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0720.opus"
+      }
+    },
+    {
+      "id": "ph-e-0721",
+      "text_en": "Does your friend speak English?",
+      "translation_ru": "Твой друг говорит по-английски?",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["Does your friend speak English?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0721.opus"
+      }
+    },
+    {
+      "id": "ph-e-0722",
+      "text_en": "Does Anna like tea?",
+      "translation_ru": "Анна любит чай?",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["Does Anna like tea?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0722.opus"
+      }
+    },
+    {
+      "id": "ph-e-0723",
+      "text_en": "Does Ivan play football?",
+      "translation_ru": "Иван играет в футбол?",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["Does Ivan play football?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0723.opus"
+      }
+    },
+    {
+      "id": "ph-e-0724",
+      "text_en": "Yes, he does.",
+      "translation_ru": "Да.",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["Yes, he does."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0724.opus"
+      }
+    },
+    {
+      "id": "ph-e-0725",
+      "text_en": "No, he doesn't.",
+      "translation_ru": "Нет.",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["No, he doesn't."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0725.opus"
+      }
+    },
+    {
+      "id": "ph-e-0726",
+      "text_en": "Yes, she does.",
+      "translation_ru": "Да.",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["Yes, she does."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0726.opus"
+      }
+    },
+    {
+      "id": "ph-e-0727",
+      "text_en": "No, she doesn't.",
+      "translation_ru": "Нет.",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["No, she doesn't."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0727.opus"
+      }
+    },
+    {
+      "id": "ph-e-0728",
+      "text_en": "Yes, it does.",
+      "translation_ru": "Да.",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["Yes, it does."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0728.opus"
+      }
+    },
+    {
+      "id": "ph-e-0729",
+      "text_en": "No, it doesn't.",
+      "translation_ru": "Нет.",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["No, it doesn't."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0729.opus"
+      }
+    },
+    {
+      "id": "ph-e-0730",
+      "text_en": "Yes, he works here.",
+      "translation_ru": "Да, он здесь работает.",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["Yes, he works here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0730.opus"
+      }
+    },
+    {
+      "id": "ph-e-0731",
+      "text_en": "No, she doesn't work today.",
+      "translation_ru": "Нет, она сегодня не работает.",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["No, she doesn't work today."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0731.opus"
+      }
+    },
+    {
+      "id": "ph-e-0732",
+      "text_en": "What does he do?",
+      "translation_ru": "Чем он занимается?",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["What does he do?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0732.opus"
+      }
+    },
+    {
+      "id": "ph-e-0733",
+      "text_en": "What does she do?",
+      "translation_ru": "Чем она занимается?",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["What does she do?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0733.opus"
+      }
+    },
+    {
+      "id": "ph-e-0734",
+      "text_en": "Where does he live?",
+      "translation_ru": "Где он живёт?",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["Where does he live?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0734.opus"
+      }
+    },
+    {
+      "id": "ph-e-0735",
+      "text_en": "Where does she work?",
+      "translation_ru": "Где она работает?",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["Where does she work?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0735.opus"
+      }
+    },
+    {
+      "id": "ph-e-0736",
+      "text_en": "What does it mean?",
+      "translation_ru": "Что это значит?",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["What does it mean?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0736.opus"
+      }
+    },
+    {
+      "id": "ph-e-0737",
+      "text_en": "When does the film start?",
+      "translation_ru": "Когда начинается фильм?",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["When does the film start?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0737.opus"
+      }
+    },
+    {
+      "id": "ph-e-0738",
+      "text_en": "When does the shop open?",
+      "translation_ru": "Когда открывается магазин?",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["When does the shop open?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0738.opus"
+      }
+    },
+    {
+      "id": "ph-e-0739",
+      "text_en": "How does it work?",
+      "translation_ru": "Как это работает?",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["How does it work?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0739.opus"
+      }
+    },
+    {
+      "id": "ph-e-0740",
+      "text_en": "Why does he ask?",
+      "translation_ru": "Почему он спрашивает?",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["Why does he ask?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0740.opus"
+      }
+    },
+    {
+      "id": "ph-e-0741",
+      "text_en": "Does she like this book?",
+      "translation_ru": "Ей нравится эта книга?",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["Does she like this book?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0741.opus"
+      }
+    },
+    {
+      "id": "ph-e-0742",
+      "text_en": "Does he want coffee?",
+      "translation_ru": "Он хочет кофе?",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["Does he want coffee?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0742.opus"
+      }
+    },
+    {
+      "id": "ph-e-0743",
+      "text_en": "Does your sister study English?",
+      "translation_ru": "Твоя сестра учит английский?",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["Does your sister study English?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0743.opus"
+      }
+    },
+    {
+      "id": "ph-e-0744",
+      "text_en": "Does he always get up early?",
+      "translation_ru": "Он всегда встаёт рано?",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["Does he always get up early?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0744.opus"
+      }
+    },
+    {
+      "id": "ph-e-0745",
+      "text_en": "Does she often call you?",
+      "translation_ru": "Она часто тебе звонит?",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["Does she often call you?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0745.opus"
+      }
+    },
+    {
+      "id": "ph-e-0746",
+      "text_en": "What time does the lesson start?",
+      "translation_ru": "Во сколько начинается урок?",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["What time does the lesson start?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0746.opus"
+      }
+    },
+    {
+      "id": "ph-e-0747",
+      "text_en": "Does he know about it?",
+      "translation_ru": "Он знает об этом?",
+      "grammar_point_id": "gp-e-17",
+      "variants": ["Does he know about it?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0747.opus"
+      }
+    },
+    {
+      "id": "ph-e-0748",
+      "text_en": "Where do you work?",
+      "translation_ru": "Где ты работаешь?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["Where do you work?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0748.opus"
+      }
+    },
+    {
+      "id": "ph-e-0749",
+      "text_en": "When do you work?",
+      "translation_ru": "Когда ты работаешь?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["When do you work?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0749.opus"
+      }
+    },
+    {
+      "id": "ph-e-0750",
+      "text_en": "Why do you work so much?",
+      "translation_ru": "Почему ты так много работаешь?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["Why do you work so much?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0750.opus"
+      }
+    },
+    {
+      "id": "ph-e-0751",
+      "text_en": "How do you go to work?",
+      "translation_ru": "Как ты добираешься на работу?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["How do you go to work?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0751.opus"
+      }
+    },
+    {
+      "id": "ph-e-0752",
+      "text_en": "Where do you live?",
+      "translation_ru": "Где ты живёшь?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["Where do you live?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0752.opus"
+      }
+    },
+    {
+      "id": "ph-e-0753",
+      "text_en": "When do you get up?",
+      "translation_ru": "Когда ты встаёшь?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["When do you get up?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0753.opus"
+      }
+    },
+    {
+      "id": "ph-e-0754",
+      "text_en": "Why do you study English?",
+      "translation_ru": "Почему ты учишь английский?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["Why do you study English?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0754.opus"
+      }
+    },
+    {
+      "id": "ph-e-0755",
+      "text_en": "How do you learn words?",
+      "translation_ru": "Как ты учишь слова?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["How do you learn words?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0755.opus"
+      }
+    },
+    {
+      "id": "ph-e-0756",
+      "text_en": "What do you do?",
+      "translation_ru": "Чем ты занимаешься?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["What do you do?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0756.opus"
+      }
+    },
+    {
+      "id": "ph-e-0757",
+      "text_en": "What do you do in the evening?",
+      "translation_ru": "Что ты делаешь вечером?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["What do you do in the evening?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0757.opus"
+      }
+    },
+    {
+      "id": "ph-e-0758",
+      "text_en": "What do you do on Monday?",
+      "translation_ru": "Что ты делаешь в понедельник?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["What do you do on Monday?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0758.opus"
+      }
+    },
+    {
+      "id": "ph-e-0759",
+      "text_en": "Where do they live?",
+      "translation_ru": "Где они живут?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["Where do they live?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0759.opus"
+      }
+    },
+    {
+      "id": "ph-e-0760",
+      "text_en": "Where does he work?",
+      "translation_ru": "Где он работает?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["Where does he work?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0760.opus"
+      }
+    },
+    {
+      "id": "ph-e-0761",
+      "text_en": "When does the train leave?",
+      "translation_ru": "Когда отходит поезд?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["When does the train leave?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0761.opus"
+      }
+    },
+    {
+      "id": "ph-e-0762",
+      "text_en": "When does the lesson end?",
+      "translation_ru": "Когда заканчивается урок?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["When does the lesson end?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0762.opus"
+      }
+    },
+    {
+      "id": "ph-e-0763",
+      "text_en": "Why do you like it?",
+      "translation_ru": "Почему тебе это нравится?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["Why do you like it?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0763.opus"
+      }
+    },
+    {
+      "id": "ph-e-0764",
+      "text_en": "Why does she ask?",
+      "translation_ru": "Почему она спрашивает?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["Why does she ask?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0764.opus"
+      }
+    },
+    {
+      "id": "ph-e-0765",
+      "text_en": "How do you say it in English?",
+      "translation_ru": "Как это сказать по-английски?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["How do you say it in English?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0765.opus"
+      }
+    },
+    {
+      "id": "ph-e-0766",
+      "text_en": "How do you spell it?",
+      "translation_ru": "Как это пишется?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["How do you spell it?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0766.opus"
+      }
+    },
+    {
+      "id": "ph-e-0767",
+      "text_en": "How much does it cost?",
+      "translation_ru": "Сколько это стоит?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["How much does it cost?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0767.opus"
+      }
+    },
+    {
+      "id": "ph-e-0768",
+      "text_en": "What time is it?",
+      "translation_ru": "Сколько времени?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["What time is it?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0768.opus"
+      }
+    },
+    {
+      "id": "ph-e-0769",
+      "text_en": "What time do we start?",
+      "translation_ru": "Во сколько мы начинаем?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["What time do we start?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0769.opus"
+      }
+    },
+    {
+      "id": "ph-e-0770",
+      "text_en": "Where do I buy tickets?",
+      "translation_ru": "Где мне купить билеты?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["Where do I buy tickets?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0770.opus"
+      }
+    },
+    {
+      "id": "ph-e-0771",
+      "text_en": "Where do we go now?",
+      "translation_ru": "Куда мы теперь идём?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["Where do we go now?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0771.opus"
+      }
+    },
+    {
+      "id": "ph-e-0772",
+      "text_en": "How long does it take?",
+      "translation_ru": "Сколько это занимает?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["How long does it take?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0772.opus"
+      }
+    },
+    {
+      "id": "ph-e-0773",
+      "text_en": "What do you mean?",
+      "translation_ru": "Что ты имеешь в виду?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["What do you mean?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0773.opus"
+      }
+    },
+    {
+      "id": "ph-e-0774",
+      "text_en": "Where do you come from?",
+      "translation_ru": "Откуда ты родом?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["Where do you come from?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0774.opus"
+      }
+    },
+    {
+      "id": "ph-e-0775",
+      "text_en": "What does he want?",
+      "translation_ru": "Что он хочет?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["What does he want?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0775.opus"
+      }
+    },
+    {
+      "id": "ph-e-0776",
+      "text_en": "Why don't you rest?",
+      "translation_ru": "Почему ты не отдыхаешь?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["Why don't you rest?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0776.opus"
+      }
+    },
+    {
+      "id": "ph-e-0777",
+      "text_en": "Where can I eat?",
+      "translation_ru": "Где можно поесть?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["Where can I eat?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0777.opus"
+      }
+    },
+    {
+      "id": "ph-e-0778",
+      "text_en": "How do I get to the station?",
+      "translation_ru": "Как мне добраться до вокзала?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["How do I get to the station?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0778.opus"
+      }
+    },
+    {
+      "id": "ph-e-0779",
+      "text_en": "Where is the bus stop?",
+      "translation_ru": "Где остановка автобуса?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["Where is the bus stop?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0779.opus"
+      }
+    },
+    {
+      "id": "ph-e-0780",
+      "text_en": "When do shops open?",
+      "translation_ru": "Когда открываются магазины?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["When do shops open?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0780.opus"
+      }
+    },
+    {
+      "id": "ph-e-0781",
+      "text_en": "Who do you work with?",
+      "translation_ru": "С кем ты работаешь?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["Who do you work with?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0781.opus"
+      }
+    },
+    {
+      "id": "ph-e-0782",
+      "text_en": "What do you usually eat?",
+      "translation_ru": "Что ты обычно ешь?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["What do you usually eat?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0782.opus"
+      }
+    },
+    {
+      "id": "ph-e-0783",
+      "text_en": "When do you have lunch?",
+      "translation_ru": "Когда ты обедаешь?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["When do you have lunch?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0783.opus"
+      }
+    },
+    {
+      "id": "ph-e-0784",
+      "text_en": "Why do they live here?",
+      "translation_ru": "Почему они живут здесь?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["Why do they live here?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0784.opus"
+      }
+    },
+    {
+      "id": "ph-e-0785",
+      "text_en": "How often do you travel?",
+      "translation_ru": "Как часто ты путешествуешь?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["How often do you travel?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0785.opus"
+      }
+    },
+    {
+      "id": "ph-e-0786",
+      "text_en": "What do your parents do?",
+      "translation_ru": "Чем занимаются твои родители?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["What do your parents do?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0786.opus"
+      }
+    },
+    {
+      "id": "ph-e-0787",
+      "text_en": "Where does your family live?",
+      "translation_ru": "Где живёт твоя семья?",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["Where does your family live?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0787.opus"
+      }
+    },
+    {
+      "id": "ph-e-0788",
+      "text_en": "I work on Monday, Tuesday and Wednesday.",
+      "translation_ru": "Я работаю в понедельник, вторник и среду.",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["I work on Monday, Tuesday and Wednesday."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0788.opus"
+      }
+    },
+    {
+      "id": "ph-e-0789",
+      "text_en": "In January and February it is cold.",
+      "translation_ru": "В январе и феврале холодно.",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["In January and February it is cold."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0789.opus"
+      }
+    },
+    {
+      "id": "ph-e-0790",
+      "text_en": "My birthday is in April.",
+      "translation_ru": "Мой день рождения в апреле.",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["My birthday is in April."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0790.opus"
+      }
+    },
+    {
+      "id": "ph-e-0791",
+      "text_en": "On Friday I rest.",
+      "translation_ru": "В пятницу я отдыхаю.",
+      "grammar_point_id": "gp-e-18",
+      "variants": ["On Friday I rest."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0791.opus"
+      }
+    },
+    {
+      "id": "ph-e-0792",
+      "text_en": "I want a coffee, please.",
+      "translation_ru": "Кофе, пожалуйста.",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["I want a coffee, please."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0792.opus"
+      }
+    },
+    {
+      "id": "ph-e-0793",
+      "text_en": "I want tea.",
+      "translation_ru": "Я хочу чай.",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["I want tea."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0793.opus"
+      }
+    },
+    {
+      "id": "ph-e-0794",
+      "text_en": "I want water.",
+      "translation_ru": "Я хочу воды.",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["I want water."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0794.opus"
+      }
+    },
+    {
+      "id": "ph-e-0795",
+      "text_en": "I want to eat.",
+      "translation_ru": "Я хочу есть.",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["I want to eat."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0795.opus"
+      }
+    },
+    {
+      "id": "ph-e-0796",
+      "text_en": "I want to sleep.",
+      "translation_ru": "Я хочу спать.",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["I want to sleep."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0796.opus"
+      }
+    },
+    {
+      "id": "ph-e-0797",
+      "text_en": "I want to stay here.",
+      "translation_ru": "Я хочу остаться здесь.",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["I want to stay here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0797.opus"
+      }
+    },
+    {
+      "id": "ph-e-0798",
+      "text_en": "I want to go home.",
+      "translation_ru": "Я хочу домой.",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["I want to go home."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0798.opus"
+      }
+    },
+    {
+      "id": "ph-e-0799",
+      "text_en": "I want to learn English.",
+      "translation_ru": "Я хочу выучить английский.",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["I want to learn English."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0799.opus"
+      }
+    },
+    {
+      "id": "ph-e-0800",
+      "text_en": "I want to travel.",
+      "translation_ru": "Я хочу путешествовать.",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["I want to travel."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0800.opus"
+      }
+    },
+    {
+      "id": "ph-e-0801",
+      "text_en": "I want to help you.",
+      "translation_ru": "Я хочу помочь тебе.",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["I want to help you."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0801.opus"
+      }
+    },
+    {
+      "id": "ph-e-0802",
+      "text_en": "I like coffee.",
+      "translation_ru": "Я люблю кофе.",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["I like coffee."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0802.opus"
+      }
+    },
+    {
+      "id": "ph-e-0803",
+      "text_en": "I like tea with milk.",
+      "translation_ru": "Я люблю чай с молоком.",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["I like tea with milk."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0803.opus"
+      }
+    },
+    {
+      "id": "ph-e-0804",
+      "text_en": "I like pizza.",
+      "translation_ru": "Я люблю пиццу.",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["I like pizza."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0804.opus"
+      }
+    },
+    {
+      "id": "ph-e-0805",
+      "text_en": "I like fish.",
+      "translation_ru": "Я люблю рыбу.",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["I like fish."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0805.opus"
+      }
+    },
+    {
+      "id": "ph-e-0806",
+      "text_en": "I like apples.",
+      "translation_ru": "Я люблю яблоки.",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["I like apples."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0806.opus"
+      }
+    },
+    {
+      "id": "ph-e-0807",
+      "text_en": "I need a ticket.",
+      "translation_ru": "Мне нужен билет.",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["I need a ticket."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0807.opus"
+      }
+    },
+    {
+      "id": "ph-e-0808",
+      "text_en": "I need a map.",
+      "translation_ru": "Мне нужна карта.",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["I need a map."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0808.opus"
+      }
+    },
+    {
+      "id": "ph-e-0809",
+      "text_en": "I need a room.",
+      "translation_ru": "Мне нужен номер.",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["I need a room."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0809.opus"
+      }
+    },
+    {
+      "id": "ph-e-0810",
+      "text_en": "I need a doctor.",
+      "translation_ru": "Мне нужен врач.",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["I need a doctor."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0810.opus"
+      }
+    },
+    {
+      "id": "ph-e-0811",
+      "text_en": "I need to go.",
+      "translation_ru": "Мне нужно идти.",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["I need to go."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0811.opus"
+      }
+    },
+    {
+      "id": "ph-e-0812",
+      "text_en": "I need to work.",
+      "translation_ru": "Мне нужно работать.",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["I need to work."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0812.opus"
+      }
+    },
+    {
+      "id": "ph-e-0813",
+      "text_en": "I need to rest.",
+      "translation_ru": "Мне нужно отдохнуть.",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["I need to rest."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0813.opus"
+      }
+    },
+    {
+      "id": "ph-e-0814",
+      "text_en": "I would like a coffee, please.",
+      "translation_ru": "Я бы хотел кофе, пожалуйста.",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["I would like a coffee, please."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0814.opus"
+      }
+    },
+    {
+      "id": "ph-e-0815",
+      "text_en": "I'd like a tea, please.",
+      "translation_ru": "Чаю, пожалуйста.",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["I'd like a tea, please."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0815.opus"
+      }
+    },
+    {
+      "id": "ph-e-0816",
+      "text_en": "I'd like a room for two nights.",
+      "translation_ru": "Номер на две ночи, пожалуйста.",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["I'd like a room for two nights."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0816.opus"
+      }
+    },
+    {
+      "id": "ph-e-0817",
+      "text_en": "I'd like a table for two.",
+      "translation_ru": "Столик на двоих, пожалуйста.",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["I'd like a table for two."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0817.opus"
+      }
+    },
+    {
+      "id": "ph-e-0818",
+      "text_en": "I'd like the bill, please.",
+      "translation_ru": "Счёт, пожалуйста.",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["I'd like the bill, please."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0818.opus"
+      }
+    },
+    {
+      "id": "ph-e-0819",
+      "text_en": "I'd like to book a ticket.",
+      "translation_ru": "Я бы хотел забронировать билет.",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["I'd like to book a ticket."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0819.opus"
+      }
+    },
+    {
+      "id": "ph-e-0820",
+      "text_en": "Do you want coffee or tea?",
+      "translation_ru": "Вы хотите кофе или чай?",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["Do you want coffee or tea?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0820.opus"
+      }
+    },
+    {
+      "id": "ph-e-0821",
+      "text_en": "What do you want to eat?",
+      "translation_ru": "Что ты хочешь съесть?",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["What do you want to eat?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0821.opus"
+      }
+    },
+    {
+      "id": "ph-e-0822",
+      "text_en": "What do you want to drink?",
+      "translation_ru": "Что ты хочешь выпить?",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["What do you want to drink?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0822.opus"
+      }
+    },
+    {
+      "id": "ph-e-0823",
+      "text_en": "Do you like fish?",
+      "translation_ru": "Ты любишь рыбу?",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["Do you like fish?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0823.opus"
+      }
+    },
+    {
+      "id": "ph-e-0824",
+      "text_en": "Do you like English food?",
+      "translation_ru": "Тебе нравится английская еда?",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["Do you like English food?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0824.opus"
+      }
+    },
+    {
+      "id": "ph-e-0825",
+      "text_en": "I don't want money.",
+      "translation_ru": "Мне не нужны деньги.",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["I don't want money."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0825.opus"
+      }
+    },
+    {
+      "id": "ph-e-0826",
+      "text_en": "I don't want to go.",
+      "translation_ru": "Я не хочу идти.",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["I don't want to go."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0826.opus"
+      }
+    },
+    {
+      "id": "ph-e-0827",
+      "text_en": "I don't need help.",
+      "translation_ru": "Мне не нужна помощь.",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["I don't need help."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0827.opus"
+      }
+    },
+    {
+      "id": "ph-e-0828",
+      "text_en": "He wants to stay.",
+      "translation_ru": "Он хочет остаться.",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["He wants to stay."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0828.opus"
+      }
+    },
+    {
+      "id": "ph-e-0829",
+      "text_en": "She wants tea.",
+      "translation_ru": "Она хочет чай.",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["She wants tea."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0829.opus"
+      }
+    },
+    {
+      "id": "ph-e-0830",
+      "text_en": "We want two coffees.",
+      "translation_ru": "Мы хотим два кофе.",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["We want two coffees."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0830.opus"
+      }
+    },
+    {
+      "id": "ph-e-0831",
+      "text_en": "They need a plan.",
+      "translation_ru": "Им нужен план.",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["They need a plan."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0831.opus"
+      }
+    },
+    {
+      "id": "ph-e-0832",
+      "text_en": "I want to find my friend.",
+      "translation_ru": "Я хочу найти своего друга.",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["I want to find my friend."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0832.opus"
+      }
+    },
+    {
+      "id": "ph-e-0833",
+      "text_en": "I want to hear it.",
+      "translation_ru": "Я хочу это услышать.",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["I want to hear it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0833.opus"
+      }
+    },
+    {
+      "id": "ph-e-0834",
+      "text_en": "I like it very much.",
+      "translation_ru": "Мне это очень нравится.",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["I like it very much."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0834.opus"
+      }
+    },
+    {
+      "id": "ph-e-0835",
+      "text_en": "I need you.",
+      "translation_ru": "Ты мне нужен.",
+      "grammar_point_id": "gp-e-19",
+      "variants": ["I need you."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0835.opus"
+      }
+    },
+    {
+      "id": "ph-e-0836",
+      "text_en": "What do you do and where do you work?",
+      "translation_ru": "Чем ты занимаешься и где работаешь?",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["What do you do and where do you work?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0836.opus"
+      }
+    },
+    {
+      "id": "ph-e-0837",
+      "text_en": "I don't work. I'm a student.",
+      "translation_ru": "Я не работаю. Я студент.",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["I don't work. I'm a student."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0837.opus"
+      }
+    },
+    {
+      "id": "ph-e-0838",
+      "text_en": "Does he want coffee? — No, he doesn't.",
+      "translation_ru": "Он хочет кофе? — Нет.",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["Does he want coffee? — No, he doesn't."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0838.opus"
+      }
+    },
+    {
+      "id": "ph-e-0839",
+      "text_en": "Do they live here? — Yes, they do.",
+      "translation_ru": "Они живут здесь? — Да.",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["Do they live here? — Yes, they do."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0839.opus"
+      }
+    },
+    {
+      "id": "ph-e-0840",
+      "text_en": "I'd like a coffee and my friend'd like a tea.",
+      "translation_ru": "Мне кофе, а моему другу чай.",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["I'd like a coffee and my friend'd like a tea."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0840.opus"
+      }
+    },
+    {
+      "id": "ph-e-0841",
+      "text_en": "What does she want?",
+      "translation_ru": "Что она хочет?",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["What does she want?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0841.opus"
+      }
+    },
+    {
+      "id": "ph-e-0842",
+      "text_en": "Where do your parents live?",
+      "translation_ru": "Где живут твои родители?",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["Where do your parents live?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0842.opus"
+      }
+    },
+    {
+      "id": "ph-e-0843",
+      "text_en": "When do you get up on Sunday?",
+      "translation_ru": "Во сколько ты встаёшь в воскресенье?",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["When do you get up on Sunday?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0843.opus"
+      }
+    },
+    {
+      "id": "ph-e-0844",
+      "text_en": "Why do you need it?",
+      "translation_ru": "Зачем тебе это?",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["Why do you need it?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0844.opus"
+      }
+    },
+    {
+      "id": "ph-e-0845",
+      "text_en": "How do you say it in English?",
+      "translation_ru": "Как это по-английски?",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["How do you say it in English?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0845.opus"
+      }
+    },
+    {
+      "id": "ph-e-0846",
+      "text_en": "Do you like winter or summer?",
+      "translation_ru": "Ты любишь зиму или лето?",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["Do you like winter or summer?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0846.opus"
+      }
+    },
+    {
+      "id": "ph-e-0847",
+      "text_en": "I want to eat something.",
+      "translation_ru": "Я хочу что-нибудь поесть.",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["I want to eat something."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0847.opus"
+      }
+    },
+    {
+      "id": "ph-e-0848",
+      "text_en": "I need to buy a ticket.",
+      "translation_ru": "Мне нужно купить билет.",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["I need to buy a ticket."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0848.opus"
+      }
+    },
+    {
+      "id": "ph-e-0849",
+      "text_en": "I don't want to get up early.",
+      "translation_ru": "Я не хочу вставать рано.",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["I don't want to get up early."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0849.opus"
+      }
+    },
+    {
+      "id": "ph-e-0850",
+      "text_en": "Do you understand the question?",
+      "translation_ru": "Ты понимаешь вопрос?",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["Do you understand the question?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0850.opus"
+      }
+    },
+    {
+      "id": "ph-e-0851",
+      "text_en": "Yes, I understand.",
+      "translation_ru": "Да, понимаю.",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["Yes, I understand."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0851.opus"
+      }
+    },
+    {
+      "id": "ph-e-0852",
+      "text_en": "No, I don't understand.",
+      "translation_ru": "Нет, не понимаю.",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["No, I don't understand."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0852.opus"
+      }
+    },
+    {
+      "id": "ph-e-0853",
+      "text_en": "What do you usually have for breakfast?",
+      "translation_ru": "Что ты обычно ешь на завтрак?",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["What do you usually have for breakfast?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0853.opus"
+      }
+    },
+    {
+      "id": "ph-e-0854",
+      "text_en": "I usually have tea for breakfast.",
+      "translation_ru": "Я обычно пью чай на завтрак.",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["I usually have tea for breakfast."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0854.opus"
+      }
+    },
+    {
+      "id": "ph-e-0855",
+      "text_en": "Where do you usually go on holiday?",
+      "translation_ru": "Куда ты обычно ездишь в отпуск?",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["Where do you usually go on holiday?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0855.opus"
+      }
+    },
+    {
+      "id": "ph-e-0856",
+      "text_en": "John's car is new.",
+      "translation_ru": "Машина Джона новая.",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["John's car is new."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0856.opus"
+      }
+    },
+    {
+      "id": "ph-e-0857",
+      "text_en": "Anna's phone doesn't work.",
+      "translation_ru": "Телефон Анны не работает.",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["Anna's phone doesn't work."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0857.opus"
+      }
+    },
+    {
+      "id": "ph-e-0858",
+      "text_en": "My friend's birthday is in May.",
+      "translation_ru": "День рождения моего друга в мае.",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["My friend's birthday is in May."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0858.opus"
+      }
+    },
+    {
+      "id": "ph-e-0859",
+      "text_en": "Don't forget your keys.",
+      "translation_ru": "Не забудь ключи.",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["Don't forget your keys."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0859.opus"
+      }
+    },
+    {
+      "id": "ph-e-0860",
+      "text_en": "I don't know where it is.",
+      "translation_ru": "Я не знаю, где это.",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["I don't know where it is."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0860.opus"
+      }
+    },
+    {
+      "id": "ph-e-0861",
+      "text_en": "She doesn't want to talk.",
+      "translation_ru": "Она не хочет разговаривать.",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["She doesn't want to talk."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0861.opus"
+      }
+    },
+    {
+      "id": "ph-e-0862",
+      "text_en": "We don't need a big room.",
+      "translation_ru": "Нам не нужен большой номер.",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["We don't need a big room."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0862.opus"
+      }
+    },
+    {
+      "id": "ph-e-0863",
+      "text_en": "Do you have John's number?",
+      "translation_ru": "У тебя есть номер Джона?",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["Do you have John's number?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0863.opus"
+      }
+    },
+    {
+      "id": "ph-e-0864",
+      "text_en": "What time does the film start?",
+      "translation_ru": "Во сколько начинается фильм?",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["What time does the film start?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0864.opus"
+      }
+    },
+    {
+      "id": "ph-e-0865",
+      "text_en": "How much does the ticket cost?",
+      "translation_ru": "Сколько стоит билет?",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["How much does the ticket cost?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0865.opus"
+      }
+    },
+    {
+      "id": "ph-e-0866",
+      "text_en": "Where do I change money?",
+      "translation_ru": "Где мне обменять деньги?",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["Where do I change money?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0866.opus"
+      }
+    },
+    {
+      "id": "ph-e-0867",
+      "text_en": "I'd like to ask a question.",
+      "translation_ru": "Я бы хотел задать вопрос.",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["I'd like to ask a question."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0867.opus"
+      }
+    },
+    {
+      "id": "ph-e-0868",
+      "text_en": "I like it, but I don't need it.",
+      "translation_ru": "Мне это нравится, но мне это не нужно.",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["I like it, but I don't need it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0868.opus"
+      }
+    },
+    {
+      "id": "ph-e-0869",
+      "text_en": "He wants to help, but he doesn't know how.",
+      "translation_ru": "Он хочет помочь, но не знает как.",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["He wants to help, but he doesn't know how."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0869.opus"
+      }
+    },
+    {
+      "id": "ph-e-0870",
+      "text_en": "Do you want tea? — Yes, please.",
+      "translation_ru": "Ты хочешь чай? — Да, пожалуйста.",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["Do you want tea? — Yes, please."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0870.opus"
+      }
+    },
+    {
+      "id": "ph-e-0871",
+      "text_en": "Do you want coffee? — No, thank you.",
+      "translation_ru": "Кофе? — Нет, спасибо.",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["Do you want coffee? — No, thank you."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0871.opus"
+      }
+    },
+    {
+      "id": "ph-e-0872",
+      "text_en": "What do you want for dinner?",
+      "translation_ru": "Что ты хочешь на ужин?",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["What do you want for dinner?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0872.opus"
+      }
+    },
+    {
+      "id": "ph-e-0873",
+      "text_en": "I want the same.",
+      "translation_ru": "Я хочу то же самое.",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["I want the same."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0873.opus"
+      }
+    },
+    {
+      "id": "ph-e-0874",
+      "text_en": "Does this bus go to the centre?",
+      "translation_ru": "Этот автобус идёт в центр?",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["Does this bus go to the centre?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0874.opus"
+      }
+    },
+    {
+      "id": "ph-e-0875",
+      "text_en": "Where do we meet?",
+      "translation_ru": "Где мы встречаемся?",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["Where do we meet?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0875.opus"
+      }
+    },
+    {
+      "id": "ph-e-0876",
+      "text_en": "When do we start?",
+      "translation_ru": "Когда мы начинаем?",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["When do we start?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0876.opus"
+      }
+    },
+    {
+      "id": "ph-e-0877",
+      "text_en": "I need to call my mother.",
+      "translation_ru": "Мне нужно позвонить маме.",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["I need to call my mother."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0877.opus"
+      }
+    },
+    {
+      "id": "ph-e-0878",
+      "text_en": "Everything is fine, thank you.",
+      "translation_ru": "Всё хорошо, спасибо.",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["Everything is fine, thank you."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0878.opus"
+      }
+    },
+    {
+      "id": "ph-e-0879",
+      "text_en": "What do you think?",
+      "translation_ru": "Что ты думаешь?",
+      "grammar_point_id": "gp-e-20",
+      "variants": ["What do you think?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0879.opus"
+      }
     }
   ]
 }

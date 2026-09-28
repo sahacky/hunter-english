@@ -568,6 +568,46 @@ RULE_E15 = """Повторение E-11…E-14 — коротко:
 
 Контрольная-тренировка: найди ошибку + поставь время."""
 
+RULE_E16 = """Вопрос Present Simple: **Do** + подлежащее + глагол.
+
+- **Do** you work here? **Do** they live in London?
+- Краткие ответы: Yes, I **do**. / No, I **don't**.
+
+⚠️ Ловушка ЛТ-19: «Where you live?» — нельзя! Where **do** you live?"""
+
+RULE_E17 = """Вопрос с he/she/it: **Does** + подлежащее + глагол БЕЗ -s.
+
+- **Does** he work here? **Does** she like tea?
+- Краткие: Yes, he **does**. / No, she **doesn't**.
+- Спецвопросы: What **does** he do? Where **does** she work?
+
+После does глагол всегда в начальной форме (-s уходит в does)."""
+
+RULE_E18 = """Спецвопросы Present Simple: Wh-слово + do/does + подлежащее + глагол.
+
+- **Where** do you work? **When** does the train leave?
+- **What** do you do? — вопрос о работе/занятии.
+- How do you say it in English? How much does it cost?
+
+Пунктуация: заглавная I всегда; дни недели и месяцы — с заглавной (Monday, April)."""
+
+RULE_E19 = """want / like / need + would like:
+
+- I **want** a coffee. I **want to** sleep. (want to + глагол)
+- I **like** tea. I **need** a ticket. I need **to** go.
+- Вежливо: **I'd like** a coffee, please. (I would like)
+
+I'd like — «я бы хотел»: в кафе, отеле, магазине."""
+
+RULE_E20 = """Повторение E-16…E-19 — коротко:
+
+- **Do/Does**-вопросы и краткие ответы (do/does в ответе, не глагол).
+- Спецвопросы: Wh + do/does + подлежащее + глагол.
+- **want/like/need (+ to)**; вежливое **I'd like**.
+- Пунктуация: апостроф — don't, doesn't, I'd, John's (притяжательный)."""
+
+
+
 
 
 
@@ -804,6 +844,242 @@ E15 = [
     ("I like my work.", "Мне нравится моя работа.", None),
     ("They want to learn Russian.", "Они хотят выучить русский.", None),
     ("Something doesn't work.", "Что-то не работает.", None),
+]
+
+
+E16 = [
+    ("Do you work here?", "Ты здесь работаешь?", None),
+    ("Do you live in Moscow?", "Ты живёшь в Москве?", None),
+    ("Do you know him?", "Ты его знаешь?", None),
+    ("Do you like coffee?", "Ты любишь кофе?", None),
+    ("Do you want tea?", "Ты хочешь чай?", None),
+    ("Do you speak English?", "Ты говоришь по-английски?", None),
+    ("Do you understand me?", "Ты меня понимаешь?", None),
+    ("Do you have a pen?", "У тебя есть ручка?", None),
+    ("Do you have time?", "У тебя есть время?", None),
+    ("Do you have children?", "У тебя есть дети?", None),
+    ("Do you like this city?", "Тебе нравится этот город?", None),
+    ("Do you like music?", "Ты любишь музыку?", None),
+    ("Do you want to stay?", "Хочешь остаться?", None),
+    ("Do you want to go?", "Хочешь пойти?", None),
+    ("Do you need help?", "Тебе нужна помощь?", None),
+    ("Do you need money?", "Тебе нужны деньги?", None),
+    ("Do I know you?", "Я тебя знаю?", None),
+    ("Do I work today?", "Я сегодня работаю?", None),
+    ("Do we need tickets?", "Нам нужны билеты?", None),
+    ("Do we have time?", "У нас есть время?", None),
+    ("Do they live here?", "Они живут здесь?", None),
+    ("Do they speak Russian?", "Они говорят по-русски?", None),
+    ("Do they know the answer?", "Они знают ответ?", None),
+    ("Yes, I do.", "Да.", None),
+    ("No, I don't.", "Нет.", None),
+    ("Yes, I work here.", "Да, я здесь работаю.", None),
+    ("No, I don't work today.", "Нет, я сегодня не работаю.", None),
+    ("Yes, I like it.", "Да, мне нравится.", None),
+    ("No, I don't like coffee.", "Нет, я не люблю кофе.", None),
+    ("Yes, they do.", "Да.", None),
+    ("No, they don't.", "Нет.", None),
+    ("Do you open on Sunday?", "Вы работаете в воскресенье?", None),
+    ("Do you accept cards?", "Вы принимаете карты?", None),
+    ("Do you know this place?", "Вы знаете это место?", None),
+    ("Where do you live?", "Где ты живёшь?", None),
+    ("What do you want?", "Что ты хочешь?", None),
+    ("Why do you ask?", "Почему ты спрашиваешь?", None),
+    ("How do you know?", "Откуда ты знаешь?", None),
+    ("Do you like it here?", "Тебе здесь нравится?", None),
+    ("Do you remember me?", "Ты меня помнишь?", None),
+    ("Do you believe me?", "Ты мне веришь?", None),
+    ("Don't you understand?", "Разве ты не понимаешь?", None),
+    ("Do you want coffee or tea?", "Ты хочешь кофе или чай?", None),
+    ("What do you do on Sunday?", "Что ты делаешь в воскресенье?", None),
+]
+
+E17 = [
+    ("Does he work here?", "Он здесь работает?", None),
+    ("Does he live in Moscow?", "Он живёт в Москве?", None),
+    ("Does he know you?", "Он тебя знает?", None),
+    ("Does he like coffee?", "Он любит кофе?", None),
+    ("Does he speak English?", "Он говорит по-английски?", None),
+    ("Does she work today?", "Она сегодня работает?", None),
+    ("Does she live here?", "Она живёт здесь?", None),
+    ("Does she know the answer?", "Она знает ответ?", None),
+    ("Does she like music?", "Она любит музыку?", None),
+    ("Does she teach English?", "Она преподаёт английский?", None),
+    ("Does it work?", "Это работает?", None),
+    ("Does it open on Sunday?", "Он открывается в воскресенье?", None),
+    ("Does it cost much?", "Это дорого?", None),
+    ("Does the bus stop here?", "Автобус здесь останавливается?", None),
+    ("Does the shop close at six?", "Магазин закрывается в шесть?", None),
+    ("Does your father work?", "Твой отец работает?", None),
+    ("Does your mother drive?", "Твоя мама водит машину?", None),
+    ("Does your friend speak English?", "Твой друг говорит по-английски?", None),
+    ("Does Anna like tea?", "Анна любит чай?", None),
+    ("Does Ivan play football?", "Иван играет в футбол?", None),
+    ("Yes, he does.", "Да.", None),
+    ("No, he doesn't.", "Нет.", None),
+    ("Yes, she does.", "Да.", None),
+    ("No, she doesn't.", "Нет.", None),
+    ("Yes, it does.", "Да.", None),
+    ("No, it doesn't.", "Нет.", None),
+    ("Yes, he works here.", "Да, он здесь работает.", None),
+    ("No, she doesn't work today.", "Нет, она сегодня не работает.", None),
+    ("What does he do?", "Чем он занимается?", None),
+    ("What does she do?", "Чем она занимается?", None),
+    ("Where does he live?", "Где он живёт?", None),
+    ("Where does she work?", "Где она работает?", None),
+    ("What does it mean?", "Что это значит?", None),
+    ("When does the film start?", "Когда начинается фильм?", None),
+    ("When does the shop open?", "Когда открывается магазин?", None),
+    ("How does it work?", "Как это работает?", None),
+    ("Why does he ask?", "Почему он спрашивает?", None),
+    ("Does she like this book?", "Ей нравится эта книга?", None),
+    ("Does he want coffee?", "Он хочет кофе?", None),
+    ("Does your sister study English?", "Твоя сестра учит английский?", None),
+    ("Does he always get up early?", "Он всегда встаёт рано?", None),
+    ("Does she often call you?", "Она часто тебе звонит?", None),
+    ("What time does the lesson start?", "Во сколько начинается урок?", None),
+    ("Does he know about it?", "Он знает об этом?", None),
+]
+
+E18 = [
+    ("Where do you work?", "Где ты работаешь?", None),
+    ("When do you work?", "Когда ты работаешь?", None),
+    ("Why do you work so much?", "Почему ты так много работаешь?", None),
+    ("How do you go to work?", "Как ты добираешься на работу?", None),
+    ("Where do you live?", "Где ты живёшь?", None),
+    ("When do you get up?", "Когда ты встаёшь?", None),
+    ("Why do you study English?", "Почему ты учишь английский?", None),
+    ("How do you learn words?", "Как ты учишь слова?", None),
+    ("What do you do?", "Чем ты занимаешься?", None),
+    ("What do you do in the evening?", "Что ты делаешь вечером?", None),
+    ("What do you do on Monday?", "Что ты делаешь в понедельник?", None),
+    ("Where do they live?", "Где они живут?", None),
+    ("Where does he work?", "Где он работает?", None),
+    ("When does the train leave?", "Когда отходит поезд?", None),
+    ("When does the lesson end?", "Когда заканчивается урок?", None),
+    ("Why do you like it?", "Почему тебе это нравится?", None),
+    ("Why does she ask?", "Почему она спрашивает?", None),
+    ("How do you say it in English?", "Как это сказать по-английски?", None),
+    ("How do you spell it?", "Как это пишется?", None),
+    ("How much does it cost?", "Сколько это стоит?", None),
+    ("What time is it?", "Сколько времени?", None),
+    ("What time do we start?", "Во сколько мы начинаем?", None),
+    ("Where do I buy tickets?", "Где мне купить билеты?", None),
+    ("Where do we go now?", "Куда мы теперь идём?", None),
+    ("How long does it take?", "Сколько это занимает?", None),
+    ("What do you mean?", "Что ты имеешь в виду?", None),
+    ("Where do you come from?", "Откуда ты родом?", None),
+    ("What does he want?", "Что он хочет?", None),
+    ("Why don't you rest?", "Почему ты не отдыхаешь?", None),
+    ("Where can I eat?", "Где можно поесть?", None),
+    ("How do I get to the station?", "Как мне добраться до вокзала?", None),
+    ("Where is the bus stop?", "Где остановка автобуса?", None),
+    ("When do shops open?", "Когда открываются магазины?", None),
+    ("Who do you work with?", "С кем ты работаешь?", None),
+    ("What do you usually eat?", "Что ты обычно ешь?", None),
+    ("When do you have lunch?", "Когда ты обедаешь?", None),
+    ("Why do they live here?", "Почему они живут здесь?", None),
+    ("How often do you travel?", "Как часто ты путешествуешь?", None),
+    ("What do your parents do?", "Чем занимаются твои родители?", None),
+    ("Where does your family live?", "Где живёт твоя семья?", None),
+    ("I work on Monday, Tuesday and Wednesday.", "Я работаю в понедельник, вторник и среду.", None),
+    ("In January and February it is cold.", "В январе и феврале холодно.", None),
+    ("My birthday is in April.", "Мой день рождения в апреле.", None),
+    ("On Friday I rest.", "В пятницу я отдыхаю.", None),
+]
+
+E19 = [
+    ("I want a coffee, please.", "Кофе, пожалуйста.", None),
+    ("I want tea.", "Я хочу чай.", None),
+    ("I want water.", "Я хочу воды.", None),
+    ("I want to eat.", "Я хочу есть.", None),
+    ("I want to sleep.", "Я хочу спать.", None),
+    ("I want to stay here.", "Я хочу остаться здесь.", None),
+    ("I want to go home.", "Я хочу домой.", None),
+    ("I want to learn English.", "Я хочу выучить английский.", None),
+    ("I want to travel.", "Я хочу путешествовать.", None),
+    ("I want to help you.", "Я хочу помочь тебе.", None),
+    ("I like coffee.", "Я люблю кофе.", None),
+    ("I like tea with milk.", "Я люблю чай с молоком.", None),
+    ("I like pizza.", "Я люблю пиццу.", None),
+    ("I like fish.", "Я люблю рыбу.", None),
+    ("I like apples.", "Я люблю яблоки.", None),
+    ("I need a ticket.", "Мне нужен билет.", None),
+    ("I need a map.", "Мне нужна карта.", None),
+    ("I need a room.", "Мне нужен номер.", None),
+    ("I need a doctor.", "Мне нужен врач.", None),
+    ("I need to go.", "Мне нужно идти.", None),
+    ("I need to work.", "Мне нужно работать.", None),
+    ("I need to rest.", "Мне нужно отдохнуть.", None),
+    ("I would like a coffee, please.", "Я бы хотел кофе, пожалуйста.", None),
+    ("I'd like a tea, please.", "Чаю, пожалуйста.", None),
+    ("I'd like a room for two nights.", "Номер на две ночи, пожалуйста.", None),
+    ("I'd like a table for two.", "Столик на двоих, пожалуйста.", None),
+    ("I'd like the bill, please.", "Счёт, пожалуйста.", None),
+    ("I'd like to book a ticket.", "Я бы хотел забронировать билет.", None),
+    ("Do you want coffee or tea?", "Вы хотите кофе или чай?", None),
+    ("What do you want to eat?", "Что ты хочешь съесть?", None),
+    ("What do you want to drink?", "Что ты хочешь выпить?", None),
+    ("Do you like fish?", "Ты любишь рыбу?", None),
+    ("Do you like English food?", "Тебе нравится английская еда?", None),
+    ("I don't want money.", "Мне не нужны деньги.", None),
+    ("I don't want to go.", "Я не хочу идти.", None),
+    ("I don't need help.", "Мне не нужна помощь.", None),
+    ("He wants to stay.", "Он хочет остаться.", None),
+    ("She wants tea.", "Она хочет чай.", None),
+    ("We want two coffees.", "Мы хотим два кофе.", None),
+    ("They need a plan.", "Им нужен план.", None),
+    ("I want to find my friend.", "Я хочу найти своего друга.", None),
+    ("I want to hear it.", "Я хочу это услышать.", None),
+    ("I like it very much.", "Мне это очень нравится.", None),
+    ("I need you.", "Ты мне нужен.", None),
+]
+
+E20 = [
+    ("What do you do and where do you work?", "Чем ты занимаешься и где работаешь?", None),
+    ("I don't work. I'm a student.", "Я не работаю. Я студент.", None),
+    ("Does he want coffee? — No, he doesn't.", "Он хочет кофе? — Нет.", None),
+    ("Do they live here? — Yes, they do.", "Они живут здесь? — Да.", None),
+    ("I'd like a coffee and my friend'd like a tea.", "Мне кофе, а моему другу чай.", None),
+    ("What does she want?", "Что она хочет?", None),
+    ("Where do your parents live?", "Где живут твои родители?", None),
+    ("When do you get up on Sunday?", "Во сколько ты встаёшь в воскресенье?", None),
+    ("Why do you need it?", "Зачем тебе это?", None),
+    ("How do you say it in English?", "Как это по-английски?", None),
+    ("Do you like winter or summer?", "Ты любишь зиму или лето?", None),
+    ("I want to eat something.", "Я хочу что-нибудь поесть.", None),
+    ("I need to buy a ticket.", "Мне нужно купить билет.", None),
+    ("I don't want to get up early.", "Я не хочу вставать рано.", None),
+    ("Do you understand the question?", "Ты понимаешь вопрос?", None),
+    ("Yes, I understand.", "Да, понимаю.", None),
+    ("No, I don't understand.", "Нет, не понимаю.", None),
+    ("What do you usually have for breakfast?", "Что ты обычно ешь на завтрак?", None),
+    ("I usually have tea for breakfast.", "Я обычно пью чай на завтрак.", None),
+    ("Where do you usually go on holiday?", "Куда ты обычно ездишь в отпуск?", None),
+    ("John's car is new.", "Машина Джона новая.", None),
+    ("Anna's phone doesn't work.", "Телефон Анны не работает.", None),
+    ("My friend's birthday is in May.", "День рождения моего друга в мае.", None),
+    ("Don't forget your keys.", "Не забудь ключи.", None),
+    ("I don't know where it is.", "Я не знаю, где это.", None),
+    ("She doesn't want to talk.", "Она не хочет разговаривать.", None),
+    ("We don't need a big room.", "Нам не нужен большой номер.", None),
+    ("Do you have John's number?", "У тебя есть номер Джона?", None),
+    ("What time does the film start?", "Во сколько начинается фильм?", None),
+    ("How much does the ticket cost?", "Сколько стоит билет?", None),
+    ("Where do I change money?", "Где мне обменять деньги?", None),
+    ("I'd like to ask a question.", "Я бы хотел задать вопрос.", None),
+    ("I like it, but I don't need it.", "Мне это нравится, но мне это не нужно.", None),
+    ("He wants to help, but he doesn't know how.", "Он хочет помочь, но не знает как.", None),
+    ("Do you want tea? — Yes, please.", "Ты хочешь чай? — Да, пожалуйста.", None),
+    ("Do you want coffee? — No, thank you.", "Кофе? — Нет, спасибо.", None),
+    ("What do you want for dinner?", "Что ты хочешь на ужин?", None),
+    ("I want the same.", "Я хочу то же самое.", None),
+    ("Does this bus go to the centre?", "Этот автобус идёт в центр?", None),
+    ("Where do we meet?", "Где мы встречаемся?", None),
+    ("When do we start?", "Когда мы начинаем?", None),
+    ("I need to call my mother.", "Мне нужно позвонить маме.", None),
+    ("Everything is fine, thank you.", "Всё хорошо, спасибо.", None),
+    ("What do you think?", "Что ты думаешь?", None),
 ]
 
 # --------------------------------------------------------------------------
@@ -1227,6 +1503,131 @@ LESSONS = [
             ("She ___ the answer.", "3rd-person", ["knows"]),
         ],
     },
+
+    {
+        "id": "les-e-16", "module": "mod-e-4",
+        "title": "Present Simple: вопрос Do you…?",
+        "gp_id": "gp-e-16", "gp_title": "Do-вопросы и краткие ответы",
+        "rule_md": RULE_E16,
+        "phrases": E16,
+        "rule_cloze": [
+            ("___ you work here?", ["Do"]),
+            ("___ you like coffee?", ["Do"]),
+            ("___ they live here?", ["Do"]),
+        ],
+        "quotes": [("q-game-of-thrones-0008", "Do"), ("q-game-of-thrones-0011", "want")],
+        "trap_id": "trap-question-word-order",
+        "vocab_band": {"list": "ngsl-spoken", "from": 100001, "to": 100050},
+        "phrasebook_topic": None,
+        "quotes_topic": "questions",
+        "bebris_video": {"lesson": "1.14", "playlist_index": 32, "youtube_id": "s2mDQEUY9ac", "title": None},
+        "answer_question": [("Do you like coffee?", "I like coffee.")],
+        "find_error": [("Where you live?", "Where do you live?")],
+        "verb_tense": [
+            ("___ you work here?", "do-question", ["Do"]),
+            ("___ they speak Russian?", "do-question", ["Do"]),
+            ("___ we have time?", "do-question", ["Do"]),
+        ],
+    },
+    {
+        "id": "les-e-17", "module": "mod-e-4",
+        "title": "Present Simple: Does he/she…?",
+        "gp_id": "gp-e-17", "gp_title": "Does-вопросы и краткие ответы",
+        "rule_md": RULE_E17,
+        "phrases": E17,
+        "rule_cloze": [
+            ("___ he work here?", ["Does"]),
+            ("___ she like tea?", ["Does"]),
+            ("___ it work?", ["Does"]),
+        ],
+        "quotes": [("q-supernatural-0009", "not"), ("q-the-100-0005", "trust")],
+        "trap_id": None,
+        "vocab_band": {"list": "ngsl-spoken", "from": 100051, "to": 100100},
+        "phrasebook_topic": None,
+        "quotes_topic": "questions",
+        "bebris_video": {"lesson": "1.15", "playlist_index": 34, "youtube_id": "IlSNy49QRm0", "title": None},
+        "answer_question": [("Does he work here?", "Yes, he works here.")],
+        "find_error": [("Does he works here?", "Does he work here?")],
+        "verb_tense": [
+            ("___ he work here?", "does-question", ["Does"]),
+            ("___ she like tea?", "does-question", ["Does"]),
+            ("What ___ he do?", "wh-3rd", ["does"]),
+        ],
+    },
+    {
+        "id": "les-e-18", "module": "mod-e-4",
+        "title": "Спецвопросы: where / when / why / how",
+        "gp_id": "gp-e-18", "gp_title": "Wh-вопросы в Present Simple",
+        "rule_md": RULE_E18,
+        "phrases": E18,
+        "rule_cloze": [
+            ("___ do you work?", ["Where"]),
+            ("___ does the train leave?", ["When"]),
+            ("___ does it cost?", ["How much"]),
+        ],
+        "quotes": [("q-stranger-things-0010", "What"), ("q-breaking-bad-0013", "How")],
+        "trap_id": "trap-question-word-order",
+        "vocab_band": {"list": "ngsl-spoken", "from": 100101, "to": 100150},
+        "phrasebook_topic": None,
+        "quotes_topic": "questions",
+        "bebris_video": {"lesson": "1.18", "playlist_index": 40, "youtube_id": "a7FIdktMwS8", "title": None},
+        "answer_question": [("Where do you live?", "I live in Moscow.")],
+        "find_error": [("Where you work?", "Where do you work?")],
+        "verb_tense": [
+            ("___ do you live?", "where", ["Where"]),
+            ("___ does the film start?", "when", ["When"]),
+            ("How ___ you say it in English?", "how", ["do"]),
+        ],
+    },
+    {
+        "id": "les-e-19", "module": "mod-e-4",
+        "title": "want / like / need / I'd like",
+        "gp_id": "gp-e-19", "gp_title": "Желания и вежливые просьбы",
+        "rule_md": RULE_E19,
+        "phrases": E19,
+        "rule_cloze": [
+            ("I ___ a coffee, please.", ["want"]),
+            ("I ___ to sleep.", ["want"]),
+            ("I'd ___ a tea, please.", ["like"]),
+        ],
+        "quotes": [("q-supernatural-0005", "want"), ("q-stranger-things-0009", "want")],
+        "trap_id": None,
+        "vocab_band": {"list": "ngsl-spoken", "from": 100151, "to": 100200},
+        "phrasebook_topic": None,
+        "quotes_topic": "food",
+        "bebris_video": {"lesson": "1.6", "playlist_index": 13, "youtube_id": "g54X7P-QMQ8", "title": None},
+        "answer_question": [("What do you want to drink?", "I want tea.")],
+        "verb_tense": [
+            ("I ___ a coffee, please.", "want", ["want"]),
+            ("I ___ to sleep.", "want-to", ["want"]),
+            ("I'd ___ a room for two nights.", "would-like", ["like"]),
+        ],
+    },
+    {
+        "id": "les-e-20", "module": "mod-e-4",
+        "title": "Повторение №4 + пунктуация (апостроф)",
+        "gp_id": "gp-e-20", "gp_title": "Повторение: вопросы, желания, апостроф",
+        "rule_md": RULE_E20,
+        "phrases": E20,
+        "rule_cloze": [
+            ("___ he want coffee?", ["Does"]),
+            ("___ do you work?", ["Where"]),
+            ("I'd ___ a tea, please.", ["like"]),
+        ],
+        "quotes": [("q-the-100-0003", "not"), ("q-stranger-things-0012", "not")],
+        "trap_id": None,
+        "vocab_band": None,
+        "phrasebook_topic": None,
+        "quotes_topic": "small-talk",
+        "bebris_video": None,
+        "answer_question": [("What do you want for dinner?", "I want the same.")],
+        "find_error": [("Where your parents live?", "Where do your parents live?")],
+        "verb_tense": [
+            ("___ your parents live in Russia?", "do-question", ["Do"]),
+            ("What ___ she want?", "wh-3rd", ["does"]),
+            ("___ the bus go to the centre?", "does-question", ["Does"]),
+        ],
+    },
 ]
 
 # Выбор фраз для производных шагов (индексы внутри пула урока)
@@ -1418,17 +1819,6 @@ def build():
                 "meta": {"skill": "speaking", "xp": 3},
             })
             lesson_exercises.append({"id": eid})
-        for question_en, answer_text in spec.get("answer_question", []):
-            target = phrase_by_text(answer_text)
-            eid = next_ex()
-            exercises_out.append({
-                "id": eid, "type": "answer_question",
-                "payload": {"kind": "answer_question", "question_en": question_en,
-                            "phrase_id": target["id"]},
-                "answer": {"normalization": "default", "typo": "allow", "speech_threshold": 0.85},
-                "meta": {"skill": "speaking", "xp": 4},
-            })
-            lesson_exercises.append({"id": eid})
 
         # --- Шаг 6: из сериала — cloze в цитатах ------------------------------
         for quote_id, gap_word in spec["quotes"]:
@@ -1472,8 +1862,21 @@ def build():
             "bebris_video": spec["bebris_video"],
         })
 
-    # find_error ссылается на фразы любых уроков — генерируем после всех пулов
+    # find_error и answer_question ссылаются на фразы любых уроков — после всех пулов
     for li, spec in enumerate(LESSONS):
+        for question_en, answer_text in spec.get("answer_question", []):
+            target = next((item for item in phrases_out if item["text_en"] == answer_text), None)
+            if target is None:
+                raise SystemExit(f"фраза {answer_text!r} не найдена в пулах (answer_question {spec['id']})")
+            eid = next_ex()
+            exercises_out.append({
+                "id": eid, "type": "answer_question",
+                "payload": {"kind": "answer_question", "question_en": question_en,
+                            "phrase_id": target["id"]},
+                "answer": {"normalization": "default", "typo": "allow", "speech_threshold": 0.85},
+                "meta": {"skill": "speaking", "xp": 4},
+            })
+            lessons_out[li]["exercises"].append({"id": eid})
         for wrong, right in spec.get("find_error", []):
             target = next((item for item in phrases_out if item["text_en"] == right), None)
             if target is None:

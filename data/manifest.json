@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-28T17:35:11Z",
+  "generated_at": "2026-09-28T17:57:15Z",
   "files": [
     {
       "path": "lessons/exercises-e.json",
       "kind": "exercises",
       "schema_version": 1,
-      "items": 716,
-      "sha256": "1c0ce34be1306079f6ddbc939b5443b205ebab70abdc6c37f9e9dd28635a5659"
+      "items": 955,
+      "sha256": "32a18a1264a83ade5e1ad9be093ef85dca4c2e72fbe62182a51b57cc67c25b81"
     },
     {
       "path": "lessons/lessons-e.json",
       "kind": "lessons",
       "schema_version": 1,
-      "items": 15,
-      "sha256": "63579b5699f87f6e1e18a39d273ad73deec5fb77a5c63f2fcbbc246503283774"
+      "items": 20,
+      "sha256": "e3d5f5863cf430f3bfb63cdc0e97e962731b6a40ee94a211955fcbcfe8399b75"
     },
     {
       "path": "phrasebook/emergency.json",
@@ -34,8 +34,8 @@
       "path": "phrases/phrases-e.json",
       "kind": "phrases",
       "schema_version": 1,
-      "items": 659,
-      "sha256": "437374aa84742bfe881bac2a1bd9cab13f22855f24f98a423a3cc08eb4751b67"
+      "items": 879,
+      "sha256": "462738a096dc3499ec0787cbd78460ae58e46f4f5bdfe6c0a59cdfe3e3a71512"
     },
     {
       "path": "quotes/attack-on-titan.json",
