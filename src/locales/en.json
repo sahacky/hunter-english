@@ -141,6 +141,7 @@
   },
   "ranks": {
     "statusTitle": "Hunter status",
+    "gatesLink": "Gates {{from}} → {{to}}",
     "totalXp": "Total XP: {{xp}}",
     "streaks": "Streak: {{current}} d · Best: {{best}} d",
     "gatesPassed": "Gates passed: {{count}} · latest: {{last}}",

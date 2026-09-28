@@ -43,6 +43,8 @@ describe('RanksScreen /#/ranks', () => {
     expect(screen.getByText(/Суммарный XP: 347/)).toBeInTheDocument()
     expect(screen.getByText(/«Winter is coming»/)).toBeInTheDocument()
     expect(screen.getByText(/«Equivalent exchange»/)).toBeInTheDocument()
+    // M9: вход в Врата ранга с экрана статуса (доступ с мобильного таб-бара)
+    expect(screen.getByRole('link', { name: 'Врата E → D' })).toHaveAttribute('href', '#/gates/E-D')
   })
 })
 

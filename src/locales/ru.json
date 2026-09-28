@@ -141,6 +141,7 @@
   },
   "ranks": {
     "statusTitle": "Статус охотника",
+    "gatesLink": "Врата {{from}} → {{to}}",
     "totalXp": "Суммарный XP: {{xp}}",
     "streaks": "Серия: {{current}} дн. · Рекорд: {{best}} дн.",
     "gatesPassed": "Врат пройдено: {{count}} · последние: {{last}}",

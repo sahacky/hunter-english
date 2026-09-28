@@ -132,9 +132,10 @@ body {
   height: 24px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   .app-shell {
-    padding: 8px 12px 0;
+    padding: calc(8px + env(safe-area-inset-top)) calc(12px + env(safe-area-inset-right)) 0
+      calc(12px + env(safe-area-inset-left));
   }
 
   .app-header {
@@ -160,7 +161,8 @@ body {
     justify-content: space-around;
     background: var(--surface);
     border-top: 1px solid var(--border);
-    padding: 6px 4px calc(6px + env(safe-area-inset-bottom));
+    padding: 6px calc(4px + env(safe-area-inset-right)) calc(6px + env(safe-area-inset-bottom))
+      calc(4px + env(safe-area-inset-left));
   }
 
   .panel {
@@ -578,6 +580,17 @@ body {
 }
 .ranks-title-unlocked {
   color: var(--warn);
+}
+.ranks-gate-link {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  color: var(--primary);
+  text-decoration: none;
+}
+.ranks-gate-link:hover {
+  background: var(--surface-2);
 }
 .gates-panel {
   max-width: 680px;
