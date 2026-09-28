@@ -150,7 +150,7 @@
     "title": "Gates {{from}} → {{to}}",
     "check": {
       "words": "Words (reliable): {{known}} / 300",
-      "lessons": "Rank E lessons: {{done}} / 5",
+      "lessons": "Rank E lessons: {{done}} / 24",
       "hint": "The checklist is a recommendation: the gates are always open."
     },
     "cooldown": "The next attempt unlocks after {{time}}",

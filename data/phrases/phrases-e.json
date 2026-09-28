@@ -2181,6 +2181,2216 @@
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0218.opus"
       }
+    },
+    {
+      "id": "ph-e-0219",
+      "text_en": "What is your name?",
+      "translation_ru": "Как тебя зовут?",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["What is your name?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0219.opus"
+      }
+    },
+    {
+      "id": "ph-e-0220",
+      "text_en": "What is his name?",
+      "translation_ru": "Как его зовут?",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["What is his name?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0220.opus"
+      }
+    },
+    {
+      "id": "ph-e-0221",
+      "text_en": "Where are you from?",
+      "translation_ru": "Откуда ты?",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["Where are you from?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0221.opus"
+      }
+    },
+    {
+      "id": "ph-e-0222",
+      "text_en": "Where is he from?",
+      "translation_ru": "Откуда он?",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["Where is he from?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0222.opus"
+      }
+    },
+    {
+      "id": "ph-e-0223",
+      "text_en": "How are you?",
+      "translation_ru": "Как дела?",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["How are you?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0223.opus"
+      }
+    },
+    {
+      "id": "ph-e-0224",
+      "text_en": "How is your mother?",
+      "translation_ru": "Как твоя мама?",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["How is your mother?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0224.opus"
+      }
+    },
+    {
+      "id": "ph-e-0225",
+      "text_en": "How old are you?",
+      "translation_ru": "Сколько тебе лет?",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["How old are you?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0225.opus"
+      }
+    },
+    {
+      "id": "ph-e-0226",
+      "text_en": "How old is your brother?",
+      "translation_ru": "Сколько лет твоему брату?",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["How old is your brother?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0226.opus"
+      }
+    },
+    {
+      "id": "ph-e-0227",
+      "text_en": "Who is she?",
+      "translation_ru": "Кто она?",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["Who is she?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0227.opus"
+      }
+    },
+    {
+      "id": "ph-e-0228",
+      "text_en": "Who is that man?",
+      "translation_ru": "Кто тот мужчина?",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["Who is that man?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0228.opus"
+      }
+    },
+    {
+      "id": "ph-e-0229",
+      "text_en": "What is this?",
+      "translation_ru": "Что это?",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["What is this?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0229.opus"
+      }
+    },
+    {
+      "id": "ph-e-0230",
+      "text_en": "What is it?",
+      "translation_ru": "Что это?",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["What is it?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0230.opus"
+      }
+    },
+    {
+      "id": "ph-e-0231",
+      "text_en": "Where is my phone?",
+      "translation_ru": "Где мой телефон?",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["Where is my phone?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0231.opus"
+      }
+    },
+    {
+      "id": "ph-e-0232",
+      "text_en": "Where are my keys?",
+      "translation_ru": "Где мои ключи?",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["Where are my keys?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0232.opus"
+      }
+    },
+    {
+      "id": "ph-e-0233",
+      "text_en": "Where is the station?",
+      "translation_ru": "Где вокзал?",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["Where is the station?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0233.opus"
+      }
+    },
+    {
+      "id": "ph-e-0234",
+      "text_en": "Where is Anna from?",
+      "translation_ru": "Откуда Анна?",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["Where is Anna from?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0234.opus"
+      }
+    },
+    {
+      "id": "ph-e-0235",
+      "text_en": "What is your city like?",
+      "translation_ru": "Какой у тебя город?",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["What is your city like?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0235.opus"
+      }
+    },
+    {
+      "id": "ph-e-0236",
+      "text_en": "My name is Ivan. What is your name?",
+      "translation_ru": "Меня зовут Иван. А как тебя зовут?",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["My name is Ivan. What is your name?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0236.opus"
+      }
+    },
+    {
+      "id": "ph-e-0237",
+      "text_en": "I am from Kazan. Where are you from?",
+      "translation_ru": "Я из Казани. А ты откуда?",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["I am from Kazan. Where are you from?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0237.opus"
+      }
+    },
+    {
+      "id": "ph-e-0238",
+      "text_en": "She is my sister. Her name is Olga.",
+      "translation_ru": "Она моя сестра. Её зовут Ольга.",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["She is my sister. Her name is Olga."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0238.opus"
+      }
+    },
+    {
+      "id": "ph-e-0239",
+      "text_en": "He is my friend. His name is Dima.",
+      "translation_ru": "Он мой друг. Его зовут Дима.",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["He is my friend. His name is Dima."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0239.opus"
+      }
+    },
+    {
+      "id": "ph-e-0240",
+      "text_en": "It is a big question.",
+      "translation_ru": "Это большой вопрос.",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["It is a big question."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0240.opus"
+      }
+    },
+    {
+      "id": "ph-e-0241",
+      "text_en": "Where is the toilet, please?",
+      "translation_ru": "Где туалет, пожалуйста?",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["Where is the toilet, please?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0241.opus"
+      }
+    },
+    {
+      "id": "ph-e-0242",
+      "text_en": "What is your phone number?",
+      "translation_ru": "Какой у тебя номер телефона?",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["What is your phone number?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0242.opus"
+      }
+    },
+    {
+      "id": "ph-e-0243",
+      "text_en": "How much is it?",
+      "translation_ru": "Сколько это стоит?",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["How much is it?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0243.opus"
+      }
+    },
+    {
+      "id": "ph-e-0244",
+      "text_en": "How is it going?",
+      "translation_ru": "Как дела?",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["How is it going?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0244.opus"
+      }
+    },
+    {
+      "id": "ph-e-0245",
+      "text_en": "What is the problem?",
+      "translation_ru": "В чём проблема?",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["What is the problem?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0245.opus"
+      }
+    },
+    {
+      "id": "ph-e-0246",
+      "text_en": "Where are they from?",
+      "translation_ru": "Откуда они?",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["Where are they from?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0246.opus"
+      }
+    },
+    {
+      "id": "ph-e-0247",
+      "text_en": "Who are you?",
+      "translation_ru": "Кто ты?",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["Who are you?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0247.opus"
+      }
+    },
+    {
+      "id": "ph-e-0248",
+      "text_en": "Who is your teacher?",
+      "translation_ru": "Кто твой учитель?",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["Who is your teacher?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0248.opus"
+      }
+    },
+    {
+      "id": "ph-e-0249",
+      "text_en": "What are their names?",
+      "translation_ru": "Как их зовут?",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["What are their names?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0249.opus"
+      }
+    },
+    {
+      "id": "ph-e-0250",
+      "text_en": "Where is your family?",
+      "translation_ru": "Где твоя семья?",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["Where is your family?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0250.opus"
+      }
+    },
+    {
+      "id": "ph-e-0251",
+      "text_en": "How old is your sister?",
+      "translation_ru": "Сколько лет твоей сестре?",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["How old is your sister?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0251.opus"
+      }
+    },
+    {
+      "id": "ph-e-0252",
+      "text_en": "My brother is ten years old.",
+      "translation_ru": "Моему брату десять лет.",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["My brother is ten years old."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0252.opus"
+      }
+    },
+    {
+      "id": "ph-e-0253",
+      "text_en": "I am twenty-five years old.",
+      "translation_ru": "Мне двадцать пять лет.",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["I am twenty-five years old."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0253.opus"
+      }
+    },
+    {
+      "id": "ph-e-0254",
+      "text_en": "Where is Moscow?",
+      "translation_ru": "Где Москва?",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["Where is Moscow?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0254.opus"
+      }
+    },
+    {
+      "id": "ph-e-0255",
+      "text_en": "Moscow is in Russia.",
+      "translation_ru": "Москва в России.",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["Moscow is in Russia."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0255.opus"
+      }
+    },
+    {
+      "id": "ph-e-0256",
+      "text_en": "London is in England.",
+      "translation_ru": "Лондон в Англии.",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["London is in England."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0256.opus"
+      }
+    },
+    {
+      "id": "ph-e-0257",
+      "text_en": "What is the answer?",
+      "translation_ru": "Какой ответ?",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["What is the answer?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0257.opus"
+      }
+    },
+    {
+      "id": "ph-e-0258",
+      "text_en": "Where is my bag?",
+      "translation_ru": "Где моя сумка?",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["Where is my bag?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0258.opus"
+      }
+    },
+    {
+      "id": "ph-e-0259",
+      "text_en": "How is the weather?",
+      "translation_ru": "Как погода?",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["How is the weather?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0259.opus"
+      }
+    },
+    {
+      "id": "ph-e-0260",
+      "text_en": "The weather is good today.",
+      "translation_ru": "Погода сегодня хорошая.",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["The weather is good today."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0260.opus"
+      }
+    },
+    {
+      "id": "ph-e-0261",
+      "text_en": "What is your favourite colour?",
+      "translation_ru": "Какой твой любимый цвет?",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["What is your favourite colour?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0261.opus"
+      }
+    },
+    {
+      "id": "ph-e-0262",
+      "text_en": "Why are you here?",
+      "translation_ru": "Почему ты здесь?",
+      "grammar_point_id": "gp-e-06",
+      "variants": ["Why are you here?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0262.opus"
+      }
+    },
+    {
+      "id": "ph-e-0263",
+      "text_en": "This is my phone.",
+      "translation_ru": "Это мой телефон.",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["This is my phone."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0263.opus"
+      }
+    },
+    {
+      "id": "ph-e-0264",
+      "text_en": "This is your key.",
+      "translation_ru": "Это твой ключ.",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["This is your key."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0264.opus"
+      }
+    },
+    {
+      "id": "ph-e-0265",
+      "text_en": "That is my house.",
+      "translation_ru": "То мой дом.",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["That is my house."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0265.opus"
+      }
+    },
+    {
+      "id": "ph-e-0266",
+      "text_en": "That is your car.",
+      "translation_ru": "То твоя машина.",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["That is your car."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0266.opus"
+      }
+    },
+    {
+      "id": "ph-e-0267",
+      "text_en": "These are my friends.",
+      "translation_ru": "Это мои друзья.",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["These are my friends."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0267.opus"
+      }
+    },
+    {
+      "id": "ph-e-0268",
+      "text_en": "These are our books.",
+      "translation_ru": "Это наши книги.",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["These are our books."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0268.opus"
+      }
+    },
+    {
+      "id": "ph-e-0269",
+      "text_en": "Those are her shoes.",
+      "translation_ru": "То её туфли.",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["Those are her shoes."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0269.opus"
+      }
+    },
+    {
+      "id": "ph-e-0270",
+      "text_en": "Those are his glasses.",
+      "translation_ru": "То его очки.",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["Those are his glasses."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0270.opus"
+      }
+    },
+    {
+      "id": "ph-e-0271",
+      "text_en": "Is this your bag?",
+      "translation_ru": "Это твоя сумка?",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["Is this your bag?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0271.opus"
+      }
+    },
+    {
+      "id": "ph-e-0272",
+      "text_en": "Is this a pen?",
+      "translation_ru": "Это ручка?",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["Is this a pen?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0272.opus"
+      }
+    },
+    {
+      "id": "ph-e-0273",
+      "text_en": "Is that your car?",
+      "translation_ru": "То твоя машина?",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["Is that your car?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0273.opus"
+      }
+    },
+    {
+      "id": "ph-e-0274",
+      "text_en": "Are these your keys?",
+      "translation_ru": "Это твои ключи?",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["Are these your keys?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0274.opus"
+      }
+    },
+    {
+      "id": "ph-e-0275",
+      "text_en": "Are those our tickets?",
+      "translation_ru": "То наши билеты?",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["Are those our tickets?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0275.opus"
+      }
+    },
+    {
+      "id": "ph-e-0276",
+      "text_en": "This is not my umbrella.",
+      "translation_ru": "Это не мой зонт.",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["This is not my umbrella."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0276.opus"
+      }
+    },
+    {
+      "id": "ph-e-0277",
+      "text_en": "That is not her phone.",
+      "translation_ru": "То не её телефон.",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["That is not her phone."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0277.opus"
+      }
+    },
+    {
+      "id": "ph-e-0278",
+      "text_en": "These are not my shoes.",
+      "translation_ru": "Это не мои туфли.",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["These are not my shoes."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0278.opus"
+      }
+    },
+    {
+      "id": "ph-e-0279",
+      "text_en": "This table is old.",
+      "translation_ru": "Этот стол старый.",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["This table is old."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0279.opus"
+      }
+    },
+    {
+      "id": "ph-e-0280",
+      "text_en": "That chair is new.",
+      "translation_ru": "Тот стул новый.",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["That chair is new."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0280.opus"
+      }
+    },
+    {
+      "id": "ph-e-0281",
+      "text_en": "This window is open.",
+      "translation_ru": "Это окно открыто.",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["This window is open."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0281.opus"
+      }
+    },
+    {
+      "id": "ph-e-0282",
+      "text_en": "That door is closed.",
+      "translation_ru": "Та дверь закрыта.",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["That door is closed."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0282.opus"
+      }
+    },
+    {
+      "id": "ph-e-0283",
+      "text_en": "This city is beautiful.",
+      "translation_ru": "Этот город красивый.",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["This city is beautiful."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0283.opus"
+      }
+    },
+    {
+      "id": "ph-e-0284",
+      "text_en": "That building is tall.",
+      "translation_ru": "То здание высокое.",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["That building is tall."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0284.opus"
+      }
+    },
+    {
+      "id": "ph-e-0285",
+      "text_en": "This coffee is hot.",
+      "translation_ru": "Этот кофе горячий.",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["This coffee is hot."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0285.opus"
+      }
+    },
+    {
+      "id": "ph-e-0286",
+      "text_en": "That tea is cold.",
+      "translation_ru": "Тот чай холодный.",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["That tea is cold."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0286.opus"
+      }
+    },
+    {
+      "id": "ph-e-0287",
+      "text_en": "This is my friend Dima.",
+      "translation_ru": "Это мой друг Дима.",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["This is my friend Dima."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0287.opus"
+      }
+    },
+    {
+      "id": "ph-e-0288",
+      "text_en": "These are my parents.",
+      "translation_ru": "Это мои родители.",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["These are my parents."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0288.opus"
+      }
+    },
+    {
+      "id": "ph-e-0289",
+      "text_en": "This is our room.",
+      "translation_ru": "Это наш номер.",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["This is our room."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0289.opus"
+      }
+    },
+    {
+      "id": "ph-e-0290",
+      "text_en": "Those are tourists.",
+      "translation_ru": "То туристы.",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["Those are tourists."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0290.opus"
+      }
+    },
+    {
+      "id": "ph-e-0291",
+      "text_en": "This bag is heavy.",
+      "translation_ru": "Эта сумка тяжёлая.",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["This bag is heavy."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0291.opus"
+      }
+    },
+    {
+      "id": "ph-e-0292",
+      "text_en": "These apples are red.",
+      "translation_ru": "Эти яблоки красные.",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["These apples are red."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0292.opus"
+      }
+    },
+    {
+      "id": "ph-e-0293",
+      "text_en": "What is this?",
+      "translation_ru": "Что это?",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["What is this?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0293.opus"
+      }
+    },
+    {
+      "id": "ph-e-0294",
+      "text_en": "What are these?",
+      "translation_ru": "Что это?",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["What are these?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0294.opus"
+      }
+    },
+    {
+      "id": "ph-e-0295",
+      "text_en": "This is important.",
+      "translation_ru": "Это важно.",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["This is important."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0295.opus"
+      }
+    },
+    {
+      "id": "ph-e-0296",
+      "text_en": "That is a good idea.",
+      "translation_ru": "То хорошая идея.",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["That is a good idea."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0296.opus"
+      }
+    },
+    {
+      "id": "ph-e-0297",
+      "text_en": "These are my things.",
+      "translation_ru": "Это мои вещи.",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["These are my things."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0297.opus"
+      }
+    },
+    {
+      "id": "ph-e-0298",
+      "text_en": "Is this seat free?",
+      "translation_ru": "Это место свободно?",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["Is this seat free?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0298.opus"
+      }
+    },
+    {
+      "id": "ph-e-0299",
+      "text_en": "This is for you.",
+      "translation_ru": "Это для тебя.",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["This is for you."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0299.opus"
+      }
+    },
+    {
+      "id": "ph-e-0300",
+      "text_en": "That is strange.",
+      "translation_ru": "Это странно.",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["That is strange."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0300.opus"
+      }
+    },
+    {
+      "id": "ph-e-0301",
+      "text_en": "This is my life.",
+      "translation_ru": "Это моя жизнь.",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["This is my life."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0301.opus"
+      }
+    },
+    {
+      "id": "ph-e-0302",
+      "text_en": "These shoes are new.",
+      "translation_ru": "Эти туфли новые.",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["These shoes are new."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0302.opus"
+      }
+    },
+    {
+      "id": "ph-e-0303",
+      "text_en": "That house is big.",
+      "translation_ru": "Тот дом большой.",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["That house is big."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0303.opus"
+      }
+    },
+    {
+      "id": "ph-e-0304",
+      "text_en": "This is the best day!",
+      "translation_ru": "Это лучший день!",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["This is the best day!"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0304.opus"
+      }
+    },
+    {
+      "id": "ph-e-0305",
+      "text_en": "Those people are kind.",
+      "translation_ru": "Те люди добрые.",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["Those people are kind."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0305.opus"
+      }
+    },
+    {
+      "id": "ph-e-0306",
+      "text_en": "Is this your first time here?",
+      "translation_ru": "Ты здесь впервые?",
+      "grammar_point_id": "gp-e-07",
+      "variants": ["Is this your first time here?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0306.opus"
+      }
+    },
+    {
+      "id": "ph-e-0307",
+      "text_en": "His name is Dima.",
+      "translation_ru": "Его зовут Дима.",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["His name is Dima."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0307.opus"
+      }
+    },
+    {
+      "id": "ph-e-0308",
+      "text_en": "Her name is Anna.",
+      "translation_ru": "Её зовут Анна.",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["Her name is Anna."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0308.opus"
+      }
+    },
+    {
+      "id": "ph-e-0309",
+      "text_en": "His phone is new.",
+      "translation_ru": "Его телефон новый.",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["His phone is new."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0309.opus"
+      }
+    },
+    {
+      "id": "ph-e-0310",
+      "text_en": "Her car is old.",
+      "translation_ru": "Её машина старая.",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["Her car is old."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0310.opus"
+      }
+    },
+    {
+      "id": "ph-e-0311",
+      "text_en": "My brother is a doctor.",
+      "translation_ru": "Мой брат — врач.",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["My brother is a doctor."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0311.opus"
+      }
+    },
+    {
+      "id": "ph-e-0312",
+      "text_en": "Her sister is an artist.",
+      "translation_ru": "Её сестра — художница.",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["Her sister is an artist."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0312.opus"
+      }
+    },
+    {
+      "id": "ph-e-0313",
+      "text_en": "His parents are here.",
+      "translation_ru": "Его родители здесь.",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["His parents are here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0313.opus"
+      }
+    },
+    {
+      "id": "ph-e-0314",
+      "text_en": "Their house is big.",
+      "translation_ru": "Их дом большой.",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["Their house is big."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0314.opus"
+      }
+    },
+    {
+      "id": "ph-e-0315",
+      "text_en": "Our room is small.",
+      "translation_ru": "Наш номер маленький.",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["Our room is small."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0315.opus"
+      }
+    },
+    {
+      "id": "ph-e-0316",
+      "text_en": "Its colour is red.",
+      "translation_ru": "Её цвет — красный.",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["Its colour is red."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0316.opus"
+      }
+    },
+    {
+      "id": "ph-e-0317",
+      "text_en": "He is my best friend.",
+      "translation_ru": "Он мой лучший друг.",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["He is my best friend."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0317.opus"
+      }
+    },
+    {
+      "id": "ph-e-0318",
+      "text_en": "She is our teacher.",
+      "translation_ru": "Она наша учительница.",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["She is our teacher."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0318.opus"
+      }
+    },
+    {
+      "id": "ph-e-0319",
+      "text_en": "It is their cat.",
+      "translation_ru": "Это их кот.",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["It is their cat."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0319.opus"
+      }
+    },
+    {
+      "id": "ph-e-0320",
+      "text_en": "We are their guests.",
+      "translation_ru": "Мы их гости.",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["We are their guests."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0320.opus"
+      }
+    },
+    {
+      "id": "ph-e-0321",
+      "text_en": "They are my neighbours.",
+      "translation_ru": "Они мои соседи.",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["They are my neighbours."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0321.opus"
+      }
+    },
+    {
+      "id": "ph-e-0322",
+      "text_en": "This is Dima's sister.",
+      "translation_ru": "Это сестра Димы.",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["This is Dima's sister."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0322.opus"
+      }
+    },
+    {
+      "id": "ph-e-0323",
+      "text_en": "This is Anna's phone.",
+      "translation_ru": "Это телефон Анны.",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["This is Anna's phone."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0323.opus"
+      }
+    },
+    {
+      "id": "ph-e-0324",
+      "text_en": "That is my father's car.",
+      "translation_ru": "То машина моего отца.",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["That is my father's car."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0324.opus"
+      }
+    },
+    {
+      "id": "ph-e-0325",
+      "text_en": "Where is Ivan's bag?",
+      "translation_ru": "Где сумка Ивана?",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["Where is Ivan's bag?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0325.opus"
+      }
+    },
+    {
+      "id": "ph-e-0326",
+      "text_en": "It is Olga's key.",
+      "translation_ru": "Это ключ Ольги.",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["It is Olga's key."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0326.opus"
+      }
+    },
+    {
+      "id": "ph-e-0327",
+      "text_en": "My sister's name is Kate.",
+      "translation_ru": "Мою сестру зовут Катя.",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["My sister's name is Kate."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0327.opus"
+      }
+    },
+    {
+      "id": "ph-e-0328",
+      "text_en": "His friend's car is black.",
+      "translation_ru": "Машина его друга чёрная.",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["His friend's car is black."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0328.opus"
+      }
+    },
+    {
+      "id": "ph-e-0329",
+      "text_en": "I have one brother and two sisters.",
+      "translation_ru": "У меня один брат и две сестры.",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["I have one brother and two sisters."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0329.opus"
+      }
+    },
+    {
+      "id": "ph-e-0330",
+      "text_en": "She has three children.",
+      "translation_ru": "У неё трое детей.",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["She has three children."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0330.opus"
+      }
+    },
+    {
+      "id": "ph-e-0331",
+      "text_en": "He is twelve years old.",
+      "translation_ru": "Ему двенадцать лет.",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["He is twelve years old."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0331.opus"
+      }
+    },
+    {
+      "id": "ph-e-0332",
+      "text_en": "I am sixteen.",
+      "translation_ru": "Мне шестнадцать.",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["I am sixteen."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0332.opus"
+      }
+    },
+    {
+      "id": "ph-e-0333",
+      "text_en": "My father is fifty.",
+      "translation_ru": "Моему отцу пятьдесят.",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["My father is fifty."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0333.opus"
+      }
+    },
+    {
+      "id": "ph-e-0334",
+      "text_en": "How old is he?",
+      "translation_ru": "Сколько ему лет?",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["How old is he?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0334.opus"
+      }
+    },
+    {
+      "id": "ph-e-0335",
+      "text_en": "How old is your daughter?",
+      "translation_ru": "Сколько лет твоей дочери?",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["How old is your daughter?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0335.opus"
+      }
+    },
+    {
+      "id": "ph-e-0336",
+      "text_en": "Five plus five is ten.",
+      "translation_ru": "Пять плюс пять — десять.",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["Five plus five is ten."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0336.opus"
+      }
+    },
+    {
+      "id": "ph-e-0337",
+      "text_en": "It is fifteen.",
+      "translation_ru": "Сейчас пятнадцать.",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["It is fifteen."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0337.opus"
+      }
+    },
+    {
+      "id": "ph-e-0338",
+      "text_en": "Room seven is on this floor.",
+      "translation_ru": "Седьмой номер на этом этаже.",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["Room seven is on this floor."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0338.opus"
+      }
+    },
+    {
+      "id": "ph-e-0339",
+      "text_en": "Her eyes are green.",
+      "translation_ru": "У неё зелёные глаза.",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["Her eyes are green."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0339.opus"
+      }
+    },
+    {
+      "id": "ph-e-0340",
+      "text_en": "His hands are cold.",
+      "translation_ru": "У него холодные руки.",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["His hands are cold."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0340.opus"
+      }
+    },
+    {
+      "id": "ph-e-0341",
+      "text_en": "Our friends are kind.",
+      "translation_ru": "Наши друзья добрые.",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["Our friends are kind."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0341.opus"
+      }
+    },
+    {
+      "id": "ph-e-0342",
+      "text_en": "Their names are Ivan and Olga.",
+      "translation_ru": "Их зовут Иван и Ольга.",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["Their names are Ivan and Olga."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0342.opus"
+      }
+    },
+    {
+      "id": "ph-e-0343",
+      "text_en": "My mother's name is Tanya.",
+      "translation_ru": "Мою маму зовут Таня.",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["My mother's name is Tanya."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0343.opus"
+      }
+    },
+    {
+      "id": "ph-e-0344",
+      "text_en": "Is she your sister?",
+      "translation_ru": "Она твоя сестра?",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["Is she your sister?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0344.opus"
+      }
+    },
+    {
+      "id": "ph-e-0345",
+      "text_en": "Is he your friend?",
+      "translation_ru": "Он твой друг?",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["Is he your friend?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0345.opus"
+      }
+    },
+    {
+      "id": "ph-e-0346",
+      "text_en": "Are they your parents?",
+      "translation_ru": "Это твои родители?",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["Are they your parents?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0346.opus"
+      }
+    },
+    {
+      "id": "ph-e-0347",
+      "text_en": "It is not my dog.",
+      "translation_ru": "Это не моя собака.",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["It is not my dog."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0347.opus"
+      }
+    },
+    {
+      "id": "ph-e-0348",
+      "text_en": "He is not her brother.",
+      "translation_ru": "Он не её брат.",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["He is not her brother."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0348.opus"
+      }
+    },
+    {
+      "id": "ph-e-0349",
+      "text_en": "Your tea is ready.",
+      "translation_ru": "Твой чай готов.",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["Your tea is ready."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0349.opus"
+      }
+    },
+    {
+      "id": "ph-e-0350",
+      "text_en": "Their dog is friendly.",
+      "translation_ru": "Их собака дружелюбная.",
+      "grammar_point_id": "gp-e-08",
+      "variants": ["Their dog is friendly."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0350.opus"
+      }
+    },
+    {
+      "id": "ph-e-0351",
+      "text_en": "One book, two books.",
+      "translation_ru": "Одна книга, две книги.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["One book, two books."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0351.opus"
+      }
+    },
+    {
+      "id": "ph-e-0352",
+      "text_en": "I have two apples.",
+      "translation_ru": "У меня два яблока.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["I have two apples."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0352.opus"
+      }
+    },
+    {
+      "id": "ph-e-0353",
+      "text_en": "I have three children.",
+      "translation_ru": "У меня трое детей.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["I have three children."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0353.opus"
+      }
+    },
+    {
+      "id": "ph-e-0354",
+      "text_en": "These are my books.",
+      "translation_ru": "Это мои книги.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["These are my books."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0354.opus"
+      }
+    },
+    {
+      "id": "ph-e-0355",
+      "text_en": "Those are her keys.",
+      "translation_ru": "То её ключи.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["Those are her keys."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0355.opus"
+      }
+    },
+    {
+      "id": "ph-e-0356",
+      "text_en": "The men are here.",
+      "translation_ru": "Мужчины здесь.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["The men are here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0356.opus"
+      }
+    },
+    {
+      "id": "ph-e-0357",
+      "text_en": "The women are tired.",
+      "translation_ru": "Женщины устали.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["The women are tired."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0357.opus"
+      }
+    },
+    {
+      "id": "ph-e-0358",
+      "text_en": "The children are happy.",
+      "translation_ru": "Дети счастливы.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["The children are happy."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0358.opus"
+      }
+    },
+    {
+      "id": "ph-e-0359",
+      "text_en": "These people are tourists.",
+      "translation_ru": "Эти люди — туристы.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["These people are tourists."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0359.opus"
+      }
+    },
+    {
+      "id": "ph-e-0360",
+      "text_en": "My feet are cold.",
+      "translation_ru": "У меня мёрзнут ноги.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["My feet are cold."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0360.opus"
+      }
+    },
+    {
+      "id": "ph-e-0361",
+      "text_en": "My teeth are white.",
+      "translation_ru": "У меня белые зубы.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["My teeth are white."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0361.opus"
+      }
+    },
+    {
+      "id": "ph-e-0362",
+      "text_en": "How many books do you have?",
+      "translation_ru": "Сколько у тебя книг?",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["How many books do you have?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0362.opus"
+      }
+    },
+    {
+      "id": "ph-e-0363",
+      "text_en": "I have ten fingers.",
+      "translation_ru": "У меня десять пальцев.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["I have ten fingers."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0363.opus"
+      }
+    },
+    {
+      "id": "ph-e-0364",
+      "text_en": "Twenty, thirty, forty.",
+      "translation_ru": "Двадцать, тридцать, сорок.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["Twenty, thirty, forty."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0364.opus"
+      }
+    },
+    {
+      "id": "ph-e-0365",
+      "text_en": "It is twenty dollars.",
+      "translation_ru": "Это двадцать долларов.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["It is twenty dollars."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0365.opus"
+      }
+    },
+    {
+      "id": "ph-e-0366",
+      "text_en": "It costs fifty euros.",
+      "translation_ru": "Это стоит пятьдесят евро.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["It costs fifty euros."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0366.opus"
+      }
+    },
+    {
+      "id": "ph-e-0367",
+      "text_en": "I have a hundred rubles.",
+      "translation_ru": "У меня сто рублей.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["I have a hundred rubles."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0367.opus"
+      }
+    },
+    {
+      "id": "ph-e-0368",
+      "text_en": "My room number is sixty.",
+      "translation_ru": "Мой номер комнаты — шестьдесят.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["My room number is sixty."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0368.opus"
+      }
+    },
+    {
+      "id": "ph-e-0369",
+      "text_en": "Two cities, three countries.",
+      "translation_ru": "Два города, три страны.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["Two cities, three countries."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0369.opus"
+      }
+    },
+    {
+      "id": "ph-e-0370",
+      "text_en": "These cities are big.",
+      "translation_ru": "Эти города большие.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["These cities are big."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0370.opus"
+      }
+    },
+    {
+      "id": "ph-e-0371",
+      "text_en": "Those boxes are heavy.",
+      "translation_ru": "Те коробки тяжёлые.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["Those boxes are heavy."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0371.opus"
+      }
+    },
+    {
+      "id": "ph-e-0372",
+      "text_en": "My glasses are on the table.",
+      "translation_ru": "Мои очки на столе.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["My glasses are on the table."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0372.opus"
+      }
+    },
+    {
+      "id": "ph-e-0373",
+      "text_en": "The buses are slow.",
+      "translation_ru": "Автобусы медленные.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["The buses are slow."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0373.opus"
+      }
+    },
+    {
+      "id": "ph-e-0374",
+      "text_en": "We have two watches.",
+      "translation_ru": "У нас двое часов.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["We have two watches."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0374.opus"
+      }
+    },
+    {
+      "id": "ph-e-0375",
+      "text_en": "Apples are red or green.",
+      "translation_ru": "Яблоки красные или зелёные.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["Apples are red or green."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0375.opus"
+      }
+    },
+    {
+      "id": "ph-e-0376",
+      "text_en": "Bananas are yellow.",
+      "translation_ru": "Бананы жёлтые.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["Bananas are yellow."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0376.opus"
+      }
+    },
+    {
+      "id": "ph-e-0377",
+      "text_en": "I like tomatoes.",
+      "translation_ru": "Я люблю помидоры.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["I like tomatoes."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0377.opus"
+      }
+    },
+    {
+      "id": "ph-e-0378",
+      "text_en": "These oranges are sweet.",
+      "translation_ru": "Эти апельсины сладкие.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["These oranges are sweet."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0378.opus"
+      }
+    },
+    {
+      "id": "ph-e-0379",
+      "text_en": "Water and bread.",
+      "translation_ru": "Вода и хлеб.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["Water and bread."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0379.opus"
+      }
+    },
+    {
+      "id": "ph-e-0380",
+      "text_en": "Milk is white.",
+      "translation_ru": "Молоко белое.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["Milk is white."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0380.opus"
+      }
+    },
+    {
+      "id": "ph-e-0381",
+      "text_en": "I want two teas, please.",
+      "translation_ru": "Два чая, пожалуйста.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["I want two teas, please."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0381.opus"
+      }
+    },
+    {
+      "id": "ph-e-0382",
+      "text_en": "One coffee or two coffees?",
+      "translation_ru": "Один кофе или два?",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["One coffee or two coffees?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0382.opus"
+      }
+    },
+    {
+      "id": "ph-e-0383",
+      "text_en": "The children are at school.",
+      "translation_ru": "Дети в школе.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["The children are at school."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0383.opus"
+      }
+    },
+    {
+      "id": "ph-e-0384",
+      "text_en": "The men are at work.",
+      "translation_ru": "Мужчины на работе.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["The men are at work."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0384.opus"
+      }
+    },
+    {
+      "id": "ph-e-0385",
+      "text_en": "My friends are students.",
+      "translation_ru": "Мои друзья студенты.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["My friends are students."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0385.opus"
+      }
+    },
+    {
+      "id": "ph-e-0386",
+      "text_en": "There are two windows.",
+      "translation_ru": "Тут два окна.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["There are two windows."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0386.opus"
+      }
+    },
+    {
+      "id": "ph-e-0387",
+      "text_en": "How many people are here?",
+      "translation_ru": "Сколько здесь людей?",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["How many people are here?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0387.opus"
+      }
+    },
+    {
+      "id": "ph-e-0388",
+      "text_en": "Five days a week.",
+      "translation_ru": "Пять дней в неделю.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["Five days a week."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0388.opus"
+      }
+    },
+    {
+      "id": "ph-e-0389",
+      "text_en": "Seven days, seven nights.",
+      "translation_ru": "Семь дней, семь ночей.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["Seven days, seven nights."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0389.opus"
+      }
+    },
+    {
+      "id": "ph-e-0390",
+      "text_en": "Twelve months in a year.",
+      "translation_ru": "Двенадцать месяцев в году.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["Twelve months in a year."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0390.opus"
+      }
+    },
+    {
+      "id": "ph-e-0391",
+      "text_en": "Two tickets to London.",
+      "translation_ru": "Два билета до Лондона.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["Two tickets to London."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0391.opus"
+      }
+    },
+    {
+      "id": "ph-e-0392",
+      "text_en": "Three rooms and two bathrooms.",
+      "translation_ru": "Три комнаты и две ванные.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["Three rooms and two bathrooms."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0392.opus"
+      }
+    },
+    {
+      "id": "ph-e-0393",
+      "text_en": "Is this a pigeon?",
+      "translation_ru": "Это голубь?",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["Is this a pigeon?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0393.opus"
+      }
+    },
+    {
+      "id": "ph-e-0394",
+      "text_en": "These are not my glasses.",
+      "translation_ru": "Это не мои очки.",
+      "grammar_point_id": "gp-e-09",
+      "variants": ["These are not my glasses."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0394.opus"
+      }
+    },
+    {
+      "id": "ph-e-0395",
+      "text_en": "What is your name and where are you from?",
+      "translation_ru": "Как тебя зовут и откуда ты?",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["What is your name and where are you from?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0395.opus"
+      }
+    },
+    {
+      "id": "ph-e-0396",
+      "text_en": "My name is Olga. I am from Moscow.",
+      "translation_ru": "Меня зовут Ольга. Я из Москвы.",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["My name is Olga. I am from Moscow."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0396.opus"
+      }
+    },
+    {
+      "id": "ph-e-0397",
+      "text_en": "This is my friend. His name is Ivan.",
+      "translation_ru": "Это мой друг. Его зовут Иван.",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["This is my friend. His name is Ivan."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0397.opus"
+      }
+    },
+    {
+      "id": "ph-e-0398",
+      "text_en": "These are my keys.",
+      "translation_ru": "Это мои ключи.",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["These are my keys."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0398.opus"
+      }
+    },
+    {
+      "id": "ph-e-0399",
+      "text_en": "Those are her books.",
+      "translation_ru": "То её книги.",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["Those are her books."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0399.opus"
+      }
+    },
+    {
+      "id": "ph-e-0400",
+      "text_en": "His sister is ten years old.",
+      "translation_ru": "Его сестре десять лет.",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["His sister is ten years old."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0400.opus"
+      }
+    },
+    {
+      "id": "ph-e-0401",
+      "text_en": "Her brothers are students.",
+      "translation_ru": "Её братья студенты.",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["Her brothers are students."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0401.opus"
+      }
+    },
+    {
+      "id": "ph-e-0402",
+      "text_en": "Our children are at school.",
+      "translation_ru": "Наши дети в школе.",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["Our children are at school."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0402.opus"
+      }
+    },
+    {
+      "id": "ph-e-0403",
+      "text_en": "Their house has five rooms.",
+      "translation_ru": "В их доме пять комнат.",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["Their house has five rooms."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0403.opus"
+      }
+    },
+    {
+      "id": "ph-e-0404",
+      "text_en": "Where is Anna's phone?",
+      "translation_ru": "Где телефон Анны?",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["Where is Anna's phone?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0404.opus"
+      }
+    },
+    {
+      "id": "ph-e-0405",
+      "text_en": "This is Dima's book.",
+      "translation_ru": "Это книга Димы.",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["This is Dima's book."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0405.opus"
+      }
+    },
+    {
+      "id": "ph-e-0406",
+      "text_en": "How old is your father?",
+      "translation_ru": "Сколько лет твоему отцу?",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["How old is your father?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0406.opus"
+      }
+    },
+    {
+      "id": "ph-e-0407",
+      "text_en": "What are these?",
+      "translation_ru": "Что это?",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["What are these?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0407.opus"
+      }
+    },
+    {
+      "id": "ph-e-0408",
+      "text_en": "Who are those people?",
+      "translation_ru": "Кто те люди?",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["Who are those people?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0408.opus"
+      }
+    },
+    {
+      "id": "ph-e-0409",
+      "text_en": "The men are from Canada.",
+      "translation_ru": "Мужчины из Канады.",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["The men are from Canada."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0409.opus"
+      }
+    },
+    {
+      "id": "ph-e-0410",
+      "text_en": "The women are teachers.",
+      "translation_ru": "Женщины — учительницы.",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["The women are teachers."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0410.opus"
+      }
+    },
+    {
+      "id": "ph-e-0411",
+      "text_en": "Is this your bag? — Yes, it is.",
+      "translation_ru": "Это твоя сумка? — Да.",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["Is this your bag? — Yes, it is."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0411.opus"
+      }
+    },
+    {
+      "id": "ph-e-0412",
+      "text_en": "Are those your glasses? — No, they are not.",
+      "translation_ru": "То твои очки? — Нет.",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["Are those your glasses? — No, they are not."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0412.opus"
+      }
+    },
+    {
+      "id": "ph-e-0413",
+      "text_en": "It is thirty dollars.",
+      "translation_ru": "Это тридцать долларов.",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["It is thirty dollars."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0413.opus"
+      }
+    },
+    {
+      "id": "ph-e-0414",
+      "text_en": "I have two phones.",
+      "translation_ru": "У меня два телефона.",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["I have two phones."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0414.opus"
+      }
+    },
+    {
+      "id": "ph-e-0415",
+      "text_en": "My city is old and beautiful.",
+      "translation_ru": "Мой город старый и красивый.",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["My city is old and beautiful."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0415.opus"
+      }
+    },
+    {
+      "id": "ph-e-0416",
+      "text_en": "His car is black.",
+      "translation_ru": "Его машина чёрная.",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["His car is black."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0416.opus"
+      }
+    },
+    {
+      "id": "ph-e-0417",
+      "text_en": "Her eyes are blue.",
+      "translation_ru": "У неё голубые глаза.",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["Her eyes are blue."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0417.opus"
+      }
+    },
+    {
+      "id": "ph-e-0418",
+      "text_en": "Our friends are here.",
+      "translation_ru": "Наши друзья здесь.",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["Our friends are here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0418.opus"
+      }
+    },
+    {
+      "id": "ph-e-0419",
+      "text_en": "What is it?",
+      "translation_ru": "Что это?",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["What is it?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0419.opus"
+      }
+    },
+    {
+      "id": "ph-e-0420",
+      "text_en": "Where are the children?",
+      "translation_ru": "Где дети?",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["Where are the children?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0420.opus"
+      }
+    },
+    {
+      "id": "ph-e-0421",
+      "text_en": "How is your family?",
+      "translation_ru": "Как твоя семья?",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["How is your family?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0421.opus"
+      }
+    },
+    {
+      "id": "ph-e-0422",
+      "text_en": "This tea is cold.",
+      "translation_ru": "Этот чай холодный.",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["This tea is cold."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0422.opus"
+      }
+    },
+    {
+      "id": "ph-e-0423",
+      "text_en": "Those windows are open.",
+      "translation_ru": "Те окна открыты.",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["Those windows are open."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0423.opus"
+      }
+    },
+    {
+      "id": "ph-e-0424",
+      "text_en": "My name is Anna. And what is your name?",
+      "translation_ru": "Меня зовут Анна. А как тебя?",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["My name is Anna. And what is your name?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0424.opus"
+      }
+    },
+    {
+      "id": "ph-e-0425",
+      "text_en": "I am from Russia. Where are you from?",
+      "translation_ru": "Я из России. Откуда ты?",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["I am from Russia. Where are you from?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0425.opus"
+      }
+    },
+    {
+      "id": "ph-e-0426",
+      "text_en": "She is twenty years old.",
+      "translation_ru": "Ей двадцать лет.",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["She is twenty years old."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0426.opus"
+      }
+    },
+    {
+      "id": "ph-e-0427",
+      "text_en": "He is my sister's friend.",
+      "translation_ru": "Он друг моей сестры.",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["He is my sister's friend."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0427.opus"
+      }
+    },
+    {
+      "id": "ph-e-0428",
+      "text_en": "We have four chairs and one table.",
+      "translation_ru": "У нас четыре стула и один стол.",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["We have four chairs and one table."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0428.opus"
+      }
+    },
+    {
+      "id": "ph-e-0429",
+      "text_en": "The station is far.",
+      "translation_ru": "Вокзал далеко.",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["The station is far."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0429.opus"
+      }
+    },
+    {
+      "id": "ph-e-0430",
+      "text_en": "This is room twelve.",
+      "translation_ru": "Это двенадцатый номер.",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["This is room twelve."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0430.opus"
+      }
+    },
+    {
+      "id": "ph-e-0431",
+      "text_en": "Those are not tourists.",
+      "translation_ru": "Те люди — не туристы.",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["Those are not tourists."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0431.opus"
+      }
+    },
+    {
+      "id": "ph-e-0432",
+      "text_en": "His friends are doctors.",
+      "translation_ru": "Его друзья врачи.",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["His friends are doctors."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0432.opus"
+      }
+    },
+    {
+      "id": "ph-e-0433",
+      "text_en": "Her tea is hot.",
+      "translation_ru": "Её чай горячий.",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["Her tea is hot."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0433.opus"
+      }
+    },
+    {
+      "id": "ph-e-0434",
+      "text_en": "It is a big city with old streets.",
+      "translation_ru": "Это большой город со старыми улицами.",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["It is a big city with old streets."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0434.opus"
+      }
+    },
+    {
+      "id": "ph-e-0435",
+      "text_en": "Two coffees and one tea, please.",
+      "translation_ru": "Два кофе и один чай, пожалуйста.",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["Two coffees and one tea, please."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0435.opus"
+      }
+    },
+    {
+      "id": "ph-e-0436",
+      "text_en": "My parents are at home.",
+      "translation_ru": "Мои родители дома.",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["My parents are at home."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0436.opus"
+      }
+    },
+    {
+      "id": "ph-e-0437",
+      "text_en": "Where is your teacher from?",
+      "translation_ru": "Откуда твой учитель?",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["Where is your teacher from?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0437.opus"
+      }
+    },
+    {
+      "id": "ph-e-0438",
+      "text_en": "Everything is fine.",
+      "translation_ru": "Всё в порядке.",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["Everything is fine."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0438.opus"
+      }
+    },
+    {
+      "id": "ph-e-0439",
+      "text_en": "It is good to see you!",
+      "translation_ru": "Рад тебя видеть!",
+      "grammar_point_id": "gp-e-10",
+      "variants": ["It is good to see you!"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0439.opus"
+      }
     }
   ]
 }

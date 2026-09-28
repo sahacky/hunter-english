@@ -165,7 +165,7 @@
           "id": "ex-e-0047"
         },
         {
-          "id": "ex-e-0236"
+          "id": "ex-e-0471"
         }
       ],
       "bebris_video": {
@@ -338,7 +338,7 @@
           "id": "ex-e-0094"
         },
         {
-          "id": "ex-e-0237"
+          "id": "ex-e-0472"
         }
       ],
       "bebris_video": {
@@ -511,7 +511,7 @@
           "id": "ex-e-0141"
         },
         {
-          "id": "ex-e-0238"
+          "id": "ex-e-0473"
         }
       ],
       "bebris_video": {
@@ -684,7 +684,7 @@
           "id": "ex-e-0188"
         },
         {
-          "id": "ex-e-0239"
+          "id": "ex-e-0474"
         }
       ],
       "bebris_video": {
@@ -853,7 +853,838 @@
           "id": "ex-e-0235"
         },
         {
+          "id": "ex-e-0475"
+        }
+      ],
+      "bebris_video": null
+    },
+    {
+      "id": "les-e-06",
+      "rank": "E",
+      "module": "mod-e-1",
+      "title": "to be: спецвопросы What / Where / How",
+      "grammar_point": {
+        "id": "gp-e-06",
+        "title_ru": "Спецвопросы с to be",
+        "rule_md": "Спецвопрос с to be: вопросительное слово + am/is/are.\n\n- **What** is your name? — что/как\n- **Where** are you from? — где/откуда\n- **How** old are you? — как (сколько лет)\n- **Who** is she? — кто\n\nПорядок слов: вопросительное слово → глагол → подлежащее. Без to be вопрос не строится.",
+        "phrase_ids": ["ph-e-0219", "ph-e-0220", "ph-e-0221", "ph-e-0222", "ph-e-0223"],
+        "trap_id": null
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 241,
+        "to": 300
+      },
+      "phrasebook_topic": null,
+      "trap_id": null,
+      "quotes_topic": "questions",
+      "exercises": [
+        {
+          "id": "ex-e-0236"
+        },
+        {
+          "id": "ex-e-0237"
+        },
+        {
+          "id": "ex-e-0238"
+        },
+        {
+          "id": "ex-e-0239"
+        },
+        {
           "id": "ex-e-0240"
+        },
+        {
+          "id": "ex-e-0241"
+        },
+        {
+          "id": "ex-e-0242"
+        },
+        {
+          "id": "ex-e-0243"
+        },
+        {
+          "id": "ex-e-0244"
+        },
+        {
+          "id": "ex-e-0245"
+        },
+        {
+          "id": "ex-e-0246"
+        },
+        {
+          "id": "ex-e-0247"
+        },
+        {
+          "id": "ex-e-0248"
+        },
+        {
+          "id": "ex-e-0249"
+        },
+        {
+          "id": "ex-e-0250"
+        },
+        {
+          "id": "ex-e-0251"
+        },
+        {
+          "id": "ex-e-0252"
+        },
+        {
+          "id": "ex-e-0253"
+        },
+        {
+          "id": "ex-e-0254"
+        },
+        {
+          "id": "ex-e-0255"
+        },
+        {
+          "id": "ex-e-0256"
+        },
+        {
+          "id": "ex-e-0257"
+        },
+        {
+          "id": "ex-e-0258"
+        },
+        {
+          "id": "ex-e-0259"
+        },
+        {
+          "id": "ex-e-0260"
+        },
+        {
+          "id": "ex-e-0261"
+        },
+        {
+          "id": "ex-e-0262"
+        },
+        {
+          "id": "ex-e-0263"
+        },
+        {
+          "id": "ex-e-0264"
+        },
+        {
+          "id": "ex-e-0265"
+        },
+        {
+          "id": "ex-e-0266"
+        },
+        {
+          "id": "ex-e-0267"
+        },
+        {
+          "id": "ex-e-0268"
+        },
+        {
+          "id": "ex-e-0269"
+        },
+        {
+          "id": "ex-e-0270"
+        },
+        {
+          "id": "ex-e-0271"
+        },
+        {
+          "id": "ex-e-0272"
+        },
+        {
+          "id": "ex-e-0273"
+        },
+        {
+          "id": "ex-e-0274"
+        },
+        {
+          "id": "ex-e-0275"
+        },
+        {
+          "id": "ex-e-0276"
+        },
+        {
+          "id": "ex-e-0277"
+        },
+        {
+          "id": "ex-e-0278"
+        },
+        {
+          "id": "ex-e-0279"
+        },
+        {
+          "id": "ex-e-0280"
+        },
+        {
+          "id": "ex-e-0281"
+        },
+        {
+          "id": "ex-e-0282"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "1.33",
+        "playlist_index": 88,
+        "youtube_id": "sQ6HMW37Xh4",
+        "title": null
+      }
+    },
+    {
+      "id": "les-e-07",
+      "rank": "E",
+      "module": "mod-e-2",
+      "title": "this / these / that / those",
+      "grammar_point": {
+        "id": "gp-e-07",
+        "title_ru": "Указательные местоимения",
+        "rule_md": "Указательные местоимения:\n\n- **this / these** — близко: This is my phone. These are my keys.\n- **that / those** — далеко: That is your house. Those are her shoes.\n\nЕдинственное — this/that, множественное — these/those.",
+        "phrase_ids": ["ph-e-0263", "ph-e-0264", "ph-e-0265", "ph-e-0266", "ph-e-0267"],
+        "trap_id": null
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 301,
+        "to": 360
+      },
+      "phrasebook_topic": null,
+      "trap_id": null,
+      "quotes_topic": "things",
+      "exercises": [
+        {
+          "id": "ex-e-0283"
+        },
+        {
+          "id": "ex-e-0284"
+        },
+        {
+          "id": "ex-e-0285"
+        },
+        {
+          "id": "ex-e-0286"
+        },
+        {
+          "id": "ex-e-0287"
+        },
+        {
+          "id": "ex-e-0288"
+        },
+        {
+          "id": "ex-e-0289"
+        },
+        {
+          "id": "ex-e-0290"
+        },
+        {
+          "id": "ex-e-0291"
+        },
+        {
+          "id": "ex-e-0292"
+        },
+        {
+          "id": "ex-e-0293"
+        },
+        {
+          "id": "ex-e-0294"
+        },
+        {
+          "id": "ex-e-0295"
+        },
+        {
+          "id": "ex-e-0296"
+        },
+        {
+          "id": "ex-e-0297"
+        },
+        {
+          "id": "ex-e-0298"
+        },
+        {
+          "id": "ex-e-0299"
+        },
+        {
+          "id": "ex-e-0300"
+        },
+        {
+          "id": "ex-e-0301"
+        },
+        {
+          "id": "ex-e-0302"
+        },
+        {
+          "id": "ex-e-0303"
+        },
+        {
+          "id": "ex-e-0304"
+        },
+        {
+          "id": "ex-e-0305"
+        },
+        {
+          "id": "ex-e-0306"
+        },
+        {
+          "id": "ex-e-0307"
+        },
+        {
+          "id": "ex-e-0308"
+        },
+        {
+          "id": "ex-e-0309"
+        },
+        {
+          "id": "ex-e-0310"
+        },
+        {
+          "id": "ex-e-0311"
+        },
+        {
+          "id": "ex-e-0312"
+        },
+        {
+          "id": "ex-e-0313"
+        },
+        {
+          "id": "ex-e-0314"
+        },
+        {
+          "id": "ex-e-0315"
+        },
+        {
+          "id": "ex-e-0316"
+        },
+        {
+          "id": "ex-e-0317"
+        },
+        {
+          "id": "ex-e-0318"
+        },
+        {
+          "id": "ex-e-0319"
+        },
+        {
+          "id": "ex-e-0320"
+        },
+        {
+          "id": "ex-e-0321"
+        },
+        {
+          "id": "ex-e-0322"
+        },
+        {
+          "id": "ex-e-0323"
+        },
+        {
+          "id": "ex-e-0324"
+        },
+        {
+          "id": "ex-e-0325"
+        },
+        {
+          "id": "ex-e-0326"
+        },
+        {
+          "id": "ex-e-0327"
+        },
+        {
+          "id": "ex-e-0328"
+        },
+        {
+          "id": "ex-e-0329"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "1.5",
+        "playlist_index": 9,
+        "youtube_id": "nPXmJZx60K0",
+        "title": null
+      }
+    },
+    {
+      "id": "les-e-08",
+      "rank": "E",
+      "module": "mod-e-2",
+      "title": "Притяжательные my/his/her + ’s",
+      "grammar_point": {
+        "id": "gp-e-08",
+        "title_ru": "Притяжательные местоимения и падеж ’s",
+        "rule_md": "Притяжательные: **my, your, his, her, its, our, their** — чей.\n\n- His name is Dima. Her sister is an artist.\n- Притяжательный падеж: **Dima's sister** = сестра Димы ('s).\n\nВозраст: I am 25. My brother is 14.",
+        "phrase_ids": ["ph-e-0307", "ph-e-0308", "ph-e-0309", "ph-e-0310", "ph-e-0311"],
+        "trap_id": null
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 361,
+        "to": 420
+      },
+      "phrasebook_topic": null,
+      "trap_id": null,
+      "quotes_topic": "family",
+      "exercises": [
+        {
+          "id": "ex-e-0330"
+        },
+        {
+          "id": "ex-e-0331"
+        },
+        {
+          "id": "ex-e-0332"
+        },
+        {
+          "id": "ex-e-0333"
+        },
+        {
+          "id": "ex-e-0334"
+        },
+        {
+          "id": "ex-e-0335"
+        },
+        {
+          "id": "ex-e-0336"
+        },
+        {
+          "id": "ex-e-0337"
+        },
+        {
+          "id": "ex-e-0338"
+        },
+        {
+          "id": "ex-e-0339"
+        },
+        {
+          "id": "ex-e-0340"
+        },
+        {
+          "id": "ex-e-0341"
+        },
+        {
+          "id": "ex-e-0342"
+        },
+        {
+          "id": "ex-e-0343"
+        },
+        {
+          "id": "ex-e-0344"
+        },
+        {
+          "id": "ex-e-0345"
+        },
+        {
+          "id": "ex-e-0346"
+        },
+        {
+          "id": "ex-e-0347"
+        },
+        {
+          "id": "ex-e-0348"
+        },
+        {
+          "id": "ex-e-0349"
+        },
+        {
+          "id": "ex-e-0350"
+        },
+        {
+          "id": "ex-e-0351"
+        },
+        {
+          "id": "ex-e-0352"
+        },
+        {
+          "id": "ex-e-0353"
+        },
+        {
+          "id": "ex-e-0354"
+        },
+        {
+          "id": "ex-e-0355"
+        },
+        {
+          "id": "ex-e-0356"
+        },
+        {
+          "id": "ex-e-0357"
+        },
+        {
+          "id": "ex-e-0358"
+        },
+        {
+          "id": "ex-e-0359"
+        },
+        {
+          "id": "ex-e-0360"
+        },
+        {
+          "id": "ex-e-0361"
+        },
+        {
+          "id": "ex-e-0362"
+        },
+        {
+          "id": "ex-e-0363"
+        },
+        {
+          "id": "ex-e-0364"
+        },
+        {
+          "id": "ex-e-0365"
+        },
+        {
+          "id": "ex-e-0366"
+        },
+        {
+          "id": "ex-e-0367"
+        },
+        {
+          "id": "ex-e-0368"
+        },
+        {
+          "id": "ex-e-0369"
+        },
+        {
+          "id": "ex-e-0370"
+        },
+        {
+          "id": "ex-e-0371"
+        },
+        {
+          "id": "ex-e-0372"
+        },
+        {
+          "id": "ex-e-0373"
+        },
+        {
+          "id": "ex-e-0374"
+        },
+        {
+          "id": "ex-e-0375"
+        },
+        {
+          "id": "ex-e-0376"
+        }
+      ],
+      "bebris_video": null
+    },
+    {
+      "id": "les-e-09",
+      "rank": "E",
+      "module": "mod-e-2",
+      "title": "Множественное число и числа 20–100",
+      "grammar_point": {
+        "id": "gp-e-09",
+        "title_ru": "Множественное число существительных",
+        "rule_md": "Множественное число:\n\n- Большинство: +**s** — books, keys, apples.\n- После шипящих: +**es** — boxes, buses.\n- Особые: **men, women, children, people, feet, teeth**.\n\nМножественное без артикля: These are books. Числа: twenty, thirty... a hundred.",
+        "phrase_ids": ["ph-e-0351", "ph-e-0352", "ph-e-0353", "ph-e-0354", "ph-e-0355"],
+        "trap_id": null
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 421,
+        "to": 480
+      },
+      "phrasebook_topic": null,
+      "trap_id": null,
+      "quotes_topic": "numbers",
+      "exercises": [
+        {
+          "id": "ex-e-0377"
+        },
+        {
+          "id": "ex-e-0378"
+        },
+        {
+          "id": "ex-e-0379"
+        },
+        {
+          "id": "ex-e-0380"
+        },
+        {
+          "id": "ex-e-0381"
+        },
+        {
+          "id": "ex-e-0382"
+        },
+        {
+          "id": "ex-e-0383"
+        },
+        {
+          "id": "ex-e-0384"
+        },
+        {
+          "id": "ex-e-0385"
+        },
+        {
+          "id": "ex-e-0386"
+        },
+        {
+          "id": "ex-e-0387"
+        },
+        {
+          "id": "ex-e-0388"
+        },
+        {
+          "id": "ex-e-0389"
+        },
+        {
+          "id": "ex-e-0390"
+        },
+        {
+          "id": "ex-e-0391"
+        },
+        {
+          "id": "ex-e-0392"
+        },
+        {
+          "id": "ex-e-0393"
+        },
+        {
+          "id": "ex-e-0394"
+        },
+        {
+          "id": "ex-e-0395"
+        },
+        {
+          "id": "ex-e-0396"
+        },
+        {
+          "id": "ex-e-0397"
+        },
+        {
+          "id": "ex-e-0398"
+        },
+        {
+          "id": "ex-e-0399"
+        },
+        {
+          "id": "ex-e-0400"
+        },
+        {
+          "id": "ex-e-0401"
+        },
+        {
+          "id": "ex-e-0402"
+        },
+        {
+          "id": "ex-e-0403"
+        },
+        {
+          "id": "ex-e-0404"
+        },
+        {
+          "id": "ex-e-0405"
+        },
+        {
+          "id": "ex-e-0406"
+        },
+        {
+          "id": "ex-e-0407"
+        },
+        {
+          "id": "ex-e-0408"
+        },
+        {
+          "id": "ex-e-0409"
+        },
+        {
+          "id": "ex-e-0410"
+        },
+        {
+          "id": "ex-e-0411"
+        },
+        {
+          "id": "ex-e-0412"
+        },
+        {
+          "id": "ex-e-0413"
+        },
+        {
+          "id": "ex-e-0414"
+        },
+        {
+          "id": "ex-e-0415"
+        },
+        {
+          "id": "ex-e-0416"
+        },
+        {
+          "id": "ex-e-0417"
+        },
+        {
+          "id": "ex-e-0418"
+        },
+        {
+          "id": "ex-e-0419"
+        },
+        {
+          "id": "ex-e-0420"
+        },
+        {
+          "id": "ex-e-0421"
+        },
+        {
+          "id": "ex-e-0422"
+        },
+        {
+          "id": "ex-e-0423"
+        }
+      ],
+      "bebris_video": null
+    },
+    {
+      "id": "les-e-10",
+      "rank": "E",
+      "module": "mod-e-2",
+      "title": "Повторение №2 (E-06…E-09) + диктант-микс",
+      "grammar_point": {
+        "id": "gp-e-10",
+        "title_ru": "Повторение: wh-вопросы, указательные, притяжательные, множественное",
+        "rule_md": "Повторение E-06...E-09 — коротко:\n\n- **Wh-вопросы**: What/Where/How/Who + is/are.\n- **this/these/that/those** — близко/далеко, ед./мн. число.\n- **Притяжательные**: my/his/her/their + Dima's sister.\n- **Множественное**: +s/-es; men, women, children — особые.",
+        "phrase_ids": ["ph-e-0395", "ph-e-0396", "ph-e-0397", "ph-e-0398", "ph-e-0399"],
+        "trap_id": null
+      },
+      "vocab_band": null,
+      "phrasebook_topic": null,
+      "trap_id": null,
+      "quotes_topic": "small-talk",
+      "exercises": [
+        {
+          "id": "ex-e-0424"
+        },
+        {
+          "id": "ex-e-0425"
+        },
+        {
+          "id": "ex-e-0426"
+        },
+        {
+          "id": "ex-e-0427"
+        },
+        {
+          "id": "ex-e-0428"
+        },
+        {
+          "id": "ex-e-0429"
+        },
+        {
+          "id": "ex-e-0430"
+        },
+        {
+          "id": "ex-e-0431"
+        },
+        {
+          "id": "ex-e-0432"
+        },
+        {
+          "id": "ex-e-0433"
+        },
+        {
+          "id": "ex-e-0434"
+        },
+        {
+          "id": "ex-e-0435"
+        },
+        {
+          "id": "ex-e-0436"
+        },
+        {
+          "id": "ex-e-0437"
+        },
+        {
+          "id": "ex-e-0438"
+        },
+        {
+          "id": "ex-e-0439"
+        },
+        {
+          "id": "ex-e-0440"
+        },
+        {
+          "id": "ex-e-0441"
+        },
+        {
+          "id": "ex-e-0442"
+        },
+        {
+          "id": "ex-e-0443"
+        },
+        {
+          "id": "ex-e-0444"
+        },
+        {
+          "id": "ex-e-0445"
+        },
+        {
+          "id": "ex-e-0446"
+        },
+        {
+          "id": "ex-e-0447"
+        },
+        {
+          "id": "ex-e-0448"
+        },
+        {
+          "id": "ex-e-0449"
+        },
+        {
+          "id": "ex-e-0450"
+        },
+        {
+          "id": "ex-e-0451"
+        },
+        {
+          "id": "ex-e-0452"
+        },
+        {
+          "id": "ex-e-0453"
+        },
+        {
+          "id": "ex-e-0454"
+        },
+        {
+          "id": "ex-e-0455"
+        },
+        {
+          "id": "ex-e-0456"
+        },
+        {
+          "id": "ex-e-0457"
+        },
+        {
+          "id": "ex-e-0458"
+        },
+        {
+          "id": "ex-e-0459"
+        },
+        {
+          "id": "ex-e-0460"
+        },
+        {
+          "id": "ex-e-0461"
+        },
+        {
+          "id": "ex-e-0462"
+        },
+        {
+          "id": "ex-e-0463"
+        },
+        {
+          "id": "ex-e-0464"
+        },
+        {
+          "id": "ex-e-0465"
+        },
+        {
+          "id": "ex-e-0466"
+        },
+        {
+          "id": "ex-e-0467"
+        },
+        {
+          "id": "ex-e-0468"
+        },
+        {
+          "id": "ex-e-0469"
+        },
+        {
+          "id": "ex-e-0470"
         }
       ],
       "bebris_video": null

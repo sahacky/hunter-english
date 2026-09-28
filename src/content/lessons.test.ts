@@ -149,9 +149,20 @@ describe('assembleLesson (specs/02 §2 + specs/05 §3–§4)', () => {
   })
 })
 
-describe('loadLessonView (реальные data/ пилота E1)', () => {
-  it('собирает все 5 уроков E1 полными шагами шаблона', async () => {
-    for (const lessonId of ['les-e-01', 'les-e-02', 'les-e-03', 'les-e-04', 'les-e-05']) {
+describe('loadLessonView (реальные data/ ранга E)', () => {
+  it('собирает все уроки E полными шагами шаблона', async () => {
+    for (const lessonId of [
+      'les-e-01',
+      'les-e-02',
+      'les-e-03',
+      'les-e-04',
+      'les-e-05',
+      'les-e-06',
+      'les-e-07',
+      'les-e-08',
+      'les-e-09',
+      'les-e-10',
+    ]) {
       const view = await loadLessonView(lessonId)
       expect(view, lessonId).not.toBeNull()
       expect(view?.lesson.rank).toBe('E')
@@ -177,12 +188,12 @@ describe('loadLessonView (реальные data/ пилота E1)', () => {
 
   it('пул фраз каждого урока ≥40, все фразы с аудио и уникальными id', async () => {
     const phrases = await loadPhrases()
-    expect(phrases.length).toBeGreaterThanOrEqual(200)
+    expect(phrases.length).toBeGreaterThanOrEqual(420)
     expect(new Set(phrases.map(({ id }) => id)).size).toBe(phrases.length)
     expect(phrases.every(({ audio }) => audio?.en_gb?.startsWith('audio/phrases/cori/'))).toBe(true)
 
     const lessons = await loadLessons()
-    expect(lessons.length).toBe(5)
+    expect(lessons.length).toBe(10)
     const phraseById = new Set(phrases.map(({ id }) => id))
     for (const lesson of lessons) {
       const lessonPhrases = phrases.filter(
