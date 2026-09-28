@@ -111,6 +111,9 @@ export const MAX_CARDS_PER_NOTE = 4
 /** Порядок создания карточек слова (srs://rule-1). */
 export const WORD_CARD_ORDER: CardType[] = ['en-ru', 'dictation', 'ru-en', 'speak']
 
+/** Обратные (активные) типы карточек — только они «просыпаются» по rule-2. */
+export const REVERSE_CARD_TYPES: CardType[] = ['ru-en', 'speak']
+
 /** Интервал пассивной карточки (дней), открывающий обратные (srs://rule-2). */
 export const WAKEUP_THRESHOLD_DAYS = 7
 

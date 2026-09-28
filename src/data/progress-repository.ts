@@ -61,4 +61,12 @@ export class DexieProgressRepository implements ProgressRepository {
       },
     )
   }
+
+  async countNewAnsweredSince(iso: string): Promise<number> {
+    return this.db.review_log
+      .where('reviewed_at')
+      .aboveOrEqual(iso)
+      .filter((entry) => entry.state === 0)
+      .count()
+  }
 }

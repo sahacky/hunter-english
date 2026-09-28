@@ -100,6 +100,25 @@ describe('DexieProgressRepository', () => {
     expect(new Set(logs.map(({ id }) => id)).size).toBe(2)
     expect((await repo.getAllCards())[0].state).toBe(2)
   })
+
+  it('countNewAnsweredSince считает ответы на новых карточках с момента', async () => {
+    const card = mkCard()
+    await repo.ensureCards([card])
+
+    expect(await repo.countNewAnsweredSince(NOW.toISOString())).toBe(0)
+
+    const first = applyAnswer(card, 3, NOW, { logId: uuidv7() })
+    await repo.saveAnswer(first.next, first.log)
+    expect(await repo.countNewAnsweredSince(NOW.toISOString())).toBe(1)
+    expect(await repo.countNewAnsweredSince(new Date(NOW.getTime() + 60_000).toISOString())).toBe(0)
+
+    const second = applyAnswer(first.next, 3, new Date(NOW.getTime() + 120_000), {
+      logId: uuidv7(),
+    })
+    await repo.saveAnswer(second.next, second.log)
+    // второй ответ уже не на новой карточке (state до ответа = Learning)
+    expect(await repo.countNewAnsweredSince(NOW.toISOString())).toBe(1)
+  })
 })
 
 describe('uuidv7', () => {

@@ -219,3 +219,11 @@ body {
 .srs-error {
   color: var(--danger);
 }
+
+.srs-warning {
+  margin: 0;
+  padding: 10px 14px;
+  border: 1px solid var(--danger);
+  color: var(--danger);
+  background: var(--surface-2);
+}

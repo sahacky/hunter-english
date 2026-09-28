@@ -15,7 +15,12 @@ import type {
   ReviewLogEntry,
   SessionPlan,
 } from './types'
-import { WAKEUP_DAILY_LIMIT, WAKEUP_THRESHOLD_DAYS, YOUNG_MATURE_DAYS } from './types'
+import {
+  REVERSE_CARD_TYPES,
+  WAKEUP_DAILY_LIMIT,
+  WAKEUP_THRESHOLD_DAYS,
+  YOUNG_MATURE_DAYS,
+} from './types'
 
 /** Час локальной границы дня обучения (srs://day-boundary). */
 export const DAY_BOUNDARY_HOUR = 4
@@ -229,7 +234,9 @@ export function buildQueue(items: QueueItem[], options: BuildQueueOptions): Sess
     }
   }
   const isWakeUp = (card: CardState): boolean =>
-    card.state === State.New && matureByNote.has(card.note_id)
+    card.state === State.New &&
+    REVERSE_CARD_TYPES.includes(card.type) &&
+    matureByNote.has(card.note_id)
 
   const learning: CardState[] = []
   const young: CardState[] = []

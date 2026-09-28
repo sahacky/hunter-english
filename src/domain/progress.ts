@@ -11,4 +11,9 @@ export interface ProgressRepository {
   getAllCards(): Promise<CardState[]>
   /** Ответ: upsert card_state + append review_log — одна транзакция (specs/06 §1). */
   saveAnswer(next: CardState, log: ReviewLogEntry): Promise<void>
+  /**
+   * Сколько ответов сегодня дано на новых карточках (state до ответа = 0) —
+   * дневной лимит новых srs://rule-3 между сессиями.
+   */
+  countNewAnsweredSince(iso: string): Promise<number>
 }

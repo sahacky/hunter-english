@@ -3,7 +3,13 @@
 // (открытый вопрос 2 specs/07: отдельный маршрут не нужен для MVP).
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { buildQueue, applyAnswer, type QueueItem } from '../domain/srs/scheduler'
+import {
+  buildQueue,
+  applyAnswer,
+  dayStart,
+  DEFAULT_NEW_LIMIT,
+  type QueueItem,
+} from '../domain/srs/scheduler'
 import type { Note, QueueEntry, SessionPlan } from '../domain/srs/types'
 import { createFirstCards, loadWordNotes } from '../content/words'
 import type { ProgressRepository } from '../domain/progress'
@@ -26,15 +32,22 @@ interface SrsScreenProps {
   notes?: Note[]
 }
 
-export default function SrsScreen({ repo = new DexieProgressRepository(), notes }: SrsScreenProps) {
+export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
   const { t } = useTranslation()
+  const defaultRepo = useMemo(() => new DexieProgressRepository(), [])
+  const repo = repoProp ?? defaultRepo
   const [phase, setPhase] = useState<Phase>({ kind: 'loading' })
   const [plan, setPlan] = useState<SessionPlan | null>(null)
   const [queue, setQueue] = useState<QueueEntry[]>([])
   const [revealed, setRevealed] = useState(false)
   const [answeredTotal, setAnsweredTotal] = useState(0)
   const [answeredInBlock, setAnsweredInBlock] = useState(0)
-  const sessionId = useRef(uuidv7())
+  const [sessionId] = useState(() => uuidv7())
+  // Защита от двойного ответа, пока saveAnswer в полёте (review_log append-only —
+  // дубль нельзя перезаписать, specs/06 §1)
+  const busyRef = useRef(false)
+  // Время показа текущей карточки — duration_ms в review_log (specs/06 §1)
+  const cardShownAt = useRef(Date.now())
 
   useEffect(() => {
     let alive = true
@@ -51,10 +64,19 @@ export default function SrsScreen({ repo = new DexieProgressRepository(), notes 
             return note ? { card, note } : undefined
           })
           .filter((item): item is QueueItem => item !== undefined)
-        const nextPlan = buildQueue(items, { now: new Date() })
+        const now = new Date()
+        // Дневной лимит новых действует между сессиями (srs://rule-3):
+        // вычитаем уже отвечённые сегодня новые. Пробуждения (wokenToday) не
+        // учитываются: обратные карточки материализуются позже (M6+).
+        const newShownToday = await repo.countNewAnsweredSince(dayStart(now).toISOString())
+        const nextPlan = buildQueue(items, {
+          now,
+          baseNewLimit: Math.max(0, DEFAULT_NEW_LIMIT - newShownToday),
+        })
         if (!alive) return
         setPlan(nextPlan)
         setQueue(nextPlan.entries)
+        cardShownAt.current = Date.now()
         if (nextPlan.entries.length > 0) setPhase({ kind: 'review' })
         else setPhase({ kind: 'done', empty: true })
       } catch {
@@ -69,22 +91,37 @@ export default function SrsScreen({ repo = new DexieProgressRepository(), notes 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
+  useEffect(() => {
+    cardShownAt.current = Date.now()
+  }, [queue[0]?.card.card_id, phase.kind])
+
   const answer = useCallback(
     async (rating: 1 | 3) => {
       const entry = queue[0]
-      if (!entry) return
+      if (!entry || busyRef.current) return
+      busyRef.current = true
       const now = new Date()
       const { next, log } = applyAnswer(entry.card, rating, now, {
         logId: uuidv7(now),
-        sessionId: sessionId.current,
+        sessionId,
+        durationMs: now.getTime() - cardShownAt.current,
       })
       try {
         await repo.saveAnswer(next, log) // мгновенное сохранение каждого ответа
       } catch {
         setPhase({ kind: 'error' })
         return
+      } finally {
+        busyRef.current = false
       }
       const rest = queue.slice(1)
+      if (next.state === 1 || next.state === 3) {
+        // Живая очередь внутри сессии (specs/03 §7 srs://session-order п.1):
+        // Learning/Relearning возвращается, когда подойдёт её минутный due.
+        // Позиция — после новых (показ чуть раньше точного due при пустом хвосте
+        // очереди — приемлемое приближение MVP, Anki ведёт себя так же).
+        rest.push({ card: next, note: entry.note, kind: 'learning' })
+      }
       const inBlock = answeredInBlock + 1
       setQueue(rest)
       setRevealed(false)
@@ -93,18 +130,20 @@ export default function SrsScreen({ repo = new DexieProgressRepository(), notes 
       if (rest.length === 0) setPhase({ kind: 'done', empty: false })
       else if (inBlock >= BLOCK_SIZE) setPhase({ kind: 'block' })
     },
-    [queue, answeredInBlock, repo],
+    [queue, answeredInBlock, repo, sessionId],
   )
 
   useEffect(() => {
     if (phase.kind !== 'review') return
     const onKey = (event: KeyboardEvent) => {
+      // пробел на сфокусированной кнопке — штатная активация кнопки
+      if (event.target instanceof HTMLElement && event.target.tagName === 'BUTTON') return
       if (event.code === 'Space') {
         event.preventDefault()
         setRevealed(true)
-      } else if (revealed && event.key === '1') {
+      } else if (!event.repeat && revealed && event.key === '1') {
         void answer(1)
-      } else if (revealed && event.key === '2') {
+      } else if (!event.repeat && revealed && event.key === '2') {
         void answer(3)
       }
     }
@@ -120,6 +159,8 @@ export default function SrsScreen({ repo = new DexieProgressRepository(), notes 
       new: count('new') + count('wake-up'),
     }
   }, [queue])
+
+  const finish = () => setPhase({ kind: 'done', empty: false })
 
   if (phase.kind === 'loading') {
     return (
@@ -147,15 +188,23 @@ export default function SrsScreen({ repo = new DexieProgressRepository(), notes 
   if (phase.kind === 'block') {
     return (
       <section className="panel srs-panel">
-        <h2>{t('srs.blockDone')}</h2>
+        <h2>{t('srs.blockDone', { count: BLOCK_SIZE })}</h2>
         <p className="dim">{t('srs.answered', { count: answeredTotal })}</p>
-        <button
-          type="button"
-          className="srs-btn srs-btn-good"
-          onClick={() => setPhase({ kind: 'review' })}
-        >
-          {t('srs.continue')}
-        </button>
+        <div className="srs-actions">
+          <button
+            type="button"
+            className="srs-btn srs-btn-good"
+            onClick={() => {
+              setAnsweredInBlock(0)
+              setPhase({ kind: 'review' })
+            }}
+          >
+            {t('srs.continue')}
+          </button>
+          <button type="button" className="srs-btn" onClick={finish}>
+            {t('srs.finish')}
+          </button>
+        </div>
       </section>
     )
   }
@@ -176,14 +225,12 @@ export default function SrsScreen({ repo = new DexieProgressRepository(), notes 
             {t('srs.counters.new')}: {counters.new}
           </li>
         </ul>
-        <button
-          type="button"
-          className="srs-finish"
-          onClick={() => setPhase({ kind: 'done', empty: false })}
-        >
+        <button type="button" className="srs-finish" onClick={finish}>
           {t('srs.finish')}
         </button>
       </header>
+
+      {plan && plan.debt > 200 && <p className="srs-warning">{t('srs.loadReduced')}</p>}
 
       <div className="srs-card">
         <p className="srs-front" lang="en">

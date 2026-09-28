@@ -195,6 +195,35 @@ describe('rule-2: пробуждение обратных карточек', () 
     expect(isWakeUpDue(mkCard({ state: 1, scheduled_days: 30 }))).toBe(false)
     expect(isWakeUpDue(mkCard({ state: 2, scheduled_days: 30, suspended: true }))).toBe(false)
   })
+
+  it('просыпаются только обратные типы (ru-en/speak), dictation идёт как новая', () => {
+    const passive = mkCard({
+      card_id: 'w0.en-ru',
+      note_id: 'n-w0',
+      state: 2,
+      scheduled_days: 9,
+      due: new Date(NOW.getTime() + 86_400_000).toISOString(),
+    })
+    const reverse = mkCard({ card_id: 'w0.ru-en', note_id: 'n-w0', type: 'ru-en', state: 0 })
+    const dictation = mkCard({
+      card_id: 'w0.dictation',
+      note_id: 'n-w0',
+      type: 'dictation',
+      state: 0,
+    })
+
+    const plan = buildQueue(
+      [passive, reverse, dictation].map((card) => ({
+        card,
+        note: { id: card.note_id, deck: 'words' as const, entityId: 'w0', en: 'w', ru: 'с' },
+      })),
+      { now: NOW },
+    )
+    expect(plan.entries.map(({ card, kind }) => [card.card_id, kind])).toEqual([
+      ['w0.ru-en', 'wake-up'],
+      ['w0.dictation', 'new'],
+    ])
+  })
 })
 
 describe('buildQueue (srs://session-order)', () => {
