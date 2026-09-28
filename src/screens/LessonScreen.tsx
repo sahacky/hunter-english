@@ -647,6 +647,10 @@ function ExerciseRouter({
       return <MatchPairsExercise {...common} />
     case 'word_bank':
       return <WordBankExercise {...common} />
+    case 'find_error':
+      return <InputCheckExercise mode="find_error" {...common} />
+    case 'verb_tense':
+      return <InputCheckExercise mode="verb_tense" {...common} />
     case 'speak':
       return <VoiceExercise mode="speak" {...common} />
     case 'shadowing':

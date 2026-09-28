@@ -604,6 +604,60 @@
     },
     {
       "id": "ex-e-0033",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "She ___ from Japan.",
+        "marker": "is",
+        "gap_answers": ["is"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0034",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "We ___ friends.",
+        "marker": "are",
+        "gap_answers": ["are"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0035",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "I ___ Ivan.",
+        "marker": "am",
+        "gap_answers": ["am"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0036",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -619,7 +673,7 @@
       }
     },
     {
-      "id": "ex-e-0034",
+      "id": "ex-e-0037",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -635,7 +689,7 @@
       }
     },
     {
-      "id": "ex-e-0035",
+      "id": "ex-e-0038",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -651,7 +705,7 @@
       }
     },
     {
-      "id": "ex-e-0036",
+      "id": "ex-e-0039",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -667,7 +721,7 @@
       }
     },
     {
-      "id": "ex-e-0037",
+      "id": "ex-e-0040",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -683,7 +737,7 @@
       }
     },
     {
-      "id": "ex-e-0038",
+      "id": "ex-e-0041",
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
@@ -700,7 +754,7 @@
       }
     },
     {
-      "id": "ex-e-0039",
+      "id": "ex-e-0042",
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
@@ -717,7 +771,7 @@
       }
     },
     {
-      "id": "ex-e-0040",
+      "id": "ex-e-0043",
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
@@ -734,7 +788,7 @@
       }
     },
     {
-      "id": "ex-e-0041",
+      "id": "ex-e-0044",
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
@@ -751,7 +805,7 @@
       }
     },
     {
-      "id": "ex-e-0042",
+      "id": "ex-e-0045",
       "type": "answer_question",
       "payload": {
         "kind": "answer_question",
@@ -769,7 +823,7 @@
       }
     },
     {
-      "id": "ex-e-0043",
+      "id": "ex-e-0046",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -791,7 +845,7 @@
       }
     },
     {
-      "id": "ex-e-0044",
+      "id": "ex-e-0047",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -813,7 +867,7 @@
       }
     },
     {
-      "id": "ex-e-0045",
+      "id": "ex-e-0048",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -830,7 +884,7 @@
       }
     },
     {
-      "id": "ex-e-0046",
+      "id": "ex-e-0049",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -847,7 +901,7 @@
       }
     },
     {
-      "id": "ex-e-0047",
+      "id": "ex-e-0050",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -864,7 +918,7 @@
       }
     },
     {
-      "id": "ex-e-0048",
+      "id": "ex-e-0051",
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
@@ -887,7 +941,7 @@
       }
     },
     {
-      "id": "ex-e-0049",
+      "id": "ex-e-0052",
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
@@ -910,7 +964,7 @@
       }
     },
     {
-      "id": "ex-e-0050",
+      "id": "ex-e-0053",
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
@@ -933,7 +987,7 @@
       }
     },
     {
-      "id": "ex-e-0051",
+      "id": "ex-e-0054",
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
@@ -956,7 +1010,7 @@
       }
     },
     {
-      "id": "ex-e-0052",
+      "id": "ex-e-0055",
       "type": "match_pairs",
       "payload": {
         "kind": "match_pairs",
@@ -993,7 +1047,7 @@
       }
     },
     {
-      "id": "ex-e-0053",
+      "id": "ex-e-0056",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -1011,7 +1065,7 @@
       }
     },
     {
-      "id": "ex-e-0054",
+      "id": "ex-e-0057",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -1029,7 +1083,7 @@
       }
     },
     {
-      "id": "ex-e-0055",
+      "id": "ex-e-0058",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -1047,7 +1101,7 @@
       }
     },
     {
-      "id": "ex-e-0056",
+      "id": "ex-e-0059",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -1065,7 +1119,7 @@
       }
     },
     {
-      "id": "ex-e-0057",
+      "id": "ex-e-0060",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -1083,7 +1137,7 @@
       }
     },
     {
-      "id": "ex-e-0058",
+      "id": "ex-e-0061",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -1101,7 +1155,7 @@
       }
     },
     {
-      "id": "ex-e-0059",
+      "id": "ex-e-0062",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -1119,7 +1173,7 @@
       }
     },
     {
-      "id": "ex-e-0060",
+      "id": "ex-e-0063",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -1137,7 +1191,7 @@
       }
     },
     {
-      "id": "ex-e-0061",
+      "id": "ex-e-0064",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -1154,7 +1208,7 @@
       }
     },
     {
-      "id": "ex-e-0062",
+      "id": "ex-e-0065",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -1171,7 +1225,7 @@
       }
     },
     {
-      "id": "ex-e-0063",
+      "id": "ex-e-0066",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -1188,7 +1242,7 @@
       }
     },
     {
-      "id": "ex-e-0064",
+      "id": "ex-e-0067",
       "type": "speak",
       "payload": {
         "kind": "speak",
@@ -1206,7 +1260,7 @@
       }
     },
     {
-      "id": "ex-e-0065",
+      "id": "ex-e-0068",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -1223,7 +1277,7 @@
       }
     },
     {
-      "id": "ex-e-0066",
+      "id": "ex-e-0069",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -1240,7 +1294,7 @@
       }
     },
     {
-      "id": "ex-e-0067",
+      "id": "ex-e-0070",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -1257,7 +1311,7 @@
       }
     },
     {
-      "id": "ex-e-0068",
+      "id": "ex-e-0071",
       "type": "speak",
       "payload": {
         "kind": "speak",
@@ -1275,7 +1329,7 @@
       }
     },
     {
-      "id": "ex-e-0069",
+      "id": "ex-e-0072",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -1292,7 +1346,7 @@
       }
     },
     {
-      "id": "ex-e-0070",
+      "id": "ex-e-0073",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -1309,7 +1363,7 @@
       }
     },
     {
-      "id": "ex-e-0071",
+      "id": "ex-e-0074",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -1326,7 +1380,7 @@
       }
     },
     {
-      "id": "ex-e-0072",
+      "id": "ex-e-0075",
       "type": "speak",
       "payload": {
         "kind": "speak",
@@ -1344,7 +1398,7 @@
       }
     },
     {
-      "id": "ex-e-0073",
+      "id": "ex-e-0076",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -1361,7 +1415,7 @@
       }
     },
     {
-      "id": "ex-e-0074",
+      "id": "ex-e-0077",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -1378,7 +1432,7 @@
       }
     },
     {
-      "id": "ex-e-0075",
+      "id": "ex-e-0078",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -1395,7 +1449,7 @@
       }
     },
     {
-      "id": "ex-e-0076",
+      "id": "ex-e-0079",
       "type": "speak",
       "payload": {
         "kind": "speak",
@@ -1413,7 +1467,61 @@
       }
     },
     {
-      "id": "ex-e-0077",
+      "id": "ex-e-0080",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "She is ___ artist.",
+        "marker": "a/an",
+        "gap_answers": ["an", "a"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0081",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "It is ___ big city.",
+        "marker": "a/an",
+        "gap_answers": ["a"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0082",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "He is ___ doctor.",
+        "marker": "a/an",
+        "gap_answers": ["a"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0083",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -1429,7 +1537,7 @@
       }
     },
     {
-      "id": "ex-e-0078",
+      "id": "ex-e-0084",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -1445,7 +1553,7 @@
       }
     },
     {
-      "id": "ex-e-0079",
+      "id": "ex-e-0085",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -1461,7 +1569,7 @@
       }
     },
     {
-      "id": "ex-e-0080",
+      "id": "ex-e-0086",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -1477,7 +1585,7 @@
       }
     },
     {
-      "id": "ex-e-0081",
+      "id": "ex-e-0087",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -1493,7 +1601,7 @@
       }
     },
     {
-      "id": "ex-e-0082",
+      "id": "ex-e-0088",
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
@@ -1510,7 +1618,7 @@
       }
     },
     {
-      "id": "ex-e-0083",
+      "id": "ex-e-0089",
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
@@ -1527,7 +1635,7 @@
       }
     },
     {
-      "id": "ex-e-0084",
+      "id": "ex-e-0090",
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
@@ -1544,7 +1652,7 @@
       }
     },
     {
-      "id": "ex-e-0085",
+      "id": "ex-e-0091",
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
@@ -1561,7 +1669,7 @@
       }
     },
     {
-      "id": "ex-e-0086",
+      "id": "ex-e-0092",
       "type": "answer_question",
       "payload": {
         "kind": "answer_question",
@@ -1579,7 +1687,7 @@
       }
     },
     {
-      "id": "ex-e-0087",
+      "id": "ex-e-0093",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -1601,7 +1709,7 @@
       }
     },
     {
-      "id": "ex-e-0088",
+      "id": "ex-e-0094",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -1623,7 +1731,7 @@
       }
     },
     {
-      "id": "ex-e-0089",
+      "id": "ex-e-0095",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -1640,7 +1748,7 @@
       }
     },
     {
-      "id": "ex-e-0090",
+      "id": "ex-e-0096",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -1657,7 +1765,7 @@
       }
     },
     {
-      "id": "ex-e-0091",
+      "id": "ex-e-0097",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -1674,7 +1782,7 @@
       }
     },
     {
-      "id": "ex-e-0092",
+      "id": "ex-e-0098",
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
@@ -1692,7 +1800,7 @@
       }
     },
     {
-      "id": "ex-e-0093",
+      "id": "ex-e-0099",
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
@@ -1710,7 +1818,7 @@
       }
     },
     {
-      "id": "ex-e-0094",
+      "id": "ex-e-0100",
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
@@ -1728,7 +1836,7 @@
       }
     },
     {
-      "id": "ex-e-0095",
+      "id": "ex-e-0101",
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
@@ -1746,7 +1854,7 @@
       }
     },
     {
-      "id": "ex-e-0096",
+      "id": "ex-e-0102",
       "type": "match_pairs",
       "payload": {
         "kind": "match_pairs",
@@ -1783,7 +1891,7 @@
       }
     },
     {
-      "id": "ex-e-0097",
+      "id": "ex-e-0103",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -1801,7 +1909,7 @@
       }
     },
     {
-      "id": "ex-e-0098",
+      "id": "ex-e-0104",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -1819,7 +1927,7 @@
       }
     },
     {
-      "id": "ex-e-0099",
+      "id": "ex-e-0105",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -1837,7 +1945,7 @@
       }
     },
     {
-      "id": "ex-e-0100",
+      "id": "ex-e-0106",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -1855,7 +1963,7 @@
       }
     },
     {
-      "id": "ex-e-0101",
+      "id": "ex-e-0107",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -1873,7 +1981,7 @@
       }
     },
     {
-      "id": "ex-e-0102",
+      "id": "ex-e-0108",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -1891,7 +1999,7 @@
       }
     },
     {
-      "id": "ex-e-0103",
+      "id": "ex-e-0109",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -1909,7 +2017,7 @@
       }
     },
     {
-      "id": "ex-e-0104",
+      "id": "ex-e-0110",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -1927,7 +2035,7 @@
       }
     },
     {
-      "id": "ex-e-0105",
+      "id": "ex-e-0111",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -1944,7 +2052,7 @@
       }
     },
     {
-      "id": "ex-e-0106",
+      "id": "ex-e-0112",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -1961,7 +2069,7 @@
       }
     },
     {
-      "id": "ex-e-0107",
+      "id": "ex-e-0113",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -1978,7 +2086,7 @@
       }
     },
     {
-      "id": "ex-e-0108",
+      "id": "ex-e-0114",
       "type": "speak",
       "payload": {
         "kind": "speak",
@@ -1996,7 +2104,7 @@
       }
     },
     {
-      "id": "ex-e-0109",
+      "id": "ex-e-0115",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2013,7 +2121,7 @@
       }
     },
     {
-      "id": "ex-e-0110",
+      "id": "ex-e-0116",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2030,7 +2138,7 @@
       }
     },
     {
-      "id": "ex-e-0111",
+      "id": "ex-e-0117",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2047,7 +2155,7 @@
       }
     },
     {
-      "id": "ex-e-0112",
+      "id": "ex-e-0118",
       "type": "speak",
       "payload": {
         "kind": "speak",
@@ -2065,7 +2173,7 @@
       }
     },
     {
-      "id": "ex-e-0113",
+      "id": "ex-e-0119",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2082,7 +2190,7 @@
       }
     },
     {
-      "id": "ex-e-0114",
+      "id": "ex-e-0120",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2099,7 +2207,7 @@
       }
     },
     {
-      "id": "ex-e-0115",
+      "id": "ex-e-0121",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2116,7 +2224,7 @@
       }
     },
     {
-      "id": "ex-e-0116",
+      "id": "ex-e-0122",
       "type": "speak",
       "payload": {
         "kind": "speak",
@@ -2134,7 +2242,7 @@
       }
     },
     {
-      "id": "ex-e-0117",
+      "id": "ex-e-0123",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2151,7 +2259,7 @@
       }
     },
     {
-      "id": "ex-e-0118",
+      "id": "ex-e-0124",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2168,7 +2276,7 @@
       }
     },
     {
-      "id": "ex-e-0119",
+      "id": "ex-e-0125",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2185,7 +2293,7 @@
       }
     },
     {
-      "id": "ex-e-0120",
+      "id": "ex-e-0126",
       "type": "speak",
       "payload": {
         "kind": "speak",
@@ -2203,7 +2311,61 @@
       }
     },
     {
-      "id": "ex-e-0121",
+      "id": "ex-e-0127",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "They ___ not ready.",
+        "marker": "are",
+        "gap_answers": ["are"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0128",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "It ___ not true.",
+        "marker": "is",
+        "gap_answers": ["is"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0129",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "We ___ not late.",
+        "marker": "are",
+        "gap_answers": ["are"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0130",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -2219,7 +2381,7 @@
       }
     },
     {
-      "id": "ex-e-0122",
+      "id": "ex-e-0131",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -2235,7 +2397,7 @@
       }
     },
     {
-      "id": "ex-e-0123",
+      "id": "ex-e-0132",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -2251,7 +2413,7 @@
       }
     },
     {
-      "id": "ex-e-0124",
+      "id": "ex-e-0133",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -2267,7 +2429,7 @@
       }
     },
     {
-      "id": "ex-e-0125",
+      "id": "ex-e-0134",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -2283,7 +2445,7 @@
       }
     },
     {
-      "id": "ex-e-0126",
+      "id": "ex-e-0135",
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
@@ -2300,7 +2462,7 @@
       }
     },
     {
-      "id": "ex-e-0127",
+      "id": "ex-e-0136",
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
@@ -2317,7 +2479,7 @@
       }
     },
     {
-      "id": "ex-e-0128",
+      "id": "ex-e-0137",
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
@@ -2334,7 +2496,7 @@
       }
     },
     {
-      "id": "ex-e-0129",
+      "id": "ex-e-0138",
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
@@ -2351,7 +2513,7 @@
       }
     },
     {
-      "id": "ex-e-0130",
+      "id": "ex-e-0139",
       "type": "answer_question",
       "payload": {
         "kind": "answer_question",
@@ -2369,7 +2531,7 @@
       }
     },
     {
-      "id": "ex-e-0131",
+      "id": "ex-e-0140",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -2391,7 +2553,7 @@
       }
     },
     {
-      "id": "ex-e-0132",
+      "id": "ex-e-0141",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -2413,7 +2575,7 @@
       }
     },
     {
-      "id": "ex-e-0133",
+      "id": "ex-e-0142",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -2430,7 +2592,7 @@
       }
     },
     {
-      "id": "ex-e-0134",
+      "id": "ex-e-0143",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -2447,7 +2609,7 @@
       }
     },
     {
-      "id": "ex-e-0135",
+      "id": "ex-e-0144",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -2464,7 +2626,7 @@
       }
     },
     {
-      "id": "ex-e-0136",
+      "id": "ex-e-0145",
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
@@ -2487,7 +2649,7 @@
       }
     },
     {
-      "id": "ex-e-0137",
+      "id": "ex-e-0146",
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
@@ -2510,7 +2672,7 @@
       }
     },
     {
-      "id": "ex-e-0138",
+      "id": "ex-e-0147",
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
@@ -2533,7 +2695,7 @@
       }
     },
     {
-      "id": "ex-e-0139",
+      "id": "ex-e-0148",
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
@@ -2556,7 +2718,7 @@
       }
     },
     {
-      "id": "ex-e-0140",
+      "id": "ex-e-0149",
       "type": "match_pairs",
       "payload": {
         "kind": "match_pairs",
@@ -2593,7 +2755,7 @@
       }
     },
     {
-      "id": "ex-e-0141",
+      "id": "ex-e-0150",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -2611,7 +2773,7 @@
       }
     },
     {
-      "id": "ex-e-0142",
+      "id": "ex-e-0151",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -2629,7 +2791,7 @@
       }
     },
     {
-      "id": "ex-e-0143",
+      "id": "ex-e-0152",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -2647,7 +2809,7 @@
       }
     },
     {
-      "id": "ex-e-0144",
+      "id": "ex-e-0153",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -2665,7 +2827,7 @@
       }
     },
     {
-      "id": "ex-e-0145",
+      "id": "ex-e-0154",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -2683,7 +2845,7 @@
       }
     },
     {
-      "id": "ex-e-0146",
+      "id": "ex-e-0155",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -2701,7 +2863,7 @@
       }
     },
     {
-      "id": "ex-e-0147",
+      "id": "ex-e-0156",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -2719,7 +2881,7 @@
       }
     },
     {
-      "id": "ex-e-0148",
+      "id": "ex-e-0157",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -2737,7 +2899,7 @@
       }
     },
     {
-      "id": "ex-e-0149",
+      "id": "ex-e-0158",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2754,7 +2916,7 @@
       }
     },
     {
-      "id": "ex-e-0150",
+      "id": "ex-e-0159",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2771,7 +2933,7 @@
       }
     },
     {
-      "id": "ex-e-0151",
+      "id": "ex-e-0160",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2788,7 +2950,7 @@
       }
     },
     {
-      "id": "ex-e-0152",
+      "id": "ex-e-0161",
       "type": "speak",
       "payload": {
         "kind": "speak",
@@ -2806,7 +2968,7 @@
       }
     },
     {
-      "id": "ex-e-0153",
+      "id": "ex-e-0162",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2823,7 +2985,7 @@
       }
     },
     {
-      "id": "ex-e-0154",
+      "id": "ex-e-0163",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2840,7 +3002,7 @@
       }
     },
     {
-      "id": "ex-e-0155",
+      "id": "ex-e-0164",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2857,7 +3019,7 @@
       }
     },
     {
-      "id": "ex-e-0156",
+      "id": "ex-e-0165",
       "type": "speak",
       "payload": {
         "kind": "speak",
@@ -2875,7 +3037,7 @@
       }
     },
     {
-      "id": "ex-e-0157",
+      "id": "ex-e-0166",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2892,7 +3054,7 @@
       }
     },
     {
-      "id": "ex-e-0158",
+      "id": "ex-e-0167",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2909,7 +3071,7 @@
       }
     },
     {
-      "id": "ex-e-0159",
+      "id": "ex-e-0168",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2926,7 +3088,7 @@
       }
     },
     {
-      "id": "ex-e-0160",
+      "id": "ex-e-0169",
       "type": "speak",
       "payload": {
         "kind": "speak",
@@ -2944,7 +3106,7 @@
       }
     },
     {
-      "id": "ex-e-0161",
+      "id": "ex-e-0170",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2961,7 +3123,7 @@
       }
     },
     {
-      "id": "ex-e-0162",
+      "id": "ex-e-0171",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2978,7 +3140,7 @@
       }
     },
     {
-      "id": "ex-e-0163",
+      "id": "ex-e-0172",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2995,7 +3157,7 @@
       }
     },
     {
-      "id": "ex-e-0164",
+      "id": "ex-e-0173",
       "type": "speak",
       "payload": {
         "kind": "speak",
@@ -3013,7 +3175,61 @@
       }
     },
     {
-      "id": "ex-e-0165",
+      "id": "ex-e-0174",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "___ you hungry?",
+        "marker": "are",
+        "gap_answers": ["Are"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0175",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "___ she your sister?",
+        "marker": "is",
+        "gap_answers": ["Is"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0176",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "___ I late?",
+        "marker": "am",
+        "gap_answers": ["Am"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0177",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -3029,7 +3245,7 @@
       }
     },
     {
-      "id": "ex-e-0166",
+      "id": "ex-e-0178",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -3045,7 +3261,7 @@
       }
     },
     {
-      "id": "ex-e-0167",
+      "id": "ex-e-0179",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -3061,7 +3277,7 @@
       }
     },
     {
-      "id": "ex-e-0168",
+      "id": "ex-e-0180",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -3077,7 +3293,7 @@
       }
     },
     {
-      "id": "ex-e-0169",
+      "id": "ex-e-0181",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -3093,7 +3309,7 @@
       }
     },
     {
-      "id": "ex-e-0170",
+      "id": "ex-e-0182",
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
@@ -3110,7 +3326,7 @@
       }
     },
     {
-      "id": "ex-e-0171",
+      "id": "ex-e-0183",
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
@@ -3127,7 +3343,7 @@
       }
     },
     {
-      "id": "ex-e-0172",
+      "id": "ex-e-0184",
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
@@ -3144,7 +3360,7 @@
       }
     },
     {
-      "id": "ex-e-0173",
+      "id": "ex-e-0185",
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
@@ -3161,7 +3377,7 @@
       }
     },
     {
-      "id": "ex-e-0174",
+      "id": "ex-e-0186",
       "type": "answer_question",
       "payload": {
         "kind": "answer_question",
@@ -3179,7 +3395,7 @@
       }
     },
     {
-      "id": "ex-e-0175",
+      "id": "ex-e-0187",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -3201,7 +3417,7 @@
       }
     },
     {
-      "id": "ex-e-0176",
+      "id": "ex-e-0188",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -3223,7 +3439,7 @@
       }
     },
     {
-      "id": "ex-e-0177",
+      "id": "ex-e-0189",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -3240,7 +3456,7 @@
       }
     },
     {
-      "id": "ex-e-0178",
+      "id": "ex-e-0190",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -3257,7 +3473,7 @@
       }
     },
     {
-      "id": "ex-e-0179",
+      "id": "ex-e-0191",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -3274,7 +3490,7 @@
       }
     },
     {
-      "id": "ex-e-0180",
+      "id": "ex-e-0192",
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
@@ -3292,7 +3508,7 @@
       }
     },
     {
-      "id": "ex-e-0181",
+      "id": "ex-e-0193",
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
@@ -3310,7 +3526,7 @@
       }
     },
     {
-      "id": "ex-e-0182",
+      "id": "ex-e-0194",
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
@@ -3328,7 +3544,7 @@
       }
     },
     {
-      "id": "ex-e-0183",
+      "id": "ex-e-0195",
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
@@ -3346,7 +3562,7 @@
       }
     },
     {
-      "id": "ex-e-0184",
+      "id": "ex-e-0196",
       "type": "match_pairs",
       "payload": {
         "kind": "match_pairs",
@@ -3383,7 +3599,7 @@
       }
     },
     {
-      "id": "ex-e-0185",
+      "id": "ex-e-0197",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -3401,7 +3617,7 @@
       }
     },
     {
-      "id": "ex-e-0186",
+      "id": "ex-e-0198",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -3419,7 +3635,7 @@
       }
     },
     {
-      "id": "ex-e-0187",
+      "id": "ex-e-0199",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -3437,7 +3653,7 @@
       }
     },
     {
-      "id": "ex-e-0188",
+      "id": "ex-e-0200",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -3455,7 +3671,7 @@
       }
     },
     {
-      "id": "ex-e-0189",
+      "id": "ex-e-0201",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -3473,7 +3689,7 @@
       }
     },
     {
-      "id": "ex-e-0190",
+      "id": "ex-e-0202",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -3491,7 +3707,7 @@
       }
     },
     {
-      "id": "ex-e-0191",
+      "id": "ex-e-0203",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -3509,7 +3725,7 @@
       }
     },
     {
-      "id": "ex-e-0192",
+      "id": "ex-e-0204",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -3527,7 +3743,7 @@
       }
     },
     {
-      "id": "ex-e-0193",
+      "id": "ex-e-0205",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -3544,7 +3760,7 @@
       }
     },
     {
-      "id": "ex-e-0194",
+      "id": "ex-e-0206",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -3561,7 +3777,7 @@
       }
     },
     {
-      "id": "ex-e-0195",
+      "id": "ex-e-0207",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -3578,7 +3794,7 @@
       }
     },
     {
-      "id": "ex-e-0196",
+      "id": "ex-e-0208",
       "type": "speak",
       "payload": {
         "kind": "speak",
@@ -3596,7 +3812,7 @@
       }
     },
     {
-      "id": "ex-e-0197",
+      "id": "ex-e-0209",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -3613,7 +3829,7 @@
       }
     },
     {
-      "id": "ex-e-0198",
+      "id": "ex-e-0210",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -3630,7 +3846,7 @@
       }
     },
     {
-      "id": "ex-e-0199",
+      "id": "ex-e-0211",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -3647,7 +3863,7 @@
       }
     },
     {
-      "id": "ex-e-0200",
+      "id": "ex-e-0212",
       "type": "speak",
       "payload": {
         "kind": "speak",
@@ -3665,7 +3881,7 @@
       }
     },
     {
-      "id": "ex-e-0201",
+      "id": "ex-e-0213",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -3682,7 +3898,7 @@
       }
     },
     {
-      "id": "ex-e-0202",
+      "id": "ex-e-0214",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -3699,7 +3915,7 @@
       }
     },
     {
-      "id": "ex-e-0203",
+      "id": "ex-e-0215",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -3716,7 +3932,7 @@
       }
     },
     {
-      "id": "ex-e-0204",
+      "id": "ex-e-0216",
       "type": "speak",
       "payload": {
         "kind": "speak",
@@ -3734,7 +3950,7 @@
       }
     },
     {
-      "id": "ex-e-0205",
+      "id": "ex-e-0217",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -3751,7 +3967,7 @@
       }
     },
     {
-      "id": "ex-e-0206",
+      "id": "ex-e-0218",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -3768,7 +3984,7 @@
       }
     },
     {
-      "id": "ex-e-0207",
+      "id": "ex-e-0219",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -3785,7 +4001,7 @@
       }
     },
     {
-      "id": "ex-e-0208",
+      "id": "ex-e-0220",
       "type": "speak",
       "payload": {
         "kind": "speak",
@@ -3803,7 +4019,61 @@
       }
     },
     {
-      "id": "ex-e-0209",
+      "id": "ex-e-0221",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "I ___ from Russia, and you?",
+        "marker": "am",
+        "gap_answers": ["am"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0222",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "It ___ not far.",
+        "marker": "is",
+        "gap_answers": ["is"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0223",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "___ you new here?",
+        "marker": "are",
+        "gap_answers": ["Are"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0224",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -3819,7 +4089,7 @@
       }
     },
     {
-      "id": "ex-e-0210",
+      "id": "ex-e-0225",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -3835,7 +4105,7 @@
       }
     },
     {
-      "id": "ex-e-0211",
+      "id": "ex-e-0226",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -3851,7 +4121,7 @@
       }
     },
     {
-      "id": "ex-e-0212",
+      "id": "ex-e-0227",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -3867,7 +4137,7 @@
       }
     },
     {
-      "id": "ex-e-0213",
+      "id": "ex-e-0228",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -3883,7 +4153,7 @@
       }
     },
     {
-      "id": "ex-e-0214",
+      "id": "ex-e-0229",
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
@@ -3900,7 +4170,7 @@
       }
     },
     {
-      "id": "ex-e-0215",
+      "id": "ex-e-0230",
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
@@ -3917,7 +4187,7 @@
       }
     },
     {
-      "id": "ex-e-0216",
+      "id": "ex-e-0231",
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
@@ -3934,7 +4204,7 @@
       }
     },
     {
-      "id": "ex-e-0217",
+      "id": "ex-e-0232",
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
@@ -3951,7 +4221,7 @@
       }
     },
     {
-      "id": "ex-e-0218",
+      "id": "ex-e-0233",
       "type": "answer_question",
       "payload": {
         "kind": "answer_question",
@@ -3969,7 +4239,7 @@
       }
     },
     {
-      "id": "ex-e-0219",
+      "id": "ex-e-0234",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -3991,7 +4261,7 @@
       }
     },
     {
-      "id": "ex-e-0220",
+      "id": "ex-e-0235",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -4010,6 +4280,101 @@
       "meta": {
         "skill": "grammar",
         "xp": 2
+      }
+    },
+    {
+      "id": "ex-e-0236",
+      "type": "find_error",
+      "payload": {
+        "kind": "find_error",
+        "wrong_en": "I hungry.",
+        "hint_ru": "Я голоден.",
+        "phrase_id": "ph-e-0168"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "accepted": ["I am hungry."]
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0237",
+      "type": "find_error",
+      "payload": {
+        "kind": "find_error",
+        "wrong_en": "I have brother.",
+        "hint_ru": "У меня есть брат.",
+        "phrase_id": "ph-e-0079"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "accepted": ["I have a brother."]
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0238",
+      "type": "find_error",
+      "payload": {
+        "kind": "find_error",
+        "wrong_en": "He not is here.",
+        "hint_ru": "Его здесь нет.",
+        "phrase_id": "ph-e-0099"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "accepted": ["He is not here."]
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0239",
+      "type": "find_error",
+      "payload": {
+        "kind": "find_error",
+        "wrong_en": "You is tired?",
+        "hint_ru": "Ты устал?",
+        "phrase_id": "ph-e-0137"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "accepted": ["Are you tired?"]
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-e-0240",
+      "type": "find_error",
+      "payload": {
+        "kind": "find_error",
+        "wrong_en": "I not am sure.",
+        "hint_ru": "Я не уверен.",
+        "phrase_id": "ph-e-0123"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "accepted": ["I am not sure."]
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
       }
     }
   ]

@@ -104,14 +104,24 @@ export function InputCheckExercise({
   onNext,
   mode,
   lenient = false,
-}: ExerciseViewProps & { mode: 'translate' | 'dictation' | 'cloze'; lenient?: boolean }) {
+}: ExerciseViewProps & {
+  mode: 'translate' | 'dictation' | 'cloze' | 'find_error' | 'verb_tense'
+  lenient?: boolean
+}) {
   const { t } = useTranslation()
   const [value, setValue] = useState('')
   const [attempts, setAttempts] = useState(0)
   const [result, setResult] = useState<CheckResult | null>(null)
   const [hintUsed, setHintUsed] = useState(false)
   const inputRef = useRef<HTMLInputElement>(null)
-  const p = payload<{ prompt_ru?: string; text_with_gap?: string }>(exercise)
+  const p = payload<{
+    prompt_ru?: string
+    text_with_gap?: string
+    wrong_en?: string
+    hint_ru?: string
+    sentence_with_gap?: string
+    marker?: string
+  }>(exercise)
   const task = taskFor(exercise, phrase, trap)
   const maxAttempts = lenient ? 3 : 2
   const finished = result !== null && (result.verdict !== 'wrong' || attempts >= maxAttempts)
@@ -146,7 +156,9 @@ export function InputCheckExercise({
       ? (p.prompt_ru ?? phrase?.translation_ru ?? '')
       : mode === 'cloze'
         ? ((p.text_with_gap as string) ?? '')
-        : ''
+        : mode === 'find_error'
+          ? ((p.wrong_en as string) ?? '')
+          : ((p.sentence_with_gap as string) ?? '')
 
   const gapAnswers = exercise.payload.gap_answers as string[] | undefined
 
@@ -158,6 +170,12 @@ export function InputCheckExercise({
           {(exercise.payload.quote as { title: string; season_episode: string }).season_episode}
         </p>
       ) : null}
+      {mode === 'find_error' && <p className="dim">{t('lesson.findErrorHint')}</p>}
+      {mode === 'verb_tense' && p.marker && (
+        <p className="dim">
+          {t('lesson.markerHint')}: {p.marker}
+        </p>
+      )}
       <p className="lesson-prompt" lang={mode === 'translate' ? 'ru' : 'en'}>
         {title}
       </p>

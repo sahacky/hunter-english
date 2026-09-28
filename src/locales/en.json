@@ -133,7 +133,9 @@
     "repeatLesson": "Take it again",
     "unknownExercise": "Unknown exercise type: {{type}}",
     "completionNote": "The lesson is marked as passed once ≥90% of its phrases are learned in reviews (interval ≥7 days).",
-    "giveUp": "Give up"
+    "giveUp": "Give up",
+    "findErrorHint": "Spot the mistake and type the correct phrase",
+    "markerHint": "Time marker"
   },
   "ranks": {
     "statusTitle": "Hunter status",

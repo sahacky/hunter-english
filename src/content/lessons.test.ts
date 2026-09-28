@@ -164,9 +164,10 @@ describe('loadLessonView (реальные data/ пилота E1)', () => {
         'quotes',
         'deck',
       ])
+      // verb_tense без phrase_id — легально; у остальных типы строковые
       const buildPhrases = (view?.content[3] ?? []).map(({ phrase }) => phrase?.id)
       expect(
-        buildPhrases.every((id) => typeof id === 'string'),
+        buildPhrases.every((id) => id === undefined || typeof id === 'string'),
         lessonId,
       ).toBe(true)
       expect((view?.content[3] ?? []).length).toBeGreaterThanOrEqual(20)

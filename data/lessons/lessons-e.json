@@ -154,6 +154,18 @@
         },
         {
           "id": "ex-e-0044"
+        },
+        {
+          "id": "ex-e-0045"
+        },
+        {
+          "id": "ex-e-0046"
+        },
+        {
+          "id": "ex-e-0047"
+        },
+        {
+          "id": "ex-e-0236"
         }
       ],
       "bebris_video": {
@@ -184,15 +196,6 @@
       "trap_id": "trap-articles",
       "quotes_topic": "family",
       "exercises": [
-        {
-          "id": "ex-e-0045"
-        },
-        {
-          "id": "ex-e-0046"
-        },
-        {
-          "id": "ex-e-0047"
-        },
         {
           "id": "ex-e-0048"
         },
@@ -315,6 +318,27 @@
         },
         {
           "id": "ex-e-0088"
+        },
+        {
+          "id": "ex-e-0089"
+        },
+        {
+          "id": "ex-e-0090"
+        },
+        {
+          "id": "ex-e-0091"
+        },
+        {
+          "id": "ex-e-0092"
+        },
+        {
+          "id": "ex-e-0093"
+        },
+        {
+          "id": "ex-e-0094"
+        },
+        {
+          "id": "ex-e-0237"
         }
       ],
       "bebris_video": {
@@ -345,24 +369,6 @@
       "trap_id": "trap-articles",
       "quotes_topic": "family",
       "exercises": [
-        {
-          "id": "ex-e-0089"
-        },
-        {
-          "id": "ex-e-0090"
-        },
-        {
-          "id": "ex-e-0091"
-        },
-        {
-          "id": "ex-e-0092"
-        },
-        {
-          "id": "ex-e-0093"
-        },
-        {
-          "id": "ex-e-0094"
-        },
         {
           "id": "ex-e-0095"
         },
@@ -476,6 +482,36 @@
         },
         {
           "id": "ex-e-0132"
+        },
+        {
+          "id": "ex-e-0133"
+        },
+        {
+          "id": "ex-e-0134"
+        },
+        {
+          "id": "ex-e-0135"
+        },
+        {
+          "id": "ex-e-0136"
+        },
+        {
+          "id": "ex-e-0137"
+        },
+        {
+          "id": "ex-e-0138"
+        },
+        {
+          "id": "ex-e-0139"
+        },
+        {
+          "id": "ex-e-0140"
+        },
+        {
+          "id": "ex-e-0141"
+        },
+        {
+          "id": "ex-e-0238"
         }
       ],
       "bebris_video": {
@@ -506,33 +542,6 @@
       "trap_id": null,
       "quotes_topic": "questions",
       "exercises": [
-        {
-          "id": "ex-e-0133"
-        },
-        {
-          "id": "ex-e-0134"
-        },
-        {
-          "id": "ex-e-0135"
-        },
-        {
-          "id": "ex-e-0136"
-        },
-        {
-          "id": "ex-e-0137"
-        },
-        {
-          "id": "ex-e-0138"
-        },
-        {
-          "id": "ex-e-0139"
-        },
-        {
-          "id": "ex-e-0140"
-        },
-        {
-          "id": "ex-e-0141"
-        },
         {
           "id": "ex-e-0142"
         },
@@ -637,32 +646,7 @@
         },
         {
           "id": "ex-e-0176"
-        }
-      ],
-      "bebris_video": {
-        "lesson": "1.31",
-        "playlist_index": 82,
-        "youtube_id": "mRQMPhB6c_Y",
-        "title": null
-      }
-    },
-    {
-      "id": "les-e-05",
-      "rank": "E",
-      "module": "mod-e-1",
-      "title": "Повторение №1 (E-01…E-04) + мини-контроль",
-      "grammar_point": {
-        "id": "gp-e-05",
-        "title_ru": "Повторение: to be +, −, ?; Small talk",
-        "rule_md": "Повторение E-01…E-04 — коротко:\n\n- **+**: I am Ivan. She is a doctor. We are friends.\n- **−**: I am not tired. He isn't here. They aren't ready.\n- **?**: Are you hungry? Is it true? Am I late? — Yes, I am. / No, it isn't.\n- Артикль: a student, an artist, a big city.\n\nSmall talk: How are you? — I'm fine, thanks. And you?",
-        "phrase_ids": ["ph-e-0175", "ph-e-0176", "ph-e-0177", "ph-e-0178", "ph-e-0179"],
-        "trap_id": null
-      },
-      "vocab_band": null,
-      "phrasebook_topic": null,
-      "trap_id": null,
-      "quotes_topic": "small-talk",
-      "exercises": [
+        },
         {
           "id": "ex-e-0177"
         },
@@ -699,6 +683,34 @@
         {
           "id": "ex-e-0188"
         },
+        {
+          "id": "ex-e-0239"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "1.31",
+        "playlist_index": 82,
+        "youtube_id": "mRQMPhB6c_Y",
+        "title": null
+      }
+    },
+    {
+      "id": "les-e-05",
+      "rank": "E",
+      "module": "mod-e-1",
+      "title": "Повторение №1 (E-01…E-04) + мини-контроль",
+      "grammar_point": {
+        "id": "gp-e-05",
+        "title_ru": "Повторение: to be +, −, ?; Small talk",
+        "rule_md": "Повторение E-01…E-04 — коротко:\n\n- **+**: I am Ivan. She is a doctor. We are friends.\n- **−**: I am not tired. He isn't here. They aren't ready.\n- **?**: Are you hungry? Is it true? Am I late? — Yes, I am. / No, it isn't.\n- Артикль: a student, an artist, a big city.\n\nSmall talk: How are you? — I'm fine, thanks. And you?",
+        "phrase_ids": ["ph-e-0175", "ph-e-0176", "ph-e-0177", "ph-e-0178", "ph-e-0179"],
+        "trap_id": null
+      },
+      "vocab_band": null,
+      "phrasebook_topic": null,
+      "trap_id": null,
+      "quotes_topic": "small-talk",
+      "exercises": [
         {
           "id": "ex-e-0189"
         },
@@ -794,6 +806,54 @@
         },
         {
           "id": "ex-e-0220"
+        },
+        {
+          "id": "ex-e-0221"
+        },
+        {
+          "id": "ex-e-0222"
+        },
+        {
+          "id": "ex-e-0223"
+        },
+        {
+          "id": "ex-e-0224"
+        },
+        {
+          "id": "ex-e-0225"
+        },
+        {
+          "id": "ex-e-0226"
+        },
+        {
+          "id": "ex-e-0227"
+        },
+        {
+          "id": "ex-e-0228"
+        },
+        {
+          "id": "ex-e-0229"
+        },
+        {
+          "id": "ex-e-0230"
+        },
+        {
+          "id": "ex-e-0231"
+        },
+        {
+          "id": "ex-e-0232"
+        },
+        {
+          "id": "ex-e-0233"
+        },
+        {
+          "id": "ex-e-0234"
+        },
+        {
+          "id": "ex-e-0235"
+        },
+        {
+          "id": "ex-e-0240"
         }
       ],
       "bebris_video": null
