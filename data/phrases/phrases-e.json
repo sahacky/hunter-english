@@ -2645,7 +2645,7 @@
     {
       "id": "ph-e-0265",
       "text_en": "That is my house.",
-      "translation_ru": "То мой дом.",
+      "translation_ru": "Тот дом — мой.",
       "grammar_point_id": "gp-e-07",
       "variants": ["That is my house."],
       "audio": {
@@ -2655,7 +2655,7 @@
     {
       "id": "ph-e-0266",
       "text_en": "That is your car.",
-      "translation_ru": "То твоя машина.",
+      "translation_ru": "Та машина — твоя.",
       "grammar_point_id": "gp-e-07",
       "variants": ["That is your car."],
       "audio": {
@@ -2685,7 +2685,7 @@
     {
       "id": "ph-e-0269",
       "text_en": "Those are her shoes.",
-      "translation_ru": "То её туфли.",
+      "translation_ru": "Те туфли — её.",
       "grammar_point_id": "gp-e-07",
       "variants": ["Those are her shoes."],
       "audio": {
@@ -2695,7 +2695,7 @@
     {
       "id": "ph-e-0270",
       "text_en": "Those are his glasses.",
-      "translation_ru": "То его очки.",
+      "translation_ru": "Те очки — его.",
       "grammar_point_id": "gp-e-07",
       "variants": ["Those are his glasses."],
       "audio": {
@@ -2765,7 +2765,7 @@
     {
       "id": "ph-e-0277",
       "text_en": "That is not her phone.",
-      "translation_ru": "То не её телефон.",
+      "translation_ru": "Тот телефон — не её.",
       "grammar_point_id": "gp-e-07",
       "variants": ["That is not her phone."],
       "audio": {
@@ -2895,7 +2895,7 @@
     {
       "id": "ph-e-0290",
       "text_en": "Those are tourists.",
-      "translation_ru": "То туристы.",
+      "translation_ru": "Те люди — туристы.",
       "grammar_point_id": "gp-e-07",
       "variants": ["Those are tourists."],
       "audio": {
@@ -2955,7 +2955,7 @@
     {
       "id": "ph-e-0296",
       "text_en": "That is a good idea.",
-      "translation_ru": "То хорошая идея.",
+      "translation_ru": "Та идея — хорошая.",
       "grammar_point_id": "gp-e-07",
       "variants": ["That is a good idea."],
       "audio": {
@@ -3025,7 +3025,7 @@
     {
       "id": "ph-e-0303",
       "text_en": "That house is big.",
-      "translation_ru": "Тот дом большой.",
+      "translation_ru": "Тот дом — большой.",
       "grammar_point_id": "gp-e-07",
       "variants": ["That house is big."],
       "audio": {
@@ -3045,7 +3045,7 @@
     {
       "id": "ph-e-0305",
       "text_en": "Those people are kind.",
-      "translation_ru": "Те люди добрые.",
+      "translation_ru": "Те люди — добрые.",
       "grammar_point_id": "gp-e-07",
       "variants": ["Those people are kind."],
       "audio": {
@@ -5834,10 +5834,10 @@
     },
     {
       "id": "ph-e-0584",
-      "text_en": "The shop doesn't work today.",
+      "text_en": "The shop isn't open today.",
       "translation_ru": "Магазин сегодня не работает.",
       "grammar_point_id": "gp-e-14",
-      "variants": ["The shop doesn't work today."],
+      "variants": ["The shop isn't open today."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0584.opus"
       }
@@ -8394,10 +8394,10 @@
     },
     {
       "id": "ph-e-0840",
-      "text_en": "I'd like a coffee and my friend'd like a tea.",
+      "text_en": "I'd like a coffee and my friend would like a tea.",
       "translation_ru": "Мне кофе, а моему другу чай.",
       "grammar_point_id": "gp-e-20",
-      "variants": ["I'd like a coffee and my friend'd like a tea."],
+      "variants": ["I'd like a coffee and my friend would like a tea."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0840.opus"
       }
@@ -8790,6 +8790,1756 @@
       "variants": ["What do you think?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0879.opus"
+      }
+    },
+    {
+      "id": "ph-e-0880",
+      "text_en": "I want to stay.",
+      "translation_ru": "Я хочу остаться.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["I want to stay."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0880.opus"
+      }
+    },
+    {
+      "id": "ph-e-0881",
+      "text_en": "I want to work.",
+      "translation_ru": "Я хочу работать.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["I want to work."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0881.opus"
+      }
+    },
+    {
+      "id": "ph-e-0882",
+      "text_en": "I want to read.",
+      "translation_ru": "Я хочу читать.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["I want to read."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0882.opus"
+      }
+    },
+    {
+      "id": "ph-e-0883",
+      "text_en": "I want to buy a ticket.",
+      "translation_ru": "Я хочу купить билет.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["I want to buy a ticket."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0883.opus"
+      }
+    },
+    {
+      "id": "ph-e-0884",
+      "text_en": "I want to open the window.",
+      "translation_ru": "Я хочу открыть окно.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["I want to open the window."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0884.opus"
+      }
+    },
+    {
+      "id": "ph-e-0885",
+      "text_en": "I want to ask a question.",
+      "translation_ru": "Я хочу задать вопрос.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["I want to ask a question."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0885.opus"
+      }
+    },
+    {
+      "id": "ph-e-0886",
+      "text_en": "I want to call a taxi.",
+      "translation_ru": "Я хочу вызвать такси.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["I want to call a taxi."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0886.opus"
+      }
+    },
+    {
+      "id": "ph-e-0887",
+      "text_en": "I need to go.",
+      "translation_ru": "Мне нужно идти.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["I need to go."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0887.opus"
+      }
+    },
+    {
+      "id": "ph-e-0888",
+      "text_en": "I need to work today.",
+      "translation_ru": "Мне нужно работать сегодня.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["I need to work today."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0888.opus"
+      }
+    },
+    {
+      "id": "ph-e-0889",
+      "text_en": "I need to buy bread.",
+      "translation_ru": "Мне нужно купить хлеб.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["I need to buy bread."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0889.opus"
+      }
+    },
+    {
+      "id": "ph-e-0890",
+      "text_en": "I need to call my mother.",
+      "translation_ru": "Мне нужно позвонить маме.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["I need to call my mother."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0890.opus"
+      }
+    },
+    {
+      "id": "ph-e-0891",
+      "text_en": "I need to find my friend.",
+      "translation_ru": "Мне нужно найти друга.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["I need to find my friend."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0891.opus"
+      }
+    },
+    {
+      "id": "ph-e-0892",
+      "text_en": "I need to sleep.",
+      "translation_ru": "Мне нужно поспать.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["I need to sleep."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0892.opus"
+      }
+    },
+    {
+      "id": "ph-e-0893",
+      "text_en": "We want to help.",
+      "translation_ru": "Мы хотим помочь.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["We want to help."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0893.opus"
+      }
+    },
+    {
+      "id": "ph-e-0894",
+      "text_en": "We want to see the city.",
+      "translation_ru": "Мы хотим посмотреть город.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["We want to see the city."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0894.opus"
+      }
+    },
+    {
+      "id": "ph-e-0895",
+      "text_en": "We need to go now.",
+      "translation_ru": "Нам нужно идти сейчас.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["We need to go now."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0895.opus"
+      }
+    },
+    {
+      "id": "ph-e-0896",
+      "text_en": "We need a plan.",
+      "translation_ru": "Нам нужен план.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["We need a plan."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0896.opus"
+      }
+    },
+    {
+      "id": "ph-e-0897",
+      "text_en": "They want to stay here.",
+      "translation_ru": "Они хотят остаться здесь.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["They want to stay here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0897.opus"
+      }
+    },
+    {
+      "id": "ph-e-0898",
+      "text_en": "He wants to eat.",
+      "translation_ru": "Он хочет есть.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["He wants to eat."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0898.opus"
+      }
+    },
+    {
+      "id": "ph-e-0899",
+      "text_en": "She wants to drink.",
+      "translation_ru": "Она хочет пить.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["She wants to drink."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0899.opus"
+      }
+    },
+    {
+      "id": "ph-e-0900",
+      "text_en": "He needs to rest.",
+      "translation_ru": "Ему нужно отдохнуть.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["He needs to rest."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0900.opus"
+      }
+    },
+    {
+      "id": "ph-e-0901",
+      "text_en": "She needs to work.",
+      "translation_ru": "Ей нужно работать.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["She needs to work."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0901.opus"
+      }
+    },
+    {
+      "id": "ph-e-0902",
+      "text_en": "Do you want to eat?",
+      "translation_ru": "Ты хочешь есть?",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["Do you want to eat?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0902.opus"
+      }
+    },
+    {
+      "id": "ph-e-0903",
+      "text_en": "Do you want to stay?",
+      "translation_ru": "Ты хочешь остаться?",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["Do you want to stay?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0903.opus"
+      }
+    },
+    {
+      "id": "ph-e-0904",
+      "text_en": "Do you need to go now?",
+      "translation_ru": "Тебе нужно идти сейчас?",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["Do you need to go now?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0904.opus"
+      }
+    },
+    {
+      "id": "ph-e-0905",
+      "text_en": "I don't want to get up.",
+      "translation_ru": "Я не хочу вставать.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["I don't want to get up."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0905.opus"
+      }
+    },
+    {
+      "id": "ph-e-0906",
+      "text_en": "I don't want to wait.",
+      "translation_ru": "Я не хочу ждать.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["I don't want to wait."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0906.opus"
+      }
+    },
+    {
+      "id": "ph-e-0907",
+      "text_en": "I don't need to work today.",
+      "translation_ru": "Мне не нужно сегодня работать.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["I don't need to work today."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0907.opus"
+      }
+    },
+    {
+      "id": "ph-e-0908",
+      "text_en": "I have to go.",
+      "translation_ru": "Мне надо идти.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["I have to go."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0908.opus"
+      }
+    },
+    {
+      "id": "ph-e-0909",
+      "text_en": "I have to work.",
+      "translation_ru": "Мне надо работать.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["I have to work."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0909.opus"
+      }
+    },
+    {
+      "id": "ph-e-0910",
+      "text_en": "You have to see it.",
+      "translation_ru": "Ты должен это увидеть.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["You have to see it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0910.opus"
+      }
+    },
+    {
+      "id": "ph-e-0911",
+      "text_en": "I want to learn English.",
+      "translation_ru": "Я хочу выучить английский.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["I want to learn English."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0911.opus"
+      }
+    },
+    {
+      "id": "ph-e-0912",
+      "text_en": "I want to speak English.",
+      "translation_ru": "Я хочу говорить по-английски.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["I want to speak English."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0912.opus"
+      }
+    },
+    {
+      "id": "ph-e-0913",
+      "text_en": "I want to understand you.",
+      "translation_ru": "Я хочу тебя понимать.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["I want to understand you."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0913.opus"
+      }
+    },
+    {
+      "id": "ph-e-0914",
+      "text_en": "I need to understand it.",
+      "translation_ru": "Мне нужно это понять.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["I need to understand it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0914.opus"
+      }
+    },
+    {
+      "id": "ph-e-0915",
+      "text_en": "I want to be here.",
+      "translation_ru": "Я хочу быть здесь.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["I want to be here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0915.opus"
+      }
+    },
+    {
+      "id": "ph-e-0916",
+      "text_en": "I need to be free.",
+      "translation_ru": "Мне нужно быть свободным.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["I need to be free."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0916.opus"
+      }
+    },
+    {
+      "id": "ph-e-0917",
+      "text_en": "She wants to help us.",
+      "translation_ru": "Она хочет нам помочь.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["She wants to help us."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0917.opus"
+      }
+    },
+    {
+      "id": "ph-e-0918",
+      "text_en": "He wants to talk to you.",
+      "translation_ru": "Он хочет с тобой поговорить.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["He wants to talk to you."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0918.opus"
+      }
+    },
+    {
+      "id": "ph-e-0919",
+      "text_en": "We want to buy a house.",
+      "translation_ru": "Мы хотим купить дом.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["We want to buy a house."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0919.opus"
+      }
+    },
+    {
+      "id": "ph-e-0920",
+      "text_en": "They need to stop.",
+      "translation_ru": "Им нужно остановиться.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["They need to stop."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0920.opus"
+      }
+    },
+    {
+      "id": "ph-e-0921",
+      "text_en": "I want more.",
+      "translation_ru": "Я хочу ещё.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["I want more."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0921.opus"
+      }
+    },
+    {
+      "id": "ph-e-0922",
+      "text_en": "I need a break.",
+      "translation_ru": "Мне нужна передышка.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["I need a break."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0922.opus"
+      }
+    },
+    {
+      "id": "ph-e-0923",
+      "text_en": "I want to go with you.",
+      "translation_ru": "Я хочу пойти с тобой.",
+      "grammar_point_id": "gp-e-21",
+      "variants": ["I want to go with you."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0923.opus"
+      }
+    },
+    {
+      "id": "ph-e-0924",
+      "text_en": "I always get up at seven.",
+      "translation_ru": "Я всегда встаю в семь.",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["I always get up at seven."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0924.opus"
+      }
+    },
+    {
+      "id": "ph-e-0925",
+      "text_en": "I always drink tea in the morning.",
+      "translation_ru": "Я всегда пью чай утром.",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["I always drink tea in the morning."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0925.opus"
+      }
+    },
+    {
+      "id": "ph-e-0926",
+      "text_en": "I always work on Monday.",
+      "translation_ru": "Я всегда работаю в понедельник.",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["I always work on Monday."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0926.opus"
+      }
+    },
+    {
+      "id": "ph-e-0927",
+      "text_en": "She always smiles.",
+      "translation_ru": "Она всегда улыбается.",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["She always smiles."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0927.opus"
+      }
+    },
+    {
+      "id": "ph-e-0928",
+      "text_en": "He always helps me.",
+      "translation_ru": "Он всегда мне помогает.",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["He always helps me."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0928.opus"
+      }
+    },
+    {
+      "id": "ph-e-0929",
+      "text_en": "I often walk in the park.",
+      "translation_ru": "Я часто гуляю в парке.",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["I often walk in the park."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0929.opus"
+      }
+    },
+    {
+      "id": "ph-e-0930",
+      "text_en": "I often call my mother.",
+      "translation_ru": "Я часто звоню маме.",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["I often call my mother."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0930.opus"
+      }
+    },
+    {
+      "id": "ph-e-0931",
+      "text_en": "We often go out.",
+      "translation_ru": "Мы часто куда-нибудь ходим.",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["We often go out."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0931.opus"
+      }
+    },
+    {
+      "id": "ph-e-0932",
+      "text_en": "He often plays tennis.",
+      "translation_ru": "Он часто играет в теннис.",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["He often plays tennis."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0932.opus"
+      }
+    },
+    {
+      "id": "ph-e-0933",
+      "text_en": "She often cooks fish.",
+      "translation_ru": "Она часто готовит рыбу.",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["She often cooks fish."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0933.opus"
+      }
+    },
+    {
+      "id": "ph-e-0934",
+      "text_en": "I sometimes rest.",
+      "translation_ru": "Я иногда отдыхаю.",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["I sometimes rest."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0934.opus"
+      }
+    },
+    {
+      "id": "ph-e-0935",
+      "text_en": "I sometimes watch TV.",
+      "translation_ru": "Я иногда смотрю телевизор.",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["I sometimes watch TV."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0935.opus"
+      }
+    },
+    {
+      "id": "ph-e-0936",
+      "text_en": "We sometimes eat out.",
+      "translation_ru": "Мы иногда едим вне дома.",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["We sometimes eat out."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0936.opus"
+      }
+    },
+    {
+      "id": "ph-e-0937",
+      "text_en": "I never smoke.",
+      "translation_ru": "Я никогда не курю.",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["I never smoke."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0937.opus"
+      }
+    },
+    {
+      "id": "ph-e-0938",
+      "text_en": "I never drink coffee.",
+      "translation_ru": "Я никогда не пью кофе.",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["I never drink coffee."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0938.opus"
+      }
+    },
+    {
+      "id": "ph-e-0939",
+      "text_en": "I never work on Sunday.",
+      "translation_ru": "Я никогда не работаю в воскресенье.",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["I never work on Sunday."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0939.opus"
+      }
+    },
+    {
+      "id": "ph-e-0940",
+      "text_en": "She never says it.",
+      "translation_ru": "Она никогда этого не говорит.",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["She never says it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0940.opus"
+      }
+    },
+    {
+      "id": "ph-e-0941",
+      "text_en": "He never gets up late.",
+      "translation_ru": "Он никогда не встаёт поздно.",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["He never gets up late."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0941.opus"
+      }
+    },
+    {
+      "id": "ph-e-0942",
+      "text_en": "War never changes.",
+      "translation_ru": "Война никогда не меняется.",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["War never changes."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0942.opus"
+      }
+    },
+    {
+      "id": "ph-e-0943",
+      "text_en": "I usually work from nine to five.",
+      "translation_ru": "Я обычно работаю с девяти до пяти.",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["I usually work from nine to five."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0943.opus"
+      }
+    },
+    {
+      "id": "ph-e-0944",
+      "text_en": "I usually go by bus.",
+      "translation_ru": "Я обычно езжу на автобусе.",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["I usually go by bus."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0944.opus"
+      }
+    },
+    {
+      "id": "ph-e-0945",
+      "text_en": "I usually have tea for breakfast.",
+      "translation_ru": "Я обычно пью чай на завтрак.",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["I usually have tea for breakfast."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0945.opus"
+      }
+    },
+    {
+      "id": "ph-e-0946",
+      "text_en": "I don't often travel.",
+      "translation_ru": "Я не часто путешествую.",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["I don't often travel."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0946.opus"
+      }
+    },
+    {
+      "id": "ph-e-0947",
+      "text_en": "I don't always understand.",
+      "translation_ru": "Я не всегда понимаю.",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["I don't always understand."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0947.opus"
+      }
+    },
+    {
+      "id": "ph-e-0948",
+      "text_en": "Do you often travel?",
+      "translation_ru": "Ты часто путешествуешь?",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["Do you often travel?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0948.opus"
+      }
+    },
+    {
+      "id": "ph-e-0949",
+      "text_en": "Do you always get up early?",
+      "translation_ru": "Ты всегда встаёшь рано?",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["Do you always get up early?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0949.opus"
+      }
+    },
+    {
+      "id": "ph-e-0950",
+      "text_en": "Does he often call you?",
+      "translation_ru": "Он часто тебе звонит?",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["Does he often call you?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0950.opus"
+      }
+    },
+    {
+      "id": "ph-e-0951",
+      "text_en": "I am always hungry.",
+      "translation_ru": "Я всегда голодный.",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["I am always hungry."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0951.opus"
+      }
+    },
+    {
+      "id": "ph-e-0952",
+      "text_en": "He is often tired.",
+      "translation_ru": "Он часто усталый.",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["He is often tired."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0952.opus"
+      }
+    },
+    {
+      "id": "ph-e-0953",
+      "text_en": "She is never late.",
+      "translation_ru": "Она никогда не опаздывает.",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["She is never late."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0953.opus"
+      }
+    },
+    {
+      "id": "ph-e-0954",
+      "text_en": "It is always cold here.",
+      "translation_ru": "Здесь всегда холодно.",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["It is always cold here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0954.opus"
+      }
+    },
+    {
+      "id": "ph-e-0955",
+      "text_en": "They are always together.",
+      "translation_ru": "Они всегда вместе.",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["They are always together."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0955.opus"
+      }
+    },
+    {
+      "id": "ph-e-0956",
+      "text_en": "I work here every day.",
+      "translation_ru": "Я работаю здесь каждый день.",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["I work here every day."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0956.opus"
+      }
+    },
+    {
+      "id": "ph-e-0957",
+      "text_en": "He drinks tea every morning.",
+      "translation_ru": "Он пьёт чай каждое утро.",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["He drinks tea every morning."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0957.opus"
+      }
+    },
+    {
+      "id": "ph-e-0958",
+      "text_en": "We meet once a week.",
+      "translation_ru": "Мы встречаемся раз в неделю.",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["We meet once a week."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0958.opus"
+      }
+    },
+    {
+      "id": "ph-e-0959",
+      "text_en": "I call her twice a day.",
+      "translation_ru": "Я звоню ей дважды в день.",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["I call her twice a day."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0959.opus"
+      }
+    },
+    {
+      "id": "ph-e-0960",
+      "text_en": "How often do you travel?",
+      "translation_ru": "Как часто ты путешествуешь?",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["How often do you travel?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0960.opus"
+      }
+    },
+    {
+      "id": "ph-e-0961",
+      "text_en": "How often does he call?",
+      "translation_ru": "Как часто он звонит?",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["How often does he call?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0961.opus"
+      }
+    },
+    {
+      "id": "ph-e-0962",
+      "text_en": "I like big cities.",
+      "translation_ru": "Я люблю большие города.",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["I like big cities."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0962.opus"
+      }
+    },
+    {
+      "id": "ph-e-0963",
+      "text_en": "I speak English slowly.",
+      "translation_ru": "Я медленно говорю по-английски.",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["I speak English slowly."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0963.opus"
+      }
+    },
+    {
+      "id": "ph-e-0964",
+      "text_en": "She sings well.",
+      "translation_ru": "Она хорошо поёт.",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["She sings well."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0964.opus"
+      }
+    },
+    {
+      "id": "ph-e-0965",
+      "text_en": "He works hard.",
+      "translation_ru": "Он усердно работает.",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["He works hard."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0965.opus"
+      }
+    },
+    {
+      "id": "ph-e-0966",
+      "text_en": "I sleep badly.",
+      "translation_ru": "Я плохо сплю.",
+      "grammar_point_id": "gp-e-22",
+      "variants": ["I sleep badly."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0966.opus"
+      }
+    },
+    {
+      "id": "ph-e-0967",
+      "text_en": "I am working now.",
+      "translation_ru": "Я сейчас работаю.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["I am working now."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0967.opus"
+      }
+    },
+    {
+      "id": "ph-e-0968",
+      "text_en": "I am reading a book.",
+      "translation_ru": "Я читаю книгу.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["I am reading a book."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0968.opus"
+      }
+    },
+    {
+      "id": "ph-e-0969",
+      "text_en": "I am drinking tea.",
+      "translation_ru": "Я пью чай.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["I am drinking tea."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0969.opus"
+      }
+    },
+    {
+      "id": "ph-e-0970",
+      "text_en": "I am listening.",
+      "translation_ru": "Я слушаю.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["I am listening."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0970.opus"
+      }
+    },
+    {
+      "id": "ph-e-0971",
+      "text_en": "I am waiting.",
+      "translation_ru": "Я жду.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["I am waiting."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0971.opus"
+      }
+    },
+    {
+      "id": "ph-e-0972",
+      "text_en": "I am resting.",
+      "translation_ru": "Я отдыхаю.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["I am resting."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0972.opus"
+      }
+    },
+    {
+      "id": "ph-e-0973",
+      "text_en": "I am cooking dinner.",
+      "translation_ru": "Я готовлю ужин.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["I am cooking dinner."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0973.opus"
+      }
+    },
+    {
+      "id": "ph-e-0974",
+      "text_en": "I am watching a film.",
+      "translation_ru": "Я смотрю фильм.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["I am watching a film."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0974.opus"
+      }
+    },
+    {
+      "id": "ph-e-0975",
+      "text_en": "I am learning English.",
+      "translation_ru": "Я учу английский.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["I am learning English."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0975.opus"
+      }
+    },
+    {
+      "id": "ph-e-0976",
+      "text_en": "I am trying.",
+      "translation_ru": "Я пытаюсь.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["I am trying."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0976.opus"
+      }
+    },
+    {
+      "id": "ph-e-0977",
+      "text_en": "You are working now.",
+      "translation_ru": "Ты сейчас работаешь.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["You are working now."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0977.opus"
+      }
+    },
+    {
+      "id": "ph-e-0978",
+      "text_en": "You are sitting here.",
+      "translation_ru": "Ты сидишь здесь.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["You are sitting here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0978.opus"
+      }
+    },
+    {
+      "id": "ph-e-0979",
+      "text_en": "You are standing.",
+      "translation_ru": "Ты стоишь.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["You are standing."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0979.opus"
+      }
+    },
+    {
+      "id": "ph-e-0980",
+      "text_en": "He is sleeping.",
+      "translation_ru": "Он спит.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["He is sleeping."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0980.opus"
+      }
+    },
+    {
+      "id": "ph-e-0981",
+      "text_en": "He is working.",
+      "translation_ru": "Он работает.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["He is working."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0981.opus"
+      }
+    },
+    {
+      "id": "ph-e-0982",
+      "text_en": "He is watching TV.",
+      "translation_ru": "Он смотрит телевизор.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["He is watching TV."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0982.opus"
+      }
+    },
+    {
+      "id": "ph-e-0983",
+      "text_en": "He is playing football.",
+      "translation_ru": "Он играет в футбол.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["He is playing football."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0983.opus"
+      }
+    },
+    {
+      "id": "ph-e-0984",
+      "text_en": "She is cooking.",
+      "translation_ru": "Она готовит.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["She is cooking."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0984.opus"
+      }
+    },
+    {
+      "id": "ph-e-0985",
+      "text_en": "She is reading.",
+      "translation_ru": "Она читает.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["She is reading."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0985.opus"
+      }
+    },
+    {
+      "id": "ph-e-0986",
+      "text_en": "She is singing.",
+      "translation_ru": "Она поёт.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["She is singing."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0986.opus"
+      }
+    },
+    {
+      "id": "ph-e-0987",
+      "text_en": "She is speaking English.",
+      "translation_ru": "Она говорит по-английски.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["She is speaking English."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0987.opus"
+      }
+    },
+    {
+      "id": "ph-e-0988",
+      "text_en": "It is raining.",
+      "translation_ru": "Идёт дождь.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["It is raining."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0988.opus"
+      }
+    },
+    {
+      "id": "ph-e-0989",
+      "text_en": "It is snowing.",
+      "translation_ru": "Идёт снег.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["It is snowing."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0989.opus"
+      }
+    },
+    {
+      "id": "ph-e-0990",
+      "text_en": "It is getting dark.",
+      "translation_ru": "Темнеет.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["It is getting dark."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0990.opus"
+      }
+    },
+    {
+      "id": "ph-e-0991",
+      "text_en": "We are working.",
+      "translation_ru": "Мы работаем.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["We are working."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0991.opus"
+      }
+    },
+    {
+      "id": "ph-e-0992",
+      "text_en": "We are walking.",
+      "translation_ru": "Мы гуляем.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["We are walking."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0992.opus"
+      }
+    },
+    {
+      "id": "ph-e-0993",
+      "text_en": "We are waiting for you.",
+      "translation_ru": "Мы ждём тебя.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["We are waiting for you."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0993.opus"
+      }
+    },
+    {
+      "id": "ph-e-0994",
+      "text_en": "We are learning.",
+      "translation_ru": "Мы учимся.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["We are learning."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0994.opus"
+      }
+    },
+    {
+      "id": "ph-e-0995",
+      "text_en": "They are talking.",
+      "translation_ru": "Они разговаривают.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["They are talking."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0995.opus"
+      }
+    },
+    {
+      "id": "ph-e-0996",
+      "text_en": "They are playing.",
+      "translation_ru": "Они играют.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["They are playing."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0996.opus"
+      }
+    },
+    {
+      "id": "ph-e-0997",
+      "text_en": "They are working now.",
+      "translation_ru": "Они сейчас работают.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["They are working now."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0997.opus"
+      }
+    },
+    {
+      "id": "ph-e-0998",
+      "text_en": "The children are sleeping.",
+      "translation_ru": "Дети спят.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["The children are sleeping."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0998.opus"
+      }
+    },
+    {
+      "id": "ph-e-0999",
+      "text_en": "The bus is coming.",
+      "translation_ru": "Автобус подъезжает.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["The bus is coming."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0999.opus"
+      }
+    },
+    {
+      "id": "ph-e-1000",
+      "text_en": "The train is leaving.",
+      "translation_ru": "Поезд отходит.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["The train is leaving."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1000.opus"
+      }
+    },
+    {
+      "id": "ph-e-1001",
+      "text_en": "The water is boiling.",
+      "translation_ru": "Вода кипит.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["The water is boiling."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1001.opus"
+      }
+    },
+    {
+      "id": "ph-e-1002",
+      "text_en": "I am going home.",
+      "translation_ru": "Я иду домой.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["I am going home."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1002.opus"
+      }
+    },
+    {
+      "id": "ph-e-1003",
+      "text_en": "He is going to work.",
+      "translation_ru": "Он идёт на работу.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["He is going to work."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1003.opus"
+      }
+    },
+    {
+      "id": "ph-e-1004",
+      "text_en": "She is coming back.",
+      "translation_ru": "Она возвращается.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["She is coming back."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1004.opus"
+      }
+    },
+    {
+      "id": "ph-e-1005",
+      "text_en": "I am looking for my keys.",
+      "translation_ru": "Я ищу свои ключи.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["I am looking for my keys."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1005.opus"
+      }
+    },
+    {
+      "id": "ph-e-1006",
+      "text_en": "What is happening?",
+      "translation_ru": "Что происходит?",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["What is happening?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1006.opus"
+      }
+    },
+    {
+      "id": "ph-e-1007",
+      "text_en": "Look! It is raining.",
+      "translation_ru": "Смотри! Дождь идёт.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["Look! It is raining."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1007.opus"
+      }
+    },
+    {
+      "id": "ph-e-1008",
+      "text_en": "Listen! She is singing.",
+      "translation_ru": "Слушай! Она поёт.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["Listen! She is singing."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1008.opus"
+      }
+    },
+    {
+      "id": "ph-e-1009",
+      "text_en": "I am just trying to help.",
+      "translation_ru": "Я просто пытаюсь помочь.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["I am just trying to help."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1009.opus"
+      }
+    },
+    {
+      "id": "ph-e-1010",
+      "text_en": "Life is changing.",
+      "translation_ru": "Жизнь меняется.",
+      "grammar_point_id": "gp-e-23",
+      "variants": ["Life is changing."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1010.opus"
+      }
+    },
+    {
+      "id": "ph-e-1011",
+      "text_en": "I am not working now.",
+      "translation_ru": "Я сейчас не работаю.",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["I am not working now."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1011.opus"
+      }
+    },
+    {
+      "id": "ph-e-1012",
+      "text_en": "I am not sleeping.",
+      "translation_ru": "Я не сплю.",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["I am not sleeping."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1012.opus"
+      }
+    },
+    {
+      "id": "ph-e-1013",
+      "text_en": "I am not listening.",
+      "translation_ru": "Я не слушаю.",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["I am not listening."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1013.opus"
+      }
+    },
+    {
+      "id": "ph-e-1014",
+      "text_en": "I am not waiting.",
+      "translation_ru": "Я не жду.",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["I am not waiting."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1014.opus"
+      }
+    },
+    {
+      "id": "ph-e-1015",
+      "text_en": "He is not sleeping.",
+      "translation_ru": "Он не спит.",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["He is not sleeping."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1015.opus"
+      }
+    },
+    {
+      "id": "ph-e-1016",
+      "text_en": "He is not working today.",
+      "translation_ru": "Он сегодня не работает.",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["He is not working today."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1016.opus"
+      }
+    },
+    {
+      "id": "ph-e-1017",
+      "text_en": "She is not cooking.",
+      "translation_ru": "Она не готовит.",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["She is not cooking."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1017.opus"
+      }
+    },
+    {
+      "id": "ph-e-1018",
+      "text_en": "She is not watching TV.",
+      "translation_ru": "Она не смотрит телевизор.",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["She is not watching TV."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1018.opus"
+      }
+    },
+    {
+      "id": "ph-e-1019",
+      "text_en": "It is not raining.",
+      "translation_ru": "Дождь не идёт.",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["It is not raining."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1019.opus"
+      }
+    },
+    {
+      "id": "ph-e-1020",
+      "text_en": "It is not snowing.",
+      "translation_ru": "Снег не идёт.",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["It is not snowing."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1020.opus"
+      }
+    },
+    {
+      "id": "ph-e-1021",
+      "text_en": "We are not walking.",
+      "translation_ru": "Мы не гуляем.",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["We are not walking."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1021.opus"
+      }
+    },
+    {
+      "id": "ph-e-1022",
+      "text_en": "We are not waiting.",
+      "translation_ru": "Мы не ждём.",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["We are not waiting."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1022.opus"
+      }
+    },
+    {
+      "id": "ph-e-1023",
+      "text_en": "They are not talking.",
+      "translation_ru": "Они не разговаривают.",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["They are not talking."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1023.opus"
+      }
+    },
+    {
+      "id": "ph-e-1024",
+      "text_en": "They are not working.",
+      "translation_ru": "Они не работают.",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["They are not working."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1024.opus"
+      }
+    },
+    {
+      "id": "ph-e-1025",
+      "text_en": "Are you working?",
+      "translation_ru": "Ты работаешь?",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["Are you working?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1025.opus"
+      }
+    },
+    {
+      "id": "ph-e-1026",
+      "text_en": "Are you sleeping?",
+      "translation_ru": "Ты спишь?",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["Are you sleeping?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1026.opus"
+      }
+    },
+    {
+      "id": "ph-e-1027",
+      "text_en": "Are you listening?",
+      "translation_ru": "Ты слушаешь?",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["Are you listening?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1027.opus"
+      }
+    },
+    {
+      "id": "ph-e-1028",
+      "text_en": "Are you waiting?",
+      "translation_ru": "Ты ждёшь?",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["Are you waiting?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1028.opus"
+      }
+    },
+    {
+      "id": "ph-e-1029",
+      "text_en": "Are you watching TV?",
+      "translation_ru": "Ты смотришь телевизор?",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["Are you watching TV?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1029.opus"
+      }
+    },
+    {
+      "id": "ph-e-1030",
+      "text_en": "Is he sleeping?",
+      "translation_ru": "Он спит?",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["Is he sleeping?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1030.opus"
+      }
+    },
+    {
+      "id": "ph-e-1031",
+      "text_en": "Is he working?",
+      "translation_ru": "Он работает?",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["Is he working?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1031.opus"
+      }
+    },
+    {
+      "id": "ph-e-1032",
+      "text_en": "Is she cooking?",
+      "translation_ru": "Она готовит?",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["Is she cooking?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1032.opus"
+      }
+    },
+    {
+      "id": "ph-e-1033",
+      "text_en": "Is it raining?",
+      "translation_ru": "Дождь идёт?",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["Is it raining?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1033.opus"
+      }
+    },
+    {
+      "id": "ph-e-1034",
+      "text_en": "Is it snowing?",
+      "translation_ru": "Снег идёт?",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["Is it snowing?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1034.opus"
+      }
+    },
+    {
+      "id": "ph-e-1035",
+      "text_en": "Are we going?",
+      "translation_ru": "Мы идём?",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["Are we going?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1035.opus"
+      }
+    },
+    {
+      "id": "ph-e-1036",
+      "text_en": "Are they coming?",
+      "translation_ru": "Они приходят?",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["Are they coming?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1036.opus"
+      }
+    },
+    {
+      "id": "ph-e-1037",
+      "text_en": "Are they playing?",
+      "translation_ru": "Они играют?",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["Are they playing?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1037.opus"
+      }
+    },
+    {
+      "id": "ph-e-1038",
+      "text_en": "Yes, I am.",
+      "translation_ru": "Да.",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["Yes, I am."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1038.opus"
+      }
+    },
+    {
+      "id": "ph-e-1039",
+      "text_en": "No, I am not.",
+      "translation_ru": "Нет.",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["No, I am not."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1039.opus"
+      }
+    },
+    {
+      "id": "ph-e-1040",
+      "text_en": "Yes, he is.",
+      "translation_ru": "Да.",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["Yes, he is."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1040.opus"
+      }
+    },
+    {
+      "id": "ph-e-1041",
+      "text_en": "No, she is not.",
+      "translation_ru": "Нет.",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["No, she is not."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1041.opus"
+      }
+    },
+    {
+      "id": "ph-e-1042",
+      "text_en": "What are you doing?",
+      "translation_ru": "Что ты делаешь?",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["What are you doing?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1042.opus"
+      }
+    },
+    {
+      "id": "ph-e-1043",
+      "text_en": "What are you doing here?",
+      "translation_ru": "Что ты здесь делаешь?",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["What are you doing here?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1043.opus"
+      }
+    },
+    {
+      "id": "ph-e-1044",
+      "text_en": "What is he doing?",
+      "translation_ru": "Что он делает?",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["What is he doing?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1044.opus"
+      }
+    },
+    {
+      "id": "ph-e-1045",
+      "text_en": "What is she reading?",
+      "translation_ru": "Что она читает?",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["What is she reading?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1045.opus"
+      }
+    },
+    {
+      "id": "ph-e-1046",
+      "text_en": "Where are you going?",
+      "translation_ru": "Куда ты идёшь?",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["Where are you going?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1046.opus"
+      }
+    },
+    {
+      "id": "ph-e-1047",
+      "text_en": "Where are they going?",
+      "translation_ru": "Куда они идут?",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["Where are they going?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1047.opus"
+      }
+    },
+    {
+      "id": "ph-e-1048",
+      "text_en": "Why are you smiling?",
+      "translation_ru": "Почему ты улыбаешься?",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["Why are you smiling?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1048.opus"
+      }
+    },
+    {
+      "id": "ph-e-1049",
+      "text_en": "Why is he crying?",
+      "translation_ru": "Почему он плачет?",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["Why is he crying?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1049.opus"
+      }
+    },
+    {
+      "id": "ph-e-1050",
+      "text_en": "How are you doing this?",
+      "translation_ru": "Как ты это делаешь?",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["How are you doing this?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1050.opus"
+      }
+    },
+    {
+      "id": "ph-e-1051",
+      "text_en": "I am working, and he is resting.",
+      "translation_ru": "Я работаю, а он отдыхает.",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["I am working, and he is resting."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1051.opus"
+      }
+    },
+    {
+      "id": "ph-e-1052",
+      "text_en": "She is not sleeping, she is reading.",
+      "translation_ru": "Она не спит, она читает.",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["She is not sleeping, she is reading."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1052.opus"
+      }
+    },
+    {
+      "id": "ph-e-1053",
+      "text_en": "Help! I'm lost!",
+      "translation_ru": "Помогите! Я потерялся!",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["Help! I'm lost!"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1053.opus"
+      }
+    },
+    {
+      "id": "ph-e-1054",
+      "text_en": "Please help me!",
+      "translation_ru": "Пожалуйста, помогите мне!",
+      "grammar_point_id": "gp-e-24",
+      "variants": ["Please help me!"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1054.opus"
       }
     }
   ]

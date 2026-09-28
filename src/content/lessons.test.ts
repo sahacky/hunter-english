@@ -188,12 +188,12 @@ describe('loadLessonView (реальные data/ ранга E)', () => {
 
   it('пул фраз каждого урока ≥40, все фразы с аудио и уникальными id', async () => {
     const phrases = await loadPhrases()
-    expect(phrases.length).toBeGreaterThanOrEqual(870)
+    expect(phrases.length).toBeGreaterThanOrEqual(1050)
     expect(new Set(phrases.map(({ id }) => id)).size).toBe(phrases.length)
     expect(phrases.every(({ audio }) => audio?.en_gb?.startsWith('audio/phrases/cori/'))).toBe(true)
 
     const lessons = await loadLessons()
-    expect(lessons.length).toBe(20)
+    expect(lessons.length).toBe(24)
     const phraseById = new Set(phrases.map(({ id }) => id))
     for (const lesson of lessons) {
       const lessonPhrases = phrases.filter(

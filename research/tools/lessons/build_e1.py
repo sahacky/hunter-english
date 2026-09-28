@@ -308,19 +308,19 @@ E06 = [
 E07 = [
     ("This is my phone.", "Это мой телефон.", None),
     ("This is your key.", "Это твой ключ.", None),
-    ("That is my house.", "То мой дом.", None),
-    ("That is your car.", "То твоя машина.", None),
+    ("That is my house.", "Тот дом — мой.", None),
+    ("That is your car.", "Та машина — твоя.", None),
     ("These are my friends.", "Это мои друзья.", None),
     ("These are our books.", "Это наши книги.", None),
-    ("Those are her shoes.", "То её туфли.", None),
-    ("Those are his glasses.", "То его очки.", None),
+    ("Those are her shoes.", "Те туфли — её.", None),
+    ("Those are his glasses.", "Те очки — его.", None),
     ("Is this your bag?", "Это твоя сумка?", None),
     ("Is this a pen?", "Это ручка?", None),
     ("Is that your car?", "То твоя машина?", None),
     ("Are these your keys?", "Это твои ключи?", None),
     ("Are those our tickets?", "То наши билеты?", None),
     ("This is not my umbrella.", "Это не мой зонт.", None),
-    ("That is not her phone.", "То не её телефон.", None),
+    ("That is not her phone.", "Тот телефон — не её.", None),
     ("These are not my shoes.", "Это не мои туфли.", None),
     ("This table is old.", "Этот стол старый.", None),
     ("That chair is new.", "Тот стул новый.", None),
@@ -333,22 +333,22 @@ E07 = [
     ("This is my friend Dima.", "Это мой друг Дима.", None),
     ("These are my parents.", "Это мои родители.", None),
     ("This is our room.", "Это наш номер.", None),
-    ("Those are tourists.", "То туристы.", None),
+    ("Those are tourists.", "Те люди — туристы.", None),
     ("This bag is heavy.", "Эта сумка тяжёлая.", None),
     ("These apples are red.", "Эти яблоки красные.", None),
     ("What is this?", "Что это?", None),
     ("What are these?", "Что это?", None),
     ("This is important.", "Это важно.", None),
-    ("That is a good idea.", "То хорошая идея.", None),
+    ("That is a good idea.", "Та идея — хорошая.", None),
     ("These are my things.", "Это мои вещи.", None),
     ("Is this seat free?", "Это место свободно?", None),
     ("This is for you.", "Это для тебя.", None),
     ("That is strange.", "Это странно.", None),
     ("This is my life.", "Это моя жизнь.", None),
     ("These shoes are new.", "Эти туфли новые.", None),
-    ("That house is big.", "Тот дом большой.", None),
+    ("That house is big.", "Тот дом — большой.", None),
     ("This is the best day!", "Это лучший день!", None),
-    ("Those people are kind.", "Те люди добрые.", None),
+    ("Those people are kind.", "Те люди — добрые.", None),
     ("Is this your first time here?", "Ты здесь впервые?", None),
 ]
 
@@ -606,6 +606,38 @@ RULE_E20 = """Повторение E-16…E-19 — коротко:
 - **want/like/need (+ to)**; вежливое **I'd like**.
 - Пунктуация: апостроф — don't, doesn't, I'd, John's (притяжательный)."""
 
+RULE_E21 = """Правило двух глаголов: после want / need / have — частица **to** + глагол.
+
+- I want **to** sleep. I need **to** work. I have **to** go.
+- Отрицание: I don't want **to** wait.
+
+want + существительное (I want a coffee) — без to; want + действие — с to."""
+
+RULE_E22 = """Наречия частотности: **always, usually, often, sometimes, never**.
+
+- Стоят ПЕРЕД обычным глаголом: I **always** get up at seven.
+- После to be: I am **always** hungry.
+- never = уже отрицание: I never smoke (не «don't never»).
+
+Порядок слов: подлежащее → глагол → остальное (I speak English slowly)."""
+
+RULE_E23 = """Present Simple vs Present Continuous: «сейчас» vs «всегда».
+
+- Сейчас: **am/is/are + глагол-ing** — I **am working** now. It **is raining**.
+- Всегда: Present Simple — I work every day.
+
+Сигналы «сейчас»: now, look!, listen!"""
+
+RULE_E24 = """Present Continuous: отрицание и вопрос.
+
+- −: I am **not** working. He is**n't** sleeping.
+- ?: **Are** you working? **Is** he sleeping? — краткие: Yes, I am / No, I'm not.
+- Спецвопрос: What **are you doing**? Where **are you going**?
+
+Повтор экстренных: Help! I'm lost! Please help me!"""
+
+
+
 
 
 
@@ -765,7 +797,7 @@ E14 = [
     ("It doesn't work.", "Это не работает.", None),
     ("It doesn't matter.", "Это не важно.", None),
     ("It doesn't open on Sunday.", "Он не открывается в воскресенье.", None),
-    ("The shop doesn't work today.", "Магазин сегодня не работает.", None),
+    ("The shop isn't open today.", "Магазин сегодня не работает.", None),
     ("The bus doesn't stop here.", "Автобус здесь не останавливается.", None),
     ("The museum doesn't open on Monday.", "Музей не открывается в понедельник.", None),
     ("My father doesn't smoke.", "Мой отец не курит.", None),
@@ -1040,7 +1072,7 @@ E20 = [
     ("I don't work. I'm a student.", "Я не работаю. Я студент.", None),
     ("Does he want coffee? — No, he doesn't.", "Он хочет кофе? — Нет.", None),
     ("Do they live here? — Yes, they do.", "Они живут здесь? — Да.", None),
-    ("I'd like a coffee and my friend'd like a tea.", "Мне кофе, а моему другу чай.", None),
+    ("I'd like a coffee and my friend would like a tea.", "Мне кофе, а моему другу чай.", None),
     ("What does she want?", "Что она хочет?", None),
     ("Where do your parents live?", "Где живут твои родители?", None),
     ("When do you get up on Sunday?", "Во сколько ты встаёшь в воскресенье?", None),
@@ -1080,6 +1112,194 @@ E20 = [
     ("I need to call my mother.", "Мне нужно позвонить маме.", None),
     ("Everything is fine, thank you.", "Всё хорошо, спасибо.", None),
     ("What do you think?", "Что ты думаешь?", None),
+]
+
+
+E21 = [
+    ("I want to stay.", "Я хочу остаться.", None),
+    ("I want to work.", "Я хочу работать.", None),
+    ("I want to read.", "Я хочу читать.", None),
+    ("I want to buy a ticket.", "Я хочу купить билет.", None),
+    ("I want to open the window.", "Я хочу открыть окно.", None),
+    ("I want to ask a question.", "Я хочу задать вопрос.", None),
+    ("I want to call a taxi.", "Я хочу вызвать такси.", None),
+    ("I need to go.", "Мне нужно идти.", None),
+    ("I need to work today.", "Мне нужно работать сегодня.", None),
+    ("I need to buy bread.", "Мне нужно купить хлеб.", None),
+    ("I need to call my mother.", "Мне нужно позвонить маме.", None),
+    ("I need to find my friend.", "Мне нужно найти друга.", None),
+    ("I need to sleep.", "Мне нужно поспать.", None),
+    ("We want to help.", "Мы хотим помочь.", None),
+    ("We want to see the city.", "Мы хотим посмотреть город.", None),
+    ("We need to go now.", "Нам нужно идти сейчас.", None),
+    ("We need a plan.", "Нам нужен план.", None),
+    ("They want to stay here.", "Они хотят остаться здесь.", None),
+    ("He wants to eat.", "Он хочет есть.", None),
+    ("She wants to drink.", "Она хочет пить.", None),
+    ("He needs to rest.", "Ему нужно отдохнуть.", None),
+    ("She needs to work.", "Ей нужно работать.", None),
+    ("Do you want to eat?", "Ты хочешь есть?", None),
+    ("Do you want to stay?", "Ты хочешь остаться?", None),
+    ("Do you need to go now?", "Тебе нужно идти сейчас?", None),
+    ("I don't want to get up.", "Я не хочу вставать.", None),
+    ("I don't want to wait.", "Я не хочу ждать.", None),
+    ("I don't need to work today.", "Мне не нужно сегодня работать.", None),
+    ("I have to go.", "Мне надо идти.", None),
+    ("I have to work.", "Мне надо работать.", None),
+    ("You have to see it.", "Ты должен это увидеть.", None),
+    ("I want to learn English.", "Я хочу выучить английский.", None),
+    ("I want to speak English.", "Я хочу говорить по-английски.", None),
+    ("I want to understand you.", "Я хочу тебя понимать.", None),
+    ("I need to understand it.", "Мне нужно это понять.", None),
+    ("I want to be here.", "Я хочу быть здесь.", None),
+    ("I need to be free.", "Мне нужно быть свободным.", None),
+    ("She wants to help us.", "Она хочет нам помочь.", None),
+    ("He wants to talk to you.", "Он хочет с тобой поговорить.", None),
+    ("We want to buy a house.", "Мы хотим купить дом.", None),
+    ("They need to stop.", "Им нужно остановиться.", None),
+    ("I want more.", "Я хочу ещё.", None),
+    ("I need a break.", "Мне нужна передышка.", None),
+    ("I want to go with you.", "Я хочу пойти с тобой.", None),
+]
+
+E22 = [
+    ("I always get up at seven.", "Я всегда встаю в семь.", None),
+    ("I always drink tea in the morning.", "Я всегда пью чай утром.", None),
+    ("I always work on Monday.", "Я всегда работаю в понедельник.", None),
+    ("She always smiles.", "Она всегда улыбается.", None),
+    ("He always helps me.", "Он всегда мне помогает.", None),
+    ("I often walk in the park.", "Я часто гуляю в парке.", None),
+    ("I often call my mother.", "Я часто звоню маме.", None),
+    ("We often go out.", "Мы часто куда-нибудь ходим.", None),
+    ("He often plays tennis.", "Он часто играет в теннис.", None),
+    ("She often cooks fish.", "Она часто готовит рыбу.", None),
+    ("I sometimes rest.", "Я иногда отдыхаю.", None),
+    ("I sometimes watch TV.", "Я иногда смотрю телевизор.", None),
+    ("We sometimes eat out.", "Мы иногда едим вне дома.", None),
+    ("I never smoke.", "Я никогда не курю.", None),
+    ("I never drink coffee.", "Я никогда не пью кофе.", None),
+    ("I never work on Sunday.", "Я никогда не работаю в воскресенье.", None),
+    ("She never says it.", "Она никогда этого не говорит.", None),
+    ("He never gets up late.", "Он никогда не встаёт поздно.", None),
+    ("War never changes.", "Война никогда не меняется.", None),
+    ("I usually work from nine to five.", "Я обычно работаю с девяти до пяти.", None),
+    ("I usually go by bus.", "Я обычно езжу на автобусе.", None),
+    ("I usually have tea for breakfast.", "Я обычно пью чай на завтрак.", None),
+    ("I don't often travel.", "Я не часто путешествую.", None),
+    ("I don't always understand.", "Я не всегда понимаю.", None),
+    ("Do you often travel?", "Ты часто путешествуешь?", None),
+    ("Do you always get up early?", "Ты всегда встаёшь рано?", None),
+    ("Does he often call you?", "Он часто тебе звонит?", None),
+    ("I am always hungry.", "Я всегда голодный.", None),
+    ("He is often tired.", "Он часто усталый.", None),
+    ("She is never late.", "Она никогда не опаздывает.", None),
+    ("It is always cold here.", "Здесь всегда холодно.", None),
+    ("They are always together.", "Они всегда вместе.", None),
+    ("I work here every day.", "Я работаю здесь каждый день.", None),
+    ("He drinks tea every morning.", "Он пьёт чай каждое утро.", None),
+    ("We meet once a week.", "Мы встречаемся раз в неделю.", None),
+    ("I call her twice a day.", "Я звоню ей дважды в день.", None),
+    ("How often do you travel?", "Как часто ты путешествуешь?", None),
+    ("How often does he call?", "Как часто он звонит?", None),
+    ("I like big cities.", "Я люблю большие города.", None),
+    ("I speak English slowly.", "Я медленно говорю по-английски.", None),
+    ("She sings well.", "Она хорошо поёт.", None),
+    ("He works hard.", "Он усердно работает.", None),
+    ("I sleep badly.", "Я плохо сплю.", None),
+]
+
+E23 = [
+    ("I am working now.", "Я сейчас работаю.", None),
+    ("I am reading a book.", "Я читаю книгу.", None),
+    ("I am drinking tea.", "Я пью чай.", None),
+    ("I am listening.", "Я слушаю.", None),
+    ("I am waiting.", "Я жду.", None),
+    ("I am resting.", "Я отдыхаю.", None),
+    ("I am cooking dinner.", "Я готовлю ужин.", None),
+    ("I am watching a film.", "Я смотрю фильм.", None),
+    ("I am learning English.", "Я учу английский.", None),
+    ("I am trying.", "Я пытаюсь.", None),
+    ("You are working now.", "Ты сейчас работаешь.", None),
+    ("You are sitting here.", "Ты сидишь здесь.", None),
+    ("You are standing.", "Ты стоишь.", None),
+    ("He is sleeping.", "Он спит.", None),
+    ("He is working.", "Он работает.", None),
+    ("He is watching TV.", "Он смотрит телевизор.", None),
+    ("He is playing football.", "Он играет в футбол.", None),
+    ("She is cooking.", "Она готовит.", None),
+    ("She is reading.", "Она читает.", None),
+    ("She is singing.", "Она поёт.", None),
+    ("She is speaking English.", "Она говорит по-английски.", None),
+    ("It is raining.", "Идёт дождь.", None),
+    ("It is snowing.", "Идёт снег.", None),
+    ("It is getting dark.", "Темнеет.", None),
+    ("We are working.", "Мы работаем.", None),
+    ("We are walking.", "Мы гуляем.", None),
+    ("We are waiting for you.", "Мы ждём тебя.", None),
+    ("We are learning.", "Мы учимся.", None),
+    ("They are talking.", "Они разговаривают.", None),
+    ("They are playing.", "Они играют.", None),
+    ("They are working now.", "Они сейчас работают.", None),
+    ("The children are sleeping.", "Дети спят.", None),
+    ("The bus is coming.", "Автобус подъезжает.", None),
+    ("The train is leaving.", "Поезд отходит.", None),
+    ("The water is boiling.", "Вода кипит.", None),
+    ("I am going home.", "Я иду домой.", None),
+    ("He is going to work.", "Он идёт на работу.", None),
+    ("She is coming back.", "Она возвращается.", None),
+    ("I am looking for my keys.", "Я ищу свои ключи.", None),
+    ("What is happening?", "Что происходит?", None),
+    ("Look! It is raining.", "Смотри! Дождь идёт.", None),
+    ("Listen! She is singing.", "Слушай! Она поёт.", None),
+    ("I am just trying to help.", "Я просто пытаюсь помочь.", None),
+    ("Life is changing.", "Жизнь меняется.", None),
+]
+
+E24 = [
+    ("I am not working now.", "Я сейчас не работаю.", None),
+    ("I am not sleeping.", "Я не сплю.", None),
+    ("I am not listening.", "Я не слушаю.", None),
+    ("I am not waiting.", "Я не жду.", None),
+    ("He is not sleeping.", "Он не спит.", None),
+    ("He is not working today.", "Он сегодня не работает.", None),
+    ("She is not cooking.", "Она не готовит.", None),
+    ("She is not watching TV.", "Она не смотрит телевизор.", None),
+    ("It is not raining.", "Дождь не идёт.", None),
+    ("It is not snowing.", "Снег не идёт.", None),
+    ("We are not walking.", "Мы не гуляем.", None),
+    ("We are not waiting.", "Мы не ждём.", None),
+    ("They are not talking.", "Они не разговаривают.", None),
+    ("They are not working.", "Они не работают.", None),
+    ("Are you working?", "Ты работаешь?", None),
+    ("Are you sleeping?", "Ты спишь?", None),
+    ("Are you listening?", "Ты слушаешь?", None),
+    ("Are you waiting?", "Ты ждёшь?", None),
+    ("Are you watching TV?", "Ты смотришь телевизор?", None),
+    ("Is he sleeping?", "Он спит?", None),
+    ("Is he working?", "Он работает?", None),
+    ("Is she cooking?", "Она готовит?", None),
+    ("Is it raining?", "Дождь идёт?", None),
+    ("Is it snowing?", "Снег идёт?", None),
+    ("Are we going?", "Мы идём?", None),
+    ("Are they coming?", "Они приходят?", None),
+    ("Are they playing?", "Они играют?", None),
+    ("Yes, I am.", "Да.", None),
+    ("No, I am not.", "Нет.", None),
+    ("Yes, he is.", "Да.", None),
+    ("No, she is not.", "Нет.", None),
+    ("What are you doing?", "Что ты делаешь?", None),
+    ("What are you doing here?", "Что ты здесь делаешь?", None),
+    ("What is he doing?", "Что он делает?", None),
+    ("What is she reading?", "Что она читает?", None),
+    ("Where are you going?", "Куда ты идёшь?", None),
+    ("Where are they going?", "Куда они идут?", None),
+    ("Why are you smiling?", "Почему ты улыбаешься?", None),
+    ("Why is he crying?", "Почему он плачет?", None),
+    ("How are you doing this?", "Как ты это делаешь?", None),
+    ("I am working, and he is resting.", "Я работаю, а он отдыхает.", None),
+    ("She is not sleeping, she is reading.", "Она не спит, она читает.", None),
+    ("Help! I'm lost!", "Помогите! Я потерялся!", None),
+    ("Please help me!", "Пожалуйста, помогите мне!", None),
 ]
 
 # --------------------------------------------------------------------------
@@ -1178,7 +1398,7 @@ LESSONS = [
         "answer_question": [("Is it a big city?", "It is a big city.")],
         "find_error": [("I have brother.", "I have a brother.")],
         "verb_tense": [
-            ("She is ___ artist.", "a/an", ["an", "a"]),
+            ("She is ___ artist.", "a/an", ["an"]),
             ("It is ___ big city.", "a/an", ["a"]),
             ("He is ___ doctor.", "a/an", ["a"]),
         ],
@@ -1259,7 +1479,7 @@ LESSONS = [
         ],
     },
     {
-        "id": "les-e-06", "module": "mod-e-1",
+        "id": "les-e-06", "module": "mod-e-2",
         "title": "to be: спецвопросы What / Where / How",
         "gp_id": "gp-e-06", "gp_title": "Спецвопросы с to be",
         "rule_md": RULE_E06,
@@ -1299,7 +1519,7 @@ LESSONS = [
         "phrasebook_topic": None,
         "quotes_topic": "things",
         "bebris_video": {"lesson": "1.5", "playlist_index": 9, "youtube_id": "nPXmJZx60K0", "title": None},
-        "answer_question": [("Is this your bag?", "This is my phone.")],
+        "answer_question": [("Is this your bag?", "Yes, it is.")],
         "verb_tense": [
             ("___ are my keys.", "plural", ["These"]),
             ("___ is my house.", "singular", ["This", "That"]),
@@ -1323,7 +1543,7 @@ LESSONS = [
         "phrasebook_topic": None,
         "quotes_topic": "family",
         "bebris_video": None,
-        "answer_question": [("How old is your sister?", "My brother is ten years old.")],
+        "answer_question": [("How old is your brother?", "My brother is ten years old.")],
         "verb_tense": [
             ("___ car is new. (he)", "possessive", ["His"]),
             ("___ phone is old. (she)", "possessive", ["Her"]),
@@ -1347,7 +1567,7 @@ LESSONS = [
         "phrasebook_topic": None,
         "quotes_topic": "numbers",
         "bebris_video": None,
-        "answer_question": [("How many books do you have?", "I have two apples.")],
+        "answer_question": [("How many apples do you have?", "I have two apples.")],
         "verb_tense": [
             ("The ___ are at school.", "plural-special", ["children"]),
             ("These ___ are red.", "plural", ["apples"]),
@@ -1446,7 +1666,7 @@ LESSONS = [
         "quotes_topic": "negation",
         "bebris_video": {"lesson": "1.8", "playlist_index": 17, "youtube_id": "8O2JICbDthQ", "title": None},
         "answer_question": [("Do you understand me?", "I don't understand.")],
-        "find_error": [("I no speak English.", "I don't speak English well.")],
+        "find_error": [("I no speak English well.", "I don't speak English well.")],
         "verb_tense": [
             ("I ___ work on Sunday.", "negative", ["don't", "do not"]),
             ("We ___ know him.", "negative", ["don't", "do not"]),
@@ -1466,12 +1686,12 @@ LESSONS = [
         ],
         "quotes": [("q-black-mirror-0005", "doesn't"), ("q-stranger-things-0005", "don't")],
         "trap_id": "trap-third-person-s",
-        "vocab_band": {"list": "ngsl-spoken", "from": 661, "to": 719},
+        "vocab_band": {"list": "ngsl-spoken", "from": 660, "to": 719},
         "phrasebook_topic": None,
         "quotes_topic": "negation",
         "bebris_video": {"lesson": "1.9", "playlist_index": 19, "youtube_id": "82Z289SJSYA", "title": None},
         "answer_question": [("Does he work here?", "He doesn't work here.")],
-        "find_error": [("It not matter.", "It doesn't matter."), ("He doesn't works.", "He doesn't work here.")],
+        "find_error": [("It not matter.", "It doesn't matter."), ("He doesn't works here.", "He doesn't work here.")],
         "verb_tense": [
             ("He ___ work here.", "3rd-negative", ["doesn't", "does not"]),
             ("She ___ like tea.", "3rd-negative", ["doesn't", "does not"]),
@@ -1496,7 +1716,7 @@ LESSONS = [
         "quotes_topic": "emergency",
         "bebris_video": None,
         "answer_question": [("Do you want to go home?", "I want to go home.")],
-        "find_error": [("She don't like fish.", "My sister doesn't like fish."), ("He work every day.", "My father works every day.")],
+        "find_error": [("My sister don't like fish.", "My sister doesn't like fish."), ("My father work every day.", "My father works every day.")],
         "verb_tense": [
             ("He ___ from nine to five.", "3rd-person", ["works"]),
             ("We ___ have time.", "negative", ["don't", "do not"]),
@@ -1628,6 +1848,105 @@ LESSONS = [
             ("___ the bus go to the centre?", "does-question", ["Does"]),
         ],
     },
+
+    {
+        "id": "les-e-21", "module": "mod-e-5",
+        "title": "Правило двух глаголов: want to / need to",
+        "gp_id": "gp-e-21", "gp_title": "want/need/have + to + глагол",
+        "rule_md": RULE_E21,
+        "phrases": E21,
+        "rule_cloze": [
+            ("I want ___ sleep.", ["to"]),
+            ("I need ___ go.", ["to"]),
+            ("I have ___ work.", ["to"]),
+        ],
+        "quotes": [("q-breaking-bad-0004", "need"), ("q-stranger-things-0014", "need")],
+        "trap_id": None,
+        "vocab_band": {"list": "ngsl-spoken", "from": 100201, "to": 100250},
+        "phrasebook_topic": None,
+        "quotes_topic": "plans",
+        "bebris_video": {"lesson": "1.10", "playlist_index": 21, "youtube_id": "RQL8lICKsiA", "title": None},
+        "answer_question": [("What do you want to do?", "I want to stay.")],
+        "verb_tense": [
+            ("I want ___ sleep.", "two-verbs", ["to"]),
+            ("I need ___ go now.", "two-verbs", ["to"]),
+            ("She wants ___ help us.", "two-verbs", ["to"]),
+        ],
+    },
+    {
+        "id": "les-e-22", "module": "mod-e-5",
+        "title": "Порядок слов + наречия частотности",
+        "gp_id": "gp-e-22", "gp_title": "always / often / never и порядок слов",
+        "rule_md": RULE_E22,
+        "phrases": E22,
+        "rule_cloze": [
+            ("I ___ get up at seven.", ["always"]),
+            ("I ___ drink coffee.", ["never"]),
+            ("He ___ plays tennis.", ["often"]),
+        ],
+        "quotes": [("q-stranger-things-0004", "not"), ("q-igry-0006", "better")],
+        "trap_id": None,
+        "vocab_band": {"list": "ngsl-spoken", "from": 100251, "to": 100300},
+        "phrasebook_topic": None,
+        "quotes_topic": "habits",
+        "bebris_video": {"lesson": "1.13", "playlist_index": 25, "youtube_id": "3k4L-qZs-_0", "title": None},
+        "answer_question": [("How often do you travel?", "I don't often travel.")],
+        "find_error": [("I drink never coffee.", "I never drink coffee.")],
+        "verb_tense": [
+            ("I ___ walk in the park.", "frequency", ["often", "always", "sometimes"]),
+            ("She ___ says it.", "frequency", ["never", "often", "always"]),
+            ("He ___ gets up late.", "frequency", ["never"]),
+        ],
+    },
+    {
+        "id": "les-e-23", "module": "mod-e-5",
+        "title": "Present Continuous: (+) I am working",
+        "gp_id": "gp-e-23", "gp_title": "Present Continuous — утверждение",
+        "rule_md": RULE_E23,
+        "phrases": E23,
+        "rule_cloze": [
+            ("I ___ working now.", ["am"]),
+            ("He ___ sleeping.", ["is"]),
+            ("They ___ talking.", ["are"]),
+        ],
+        "quotes": [("q-breaking-bad-0005", "We're"), ("q-the-100-0001", "We're")],
+        "trap_id": None,
+        "vocab_band": {"list": "ngsl-spoken", "from": 100301, "to": 100350},
+        "phrasebook_topic": None,
+        "quotes_topic": "now",
+        "bebris_video": {"lesson": "2.21", "playlist_index": 572, "youtube_id": "VZ4sZGdG1L0", "title": None},
+        "answer_question": [("What are you doing?", "I am reading a book.")],
+        "verb_tense": [
+            ("I ___ reading a book.", "pc", ["am"]),
+            ("She ___ cooking.", "pc", ["is"]),
+            ("They ___ playing.", "pc", ["are"]),
+        ],
+    },
+    {
+        "id": "les-e-24", "module": "mod-e-5",
+        "title": "Present Continuous: − и ? + Экстренные (повтор)",
+        "gp_id": "gp-e-24", "gp_title": "Present Continuous — отрицание и вопросы",
+        "rule_md": RULE_E24,
+        "phrases": E24,
+        "rule_cloze": [
+            ("I ___ not working now.", ["am"]),
+            ("___ you sleeping?", ["Are"]),
+            ("What ___ you doing?", ["are"]),
+        ],
+        "quotes": [("q-stranger-things-0016", "I'm"), ("q-stranger-things-0006", "don't")],
+        "trap_id": None,
+        "vocab_band": {"list": "ngsl-spoken", "from": 100351, "to": 100400},
+        "phrasebook_topic": None,
+        "quotes_topic": "now",
+        "bebris_video": {"lesson": "2.11", "playlist_index": 562, "youtube_id": "Dt6YcGWfAq8", "title": None},
+        "answer_question": [("What are you doing here?", "I am waiting.")],
+        "find_error": [("You working now?", "Are you working?")],
+        "verb_tense": [
+            ("He ___ not sleeping.", "pc-negative", ["is"]),
+            ("___ you listening?", "pc-question", ["Are"]),
+            ("Where ___ they going?", "pc-wh", ["are"]),
+        ],
+    },
 ]
 
 # Выбор фраз для производных шагов (индексы внутри пула урока)
@@ -1701,7 +2020,16 @@ def build():
             lesson_exercises.append({"id": eid})
 
         # --- Шаг 2: разогрев — choose_translation + match_pairs --------------
-        short = [p for p in lesson_phrase_items if 1 <= len(p["text_en"].split()) <= 4]
+        # Неоднозначные промпты: перевод встречается в пуле больше одного раза
+        # («Да.», «Что это?»…) — в упражнения ввода/выбора не берём (ревью M8#Б3)
+        from collections import Counter as _Counter
+        ru_counts = _Counter(item["translation_ru"] for item in lesson_phrase_items)
+        ambiguous = {ru for ru, n in ru_counts.items() if n > 1}
+        short = [
+            p
+            for p in lesson_phrase_items
+            if 1 <= len(p["text_en"].split()) <= 4 and p["translation_ru"] not in ambiguous
+        ]
         rng.shuffle(short)
         for target in short[:WARMUP_CHOOSE]:
             pool = [
@@ -1737,8 +2065,12 @@ def build():
         lesson_exercises.append({"id": eid})
 
         # --- Шаг 3: построение — word_bank → translate, speak каждая 4-я -----
-        build_pool = [p for p in lesson_phrase_items
-                      if p["text_en"] not in {q for q, _ in spec["quotes"]}]
+        build_pool = [
+            p
+            for p in lesson_phrase_items
+            if p["text_en"] not in {q for q, _ in spec["quotes"]}
+            and p["translation_ru"] not in ambiguous
+        ]
         rng.shuffle(build_pool)
         build_pool = build_pool[: WB_COUNT + TR_COUNT]
         for i, target in enumerate(build_pool):
@@ -1794,7 +2126,10 @@ def build():
             lesson_exercises.append({"id": eid})
 
         # --- Шаг 4: слух — диктант -------------------------------------------
-        dict_pool = sorted(lesson_phrase_items, key=lambda p: len(p["text_en"].split()))
+        dict_pool = sorted(
+            [p for p in lesson_phrase_items if p["translation_ru"] not in ambiguous],
+            key=lambda p: len(p["text_en"].split()),
+        )
         dict_pool = [p for p in dict_pool if 3 <= len(p["text_en"].split()) <= 6][: DICT_COUNT * 2]
         rng.shuffle(dict_pool)
         for target in dict_pool[:DICT_COUNT]:
@@ -1808,7 +2143,11 @@ def build():
             lesson_exercises.append({"id": eid})
 
         # --- Шаг 5: речь — shadowing + answer_question ------------------------
-        shadow_pool = [p for p in lesson_phrase_items if 2 <= len(p["text_en"].split()) <= 5]
+        shadow_pool = [
+            p
+            for p in lesson_phrase_items
+            if 2 <= len(p["text_en"].split()) <= 5 and p["translation_ru"] not in ambiguous
+        ]
         rng.shuffle(shadow_pool)
         for target in shadow_pool[:SHADOW_COUNT]:
             eid = next_ex()
