@@ -1,7 +1,7 @@
 # WAL — Hunter English
 
 ## Current Phase
-**M5 «Движок уроков и упражнений (ранг E)» — реализация, ветка `feature/m5-lessons`.** Детализация и решения 1–6 подтверждены. 5.1 (домен проверки `src/domain/check/`) — готов. Следующая: **5.2 домен урока `src/domain/lesson/`** (runner шагов 1–7 specs/02 §2, чекпоинт `{lessonId, stepIndex, passIndex, scores[], srsEnqueued[]}` через ProgressRepository, состояния §5, XP specs/04 §4.1). Контракты: specs/02, specs/01 §5, specs/05, specs/07, XP — specs/04 §4.1.
+**M5 закрыт** (PR #5 смержен, CI зелёный). Движок уроков работает на пилоте E1 (E-01…E-05): 218 фраз, 220 упражнений, аудио, экран `/#/lesson/:id`, чекпоинты, статусы, SRS-цикл фраз через `/#/srs`. Следующий майлстоун по плану — **M6 «Голос — озвучка и микрофон»**: детализировать в PLANS по образцу M5, затем реализация. Контракты: specs/02 §4.8/§5.8 (голос), specs/01 §9, REVIEW-маркеры в коде (артикль в знаменателе голосовой проверки — M6).
 
 ## Completed
 - Бутстрап: AGENTS.md (вход для любых агентов → BOOT/WAL/PLANS), BOOT.md, WAL.md, PLANS.md, CLAUDE.md (`@AGENTS.md`, локальный)
@@ -16,9 +16,10 @@
 - M5#5.3: контент-лоадер `src/content/lessons.ts` (типы phrase/exercise/lesson по specs/05 §2–4, ленивые glob-чанки, courseToLessonId E-01↔les-e-01, exercisePhraseIds — все ссылки payload, assembleLesson — шаги+привязка фраз, loadLessonView); валидатор: phrasebook_topic известность (пассивна до M8, quotes_topic — реестр тем в M8); 8 новых тестов (129); открыт draft PR #5 — CI зелёный, проверять после каждого пуша
 
 - M5#5.4: контент пилота E1 — `research/tools/lessons/build_e1.py` (детерминированный seed, авто-вывод упражнений из пулов): 218 фраз (43+43+44+44+44), 217 упражнений (шаблон 1–6: cloze правила, разогрев choose+match, построение 24 = 8 wb + 16 tr/sp, диктант 5, речь shadowing 4 + answer_question 1, цитаты 2), 5 уроков; аудио 218 opus Piper cori (1 outlier ph-e-0198 — длинная фраза >2.5с, файл записан); фразы → deck 'phrases' (step 7 экрана); слова НЕ дублируются — они уже в колоде из M4 (loadWordNotes); интерливинг-флаг в данных не нужен (выбор фраз — в билдере, schema additionalProperties:false); манифест пересобран
-- M5#5.5–5.6: экран `/#/lesson/:id` (`src/screens/LessonScreen.tsx`: загрузка+guard «Продолжить/Сначала», deep-link ?step≤достигнутого, rule→cloze→…→deck flow, repeat-step для разогрева <70%, шаг 7 → ensureCards фраз в deck phrases + finishPass + score, финал XP/точность/время, 404 по :id), компоненты `src/components/lesson/ExerciseView.tsx` (translate/cloze/dictation через judge (+judgeDictation — артикль-ослабление §3), choose/match/word_bank (Backspace), voice: speak/shadowing/answer через Web Speech + фолбэк текст/self_reported; FeedbackPlate с diff и «Я был прав»), либы `src/lib/speech.ts`/`src/lib/audio.ts` (R/S, 🐢 0.75×); контракт: onAnswer ровно один раз финальным исходом; Enter только с body-фокуса; i18n lesson.* ru/en; 6 тестов экрана (всего 137)
+- M5#5.5–5.6: экран `/#/lesson/:id` (`src/screens/LessonScreen.tsx`: загрузка+guard «Продолжить/Сначала», deep-link ?step≤достигнутого, rule→cloze→…→deck flow, repeat-step для разогрева <70%, шаг 7 → ensureCards фраз в deck phrases + finishPass + score, финал XP/точность/время, 404 по :id), компоненты `src/components/lesson/ExerciseView.tsx` (translate/cloze/dictation через judge (+judgeDictation — артикль-ослабление §3), choose/match/word_bank (Backspace), voice: speak/shadowing/answer через Web Speech + фолбэк текст/self_reported; FeedbackPlate с diff и «Я был прав»), либы `src/lib/speech.ts`/`src/lib/audio.ts` (R/S, 🐢 0.75×); контракт: onAnswer ровно один раз финальным исходом; Enter только с body-фокуса; i18n lesson.* ru/en; 6 тестов экрана
+- M5#5.7: e2e smoke урока (5 тестов, Playwright; NOTE: перед локальным e2e — `npm run build`, preview отдаёт dist); ревью 3 суб-агентов → 4 блокера (hint-dead-end, нулевая сводка финала, двойной onAnswer word-bank/voice) + мажоры исправлены: recordAnswer идемпотентен + диспут корректирует точность, self_reported не растит точность, ловушки подключены к CheckTask (trapWrong + строгие ЛТ-06/17/19), answer.typo=exact → exactTypos, judgeDictation прощает только пропущенные артикли (≤2), статус финала через computeLessonStatus (свежие фразы → in_progress «почти готов», повтор не затирает оригинал), persist-очередь «последний выигрывает», error-фаза, 404 на невалидный ?step, фразы в /#/srs (loadPhraseNotes), контент: answer_question в E-01..03, дедуп пар по RU, дистракторы без коллизий перевода, \b-границы цитат; 140 тестов
 ## In Progress
-- M5#5.7: гейты (e2e smoke урока) + ревью ветки суб-агентами + merge PR #5
+- (пусто) — следующая сессия: детализация M6 «Голос» в PLANS → подтверждение → реализация
 
 ## TODO
 - M5: Движок уроков и упражнений (ранг E) — детализация в PLANS, затем реализация
@@ -26,6 +27,7 @@
 - (опц., отдельной задачей) Обновить стек: React 19, react-router 7 (снимет audit moderate), i18next 26, Vite 8 + plugin-react 6, пакет `typescript-eslint`
 
 ## Known Issues
+- Отложено ревью M5 (осознанно, вехи указаны): бонус +25 XP за урок и дневные капы XP, квесты — M7; «проход по ошибкам» на финале, ProgressBar шагов, выход-диалоги, beforeunload-flush — полировка M8/M10; разогрев «с новыми заданиями» (сейчас те же), listening-плашка retrySuggested, дистракторы по полосе SFI ±50, match_pairs из lesson.words[] — уточнение контента M8; shadowing «после 5 попыток — Дальше с 0 XP» — M6
 - M4: порядок новых карточек внутри колоды — алфавитный по `card_id` (все созданы одним instant; спека порядок новых внутри не регламентирует, interleaving по колодам соблюдён)
 - M4: счётчик пробуждений `wokenToday` не учитывается между сессиями — обратные карточки (ru-en/speak) материализуются с M6+, до тех пор недостижимо
 - M4: подпись «Hard/Easy можно включить в настройках» (specs/03 §6) и показ интервалов на кнопках — добавить при появлении экрана настроек
@@ -104,3 +106,5 @@
 | 2026-09-28 | M5#5.2 выполнена: `src/domain/lesson/` + расширение ProgressRepository (lesson_progress); 27 новых тестов (всего 121), гейты зелёные; разработчик: автономный режим до конца M5 + контроль CI после пушей | Автономная сессия |
 | 2026-09-28 | M5#5.3 выполнена: контент-лоадер `src/content/lessons.ts` + phrasebook_topic в валидаторе; 8 тестов; draft PR #5 открыт, CI зелёный | Автономная сессия |
 | 2026-09-28 | M5#5.4 выполнена: пилот E1 — 218 фраз/217 упражнений/5 уроков/218 аудио; validate:data зелёный (26 файлов); решения: фразы в deck phrases, слова не дублируются (M4), интерливинг без флага в данных | Автономная сессия |
+| 2026-09-28 | M5#5.5–5.6 выполнены: экран урока + компоненты + голос с фолбэками; 137 тестов; CI зелёный на каждом пуше (draft PR #5) | Автономная сессия |
+| 2026-09-28 | M5#5.7: e2e (5) + ревью 3 суб-агентов → 4 блокера и мажоры исправлены (140 тестов); M5 закрыт, PR #5 смержен при зелёном CI; ветка удалена | Автономная сессия, merge разрешён |
