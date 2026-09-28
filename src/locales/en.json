@@ -1,10 +1,12 @@
 {
   "app": {
     "title": "Hunter English",
-    "tagline": "Training system: rank E → S"
+    "tagline": "Training system: rank E → S",
+    "offline": "offline · progress is saved"
   },
   "nav": {
     "label": "Main navigation",
+    "tabbarLabel": "Tab bar",
     "dashboard": "Dashboard",
     "lesson": "Lesson",
     "srs": "Review",
@@ -139,6 +141,7 @@
   },
   "ranks": {
     "statusTitle": "Hunter status",
+    "gatesLink": "Gates {{from}} → {{to}}",
     "totalXp": "Total XP: {{xp}}",
     "streaks": "Streak: {{current}} d · Best: {{best}} d",
     "gatesPassed": "Gates passed: {{count}} · latest: {{last}}",

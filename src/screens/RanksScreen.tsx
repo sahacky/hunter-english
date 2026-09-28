@@ -2,7 +2,8 @@
 
 import { useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { levelInfo } from '../domain/game/game'
+import { Link } from 'react-router-dom'
+import { levelInfo, NEXT_RANK } from '../domain/game/game'
 import type { UserStats } from '../domain/game/types'
 import type { ProgressRepository } from '../domain/progress'
 import { DexieProgressRepository } from '../data/progress-repository'
@@ -117,6 +118,14 @@ export default function RanksScreen({ repo: repoProp }: DashboardProps) {
             </li>
           )}
         </ul>
+        {/* Вход в экзамен ранга — в т.ч. с мобильного таб-бара (решение M9#1) */}
+        {stats.rank !== 'S' && (
+          <p style={{ margin: '12px 0 0' }}>
+            <Link className="ranks-gate-link" to={`/gates/${stats.rank}-${NEXT_RANK[stats.rank]}`}>
+              {t('ranks.gatesLink', { from: stats.rank, to: NEXT_RANK[stats.rank] })}
+            </Link>
+          </p>
+        )}
       </section>
       <section className="panel">
         <h2>[{t('ranks.titles')}]</h2>

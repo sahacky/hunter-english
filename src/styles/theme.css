@@ -94,6 +94,100 @@ body {
   font-size: 0.85rem;
 }
 
+/* ===== M9: бейдж «офлайн» (specs/07 §1) ===== */
+.offline-badge {
+  padding: 2px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--warn);
+  color: var(--warn);
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+/* ===== M9: нижний таб-бар <768px (specs/07 §1, specs/08 §2) ===== */
+.tabbar {
+  display: none;
+}
+
+.tabbar a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 4px 10px;
+  border-radius: 8px;
+  color: var(--text-dim);
+  text-decoration: none;
+  font-size: 0.7rem;
+}
+
+.tabbar a.active {
+  color: var(--primary);
+}
+
+.tabbar svg {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 767.98px) {
+  .app-shell {
+    padding: calc(8px + env(safe-area-inset-top)) calc(12px + env(safe-area-inset-right)) 0
+      calc(12px + env(safe-area-inset-left));
+  }
+
+  .app-header {
+    padding: 10px 12px;
+  }
+
+  .app-nav,
+  .app-footer {
+    display: none;
+  }
+
+  .app-main {
+    padding: 12px 0 76px; /* клиренс до фиксированного таб-бара */
+  }
+
+  .tabbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-around;
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    padding: 6px calc(4px + env(safe-area-inset-right)) calc(6px + env(safe-area-inset-bottom))
+      calc(4px + env(safe-area-inset-left));
+  }
+
+  .panel {
+    padding: 16px;
+  }
+
+  .srs-card {
+    padding: 20px 12px;
+    min-height: 180px;
+  }
+
+  .srs-front {
+    font-size: clamp(1.6rem, 8vw, 2.4rem);
+  }
+
+  .srs-btn {
+    flex: 1;
+    max-width: 220px;
+  }
+
+  .lesson-input-row {
+    flex-wrap: wrap;
+  }
+}
+
 /* --- SRS /#/srs (specs/03 §6–§7) --- */
 .srs-panel {
   display: flex;
@@ -486,6 +580,17 @@ body {
 }
 .ranks-title-unlocked {
   color: var(--warn);
+}
+.ranks-gate-link {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  color: var(--primary);
+  text-decoration: none;
+}
+.ranks-gate-link:hover {
+  background: var(--surface-2);
 }
 .gates-panel {
   max-width: 680px;
