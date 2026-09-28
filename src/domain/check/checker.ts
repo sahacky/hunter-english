@@ -95,6 +95,27 @@ export function judge(userInput: string, task: CheckTask, mode: CheckMode = 'tex
   return result
 }
 
+/**
+ * Диктант (specs/02 §3, тип 5): как judge, но пропущенные артикли a/an/the —
+ * опечатка, а не ошибка: если строгий вердикт «неверно», повторная проверка
+ * со снятыми артиклями у ответа и эталонов может дать correct_typo.
+ */
+export function judgeDictation(userInput: string, task: CheckTask): CheckResult {
+  const strict = judge(userInput, task)
+  if (strict.verdict !== 'wrong') return strict
+  const strip = (tokens: readonly string[]) => stripArticles(tokens)
+  const withoutArticles = (s: string) => strip(expandTokens(tokenize(s))).join(' ')
+  const relaxedTask: CheckTask = {
+    ...task,
+    accepted: task.accepted.map(withoutArticles),
+  }
+  const relaxed = judge(withoutArticles(userInput), relaxedTask)
+  if (relaxed.verdict === 'correct') {
+    return { ...relaxed, verdict: 'correct_typo' }
+  }
+  return strict
+}
+
 /** Убирает артикли из распознанной речи (specs/02 §4.8). */
 function stripArticles(tokens: readonly string[]): string[] {
   return tokens.filter((token) => token !== 'a' && token !== 'an' && token !== 'the')

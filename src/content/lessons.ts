@@ -145,6 +145,8 @@ export interface LessonView {
   steps: LessonStep[]
   /** Контент шага в порядке следования. */
   content: Record<number, ResolvedExercise[]>
+  /** Все фразы урока (пул целиком — правило, колода, словарь шага). */
+  phrasesById: Record<string, PhraseItem>
 }
 
 /** id фраз, на которые ссылается payload упражнения (specs/05 §3). */
@@ -190,7 +192,10 @@ export function assembleLesson(
       return { exercise, phrase: phraseId ? (phraseById.get(phraseId) ?? null) : null }
     })
   }
-  return { lesson, steps, content }
+  const lessonPhrases = Object.fromEntries(
+    [...phraseById].filter(([, phrase]) => phrase.grammar_point_id === lesson.grammar_point.id),
+  )
+  return { lesson, steps, content, phrasesById: lessonPhrases }
 }
 
 /** Полная загрузка урока с зависимостями; null — урока нет. */

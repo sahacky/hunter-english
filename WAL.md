@@ -16,8 +16,9 @@
 - M5#5.3: контент-лоадер `src/content/lessons.ts` (типы phrase/exercise/lesson по specs/05 §2–4, ленивые glob-чанки, courseToLessonId E-01↔les-e-01, exercisePhraseIds — все ссылки payload, assembleLesson — шаги+привязка фраз, loadLessonView); валидатор: phrasebook_topic известность (пассивна до M8, quotes_topic — реестр тем в M8); 8 новых тестов (129); открыт draft PR #5 — CI зелёный, проверять после каждого пуша
 
 - M5#5.4: контент пилота E1 — `research/tools/lessons/build_e1.py` (детерминированный seed, авто-вывод упражнений из пулов): 218 фраз (43+43+44+44+44), 217 упражнений (шаблон 1–6: cloze правила, разогрев choose+match, построение 24 = 8 wb + 16 tr/sp, диктант 5, речь shadowing 4 + answer_question 1, цитаты 2), 5 уроков; аудио 218 opus Piper cori (1 outlier ph-e-0198 — длинная фраза >2.5с, файл записан); фразы → deck 'phrases' (step 7 экрана); слова НЕ дублируются — они уже в колоде из M4 (loadWordNotes); интерливинг-флаг в данных не нужен (выбор фраз — в билдере, schema additionalProperties:false); манифест пересобран
+- M5#5.5–5.6: экран `/#/lesson/:id` (`src/screens/LessonScreen.tsx`: загрузка+guard «Продолжить/Сначала», deep-link ?step≤достигнутого, rule→cloze→…→deck flow, repeat-step для разогрева <70%, шаг 7 → ensureCards фраз в deck phrases + finishPass + score, финал XP/точность/время, 404 по :id), компоненты `src/components/lesson/ExerciseView.tsx` (translate/cloze/dictation через judge (+judgeDictation — артикль-ослабление §3), choose/match/word_bank (Backspace), voice: speak/shadowing/answer через Web Speech + фолбэк текст/self_reported; FeedbackPlate с diff и «Я был прав»), либы `src/lib/speech.ts`/`src/lib/audio.ts` (R/S, 🐢 0.75×); контракт: onAnswer ровно один раз финальным исходом; Enter только с body-фокуса; i18n lesson.* ru/en; 6 тестов экрана (всего 137)
 ## In Progress
-- M5#5.5: экран урока `/#/lesson/:id` + компоненты упражнений
+- M5#5.7: гейты (e2e smoke урока) + ревью ветки суб-агентами + merge PR #5
 
 ## TODO
 - M5: Движок уроков и упражнений (ранг E) — детализация в PLANS, затем реализация
