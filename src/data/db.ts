@@ -2,6 +2,7 @@
 // Имена/поля совпадают с таблицами Postgres; user_id в MVP — 'local' (Supabase — M12).
 
 import Dexie, { type Table } from 'dexie'
+import type { LessonProgress } from '../domain/lesson/types'
 import type { CardState, ReviewLogEntry } from '../domain/srs/types'
 
 /** Владелец записей в MVP (до входа через Supabase в M12, specs/06 §1). */
@@ -15,9 +16,11 @@ export interface ReviewLogRow extends ReviewLogEntry {
   user_id: string
 }
 
+export type LessonProgressRow = LessonProgress & { user_id: string }
+
 export interface SyncQueueRow {
   seq?: number
-  table: 'card_states' | 'review_log'
+  table: 'card_states' | 'review_log' | 'lesson_progress'
   op: 'upsert' | 'insert'
   payload: unknown
   tries: number
@@ -32,6 +35,7 @@ export interface MetaRow {
 export class HunterDb extends Dexie {
   card_states!: Table<CardStateRow, [string, string]>
   review_log!: Table<ReviewLogRow, string>
+  lesson_progress!: Table<LessonProgressRow, [string, string]>
   sync_queue!: Table<SyncQueueRow, number>
   meta!: Table<MetaRow, string>
 

@@ -1,0 +1,2186 @@
+{
+  "schema_version": 1,
+  "kind": "phrases",
+  "items": [
+    {
+      "id": "ph-e-0001",
+      "text_en": "Hello!",
+      "translation_ru": "Привет!",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["Hello!"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0001.opus"
+      }
+    },
+    {
+      "id": "ph-e-0002",
+      "text_en": "Hi!",
+      "translation_ru": "Привет!",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["Hi!"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0002.opus"
+      }
+    },
+    {
+      "id": "ph-e-0003",
+      "text_en": "Good morning!",
+      "translation_ru": "Доброе утро!",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["Good morning!"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0003.opus"
+      }
+    },
+    {
+      "id": "ph-e-0004",
+      "text_en": "Good afternoon!",
+      "translation_ru": "Добрый день!",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["Good afternoon!"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0004.opus"
+      }
+    },
+    {
+      "id": "ph-e-0005",
+      "text_en": "Good evening!",
+      "translation_ru": "Добрый вечер!",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["Good evening!"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0005.opus"
+      }
+    },
+    {
+      "id": "ph-e-0006",
+      "text_en": "Good night!",
+      "translation_ru": "Доброй ночи!",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["Good night!"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0006.opus"
+      }
+    },
+    {
+      "id": "ph-e-0007",
+      "text_en": "Nice to meet you.",
+      "translation_ru": "Приятно познакомиться.",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["Nice to meet you."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0007.opus"
+      }
+    },
+    {
+      "id": "ph-e-0008",
+      "text_en": "See you later.",
+      "translation_ru": "До встречи.",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["See you later."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0008.opus"
+      }
+    },
+    {
+      "id": "ph-e-0009",
+      "text_en": "Welcome to Moscow.",
+      "translation_ru": "Добро пожаловать в Москву.",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["Welcome to Moscow."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0009.opus"
+      }
+    },
+    {
+      "id": "ph-e-0010",
+      "text_en": "I am Ivan.",
+      "translation_ru": "Я Иван.",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["I am Ivan."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0010.opus"
+      }
+    },
+    {
+      "id": "ph-e-0011",
+      "text_en": "My name is Anna.",
+      "translation_ru": "Меня зовут Анна.",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["My name is Anna."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0011.opus"
+      }
+    },
+    {
+      "id": "ph-e-0012",
+      "text_en": "I am from Russia.",
+      "translation_ru": "Я из России.",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["I am from Russia."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0012.opus"
+      }
+    },
+    {
+      "id": "ph-e-0013",
+      "text_en": "She is from Japan.",
+      "translation_ru": "Она из Японии.",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["She is from Japan."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0013.opus"
+      }
+    },
+    {
+      "id": "ph-e-0014",
+      "text_en": "He is from Canada.",
+      "translation_ru": "Он из Канады.",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["He is from Canada."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0014.opus"
+      }
+    },
+    {
+      "id": "ph-e-0015",
+      "text_en": "We are from Russia.",
+      "translation_ru": "Мы из России.",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["We are from Russia."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0015.opus"
+      }
+    },
+    {
+      "id": "ph-e-0016",
+      "text_en": "They are from Spain.",
+      "translation_ru": "Они из Испании.",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["They are from Spain."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0016.opus"
+      }
+    },
+    {
+      "id": "ph-e-0017",
+      "text_en": "You are my friend.",
+      "translation_ru": "Ты мой друг.",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["You are my friend."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0017.opus"
+      }
+    },
+    {
+      "id": "ph-e-0018",
+      "text_en": "We are friends.",
+      "translation_ru": "Мы друзья.",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["We are friends."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0018.opus"
+      }
+    },
+    {
+      "id": "ph-e-0019",
+      "text_en": "They are students.",
+      "translation_ru": "Они студенты.",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["They are students."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0019.opus"
+      }
+    },
+    {
+      "id": "ph-e-0020",
+      "text_en": "I am new here.",
+      "translation_ru": "Я здесь новенький.",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["I am new here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0020.opus"
+      }
+    },
+    {
+      "id": "ph-e-0021",
+      "text_en": "This is my friend.",
+      "translation_ru": "Это мой друг.",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["This is my friend."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0021.opus"
+      }
+    },
+    {
+      "id": "ph-e-0022",
+      "text_en": "This is Anna.",
+      "translation_ru": "Это Анна.",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["This is Anna."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0022.opus"
+      }
+    },
+    {
+      "id": "ph-e-0023",
+      "text_en": "He is Ivan.",
+      "translation_ru": "Он Иван.",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["He is Ivan."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0023.opus"
+      }
+    },
+    {
+      "id": "ph-e-0024",
+      "text_en": "She is Anna.",
+      "translation_ru": "Она Анна.",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["She is Anna."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0024.opus"
+      }
+    },
+    {
+      "id": "ph-e-0025",
+      "text_en": "It is late.",
+      "translation_ru": "Уже поздно.",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["It is late."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0025.opus"
+      }
+    },
+    {
+      "id": "ph-e-0026",
+      "text_en": "It is okay.",
+      "translation_ru": "Всё в порядке.",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["It is okay."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0026.opus"
+      }
+    },
+    {
+      "id": "ph-e-0027",
+      "text_en": "Everything is fine.",
+      "translation_ru": "Всё хорошо.",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["Everything is fine."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0027.opus"
+      }
+    },
+    {
+      "id": "ph-e-0028",
+      "text_en": "I am fine, thanks.",
+      "translation_ru": "Я в порядке, спасибо.",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["I am fine, thanks."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0028.opus"
+      }
+    },
+    {
+      "id": "ph-e-0029",
+      "text_en": "I am okay.",
+      "translation_ru": "Я в порядке.",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["I am okay."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0029.opus"
+      }
+    },
+    {
+      "id": "ph-e-0030",
+      "text_en": "You are right.",
+      "translation_ru": "Ты прав.",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["You are right."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0030.opus"
+      }
+    },
+    {
+      "id": "ph-e-0031",
+      "text_en": "You are wrong.",
+      "translation_ru": "Ты не прав.",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["You are wrong."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0031.opus"
+      }
+    },
+    {
+      "id": "ph-e-0032",
+      "text_en": "I am here.",
+      "translation_ru": "Я здесь.",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["I am here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0032.opus"
+      }
+    },
+    {
+      "id": "ph-e-0033",
+      "text_en": "We are here.",
+      "translation_ru": "Мы здесь.",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["We are here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0033.opus"
+      }
+    },
+    {
+      "id": "ph-e-0034",
+      "text_en": "They are here.",
+      "translation_ru": "Они здесь.",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["They are here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0034.opus"
+      }
+    },
+    {
+      "id": "ph-e-0035",
+      "text_en": "I am ready.",
+      "translation_ru": "Я готов.",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["I am ready."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0035.opus"
+      }
+    },
+    {
+      "id": "ph-e-0036",
+      "text_en": "You are late.",
+      "translation_ru": "Ты опаздываешь.",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["You are late."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0036.opus"
+      }
+    },
+    {
+      "id": "ph-e-0037",
+      "text_en": "Life is good.",
+      "translation_ru": "Жизнь хороша.",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["Life is good."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0037.opus"
+      }
+    },
+    {
+      "id": "ph-e-0038",
+      "text_en": "My English is basic.",
+      "translation_ru": "Мой английский базовый.",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["My English is basic."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0038.opus"
+      }
+    },
+    {
+      "id": "ph-e-0039",
+      "text_en": "I am 25 years old.",
+      "translation_ru": "Мне 25 лет.",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["I am 25 years old."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0039.opus"
+      }
+    },
+    {
+      "id": "ph-e-0040",
+      "text_en": "I am glad to be here.",
+      "translation_ru": "Я рад быть здесь.",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["I am glad to be here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0040.opus"
+      }
+    },
+    {
+      "id": "ph-e-0041",
+      "text_en": "Moscow is my city.",
+      "translation_ru": "Москва — мой город.",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["Moscow is my city."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0041.opus"
+      }
+    },
+    {
+      "id": "ph-e-0042",
+      "text_en": "Russia is my country.",
+      "translation_ru": "Россия — моя страна.",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["Russia is my country."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0042.opus"
+      }
+    },
+    {
+      "id": "ph-e-0043",
+      "text_en": "Thank you very much.",
+      "translation_ru": "Большое спасибо.",
+      "grammar_point_id": "gp-e-01",
+      "variants": ["Thank you very much."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0043.opus"
+      }
+    },
+    {
+      "id": "ph-e-0044",
+      "text_en": "I am a student.",
+      "translation_ru": "Я студент.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["I am a student."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0044.opus"
+      }
+    },
+    {
+      "id": "ph-e-0045",
+      "text_en": "I am a teacher.",
+      "translation_ru": "Я учитель.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["I am a teacher."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0045.opus"
+      }
+    },
+    {
+      "id": "ph-e-0046",
+      "text_en": "He is a doctor.",
+      "translation_ru": "Он врач.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["He is a doctor."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0046.opus"
+      }
+    },
+    {
+      "id": "ph-e-0047",
+      "text_en": "She is a doctor.",
+      "translation_ru": "Она врач.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["She is a doctor."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0047.opus"
+      }
+    },
+    {
+      "id": "ph-e-0048",
+      "text_en": "I am an engineer.",
+      "translation_ru": "Я инженер.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["I am an engineer."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0048.opus"
+      }
+    },
+    {
+      "id": "ph-e-0049",
+      "text_en": "She is an artist.",
+      "translation_ru": "Она художница.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["She is an artist."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0049.opus"
+      }
+    },
+    {
+      "id": "ph-e-0050",
+      "text_en": "He is a good doctor.",
+      "translation_ru": "Он хороший врач.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["He is a good doctor."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0050.opus"
+      }
+    },
+    {
+      "id": "ph-e-0051",
+      "text_en": "It is a big city.",
+      "translation_ru": "Это большой город.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["It is a big city."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0051.opus"
+      }
+    },
+    {
+      "id": "ph-e-0052",
+      "text_en": "It is a small town.",
+      "translation_ru": "Это маленький город.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["It is a small town."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0052.opus"
+      }
+    },
+    {
+      "id": "ph-e-0053",
+      "text_en": "This is a good idea.",
+      "translation_ru": "Это хорошая идея.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["This is a good idea."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0053.opus"
+      }
+    },
+    {
+      "id": "ph-e-0054",
+      "text_en": "It is a bad idea.",
+      "translation_ru": "Это плохая идея.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["It is a bad idea."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0054.opus"
+      }
+    },
+    {
+      "id": "ph-e-0055",
+      "text_en": "I am busy.",
+      "translation_ru": "Я занят.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["I am busy."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0055.opus"
+      }
+    },
+    {
+      "id": "ph-e-0056",
+      "text_en": "I am free today.",
+      "translation_ru": "Я сегодня свободен.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["I am free today."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0056.opus"
+      }
+    },
+    {
+      "id": "ph-e-0057",
+      "text_en": "This city is big.",
+      "translation_ru": "Этот город большой.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["This city is big."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0057.opus"
+      }
+    },
+    {
+      "id": "ph-e-0058",
+      "text_en": "This coffee is good.",
+      "translation_ru": "Этот кофе хороший.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["This coffee is good."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0058.opus"
+      }
+    },
+    {
+      "id": "ph-e-0059",
+      "text_en": "My city is beautiful.",
+      "translation_ru": "Мой город красивый.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["My city is beautiful."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0059.opus"
+      }
+    },
+    {
+      "id": "ph-e-0060",
+      "text_en": "My friend is funny.",
+      "translation_ru": "Мой друг весёлый.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["My friend is funny."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0060.opus"
+      }
+    },
+    {
+      "id": "ph-e-0061",
+      "text_en": "I am happy.",
+      "translation_ru": "Я счастлив.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["I am happy."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0061.opus"
+      }
+    },
+    {
+      "id": "ph-e-0062",
+      "text_en": "I am sad.",
+      "translation_ru": "Мне грустно.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["I am sad."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0062.opus"
+      }
+    },
+    {
+      "id": "ph-e-0063",
+      "text_en": "He is angry.",
+      "translation_ru": "Он злится.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["He is angry."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0063.opus"
+      }
+    },
+    {
+      "id": "ph-e-0064",
+      "text_en": "She is kind.",
+      "translation_ru": "Она добрая.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["She is kind."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0064.opus"
+      }
+    },
+    {
+      "id": "ph-e-0065",
+      "text_en": "It is cold today.",
+      "translation_ru": "Сегодня холодно.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["It is cold today."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0065.opus"
+      }
+    },
+    {
+      "id": "ph-e-0066",
+      "text_en": "It is hot today.",
+      "translation_ru": "Сегодня жарко.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["It is hot today."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0066.opus"
+      }
+    },
+    {
+      "id": "ph-e-0067",
+      "text_en": "It is easy.",
+      "translation_ru": "Это легко.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["It is easy."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0067.opus"
+      }
+    },
+    {
+      "id": "ph-e-0068",
+      "text_en": "It is difficult.",
+      "translation_ru": "Это сложно.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["It is difficult."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0068.opus"
+      }
+    },
+    {
+      "id": "ph-e-0069",
+      "text_en": "English is easy.",
+      "translation_ru": "Английский лёгкий.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["English is easy."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0069.opus"
+      }
+    },
+    {
+      "id": "ph-e-0070",
+      "text_en": "My phone is old.",
+      "translation_ru": "Мой телефон старый.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["My phone is old."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0070.opus"
+      }
+    },
+    {
+      "id": "ph-e-0071",
+      "text_en": "My phone is new.",
+      "translation_ru": "Мой телефон новый.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["My phone is new."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0071.opus"
+      }
+    },
+    {
+      "id": "ph-e-0072",
+      "text_en": "We are ready.",
+      "translation_ru": "Мы готовы.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["We are ready."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0072.opus"
+      }
+    },
+    {
+      "id": "ph-e-0073",
+      "text_en": "You are beautiful.",
+      "translation_ru": "Ты красивая.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["You are beautiful."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0073.opus"
+      }
+    },
+    {
+      "id": "ph-e-0074",
+      "text_en": "He is a good friend.",
+      "translation_ru": "Он хороший друг.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["He is a good friend."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0074.opus"
+      }
+    },
+    {
+      "id": "ph-e-0075",
+      "text_en": "I am an only child.",
+      "translation_ru": "Я единственный ребёнок.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["I am an only child."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0075.opus"
+      }
+    },
+    {
+      "id": "ph-e-0076",
+      "text_en": "It is an apple.",
+      "translation_ru": "Это яблоко.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["It is an apple."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0076.opus"
+      }
+    },
+    {
+      "id": "ph-e-0077",
+      "text_en": "It is an old house.",
+      "translation_ru": "Это старый дом.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["It is an old house."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0077.opus"
+      }
+    },
+    {
+      "id": "ph-e-0078",
+      "text_en": "It is a new house.",
+      "translation_ru": "Это новый дом.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["It is a new house."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0078.opus"
+      }
+    },
+    {
+      "id": "ph-e-0079",
+      "text_en": "I have a brother.",
+      "translation_ru": "У меня есть брат.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["I have a brother."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0079.opus"
+      }
+    },
+    {
+      "id": "ph-e-0080",
+      "text_en": "I have a sister.",
+      "translation_ru": "У меня есть сестра.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["I have a sister."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0080.opus"
+      }
+    },
+    {
+      "id": "ph-e-0081",
+      "text_en": "I have a question.",
+      "translation_ru": "У меня есть вопрос.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["I have a question."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0081.opus"
+      }
+    },
+    {
+      "id": "ph-e-0082",
+      "text_en": "I have an idea.",
+      "translation_ru": "У меня есть идея.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["I have an idea."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0082.opus"
+      }
+    },
+    {
+      "id": "ph-e-0083",
+      "text_en": "You are a good student.",
+      "translation_ru": "Ты хороший студент.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["You are a good student."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0083.opus"
+      }
+    },
+    {
+      "id": "ph-e-0084",
+      "text_en": "It is a secret.",
+      "translation_ru": "Это секрет.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["It is a secret."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0084.opus"
+      }
+    },
+    {
+      "id": "ph-e-0085",
+      "text_en": "I am serious.",
+      "translation_ru": "Я серьёзен.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["I am serious."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0085.opus"
+      }
+    },
+    {
+      "id": "ph-e-0086",
+      "text_en": "This is an emergency.",
+      "translation_ru": "Это чрезвычайная ситуация.",
+      "grammar_point_id": "gp-e-02",
+      "variants": ["This is an emergency."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0086.opus"
+      }
+    },
+    {
+      "id": "ph-e-0087",
+      "text_en": "I am not a teacher.",
+      "translation_ru": "Я не учитель.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["I am not a teacher."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0087.opus"
+      }
+    },
+    {
+      "id": "ph-e-0088",
+      "text_en": "I am not a doctor.",
+      "translation_ru": "Я не врач.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["I am not a doctor."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0088.opus"
+      }
+    },
+    {
+      "id": "ph-e-0089",
+      "text_en": "He is not a doctor.",
+      "translation_ru": "Он не врач.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["He is not a doctor."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0089.opus"
+      }
+    },
+    {
+      "id": "ph-e-0090",
+      "text_en": "She is not a student.",
+      "translation_ru": "Она не студентка.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["She is not a student."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0090.opus"
+      }
+    },
+    {
+      "id": "ph-e-0091",
+      "text_en": "It is not true.",
+      "translation_ru": "Это неправда.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["It is not true."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0091.opus"
+      }
+    },
+    {
+      "id": "ph-e-0092",
+      "text_en": "It is not a problem.",
+      "translation_ru": "Это не проблема.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["It is not a problem."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0092.opus"
+      }
+    },
+    {
+      "id": "ph-e-0093",
+      "text_en": "It is not easy.",
+      "translation_ru": "Это нелегко.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["It is not easy."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0093.opus"
+      }
+    },
+    {
+      "id": "ph-e-0094",
+      "text_en": "It is not difficult.",
+      "translation_ru": "Это несложно.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["It is not difficult."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0094.opus"
+      }
+    },
+    {
+      "id": "ph-e-0095",
+      "text_en": "This is not my phone.",
+      "translation_ru": "Это не мой телефон.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["This is not my phone."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0095.opus"
+      }
+    },
+    {
+      "id": "ph-e-0096",
+      "text_en": "This is not my room.",
+      "translation_ru": "Это не моя комната.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["This is not my room."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0096.opus"
+      }
+    },
+    {
+      "id": "ph-e-0097",
+      "text_en": "I am not busy.",
+      "translation_ru": "Я не занят.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["I am not busy."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0097.opus"
+      }
+    },
+    {
+      "id": "ph-e-0098",
+      "text_en": "I am not tired.",
+      "translation_ru": "Я не устал.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["I am not tired."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0098.opus"
+      }
+    },
+    {
+      "id": "ph-e-0099",
+      "text_en": "He is not here.",
+      "translation_ru": "Его здесь нет.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["He is not here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0099.opus"
+      }
+    },
+    {
+      "id": "ph-e-0100",
+      "text_en": "She is not here.",
+      "translation_ru": "Её здесь нет.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["She is not here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0100.opus"
+      }
+    },
+    {
+      "id": "ph-e-0101",
+      "text_en": "They are not here.",
+      "translation_ru": "Их здесь нет.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["They are not here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0101.opus"
+      }
+    },
+    {
+      "id": "ph-e-0102",
+      "text_en": "We are not ready.",
+      "translation_ru": "Мы не готовы.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["We are not ready."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0102.opus"
+      }
+    },
+    {
+      "id": "ph-e-0103",
+      "text_en": "You are not right.",
+      "translation_ru": "Ты не прав.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["You are not right."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0103.opus"
+      }
+    },
+    {
+      "id": "ph-e-0104",
+      "text_en": "You are not wrong.",
+      "translation_ru": "Ты и не ошибаешься.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["You are not wrong."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0104.opus"
+      }
+    },
+    {
+      "id": "ph-e-0105",
+      "text_en": "My mother is a teacher.",
+      "translation_ru": "Моя мама — учительница.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["My mother is a teacher."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0105.opus"
+      }
+    },
+    {
+      "id": "ph-e-0106",
+      "text_en": "My father is a doctor.",
+      "translation_ru": "Мой папа — врач.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["My father is a doctor."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0106.opus"
+      }
+    },
+    {
+      "id": "ph-e-0107",
+      "text_en": "My brother is a student.",
+      "translation_ru": "Мой брат — студент.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["My brother is a student."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0107.opus"
+      }
+    },
+    {
+      "id": "ph-e-0108",
+      "text_en": "My sister is an artist.",
+      "translation_ru": "Моя сестра — художница.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["My sister is an artist."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0108.opus"
+      }
+    },
+    {
+      "id": "ph-e-0109",
+      "text_en": "My parents are doctors.",
+      "translation_ru": "Мои родители — врачи.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["My parents are doctors."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0109.opus"
+      }
+    },
+    {
+      "id": "ph-e-0110",
+      "text_en": "My family is big.",
+      "translation_ru": "Моя семья большая.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["My family is big."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0110.opus"
+      }
+    },
+    {
+      "id": "ph-e-0111",
+      "text_en": "My family is not big.",
+      "translation_ru": "Моя семья небольшая.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["My family is not big."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0111.opus"
+      }
+    },
+    {
+      "id": "ph-e-0112",
+      "text_en": "I have no brothers.",
+      "translation_ru": "У меня нет братьев.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["I have no brothers."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0112.opus"
+      }
+    },
+    {
+      "id": "ph-e-0113",
+      "text_en": "I am not from Moscow.",
+      "translation_ru": "Я не из Москвы.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["I am not from Moscow."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0113.opus"
+      }
+    },
+    {
+      "id": "ph-e-0114",
+      "text_en": "He is not from Russia.",
+      "translation_ru": "Он не из России.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["He is not from Russia."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0114.opus"
+      }
+    },
+    {
+      "id": "ph-e-0115",
+      "text_en": "We are not late.",
+      "translation_ru": "Мы не опаздываем.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["We are not late."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0115.opus"
+      }
+    },
+    {
+      "id": "ph-e-0116",
+      "text_en": "It is not cold today.",
+      "translation_ru": "Сегодня не холодно.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["It is not cold today."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0116.opus"
+      }
+    },
+    {
+      "id": "ph-e-0117",
+      "text_en": "It is not hot.",
+      "translation_ru": "Не жарко.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["It is not hot."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0117.opus"
+      }
+    },
+    {
+      "id": "ph-e-0118",
+      "text_en": "I am not angry.",
+      "translation_ru": "Я не злой.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["I am not angry."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0118.opus"
+      }
+    },
+    {
+      "id": "ph-e-0119",
+      "text_en": "She is not sad.",
+      "translation_ru": "Она не грустит.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["She is not sad."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0119.opus"
+      }
+    },
+    {
+      "id": "ph-e-0120",
+      "text_en": "My name is not Anna.",
+      "translation_ru": "Меня зовут не Анна.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["My name is not Anna."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0120.opus"
+      }
+    },
+    {
+      "id": "ph-e-0121",
+      "text_en": "This is not a good idea.",
+      "translation_ru": "Это не лучшая идея.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["This is not a good idea."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0121.opus"
+      }
+    },
+    {
+      "id": "ph-e-0122",
+      "text_en": "Money is not a problem.",
+      "translation_ru": "Деньги — не проблема.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["Money is not a problem."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0122.opus"
+      }
+    },
+    {
+      "id": "ph-e-0123",
+      "text_en": "I am not sure.",
+      "translation_ru": "Я не уверен.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["I am not sure."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0123.opus"
+      }
+    },
+    {
+      "id": "ph-e-0124",
+      "text_en": "It is not far.",
+      "translation_ru": "Это недалеко.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["It is not far."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0124.opus"
+      }
+    },
+    {
+      "id": "ph-e-0125",
+      "text_en": "It is not expensive.",
+      "translation_ru": "Это недорого.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["It is not expensive."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0125.opus"
+      }
+    },
+    {
+      "id": "ph-e-0126",
+      "text_en": "We are not from Spain.",
+      "translation_ru": "Мы не из Испании.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["We are not from Spain."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0126.opus"
+      }
+    },
+    {
+      "id": "ph-e-0127",
+      "text_en": "They are not friends.",
+      "translation_ru": "Они не друзья.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["They are not friends."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0127.opus"
+      }
+    },
+    {
+      "id": "ph-e-0128",
+      "text_en": "My mother is not old.",
+      "translation_ru": "Моя мама не старая.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["My mother is not old."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0128.opus"
+      }
+    },
+    {
+      "id": "ph-e-0129",
+      "text_en": "I am not ready.",
+      "translation_ru": "Я не готов.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["I am not ready."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0129.opus"
+      }
+    },
+    {
+      "id": "ph-e-0130",
+      "text_en": "Sorry, we are not open.",
+      "translation_ru": "Извините, мы закрыты.",
+      "grammar_point_id": "gp-e-03",
+      "variants": ["Sorry, we are not open."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0130.opus"
+      }
+    },
+    {
+      "id": "ph-e-0131",
+      "text_en": "Are you Ivan?",
+      "translation_ru": "Ты Иван?",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["Are you Ivan?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0131.opus"
+      }
+    },
+    {
+      "id": "ph-e-0132",
+      "text_en": "Are you a student?",
+      "translation_ru": "Ты студент?",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["Are you a student?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0132.opus"
+      }
+    },
+    {
+      "id": "ph-e-0133",
+      "text_en": "Are you a doctor?",
+      "translation_ru": "Ты врач?",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["Are you a doctor?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0133.opus"
+      }
+    },
+    {
+      "id": "ph-e-0134",
+      "text_en": "Are you from Russia?",
+      "translation_ru": "Ты из России?",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["Are you from Russia?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0134.opus"
+      }
+    },
+    {
+      "id": "ph-e-0135",
+      "text_en": "Are you from Moscow?",
+      "translation_ru": "Ты из Москвы?",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["Are you from Moscow?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0135.opus"
+      }
+    },
+    {
+      "id": "ph-e-0136",
+      "text_en": "Are you busy?",
+      "translation_ru": "Ты занят?",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["Are you busy?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0136.opus"
+      }
+    },
+    {
+      "id": "ph-e-0137",
+      "text_en": "Are you tired?",
+      "translation_ru": "Ты устал?",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["Are you tired?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0137.opus"
+      }
+    },
+    {
+      "id": "ph-e-0138",
+      "text_en": "Are you hungry?",
+      "translation_ru": "Ты голоден?",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["Are you hungry?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0138.opus"
+      }
+    },
+    {
+      "id": "ph-e-0139",
+      "text_en": "Are you thirsty?",
+      "translation_ru": "Ты хочешь пить?",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["Are you thirsty?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0139.opus"
+      }
+    },
+    {
+      "id": "ph-e-0140",
+      "text_en": "Are you happy?",
+      "translation_ru": "Ты счастлив?",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["Are you happy?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0140.opus"
+      }
+    },
+    {
+      "id": "ph-e-0141",
+      "text_en": "Are you okay?",
+      "translation_ru": "Ты в порядке?",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["Are you okay?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0141.opus"
+      }
+    },
+    {
+      "id": "ph-e-0142",
+      "text_en": "Are you ready?",
+      "translation_ru": "Ты готов?",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["Are you ready?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0142.opus"
+      }
+    },
+    {
+      "id": "ph-e-0143",
+      "text_en": "Are you sure?",
+      "translation_ru": "Ты уверен?",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["Are you sure?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0143.opus"
+      }
+    },
+    {
+      "id": "ph-e-0144",
+      "text_en": "Are you cold?",
+      "translation_ru": "Тебе холодно?",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["Are you cold?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0144.opus"
+      }
+    },
+    {
+      "id": "ph-e-0145",
+      "text_en": "Are you free today?",
+      "translation_ru": "Ты сегодня свободен?",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["Are you free today?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0145.opus"
+      }
+    },
+    {
+      "id": "ph-e-0146",
+      "text_en": "Is he your friend?",
+      "translation_ru": "Он твой друг?",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["Is he your friend?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0146.opus"
+      }
+    },
+    {
+      "id": "ph-e-0147",
+      "text_en": "Is she your sister?",
+      "translation_ru": "Она твоя сестра?",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["Is she your sister?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0147.opus"
+      }
+    },
+    {
+      "id": "ph-e-0148",
+      "text_en": "Is it true?",
+      "translation_ru": "Это правда?",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["Is it true?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0148.opus"
+      }
+    },
+    {
+      "id": "ph-e-0149",
+      "text_en": "Is it far?",
+      "translation_ru": "Это далеко?",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["Is it far?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0149.opus"
+      }
+    },
+    {
+      "id": "ph-e-0150",
+      "text_en": "Is it expensive?",
+      "translation_ru": "Это дорого?",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["Is it expensive?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0150.opus"
+      }
+    },
+    {
+      "id": "ph-e-0151",
+      "text_en": "Is it okay?",
+      "translation_ru": "Это нормально?",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["Is it okay?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0151.opus"
+      }
+    },
+    {
+      "id": "ph-e-0152",
+      "text_en": "Is this your phone?",
+      "translation_ru": "Это твой телефон?",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["Is this your phone?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0152.opus"
+      }
+    },
+    {
+      "id": "ph-e-0153",
+      "text_en": "Is that a problem?",
+      "translation_ru": "Это проблема?",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["Is that a problem?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0153.opus"
+      }
+    },
+    {
+      "id": "ph-e-0154",
+      "text_en": "Am I right?",
+      "translation_ru": "Я прав?",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["Am I right?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0154.opus"
+      }
+    },
+    {
+      "id": "ph-e-0155",
+      "text_en": "Am I late?",
+      "translation_ru": "Я опаздываю?",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["Am I late?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0155.opus"
+      }
+    },
+    {
+      "id": "ph-e-0156",
+      "text_en": "Are we late?",
+      "translation_ru": "Мы опаздываем?",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["Are we late?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0156.opus"
+      }
+    },
+    {
+      "id": "ph-e-0157",
+      "text_en": "Are they here?",
+      "translation_ru": "Они здесь?",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["Are they here?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0157.opus"
+      }
+    },
+    {
+      "id": "ph-e-0158",
+      "text_en": "Are your parents here?",
+      "translation_ru": "Твои родители здесь?",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["Are your parents here?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0158.opus"
+      }
+    },
+    {
+      "id": "ph-e-0159",
+      "text_en": "Is your mother a teacher?",
+      "translation_ru": "Твоя мама учительница?",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["Is your mother a teacher?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0159.opus"
+      }
+    },
+    {
+      "id": "ph-e-0160",
+      "text_en": "Yes, I am.",
+      "translation_ru": "Да.",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["Yes, I am."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0160.opus"
+      }
+    },
+    {
+      "id": "ph-e-0161",
+      "text_en": "No, I am not.",
+      "translation_ru": "Нет.",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["No, I am not."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0161.opus"
+      }
+    },
+    {
+      "id": "ph-e-0162",
+      "text_en": "Yes, he is.",
+      "translation_ru": "Да.",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["Yes, he is."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0162.opus"
+      }
+    },
+    {
+      "id": "ph-e-0163",
+      "text_en": "No, she is not.",
+      "translation_ru": "Нет.",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["No, she is not."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0163.opus"
+      }
+    },
+    {
+      "id": "ph-e-0164",
+      "text_en": "Yes, we are.",
+      "translation_ru": "Да.",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["Yes, we are."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0164.opus"
+      }
+    },
+    {
+      "id": "ph-e-0165",
+      "text_en": "No, they are not.",
+      "translation_ru": "Нет.",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["No, they are not."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0165.opus"
+      }
+    },
+    {
+      "id": "ph-e-0166",
+      "text_en": "Yes, it is.",
+      "translation_ru": "Да.",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["Yes, it is."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0166.opus"
+      }
+    },
+    {
+      "id": "ph-e-0167",
+      "text_en": "No, it is not.",
+      "translation_ru": "Нет.",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["No, it is not."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0167.opus"
+      }
+    },
+    {
+      "id": "ph-e-0168",
+      "text_en": "I am hungry.",
+      "translation_ru": "Я голоден.",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["I am hungry."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0168.opus"
+      }
+    },
+    {
+      "id": "ph-e-0169",
+      "text_en": "I am thirsty.",
+      "translation_ru": "Я хочу пить.",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["I am thirsty."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0169.opus"
+      }
+    },
+    {
+      "id": "ph-e-0170",
+      "text_en": "I am tired.",
+      "translation_ru": "Я устал.",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["I am tired."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0170.opus"
+      }
+    },
+    {
+      "id": "ph-e-0171",
+      "text_en": "She is tired, but she is happy.",
+      "translation_ru": "Она устала, но счастлива.",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["She is tired, but she is happy."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0171.opus"
+      }
+    },
+    {
+      "id": "ph-e-0172",
+      "text_en": "Excuse me, are you Anna?",
+      "translation_ru": "Извините, вы Анна?",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["Excuse me, are you Anna?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0172.opus"
+      }
+    },
+    {
+      "id": "ph-e-0173",
+      "text_en": "Are you open?",
+      "translation_ru": "Вы работаете?",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["Are you open?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0173.opus"
+      }
+    },
+    {
+      "id": "ph-e-0174",
+      "text_en": "Is it a good idea?",
+      "translation_ru": "Это хорошая идея?",
+      "grammar_point_id": "gp-e-04",
+      "variants": ["Is it a good idea?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0174.opus"
+      }
+    },
+    {
+      "id": "ph-e-0175",
+      "text_en": "How are you?",
+      "translation_ru": "Как дела?",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["How are you?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0175.opus"
+      }
+    },
+    {
+      "id": "ph-e-0176",
+      "text_en": "How is it going?",
+      "translation_ru": "Как дела?",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["How is it going?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0176.opus"
+      }
+    },
+    {
+      "id": "ph-e-0177",
+      "text_en": "I am fine, thank you.",
+      "translation_ru": "Хорошо, спасибо.",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["I am fine, thank you."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0177.opus"
+      }
+    },
+    {
+      "id": "ph-e-0178",
+      "text_en": "I am very well, thanks.",
+      "translation_ru": "Отлично, спасибо.",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["I am very well, thanks."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0178.opus"
+      }
+    },
+    {
+      "id": "ph-e-0179",
+      "text_en": "Not bad.",
+      "translation_ru": "Неплохо.",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["Not bad."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0179.opus"
+      }
+    },
+    {
+      "id": "ph-e-0180",
+      "text_en": "So-so.",
+      "translation_ru": "Так себе.",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["So-so."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0180.opus"
+      }
+    },
+    {
+      "id": "ph-e-0181",
+      "text_en": "And you?",
+      "translation_ru": "А ты?",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["And you?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0181.opus"
+      }
+    },
+    {
+      "id": "ph-e-0182",
+      "text_en": "What is your name?",
+      "translation_ru": "Как тебя зовут?",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["What is your name?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0182.opus"
+      }
+    },
+    {
+      "id": "ph-e-0183",
+      "text_en": "Good to see you.",
+      "translation_ru": "Рад тебя видеть.",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["Good to see you."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0183.opus"
+      }
+    },
+    {
+      "id": "ph-e-0184",
+      "text_en": "Long time no see.",
+      "translation_ru": "Давно не виделись.",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["Long time no see."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0184.opus"
+      }
+    },
+    {
+      "id": "ph-e-0185",
+      "text_en": "Have a good day.",
+      "translation_ru": "Хорошего дня.",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["Have a good day."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0185.opus"
+      }
+    },
+    {
+      "id": "ph-e-0186",
+      "text_en": "It is nice here.",
+      "translation_ru": "Здесь приятно.",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["It is nice here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0186.opus"
+      }
+    },
+    {
+      "id": "ph-e-0187",
+      "text_en": "I am from Russia, and you?",
+      "translation_ru": "Я из России, а ты?",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["I am from Russia, and you?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0187.opus"
+      }
+    },
+    {
+      "id": "ph-e-0188",
+      "text_en": "My name is Ivan. What is your name?",
+      "translation_ru": "Меня зовут Иван. Как тебя зовут?",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["My name is Ivan. What is your name?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0188.opus"
+      }
+    },
+    {
+      "id": "ph-e-0189",
+      "text_en": "Are you new here?",
+      "translation_ru": "Ты здесь новенький?",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["Are you new here?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0189.opus"
+      }
+    },
+    {
+      "id": "ph-e-0190",
+      "text_en": "Is your family big?",
+      "translation_ru": "Твоя семья большая?",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["Is your family big?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0190.opus"
+      }
+    },
+    {
+      "id": "ph-e-0191",
+      "text_en": "My family is not big.",
+      "translation_ru": "Моя семья небольшая.",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["My family is not big."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0191.opus"
+      }
+    },
+    {
+      "id": "ph-e-0192",
+      "text_en": "This is my mother.",
+      "translation_ru": "Это моя мама.",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["This is my mother."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0192.opus"
+      }
+    },
+    {
+      "id": "ph-e-0193",
+      "text_en": "This is my friend Dima.",
+      "translation_ru": "Это мой друг Дима.",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["This is my friend Dima."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0193.opus"
+      }
+    },
+    {
+      "id": "ph-e-0194",
+      "text_en": "Hello, my name is Anna. I am from Kazan.",
+      "translation_ru": "Здравствуй, меня зовут Анна. Я из Казани.",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["Hello, my name is Anna. I am from Kazan."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0194.opus"
+      }
+    },
+    {
+      "id": "ph-e-0195",
+      "text_en": "I am not a teacher, I am a doctor.",
+      "translation_ru": "Я не учитель, я врач.",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["I am not a teacher, I am a doctor."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0195.opus"
+      }
+    },
+    {
+      "id": "ph-e-0196",
+      "text_en": "Is your brother a student?",
+      "translation_ru": "Твой брат студент?",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["Is your brother a student?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0196.opus"
+      }
+    },
+    {
+      "id": "ph-e-0197",
+      "text_en": "Yes, he is a student.",
+      "translation_ru": "Да, он студент.",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["Yes, he is a student."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0197.opus"
+      }
+    },
+    {
+      "id": "ph-e-0198",
+      "text_en": "No, he is not a student, he is a doctor.",
+      "translation_ru": "Нет, он не студент, он врач.",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["No, he is not a student, he is a doctor."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0198.opus"
+      }
+    },
+    {
+      "id": "ph-e-0199",
+      "text_en": "I am not hungry, I am thirsty.",
+      "translation_ru": "Я не голоден, я хочу пить.",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["I am not hungry, I am thirsty."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0199.opus"
+      }
+    },
+    {
+      "id": "ph-e-0200",
+      "text_en": "It is not expensive, it is cheap.",
+      "translation_ru": "Это недорого, это дёшево.",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["It is not expensive, it is cheap."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0200.opus"
+      }
+    },
+    {
+      "id": "ph-e-0201",
+      "text_en": "My phone is old, but it is okay.",
+      "translation_ru": "Мой телефон старый, но с ним всё в порядке.",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["My phone is old, but it is okay."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0201.opus"
+      }
+    },
+    {
+      "id": "ph-e-0202",
+      "text_en": "Today is good.",
+      "translation_ru": "Сегодня хороший день.",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["Today is good."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0202.opus"
+      }
+    },
+    {
+      "id": "ph-e-0203",
+      "text_en": "I am happy today.",
+      "translation_ru": "Я сегодня счастлив.",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["I am happy today."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0203.opus"
+      }
+    },
+    {
+      "id": "ph-e-0204",
+      "text_en": "We are tired, but we are happy.",
+      "translation_ru": "Мы устали, но довольны.",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["We are tired, but we are happy."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0204.opus"
+      }
+    },
+    {
+      "id": "ph-e-0205",
+      "text_en": "Is Moscow big?",
+      "translation_ru": "Москва большая?",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["Is Moscow big?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0205.opus"
+      }
+    },
+    {
+      "id": "ph-e-0206",
+      "text_en": "Yes, it is big and beautiful.",
+      "translation_ru": "Да, большая и красивая.",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["Yes, it is big and beautiful."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0206.opus"
+      }
+    },
+    {
+      "id": "ph-e-0207",
+      "text_en": "Are you sure it is true?",
+      "translation_ru": "Ты уверен, что это правда?",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["Are you sure it is true?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0207.opus"
+      }
+    },
+    {
+      "id": "ph-e-0208",
+      "text_en": "It is a secret.",
+      "translation_ru": "Это секрет.",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["It is a secret."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0208.opus"
+      }
+    },
+    {
+      "id": "ph-e-0209",
+      "text_en": "Life is not easy, but it is interesting.",
+      "translation_ru": "Жизнь непроста, но интересна.",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["Life is not easy, but it is interesting."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0209.opus"
+      }
+    },
+    {
+      "id": "ph-e-0210",
+      "text_en": "My city is old and beautiful.",
+      "translation_ru": "Мой город старый и красивый.",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["My city is old and beautiful."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0210.opus"
+      }
+    },
+    {
+      "id": "ph-e-0211",
+      "text_en": "Is your sister an artist?",
+      "translation_ru": "Твоя сестра художница?",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["Is your sister an artist?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0211.opus"
+      }
+    },
+    {
+      "id": "ph-e-0212",
+      "text_en": "No, she is an engineer.",
+      "translation_ru": "Нет, она инженер.",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["No, she is an engineer."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0212.opus"
+      }
+    },
+    {
+      "id": "ph-e-0213",
+      "text_en": "Are your friends students?",
+      "translation_ru": "Твои друзья студенты?",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["Are your friends students?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0213.opus"
+      }
+    },
+    {
+      "id": "ph-e-0214",
+      "text_en": "Yes, they are.",
+      "translation_ru": "Да.",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["Yes, they are."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0214.opus"
+      }
+    },
+    {
+      "id": "ph-e-0215",
+      "text_en": "No, they are not.",
+      "translation_ru": "Нет.",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["No, they are not."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0215.opus"
+      }
+    },
+    {
+      "id": "ph-e-0216",
+      "text_en": "Is it far from here?",
+      "translation_ru": "Это далеко отсюда?",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["Is it far from here?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0216.opus"
+      }
+    },
+    {
+      "id": "ph-e-0217",
+      "text_en": "I am here with my friend.",
+      "translation_ru": "Я здесь с другом.",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["I am here with my friend."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0217.opus"
+      }
+    },
+    {
+      "id": "ph-e-0218",
+      "text_en": "Everything is okay.",
+      "translation_ru": "Всё в порядке.",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["Everything is okay."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-0218.opus"
+      }
+    }
+  ]
+}

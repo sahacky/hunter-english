@@ -3,6 +3,7 @@
 // (PLANS → M4, specs/06 §0 офлайн-first).
 
 import type { CardState, ReviewLogEntry } from './srs/types'
+import type { LessonProgress } from './lesson/types'
 
 export interface ProgressRepository {
   /** Идемпотентно создаёт отсутствующие карточки (контент-загрузчик, plan://M4#4.3). */
@@ -16,4 +17,11 @@ export interface ProgressRepository {
    * дневной лимит новых srs://rule-3 между сессиями.
    */
   countNewAnsweredSince(iso: string): Promise<number>
+  /** Чекпоинт урока (specs/06 §3 db://table-lesson_progress); null — урок не начат. */
+  getLessonProgress(lessonId: string): Promise<LessonProgress | null>
+  /**
+   * Сохраняет чекпоинт урока (upsert + sync_queue). Единица сохранения —
+   * отдельное задание: экран пишет после каждого вердикта (specs/02 §5).
+   */
+  putLessonProgress(progress: LessonProgress): Promise<void>
 }

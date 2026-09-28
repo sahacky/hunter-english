@@ -1,0 +1,630 @@
+// Implements: plan://M5#5.5–5.6 — экран урока /#/lesson/:id (specs/07 §2.1, §4.4; specs/02 §2, §5).
+// Пошаговый flow шаблона: Правило → Разогрев → Построение → Слух → Речь → Из сериала →
+// В колоду. Чекпоинт пишется после каждого ответа (specs/02 §5, единица — задание).
+
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { useParams, useSearchParams } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
+import {
+  advanceStep,
+  computeLessonStatus,
+  createCheckpoint,
+  currentStepEvaluation,
+  finishPass,
+  findStep,
+  passAccuracy,
+  recordAnswer,
+  totalXp,
+} from '../domain/lesson/runner'
+import type { ExerciseOutcome, LessonCheckpoint, SrsLessonStats } from '../domain/lesson/types'
+import {
+  courseToLessonId,
+  loadLessonView,
+  loadTraps,
+  toPhraseNotes,
+  type ExerciseItem,
+  type LessonView,
+  type PhraseItem,
+  type TrapItem,
+} from '../content/lessons'
+import { createFirstCards } from '../content/words'
+import type { ProgressRepository } from '../domain/progress'
+import { DexieProgressRepository } from '../data/progress-repository'
+import { playAudio, stopAudio } from '../lib/audio'
+import {
+  ChooseTranslationExercise,
+  InputCheckExercise,
+  MatchPairsExercise,
+  VoiceExercise,
+  WordBankExercise,
+} from '../components/lesson/ExerciseView'
+
+const COURSE_ID_RE = /^(E|D|C|B|A|S)-\d{2}$/
+
+type Phase =
+  | { kind: 'loading' }
+  | { kind: 'error' }
+  | { kind: 'notfound' }
+  | { kind: 'guard'; stepIndex: number; repeat: boolean } // specs/07 §4.4 + повтор пройденного
+  | { kind: 'step' }
+  | { kind: 'deck' } // шаг 7 «В колоду»
+  | { kind: 'done' }
+
+interface LessonScreenProps {
+  repo?: ProgressRepository
+  /** Собранный урок (инъекция для тестов; по умолчанию — данные ранга из data/). */
+  view?: LessonView
+  /** Каталог ловушек (инъекция для тестов; по умолчанию — data/traps.json). */
+  traps?: Map<string, TrapItem>
+}
+
+/** Итог прохода для финального экрана — до сброса чекпоинта finishPass. */
+interface PassSummary {
+  xp: number
+  accuracy: number
+  minutes: number
+}
+
+function lessonPhrases(view: LessonView): PhraseItem[] {
+  return Object.values(view.phrasesById)
+}
+
+/** SRS-статистика фраз урока для computeLessonStatus (specs/02 §5): интервал ≥7 дней — «выучено». */
+function lessonSrsStats(
+  cards: {
+    card_id: string
+    note_id: string
+    deck: string
+    state: number
+    scheduled_days: number
+  }[],
+  view: LessonView,
+): SrsLessonStats {
+  const ids = new Set(lessonPhrases(view).map((phrase) => phrase.id))
+  let learned = 0
+  let lapsed = 0
+  let total = 0
+  for (const card of cards) {
+    if (card.deck !== 'phrases') continue
+    if (!card.note_id.startsWith('note_') || !ids.has(card.note_id.slice('note_'.length))) continue
+    total += 1
+    if (card.state === 2 && card.scheduled_days >= 7) learned += 1
+    else if (card.state === 2) lapsed += 1
+  }
+  return { total, learned, lapsed }
+}
+
+/** Карточка правила (шаг 1): правило + примеры с озвучкой + «⚠️ Ловушка» (specs/02 §2). */
+function RuleCard({ view, onUnderstood }: { view: LessonView; onUnderstood: () => void }) {
+  const { t } = useTranslation()
+  const gp = view.lesson.grammar_point
+  return (
+    <div className="lesson-exercise lesson-rule">
+      <h3 lang="ru">{gp.title_ru}</h3>
+      <div className="lesson-rule-md" lang="ru">
+        {gp.rule_md.split('\n').map((line, index) => (
+          <p key={index} className={line.startsWith('⚠') ? 'lesson-trap' : undefined}>
+            {line.replace(/\*\*/g, '')}
+          </p>
+        ))}
+      </div>
+      <ul className="lesson-rule-examples">
+        {gp.phrase_ids.slice(0, 3).map((pid) => {
+          const phrase = view.phrasesById[pid]
+          return (
+            <li key={pid} lang="en">
+              {phrase?.text_en ?? pid}
+              {phrase?.audio?.en_gb && (
+                <button
+                  type="button"
+                  className="srs-btn"
+                  onClick={() => playAudio(phrase.audio!.en_gb!)}
+                >
+                  🔊
+                </button>
+              )}
+            </li>
+          )
+        })}
+      </ul>
+      <div className="lesson-actions">
+        <button type="button" className="srs-btn srs-btn-good" onClick={onUnderstood}>
+          {t('lesson.gotIt')} <kbd>⏎</kbd>
+        </button>
+      </div>
+    </div>
+  )
+}
+
+export default function LessonScreen({
+  repo: repoProp,
+  view: viewProp,
+  traps: trapsProp,
+}: LessonScreenProps) {
+  const { t } = useTranslation()
+  const params = useParams<{ id: string }>()
+  const [searchParams] = useSearchParams()
+  const defaultRepo = useMemo(() => new DexieProgressRepository(), [])
+  const repo = repoProp ?? defaultRepo
+  const [view, setView] = useState<LessonView | null>(viewProp ?? null)
+  const [traps, setTraps] = useState<Map<string, TrapItem>>(trapsProp ?? new Map())
+  const [phase, setPhase] = useState<Phase>({ kind: 'loading' })
+  const [checkpoint, setCheckpoint] = useState<LessonCheckpoint>(() => createCheckpoint())
+  const [exerciseIndex, setExerciseIndex] = useState(0)
+  const [ruleShown, setRuleShown] = useState(false)
+  const [summary, setSummary] = useState<PassSummary | null>(null)
+  const [startedAt] = useState(() => Date.now())
+  /** прошлый статус записи: повтор пройденного не затирает оригинал (specs/07 §4.4) */
+  const previousRowRef = useRef<{ status: string; score: number | null } | null>(null)
+  const checkpointRef = useRef(checkpoint)
+  checkpointRef.current = checkpoint
+  const saveBusy = useRef(false)
+  const pendingRef = useRef<LessonCheckpoint | null>(null)
+
+  const courseId = params.id ?? ''
+  const valid = COURSE_ID_RE.test(courseId)
+
+  // --- сохранение чекпоинта: очередь «последний выигрывает» ------------------
+  const persist = useCallback(
+    async (cp: LessonCheckpoint) => {
+      if (!view) return
+      pendingRef.current = cp
+      if (saveBusy.current) return
+      saveBusy.current = true
+      try {
+        while (pendingRef.current !== null) {
+          const next = pendingRef.current
+          pendingRef.current = null
+          await repo.putLessonProgress({
+            lesson_id: view.lesson.id,
+            status: (previousRowRef.current?.status as 'in_progress') ?? 'in_progress',
+            score: previousRowRef.current?.score ?? null,
+            checkpoint: next,
+            completed_at: null,
+            updated_at: new Date().toISOString(),
+          })
+        }
+      } finally {
+        saveBusy.current = false
+      }
+    },
+    [repo, view],
+  )
+
+  // --- загрузка урока + сохранённого чекпоинта ------------------------------
+  useEffect(() => {
+    let alive = true
+    async function load() {
+      if (!valid) {
+        setPhase({ kind: 'notfound' })
+        return
+      }
+      const stepParam = searchParams.get('step')
+      const lessonView = viewProp ?? (await loadLessonView(courseToLessonId(courseId)))
+      const trapMap = trapsProp ?? (await loadTraps())
+      if (!alive) return
+      if (!lessonView) {
+        setPhase({ kind: 'notfound' })
+        return
+      }
+      setView(lessonView)
+      setTraps(trapMap)
+      let row
+      try {
+        row = await repo.getLessonProgress(lessonView.lesson.id)
+      } catch {
+        if (alive) setPhase({ kind: 'error' })
+        return
+      }
+      if (!alive) return
+      previousRowRef.current = row ? { status: row.status, score: row.score } : null
+      const startCp = row?.checkpoint ?? createCheckpoint()
+      const firstStep = findStep(lessonView.steps, startCp.stepIndex) ?? lessonView.steps[0] ?? null
+      if (!firstStep) {
+        setPhase({ kind: 'error' })
+        return
+      }
+      // guard: незавершённый первый проход ИЛИ повтор уже пройденного урока
+      if (row && row.checkpoint.passesDone === 0 && row.checkpoint.stepIndex > 1) {
+        setCheckpoint({ ...startCp, stepIndex: firstStep.index })
+        setPhase({ kind: 'guard', stepIndex: firstStep.index, repeat: false })
+        return
+      }
+      if (row && row.checkpoint.passesDone >= 1) {
+        setCheckpoint(createCheckpoint())
+        setPhase({ kind: 'guard', stepIndex: 1, repeat: true })
+        return
+      }
+      // deep-link ?step= (specs/07 §4.2): только ≤ достигнутого; невалидный — 404
+      if (stepParam !== null) {
+        const requested = Number(stepParam)
+        const okStep =
+          Number.isInteger(requested) && requested >= 1 && requested <= startCp.stepIndex
+        if (!okStep) {
+          setPhase({ kind: 'notfound' })
+          return
+        }
+        const cp = { ...startCp, stepIndex: requested }
+        setCheckpoint(cp)
+        setRuleShown(requested > 1)
+        setPhase(requested === 7 ? { kind: 'deck' } : { kind: 'step' })
+        return
+      }
+      const cp = { ...startCp, stepIndex: firstStep.index }
+      setCheckpoint(cp)
+      setRuleShown(cp.stepIndex > 1)
+      setPhase(cp.stepIndex === 7 ? { kind: 'deck' } : { kind: 'step' })
+    }
+    void load().catch(() => {
+      if (alive) setPhase({ kind: 'error' })
+    })
+    return () => {
+      alive = false
+      stopAudio()
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [courseId])
+
+  const step = view?.steps.find((s) => s.index === checkpoint.stepIndex)
+  const stepExercises = step ? (view?.content[step.index] ?? []) : []
+  const trap: TrapItem | null = view?.lesson.trap_id
+    ? (traps.get(view.lesson.trap_id) ?? null)
+    : null
+
+  /** Финальный исход задания (компонент вызывает ровно один раз) — specs/02 §5. */
+  const handleAnswer = useCallback(
+    (outcome: ExerciseOutcome, attempts: number, exerciseId: string) => {
+      if (!view) return
+      const next = recordAnswer(checkpointRef.current, view.steps, exerciseId, outcome, attempts)
+      setCheckpoint(next)
+      void persist(next)
+    },
+    [view, persist],
+  )
+
+  /** Спор «Я был прав» (specs/02 §4.6): перезапись исхода на disputed (полный XP). */
+  const handleDispute = useCallback(
+    (exerciseId: string) => {
+      if (!view) return
+      const result = checkpointRef.current.results[exerciseId]
+      const attempts = result?.attempts ?? 1
+      const next = recordAnswer(checkpointRef.current, view.steps, exerciseId, 'disputed', attempts)
+      setCheckpoint(next)
+      void persist(next)
+    },
+    [view, persist],
+  )
+
+  /** «Дальше»: следующее задание шага или переход шага (specs/02 §2). */
+  const handleNext = useCallback(() => {
+    if (!view || !step) return
+    stopAudio()
+    const more = exerciseIndex + 1 < stepExercises.length
+    if (more) {
+      setExerciseIndex(exerciseIndex + 1)
+      return
+    }
+    const next = advanceStep(checkpointRef.current, view.steps)
+    if (next) {
+      setCheckpoint(next)
+      void persist(next)
+      setExerciseIndex(0)
+      setRuleShown(false)
+      setPhase(next.stepIndex === 7 ? { kind: 'deck' } : { kind: 'step' })
+    }
+  }, [view, step, exerciseIndex, stepExercises.length, persist])
+
+  /** Повтор шага (разогрев <70% с первой попытки — specs/02 §2: блок повторяется). */
+  const repeatStep = () => {
+    const cp: LessonCheckpoint = {
+      ...checkpointRef.current,
+      scores: checkpointRef.current.scores.filter(
+        (score) => score.stepIndex !== checkpointRef.current.stepIndex,
+      ),
+    }
+    setCheckpoint(cp)
+    setExerciseIndex(0)
+  }
+
+  const stepEvaluation = useMemo(
+    () => (view ? currentStepEvaluation(checkpoint, view.steps) : null),
+    [view, checkpoint],
+  )
+
+  const stepNeedsRepeat =
+    stepEvaluation !== null &&
+    !stepEvaluation.passed &&
+    step !== undefined &&
+    stepExercises.length > 0 &&
+    (checkpoint.scores.find((s) => s.stepIndex === checkpoint.stepIndex)?.answered ?? 0) >=
+      stepExercises.length
+
+  /** Шаг 7: фразы урока → SRS (rule-1: en-ru первой) — specs/02 §2 шаг 7. */
+  const enrollDeck = useCallback(async () => {
+    if (!view) return
+    await repo.ensureCards(createFirstCards(toPhraseNotes(lessonPhrases(view)), new Date()))
+    const cp: LessonCheckpoint = {
+      ...checkpointRef.current,
+      srsEnqueued: lessonPhrases(view).map((phrase) => phrase.id),
+    }
+    setCheckpoint(cp)
+    void persist(cp)
+  }, [view, repo, persist])
+
+  const finishLesson = useCallback(async () => {
+    if (!view) return
+    try {
+      await enrollDeck()
+      const accuracy = passAccuracy(checkpointRef.current.scores) ?? 0
+      const xp = totalXp(checkpointRef.current, xpMap(view))
+      const minutes = Math.max(1, Math.round((Date.now() - startedAt) / 60_000))
+      setSummary({ xp, accuracy, minutes })
+      // статус по правилам specs/02 §5; повтор не затирает оригинал (specs/07 §4.4)
+      const cards = await repo.getAllCards()
+      const previous = previousRowRef.current
+      const stored =
+        previous && previous.status !== 'in_progress'
+          ? {
+              status: previous.status as 'completed' | 'review_due',
+              score: previous.score ?? accuracy,
+            }
+          : ((): { status: 'in_progress' | 'completed' | 'review_due'; score: number } => {
+              const status = computeLessonStatus({
+                row: {
+                  lesson_id: view.lesson.id,
+                  status: 'in_progress',
+                  checkpoint: finishPass(checkpointRef.current),
+                  score: accuracy,
+                  completed_at: null,
+                  updated_at: new Date().toISOString(),
+                },
+                previousCompleted: true,
+                totalPasses: 1,
+                srs: lessonSrsStats(cards, view),
+              })
+              const stored: 'in_progress' | 'completed' | 'review_due' =
+                status === 'locked' || status === 'available'
+                  ? 'in_progress'
+                  : status === 'in_progress'
+                    ? 'in_progress'
+                    : status
+              return { status: stored, score: accuracy }
+            })()
+      const cp = finishPass(checkpointRef.current)
+      setCheckpoint(cp)
+      await repo.putLessonProgress({
+        lesson_id: view.lesson.id,
+        status: stored.status,
+        score: stored.score,
+        checkpoint: cp,
+        completed_at: stored.status === 'in_progress' ? null : new Date().toISOString(),
+        updated_at: new Date().toISOString(),
+      })
+      setPhase({ kind: 'done' })
+    } catch {
+      setPhase({ kind: 'error' })
+    }
+  }, [view, enrollDeck, repo, startedAt])
+
+  // Enter — «Дальше»/«Понятно», только когда фокус не на интерактивном элементе
+  // (specs/07 §5.1); иначе активный контрол обрабатывает Enter сам (без дубля)
+  useEffect(() => {
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key !== 'Enter') return
+      const target = event.target
+      const onControl =
+        target instanceof HTMLInputElement ||
+        (target instanceof HTMLButtonElement && !target.disabled)
+      if (onControl) return
+      if (phase.kind !== 'step') return
+      if (step?.kind === 'rule' && !ruleShown) {
+        setRuleShown(true)
+        return
+      }
+      handleNext()
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [phase.kind, ruleShown, step, handleNext])
+
+  if (phase.kind === 'loading') {
+    return (
+      <section className="panel lesson-panel">
+        <p className="dim">{t('common.loading')}</p>
+      </section>
+    )
+  }
+  if (phase.kind === 'error') {
+    return (
+      <section className="panel lesson-panel">
+        <p className="srs-error">{t('lesson.error')}</p>
+        <div className="lesson-actions">
+          <button type="button" className="srs-btn" onClick={() => window.location.reload()}>
+            {t('lesson.retryLoad')}
+          </button>
+        </div>
+      </section>
+    )
+  }
+  if (phase.kind === 'notfound' || !view) {
+    return (
+      <section className="panel lesson-panel">
+        <h2>{t('notFound.title')}</h2>
+        <p className="dim">{t('lesson.notFound')}</p>
+      </section>
+    )
+  }
+  if (phase.kind === 'guard') {
+    return (
+      <section className="panel lesson-panel">
+        <h2 lang="ru">{view.lesson.title}</h2>
+        {phase.repeat ? (
+          <>
+            <p>{t('lesson.repeatPrompt')}</p>
+            <p className="dim">{t('lesson.repeatNote')}</p>
+          </>
+        ) : (
+          <p>{t('lesson.resumePrompt', { step: phase.stepIndex })}</p>
+        )}
+        <div className="lesson-actions">
+          <button
+            type="button"
+            className="srs-btn srs-btn-good"
+            onClick={() => {
+              if (phase.repeat) {
+                const fresh = createCheckpoint()
+                setCheckpoint(fresh)
+              }
+              setExerciseIndex(0)
+              setRuleShown(false)
+              setPhase(
+                !phase.repeat && checkpoint.stepIndex === 7 ? { kind: 'deck' } : { kind: 'step' },
+              )
+            }}
+          >
+            {phase.repeat ? t('lesson.repeatLesson') : t('lesson.resume')}
+          </button>
+        </div>
+      </section>
+    )
+  }
+  if (phase.kind === 'done') {
+    return (
+      <section className="panel lesson-panel">
+        <h2>{t('lesson.lessonDone')}</h2>
+        <ul className="lesson-summary">
+          <li>{t('lesson.summaryXp', { xp: summary?.xp ?? 0 })}</li>
+          <li>{t('lesson.summaryAccuracy', { accuracy: summary?.accuracy ?? 0 })}</li>
+          <li>{t('lesson.summaryTime', { minutes: summary?.minutes ?? 1 })}</li>
+          <li>{t('lesson.summaryDeck', { count: lessonPhrases(view).length })}</li>
+        </ul>
+        <p className="dim">{t('lesson.completionNote')}</p>
+        {view.lesson.bebris_video?.youtube_id && (
+          <p className="dim">
+            {t('lesson.videoTopic')}:{' '}
+            <a
+              href={`https://www.youtube.com/watch?v=${view.lesson.bebris_video.youtube_id}`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              YouTube
+            </a>
+          </p>
+        )}
+      </section>
+    )
+  }
+  if (phase.kind === 'deck') {
+    return (
+      <section className="panel lesson-panel">
+        <h2>{t('lesson.deckTitle')}</h2>
+        <p className="dim">{t('lesson.deckText', { count: lessonPhrases(view).length })}</p>
+        <div className="lesson-actions">
+          <button
+            type="button"
+            className="srs-btn srs-btn-good"
+            onClick={() => void finishLesson()}
+          >
+            {t('lesson.finishLesson')}
+          </button>
+        </div>
+      </section>
+    )
+  }
+
+  // --- активный шаг ----------------------------------------------------------
+  const current = stepExercises[exerciseIndex]
+  const isRuleStep = step?.kind === 'rule'
+  return (
+    <section className="panel lesson-panel">
+      <header className="lesson-head">
+        <h2 lang="ru">{view.lesson.title}</h2>
+        <p className="dim">
+          {t(`lesson.steps.${step?.kind ?? 'rule'}`)} ·{' '}
+          {t('lesson.stepProgress', { current: checkpoint.stepIndex, total: view.steps.length })}
+        </p>
+      </header>
+
+      {isRuleStep && !ruleShown && <RuleCard view={view} onUnderstood={() => setRuleShown(true)} />}
+
+      {(ruleShown || !isRuleStep) && current && (
+        <ExerciseRouter
+          key={current.exercise.id}
+          current={current}
+          trap={trap}
+          onAnswer={(outcome, attempts) => handleAnswer(outcome, attempts, current.exercise.id)}
+          onDispute={() => handleDispute(current.exercise.id)}
+          onNext={handleNext}
+        />
+      )}
+
+      {stepNeedsRepeat && (
+        <div className="lesson-actions">
+          <p className="dim">{t('lesson.stepIncomplete')}</p>
+          <button type="button" className="srs-btn" onClick={repeatStep}>
+            {t('lesson.repeatStep')}
+          </button>
+        </div>
+      )}
+    </section>
+  )
+}
+
+/** Роутер типов упражнений: маппинг type → компонент. */
+function ExerciseRouter({
+  current,
+  trap,
+  onAnswer,
+  onDispute,
+  onNext,
+}: {
+  current: { exercise: ExerciseItem; phrase: PhraseItem | null }
+  trap: TrapItem | null
+  onAnswer: (outcome: ExerciseOutcome, attempts: number) => void
+  onDispute: () => void
+  onNext: () => void
+}) {
+  const { t } = useTranslation()
+  const { exercise, phrase } = current
+  const common = { exercise, phrase, trap, onAnswer, onDispute, onNext }
+  switch (exercise.type) {
+    case 'translate':
+      return <InputCheckExercise mode="translate" {...common} />
+    case 'dictation':
+      return <InputCheckExercise mode="dictation" {...common} />
+    case 'cloze':
+      // cloze правила: ошибки не штрафуются XP (specs/02 §2 шаг 1)
+      return <InputCheckExercise mode="cloze" {...common} lenient />
+    case 'choose_translation':
+      return <ChooseTranslationExercise {...common} />
+    case 'match_pairs':
+      return <MatchPairsExercise {...common} />
+    case 'word_bank':
+      return <WordBankExercise {...common} />
+    case 'speak':
+      return <VoiceExercise mode="speak" {...common} />
+    case 'shadowing':
+      return <VoiceExercise mode="shadowing" {...common} />
+    case 'answer_question':
+      return <VoiceExercise mode="answer" {...common} />
+    default:
+      return (
+        <div className="lesson-exercise">
+          <p className="dim">{t('lesson.unknownExercise', { type: exercise.type })}</p>
+          <div className="lesson-actions">
+            <button type="button" className="srs-btn srs-btn-good" onClick={onNext}>
+              {t('lesson.next')} <kbd>⏎</kbd>
+            </button>
+          </div>
+        </div>
+      )
+  }
+}
+
+function xpMap(view: LessonView): Record<string, number> {
+  const map: Record<string, number> = {}
+  for (const items of Object.values(view.content)) {
+    for (const { exercise } of items) map[exercise.id] = exercise.meta.xp
+  }
+  return map
+}

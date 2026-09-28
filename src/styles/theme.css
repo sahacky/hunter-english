@@ -227,3 +227,155 @@ body {
   color: var(--danger);
   background: var(--surface-2);
 }
+
+/* ===== Урок (plan://M5#5.5, specs/07 §3.3) ===== */
+.lesson-panel {
+  max-width: 680px;
+}
+.lesson-head h2 {
+  margin-bottom: 4px;
+}
+.lesson-exercise {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px 0;
+}
+.lesson-prompt {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.lesson-quote-src {
+  font-size: 0.85rem;
+}
+.lesson-input-row {
+  display: flex;
+  gap: 8px;
+}
+.lesson-input {
+  flex: 1;
+  padding: 10px 12px;
+  font-size: 1.05rem;
+}
+.lesson-options {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.lesson-option {
+  width: 100%;
+  text-align: left;
+  padding: 10px 14px;
+}
+.lesson-option-correct {
+  border-color: var(--success);
+}
+.lesson-option-wrong {
+  border-color: var(--danger);
+}
+.lesson-option-selected {
+  outline: 2px solid var(--primary);
+}
+.lesson-match {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.lesson-match-column {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+}
+.lesson-slots,
+.lesson-bank {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  min-height: 44px;
+}
+.lesson-slots {
+  border-bottom: 1px dashed var(--text-dim);
+  padding-bottom: 12px;
+}
+.lesson-tile {
+  padding: 8px 14px;
+  font-size: 1rem;
+}
+.lesson-tile-slot {
+  font-weight: 600;
+}
+.lesson-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+.lesson-audio {
+  display: flex;
+  gap: 8px;
+}
+.lesson-hint-row {
+  display: flex;
+  gap: 8px;
+}
+.lesson-feedback {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--text-dim);
+}
+.lesson-feedback-ok {
+  border-color: var(--success);
+}
+.lesson-feedback-bad {
+  border-color: var(--danger);
+}
+.lesson-verdict-ok {
+  color: var(--success);
+}
+.lesson-verdict-bad {
+  color: var(--danger);
+}
+.lesson-diff span {
+  margin-right: 6px;
+}
+.lesson-diff-match {
+  color: var(--success);
+}
+.lesson-diff-typo {
+  color: var(--warn);
+}
+.lesson-diff-extra {
+  color: var(--danger);
+  text-decoration: line-through;
+}
+.lesson-diff-missing {
+  color: var(--danger);
+}
+.lesson-ref {
+  font-weight: 600;
+}
+.lesson-trap {
+  color: var(--warn);
+}
+.lesson-rule-md p {
+  margin: 6px 0;
+}
+.lesson-rule-examples {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.lesson-summary {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}

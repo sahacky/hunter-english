@@ -12,6 +12,7 @@ import {
 } from '../domain/srs/scheduler'
 import type { Note, QueueEntry, SessionPlan } from '../domain/srs/types'
 import { createFirstCards, loadWordNotes } from '../content/words'
+import { loadPhraseNotes } from '../content/lessons'
 import type { ProgressRepository } from '../domain/progress'
 import { DexieProgressRepository } from '../data/progress-repository'
 import { uuidv7 } from '../lib/uuidv7'
@@ -53,9 +54,14 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
     let alive = true
     async function start() {
       try {
-        const allNotes = notes ?? (await loadWordNotes())
-        // rule-1: при первом запуске материализуем первую карточку каждой заметки
-        await repo.ensureCards(createFirstCards(allNotes, new Date()))
+        const wordNotes = notes ?? (await loadWordNotes())
+        // Фразы уроков (M5): карточек может ещё не быть (урок создаёт их на шаге 7),
+        // но заметки нужны для разрешения note_id → контент в очереди повторения.
+        const phraseNotes = notes ? [] : await loadPhraseNotes()
+        const allNotes = [...wordNotes, ...phraseNotes]
+        // rule-1: при первом запуске материализуем первую карточку каждой заметки СЛОВ
+        // (фразы материализует урок — specs/02 §2 шаг 7, не здесь)
+        await repo.ensureCards(createFirstCards(wordNotes, new Date()))
         const cards = await repo.getAllCards()
         const byId = new Map(allNotes.map((note) => [note.id, note]))
         const items: QueueItem[] = cards
