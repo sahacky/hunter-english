@@ -93,3 +93,129 @@ body {
   padding: 12px 0;
   font-size: 0.85rem;
 }
+
+/* --- SRS /#/srs (specs/03 §6–§7) --- */
+.srs-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.srs-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.srs-head h2 {
+  margin: 0;
+}
+
+.srs-counters {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-variant-numeric: tabular-nums;
+}
+
+.srs-counter {
+  padding: 2px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+}
+
+.srs-counter-learning {
+  color: var(--danger);
+}
+
+.srs-counter-review {
+  color: var(--success);
+}
+
+.srs-counter-new {
+  color: var(--primary);
+}
+
+.srs-finish {
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-dim);
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.srs-finish:hover {
+  color: var(--text);
+  border-color: var(--text-dim);
+}
+
+.srs-card {
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  padding: 32px;
+  text-align: center;
+}
+
+.srs-front {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.srs-back {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.srs-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.srs-btn {
+  padding: 12px 24px;
+  font-size: 1.05rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.srs-btn kbd {
+  margin-left: 8px;
+  opacity: 0.6;
+  font-size: 0.85rem;
+}
+
+.srs-btn-reveal:hover,
+.srs-btn-good:hover {
+  border-color: var(--success);
+  color: var(--success);
+}
+
+.srs-btn-again:hover {
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+.srs-progress {
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.srs-error {
+  color: var(--danger);
+}

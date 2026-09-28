@@ -18,6 +18,28 @@
   "dashboard": {
     "greeting": "Welcome, Hunter"
   },
+  "srs": {
+    "title": "Review",
+    "loading": "Preparing cards…",
+    "error": "Could not save progress. Check the storage and try again.",
+    "empty": "All done — the queue is empty for today.",
+    "sessionDone": "Session finished. Well done, Hunter.",
+    "answered": "Answers: {{count}}",
+    "progress": "{{done}} of {{total}} done",
+    "blockDone": "Block of 20 cards completed",
+    "continue": "Continue",
+    "finish": "Finish",
+    "showAnswer": "Show answer",
+    "again": "Forgot",
+    "good": "Got it",
+    "hint": "Recall the translation and check yourself",
+    "countersLabel": "Queue counters",
+    "counters": {
+      "learning": "Learn",
+      "review": "Due",
+      "new": "New"
+    }
+  },
   "common": {
     "loading": "Loading…",
     "inDevelopment": "Section in development — see specs/",

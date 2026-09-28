@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { Layout } from './components/Layout'
+import SrsScreen from './screens/SrsScreen'
 
 function Placeholder({ page }: { page: string }) {
   const { t } = useTranslation()
@@ -27,7 +28,7 @@ export default function App() {
           }
         />
         <Route path="lesson/:id" element={<Placeholder page="lesson" />} />
-        <Route path="srs" element={<Placeholder page="srs" />} />
+        <Route path="srs" element={<SrsScreen />} />
         <Route path="ranks" element={<Placeholder page="ranks" />} />
         <Route path="gates/:id?" element={<Placeholder page="gates" />} />
         <Route path="quotes" element={<Placeholder page="quotes" />} />
