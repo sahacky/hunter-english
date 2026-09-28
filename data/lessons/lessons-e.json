@@ -861,7 +861,7 @@
     {
       "id": "les-e-06",
       "rank": "E",
-      "module": "mod-e-1",
+      "module": "mod-e-2",
       "title": "to be: спецвопросы What / Where / How",
       "grammar_point": {
         "id": "gp-e-06",
@@ -2219,7 +2219,7 @@
       },
       "vocab_band": {
         "list": "ngsl-spoken",
-        "from": 661,
+        "from": 660,
         "to": 719
       },
       "phrasebook_topic": null,

@@ -2645,7 +2645,7 @@
     {
       "id": "ph-e-0265",
       "text_en": "That is my house.",
-      "translation_ru": "То мой дом.",
+      "translation_ru": "Тот дом — мой.",
       "grammar_point_id": "gp-e-07",
       "variants": ["That is my house."],
       "audio": {
@@ -2655,7 +2655,7 @@
     {
       "id": "ph-e-0266",
       "text_en": "That is your car.",
-      "translation_ru": "То твоя машина.",
+      "translation_ru": "Та машина — твоя.",
       "grammar_point_id": "gp-e-07",
       "variants": ["That is your car."],
       "audio": {
@@ -2685,7 +2685,7 @@
     {
       "id": "ph-e-0269",
       "text_en": "Those are her shoes.",
-      "translation_ru": "То её туфли.",
+      "translation_ru": "Те туфли — её.",
       "grammar_point_id": "gp-e-07",
       "variants": ["Those are her shoes."],
       "audio": {
@@ -2695,7 +2695,7 @@
     {
       "id": "ph-e-0270",
       "text_en": "Those are his glasses.",
-      "translation_ru": "То его очки.",
+      "translation_ru": "Те очки — его.",
       "grammar_point_id": "gp-e-07",
       "variants": ["Those are his glasses."],
       "audio": {
@@ -2765,7 +2765,7 @@
     {
       "id": "ph-e-0277",
       "text_en": "That is not her phone.",
-      "translation_ru": "То не её телефон.",
+      "translation_ru": "Тот телефон — не её.",
       "grammar_point_id": "gp-e-07",
       "variants": ["That is not her phone."],
       "audio": {
@@ -2895,7 +2895,7 @@
     {
       "id": "ph-e-0290",
       "text_en": "Those are tourists.",
-      "translation_ru": "То туристы.",
+      "translation_ru": "Те люди — туристы.",
       "grammar_point_id": "gp-e-07",
       "variants": ["Those are tourists."],
       "audio": {
@@ -2955,7 +2955,7 @@
     {
       "id": "ph-e-0296",
       "text_en": "That is a good idea.",
-      "translation_ru": "То хорошая идея.",
+      "translation_ru": "Та идея — хорошая.",
       "grammar_point_id": "gp-e-07",
       "variants": ["That is a good idea."],
       "audio": {
@@ -3025,7 +3025,7 @@
     {
       "id": "ph-e-0303",
       "text_en": "That house is big.",
-      "translation_ru": "Тот дом большой.",
+      "translation_ru": "Тот дом — большой.",
       "grammar_point_id": "gp-e-07",
       "variants": ["That house is big."],
       "audio": {
@@ -3045,7 +3045,7 @@
     {
       "id": "ph-e-0305",
       "text_en": "Those people are kind.",
-      "translation_ru": "Те люди добрые.",
+      "translation_ru": "Те люди — добрые.",
       "grammar_point_id": "gp-e-07",
       "variants": ["Those people are kind."],
       "audio": {
@@ -5834,10 +5834,10 @@
     },
     {
       "id": "ph-e-0584",
-      "text_en": "The shop doesn't work today.",
+      "text_en": "The shop isn't open today.",
       "translation_ru": "Магазин сегодня не работает.",
       "grammar_point_id": "gp-e-14",
-      "variants": ["The shop doesn't work today."],
+      "variants": ["The shop isn't open today."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0584.opus"
       }
@@ -8394,10 +8394,10 @@
     },
     {
       "id": "ph-e-0840",
-      "text_en": "I'd like a coffee and my friend'd like a tea.",
+      "text_en": "I'd like a coffee and my friend would like a tea.",
       "translation_ru": "Мне кофе, а моему другу чай.",
       "grammar_point_id": "gp-e-20",
-      "variants": ["I'd like a coffee and my friend'd like a tea."],
+      "variants": ["I'd like a coffee and my friend would like a tea."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0840.opus"
       }
@@ -8985,7 +8985,7 @@
     {
       "id": "ph-e-0899",
       "text_en": "She wants to drink.",
-      "translation_ru": "она хочет пить.",
+      "translation_ru": "Она хочет пить.",
       "grammar_point_id": "gp-e-21",
       "variants": ["She wants to drink."],
       "audio": {
@@ -9305,7 +9305,7 @@
     {
       "id": "ph-e-0931",
       "text_en": "We often go out.",
-      "translation_ru": "Мы часто выходим в свет.",
+      "translation_ru": "Мы часто куда-нибудь ходим.",
       "grammar_point_id": "gp-e-22",
       "variants": ["We often go out."],
       "audio": {
