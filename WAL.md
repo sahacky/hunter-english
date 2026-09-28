@@ -11,8 +11,7 @@
 - M2: скаффолд Vite+React+TS, i18n ru/en, hash-роутинг, Vitest+Playwright, CI/deploy; hotfix CI (PR #1 был смержен с красным CI — `npm ci` падал): Vite 7, `@testing-library/dom`, `@types/node`, Prettier в lint, typecheck конфигов, Node 22, `supabase-js` и `/login` убраны до M12. Все проверки зелёные локально, включая e2e
 
 ## In Progress
-- M4 (ветка `feature/m4-srs`, запушена): сделано — детализация 4.1–4.6 в PLANS, контракт типов `src/domain/srs/types.ts` (CardType/Note/CardState/ReviewLogEntry/Queue*, лимиты rule-1/2, YOUNG_MATURE=21). **Дальше по порядку**:
-  1. 4.1 ядро `src/domain/srs/scheduler.ts`: обёртка ts-fsrs (параметры specs/03 §2), applyAnswer→CardState+log, day-boundary 4:00, buildQueue (learning → review young→mature → new), flood-guard 50/120/200, лимит 15 новых, wake-up ≤5/день (rule-2: обратные card'ы когда пассив ≥7 дней по scheduled_days) + unit-тесты
+- M4 (ветка `feature/m4-srs`, запушена): 4.1 готово — `src/domain/srs/scheduler.ts` (applyAnswer → CardState+log, UUIDv7 для лога передаёт вызывающий; dayStart/studyDay 4:00; newLimitForDebt 15/8/4/0; isWakeUpDue ≥7д; buildQueue learning→young→mature→wake-up ≤5/д→new c round-robin по колодам) + 28 unit-тестов. REVIEW-маркер в коде: ts-fsrs 4.7 не конфигурирует learning_steps — минутные шаги заданы библиотекой (New: Again 1м/Hard 5м/Good 10м; Relearning 5м), см. specs/03 §2. **Дальше по порядку**:
   2. 4.2 `src/data/`: Dexie-схема по specs/06 §3 (зеркала + sync_queue + meta; user_id='local' в MVP), ProgressRepository (ensureCards/getQueue/saveAnswer в транзакции: upsert card + append review_log), uuidv7 утилита, тесты на fake-indexeddb
   3. 4.3 контент: data/words/*.json через `import.meta.glob('/data/words/*.json')` → Note{en=lemma, ru=translation_ru[0], audio}, создание en-ru карточек по rule-1
   4. 4.4 экран `/srs` (заменить Placeholder в App.tsx): 2 кнопки (1=Again, 2=Good, пробел=показать ответ), блоки по 20, счётчики красный/зелёный/синий, сохранение сразу; i18n-ключи ru+en
@@ -29,7 +28,7 @@
 - `research/tools/quotes/merge_ru.py:17` — дефолтный путь с чужой машины (`/home/llm/...`); передавать путь аргументом
 - `research/tools/data/fetch_kaikki.py` — слова в URL не экранируются (для слов с `'`); лишний `import sys`; нет `requirements.txt`
 - e2e (Playwright) не запускается в CI; локально нужен `npx playwright install chromium` один раз
-- M4: новые зависимости — `dexie` (runtime) и `fake-indexeddb` (devDep, тесты репозитория); `ts-fsrs@^4.5` уже в package.json — сверить фактический API по node_modules/@types перед использованием (v4: fsrs(), generatorParameters(), createEmptyCard(), Rating, State)
+- M4: новые зависимости — `dexie` (runtime) и `fake-indexeddb` (devDep, тесты репозитория); API ts-fsrs сверен по node_modules (факт: 4.7.1 — fsrs(), generatorParameters(), createEmptyCard(), Rating, State; learning_steps в параметрах НЕТ, шаги: New Again=1м/Hard=5м/Good=10м, Relearning-шаг 5м; fuzz детерминирован seed'ом время+reps)
 - `src/App.tsx` 404 берёт `nav.notFound`; ключи `notFound.*`, `common.loading`, `common.backToDashboard` пока не используются
 - По AoT, JJK, Solo Leveling цитаты только ручным сбором; фанатские источники помечены «⚠ сверить с дубляжом»
 - IMDb: ToS запрещает автоматический сбор — только ручная выборка
@@ -89,3 +88,4 @@
 | 2026-09-27 | M3 закрыт: PR #3 смержен в main при зелёном CI; git-автор ветки переписан на noreply (был literal-плейсхолдер); для старой истории main — rewrite перед публикацией репо (Known Issues) | Автономная сессия M3, merge разрешён разработчиком |
 | 2026-09-27 | Чекпоинт перед новой сессией: M4 стартовал (ветка feature/m4-srs запушена, детализация 4.1–4.6, контракт src/domain/srs/types.ts); порядок работ — в In Progress | Ограничение токенов сессии |
 | 2026-09-27 | M3#3.1: 8 схем draft-07 в `data/schemas/` (вкл. envelope и trap), §6.5 trap в спеке 05, `scripts/validate-data.mjs` (ajv + кросс-ссылки + аудио) → `npm run validate:data`, шаг Validate data в CI; ajv/ajv-formats в devDeps | План M3#3.1 |
+| 2026-09-28 | M4#4.1 выполнена: `src/domain/srs/scheduler.ts` + 28 unit-тестов (test/lint/typecheck/validate:data/audit зелёные); API ts-fsrs 4.7.1 сверен — learning_steps не конфигурируются (REVIEW-маркер в коде) | Автономная сессия, merge/push разрешены |
