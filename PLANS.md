@@ -74,10 +74,10 @@
 ## M4: Карточки SRS {#M4}
 > Контракт — specs/03 (SRS) + specs/06 §3 (Dexie) + архитектурные «швы» (домен без знания о хранилище, `ProgressRepository`, UUIDv7, `review_log` append-only). Ветка: `feature/m4-srs`.
 - [x] 4.1 Доменное ядро `src/domain/srs/` (чистый TS): обёртка ts-fsrs (retention 0.90, max 36500, fuzz, short-term, steps 1m/10m, relearn 10m), модели note/card, `card_id = <entity_id>.<тип>`, границы дня 4:00, очередь сессии (learning → review young→mature → new), лимиты (15 новых, flood-guard 50/120/200, пробуждение обратных ≤5/день, rule-2 ≥7 дней) + unit-тесты
-- [ ] 4.2 `ProgressRepository` (интерфейс) + реализация на Dexie по specs/06 §3 (зеркала таблиц, sync_queue, meta, `review_log` append-only, UUIDv7 на клиенте) + тесты на fake-indexeddb
-- [ ] 4.3 Загрузчик контента: `data/words/*.json` → заметки слов (deck `words`), создание карточек по rule-1 (en-ru первой), дозаполнениеManifestа приложения
-- [ ] 4.4 Экран повторения `/srs`: очередь, 2 кнопки по умолчанию (1/2, пробел — показать ответ), блоки по 20, счётчики учу/повтор/новые, мгновенное сохранение каждого ответа; i18n ru/en
-- [ ] 4.5 Гейты: `npm test`, `lint`, `typecheck`, `validate:data`, `audit` — зелёные
+- [x] 4.2 `ProgressRepository` (интерфейс) + реализация на Dexie по specs/06 §3 (зеркала таблиц, sync_queue, meta, `review_log` append-only, UUIDv7 на клиенте) + тесты на fake-indexeddb
+- [x] 4.3 Загрузчик контента: `data/words/*.json` → заметки слов (deck `words`), создание карточек по rule-1 (en-ru первой), дозаполнениеManifestа приложения
+- [x] 4.4 Экран повторения `/srs`: очередь, 2 кнопки по умолчанию (1/2, пробел — показать ответ), блоки по 20, счётчики учу/повтор/новые, мгновенное сохранение каждого ответа; i18n ru/en
+- [x] 4.5 Гейты: `npm test`, `lint`, `typecheck`, `validate:data`, `audit` — зелёные
 - [ ] 4.6 Ревью ветки суб-агентами + исправления + merge в `main` при зелёном CI
 
 ## Черновик следующих майлстоунов (детализировать после M1)

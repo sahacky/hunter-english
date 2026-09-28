@@ -11,11 +11,8 @@
 - M2: скаффолд Vite+React+TS, i18n ru/en, hash-роутинг, Vitest+Playwright, CI/deploy; hotfix CI (PR #1 был смержен с красным CI — `npm ci` падал): Vite 7, `@testing-library/dom`, `@types/node`, Prettier в lint, typecheck конфигов, Node 22, `supabase-js` и `/login` убраны до M12. Все проверки зелёные локально, включая e2e
 
 ## In Progress
-- M4 (ветка `feature/m4-srs`, запушена): 4.1 готово — `src/domain/srs/scheduler.ts` (applyAnswer → CardState+log, UUIDv7 для лога передаёт вызывающий; dayStart/studyDay 4:00; newLimitForDebt 15/8/4/0; isWakeUpDue ≥7д; buildQueue learning→young→mature→wake-up ≤5/д→new c round-robin по колодам) + 28 unit-тестов. REVIEW-маркер в коде: ts-fsrs 4.7 не конфигурирует learning_steps — минутные шаги заданы библиотекой (New: Again 1м/Hard 5м/Good 10м; Relearning 5м), см. specs/03 §2. **Дальше по порядку**:
-  2. 4.2 `src/data/`: Dexie-схема по specs/06 §3 (зеркала + sync_queue + meta; user_id='local' в MVP), ProgressRepository (ensureCards/getQueue/saveAnswer в транзакции: upsert card + append review_log), uuidv7 утилита, тесты на fake-indexeddb
-  3. 4.3 контент: data/words/*.json через `import.meta.glob('/data/words/*.json')` → Note{en=lemma, ru=translation_ru[0], audio}, создание en-ru карточек по rule-1
-  4. 4.4 экран `/srs` (заменить Placeholder в App.tsx): 2 кнопки (1=Again, 2=Good, пробел=показать ответ), блоки по 20, счётчики красный/зелёный/синий, сохранение сразу; i18n-ключи ru+en
-  5. 4.5 гейты (test/lint/typecheck/validate:data/audit) → 4.6 ревью → merge PR
+- M4 (ветка `feature/m4-srs`): 4.1–4.4 готовы — ядро планировщика (scheduler.ts, applyAnswer/dayStart 4:00/flood-guard/buildQueue/wake-up, REVIEW-маркер про шаги ts-fsrs), Dexie-репозиторий + uuidv7 (db.ts зеркалит specs/06 §3, user_id='local', saveAnswer = транзакция upsert+append+sync_queue), загрузчик слов (ленивый glob, ~3 989 Note, createFirstCards rule-1), экран `/srs` (фазы loading→очередь→блок 20→финал; пробел/1/2; счётчики Anki-цветами; мгновенный saveAnswer; i18n ru/en; repo/notes инъекция для тестов). Гейты локально зелёные: test 42 / lint / typecheck / validate:data / audit. **Дальше**:
+  5. 4.6 ревью ветки суб-агентами + исправления + merge PR в main при зелёном CI (gh нет — GitHub API через `curl -H "Authorization: Bearer $(cat ~/tok)"`)
 
 ## TODO
 - M4: Карточки SRS (ts-fsrs, Dexie, `ProgressRepository`) — следующий майлстоун после M3
@@ -89,3 +86,5 @@
 | 2026-09-27 | Чекпоинт перед новой сессией: M4 стартовал (ветка feature/m4-srs запушена, детализация 4.1–4.6, контракт src/domain/srs/types.ts); порядок работ — в In Progress | Ограничение токенов сессии |
 | 2026-09-27 | M3#3.1: 8 схем draft-07 в `data/schemas/` (вкл. envelope и trap), §6.5 trap в спеке 05, `scripts/validate-data.mjs` (ajv + кросс-ссылки + аудио) → `npm run validate:data`, шаг Validate data в CI; ajv/ajv-formats в devDeps | План M3#3.1 |
 | 2026-09-28 | M4#4.1 выполнена: `src/domain/srs/scheduler.ts` + 28 unit-тестов (test/lint/typecheck/validate:data/audit зелёные); API ts-fsrs 4.7.1 сверен — learning_steps не конфигурируются (REVIEW-маркер в коде) | Автономная сессия, merge/push разрешены |
+| 2026-09-28 | M4#4.2–4.3 выполнены: Dexie-репозиторий + uuidv7 (+dexie/fake-indexeddb; eslint no-unused-vars varsIgnorePattern '^_'), загрузчик слов (ленивые чанки) + createFirstCards; 37 тестов зелёные | Автономная сессия |
+| 2026-09-28 | M4#4.4–4.5 выполнены: экран /srs (бутрап+очередь+блоки 20+финал, клавиши пробел/1/2, счётчики, i18n), локальные гейты зелёные (42 теста) | Автономная сессия |
