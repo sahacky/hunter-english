@@ -137,11 +137,10 @@ function stripArticles(tokens: readonly string[]): string[] {
 
 /**
  * Мягкая проверка распознанной речи (specs/02 §4.8): сравнение по словам,
- * порог 0.85 (0.80 для фраз длиннее 8 слов). Артикли убираются только из
- * распознанной речи.
- * REVIEW: спека убирает артикли лишь из ответа, но в знаменателе len(R) они
- * остаются — пропуск артикля в короткой фразе может дать retry; следуем спеке
- * буквально, пересмотр — при тюнинге голоса (M6).
+ * порог 0.85 (0.80 для фраз длиннее 8 слов).
+ * M6#6.2 (решение M6#2): артикли a/an/the исключаются из ОБОИХ сторон —
+ * распознавание регулярно их глотает, знаменатель считается по не-артикльным
+ * словам эталона (REVIEW-маркер M5 снят; кандидат на правку specs/02 §4.8).
  * VERDICT_RETRY ошибкой не считается: попытки не ограничены (§4.8).
  */
 export function judgeVoice(recognized: string, task: CheckTask): CheckResult {
@@ -149,18 +148,20 @@ export function judgeVoice(recognized: string, task: CheckTask): CheckResult {
   let best: { ratio: number; candidate: Candidate } | null = null
   for (const ref of task.accepted) {
     const refTokens = expandTokens(tokenize(ref))
-    if (refTokens.length === 0) continue
+    const refBare = stripArticles(refTokens)
+    if (refBare.length === 0) continue
     const pool = [...userTokens]
     let matched = 0
-    for (const word of refTokens) {
+    for (const word of refBare) {
       const index = pool.indexOf(word)
       if (index >= 0) {
         matched += 1
         pool.splice(index, 1)
       }
     }
-    const ratio = matched / refTokens.length
-    const threshold = refTokens.length > VOICE_LONG_PHRASE ? VOICE_RATIO_LONG : VOICE_RATIO
+    const ratio = matched / refBare.length
+    const long = refBare.length > VOICE_LONG_PHRASE
+    const threshold = long ? VOICE_RATIO_LONG : VOICE_RATIO
     const candidate = buildCandidate(userTokens, refTokens, ref, task.exactTypos === true)
     if (!best || ratio > best.ratio) best = { ratio, candidate }
     if (ratio >= threshold) {

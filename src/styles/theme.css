@@ -379,3 +379,48 @@ body {
   flex-direction: column;
   gap: 4px;
 }
+
+/* ===== M6: волна микрофона (specs/02 §3, specs/08 §7; reduced-motion — §8) ===== */
+.lesson-wave {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  height: 28px;
+}
+.lesson-wave-bar {
+  width: 4px;
+  height: 8px;
+  border-radius: 2px;
+  background: var(--primary);
+  animation: lesson-wave-pulse 0.9s ease-in-out infinite;
+}
+.lesson-wave-bar:nth-child(2n) {
+  animation-delay: 0.15s;
+}
+.lesson-wave-bar:nth-child(3n) {
+  animation-delay: 0.3s;
+}
+.lesson-wave-bar:nth-child(4n) {
+  animation-delay: 0.45s;
+}
+.lesson-wave-bar:nth-child(5n) {
+  animation-delay: 0.6s;
+}
+@keyframes lesson-wave-pulse {
+  0%,
+  100% {
+    height: 6px;
+    opacity: 0.5;
+  }
+  50% {
+    height: 26px;
+    opacity: 1;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .lesson-wave-bar {
+    animation: none;
+    height: 6px;
+    opacity: 0.7;
+  }
+}

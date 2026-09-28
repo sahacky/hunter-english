@@ -30,7 +30,7 @@ import {
 import { createFirstCards } from '../content/words'
 import type { ProgressRepository } from '../domain/progress'
 import { DexieProgressRepository } from '../data/progress-repository'
-import { playAudio, stopAudio } from '../lib/audio'
+import { speak, stopSpeak } from '../lib/tts'
 import {
   ChooseTranslationExercise,
   InputCheckExercise,
@@ -118,7 +118,7 @@ function RuleCard({ view, onUnderstood }: { view: LessonView; onUnderstood: () =
                 <button
                   type="button"
                   className="srs-btn"
-                  onClick={() => playAudio(phrase.audio!.en_gb!)}
+                  onClick={() => speak(phrase.text_en, { src: phrase.audio?.en_gb })}
                 >
                   🔊
                 </button>
@@ -260,7 +260,7 @@ export default function LessonScreen({
     })
     return () => {
       alive = false
-      stopAudio()
+      stopSpeak()
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [courseId])
@@ -298,7 +298,7 @@ export default function LessonScreen({
   /** «Дальше»: следующее задание шага или переход шага (specs/02 §2). */
   const handleNext = useCallback(() => {
     if (!view || !step) return
-    stopAudio()
+    stopSpeak()
     const more = exerciseIndex + 1 < stepExercises.length
     if (more) {
       setExerciseIndex(exerciseIndex + 1)

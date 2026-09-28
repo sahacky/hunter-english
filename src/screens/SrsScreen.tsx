@@ -16,6 +16,7 @@ import { loadPhraseNotes } from '../content/lessons'
 import type { ProgressRepository } from '../domain/progress'
 import { DexieProgressRepository } from '../data/progress-repository'
 import { uuidv7 } from '../lib/uuidv7'
+import { speak, stopSpeak } from '../lib/tts'
 
 const BLOCK_SIZE = 20
 
@@ -147,6 +148,10 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
       if (event.code === 'Space') {
         event.preventDefault()
         setRevealed(true)
+      } else if (!event.repeat && event.key.toLowerCase() === 'r') {
+        speak(entry.note.en, { src: entry.note.audio })
+      } else if (!event.repeat && event.key.toLowerCase() === 's') {
+        speak(entry.note.en, { src: entry.note.audio, rate: 0.75 })
       } else if (!event.repeat && revealed && event.key === '1') {
         void answer(1)
       } else if (!event.repeat && revealed && event.key === '2') {
@@ -166,7 +171,10 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
     }
   }, [queue])
 
-  const finish = () => setPhase({ kind: 'done', empty: false })
+  const finish = () => {
+    stopSpeak()
+    setPhase({ kind: 'done', empty: false })
+  }
 
   if (phase.kind === 'loading') {
     return (
@@ -242,6 +250,22 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
         <p className="srs-front" lang="en">
           {entry.note.en}
         </p>
+        <div className="lesson-audio" aria-label={t('srs.audioLabel')}>
+          <button
+            type="button"
+            className="srs-btn"
+            onClick={() => speak(entry.note.en, { src: entry.note.audio })}
+          >
+            🔊 <kbd>R</kbd>
+          </button>
+          <button
+            type="button"
+            className="srs-btn"
+            onClick={() => speak(entry.note.en, { src: entry.note.audio, rate: 0.75 })}
+          >
+            🐢 <kbd>S</kbd>
+          </button>
+        </div>
         {revealed ? (
           <p className="srs-back" lang="ru">
             {entry.note.ru}

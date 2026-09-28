@@ -199,11 +199,12 @@ describe('judgeVoice (specs/02 §4.8)', () => {
     expect(result.verdict).toBe('correct')
   })
 
-  it('REVIEW спеки: артикль в знаменателе — короткая фраза даёт retry', () => {
-    // «give me the map» → артикль убран из ответа, но остался в эталоне: 3/4 < 0.85.
-    // Следуем спеке буквально; пересмотр — при тюнинге голоса (M6).
-    const result = judgeVoice('give me the map', task(['Give me the map']))
-    expect(result.verdict).toBe('retry')
+  it('артикли исключаются из обеих сторон (решение M6#2)', () => {
+    // «give me map» против «Give me the map»: знаменатель без артикля → 3/3 → correct.
+    const dropped = judgeVoice('give me map', task(['Give me the map']))
+    expect(dropped.verdict).toBe('correct')
+    const full = judgeVoice('give me the map', task(['Give me the map']))
+    expect(full.verdict).toBe('correct')
   })
 
   it('judge в режиме voice уходит в голосовую проверку', () => {

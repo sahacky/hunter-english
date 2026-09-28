@@ -39,7 +39,8 @@
       "learning": "Learn",
       "review": "Due",
       "new": "New"
-    }
+    },
+    "audioLabel": "Word audio"
   },
   "common": {
     "loading": "Loading…",
@@ -107,6 +108,7 @@
     "repeatNote": "A repeat pass does not overwrite the original progress and gives no completion bonus.",
     "repeatLesson": "Take it again",
     "unknownExercise": "Unknown exercise type: {{type}}",
-    "completionNote": "The lesson is marked as passed once ≥90% of its phrases are learned in reviews (interval ≥7 days)."
+    "completionNote": "The lesson is marked as passed once ≥90% of its phrases are learned in reviews (interval ≥7 days).",
+    "giveUp": "Give up"
   }
 }
