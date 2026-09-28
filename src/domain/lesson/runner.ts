@@ -38,19 +38,10 @@ function ensureScore(scores: StepScore[], step: LessonStep): StepScore {
   return { stepIndex: step.index, total: step.exerciseIds.length, answered: 0, firstTryCorrect: 0 }
 }
 
-/** Задание считается отвеченным в любом исходе, кроме повторной попытки того же задания. */
-function isAnswered(outcome: ExerciseOutcome): boolean {
-  return outcome !== 'hint'
-}
-
-/** Верно с первой попытки: полный успех либо спор/самопроверка (specs/02 §3, §4.6). */
-function isCorrectFirstTry(outcome: ExerciseOutcome): boolean {
-  return outcome === 'correct' || outcome === 'disputed' || outcome === 'self_reported'
-}
-
 /**
  * Фиксирует результат задания в чекпоинте (иммутабельно): счёт шага, исход,
- * попытки. Вызывается сразу после вердикта — чекпоинт пишется в репозиторий.
+ * попытки. Идемпотентно по exerciseId: повторная запись (спор «Я был прав»,
+ * повторный ответ после resume) обновляет исход, но не наращивает счёт шага.
  */
 export function recordAnswer(
   checkpoint: LessonCheckpoint,
@@ -61,18 +52,35 @@ export function recordAnswer(
 ): LessonCheckpoint {
   const step = findStep(steps, checkpoint.stepIndex)
   if (!step || !step.exerciseIds.includes(exerciseId)) return checkpoint
+  const previous = checkpoint.results[exerciseId]
   const prev = ensureScore(checkpoint.scores, step)
-  const score: StepScore = {
-    ...prev,
-    answered: prev.answered + (isAnswered(outcome) ? 1 : 0),
-    firstTryCorrect: prev.firstTryCorrect + (isCorrectFirstTry(outcome) ? 1 : 0),
+  // перезапись (спор §4.6, повторный ответ после resume): счёт answered не трогаем,
+  // точность корректируем при смене класса исхода (неверно → засчитан верным и обратно)
+  let firstTryCorrect = prev.firstTryCorrect
+  if (previous) {
+    if (!isCorrectFirstTry(previous.outcome) && isCorrectFirstTry(outcome)) firstTryCorrect += 1
+    else if (isCorrectFirstTry(previous.outcome) && !isCorrectFirstTry(outcome))
+      firstTryCorrect -= 1
+  } else if (isCorrectFirstTry(outcome)) {
+    firstTryCorrect += 1
   }
+  const score: StepScore = previous
+    ? { ...prev, firstTryCorrect }
+    : { ...prev, answered: prev.answered + 1, firstTryCorrect }
   const result: ExerciseResult = { attempts, outcome }
   return {
     ...checkpoint,
     scores: [...checkpoint.scores.filter((s) => s.stepIndex !== step.index), score],
     results: { ...checkpoint.results, [exerciseId]: result },
   }
+}
+
+/**
+ * Верно с первой попытки: полный успех либо спор (specs/02 §4.6 — засчитывается
+ * верным). Самопроверка речи НЕ растит статистику точности (specs/02 §3) — только XP.
+ */
+function isCorrectFirstTry(outcome: ExerciseOutcome): boolean {
+  return outcome === 'correct' || outcome === 'disputed'
 }
 
 /** Оценка текущего шага (критерий specs/02 §2). */

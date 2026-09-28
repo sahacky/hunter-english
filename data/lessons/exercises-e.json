@@ -752,6 +752,24 @@
     },
     {
       "id": "ex-e-0042",
+      "type": "answer_question",
+      "payload": {
+        "kind": "answer_question",
+        "question_en": "Are you Ivan?",
+        "phrase_id": "ph-e-0010"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-e-0043",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -773,7 +791,7 @@
       }
     },
     {
-      "id": "ex-e-0043",
+      "id": "ex-e-0044",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -795,7 +813,7 @@
       }
     },
     {
-      "id": "ex-e-0044",
+      "id": "ex-e-0045",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -812,7 +830,7 @@
       }
     },
     {
-      "id": "ex-e-0045",
+      "id": "ex-e-0046",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -829,7 +847,7 @@
       }
     },
     {
-      "id": "ex-e-0046",
+      "id": "ex-e-0047",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -846,7 +864,7 @@
       }
     },
     {
-      "id": "ex-e-0047",
+      "id": "ex-e-0048",
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
@@ -869,7 +887,7 @@
       }
     },
     {
-      "id": "ex-e-0048",
+      "id": "ex-e-0049",
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
@@ -892,7 +910,7 @@
       }
     },
     {
-      "id": "ex-e-0049",
+      "id": "ex-e-0050",
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
@@ -915,7 +933,7 @@
       }
     },
     {
-      "id": "ex-e-0050",
+      "id": "ex-e-0051",
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
@@ -938,7 +956,7 @@
       }
     },
     {
-      "id": "ex-e-0051",
+      "id": "ex-e-0052",
       "type": "match_pairs",
       "payload": {
         "kind": "match_pairs",
@@ -975,7 +993,7 @@
       }
     },
     {
-      "id": "ex-e-0052",
+      "id": "ex-e-0053",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -993,7 +1011,7 @@
       }
     },
     {
-      "id": "ex-e-0053",
+      "id": "ex-e-0054",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -1011,7 +1029,7 @@
       }
     },
     {
-      "id": "ex-e-0054",
+      "id": "ex-e-0055",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -1029,7 +1047,7 @@
       }
     },
     {
-      "id": "ex-e-0055",
+      "id": "ex-e-0056",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -1047,7 +1065,7 @@
       }
     },
     {
-      "id": "ex-e-0056",
+      "id": "ex-e-0057",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -1065,7 +1083,7 @@
       }
     },
     {
-      "id": "ex-e-0057",
+      "id": "ex-e-0058",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -1083,7 +1101,7 @@
       }
     },
     {
-      "id": "ex-e-0058",
+      "id": "ex-e-0059",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -1101,7 +1119,7 @@
       }
     },
     {
-      "id": "ex-e-0059",
+      "id": "ex-e-0060",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -1119,7 +1137,7 @@
       }
     },
     {
-      "id": "ex-e-0060",
+      "id": "ex-e-0061",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -1136,7 +1154,7 @@
       }
     },
     {
-      "id": "ex-e-0061",
+      "id": "ex-e-0062",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -1153,7 +1171,7 @@
       }
     },
     {
-      "id": "ex-e-0062",
+      "id": "ex-e-0063",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -1170,7 +1188,7 @@
       }
     },
     {
-      "id": "ex-e-0063",
+      "id": "ex-e-0064",
       "type": "speak",
       "payload": {
         "kind": "speak",
@@ -1188,7 +1206,7 @@
       }
     },
     {
-      "id": "ex-e-0064",
+      "id": "ex-e-0065",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -1205,7 +1223,7 @@
       }
     },
     {
-      "id": "ex-e-0065",
+      "id": "ex-e-0066",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -1222,7 +1240,7 @@
       }
     },
     {
-      "id": "ex-e-0066",
+      "id": "ex-e-0067",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -1239,7 +1257,7 @@
       }
     },
     {
-      "id": "ex-e-0067",
+      "id": "ex-e-0068",
       "type": "speak",
       "payload": {
         "kind": "speak",
@@ -1257,7 +1275,7 @@
       }
     },
     {
-      "id": "ex-e-0068",
+      "id": "ex-e-0069",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -1274,7 +1292,7 @@
       }
     },
     {
-      "id": "ex-e-0069",
+      "id": "ex-e-0070",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -1291,7 +1309,7 @@
       }
     },
     {
-      "id": "ex-e-0070",
+      "id": "ex-e-0071",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -1308,7 +1326,7 @@
       }
     },
     {
-      "id": "ex-e-0071",
+      "id": "ex-e-0072",
       "type": "speak",
       "payload": {
         "kind": "speak",
@@ -1326,7 +1344,7 @@
       }
     },
     {
-      "id": "ex-e-0072",
+      "id": "ex-e-0073",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -1343,7 +1361,7 @@
       }
     },
     {
-      "id": "ex-e-0073",
+      "id": "ex-e-0074",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -1360,7 +1378,7 @@
       }
     },
     {
-      "id": "ex-e-0074",
+      "id": "ex-e-0075",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -1377,7 +1395,7 @@
       }
     },
     {
-      "id": "ex-e-0075",
+      "id": "ex-e-0076",
       "type": "speak",
       "payload": {
         "kind": "speak",
@@ -1395,7 +1413,7 @@
       }
     },
     {
-      "id": "ex-e-0076",
+      "id": "ex-e-0077",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -1411,7 +1429,7 @@
       }
     },
     {
-      "id": "ex-e-0077",
+      "id": "ex-e-0078",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -1427,7 +1445,7 @@
       }
     },
     {
-      "id": "ex-e-0078",
+      "id": "ex-e-0079",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -1443,7 +1461,7 @@
       }
     },
     {
-      "id": "ex-e-0079",
+      "id": "ex-e-0080",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -1459,7 +1477,7 @@
       }
     },
     {
-      "id": "ex-e-0080",
+      "id": "ex-e-0081",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -1475,7 +1493,7 @@
       }
     },
     {
-      "id": "ex-e-0081",
+      "id": "ex-e-0082",
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
@@ -1492,7 +1510,7 @@
       }
     },
     {
-      "id": "ex-e-0082",
+      "id": "ex-e-0083",
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
@@ -1509,7 +1527,7 @@
       }
     },
     {
-      "id": "ex-e-0083",
+      "id": "ex-e-0084",
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
@@ -1526,7 +1544,7 @@
       }
     },
     {
-      "id": "ex-e-0084",
+      "id": "ex-e-0085",
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
@@ -1543,7 +1561,25 @@
       }
     },
     {
-      "id": "ex-e-0085",
+      "id": "ex-e-0086",
+      "type": "answer_question",
+      "payload": {
+        "kind": "answer_question",
+        "question_en": "Is it a big city?",
+        "phrase_id": "ph-e-0051"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-e-0087",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -1565,7 +1601,7 @@
       }
     },
     {
-      "id": "ex-e-0086",
+      "id": "ex-e-0088",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -1587,7 +1623,7 @@
       }
     },
     {
-      "id": "ex-e-0087",
+      "id": "ex-e-0089",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -1604,7 +1640,7 @@
       }
     },
     {
-      "id": "ex-e-0088",
+      "id": "ex-e-0090",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -1621,7 +1657,7 @@
       }
     },
     {
-      "id": "ex-e-0089",
+      "id": "ex-e-0091",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -1638,7 +1674,7 @@
       }
     },
     {
-      "id": "ex-e-0090",
+      "id": "ex-e-0092",
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
@@ -1656,7 +1692,7 @@
       }
     },
     {
-      "id": "ex-e-0091",
+      "id": "ex-e-0093",
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
@@ -1674,7 +1710,7 @@
       }
     },
     {
-      "id": "ex-e-0092",
+      "id": "ex-e-0094",
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
@@ -1692,7 +1728,7 @@
       }
     },
     {
-      "id": "ex-e-0093",
+      "id": "ex-e-0095",
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
@@ -1710,7 +1746,7 @@
       }
     },
     {
-      "id": "ex-e-0094",
+      "id": "ex-e-0096",
       "type": "match_pairs",
       "payload": {
         "kind": "match_pairs",
@@ -1747,7 +1783,7 @@
       }
     },
     {
-      "id": "ex-e-0095",
+      "id": "ex-e-0097",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -1765,7 +1801,7 @@
       }
     },
     {
-      "id": "ex-e-0096",
+      "id": "ex-e-0098",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -1783,7 +1819,7 @@
       }
     },
     {
-      "id": "ex-e-0097",
+      "id": "ex-e-0099",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -1801,7 +1837,7 @@
       }
     },
     {
-      "id": "ex-e-0098",
+      "id": "ex-e-0100",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -1819,7 +1855,7 @@
       }
     },
     {
-      "id": "ex-e-0099",
+      "id": "ex-e-0101",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -1837,7 +1873,7 @@
       }
     },
     {
-      "id": "ex-e-0100",
+      "id": "ex-e-0102",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -1855,7 +1891,7 @@
       }
     },
     {
-      "id": "ex-e-0101",
+      "id": "ex-e-0103",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -1873,7 +1909,7 @@
       }
     },
     {
-      "id": "ex-e-0102",
+      "id": "ex-e-0104",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -1891,7 +1927,7 @@
       }
     },
     {
-      "id": "ex-e-0103",
+      "id": "ex-e-0105",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -1908,7 +1944,7 @@
       }
     },
     {
-      "id": "ex-e-0104",
+      "id": "ex-e-0106",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -1925,7 +1961,7 @@
       }
     },
     {
-      "id": "ex-e-0105",
+      "id": "ex-e-0107",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -1942,7 +1978,7 @@
       }
     },
     {
-      "id": "ex-e-0106",
+      "id": "ex-e-0108",
       "type": "speak",
       "payload": {
         "kind": "speak",
@@ -1960,7 +1996,7 @@
       }
     },
     {
-      "id": "ex-e-0107",
+      "id": "ex-e-0109",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -1977,7 +2013,7 @@
       }
     },
     {
-      "id": "ex-e-0108",
+      "id": "ex-e-0110",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -1994,7 +2030,7 @@
       }
     },
     {
-      "id": "ex-e-0109",
+      "id": "ex-e-0111",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2011,7 +2047,7 @@
       }
     },
     {
-      "id": "ex-e-0110",
+      "id": "ex-e-0112",
       "type": "speak",
       "payload": {
         "kind": "speak",
@@ -2029,7 +2065,7 @@
       }
     },
     {
-      "id": "ex-e-0111",
+      "id": "ex-e-0113",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2046,7 +2082,7 @@
       }
     },
     {
-      "id": "ex-e-0112",
+      "id": "ex-e-0114",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2063,7 +2099,7 @@
       }
     },
     {
-      "id": "ex-e-0113",
+      "id": "ex-e-0115",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2080,7 +2116,7 @@
       }
     },
     {
-      "id": "ex-e-0114",
+      "id": "ex-e-0116",
       "type": "speak",
       "payload": {
         "kind": "speak",
@@ -2098,7 +2134,7 @@
       }
     },
     {
-      "id": "ex-e-0115",
+      "id": "ex-e-0117",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2115,7 +2151,7 @@
       }
     },
     {
-      "id": "ex-e-0116",
+      "id": "ex-e-0118",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2132,7 +2168,7 @@
       }
     },
     {
-      "id": "ex-e-0117",
+      "id": "ex-e-0119",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2149,7 +2185,7 @@
       }
     },
     {
-      "id": "ex-e-0118",
+      "id": "ex-e-0120",
       "type": "speak",
       "payload": {
         "kind": "speak",
@@ -2167,7 +2203,7 @@
       }
     },
     {
-      "id": "ex-e-0119",
+      "id": "ex-e-0121",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -2183,7 +2219,7 @@
       }
     },
     {
-      "id": "ex-e-0120",
+      "id": "ex-e-0122",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -2199,7 +2235,7 @@
       }
     },
     {
-      "id": "ex-e-0121",
+      "id": "ex-e-0123",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -2215,7 +2251,7 @@
       }
     },
     {
-      "id": "ex-e-0122",
+      "id": "ex-e-0124",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -2231,7 +2267,7 @@
       }
     },
     {
-      "id": "ex-e-0123",
+      "id": "ex-e-0125",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -2247,7 +2283,7 @@
       }
     },
     {
-      "id": "ex-e-0124",
+      "id": "ex-e-0126",
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
@@ -2264,7 +2300,7 @@
       }
     },
     {
-      "id": "ex-e-0125",
+      "id": "ex-e-0127",
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
@@ -2281,7 +2317,7 @@
       }
     },
     {
-      "id": "ex-e-0126",
+      "id": "ex-e-0128",
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
@@ -2298,7 +2334,7 @@
       }
     },
     {
-      "id": "ex-e-0127",
+      "id": "ex-e-0129",
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
@@ -2315,7 +2351,25 @@
       }
     },
     {
-      "id": "ex-e-0128",
+      "id": "ex-e-0130",
+      "type": "answer_question",
+      "payload": {
+        "kind": "answer_question",
+        "question_en": "Is he here?",
+        "phrase_id": "ph-e-0099"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-e-0131",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -2337,7 +2391,7 @@
       }
     },
     {
-      "id": "ex-e-0129",
+      "id": "ex-e-0132",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -2359,7 +2413,7 @@
       }
     },
     {
-      "id": "ex-e-0130",
+      "id": "ex-e-0133",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -2376,7 +2430,7 @@
       }
     },
     {
-      "id": "ex-e-0131",
+      "id": "ex-e-0134",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -2393,7 +2447,7 @@
       }
     },
     {
-      "id": "ex-e-0132",
+      "id": "ex-e-0135",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -2410,7 +2464,7 @@
       }
     },
     {
-      "id": "ex-e-0133",
+      "id": "ex-e-0136",
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
@@ -2433,7 +2487,7 @@
       }
     },
     {
-      "id": "ex-e-0134",
+      "id": "ex-e-0137",
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
@@ -2456,7 +2510,7 @@
       }
     },
     {
-      "id": "ex-e-0135",
+      "id": "ex-e-0138",
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
@@ -2479,7 +2533,7 @@
       }
     },
     {
-      "id": "ex-e-0136",
+      "id": "ex-e-0139",
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
@@ -2502,7 +2556,7 @@
       }
     },
     {
-      "id": "ex-e-0137",
+      "id": "ex-e-0140",
       "type": "match_pairs",
       "payload": {
         "kind": "match_pairs",
@@ -2539,7 +2593,7 @@
       }
     },
     {
-      "id": "ex-e-0138",
+      "id": "ex-e-0141",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -2557,7 +2611,7 @@
       }
     },
     {
-      "id": "ex-e-0139",
+      "id": "ex-e-0142",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -2575,7 +2629,7 @@
       }
     },
     {
-      "id": "ex-e-0140",
+      "id": "ex-e-0143",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -2593,7 +2647,7 @@
       }
     },
     {
-      "id": "ex-e-0141",
+      "id": "ex-e-0144",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -2611,7 +2665,7 @@
       }
     },
     {
-      "id": "ex-e-0142",
+      "id": "ex-e-0145",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -2629,7 +2683,7 @@
       }
     },
     {
-      "id": "ex-e-0143",
+      "id": "ex-e-0146",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -2647,7 +2701,7 @@
       }
     },
     {
-      "id": "ex-e-0144",
+      "id": "ex-e-0147",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -2665,7 +2719,7 @@
       }
     },
     {
-      "id": "ex-e-0145",
+      "id": "ex-e-0148",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -2683,7 +2737,7 @@
       }
     },
     {
-      "id": "ex-e-0146",
+      "id": "ex-e-0149",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2700,7 +2754,7 @@
       }
     },
     {
-      "id": "ex-e-0147",
+      "id": "ex-e-0150",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2717,7 +2771,7 @@
       }
     },
     {
-      "id": "ex-e-0148",
+      "id": "ex-e-0151",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2734,7 +2788,7 @@
       }
     },
     {
-      "id": "ex-e-0149",
+      "id": "ex-e-0152",
       "type": "speak",
       "payload": {
         "kind": "speak",
@@ -2752,7 +2806,7 @@
       }
     },
     {
-      "id": "ex-e-0150",
+      "id": "ex-e-0153",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2769,7 +2823,7 @@
       }
     },
     {
-      "id": "ex-e-0151",
+      "id": "ex-e-0154",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2786,7 +2840,7 @@
       }
     },
     {
-      "id": "ex-e-0152",
+      "id": "ex-e-0155",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2803,7 +2857,7 @@
       }
     },
     {
-      "id": "ex-e-0153",
+      "id": "ex-e-0156",
       "type": "speak",
       "payload": {
         "kind": "speak",
@@ -2821,7 +2875,7 @@
       }
     },
     {
-      "id": "ex-e-0154",
+      "id": "ex-e-0157",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2838,7 +2892,7 @@
       }
     },
     {
-      "id": "ex-e-0155",
+      "id": "ex-e-0158",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2855,7 +2909,7 @@
       }
     },
     {
-      "id": "ex-e-0156",
+      "id": "ex-e-0159",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2872,7 +2926,7 @@
       }
     },
     {
-      "id": "ex-e-0157",
+      "id": "ex-e-0160",
       "type": "speak",
       "payload": {
         "kind": "speak",
@@ -2890,7 +2944,7 @@
       }
     },
     {
-      "id": "ex-e-0158",
+      "id": "ex-e-0161",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2907,7 +2961,7 @@
       }
     },
     {
-      "id": "ex-e-0159",
+      "id": "ex-e-0162",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2924,7 +2978,7 @@
       }
     },
     {
-      "id": "ex-e-0160",
+      "id": "ex-e-0163",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -2941,7 +2995,7 @@
       }
     },
     {
-      "id": "ex-e-0161",
+      "id": "ex-e-0164",
       "type": "speak",
       "payload": {
         "kind": "speak",
@@ -2959,7 +3013,7 @@
       }
     },
     {
-      "id": "ex-e-0162",
+      "id": "ex-e-0165",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -2975,7 +3029,7 @@
       }
     },
     {
-      "id": "ex-e-0163",
+      "id": "ex-e-0166",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -2991,7 +3045,7 @@
       }
     },
     {
-      "id": "ex-e-0164",
+      "id": "ex-e-0167",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -3007,7 +3061,7 @@
       }
     },
     {
-      "id": "ex-e-0165",
+      "id": "ex-e-0168",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -3023,7 +3077,7 @@
       }
     },
     {
-      "id": "ex-e-0166",
+      "id": "ex-e-0169",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -3039,7 +3093,7 @@
       }
     },
     {
-      "id": "ex-e-0167",
+      "id": "ex-e-0170",
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
@@ -3056,7 +3110,7 @@
       }
     },
     {
-      "id": "ex-e-0168",
+      "id": "ex-e-0171",
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
@@ -3073,7 +3127,7 @@
       }
     },
     {
-      "id": "ex-e-0169",
+      "id": "ex-e-0172",
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
@@ -3090,7 +3144,7 @@
       }
     },
     {
-      "id": "ex-e-0170",
+      "id": "ex-e-0173",
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
@@ -3107,7 +3161,7 @@
       }
     },
     {
-      "id": "ex-e-0171",
+      "id": "ex-e-0174",
       "type": "answer_question",
       "payload": {
         "kind": "answer_question",
@@ -3125,7 +3179,7 @@
       }
     },
     {
-      "id": "ex-e-0172",
+      "id": "ex-e-0175",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -3147,7 +3201,7 @@
       }
     },
     {
-      "id": "ex-e-0173",
+      "id": "ex-e-0176",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -3169,7 +3223,7 @@
       }
     },
     {
-      "id": "ex-e-0174",
+      "id": "ex-e-0177",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -3186,7 +3240,7 @@
       }
     },
     {
-      "id": "ex-e-0175",
+      "id": "ex-e-0178",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -3203,7 +3257,7 @@
       }
     },
     {
-      "id": "ex-e-0176",
+      "id": "ex-e-0179",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -3220,7 +3274,7 @@
       }
     },
     {
-      "id": "ex-e-0177",
+      "id": "ex-e-0180",
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
@@ -3238,7 +3292,7 @@
       }
     },
     {
-      "id": "ex-e-0178",
+      "id": "ex-e-0181",
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
@@ -3256,7 +3310,7 @@
       }
     },
     {
-      "id": "ex-e-0179",
+      "id": "ex-e-0182",
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
@@ -3274,7 +3328,7 @@
       }
     },
     {
-      "id": "ex-e-0180",
+      "id": "ex-e-0183",
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
@@ -3292,7 +3346,7 @@
       }
     },
     {
-      "id": "ex-e-0181",
+      "id": "ex-e-0184",
       "type": "match_pairs",
       "payload": {
         "kind": "match_pairs",
@@ -3329,7 +3383,7 @@
       }
     },
     {
-      "id": "ex-e-0182",
+      "id": "ex-e-0185",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -3347,7 +3401,7 @@
       }
     },
     {
-      "id": "ex-e-0183",
+      "id": "ex-e-0186",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -3365,7 +3419,7 @@
       }
     },
     {
-      "id": "ex-e-0184",
+      "id": "ex-e-0187",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -3383,7 +3437,7 @@
       }
     },
     {
-      "id": "ex-e-0185",
+      "id": "ex-e-0188",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -3401,7 +3455,7 @@
       }
     },
     {
-      "id": "ex-e-0186",
+      "id": "ex-e-0189",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -3419,7 +3473,7 @@
       }
     },
     {
-      "id": "ex-e-0187",
+      "id": "ex-e-0190",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -3437,7 +3491,7 @@
       }
     },
     {
-      "id": "ex-e-0188",
+      "id": "ex-e-0191",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -3455,7 +3509,7 @@
       }
     },
     {
-      "id": "ex-e-0189",
+      "id": "ex-e-0192",
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
@@ -3473,7 +3527,7 @@
       }
     },
     {
-      "id": "ex-e-0190",
+      "id": "ex-e-0193",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -3490,7 +3544,7 @@
       }
     },
     {
-      "id": "ex-e-0191",
+      "id": "ex-e-0194",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -3507,7 +3561,7 @@
       }
     },
     {
-      "id": "ex-e-0192",
+      "id": "ex-e-0195",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -3524,7 +3578,7 @@
       }
     },
     {
-      "id": "ex-e-0193",
+      "id": "ex-e-0196",
       "type": "speak",
       "payload": {
         "kind": "speak",
@@ -3542,7 +3596,7 @@
       }
     },
     {
-      "id": "ex-e-0194",
+      "id": "ex-e-0197",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -3559,7 +3613,7 @@
       }
     },
     {
-      "id": "ex-e-0195",
+      "id": "ex-e-0198",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -3576,7 +3630,7 @@
       }
     },
     {
-      "id": "ex-e-0196",
+      "id": "ex-e-0199",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -3593,7 +3647,7 @@
       }
     },
     {
-      "id": "ex-e-0197",
+      "id": "ex-e-0200",
       "type": "speak",
       "payload": {
         "kind": "speak",
@@ -3611,7 +3665,7 @@
       }
     },
     {
-      "id": "ex-e-0198",
+      "id": "ex-e-0201",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -3628,7 +3682,7 @@
       }
     },
     {
-      "id": "ex-e-0199",
+      "id": "ex-e-0202",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -3645,7 +3699,7 @@
       }
     },
     {
-      "id": "ex-e-0200",
+      "id": "ex-e-0203",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -3662,7 +3716,7 @@
       }
     },
     {
-      "id": "ex-e-0201",
+      "id": "ex-e-0204",
       "type": "speak",
       "payload": {
         "kind": "speak",
@@ -3680,7 +3734,7 @@
       }
     },
     {
-      "id": "ex-e-0202",
+      "id": "ex-e-0205",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -3697,7 +3751,7 @@
       }
     },
     {
-      "id": "ex-e-0203",
+      "id": "ex-e-0206",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -3714,7 +3768,7 @@
       }
     },
     {
-      "id": "ex-e-0204",
+      "id": "ex-e-0207",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -3731,7 +3785,7 @@
       }
     },
     {
-      "id": "ex-e-0205",
+      "id": "ex-e-0208",
       "type": "speak",
       "payload": {
         "kind": "speak",
@@ -3749,7 +3803,7 @@
       }
     },
     {
-      "id": "ex-e-0206",
+      "id": "ex-e-0209",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -3765,7 +3819,7 @@
       }
     },
     {
-      "id": "ex-e-0207",
+      "id": "ex-e-0210",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -3781,7 +3835,7 @@
       }
     },
     {
-      "id": "ex-e-0208",
+      "id": "ex-e-0211",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -3797,7 +3851,7 @@
       }
     },
     {
-      "id": "ex-e-0209",
+      "id": "ex-e-0212",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -3813,7 +3867,7 @@
       }
     },
     {
-      "id": "ex-e-0210",
+      "id": "ex-e-0213",
       "type": "dictation",
       "payload": {
         "kind": "dictation",
@@ -3829,7 +3883,7 @@
       }
     },
     {
-      "id": "ex-e-0211",
+      "id": "ex-e-0214",
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
@@ -3846,7 +3900,7 @@
       }
     },
     {
-      "id": "ex-e-0212",
+      "id": "ex-e-0215",
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
@@ -3863,7 +3917,7 @@
       }
     },
     {
-      "id": "ex-e-0213",
+      "id": "ex-e-0216",
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
@@ -3880,7 +3934,7 @@
       }
     },
     {
-      "id": "ex-e-0214",
+      "id": "ex-e-0217",
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
@@ -3897,7 +3951,7 @@
       }
     },
     {
-      "id": "ex-e-0215",
+      "id": "ex-e-0218",
       "type": "answer_question",
       "payload": {
         "kind": "answer_question",
@@ -3915,7 +3969,7 @@
       }
     },
     {
-      "id": "ex-e-0216",
+      "id": "ex-e-0219",
       "type": "cloze",
       "payload": {
         "kind": "cloze",
@@ -3937,7 +3991,7 @@
       }
     },
     {
-      "id": "ex-e-0217",
+      "id": "ex-e-0220",
       "type": "cloze",
       "payload": {
         "kind": "cloze",

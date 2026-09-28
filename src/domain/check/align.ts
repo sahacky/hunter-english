@@ -4,8 +4,9 @@ import { compareWords } from './levenshtein'
 import type { DiffToken } from './types'
 
 /** Стоимость замены в выравнивании: совпадение 0, допустимая опечатка 1, ошибка 2. */
-function subCost(userToken: string, refToken: string): number {
+function subCost(userToken: string, refToken: string, exactTypos: boolean): number {
   if (userToken === refToken) return 0
+  if (exactTypos) return 2
   return compareWords(userToken, refToken) === 'typo' ? 1 : 2
 }
 
@@ -22,7 +23,11 @@ interface AlignOp {
  * чтобы статусы соответствовали подсветке specs/02 §4.5.
  * Чистая функция; порядок статусов в результате — слева направо по фразе.
  */
-export function alignWords(user: readonly string[], ref: readonly string[]): DiffToken[] {
+export function alignWords(
+  user: readonly string[],
+  ref: readonly string[],
+  exactTypos = false,
+): DiffToken[] {
   const n = user.length
   const m = ref.length
   const d: number[][] = Array.from({ length: n + 1 }, () => new Array<number>(m + 1).fill(0))
@@ -30,7 +35,7 @@ export function alignWords(user: readonly string[], ref: readonly string[]): Dif
   for (let j = 0; j <= m; j += 1) d[0][j] = j
   for (let i = 1; i <= n; i += 1) {
     for (let j = 1; j <= m; j += 1) {
-      const diagonal = d[i - 1][j - 1] + subCost(user[i - 1], ref[j - 1])
+      const diagonal = d[i - 1][j - 1] + subCost(user[i - 1], ref[j - 1], exactTypos)
       const extra = d[i - 1][j] + 1
       const missing = d[i][j - 1] + 1
       d[i][j] = Math.min(diagonal, extra, missing)
@@ -40,12 +45,16 @@ export function alignWords(user: readonly string[], ref: readonly string[]): Dif
   let i = n
   let j = m
   while (i > 0 || j > 0) {
-    if (i > 0 && j > 0 && d[i][j] === d[i - 1][j - 1] + subCost(user[i - 1], ref[j - 1])) {
+    if (
+      i > 0 &&
+      j > 0 &&
+      d[i][j] === d[i - 1][j - 1] + subCost(user[i - 1], ref[j - 1], exactTypos)
+    ) {
       const u = user[i - 1]
       const r = ref[j - 1]
       if (u === r) {
         ops.push({ kind: 'match', word: u })
-      } else if (compareWords(u, r) === 'typo') {
+      } else if (!exactTypos && compareWords(u, r) === 'typo') {
         ops.push({ kind: 'typo', word: u, ref: r })
       } else {
         ops.push({ kind: 'wrong', word: u, ref: r })

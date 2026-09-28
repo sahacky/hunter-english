@@ -14,6 +14,7 @@
 """
 import json
 import random
+import re
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[3]
@@ -324,6 +325,7 @@ LESSONS = [
         "phrasebook_topic": None,
         "quotes_topic": "greetings",
         "bebris_video": {"lesson": "1.26", "playlist_index": 69, "youtube_id": "bB4K-WblSIk", "title": None},
+        "answer_question": [("Are you Ivan?", "I am Ivan.")],
     },
     {
         "id": "les-e-02", "module": "mod-e-1",
@@ -342,6 +344,7 @@ LESSONS = [
         "phrasebook_topic": None,
         "quotes_topic": "family",
         "bebris_video": {"lesson": "1.27", "playlist_index": 71, "youtube_id": "EmmoAPtgllA", "title": None},
+        "answer_question": [("Is it a big city?", "It is a big city.")],
     },
     {
         "id": "les-e-03", "module": "mod-e-1",
@@ -360,6 +363,7 @@ LESSONS = [
         "phrasebook_topic": None,
         "quotes_topic": "family",
         "bebris_video": {"lesson": "1.30", "playlist_index": 79, "youtube_id": "9omB2YuL1Z8", "title": None},
+        "answer_question": [("Is he here?", "He is not here.")],
     },
     {
         "id": "les-e-04", "module": "mod-e-1",
@@ -471,9 +475,12 @@ def build():
         short = [p for p in lesson_phrase_items if 1 <= len(p["text_en"].split()) <= 4]
         rng.shuffle(short)
         for target in short[:WARMUP_CHOOSE]:
-            pool = [p["text_en"] for p in short if p is not target][:3]
+            pool = [
+                p["text_en"]
+                for p in short
+                if p is not target and p["translation_ru"] != target["translation_ru"]
+            ][:3]
             options = pool + [target["text_en"]]
-            correct = len(options) - 1
             rng.shuffle(options)
             correct = options.index(target["text_en"])
             eid = next_ex()
@@ -485,9 +492,11 @@ def build():
                 "meta": {"skill": "words", "xp": 1},
             })
             lesson_exercises.append({"id": eid})
-        pairs = short[WARMUP_CHOOSE:WARMUP_CHOOSE + MATCH_PAIRS]
+        seen_ru = set()
+        pair_pool = [p for p in short if not (p["translation_ru"] in seen_ru or seen_ru.add(p["translation_ru"]))]
+        pairs = pair_pool[WARMUP_CHOOSE:WARMUP_CHOOSE + MATCH_PAIRS]
         if len(pairs) < MATCH_PAIRS:
-            pairs = short[:MATCH_PAIRS]
+            pairs = pair_pool[:MATCH_PAIRS]
         eid = next_ex()
         exercises_out.append({
             "id": eid, "type": "match_pairs",
@@ -585,14 +594,15 @@ def build():
         for quote_id, gap_word in spec["quotes"]:
             q = load_quote(quote_id)
             text = q["text"]
-            if gap_word not in text:
+            gap_re = re.compile(rf"\b{re.escape(gap_word)}\b")
+            if not gap_re.search(text):
                 raise SystemExit(f"слово {gap_word!r} не найдено в цитате {quote_id}: {text!r}")
             eid = next_ex()
             exercises_out.append({
                 "id": eid, "type": "cloze",
                 "payload": {
                     "kind": "cloze",
-                    "text_with_gap": text.replace(gap_word, "___", 1),
+                    "text_with_gap": gap_re.sub("___", text, count=1),
                     "gap_answers": [gap_word],
                     "quote": {"title": q["title"], "season_episode": q["season_episode"]},
                 },

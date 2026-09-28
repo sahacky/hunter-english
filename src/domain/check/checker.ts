@@ -27,8 +27,9 @@ function buildCandidate(
   userTokens: readonly string[],
   refTokens: readonly string[],
   ref: string,
+  exactTypos: boolean,
 ): Candidate {
-  const diff = alignWords(userTokens, refTokens)
+  const diff = alignWords(userTokens, refTokens, exactTypos)
   return { diff, typos: countTypos(diff), wrong: countWrong(diff), ref }
 }
 
@@ -48,7 +49,7 @@ export function checkText(userInput: string, task: CheckTask): CheckResult {
   for (const ref of task.accepted) {
     const refTokens = expandTokens(tokenize(ref))
     for (const tokens of [userTokens, userExpanded]) {
-      const candidate = buildCandidate(tokens, refTokens, ref)
+      const candidate = buildCandidate(tokens, refTokens, ref, task.exactTypos === true)
       const lenGap = Math.abs(tokens.length - refTokens.length) > 2
       const passes = !lenGap && candidate.wrong === 0 && candidate.typos <= MAX_TYPOS
       if (passes) {
@@ -96,24 +97,37 @@ export function judge(userInput: string, task: CheckTask, mode: CheckMode = 'tex
 }
 
 /**
- * Диктант (specs/02 §3, тип 5): как judge, но пропущенные артикли a/an/the —
- * опечатка, а не ошибка: если строгий вердикт «неверно», повторная проверка
- * со снятыми артиклями у ответа и эталонов может дать correct_typo.
+ * Диктант (specs/02 §3, тип 5): пропущенные артикли a/an/the — опечатка,
+ * а не ошибка. Прощаются только ПРОПУЩЕННЫЕ пользователем артикли эталона
+ * (не более 2): строгий вердикт «неверно» пересматривается по эталонам без
+ * артиклей; лишние артикли ответа остаются ошибкой (лишнее слово). Прочие
+ * опечатки — по общим правилам §4.4 через judge.
  */
 export function judgeDictation(userInput: string, task: CheckTask): CheckResult {
   const strict = judge(userInput, task)
   if (strict.verdict !== 'wrong') return strict
-  const strip = (tokens: readonly string[]) => stripArticles(tokens)
-  const withoutArticles = (s: string) => strip(expandTokens(tokenize(s))).join(' ')
-  const relaxedTask: CheckTask = {
-    ...task,
-    accepted: task.accepted.map(withoutArticles),
+  const userTokens = expandTokens(tokenize(userInput))
+  const articles = ['a', 'an', 'the']
+  // считаем пропущенные артикли по эталонам, чьи прочие слова покрываются ответом
+  let minForgiven = Infinity
+  for (const ref of task.accepted) {
+    const refTokens = expandTokens(tokenize(ref))
+    const rest = [...userTokens]
+    let missing = 0
+    let covered = true
+    for (const word of refTokens) {
+      const index = rest.indexOf(word)
+      if (index >= 0) rest.splice(index, 1)
+      else if (articles.includes(word)) missing += 1
+      else covered = false
+    }
+    if (covered) minForgiven = Math.min(minForgiven, missing)
   }
-  const relaxed = judge(withoutArticles(userInput), relaxedTask)
-  if (relaxed.verdict === 'correct') {
-    return { ...relaxed, verdict: 'correct_typo' }
-  }
-  return strict
+  if (minForgiven > 2) return strict
+  const refWithoutArticles = (s: string) => stripArticles(expandTokens(tokenize(s))).join(' ')
+  const relaxed = judge(userInput, { ...task, accepted: task.accepted.map(refWithoutArticles) })
+  const ok = relaxed.verdict === 'correct' || relaxed.verdict === 'correct_typo'
+  return ok ? { ...relaxed, verdict: 'correct_typo' } : strict
 }
 
 /** Убирает артикли из распознанной речи (specs/02 §4.8). */
@@ -147,7 +161,7 @@ export function judgeVoice(recognized: string, task: CheckTask): CheckResult {
     }
     const ratio = matched / refTokens.length
     const threshold = refTokens.length > VOICE_LONG_PHRASE ? VOICE_RATIO_LONG : VOICE_RATIO
-    const candidate = buildCandidate(userTokens, refTokens, ref)
+    const candidate = buildCandidate(userTokens, refTokens, ref, task.exactTypos === true)
     if (!best || ratio > best.ratio) best = { ratio, candidate }
     if (ratio >= threshold) {
       return toResult('correct', candidate, false)

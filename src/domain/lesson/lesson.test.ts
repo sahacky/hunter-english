@@ -129,6 +129,32 @@ describe('recordAnswer и переходы шагов', () => {
     })
   })
 
+  it('подсказка завершает задание: счёт answered растёт, XP — 0', () => {
+    let cp = createCheckpoint()
+    cp = recordAnswer(cp, STEPS, 'ex-cloze-1', 'hint', 1)
+    expect(cp.scores[0].answered).toBe(1)
+    expect(cp.scores[0].firstTryCorrect).toBe(0)
+    expect(evaluateStep('rule', cp.scores[0]).passed).toBe(false) // ещё не все отвечены
+    cp = recordAnswer(cp, STEPS, 'ex-cloze-2', 'hint', 1)
+    expect(evaluateStep('rule', cp.scores[0]).passed).toBe(true)
+  })
+
+  it('самопроверка речи не растит статистику точности (specs/02 §3)', () => {
+    let cp = createCheckpoint()
+    cp = recordAnswer(cp, STEPS, 'ex-cloze-1', 'self_reported', 1)
+    expect(cp.scores[0].answered).toBe(1)
+    expect(cp.scores[0].firstTryCorrect).toBe(0)
+  })
+
+  it('повторная запись того же задания не наращивает счёт (resume/спор)', () => {
+    let cp = createCheckpoint()
+    cp = recordAnswer(cp, STEPS, 'ex-cloze-1', 'skip', 2)
+    cp = recordAnswer(cp, STEPS, 'ex-cloze-1', 'disputed', 2)
+    expect(cp.scores[0].answered).toBe(1)
+    expect(cp.scores[0].firstTryCorrect).toBe(1)
+    expect(cp.results['ex-cloze-1']).toEqual({ attempts: 2, outcome: 'disputed' })
+  })
+
   it('задание не из текущего шага игнорируется', () => {
     const cp = recordAnswer(createCheckpoint(), STEPS, 'ex-tr-1', 'correct', 1)
     expect(cp.results).toEqual({})

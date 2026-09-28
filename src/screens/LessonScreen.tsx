@@ -7,22 +7,27 @@ import { useParams, useSearchParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import {
   advanceStep,
+  computeLessonStatus,
   createCheckpoint,
   currentStepEvaluation,
   finishPass,
+  findStep,
   passAccuracy,
   recordAnswer,
   totalXp,
 } from '../domain/lesson/runner'
-import type { ExerciseOutcome, LessonCheckpoint } from '../domain/lesson/types'
+import type { ExerciseOutcome, LessonCheckpoint, SrsLessonStats } from '../domain/lesson/types'
 import {
   courseToLessonId,
   loadLessonView,
+  loadTraps,
+  toPhraseNotes,
+  type ExerciseItem,
   type LessonView,
   type PhraseItem,
+  type TrapItem,
 } from '../content/lessons'
 import { createFirstCards } from '../content/words'
-import type { Note } from '../domain/srs/types'
 import type { ProgressRepository } from '../domain/progress'
 import { DexieProgressRepository } from '../data/progress-repository'
 import { playAudio, stopAudio } from '../lib/audio'
@@ -38,8 +43,9 @@ const COURSE_ID_RE = /^(E|D|C|B|A|S)-\d{2}$/
 
 type Phase =
   | { kind: 'loading' }
+  | { kind: 'error' }
   | { kind: 'notfound' }
-  | { kind: 'guard'; stepIndex: number } // «Продолжить / Сначала» (specs/07 §4.4)
+  | { kind: 'guard'; stepIndex: number; repeat: boolean } // specs/07 §4.4 + повтор пройденного
   | { kind: 'step' }
   | { kind: 'deck' } // шаг 7 «В колоду»
   | { kind: 'done' }
@@ -48,21 +54,44 @@ interface LessonScreenProps {
   repo?: ProgressRepository
   /** Собранный урок (инъекция для тестов; по умолчанию — данные ранга из data/). */
   view?: LessonView
+  /** Каталог ловушек (инъекция для тестов; по умолчанию — data/traps.json). */
+  traps?: Map<string, TrapItem>
 }
 
-function phraseNotes(phrases: PhraseItem[]): Note[] {
-  return phrases.map((phrase) => ({
-    id: `note_${phrase.id}`,
-    deck: 'phrases',
-    entityId: phrase.id,
-    en: phrase.text_en,
-    ru: phrase.translation_ru,
-    audio: phrase.audio?.en_gb,
-  }))
+/** Итог прохода для финального экрана — до сброса чекпоинта finishPass. */
+interface PassSummary {
+  xp: number
+  accuracy: number
+  minutes: number
 }
 
 function lessonPhrases(view: LessonView): PhraseItem[] {
   return Object.values(view.phrasesById)
+}
+
+/** SRS-статистика фраз урока для computeLessonStatus (specs/02 §5): интервал ≥7 дней — «выучено». */
+function lessonSrsStats(
+  cards: {
+    card_id: string
+    note_id: string
+    deck: string
+    state: number
+    scheduled_days: number
+  }[],
+  view: LessonView,
+): SrsLessonStats {
+  const ids = new Set(lessonPhrases(view).map((phrase) => phrase.id))
+  let learned = 0
+  let lapsed = 0
+  let total = 0
+  for (const card of cards) {
+    if (card.deck !== 'phrases') continue
+    if (!card.note_id.startsWith('note_') || !ids.has(card.note_id.slice('note_'.length))) continue
+    total += 1
+    if (card.state === 2 && card.scheduled_days >= 7) learned += 1
+    else if (card.state === 2) lapsed += 1
+  }
+  return { total, learned, lapsed }
 }
 
 /** Карточка правила (шаг 1): правило + примеры с озвучкой + «⚠️ Ловушка» (specs/02 §2). */
@@ -107,23 +136,60 @@ function RuleCard({ view, onUnderstood }: { view: LessonView; onUnderstood: () =
   )
 }
 
-export default function LessonScreen({ repo: repoProp, view: viewProp }: LessonScreenProps) {
+export default function LessonScreen({
+  repo: repoProp,
+  view: viewProp,
+  traps: trapsProp,
+}: LessonScreenProps) {
   const { t } = useTranslation()
   const params = useParams<{ id: string }>()
   const [searchParams] = useSearchParams()
   const defaultRepo = useMemo(() => new DexieProgressRepository(), [])
   const repo = repoProp ?? defaultRepo
   const [view, setView] = useState<LessonView | null>(viewProp ?? null)
+  const [traps, setTraps] = useState<Map<string, TrapItem>>(trapsProp ?? new Map())
   const [phase, setPhase] = useState<Phase>({ kind: 'loading' })
   const [checkpoint, setCheckpoint] = useState<LessonCheckpoint>(() => createCheckpoint())
   const [exerciseIndex, setExerciseIndex] = useState(0)
   const [ruleShown, setRuleShown] = useState(false)
-  const [deckEnrolled, setDeckEnrolled] = useState(false)
+  const [summary, setSummary] = useState<PassSummary | null>(null)
   const [startedAt] = useState(() => Date.now())
+  /** прошлый статус записи: повтор пройденного не затирает оригинал (specs/07 §4.4) */
+  const previousRowRef = useRef<{ status: string; score: number | null } | null>(null)
+  const checkpointRef = useRef(checkpoint)
+  checkpointRef.current = checkpoint
   const saveBusy = useRef(false)
+  const pendingRef = useRef<LessonCheckpoint | null>(null)
 
   const courseId = params.id ?? ''
   const valid = COURSE_ID_RE.test(courseId)
+
+  // --- сохранение чекпоинта: очередь «последний выигрывает» ------------------
+  const persist = useCallback(
+    async (cp: LessonCheckpoint) => {
+      if (!view) return
+      pendingRef.current = cp
+      if (saveBusy.current) return
+      saveBusy.current = true
+      try {
+        while (pendingRef.current !== null) {
+          const next = pendingRef.current
+          pendingRef.current = null
+          await repo.putLessonProgress({
+            lesson_id: view.lesson.id,
+            status: (previousRowRef.current?.status as 'in_progress') ?? 'in_progress',
+            score: previousRowRef.current?.score ?? null,
+            checkpoint: next,
+            completed_at: null,
+            updated_at: new Date().toISOString(),
+          })
+        }
+      } finally {
+        saveBusy.current = false
+      }
+    },
+    [repo, view],
+  )
 
   // --- загрузка урока + сохранённого чекпоинта ------------------------------
   useEffect(() => {
@@ -133,34 +199,64 @@ export default function LessonScreen({ repo: repoProp, view: viewProp }: LessonS
         setPhase({ kind: 'notfound' })
         return
       }
+      const stepParam = searchParams.get('step')
       const lessonView = viewProp ?? (await loadLessonView(courseToLessonId(courseId)))
+      const trapMap = trapsProp ?? (await loadTraps())
       if (!alive) return
       if (!lessonView) {
         setPhase({ kind: 'notfound' })
         return
       }
       setView(lessonView)
-      const row = await repo.getLessonProgress(lessonView.lesson.id)
-      if (!alive) return
-      if (row && row.checkpoint.passesDone === 0 && row.checkpoint.stepIndex > 1) {
-        setCheckpoint(row.checkpoint)
-        setPhase({ kind: 'guard', stepIndex: row.checkpoint.stepIndex })
+      setTraps(trapMap)
+      let row
+      try {
+        row = await repo.getLessonProgress(lessonView.lesson.id)
+      } catch {
+        if (alive) setPhase({ kind: 'error' })
         return
       }
-      // deep-link ?step= (specs/07 §4.2): только ≤ достигнутого шага
+      if (!alive) return
+      previousRowRef.current = row ? { status: row.status, score: row.score } : null
       const startCp = row?.checkpoint ?? createCheckpoint()
-      const requested = Number(searchParams.get('step'))
-      const allowed =
-        Number.isInteger(requested) && requested > 0 && requested <= startCp.stepIndex
-          ? requested
-          : startCp.stepIndex
-      const cp = { ...startCp, stepIndex: allowed }
+      const firstStep = findStep(lessonView.steps, startCp.stepIndex) ?? lessonView.steps[0] ?? null
+      if (!firstStep) {
+        setPhase({ kind: 'error' })
+        return
+      }
+      // guard: незавершённый первый проход ИЛИ повтор уже пройденного урока
+      if (row && row.checkpoint.passesDone === 0 && row.checkpoint.stepIndex > 1) {
+        setCheckpoint({ ...startCp, stepIndex: firstStep.index })
+        setPhase({ kind: 'guard', stepIndex: firstStep.index, repeat: false })
+        return
+      }
+      if (row && row.checkpoint.passesDone >= 1) {
+        setCheckpoint(createCheckpoint())
+        setPhase({ kind: 'guard', stepIndex: 1, repeat: true })
+        return
+      }
+      // deep-link ?step= (specs/07 §4.2): только ≤ достигнутого; невалидный — 404
+      if (stepParam !== null) {
+        const requested = Number(stepParam)
+        const okStep =
+          Number.isInteger(requested) && requested >= 1 && requested <= startCp.stepIndex
+        if (!okStep) {
+          setPhase({ kind: 'notfound' })
+          return
+        }
+        const cp = { ...startCp, stepIndex: requested }
+        setCheckpoint(cp)
+        setRuleShown(requested > 1)
+        setPhase(requested === 7 ? { kind: 'deck' } : { kind: 'step' })
+        return
+      }
+      const cp = { ...startCp, stepIndex: firstStep.index }
       setCheckpoint(cp)
-      setRuleShown(allowed > 1) // правило показываем на первом заходе шага 1
-      setPhase(allowed === 7 ? { kind: 'deck' } : { kind: 'step' })
+      setRuleShown(cp.stepIndex > 1)
+      setPhase(cp.stepIndex === 7 ? { kind: 'deck' } : { kind: 'step' })
     }
     void load().catch(() => {
-      if (alive) setPhase({ kind: 'notfound' })
+      if (alive) setPhase({ kind: 'error' })
     })
     return () => {
       alive = false
@@ -171,36 +267,30 @@ export default function LessonScreen({ repo: repoProp, view: viewProp }: LessonS
 
   const step = view?.steps.find((s) => s.index === checkpoint.stepIndex)
   const stepExercises = step ? (view?.content[step.index] ?? []) : []
-
-  const persist = useCallback(
-    async (cp: LessonCheckpoint) => {
-      if (!view || saveBusy.current) return
-      saveBusy.current = true
-      try {
-        await repo.putLessonProgress({
-          lesson_id: view.lesson.id,
-          status: 'in_progress',
-          score: null,
-          checkpoint: cp,
-          completed_at: null,
-          updated_at: new Date().toISOString(),
-        })
-      } finally {
-        saveBusy.current = false
-      }
-    },
-    [repo, view],
-  )
+  const trap: TrapItem | null = view?.lesson.trap_id
+    ? (traps.get(view.lesson.trap_id) ?? null)
+    : null
 
   /** Финальный исход задания (компонент вызывает ровно один раз) — specs/02 §5. */
   const handleAnswer = useCallback(
-    (outcome: ExerciseOutcome, _attempts: number, exerciseId: string) => {
+    (outcome: ExerciseOutcome, attempts: number, exerciseId: string) => {
       if (!view) return
-      setCheckpoint((cp) => {
-        const next = recordAnswer(cp, view.steps, exerciseId, outcome, _attempts)
-        void persist(next)
-        return next
-      })
+      const next = recordAnswer(checkpointRef.current, view.steps, exerciseId, outcome, attempts)
+      setCheckpoint(next)
+      void persist(next)
+    },
+    [view, persist],
+  )
+
+  /** Спор «Я был прав» (specs/02 §4.6): перезапись исхода на disputed (полный XP). */
+  const handleDispute = useCallback(
+    (exerciseId: string) => {
+      if (!view) return
+      const result = checkpointRef.current.results[exerciseId]
+      const attempts = result?.attempts ?? 1
+      const next = recordAnswer(checkpointRef.current, view.steps, exerciseId, 'disputed', attempts)
+      setCheckpoint(next)
+      void persist(next)
     },
     [view, persist],
   )
@@ -214,25 +304,25 @@ export default function LessonScreen({ repo: repoProp, view: viewProp }: LessonS
       setExerciseIndex(exerciseIndex + 1)
       return
     }
-    setCheckpoint((cp) => {
-      const next = advanceStep(cp, view.steps)
-      if (next) {
-        void persist(next)
-        setExerciseIndex(0)
-        setRuleShown(false)
-        setPhase(next.stepIndex === 7 ? { kind: 'deck' } : { kind: 'step' })
-        return next
-      }
-      return cp
-    })
+    const next = advanceStep(checkpointRef.current, view.steps)
+    if (next) {
+      setCheckpoint(next)
+      void persist(next)
+      setExerciseIndex(0)
+      setRuleShown(false)
+      setPhase(next.stepIndex === 7 ? { kind: 'deck' } : { kind: 'step' })
+    }
   }, [view, step, exerciseIndex, stepExercises.length, persist])
 
   /** Повтор шага (разогрев <70% с первой попытки — specs/02 §2: блок повторяется). */
   const repeatStep = () => {
-    setCheckpoint((cp) => ({
-      ...cp,
-      scores: cp.scores.filter((score) => score.stepIndex !== checkpoint.stepIndex),
-    }))
+    const cp: LessonCheckpoint = {
+      ...checkpointRef.current,
+      scores: checkpointRef.current.scores.filter(
+        (score) => score.stepIndex !== checkpointRef.current.stepIndex,
+      ),
+    }
+    setCheckpoint(cp)
     setExerciseIndex(0)
   }
 
@@ -241,7 +331,6 @@ export default function LessonScreen({ repo: repoProp, view: viewProp }: LessonS
     [view, checkpoint],
   )
 
-  // шаг отвечен полностью, но критерий не выполнен (разогрев <70%) — предложить повтор
   const stepNeedsRepeat =
     stepEvaluation !== null &&
     !stepEvaluation.passed &&
@@ -250,38 +339,85 @@ export default function LessonScreen({ repo: repoProp, view: viewProp }: LessonS
     (checkpoint.scores.find((s) => s.stepIndex === checkpoint.stepIndex)?.answered ?? 0) >=
       stepExercises.length
 
-  /** Шаг 7: фразы урока → SRS (rule-1: en-ru первой), завершение прохода. */
+  /** Шаг 7: фразы урока → SRS (rule-1: en-ru первой) — specs/02 §2 шаг 7. */
   const enrollDeck = useCallback(async () => {
-    if (!view || deckEnrolled) return
-    await repo.ensureCards(createFirstCards(phraseNotes(lessonPhrases(view)), new Date()))
-    setDeckEnrolled(true)
-  }, [view, repo, deckEnrolled])
+    if (!view) return
+    await repo.ensureCards(createFirstCards(toPhraseNotes(lessonPhrases(view)), new Date()))
+    const cp: LessonCheckpoint = {
+      ...checkpointRef.current,
+      srsEnqueued: lessonPhrases(view).map((phrase) => phrase.id),
+    }
+    setCheckpoint(cp)
+    void persist(cp)
+  }, [view, repo, persist])
 
   const finishLesson = useCallback(async () => {
     if (!view) return
-    await enrollDeck()
-    const accuracy = passAccuracy(checkpoint.scores)
-    const cp = finishPass(checkpoint)
-    setCheckpoint(cp)
-    await repo.putLessonProgress({
-      lesson_id: view.lesson.id,
-      status: 'completed',
-      score: accuracy,
-      checkpoint: cp,
-      completed_at: new Date().toISOString(),
-      updated_at: new Date().toISOString(),
-    })
-    setPhase({ kind: 'done' })
-  }, [view, enrollDeck, checkpoint, repo])
+    try {
+      await enrollDeck()
+      const accuracy = passAccuracy(checkpointRef.current.scores) ?? 0
+      const xp = totalXp(checkpointRef.current, xpMap(view))
+      const minutes = Math.max(1, Math.round((Date.now() - startedAt) / 60_000))
+      setSummary({ xp, accuracy, minutes })
+      // статус по правилам specs/02 §5; повтор не затирает оригинал (specs/07 §4.4)
+      const cards = await repo.getAllCards()
+      const previous = previousRowRef.current
+      const stored =
+        previous && previous.status !== 'in_progress'
+          ? {
+              status: previous.status as 'completed' | 'review_due',
+              score: previous.score ?? accuracy,
+            }
+          : ((): { status: 'in_progress' | 'completed' | 'review_due'; score: number } => {
+              const status = computeLessonStatus({
+                row: {
+                  lesson_id: view.lesson.id,
+                  status: 'in_progress',
+                  checkpoint: finishPass(checkpointRef.current),
+                  score: accuracy,
+                  completed_at: null,
+                  updated_at: new Date().toISOString(),
+                },
+                previousCompleted: true,
+                totalPasses: 1,
+                srs: lessonSrsStats(cards, view),
+              })
+              const stored: 'in_progress' | 'completed' | 'review_due' =
+                status === 'locked' || status === 'available'
+                  ? 'in_progress'
+                  : status === 'in_progress'
+                    ? 'in_progress'
+                    : status
+              return { status: stored, score: accuracy }
+            })()
+      const cp = finishPass(checkpointRef.current)
+      setCheckpoint(cp)
+      await repo.putLessonProgress({
+        lesson_id: view.lesson.id,
+        status: stored.status,
+        score: stored.score,
+        checkpoint: cp,
+        completed_at: stored.status === 'in_progress' ? null : new Date().toISOString(),
+        updated_at: new Date().toISOString(),
+      })
+      setPhase({ kind: 'done' })
+    } catch {
+      setPhase({ kind: 'error' })
+    }
+  }, [view, enrollDeck, repo, startedAt])
 
   // Enter — «Дальше»/«Понятно», только когда фокус не на интерактивном элементе
-  // (specs/07 §5.1); иначе кнопки обрабатывают Enter сами (без дубля)
+  // (specs/07 §5.1); иначе активный контрол обрабатывает Enter сам (без дубля)
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
       if (event.key !== 'Enter') return
-      if (!(event.target instanceof HTMLBodyElement)) return
+      const target = event.target
+      const onControl =
+        target instanceof HTMLInputElement ||
+        (target instanceof HTMLButtonElement && !target.disabled)
+      if (onControl) return
       if (phase.kind !== 'step') return
-      if (isRuleStepFor(view, checkpoint.stepIndex) && !ruleShown) {
+      if (step?.kind === 'rule' && !ruleShown) {
         setRuleShown(true)
         return
       }
@@ -289,12 +425,24 @@ export default function LessonScreen({ repo: repoProp, view: viewProp }: LessonS
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-  }, [phase.kind, ruleShown, view, checkpoint.stepIndex, handleNext])
+  }, [phase.kind, ruleShown, step, handleNext])
 
   if (phase.kind === 'loading') {
     return (
       <section className="panel lesson-panel">
         <p className="dim">{t('common.loading')}</p>
+      </section>
+    )
+  }
+  if (phase.kind === 'error') {
+    return (
+      <section className="panel lesson-panel">
+        <p className="srs-error">{t('lesson.error')}</p>
+        <div className="lesson-actions">
+          <button type="button" className="srs-btn" onClick={() => window.location.reload()}>
+            {t('lesson.retryLoad')}
+          </button>
+        </div>
       </section>
     )
   }
@@ -310,49 +458,47 @@ export default function LessonScreen({ repo: repoProp, view: viewProp }: LessonS
     return (
       <section className="panel lesson-panel">
         <h2 lang="ru">{view.lesson.title}</h2>
-        <p>{t('lesson.resumePrompt', { step: phase.stepIndex })}</p>
+        {phase.repeat ? (
+          <>
+            <p>{t('lesson.repeatPrompt')}</p>
+            <p className="dim">{t('lesson.repeatNote')}</p>
+          </>
+        ) : (
+          <p>{t('lesson.resumePrompt', { step: phase.stepIndex })}</p>
+        )}
         <div className="lesson-actions">
           <button
             type="button"
             className="srs-btn srs-btn-good"
             onClick={() => {
+              if (phase.repeat) {
+                const fresh = createCheckpoint()
+                setCheckpoint(fresh)
+              }
               setExerciseIndex(0)
               setRuleShown(false)
-              setPhase(checkpoint.stepIndex === 7 ? { kind: 'deck' } : { kind: 'step' })
+              setPhase(
+                !phase.repeat && checkpoint.stepIndex === 7 ? { kind: 'deck' } : { kind: 'step' },
+              )
             }}
           >
-            {t('lesson.resume')}
-          </button>
-          <button
-            type="button"
-            className="srs-btn"
-            onClick={() => {
-              const fresh = createCheckpoint()
-              setCheckpoint(fresh)
-              setExerciseIndex(0)
-              setRuleShown(false)
-              setPhase({ kind: 'step' })
-              void persist(fresh)
-            }}
-          >
-            {t('lesson.startOver')}
+            {phase.repeat ? t('lesson.repeatLesson') : t('lesson.resume')}
           </button>
         </div>
       </section>
     )
   }
   if (phase.kind === 'done') {
-    const xp = totalXp(checkpoint, xpMap(view))
-    const minutes = Math.max(1, Math.round((Date.now() - startedAt) / 60_000))
     return (
       <section className="panel lesson-panel">
         <h2>{t('lesson.lessonDone')}</h2>
         <ul className="lesson-summary">
-          <li>{t('lesson.summaryXp', { xp })}</li>
-          <li>{t('lesson.summaryAccuracy', { accuracy: passAccuracy(checkpoint.scores) ?? 0 })}</li>
-          <li>{t('lesson.summaryTime', { minutes })}</li>
+          <li>{t('lesson.summaryXp', { xp: summary?.xp ?? 0 })}</li>
+          <li>{t('lesson.summaryAccuracy', { accuracy: summary?.accuracy ?? 0 })}</li>
+          <li>{t('lesson.summaryTime', { minutes: summary?.minutes ?? 1 })}</li>
           <li>{t('lesson.summaryDeck', { count: lessonPhrases(view).length })}</li>
         </ul>
+        <p className="dim">{t('lesson.completionNote')}</p>
         {view.lesson.bebris_video?.youtube_id && (
           <p className="dim">
             {t('lesson.videoTopic')}:{' '}
@@ -405,8 +551,9 @@ export default function LessonScreen({ repo: repoProp, view: viewProp }: LessonS
         <ExerciseRouter
           key={current.exercise.id}
           current={current}
-          stepKind={step?.kind ?? 'rule'}
+          trap={trap}
           onAnswer={(outcome, attempts) => handleAnswer(outcome, attempts, current.exercise.id)}
+          onDispute={() => handleDispute(current.exercise.id)}
           onNext={handleNext}
         />
       )}
@@ -426,109 +573,52 @@ export default function LessonScreen({ repo: repoProp, view: viewProp }: LessonS
 /** Роутер типов упражнений: маппинг type → компонент. */
 function ExerciseRouter({
   current,
-  stepKind,
+  trap,
   onAnswer,
+  onDispute,
   onNext,
 }: {
-  current: { exercise: import('../content/lessons').ExerciseItem; phrase: PhraseItem | null }
-  stepKind: string
+  current: { exercise: ExerciseItem; phrase: PhraseItem | null }
+  trap: TrapItem | null
   onAnswer: (outcome: ExerciseOutcome, attempts: number) => void
+  onDispute: () => void
   onNext: () => void
 }) {
+  const { t } = useTranslation()
   const { exercise, phrase } = current
+  const common = { exercise, phrase, trap, onAnswer, onDispute, onNext }
   switch (exercise.type) {
     case 'translate':
-      return (
-        <InputCheckExercise
-          mode="translate"
-          exercise={exercise}
-          phrase={phrase}
-          onAnswer={onAnswer}
-          onNext={onNext}
-        />
-      )
+      return <InputCheckExercise mode="translate" {...common} />
     case 'dictation':
-      return (
-        <InputCheckExercise
-          mode="dictation"
-          exercise={exercise}
-          phrase={phrase}
-          onAnswer={onAnswer}
-          onNext={onNext}
-        />
-      )
+      return <InputCheckExercise mode="dictation" {...common} />
     case 'cloze':
       // cloze правила: ошибки не штрафуются XP (specs/02 §2 шаг 1)
-      return (
-        <InputCheckExercise
-          mode="cloze"
-          exercise={exercise}
-          phrase={phrase}
-          onAnswer={onAnswer}
-          onNext={onNext}
-          lenient={stepKind === 'rule'}
-        />
-      )
+      return <InputCheckExercise mode="cloze" {...common} lenient />
     case 'choose_translation':
-      return (
-        <ChooseTranslationExercise
-          exercise={exercise}
-          phrase={phrase}
-          onAnswer={onAnswer}
-          onNext={onNext}
-        />
-      )
+      return <ChooseTranslationExercise {...common} />
     case 'match_pairs':
-      return (
-        <MatchPairsExercise
-          exercise={exercise}
-          phrase={phrase}
-          onAnswer={onAnswer}
-          onNext={onNext}
-        />
-      )
+      return <MatchPairsExercise {...common} />
     case 'word_bank':
-      return (
-        <WordBankExercise exercise={exercise} phrase={phrase} onAnswer={onAnswer} onNext={onNext} />
-      )
+      return <WordBankExercise {...common} />
     case 'speak':
-      return (
-        <VoiceExercise
-          mode="speak"
-          exercise={exercise}
-          phrase={phrase}
-          onAnswer={onAnswer}
-          onNext={onNext}
-        />
-      )
+      return <VoiceExercise mode="speak" {...common} />
     case 'shadowing':
-      return (
-        <VoiceExercise
-          mode="shadowing"
-          exercise={exercise}
-          phrase={phrase}
-          onAnswer={onAnswer}
-          onNext={onNext}
-        />
-      )
+      return <VoiceExercise mode="shadowing" {...common} />
     case 'answer_question':
-      return (
-        <VoiceExercise
-          mode="answer"
-          exercise={exercise}
-          phrase={phrase}
-          onAnswer={onAnswer}
-          onNext={onNext}
-        />
-      )
+      return <VoiceExercise mode="answer" {...common} />
     default:
-      return <p className="dim">exercise.type: {exercise.type}</p>
+      return (
+        <div className="lesson-exercise">
+          <p className="dim">{t('lesson.unknownExercise', { type: exercise.type })}</p>
+          <div className="lesson-actions">
+            <button type="button" className="srs-btn srs-btn-good" onClick={onNext}>
+              {t('lesson.next')} <kbd>⏎</kbd>
+            </button>
+          </div>
+        </div>
+      )
   }
-}
-
-/** Шаг 1 «Правило» у текущего урока (для обработки Enter). */
-function isRuleStepFor(view: LessonView | null, stepIndex: number): boolean {
-  return view?.steps.find((s) => s.index === stepIndex)?.kind === 'rule'
 }
 
 function xpMap(view: LessonView): Record<string, number> {

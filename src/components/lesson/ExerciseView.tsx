@@ -1,22 +1,26 @@
-// Implements: plan://M5#5.5–5.6 — компоненты упражнений урока (specs/02 §3, specs/07 §3.3–3.4).
-// Проверка — домен checker (specs/02 §4). Контракт: onAnswer вызывается РОВНО ОДИН раз
-// на задание — финальным исходом (specs/02 §3: первая попытка / со второй / подсказка /
-// пропуск / самопроверка); чекпоинт пишет экран сразу после него.
+// Implements: plan://M5#5.5–5.6 — компоненты упражнений урока (specs/02 §3, §4; specs/07 §3.3–3.4).
+// Проверка — домен checker. Контракт: onAnswer вызывается РОВНО ОДИН раз на задание
+// финальным исходом (specs/02 §3); повторный вызов возможен только спором «Я был прав»
+// (§4.6, исход disputed) — чекпоинт идемпотентен по exerciseId.
 
 import { useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { judge, judgeDictation, judgeVoice } from '../../domain/check/checker'
 import type { CheckResult, CheckTask } from '../../domain/check/types'
-import { playAudio } from '../../lib/audio'
-import { isSpeechSupported, listenOnce } from '../../lib/speech'
-import type { ExerciseItem, PhraseItem } from '../../content/lessons'
 import type { ExerciseOutcome } from '../../domain/lesson/types'
+import { playAudio } from '../../lib/audio'
+import { cancelListening, isSpeechSupported, listenOnce } from '../../lib/speech'
+import type { ExerciseItem, PhraseItem, TrapItem } from '../../content/lessons'
 
 export interface ExerciseViewProps {
   exercise: ExerciseItem
   phrase: PhraseItem | null
-  /** Финальный исход задания (ровно один раз). */
+  /** Ловушка урока (specs/02 §4.3/§4.7: запрет паттерна + строгие опечатки). */
+  trap: TrapItem | null
+  /** Финальный исход задания (ровно один раз; повтор — только спором). */
   onAnswer: (outcome: ExerciseOutcome, attempts: number) => void
+  /** Спор «Я был прав»: перезапись исхода на disputed (полный XP, §4.6). */
+  onDispute: () => void
   /** Переход к следующему заданию/шагу. */
   onNext: () => void
 }
@@ -25,27 +29,67 @@ function payload<T extends Record<string, unknown>>(exercise: ExerciseItem): T {
   return exercise.payload as unknown as T
 }
 
-function taskFor(exercise: ExerciseItem, phrase: PhraseItem | null): CheckTask {
+function taskFor(
+  exercise: ExerciseItem,
+  phrase: PhraseItem | null,
+  trap: TrapItem | null,
+): CheckTask {
   const p = exercise.payload
   const accepted =
     exercise.answer.accepted ??
     (phrase ? [phrase.text_en, ...phrase.variants] : ((p.gap_answers as string[]) ?? []))
-  return { accepted, trapLtId: null }
+  return {
+    accepted,
+    trapLtId: trap?.lt_id ?? null,
+    trapWrong: trap?.wrong_en ?? null,
+    exactTypos: exercise.answer.typo === 'exact',
+  }
 }
 
-function outcomeText(result: CheckResult, attempts: number, hintUsed: boolean): ExerciseOutcome {
-  if (hintUsed) return 'hint'
-  if (result.verdict === 'correct' || result.verdict === 'correct_typo') {
-    return attempts <= 1 ? 'correct' : 'correct_retry'
+/** Аудио-кнопки 🔊/🐢 с клавишами R/S (specs/07 §5.1) и лимитом прослушиваний ≤3 (specs/02 §3 №5). */
+function AudioButtons({ src, limitPlays = 0 }: { src: string; limitPlays?: number }) {
+  const [plays, setPlays] = useState(0)
+  const exhausted = limitPlays > 0 && plays >= limitPlays
+  const play = (rate: number) => {
+    if (exhausted) return
+    setPlays((n) => n + 1)
+    playAudio(src, rate)
   }
-  return 'skip'
+  useEffect(() => {
+    const onKey = (event: KeyboardEvent) => {
+      if (event.target instanceof HTMLInputElement) return
+      const key = event.key.toLowerCase()
+      if (key === 'r') play(1)
+      else if (key === 's') play(0.75)
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [plays, exhausted])
+  return (
+    <div className="lesson-audio">
+      <button type="button" className="srs-btn" disabled={exhausted} onClick={() => play(1)}>
+        🔊 <kbd>R</kbd>
+      </button>
+      <button type="button" className="srs-btn" disabled={exhausted} onClick={() => play(0.75)}>
+        🐢 <kbd>S</kbd>
+      </button>
+      {limitPlays > 0 && (
+        <span className="dim">
+          {limitPlays - plays}/{limitPlays}
+        </span>
+      )}
+    </div>
+  )
 }
 
 /** Поле ввода с проверкой: перевод / cloze / диктант. */
 export function InputCheckExercise({
   exercise,
   phrase,
+  trap,
   onAnswer,
+  onDispute,
   onNext,
   mode,
   lenient = false,
@@ -57,8 +101,9 @@ export function InputCheckExercise({
   const [hintUsed, setHintUsed] = useState(false)
   const inputRef = useRef<HTMLInputElement>(null)
   const p = payload<{ prompt_ru?: string; text_with_gap?: string }>(exercise)
-  const task = taskFor(exercise, phrase)
+  const task = taskFor(exercise, phrase, trap)
   const maxAttempts = lenient ? 3 : 2
+  const finished = result !== null && (result.verdict !== 'wrong' || attempts >= maxAttempts)
 
   useEffect(() => {
     inputRef.current?.focus()
@@ -71,11 +116,11 @@ export function InputCheckExercise({
     setResult(verdict)
     const ok = verdict.verdict === 'correct' || verdict.verdict === 'correct_typo'
     if (ok || nextAttempts >= maxAttempts) {
-      // финальный исход: верно (с любой попытки) либо попытки исчерпаны → показ + 0 XP
-      onAnswer(
-        lenient && !ok ? 'correct' : outcomeText(verdict, nextAttempts, hintUsed),
-        nextAttempts,
-      )
+      if (hintUsed) onAnswer('hint', nextAttempts)
+      else if (lenient && !ok)
+        onAnswer('correct', nextAttempts) // cloze правила: ошибки не штрафуются XP (specs/02 §2)
+      else if (ok) onAnswer(nextAttempts <= 1 ? 'correct' : 'correct_retry', nextAttempts)
+      else onAnswer('skip', nextAttempts)
     }
   }
 
@@ -106,28 +151,14 @@ export function InputCheckExercise({
         {title}
       </p>
       {mode === 'dictation' && phrase?.audio?.en_gb && (
-        <div className="lesson-audio">
-          <button type="button" className="srs-btn" onClick={() => playAudio(phrase.audio!.en_gb!)}>
-            🔊 <kbd>R</kbd>
-          </button>
-          <button
-            type="button"
-            className="srs-btn"
-            onClick={() => playAudio(phrase.audio!.en_gb!, 0.75)}
-          >
-            🐢 <kbd>S</kbd>
-          </button>
-        </div>
+        <AudioButtons src={phrase.audio.en_gb} limitPlays={3} />
       )}
       <form
         className="lesson-input-row"
         onSubmit={(event) => {
           event.preventDefault()
-          if (result && (result.verdict !== 'wrong' || attempts >= maxAttempts)) {
-            onNext()
-          } else if (!result && value.trim()) {
-            check()
-          }
+          if (finished) onNext()
+          else if (!result && value.trim()) check()
         }}
       >
         <input
@@ -136,7 +167,7 @@ export function InputCheckExercise({
           lang="en"
           value={value}
           onChange={(event) => setValue(event.target.value)}
-          disabled={result !== null && attempts >= maxAttempts}
+          disabled={finished}
         />
         {!result && (
           <button type="submit" className="srs-btn srs-btn-good" disabled={!value.trim()}>
@@ -144,27 +175,31 @@ export function InputCheckExercise({
           </button>
         )}
       </form>
-      {!result && mode === 'translate' && phrase && (
+      {!result && mode === 'translate' && phrase && !hintUsed && (
         <div className="lesson-hint-row">
-          {!hintUsed ? (
-            <button
-              type="button"
-              className="srs-btn"
-              onClick={() => {
-                setHintUsed(true)
-                setValue(`${phrase.text_en.split(' ')[0]} `)
-                inputRef.current?.focus()
-              }}
-            >
-              {t('lesson.hint')}
-            </button>
-          ) : (
-            <p className="dim">{t('lesson.hintUsed')}</p>
-          )}
+          <button
+            type="button"
+            className="srs-btn"
+            onClick={() => {
+              setHintUsed(true)
+              setValue(`${phrase.text_en.split(' ')[0]} `)
+              inputRef.current?.focus()
+            }}
+          >
+            {t('lesson.hint')}
+          </button>
         </div>
       )}
+      {hintUsed && !finished && <p className="dim">{t('lesson.hintUsed')}</p>}
       {result && (
-        <FeedbackPlate result={result} showReference={attempts >= maxAttempts} phrase={phrase} />
+        <FeedbackPlate
+          result={result}
+          showReference={
+            finished && result.verdict !== 'correct' && result.verdict !== 'correct_typo'
+          }
+          phrase={phrase}
+          onDispute={finished && result.verdict === 'wrong' ? onDispute : undefined}
+        />
       )}
       {result && (
         <div className="lesson-actions">
@@ -173,14 +208,14 @@ export function InputCheckExercise({
               {t('lesson.tryAgain')}
             </button>
           )}
-          {(result.verdict !== 'wrong' || attempts >= maxAttempts) && (
+          {finished && (
             <button type="button" className="srs-btn srs-btn-good" onClick={onNext}>
               {t('lesson.next')} <kbd>⏎</kbd>
             </button>
           )}
         </div>
       )}
-      {attempts >= maxAttempts && result?.verdict === 'wrong' && gapAnswers && (
+      {finished && result?.verdict === 'wrong' && gapAnswers && gapAnswers.length > 0 && (
         <p className="lesson-ref" lang="en">
           {gapAnswers.join(' / ')}
         </p>
@@ -210,7 +245,7 @@ export function ChooseTranslationExercise({ exercise, onAnswer, onNext }: Exerci
                   ? 'wrong'
                   : 'idle'
           return (
-            <li key={option}>
+            <li key={`${option}-${index}`}>
               <button
                 type="button"
                 className={`lesson-option lesson-option-${state}`}
@@ -228,7 +263,7 @@ export function ChooseTranslationExercise({ exercise, onAnswer, onNext }: Exerci
         })}
       </ul>
       {picked !== null && (
-        <div className="lesson-actions">
+        <div className="lesson-actions" role="status">
           <p className={picked === p.correct ? 'lesson-verdict-ok' : 'lesson-verdict-bad'}>
             {picked === p.correct ? t('lesson.correct') : t('lesson.wrongAnswer')}
           </p>
@@ -246,7 +281,7 @@ export function MatchPairsExercise({ exercise, onAnswer, onNext }: ExerciseViewP
   const { t } = useTranslation()
   const p = payload<{ pairs: { en: string; ru: string }[] }>(exercise)
   const [matchedEn, setMatchedEn] = useState<string[]>([])
-  const [selectedRu, setSelectedRu] = useState<string | null>(null)
+  const [selectedRu, setSelectedRu] = useState<number | null>(null)
   const [mistakes, setMistakes] = useState(0)
   return (
     <div className="lesson-exercise">
@@ -262,8 +297,7 @@ export function MatchPairsExercise({ exercise, onAnswer, onNext }: ExerciseViewP
                 disabled={matchedEn.includes(en)}
                 onClick={() => {
                   if (selectedRu === null) return
-                  const pair = p.pairs.find((item) => item.en === en)
-                  if (pair && pair.ru === selectedRu) {
+                  if (p.pairs[selectedRu].en === en) {
                     setMatchedEn((prev) => [...prev, en])
                   } else {
                     setMistakes((n) => n + 1)
@@ -277,16 +311,17 @@ export function MatchPairsExercise({ exercise, onAnswer, onNext }: ExerciseViewP
           ))}
         </ul>
         <ul className="lesson-match-column">
-          {p.pairs.map(({ ru }) => {
-            const isMatched = p.pairs.some(({ en, ru: r }) => r === ru && matchedEn.includes(en))
+          {p.pairs.map(({ ru }, index) => {
+            const isMatched = matchedEn.includes(p.pairs[index].en)
             return (
-              <li key={ru}>
+              <li key={`${ru}-${index}`}>
                 <button
                   type="button"
-                  className={`lesson-option ${selectedRu === ru ? 'lesson-option-selected' : ''}`}
+                  className={`lesson-option ${selectedRu === index ? 'lesson-option-selected' : ''}`}
                   lang="ru"
+                  aria-pressed={selectedRu === index}
                   disabled={isMatched}
-                  onClick={() => setSelectedRu(selectedRu === ru ? null : ru)}
+                  onClick={() => setSelectedRu(selectedRu === index ? null : index)}
                 >
                   {ru}
                 </button>
@@ -296,7 +331,7 @@ export function MatchPairsExercise({ exercise, onAnswer, onNext }: ExerciseViewP
         </ul>
       </div>
       {matchedEn.length === p.pairs.length && (
-        <div className="lesson-actions">
+        <div className="lesson-actions" role="status">
           <p className="lesson-verdict-ok">
             {mistakes === 0
               ? t('lesson.correct')
@@ -319,16 +354,27 @@ export function MatchPairsExercise({ exercise, onAnswer, onNext }: ExerciseViewP
 }
 
 /** Собери фразу из плиток (specs/02 §3 №4; Backspace — specs/07 §5.2). */
-export function WordBankExercise({ exercise, phrase, onAnswer, onNext }: ExerciseViewProps) {
+export function WordBankExercise({
+  exercise,
+  phrase,
+  trap,
+  onAnswer,
+  onDispute,
+  onNext,
+}: ExerciseViewProps) {
   const { t } = useTranslation()
   const p = payload<{ prompt_ru: string; tokens: string[] }>(exercise)
   const [bank, setBank] = useState(() => p.tokens.map((token) => ({ token, used: false })))
   const [slots, setSlots] = useState<string[]>([])
   const [attempts, setAttempts] = useState(0)
+  const [result, setResult] = useState<CheckResult | null>(null)
   const [revealed, setRevealed] = useState(false)
+  const solved =
+    result !== null && (result.verdict === 'correct' || result.verdict === 'correct_typo')
+  const finished = solved || revealed
 
   const put = (token: string) => {
-    if (revealed) return
+    if (finished) return
     setBank((prev) => {
       const index = prev.findIndex((item) => item.token === token && !item.used)
       if (index === -1) return prev
@@ -338,7 +384,7 @@ export function WordBankExercise({ exercise, phrase, onAnswer, onNext }: Exercis
   }
 
   const removeSlot = (slotIndex: number) => {
-    if (revealed) return
+    if (finished) return
     const token = slots[slotIndex]
     if (token === undefined) return
     setBank((prev) => {
@@ -364,21 +410,28 @@ export function WordBankExercise({ exercise, phrase, onAnswer, onNext }: Exercis
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [slots, revealed])
+  }, [slots, finished])
+
+  const busyRef = useRef(false)
 
   const check = () => {
+    if (finished || busyRef.current) return
+    busyRef.current = true
     const nextAttempts = attempts + 1
     setAttempts(nextAttempts)
-    const result = judge(slots.join(' '), taskFor(exercise, phrase))
-    const ok = result.verdict === 'correct' || result.verdict === 'correct_typo'
-    if (ok) {
+    const verdict = judge(slots.join(' '), taskFor(exercise, phrase, trap))
+    setResult(verdict)
+    if (verdict.verdict === 'correct' || verdict.verdict === 'correct_typo') {
       onAnswer(nextAttempts <= 1 ? 'correct' : 'correct_retry', nextAttempts)
       return
     }
     if (nextAttempts >= 2) {
       setRevealed(true)
       onAnswer('skip', nextAttempts)
+      return
     }
+    // первая неудача: разрешаем пересобрать и проверить снова
+    busyRef.current = false
   }
 
   return (
@@ -394,7 +447,7 @@ export function WordBankExercise({ exercise, phrase, onAnswer, onNext }: Exercis
             type="button"
             className="lesson-tile lesson-tile-slot"
             onClick={() => removeSlot(index)}
-            disabled={revealed}
+            disabled={finished}
           >
             {token}
           </button>
@@ -406,20 +459,28 @@ export function WordBankExercise({ exercise, phrase, onAnswer, onNext }: Exercis
             key={`${token}-${index}`}
             type="button"
             className="lesson-tile"
-            disabled={used || revealed}
+            disabled={used || finished}
             onClick={() => put(token)}
           >
             {token}
           </button>
         ))}
       </div>
+      {result && (
+        <FeedbackPlate
+          result={result}
+          showReference={revealed}
+          phrase={phrase}
+          onDispute={revealed ? onDispute : undefined}
+        />
+      )}
       {revealed && phrase && (
         <p className="lesson-ref" lang="en">
           {phrase.text_en}
         </p>
       )}
       <div className="lesson-actions">
-        {!revealed && attempts < 2 && (
+        {!finished && attempts < 2 && (
           <button
             type="button"
             className="srs-btn srs-btn-good"
@@ -429,7 +490,7 @@ export function WordBankExercise({ exercise, phrase, onAnswer, onNext }: Exercis
             {t('lesson.check')}
           </button>
         )}
-        {(revealed || attempts > 0) && (
+        {finished && (
           <button type="button" className="srs-btn srs-btn-good" onClick={onNext}>
             {t('lesson.next')} <kbd>⏎</kbd>
           </button>
@@ -441,13 +502,16 @@ export function WordBankExercise({ exercise, phrase, onAnswer, onNext }: Exercis
 
 /**
  * Голосовые упражнения (specs/02 §3 №3/№6/№11, §4.8): микрофон — best effort
- * Web Speech; RETRY — не ошибка, попытки не ограничены; фолбэк — текст или
- * самопроверка «Сказал(-а)» (self_reported, полный XP — specs/02 §3).
+ * Web Speech; RETRY — не ошибка, попытки не ограничены; фолбэк — текст
+ * (после 2 неудач — без потери XP, §3 №3) или самопроверка «Сказал(-а)»
+ * (только при недоступном микрофоне; полный XP, точность не растит — §3).
  */
 export function VoiceExercise({
   exercise,
   phrase,
+  trap,
   onAnswer,
+  onDispute,
   onNext,
   mode,
 }: ExerciseViewProps & { mode: 'speak' | 'shadowing' | 'answer' }) {
@@ -457,11 +521,20 @@ export function VoiceExercise({
   const [listening, setListening] = useState(false)
   const [feedback, setFeedback] = useState<CheckResult | null>(null)
   const [attempts, setAttempts] = useState(0)
+  const [done, setDone] = useState(false)
+  const [typing, setTyping] = useState(false)
+  const [typed, setTyped] = useState('')
+  const task = taskFor(exercise, phrase, trap)
 
-  const task = taskFor(exercise, phrase)
+  useEffect(() => cancelListening, [])
+
+  const finish = (outcome: ExerciseOutcome, nextAttempts: number) => {
+    setDone(true)
+    onAnswer(outcome, nextAttempts)
+  }
 
   const listen = async () => {
-    if (listening) return
+    if (listening || done) return
     setListening(true)
     setFeedback(null)
     try {
@@ -471,7 +544,7 @@ export function VoiceExercise({
       const result = judgeVoice(recognized, task)
       setFeedback(result)
       if (result.verdict === 'correct') {
-        onAnswer(nextAttempts <= 1 ? 'correct' : 'correct_retry', nextAttempts)
+        finish(nextAttempts <= 1 ? 'correct' : 'correct_retry', nextAttempts)
       }
     } catch {
       setFeedback(null)
@@ -480,21 +553,17 @@ export function VoiceExercise({
     }
   }
 
-  const fallbackText = () => {
-    const value = window.prompt(t('lesson.voiceFallbackPrompt')) ?? ''
-    if (!value.trim()) return
+  const checkTyped = () => {
+    if (!typed.trim() || done) return
     const nextAttempts = attempts + 1
     setAttempts(nextAttempts)
-    const result = judge(value, task)
+    const result = judge(typed, task)
     setFeedback(result)
     if (result.verdict === 'correct' || result.verdict === 'correct_typo') {
-      onAnswer(nextAttempts <= 1 ? 'correct' : 'correct_retry', nextAttempts)
+      // после 2 неудачных голосовых попыток текст — без потери XP (specs/02 §3 №3)
+      const voiceFails = attempts
+      finish(voiceFails >= 2 || nextAttempts <= 1 ? 'correct' : 'correct_retry', nextAttempts)
     }
-  }
-
-  const selfReport = () => {
-    onAnswer('self_reported', attempts + 1)
-    onNext()
   }
 
   const prompt =
@@ -504,52 +573,83 @@ export function VoiceExercise({
         ? ((p.question_en as string) ?? '')
         : (phrase?.text_en ?? '')
 
+  const canSelfReport = !supported || attempts >= 2
+
   return (
     <div className="lesson-exercise">
       <p className="lesson-prompt" lang={mode === 'speak' ? 'ru' : 'en'}>
         {prompt}
       </p>
-      {mode === 'shadowing' && phrase?.audio?.en_gb && (
-        <div className="lesson-audio">
-          <button type="button" className="srs-btn" onClick={() => playAudio(phrase.audio!.en_gb!)}>
-            🔊 <kbd>R</kbd>
-          </button>
-          <button
-            type="button"
-            className="srs-btn"
-            onClick={() => playAudio(phrase.audio!.en_gb!, 0.75)}
-          >
-            🐢 <kbd>S</kbd>
-          </button>
-        </div>
-      )}
+      {mode === 'shadowing' && phrase?.audio?.en_gb && <AudioButtons src={phrase.audio.en_gb} />}
       <div className="lesson-actions">
         {supported && (
           <button
             type="button"
             className={`srs-btn ${listening ? 'srs-btn-again' : 'srs-btn-good'}`}
             onClick={() => void listen()}
+            disabled={done || listening}
           >
             {listening ? t('lesson.listening') : t('lesson.sayIt')} 🎙
           </button>
         )}
         {!supported && <p className="dim">{t('lesson.speechUnavailable')}</p>}
-        <button type="button" className="srs-btn" onClick={fallbackText}>
+        <button
+          type="button"
+          className="srs-btn"
+          onClick={() => setTyping((prev) => !prev)}
+          disabled={done}
+        >
           {t('lesson.typeInstead')}
         </button>
-        <button type="button" className="srs-btn" onClick={selfReport}>
-          {t('lesson.saidIt')}
-        </button>
+        {canSelfReport && !done && (
+          <button
+            type="button"
+            className="srs-btn"
+            onClick={() => {
+              finish('self_reported', attempts + 1)
+              onNext()
+            }}
+          >
+            {t('lesson.saidIt')}
+          </button>
+        )}
       </div>
-      {feedback && <FeedbackPlate result={feedback} showReference phrase={phrase} />}
+      {typing && !done && (
+        <form
+          className="lesson-input-row"
+          onSubmit={(event) => {
+            event.preventDefault()
+            checkTyped()
+          }}
+        >
+          <input
+            className="lesson-input"
+            lang="en"
+            value={typed}
+            onChange={(event) => setTyped(event.target.value)}
+            placeholder={t('lesson.voiceFallbackPrompt')}
+          />
+          <button type="submit" className="srs-btn srs-btn-good" disabled={!typed.trim()}>
+            {t('lesson.check')} <kbd>⏎</kbd>
+          </button>
+        </form>
+      )}
       {feedback && (
+        <FeedbackPlate
+          result={feedback}
+          showReference={feedback.verdict !== 'correct'}
+          phrase={phrase}
+          onDispute={feedback.verdict === 'wrong' && done ? onDispute : undefined}
+        />
+      )}
+      {feedback?.verdict === 'retry' && !done && (
+        <p className="dim">{t('lesson.voiceRetryHint')}</p>
+      )}
+      {done && (
         <div className="lesson-actions">
-          {feedback.verdict === 'retry' && <p className="dim">{t('lesson.voiceRetryHint')}</p>}
-          {(feedback.verdict === 'correct' || feedback.verdict === 'correct_typo') && (
-            <button type="button" className="srs-btn srs-btn-good" onClick={onNext}>
-              {t('lesson.next')} <kbd>⏎</kbd>
-            </button>
-          )}
+          <button type="button" className="srs-btn srs-btn-good" onClick={onNext}>
+            {t('lesson.next')} <kbd>⏎</kbd>
+          </button>
         </div>
       )}
     </div>
@@ -558,7 +658,7 @@ export function VoiceExercise({
 
 /**
  * Плашка вердикта с diff-подсветкой (specs/02 §4.5) и «Я был прав» (§4.6).
- * onDispute вызывается экраном: спор засчитывается с полным XP (outcome disputed).
+ * onDispute перезаписывает исход на disputed: полный XP, пометка в очереди правки.
  */
 export function FeedbackPlate({
   result,

@@ -270,13 +270,13 @@ body {
   padding: 10px 14px;
 }
 .lesson-option-correct {
-  border-color: var(--ok, #3aa675);
+  border-color: var(--success);
 }
 .lesson-option-wrong {
-  border-color: var(--bad, #c4554d);
+  border-color: var(--danger);
 }
 .lesson-option-selected {
-  outline: 2px solid var(--primary, #7c8cf8);
+  outline: 2px solid var(--primary);
 }
 .lesson-match {
   display: grid;
@@ -299,7 +299,7 @@ body {
   min-height: 44px;
 }
 .lesson-slots {
-  border-bottom: 1px dashed var(--dim, #888);
+  border-bottom: 1px dashed var(--text-dim);
   padding-bottom: 12px;
 }
 .lesson-tile {
@@ -326,41 +326,41 @@ body {
 .lesson-feedback {
   padding: 12px 14px;
   border-radius: 8px;
-  border: 1px solid var(--dim, #666);
+  border: 1px solid var(--text-dim);
 }
 .lesson-feedback-ok {
-  border-color: var(--ok, #3aa675);
+  border-color: var(--success);
 }
 .lesson-feedback-bad {
-  border-color: var(--bad, #c4554d);
+  border-color: var(--danger);
 }
 .lesson-verdict-ok {
-  color: var(--ok, #3aa675);
+  color: var(--success);
 }
 .lesson-verdict-bad {
-  color: var(--bad, #c4554d);
+  color: var(--danger);
 }
 .lesson-diff span {
   margin-right: 6px;
 }
 .lesson-diff-match {
-  color: var(--ok, #3aa675);
+  color: var(--success);
 }
 .lesson-diff-typo {
-  color: var(--warn, #d9a03f);
+  color: var(--warn);
 }
 .lesson-diff-extra {
-  color: var(--bad, #c4554d);
+  color: var(--danger);
   text-decoration: line-through;
 }
 .lesson-diff-missing {
-  color: var(--bad, #c4554d);
+  color: var(--danger);
 }
 .lesson-ref {
   font-weight: 600;
 }
 .lesson-trap {
-  color: var(--warn, #d9a03f);
+  color: var(--warn);
 }
 .lesson-rule-md p {
   margin: 6px 0;

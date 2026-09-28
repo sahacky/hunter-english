@@ -34,6 +34,11 @@ export interface CheckTask {
   trapLtId?: string | null
   /** Явно запрещённый паттерн ловушки (`traps.wrong_en`, напр. «I go to home») — §4.3. */
   trapWrong?: string | null
+  /**
+   * `answer.typo === 'exact'` из данных (specs/05 §3): опечатки не прощаются
+   * вовсе — слова проверяются точным совпадением (cloze-пропуски, выбор).
+   */
+  exactTypos?: boolean
 }
 
 /** Результат проверки одного задания. */

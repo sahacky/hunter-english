@@ -30,9 +30,22 @@ export function isSpeechSupported(): boolean {
   return recognitionCtor() !== null
 }
 
+/** Активное распознавание — для отмены при уходе с экрана/упражнения. */
+let current: SpeechRecognitionLike | null = null
+
+/** Прерывает активное распознавание (микрофон освобождается). */
+export function cancelListening(): void {
+  try {
+    current?.stop()
+  } catch {
+    // уже остановлено
+  }
+  current = null
+}
+
 /**
  * Одна попытка распознавания: resolve с наилучшей транскриптом или reject
- * (нет речи / ошибка / прервано). Таймаут-остановка — stop().
+ * (нет речи / ошибка / прервано). Отмена — cancelListening().
  */
 export function listenOnce(options: { lang?: string; onEnd?: () => void }): Promise<string> {
   return new Promise((resolve, reject) => {
@@ -42,6 +55,7 @@ export function listenOnce(options: { lang?: string; onEnd?: () => void }): Prom
       return
     }
     const recognition = new Ctor()
+    current = recognition
     recognition.lang = options.lang ?? 'en-GB'
     recognition.continuous = false
     recognition.interimResults = false
@@ -62,6 +76,7 @@ export function listenOnce(options: { lang?: string; onEnd?: () => void }): Prom
     }
     recognition.onend = () => {
       options.onEnd?.()
+      if (current === recognition) current = null
       if (!settled) {
         settled = true
         reject(new Error('speech-no-match'))

@@ -13,7 +13,9 @@ test('navigation to srs works', async ({ page }) => {
 
 test('lesson E-01 opens with rule step (plan://M5#5.7 smoke)', async ({ page }) => {
   await page.goto('/#/lesson/E-01')
-  await expect(page.getByRole('heading', { name: 'to be: am / is / are. Знакомство' })).toBeVisible()
+  await expect(
+    page.getByRole('heading', { name: 'to be: am / is / are. Знакомство' }),
+  ).toBeVisible()
   await expect(page.getByText('Глагол to be в настоящем времени')).toBeVisible()
   await expect(page.getByRole('button', { name: /Понятно/ })).toBeVisible()
 })
@@ -31,5 +33,8 @@ test('lesson rule step advances to cloze', async ({ page }) => {
   await input.fill('am')
   await page.getByRole('button', { name: /Проверить/ }).click()
   await expect(page.getByText('Верно!')).toBeVisible()
-  await page.getByRole('button', { name: /Дальше/ }).first().click()
+  await page
+    .getByRole('button', { name: /Дальше/ })
+    .first()
+    .click()
 })

@@ -100,6 +100,13 @@
       "speaking": "Speaking",
       "quotes": "From the show",
       "deck": "Into the deck"
-    }
+    },
+    "error": "Could not load the lesson or save progress. Try again.",
+    "retryLoad": "Retry loading",
+    "repeatPrompt": "This lesson is already complete. Take it again?",
+    "repeatNote": "A repeat pass does not overwrite the original progress and gives no completion bonus.",
+    "repeatLesson": "Take it again",
+    "unknownExercise": "Unknown exercise type: {{type}}",
+    "completionNote": "The lesson is marked as passed once ≥90% of its phrases are learned in reviews (interval ≥7 days)."
   }
 }

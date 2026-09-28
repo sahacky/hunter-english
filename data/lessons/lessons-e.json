@@ -151,6 +151,9 @@
         },
         {
           "id": "ex-e-0043"
+        },
+        {
+          "id": "ex-e-0044"
         }
       ],
       "bebris_video": {
@@ -181,9 +184,6 @@
       "trap_id": "trap-articles",
       "quotes_topic": "family",
       "exercises": [
-        {
-          "id": "ex-e-0044"
-        },
         {
           "id": "ex-e-0045"
         },
@@ -309,6 +309,12 @@
         },
         {
           "id": "ex-e-0086"
+        },
+        {
+          "id": "ex-e-0087"
+        },
+        {
+          "id": "ex-e-0088"
         }
       ],
       "bebris_video": {
@@ -339,12 +345,6 @@
       "trap_id": "trap-articles",
       "quotes_topic": "family",
       "exercises": [
-        {
-          "id": "ex-e-0087"
-        },
-        {
-          "id": "ex-e-0088"
-        },
         {
           "id": "ex-e-0089"
         },
@@ -467,6 +467,15 @@
         },
         {
           "id": "ex-e-0129"
+        },
+        {
+          "id": "ex-e-0130"
+        },
+        {
+          "id": "ex-e-0131"
+        },
+        {
+          "id": "ex-e-0132"
         }
       ],
       "bebris_video": {
@@ -497,15 +506,6 @@
       "trap_id": null,
       "quotes_topic": "questions",
       "exercises": [
-        {
-          "id": "ex-e-0130"
-        },
-        {
-          "id": "ex-e-0131"
-        },
-        {
-          "id": "ex-e-0132"
-        },
         {
           "id": "ex-e-0133"
         },
@@ -628,6 +628,15 @@
         },
         {
           "id": "ex-e-0173"
+        },
+        {
+          "id": "ex-e-0174"
+        },
+        {
+          "id": "ex-e-0175"
+        },
+        {
+          "id": "ex-e-0176"
         }
       ],
       "bebris_video": {
@@ -654,15 +663,6 @@
       "trap_id": null,
       "quotes_topic": "small-talk",
       "exercises": [
-        {
-          "id": "ex-e-0174"
-        },
-        {
-          "id": "ex-e-0175"
-        },
-        {
-          "id": "ex-e-0176"
-        },
         {
           "id": "ex-e-0177"
         },
@@ -785,6 +785,15 @@
         },
         {
           "id": "ex-e-0217"
+        },
+        {
+          "id": "ex-e-0218"
+        },
+        {
+          "id": "ex-e-0219"
+        },
+        {
+          "id": "ex-e-0220"
         }
       ],
       "bebris_video": null

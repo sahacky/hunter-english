@@ -21,7 +21,7 @@ export function tokenize(input: string): string[] {
   return normalize(input)
     .split(' ')
     .filter(Boolean)
-    .map((token) => token.replace(/^[.,!?;:"'…()[\]]+/, '').replace(/[.,!?;:"'…()[\]]+$/, ''))
+    .map((token) => token.replace(/^[.,!?;:"'…()[\]–—-]+/, '').replace(/[.,!?;:"'…()[\]–—-]+$/, ''))
     .filter(Boolean)
 }
 

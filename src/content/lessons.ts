@@ -4,6 +4,7 @@
 
 import { groupIntoSteps } from '../domain/lesson/steps'
 import type { LessonStep } from '../domain/lesson/types'
+import type { Note } from '../domain/srs/types'
 
 /** Фраза — схема specs/05 §2 (kind: phrases). */
 export interface PhraseItem {
@@ -206,4 +207,46 @@ export async function loadLessonView(lessonId: string): Promise<LessonView | nul
   const exerciseById = new Map(exercises.map((exercise) => [exercise.id, exercise]))
   const phraseById = new Map(phrases.map((phrase) => [phrase.id, phrase]))
   return assembleLesson(lesson, exerciseById, phraseById)
+}
+
+/** Заметки фраз для SRS (deck 'phrases'; урок отправляет их на шаге 7 — specs/02 §2). */
+export function toPhraseNotes(phrases: readonly PhraseItem[]): Note[] {
+  return phrases.map((phrase) => ({
+    id: `note_${phrase.id}`,
+    deck: 'phrases',
+    entityId: phrase.id,
+    en: phrase.text_en,
+    ru: phrase.translation_ru,
+    audio: phrase.audio?.en_gb,
+  }))
+}
+
+/** Все заметки фраз (для /#/srs: разрешение note_id карточек, созданных уроками). */
+export async function loadPhraseNotes(): Promise<Note[]> {
+  return toPhraseNotes(await loadPhrases())
+}
+
+/** Запись каталога ловушек (data/traps.json → specs/05 §6.5). */
+export interface TrapItem {
+  id: string
+  lt_id: string
+  title_ru: string
+  wrong_en: string
+  right_en: string
+  explanation_ru: string
+  tags: string[]
+}
+
+interface TrapsFile {
+  schema_version: number
+  kind: 'traps'
+  items: TrapItem[]
+}
+
+const trapsModule = import.meta.glob('/data/traps.json') as Record<string, () => Promise<TrapsFile>>
+
+/** Каталог ловушек: slug → запись (для CheckTask ловушек, specs/02 §4.3/§4.7). */
+export async function loadTraps(): Promise<Map<string, TrapItem>> {
+  const files = await Promise.all(Object.values(trapsModule).map((load) => load()))
+  return new Map(files.flatMap((file) => file.items.map((trap) => [trap.id, trap] as const)))
 }
