@@ -165,7 +165,13 @@ describe('DexieProgressRepository', () => {
     expect(fresh.rank).toBe('E')
     expect(fresh.freezes_left).toBe(2)
 
-    const stats = { ...fresh, xp: 347, streak_current: 5, streak_best: 9, updated_at: NOW.toISOString() }
+    const stats = {
+      ...fresh,
+      xp: 347,
+      streak_current: 5,
+      streak_best: 9,
+      updated_at: NOW.toISOString(),
+    }
     await repo.putStats(stats)
     expect(await repo.getStats()).toEqual(stats)
     const queued = await db.sync_queue.where('table').equals('user_stats').toArray()
@@ -204,9 +210,7 @@ describe('DexieProgressRepository', () => {
       started_at: NOW.toISOString(),
       finished_at: null,
       passed: [],
-      scores: [
-        { section: 'vocab' as const, correct: 10, total: 20 },
-      ],
+      scores: [{ section: 'vocab' as const, correct: 10, total: 20 }],
     }
     await repo.putGateAttempt(attempt)
     expect(await repo.getGateAttempt('D')).toEqual(attempt)

@@ -4,12 +4,7 @@
 
 import { dayStart } from '../srs/scheduler'
 import type { ProgressRepository } from '../progress'
-import {
-  applyXpCap,
-  countStudyDay,
-  createQuestDay,
-  questAwards,
-} from './game'
+import { applyXpCap, countStudyDay, createQuestDay, questAwards } from './game'
 import type { QuestDayState, UserStats, XpCategory } from './types'
 
 export interface AwardResult {
@@ -33,9 +28,7 @@ export async function awardXp(
 ): Promise<AwardResult> {
   const dayIso = dayStart(now).toISOString()
   const [stats, existing] = await Promise.all([repo.getStats(), repo.getQuestDay(dayIso)])
-  const quest =
-    existing ??
-    createQuestDay(dayIso, 0) // цель повторов уточняется вызывающим (дашборд/сессия)
+  const quest = existing ?? createQuestDay(dayIso, 0) // цель повторов уточняется вызывающим (дашборд/сессия)
   const { awarded, counters } = applyXpCap(quest.xp, category, amount)
   const nextQuest: QuestDayState = {
     ...quest,
@@ -148,9 +141,9 @@ export async function awardLessonFinish(
     },
     bonusDone:
       quest.bonusDone +
-      (Object.entries(BONUS_TYPES)
+      Object.entries(BONUS_TYPES)
         .filter(([, bonusId]) => bonusId === quest.bonus.id)
-        .reduce((sum, [type]) => sum + (opts.bonusByType[type] ?? 0), 0)),
+        .reduce((sum, [type]) => sum + (opts.bonusByType[type] ?? 0), 0),
   }
   const awards = questAwards(nextQuest)
   awarded += awards.allDone + awards.bonus

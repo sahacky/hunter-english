@@ -194,8 +194,7 @@ export function questAwards(state: QuestDayState): QuestAward {
     state.slots.dictation.done >= state.slots.dictation.target
       ? 30
       : 0
-  const bonus =
-    !state.bonusAwarded && state.bonusDone >= state.bonus.target ? 15 : 0
+  const bonus = !state.bonusAwarded && state.bonusDone >= state.bonus.target ? 15 : 0
   return { allDone, bonus }
 }
 
@@ -219,10 +218,12 @@ export function judgeGate(scores: GateSectionScore[]): GateVerdict {
       Math.max(1, scores.length)) *
       100,
   )
-  const weakSections = scores.filter(
-    (s) => s.total > 0 && s.correct / s.total < GATE_SECTION_PASS,
-  )
-  return { passed: weakSections.length === 0 && total >= GATE_TOTAL_PASS * 100, total, weakSections }
+  const weakSections = scores.filter((s) => s.total > 0 && s.correct / s.total < GATE_SECTION_PASS)
+  return {
+    passed: weakSections.length === 0 && total >= GATE_TOTAL_PASS * 100,
+    total,
+    weakSections,
+  }
 }
 
 /** Кулдаун пересдачи: не раньше 72ч после провала (game://gate-cooldown). */
