@@ -16,7 +16,7 @@ import type { ExerciseItem, PhraseItem } from '../content/lessons'
 import { loadLessons, loadPhrases } from '../content/lessons'
 import { createFirstCards, loadWordNotes } from '../content/words'
 import { cooldownPassed, judgeGate, NEXT_RANK } from '../domain/game/game'
-import type { GateSectionScore } from '../domain/game/types'
+import type { GateAttempt, GateSectionScore } from '../domain/game/types'
 import type { ProgressRepository } from '../domain/progress'
 import { DexieProgressRepository } from '../data/progress-repository'
 
@@ -75,14 +75,18 @@ async function buildExam(attemptSeed: string): Promise<ExamItem[]> {
   const words = seededPick(wordNotes, 20, `vocab-${attemptSeed}`)
   words.forEach((note, index) => {
     const distractors = wordNotes.filter((w) => w.id !== note.id).slice(index, index + 3)
-    const options = [note.en, ...distractors.map((d) => d.en)]
+    const options = seededPick(
+      [note.en, ...distractors.map((d) => d.en)],
+      4,
+      `opt-${attemptSeed}-${index}`,
+    )
     const exercise = mkExercise(
       `gate-v-${index}`,
       'choose_translation',
       {
         prompt: note.ru,
         options,
-        correct: 0,
+        correct: options.indexOf(note.en),
       },
       1,
     )
@@ -128,6 +132,12 @@ async function buildExam(attemptSeed: string): Promise<ExamItem[]> {
 
 const SECTION_ORDER: ExamItem['section'][] = ['vocab', 'grammar', 'listening', 'speaking']
 
+/** Попытка сдана: все секции ≥80% и сумма ≥85% по сохранённым оценкам. */
+function passedExam(attempt: GateAttempt): boolean {
+  if (!attempt.finished_at || attempt.scores.length === 0) return false
+  return judgeGate(attempt.scores).passed
+}
+
 export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
   const { t } = useTranslation()
   const params = useParams<{ id: string }>()
@@ -146,7 +156,8 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
   const correctRef = useRef({ vocab: 0, grammar: 0, listening: 0, speaking: 0 })
 
   const gateId = (params.id ?? 'E-D').toUpperCase()
-  const valid = /^(E-D|D-C|C-B|B-A|A-S)$/.test(gateId)
+  // M7: реализованы только Врата E→D (контент ранга E); остальные — M8+
+  const valid = gateId === 'E-D'
 
   useEffect(() => {
     let alive = true
@@ -167,8 +178,8 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
       }
       setLessonsDone(done)
       const attempt = await repo.getGateAttempt('D')
-      if (attempt?.finished_at && !attempt.passed.length) {
-        // последняя попытка провалена (passed пуст) → кулдаун
+      if (attempt?.finished_at && attempt.passed.length >= 0 && !passedExam(attempt)) {
+        // провал любой попытки → кулдаун 72ч (game://gate-cooldown); сданные секции сохранены
         setCooldownUntil(attempt.finished_at)
       }
       if (alive) setPhase({ kind: 'intro' })
@@ -193,12 +204,14 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
       setScores([])
       setVerdict(null)
       setPhase({ kind: 'exam' })
+      // прошлые сданные секции сохраняются для пересдачи (game://gate-retry-sections)
+      const previous = await repo.getGateAttempt('D')
       await repo.putGateAttempt({
         gate: 'D',
         started_at: new Date().toISOString(),
         finished_at: null,
-        passed: [],
-        scores: [],
+        passed: previous?.passed ?? [],
+        scores: previous?.scores ?? [],
       })
     },
     [gateId, repo],
@@ -251,7 +264,8 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
   const handleAnswer = useCallback(
     (outcome: string) => {
       if (!current) return
-      const ok = outcome === 'correct' || outcome === 'disputed' || outcome === 'self_reported'
+      // самопроверка не считается в экзамене (ревью M7#М9): только распознанный/ввод
+      const ok = outcome === 'correct' || outcome === 'disputed'
       if (ok) correctRef.current[current.section] += 1
     },
     [current],
@@ -341,14 +355,17 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
           <p className="dim">{t('gates.retryHint')}</p>
         )}
         <div className="lesson-actions">
-          {!verdict?.passed && (
+          {!verdict?.passed && verdict && verdict.weak.length > 0 && (
             <button
               type="button"
               className="srs-btn"
-              onClick={() => void startExam(SECTION_ORDER.filter((s) => verdict?.weak.includes(s)))}
+              onClick={() => void startExam(SECTION_ORDER.filter((s) => verdict.weak.includes(s)))}
             >
               {t('gates.retryWeak')}
             </button>
+          )}
+          {!verdict?.passed && verdict && verdict.weak.length === 0 && (
+            <p className="dim">{t('gates.totalFailHint')}</p>
           )}
         </div>
       </section>

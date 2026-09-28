@@ -71,7 +71,11 @@ export default function Dashboard({ repo: repoProp }: DashboardProps) {
       const dueToday = cards.filter(
         (card) => card.state !== 0 && new Date(card.due).getTime() <= now.getTime(),
       ).length
-      const quest = questRow ?? createQuestDay(dayIso, dueToday)
+      let quest = questRow
+      if (!quest) {
+        quest = createQuestDay(dayIso, dueToday)
+        await repo.putQuestDay(quest)
+      }
       let nextLesson: LessonItem | null = null
       for (const lesson of lessons) {
         const row = await repo.getLessonProgress(lesson.id)
@@ -85,7 +89,7 @@ export default function Dashboard({ repo: repoProp }: DashboardProps) {
         stats,
         quest,
         dueToday,
-        knownCards: cards.length,
+        knownCards: cards.filter((card) => card.state === 2).length,
         nextLesson,
         quote: pickQuoteOfTheDay(quotes, dayIso),
       })

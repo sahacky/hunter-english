@@ -14,7 +14,6 @@ import {
   findStep,
   passAccuracy,
   recordAnswer,
-  totalXp,
 } from '../domain/lesson/runner'
 import type { ExerciseOutcome, LessonCheckpoint, SrsLessonStats } from '../domain/lesson/types'
 import {
@@ -357,10 +356,11 @@ export default function LessonScreen({
     if (!view) return
     try {
       await enrollDeck()
-      const accuracy = passAccuracy(checkpointRef.current.scores) ?? 0
-      const xp = totalXp(checkpointRef.current, xpMap(view))
+      // снимок ДО finishPass (сбрасывает results/scores) — ревью M7#Б1
+      const finished = checkpointRef.current
+      const accuracy = passAccuracy(finished.scores) ?? 0
       const minutes = Math.max(1, Math.round((Date.now() - startedAt) / 60_000))
-      setSummary({ xp, accuracy, minutes })
+      setSummary({ xp: 0, accuracy, minutes })
       // статус по правилам specs/02 §5; повтор не затирает оригинал (specs/07 §4.4)
       const cards = await repo.getAllCards()
       const previous = previousRowRef.current
@@ -392,7 +392,7 @@ export default function LessonScreen({
                     : status
               return { status: stored, score: accuracy }
             })()
-      const cp = finishPass(checkpointRef.current)
+      const cp = finishPass(finished)
       setCheckpoint(cp)
       await repo.putLessonProgress({
         lesson_id: view.lesson.id,
@@ -405,10 +405,14 @@ export default function LessonScreen({
       // XP-шина (plan://M7#7.3): категории упражнений с капами, квесты, стрик
       const xpByCategory: Record<string, number> = {}
       const typesById = new Map<string, string>()
+      const quoteClozeIds = new Set<string>()
       for (const items of Object.values(view.content)) {
-        for (const { exercise } of items) typesById.set(exercise.id, exercise.type)
+        for (const { exercise } of items) {
+          typesById.set(exercise.id, exercise.type)
+          if (exercise.type === 'cloze' && exercise.payload.quote) quoteClozeIds.add(exercise.id)
+        }
       }
-      for (const [exerciseId, result] of Object.entries(checkpointRef.current.results)) {
+      for (const [exerciseId, result] of Object.entries(finished.results)) {
         const base = xpMap(view)[exerciseId]
         const type = typesById.get(exerciseId)
         if (base === undefined || !type) continue
@@ -416,12 +420,13 @@ export default function LessonScreen({
         const earned = xpForOutcomeXp(base, result.outcome)
         xpByCategory[category] = (xpByCategory[category] ?? 0) + earned
       }
-      const dictationCount =
-        checkpointRef.current.scores.find((score) => score.stepIndex === 4)?.answered ?? 0
+      const dictationCount = finished.scores.find((score) => score.stepIndex === 4)?.answered ?? 0
       const bonusByType: Record<string, number> = {}
-      for (const [exerciseId] of Object.entries(checkpointRef.current.results)) {
+      for (const [exerciseId] of Object.entries(finished.results)) {
         const type = typesById.get(exerciseId)
         if (!type) continue
+        // cloze-бонус — только цитатные (шаг «Из сериала»), не правило (ревью M7#М12)
+        if (type === 'cloze' && !quoteClozeIds.has(exerciseId)) continue
         bonusByType[type] = (bonusByType[type] ?? 0) + 1
       }
       const award = await awardLessonFinish(repo, new Date(), {
@@ -431,7 +436,7 @@ export default function LessonScreen({
         isRepeat: Boolean(previous && previous.status !== 'in_progress'),
       })
       if (anySlotDone(award.quest)) await closeStudyDay(repo, new Date())
-      setSummary((prev) => (prev ? { ...prev, xp: prev.xp + award.awarded } : prev))
+      setSummary((prev) => (prev ? { ...prev, xp: award.awarded } : prev))
       setPhase({ kind: 'done' })
     } catch {
       setPhase({ kind: 'error' })

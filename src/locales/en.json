@@ -165,6 +165,7 @@
     "rankUp": "Rank up: {{rank}}. The system confirms the level. +200 XP",
     "retryHint": "Weak sections are retaken; passed ones are kept. Next attempt in 72 hours.",
     "retryWeak": "Retake weak sections",
-    "sectionProgress": "{{section}} · section {{index}} of {{total}}"
+    "sectionProgress": "{{section}} · section {{index}} of {{total}}",
+    "totalFailHint": "Sections passed but the total is under 85% — retake the full exam after the cooldown."
   }
 }

@@ -57,6 +57,7 @@ export default function RanksScreen({ repo: repoProp }: DashboardProps) {
   const defaultRepo = useMemo(() => new DexieProgressRepository(), [])
   const repo = repoProp ?? defaultRepo
   const [stats, setStats] = useState<UserStats | null>(null)
+  const [error, setError] = useState(false)
 
   useEffect(() => {
     let alive = true
@@ -66,13 +67,20 @@ export default function RanksScreen({ repo: repoProp }: DashboardProps) {
         if (alive) setStats(value)
       })
       .catch(() => {
-        if (alive) setStats(null)
+        if (alive) setError(true)
       })
     return () => {
       alive = false
     }
   }, [repo])
 
+  if (error) {
+    return (
+      <section className="panel">
+        <p className="srs-error">{t('dashboard.error')}</p>
+      </section>
+    )
+  }
   if (!stats) {
     return (
       <section className="panel">
