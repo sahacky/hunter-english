@@ -424,3 +424,85 @@ body {
     opacity: 0.7;
   }
 }
+
+/* ===== Дашборд (plan://M7#7.4) ===== */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.dash-quest-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.dash-quest-done {
+  color: var(--success);
+}
+.dash-xp-bar {
+  height: 10px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 8px 0 4px;
+}
+.dash-xp-fill {
+  height: 100%;
+  background: var(--primary);
+}
+.dash-start-btn {
+  display: inline-block;
+  padding: 14px 24px;
+  font-size: 1.05rem;
+  text-decoration: none;
+}
+.dash-quote blockquote {
+  margin: 8px 0 4px;
+  font-size: 1.1rem;
+}
+
+/* ===== Ранги и Врата (plan://M7#7.5–7.6) ===== */
+.ranks {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.ranks-stats {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.ranks-titles {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.ranks-title-unlocked {
+  color: var(--warn);
+}
+.gates-panel {
+  max-width: 680px;
+}
+.gates-checklist {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 12px 0;
+}
+.gates-scores {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 12px 0;
+}

@@ -16,7 +16,31 @@
     "notFound": "Page not found"
   },
   "dashboard": {
-    "greeting": "Welcome, Hunter"
+    "error": "System unavailable: could not load progress.",
+    "questTitle": "Daily quest",
+    "statusTitle": "Status",
+    "quoteTitle": "Quote of the day",
+    "quests": {
+      "reviews": "Review cards",
+      "lesson": "Take a lesson",
+      "dictation": "Dictation",
+      "bonus": "Bonus"
+    },
+    "bonus": {
+      "speak-5": "say 5 phrases aloud",
+      "shadowing-5": "shadow 5 phrases",
+      "quotes-cloze-3": "cloze on 3 quotes",
+      "match-10": "match 10 word pairs"
+    },
+    "dayLeft": "until the day ends",
+    "rankAndLevel": "Hunter rank {{rank}}, lv. {{rank}}-{{level}}",
+    "xpProgress": "{{xp}} / {{next}} XP to the next level",
+    "streak": "{{days}} d",
+    "freezes": "❄ {{count}}",
+    "wordsKnown": "cards known: {{count}}",
+    "startReviews": "Start the day · reviews: {{count}}",
+    "startLesson": "Start the day · lesson",
+    "nextLesson": "next lesson"
   },
   "srs": {
     "title": "Review",
@@ -110,5 +134,37 @@
     "unknownExercise": "Unknown exercise type: {{type}}",
     "completionNote": "The lesson is marked as passed once ≥90% of its phrases are learned in reviews (interval ≥7 days).",
     "giveUp": "Give up"
+  },
+  "ranks": {
+    "statusTitle": "Hunter status",
+    "totalXp": "Total XP: {{xp}}",
+    "streaks": "Streak: {{current}} d · Best: {{best}} d",
+    "gatesPassed": "Gates passed: {{count}} · latest: {{last}}",
+    "titles": "Titles",
+    "unlocked": "unlocked"
+  },
+  "gates": {
+    "notFound": "These gates do not exist.",
+    "title": "Gates {{from}} → {{to}}",
+    "check": {
+      "words": "Words (reliable): {{known}} / 300",
+      "lessons": "Rank E lessons: {{done}} / 5",
+      "hint": "The checklist is a recommendation: the gates are always open."
+    },
+    "cooldown": "The next attempt unlocks after {{time}}",
+    "enter": "Enter",
+    "passed": "Gates passed",
+    "failed": "Gates not passed",
+    "sections": {
+      "vocab": "Vocabulary",
+      "grammar": "Grammar",
+      "listening": "Listening",
+      "speaking": "Speaking"
+    },
+    "total": "Total: {{total}}%",
+    "rankUp": "Rank up: {{rank}}. The system confirms the level. +200 XP",
+    "retryHint": "Weak sections are retaken; passed ones are kept. Next attempt in 72 hours.",
+    "retryWeak": "Retake weak sections",
+    "sectionProgress": "{{section}} · section {{index}} of {{total}}"
   }
 }

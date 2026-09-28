@@ -1,8 +1,11 @@
 import { expect, test } from '@playwright/test'
 
-test('dashboard renders greeting', async ({ page }) => {
+test('dashboard renders quest and status windows (M7)', async ({ page }) => {
   await page.goto('/#/')
-  await expect(page.getByRole('heading', { name: 'Добро пожаловать, Охотник' })).toBeVisible()
+  await expect(page.getByText('[Ежедневный квест]')).toBeVisible({ timeout: 8000 })
+  await expect(page.getByText('[Статус]')).toBeVisible()
+  await expect(page.getByText(/Охотник E-ранга/)).toBeVisible()
+  await expect(page.getByRole('link', { name: /Начать день/ })).toBeVisible()
 })
 
 test('navigation to srs works', async ({ page }) => {
