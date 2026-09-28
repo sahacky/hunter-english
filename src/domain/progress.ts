@@ -3,6 +3,7 @@
 // (PLANS → M4, specs/06 §0 офлайн-first).
 
 import type { CardState, ReviewLogEntry } from './srs/types'
+import type { GateAttempt, QuestDayState, UserStats } from './game/types'
 import type { LessonProgress } from './lesson/types'
 
 export interface ProgressRepository {
@@ -24,4 +25,13 @@ export interface ProgressRepository {
    * отдельное задание: экран пишет после каждого вердикта (specs/02 §5).
    */
   putLessonProgress(progress: LessonProgress): Promise<void>
+  /** Статы охотника (specs/06 §3 user_stats); новый профиль — пустые статы. */
+  getStats(): Promise<UserStats>
+  putStats(stats: UserStats): Promise<void>
+  /** Состояние квеста учебного дня (item_progress kind='quest_day'). */
+  getQuestDay(studyDayIso: string): Promise<QuestDayState | null>
+  putQuestDay(state: QuestDayState): Promise<void>
+  /** Попытка Врат (item_progress kind='gate_attempts'). */
+  getGateAttempt(gate: string): Promise<GateAttempt | null>
+  putGateAttempt(attempt: GateAttempt): Promise<void>
 }

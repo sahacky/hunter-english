@@ -28,6 +28,8 @@ import {
   type TrapItem,
 } from '../content/lessons'
 import { createFirstCards } from '../content/words'
+import { awardLessonFinish, closeStudyDay, anySlotDone } from '../domain/game/award'
+import { xpCategory } from '../domain/game/game'
 import type { ProgressRepository } from '../domain/progress'
 import { DexieProgressRepository } from '../data/progress-repository'
 import { speak, stopSpeak } from '../lib/tts'
@@ -400,6 +402,36 @@ export default function LessonScreen({
         completed_at: stored.status === 'in_progress' ? null : new Date().toISOString(),
         updated_at: new Date().toISOString(),
       })
+      // XP-шина (plan://M7#7.3): категории упражнений с капами, квесты, стрик
+      const xpByCategory: Record<string, number> = {}
+      const typesById = new Map<string, string>()
+      for (const items of Object.values(view.content)) {
+        for (const { exercise } of items) typesById.set(exercise.id, exercise.type)
+      }
+      for (const [exerciseId, result] of Object.entries(checkpointRef.current.results)) {
+        const base = xpMap(view)[exerciseId]
+        const type = typesById.get(exerciseId)
+        if (base === undefined || !type) continue
+        const category = xpCategory(type)
+        const earned = xpForOutcomeXp(base, result.outcome)
+        xpByCategory[category] = (xpByCategory[category] ?? 0) + earned
+      }
+      const dictationCount =
+        checkpointRef.current.scores.find((score) => score.stepIndex === 4)?.answered ?? 0
+      const bonusByType: Record<string, number> = {}
+      for (const [exerciseId] of Object.entries(checkpointRef.current.results)) {
+        const type = typesById.get(exerciseId)
+        if (!type) continue
+        bonusByType[type] = (bonusByType[type] ?? 0) + 1
+      }
+      const award = await awardLessonFinish(repo, new Date(), {
+        xpByCategory,
+        dictationCount,
+        bonusByType,
+        isRepeat: Boolean(previous && previous.status !== 'in_progress'),
+      })
+      if (anySlotDone(award.quest)) await closeStudyDay(repo, new Date())
+      setSummary((prev) => (prev ? { ...prev, xp: prev.xp + award.awarded } : prev))
       setPhase({ kind: 'done' })
     } catch {
       setPhase({ kind: 'error' })
@@ -628,6 +660,13 @@ function ExerciseRouter({
         </div>
       )
   }
+}
+
+/** XP исхода по правилам попыток (specs/02 §3; канон значений — meta.xp). */
+function xpForOutcomeXp(base: number, outcome: string): number {
+  if (outcome === 'correct' || outcome === 'disputed' || outcome === 'self_reported') return base
+  if (outcome === 'correct_retry') return Math.floor(base / 2)
+  return 0
 }
 
 function xpMap(view: LessonView): Record<string, number> {

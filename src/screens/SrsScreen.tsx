@@ -17,6 +17,7 @@ import type { ProgressRepository } from '../domain/progress'
 import { DexieProgressRepository } from '../data/progress-repository'
 import { uuidv7 } from '../lib/uuidv7'
 import { speak, stopSpeak } from '../lib/tts'
+import { anySlotDone, awardXp, closeStudyDay } from '../domain/game/award'
 
 const BLOCK_SIZE = 20
 
@@ -118,6 +119,10 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
       })
       try {
         await repo.saveAnswer(next, log) // мгновенное сохранение каждого ответа
+        // XP-шина (plan://M7#7.3): повтор 1 XP; выпуск новой карточки в Review +2
+        const released = entry.card.state === 1 && next.state === 2
+        const award = await awardXp(repo, now, 1 + (released ? 2 : 0), 'reviews', { reviews: 1 })
+        if (anySlotDone(award.quest)) await closeStudyDay(repo, now)
       } catch {
         setPhase({ kind: 'error' })
         return

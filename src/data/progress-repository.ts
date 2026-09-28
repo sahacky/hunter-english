@@ -5,6 +5,8 @@
 // это бустрап контента (тысячи карточек создаются один раз локально, серверу они не нужны).
 
 import type { ProgressRepository } from '../domain/progress'
+import type { GateAttempt, QuestDayState, UserStats } from '../domain/game/types'
+import { emptyStats } from '../domain/game/types'
 import type { LessonProgress } from '../domain/lesson/types'
 import type { CardState, ReviewLogEntry } from '../domain/srs/types'
 import {
@@ -12,8 +14,10 @@ import {
   LOCAL_USER_ID,
   db as defaultDb,
   type CardStateRow,
+  type ItemProgressRow,
   type LessonProgressRow,
   type ReviewLogRow,
+  type UserStatsRow,
 } from './db'
 
 function toCardRow(card: CardState): CardStateRow {
@@ -77,6 +81,77 @@ export class DexieProgressRepository implements ProgressRepository {
     if (!row) return null
     const { user_id: _user_id, ...progress } = row
     return progress
+  }
+
+  async getStats(): Promise<UserStats> {
+    const row = await this.db.user_stats.get(LOCAL_USER_ID)
+    if (!row) return emptyStats(new Date().toISOString())
+    const { user_id: _user_id, ...stats } = row
+    return stats
+  }
+
+  async putStats(stats: UserStats): Promise<void> {
+    const row: UserStatsRow = { ...stats, user_id: LOCAL_USER_ID }
+    await this.db.transaction('rw', this.db.user_stats, this.db.sync_queue, async () => {
+      await this.db.user_stats.put(row)
+      await this.db.sync_queue.add({
+        table: 'user_stats',
+        op: 'upsert',
+        payload: row,
+        tries: 0,
+        created_at: stats.updated_at,
+      })
+    })
+  }
+
+  async getQuestDay(studyDayIso: string): Promise<QuestDayState | null> {
+    const row = await this.db.item_progress.get([LOCAL_USER_ID, studyDayIso, 'quest_day'])
+    return row ? (row.data as QuestDayState) : null
+  }
+
+  async putQuestDay(state: QuestDayState): Promise<void> {
+    const row: ItemProgressRow = {
+      user_id: LOCAL_USER_ID,
+      item_id: state.studyDay,
+      kind: 'quest_day',
+      data: state,
+      updated_at: new Date().toISOString(),
+    }
+    await this.db.transaction('rw', this.db.item_progress, this.db.sync_queue, async () => {
+      await this.db.item_progress.put(row)
+      await this.db.sync_queue.add({
+        table: 'item_progress',
+        op: 'upsert',
+        payload: row,
+        tries: 0,
+        created_at: row.updated_at,
+      })
+    })
+  }
+
+  async getGateAttempt(gate: string): Promise<GateAttempt | null> {
+    const row = await this.db.item_progress.get([LOCAL_USER_ID, gate, 'gate_attempts'])
+    return row ? (row.data as GateAttempt) : null
+  }
+
+  async putGateAttempt(attempt: GateAttempt): Promise<void> {
+    const row: ItemProgressRow = {
+      user_id: LOCAL_USER_ID,
+      item_id: attempt.gate,
+      kind: 'gate_attempts',
+      data: attempt,
+      updated_at: new Date().toISOString(),
+    }
+    await this.db.transaction('rw', this.db.item_progress, this.db.sync_queue, async () => {
+      await this.db.item_progress.put(row)
+      await this.db.sync_queue.add({
+        table: 'item_progress',
+        op: 'upsert',
+        payload: row,
+        tries: 0,
+        created_at: row.updated_at,
+      })
+    })
   }
 
   async putLessonProgress(progress: LessonProgress): Promise<void> {

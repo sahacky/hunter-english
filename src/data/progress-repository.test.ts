@@ -158,6 +158,59 @@ describe('DexieProgressRepository', () => {
     expect(queued.length).toBe(2)
     expect(queued.every((row) => row.op === 'upsert')).toBe(true)
   })
+
+  it('user_stats: пустые статы для нового профиля, put/get + sync_queue (M7#7.2)', async () => {
+    const fresh = await repo.getStats()
+    expect(fresh.xp).toBe(0)
+    expect(fresh.rank).toBe('E')
+    expect(fresh.freezes_left).toBe(2)
+
+    const stats = { ...fresh, xp: 347, streak_current: 5, streak_best: 9, updated_at: NOW.toISOString() }
+    await repo.putStats(stats)
+    expect(await repo.getStats()).toEqual(stats)
+    const queued = await db.sync_queue.where('table').equals('user_stats').toArray()
+    expect(queued.length).toBe(1)
+  })
+
+  it('quest_day: item_progress kind=quest_day по учебному дню (M7#7.2)', async () => {
+    const day = '2026-09-28T00:00:00.000Z'
+    expect(await repo.getQuestDay(day)).toBeNull()
+    const state = {
+      studyDay: day,
+      slots: {
+        reviews: { done: 12, target: 20 },
+        lesson: { done: 1, target: 1 },
+        dictation: { done: 4, target: 10 },
+      },
+      bonus: { id: 'speak-5', target: 5 },
+      bonusDone: 2,
+      allDoneAwarded: false,
+      bonusAwarded: false,
+      streakCounted: true,
+      xp: { reviews: 12, choice: 3, voice: 6, dictation: 12, shadowing: 0 },
+      freezesSpent: 0,
+    }
+    await repo.putQuestDay(state)
+    expect(await repo.getQuestDay(day)).toEqual(state)
+    const rows = (await db.item_progress.toArray()).filter((row) => row.kind === 'quest_day')
+    expect(rows.length).toBe(1)
+    expect(rows[0].item_id).toBe(day)
+  })
+
+  it('gate_attempts: попытка Врат по ключу gate (M7#7.2)', async () => {
+    expect(await repo.getGateAttempt('D')).toBeNull()
+    const attempt = {
+      gate: 'D' as const,
+      started_at: NOW.toISOString(),
+      finished_at: null,
+      passed: [],
+      scores: [
+        { section: 'vocab' as const, correct: 10, total: 20 },
+      ],
+    }
+    await repo.putGateAttempt(attempt)
+    expect(await repo.getGateAttempt('D')).toEqual(attempt)
+  })
 })
 
 describe('uuidv7', () => {
