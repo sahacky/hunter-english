@@ -215,6 +215,17 @@ const checkTrapRef = (refPath, trapId) => {
   if (!refExists('traps', trapId)) fail(refPath, `ловушка "${trapId}" не найдена в data/traps.json`)
 }
 
+// Известные главы разговорника (specs/05 §0: topic = имя файла в data/phrasebook/).
+// Каталога нет до M8 — проверка пассивна; quotes_topic — тег темы подбора цитат
+// (реестр тем появится с разговорником M8, пока проверяется схемой).
+const phrasebookTopics = new Set(
+  existsSync(join(DATA_DIR, 'phrasebook'))
+    ? readdirSync(join(DATA_DIR, 'phrasebook'))
+        .filter((f) => f.endsWith('.json'))
+        .map((f) => f.replace(/\.json$/, ''))
+    : [],
+)
+
 for (const { relPath, kind, items } of parsed) {
   items.forEach((item, index) => {
     const base = `${relPath}#/items/${index}`
@@ -232,6 +243,15 @@ for (const { relPath, kind, items } of parsed) {
       if (typeof item.grammar_point?.trap_id === 'string')
         checkTrapRef(`${base}/grammar_point/trap_id`, item.grammar_point.trap_id)
       if (typeof item.trap_id === 'string') checkTrapRef(`${base}/trap_id`, item.trap_id)
+      if (
+        phrasebookTopics.size > 0 &&
+        typeof item.phrasebook_topic === 'string' &&
+        !phrasebookTopics.has(item.phrasebook_topic)
+      )
+        fail(
+          `${base}/phrasebook_topic`,
+          `глава разговорника "${item.phrasebook_topic}" не найдена в data/phrasebook/`,
+        )
     }
     if (kind === 'exercises') {
       const payload = item.payload ?? {}

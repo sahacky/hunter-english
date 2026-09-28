@@ -13,9 +13,10 @@
 - M5: детализация внесена в PLANS (5.1–5.7, решения 1–6 подтверждены разработчиком); ветка `feature/m5-lessons`
 - M5#5.1: домен проверки `src/domain/check/` (types / normalize / levenshtein / align / checker): нормализация, сокращения (can't=cannot=can not через expand в [can,not]), EXCEPTIONS+typoLimit, DP-выравнивание diff (match/typo/extra/missing), judge: trapWrong §4.3 + строгие ЛТ-06/17/19 §4.7, judgeVoice 0.85/0.80 §4.8; 47 unit-тестов; гейты зелёные (94 теста суммарно)
 - M5#5.2: домен урока `src/domain/lesson/` (types / steps / xp / runner): groupIntoSteps (тип → шаг, cloze+quote → «Из сериала», card игнор), evaluateStep (warmup ≥70%, listening <60% retrySuggested), xpForOutcome (1-я/50% floor/0, disputed+self_reported полный), recordAnswer/advanceStep/finishPass/passAccuracy/totalXp, computeLessonStatus (locked/available/in_progress/completed/review_due, ≥90% learned, lapsed ≥30%), isLessonPassed; ProgressRepository + get/putLessonProgress (Dexie, sync_queue 'lesson_progress', LessonProgressRow); шаг 7 завершается явным finishPass; 27 новых тестов, всего 121
+- M5#5.3: контент-лоадер `src/content/lessons.ts` (типы phrase/exercise/lesson по specs/05 §2–4, ленивые glob-чанки, courseToLessonId E-01↔les-e-01, exercisePhraseIds — все ссылки payload, assembleLesson — шаги+привязка фраз, loadLessonView); валидатор: phrasebook_topic известность (пассивна до M8, quotes_topic — реестр тем в M8); 8 новых тестов (129); открыт draft PR #5 — CI зелёный, проверять после каждого пуша
 
 ## In Progress
-- M5#5.3: контент-лоадер фраз/уроков/упражнений + расширение `validate:data` (кросс-ссылки specs/05 §9)
+- M5#5.4: контент пилота E1 (E-01…E-05) — phrases-e.json, exercises-e.json, lessons-e.json, аудио фраз (Piper cori)
 
 ## TODO
 - M5: Движок уроков и упражнений (ранг E) — детализация в PLANS, затем реализация
