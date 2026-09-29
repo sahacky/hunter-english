@@ -8427,7 +8427,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "I have ___ money.",
+        "text_with_gap": "I have ___ money. (утверждение)",
         "gap_answers": ["some"]
       },
       "answer": {
@@ -8573,7 +8573,7 @@
         "pairs": [
           {
             "en": "I need some help.",
-            "ru": "Мне нужна какая-нибудь помощь."
+            "ru": "Мне нужна помощь."
           },
           {
             "en": "I have some money.",
@@ -9009,7 +9009,7 @@
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "Мне нужна какая-нибудь помощь.",
+        "prompt_ru": "Мне нужна помощь.",
         "phrase_id": "ph-d-0449"
       },
       "answer": {
@@ -9064,7 +9064,7 @@
       "payload": {
         "kind": "verb_tense",
         "sentence_with_gap": "There is ___ sugar. (= not any)",
-        "marker": "no",
+        "marker": "отрицание (= not any)",
         "gap_answers": ["no"]
       },
       "answer": {
@@ -9438,9 +9438,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Сколько это дней?",
+        "prompt_ru": "Сколько это занимает дней?",
         "phrase_id": "ph-d-0506",
-        "tokens": ["How", "What", "There", "is", "many", "days", "it"]
+        "tokens": ["How", "days", "What", "There", "does", "it", "many", "take"]
       },
       "answer": {
         "normalization": "default",
@@ -9458,7 +9458,7 @@
         "kind": "word_bank",
         "prompt_ru": "Какой это размер?",
         "phrase_id": "ph-d-0531",
-        "tokens": ["There", "What", "it", "size", "is", "How"]
+        "tokens": ["What", "How", "it", "There", "is", "size"]
       },
       "answer": {
         "normalization": "default",
@@ -9476,7 +9476,7 @@
         "kind": "word_bank",
         "prompt_ru": "Здесь много магазинов.",
         "phrase_id": "ph-d-0510",
-        "tokens": ["are", "shops", "There", "here", "What", "How", "many"]
+        "tokens": ["shops", "There", "here", "are", "many", "How", "What"]
       },
       "answer": {
         "normalization": "default",
@@ -9616,7 +9616,7 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "У нас не много денег.",
+        "prompt_ru": "У нас мало денег.",
         "phrase_id": "ph-d-0508"
       },
       "answer": {
@@ -9633,7 +9633,7 @@
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "Молока не много.",
+        "prompt_ru": "Молока мало.",
         "phrase_id": "ph-d-0509"
       },
       "answer": {
@@ -9823,7 +9823,7 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Сегодня не много туристов.",
+        "prompt_ru": "Сегодня мало туристов.",
         "phrase_id": "ph-d-0511"
       },
       "answer": {
@@ -9992,7 +9992,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-d-0516"
+        "phrase_id": "ph-d-0517"
       },
       "answer": {
         "normalization": "default",
@@ -10509,7 +10509,7 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Сегодня сильное движение.",
+        "prompt_ru": "Сегодня большие пробки.",
         "phrase_id": "ph-d-0568"
       },
       "answer": {
@@ -13501,7 +13501,7 @@
       "payload": {
         "kind": "cloze",
         "text_with_gap": "I like it ___ much.",
-        "gap_answers": ["very"]
+        "gap_answers": ["very", "so"]
       },
       "answer": {
         "normalization": "default",
@@ -13873,7 +13873,7 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Я не много смотрю телевизор.",
+        "prompt_ru": "Я мало смотрю телевизор.",
         "phrase_id": "ph-d-0746"
       },
       "answer": {
@@ -14344,7 +14344,7 @@
       "payload": {
         "kind": "cloze",
         "text_with_gap": "___ him about the plan.",
-        "gap_answers": ["Ask"]
+        "gap_answers": ["Ask", "Tell"]
       },
       "answer": {
         "normalization": "default",
@@ -15156,7 +15156,7 @@
       "payload": {
         "kind": "cloze",
         "text_with_gap": "I don't feel ___.",
-        "gap_answers": ["well"]
+        "gap_answers": ["well", "good"]
       },
       "answer": {
         "normalization": "default",
@@ -19610,7 +19610,7 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Было очень вкусно, спасибо.",
+        "prompt_ru": "Было вкусно, спасибо.",
         "phrase_id": "ph-d-1066",
         "tokens": ["you", "would", "delicious,", "was", "It", "thank", "are"]
       },
@@ -19977,7 +19977,7 @@
       "payload": {
         "kind": "verb_tense",
         "sentence_with_gap": "Where is ___ 5?",
-        "marker": "выход (gate)",
+        "marker": "выход на посадку",
         "gap_answers": ["gate"]
       },
       "answer": {
@@ -21251,7 +21251,7 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Я не могу верить ничему, что он говорит.",
+        "prompt_ru": "Я не верю ничему, что он говорит.",
         "phrase_id": "ph-d-1145",
         "tokens": ["he", "worry", "you", "says", "anything", "I", "believe", "can't"]
       },
@@ -21916,7 +21916,7 @@
         "kind": "choose_translation",
         "prompt": "Он говорит правду.",
         "options": [
-          "He says the truth.",
+          "He tells the truth.",
           "Do you know him?",
           "I have some money.",
           "They are friends."
@@ -21962,7 +21962,7 @@
         "kind": "choose_translation",
         "prompt": "Ты его знаешь?",
         "options": [
-          "He says the truth.",
+          "He tells the truth.",
           "I have some money.",
           "Do you know him?",
           "They are friends."
@@ -24410,7 +24410,7 @@
       "type": "find_error",
       "payload": {
         "kind": "find_error",
-        "wrong_en": "How much money do you need? — How many money do you need?",
+        "wrong_en": "How many money do you need?",
         "hint_ru": "Сколько денег тебе нужно?",
         "phrase_id": "ph-d-0544"
       },
@@ -24484,7 +24484,7 @@
       "type": "find_error",
       "payload": {
         "kind": "find_error",
-        "wrong_en": "I very like this song.",
+        "wrong_en": "I very like it.",
         "hint_ru": "Мне это очень нравится.",
         "phrase_id": "ph-d-0607"
       },
@@ -24854,7 +24854,7 @@
       "type": "find_error",
       "payload": {
         "kind": "find_error",
-        "wrong_en": "I would like a coffee? — I would like coffee, please.",
+        "wrong_en": "I would like coffee, please.",
         "hint_ru": "Я бы хотел кофе, пожалуйста.",
         "phrase_id": "ph-d-1025"
       },
@@ -24873,8 +24873,8 @@
       "type": "answer_question",
       "payload": {
         "kind": "answer_question",
-        "question_en": "Can I have the bill, please?",
-        "phrase_id": "ph-d-1031"
+        "question_en": "Are you ready to order?",
+        "phrase_id": "ph-d-1026"
       },
       "answer": {
         "normalization": "default",
@@ -24984,7 +24984,7 @@
       "type": "answer_question",
       "payload": {
         "kind": "answer_question",
-        "question_en": "Can I pay by card?",
+        "question_en": "Would you like to pay now?",
         "phrase_id": "ph-d-1029"
       },
       "answer": {

@@ -29,7 +29,7 @@
           "role": "buyer",
           "text_en": "Can I try it on?",
           "translation_ru": "Можно её примерить?",
-          "accepted": ["Can I try it on?", "Can I try it on?"]
+          "accepted": ["Can I try it on?", "May I try it on?"]
         },
         {
           "role": "seller",

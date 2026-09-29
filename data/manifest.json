@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-29T10:57:20Z",
+  "generated_at": "2026-09-29T11:26:58Z",
   "files": [
     {
       "path": "lessons/exercises-d.json",
       "kind": "exercises",
       "schema_version": 1,
       "items": 1361,
-      "sha256": "f9d91f51a1759c531d6a1c1e6c498df5d806fc2ec3fc9083562ab08bb5cdd513"
+      "sha256": "9f81802b17a6f5c33b5cac2e554f1715c17f68a9b596c60fae37e48b60c173a9"
     },
     {
       "path": "lessons/exercises-e.json",
@@ -56,14 +56,14 @@
       "kind": "phrasebook",
       "schema_version": 1,
       "items": 1,
-      "sha256": "7efd82d432da5a1262efaf2e1c276754c5c68bb11757e78bf23c4074862cf99e"
+      "sha256": "ca93ed97168500f30c0b2de526165f6cc3aaf148120de8b8724911c2d188f0cc"
     },
     {
       "path": "phrasebook/shop.json",
       "kind": "phrasebook",
       "schema_version": 1,
       "items": 2,
-      "sha256": "1fa3d1388215adc1e55c18e80b22dd506d86523797a7227d74bdaf251246b559"
+      "sha256": "77f377cc28645864b41ea8230f316a55423831b2183cec984da5132f02380b49"
     },
     {
       "path": "phrasebook/smalltalk.json",
@@ -84,7 +84,7 @@
       "kind": "phrases",
       "schema_version": 1,
       "items": 1250,
-      "sha256": "ac52f17d50e5f4ac8f25b729761dc7b394a7a7ac44f90b5824adeef7f6642bbf"
+      "sha256": "68bd540cfcf61113d5ed063eb4debd49c4a82e0af70376bb7be3621ab79b7991"
     },
     {
       "path": "phrases/phrases-e.json",

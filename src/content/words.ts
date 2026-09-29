@@ -42,6 +42,24 @@ export async function loadTopNgslLemmas(maxRank = 1000): Promise<Set<string>> {
   return top
 }
 
+/** Эффективный ранг слова по entityId: NGSL-ранг; суб-полоса — Infinity
+ * (экзамен Врат берёт только изучаемые полосы, ревью M12 М-6). */
+export async function loadWordRanks(): Promise<Map<string, number>> {
+  const files = await Promise.all(Object.values(wordModules).map((load) => load()))
+  const ranks = new Map<string, number>()
+  for (const file of files) {
+    for (const item of file.items) {
+      const rank =
+        'freq_rank_sub' in item
+          ? Number.POSITIVE_INFINITY
+          : (item.freq_rank_ngsl ?? Number.POSITIVE_INFINITY)
+      const prev = ranks.get(item.id)
+      if (prev === undefined || rank < prev) ranks.set(item.id, rank)
+    }
+  }
+  return ranks
+}
+
 function toNote(item: WordItem): Note {
   return {
     id: `note_${item.id}`,

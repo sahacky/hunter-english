@@ -14,7 +14,7 @@ import {
 } from '../components/lesson/ExerciseView'
 import type { ExerciseItem, PhraseItem } from '../content/lessons'
 import { loadLessons, loadPhrases } from '../content/lessons'
-import { createFirstCards, loadWordNotes } from '../content/words'
+import { createFirstCards, loadWordNotes, loadWordRanks } from '../content/words'
 import { cooldownPassed, judgeGate, NEXT_RANK } from '../domain/game/game'
 import type { Rank } from '../domain/game/types'
 import type { GateAttempt, GateSectionScore } from '../domain/game/types'
@@ -65,12 +65,22 @@ function mkExercise(
 }
 
 /** Сборка экзамена из данных ранга E (решение M7#1: рантайм-генерация). */
-async function buildExam(attemptSeed: string, phrasePrefix: string): Promise<ExamItem[]> {
-  const [wordNotes, phrases, lessons] = await Promise.all([
+async function buildExam(
+  attemptSeed: string,
+  phrasePrefix: string,
+  wordsMaxRank: number,
+): Promise<ExamItem[]> {
+  const [allWordNotes, phrases, lessons, wordRanks] = await Promise.all([
     loadWordNotes(),
     loadPhrases(),
     loadLessons(),
+    loadWordRanks(),
   ])
+  // лексика секции — только изучаемые полосы ранга входа (game://gate-content,
+  // ревью M12 М-6): суб-полоса (Infinity) в экзамен не попадает
+  const wordNotes = allWordNotes.filter(
+    (note) => (wordRanks.get(note.entityId) ?? 0) <= wordsMaxRank,
+  )
   const rankPhrases = phrases.filter((phrase) => phrase.id.startsWith(phrasePrefix))
   const items: ExamItem[] = []
   // Лексика 20: RU → выбор EN из заметок слов
@@ -162,10 +172,32 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
   // Врата E→D (M7) и D→C (M12#12.7); контент экзамена — соответствующий ранг
   const GATE_CONFIG: Record<
     string,
-    { from: Rank; to: Rank; phrasePrefix: string; wordsTarget: number; lessonsOkAt: number }
+    {
+      from: Rank
+      to: Rank
+      phrasePrefix: string
+      wordsTarget: number
+      lessonsOkAt: number
+      wordsMaxRank: number
+    }
   > = {
-    'E-D': { from: 'E', to: 'D', phrasePrefix: 'ph-e-', wordsTarget: 300, lessonsOkAt: 5 },
-    'D-C': { from: 'D', to: 'C', phrasePrefix: 'ph-d-', wordsTarget: 1000, lessonsOkAt: 14 },
+    // wordsMaxRank: лексика секции — только полосы ранга входа (game://gate-content)
+    'E-D': {
+      from: 'E',
+      to: 'D',
+      phrasePrefix: 'ph-e-',
+      wordsTarget: 300,
+      lessonsOkAt: 5,
+      wordsMaxRank: 2809,
+    },
+    'D-C': {
+      from: 'D',
+      to: 'C',
+      phrasePrefix: 'ph-d-',
+      wordsTarget: 1000,
+      lessonsOkAt: 14,
+      wordsMaxRank: 1960,
+    },
   }
   const gate = GATE_CONFIG[gateId]
   const valid = gate !== undefined
@@ -208,7 +240,7 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
   const startExam = useCallback(
     async (sections: ExamItem['section'][]) => {
       const seed = `${gateId}-${Date.now()}`
-      const exam = await buildExam(seed, gate.phrasePrefix)
+      const exam = await buildExam(seed, gate.phrasePrefix, gate.wordsMaxRank)
       const filtered = exam.filter((item) => sections.includes(item.section))
       correctRef.current = { vocab: 0, grammar: 0, listening: 0, speaking: 0 }
       setItems(filtered)
@@ -365,7 +397,7 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
           <li>{t('gates.total', { total: verdict?.total ?? 0 })}</li>
         </ul>
         {verdict?.passed ? (
-          <p>{t('gates.rankUp', { rank: 'D' })}</p>
+          <p>{t('gates.rankUp', { rank: gate.to })}</p>
         ) : (
           <p className="dim">{t('gates.retryHint')}</p>
         )}

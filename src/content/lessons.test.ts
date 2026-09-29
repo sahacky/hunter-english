@@ -243,3 +243,23 @@ describe('loadLessonView (реальные data/ ранга E)', () => {
     }
   })
 })
+
+describe('assembleLesson: кросс-урочные ссылки (transform, ревью M12 Б-1)', () => {
+  it('les-d-27: все ссылки упражнений резолвятся в view.phrasesById', async () => {
+    const view = await loadLessonView('les-d-27')
+    if (!view) throw new Error('нет данных урока les-d-27')
+    for (const items of Object.values(view.content)) {
+      for (const { exercise } of items) {
+        const ids = exercisePhraseIds(exercise)
+        for (const id of ids) {
+          expect(view.phrasesById[id], `${exercise.id} → ${id}`).toBeDefined()
+        }
+      }
+    }
+    // цепочка transform реально доходит до экрана: source и шаги на месте
+    const transforms = Object.values(view.content)
+      .flat()
+      .filter(({ exercise }) => exercise.type === 'transform')
+    expect(transforms.length).toBeGreaterThanOrEqual(15)
+  })
+})
