@@ -6965,7 +6965,7 @@
     {
       "id": "ph-c-0697",
       "text_en": "Do I have to fill in this form?",
-      "translation_ru": "Мне нужно заполнять эту форму?",
+      "translation_ru": "Мне нужно заполнить эту форму?",
       "grammar_point_id": "gp-c-16",
       "variants": ["Do I have to fill in this form?"],
       "audio": {
@@ -6977,7 +6977,7 @@
       "text_en": "You have to fill in this form.",
       "translation_ru": "Вы должны заполнить эту форму.",
       "grammar_point_id": "gp-c-16",
-      "variants": ["You have to fill in this form."],
+      "variants": ["You have to fill in this form.", "You must fill in this form."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-0698.opus"
       }
@@ -7057,7 +7057,7 @@
       "text_en": "You mustn't smoke here.",
       "translation_ru": "Здесь нельзя курить.",
       "grammar_point_id": "gp-c-16",
-      "variants": ["You mustn't smoke here."],
+      "variants": ["You mustn't smoke here.", "You can't smoke here."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-0706.opus"
       }
@@ -7417,7 +7417,7 @@
       "text_en": "You shouldn't miss this museum.",
       "translation_ru": "Не пропускай этот музей.",
       "grammar_point_id": "gp-c-17",
-      "variants": ["You shouldn't miss this museum."],
+      "variants": ["You shouldn't miss this museum.", "Don't miss this museum."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-0742.opus"
       }
@@ -7455,7 +7455,7 @@
     {
       "id": "ph-c-0746",
       "text_en": "Which bus should I take?",
-      "translation_ru": "Какой автобус мне взять?",
+      "translation_ru": "На какой автобус мне сесть?",
       "grammar_point_id": "gp-c-17",
       "variants": ["Which bus should I take?"],
       "audio": {
@@ -8195,7 +8195,7 @@
     {
       "id": "ph-c-0820",
       "text_en": "I could never hate you.",
-      "translation_ru": "Я никогда не смогу тебя ненавидеть.",
+      "translation_ru": "Я никогда бы не смог тебя ненавидеть.",
       "grammar_point_id": "gp-c-18",
       "variants": ["I could never hate you."],
       "audio": {
@@ -8675,7 +8675,7 @@
     {
       "id": "ph-c-0868",
       "text_en": "Do I have to fill in this form?",
-      "translation_ru": "Мне нужно заполнять эту форму?",
+      "translation_ru": "Мне нужно заполнить эту форму?",
       "grammar_point_id": "gp-c-20",
       "variants": ["Do I have to fill in this form?"],
       "audio": {
@@ -8687,7 +8687,7 @@
       "text_en": "You have to fill in this form.",
       "translation_ru": "Вы должны заполнить эту форму.",
       "grammar_point_id": "gp-c-20",
-      "variants": ["You have to fill in this form."],
+      "variants": ["You have to fill in this form.", "You must fill in this form."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-0869.opus"
       }
@@ -8707,7 +8707,7 @@
       "text_en": "You mustn't smoke here.",
       "translation_ru": "Здесь нельзя курить.",
       "grammar_point_id": "gp-c-20",
-      "variants": ["You mustn't smoke here."],
+      "variants": ["You mustn't smoke here.", "You can't smoke here."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-0871.opus"
       }
@@ -9465,7 +9465,7 @@
     {
       "id": "ph-c-0947",
       "text_en": "Two rooms, please — the quieter one for me.",
-      "translation_ru": "Два номера, пожалуйста — мне потише.",
+      "translation_ru": "Два номера, пожалуйста — мне номер потише.",
       "grammar_point_id": "gp-c-21",
       "variants": ["Two rooms, please — the quieter one for me."],
       "audio": {
@@ -10797,7 +10797,7 @@
       "text_en": "I saw her while I was walking to work.",
       "translation_ru": "Я увидел её по дороге на работу.",
       "grammar_point_id": "gp-c-24",
-      "variants": ["I saw her while I was walking to work."],
+      "variants": ["I saw her while I was walking to work.", "I saw her on my way to work."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-1080.opus"
       }
@@ -12404,10 +12404,10 @@
     },
     {
       "id": "ph-c-1241",
-      "text_en": "The tv doesn't work.",
+      "text_en": "The TV doesn't work.",
       "translation_ru": "Телевизор не работает.",
       "grammar_point_id": "gp-c-28",
-      "variants": ["The tv doesn't work."],
+      "variants": ["The TV doesn't work."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-1241.opus"
       }
@@ -13505,7 +13505,7 @@
     {
       "id": "ph-c-1351",
       "text_en": "Do I have to fill in this form?",
-      "translation_ru": "Мне нужно заполнять эту форму?",
+      "translation_ru": "Мне нужно заполнить эту форму?",
       "grammar_point_id": "gp-c-30",
       "variants": ["Do I have to fill in this form?"],
       "audio": {
@@ -13517,7 +13517,7 @@
       "text_en": "You have to fill in this form.",
       "translation_ru": "Вы должны заполнить эту форму.",
       "grammar_point_id": "gp-c-30",
-      "variants": ["You have to fill in this form."],
+      "variants": ["You have to fill in this form.", "You must fill in this form."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-1352.opus"
       }

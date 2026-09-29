@@ -54,6 +54,11 @@
           "accepted": ["Sparkling water, please."]
         },
         {
+          "role": "waiter",
+          "text_en": "Here are your mains. Enjoy your meal!",
+          "translation_ru": "Вот ваши основные блюда. Приятного аппетита!"
+        },
+        {
           "role": "guest",
           "text_en": "Could we have the bill?",
           "translation_ru": "Можно нам счёт?",

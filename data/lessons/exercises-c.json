@@ -12844,7 +12844,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "I ___ to work tomorrow.",
+        "text_with_gap": "I ___ to work tomorrow. (вынужден)",
         "gap_answers": ["have"]
       },
       "answer": {
@@ -13673,7 +13673,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "You ___ see a doctor.",
+        "text_with_gap": "You ___ see a doctor. (совет)",
         "gap_answers": ["should"]
       },
       "answer": {
@@ -13707,7 +13707,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "What ___ I do?",
+        "text_with_gap": "What ___ I do? (совет)",
         "gap_answers": ["should"]
       },
       "answer": {
@@ -14305,7 +14305,7 @@
       "payload": {
         "kind": "verb_tense",
         "sentence_with_gap": "I ___ to wait two hours.",
-        "marker": "пришлось",
+        "marker": "вчера",
         "gap_answers": ["had"]
       },
       "answer": {
@@ -14514,8 +14514,8 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "___ you help me, please?",
-        "gap_answers": ["Could"]
+        "text_with_gap": "___ you help me, please? (вежливо)",
+        "gap_answers": ["Could", "Would", "Can"]
       },
       "answer": {
         "normalization": "default",
@@ -14531,8 +14531,8 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "I ___ sleep yesterday.",
-        "gap_answers": ["couldn't", "could not"]
+        "text_with_gap": "I ___ sleep yesterday. (не мог)",
+        "gap_answers": ["couldn't", "could not", "didn't"]
       },
       "answer": {
         "normalization": "default",
@@ -14774,7 +14774,7 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Я никогда не смогу тебя ненавидеть.",
+        "prompt_ru": "Я никогда бы не смог тебя ненавидеть.",
         "phrase_id": "ph-c-0820",
         "tokens": ["could", "How", "hate", "I", "see", "never", "you"]
       },
@@ -15123,7 +15123,7 @@
       "payload": {
         "kind": "verb_tense",
         "sentence_with_gap": "We ___ find the hotel.",
-        "marker": "не смогли",
+        "marker": "в тот раз",
         "gap_answers": ["couldn't", "could not"]
       },
       "answer": {
@@ -15141,7 +15141,7 @@
       "payload": {
         "kind": "verb_tense",
         "sentence_with_gap": "He ___ speak three languages.",
-        "marker": "умел",
+        "marker": "раньше",
         "gap_answers": ["could"]
       },
       "answer": {
@@ -16213,7 +16213,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "I ___ you to understand.",
+        "text_with_gap": "I ___ you to understand. (хочу)",
         "gap_answers": ["want"]
       },
       "answer": {
@@ -16230,8 +16230,8 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "___ you help me, please?",
-        "gap_answers": ["Could"]
+        "text_with_gap": "___ you help me, please? (вежливо)",
+        "gap_answers": ["Could", "Would", "Can"]
       },
       "answer": {
         "normalization": "default",
@@ -16640,7 +16640,7 @@
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "Мне нужно заполнять эту форму?",
+        "prompt_ru": "Мне нужно заполнить эту форму?",
         "phrase_id": "ph-c-0868"
       },
       "answer": {
@@ -16815,7 +16815,7 @@
       "payload": {
         "kind": "verb_tense",
         "sentence_with_gap": "I couldn't ___ last night.",
-        "marker": "спать",
+        "marker": "отдых",
         "gap_answers": ["sleep"]
       },
       "answer": {
@@ -17461,7 +17461,7 @@
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "Два номера, пожалуйста — мне потише.",
+        "prompt_ru": "Два номера, пожалуйста — мне номер потише.",
         "phrase_id": "ph-c-0947"
       },
       "answer": {
@@ -17949,7 +17949,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "This coffee is ___ hot.",
+        "text_with_gap": "This coffee is ___ hot. (слишком)",
         "gap_answers": ["too"]
       },
       "answer": {
@@ -21102,9 +21102,9 @@
       "type": "verb_tense",
       "payload": {
         "kind": "verb_tense",
-        "sentence_with_gap": "It is ___ interesting book.",
-        "marker": "более",
-        "gap_answers": ["more", "the most"]
+        "sentence_with_gap": "It is ___ interesting book. (самая)",
+        "marker": "superlative",
+        "gap_answers": ["the most"]
       },
       "answer": {
         "normalization": "default",
@@ -23058,7 +23058,7 @@
         "prompt": "Я выезжаю.",
         "options": [
           "I'm checking out.",
-          "The tv doesn't work.",
+          "The TV doesn't work.",
           "For how many nights?",
           "I have a reservation."
         ],
@@ -23106,7 +23106,7 @@
           "I'm checking out.",
           "For how many nights?",
           "Could I change rooms?",
-          "The tv doesn't work."
+          "The TV doesn't work."
         ],
         "correct": 1
       },
@@ -23161,7 +23161,7 @@
             "ru": "Завтрак включён."
           },
           {
-            "en": "The tv doesn't work.",
+            "en": "The TV doesn't work.",
             "ru": "Телевизор не работает."
           },
           {
@@ -26246,7 +26246,7 @@
       "payload": {
         "kind": "answer_question",
         "question_en": "Should I call a doctor?",
-        "phrase_id": "ph-c-0773"
+        "phrase_id": "ph-c-0730"
       },
       "answer": {
         "normalization": "default",
@@ -26283,7 +26283,7 @@
       "payload": {
         "kind": "answer_question",
         "question_en": "Do you have a bigger room?",
-        "phrase_id": "ph-c-0915"
+        "phrase_id": "ph-c-0916"
       },
       "answer": {
         "normalization": "default",
@@ -26615,7 +26615,7 @@
       "type": "answer_question",
       "payload": {
         "kind": "answer_question",
-        "question_en": "Will you join us?",
+        "question_en": "Will everything be OK?",
         "phrase_id": "ph-c-0466"
       },
       "answer": {

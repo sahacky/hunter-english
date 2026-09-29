@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-29T14:56:26Z",
+  "generated_at": "2026-09-29T15:13:09Z",
   "files": [
     {
       "path": "lessons/exercises-c.json",
       "kind": "exercises",
       "schema_version": 1,
       "items": 1449,
-      "sha256": "64779ceebb880ae43543bd995a4d375b6197e899cf6a61a51b9f39d8ba5027c9"
+      "sha256": "3ff918e60955ca8d40abdf04291a7947b58cb8ab7debb64ae9601a056441f9d1"
     },
     {
       "path": "lessons/exercises-d.json",
@@ -48,8 +48,8 @@
       "path": "phrasebook/airport.json",
       "kind": "phrasebook",
       "schema_version": 1,
-      "items": 1,
-      "sha256": "b4efbc769e49ec9afc09e9661bf57a91cf49ef0d26dd59aa8756ea1b15c36306"
+      "items": 2,
+      "sha256": "162016c0ff015a49062f96292e784ccd178afe5d6007d5ea69848456fba564b3"
     },
     {
       "path": "phrasebook/directions.json",
@@ -91,7 +91,7 @@
       "kind": "phrasebook",
       "schema_version": 1,
       "items": 1,
-      "sha256": "f579a5a59085eff23c3d8d55ef6dcf872376d823dad2c960ae4fd10af11116c8"
+      "sha256": "3c006b052afb23326aa2d0644b937e6cc97aa2e5b34f2e0b45a12f6a7bf39b9f"
     },
     {
       "path": "phrasebook/shop.json",
@@ -119,7 +119,7 @@
       "kind": "phrases",
       "schema_version": 1,
       "items": 1365,
-      "sha256": "f55830f9ba817d410d23778fbf7339a22573e3680476d8fc75059a26ea7eced9"
+      "sha256": "5a9e2644b24395ba4995db3e5745925aa0e0ed9904e7551a844b329b9d7add32"
     },
     {
       "path": "phrases/phrases-d.json",
