@@ -275,6 +275,18 @@
     "common": {
       "on": "On",
       "off": "Off"
+    },
+    "account": {
+      "title": "Account",
+      "guest": "Guest mode: progress lives on this device only.",
+      "signedIn": "Signed in: {{email}}",
+      "signIn": "Sign in",
+      "signOut": "Sign out",
+      "syncNow": "Sync now",
+      "queue": "queued: {{count}}",
+      "failed": "failed: {{count}}",
+      "lastSync": "last sync: {{time}}",
+      "neverSynced": "never synced"
     }
   },
   "quotes": {
@@ -300,5 +312,16 @@
     "addedToDeck": "Cards added: {{count}}",
     "alreadyInDeck": "already in the deck",
     "close": "Close"
+  },
+  "login": {
+    "title": "Sign in",
+    "guestNote": "Guest mode is the default: all progress is stored locally. Sign in only to sync across devices.",
+    "continueGuest": "Continue as guest",
+    "emailPlaceholder": "email@example.com",
+    "sendLink": "Send link",
+    "magicSent": "Email sent — check your inbox and follow the link.",
+    "google": "Sign in with Google",
+    "genericError": "Sign-in failed. Try again.",
+    "notConfigured": "Sync is not configured on this device (no Supabase keys)."
   }
 }

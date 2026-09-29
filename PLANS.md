@@ -215,6 +215,23 @@
 > 4. **Врата C и transform — после полного ранга D** (D-28 «Большое повторение» — вход в экзамен по канону specs/01 §6).
 > 5. **Разговорник D**: глава «Ориентирование» идёт с D1 (minRank D уже в SITUATIONS); голосовые реплики NPC — озвучка TTS-шлюзом (аудио фраз разговорника не генерируем — паттерн M8).
 
+## M13: Supabase {#M13}
+> Контракт — specs/06 (схема §1–2, протокол синка §3, RLS), решения разработчика (M12→M13): free tier, вход magic link / Google, только по приглашениям, гостевой режим по умолчанию + перенос локального прогресса. Env-гейт: без `VITE_SUPABASE_URL/KEY` всё работает как MVP (гость). Ветка: `feature/m13-supabase`. Внешний шаг (за разработчиком): создать проект, прогнать миграцию, отключить открытую регистрацию.
+- [ ] 13.1 `supabase/migrations/0001_init.sql` — полная схема specs/06 §1–2 (profiles, card_states, review_log, lesson_progress, user_stats, item_progress) + RLS-политики + индексы + триггер `handle_new_user`; `updated_at` ставит клиент (LWW), `review_log.id` без серверного default
+- [ ] 13.2 Клиент: `@supabase/supabase-js` (единственная новая зависимость, lazy-import — гость её не грузит), `src/data/supabase.ts` (createClient при env, null иначе); `getCurrentUserId/setCurrentUserId` в db.ts — репозиторий пишет с активным user_id ('local' | uid)
+- [ ] 13.3 Движок синка `src/data/sync.ts` по specs/06 §3: `flush()` (sync_queue → upserts/inserts, экспоненциальный retry ≤5, потом failed), `pull()` (курсоры last_sync_at / max(reviewed_at), LWW-merge по updated_at), `syncNow()`; статус (очередь/last_sync) в meta; unit-тесты на моках клиента (LWW, дедуп review_log, retry)
+- [ ] 13.4 AuthProvider `src/state/auth.tsx`: getSession/onAuthStateChange; вход magic link (email) и Google OAuth; /#/login (гостевой вход — основная кнопка); перенос локального прогресса при первом входе (remap user_id 'local'→uid в Dexie, затем syncNow); logout (перезагрузка в гостевой)
+- [ ] 13.5 Настройки → блок «Аккаунт»: статус (гость/почта), кнопки Войти/Выйти, «Синхронизировать сейчас», очередь/last_sync; i18n; README-runbook (создание проекта, миграция, invitation-гейт)
+- [ ] 13.6 Гейты: полный набор зелёный; e2e: без env — /#/login показывает гостевой режим, приложение не ломается; бандл гостя без supabase-js (проверка чанка)
+- [ ] 13.7 Ревью суб-агентом (адверсариал: LWW-гонки, дедуп, RLS-модель, env-гейт) + исправления + merge в `main` при зелёном CI
+
+> Решения M13 (2026-09-29):
+> 1. **Приглашения = Supabase dashboard**: открытая регистрация выключается в дашборде, друзья получают «Add user → Send invitation»; invites-таблица и edge-функции не заводятся (free tier, минимум поверхности).
+> 2. **Guest-first**: supabase-js грузится lazy только при env; все пути без входа идентичны MVP. После login/logout — location.reload() (простой контракт пересоздания репозиториев).
+> 3. **Перенос прогресса**: при первом входе локальные строки 'local' ремапятся в uid одной Dexie-транзакцией, затем flush+pull; коллизии решает LWW.
+> 4. **AI-собеседник** — вне M13 (отдельное решение, M14+).
+> 5. **Врата C на сервере**: экзамен остаётся клиентским; сервер хранит только item_progress попыток (канон specs/06).
+
 ## Черновик следующих майлстоунов (детализировать после M1)
 > Решение разработчика (2026-09-27): сторонние сервисы (Supabase и пр.) — в самый конец, после MVP. Прогресс MVP — только локально (Dexie/IndexedDB) + экспорт/импорт JSON.
 - M3: Пайплайн данных — слова (NGSL-S → NGSL → FrequencyWords), переводы (Wiktionary/kaikki — сырьё уже в data/raw), примеры (Tatoeba), неправильные/фразовые глаголы, цитаты (из quotes-ru-merged), аудио (Piper en-GB)

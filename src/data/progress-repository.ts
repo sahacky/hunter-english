@@ -11,7 +11,7 @@ import type { LessonProgress } from '../domain/lesson/types'
 import type { CardState, ReviewLogEntry } from '../domain/srs/types'
 import {
   HunterDb,
-  LOCAL_USER_ID,
+  getCurrentUserId,
   db as defaultDb,
   type CardStateRow,
   type ItemProgressRow,
@@ -21,11 +21,11 @@ import {
 } from './db'
 
 function toCardRow(card: CardState): CardStateRow {
-  return { ...card, user_id: LOCAL_USER_ID }
+  return { ...card, user_id: getCurrentUserId() }
 }
 
 function toLogRow(log: ReviewLogEntry): ReviewLogRow {
-  return { ...log, user_id: LOCAL_USER_ID }
+  return { ...log, user_id: getCurrentUserId() }
 }
 
 export class DexieProgressRepository implements ProgressRepository {
@@ -38,7 +38,8 @@ export class DexieProgressRepository implements ProgressRepository {
   async ensureCards(cards: CardState[]): Promise<void> {
     if (cards.length === 0) return
     await this.db.transaction('rw', this.db.card_states, async () => {
-      const keys = cards.map((card): [string, string] => [LOCAL_USER_ID, card.card_id])
+      const user = getCurrentUserId()
+      const keys = cards.map((card): [string, string] => [user, card.card_id])
       const existing = await this.db.card_states.bulkGet(keys)
       const missing = cards.filter((_, i) => existing[i] === undefined)
       if (missing.length > 0) await this.db.card_states.bulkAdd(missing.map(toCardRow))
@@ -46,7 +47,7 @@ export class DexieProgressRepository implements ProgressRepository {
   }
 
   async getAllCards(): Promise<CardState[]> {
-    const rows = await this.db.card_states.where('user_id').equals(LOCAL_USER_ID).toArray()
+    const rows = await this.db.card_states.where('user_id').equals(getCurrentUserId()).toArray()
     return rows.map(({ user_id: _user_id, ...card }) => card)
   }
 
@@ -77,21 +78,21 @@ export class DexieProgressRepository implements ProgressRepository {
   }
 
   async getLessonProgress(lessonId: string): Promise<LessonProgress | null> {
-    const row = await this.db.lesson_progress.get([LOCAL_USER_ID, lessonId])
+    const row = await this.db.lesson_progress.get([getCurrentUserId(), lessonId])
     if (!row) return null
     const { user_id: _user_id, ...progress } = row
     return progress
   }
 
   async getStats(): Promise<UserStats> {
-    const row = await this.db.user_stats.get(LOCAL_USER_ID)
+    const row = await this.db.user_stats.get(getCurrentUserId())
     if (!row) return emptyStats(new Date().toISOString())
     const { user_id: _user_id, ...stats } = row
     return stats
   }
 
   async putStats(stats: UserStats): Promise<void> {
-    const row: UserStatsRow = { ...stats, user_id: LOCAL_USER_ID }
+    const row: UserStatsRow = { ...stats, user_id: getCurrentUserId() }
     await this.db.transaction('rw', this.db.user_stats, this.db.sync_queue, async () => {
       await this.db.user_stats.put(row)
       await this.db.sync_queue.add({
@@ -105,13 +106,13 @@ export class DexieProgressRepository implements ProgressRepository {
   }
 
   async getQuestDay(studyDayIso: string): Promise<QuestDayState | null> {
-    const row = await this.db.item_progress.get([LOCAL_USER_ID, studyDayIso, 'quest_day'])
+    const row = await this.db.item_progress.get([getCurrentUserId(), studyDayIso, 'quest_day'])
     return row ? (row.data as QuestDayState) : null
   }
 
   async putQuestDay(state: QuestDayState): Promise<void> {
     const row: ItemProgressRow = {
-      user_id: LOCAL_USER_ID,
+      user_id: getCurrentUserId(),
       item_id: state.studyDay,
       kind: 'quest_day',
       data: state,
@@ -130,19 +131,19 @@ export class DexieProgressRepository implements ProgressRepository {
   }
 
   async getGateAttempt(gate: string): Promise<GateAttempt | null> {
-    const row = await this.db.item_progress.get([LOCAL_USER_ID, gate, 'gate_attempts'])
+    const row = await this.db.item_progress.get([getCurrentUserId(), gate, 'gate_attempts'])
     return row ? (row.data as GateAttempt) : null
   }
 
   /** Отметка «понял без перевода» на цитате (specs/07 §2.1, plan://M11#11.2). */
   async getQuoteMark(quoteId: string): Promise<boolean> {
-    const row = await this.db.item_progress.get([LOCAL_USER_ID, quoteId, 'quote'])
+    const row = await this.db.item_progress.get([getCurrentUserId(), quoteId, 'quote'])
     return row ? Boolean((row.data as { understood?: boolean } | null)?.understood) : false
   }
 
   async putQuoteMark(quoteId: string, understood: boolean): Promise<void> {
     const row: ItemProgressRow = {
-      user_id: LOCAL_USER_ID,
+      user_id: getCurrentUserId(),
       item_id: quoteId,
       kind: 'quote',
       data: { understood },
@@ -162,7 +163,7 @@ export class DexieProgressRepository implements ProgressRepository {
 
   async putGateAttempt(attempt: GateAttempt): Promise<void> {
     const row: ItemProgressRow = {
-      user_id: LOCAL_USER_ID,
+      user_id: getCurrentUserId(),
       item_id: attempt.gate,
       kind: 'gate_attempts',
       data: attempt,
@@ -181,7 +182,7 @@ export class DexieProgressRepository implements ProgressRepository {
   }
 
   async putLessonProgress(progress: LessonProgress): Promise<void> {
-    const row: LessonProgressRow = { ...progress, user_id: LOCAL_USER_ID }
+    const row: LessonProgressRow = { ...progress, user_id: getCurrentUserId() }
     await this.db.transaction('rw', this.db.lesson_progress, this.db.sync_queue, async () => {
       await this.db.lesson_progress.put(row)
       await this.db.sync_queue.add({
