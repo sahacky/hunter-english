@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "kind": "phrasebook",
+  "items": [
+    {
+      "id": "pb-passport-01",
+      "rank": "C",
+      "topic": "passport",
+      "situation_ru": "Паспортный контроль",
+      "user_role": "traveler",
+      "lines": [
+        {
+          "role": "officer",
+          "text_en": "Passport, please. What is the purpose of your visit?",
+          "translation_ru": "Паспорт, пожалуйста. Какова цель вашего визита?"
+        },
+        {
+          "role": "traveler",
+          "text_en": "Tourism. I'm here for a week.",
+          "translation_ru": "Туризм. Я здесь на неделю.",
+          "accepted": ["Tourism. I'm here for a week.", "Tourism. I'm here on holiday."]
+        },
+        {
+          "role": "officer",
+          "text_en": "Where will you stay?",
+          "translation_ru": "Где вы остановитесь?"
+        },
+        {
+          "role": "traveler",
+          "text_en": "At the Grand Hotel. I have a reservation.",
+          "translation_ru": "В «Гранд-отеле». У меня бронь.",
+          "accepted": ["At the Grand Hotel.", "At the Grand Hotel. I have a reservation."]
+        },
+        {
+          "role": "officer",
+          "text_en": "Do you have a return ticket?",
+          "translation_ru": "У вас есть обратный билет?"
+        },
+        {
+          "role": "traveler",
+          "text_en": "Yes, here it is.",
+          "translation_ru": "Да, вот он.",
+          "accepted": ["Yes, here it is.", "Yes."]
+        },
+        {
+          "role": "officer",
+          "text_en": "Everything is in order. Enjoy your stay.",
+          "translation_ru": "Всё в порядке. Приятного пребывания."
+        }
+      ]
+    },
+    {
+      "id": "pb-passport-02",
+      "rank": "C",
+      "topic": "passport",
+      "situation_ru": "Таможня",
+      "user_role": "traveler",
+      "lines": [
+        {
+          "role": "officer",
+          "text_en": "Anything to declare?",
+          "translation_ru": "Есть что декларировать?"
+        },
+        {
+          "role": "traveler",
+          "text_en": "Nothing to declare.",
+          "translation_ru": "Нечего декларировать.",
+          "accepted": ["Nothing to declare."]
+        },
+        {
+          "role": "officer",
+          "text_en": "Open your suitcase, please.",
+          "translation_ru": "Откройте чемодан, пожалуйста."
+        },
+        {
+          "role": "traveler",
+          "text_en": "Sure, no problem.",
+          "translation_ru": "Конечно, без проблем.",
+          "accepted": ["Sure, no problem.", "Of course."]
+        },
+        {
+          "role": "officer",
+          "text_en": "What is in this box?",
+          "translation_ru": "Что в этой коробке?"
+        },
+        {
+          "role": "traveler",
+          "text_en": "It's tea, a gift. For personal use.",
+          "translation_ru": "Это чай, подарок. Для личного пользования.",
+          "accepted": ["It's tea, a gift.", "It's tea, a gift. For personal use."]
+        }
+      ]
+    }
+  ]
+}

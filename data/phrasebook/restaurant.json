@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "kind": "phrasebook",
+  "items": [
+    {
+      "id": "pb-restaurant-01",
+      "rank": "C",
+      "topic": "restaurant",
+      "situation_ru": "Заказ в ресторане",
+      "user_role": "guest",
+      "lines": [
+        {
+          "role": "waiter",
+          "text_en": "Good evening. A table for two?",
+          "translation_ru": "Добрый вечер. Столик на двоих?"
+        },
+        {
+          "role": "guest",
+          "text_en": "Yes, please. We didn't book.",
+          "translation_ru": "Да, пожалуйста. Мы не бронировали.",
+          "accepted": ["Yes, please. We didn't book.", "A table for two, please."]
+        },
+        {
+          "role": "waiter",
+          "text_en": "This way, please. Here is the menu.",
+          "translation_ru": "Сюда, пожалуйста. Вот меню."
+        },
+        {
+          "role": "guest",
+          "text_en": "What do you recommend?",
+          "translation_ru": "Что вы посоветуете?",
+          "accepted": ["What do you recommend?"]
+        },
+        {
+          "role": "waiter",
+          "text_en": "The special of the day is fish.",
+          "translation_ru": "Блюдо дня — рыба."
+        },
+        {
+          "role": "guest",
+          "text_en": "I'll have the fish. I'm allergic to nuts.",
+          "translation_ru": "Я возьму рыбу. У меня аллергия на орехи.",
+          "accepted": ["I'll have the fish.", "I'll have the fish. I'm allergic to nuts."]
+        },
+        {
+          "role": "waiter",
+          "text_en": "No problem, the kitchen will be careful. Anything to drink?",
+          "translation_ru": "Без проблем, кухня будет осторожна. Что будете пить?"
+        },
+        {
+          "role": "guest",
+          "text_en": "Sparkling water, please.",
+          "translation_ru": "Воду с газом, пожалуйста.",
+          "accepted": ["Sparkling water, please."]
+        },
+        {
+          "role": "guest",
+          "text_en": "Could we have the bill?",
+          "translation_ru": "Можно нам счёт?",
+          "accepted": ["Could we have the bill?", "The bill, please."]
+        },
+        {
+          "role": "waiter",
+          "text_en": "Of course. Everything was OK?",
+          "translation_ru": "Конечно. Всё было в порядке?"
+        },
+        {
+          "role": "guest",
+          "text_en": "Everything was delicious. Keep the change.",
+          "translation_ru": "Всё было очень вкусно. Сдачи не надо.",
+          "accepted": ["Everything was delicious.", "Everything was delicious. Keep the change."]
+        }
+      ]
+    }
+  ]
+}
