@@ -162,10 +162,10 @@
           "id": "ex-d-0046"
         },
         {
-          "id": "ex-d-0461"
+          "id": "ex-d-1306"
         },
         {
-          "id": "ex-d-0462"
+          "id": "ex-d-1307"
         }
       ],
       "bebris_video": {
@@ -335,10 +335,10 @@
           "id": "ex-d-0092"
         },
         {
-          "id": "ex-d-0463"
+          "id": "ex-d-1308"
         },
         {
-          "id": "ex-d-0464"
+          "id": "ex-d-1309"
         }
       ],
       "bebris_video": {
@@ -508,10 +508,10 @@
           "id": "ex-d-0138"
         },
         {
-          "id": "ex-d-0465"
+          "id": "ex-d-1310"
         },
         {
-          "id": "ex-d-0466"
+          "id": "ex-d-1311"
         }
       ],
       "bebris_video": {
@@ -681,10 +681,10 @@
           "id": "ex-d-0184"
         },
         {
-          "id": "ex-d-0467"
+          "id": "ex-d-1312"
         },
         {
-          "id": "ex-d-0468"
+          "id": "ex-d-1313"
         }
       ],
       "bebris_video": null
@@ -849,10 +849,10 @@
           "id": "ex-d-0230"
         },
         {
-          "id": "ex-d-0469"
+          "id": "ex-d-1314"
         },
         {
-          "id": "ex-d-0470"
+          "id": "ex-d-1315"
         }
       ],
       "bebris_video": null
@@ -1017,10 +1017,10 @@
           "id": "ex-d-0276"
         },
         {
-          "id": "ex-d-0471"
+          "id": "ex-d-1316"
         },
         {
-          "id": "ex-d-0472"
+          "id": "ex-d-1317"
         }
       ],
       "bebris_video": {
@@ -1190,10 +1190,10 @@
           "id": "ex-d-0322"
         },
         {
-          "id": "ex-d-0473"
+          "id": "ex-d-1318"
         },
         {
-          "id": "ex-d-0474"
+          "id": "ex-d-1319"
         }
       ],
       "bebris_video": {
@@ -1363,10 +1363,10 @@
           "id": "ex-d-0368"
         },
         {
-          "id": "ex-d-0475"
+          "id": "ex-d-1320"
         },
         {
-          "id": "ex-d-0476"
+          "id": "ex-d-1321"
         }
       ],
       "bebris_video": {
@@ -1536,10 +1536,10 @@
           "id": "ex-d-0414"
         },
         {
-          "id": "ex-d-0477"
+          "id": "ex-d-1322"
         },
         {
-          "id": "ex-d-0478"
+          "id": "ex-d-1323"
         }
       ],
       "bebris_video": null
@@ -1704,10 +1704,3115 @@
           "id": "ex-d-0460"
         },
         {
+          "id": "ex-d-1324"
+        },
+        {
+          "id": "ex-d-1325"
+        }
+      ],
+      "bebris_video": null
+    },
+    {
+      "id": "les-d-11",
+      "rank": "D",
+      "module": "mod-d-3",
+      "title": "some / any / no",
+      "grammar_point": {
+        "id": "gp-d-11",
+        "title_ru": "Квантификаторы some/any/no",
+        "rule_md": "**some / any / no.**\nУтверждение — **some**: I have **some** money.\nОтрицание и вопрос — **any**: I don't have **any** money. / Do you have **any** money?\nУсиленное отрицание — **no**: I have **no** money. (= not any)\nsome также в просьбах/предложениях: Can I have **some** more?",
+        "phrase_ids": ["ph-d-0448", "ph-d-0449", "ph-d-0450", "ph-d-0451", "ph-d-0452"],
+        "trap_id": "trap-articles"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 881,
+        "to": 940
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-articles",
+      "quotes_topic": "food",
+      "exercises": [
+        {
+          "id": "ex-d-0461"
+        },
+        {
+          "id": "ex-d-0462"
+        },
+        {
+          "id": "ex-d-0463"
+        },
+        {
+          "id": "ex-d-0464"
+        },
+        {
+          "id": "ex-d-0465"
+        },
+        {
+          "id": "ex-d-0466"
+        },
+        {
+          "id": "ex-d-0467"
+        },
+        {
+          "id": "ex-d-0468"
+        },
+        {
+          "id": "ex-d-0469"
+        },
+        {
+          "id": "ex-d-0470"
+        },
+        {
+          "id": "ex-d-0471"
+        },
+        {
+          "id": "ex-d-0472"
+        },
+        {
+          "id": "ex-d-0473"
+        },
+        {
+          "id": "ex-d-0474"
+        },
+        {
+          "id": "ex-d-0475"
+        },
+        {
+          "id": "ex-d-0476"
+        },
+        {
+          "id": "ex-d-0477"
+        },
+        {
+          "id": "ex-d-0478"
+        },
+        {
           "id": "ex-d-0479"
         },
         {
           "id": "ex-d-0480"
+        },
+        {
+          "id": "ex-d-0481"
+        },
+        {
+          "id": "ex-d-0482"
+        },
+        {
+          "id": "ex-d-0483"
+        },
+        {
+          "id": "ex-d-0484"
+        },
+        {
+          "id": "ex-d-0485"
+        },
+        {
+          "id": "ex-d-0486"
+        },
+        {
+          "id": "ex-d-0487"
+        },
+        {
+          "id": "ex-d-0488"
+        },
+        {
+          "id": "ex-d-0489"
+        },
+        {
+          "id": "ex-d-0490"
+        },
+        {
+          "id": "ex-d-0491"
+        },
+        {
+          "id": "ex-d-0492"
+        },
+        {
+          "id": "ex-d-0493"
+        },
+        {
+          "id": "ex-d-0494"
+        },
+        {
+          "id": "ex-d-0495"
+        },
+        {
+          "id": "ex-d-0496"
+        },
+        {
+          "id": "ex-d-0497"
+        },
+        {
+          "id": "ex-d-0498"
+        },
+        {
+          "id": "ex-d-0499"
+        },
+        {
+          "id": "ex-d-0500"
+        },
+        {
+          "id": "ex-d-0501"
+        },
+        {
+          "id": "ex-d-0502"
+        },
+        {
+          "id": "ex-d-0503"
+        },
+        {
+          "id": "ex-d-0504"
+        },
+        {
+          "id": "ex-d-0505"
+        },
+        {
+          "id": "ex-d-0506"
+        },
+        {
+          "id": "ex-d-1326"
+        },
+        {
+          "id": "ex-d-1327"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "2.251",
+        "playlist_index": 802,
+        "youtube_id": "cpNfQQm8ppk",
+        "title": null
+      }
+    },
+    {
+      "id": "les-d-12",
+      "rank": "D",
+      "module": "mod-d-3",
+      "title": "much / many / How much is this?",
+      "grammar_point": {
+        "id": "gp-d-12",
+        "title_ru": "much/many, вопрос о цене",
+        "rule_md": "**much / many / how much / how many.**\nНеисчисляемые (money, time, water) — **much**: I don't have **much** time.\nИсчисляемые (people, tickets, apples) — **many**: **Many** people live here.\nВопрос о количестве: **How much** is this? / **How much** money? / **How many** tickets?\nМного обоих типов — **a lot of**: a lot of work, a lot of friends.",
+        "phrase_ids": ["ph-d-0492", "ph-d-0493", "ph-d-0494", "ph-d-0495", "ph-d-0496"],
+        "trap_id": "trap-uncountable-plurals"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 941,
+        "to": 1000
+      },
+      "phrasebook_topic": "shop",
+      "trap_id": "trap-uncountable-plurals",
+      "quotes_topic": "shopping",
+      "exercises": [
+        {
+          "id": "ex-d-0507"
+        },
+        {
+          "id": "ex-d-0508"
+        },
+        {
+          "id": "ex-d-0509"
+        },
+        {
+          "id": "ex-d-0510"
+        },
+        {
+          "id": "ex-d-0511"
+        },
+        {
+          "id": "ex-d-0512"
+        },
+        {
+          "id": "ex-d-0513"
+        },
+        {
+          "id": "ex-d-0514"
+        },
+        {
+          "id": "ex-d-0515"
+        },
+        {
+          "id": "ex-d-0516"
+        },
+        {
+          "id": "ex-d-0517"
+        },
+        {
+          "id": "ex-d-0518"
+        },
+        {
+          "id": "ex-d-0519"
+        },
+        {
+          "id": "ex-d-0520"
+        },
+        {
+          "id": "ex-d-0521"
+        },
+        {
+          "id": "ex-d-0522"
+        },
+        {
+          "id": "ex-d-0523"
+        },
+        {
+          "id": "ex-d-0524"
+        },
+        {
+          "id": "ex-d-0525"
+        },
+        {
+          "id": "ex-d-0526"
+        },
+        {
+          "id": "ex-d-0527"
+        },
+        {
+          "id": "ex-d-0528"
+        },
+        {
+          "id": "ex-d-0529"
+        },
+        {
+          "id": "ex-d-0530"
+        },
+        {
+          "id": "ex-d-0531"
+        },
+        {
+          "id": "ex-d-0532"
+        },
+        {
+          "id": "ex-d-0533"
+        },
+        {
+          "id": "ex-d-0534"
+        },
+        {
+          "id": "ex-d-0535"
+        },
+        {
+          "id": "ex-d-0536"
+        },
+        {
+          "id": "ex-d-0537"
+        },
+        {
+          "id": "ex-d-0538"
+        },
+        {
+          "id": "ex-d-0539"
+        },
+        {
+          "id": "ex-d-0540"
+        },
+        {
+          "id": "ex-d-0541"
+        },
+        {
+          "id": "ex-d-0542"
+        },
+        {
+          "id": "ex-d-0543"
+        },
+        {
+          "id": "ex-d-0544"
+        },
+        {
+          "id": "ex-d-0545"
+        },
+        {
+          "id": "ex-d-0546"
+        },
+        {
+          "id": "ex-d-0547"
+        },
+        {
+          "id": "ex-d-0548"
+        },
+        {
+          "id": "ex-d-0549"
+        },
+        {
+          "id": "ex-d-0550"
+        },
+        {
+          "id": "ex-d-0551"
+        },
+        {
+          "id": "ex-d-0552"
+        },
+        {
+          "id": "ex-d-1328"
+        },
+        {
+          "id": "ex-d-1329"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "1.59",
+        "playlist_index": 181,
+        "youtube_id": "hUWh15C6Pqk",
+        "title": null
+      }
+    },
+    {
+      "id": "les-d-13",
+      "rank": "D",
+      "module": "mod-d-3",
+      "title": "Неисчисляемые: advice, money, information",
+      "grammar_point": {
+        "id": "gp-d-13",
+        "title_ru": "Неисчисляемые существительные",
+        "rule_md": "**Неисчисляемые существительные.**\nadvice, information, money, luggage, water, music, time, food, weather, news, work —\nбез -s, без a/an, с much/нет many: I need **advice**. ❌ advices\nnews — формально множественное, но глагол в ед.ч.: The news **is** good.\nСчёт — через единицы: two **pieces of** luggage, three **bottles of** water.\n⚠️ people = «люди», глагол во мн.ч.: There **are** many people.",
+        "phrase_ids": ["ph-d-0536", "ph-d-0537", "ph-d-0538", "ph-d-0539", "ph-d-0540"],
+        "trap_id": "trap-uncountable-plurals"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 1001,
+        "to": 1060
+      },
+      "phrasebook_topic": "shop",
+      "trap_id": "trap-uncountable-plurals",
+      "quotes_topic": "things",
+      "exercises": [
+        {
+          "id": "ex-d-0553"
+        },
+        {
+          "id": "ex-d-0554"
+        },
+        {
+          "id": "ex-d-0555"
+        },
+        {
+          "id": "ex-d-0556"
+        },
+        {
+          "id": "ex-d-0557"
+        },
+        {
+          "id": "ex-d-0558"
+        },
+        {
+          "id": "ex-d-0559"
+        },
+        {
+          "id": "ex-d-0560"
+        },
+        {
+          "id": "ex-d-0561"
+        },
+        {
+          "id": "ex-d-0562"
+        },
+        {
+          "id": "ex-d-0563"
+        },
+        {
+          "id": "ex-d-0564"
+        },
+        {
+          "id": "ex-d-0565"
+        },
+        {
+          "id": "ex-d-0566"
+        },
+        {
+          "id": "ex-d-0567"
+        },
+        {
+          "id": "ex-d-0568"
+        },
+        {
+          "id": "ex-d-0569"
+        },
+        {
+          "id": "ex-d-0570"
+        },
+        {
+          "id": "ex-d-0571"
+        },
+        {
+          "id": "ex-d-0572"
+        },
+        {
+          "id": "ex-d-0573"
+        },
+        {
+          "id": "ex-d-0574"
+        },
+        {
+          "id": "ex-d-0575"
+        },
+        {
+          "id": "ex-d-0576"
+        },
+        {
+          "id": "ex-d-0577"
+        },
+        {
+          "id": "ex-d-0578"
+        },
+        {
+          "id": "ex-d-0579"
+        },
+        {
+          "id": "ex-d-0580"
+        },
+        {
+          "id": "ex-d-0581"
+        },
+        {
+          "id": "ex-d-0582"
+        },
+        {
+          "id": "ex-d-0583"
+        },
+        {
+          "id": "ex-d-0584"
+        },
+        {
+          "id": "ex-d-0585"
+        },
+        {
+          "id": "ex-d-0586"
+        },
+        {
+          "id": "ex-d-0587"
+        },
+        {
+          "id": "ex-d-0588"
+        },
+        {
+          "id": "ex-d-0589"
+        },
+        {
+          "id": "ex-d-0590"
+        },
+        {
+          "id": "ex-d-0591"
+        },
+        {
+          "id": "ex-d-0592"
+        },
+        {
+          "id": "ex-d-0593"
+        },
+        {
+          "id": "ex-d-0594"
+        },
+        {
+          "id": "ex-d-0595"
+        },
+        {
+          "id": "ex-d-0596"
+        },
+        {
+          "id": "ex-d-0597"
+        },
+        {
+          "id": "ex-d-0598"
+        },
+        {
+          "id": "ex-d-1330"
+        },
+        {
+          "id": "ex-d-1331"
+        }
+      ],
+      "bebris_video": null
+    },
+    {
+      "id": "les-d-14",
+      "rank": "D",
+      "module": "mod-d-3",
+      "title": "so / such: so cold, such a beautiful city",
+      "grammar_point": {
+        "id": "gp-d-14",
+        "title_ru": "so и such, восклицания",
+        "rule_md": "**so / such / very / too / a lot.**\nso + прилагательное/наречие: **so** cold, **so** good.\nsuch + a/an + прилагательное + сущ.: **such a** beautiful city (сущ. есть — such!).\nvery — нейтральное усиление: very good; ⚠️ very НЕ перед глаголами (I like it **very much**).\ntoo = «слишком»: too hot, too big. a lot = «сильно/много»: helps **a lot**.\nWhat a + сущ.! = восклицание: **What a** nice day!",
+        "phrase_ids": ["ph-d-0581", "ph-d-0582", "ph-d-0583", "ph-d-0584", "ph-d-0585"],
+        "trap_id": "trap-very-like"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 1061,
+        "to": 1120
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-very-like",
+      "quotes_topic": "emotions",
+      "exercises": [
+        {
+          "id": "ex-d-0599"
+        },
+        {
+          "id": "ex-d-0600"
+        },
+        {
+          "id": "ex-d-0601"
+        },
+        {
+          "id": "ex-d-0602"
+        },
+        {
+          "id": "ex-d-0603"
+        },
+        {
+          "id": "ex-d-0604"
+        },
+        {
+          "id": "ex-d-0605"
+        },
+        {
+          "id": "ex-d-0606"
+        },
+        {
+          "id": "ex-d-0607"
+        },
+        {
+          "id": "ex-d-0608"
+        },
+        {
+          "id": "ex-d-0609"
+        },
+        {
+          "id": "ex-d-0610"
+        },
+        {
+          "id": "ex-d-0611"
+        },
+        {
+          "id": "ex-d-0612"
+        },
+        {
+          "id": "ex-d-0613"
+        },
+        {
+          "id": "ex-d-0614"
+        },
+        {
+          "id": "ex-d-0615"
+        },
+        {
+          "id": "ex-d-0616"
+        },
+        {
+          "id": "ex-d-0617"
+        },
+        {
+          "id": "ex-d-0618"
+        },
+        {
+          "id": "ex-d-0619"
+        },
+        {
+          "id": "ex-d-0620"
+        },
+        {
+          "id": "ex-d-0621"
+        },
+        {
+          "id": "ex-d-0622"
+        },
+        {
+          "id": "ex-d-0623"
+        },
+        {
+          "id": "ex-d-0624"
+        },
+        {
+          "id": "ex-d-0625"
+        },
+        {
+          "id": "ex-d-0626"
+        },
+        {
+          "id": "ex-d-0627"
+        },
+        {
+          "id": "ex-d-0628"
+        },
+        {
+          "id": "ex-d-0629"
+        },
+        {
+          "id": "ex-d-0630"
+        },
+        {
+          "id": "ex-d-0631"
+        },
+        {
+          "id": "ex-d-0632"
+        },
+        {
+          "id": "ex-d-0633"
+        },
+        {
+          "id": "ex-d-0634"
+        },
+        {
+          "id": "ex-d-0635"
+        },
+        {
+          "id": "ex-d-0636"
+        },
+        {
+          "id": "ex-d-0637"
+        },
+        {
+          "id": "ex-d-0638"
+        },
+        {
+          "id": "ex-d-0639"
+        },
+        {
+          "id": "ex-d-0640"
+        },
+        {
+          "id": "ex-d-0641"
+        },
+        {
+          "id": "ex-d-0642"
+        },
+        {
+          "id": "ex-d-0643"
+        },
+        {
+          "id": "ex-d-0644"
+        },
+        {
+          "id": "ex-d-1332"
+        },
+        {
+          "id": "ex-d-1333"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "1.28",
+        "playlist_index": 74,
+        "youtube_id": "3pvq0lHmLXM",
+        "title": null
+      }
+    },
+    {
+      "id": "les-d-15",
+      "rank": "D",
+      "module": "mod-d-3",
+      "title": "Повторение №7: количество",
+      "grammar_point": {
+        "id": "gp-d-15",
+        "title_ru": "Повторение модуля D3 + контрольная",
+        "rule_md": "**Повторение №7: количество.**\nsome → any в отрицании/вопросе; no = not any.\nmuch/many по типу существительного; How much…? / How many…?\nНеисчисляемые без -s: advice, money, information.\nso + прилагательное, such + (a) + сущ.",
+        "phrase_ids": ["ph-d-0625", "ph-d-0626", "ph-d-0627", "ph-d-0628", "ph-d-0629"],
+        "trap_id": "trap-third-person-s"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 1121,
+        "to": 1180
+      },
+      "phrasebook_topic": "shop",
+      "trap_id": "trap-third-person-s",
+      "quotes_topic": "mixed",
+      "exercises": [
+        {
+          "id": "ex-d-0645"
+        },
+        {
+          "id": "ex-d-0646"
+        },
+        {
+          "id": "ex-d-0647"
+        },
+        {
+          "id": "ex-d-0648"
+        },
+        {
+          "id": "ex-d-0649"
+        },
+        {
+          "id": "ex-d-0650"
+        },
+        {
+          "id": "ex-d-0651"
+        },
+        {
+          "id": "ex-d-0652"
+        },
+        {
+          "id": "ex-d-0653"
+        },
+        {
+          "id": "ex-d-0654"
+        },
+        {
+          "id": "ex-d-0655"
+        },
+        {
+          "id": "ex-d-0656"
+        },
+        {
+          "id": "ex-d-0657"
+        },
+        {
+          "id": "ex-d-0658"
+        },
+        {
+          "id": "ex-d-0659"
+        },
+        {
+          "id": "ex-d-0660"
+        },
+        {
+          "id": "ex-d-0661"
+        },
+        {
+          "id": "ex-d-0662"
+        },
+        {
+          "id": "ex-d-0663"
+        },
+        {
+          "id": "ex-d-0664"
+        },
+        {
+          "id": "ex-d-0665"
+        },
+        {
+          "id": "ex-d-0666"
+        },
+        {
+          "id": "ex-d-0667"
+        },
+        {
+          "id": "ex-d-0668"
+        },
+        {
+          "id": "ex-d-0669"
+        },
+        {
+          "id": "ex-d-0670"
+        },
+        {
+          "id": "ex-d-0671"
+        },
+        {
+          "id": "ex-d-0672"
+        },
+        {
+          "id": "ex-d-0673"
+        },
+        {
+          "id": "ex-d-0674"
+        },
+        {
+          "id": "ex-d-0675"
+        },
+        {
+          "id": "ex-d-0676"
+        },
+        {
+          "id": "ex-d-0677"
+        },
+        {
+          "id": "ex-d-0678"
+        },
+        {
+          "id": "ex-d-0679"
+        },
+        {
+          "id": "ex-d-0680"
+        },
+        {
+          "id": "ex-d-0681"
+        },
+        {
+          "id": "ex-d-0682"
+        },
+        {
+          "id": "ex-d-0683"
+        },
+        {
+          "id": "ex-d-0684"
+        },
+        {
+          "id": "ex-d-0685"
+        },
+        {
+          "id": "ex-d-0686"
+        },
+        {
+          "id": "ex-d-0687"
+        },
+        {
+          "id": "ex-d-0688"
+        },
+        {
+          "id": "ex-d-0689"
+        },
+        {
+          "id": "ex-d-0690"
+        },
+        {
+          "id": "ex-d-1334"
+        },
+        {
+          "id": "ex-d-1335"
+        }
+      ],
+      "bebris_video": null
+    },
+    {
+      "id": "les-d-16",
+      "rank": "D",
+      "module": "mod-d-4",
+      "title": "Вопрос к подлежащему: Who knows? What helps?",
+      "grammar_point": {
+        "id": "gp-d-16",
+        "title_ru": "Вопрос к подлежащему без do",
+        "rule_md": "**Вопрос к подлежащему.**\nWho / What + глагол БЕЗ do/does: **Who knows**? **What helps** you?\n❌ Who does know? Сравни: **Who knows** him? vs **Why does** he **know** it?\nГлагол в 3-м лице ед.ч.: Who **wants** tea? Who **is** she?",
+        "phrase_ids": ["ph-d-0669", "ph-d-0670", "ph-d-0671", "ph-d-0672", "ph-d-0673"],
+        "trap_id": "trap-question-word-order"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 1181,
+        "to": 1240
+      },
+      "phrasebook_topic": "smalltalk",
+      "trap_id": "trap-question-word-order",
+      "quotes_topic": "people",
+      "exercises": [
+        {
+          "id": "ex-d-0691"
+        },
+        {
+          "id": "ex-d-0692"
+        },
+        {
+          "id": "ex-d-0693"
+        },
+        {
+          "id": "ex-d-0694"
+        },
+        {
+          "id": "ex-d-0695"
+        },
+        {
+          "id": "ex-d-0696"
+        },
+        {
+          "id": "ex-d-0697"
+        },
+        {
+          "id": "ex-d-0698"
+        },
+        {
+          "id": "ex-d-0699"
+        },
+        {
+          "id": "ex-d-0700"
+        },
+        {
+          "id": "ex-d-0701"
+        },
+        {
+          "id": "ex-d-0702"
+        },
+        {
+          "id": "ex-d-0703"
+        },
+        {
+          "id": "ex-d-0704"
+        },
+        {
+          "id": "ex-d-0705"
+        },
+        {
+          "id": "ex-d-0706"
+        },
+        {
+          "id": "ex-d-0707"
+        },
+        {
+          "id": "ex-d-0708"
+        },
+        {
+          "id": "ex-d-0709"
+        },
+        {
+          "id": "ex-d-0710"
+        },
+        {
+          "id": "ex-d-0711"
+        },
+        {
+          "id": "ex-d-0712"
+        },
+        {
+          "id": "ex-d-0713"
+        },
+        {
+          "id": "ex-d-0714"
+        },
+        {
+          "id": "ex-d-0715"
+        },
+        {
+          "id": "ex-d-0716"
+        },
+        {
+          "id": "ex-d-0717"
+        },
+        {
+          "id": "ex-d-0718"
+        },
+        {
+          "id": "ex-d-0719"
+        },
+        {
+          "id": "ex-d-0720"
+        },
+        {
+          "id": "ex-d-0721"
+        },
+        {
+          "id": "ex-d-0722"
+        },
+        {
+          "id": "ex-d-0723"
+        },
+        {
+          "id": "ex-d-0724"
+        },
+        {
+          "id": "ex-d-0725"
+        },
+        {
+          "id": "ex-d-0726"
+        },
+        {
+          "id": "ex-d-0727"
+        },
+        {
+          "id": "ex-d-0728"
+        },
+        {
+          "id": "ex-d-0729"
+        },
+        {
+          "id": "ex-d-0730"
+        },
+        {
+          "id": "ex-d-0731"
+        },
+        {
+          "id": "ex-d-0732"
+        },
+        {
+          "id": "ex-d-0733"
+        },
+        {
+          "id": "ex-d-0734"
+        },
+        {
+          "id": "ex-d-0735"
+        },
+        {
+          "id": "ex-d-0736"
+        },
+        {
+          "id": "ex-d-1336"
+        },
+        {
+          "id": "ex-d-1337"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "1.21",
+        "playlist_index": 48,
+        "youtube_id": "mfsalx6Nojs",
+        "title": null
+      }
+    },
+    {
+      "id": "les-d-17",
+      "rank": "D",
+      "module": "mod-d-4",
+      "title": "agree и наречия степени: very much, a lot",
+      "grammar_point": {
+        "id": "gp-d-17",
+        "title_ru": "Согласие; very much / a lot",
+        "rule_md": "**Согласие и степень.**\nagree — ГЛАГОЛ: I **agree** with you. ❌ I am agree.\nМнение: I think so. / I don't think so. / In my opinion…\nСтепень после глагола: I like it **very much** / **a lot** (не «very like»).\ntoo much = «слишком много», quite/really/totally — оттенки усиления.",
+        "phrase_ids": ["ph-d-0715", "ph-d-0716", "ph-d-0717", "ph-d-0718", "ph-d-0719"],
+        "trap_id": "trap-im-agree"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 1241,
+        "to": 1300
+      },
+      "phrasebook_topic": "smalltalk",
+      "trap_id": "trap-im-agree",
+      "quotes_topic": "opinions",
+      "exercises": [
+        {
+          "id": "ex-d-0737"
+        },
+        {
+          "id": "ex-d-0738"
+        },
+        {
+          "id": "ex-d-0739"
+        },
+        {
+          "id": "ex-d-0740"
+        },
+        {
+          "id": "ex-d-0741"
+        },
+        {
+          "id": "ex-d-0742"
+        },
+        {
+          "id": "ex-d-0743"
+        },
+        {
+          "id": "ex-d-0744"
+        },
+        {
+          "id": "ex-d-0745"
+        },
+        {
+          "id": "ex-d-0746"
+        },
+        {
+          "id": "ex-d-0747"
+        },
+        {
+          "id": "ex-d-0748"
+        },
+        {
+          "id": "ex-d-0749"
+        },
+        {
+          "id": "ex-d-0750"
+        },
+        {
+          "id": "ex-d-0751"
+        },
+        {
+          "id": "ex-d-0752"
+        },
+        {
+          "id": "ex-d-0753"
+        },
+        {
+          "id": "ex-d-0754"
+        },
+        {
+          "id": "ex-d-0755"
+        },
+        {
+          "id": "ex-d-0756"
+        },
+        {
+          "id": "ex-d-0757"
+        },
+        {
+          "id": "ex-d-0758"
+        },
+        {
+          "id": "ex-d-0759"
+        },
+        {
+          "id": "ex-d-0760"
+        },
+        {
+          "id": "ex-d-0761"
+        },
+        {
+          "id": "ex-d-0762"
+        },
+        {
+          "id": "ex-d-0763"
+        },
+        {
+          "id": "ex-d-0764"
+        },
+        {
+          "id": "ex-d-0765"
+        },
+        {
+          "id": "ex-d-0766"
+        },
+        {
+          "id": "ex-d-0767"
+        },
+        {
+          "id": "ex-d-0768"
+        },
+        {
+          "id": "ex-d-0769"
+        },
+        {
+          "id": "ex-d-0770"
+        },
+        {
+          "id": "ex-d-0771"
+        },
+        {
+          "id": "ex-d-0772"
+        },
+        {
+          "id": "ex-d-0773"
+        },
+        {
+          "id": "ex-d-0774"
+        },
+        {
+          "id": "ex-d-0775"
+        },
+        {
+          "id": "ex-d-0776"
+        },
+        {
+          "id": "ex-d-0777"
+        },
+        {
+          "id": "ex-d-0778"
+        },
+        {
+          "id": "ex-d-0779"
+        },
+        {
+          "id": "ex-d-0780"
+        },
+        {
+          "id": "ex-d-0781"
+        },
+        {
+          "id": "ex-d-0782"
+        },
+        {
+          "id": "ex-d-1338"
+        },
+        {
+          "id": "ex-d-1339"
+        }
+      ],
+      "bebris_video": null
+    },
+    {
+      "id": "les-d-18",
+      "rank": "D",
+      "module": "mod-d-4",
+      "title": "say / tell / ask",
+      "grammar_point": {
+        "id": "gp-d-18",
+        "title_ru": "say, tell, ask",
+        "rule_md": "**say / tell / ask.**\n**say** (что-то): say it, say hello, he says that…\n**tell** (кому-то что-то): tell **me** the truth, tell **him** the news.\n❌ say me → **tell me**.\n**ask** (кому-то о чём-то): ask him, ask for help, ask a question.",
+        "phrase_ids": ["ph-d-0759", "ph-d-0760", "ph-d-0761", "ph-d-0762", "ph-d-0763"],
+        "trap_id": "trap-said-me"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 1301,
+        "to": 1360
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-said-me",
+      "quotes_topic": "talk",
+      "exercises": [
+        {
+          "id": "ex-d-0783"
+        },
+        {
+          "id": "ex-d-0784"
+        },
+        {
+          "id": "ex-d-0785"
+        },
+        {
+          "id": "ex-d-0786"
+        },
+        {
+          "id": "ex-d-0787"
+        },
+        {
+          "id": "ex-d-0788"
+        },
+        {
+          "id": "ex-d-0789"
+        },
+        {
+          "id": "ex-d-0790"
+        },
+        {
+          "id": "ex-d-0791"
+        },
+        {
+          "id": "ex-d-0792"
+        },
+        {
+          "id": "ex-d-0793"
+        },
+        {
+          "id": "ex-d-0794"
+        },
+        {
+          "id": "ex-d-0795"
+        },
+        {
+          "id": "ex-d-0796"
+        },
+        {
+          "id": "ex-d-0797"
+        },
+        {
+          "id": "ex-d-0798"
+        },
+        {
+          "id": "ex-d-0799"
+        },
+        {
+          "id": "ex-d-0800"
+        },
+        {
+          "id": "ex-d-0801"
+        },
+        {
+          "id": "ex-d-0802"
+        },
+        {
+          "id": "ex-d-0803"
+        },
+        {
+          "id": "ex-d-0804"
+        },
+        {
+          "id": "ex-d-0805"
+        },
+        {
+          "id": "ex-d-0806"
+        },
+        {
+          "id": "ex-d-0807"
+        },
+        {
+          "id": "ex-d-0808"
+        },
+        {
+          "id": "ex-d-0809"
+        },
+        {
+          "id": "ex-d-0810"
+        },
+        {
+          "id": "ex-d-0811"
+        },
+        {
+          "id": "ex-d-0812"
+        },
+        {
+          "id": "ex-d-0813"
+        },
+        {
+          "id": "ex-d-0814"
+        },
+        {
+          "id": "ex-d-0815"
+        },
+        {
+          "id": "ex-d-0816"
+        },
+        {
+          "id": "ex-d-0817"
+        },
+        {
+          "id": "ex-d-0818"
+        },
+        {
+          "id": "ex-d-0819"
+        },
+        {
+          "id": "ex-d-0820"
+        },
+        {
+          "id": "ex-d-0821"
+        },
+        {
+          "id": "ex-d-0822"
+        },
+        {
+          "id": "ex-d-0823"
+        },
+        {
+          "id": "ex-d-0824"
+        },
+        {
+          "id": "ex-d-0825"
+        },
+        {
+          "id": "ex-d-0826"
+        },
+        {
+          "id": "ex-d-0827"
+        },
+        {
+          "id": "ex-d-0828"
+        },
+        {
+          "id": "ex-d-1340"
+        },
+        {
+          "id": "ex-d-1341"
+        }
+      ],
+      "bebris_video": null
+    },
+    {
+      "id": "les-d-19",
+      "rank": "D",
+      "module": "mod-d-4",
+      "title": "feel; wait for, look for и другие предлоги",
+      "grammar_point": {
+        "id": "gp-d-19",
+        "title_ru": "feel + глаголы с предлогами",
+        "rule_md": "**feel и глаголы с предлогами.**\nfeel + прилагательное/хорошо-плохо: I **feel** good. How do you **feel**?\n❌ feel myself → **feel** well / **feel** good.\nПредлоги: wait **for**, look **for** (искать), look **at** (смотреть на),\nlisten **to**, thank **for**, think **about**, pay **for**, ask **for**.",
+        "phrase_ids": ["ph-d-0804", "ph-d-0805", "ph-d-0806", "ph-d-0807", "ph-d-0808"],
+        "trap_id": "trap-feel-myself"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 1361,
+        "to": 1420
+      },
+      "phrasebook_topic": "pharmacy",
+      "trap_id": "trap-feel-myself",
+      "quotes_topic": "health",
+      "exercises": [
+        {
+          "id": "ex-d-0829"
+        },
+        {
+          "id": "ex-d-0830"
+        },
+        {
+          "id": "ex-d-0831"
+        },
+        {
+          "id": "ex-d-0832"
+        },
+        {
+          "id": "ex-d-0833"
+        },
+        {
+          "id": "ex-d-0834"
+        },
+        {
+          "id": "ex-d-0835"
+        },
+        {
+          "id": "ex-d-0836"
+        },
+        {
+          "id": "ex-d-0837"
+        },
+        {
+          "id": "ex-d-0838"
+        },
+        {
+          "id": "ex-d-0839"
+        },
+        {
+          "id": "ex-d-0840"
+        },
+        {
+          "id": "ex-d-0841"
+        },
+        {
+          "id": "ex-d-0842"
+        },
+        {
+          "id": "ex-d-0843"
+        },
+        {
+          "id": "ex-d-0844"
+        },
+        {
+          "id": "ex-d-0845"
+        },
+        {
+          "id": "ex-d-0846"
+        },
+        {
+          "id": "ex-d-0847"
+        },
+        {
+          "id": "ex-d-0848"
+        },
+        {
+          "id": "ex-d-0849"
+        },
+        {
+          "id": "ex-d-0850"
+        },
+        {
+          "id": "ex-d-0851"
+        },
+        {
+          "id": "ex-d-0852"
+        },
+        {
+          "id": "ex-d-0853"
+        },
+        {
+          "id": "ex-d-0854"
+        },
+        {
+          "id": "ex-d-0855"
+        },
+        {
+          "id": "ex-d-0856"
+        },
+        {
+          "id": "ex-d-0857"
+        },
+        {
+          "id": "ex-d-0858"
+        },
+        {
+          "id": "ex-d-0859"
+        },
+        {
+          "id": "ex-d-0860"
+        },
+        {
+          "id": "ex-d-0861"
+        },
+        {
+          "id": "ex-d-0862"
+        },
+        {
+          "id": "ex-d-0863"
+        },
+        {
+          "id": "ex-d-0864"
+        },
+        {
+          "id": "ex-d-0865"
+        },
+        {
+          "id": "ex-d-0866"
+        },
+        {
+          "id": "ex-d-0867"
+        },
+        {
+          "id": "ex-d-0868"
+        },
+        {
+          "id": "ex-d-0869"
+        },
+        {
+          "id": "ex-d-0870"
+        },
+        {
+          "id": "ex-d-0871"
+        },
+        {
+          "id": "ex-d-0872"
+        },
+        {
+          "id": "ex-d-0873"
+        },
+        {
+          "id": "ex-d-0874"
+        },
+        {
+          "id": "ex-d-1342"
+        },
+        {
+          "id": "ex-d-1343"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "1.60",
+        "playlist_index": 182,
+        "youtube_id": "2bsDP-r-RGk",
+        "title": null
+      }
+    },
+    {
+      "id": "les-d-20",
+      "rank": "D",
+      "module": "mod-d-4",
+      "title": "Повторение №8: вежливость",
+      "grammar_point": {
+        "id": "gp-d-20",
+        "title_ru": "Повторение модуля D4",
+        "rule_md": "**Повторение №8: вежливость и предлоги.**\nВопрос к подлежащему: Who knows? What helps you?\nagree как глагол: I (don't) agree with you.\nsay/tell/ask: tell ME the truth, say it again, ask him.\nfeel + предлоги глаголов: wait for, look for, listen to, pay for.",
+        "phrase_ids": ["ph-d-0848", "ph-d-0849", "ph-d-0850", "ph-d-0851", "ph-d-0852"],
+        "trap_id": "trap-wait-for"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 1421,
+        "to": 1480
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-wait-for",
+      "quotes_topic": "mixed",
+      "exercises": [
+        {
+          "id": "ex-d-0875"
+        },
+        {
+          "id": "ex-d-0876"
+        },
+        {
+          "id": "ex-d-0877"
+        },
+        {
+          "id": "ex-d-0878"
+        },
+        {
+          "id": "ex-d-0879"
+        },
+        {
+          "id": "ex-d-0880"
+        },
+        {
+          "id": "ex-d-0881"
+        },
+        {
+          "id": "ex-d-0882"
+        },
+        {
+          "id": "ex-d-0883"
+        },
+        {
+          "id": "ex-d-0884"
+        },
+        {
+          "id": "ex-d-0885"
+        },
+        {
+          "id": "ex-d-0886"
+        },
+        {
+          "id": "ex-d-0887"
+        },
+        {
+          "id": "ex-d-0888"
+        },
+        {
+          "id": "ex-d-0889"
+        },
+        {
+          "id": "ex-d-0890"
+        },
+        {
+          "id": "ex-d-0891"
+        },
+        {
+          "id": "ex-d-0892"
+        },
+        {
+          "id": "ex-d-0893"
+        },
+        {
+          "id": "ex-d-0894"
+        },
+        {
+          "id": "ex-d-0895"
+        },
+        {
+          "id": "ex-d-0896"
+        },
+        {
+          "id": "ex-d-0897"
+        },
+        {
+          "id": "ex-d-0898"
+        },
+        {
+          "id": "ex-d-0899"
+        },
+        {
+          "id": "ex-d-0900"
+        },
+        {
+          "id": "ex-d-0901"
+        },
+        {
+          "id": "ex-d-0902"
+        },
+        {
+          "id": "ex-d-0903"
+        },
+        {
+          "id": "ex-d-0904"
+        },
+        {
+          "id": "ex-d-0905"
+        },
+        {
+          "id": "ex-d-0906"
+        },
+        {
+          "id": "ex-d-0907"
+        },
+        {
+          "id": "ex-d-0908"
+        },
+        {
+          "id": "ex-d-0909"
+        },
+        {
+          "id": "ex-d-0910"
+        },
+        {
+          "id": "ex-d-0911"
+        },
+        {
+          "id": "ex-d-0912"
+        },
+        {
+          "id": "ex-d-0913"
+        },
+        {
+          "id": "ex-d-0914"
+        },
+        {
+          "id": "ex-d-0915"
+        },
+        {
+          "id": "ex-d-0916"
+        },
+        {
+          "id": "ex-d-0917"
+        },
+        {
+          "id": "ex-d-0918"
+        },
+        {
+          "id": "ex-d-0919"
+        },
+        {
+          "id": "ex-d-0920"
+        },
+        {
+          "id": "ex-d-1344"
+        },
+        {
+          "id": "ex-d-1345"
+        }
+      ],
+      "bebris_video": null
+    },
+    {
+      "id": "les-d-21",
+      "rank": "D",
+      "module": "mod-d-5",
+      "title": "Present Simple vs Present Continuous",
+      "grammar_point": {
+        "id": "gp-d-21",
+        "title_ru": "Привычка против процесса",
+        "rule_md": "**Present Simple vs Present Continuous.**\nОбычно/всегда/никогда (habit) — Present Simple: I **usually work** at home.\nСейчас/сегодня/в последнее время (process) — Present Continuous:\nI **am working** at home **now**. **These days** I **am living** in Berlin.\nСравни: What **do** you **usually do**? vs What **are** you **doing** now?",
+        "phrase_ids": ["ph-d-0893", "ph-d-0894", "ph-d-0895", "ph-d-0896", "ph-d-0897"],
+        "trap_id": "trap-third-person-s"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 1481,
+        "to": 1540
+      },
+      "phrasebook_topic": "shop",
+      "trap_id": "trap-third-person-s",
+      "quotes_topic": "now",
+      "exercises": [
+        {
+          "id": "ex-d-0921"
+        },
+        {
+          "id": "ex-d-0922"
+        },
+        {
+          "id": "ex-d-0923"
+        },
+        {
+          "id": "ex-d-0924"
+        },
+        {
+          "id": "ex-d-0925"
+        },
+        {
+          "id": "ex-d-0926"
+        },
+        {
+          "id": "ex-d-0927"
+        },
+        {
+          "id": "ex-d-0928"
+        },
+        {
+          "id": "ex-d-0929"
+        },
+        {
+          "id": "ex-d-0930"
+        },
+        {
+          "id": "ex-d-0931"
+        },
+        {
+          "id": "ex-d-0932"
+        },
+        {
+          "id": "ex-d-0933"
+        },
+        {
+          "id": "ex-d-0934"
+        },
+        {
+          "id": "ex-d-0935"
+        },
+        {
+          "id": "ex-d-0936"
+        },
+        {
+          "id": "ex-d-0937"
+        },
+        {
+          "id": "ex-d-0938"
+        },
+        {
+          "id": "ex-d-0939"
+        },
+        {
+          "id": "ex-d-0940"
+        },
+        {
+          "id": "ex-d-0941"
+        },
+        {
+          "id": "ex-d-0942"
+        },
+        {
+          "id": "ex-d-0943"
+        },
+        {
+          "id": "ex-d-0944"
+        },
+        {
+          "id": "ex-d-0945"
+        },
+        {
+          "id": "ex-d-0946"
+        },
+        {
+          "id": "ex-d-0947"
+        },
+        {
+          "id": "ex-d-0948"
+        },
+        {
+          "id": "ex-d-0949"
+        },
+        {
+          "id": "ex-d-0950"
+        },
+        {
+          "id": "ex-d-0951"
+        },
+        {
+          "id": "ex-d-0952"
+        },
+        {
+          "id": "ex-d-0953"
+        },
+        {
+          "id": "ex-d-0954"
+        },
+        {
+          "id": "ex-d-0955"
+        },
+        {
+          "id": "ex-d-0956"
+        },
+        {
+          "id": "ex-d-0957"
+        },
+        {
+          "id": "ex-d-0958"
+        },
+        {
+          "id": "ex-d-0959"
+        },
+        {
+          "id": "ex-d-0960"
+        },
+        {
+          "id": "ex-d-0961"
+        },
+        {
+          "id": "ex-d-0962"
+        },
+        {
+          "id": "ex-d-0963"
+        },
+        {
+          "id": "ex-d-0964"
+        },
+        {
+          "id": "ex-d-0965"
+        },
+        {
+          "id": "ex-d-0966"
+        },
+        {
+          "id": "ex-d-1346"
+        },
+        {
+          "id": "ex-d-1347"
+        }
+      ],
+      "bebris_video": null
+    },
+    {
+      "id": "les-d-22",
+      "rank": "D",
+      "module": "mod-d-5",
+      "title": "do / make",
+      "grammar_point": {
+        "id": "gp-d-22",
+        "title_ru": "do и make",
+        "rule_md": "**do / make.**\ndo — работа, обязанности, действия вообще: **do** your job, **do** homework,\n**do** the shopping, **do** a favour, **do** your best.\nmake — создание результата: **make** coffee, **make** money, **make** a mistake,\n**make** a plan, **make** a call, **make** sense.\n⚠️ Русское «делать» — не ориентир: think English!",
+        "phrase_ids": ["ph-d-0937", "ph-d-0938", "ph-d-0939", "ph-d-0940", "ph-d-0941"],
+        "trap_id": "trap-do-make"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 1541,
+        "to": 1600
+      },
+      "phrasebook_topic": "shop",
+      "trap_id": "trap-do-make",
+      "quotes_topic": "work",
+      "exercises": [
+        {
+          "id": "ex-d-0967"
+        },
+        {
+          "id": "ex-d-0968"
+        },
+        {
+          "id": "ex-d-0969"
+        },
+        {
+          "id": "ex-d-0970"
+        },
+        {
+          "id": "ex-d-0971"
+        },
+        {
+          "id": "ex-d-0972"
+        },
+        {
+          "id": "ex-d-0973"
+        },
+        {
+          "id": "ex-d-0974"
+        },
+        {
+          "id": "ex-d-0975"
+        },
+        {
+          "id": "ex-d-0976"
+        },
+        {
+          "id": "ex-d-0977"
+        },
+        {
+          "id": "ex-d-0978"
+        },
+        {
+          "id": "ex-d-0979"
+        },
+        {
+          "id": "ex-d-0980"
+        },
+        {
+          "id": "ex-d-0981"
+        },
+        {
+          "id": "ex-d-0982"
+        },
+        {
+          "id": "ex-d-0983"
+        },
+        {
+          "id": "ex-d-0984"
+        },
+        {
+          "id": "ex-d-0985"
+        },
+        {
+          "id": "ex-d-0986"
+        },
+        {
+          "id": "ex-d-0987"
+        },
+        {
+          "id": "ex-d-0988"
+        },
+        {
+          "id": "ex-d-0989"
+        },
+        {
+          "id": "ex-d-0990"
+        },
+        {
+          "id": "ex-d-0991"
+        },
+        {
+          "id": "ex-d-0992"
+        },
+        {
+          "id": "ex-d-0993"
+        },
+        {
+          "id": "ex-d-0994"
+        },
+        {
+          "id": "ex-d-0995"
+        },
+        {
+          "id": "ex-d-0996"
+        },
+        {
+          "id": "ex-d-0997"
+        },
+        {
+          "id": "ex-d-0998"
+        },
+        {
+          "id": "ex-d-0999"
+        },
+        {
+          "id": "ex-d-1000"
+        },
+        {
+          "id": "ex-d-1001"
+        },
+        {
+          "id": "ex-d-1002"
+        },
+        {
+          "id": "ex-d-1003"
+        },
+        {
+          "id": "ex-d-1004"
+        },
+        {
+          "id": "ex-d-1005"
+        },
+        {
+          "id": "ex-d-1006"
+        },
+        {
+          "id": "ex-d-1007"
+        },
+        {
+          "id": "ex-d-1008"
+        },
+        {
+          "id": "ex-d-1009"
+        },
+        {
+          "id": "ex-d-1010"
+        },
+        {
+          "id": "ex-d-1011"
+        },
+        {
+          "id": "ex-d-1012"
+        },
+        {
+          "id": "ex-d-1348"
+        },
+        {
+          "id": "ex-d-1349"
+        }
+      ],
+      "bebris_video": null
+    },
+    {
+      "id": "les-d-23",
+      "rank": "D",
+      "module": "mod-d-5",
+      "title": "go, come, get; go home",
+      "grammar_point": {
+        "id": "gp-d-23",
+        "title_ru": "Глаголы движения",
+        "rule_md": "**Глаголы движения: go, come, get.**\n**go** — туда (от говорящего): I **go** to work. **go home** — БЕЗ to!\n**come** — сюда (к говорящему): **Come** here! He **comes** home late.\n**get** — добираться/становиться: **get** to the station, **get** home,\n**get** tired, **get** up.\nТранспорт: by bus / by metro / by bike / on foot / take a taxi.",
+        "phrase_ids": ["ph-d-0981", "ph-d-0982", "ph-d-0983", "ph-d-0984", "ph-d-0985"],
+        "trap_id": "trap-to-home"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 1601,
+        "to": 1660
+      },
+      "phrasebook_topic": "taxi",
+      "trap_id": "trap-to-home",
+      "quotes_topic": "transport",
+      "exercises": [
+        {
+          "id": "ex-d-1013"
+        },
+        {
+          "id": "ex-d-1014"
+        },
+        {
+          "id": "ex-d-1015"
+        },
+        {
+          "id": "ex-d-1016"
+        },
+        {
+          "id": "ex-d-1017"
+        },
+        {
+          "id": "ex-d-1018"
+        },
+        {
+          "id": "ex-d-1019"
+        },
+        {
+          "id": "ex-d-1020"
+        },
+        {
+          "id": "ex-d-1021"
+        },
+        {
+          "id": "ex-d-1022"
+        },
+        {
+          "id": "ex-d-1023"
+        },
+        {
+          "id": "ex-d-1024"
+        },
+        {
+          "id": "ex-d-1025"
+        },
+        {
+          "id": "ex-d-1026"
+        },
+        {
+          "id": "ex-d-1027"
+        },
+        {
+          "id": "ex-d-1028"
+        },
+        {
+          "id": "ex-d-1029"
+        },
+        {
+          "id": "ex-d-1030"
+        },
+        {
+          "id": "ex-d-1031"
+        },
+        {
+          "id": "ex-d-1032"
+        },
+        {
+          "id": "ex-d-1033"
+        },
+        {
+          "id": "ex-d-1034"
+        },
+        {
+          "id": "ex-d-1035"
+        },
+        {
+          "id": "ex-d-1036"
+        },
+        {
+          "id": "ex-d-1037"
+        },
+        {
+          "id": "ex-d-1038"
+        },
+        {
+          "id": "ex-d-1039"
+        },
+        {
+          "id": "ex-d-1040"
+        },
+        {
+          "id": "ex-d-1041"
+        },
+        {
+          "id": "ex-d-1042"
+        },
+        {
+          "id": "ex-d-1043"
+        },
+        {
+          "id": "ex-d-1044"
+        },
+        {
+          "id": "ex-d-1045"
+        },
+        {
+          "id": "ex-d-1046"
+        },
+        {
+          "id": "ex-d-1047"
+        },
+        {
+          "id": "ex-d-1048"
+        },
+        {
+          "id": "ex-d-1049"
+        },
+        {
+          "id": "ex-d-1050"
+        },
+        {
+          "id": "ex-d-1051"
+        },
+        {
+          "id": "ex-d-1052"
+        },
+        {
+          "id": "ex-d-1053"
+        },
+        {
+          "id": "ex-d-1054"
+        },
+        {
+          "id": "ex-d-1055"
+        },
+        {
+          "id": "ex-d-1056"
+        },
+        {
+          "id": "ex-d-1057"
+        },
+        {
+          "id": "ex-d-1058"
+        },
+        {
+          "id": "ex-d-1350"
+        },
+        {
+          "id": "ex-d-1351"
+        }
+      ],
+      "bebris_video": null
+    },
+    {
+      "id": "les-d-24",
+      "rank": "D",
+      "module": "mod-d-5",
+      "title": "Заказ и оплата: would like + can",
+      "grammar_point": {
+        "id": "gp-d-24",
+        "title_ru": "would like, вежливый заказ",
+        "rule_md": "**Заказ и оплата: would like + can.**\nВежливый заказ: I **would like** a coffee. = I'**d like** a coffee.\n**Would you like**…? — предложение: Would you like some tea?\nОплата: Can I **pay by** card? / **in** cash. **Cash or card?**\nОтвет на «Anything else?»: No, **that's all**, thanks.",
+        "phrase_ids": ["ph-d-1025", "ph-d-1026", "ph-d-1027", "ph-d-1028", "ph-d-1029"],
+        "trap_id": "trap-articles"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 1661,
+        "to": 1720
+      },
+      "phrasebook_topic": "airport",
+      "trap_id": "trap-articles",
+      "quotes_topic": "travel",
+      "exercises": [
+        {
+          "id": "ex-d-1059"
+        },
+        {
+          "id": "ex-d-1060"
+        },
+        {
+          "id": "ex-d-1061"
+        },
+        {
+          "id": "ex-d-1062"
+        },
+        {
+          "id": "ex-d-1063"
+        },
+        {
+          "id": "ex-d-1064"
+        },
+        {
+          "id": "ex-d-1065"
+        },
+        {
+          "id": "ex-d-1066"
+        },
+        {
+          "id": "ex-d-1067"
+        },
+        {
+          "id": "ex-d-1068"
+        },
+        {
+          "id": "ex-d-1069"
+        },
+        {
+          "id": "ex-d-1070"
+        },
+        {
+          "id": "ex-d-1071"
+        },
+        {
+          "id": "ex-d-1072"
+        },
+        {
+          "id": "ex-d-1073"
+        },
+        {
+          "id": "ex-d-1074"
+        },
+        {
+          "id": "ex-d-1075"
+        },
+        {
+          "id": "ex-d-1076"
+        },
+        {
+          "id": "ex-d-1077"
+        },
+        {
+          "id": "ex-d-1078"
+        },
+        {
+          "id": "ex-d-1079"
+        },
+        {
+          "id": "ex-d-1080"
+        },
+        {
+          "id": "ex-d-1081"
+        },
+        {
+          "id": "ex-d-1082"
+        },
+        {
+          "id": "ex-d-1083"
+        },
+        {
+          "id": "ex-d-1084"
+        },
+        {
+          "id": "ex-d-1085"
+        },
+        {
+          "id": "ex-d-1086"
+        },
+        {
+          "id": "ex-d-1087"
+        },
+        {
+          "id": "ex-d-1088"
+        },
+        {
+          "id": "ex-d-1089"
+        },
+        {
+          "id": "ex-d-1090"
+        },
+        {
+          "id": "ex-d-1091"
+        },
+        {
+          "id": "ex-d-1092"
+        },
+        {
+          "id": "ex-d-1093"
+        },
+        {
+          "id": "ex-d-1094"
+        },
+        {
+          "id": "ex-d-1095"
+        },
+        {
+          "id": "ex-d-1096"
+        },
+        {
+          "id": "ex-d-1097"
+        },
+        {
+          "id": "ex-d-1098"
+        },
+        {
+          "id": "ex-d-1099"
+        },
+        {
+          "id": "ex-d-1100"
+        },
+        {
+          "id": "ex-d-1101"
+        },
+        {
+          "id": "ex-d-1102"
+        },
+        {
+          "id": "ex-d-1103"
+        },
+        {
+          "id": "ex-d-1104"
+        },
+        {
+          "id": "ex-d-1352"
+        },
+        {
+          "id": "ex-d-1353"
+        }
+      ],
+      "bebris_video": null
+    },
+    {
+      "id": "les-d-25",
+      "rank": "D",
+      "module": "mod-d-5",
+      "title": "Повторение №9: движение и заказ",
+      "grammar_point": {
+        "id": "gp-d-25",
+        "title_ru": "Повторение модуля D5",
+        "rule_md": "**Повторение №9: движение, заказ, do/make.**\nPS vs PC: обычно vs сейчас. do/make по смыслу.\ngo home (без to!), come here, get to the station.\nI'd like… / Can I pay by card? / that's all, thanks.",
+        "phrase_ids": ["ph-d-1069", "ph-d-1070", "ph-d-1071", "ph-d-1072", "ph-d-1073"],
+        "trap_id": "trap-do-make"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 1721,
+        "to": 1780
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-do-make",
+      "quotes_topic": "mixed",
+      "exercises": [
+        {
+          "id": "ex-d-1105"
+        },
+        {
+          "id": "ex-d-1106"
+        },
+        {
+          "id": "ex-d-1107"
+        },
+        {
+          "id": "ex-d-1108"
+        },
+        {
+          "id": "ex-d-1109"
+        },
+        {
+          "id": "ex-d-1110"
+        },
+        {
+          "id": "ex-d-1111"
+        },
+        {
+          "id": "ex-d-1112"
+        },
+        {
+          "id": "ex-d-1113"
+        },
+        {
+          "id": "ex-d-1114"
+        },
+        {
+          "id": "ex-d-1115"
+        },
+        {
+          "id": "ex-d-1116"
+        },
+        {
+          "id": "ex-d-1117"
+        },
+        {
+          "id": "ex-d-1118"
+        },
+        {
+          "id": "ex-d-1119"
+        },
+        {
+          "id": "ex-d-1120"
+        },
+        {
+          "id": "ex-d-1121"
+        },
+        {
+          "id": "ex-d-1122"
+        },
+        {
+          "id": "ex-d-1123"
+        },
+        {
+          "id": "ex-d-1124"
+        },
+        {
+          "id": "ex-d-1125"
+        },
+        {
+          "id": "ex-d-1126"
+        },
+        {
+          "id": "ex-d-1127"
+        },
+        {
+          "id": "ex-d-1128"
+        },
+        {
+          "id": "ex-d-1129"
+        },
+        {
+          "id": "ex-d-1130"
+        },
+        {
+          "id": "ex-d-1131"
+        },
+        {
+          "id": "ex-d-1132"
+        },
+        {
+          "id": "ex-d-1133"
+        },
+        {
+          "id": "ex-d-1134"
+        },
+        {
+          "id": "ex-d-1135"
+        },
+        {
+          "id": "ex-d-1136"
+        },
+        {
+          "id": "ex-d-1137"
+        },
+        {
+          "id": "ex-d-1138"
+        },
+        {
+          "id": "ex-d-1139"
+        },
+        {
+          "id": "ex-d-1140"
+        },
+        {
+          "id": "ex-d-1141"
+        },
+        {
+          "id": "ex-d-1142"
+        },
+        {
+          "id": "ex-d-1143"
+        },
+        {
+          "id": "ex-d-1144"
+        },
+        {
+          "id": "ex-d-1145"
+        },
+        {
+          "id": "ex-d-1146"
+        },
+        {
+          "id": "ex-d-1147"
+        },
+        {
+          "id": "ex-d-1148"
+        },
+        {
+          "id": "ex-d-1149"
+        },
+        {
+          "id": "ex-d-1150"
+        },
+        {
+          "id": "ex-d-1354"
+        },
+        {
+          "id": "ex-d-1355"
+        }
+      ],
+      "bebris_video": null
+    },
+    {
+      "id": "les-d-26",
+      "rank": "D",
+      "module": "mod-d-6",
+      "title": "Двойное отрицание: anything / anyone",
+      "grammar_point": {
+        "id": "gp-d-26",
+        "title_ru": "Одно отрицание в предложении",
+        "rule_md": "**Двойное отрицание: anything / anyone.**\nВ английском ОДНО отрицание в предложении: I **don't** have **anything**.\n= I have **nothing**. ❌ I don't have nothing.\nanyone/anybody — о людях: I don't know **anyone** here. = I know **no one**.\nnever/nowhere — тоже отрицания: I **never** say never.",
+        "phrase_ids": ["ph-d-1114", "ph-d-1115", "ph-d-1116", "ph-d-1117", "ph-d-1118"],
+        "trap_id": "trap-double-negative"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 1781,
+        "to": 1840
+      },
+      "phrasebook_topic": "shop",
+      "trap_id": "trap-double-negative",
+      "quotes_topic": "negation",
+      "exercises": [
+        {
+          "id": "ex-d-1151"
+        },
+        {
+          "id": "ex-d-1152"
+        },
+        {
+          "id": "ex-d-1153"
+        },
+        {
+          "id": "ex-d-1154"
+        },
+        {
+          "id": "ex-d-1155"
+        },
+        {
+          "id": "ex-d-1156"
+        },
+        {
+          "id": "ex-d-1157"
+        },
+        {
+          "id": "ex-d-1158"
+        },
+        {
+          "id": "ex-d-1159"
+        },
+        {
+          "id": "ex-d-1160"
+        },
+        {
+          "id": "ex-d-1161"
+        },
+        {
+          "id": "ex-d-1162"
+        },
+        {
+          "id": "ex-d-1163"
+        },
+        {
+          "id": "ex-d-1164"
+        },
+        {
+          "id": "ex-d-1165"
+        },
+        {
+          "id": "ex-d-1166"
+        },
+        {
+          "id": "ex-d-1167"
+        },
+        {
+          "id": "ex-d-1168"
+        },
+        {
+          "id": "ex-d-1169"
+        },
+        {
+          "id": "ex-d-1170"
+        },
+        {
+          "id": "ex-d-1171"
+        },
+        {
+          "id": "ex-d-1172"
+        },
+        {
+          "id": "ex-d-1173"
+        },
+        {
+          "id": "ex-d-1174"
+        },
+        {
+          "id": "ex-d-1175"
+        },
+        {
+          "id": "ex-d-1176"
+        },
+        {
+          "id": "ex-d-1177"
+        },
+        {
+          "id": "ex-d-1178"
+        },
+        {
+          "id": "ex-d-1179"
+        },
+        {
+          "id": "ex-d-1180"
+        },
+        {
+          "id": "ex-d-1181"
+        },
+        {
+          "id": "ex-d-1182"
+        },
+        {
+          "id": "ex-d-1183"
+        },
+        {
+          "id": "ex-d-1184"
+        },
+        {
+          "id": "ex-d-1185"
+        },
+        {
+          "id": "ex-d-1186"
+        },
+        {
+          "id": "ex-d-1187"
+        },
+        {
+          "id": "ex-d-1188"
+        },
+        {
+          "id": "ex-d-1189"
+        },
+        {
+          "id": "ex-d-1190"
+        },
+        {
+          "id": "ex-d-1191"
+        },
+        {
+          "id": "ex-d-1192"
+        },
+        {
+          "id": "ex-d-1193"
+        },
+        {
+          "id": "ex-d-1194"
+        },
+        {
+          "id": "ex-d-1195"
+        },
+        {
+          "id": "ex-d-1196"
+        },
+        {
+          "id": "ex-d-1356"
+        },
+        {
+          "id": "ex-d-1357"
+        }
+      ],
+      "bebris_video": null
+    },
+    {
+      "id": "les-d-27",
+      "rank": "D",
+      "module": "mod-d-6",
+      "title": "Трансформации: + → − → ?",
+      "grammar_point": {
+        "id": "gp-d-27",
+        "title_ru": "Трансформации предложений",
+        "rule_md": "**Трансформации: ± и ?.**\nУтверждение → отрицание: I know him. → I **don't** know him.\nОтрицание → вопрос: **Do** you know him? (do приезжает, know без -s)\nthere is → Is there…? / has got → Has he got…? / can → Can we…?\nsome → **any** в отрицаниях и вопросах: some money → **any** money.",
+        "phrase_ids": ["ph-d-1158", "ph-d-1159", "ph-d-1160", "ph-d-1161", "ph-d-1162"],
+        "trap_id": "trap-no-do-negative"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 1841,
+        "to": 1900
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-no-do-negative",
+      "quotes_topic": "transform",
+      "exercises": [
+        {
+          "id": "ex-d-1197"
+        },
+        {
+          "id": "ex-d-1198"
+        },
+        {
+          "id": "ex-d-1199"
+        },
+        {
+          "id": "ex-d-1200"
+        },
+        {
+          "id": "ex-d-1201"
+        },
+        {
+          "id": "ex-d-1202"
+        },
+        {
+          "id": "ex-d-1203"
+        },
+        {
+          "id": "ex-d-1204"
+        },
+        {
+          "id": "ex-d-1205"
+        },
+        {
+          "id": "ex-d-1206"
+        },
+        {
+          "id": "ex-d-1207"
+        },
+        {
+          "id": "ex-d-1208"
+        },
+        {
+          "id": "ex-d-1209"
+        },
+        {
+          "id": "ex-d-1210"
+        },
+        {
+          "id": "ex-d-1211"
+        },
+        {
+          "id": "ex-d-1212"
+        },
+        {
+          "id": "ex-d-1213"
+        },
+        {
+          "id": "ex-d-1214"
+        },
+        {
+          "id": "ex-d-1215"
+        },
+        {
+          "id": "ex-d-1216"
+        },
+        {
+          "id": "ex-d-1217"
+        },
+        {
+          "id": "ex-d-1218"
+        },
+        {
+          "id": "ex-d-1219"
+        },
+        {
+          "id": "ex-d-1220"
+        },
+        {
+          "id": "ex-d-1221"
+        },
+        {
+          "id": "ex-d-1222"
+        },
+        {
+          "id": "ex-d-1223"
+        },
+        {
+          "id": "ex-d-1224"
+        },
+        {
+          "id": "ex-d-1225"
+        },
+        {
+          "id": "ex-d-1226"
+        },
+        {
+          "id": "ex-d-1227"
+        },
+        {
+          "id": "ex-d-1228"
+        },
+        {
+          "id": "ex-d-1229"
+        },
+        {
+          "id": "ex-d-1230"
+        },
+        {
+          "id": "ex-d-1231"
+        },
+        {
+          "id": "ex-d-1232"
+        },
+        {
+          "id": "ex-d-1233"
+        },
+        {
+          "id": "ex-d-1234"
+        },
+        {
+          "id": "ex-d-1235"
+        },
+        {
+          "id": "ex-d-1236"
+        },
+        {
+          "id": "ex-d-1237"
+        },
+        {
+          "id": "ex-d-1238"
+        },
+        {
+          "id": "ex-d-1239"
+        },
+        {
+          "id": "ex-d-1240"
+        },
+        {
+          "id": "ex-d-1241"
+        },
+        {
+          "id": "ex-d-1242"
+        },
+        {
+          "id": "ex-d-1243"
+        },
+        {
+          "id": "ex-d-1244"
+        },
+        {
+          "id": "ex-d-1245"
+        },
+        {
+          "id": "ex-d-1246"
+        },
+        {
+          "id": "ex-d-1247"
+        },
+        {
+          "id": "ex-d-1248"
+        },
+        {
+          "id": "ex-d-1249"
+        },
+        {
+          "id": "ex-d-1250"
+        },
+        {
+          "id": "ex-d-1251"
+        },
+        {
+          "id": "ex-d-1252"
+        },
+        {
+          "id": "ex-d-1253"
+        },
+        {
+          "id": "ex-d-1254"
+        },
+        {
+          "id": "ex-d-1255"
+        },
+        {
+          "id": "ex-d-1256"
+        },
+        {
+          "id": "ex-d-1257"
+        },
+        {
+          "id": "ex-d-1358"
+        },
+        {
+          "id": "ex-d-1359"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "1.17",
+        "playlist_index": 38,
+        "youtube_id": "_z9rz35ks2A",
+        "title": null
+      }
+    },
+    {
+      "id": "les-d-28",
+      "rank": "D",
+      "module": "mod-d-6",
+      "title": "Большое повторение перед Вратами C",
+      "grammar_point": {
+        "id": "gp-d-28",
+        "title_ru": "Сборка всего ранга D",
+        "rule_md": "**Большое повторение перед Вратами C.**\nВсё ранга D: there is/are, can, have got, some/any/no, much/many,\nнеисчисляемые, so/such, вопросы к подлежащему, say/tell/ask,\nfeel + предлоги, PS vs PC, do/make, движение, would like,\nдвойное отрицание, трансформации ±?.\nВперёд, Охотник — Врата C ждут.",
+        "phrase_ids": ["ph-d-1206", "ph-d-1207", "ph-d-1208", "ph-d-1209", "ph-d-1210"],
+        "trap_id": "trap-comma-that"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 1901,
+        "to": 1960
+      },
+      "phrasebook_topic": "airport",
+      "trap_id": "trap-comma-that",
+      "quotes_topic": "mixed",
+      "exercises": [
+        {
+          "id": "ex-d-1258"
+        },
+        {
+          "id": "ex-d-1259"
+        },
+        {
+          "id": "ex-d-1260"
+        },
+        {
+          "id": "ex-d-1261"
+        },
+        {
+          "id": "ex-d-1262"
+        },
+        {
+          "id": "ex-d-1263"
+        },
+        {
+          "id": "ex-d-1264"
+        },
+        {
+          "id": "ex-d-1265"
+        },
+        {
+          "id": "ex-d-1266"
+        },
+        {
+          "id": "ex-d-1267"
+        },
+        {
+          "id": "ex-d-1268"
+        },
+        {
+          "id": "ex-d-1269"
+        },
+        {
+          "id": "ex-d-1270"
+        },
+        {
+          "id": "ex-d-1271"
+        },
+        {
+          "id": "ex-d-1272"
+        },
+        {
+          "id": "ex-d-1273"
+        },
+        {
+          "id": "ex-d-1274"
+        },
+        {
+          "id": "ex-d-1275"
+        },
+        {
+          "id": "ex-d-1276"
+        },
+        {
+          "id": "ex-d-1277"
+        },
+        {
+          "id": "ex-d-1278"
+        },
+        {
+          "id": "ex-d-1279"
+        },
+        {
+          "id": "ex-d-1280"
+        },
+        {
+          "id": "ex-d-1281"
+        },
+        {
+          "id": "ex-d-1282"
+        },
+        {
+          "id": "ex-d-1283"
+        },
+        {
+          "id": "ex-d-1284"
+        },
+        {
+          "id": "ex-d-1285"
+        },
+        {
+          "id": "ex-d-1286"
+        },
+        {
+          "id": "ex-d-1287"
+        },
+        {
+          "id": "ex-d-1288"
+        },
+        {
+          "id": "ex-d-1289"
+        },
+        {
+          "id": "ex-d-1290"
+        },
+        {
+          "id": "ex-d-1291"
+        },
+        {
+          "id": "ex-d-1292"
+        },
+        {
+          "id": "ex-d-1293"
+        },
+        {
+          "id": "ex-d-1294"
+        },
+        {
+          "id": "ex-d-1295"
+        },
+        {
+          "id": "ex-d-1296"
+        },
+        {
+          "id": "ex-d-1297"
+        },
+        {
+          "id": "ex-d-1298"
+        },
+        {
+          "id": "ex-d-1299"
+        },
+        {
+          "id": "ex-d-1300"
+        },
+        {
+          "id": "ex-d-1301"
+        },
+        {
+          "id": "ex-d-1302"
+        },
+        {
+          "id": "ex-d-1303"
+        },
+        {
+          "id": "ex-d-1304"
+        },
+        {
+          "id": "ex-d-1305"
+        },
+        {
+          "id": "ex-d-1360"
+        },
+        {
+          "id": "ex-d-1361"
         }
       ],
       "bebris_video": null

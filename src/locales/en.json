@@ -161,7 +161,16 @@
     "replayProgress": "task {{current}} of {{total}}",
     "replayFinished": "Mistakes replayed. The system approves.",
     "replayEmpty": "No mistakes left.",
-    "replayBackToSummary": "Back to summary"
+    "replayBackToSummary": "Back to summary",
+    "transform": {
+      "step": "Transformation · step {{current}} of {{total}}",
+      "tasks": {
+        "negative": "Make it negative (−)",
+        "question": "Make it a question (?)",
+        "past": "Put it into the past",
+        "future": "Put it into the future"
+      }
+    }
   },
   "ranks": {
     "statusTitle": "Hunter status",
@@ -176,8 +185,8 @@
     "notFound": "These gates do not exist.",
     "title": "Gates {{from}} → {{to}}",
     "check": {
-      "words": "Words (reliable): {{known}} / 300",
-      "lessons": "Rank E lessons: {{done}} / 24",
+      "words": "Words (reliable): {{known}} / {{target}}",
+      "lessons": "Rank {{rank}} lessons: {{done}} / {{total}}",
       "hint": "The checklist is a recommendation: the gates are always open."
     },
     "cooldown": "The next attempt unlocks after {{time}}",

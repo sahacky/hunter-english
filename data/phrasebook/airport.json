@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "kind": "phrasebook",
+  "items": [
+    {
+      "id": "pb-airport-01",
+      "rank": "D",
+      "topic": "airport",
+      "situation_ru": "Регистрация на рейс",
+      "user_role": "passenger",
+      "lines": [
+        {
+          "role": "agent",
+          "text_en": "Good morning. Your passport and ticket, please.",
+          "translation_ru": "Доброе утро. Ваш паспорт и билет, пожалуйста."
+        },
+        {
+          "role": "passenger",
+          "text_en": "Here is my passport and here is my ticket.",
+          "translation_ru": "Вот мой паспорт, а вот билет.",
+          "accepted": [
+            "Here is my passport and here is my ticket.",
+            "Here is my passport and my ticket."
+          ]
+        },
+        {
+          "role": "agent",
+          "text_en": "Do you have any bags to check in?",
+          "translation_ru": "У вас есть багаж для сдачи?"
+        },
+        {
+          "role": "passenger",
+          "text_en": "I have one bag.",
+          "translation_ru": "У меня один чемодан.",
+          "accepted": ["I have one bag.", "Just one bag."]
+        },
+        {
+          "role": "agent",
+          "text_en": "Window or aisle seat?",
+          "translation_ru": "Место у окна или у прохода?"
+        },
+        {
+          "role": "passenger",
+          "text_en": "A window seat, please. Where is gate 5?",
+          "translation_ru": "У окна, пожалуйста. Где пятый выход?",
+          "accepted": ["A window seat, please. Where is gate 5?", "A window seat, please."]
+        },
+        {
+          "role": "agent",
+          "text_en": "Gate 5 is on the left, after passport control. Have a nice flight!",
+          "translation_ru": "Выход 5 слева, после паспортного контроля. Хорошего полёта!"
+        }
+      ]
+    }
+  ]
+}

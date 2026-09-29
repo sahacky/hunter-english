@@ -38,6 +38,7 @@ import {
   ChooseTranslationExercise,
   InputCheckExercise,
   MatchPairsExercise,
+  TransformExercise,
   VoiceExercise,
   WordBankExercise,
 } from '../components/lesson/ExerciseView'
@@ -655,6 +656,7 @@ export default function LessonScreen({
           trap={trap}
           onAnswer={() => undefined}
           onDispute={() => undefined}
+          phrasesById={view.phrasesById}
           onNext={() => {
             if (phase.index + 1 < list.length) {
               setPhase({ kind: 'replay', index: phase.index + 1 })
@@ -744,6 +746,7 @@ export default function LessonScreen({
           onAnswer={(outcome, attempts) => handleAnswer(outcome, attempts, current.exercise.id)}
           onDispute={() => handleDispute(current.exercise.id)}
           onNext={handleNext}
+          phrasesById={view.phrasesById}
         />
       )}
 
@@ -766,12 +769,14 @@ function ExerciseRouter({
   onAnswer,
   onDispute,
   onNext,
+  phrasesById,
 }: {
   current: { exercise: ExerciseItem; phrase: PhraseItem | null }
   trap: TrapItem | null
   onAnswer: (outcome: ExerciseOutcome, attempts: number) => void
   onDispute: () => void
   onNext: () => void
+  phrasesById: Record<string, PhraseItem>
 }) {
   const { t } = useTranslation()
   const { exercise, phrase } = current
@@ -794,6 +799,8 @@ function ExerciseRouter({
       return <InputCheckExercise mode="find_error" {...common} />
     case 'verb_tense':
       return <InputCheckExercise mode="verb_tense" {...common} />
+    case 'transform':
+      return <TransformExercise {...common} phrasesById={phrasesById} />
     case 'speak':
       return <VoiceExercise mode="speak" {...common} />
     case 'shadowing':

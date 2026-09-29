@@ -16,6 +16,7 @@ import type { ExerciseItem, PhraseItem } from '../content/lessons'
 import { loadLessons, loadPhrases } from '../content/lessons'
 import { createFirstCards, loadWordNotes } from '../content/words'
 import { cooldownPassed, judgeGate, NEXT_RANK } from '../domain/game/game'
+import type { Rank } from '../domain/game/types'
 import type { GateAttempt, GateSectionScore } from '../domain/game/types'
 import type { ProgressRepository } from '../domain/progress'
 import { DexieProgressRepository } from '../data/progress-repository'
@@ -64,13 +65,13 @@ function mkExercise(
 }
 
 /** Сборка экзамена из данных ранга E (решение M7#1: рантайм-генерация). */
-async function buildExam(attemptSeed: string): Promise<ExamItem[]> {
+async function buildExam(attemptSeed: string, phrasePrefix: string): Promise<ExamItem[]> {
   const [wordNotes, phrases, lessons] = await Promise.all([
     loadWordNotes(),
     loadPhrases(),
     loadLessons(),
   ])
-  const rankPhrases = phrases.filter((phrase) => phrase.id.startsWith('ph-e-'))
+  const rankPhrases = phrases.filter((phrase) => phrase.id.startsWith(phrasePrefix))
   const items: ExamItem[] = []
   // Лексика 20: RU → выбор EN из заметок слов
   const words = seededPick(wordNotes, 20, `vocab-${attemptSeed}`)
@@ -150,6 +151,7 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
   const [scores, setScores] = useState<GateSectionScore[]>([])
   const [wordsKnown, setWordsKnown] = useState(0)
   const [lessonsDone, setLessonsDone] = useState(0)
+  const [lessonsTotal, setLessonsTotal] = useState(0)
   const [cooldownUntil, setCooldownUntil] = useState<string | null>(null)
   const [verdict, setVerdict] = useState<{ passed: boolean; total: number; weak: string[] } | null>(
     null,
@@ -157,8 +159,16 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
   const correctRef = useRef({ vocab: 0, grammar: 0, listening: 0, speaking: 0 })
 
   const gateId = (params.id ?? 'E-D').toUpperCase()
-  // M7: реализованы только Врата E→D (контент ранга E); остальные — M8+
-  const valid = gateId === 'E-D'
+  // Врата E→D (M7) и D→C (M12#12.7); контент экзамена — соответствующий ранг
+  const GATE_CONFIG: Record<
+    string,
+    { from: Rank; to: Rank; phrasePrefix: string; wordsTarget: number; lessonsOkAt: number }
+  > = {
+    'E-D': { from: 'E', to: 'D', phrasePrefix: 'ph-e-', wordsTarget: 300, lessonsOkAt: 5 },
+    'D-C': { from: 'D', to: 'C', phrasePrefix: 'ph-d-', wordsTarget: 1000, lessonsOkAt: 14 },
+  }
+  const gate = GATE_CONFIG[gateId]
+  const valid = gate !== undefined
 
   useEffect(() => {
     let alive = true
@@ -171,14 +181,15 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
       await repo.ensureCards(createFirstCards(await loadWordNotes(), now))
       const cards = await repo.getAllCards()
       setWordsKnown(cards.filter((card) => card.deck === 'words' && card.state === 2).length)
-      const lessons = await loadLessons()
+      const lessons = (await loadLessons()).filter((lesson) => lesson.rank === gate.from)
       let done = 0
       for (const lesson of lessons) {
         const row = await repo.getLessonProgress(lesson.id)
         if (row?.status === 'completed') done += 1
       }
       setLessonsDone(done)
-      const attempt = await repo.getGateAttempt('D')
+      setLessonsTotal(lessons.length)
+      const attempt = await repo.getGateAttempt(gate.to)
       if (attempt?.finished_at && attempt.passed.length >= 0 && !passedExam(attempt)) {
         // провал любой попытки → кулдаун 72ч (game://gate-cooldown); сданные секции сохранены
         setCooldownUntil(attempt.finished_at)
@@ -197,7 +208,7 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
   const startExam = useCallback(
     async (sections: ExamItem['section'][]) => {
       const seed = `${gateId}-${Date.now()}`
-      const exam = await buildExam(seed)
+      const exam = await buildExam(seed, gate.phrasePrefix)
       const filtered = exam.filter((item) => sections.includes(item.section))
       correctRef.current = { vocab: 0, grammar: 0, listening: 0, speaking: 0 }
       setItems(filtered)
@@ -206,9 +217,9 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
       setVerdict(null)
       setPhase({ kind: 'exam' })
       // прошлые сданные секции сохраняются для пересдачи (game://gate-retry-sections)
-      const previous = await repo.getGateAttempt('D')
+      const previous = await repo.getGateAttempt(gate.to)
       await repo.putGateAttempt({
-        gate: 'D',
+        gate: gate.to,
         started_at: new Date().toISOString(),
         finished_at: null,
         passed: previous?.passed ?? [],
@@ -229,7 +240,7 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
       setPhase({ kind: 'result' })
       const finishedAt = new Date().toISOString()
       await repo.putGateAttempt({
-        gate: 'D',
+        gate: gate.to,
         started_at: finishedAt,
         finished_at: finishedAt,
         passed: result.passed
@@ -242,7 +253,7 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
       if (result.passed) {
         const stats = await repo.getStats()
         const nextRank = NEXT_RANK[stats.rank]
-        if (nextRank !== stats.rank || stats.rank === 'E') {
+        if (stats.rank === gate.from) {
           await repo.putStats({
             ...stats,
             rank: nextRank,
@@ -303,18 +314,20 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
     )
   }
   if (phase.kind === 'intro') {
-    const wordsOk = wordsKnown >= 300
-    const lessonsOk = lessonsDone >= 5
+    const wordsOk = wordsKnown >= gate.wordsTarget
+    const lessonsOk = lessonsDone >= gate.lessonsOkAt
     const cooldown = cooldownUntil !== null && !cooldownPassed(cooldownUntil, new Date())
     return (
       <section className="panel gates-panel">
-        <h2>{t('gates.title', { from: 'E', to: 'D' })}</h2>
+        <h2>{t('gates.title', { from: gate.from, to: gate.to })}</h2>
         <ul className="gates-checklist">
           <li className={wordsOk ? 'dash-quest-done' : undefined}>
-            {t('gates.check.words', { known: wordsKnown })} {wordsOk ? '☑' : '☐'}
+            {t('gates.check.words', { known: wordsKnown, target: gate.wordsTarget })}{' '}
+            {wordsOk ? '☑' : '☐'}
           </li>
           <li className={lessonsOk ? 'dash-quest-done' : undefined}>
-            {t('gates.check.lessons', { done: lessonsDone })} {lessonsOk ? '☑' : '☐'}
+            {t('gates.check.lessons', { done: lessonsDone, total: lessonsTotal, rank: gate.from })}{' '}
+            {lessonsOk ? '☑' : '☐'}
           </li>
         </ul>
         {!wordsOk && !lessonsOk && <p className="dim">{t('gates.check.hint')}</p>}
@@ -379,7 +392,7 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
   return (
     <section className="panel gates-panel">
       <header>
-        <h2>{t('gates.title', { from: 'E', to: 'D' })}</h2>
+        <h2>{t('gates.title', { from: gate.from, to: gate.to })}</h2>
         <p className="dim">
           {t('gates.sectionProgress', {
             section: t(`gates.sections.${currentSection ?? 'vocab'}`),

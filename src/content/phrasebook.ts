@@ -44,7 +44,7 @@ export const SITUATIONS: { id: string; minRank: 'E' | 'D' | 'C' }[] = [
   { id: 'passport', minRank: 'C' },
   { id: 'hotel', minRank: 'C' },
   { id: 'restaurant', minRank: 'C' },
-  { id: 'pharmacy', minRank: 'C' },
+  { id: 'pharmacy', minRank: 'D' }, // превью с D-19 (план M12#12.7); полная глава — C
 ]
 
 /** Заметки реплик разговорника для SRS (колода phrasebook). */

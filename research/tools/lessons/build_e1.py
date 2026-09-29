@@ -2138,6 +2138,30 @@ def build_rank(lessons, *, rank: str, stem: str, seed: int):
             })
             lesson_exercises.append({"id": eid})
 
+        # --- Построение++: трансформации ±? (D-27+, specs/02 §3 №14) ------------
+        # spec["transform"]: цепочки (утверждение, отрицание, вопрос|None);
+        # каждый этап — фраза урока, ответ = variants фразы-этапа
+        def phrase_id_by_text(text: str) -> str:
+            for item in phrases_out:
+                if item["text_en"] == text:
+                    return item["id"]
+            raise SystemExit(f"фраза {text!r} не найдена в пулах (transform {spec['id']})")
+
+        for chain in spec.get("transform", []):
+            source_id = phrase_id_by_text(chain[0])
+            steps = [{"task": "negative", "phrase_id": phrase_id_by_text(chain[1])}]
+            if chain[2] is not None:
+                steps.append({"task": "question", "phrase_id": phrase_id_by_text(chain[2])})
+            eid = next_ex()
+            exercises_out.append({
+                "id": eid, "type": "transform",
+                "payload": {"kind": "transform", "source_phrase_id": source_id,
+                            "steps": steps},
+                "answer": {"normalization": "default", "typo": "allow"},
+                "meta": {"skill": "grammar", "xp": 3},
+            })
+            lesson_exercises.append({"id": eid})
+
         # --- Шаг 4: слух — диктант -------------------------------------------
         dict_pool = sorted(
             [p for p in lesson_phrase_items if p["translation_ru"] not in ambiguous],

@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "kind": "phrasebook",
+  "items": [
+    {
+      "id": "pb-pharmacy-01",
+      "rank": "D",
+      "topic": "pharmacy",
+      "situation_ru": "В аптеке: что-нибудь от головной боли",
+      "user_role": "patient",
+      "lines": [
+        {
+          "role": "pharmacist",
+          "text_en": "Good afternoon. How can I help you?",
+          "translation_ru": "Добрый день. Чем могу помочь?"
+        },
+        {
+          "role": "patient",
+          "text_en": "I don't feel well. I need something for a headache.",
+          "translation_ru": "Мне нездоровится. Мне нужно что-нибудь от головной боли.",
+          "accepted": [
+            "I don't feel well. I need something for a headache.",
+            "I need something for a headache."
+          ]
+        },
+        {
+          "role": "pharmacist",
+          "text_en": "How long do you have this pain?",
+          "translation_ru": "Давно у вас эта боль?"
+        },
+        {
+          "role": "patient",
+          "text_en": "Since morning. It is very strong.",
+          "translation_ru": "С утра. Она очень сильная.",
+          "accepted": ["Since morning. It is very strong.", "Since morning."]
+        },
+        {
+          "role": "pharmacist",
+          "text_en": "Take this medicine twice a day, after meals.",
+          "translation_ru": "Принимайте это лекарство дважды в день после еды."
+        },
+        {
+          "role": "patient",
+          "text_en": "Thank you. How much is it?",
+          "translation_ru": "Спасибо. Сколько это стоит?",
+          "accepted": ["Thank you. How much is it?", "How much is it?"]
+        }
+      ]
+    }
+  ]
+}
