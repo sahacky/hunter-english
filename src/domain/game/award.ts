@@ -66,11 +66,15 @@ export async function awardXp(
 /**
  * Закрывает учебный день для стрика: выполняется при первом засчитанном слоте
  * (game://streak-day). Идемпотентна в пределах дня (streakCounted).
+ * freezeGained — выдана ли заморозка (+1 за кратные 7 стрика) — для тоста (M10).
  */
-export async function closeStudyDay(repo: ProgressRepository, now: Date): Promise<UserStats> {
+export async function closeStudyDay(
+  repo: ProgressRepository,
+  now: Date,
+): Promise<{ stats: UserStats; freezeGained: boolean }> {
   const dayIso = dayStart(now).toISOString()
   const [stats, quest] = await Promise.all([repo.getStats(), repo.getQuestDay(dayIso)])
-  if (!quest || quest.streakCounted) return stats
+  if (!quest || quest.streakCounted) return { stats, freezeGained: false }
   const reconciliation = countStudyDay(stats, dayIso)
   const nextQuest: QuestDayState = {
     ...quest,
@@ -78,7 +82,10 @@ export async function closeStudyDay(repo: ProgressRepository, now: Date): Promis
     freezesSpent: reconciliation.freezesSpent,
   }
   await Promise.all([repo.putQuestDay(nextQuest), repo.putStats(reconciliation.stats)])
-  return reconciliation.stats
+  return {
+    stats: reconciliation.stats,
+    freezeGained: reconciliation.stats.freezes_left > stats.freezes_left,
+  }
 }
 
 /** Слот квеста выполнен (для стрика достаточно любого — game://streak-day). */

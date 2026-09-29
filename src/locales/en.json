@@ -73,7 +73,13 @@
     "modeHint": "Hard/Easy buttons can be enabled in settings",
     "exitConfirmTitle": "Interrupt session?",
     "exitConfirm": "Interrupt session? Reviews counted: {{count}}.",
-    "exitCancel": "Keep going"
+    "exitCancel": "Keep going",
+    "intervalUnits": {
+      "m": "m",
+      "h": "h",
+      "d": "d",
+      "y": "y"
+    }
   },
   "common": {
     "loading": "Loading…",
@@ -248,7 +254,8 @@
       "resetYes": "Delete",
       "resetNo": "Cancel",
       "resetDone": "Progress reset.",
-      "note": "Storage: IndexedDB ({{db}}). Sync comes later."
+      "note": "Storage: IndexedDB ({{db}}). Sync comes later.",
+      "resetFailed": "Failed to reset progress."
     },
     "common": {
       "on": "On",

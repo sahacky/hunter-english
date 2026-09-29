@@ -53,10 +53,20 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
     }
   }, [])
 
-  // Тема: выбор пользователя + системное предпочтение (specs/08 §2.2)
+  // Тема: выбор пользователя + системное предпочтение (specs/08 §2.2).
+  // Зеркалим в localStorage для анти-FOUC-скрипта в index.html и обновляем
+  // meta theme-color (статус-бар PWA следует за темой — ревью M10 м5)
   useEffect(() => {
     const apply = (prefersDark: boolean) => {
-      document.documentElement.dataset.theme = resolveTheme(settings.theme, prefersDark)
+      const resolved = resolveTheme(settings.theme, prefersDark)
+      document.documentElement.dataset.theme = resolved
+      try {
+        window.localStorage.setItem('he-theme', resolved)
+      } catch {
+        // приватный режим — FOUC-скрипт просто не найдёт зеркало
+      }
+      const meta = document.querySelector('meta[name="theme-color"]')
+      if (meta) meta.setAttribute('content', resolved === 'light' ? '#f2f6fb' : '#070b14')
     }
     apply(window.matchMedia('(prefers-color-scheme: dark)').matches)
     const mq = window.matchMedia('(prefers-color-scheme: dark)')

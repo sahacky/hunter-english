@@ -31,9 +31,11 @@ test('settings screen: srs buttons mode reaches review screen', async ({ page })
 
 test('lesson exit: button with confirm returns to dashboard', async ({ page }) => {
   await page.goto('/#/lesson/E-01')
-  await expect(page.getByRole('heading', { name: 'to be: am / is / are. Знакомство' })).toBeVisible({
-    timeout: 8000,
-  })
+  await expect(page.getByRole('heading', { name: 'to be: am / is / are. Знакомство' })).toBeVisible(
+    {
+      timeout: 8000,
+    },
+  )
   await page.getByRole('button', { name: /Выход/ }).click()
   await expect(page.getByText(/Урок не завершён/)).toBeVisible()
   await page.getByRole('button', { name: 'Выйти' }).click()

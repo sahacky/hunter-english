@@ -439,8 +439,9 @@ export default function LessonScreen({
         isRepeat: Boolean(previous && previous.status !== 'in_progress'),
       })
       if (anySlotDone(award.quest)) {
-        await closeStudyDay(repo, new Date())
+        const closed = await closeStudyDay(repo, new Date())
         showToast(t('toast.questDone')) // решение M10#2: значимые события
+        if (closed.freezeGained) showToast(t('toast.freezeGained'))
       }
       setSummary((prev) => (prev ? { ...prev, xp: award.awarded } : prev))
       setPhase({ kind: 'done' })
@@ -472,11 +473,15 @@ export default function LessonScreen({
   }, [phase.kind, ruleShown, step, handleNext])
 
   // Выход из незавершённого урока — осознанный (specs/07 §4.3–4.4): прогресс
-  // сохранён, продолжить можно с шага N. Esc в активном шаге открывает подтверждение.
+  // сохранён, продолжить можно с шага N. Esc открывает/закрывает подтверждение,
+  // но не срабатывает из полей ввода (specs/07 §5.1 — шорткоты вне input).
   useEffect(() => {
-    if (phase.kind !== 'step' && phase.kind !== 'deck') return
+    if (phase.kind !== 'step') return
     const onKey = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') setConfirmExit(true)
+      if (event.key !== 'Escape') return
+      const target = event.target
+      if (target instanceof HTMLInputElement || target instanceof HTMLTextAreaElement) return
+      setConfirmExit((prev) => !prev)
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)

@@ -39,7 +39,6 @@ interface SrsScreenProps {
 }
 export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
   const { t } = useTranslation()
-  const { settings } = useSettings()
   const defaultRepo = useMemo(() => new DexieProgressRepository(), [])
   const repo = repoProp ?? defaultRepo
   const [phase, setPhase] = useState<Phase>({ kind: 'loading' })
@@ -55,6 +54,14 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
   const busyRef = useRef(false)
   // Время показа текущей карточки — duration_ms в review_log (specs/06 §1)
   const cardShownAt = useRef(Date.now())
+  // Момент показа карточки — единый `now` для превью интервалов И applyAnswer:
+  // seed fuzz в ts-fsrs включает review_time (DefaultInitSeedStrategy), поэтому
+  // превью и фактический ответ обязаны зваться с одним now — иначе подпись
+  // кнопки соврёт (ревью M10, Б1). reviewed_at = момент показа (допустимо:
+  // duration_ms считается точно, гранулярность FSRS — дни).
+  const previewNowRef = useRef(new Date())
+
+  const { settings, ready: settingsReady } = useSettings()
 
   useEffect(() => {
     let alive = true
@@ -89,22 +96,26 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
         setPlan(nextPlan)
         setQueue(nextPlan.entries)
         cardShownAt.current = Date.now()
+        previewNowRef.current = new Date()
         if (nextPlan.entries.length > 0) setPhase({ kind: 'review' })
         else setPhase({ kind: 'done', empty: true })
       } catch {
         if (alive) setPhase({ kind: 'error' })
       }
     }
-    void start()
+    // настройки грузятся асинхронно: ждём ready, чтобы строить очередь
+    // с сохранённым newPerDay (ревью M10, минор 6)
+    if (settingsReady || notes) void start()
     return () => {
       alive = false
     }
     // бустрап один раз на монтирование; notes/repo — инъекция, не триггерят перезапуск
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  }, [settingsReady])
 
   useEffect(() => {
     cardShownAt.current = Date.now()
+    previewNowRef.current = new Date()
   }, [queue[0]?.card.card_id, phase.kind])
 
   // уход с экрана останавливает озвучку (plan://M6#6.3, ревью)
@@ -127,20 +138,24 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
       const entry = queue[0]
       if (!entry || busyRef.current) return
       busyRef.current = true
-      const now = new Date()
+      // единый now с превью интервалов (seed fuzz включает review_time — ревью M10 Б1)
+      const now = previewNowRef.current
       const { next, log } = applyAnswer(entry.card, rating, now, {
         logId: uuidv7(now),
         sessionId,
-        durationMs: now.getTime() - cardShownAt.current,
+        durationMs: Date.now() - cardShownAt.current,
       })
       try {
         await repo.saveAnswer(next, log) // мгновенное сохранение каждого ответа
         // XP-шина (plan://M7#7.3): повтор 1 XP; выпуск новой карточки в Review +2
         const released = entry.card.state === 1 && next.state === 2
-        const award = await awardXp(repo, now, 1 + (released ? 2 : 0), 'reviews', { reviews: 1 })
+        const award = await awardXp(repo, new Date(), 1 + (released ? 2 : 0), 'reviews', {
+          reviews: 1,
+        })
         if (anySlotDone(award.quest)) {
-          await closeStudyDay(repo, now)
+          const closed = await closeStudyDay(repo, new Date())
           showToast(t('toast.questDone')) // решение M10#2: значимые события
+          if (closed.freezeGained) showToast(t('toast.freezeGained'))
         }
       } catch {
         setPhase({ kind: 'error' })
@@ -174,10 +189,11 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
       const onControl = event.target instanceof HTMLElement && event.target.tagName === 'BUTTON'
       if (event.repeat || event.ctrlKey || event.metaKey || event.altKey) return
       if (event.key === 'Escape') {
-        // specs/07 §4.3: прервать сессию — с подтверждением (ответы уже записаны)
-        setConfirmExit(true)
+        // specs/07 §4.3/§5.1: Esc открывает подтверждение; повторный Esc закрывает
+        setConfirmExit((prev) => !prev)
         return
       }
+      if (confirmExit) return // диалог открыт — оценки не срабатывают (ревью M10 м2)
       // пробел на сфокусированной кнопке — её штатная активация; остальные клавиши (r/s/1..4) работают всегда
       if (event.code === 'Space') {
         if (onControl) return
@@ -200,7 +216,7 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
     // entry не в deps (объявлен ниже): замыкание свежее через answer (меняется с queue)
-  }, [phase.kind, revealed, answer, settings.srsButtons])
+  }, [phase.kind, revealed, answer, settings.srsButtons, confirmExit])
 
   const counters = useMemo(() => {
     const count = (kind: QueueEntry['kind']) => queue.filter(({ kind: k }) => k === kind).length
@@ -265,15 +281,37 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
   }
 
   const entry = queue[0]
-  const now = new Date()
-  // Превью интервалов для кнопок (specs/03 §6; чистая функция планировщика)
+  // Превью интервалов для кнопок (specs/03 §6): from = замороженный момент показа
+  // (previewNowRef), тот же now уходит в applyAnswer — подпись не врёт (ревью M10 Б1)
+  const units = {
+    m: t('srs.intervalUnits.m'),
+    h: t('srs.intervalUnits.h'),
+    d: t('srs.intervalUnits.d'),
+    y: t('srs.intervalUnits.y'),
+  }
   const intervals =
     settings.showIntervals && revealed
       ? {
-          1: formatInterval(now, previewDue(entry.card, 1, now)),
-          2: formatInterval(now, previewDue(entry.card, 2, now)),
-          3: formatInterval(now, previewDue(entry.card, 3, now)),
-          4: formatInterval(now, previewDue(entry.card, 4, now)),
+          1: formatInterval(
+            previewNowRef.current,
+            previewDue(entry.card, 1, previewNowRef.current),
+            units,
+          ),
+          2: formatInterval(
+            previewNowRef.current,
+            previewDue(entry.card, 2, previewNowRef.current),
+            units,
+          ),
+          3: formatInterval(
+            previewNowRef.current,
+            previewDue(entry.card, 3, previewNowRef.current),
+            units,
+          ),
+          4: formatInterval(
+            previewNowRef.current,
+            previewDue(entry.card, 4, previewNowRef.current),
+            units,
+          ),
         }
       : null
   return (

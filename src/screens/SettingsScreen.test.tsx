@@ -1,6 +1,6 @@
 import 'fake-indexeddb/auto'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
-import { render } from '@testing-library/react'
+import { fireEvent, render } from '@testing-library/react'
 import { HunterDb } from '../data/db'
 import { buildExportPayload, importPayload, type ExportPayload } from './SettingsScreen'
 import { uuidv7 } from '../lib/uuidv7'
@@ -91,6 +91,56 @@ describe('export / import payload', () => {
       importPayload({ app: 'other' as never, export_version: 1, exported_at: '', tables: {} }, db),
     ).rejects.toThrow('unsupported export format')
   })
+
+  it('импорт ремапит user_id на local (MVP-владелец) — прогресс видим', async () => {
+    const payload: ExportPayload = {
+      app: 'hunter-english',
+      export_version: 1,
+      exported_at: new Date().toISOString(),
+      tables: {
+        card_states: [
+          {
+            user_id: 'someone-else',
+            card_id: 'remap-test.en-ru',
+            note_id: 'remap-test',
+            type: 'en-ru',
+            deck: 'words',
+            due: new Date().toISOString(),
+            stability: 1,
+            difficulty: 5,
+            elapsed_days: 0,
+            scheduled_days: 0,
+            reps: 1,
+            lapses: 0,
+            state: 2,
+            last_review: null,
+            suspended: false,
+            cloze_index: null,
+            created_at: new Date().toISOString(),
+            updated_at: new Date().toISOString(),
+          },
+        ],
+      },
+    }
+    await importPayload(payload, db)
+    const [row] = await db.card_states.toArray()
+    expect(row.user_id).toBe('local')
+  })
+
+  it('битые строки ключевых таблиц — отказ импорта целиком', async () => {
+    const base = { app: 'hunter-english', export_version: 1, exported_at: new Date().toISOString() }
+    await expect(
+      importPayload(
+        {
+          ...base,
+          tables: { card_states: [{ card_id: 'x', note_id: 5, due: 'not-a-date', state: 9 }] },
+        } as never,
+        db,
+      ),
+    ).rejects.toThrow(/bad (row|due|state)/)
+    // база не тронута: транзакция не выполнялась
+    expect(await db.card_states.count()).toBe(0)
+  })
 })
 
 describe('SettingsScreen render', () => {
@@ -110,5 +160,20 @@ describe('SettingsScreen render', () => {
     expect(getByText('Повторения')).toBeInTheDocument()
     expect(getByText('Данные')).toBeInTheDocument()
     expect(getByText('Экспорт прогресса (JSON)')).toBeInTheDocument()
+  })
+
+  it('newPerDay: черновик вводится свободно, кламп применяется по blur (ревью M10 М2)', async () => {
+    const { default: SettingsScreen } = await import('./SettingsScreen')
+    const { SettingsProvider } = await import('../state/settings')
+    const { findByLabelText } = render(
+      <SettingsProvider>
+        <SettingsScreen database={db} />
+      </SettingsProvider>,
+    )
+    const input = await findByLabelText('Новых карточек в день')
+    fireEvent.change(input, { target: { value: '2' } })
+    expect(input).toHaveValue(2) // черновик не клампится на каждый keystroke
+    fireEvent.blur(input)
+    expect(input).toHaveValue(5) // кламп 5–50 по фиксации
   })
 })

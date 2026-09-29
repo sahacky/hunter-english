@@ -57,11 +57,29 @@ describe('closeStudyDay', () => {
     state.slots.lesson.done = 1
     await repo.putQuestDay(state)
     expect(anySlotDone(state)).toBe(true)
-    const stats = await closeStudyDay(repo, NOW)
+    const { stats, freezeGained } = await closeStudyDay(repo, NOW)
     expect(stats.streak_current).toBe(1)
+    expect(freezeGained).toBe(false) // заморозка — на кратных 7 (game://streak)
     expect((await repo.getQuestDay(dayIso))?.streakCounted).toBe(true)
     await closeStudyDay(repo, NOW)
     expect((await repo.getStats()).streak_current).toBe(1)
+  })
+
+  it('стрик 7 → выдана заморозка (freezeGained, тост M10)', async () => {
+    const dayIso = dayStart(NOW).toISOString()
+    await repo.putStats({
+      ...(await repo.getStats()),
+      streak_current: 6,
+      streak_best: 6,
+      freezes_left: 2,
+    })
+    const state = createQuestDay(dayIso, 20)
+    state.slots.reviews.done = 1
+    await repo.putQuestDay(state)
+    const { stats, freezeGained } = await closeStudyDay(repo, NOW)
+    expect(stats.streak_current).toBe(7)
+    expect(freezeGained).toBe(true)
+    expect(stats.freezes_left).toBe(3)
   })
 })
 

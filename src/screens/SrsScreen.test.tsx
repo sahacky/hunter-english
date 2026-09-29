@@ -300,6 +300,13 @@ describe('SrsScreen + настройки (plan://M10#10.3)', () => {
 
     fireEvent.keyDown(window, { key: 'Escape' })
     expect(await screen.findByText(/Прервать сессию\?/)).toBeInTheDocument()
+    // повторный Esc закрывает диалог (specs/07 §5.1), оценки заблокированы при открытом
+    fireEvent.keyDown(window, { key: 'Escape' })
+    expect(screen.queryByText(/Прервать сессию\?/)).not.toBeInTheDocument()
+    fireEvent.keyDown(window, { key: 'Escape' })
+    fireEvent.keyDown(window, { key: '2' }) // диалог открыт — не отвечает
+    expect(await screen.findByText(/Прервать сессию\?/)).toBeInTheDocument()
+    expect(screen.queryByText('water')).toBeInTheDocument()
     // «Закончить» в диалоге — вторая кнопка с этим именем (первая — шапка)
     fireEvent.click(screen.getAllByRole('button', { name: 'Закончить' })[1])
     expect(
