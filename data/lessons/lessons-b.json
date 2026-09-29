@@ -1034,7 +1034,7 @@
         "id": "gp-b-07",
         "title_ru": "have been + V-ing",
         "rule_md": "**Present Perfect Continuous.**\nhave/has been + V-ing: I **have been learning** for two years.\n= «делаю уже сколько-то» (процесс до сих пор):\nHow long **have** you **been waiting**? — I**'ve been waiting** for 20 min.\nРезультат процесса: I'm tired — I **have been running**.",
-        "phrase_ids": ["ph-b-0294", "ph-b-0295", "ph-b-0296", "ph-b-0297", "ph-b-0298"],
+        "phrase_ids": ["ph-b-0293", "ph-b-0294", "ph-b-0295", "ph-b-0296", "ph-b-0297"],
         "trap_id": "trap-present-perfect"
       },
       "vocab_band": {
@@ -1207,7 +1207,7 @@
         "id": "gp-b-08",
         "title_ru": "Предшествование в прошлом",
         "rule_md": "**Past Perfect: had + V3.**\nПредшествование: действие ДО другого прошедшего:\nI **had finished** before you **came**. (сначала finished — потом came)\nМаркеры: by the time, before, after, already, never…before.\nShe said she **had** already **eaten**.",
-        "phrase_ids": ["ph-b-0338", "ph-b-0339", "ph-b-0340", "ph-b-0341", "ph-b-0342"],
+        "phrase_ids": ["ph-b-0337", "ph-b-0338", "ph-b-0339", "ph-b-0340", "ph-b-0341"],
         "trap_id": "trap-present-perfect"
       },
       "vocab_band": {
@@ -1380,7 +1380,7 @@
         "id": "gp-b-09",
         "title_ru": "Контрольная: совершенные времена",
         "rule_md": "**Повторение №16: совершенные времена.**\nPresent Perfect (have+V3), PPC (have been+Ving), Past Perfect (had+V3).\nКонтрольная: выбери время, поставь форму, найди ошибку.\nСтратегия: маркер → время; результат-сейчас → Perfect; процесс → PPC.",
-        "phrase_ids": ["ph-b-0382", "ph-b-0383", "ph-b-0384", "ph-b-0385", "ph-b-0386"],
+        "phrase_ids": ["ph-b-0381", "ph-b-0382", "ph-b-0383", "ph-b-0384", "ph-b-0385"],
         "trap_id": "trap-present-perfect"
       },
       "vocab_band": {
@@ -1557,7 +1557,7 @@
         "id": "gp-b-10",
         "title_ru": "If it rains, I'll stay",
         "rule_md": "**Условные 0 и 1.**\n0 (закон): **If** you heat water, it **boils**. (настоящее в обеих)\n1 (реальное будущее): **If it rains**, I **'ll stay**. (if+настоящее, will)\n⚠️ Ловушка ЛТ-17: в if-части НЕТ will: ❌ if it will rain → if it rains.",
-        "phrase_ids": ["ph-b-0428", "ph-b-0429", "ph-b-0430", "ph-b-0431", "ph-b-0432"],
+        "phrase_ids": ["ph-b-0432", "ph-b-0433", "ph-b-0434", "ph-b-0435", "ph-b-0436"],
         "trap_id": "trap-if-will"
       },
       "vocab_band": {
@@ -1730,7 +1730,7 @@
         "id": "gp-b-11",
         "title_ru": "Гипотезы и мечты",
         "rule_md": "**Условное 2 (гипотеза).**\n**If** + Past Simple, **would** + 1-я форма:\nIf I **had** more time, I **would travel**.\nwere для всех лиц: If I **were** you…\nНереально сейчас: мечты, «если бы…».",
-        "phrase_ids": ["ph-b-0473", "ph-b-0474", "ph-b-0475", "ph-b-0476", "ph-b-0477"],
+        "phrase_ids": ["ph-b-0475", "ph-b-0476", "ph-b-0477", "ph-b-0478", "ph-b-0479"],
         "trap_id": "trap-if-will"
       },
       "vocab_band": {
@@ -2077,7 +2077,7 @@
         "title_ru": "used to + be used to",
         "rule_md": "**used to.**\n**used to** + 1-я форма = «раньше было» (сейчас нет):\nI **used to live** in London. ? : **Did** you **use to** play?\nbe/get **used to** + -ing = «привык»: I'**m used to getting** up early.\nРазница: «раньше было» vs «привычка сейчас».",
         "phrase_ids": ["ph-b-0563", "ph-b-0564", "ph-b-0565", "ph-b-0566", "ph-b-0567"],
-        "trap_id": "trap-to-home"
+        "trap_id": "trap-articles"
       },
       "vocab_band": {
         "list": "ngsl-spoken",
@@ -2085,7 +2085,7 @@
         "to": 4540
       },
       "phrasebook_topic": "smalltalk",
-      "trap_id": "trap-to-home",
+      "trap_id": "trap-articles",
       "quotes_topic": "past",
       "exercises": [
         {

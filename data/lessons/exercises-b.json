@@ -7,7 +7,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "I ___ finished.",
+        "text_with_gap": "I ___ finished. (утверждение)",
         "gap_answers": ["have"]
       },
       "answer": {
@@ -809,11 +809,11 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "___ been leveling up this whole time.",
-        "gap_answers": ["I've"],
+        "text_with_gap": "___ we meet again.",
+        "gap_answers": ["May"],
         "quote": {
-          "title": "Solo Leveling",
-          "season_episode": "аниме"
+          "title": "The 100",
+          "season_episode": "S05E13 «Damocles, Part 2»"
         }
       },
       "answer": {
@@ -831,11 +831,11 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "I've ___ leveling up this whole time.",
-        "gap_answers": ["been"],
+        "text_with_gap": "___ he working a job?",
+        "gap_answers": ["Is"],
         "quote": {
-          "title": "Solo Leveling",
-          "season_episode": "аниме"
+          "title": "Supernatural",
+          "season_episode": "S04E10 «Heaven and Hell»"
         }
       },
       "answer": {
@@ -853,7 +853,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "I have ___ eaten.",
+        "text_with_gap": "I have ___ eaten. (уже)",
         "gap_answers": ["already"]
       },
       "answer": {
@@ -870,7 +870,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "I have ___ been to Japan.",
+        "text_with_gap": "I have ___ been to Japan. (никогда)",
         "gap_answers": ["never"]
       },
       "answer": {
@@ -887,7 +887,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "Have you ___ been to Italy?",
+        "text_with_gap": "Have you ___ been to Italy? (когда-нибудь)",
         "gap_answers": ["ever"]
       },
       "answer": {
@@ -1141,9 +1141,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Я опоздал на один, в 2022-м.",
+        "prompt_ru": "Я опоздал на один в 2022-м.",
         "phrase_id": "ph-b-0084",
-        "tokens": ["Have", "What", "in", "I", "one,", "have", "missed", "2022"]
+        "tokens": ["in", "missed", "I", "Have", "one", "What", "2022"]
       },
       "answer": {
         "normalization": "default",
@@ -1161,7 +1161,7 @@
         "kind": "word_bank",
         "prompt_ru": "Я уже заплатил.",
         "phrase_id": "ph-b-0059",
-        "tokens": ["have", "What", "paid", "already", "I", "Have"]
+        "tokens": ["have", "Have", "paid", "already", "What", "I"]
       },
       "answer": {
         "normalization": "default",
@@ -1454,7 +1454,7 @@
       "payload": {
         "kind": "verb_tense",
         "sentence_with_gap": "She has ___ left.",
-        "marker": "уже",
+        "marker": "PP",
         "gap_answers": ["already"]
       },
       "answer": {
@@ -1472,7 +1472,7 @@
       "payload": {
         "kind": "verb_tense",
         "sentence_with_gap": "He has ___ flown.",
-        "marker": "никогда",
+        "marker": "PP",
         "gap_answers": ["never"]
       },
       "answer": {
@@ -1490,7 +1490,7 @@
       "payload": {
         "kind": "verb_tense",
         "sentence_with_gap": "Have you ___ tried it?",
-        "marker": "когда-нибудь",
+        "marker": "PP",
         "gap_answers": ["ever"]
       },
       "answer": {
@@ -1507,7 +1507,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0058"
+        "phrase_id": "ph-b-0094"
       },
       "answer": {
         "normalization": "default",
@@ -1523,7 +1523,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0055"
+        "phrase_id": "ph-b-0058"
       },
       "answer": {
         "normalization": "default",
@@ -1539,7 +1539,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0094"
+        "phrase_id": "ph-b-0055"
       },
       "answer": {
         "normalization": "default",
@@ -1555,7 +1555,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0093"
+        "phrase_id": "ph-b-0054"
       },
       "answer": {
         "normalization": "default",
@@ -1571,7 +1571,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0056"
+        "phrase_id": "ph-b-0072"
       },
       "answer": {
         "normalization": "default",
@@ -1604,7 +1604,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-0091"
+        "phrase_id": "ph-b-0090"
       },
       "answer": {
         "normalization": "default",
@@ -1621,7 +1621,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-0097"
+        "phrase_id": "ph-b-0096"
       },
       "answer": {
         "normalization": "default",
@@ -1638,7 +1638,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-0093"
+        "phrase_id": "ph-b-0092"
       },
       "answer": {
         "normalization": "default",
@@ -1677,11 +1677,11 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "I've ___ leveling up this whole time.",
-        "gap_answers": ["been"],
+        "text_with_gap": "May we ___ again.",
+        "gap_answers": ["meet"],
         "quote": {
-          "title": "Solo Leveling",
-          "season_episode": "аниме"
+          "title": "The 100",
+          "season_episode": "S05E13 «Damocles, Part 2»"
         }
       },
       "answer": {
@@ -1699,7 +1699,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "I have ___ finished.",
+        "text_with_gap": "I have ___ finished. (только что)",
         "gap_answers": ["just"]
       },
       "answer": {
@@ -1716,7 +1716,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "I haven't finished ___.",
+        "text_with_gap": "I haven't finished ___. (ещё)",
         "gap_answers": ["yet"]
       },
       "answer": {
@@ -1733,7 +1733,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "Has she come ___?",
+        "text_with_gap": "Has she come ___? (уже)",
         "gap_answers": ["yet"]
       },
       "answer": {
@@ -2313,7 +2313,7 @@
       "payload": {
         "kind": "verb_tense",
         "sentence_with_gap": "We haven't decided ___.",
-        "marker": "ещё",
+        "marker": "PP",
         "gap_answers": ["yet"]
       },
       "answer": {
@@ -2331,7 +2331,7 @@
       "payload": {
         "kind": "verb_tense",
         "sentence_with_gap": "I have ___ changed my job.",
-        "marker": "недавно",
+        "marker": "PP",
         "gap_answers": ["recently"]
       },
       "answer": {
@@ -2496,11 +2496,11 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "I've been leveling up ___ whole time.",
-        "gap_answers": ["this"],
+        "text_with_gap": "Is he ___ a job?",
+        "gap_answers": ["working"],
         "quote": {
-          "title": "Solo Leveling",
-          "season_episode": "аниме"
+          "title": "Supernatural",
+          "season_episode": "S04E10 «Heaven and Hell»"
         }
       },
       "answer": {
@@ -2518,8 +2518,8 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "Throughout Heaven and Earth, I ___ am the honored one.",
-        "gap_answers": ["alone"],
+        "text_with_gap": "Throughout Heaven and ___, I alone am the honored one.",
+        "gap_answers": ["Earth"],
         "quote": {
           "title": "Jujutsu Kaisen",
           "season_episode": "аниме S2"
@@ -2705,9 +2705,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "сидеть — сидел — сидевший (V3)",
-        "phrase_id": "ph-b-0180",
-        "tokens": ["grow", "—", "sat", "sit", "have", "—", "sat"]
+        "prompt_ru": "пить — пил — выпитый (V3)",
+        "phrase_id": "ph-b-0160",
+        "tokens": ["They", "—", "drank", "drink", "wear", "—", "drunk"]
       },
       "answer": {
         "normalization": "default",
@@ -2723,9 +2723,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Я никогда не летал.",
-        "phrase_id": "ph-b-0202",
-        "tokens": ["grow", "never", "flown", "have", "I", "sit"]
+        "prompt_ru": "носить — носил — ношеный (V3)",
+        "phrase_id": "ph-b-0177",
+        "tokens": ["drink", "wore", "—", "—", "wear", "worn", "They"]
       },
       "answer": {
         "normalization": "default",
@@ -2741,9 +2741,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "расти — рос — выросший (V3)",
-        "phrase_id": "ph-b-0176",
-        "tokens": ["grown", "—", "sit", "have", "grew", "—", "grow"]
+        "prompt_ru": "Они начали гонку.",
+        "phrase_id": "ph-b-0192",
+        "tokens": ["race", "the", "drink", "wear", "begun", "have", "They"]
       },
       "answer": {
         "normalization": "default",
@@ -2759,9 +2759,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "выбирать — выбрал — выбранный (V3)",
-        "phrase_id": "ph-b-0178",
-        "tokens": ["have", "—", "choose", "—", "chosen", "sit", "chose"]
+        "prompt_ru": "расти — рос — выросший (V3)",
+        "phrase_id": "ph-b-0176",
+        "tokens": ["wear", "—", "grow", "—", "grown", "drink", "grew"]
       },
       "answer": {
         "normalization": "default",
@@ -2777,9 +2777,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "покупать — купил — купленный (V3)",
-        "phrase_id": "ph-b-0155",
-        "tokens": ["have", "bought", "sit", "bought", "buy", "—", "—"]
+        "prompt_ru": "Я встал.",
+        "phrase_id": "ph-b-0196",
+        "tokens": ["wear", "drink", "stood", "I", "have", "up"]
       },
       "answer": {
         "normalization": "default",
@@ -2795,9 +2795,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "забывать — забыл — забытый (V3)",
-        "phrase_id": "ph-b-0172",
-        "tokens": ["sit", "have", "forgot", "—", "forget", "forgotten", "—"]
+        "prompt_ru": "Он потерял кошелёк.",
+        "phrase_id": "ph-b-0191",
+        "tokens": ["wear", "wallet", "lost", "drink", "has", "He", "his"]
       },
       "answer": {
         "normalization": "default",
@@ -2813,9 +2813,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "чувствовать — чувствовал — почувствованный (V3)",
-        "phrase_id": "ph-b-0167",
-        "tokens": ["have", "—", "sit", "felt", "feel", "—", "felt"]
+        "prompt_ru": "забывать — забыл — забытый (V3)",
+        "phrase_id": "ph-b-0172",
+        "tokens": ["—", "forget", "—", "drink", "forgot", "wear", "forgotten"]
       },
       "answer": {
         "normalization": "default",
@@ -2831,9 +2831,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "стоять — стоял — стоявший (V3)",
-        "phrase_id": "ph-b-0181",
-        "tokens": ["stood", "stood", "—", "stand", "have", "sit", "—"]
+        "prompt_ru": "Мы продали квартиру.",
+        "phrase_id": "ph-b-0190",
+        "tokens": ["drink", "sold", "wear", "the", "have", "We", "flat"]
       },
       "answer": {
         "normalization": "default",
@@ -2849,8 +2849,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Она надевала это один раз.",
-        "phrase_id": "ph-b-0200"
+        "prompt_ru": "приходить — пришёл — пришедший (V3)",
+        "phrase_id": "ph-b-0149"
       },
       "answer": {
         "normalization": "default",
@@ -2866,8 +2866,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Она победила.",
-        "phrase_id": "ph-b-0193"
+        "prompt_ru": "давать — дал — данный (V3)",
+        "phrase_id": "ph-b-0165"
       },
       "answer": {
         "normalization": "default",
@@ -2883,8 +2883,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "падать — упал — упавший (V3)",
-        "phrase_id": "ph-b-0169"
+        "prompt_ru": "водить — водил — водивший (V3)",
+        "phrase_id": "ph-b-0174"
       },
       "answer": {
         "normalization": "default",
@@ -2900,8 +2900,8 @@
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "приходить — пришёл — пришедший (V3)",
-        "phrase_id": "ph-b-0149"
+        "prompt_ru": "знать — знал — известный (V3)",
+        "phrase_id": "ph-b-0153"
       },
       "answer": {
         "normalization": "default",
@@ -2918,8 +2918,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "уходить — ушёл — ушедший (V3)",
-        "phrase_id": "ph-b-0162"
+        "prompt_ru": "создавать — создал — созданный (V3)",
+        "phrase_id": "ph-b-0147"
       },
       "answer": {
         "normalization": "default",
@@ -2935,8 +2935,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "приносить — принёс — принесённый (V3)",
-        "phrase_id": "ph-b-0156"
+        "prompt_ru": "говорить — говорил — высказанный (V3)",
+        "phrase_id": "ph-b-0161"
       },
       "answer": {
         "normalization": "default",
@@ -2952,8 +2952,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "говорить — сказал — сказанный (V3)",
-        "phrase_id": "ph-b-0151"
+        "prompt_ru": "думать — думал — продуманный (V3)",
+        "phrase_id": "ph-b-0154"
       },
       "answer": {
         "normalization": "default",
@@ -2969,8 +2969,8 @@
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "Они начали гонку.",
-        "phrase_id": "ph-b-0192"
+        "prompt_ru": "Я никогда не летал.",
+        "phrase_id": "ph-b-0202"
       },
       "answer": {
         "normalization": "default",
@@ -2987,8 +2987,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Он упал.",
-        "phrase_id": "ph-b-0194"
+        "prompt_ru": "начинать — начал — начатый (V3)",
+        "phrase_id": "ph-b-0179"
       },
       "answer": {
         "normalization": "default",
@@ -3004,8 +3004,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "встречать — встретил — встреченный (V3)",
-        "phrase_id": "ph-b-0163"
+        "prompt_ru": "Я прочитал статью.",
+        "phrase_id": "ph-b-0187"
       },
       "answer": {
         "normalization": "default",
@@ -3021,8 +3021,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Я принёс воды.",
-        "phrase_id": "ph-b-0189"
+        "prompt_ru": "чувствовать — чувствовал — почувствованный (V3)",
+        "phrase_id": "ph-b-0167"
       },
       "answer": {
         "normalization": "default",
@@ -3038,8 +3038,8 @@
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "Они построили дом.",
-        "phrase_id": "ph-b-0186"
+        "prompt_ru": "падать — упал — упавший (V3)",
+        "phrase_id": "ph-b-0169"
       },
       "answer": {
         "normalization": "default",
@@ -3056,8 +3056,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "знать — знал — известный (V3)",
-        "phrase_id": "ph-b-0153"
+        "prompt_ru": "Она забыла слово.",
+        "phrase_id": "ph-b-0188"
       },
       "answer": {
         "normalization": "default",
@@ -3073,8 +3073,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "понимать — понял — понятый (V3)",
-        "phrase_id": "ph-b-0171"
+        "prompt_ru": "говорить — сказал — сказанный (V3)",
+        "phrase_id": "ph-b-0151"
       },
       "answer": {
         "normalization": "default",
@@ -3090,8 +3090,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Он ушёл.",
-        "phrase_id": "ph-b-0201"
+        "prompt_ru": "просыпаться — проснулся — проснувшийся (V3)",
+        "phrase_id": "ph-b-0170"
       },
       "answer": {
         "normalization": "default",
@@ -3107,8 +3107,8 @@
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "брать — брал — взятый (V3)",
-        "phrase_id": "ph-b-0148"
+        "prompt_ru": "Он ушёл.",
+        "phrase_id": "ph-b-0201"
       },
       "answer": {
         "normalization": "default",
@@ -3179,7 +3179,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0194"
+        "phrase_id": "ph-b-0193"
       },
       "answer": {
         "normalization": "default",
@@ -3195,7 +3195,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0195"
+        "phrase_id": "ph-b-0196"
       },
       "answer": {
         "normalization": "default",
@@ -3211,7 +3211,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0193"
+        "phrase_id": "ph-b-0143"
       },
       "answer": {
         "normalization": "default",
@@ -3227,7 +3227,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0201"
+        "phrase_id": "ph-b-0202"
       },
       "answer": {
         "normalization": "default",
@@ -3243,7 +3243,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0142"
+        "phrase_id": "ph-b-0184"
       },
       "answer": {
         "normalization": "default",
@@ -3259,7 +3259,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-0190"
+        "phrase_id": "ph-b-0188"
       },
       "answer": {
         "normalization": "default",
@@ -3276,7 +3276,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-0171"
+        "phrase_id": "ph-b-0169"
       },
       "answer": {
         "normalization": "default",
@@ -3293,7 +3293,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-0194"
+        "phrase_id": "ph-b-0192"
       },
       "answer": {
         "normalization": "default",
@@ -3310,7 +3310,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-0156"
+        "phrase_id": "ph-b-0154"
       },
       "answer": {
         "normalization": "default",
@@ -3972,7 +3972,7 @@
       "payload": {
         "kind": "verb_tense",
         "sentence_with_gap": "He has broken his ___.",
-        "marker": "нога",
+        "marker": "V3 от break",
         "gap_answers": ["leg"]
       },
       "answer": {
@@ -4173,11 +4173,11 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "___ been leveling up this whole time.",
-        "gap_answers": ["I've"],
+        "text_with_gap": "You have ___ of dysentery.",
+        "gap_answers": ["died"],
         "quote": {
-          "title": "Solo Leveling",
-          "season_episode": "аниме"
+          "title": "Игры",
+          "season_episode": "The Oregon Trail"
         }
       },
       "answer": {
@@ -4195,11 +4195,11 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "You have ___ of dysentery.",
-        "gap_answers": ["died"],
+        "text_with_gap": "People die if they are ___.",
+        "gap_answers": ["killed"],
         "quote": {
-          "title": "Игры",
-          "season_episode": "The Oregon Trail"
+          "title": "Мемы",
+          "season_episode": "Fate/stay night (англ. фан-перевод)"
         }
       },
       "answer": {
@@ -4377,9 +4377,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Я был в этом хорош.",
-        "phrase_id": "ph-b-0282",
-        "tokens": ["She", "good", "They", "at", "it", "was", "I"]
+        "prompt_ru": "Я видел его два дня назад.",
+        "phrase_id": "ph-b-0265",
+        "tokens": ["I", "him", "have", "ago", "two", "days", "She", "saw"]
       },
       "answer": {
         "normalization": "default",
@@ -4395,9 +4395,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Они уехали.",
-        "phrase_id": "ph-b-0256",
-        "tokens": ["She", "left", "have", "They", "was"]
+        "prompt_ru": "Я никогда её не смотрел.",
+        "phrase_id": "ph-b-0272",
+        "tokens": ["have", "saw", "She", "watched", "it", "never", "I"]
       },
       "answer": {
         "normalization": "default",
@@ -4413,9 +4413,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Она позвонила мне сегодня утром.",
-        "phrase_id": "ph-b-0263",
-        "tokens": ["was", "me", "this", "morning", "She", "called", "They"]
+        "prompt_ru": "Она жила здесь в детстве.",
+        "phrase_id": "ph-b-0285",
+        "tokens": ["a", "as", "saw", "child", "here", "have", "lived", "She"]
       },
       "answer": {
         "normalization": "default",
@@ -4431,9 +4431,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Я видел его вчера.",
-        "phrase_id": "ph-b-0267",
-        "tokens": ["yesterday", "saw", "was", "They", "I", "him"]
+        "prompt_ru": "Когда ты там был?",
+        "phrase_id": "ph-b-0275",
+        "tokens": ["were", "When", "you", "saw", "there", "have"]
       },
       "answer": {
         "normalization": "default",
@@ -4449,9 +4449,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Когда ты там был?",
-        "phrase_id": "ph-b-0276",
-        "tokens": ["They", "When", "you", "were", "was", "there"]
+        "prompt_ru": "Я видел его вчера.",
+        "phrase_id": "ph-b-0266",
+        "tokens": ["yesterday", "two", "saw", "him", "I", "have"]
       },
       "answer": {
         "normalization": "default",
@@ -4467,9 +4467,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Да, я смотрел её вчера.",
-        "phrase_id": "ph-b-0270",
-        "tokens": ["I", "Yes,", "was", "it", "watched", "yesterday", "They"]
+        "prompt_ru": "Сегодня новый день.",
+        "phrase_id": "ph-b-0291",
+        "tokens": ["day", "saw", "is", "have", "a", "Today", "new"]
       },
       "answer": {
         "normalization": "default",
@@ -4486,8 +4486,8 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Я прочитал книгу.",
-        "phrase_id": "ph-b-0283",
-        "tokens": ["book", "was", "have", "They", "read", "I", "the"]
+        "phrase_id": "ph-b-0282",
+        "tokens": ["saw", "read", "the", "never", "have", "I", "book"]
       },
       "answer": {
         "normalization": "default",
@@ -4503,9 +4503,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Он работает там уже год.",
-        "phrase_id": "ph-b-0287",
-        "tokens": ["worked", "a", "was", "for", "there", "year", "has", "He", "They"]
+        "prompt_ru": "Ты смотрел игру?",
+        "phrase_id": "ph-b-0268",
+        "tokens": ["watch", "Did", "game", "saw", "the", "you", "have"]
       },
       "answer": {
         "normalization": "default",
@@ -4521,8 +4521,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Мне очень понравилось.",
-        "phrase_id": "ph-b-0278"
+        "prompt_ru": "Они уехали.",
+        "phrase_id": "ph-b-0256"
       },
       "answer": {
         "normalization": "default",
@@ -4538,8 +4538,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Я ничего не сказал.",
-        "phrase_id": "ph-b-0290"
+        "prompt_ru": "Мне очень понравилось.",
+        "phrase_id": "ph-b-0277"
       },
       "answer": {
         "normalization": "default",
@@ -4555,8 +4555,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Я видел фильм.",
-        "phrase_id": "ph-b-0248"
+        "prompt_ru": "Она позвонила мне сегодня утром.",
+        "phrase_id": "ph-b-0263"
       },
       "answer": {
         "normalization": "default",
@@ -4572,8 +4572,8 @@
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "Я смотрел фильм вчера.",
-        "phrase_id": "ph-b-0249"
+        "prompt_ru": "Он закончил работу.",
+        "phrase_id": "ph-b-0252"
       },
       "answer": {
         "normalization": "default",
@@ -4591,7 +4591,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Мне это нравилось.",
-        "phrase_id": "ph-b-0281"
+        "phrase_id": "ph-b-0280"
       },
       "answer": {
         "normalization": "default",
@@ -4607,8 +4607,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Что понравилось больше всего?",
-        "phrase_id": "ph-b-0279"
+        "prompt_ru": "Я видел фильм.",
+        "phrase_id": "ph-b-0248"
       },
       "answer": {
         "normalization": "default",
@@ -4624,8 +4624,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Сегодня новый день.",
-        "phrase_id": "ph-b-0292"
+        "prompt_ru": "Я смотрел фильм вчера.",
+        "phrase_id": "ph-b-0249"
       },
       "answer": {
         "normalization": "default",
@@ -4641,8 +4641,8 @@
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "Я видел это два дня назад.",
-        "phrase_id": "ph-b-0268"
+        "prompt_ru": "Я был в этом хорош.",
+        "phrase_id": "ph-b-0281"
       },
       "answer": {
         "normalization": "default",
@@ -4659,8 +4659,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Я никогда этого не говорил.",
-        "phrase_id": "ph-b-0289"
+        "prompt_ru": "Я был в Лондоне дважды.",
+        "phrase_id": "ph-b-0274"
       },
       "answer": {
         "normalization": "default",
@@ -4673,6 +4673,23 @@
     },
     {
       "id": "ex-b-0256",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Я никогда этого не говорил.",
+        "phrase_id": "ph-b-0288"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-b-0257",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -4689,29 +4706,12 @@
       }
     },
     {
-      "id": "ex-b-0257",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Прошлой весной.",
-        "phrase_id": "ph-b-0277"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
       "id": "ex-b-0258",
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "Она ездила в Париж в прошлом году.",
-        "phrase_id": "ph-b-0251"
+        "prompt_ru": "Прошлой весной.",
+        "phrase_id": "ph-b-0276"
       },
       "answer": {
         "normalization": "default",
@@ -4728,8 +4728,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Она была в Париже.",
-        "phrase_id": "ph-b-0250"
+        "prompt_ru": "Она ездила в Париж в прошлом году.",
+        "phrase_id": "ph-b-0251"
       },
       "answer": {
         "normalization": "default",
@@ -4745,8 +4745,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Я был в Лондоне в 2022-м.",
-        "phrase_id": "ph-b-0274"
+        "prompt_ru": "Она была в Париже.",
+        "phrase_id": "ph-b-0250"
       },
       "answer": {
         "normalization": "default",
@@ -4762,8 +4762,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Я поел в полдень.",
-        "phrase_id": "ph-b-0259"
+        "prompt_ru": "Он работает там уже год.",
+        "phrase_id": "ph-b-0286"
       },
       "answer": {
         "normalization": "default",
@@ -4779,8 +4779,8 @@
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "Я только что поел.",
-        "phrase_id": "ph-b-0258"
+        "prompt_ru": "Я поел в полдень.",
+        "phrase_id": "ph-b-0259"
       },
       "answer": {
         "normalization": "default",
@@ -4797,7 +4797,7 @@
       "type": "verb_tense",
       "payload": {
         "kind": "verb_tense",
-        "sentence_with_gap": "I ___ him two days ago.",
+        "sentence_with_gap": "I ___ him two days ago. (видеть)",
         "marker": "точное время",
         "gap_answers": ["saw"]
       },
@@ -4851,7 +4851,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0260"
+        "phrase_id": "ph-b-0254"
       },
       "answer": {
         "normalization": "default",
@@ -4867,7 +4867,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0258"
+        "phrase_id": "ph-b-0257"
       },
       "answer": {
         "normalization": "default",
@@ -4883,7 +4883,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0254"
+        "phrase_id": "ph-b-0260"
       },
       "answer": {
         "normalization": "default",
@@ -4899,7 +4899,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0291"
+        "phrase_id": "ph-b-0262"
       },
       "answer": {
         "normalization": "default",
@@ -4915,7 +4915,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0262"
+        "phrase_id": "ph-b-0256"
       },
       "answer": {
         "normalization": "default",
@@ -4931,7 +4931,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-0283"
+        "phrase_id": "ph-b-0282"
       },
       "answer": {
         "normalization": "default",
@@ -4948,7 +4948,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-0281"
+        "phrase_id": "ph-b-0288"
       },
       "answer": {
         "normalization": "default",
@@ -4965,7 +4965,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-0280"
+        "phrase_id": "ph-b-0289"
       },
       "answer": {
         "normalization": "default",
@@ -4982,7 +4982,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-0262"
+        "phrase_id": "ph-b-0256"
       },
       "answer": {
         "normalization": "default",
@@ -4999,11 +4999,11 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "A dream is something you ___ for yourself, not for others",
-        "gap_answers": ["do"],
+        "text_with_gap": "I ___ it for me. I liked it. I was good at it.",
+        "gap_answers": ["did"],
         "quote": {
-          "title": "Berserk",
-          "season_episode": "Griffith (манга)"
+          "title": "Breaking Bad",
+          "season_episode": "S05E16 «Felina»"
         }
       },
       "answer": {
@@ -5021,11 +5021,11 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "A dream is something you do ___ yourself, not for others",
-        "gap_answers": ["for"],
+        "text_with_gap": "I did it for me. I liked it. I ___ good at it.",
+        "gap_answers": ["was"],
         "quote": {
-          "title": "Berserk",
-          "season_episode": "Griffith (манга)"
+          "title": "Breaking Bad",
+          "season_episode": "S05E16 «Felina»"
         }
       },
       "answer": {
@@ -5043,7 +5043,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "How long have you been ___ English?",
+        "text_with_gap": "How long have you been ___ English? (учить)",
         "gap_answers": ["learning"]
       },
       "answer": {
@@ -5060,7 +5060,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "I have been ___ here for ten years.",
+        "text_with_gap": "I have been ___ here for ten years. (жить)",
         "gap_answers": ["living"]
       },
       "answer": {
@@ -5077,7 +5077,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "She has been ___ all day.",
+        "text_with_gap": "She has been ___ all day. (работать)",
         "gap_answers": ["working"]
       },
       "answer": {
@@ -5094,9 +5094,14 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Это окупается.",
-        "options": ["That's a long time.", "Since school.", "It pays off.", "Keep going!"],
-        "correct": 2
+        "prompt": "Ты прогрессируешь.",
+        "options": [
+          "That's a long time.",
+          "Since school.",
+          "Keep going!",
+          "You have been improving."
+        ],
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -5113,8 +5118,8 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Это долго.",
-        "options": ["It pays off.", "That's a long time.", "Keep going!", "Since school."],
-        "correct": 1
+        "options": ["Keep going!", "Since school.", "It pays off.", "That's a long time."],
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -5131,7 +5136,7 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Продолжай!",
-        "options": ["That's a long time.", "It pays off.", "Keep going!", "Since school."],
+        "options": ["Since school.", "That's a long time.", "Keep going!", "It pays off."],
         "correct": 2
       },
       "answer": {
@@ -5149,7 +5154,7 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Со школы.",
-        "options": ["That's a long time.", "Since school.", "It pays off.", "Keep going!"],
+        "options": ["Keep going!", "Since school.", "That's a long time.", "It pays off."],
         "correct": 1
       },
       "answer": {
@@ -5168,8 +5173,8 @@
         "kind": "match_pairs",
         "pairs": [
           {
-            "en": "It pays off.",
-            "ru": "Это окупается."
+            "en": "You have been improving.",
+            "ru": "Ты прогрессируешь."
           },
           {
             "en": "That's a long time.",
@@ -5184,8 +5189,8 @@
             "ru": "Со школы."
           },
           {
-            "en": "For five years.",
-            "ru": "Пять лет."
+            "en": "It pays off.",
+            "ru": "Это окупается."
           }
         ]
       },
@@ -5204,7 +5209,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Как долго ты ждёшь?",
-        "phrase_id": "ph-b-0311",
+        "phrase_id": "ph-b-0310",
         "tokens": ["How", "been", "you", "She", "waiting", "long", "have", "Why"]
       },
       "answer": {
@@ -5222,7 +5227,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Почему у тебя красные глаза? — Я плакала.",
-        "phrase_id": "ph-b-0318",
+        "phrase_id": "ph-b-0317",
         "tokens": [
           "—",
           "crying",
@@ -5253,7 +5258,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Это долго.",
-        "phrase_id": "ph-b-0337",
+        "phrase_id": "ph-b-0336",
         "tokens": ["Why", "That's", "long", "time", "a", "How"]
       },
       "answer": {
@@ -5271,7 +5276,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Она готовит уже три часа.",
-        "phrase_id": "ph-b-0306",
+        "phrase_id": "ph-b-0305",
         "tokens": ["has", "been", "Why", "She", "hours", "for", "cooking", "How", "three"]
       },
       "answer": {
@@ -5289,7 +5294,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Я живу здесь десять лет.",
-        "phrase_id": "ph-b-0298",
+        "phrase_id": "ph-b-0297",
         "tokens": ["years", "ten", "been", "here", "I", "have", "for", "Why", "living", "How"]
       },
       "answer": {
@@ -5307,7 +5312,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Как долго вы женаты?",
-        "phrase_id": "ph-b-0323",
+        "phrase_id": "ph-b-0322",
         "tokens": ["you", "She", "married", "have", "Why", "long", "been", "How"]
       },
       "answer": {
@@ -5325,7 +5330,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Чем ты занимался?",
-        "phrase_id": "ph-b-0319",
+        "phrase_id": "ph-b-0318",
         "tokens": ["been", "you", "How", "have", "Why", "doing", "What"]
       },
       "answer": {
@@ -5343,7 +5348,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Я убирался в доме.",
-        "phrase_id": "ph-b-0320",
+        "phrase_id": "ph-b-0319",
         "tokens": ["cleaning", "Why", "I", "have", "been", "house", "How", "the"]
       },
       "answer": {
@@ -5361,7 +5366,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Я думаю об этом.",
-        "phrase_id": "ph-b-0308"
+        "phrase_id": "ph-b-0307"
       },
       "answer": {
         "normalization": "default",
@@ -5378,7 +5383,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Мы ищем квартиру.",
-        "phrase_id": "ph-b-0309"
+        "phrase_id": "ph-b-0308"
       },
       "answer": {
         "normalization": "default",
@@ -5395,7 +5400,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Я читаю эту книгу всю неделю.",
-        "phrase_id": "ph-b-0303"
+        "phrase_id": "ph-b-0302"
       },
       "answer": {
         "normalization": "default",
@@ -5412,7 +5417,7 @@
       "payload": {
         "kind": "speak",
         "prompt_ru": "Я практикуюсь каждый день.",
-        "phrase_id": "ph-b-0329"
+        "phrase_id": "ph-b-0328"
       },
       "answer": {
         "normalization": "default",
@@ -5430,7 +5435,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Мы в пути с утра.",
-        "phrase_id": "ph-b-0301"
+        "phrase_id": "ph-b-0300"
       },
       "answer": {
         "normalization": "default",
@@ -5447,7 +5452,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Я пытался тебе дозвониться.",
-        "phrase_id": "ph-b-0322"
+        "phrase_id": "ph-b-0321"
       },
       "answer": {
         "normalization": "default",
@@ -5464,7 +5469,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Я учу английский с января.",
-        "phrase_id": "ph-b-0296"
+        "phrase_id": "ph-b-0295"
       },
       "answer": {
         "normalization": "default",
@@ -5481,7 +5486,7 @@
       "payload": {
         "kind": "speak",
         "prompt_ru": "Твой английский становится всё лучше.",
-        "phrase_id": "ph-b-0328"
+        "phrase_id": "ph-b-0327"
       },
       "answer": {
         "normalization": "default",
@@ -5499,7 +5504,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Ты прогрессируешь.",
-        "phrase_id": "ph-b-0327"
+        "phrase_id": "ph-b-0326"
       },
       "answer": {
         "normalization": "default",
@@ -5516,7 +5521,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Я жду двадцать минут.",
-        "phrase_id": "ph-b-0312"
+        "phrase_id": "ph-b-0311"
       },
       "answer": {
         "normalization": "default",
@@ -5533,7 +5538,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Пять лет.",
-        "phrase_id": "ph-b-0324"
+        "phrase_id": "ph-b-0323"
       },
       "answer": {
         "normalization": "default",
@@ -5550,7 +5555,7 @@
       "payload": {
         "kind": "speak",
         "prompt_ru": "Как долго ты учишь английский?",
-        "phrase_id": "ph-b-0294"
+        "phrase_id": "ph-b-0293"
       },
       "answer": {
         "normalization": "default",
@@ -5568,7 +5573,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Как давно это продолжается?",
-        "phrase_id": "ph-b-0333"
+        "phrase_id": "ph-b-0332"
       },
       "answer": {
         "normalization": "default",
@@ -5585,7 +5590,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Он ждёт уже два часа.",
-        "phrase_id": "ph-b-0300"
+        "phrase_id": "ph-b-0299"
       },
       "answer": {
         "normalization": "default",
@@ -5602,7 +5607,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Она усердно занимается.",
-        "phrase_id": "ph-b-0310"
+        "phrase_id": "ph-b-0309"
       },
       "answer": {
         "normalization": "default",
@@ -5619,7 +5624,7 @@
       "payload": {
         "kind": "speak",
         "prompt_ru": "Как давно вы знакомы?",
-        "phrase_id": "ph-b-0335"
+        "phrase_id": "ph-b-0334"
       },
       "answer": {
         "normalization": "default",
@@ -5690,7 +5695,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0299"
+        "phrase_id": "ph-b-0298"
       },
       "answer": {
         "normalization": "default",
@@ -5706,7 +5711,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0319"
+        "phrase_id": "ph-b-0318"
       },
       "answer": {
         "normalization": "default",
@@ -5722,7 +5727,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0310"
+        "phrase_id": "ph-b-0309"
       },
       "answer": {
         "normalization": "default",
@@ -5738,7 +5743,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0332"
+        "phrase_id": "ph-b-0331"
       },
       "answer": {
         "normalization": "default",
@@ -5754,7 +5759,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0334"
+        "phrase_id": "ph-b-0333"
       },
       "answer": {
         "normalization": "default",
@@ -5770,7 +5775,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-0330"
+        "phrase_id": "ph-b-0329"
       },
       "answer": {
         "normalization": "default",
@@ -5787,7 +5792,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-0337"
+        "phrase_id": "ph-b-0336"
       },
       "answer": {
         "normalization": "default",
@@ -5804,7 +5809,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-0332"
+        "phrase_id": "ph-b-0331"
       },
       "answer": {
         "normalization": "default",
@@ -5821,7 +5826,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-0319"
+        "phrase_id": "ph-b-0318"
       },
       "answer": {
         "normalization": "default",
@@ -6063,7 +6068,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Я никогда не слышал этого до того дня.",
-        "phrase_id": "ph-b-0360",
+        "phrase_id": "ph-b-0359",
         "tokens": [
           "only",
           "it",
@@ -6092,7 +6097,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Если бы я только слушал.",
-        "phrase_id": "ph-b-0377",
+        "phrase_id": "ph-b-0376",
         "tokens": ["never", "listened", "If", "I", "Everything", "only", "had"]
       },
       "answer": {
@@ -6110,7 +6115,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Всё пошло не так.",
-        "phrase_id": "ph-b-0362",
+        "phrase_id": "ph-b-0361",
         "tokens": ["wrong", "only", "never", "had", "gone", "Everything"]
       },
       "answer": {
@@ -6128,7 +6133,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Самолёт взлетел.",
-        "phrase_id": "ph-b-0355",
+        "phrase_id": "ph-b-0354",
         "tokens": ["plane", "off", "taken", "The", "had", "only", "never"]
       },
       "answer": {
@@ -6146,7 +6151,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Это всё уже случалось раньше.",
-        "phrase_id": "ph-b-0372",
+        "phrase_id": "ph-b-0371",
         "tokens": ["never", "only", "all", "had", "before", "It", "happened"]
       },
       "answer": {
@@ -6164,7 +6169,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Она уже ушла, когда я приехал.",
-        "phrase_id": "ph-b-0339",
+        "phrase_id": "ph-b-0338",
         "tokens": ["left", "never", "She", "had", "only", "arrived", "I", "when"]
       },
       "answer": {
@@ -6182,7 +6187,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Это должно было случиться.",
-        "phrase_id": "ph-b-0379",
+        "phrase_id": "ph-b-0378",
         "tokens": ["It", "happen", "only", "bound", "was", "to", "had"]
       },
       "answer": {
@@ -6200,7 +6205,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Жаль, что я не знал.",
-        "phrase_id": "ph-b-0376",
+        "phrase_id": "ph-b-0375",
         "tokens": ["I", "only", "had", "wish", "never", "known", "I"]
       },
       "answer": {
@@ -6218,7 +6223,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Никто в него не верил.",
-        "phrase_id": "ph-b-0366"
+        "phrase_id": "ph-b-0365"
       },
       "answer": {
         "normalization": "default",
@@ -6235,7 +6240,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Я понял, что сделал ошибку.",
-        "phrase_id": "ph-b-0350"
+        "phrase_id": "ph-b-0349"
       },
       "answer": {
         "normalization": "default",
@@ -6252,7 +6257,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Он сказал мне, что закончил.",
-        "phrase_id": "ph-b-0352"
+        "phrase_id": "ph-b-0351"
       },
       "answer": {
         "normalization": "default",
@@ -6269,7 +6274,7 @@
       "payload": {
         "kind": "speak",
         "prompt_ru": "У нас не было денег — я всё потратил.",
-        "phrase_id": "ph-b-0348"
+        "phrase_id": "ph-b-0347"
       },
       "answer": {
         "normalization": "default",
@@ -6287,7 +6292,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Автобус ушёл, когда мы туда добрались.",
-        "phrase_id": "ph-b-0349"
+        "phrase_id": "ph-b-0348"
       },
       "answer": {
         "normalization": "default",
@@ -6304,7 +6309,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "К тому времени всё изменилось.",
-        "phrase_id": "ph-b-0375"
+        "phrase_id": "ph-b-0374"
       },
       "answer": {
         "normalization": "default",
@@ -6321,7 +6326,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Она наконец нашла ключ.",
-        "phrase_id": "ph-b-0369"
+        "phrase_id": "ph-b-0368"
       },
       "answer": {
         "normalization": "default",
@@ -6338,7 +6343,7 @@
       "payload": {
         "kind": "speak",
         "prompt_ru": "Прошлое остаётся прошлым.",
-        "phrase_id": "ph-b-0380"
+        "phrase_id": "ph-b-0379"
       },
       "answer": {
         "normalization": "default",
@@ -6356,7 +6361,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Я не знал, что случилось.",
-        "phrase_id": "ph-b-0373"
+        "phrase_id": "ph-b-0372"
       },
       "answer": {
         "normalization": "default",
@@ -6373,7 +6378,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "После того как я закончил, я пошёл гулять.",
-        "phrase_id": "ph-b-0358"
+        "phrase_id": "ph-b-0357"
       },
       "answer": {
         "normalization": "default",
@@ -6390,7 +6395,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Было слишком поздно — магазин закрылся.",
-        "phrase_id": "ph-b-0354"
+        "phrase_id": "ph-b-0353"
       },
       "answer": {
         "normalization": "default",
@@ -6407,7 +6412,7 @@
       "payload": {
         "kind": "speak",
         "prompt_ru": "Когда я пришёл домой, она уже легла спать.",
-        "phrase_id": "ph-b-0356"
+        "phrase_id": "ph-b-0355"
       },
       "answer": {
         "normalization": "default",
@@ -6425,7 +6430,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Я упустил свой шанс.",
-        "phrase_id": "ph-b-0371"
+        "phrase_id": "ph-b-0370"
       },
       "answer": {
         "normalization": "default",
@@ -6442,7 +6447,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "У меня была мечта.",
-        "phrase_id": "ph-b-0363"
+        "phrase_id": "ph-b-0362"
       },
       "answer": {
         "normalization": "default",
@@ -6459,7 +6464,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Город сильно изменился.",
-        "phrase_id": "ph-b-0361"
+        "phrase_id": "ph-b-0360"
       },
       "answer": {
         "normalization": "default",
@@ -6476,7 +6481,7 @@
       "payload": {
         "kind": "speak",
         "prompt_ru": "Это заняло годы.",
-        "phrase_id": "ph-b-0365"
+        "phrase_id": "ph-b-0364"
       },
       "answer": {
         "normalization": "default",
@@ -6547,7 +6552,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0355"
+        "phrase_id": "ph-b-0354"
       },
       "answer": {
         "normalization": "default",
@@ -6563,7 +6568,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0374"
+        "phrase_id": "ph-b-0373"
       },
       "answer": {
         "normalization": "default",
@@ -6579,7 +6584,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0347"
+        "phrase_id": "ph-b-0346"
       },
       "answer": {
         "normalization": "default",
@@ -6595,7 +6600,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0365"
+        "phrase_id": "ph-b-0364"
       },
       "answer": {
         "normalization": "default",
@@ -6611,7 +6616,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0363"
+        "phrase_id": "ph-b-0362"
       },
       "answer": {
         "normalization": "default",
@@ -6627,7 +6632,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-0372"
+        "phrase_id": "ph-b-0371"
       },
       "answer": {
         "normalization": "default",
@@ -6644,7 +6649,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-0379"
+        "phrase_id": "ph-b-0378"
       },
       "answer": {
         "normalization": "default",
@@ -6661,7 +6666,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-0365"
+        "phrase_id": "ph-b-0364"
       },
       "answer": {
         "normalization": "default",
@@ -6678,7 +6683,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-0375"
+        "phrase_id": "ph-b-0374"
       },
       "answer": {
         "normalization": "default",
@@ -6695,11 +6700,11 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "A dream is ___ you do for yourself, not for others",
+        "text_with_gap": "A dream... It's ___ you do for yourself, not for others.",
         "gap_answers": ["something"],
         "quote": {
           "title": "Berserk",
-          "season_episode": "Griffith (манга)"
+          "season_episode": "манга: раздел «Griffith»"
         }
       },
       "answer": {
@@ -6717,11 +6722,11 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "A dream is something you do for ___, not for others",
-        "gap_answers": ["yourself"],
+        "text_with_gap": "A dream... It's something you do for yourself, not for ___.",
+        "gap_answers": ["others"],
         "quote": {
           "title": "Berserk",
-          "season_episode": "Griffith (манга)"
+          "season_episode": "манга: раздел «Griffith»"
         }
       },
       "answer": {
@@ -6790,14 +6795,14 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Они нас предупреждали.",
+        "prompt": "Мы переехали.",
         "options": [
-          "What had happened?",
-          "He had left.",
-          "They had warned us.",
-          "She has never flown."
+          "I have finished.",
+          "Good riddance.",
+          "It has stopped raining.",
+          "We have moved."
         ],
-        "correct": 2
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -6813,14 +6818,14 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Он уже ушёл (до).",
+        "prompt": "Она никогда не летала.",
         "options": [
-          "They had warned us.",
-          "He had left.",
-          "What had happened?",
-          "She has never flown."
+          "She has never flown.",
+          "He went to work.",
+          "I stayed at home.",
+          "He goes to work."
         ],
-        "correct": 1
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -6836,14 +6841,14 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Она никогда не летала.",
+        "prompt": "Они нас предупреждали.",
         "options": [
           "She has never flown.",
-          "What had happened?",
           "I have finished.",
+          "They had warned us.",
           "We have moved."
         ],
-        "correct": 0
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -6859,9 +6864,14 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Что случилось?",
-        "options": ["We have moved.", "We have decided.", "What had happened?", "I have finished."],
-        "correct": 2
+        "prompt": "Я закончил.",
+        "options": [
+          "I have finished.",
+          "Good riddance.",
+          "It has stopped raining.",
+          "We have moved."
+        ],
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -6879,24 +6889,24 @@
         "kind": "match_pairs",
         "pairs": [
           {
-            "en": "I have finished.",
-            "ru": "Я закончил."
+            "en": "He had already gone.",
+            "ru": "Он уже ушёл."
           },
           {
-            "en": "We have moved.",
-            "ru": "Мы переехали."
+            "en": "Have you finished yet?",
+            "ru": "Ты уже закончил?"
           },
           {
-            "en": "We have decided.",
-            "ru": "Мы решили."
-          },
-          {
-            "en": "She has just left.",
-            "ru": "Она только что ушла."
+            "en": "He went to work.",
+            "ru": "Он пошёл на работу."
           },
           {
             "en": "He left.",
             "ru": "Он ушёл."
+          },
+          {
+            "en": "It has stopped raining.",
+            "ru": "Дождь прекратился."
           }
         ]
       },
@@ -6914,9 +6924,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Ты когда-нибудь был в Риме?",
-        "phrase_id": "ph-b-0387",
-        "tokens": ["Have", "been", "had", "ever", "you", "have", "Rome", "to"]
+        "prompt_ru": "Я закончил до того, как ты пришёл.",
+        "phrase_id": "ph-b-0383",
+        "tokens": ["came", "They", "had", "I", "before", "you", "finished", "has"]
       },
       "answer": {
         "normalization": "default",
@@ -6932,9 +6942,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Я никогда это не пробовал.",
-        "phrase_id": "ph-b-0408",
-        "tokens": ["never", "tried", "Have", "had", "I", "have", "it"]
+        "prompt_ru": "Они нас предупреждали.",
+        "phrase_id": "ph-b-0422",
+        "tokens": ["finished", "had", "has", "They", "warned", "us"]
       },
       "answer": {
         "normalization": "default",
@@ -6950,9 +6960,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Он уже ушёл (до).",
-        "phrase_id": "ph-b-0427",
-        "tokens": ["He", "left", "had", "Have", "have"]
+        "prompt_ru": "Дождь прекратился.",
+        "phrase_id": "ph-b-0423",
+        "tokens": ["raining", "had", "They", "has", "stopped", "It"]
       },
       "answer": {
         "normalization": "default",
@@ -6968,9 +6978,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Поезд уже ушёл.",
-        "phrase_id": "ph-b-0407",
-        "tokens": ["Have", "have", "train", "left", "already", "had", "The"]
+        "prompt_ru": "Я остался дома.",
+        "phrase_id": "ph-b-0428",
+        "tokens": ["stayed", "They", "home", "had", "at", "I"]
       },
       "answer": {
         "normalization": "default",
@@ -6986,9 +6996,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Они нас предупреждали.",
-        "phrase_id": "ph-b-0423",
-        "tokens": ["warned", "Have", "have", "They", "us", "had"]
+        "prompt_ru": "Она приехала.",
+        "phrase_id": "ph-b-0429",
+        "tokens": ["They", "had", "arrived", "She"]
       },
       "answer": {
         "normalization": "default",
@@ -7004,9 +7014,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Чем ты занимался?",
-        "phrase_id": "ph-b-0399",
-        "tokens": ["been", "you", "have", "doing", "never", "Have", "What"]
+        "prompt_ru": "Мы переехали.",
+        "phrase_id": "ph-b-0403",
+        "tokens": ["We", "had", "have", "moved", "They"]
       },
       "answer": {
         "normalization": "default",
@@ -7022,9 +7032,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Я жду уже час.",
-        "phrase_id": "ph-b-0383",
-        "tokens": ["never", "Have", "waiting", "an", "for", "been", "hour", "have", "I"]
+        "prompt_ru": "Он сказал, что закончил.",
+        "phrase_id": "ph-b-0402",
+        "tokens": ["finished", "He", "he", "had", "They", "said", "before"]
       },
       "answer": {
         "normalization": "default",
@@ -7040,9 +7050,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Он держал это в секрете.",
-        "phrase_id": "ph-b-0415",
-        "tokens": ["secret", "He", "Have", "had", "it", "kept", "have"]
+        "prompt_ru": "Она передумала.",
+        "phrase_id": "ph-b-0419",
+        "tokens": ["has", "mind", "had", "She", "her", "They", "changed"]
       },
       "answer": {
         "normalization": "default",
@@ -7058,8 +7068,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "К полудню всё распродали.",
-        "phrase_id": "ph-b-0395"
+        "prompt_ru": "Всё прошло хорошо.",
+        "phrase_id": "ph-b-0416"
       },
       "answer": {
         "normalization": "default",
@@ -7075,8 +7085,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Я ещё не ел.",
-        "phrase_id": "ph-b-0392"
+        "prompt_ru": "Он пошёл на работу.",
+        "phrase_id": "ph-b-0431"
       },
       "answer": {
         "normalization": "default",
@@ -7092,8 +7102,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Он работает с утра.",
-        "phrase_id": "ph-b-0394"
+        "prompt_ru": "Она готовит всё утро.",
+        "phrase_id": "ph-b-0405"
       },
       "answer": {
         "normalization": "default",
@@ -7109,8 +7119,8 @@
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "Я учусь уже два года.",
-        "phrase_id": "ph-b-0389"
+        "prompt_ru": "Он разбил окно.",
+        "phrase_id": "ph-b-0408"
       },
       "answer": {
         "normalization": "default",
@@ -7127,8 +7137,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Я закончил.",
-        "phrase_id": "ph-b-0382"
+        "prompt_ru": "Фильм начался, когда мы приехали.",
+        "phrase_id": "ph-b-0392"
       },
       "answer": {
         "normalization": "default",
@@ -7144,8 +7154,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Он уже ушёл.",
-        "phrase_id": "ph-b-0386"
+        "prompt_ru": "Весь день идёт дождь.",
+        "phrase_id": "ph-b-0413"
       },
       "answer": {
         "normalization": "default",
@@ -7161,7 +7171,7 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Дождь прекратился.",
+        "prompt_ru": "И слава богу.",
         "phrase_id": "ph-b-0424"
       },
       "answer": {
@@ -7178,8 +7188,8 @@
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "Я и не догадывался.",
-        "phrase_id": "ph-b-0401"
+        "prompt_ru": "Она только что ушла.",
+        "phrase_id": "ph-b-0384"
       },
       "answer": {
         "normalization": "default",
@@ -7196,8 +7206,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Они никогда раньше не встречались.",
-        "phrase_id": "ph-b-0405"
+        "prompt_ru": "Я закончил.",
+        "phrase_id": "ph-b-0381"
       },
       "answer": {
         "normalization": "default",
@@ -7213,8 +7223,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Фильм начался, когда мы приехали.",
-        "phrase_id": "ph-b-0393"
+        "prompt_ru": "Я ещё не ел.",
+        "phrase_id": "ph-b-0391"
       },
       "answer": {
         "normalization": "default",
@@ -7230,8 +7240,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Всё прошло хорошо.",
-        "phrase_id": "ph-b-0417"
+        "prompt_ru": "Я и не догадывался.",
+        "phrase_id": "ph-b-0400"
       },
       "answer": {
         "normalization": "default",
@@ -7247,8 +7257,8 @@
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "Как долго ты ждёшь?",
-        "phrase_id": "ph-b-0400"
+        "prompt_ru": "Он держал это в секрете.",
+        "phrase_id": "ph-b-0414"
       },
       "answer": {
         "normalization": "default",
@@ -7265,8 +7275,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Она готовит всё утро.",
-        "phrase_id": "ph-b-0406"
+        "prompt_ru": "Он работает с утра.",
+        "phrase_id": "ph-b-0393"
       },
       "answer": {
         "normalization": "default",
@@ -7282,8 +7292,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Ты уже закончил?",
-        "phrase_id": "ph-b-0418"
+        "prompt_ru": "Я никогда это не пробовал.",
+        "phrase_id": "ph-b-0407"
       },
       "answer": {
         "normalization": "default",
@@ -7299,8 +7309,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Я закончил до того, как ты пришёл.",
-        "phrase_id": "ph-b-0384"
+        "prompt_ru": "Ты уже закончил?",
+        "phrase_id": "ph-b-0417"
       },
       "answer": {
         "normalization": "default",
@@ -7316,8 +7326,8 @@
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "Она потеряла ключи.",
-        "phrase_id": "ph-b-0397"
+        "prompt_ru": "Поезд уже ушёл.",
+        "phrase_id": "ph-b-0406"
       },
       "answer": {
         "normalization": "default",
@@ -7388,11 +7398,11 @@
       "type": "transform",
       "payload": {
         "kind": "transform",
-        "source_phrase_id": "ph-b-0046",
+        "source_phrase_id": "ph-b-0052",
         "steps": [
           {
             "task": "past",
-            "phrase_id": "ph-b-0001"
+            "phrase_id": "ph-b-0428"
           }
         ]
       },
@@ -7414,7 +7424,7 @@
         "steps": [
           {
             "task": "past",
-            "phrase_id": "ph-b-0002"
+            "phrase_id": "ph-b-0429"
           }
         ]
       },
@@ -7432,11 +7442,11 @@
       "type": "transform",
       "payload": {
         "kind": "transform",
-        "source_phrase_id": "ph-b-0426",
+        "source_phrase_id": "ph-b-0430",
         "steps": [
           {
             "task": "past",
-            "phrase_id": "ph-b-0427"
+            "phrase_id": "ph-b-0431"
           }
         ]
       },
@@ -7454,7 +7464,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0404"
+        "phrase_id": "ph-b-0426"
       },
       "answer": {
         "normalization": "default",
@@ -7470,7 +7480,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0427"
+        "phrase_id": "ph-b-0389"
       },
       "answer": {
         "normalization": "default",
@@ -7486,7 +7496,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0385"
+        "phrase_id": "ph-b-0384"
       },
       "answer": {
         "normalization": "default",
@@ -7502,7 +7512,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0382"
+        "phrase_id": "ph-b-0421"
       },
       "answer": {
         "normalization": "default",
@@ -7518,7 +7528,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0422"
+        "phrase_id": "ph-b-0381"
       },
       "answer": {
         "normalization": "default",
@@ -7534,7 +7544,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-0385"
+        "phrase_id": "ph-b-0421"
       },
       "answer": {
         "normalization": "default",
@@ -7551,7 +7561,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-0418"
+        "phrase_id": "ph-b-0411"
       },
       "answer": {
         "normalization": "default",
@@ -7568,7 +7578,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-0415"
+        "phrase_id": "ph-b-0398"
       },
       "answer": {
         "normalization": "default",
@@ -7585,7 +7595,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-0411"
+        "phrase_id": "ph-b-0431"
       },
       "answer": {
         "normalization": "default",
@@ -7624,11 +7634,11 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "___ been leveling up this whole time.",
-        "gap_answers": ["I've"],
+        "text_with_gap": "You have ___ of dysentery.",
+        "gap_answers": ["died"],
         "quote": {
-          "title": "Solo Leveling",
-          "season_episode": "аниме"
+          "title": "Игры",
+          "season_episode": "The Oregon Trail"
         }
       },
       "answer": {
@@ -7663,7 +7673,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "If you help me, I'll ___ faster.",
+        "text_with_gap": "If you help me, I'll ___ faster. (закончить)",
         "gap_answers": ["finish"]
       },
       "answer": {
@@ -7680,7 +7690,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "If you ___ this button, the light comes on.",
+        "text_with_gap": "If you ___ this button, the light comes on. (нажать)",
         "gap_answers": ["press"]
       },
       "answer": {
@@ -7697,9 +7707,9 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "На всякий случай.",
-        "options": ["In that case…", "Just in case.", "Nothing happens.", "It's up to you."],
-        "correct": 1
+        "prompt": "Если только ты не против.",
+        "options": ["Unless you object.", "Nothing happens.", "You never know.", "It's up to you."],
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -7715,8 +7725,8 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "В таком случае…",
-        "options": ["Nothing happens.", "It's up to you.", "In that case…", "Just in case."],
+        "prompt": "Решать тебе.",
+        "options": ["In that case…", "It depends.", "It's up to you.", "You never know."],
         "correct": 2
       },
       "answer": {
@@ -7733,9 +7743,9 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Бережёного бог бережёт.",
-        "options": ["Better safe than sorry.", "In that case…", "Just in case.", "Suit yourself."],
-        "correct": 0
+        "prompt": "Ничего не произойдёт.",
+        "options": ["I'll stay at home.", "In that case…", "You never know.", "Nothing happens."],
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -7751,9 +7761,9 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Как знаешь.",
-        "options": ["Suit yourself.", "In that case…", "Just in case.", "Better safe than sorry."],
-        "correct": 0
+        "prompt": "Всякое бывает.",
+        "options": ["It's up to you.", "It depends.", "Nothing happens.", "You never know."],
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -7771,24 +7781,24 @@
         "kind": "match_pairs",
         "pairs": [
           {
-            "en": "It's up to you.",
-            "ru": "Решать тебе."
-          },
-          {
-            "en": "Nothing happens.",
-            "ru": "Ничего не произойдёт."
-          },
-          {
             "en": "It depends.",
             "ru": "Как посмотреть."
           },
           {
-            "en": "You never know.",
-            "ru": "Всякое бывает."
+            "en": "Better safe than sorry.",
+            "ru": "Бережёного бог бережёт."
           },
           {
-            "en": "Whatever works.",
-            "ru": "Что работает, то и хорошо."
+            "en": "In that case…",
+            "ru": "В таком случае…"
+          },
+          {
+            "en": "Do whatever you want.",
+            "ru": "Делай что хочешь."
+          },
+          {
+            "en": "I'll stay at home.",
+            "ru": "Я останусь дома."
           }
         ]
       },
@@ -7806,9 +7816,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Она не придёт, если будет занята.",
-        "phrase_id": "ph-b-0448",
-        "tokens": ["busy", "She", "come", "Ice", "Will", "won't", "if", "she's"]
+        "prompt_ru": "В таком случае…",
+        "phrase_id": "ph-b-0467",
+        "tokens": ["see", "case…", "that", "Ice", "In"]
       },
       "answer": {
         "normalization": "default",
@@ -7825,8 +7835,8 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Лёд тает, если его нагреть.",
-        "phrase_id": "ph-b-0441",
-        "tokens": ["Ice", "She", "Will", "it", "heat", "if", "you", "melts"]
+        "phrase_id": "ph-b-0444",
+        "tokens": ["heat", "Ice", "melts", "if", "it", "see", "you", "that"]
       },
       "answer": {
         "normalization": "default",
@@ -7842,9 +7852,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Ты поможешь, если я попрошу?",
-        "phrase_id": "ph-b-0449",
-        "tokens": ["you", "Will", "ask", "me", "help", "I", "if", "Ice", "She"]
+        "prompt_ru": "Если я его увижу, я ему скажу.",
+        "phrase_id": "ph-b-0458",
+        "tokens": ["I", "tell", "Ice", "him,", "I'll", "If", "see", "him", "that"]
       },
       "answer": {
         "normalization": "default",
@@ -7860,9 +7870,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Я сделаю это, если хочешь.",
-        "phrase_id": "ph-b-0445",
-        "tokens": ["do", "you", "want", "She", "I'll", "it", "if", "Ice"]
+        "prompt_ru": "Если мы опоздаем на автобус, возьмём такси.",
+        "phrase_id": "ph-b-0435",
+        "tokens": ["take", "Ice", "we", "If", "a", "that", "we'll", "taxi", "bus,", "the", "miss"]
       },
       "answer": {
         "normalization": "default",
@@ -7878,9 +7888,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Если ты меня побеспокоишь, я тебя убью.",
-        "phrase_id": "ph-b-0453",
-        "tokens": ["you", "If", "I'll", "She", "you", "Ice", "kill", "me,", "disturb"]
+        "prompt_ru": "Если работает — работает.",
+        "phrase_id": "ph-b-0460",
+        "tokens": ["works", "that", "works,", "If", "it", "it", "Ice"]
       },
       "answer": {
         "normalization": "default",
@@ -7896,9 +7906,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "В таком случае…",
-        "phrase_id": "ph-b-0464",
-        "tokens": ["Ice", "that", "In", "She", "case…"]
+        "prompt_ru": "Мы поедем, если ты готов.",
+        "phrase_id": "ph-b-0449",
+        "tokens": ["We'll", "if", "you're", "Ice", "leave", "ready", "that"]
       },
       "answer": {
         "normalization": "default",
@@ -7914,9 +7924,21 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "На твоём месте я бы пошёл.",
-        "phrase_id": "ph-b-0469",
-        "tokens": ["She", "If", "were", "Ice", "I'd", "you,", "go", "I"]
+        "prompt_ru": "Если смешать синий и жёлтый, получится зелёный.",
+        "phrase_id": "ph-b-0447",
+        "tokens": [
+          "you",
+          "you",
+          "get",
+          "yellow,",
+          "blue",
+          "green",
+          "If",
+          "that",
+          "mix",
+          "and",
+          "Ice"
+        ]
       },
       "answer": {
         "normalization": "default",
@@ -7932,21 +7954,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Если нажать эту кнопку, включается свет.",
-        "phrase_id": "ph-b-0440",
-        "tokens": [
-          "on",
-          "this",
-          "you",
-          "She",
-          "If",
-          "comes",
-          "Ice",
-          "press",
-          "button,",
-          "the",
-          "light"
-        ]
+        "prompt_ru": "Как знаешь.",
+        "phrase_id": "ph-b-0463",
+        "tokens": ["Suit", "yourself", "that", "Ice"]
       },
       "answer": {
         "normalization": "default",
@@ -7962,8 +7972,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Растения погибают, если их не поливать.",
-        "phrase_id": "ph-b-0442"
+        "prompt_ru": "Если погода будет хорошей, мы пойдём гулять.",
+        "phrase_id": "ph-b-0438"
       },
       "answer": {
         "normalization": "default",
@@ -7979,8 +7989,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Если ты поможешь, я закончу быстрее.",
-        "phrase_id": "ph-b-0430"
+        "prompt_ru": "Если уйдёшь сейчас, успеешь на поезд.",
+        "phrase_id": "ph-b-0457"
       },
       "answer": {
         "normalization": "default",
@@ -7996,8 +8006,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Если она позвонит, скажи, что я занят.",
-        "phrase_id": "ph-b-0431"
+        "prompt_ru": "Что ты будешь делать, если пойдёт снег?",
+        "phrase_id": "ph-b-0453"
       },
       "answer": {
         "normalization": "default",
@@ -8013,8 +8023,8 @@
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "Если что-нибудь понадобится — просто скажи.",
-        "phrase_id": "ph-b-0437"
+        "prompt_ru": "Если нажать эту кнопку, включается свет.",
+        "phrase_id": "ph-b-0443"
       },
       "answer": {
         "normalization": "default",
@@ -8031,8 +8041,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Если я встаю рано, я иду гулять.",
-        "phrase_id": "ph-b-0443"
+        "prompt_ru": "Лишь бы ты был счастлив.",
+        "phrase_id": "ph-b-0474"
       },
       "answer": {
         "normalization": "default",
@@ -8048,8 +8058,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Если он спросит, я скажу «да».",
-        "phrase_id": "ph-b-0434"
+        "prompt_ru": "Я останусь дома.",
+        "phrase_id": "ph-b-0433"
       },
       "answer": {
         "normalization": "default",
@@ -8065,8 +8075,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Если не будет дождя, пойдём пешком.",
-        "phrase_id": "ph-b-0470"
+        "prompt_ru": "Как посмотреть.",
+        "phrase_id": "ph-b-0466"
       },
       "answer": {
         "normalization": "default",
@@ -8082,8 +8092,8 @@
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "Если мы опоздаем на автобус, возьмём такси.",
-        "phrase_id": "ph-b-0432"
+        "prompt_ru": "Если только ты не против.",
+        "phrase_id": "ph-b-0473"
       },
       "answer": {
         "normalization": "default",
@@ -8100,8 +8110,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Если похолодает, возьми куртку.",
-        "phrase_id": "ph-b-0438"
+        "prompt_ru": "Ты поможешь, если я попрошу?",
+        "phrase_id": "ph-b-0452"
       },
       "answer": {
         "normalization": "default",
@@ -8117,8 +8127,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Если пойдёт дождь, я останусь дома.",
-        "phrase_id": "ph-b-0428"
+        "prompt_ru": "Если что-нибудь понадобится — просто скажи.",
+        "phrase_id": "ph-b-0440"
       },
       "answer": {
         "normalization": "default",
@@ -8134,8 +8144,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "На всякий случай.",
-        "phrase_id": "ph-b-0466"
+        "prompt_ru": "Она не придёт, если будет занята.",
+        "phrase_id": "ph-b-0451"
       },
       "answer": {
         "normalization": "default",
@@ -8151,8 +8161,8 @@
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "Делай что хочешь.",
-        "phrase_id": "ph-b-0459"
+        "prompt_ru": "Если он спросит, я скажу «да».",
+        "phrase_id": "ph-b-0437"
       },
       "answer": {
         "normalization": "default",
@@ -8169,8 +8179,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Если не поторопишься, опоздаешь.",
-        "phrase_id": "ph-b-0433"
+        "prompt_ru": "Если не будет дождя, пойдём пешком.",
+        "phrase_id": "ph-b-0472"
       },
       "answer": {
         "normalization": "default",
@@ -8186,8 +8196,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Если уйдёшь сейчас, успеешь на поезд.",
-        "phrase_id": "ph-b-0454"
+        "prompt_ru": "Я не пойду, если будет дождь.",
+        "phrase_id": "ph-b-0450"
       },
       "answer": {
         "normalization": "default",
@@ -8203,8 +8213,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Решать тебе.",
-        "phrase_id": "ph-b-0461"
+        "prompt_ru": "Если похолодает, возьми куртку.",
+        "phrase_id": "ph-b-0441"
       },
       "answer": {
         "normalization": "default",
@@ -8220,8 +8230,8 @@
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "Если будет время, я позвоню.",
-        "phrase_id": "ph-b-0436"
+        "prompt_ru": "Растения погибают, если их не поливать.",
+        "phrase_id": "ph-b-0445"
       },
       "answer": {
         "normalization": "default",
@@ -8238,7 +8248,7 @@
       "type": "verb_tense",
       "payload": {
         "kind": "verb_tense",
-        "sentence_with_gap": "If you ___ water, it boils.",
+        "sentence_with_gap": "If you ___ water, it boils. (нагревать)",
         "marker": "закон",
         "gap_answers": ["heat"]
       },
@@ -8257,7 +8267,7 @@
       "payload": {
         "kind": "verb_tense",
         "sentence_with_gap": "If she calls, ___ her I'm busy.",
-        "marker": "скажи",
+        "marker": "повелит.",
         "gap_answers": ["tell"]
       },
       "answer": {
@@ -8292,7 +8302,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0446"
+        "phrase_id": "ph-b-0462"
       },
       "answer": {
         "normalization": "default",
@@ -8308,7 +8318,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0466"
+        "phrase_id": "ph-b-0460"
       },
       "answer": {
         "normalization": "default",
@@ -8324,7 +8334,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0468"
+        "phrase_id": "ph-b-0449"
       },
       "answer": {
         "normalization": "default",
@@ -8340,7 +8350,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0429"
+        "phrase_id": "ph-b-0473"
       },
       "answer": {
         "normalization": "default",
@@ -8356,7 +8366,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0464"
+        "phrase_id": "ph-b-0470"
       },
       "answer": {
         "normalization": "default",
@@ -8372,7 +8382,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-0458"
+        "phrase_id": "ph-b-0467"
       },
       "answer": {
         "normalization": "default",
@@ -8389,7 +8399,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-0465"
+        "phrase_id": "ph-b-0474"
       },
       "answer": {
         "normalization": "default",
@@ -8518,7 +8528,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "What would you ___ if you were the boss?",
+        "text_with_gap": "What would you ___ if you were the boss? (делать)",
         "gap_answers": ["do"]
       },
       "answer": {
@@ -8535,14 +8545,14 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "В мечтах.",
+        "prompt": "Жизнь была бы проще.",
         "options": [
-          "Nah, I'd win.",
+          "Life would be easier.",
           "Dreams come true.",
-          "In your dreams.",
-          "Second chances are rare."
+          "That would be great.",
+          "Next time."
         ],
-        "correct": 2
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -8560,10 +8570,10 @@
         "kind": "choose_translation",
         "prompt": "Вторые шансы редки.",
         "options": [
-          "Nah, I'd win.",
-          "Dreams come true.",
+          "I would rather stay.",
+          "Maybe someday.",
           "Second chances are rare.",
-          "In your dreams."
+          "Life would be easier."
         ],
         "correct": 2
       },
@@ -8581,8 +8591,13 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Мечты сбываются.",
-        "options": ["Next time.", "If only I knew.", "Life would be easier.", "Dreams come true."],
+        "prompt": "Может, когда-нибудь.",
+        "options": [
+          "Life would be easier.",
+          "I would rather stay.",
+          "Second chances are rare.",
+          "Maybe someday."
+        ],
         "correct": 3
       },
       "answer": {
@@ -8599,13 +8614,8 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Не-а, я бы выиграл.",
-        "options": [
-          "Nah, I'd win.",
-          "I would rather stay.",
-          "There's always next time.",
-          "It would be nice."
-        ],
+        "prompt": "Я бы лучше остался.",
+        "options": ["I would rather stay.", "Next time.", "Nah, I'd win.", "It would be nice."],
         "correct": 0
       },
       "answer": {
@@ -8624,24 +8634,24 @@
         "kind": "match_pairs",
         "pairs": [
           {
-            "en": "I would relax.",
-            "ru": "Я бы отдыхал."
+            "en": "Nah, I'd win.",
+            "ru": "Не-а, я бы выиграл."
           },
           {
             "en": "Next time.",
             "ru": "В следующий раз."
           },
           {
-            "en": "Maybe someday.",
-            "ru": "Может, когда-нибудь."
+            "en": "It's just a dream.",
+            "ru": "Это просто мечта."
           },
           {
-            "en": "Life would be easier.",
-            "ru": "Жизнь была бы проще."
+            "en": "I would relax.",
+            "ru": "Я бы отдыхал."
           },
           {
-            "en": "Someday, but not today.",
-            "ru": "Когда-нибудь, но не сегодня."
+            "en": "Dreams come true.",
+            "ru": "Мечты сбываются."
           }
         ]
       },
@@ -8659,20 +8669,21 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Что бы ты делал, если бы был начальником?",
-        "phrase_id": "ph-b-0486",
+        "prompt_ru": "Если бы это было не так далеко, мы бы ходили туда чаще.",
+        "phrase_id": "ph-b-0494",
         "tokens": [
+          "more",
+          "we",
+          "go",
+          "often",
+          "so",
+          "If",
           "would",
-          "if",
-          "you",
-          "do",
-          "Next",
-          "you",
-          "Would",
-          "boss",
-          "the",
-          "were",
-          "What"
+          "She",
+          "weren't",
+          "far,",
+          "studied",
+          "it"
         ]
       },
       "answer": {
@@ -8689,9 +8700,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "В следующий раз.",
-        "phrase_id": "ph-b-0517",
-        "tokens": ["Next", "What", "time", "Would"]
+        "prompt_ru": "Она бы осталась, если бы ты попросил.",
+        "phrase_id": "ph-b-0484",
+        "tokens": ["asked", "stay", "would", "more", "if", "studied", "She", "you"]
       },
       "answer": {
         "normalization": "default",
@@ -8707,9 +8718,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Ты бы лучше остался или пошёл?",
-        "phrase_id": "ph-b-0498",
-        "tokens": ["Next", "rather", "or", "Would", "stay", "go", "you", "What"]
+        "prompt_ru": "Если бы он учился усерднее, он бы сдал.",
+        "phrase_id": "ph-b-0482",
+        "tokens": ["She", "studied", "he", "If", "harder,", "would", "he", "pass", "more"]
       },
       "answer": {
         "normalization": "default",
@@ -8725,9 +8736,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Было бы здорово.",
-        "phrase_id": "ph-b-0503",
-        "tokens": ["Next", "What", "be", "would", "That", "great"]
+        "prompt_ru": "Если бы я знал, я бы пришёл.",
+        "phrase_id": "ph-b-0510",
+        "tokens": ["would", "more", "had", "She", "I", "have", "I", "known,", "If", "come"]
       },
       "answer": {
         "normalization": "default",
@@ -8743,9 +8754,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Если бы я только знал.",
-        "phrase_id": "ph-b-0499",
-        "tokens": ["only", "If", "I", "knew", "Next", "What"]
+        "prompt_ru": "Я бы лучше остался.",
+        "phrase_id": "ph-b-0498",
+        "tokens": ["more", "She", "I", "stay", "rather", "would"]
       },
       "answer": {
         "normalization": "default",
@@ -8761,9 +8772,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Всегда есть следующий раз.",
-        "phrase_id": "ph-b-0518",
-        "tokens": ["What", "Next", "There's", "time", "next", "always"]
+        "prompt_ru": "Вторые шансы редки.",
+        "phrase_id": "ph-b-0516",
+        "tokens": ["would", "rare", "She", "are", "chances", "Second"]
       },
       "answer": {
         "normalization": "default",
@@ -8779,22 +8790,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Если бы это было не так далеко, мы бы ходили туда чаще.",
+        "prompt_ru": "Я бы научился летать.",
         "phrase_id": "ph-b-0492",
-        "tokens": [
-          "we",
-          "What",
-          "often",
-          "so",
-          "would",
-          "more",
-          "go",
-          "If",
-          "Next",
-          "far,",
-          "weren't",
-          "it"
-        ]
+        "tokens": ["more", "learn", "fly", "to", "She", "would", "I"]
       },
       "answer": {
         "normalization": "default",
@@ -8810,9 +8808,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Слезами делу не поможешь.",
-        "phrase_id": "ph-b-0515",
-        "tokens": ["over", "What", "milk", "Next", "use", "No", "spilt", "crying"]
+        "prompt_ru": "Было бы неплохо.",
+        "phrase_id": "ph-b-0502",
+        "tokens": ["be", "She", "nice", "It", "more", "would"]
       },
       "answer": {
         "normalization": "default",
@@ -8828,8 +8826,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Я бы научился летать.",
-        "phrase_id": "ph-b-0490"
+        "prompt_ru": "Слезами делу не поможешь.",
+        "phrase_id": "ph-b-0515"
       },
       "answer": {
         "normalization": "default",
@@ -8845,8 +8843,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Всё было бы иначе.",
-        "phrase_id": "ph-b-0514"
+        "prompt_ru": "Не-а, я бы выиграл.",
+        "phrase_id": "ph-b-0496"
       },
       "answer": {
         "normalization": "default",
@@ -8862,8 +8860,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Когда-нибудь, но не сегодня.",
-        "phrase_id": "ph-b-0507"
+        "prompt_ru": "Всегда есть следующий раз.",
+        "phrase_id": "ph-b-0518"
       },
       "answer": {
         "normalization": "default",
@@ -8879,8 +8877,8 @@
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "Я бы предпочёл об этом не говорить.",
-        "phrase_id": "ph-b-0497"
+        "prompt_ru": "Было бы здорово.",
+        "phrase_id": "ph-b-0503"
       },
       "answer": {
         "normalization": "default",
@@ -8897,8 +8895,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Если бы она была здесь, она бы помогла.",
-        "phrase_id": "ph-b-0477"
+        "prompt_ru": "Всё было бы иначе.",
+        "phrase_id": "ph-b-0514"
       },
       "answer": {
         "normalization": "default",
@@ -8914,8 +8912,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Тебе бы понравилось.",
-        "phrase_id": "ph-b-0513"
+        "prompt_ru": "В следующий раз.",
+        "phrase_id": "ph-b-0517"
       },
       "answer": {
         "normalization": "default",
@@ -8931,8 +8929,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Мечты сбываются.",
-        "phrase_id": "ph-b-0509"
+        "prompt_ru": "Что бы ты делал, если бы был начальником?",
+        "phrase_id": "ph-b-0488"
       },
       "answer": {
         "normalization": "default",
@@ -8948,8 +8946,8 @@
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "Если бы он учился усерднее, он бы сдал.",
-        "phrase_id": "ph-b-0480"
+        "prompt_ru": "Я бы предпочёл об этом не говорить.",
+        "phrase_id": "ph-b-0499"
       },
       "answer": {
         "normalization": "default",
@@ -8966,8 +8964,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Я бы лучше остался.",
-        "phrase_id": "ph-b-0496"
+        "prompt_ru": "Когда-нибудь, но не сегодня.",
+        "phrase_id": "ph-b-0507"
       },
       "answer": {
         "normalization": "default",
@@ -8983,8 +8981,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Если бы сегодня была пятница.",
-        "phrase_id": "ph-b-0500"
+        "prompt_ru": "Если бы у нас была машина, мы бы поехали.",
+        "phrase_id": "ph-b-0481"
       },
       "answer": {
         "normalization": "default",
@@ -9000,8 +8998,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Если бы у меня было время, я бы путешествовал.",
-        "phrase_id": "ph-b-0474"
+        "prompt_ru": "Мечты сбываются.",
+        "phrase_id": "ph-b-0509"
       },
       "answer": {
         "normalization": "default",
@@ -9017,8 +9015,8 @@
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "Если бы у нас была машина, мы бы поехали.",
-        "phrase_id": "ph-b-0479"
+        "prompt_ru": "Ты бы лучше остался или пошёл?",
+        "phrase_id": "ph-b-0500"
       },
       "answer": {
         "normalization": "default",
@@ -9035,8 +9033,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Может, когда-нибудь.",
-        "phrase_id": "ph-b-0506"
+        "prompt_ru": "Если бы у меня было больше времени, я бы путешествовал.",
+        "phrase_id": "ph-b-0475"
       },
       "answer": {
         "normalization": "default",
@@ -9052,8 +9050,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Жизнь была бы проще.",
-        "phrase_id": "ph-b-0501"
+        "prompt_ru": "Я бы спал весь день.",
+        "phrase_id": "ph-b-0491"
       },
       "answer": {
         "normalization": "default",
@@ -9069,8 +9067,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Не-а, я бы выиграл.",
-        "phrase_id": "ph-b-0494"
+        "prompt_ru": "Я бы скорее сражался за жизнь, чем просто жил.",
+        "phrase_id": "ph-b-0497"
       },
       "answer": {
         "normalization": "default",
@@ -9086,8 +9084,8 @@
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "Если бы у меня было больше времени, я бы путешествовал.",
-        "phrase_id": "ph-b-0473"
+        "prompt_ru": "Если бы я знал ответ, я бы тебе сказал.",
+        "phrase_id": "ph-b-0480"
       },
       "answer": {
         "normalization": "default",
@@ -9158,7 +9156,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0501"
+        "phrase_id": "ph-b-0516"
       },
       "answer": {
         "normalization": "default",
@@ -9174,7 +9172,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0496"
+        "phrase_id": "ph-b-0507"
       },
       "answer": {
         "normalization": "default",
@@ -9190,7 +9188,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0494"
+        "phrase_id": "ph-b-0498"
       },
       "answer": {
         "normalization": "default",
@@ -9206,7 +9204,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0488"
+        "phrase_id": "ph-b-0502"
       },
       "answer": {
         "normalization": "default",
@@ -9222,7 +9220,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0499"
+        "phrase_id": "ph-b-0501"
       },
       "answer": {
         "normalization": "default",
@@ -9235,40 +9233,6 @@
     },
     {
       "id": "ex-b-0504",
-      "type": "shadowing",
-      "payload": {
-        "kind": "shadowing",
-        "phrase_id": "ph-b-0488"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow",
-        "speech_threshold": 0.85
-      },
-      "meta": {
-        "skill": "speaking",
-        "xp": 3
-      }
-    },
-    {
-      "id": "ex-b-0505",
-      "type": "shadowing",
-      "payload": {
-        "kind": "shadowing",
-        "phrase_id": "ph-b-0500"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow",
-        "speech_threshold": 0.85
-      },
-      "meta": {
-        "skill": "speaking",
-        "xp": 3
-      }
-    },
-    {
-      "id": "ex-b-0506",
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
@@ -9285,11 +9249,45 @@
       }
     },
     {
+      "id": "ex-b-0505",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-b-0477"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-b-0506",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-b-0502"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
       "id": "ex-b-0507",
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-0501"
+        "phrase_id": "ph-b-0517"
       },
       "answer": {
         "normalization": "default",
@@ -9306,11 +9304,11 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "Throughout Heaven and ___, I alone am the honored one.",
-        "gap_answers": ["Earth"],
+        "text_with_gap": "Nah, I'd ___.",
+        "gap_answers": ["win"],
         "quote": {
           "title": "Jujutsu Kaisen",
-          "season_episode": "аниме S2"
+          "season_episode": "манга, гл. 221 (в аниме — позже)"
         }
       },
       "answer": {
@@ -9351,7 +9349,7 @@
       "payload": {
         "kind": "cloze",
         "text_with_gap": "I wish I ___ there.",
-        "gap_answers": ["were"]
+        "gap_answers": ["were", "was"]
       },
       "answer": {
         "normalization": "default",
@@ -9401,14 +9399,9 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Помечтать-то можно.",
-        "options": [
-          "Better days are coming.",
-          "One can dream.",
-          "Cheer up!",
-          "I should have called."
-        ],
-        "correct": 1
+        "prompt": "Без сожалений.",
+        "options": ["Some other time.", "I should have called.", "Time heals.", "No regrets."],
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -9424,14 +9417,9 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Лучшие дни впереди.",
-        "options": [
-          "Cheer up!",
-          "One can dream.",
-          "I should have called.",
-          "Better days are coming."
-        ],
-        "correct": 3
+        "prompt": "Надо было позвонить.",
+        "options": ["No regrets.", "I should have called.", "Time heals.", "Some other time."],
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -9447,14 +9435,9 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Не унывай!",
-        "options": [
-          "Better days are coming.",
-          "Cheer up!",
-          "One can dream.",
-          "I should have called."
-        ],
-        "correct": 1
+        "prompt": "Я ни о чём не жалею.",
+        "options": ["I should have called.", "No regrets.", "Time heals.", "I regret nothing."],
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -9470,9 +9453,9 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Надо было позвонить.",
-        "options": ["No regrets.", "Some other time.", "I should have called.", "Don't look back."],
-        "correct": 2
+        "prompt": "Время лечит.",
+        "options": ["I should have called.", "Time heals.", "No regrets.", "Some other time."],
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -9490,24 +9473,24 @@
         "kind": "match_pairs",
         "pairs": [
           {
-            "en": "Learn from it.",
-            "ru": "Сделай выводы."
-          },
-          {
-            "en": "No regrets.",
-            "ru": "Без сожалений."
-          },
-          {
-            "en": "We could have won.",
-            "ru": "Мы могли бы выиграть."
+            "en": "This too shall pass.",
+            "ru": "И это пройдёт."
           },
           {
             "en": "Never say never.",
             "ru": "Никогда не говори «никогда»."
           },
           {
-            "en": "Don't look back.",
-            "ru": "Не оглядывайся."
+            "en": "Learn from it.",
+            "ru": "Сделай выводы."
+          },
+          {
+            "en": "What's done is done.",
+            "ru": "Сделанного не воротишь."
+          },
+          {
+            "en": "Better days are coming.",
+            "ru": "Лучшие дни впереди."
           }
         ]
       },
@@ -9525,9 +9508,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Лучшие дни впереди.",
-        "phrase_id": "ph-b-0560",
-        "tokens": ["days", "are", "wish", "Better", "Maybe", "coming"]
+        "prompt_ru": "Помечтать-то можно.",
+        "phrase_id": "ph-b-0562",
+        "tokens": ["can", "meant", "dream", "Move", "One"]
       },
       "answer": {
         "normalization": "default",
@@ -9543,9 +9526,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Жаль, что сегодня не пятница.",
-        "phrase_id": "ph-b-0522",
-        "tokens": ["Better", "Maybe", "Friday", "it", "wish", "were", "I"]
+        "prompt_ru": "Двигайся вперёд.",
+        "phrase_id": "ph-b-0547",
+        "tokens": ["One", "meant", "Move", "forward"]
       },
       "answer": {
         "normalization": "default",
@@ -9561,9 +9544,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Может, в следующий раз.",
-        "phrase_id": "ph-b-0553",
-        "tokens": ["next", "wish", "time", "Better", "Maybe"]
+        "prompt_ru": "Этому не суждено было случиться.",
+        "phrase_id": "ph-b-0551",
+        "tokens": ["One", "meant", "be", "wasn't", "It", "Move", "to"]
       },
       "answer": {
         "normalization": "default",
@@ -9581,7 +9564,7 @@
         "kind": "word_bank",
         "prompt_ru": "Не оглядывайся.",
         "phrase_id": "ph-b-0546",
-        "tokens": ["back", "wish", "Better", "Don't", "look"]
+        "tokens": ["Don't", "back", "Move", "look", "One"]
       },
       "answer": {
         "normalization": "default",
@@ -9597,9 +9580,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Мы могли бы выиграть.",
-        "phrase_id": "ph-b-0539",
-        "tokens": ["won", "could", "Better", "wish", "We", "have"]
+        "prompt_ru": "Если бы только она могла прийти.",
+        "phrase_id": "ph-b-0533",
+        "tokens": ["Move", "come", "she", "could", "If", "only", "One"]
       },
       "answer": {
         "normalization": "default",
@@ -9615,9 +9598,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Сделанного не воротишь.",
-        "phrase_id": "ph-b-0544",
-        "tokens": ["Better", "is", "done", "done", "wish", "What's"]
+        "prompt_ru": "Всё происходит не просто так.",
+        "phrase_id": "ph-b-0549",
+        "tokens": ["a", "One", "reason", "for", "Move", "Everything", "happens"]
       },
       "answer": {
         "normalization": "default",
@@ -9633,9 +9616,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Жаль, что я не знал.",
-        "phrase_id": "ph-b-0524",
-        "tokens": ["I", "I", "had", "were", "known", "Better", "wish"]
+        "prompt_ru": "Если бы только у нас было больше денег.",
+        "phrase_id": "ph-b-0532",
+        "tokens": ["we", "One", "money", "If", "had", "Move", "only", "more"]
       },
       "answer": {
         "normalization": "default",
@@ -9651,9 +9634,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Так было суждено.",
-        "phrase_id": "ph-b-0550",
-        "tokens": ["meant", "It", "wish", "was", "be", "Better", "to"]
+        "prompt_ru": "Жаль, что я не знал.",
+        "phrase_id": "ph-b-0524",
+        "tokens": ["One", "I", "Move", "wish", "had", "known", "I"]
       },
       "answer": {
         "normalization": "default",
@@ -9666,40 +9649,6 @@
     },
     {
       "id": "ex-b-0526",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Смотри на светлую сторону.",
-        "phrase_id": "ph-b-0556"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-b-0527",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Если бы я знал, я бы пошёл.",
-        "phrase_id": "ph-b-0542"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-b-0528",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -9716,12 +9665,46 @@
       }
     },
     {
+      "id": "ex-b-0527",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Не надо было это говорить.",
+        "phrase_id": "ph-b-0537"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-b-0528",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Так было суждено.",
+        "phrase_id": "ph-b-0550"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
       "id": "ex-b-0529",
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "Прошлое в прошлом.",
-        "phrase_id": "ph-b-0545"
+        "prompt_ru": "Сделанного не воротишь.",
+        "phrase_id": "ph-b-0544"
       },
       "answer": {
         "normalization": "default",
@@ -9738,8 +9721,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Жаль, что у меня мало времени.",
-        "phrase_id": "ph-b-0520"
+        "prompt_ru": "Жаль, что сегодня не пятница.",
+        "phrase_id": "ph-b-0522"
       },
       "answer": {
         "normalization": "default",
@@ -9752,75 +9735,6 @@
     },
     {
       "id": "ex-b-0531",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Я ни о чём не жалею.",
-        "phrase_id": "ph-b-0535"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-b-0532",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Могло быть и хуже.",
-        "phrase_id": "ph-b-0540"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-b-0533",
-      "type": "speak",
-      "payload": {
-        "kind": "speak",
-        "prompt_ru": "Не унывай!",
-        "phrase_id": "ph-b-0555"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow",
-        "speech_threshold": 0.85
-      },
-      "meta": {
-        "skill": "speaking",
-        "xp": 4
-      }
-    },
-    {
-      "id": "ex-b-0534",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Этому не суждено было случиться.",
-        "phrase_id": "ph-b-0551"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-b-0535",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -9837,76 +9751,7 @@
       }
     },
     {
-      "id": "ex-b-0536",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Если бы только она могла прийти.",
-        "phrase_id": "ph-b-0533"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-b-0537",
-      "type": "speak",
-      "payload": {
-        "kind": "speak",
-        "prompt_ru": "Тебе следовало мне сказать.",
-        "phrase_id": "ph-b-0538"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow",
-        "speech_threshold": 0.85
-      },
-      "meta": {
-        "skill": "speaking",
-        "xp": 4
-      }
-    },
-    {
-      "id": "ex-b-0538",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Никогда не говори «никогда».",
-        "phrase_id": "ph-b-0561"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-b-0539",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Хотел бы я, чтобы ты прекратил.",
-        "phrase_id": "ph-b-0528"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-b-0540",
+      "id": "ex-b-0532",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -9923,12 +9768,150 @@
       }
     },
     {
+      "id": "ex-b-0533",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Нет худа без добра.",
+        "phrase_id": "ph-b-0557"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-b-0534",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Жаль, что тебя здесь нет.",
+        "phrase_id": "ph-b-0527"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-b-0535",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Мы могли бы выиграть.",
+        "phrase_id": "ph-b-0539"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-b-0536",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Жаль, что я не умею летать.",
+        "phrase_id": "ph-b-0521"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-b-0537",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Как-нибудь в другой раз.",
+        "phrase_id": "ph-b-0552"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-b-0538",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Если бы я только был моложе.",
+        "phrase_id": "ph-b-0531"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-b-0539",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Если бы я знал, я бы пошёл.",
+        "phrase_id": "ph-b-0542"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-b-0540",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Надо было позвонить.",
+        "phrase_id": "ph-b-0536"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
       "id": "ex-b-0541",
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "Помечтать-то можно.",
-        "phrase_id": "ph-b-0562"
+        "prompt_ru": "Она жалеет, что она не выше.",
+        "phrase_id": "ph-b-0525"
       },
       "answer": {
         "normalization": "default",
@@ -10015,7 +9998,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0523"
+        "phrase_id": "ph-b-0536"
       },
       "answer": {
         "normalization": "default",
@@ -10031,7 +10014,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0539"
+        "phrase_id": "ph-b-0552"
       },
       "answer": {
         "normalization": "default",
@@ -10047,7 +10030,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0553"
+        "phrase_id": "ph-b-0546"
       },
       "answer": {
         "normalization": "default",
@@ -10063,7 +10046,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0535"
+        "phrase_id": "ph-b-0553"
       },
       "answer": {
         "normalization": "default",
@@ -10079,7 +10062,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-0526"
+        "phrase_id": "ph-b-0544"
       },
       "answer": {
         "normalization": "default",
@@ -10096,7 +10079,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-0537"
+        "phrase_id": "ph-b-0543"
       },
       "answer": {
         "normalization": "default",
@@ -10113,7 +10096,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-0540"
+        "phrase_id": "ph-b-0560"
       },
       "answer": {
         "normalization": "default",
@@ -10130,7 +10113,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-0559"
+        "phrase_id": "ph-b-0538"
       },
       "answer": {
         "normalization": "default",
@@ -10242,9 +10225,9 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Времена изменились.",
-        "options": ["I'm used to it.", "Times have changed.", "Here and now.", "Not like before."],
-        "correct": 1
+        "prompt": "Уже не как раньше.",
+        "options": ["Good old days.", "Things change.", "People change.", "Not like before."],
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -10260,14 +10243,9 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Я скучаю по тем временам.",
-        "options": [
-          "Those were the days.",
-          "I miss those times.",
-          "Life goes on.",
-          "Times have changed."
-        ],
-        "correct": 1
+        "prompt": "Мы были тогда молоды.",
+        "options": ["Not like before.", "People change.", "Things change.", "We were young then."],
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -10283,9 +10261,9 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Жизнь продолжается.",
-        "options": ["Life goes on.", "Good old days.", "Not like before.", "Here and now."],
-        "correct": 0
+        "prompt": "Всё меняется.",
+        "options": ["Not like before.", "Good old days.", "Things change.", "People change."],
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -10301,14 +10279,9 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Вот это были времена.",
-        "options": [
-          "Times have changed.",
-          "Life goes on.",
-          "I miss those times.",
-          "Those were the days."
-        ],
-        "correct": 3
+        "prompt": "Люди меняются.",
+        "options": ["Things change.", "Good old days.", "People change.", "Not like before."],
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -10326,24 +10299,24 @@
         "kind": "match_pairs",
         "pairs": [
           {
-            "en": "Here and now.",
-            "ru": "Здесь и сейчас."
+            "en": "I miss those times.",
+            "ru": "Я скучаю по тем временам."
+          },
+          {
+            "en": "Good old days.",
+            "ru": "Старые добрые времена."
+          },
+          {
+            "en": "Times have changed.",
+            "ru": "Времена изменились."
           },
           {
             "en": "Not anymore.",
             "ru": "Уже нет."
           },
           {
-            "en": "I'm used to it.",
-            "ru": "Я привык."
-          },
-          {
-            "en": "Those were good times.",
-            "ru": "Это было хорошее время."
-          },
-          {
-            "en": "Not like before.",
-            "ru": "Уже не как раньше."
+            "en": "He used to smoke.",
+            "ru": "Он раньше курил."
           }
         ]
       },
@@ -10361,9 +10334,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "А потом мне прострелили колено.",
-        "phrase_id": "ph-b-0581",
-        "tokens": ["Not", "I", "arrow", "They", "Then", "knee", "took", "the", "an", "in"]
+        "prompt_ru": "Я раньше играл на пианино.",
+        "phrase_id": "ph-b-0566",
+        "tokens": ["used", "I", "piano", "to", "the", "play", "They", "That"]
       },
       "answer": {
         "normalization": "default",
@@ -10379,9 +10352,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Раньше они были друзьями.",
-        "phrase_id": "ph-b-0569",
-        "tokens": ["to", "They", "friends", "be", "Then", "Not", "used"]
+        "prompt_ru": "Тогда было тогда, сейчас — сейчас.",
+        "phrase_id": "ph-b-0604",
+        "tokens": ["was", "used", "now", "this", "then,", "They", "is", "That"]
       },
       "answer": {
         "normalization": "default",
@@ -10397,9 +10370,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Уже не как раньше.",
-        "phrase_id": "ph-b-0603",
-        "tokens": ["Then", "Not", "before", "They", "like"]
+        "prompt_ru": "Раньше они были друзьями.",
+        "phrase_id": "ph-b-0569",
+        "tokens": ["friends", "They", "play", "That", "be", "used", "to"]
       },
       "answer": {
         "normalization": "default",
@@ -10415,9 +10388,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Я раньше играл на пианино.",
-        "phrase_id": "ph-b-0566",
-        "tokens": ["piano", "play", "the", "I", "Then", "to", "used", "They"]
+        "prompt_ru": "Мы были тогда молоды.",
+        "phrase_id": "ph-b-0598",
+        "tokens": ["were", "That", "used", "young", "We", "then"]
       },
       "answer": {
         "normalization": "default",
@@ -10433,9 +10406,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Всё меняется.",
-        "phrase_id": "ph-b-0591",
-        "tokens": ["Then", "change", "They", "Things"]
+        "prompt_ru": "Я раньше жил в Лондоне.",
+        "phrase_id": "ph-b-0563",
+        "tokens": ["London", "to", "I", "in", "used", "play", "That", "live"]
       },
       "answer": {
         "normalization": "default",
@@ -10451,9 +10424,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Это было хорошее время.",
-        "phrase_id": "ph-b-0597",
-        "tokens": ["were", "good", "They", "times", "Those", "Then"]
+        "prompt_ru": "Раньше я был искателем приключений, как ты.",
+        "phrase_id": "ph-b-0580",
+        "tokens": ["like", "an", "be", "That", "play", "I", "used", "adventurer", "to", "you"]
       },
       "answer": {
         "normalization": "default",
@@ -10469,9 +10442,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Куда ушло время?",
-        "phrase_id": "ph-b-0599",
-        "tokens": ["time", "the", "Where", "did", "go", "They", "Then"]
+        "prompt_ru": "Я скучаю по тем временам.",
+        "phrase_id": "ph-b-0595",
+        "tokens": ["times", "miss", "That", "I", "used", "those"]
       },
       "answer": {
         "normalization": "default",
@@ -10487,9 +10460,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Я раньше жил в Лондоне.",
-        "phrase_id": "ph-b-0563",
-        "tokens": ["I", "They", "live", "Then", "London", "in", "used", "to"]
+        "prompt_ru": "Раньше он не был таким серьёзным.",
+        "phrase_id": "ph-b-0576",
+        "tokens": ["to", "used", "He", "That", "be", "serious", "so", "use", "didn't"]
       },
       "answer": {
         "normalization": "default",
@@ -10505,8 +10478,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Она раньше играла на пианино.",
-        "phrase_id": "ph-b-0565"
+        "prompt_ru": "Времена изменились.",
+        "phrase_id": "ph-b-0605"
       },
       "answer": {
         "normalization": "default",
@@ -10519,75 +10492,6 @@
     },
     {
       "id": "ex-b-0573",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Уже нет.",
-        "phrase_id": "ph-b-0602"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-b-0574",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Я не привык к такой погоде.",
-        "phrase_id": "ph-b-0585"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-b-0575",
-      "type": "speak",
-      "payload": {
-        "kind": "speak",
-        "prompt_ru": "В детстве мы играли на улице.",
-        "phrase_id": "ph-b-0589"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow",
-        "speech_threshold": 0.85
-      },
-      "meta": {
-        "skill": "speaking",
-        "xp": 4
-      }
-    },
-    {
-      "id": "ex-b-0576",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Люди меняются.",
-        "phrase_id": "ph-b-0592"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-b-0577",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -10604,12 +10508,12 @@
       }
     },
     {
-      "id": "ex-b-0578",
+      "id": "ex-b-0574",
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Раньше он не был таким серьёзным.",
-        "phrase_id": "ph-b-0576"
+        "prompt_ru": "Он раньше курил.",
+        "phrase_id": "ph-b-0567"
       },
       "answer": {
         "normalization": "default",
@@ -10621,12 +10525,12 @@
       }
     },
     {
-      "id": "ex-b-0579",
+      "id": "ex-b-0575",
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "Раньше мы мало путешествовали.",
-        "phrase_id": "ph-b-0575"
+        "prompt_ru": "Помнишь?",
+        "phrase_id": "ph-b-0596"
       },
       "answer": {
         "normalization": "default",
@@ -10639,24 +10543,7 @@
       }
     },
     {
-      "id": "ex-b-0580",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Она раньше жила здесь?",
-        "phrase_id": "ph-b-0578"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-b-0581",
+      "id": "ex-b-0576",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -10673,12 +10560,12 @@
       }
     },
     {
-      "id": "ex-b-0582",
+      "id": "ex-b-0577",
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Тогда всё было иначе.",
-        "phrase_id": "ph-b-0590"
+        "prompt_ru": "А потом мне прострелили колено.",
+        "phrase_id": "ph-b-0581"
       },
       "answer": {
         "normalization": "default",
@@ -10690,12 +10577,29 @@
       }
     },
     {
-      "id": "ex-b-0583",
+      "id": "ex-b-0578",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Раньше мы мало путешествовали.",
+        "phrase_id": "ph-b-0575"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-b-0579",
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "Времена изменились.",
-        "phrase_id": "ph-b-0605"
+        "prompt_ru": "Он привык работать ночью.",
+        "phrase_id": "ph-b-0584"
       },
       "answer": {
         "normalization": "default",
@@ -10708,7 +10612,7 @@
       }
     },
     {
-      "id": "ex-b-0584",
+      "id": "ex-b-0580",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -10725,12 +10629,81 @@
       }
     },
     {
+      "id": "ex-b-0581",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Люди меняются.",
+        "phrase_id": "ph-b-0592"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-b-0582",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Уже нет.",
+        "phrase_id": "ph-b-0602"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-b-0583",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Жизнь продолжается.",
+        "phrase_id": "ph-b-0607"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-b-0584",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Вот это были времена.",
+        "phrase_id": "ph-b-0593"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
       "id": "ex-b-0585",
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Мы раньше ездили туда каждое лето.",
-        "phrase_id": "ph-b-0568"
+        "prompt_ru": "Она раньше жила здесь?",
+        "phrase_id": "ph-b-0578"
       },
       "answer": {
         "normalization": "default",
@@ -10746,8 +10719,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Кажется, это было вчера.",
-        "phrase_id": "ph-b-0600"
+        "prompt_ru": "Ты привыкнешь.",
+        "phrase_id": "ph-b-0586"
       },
       "answer": {
         "normalization": "default",
@@ -10763,8 +10736,8 @@
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "Нужно время, чтобы привыкнуть.",
-        "phrase_id": "ph-b-0588"
+        "prompt_ru": "Мы раньше ездили туда каждое лето.",
+        "phrase_id": "ph-b-0568"
       },
       "answer": {
         "normalization": "default",
@@ -10835,7 +10808,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0567"
+        "phrase_id": "ph-b-0594"
       },
       "answer": {
         "normalization": "default",
@@ -10851,7 +10824,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0603"
+        "phrase_id": "ph-b-0608"
       },
       "answer": {
         "normalization": "default",
@@ -10867,7 +10840,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0594"
+        "phrase_id": "ph-b-0603"
       },
       "answer": {
         "normalization": "default",
@@ -10883,7 +10856,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0596"
+        "phrase_id": "ph-b-0607"
       },
       "answer": {
         "normalization": "default",
@@ -10899,7 +10872,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0582"
+        "phrase_id": "ph-b-0606"
       },
       "answer": {
         "normalization": "default",
@@ -10915,7 +10888,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-0598"
+        "phrase_id": "ph-b-0572"
       },
       "answer": {
         "normalization": "default",
@@ -10949,7 +10922,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-0601"
+        "phrase_id": "ph-b-0603"
       },
       "answer": {
         "normalization": "default",
@@ -10966,7 +10939,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-0595"
+        "phrase_id": "ph-b-0567"
       },
       "answer": {
         "normalization": "default",
@@ -11045,7 +11018,7 @@
       "payload": {
         "kind": "cloze",
         "text_with_gap": "I wish I ___ there.",
-        "gap_answers": ["were"]
+        "gap_answers": ["were", "was"]
       },
       "answer": {
         "normalization": "default",
@@ -11078,9 +11051,14 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Мы могли бы встретиться.",
-        "options": ["Such is life.", "We could have met.", "That's life.", "If only I could!"],
-        "correct": 1
+        "prompt": "Всякое бывает.",
+        "options": [
+          "Try and try again.",
+          "Then we'll try again.",
+          "…try, try again.",
+          "You never know."
+        ],
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -11096,14 +11074,14 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "В любом случае мы научимся.",
+        "prompt": "Нет поражений — только обратная связь.",
         "options": [
+          "No failure, only feedback.",
+          "Try and try again.",
           "It could happen.",
-          "Either way, we learn.",
-          "Then we'll try again.",
-          "…try, try again."
+          "You never know."
         ],
-        "correct": 1
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -11119,14 +11097,9 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Тогда попробуем снова.",
-        "options": [
-          "Try and try again.",
-          "You never know.",
-          "Then we'll try again.",
-          "…try, try again."
-        ],
-        "correct": 2
+        "prompt": "Это может случиться.",
+        "options": ["Then plan B.", "It could happen.", "Try and try again.", "You never know."],
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -11142,14 +11115,14 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Было бы лучше.",
+        "prompt": "Пробуй и пробуй снова.",
         "options": [
-          "It would be better.",
-          "We could have met.",
-          "Either way, we learn.",
-          "Then we'll try again."
+          "…try, try again.",
+          "Try and try again.",
+          "Then we'll try again.",
+          "You never know."
         ],
-        "correct": 0
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -11167,24 +11140,24 @@
         "kind": "match_pairs",
         "pairs": [
           {
-            "en": "Best case, we win.",
-            "ru": "В лучшем случае выиграем."
+            "en": "Backup plan.",
+            "ru": "Запасной план."
           },
           {
-            "en": "If only I could!",
-            "ru": "Если бы я только мог!"
+            "en": "Worst case, we lose.",
+            "ru": "В худшем случае проиграем."
           },
           {
             "en": "That's life.",
             "ru": "Такова жизнь."
           },
           {
-            "en": "It could happen.",
-            "ru": "Это может случиться."
+            "en": "Best case, we win.",
+            "ru": "В лучшем случае выиграем."
           },
           {
-            "en": "…try, try again.",
-            "ru": "…пробуй, пробуй ещё."
+            "en": "Either way, we learn.",
+            "ru": "В любом случае мы научимся."
           }
         ]
       },
@@ -11202,9 +11175,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Если нагреть лёд, он тает.",
-        "phrase_id": "ph-b-0623",
-        "tokens": ["try", "would", "If", "it", "heat", "melts", "ice,", "you"]
+        "prompt_ru": "Я раньше жил в Риме.",
+        "phrase_id": "ph-b-0615",
+        "tokens": ["I", "in", "Rome", "to", "live", "used", "wish", "you"]
       },
       "answer": {
         "normalization": "default",
@@ -11220,9 +11193,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "…пробуй, пробуй ещё.",
-        "phrase_id": "ph-b-0653",
-        "tokens": ["try", "you", "…try,", "would", "again"]
+        "prompt_ru": "Хотел бы я, чтобы это прекратилось.",
+        "phrase_id": "ph-b-0630",
+        "tokens": ["wish", "stop", "used", "would", "it", "you", "I"]
       },
       "answer": {
         "normalization": "default",
@@ -11238,9 +11211,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Я бы лучше остался.",
-        "phrase_id": "ph-b-0618",
-        "tokens": ["try", "would", "rather", "I", "stay", "you"]
+        "prompt_ru": "Жаль, что тебя здесь нет.",
+        "phrase_id": "ph-b-0631",
+        "tokens": ["wish", "used", "you", "here", "would", "were", "I"]
       },
       "answer": {
         "normalization": "default",
@@ -11256,9 +11229,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Ты раньше много путешествовал?",
-        "phrase_id": "ph-b-0628",
-        "tokens": ["lot", "Did", "travel", "use", "a", "to", "try", "you", "heat"]
+        "prompt_ru": "План Б есть всегда.",
+        "phrase_id": "ph-b-0644",
+        "tokens": ["wish", "always", "There's", "B", "a", "used", "plan"]
       },
       "answer": {
         "normalization": "default",
@@ -11274,9 +11247,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Мы могли бы встретиться.",
-        "phrase_id": "ph-b-0622",
-        "tokens": ["you", "We", "met", "have", "try", "could"]
+        "prompt_ru": "Запасной план.",
+        "phrase_id": "ph-b-0645",
+        "tokens": ["wish", "Backup", "plan", "used"]
       },
       "answer": {
         "normalization": "default",
@@ -11292,9 +11265,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Если бы я только мог!",
-        "phrase_id": "ph-b-0620",
-        "tokens": ["you", "only", "could", "try", "If", "I"]
+        "prompt_ru": "…пробуй, пробуй ещё.",
+        "phrase_id": "ph-b-0653",
+        "tokens": ["again", "try", "wish", "used", "…try,"]
       },
       "answer": {
         "normalization": "default",
@@ -11310,9 +11283,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Что бы ты сделал, если бы выиграл?",
-        "phrase_id": "ph-b-0619",
-        "tokens": ["heat", "would", "try", "What", "do", "if", "you", "you", "won"]
+        "prompt_ru": "Победи или научись.",
+        "phrase_id": "ph-b-0649",
+        "tokens": ["learn", "or", "wish", "Win", "used"]
       },
       "answer": {
         "normalization": "default",
@@ -11328,9 +11301,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Раньше я не любил чай.",
-        "phrase_id": "ph-b-0627",
-        "tokens": ["use", "to", "tea", "didn't", "you", "try", "like", "I"]
+        "prompt_ru": "Такова жизнь.",
+        "phrase_id": "ph-b-0638",
+        "tokens": ["used", "That's", "life", "wish"]
       },
       "answer": {
         "normalization": "default",
@@ -11346,8 +11319,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "План Б есть всегда.",
-        "phrase_id": "ph-b-0644"
+        "prompt_ru": "Что бы ты сделал, если бы выиграл?",
+        "phrase_id": "ph-b-0619"
       },
       "answer": {
         "normalization": "default",
@@ -11363,8 +11336,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Такова уж жизнь.",
-        "phrase_id": "ph-b-0639"
+        "prompt_ru": "Если бы у меня был выбор…",
+        "phrase_id": "ph-b-0634"
       },
       "answer": {
         "normalization": "default",
@@ -11380,8 +11353,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Если бы у меня было время, я бы помог.",
-        "phrase_id": "ph-b-0611"
+        "prompt_ru": "Жаль, что меня там нет.",
+        "phrase_id": "ph-b-0613"
       },
       "answer": {
         "normalization": "default",
@@ -11397,8 +11370,8 @@
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "Если бы у меня был выбор…",
-        "phrase_id": "ph-b-0634"
+        "prompt_ru": "В любом случае мы научимся.",
+        "phrase_id": "ph-b-0648"
       },
       "answer": {
         "normalization": "default",
@@ -11415,8 +11388,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Было бы лучше.",
-        "phrase_id": "ph-b-0635"
+        "prompt_ru": "Жаль, что я не знал.",
+        "phrase_id": "ph-b-0614"
       },
       "answer": {
         "normalization": "default",
@@ -11429,144 +11402,6 @@
     },
     {
       "id": "ex-b-0623",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Всякое бывает.",
-        "phrase_id": "ph-b-0637"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-b-0624",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "В любом случае мы научимся.",
-        "phrase_id": "ph-b-0648"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-b-0625",
-      "type": "speak",
-      "payload": {
-        "kind": "speak",
-        "prompt_ru": "Победи или научись.",
-        "phrase_id": "ph-b-0649"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow",
-        "speech_threshold": 0.85
-      },
-      "meta": {
-        "skill": "speaking",
-        "xp": 4
-      }
-    },
-    {
-      "id": "ex-b-0626",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Тогда попробуем снова.",
-        "phrase_id": "ph-b-0642"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-b-0627",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Если не будет дождя, мы пойдём.",
-        "phrase_id": "ph-b-0626"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-b-0628",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "В лучшем случае выиграем.",
-        "phrase_id": "ph-b-0647"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-b-0629",
-      "type": "speak",
-      "payload": {
-        "kind": "speak",
-        "prompt_ru": "Это может случиться.",
-        "phrase_id": "ph-b-0636"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow",
-        "speech_threshold": 0.85
-      },
-      "meta": {
-        "skill": "speaking",
-        "xp": 4
-      }
-    },
-    {
-      "id": "ex-b-0630",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Если опоздаем на автобус, пойдём пешком.",
-        "phrase_id": "ph-b-0625"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-b-0631",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -11583,12 +11418,150 @@
       }
     },
     {
+      "id": "ex-b-0624",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Если бы я знал, я бы пришёл.",
+        "phrase_id": "ph-b-0612"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-b-0625",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Такова уж жизнь.",
+        "phrase_id": "ph-b-0639"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-b-0626",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Я буду путешествовать по миру.",
+        "phrase_id": "ph-b-0655"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-b-0627",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Тогда план Б.",
+        "phrase_id": "ph-b-0643"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-b-0628",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Ты раньше много путешествовал?",
+        "phrase_id": "ph-b-0628"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-b-0629",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Если бы ты попросил, она бы помогла.",
+        "phrase_id": "ph-b-0624"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-b-0630",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Всякое бывает.",
+        "phrase_id": "ph-b-0637"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-b-0631",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Пробуй и пробуй снова.",
+        "phrase_id": "ph-b-0651"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
       "id": "ex-b-0632",
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "В худшем случае проиграем.",
-        "phrase_id": "ph-b-0646"
+        "prompt_ru": "Если не будет дождя, мы пойдём.",
+        "phrase_id": "ph-b-0626"
       },
       "answer": {
         "normalization": "default",
@@ -11604,8 +11577,8 @@
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "Она раньше играла в теннис.",
-        "phrase_id": "ph-b-0616"
+        "prompt_ru": "А если не сработает?",
+        "phrase_id": "ph-b-0640"
       },
       "answer": {
         "normalization": "default",
@@ -11720,7 +11693,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0635"
+        "phrase_id": "ph-b-0622"
       },
       "answer": {
         "normalization": "default",
@@ -11736,7 +11709,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0649"
+        "phrase_id": "ph-b-0618"
       },
       "answer": {
         "normalization": "default",
@@ -11752,7 +11725,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0636"
+        "phrase_id": "ph-b-0620"
       },
       "answer": {
         "normalization": "default",
@@ -11768,7 +11741,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0622"
+        "phrase_id": "ph-b-0636"
       },
       "answer": {
         "normalization": "default",
@@ -11784,7 +11757,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-0618"
+        "phrase_id": "ph-b-0635"
       },
       "answer": {
         "normalization": "default",
@@ -11800,7 +11773,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-0641"
+        "phrase_id": "ph-b-0636"
       },
       "answer": {
         "normalization": "default",
@@ -11817,7 +11790,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-0621"
+        "phrase_id": "ph-b-0630"
       },
       "answer": {
         "normalization": "default",
@@ -11834,7 +11807,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-0651"
+        "phrase_id": "ph-b-0618"
       },
       "answer": {
         "normalization": "default",
@@ -11851,7 +11824,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-0643"
+        "phrase_id": "ph-b-0638"
       },
       "answer": {
         "normalization": "default",
@@ -11950,7 +11923,7 @@
       "payload": {
         "kind": "answer_question",
         "question_en": "Have you ever been to Italy?",
-        "phrase_id": "ph-b-0030"
+        "phrase_id": "ph-b-0073"
       },
       "answer": {
         "normalization": "default",
@@ -12098,7 +12071,7 @@
       "payload": {
         "kind": "answer_question",
         "question_en": "When did you see it?",
-        "phrase_id": "ph-b-0268"
+        "phrase_id": "ph-b-0267"
       },
       "answer": {
         "normalization": "default",
@@ -12117,7 +12090,7 @@
         "kind": "find_error",
         "wrong_en": "I have seen him yesterday.",
         "hint_ru": "Я видел его вчера.",
-        "phrase_id": "ph-b-0267"
+        "phrase_id": "ph-b-0266"
       },
       "answer": {
         "normalization": "default",
@@ -12135,7 +12108,7 @@
       "payload": {
         "kind": "answer_question",
         "question_en": "How long have you been waiting?",
-        "phrase_id": "ph-b-0312"
+        "phrase_id": "ph-b-0311"
       },
       "answer": {
         "normalization": "default",
@@ -12154,7 +12127,7 @@
         "kind": "find_error",
         "wrong_en": "I have been learn English for two years.",
         "hint_ru": "Я учу английский два года.",
-        "phrase_id": "ph-b-0295"
+        "phrase_id": "ph-b-0294"
       },
       "answer": {
         "normalization": "default",
@@ -12172,7 +12145,7 @@
       "payload": {
         "kind": "answer_question",
         "question_en": "What had happened?",
-        "phrase_id": "ph-b-0349"
+        "phrase_id": "ph-b-0348"
       },
       "answer": {
         "normalization": "default",
@@ -12191,7 +12164,7 @@
         "kind": "find_error",
         "wrong_en": "I had finish before you came.",
         "hint_ru": "Я закончил до того, как ты пришёл.",
-        "phrase_id": "ph-b-0338"
+        "phrase_id": "ph-b-0337"
       },
       "answer": {
         "normalization": "default",
@@ -12228,7 +12201,7 @@
         "kind": "find_error",
         "wrong_en": "I had finish before you came.",
         "hint_ru": "Я закончил до того, как ты пришёл.",
-        "phrase_id": "ph-b-0338"
+        "phrase_id": "ph-b-0337"
       },
       "answer": {
         "normalization": "default",
@@ -12283,7 +12256,7 @@
       "payload": {
         "kind": "answer_question",
         "question_en": "What would you do if you won the lottery?",
-        "phrase_id": "ph-b-0475"
+        "phrase_id": "ph-b-0477"
       },
       "answer": {
         "normalization": "default",
@@ -12302,7 +12275,7 @@
         "kind": "find_error",
         "wrong_en": "If I would have time, I would travel.",
         "hint_ru": "Если бы у меня было время, я бы путешествовал.",
-        "phrase_id": "ph-b-0474"
+        "phrase_id": "ph-b-0476"
       },
       "answer": {
         "normalization": "default",
@@ -12356,7 +12329,7 @@
       "type": "answer_question",
       "payload": {
         "kind": "answer_question",
-        "question_en": "Did you use to play sports?",
+        "question_en": "What did you use to play?",
         "phrase_id": "ph-b-0566"
       },
       "answer": {
@@ -12394,7 +12367,7 @@
       "payload": {
         "kind": "answer_question",
         "question_en": "What would you do if you won?",
-        "phrase_id": "ph-b-0488"
+        "phrase_id": "ph-b-0490"
       },
       "answer": {
         "normalization": "default",

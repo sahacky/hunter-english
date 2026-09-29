@@ -217,7 +217,7 @@
       "text_en": "She hasn't arrived.",
       "translation_ru": "Она ещё не приехала.",
       "grammar_point_id": "gp-b-01",
-      "variants": ["She hasn't arrived."],
+      "variants": ["She hasn't arrived.", "She hasn't arrived yet."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0022.opus"
       }
@@ -445,7 +445,7 @@
     {
       "id": "ph-b-0045",
       "text_en": "That was fast!",
-      "translation_ru": "Быстро однако!",
+      "translation_ru": "Однако быстро!",
       "grammar_point_id": "gp-b-01",
       "variants": ["That was fast!"],
       "audio": {
@@ -834,10 +834,10 @@
     },
     {
       "id": "ph-b-0084",
-      "text_en": "I have missed one, in 2022.",
-      "translation_ru": "Я опоздал на один, в 2022-м.",
+      "text_en": "I missed one in 2022.",
+      "translation_ru": "Я опоздал на один в 2022-м.",
       "grammar_point_id": "gp-b-02",
-      "variants": ["I have missed one, in 2022."],
+      "variants": ["I missed one in 2022."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0084.opus"
       }
@@ -1445,7 +1445,7 @@
     {
       "id": "ph-b-0145",
       "text_en": "do — did — done",
-      "translation_ru": "делать — делал — сделанный (V3)",
+      "translation_ru": "выполнять — выполнил — выполненный (V3)",
       "grammar_point_id": "gp-b-04",
       "variants": ["do — did — done"],
       "audio": {
@@ -1465,7 +1465,7 @@
     {
       "id": "ph-b-0147",
       "text_en": "make — made — made",
-      "translation_ru": "делать — делал — сделанный (V3)",
+      "translation_ru": "создавать — создал — созданный (V3)",
       "grammar_point_id": "gp-b-04",
       "variants": ["make — made — made"],
       "audio": {
@@ -1605,7 +1605,7 @@
     {
       "id": "ph-b-0161",
       "text_en": "speak — spoke — spoken",
-      "translation_ru": "говорить — говорил — говорённый (V3)",
+      "translation_ru": "говорить — говорил — высказанный (V3)",
       "grammar_point_id": "gp-b-04",
       "variants": ["speak — spoke — spoken"],
       "audio": {
@@ -2445,7 +2445,7 @@
     {
       "id": "ph-b-0245",
       "text_en": "I have been fine, thanks.",
-      "translation_ru": "Нормально, спасибо.",
+      "translation_ru": "У меня всё хорошо, спасибо.",
       "grammar_point_id": "gp-b-05",
       "variants": ["I have been fine, thanks."],
       "audio": {
@@ -2644,2360 +2644,2360 @@
     },
     {
       "id": "ph-b-0265",
-      "text_en": "When have you seen him?",
-      "translation_ru": "Когда ты его видел?",
+      "text_en": "I saw him two days ago.",
+      "translation_ru": "Я видел его два дня назад.",
       "grammar_point_id": "gp-b-06",
-      "variants": ["When have you seen him?"],
+      "variants": ["I saw him two days ago."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0265.opus"
       }
     },
     {
       "id": "ph-b-0266",
-      "text_en": "I saw him two days ago.",
-      "translation_ru": "Я видел его два дня назад.",
+      "text_en": "I saw him yesterday.",
+      "translation_ru": "Я видел его вчера.",
       "grammar_point_id": "gp-b-06",
-      "variants": ["I saw him two days ago."],
+      "variants": ["I saw him yesterday."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0266.opus"
       }
     },
     {
       "id": "ph-b-0267",
-      "text_en": "I saw him yesterday.",
-      "translation_ru": "Я видел его вчера.",
+      "text_en": "I saw it two days ago.",
+      "translation_ru": "Я видел это два дня назад.",
       "grammar_point_id": "gp-b-06",
-      "variants": ["I saw him yesterday."],
+      "variants": ["I saw it two days ago."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0267.opus"
       }
     },
     {
       "id": "ph-b-0268",
-      "text_en": "I saw it two days ago.",
-      "translation_ru": "Я видел это два дня назад.",
+      "text_en": "Did you watch the game?",
+      "translation_ru": "Ты смотрел игру?",
       "grammar_point_id": "gp-b-06",
-      "variants": ["I saw it two days ago."],
+      "variants": ["Did you watch the game?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0268.opus"
       }
     },
     {
       "id": "ph-b-0269",
-      "text_en": "Did you watch the game?",
-      "translation_ru": "Ты смотрел игру?",
+      "text_en": "Yes, I watched it yesterday.",
+      "translation_ru": "Да, я смотрел её вчера.",
       "grammar_point_id": "gp-b-06",
-      "variants": ["Did you watch the game?"],
+      "variants": ["Yes, I watched it yesterday."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0269.opus"
       }
     },
     {
       "id": "ph-b-0270",
-      "text_en": "Yes, I watched it yesterday.",
-      "translation_ru": "Да, я смотрел её вчера.",
+      "text_en": "Have you watched the new episode?",
+      "translation_ru": "Ты смотрел новую серию?",
       "grammar_point_id": "gp-b-06",
-      "variants": ["Yes, I watched it yesterday."],
+      "variants": ["Have you watched the new episode?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0270.opus"
       }
     },
     {
       "id": "ph-b-0271",
-      "text_en": "Have you watched the new episode?",
-      "translation_ru": "Ты смотрел новую серию?",
+      "text_en": "Not yet.",
+      "translation_ru": "Ещё нет.",
       "grammar_point_id": "gp-b-06",
-      "variants": ["Have you watched the new episode?"],
+      "variants": ["Not yet."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0271.opus"
       }
     },
     {
       "id": "ph-b-0272",
-      "text_en": "Not yet.",
-      "translation_ru": "Ещё нет.",
+      "text_en": "I have never watched it.",
+      "translation_ru": "Я никогда её не смотрел.",
       "grammar_point_id": "gp-b-06",
-      "variants": ["Not yet."],
+      "variants": ["I have never watched it."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0272.opus"
       }
     },
     {
       "id": "ph-b-0273",
-      "text_en": "I have never watched it.",
-      "translation_ru": "Я никогда её не смотрел.",
+      "text_en": "I was in London in 2022.",
+      "translation_ru": "Я был в Лондоне в 2022-м.",
       "grammar_point_id": "gp-b-06",
-      "variants": ["I have never watched it."],
+      "variants": ["I was in London in 2022."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0273.opus"
       }
     },
     {
       "id": "ph-b-0274",
-      "text_en": "I was in London in 2022.",
-      "translation_ru": "Я был в Лондоне в 2022-м.",
+      "text_en": "I have been to London twice.",
+      "translation_ru": "Я был в Лондоне дважды.",
       "grammar_point_id": "gp-b-06",
-      "variants": ["I was in London in 2022."],
+      "variants": ["I have been to London twice."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0274.opus"
       }
     },
     {
       "id": "ph-b-0275",
-      "text_en": "I have been to London twice.",
-      "translation_ru": "Я был в Лондоне дважды.",
+      "text_en": "When were you there?",
+      "translation_ru": "Когда ты там был?",
       "grammar_point_id": "gp-b-06",
-      "variants": ["I have been to London twice."],
+      "variants": ["When were you there?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0275.opus"
       }
     },
     {
       "id": "ph-b-0276",
-      "text_en": "When were you there?",
-      "translation_ru": "Когда ты там был?",
+      "text_en": "Last spring.",
+      "translation_ru": "Прошлой весной.",
       "grammar_point_id": "gp-b-06",
-      "variants": ["When were you there?"],
+      "variants": ["Last spring."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0276.opus"
       }
     },
     {
       "id": "ph-b-0277",
-      "text_en": "Last spring.",
-      "translation_ru": "Прошлой весной.",
+      "text_en": "I liked it a lot.",
+      "translation_ru": "Мне очень понравилось.",
       "grammar_point_id": "gp-b-06",
-      "variants": ["Last spring."],
+      "variants": ["I liked it a lot."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0277.opus"
       }
     },
     {
       "id": "ph-b-0278",
-      "text_en": "I liked it a lot.",
-      "translation_ru": "Мне очень понравилось.",
+      "text_en": "What did you like most?",
+      "translation_ru": "Что понравилось больше всего?",
       "grammar_point_id": "gp-b-06",
-      "variants": ["I liked it a lot."],
+      "variants": ["What did you like most?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0278.opus"
       }
     },
     {
       "id": "ph-b-0279",
-      "text_en": "What did you like most?",
-      "translation_ru": "Что понравилось больше всего?",
+      "text_en": "I did it for me.",
+      "translation_ru": "Я сделал это для себя.",
       "grammar_point_id": "gp-b-06",
-      "variants": ["What did you like most?"],
+      "variants": ["I did it for me."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0279.opus"
       }
     },
     {
       "id": "ph-b-0280",
-      "text_en": "I did it for me.",
-      "translation_ru": "Я сделал это для себя.",
+      "text_en": "I liked it.",
+      "translation_ru": "Мне это нравилось.",
       "grammar_point_id": "gp-b-06",
-      "variants": ["I did it for me."],
+      "variants": ["I liked it."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0280.opus"
       }
     },
     {
       "id": "ph-b-0281",
-      "text_en": "I liked it.",
-      "translation_ru": "Мне это нравилось.",
+      "text_en": "I was good at it.",
+      "translation_ru": "Я был в этом хорош.",
       "grammar_point_id": "gp-b-06",
-      "variants": ["I liked it."],
+      "variants": ["I was good at it."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0281.opus"
       }
     },
     {
       "id": "ph-b-0282",
-      "text_en": "I was good at it.",
-      "translation_ru": "Я был в этом хорош.",
+      "text_en": "I have read the book.",
+      "translation_ru": "Я прочитал книгу.",
       "grammar_point_id": "gp-b-06",
-      "variants": ["I was good at it."],
+      "variants": ["I have read the book."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0282.opus"
       }
     },
     {
       "id": "ph-b-0283",
-      "text_en": "I have read the book.",
-      "translation_ru": "Я прочитал книгу.",
+      "text_en": "I read the book last month.",
+      "translation_ru": "Я прочитал книгу в прошлом месяце.",
       "grammar_point_id": "gp-b-06",
-      "variants": ["I have read the book."],
+      "variants": ["I read the book last month."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0283.opus"
       }
     },
     {
       "id": "ph-b-0284",
-      "text_en": "I read the book last month.",
-      "translation_ru": "Я прочитал книгу в прошлом месяце.",
+      "text_en": "She has lived here since childhood.",
+      "translation_ru": "Она живёт здесь с детства.",
       "grammar_point_id": "gp-b-06",
-      "variants": ["I read the book last month."],
+      "variants": ["She has lived here since childhood."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0284.opus"
       }
     },
     {
       "id": "ph-b-0285",
-      "text_en": "She has lived here since childhood.",
-      "translation_ru": "Она живёт здесь с детства.",
+      "text_en": "She lived here as a child.",
+      "translation_ru": "Она жила здесь в детстве.",
       "grammar_point_id": "gp-b-06",
-      "variants": ["She has lived here since childhood."],
+      "variants": ["She lived here as a child."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0285.opus"
       }
     },
     {
       "id": "ph-b-0286",
-      "text_en": "She lived here as a child.",
-      "translation_ru": "Она жила здесь в детстве.",
+      "text_en": "He has worked there for a year.",
+      "translation_ru": "Он работает там уже год.",
       "grammar_point_id": "gp-b-06",
-      "variants": ["She lived here as a child."],
+      "variants": ["He has worked there for a year."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0286.opus"
       }
     },
     {
       "id": "ph-b-0287",
-      "text_en": "He has worked there for a year.",
-      "translation_ru": "Он работает там уже год.",
+      "text_en": "He worked there a year ago.",
+      "translation_ru": "Он работал там год назад.",
       "grammar_point_id": "gp-b-06",
-      "variants": ["He has worked there for a year."],
+      "variants": ["He worked there a year ago."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0287.opus"
       }
     },
     {
       "id": "ph-b-0288",
-      "text_en": "He worked there a year ago.",
-      "translation_ru": "Он работал там год назад.",
+      "text_en": "I have never said that.",
+      "translation_ru": "Я никогда этого не говорил.",
       "grammar_point_id": "gp-b-06",
-      "variants": ["He worked there a year ago."],
+      "variants": ["I have never said that."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0288.opus"
       }
     },
     {
       "id": "ph-b-0289",
-      "text_en": "I have never said that.",
-      "translation_ru": "Я никогда этого не говорил.",
+      "text_en": "I said nothing.",
+      "translation_ru": "Я ничего не сказал.",
       "grammar_point_id": "gp-b-06",
-      "variants": ["I have never said that."],
+      "variants": ["I said nothing."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0289.opus"
       }
     },
     {
       "id": "ph-b-0290",
-      "text_en": "I said nothing.",
-      "translation_ru": "Я ничего не сказал.",
+      "text_en": "Yesterday is gone.",
+      "translation_ru": "Вчера ушло.",
       "grammar_point_id": "gp-b-06",
-      "variants": ["I said nothing."],
+      "variants": ["Yesterday is gone."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0290.opus"
       }
     },
     {
       "id": "ph-b-0291",
-      "text_en": "Yesterday is gone.",
-      "translation_ru": "Вчера ушло.",
+      "text_en": "Today is a new day.",
+      "translation_ru": "Сегодня новый день.",
       "grammar_point_id": "gp-b-06",
-      "variants": ["Yesterday is gone."],
+      "variants": ["Today is a new day."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0291.opus"
       }
     },
     {
       "id": "ph-b-0292",
-      "text_en": "Today is a new day.",
-      "translation_ru": "Сегодня новый день.",
+      "text_en": "Move on.",
+      "translation_ru": "Двигайся дальше.",
       "grammar_point_id": "gp-b-06",
-      "variants": ["Today is a new day."],
+      "variants": ["Move on."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0292.opus"
       }
     },
     {
       "id": "ph-b-0293",
-      "text_en": "Move on.",
-      "translation_ru": "Двигайся дальше.",
-      "grammar_point_id": "gp-b-06",
-      "variants": ["Move on."],
+      "text_en": "How long have you been learning English?",
+      "translation_ru": "Как долго ты учишь английский?",
+      "grammar_point_id": "gp-b-07",
+      "variants": ["How long have you been learning English?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0293.opus"
       }
     },
     {
       "id": "ph-b-0294",
-      "text_en": "How long have you been learning English?",
-      "translation_ru": "Как долго ты учишь английский?",
+      "text_en": "I have been learning English for two years.",
+      "translation_ru": "Я учу английский два года.",
       "grammar_point_id": "gp-b-07",
-      "variants": ["How long have you been learning English?"],
+      "variants": ["I have been learning English for two years."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0294.opus"
       }
     },
     {
       "id": "ph-b-0295",
-      "text_en": "I have been learning English for two years.",
-      "translation_ru": "Я учу английский два года.",
+      "text_en": "I have been learning English since January.",
+      "translation_ru": "Я учу английский с января.",
       "grammar_point_id": "gp-b-07",
-      "variants": ["I have been learning English for two years."],
+      "variants": ["I have been learning English since January."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0295.opus"
       }
     },
     {
       "id": "ph-b-0296",
-      "text_en": "I have been learning English since January.",
-      "translation_ru": "Я учу английский с января.",
+      "text_en": "How long have you been living here?",
+      "translation_ru": "Как долго ты здесь живёшь?",
       "grammar_point_id": "gp-b-07",
-      "variants": ["I have been learning English since January."],
+      "variants": ["How long have you been living here?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0296.opus"
       }
     },
     {
       "id": "ph-b-0297",
-      "text_en": "How long have you been living here?",
-      "translation_ru": "Как долго ты здесь живёшь?",
+      "text_en": "I have been living here for ten years.",
+      "translation_ru": "Я живу здесь десять лет.",
       "grammar_point_id": "gp-b-07",
-      "variants": ["How long have you been living here?"],
+      "variants": ["I have been living here for ten years."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0297.opus"
       }
     },
     {
       "id": "ph-b-0298",
-      "text_en": "I have been living here for ten years.",
-      "translation_ru": "Я живу здесь десять лет.",
+      "text_en": "She has been working all day.",
+      "translation_ru": "Она работает весь день.",
       "grammar_point_id": "gp-b-07",
-      "variants": ["I have been living here for ten years."],
+      "variants": ["She has been working all day."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0298.opus"
       }
     },
     {
       "id": "ph-b-0299",
-      "text_en": "She has been working all day.",
-      "translation_ru": "Она работает весь день.",
+      "text_en": "He has been waiting for two hours.",
+      "translation_ru": "Он ждёт уже два часа.",
       "grammar_point_id": "gp-b-07",
-      "variants": ["She has been working all day."],
+      "variants": ["He has been waiting for two hours."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0299.opus"
       }
     },
     {
       "id": "ph-b-0300",
-      "text_en": "He has been waiting for two hours.",
-      "translation_ru": "Он ждёт уже два часа.",
+      "text_en": "We have been travelling since morning.",
+      "translation_ru": "Мы в пути с утра.",
       "grammar_point_id": "gp-b-07",
-      "variants": ["He has been waiting for two hours."],
+      "variants": ["We have been travelling since morning."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0300.opus"
       }
     },
     {
       "id": "ph-b-0301",
-      "text_en": "We have been travelling since morning.",
-      "translation_ru": "Мы в пути с утра.",
+      "text_en": "They have been talking for an hour.",
+      "translation_ru": "Они разговаривают уже час.",
       "grammar_point_id": "gp-b-07",
-      "variants": ["We have been travelling since morning."],
+      "variants": ["They have been talking for an hour."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0301.opus"
       }
     },
     {
       "id": "ph-b-0302",
-      "text_en": "They have been talking for an hour.",
-      "translation_ru": "Они разговаривают уже час.",
+      "text_en": "I have been reading this book all week.",
+      "translation_ru": "Я читаю эту книгу всю неделю.",
       "grammar_point_id": "gp-b-07",
-      "variants": ["They have been talking for an hour."],
+      "variants": ["I have been reading this book all week."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0302.opus"
       }
     },
     {
       "id": "ph-b-0303",
-      "text_en": "I have been reading this book all week.",
-      "translation_ru": "Я читаю эту книгу всю неделю.",
+      "text_en": "It has been raining all day.",
+      "translation_ru": "Весь день идёт дождь.",
       "grammar_point_id": "gp-b-07",
-      "variants": ["I have been reading this book all week."],
+      "variants": ["It has been raining all day."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0303.opus"
       }
     },
     {
       "id": "ph-b-0304",
-      "text_en": "It has been raining all day.",
-      "translation_ru": "Весь день идёт дождь.",
+      "text_en": "The sun has been shining since morning.",
+      "translation_ru": "Солнце светит с утра.",
       "grammar_point_id": "gp-b-07",
-      "variants": ["It has been raining all day."],
+      "variants": ["The sun has been shining since morning."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0304.opus"
       }
     },
     {
       "id": "ph-b-0305",
-      "text_en": "The sun has been shining since morning.",
-      "translation_ru": "Солнце светит с утра.",
+      "text_en": "She has been cooking for three hours.",
+      "translation_ru": "Она готовит уже три часа.",
       "grammar_point_id": "gp-b-07",
-      "variants": ["The sun has been shining since morning."],
+      "variants": ["She has been cooking for three hours."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0305.opus"
       }
     },
     {
       "id": "ph-b-0306",
-      "text_en": "She has been cooking for three hours.",
-      "translation_ru": "Она готовит уже три часа.",
+      "text_en": "He has been playing football since childhood.",
+      "translation_ru": "Он играет в футбол с детства.",
       "grammar_point_id": "gp-b-07",
-      "variants": ["She has been cooking for three hours."],
+      "variants": ["He has been playing football since childhood."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0306.opus"
       }
     },
     {
       "id": "ph-b-0307",
-      "text_en": "He has been playing football since childhood.",
-      "translation_ru": "Он играет в футбол с детства.",
+      "text_en": "I have been thinking about it.",
+      "translation_ru": "Я думаю об этом.",
       "grammar_point_id": "gp-b-07",
-      "variants": ["He has been playing football since childhood."],
+      "variants": ["I have been thinking about it."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0307.opus"
       }
     },
     {
       "id": "ph-b-0308",
-      "text_en": "I have been thinking about it.",
-      "translation_ru": "Я думаю об этом.",
+      "text_en": "We have been looking for a flat.",
+      "translation_ru": "Мы ищем квартиру.",
       "grammar_point_id": "gp-b-07",
-      "variants": ["I have been thinking about it."],
+      "variants": ["We have been looking for a flat."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0308.opus"
       }
     },
     {
       "id": "ph-b-0309",
-      "text_en": "We have been looking for a flat.",
-      "translation_ru": "Мы ищем квартиру.",
+      "text_en": "She has been studying hard.",
+      "translation_ru": "Она усердно занимается.",
       "grammar_point_id": "gp-b-07",
-      "variants": ["We have been looking for a flat."],
+      "variants": ["She has been studying hard."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0309.opus"
       }
     },
     {
       "id": "ph-b-0310",
-      "text_en": "She has been studying hard.",
-      "translation_ru": "Она усердно занимается.",
+      "text_en": "How long have you been waiting?",
+      "translation_ru": "Как долго ты ждёшь?",
       "grammar_point_id": "gp-b-07",
-      "variants": ["She has been studying hard."],
+      "variants": ["How long have you been waiting?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0310.opus"
       }
     },
     {
       "id": "ph-b-0311",
-      "text_en": "How long have you been waiting?",
-      "translation_ru": "Как долго ты ждёшь?",
+      "text_en": "I have been waiting for twenty minutes.",
+      "translation_ru": "Я жду двадцать минут.",
       "grammar_point_id": "gp-b-07",
-      "variants": ["How long have you been waiting?"],
+      "variants": ["I have been waiting for twenty minutes."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0311.opus"
       }
     },
     {
       "id": "ph-b-0312",
-      "text_en": "I have been waiting for twenty minutes.",
-      "translation_ru": "Я жду двадцать минут.",
+      "text_en": "He has been driving all night.",
+      "translation_ru": "Он ехал всю ночь.",
       "grammar_point_id": "gp-b-07",
-      "variants": ["I have been waiting for twenty minutes."],
+      "variants": ["He has been driving all night."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0312.opus"
       }
     },
     {
       "id": "ph-b-0313",
-      "text_en": "He has been driving all night.",
-      "translation_ru": "Он ехал всю ночь.",
+      "text_en": "It has been snowing since Friday.",
+      "translation_ru": "Снег идёт с пятницы.",
       "grammar_point_id": "gp-b-07",
-      "variants": ["He has been driving all night."],
+      "variants": ["It has been snowing since Friday."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0313.opus"
       }
     },
     {
       "id": "ph-b-0314",
-      "text_en": "It has been snowing since Friday.",
-      "translation_ru": "Снег идёт с пятницы.",
+      "text_en": "My back hurts — I have been sitting too long.",
+      "translation_ru": "У меня болит спина — я слишком долго сидел.",
       "grammar_point_id": "gp-b-07",
-      "variants": ["It has been snowing since Friday."],
+      "variants": ["My back hurts — I have been sitting too long."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0314.opus"
       }
     },
     {
       "id": "ph-b-0315",
-      "text_en": "My back hurts — I have been sitting too long.",
-      "translation_ru": "У меня болит спина — я слишком долго сидел.",
+      "text_en": "I'm tired — I have been running.",
+      "translation_ru": "Я устал — я бегал.",
       "grammar_point_id": "gp-b-07",
-      "variants": ["My back hurts — I have been sitting too long."],
+      "variants": ["I'm tired — I have been running."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0315.opus"
       }
     },
     {
       "id": "ph-b-0316",
-      "text_en": "I'm tired — I have been running.",
-      "translation_ru": "Я устал — я бегал.",
+      "text_en": "She is out of breath — she has been climbing.",
+      "translation_ru": "Она запыхалась — она занималась скалолазанием.",
       "grammar_point_id": "gp-b-07",
-      "variants": ["I'm tired — I have been running."],
+      "variants": ["She is out of breath — she has been climbing."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0316.opus"
       }
     },
     {
       "id": "ph-b-0317",
-      "text_en": "She is out of breath — she has been climbing.",
-      "translation_ru": "Она запыхалась — она поднималась в гору.",
+      "text_en": "Why are your eyes red? — I have been crying.",
+      "translation_ru": "Почему у тебя красные глаза? — Я плакала.",
       "grammar_point_id": "gp-b-07",
-      "variants": ["She is out of breath — she has been climbing."],
+      "variants": ["Why are your eyes red? — I have been crying."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0317.opus"
       }
     },
     {
       "id": "ph-b-0318",
-      "text_en": "Why are your eyes red? — I have been crying.",
-      "translation_ru": "Почему у тебя красные глаза? — Я плакала.",
+      "text_en": "What have you been doing?",
+      "translation_ru": "Чем ты занимался?",
       "grammar_point_id": "gp-b-07",
-      "variants": ["Why are your eyes red? — I have been crying."],
+      "variants": ["What have you been doing?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0318.opus"
       }
     },
     {
       "id": "ph-b-0319",
-      "text_en": "What have you been doing?",
-      "translation_ru": "Чем ты занимался?",
+      "text_en": "I have been cleaning the house.",
+      "translation_ru": "Я убирался в доме.",
       "grammar_point_id": "gp-b-07",
-      "variants": ["What have you been doing?"],
+      "variants": ["I have been cleaning the house."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0319.opus"
       }
     },
     {
       "id": "ph-b-0320",
-      "text_en": "I have been cleaning the house.",
-      "translation_ru": "Я убирался в доме.",
+      "text_en": "We have been watching a series.",
+      "translation_ru": "Мы смотрели сериал.",
       "grammar_point_id": "gp-b-07",
-      "variants": ["I have been cleaning the house."],
+      "variants": ["We have been watching a series."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0320.opus"
       }
     },
     {
       "id": "ph-b-0321",
-      "text_en": "We have been watching a series.",
-      "translation_ru": "Мы смотрели сериал.",
+      "text_en": "I have been trying to call you.",
+      "translation_ru": "Я пытался тебе дозвониться.",
       "grammar_point_id": "gp-b-07",
-      "variants": ["We have been watching a series."],
+      "variants": ["I have been trying to call you."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0321.opus"
       }
     },
     {
       "id": "ph-b-0322",
-      "text_en": "I have been trying to call you.",
-      "translation_ru": "Я пытался тебе дозвониться.",
+      "text_en": "How long have you been married?",
+      "translation_ru": "Как долго вы женаты?",
       "grammar_point_id": "gp-b-07",
-      "variants": ["I have been trying to call you."],
+      "variants": ["How long have you been married?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0322.opus"
       }
     },
     {
       "id": "ph-b-0323",
-      "text_en": "How long have you been married?",
-      "translation_ru": "Как долго вы женаты?",
+      "text_en": "For five years.",
+      "translation_ru": "Пять лет.",
       "grammar_point_id": "gp-b-07",
-      "variants": ["How long have you been married?"],
+      "variants": ["For five years."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0323.opus"
       }
     },
     {
       "id": "ph-b-0324",
-      "text_en": "For five years.",
-      "translation_ru": "Пять лет.",
+      "text_en": "We have been together since 2020.",
+      "translation_ru": "Мы вместе с 2020-го.",
       "grammar_point_id": "gp-b-07",
-      "variants": ["For five years."],
+      "variants": ["We have been together since 2020."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0324.opus"
       }
     },
     {
       "id": "ph-b-0325",
-      "text_en": "We have been together since 2020.",
-      "translation_ru": "Мы вместе с 2020-го.",
+      "text_en": "I have been leveling up this whole time.",
+      "translation_ru": "Я всё это время прокачивался.",
       "grammar_point_id": "gp-b-07",
-      "variants": ["We have been together since 2020."],
+      "variants": ["I have been leveling up this whole time."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0325.opus"
       }
     },
     {
       "id": "ph-b-0326",
-      "text_en": "I have been levelling up this whole time.",
-      "translation_ru": "Я всё это время прокачивался.",
+      "text_en": "You have been improving.",
+      "translation_ru": "Ты прогрессируешь.",
       "grammar_point_id": "gp-b-07",
-      "variants": ["I have been levelling up this whole time."],
+      "variants": ["You have been improving."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0326.opus"
       }
     },
     {
       "id": "ph-b-0327",
-      "text_en": "You have been improving.",
-      "translation_ru": "Ты прогрессируешь.",
+      "text_en": "Your English is getting better and better.",
+      "translation_ru": "Твой английский становится всё лучше.",
       "grammar_point_id": "gp-b-07",
-      "variants": ["You have been improving."],
+      "variants": ["Your English is getting better and better."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0327.opus"
       }
     },
     {
       "id": "ph-b-0328",
-      "text_en": "Your English is getting better and better.",
-      "translation_ru": "Твой английский становится всё лучше.",
+      "text_en": "I have been practising every day.",
+      "translation_ru": "Я практикуюсь каждый день.",
       "grammar_point_id": "gp-b-07",
-      "variants": ["Your English is getting better and better."],
+      "variants": ["I have been practising every day."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0328.opus"
       }
     },
     {
       "id": "ph-b-0329",
-      "text_en": "I have been practising every day.",
-      "translation_ru": "Я практикуюсь каждый день.",
+      "text_en": "Keep going!",
+      "translation_ru": "Продолжай!",
       "grammar_point_id": "gp-b-07",
-      "variants": ["I have been practising every day."],
+      "variants": ["Keep going!"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0329.opus"
       }
     },
     {
       "id": "ph-b-0330",
-      "text_en": "Keep going!",
-      "translation_ru": "Продолжай!",
+      "text_en": "Don't give up.",
+      "translation_ru": "Не сдавайся.",
       "grammar_point_id": "gp-b-07",
-      "variants": ["Keep going!"],
+      "variants": ["Don't give up."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0330.opus"
       }
     },
     {
       "id": "ph-b-0331",
-      "text_en": "Don't give up.",
-      "translation_ru": "Не сдавайся.",
+      "text_en": "It pays off.",
+      "translation_ru": "Это окупается.",
       "grammar_point_id": "gp-b-07",
-      "variants": ["Don't give up."],
+      "variants": ["It pays off."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0331.opus"
       }
     },
     {
       "id": "ph-b-0332",
-      "text_en": "It pays off.",
-      "translation_ru": "Это окупается.",
+      "text_en": "How long has it been going on?",
+      "translation_ru": "Как давно это продолжается?",
       "grammar_point_id": "gp-b-07",
-      "variants": ["It pays off."],
+      "variants": ["How long has it been going on?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0332.opus"
       }
     },
     {
       "id": "ph-b-0333",
-      "text_en": "How long has it been going on?",
-      "translation_ru": "Как давно это продолжается?",
+      "text_en": "It started a week ago.",
+      "translation_ru": "Это началось неделю назад.",
       "grammar_point_id": "gp-b-07",
-      "variants": ["How long has it been going on?"],
+      "variants": ["It started a week ago."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0333.opus"
       }
     },
     {
       "id": "ph-b-0334",
-      "text_en": "It started a week ago.",
-      "translation_ru": "Это началось неделю назад.",
+      "text_en": "How long have you known each other?",
+      "translation_ru": "Как давно вы знакомы?",
       "grammar_point_id": "gp-b-07",
-      "variants": ["It started a week ago."],
+      "variants": ["How long have you known each other?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0334.opus"
       }
     },
     {
       "id": "ph-b-0335",
-      "text_en": "How long have you known each other?",
-      "translation_ru": "Как давно вы знакомы?",
+      "text_en": "Since school.",
+      "translation_ru": "Со школы.",
       "grammar_point_id": "gp-b-07",
-      "variants": ["How long have you known each other?"],
+      "variants": ["Since school."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0335.opus"
       }
     },
     {
       "id": "ph-b-0336",
-      "text_en": "Since school.",
-      "translation_ru": "Со школы.",
+      "text_en": "That's a long time.",
+      "translation_ru": "Это долго.",
       "grammar_point_id": "gp-b-07",
-      "variants": ["Since school."],
+      "variants": ["That's a long time."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0336.opus"
       }
     },
     {
       "id": "ph-b-0337",
-      "text_en": "That's a long time.",
-      "translation_ru": "Это долго.",
-      "grammar_point_id": "gp-b-07",
-      "variants": ["That's a long time."],
+      "text_en": "I had finished before you came.",
+      "translation_ru": "Я закончил до того, как ты пришёл.",
+      "grammar_point_id": "gp-b-08",
+      "variants": ["I had finished before you came."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0337.opus"
       }
     },
     {
       "id": "ph-b-0338",
-      "text_en": "I had finished before you came.",
-      "translation_ru": "Я закончил до того, как ты пришёл.",
+      "text_en": "She had left when I arrived.",
+      "translation_ru": "Она уже ушла, когда я приехал.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["I had finished before you came."],
+      "variants": ["She had left when I arrived."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0338.opus"
       }
     },
     {
       "id": "ph-b-0339",
-      "text_en": "She had left when I arrived.",
-      "translation_ru": "Она уже ушла, когда я приехал.",
+      "text_en": "He had eaten before the trip.",
+      "translation_ru": "Он поел до поездки.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["She had left when I arrived."],
+      "variants": ["He had eaten before the trip."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0339.opus"
       }
     },
     {
       "id": "ph-b-0340",
-      "text_en": "He had eaten before the trip.",
-      "translation_ru": "Он поел до поездки.",
+      "text_en": "We had booked the tickets in advance.",
+      "translation_ru": "Мы забронировали билеты заранее.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["He had eaten before the trip."],
+      "variants": ["We had booked the tickets in advance."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0340.opus"
       }
     },
     {
       "id": "ph-b-0341",
-      "text_en": "We had booked the tickets in advance.",
-      "translation_ru": "Мы забронировали билеты заранее.",
+      "text_en": "They had sold out by noon.",
+      "translation_ru": "Всё было распродано к полудню.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["We had booked the tickets in advance."],
+      "variants": ["They had sold out by noon."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0341.opus"
       }
     },
     {
       "id": "ph-b-0342",
-      "text_en": "They had sold out by noon.",
-      "translation_ru": "Всё было распродано к полудню.",
+      "text_en": "The film had already started.",
+      "translation_ru": "Фильм уже начался.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["They had sold out by noon."],
+      "variants": ["The film had already started."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0342.opus"
       }
     },
     {
       "id": "ph-b-0343",
-      "text_en": "The film had already started.",
-      "translation_ru": "Фильм уже начался.",
+      "text_en": "I had never seen it before.",
+      "translation_ru": "Я никогда раньше этого не видел.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["The film had already started."],
+      "variants": ["I had never seen it before."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0343.opus"
       }
     },
     {
       "id": "ph-b-0344",
-      "text_en": "I had never seen it before.",
-      "translation_ru": "Я никогда раньше этого не видел.",
+      "text_en": "She had never been there before that trip.",
+      "translation_ru": "Она никогда раньше не была там до той поездки.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["I had never seen it before."],
+      "variants": ["She had never been there before that trip."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0344.opus"
       }
     },
     {
       "id": "ph-b-0345",
-      "text_en": "She had never been there before that trip.",
-      "translation_ru": "Она никогда раньше не была там до той поездки.",
+      "text_en": "He had forgotten his wallet.",
+      "translation_ru": "Он забыл кошелёк.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["She had never been there before that trip."],
+      "variants": ["He had forgotten his wallet."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0345.opus"
       }
     },
     {
       "id": "ph-b-0346",
-      "text_en": "He had forgotten his wallet.",
-      "translation_ru": "Он забыл кошелёк.",
+      "text_en": "I had lost the address.",
+      "translation_ru": "Я потерял адрес.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["He had forgotten his wallet."],
+      "variants": ["I had lost the address."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0346.opus"
       }
     },
     {
       "id": "ph-b-0347",
-      "text_en": "I had lost the address.",
-      "translation_ru": "Я потерял адрес.",
+      "text_en": "We had no money — I had spent it all.",
+      "translation_ru": "У нас не было денег — я всё потратил.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["I had lost the address."],
+      "variants": ["We had no money — I had spent it all."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0347.opus"
       }
     },
     {
       "id": "ph-b-0348",
-      "text_en": "We had no money — I had spent it all.",
-      "translation_ru": "У нас не было денег — я всё потратил.",
+      "text_en": "The bus had gone when we got there.",
+      "translation_ru": "Автобус ушёл, когда мы туда добрались.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["We had no money — I had spent it all."],
+      "variants": ["The bus had gone when we got there."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0348.opus"
       }
     },
     {
       "id": "ph-b-0349",
-      "text_en": "The bus had gone when we got there.",
-      "translation_ru": "Автобус ушёл, когда мы туда добрались.",
+      "text_en": "I realized I had made a mistake.",
+      "translation_ru": "Я понял, что сделал ошибку.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["The bus had gone when we got there."],
+      "variants": ["I realized I had made a mistake."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0349.opus"
       }
     },
     {
       "id": "ph-b-0350",
-      "text_en": "I realized I had made a mistake.",
-      "translation_ru": "Я понял, что сделал ошибку.",
+      "text_en": "She said she had already eaten.",
+      "translation_ru": "Она сказала, что уже поела.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["I realized I had made a mistake."],
+      "variants": ["She said she had already eaten."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0350.opus"
       }
     },
     {
       "id": "ph-b-0351",
-      "text_en": "She said she had already eaten.",
-      "translation_ru": "Она сказала, что уже поела.",
+      "text_en": "He told me he had finished.",
+      "translation_ru": "Он сказал мне, что закончил.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["She said she had already eaten."],
+      "variants": ["He told me he had finished."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0351.opus"
       }
     },
     {
       "id": "ph-b-0352",
-      "text_en": "He told me he had finished.",
-      "translation_ru": "Он сказал мне, что закончил.",
+      "text_en": "I thought I had seen him before.",
+      "translation_ru": "Я подумал, что уже видел его раньше.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["He told me he had finished."],
+      "variants": ["I thought I had seen him before."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0352.opus"
       }
     },
     {
       "id": "ph-b-0353",
-      "text_en": "I thought I had seen him before.",
-      "translation_ru": "Я подумал, что уже видел его раньше.",
+      "text_en": "It was too late — the shop had closed.",
+      "translation_ru": "Было слишком поздно — магазин закрылся.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["I thought I had seen him before."],
+      "variants": ["It was too late — the shop had closed."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0353.opus"
       }
     },
     {
       "id": "ph-b-0354",
-      "text_en": "It was too late — the shop had closed.",
-      "translation_ru": "Было слишком поздно — магазин закрылся.",
+      "text_en": "The plane had taken off.",
+      "translation_ru": "Самолёт взлетел.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["It was too late — the shop had closed."],
+      "variants": ["The plane had taken off."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0354.opus"
       }
     },
     {
       "id": "ph-b-0355",
-      "text_en": "The plane had taken off.",
-      "translation_ru": "Самолёт взлетел.",
+      "text_en": "When I got home, she had already gone to bed.",
+      "translation_ru": "Когда я пришёл домой, она уже легла спать.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["The plane had taken off."],
+      "variants": ["When I got home, she had already gone to bed."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0355.opus"
       }
     },
     {
       "id": "ph-b-0356",
-      "text_en": "When I got home, she had already gone to bed.",
-      "translation_ru": "Когда я пришёл домой, она уже легла спать.",
+      "text_en": "By the time we arrived, the party had ended.",
+      "translation_ru": "К моменту нашего приезда вечеринка закончилась.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["When I got home, she had already gone to bed."],
+      "variants": ["By the time we arrived, the party had ended."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0356.opus"
       }
     },
     {
       "id": "ph-b-0357",
-      "text_en": "By the time we arrived, the party had ended.",
-      "translation_ru": "К моменту нашего приезда вечеринка закончилась.",
+      "text_en": "After I had finished, I went for a walk.",
+      "translation_ru": "После того как я закончил, я пошёл гулять.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["By the time we arrived, the party had ended."],
+      "variants": ["After I had finished, I went for a walk."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0357.opus"
       }
     },
     {
       "id": "ph-b-0358",
-      "text_en": "After I had finished, I went for a walk.",
-      "translation_ru": "После того как я закончил, я пошёл гулять.",
+      "text_en": "After she had said it, she regretted it.",
+      "translation_ru": "После того как она это сказала, она пожалела.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["After I had finished, I went for a walk."],
+      "variants": ["After she had said it, she regretted it."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0358.opus"
       }
     },
     {
       "id": "ph-b-0359",
-      "text_en": "After she had said it, she regretted.",
-      "translation_ru": "После того как она это сказала, она пожалела.",
+      "text_en": "I had never heard it before that day.",
+      "translation_ru": "Я никогда не слышал этого до того дня.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["After she had said it, she regretted."],
+      "variants": ["I had never heard it before that day."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0359.opus"
       }
     },
     {
       "id": "ph-b-0360",
-      "text_en": "I had never heard it before that day.",
-      "translation_ru": "Я никогда не слышал этого до того дня.",
+      "text_en": "The city had changed a lot.",
+      "translation_ru": "Город сильно изменился.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["I had never heard it before that day."],
+      "variants": ["The city had changed a lot."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0360.opus"
       }
     },
     {
       "id": "ph-b-0361",
-      "text_en": "The city had changed a lot.",
-      "translation_ru": "Город сильно изменился.",
+      "text_en": "Everything had gone wrong.",
+      "translation_ru": "Всё пошло не так.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["The city had changed a lot."],
+      "variants": ["Everything had gone wrong."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0361.opus"
       }
     },
     {
       "id": "ph-b-0362",
-      "text_en": "Everything had gone wrong.",
-      "translation_ru": "Всё пошло не так.",
+      "text_en": "I had a dream.",
+      "translation_ru": "У меня была мечта.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["Everything had gone wrong."],
+      "variants": ["I had a dream."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0362.opus"
       }
     },
     {
       "id": "ph-b-0363",
-      "text_en": "I had a dream.",
-      "translation_ru": "У меня была мечта.",
+      "text_en": "A dream is something you do for yourself.",
+      "translation_ru": "Мечта — это то, что ты делаешь для себя.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["I had a dream."],
+      "variants": ["A dream is something you do for yourself."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0363.opus"
       }
     },
     {
       "id": "ph-b-0364",
-      "text_en": "A dream is something you do for yourself.",
-      "translation_ru": "Мечта — это то, что ты делаешь для себя.",
+      "text_en": "It had taken years.",
+      "translation_ru": "Это заняло годы.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["A dream is something you do for yourself."],
+      "variants": ["It had taken years."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0364.opus"
       }
     },
     {
       "id": "ph-b-0365",
-      "text_en": "It had taken years.",
-      "translation_ru": "Это заняло годы.",
+      "text_en": "Nobody had believed in him.",
+      "translation_ru": "Никто в него не верил.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["It had taken years."],
+      "variants": ["Nobody had believed in him."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0365.opus"
       }
     },
     {
       "id": "ph-b-0366",
-      "text_en": "Nobody had believed in him.",
-      "translation_ru": "Никто в него не верил.",
+      "text_en": "He had kept his promise.",
+      "translation_ru": "Он сдержал обещание.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["Nobody had believed in him."],
+      "variants": ["He had kept his promise."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0366.opus"
       }
     },
     {
       "id": "ph-b-0367",
-      "text_en": "He had kept his promise.",
-      "translation_ru": "Он сдержал обещание.",
+      "text_en": "They had won the war.",
+      "translation_ru": "Они выиграли войну.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["He had kept his promise."],
+      "variants": ["They had won the war."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0367.opus"
       }
     },
     {
       "id": "ph-b-0368",
-      "text_en": "They had won the war.",
-      "translation_ru": "Они выиграли войну.",
+      "text_en": "She had found the key at last.",
+      "translation_ru": "Она наконец нашла ключ.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["They had won the war."],
+      "variants": ["She had found the key at last."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0368.opus"
       }
     },
     {
       "id": "ph-b-0369",
-      "text_en": "She had found the key at last.",
-      "translation_ru": "Она наконец нашла ключ.",
+      "text_en": "The train had left without us.",
+      "translation_ru": "Поезд ушёл без нас.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["She had found the key at last."],
+      "variants": ["The train had left without us."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0369.opus"
       }
     },
     {
       "id": "ph-b-0370",
-      "text_en": "The train had left without us.",
-      "translation_ru": "Поезд ушёл без нас.",
+      "text_en": "I had missed my chance.",
+      "translation_ru": "Я упустил свой шанс.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["The train had left without us."],
+      "variants": ["I had missed my chance."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0370.opus"
       }
     },
     {
       "id": "ph-b-0371",
-      "text_en": "I had missed my chance.",
-      "translation_ru": "Я упустил свой шанс.",
+      "text_en": "It had all happened before.",
+      "translation_ru": "Это всё уже случалось раньше.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["I had missed my chance."],
+      "variants": ["It had all happened before."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0371.opus"
       }
     },
     {
       "id": "ph-b-0372",
-      "text_en": "It had all happened before.",
-      "translation_ru": "Это всё уже случалось раньше.",
+      "text_en": "I didn't know what had happened.",
+      "translation_ru": "Я не знал, что случилось.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["It had all happened before."],
+      "variants": ["I didn't know what had happened."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0372.opus"
       }
     },
     {
       "id": "ph-b-0373",
-      "text_en": "I didn't know what had happened.",
-      "translation_ru": "Я не знал, что случилось.",
+      "text_en": "What had gone wrong?",
+      "translation_ru": "Что пошло не так?",
       "grammar_point_id": "gp-b-08",
-      "variants": ["I didn't know what had happened."],
+      "variants": ["What had gone wrong?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0373.opus"
       }
     },
     {
       "id": "ph-b-0374",
-      "text_en": "What had gone wrong?",
-      "translation_ru": "Что пошло не так?",
+      "text_en": "By then, everything had changed.",
+      "translation_ru": "К тому времени всё изменилось.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["What had gone wrong?"],
+      "variants": ["By then, everything had changed."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0374.opus"
       }
     },
     {
       "id": "ph-b-0375",
-      "text_en": "By then, everything had changed.",
-      "translation_ru": "К тому времени всё изменилось.",
+      "text_en": "I wish I had known.",
+      "translation_ru": "Жаль, что я не знал.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["By then, everything had changed."],
+      "variants": ["I wish I had known."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0375.opus"
       }
     },
     {
       "id": "ph-b-0376",
-      "text_en": "I wish I had known.",
-      "translation_ru": "Жаль, что я не знал.",
+      "text_en": "If only I had listened.",
+      "translation_ru": "Если бы я только слушал.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["I wish I had known."],
+      "variants": ["If only I had listened."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0376.opus"
       }
     },
     {
       "id": "ph-b-0377",
-      "text_en": "If only I had listened.",
-      "translation_ru": "Если бы я только слушал.",
+      "text_en": "Hindsight is a wonderful thing.",
+      "translation_ru": "Задним умом все крепки.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["If only I had listened."],
+      "variants": ["Hindsight is a wonderful thing."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0377.opus"
       }
     },
     {
       "id": "ph-b-0378",
-      "text_en": "Hindsight is a wonderful thing.",
-      "translation_ru": "Задним умом все крепки.",
+      "text_en": "It was bound to happen.",
+      "translation_ru": "Это должно было случиться.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["Hindsight is a wonderful thing."],
+      "variants": ["It was bound to happen."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0378.opus"
       }
     },
     {
       "id": "ph-b-0379",
-      "text_en": "It was bound to happen.",
-      "translation_ru": "Это должно было случиться.",
+      "text_en": "The past is the past.",
+      "translation_ru": "Прошлое остаётся прошлым.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["It was bound to happen."],
+      "variants": ["The past is the past."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0379.opus"
       }
     },
     {
       "id": "ph-b-0380",
-      "text_en": "The past is the past.",
-      "translation_ru": "Прошлое остаётся прошлым.",
+      "text_en": "What's done is done.",
+      "translation_ru": "Сделанного не воротишь.",
       "grammar_point_id": "gp-b-08",
-      "variants": ["The past is the past."],
+      "variants": ["What's done is done."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0380.opus"
       }
     },
     {
       "id": "ph-b-0381",
-      "text_en": "What's done is done.",
-      "translation_ru": "Сделанного не воротишь.",
-      "grammar_point_id": "gp-b-08",
-      "variants": ["What's done is done."],
+      "text_en": "I have finished.",
+      "translation_ru": "Я закончил.",
+      "grammar_point_id": "gp-b-09",
+      "variants": ["I have finished."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0381.opus"
       }
     },
     {
       "id": "ph-b-0382",
-      "text_en": "I have finished.",
-      "translation_ru": "Я закончил.",
+      "text_en": "I have been waiting for an hour.",
+      "translation_ru": "Я жду уже час.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["I have finished."],
+      "variants": ["I have been waiting for an hour."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0382.opus"
       }
     },
     {
       "id": "ph-b-0383",
-      "text_en": "I have been waiting for an hour.",
-      "translation_ru": "Я жду уже час.",
+      "text_en": "I had finished before you came.",
+      "translation_ru": "Я закончил до того, как ты пришёл.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["I have been waiting for an hour."],
+      "variants": ["I had finished before you came."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0383.opus"
       }
     },
     {
       "id": "ph-b-0384",
-      "text_en": "I had finished before you came.",
-      "translation_ru": "Я закончил до того, как ты пришёл.",
+      "text_en": "She has just left.",
+      "translation_ru": "Она только что ушла.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["I had finished before you came."],
+      "variants": ["She has just left."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0384.opus"
       }
     },
     {
       "id": "ph-b-0385",
-      "text_en": "She has just left.",
-      "translation_ru": "Она только что ушла.",
+      "text_en": "He had already gone.",
+      "translation_ru": "Он уже ушёл.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["She has just left."],
+      "variants": ["He had already gone."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0385.opus"
       }
     },
     {
       "id": "ph-b-0386",
-      "text_en": "He had already gone.",
-      "translation_ru": "Он уже ушёл.",
+      "text_en": "Have you ever been to Rome?",
+      "translation_ru": "Ты когда-нибудь был в Риме?",
       "grammar_point_id": "gp-b-09",
-      "variants": ["He had already gone."],
+      "variants": ["Have you ever been to Rome?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0386.opus"
       }
     },
     {
       "id": "ph-b-0387",
-      "text_en": "Have you ever been to Rome?",
-      "translation_ru": "Ты когда-нибудь был в Риме?",
+      "text_en": "I went to Rome last year.",
+      "translation_ru": "Я ездил в Рим в прошлом году.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["Have you ever been to Rome?"],
+      "variants": ["I went to Rome last year."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0387.opus"
       }
     },
     {
       "id": "ph-b-0388",
-      "text_en": "I went to Rome last year.",
-      "translation_ru": "Я ездил в Рим в прошлом году.",
+      "text_en": "I have been learning for two years.",
+      "translation_ru": "Я учусь уже два года.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["I went to Rome last year."],
+      "variants": ["I have been learning for two years."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0388.opus"
       }
     },
     {
       "id": "ph-b-0389",
-      "text_en": "I have been learning for two years.",
-      "translation_ru": "Я учусь уже два года.",
+      "text_en": "She has never flown.",
+      "translation_ru": "Она никогда не летала.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["I have been learning for two years."],
+      "variants": ["She has never flown."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0389.opus"
       }
     },
     {
       "id": "ph-b-0390",
-      "text_en": "She has never flown.",
-      "translation_ru": "Она никогда не летала.",
+      "text_en": "We hadn't booked — everything was full.",
+      "translation_ru": "Мы не забронировали — всё было занято.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["She has never flown."],
+      "variants": ["We hadn't booked — everything was full."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0390.opus"
       }
     },
     {
       "id": "ph-b-0391",
-      "text_en": "We hadn't booked — everything was full.",
-      "translation_ru": "Мы не забронировали — всё было занято.",
+      "text_en": "I haven't eaten yet.",
+      "translation_ru": "Я ещё не ел.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["We hadn't booked — everything was full."],
+      "variants": ["I haven't eaten yet."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0391.opus"
       }
     },
     {
       "id": "ph-b-0392",
-      "text_en": "I haven't eaten yet.",
-      "translation_ru": "Я ещё не ел.",
+      "text_en": "The film had started when we arrived.",
+      "translation_ru": "Фильм начался, когда мы приехали.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["I haven't eaten yet."],
+      "variants": ["The film had started when we arrived."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0392.opus"
       }
     },
     {
       "id": "ph-b-0393",
-      "text_en": "The film had started when we arrived.",
-      "translation_ru": "Фильм начался, когда мы приехали.",
+      "text_en": "He has been working since morning.",
+      "translation_ru": "Он работает с утра.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["The film had started when we arrived."],
+      "variants": ["He has been working since morning."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0393.opus"
       }
     },
     {
       "id": "ph-b-0394",
-      "text_en": "He has been working since morning.",
-      "translation_ru": "Он работает с утра.",
+      "text_en": "They had sold out by noon.",
+      "translation_ru": "К полудню всё распродали.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["He has been working since morning."],
+      "variants": ["They had sold out by noon."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0394.opus"
       }
     },
     {
       "id": "ph-b-0395",
-      "text_en": "They had sold out by noon.",
-      "translation_ru": "К полудню всё распродали.",
+      "text_en": "I have just seen him.",
+      "translation_ru": "Я только что его видел.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["They had sold out by noon."],
+      "variants": ["I have just seen him."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0395.opus"
       }
     },
     {
       "id": "ph-b-0396",
-      "text_en": "I have just seen him.",
-      "translation_ru": "Я только что его видел.",
+      "text_en": "She had lost the keys.",
+      "translation_ru": "Она потеряла ключи.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["I have just seen him."],
+      "variants": ["She had lost the keys."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0396.opus"
       }
     },
     {
       "id": "ph-b-0397",
-      "text_en": "She had lost the keys.",
-      "translation_ru": "Она потеряла ключи.",
+      "text_en": "I have known him for years.",
+      "translation_ru": "Я знаю его много лет.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["She had lost the keys."],
+      "variants": ["I have known him for years."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0397.opus"
       }
     },
     {
       "id": "ph-b-0398",
-      "text_en": "I have known him for years.",
-      "translation_ru": "Я знаю его много лет.",
+      "text_en": "What have you been doing?",
+      "translation_ru": "Чем ты занимался?",
       "grammar_point_id": "gp-b-09",
-      "variants": ["I have known him for years."],
+      "variants": ["What have you been doing?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0398.opus"
       }
     },
     {
       "id": "ph-b-0399",
-      "text_en": "What have you been doing?",
-      "translation_ru": "Чем ты занимался?",
+      "text_en": "How long have you been waiting?",
+      "translation_ru": "Как долго ты ждёшь?",
       "grammar_point_id": "gp-b-09",
-      "variants": ["What have you been doing?"],
+      "variants": ["How long have you been waiting?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0399.opus"
       }
     },
     {
       "id": "ph-b-0400",
-      "text_en": "How long have you been waiting?",
-      "translation_ru": "Как долго ты ждёшь?",
+      "text_en": "I had no idea.",
+      "translation_ru": "Я и не догадывался.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["How long have you been waiting?"],
+      "variants": ["I had no idea."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0400.opus"
       }
     },
     {
       "id": "ph-b-0401",
-      "text_en": "I had no idea.",
-      "translation_ru": "Я и не догадывался.",
+      "text_en": "I have already told you.",
+      "translation_ru": "Я тебе уже говорил.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["I had no idea."],
+      "variants": ["I have already told you."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0401.opus"
       }
     },
     {
       "id": "ph-b-0402",
-      "text_en": "I have already told you.",
-      "translation_ru": "Я тебе уже говорил.",
+      "text_en": "He said he had finished.",
+      "translation_ru": "Он сказал, что закончил.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["I have already told you."],
+      "variants": ["He said he had finished."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0402.opus"
       }
     },
     {
       "id": "ph-b-0403",
-      "text_en": "He said he had finished.",
-      "translation_ru": "Он сказал, что закончил.",
+      "text_en": "We have moved.",
+      "translation_ru": "Мы переехали.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["He said he had finished."],
+      "variants": ["We have moved."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0403.opus"
       }
     },
     {
       "id": "ph-b-0404",
-      "text_en": "We have moved.",
-      "translation_ru": "Мы переехали.",
+      "text_en": "They had never met before.",
+      "translation_ru": "Они никогда раньше не встречались.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["We have moved."],
+      "variants": ["They had never met before."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0404.opus"
       }
     },
     {
       "id": "ph-b-0405",
-      "text_en": "They had never met before.",
-      "translation_ru": "Они никогда раньше не встречались.",
+      "text_en": "She has been cooking all morning.",
+      "translation_ru": "Она готовит всё утро.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["They had never met before."],
+      "variants": ["She has been cooking all morning."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0405.opus"
       }
     },
     {
       "id": "ph-b-0406",
-      "text_en": "She has been cooking all morning.",
-      "translation_ru": "Она готовит всё утро.",
+      "text_en": "The train had already left.",
+      "translation_ru": "Поезд уже ушёл.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["She has been cooking all morning."],
+      "variants": ["The train had already left."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0406.opus"
       }
     },
     {
       "id": "ph-b-0407",
-      "text_en": "The train had already left.",
-      "translation_ru": "Поезд уже ушёл.",
+      "text_en": "I have never tried it.",
+      "translation_ru": "Я никогда это не пробовал.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["The train had already left."],
+      "variants": ["I have never tried it."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0407.opus"
       }
     },
     {
       "id": "ph-b-0408",
-      "text_en": "I have never tried it.",
-      "translation_ru": "Я никогда это не пробовал.",
+      "text_en": "He had broken the window.",
+      "translation_ru": "Он разбил окно.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["I have never tried it."],
+      "variants": ["He had broken the window."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0408.opus"
       }
     },
     {
       "id": "ph-b-0409",
-      "text_en": "He had broken the window.",
-      "translation_ru": "Он разбил окно.",
+      "text_en": "I have bought the tickets.",
+      "translation_ru": "Я купил билеты.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["He had broken the window."],
+      "variants": ["I have bought the tickets."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0409.opus"
       }
     },
     {
       "id": "ph-b-0410",
-      "text_en": "I have bought the tickets.",
-      "translation_ru": "Я купил билеты.",
+      "text_en": "We had paid in advance.",
+      "translation_ru": "Мы заплатили заранее.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["I have bought the tickets."],
+      "variants": ["We had paid in advance."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0410.opus"
       }
     },
     {
       "id": "ph-b-0411",
-      "text_en": "We had paid in advance.",
-      "translation_ru": "Мы заплатили заранее.",
+      "text_en": "She has just called.",
+      "translation_ru": "Она только что позвонила.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["We had paid in advance."],
+      "variants": ["She has just called."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0411.opus"
       }
     },
     {
       "id": "ph-b-0412",
-      "text_en": "She has just called.",
-      "translation_ru": "Она только что позвонила.",
+      "text_en": "I had never seen snow before.",
+      "translation_ru": "Я никогда раньше не видел снега.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["She has just called."],
+      "variants": ["I had never seen snow before."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0412.opus"
       }
     },
     {
       "id": "ph-b-0413",
-      "text_en": "I had never seen snow before.",
-      "translation_ru": "Я никогда раньше не видел снега.",
+      "text_en": "It has been raining all day.",
+      "translation_ru": "Весь день идёт дождь.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["I had never seen snow before."],
+      "variants": ["It has been raining all day."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0413.opus"
       }
     },
     {
       "id": "ph-b-0414",
-      "text_en": "It has been raining all day.",
-      "translation_ru": "Весь день идёт дождь.",
+      "text_en": "He had kept it secret.",
+      "translation_ru": "Он держал это в секрете.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["It has been raining all day."],
+      "variants": ["He had kept it secret."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0414.opus"
       }
     },
     {
       "id": "ph-b-0415",
-      "text_en": "He had kept it secret.",
-      "translation_ru": "Он держал это в секрете.",
+      "text_en": "I have done my best.",
+      "translation_ru": "Я сделал всё возможное.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["He had kept it secret."],
+      "variants": ["I have done my best."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0415.opus"
       }
     },
     {
       "id": "ph-b-0416",
-      "text_en": "I have done my best.",
-      "translation_ru": "Я сделал всё возможное.",
+      "text_en": "Everything had gone well.",
+      "translation_ru": "Всё прошло хорошо.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["I have done my best."],
+      "variants": ["Everything had gone well."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0416.opus"
       }
     },
     {
       "id": "ph-b-0417",
-      "text_en": "Everything had gone well.",
-      "translation_ru": "Всё прошло хорошо.",
+      "text_en": "Have you finished yet?",
+      "translation_ru": "Ты уже закончил?",
       "grammar_point_id": "gp-b-09",
-      "variants": ["Everything had gone well."],
+      "variants": ["Have you finished yet?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0417.opus"
       }
     },
     {
       "id": "ph-b-0418",
-      "text_en": "Have you finished yet?",
-      "translation_ru": "Ты уже закончил?",
+      "text_en": "What had happened?",
+      "translation_ru": "Что случилось?",
       "grammar_point_id": "gp-b-09",
-      "variants": ["Have you finished yet?"],
+      "variants": ["What had happened?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0418.opus"
       }
     },
     {
       "id": "ph-b-0419",
-      "text_en": "What had happened?",
-      "translation_ru": "Что случилось?",
+      "text_en": "She has changed her mind.",
+      "translation_ru": "Она передумала.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["What had happened?"],
+      "variants": ["She has changed her mind."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0419.opus"
       }
     },
     {
       "id": "ph-b-0420",
-      "text_en": "She has changed her mind.",
-      "translation_ru": "Она передумала.",
+      "text_en": "I had thought it was easy.",
+      "translation_ru": "Я думал, это легко.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["She has changed her mind."],
+      "variants": ["I had thought it was easy."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0420.opus"
       }
     },
     {
       "id": "ph-b-0421",
-      "text_en": "I had thought it was easy.",
-      "translation_ru": "Я думал, это легко.",
+      "text_en": "We have decided.",
+      "translation_ru": "Мы решили.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["I had thought it was easy."],
+      "variants": ["We have decided."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0421.opus"
       }
     },
     {
       "id": "ph-b-0422",
-      "text_en": "We have decided.",
-      "translation_ru": "Мы решили.",
+      "text_en": "They had warned us.",
+      "translation_ru": "Они нас предупреждали.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["We have decided."],
+      "variants": ["They had warned us."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0422.opus"
       }
     },
     {
       "id": "ph-b-0423",
-      "text_en": "They had warned us.",
-      "translation_ru": "Они нас предупреждали.",
+      "text_en": "It has stopped raining.",
+      "translation_ru": "Дождь прекратился.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["They had warned us."],
+      "variants": ["It has stopped raining."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0423.opus"
       }
     },
     {
       "id": "ph-b-0424",
-      "text_en": "It has stopped raining.",
-      "translation_ru": "Дождь прекратился.",
+      "text_en": "Good riddance.",
+      "translation_ru": "И слава богу.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["It has stopped raining."],
+      "variants": ["Good riddance."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0424.opus"
       }
     },
     {
       "id": "ph-b-0425",
-      "text_en": "Good riddance.",
-      "translation_ru": "И слава богу.",
+      "text_en": "He left.",
+      "translation_ru": "Он ушёл.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["Good riddance."],
+      "variants": ["He left."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0425.opus"
       }
     },
     {
       "id": "ph-b-0426",
-      "text_en": "He left.",
-      "translation_ru": "Он ушёл.",
+      "text_en": "He had left.",
+      "translation_ru": "Он (к тому моменту) уже ушёл.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["He left."],
+      "variants": ["He had left."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0426.opus"
       }
     },
     {
       "id": "ph-b-0427",
-      "text_en": "He had left.",
-      "translation_ru": "Он уже ушёл (до).",
+      "text_en": "I stay at home.",
+      "translation_ru": "Я остаюсь дома.",
       "grammar_point_id": "gp-b-09",
-      "variants": ["He had left."],
+      "variants": ["I stay at home."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0427.opus"
       }
     },
     {
       "id": "ph-b-0428",
-      "text_en": "If it rains, I'll stay at home.",
-      "translation_ru": "Если пойдёт дождь, я останусь дома.",
-      "grammar_point_id": "gp-b-10",
-      "variants": ["If it rains, I'll stay at home."],
+      "text_en": "I stayed at home.",
+      "translation_ru": "Я остался дома.",
+      "grammar_point_id": "gp-b-09",
+      "variants": ["I stayed at home."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0428.opus"
       }
     },
     {
       "id": "ph-b-0429",
-      "text_en": "I'll stay at home.",
-      "translation_ru": "Я останусь дома.",
-      "grammar_point_id": "gp-b-10",
-      "variants": ["I'll stay at home."],
+      "text_en": "She arrived.",
+      "translation_ru": "Она приехала.",
+      "grammar_point_id": "gp-b-09",
+      "variants": ["She arrived."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0429.opus"
       }
     },
     {
       "id": "ph-b-0430",
-      "text_en": "If you help me, I'll finish faster.",
-      "translation_ru": "Если ты поможешь, я закончу быстрее.",
-      "grammar_point_id": "gp-b-10",
-      "variants": ["If you help me, I'll finish faster."],
+      "text_en": "He goes to work.",
+      "translation_ru": "Он ходит на работу.",
+      "grammar_point_id": "gp-b-09",
+      "variants": ["He goes to work."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0430.opus"
       }
     },
     {
       "id": "ph-b-0431",
-      "text_en": "If she calls, tell her I'm busy.",
-      "translation_ru": "Если она позвонит, скажи, что я занят.",
-      "grammar_point_id": "gp-b-10",
-      "variants": ["If she calls, tell her I'm busy."],
+      "text_en": "He went to work.",
+      "translation_ru": "Он пошёл на работу.",
+      "grammar_point_id": "gp-b-09",
+      "variants": ["He went to work."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0431.opus"
       }
     },
     {
       "id": "ph-b-0432",
-      "text_en": "If we miss the bus, we'll take a taxi.",
-      "translation_ru": "Если мы опоздаем на автобус, возьмём такси.",
+      "text_en": "If it rains, I'll stay at home.",
+      "translation_ru": "Если пойдёт дождь, я останусь дома.",
       "grammar_point_id": "gp-b-10",
-      "variants": ["If we miss the bus, we'll take a taxi."],
+      "variants": ["If it rains, I'll stay at home."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0432.opus"
       }
     },
     {
       "id": "ph-b-0433",
-      "text_en": "If you don't hurry, you'll be late.",
-      "translation_ru": "Если не поторопишься, опоздаешь.",
+      "text_en": "I'll stay at home.",
+      "translation_ru": "Я останусь дома.",
       "grammar_point_id": "gp-b-10",
-      "variants": ["If you don't hurry, you'll be late."],
+      "variants": ["I'll stay at home."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0433.opus"
       }
     },
     {
       "id": "ph-b-0434",
-      "text_en": "If he asks, I'll say yes.",
-      "translation_ru": "Если он спросит, я скажу «да».",
+      "text_en": "If she calls, tell her I'm busy.",
+      "translation_ru": "Если она позвонит, скажи, что я занят.",
       "grammar_point_id": "gp-b-10",
-      "variants": ["If he asks, I'll say yes."],
+      "variants": ["If she calls, tell her I'm busy."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0434.opus"
       }
     },
     {
       "id": "ph-b-0435",
-      "text_en": "If the weather is good, we'll go out.",
-      "translation_ru": "Если погода будет хорошей, мы пойдём гулять.",
+      "text_en": "If we miss the bus, we'll take a taxi.",
+      "translation_ru": "Если мы опоздаем на автобус, возьмём такси.",
       "grammar_point_id": "gp-b-10",
-      "variants": ["If the weather is good, we'll go out."],
+      "variants": ["If we miss the bus, we'll take a taxi."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0435.opus"
       }
     },
     {
       "id": "ph-b-0436",
-      "text_en": "If I have time, I'll call you.",
-      "translation_ru": "Если будет время, я позвоню.",
+      "text_en": "If you don't hurry, you'll be late.",
+      "translation_ru": "Если не поторопишься, опоздаешь.",
       "grammar_point_id": "gp-b-10",
-      "variants": ["If I have time, I'll call you."],
+      "variants": ["If you don't hurry, you'll be late."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0436.opus"
       }
     },
     {
       "id": "ph-b-0437",
-      "text_en": "If you need anything, just ask.",
-      "translation_ru": "Если что-нибудь понадобится — просто скажи.",
+      "text_en": "If he asks, I'll say yes.",
+      "translation_ru": "Если он спросит, я скажу «да».",
       "grammar_point_id": "gp-b-10",
-      "variants": ["If you need anything, just ask."],
+      "variants": ["If he asks, I'll say yes."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0437.opus"
       }
     },
     {
       "id": "ph-b-0438",
-      "text_en": "If it gets cold, take a jacket.",
-      "translation_ru": "Если похолодает, возьми куртку.",
+      "text_en": "If the weather is good, we'll go out.",
+      "translation_ru": "Если погода будет хорошей, мы пойдём гулять.",
       "grammar_point_id": "gp-b-10",
-      "variants": ["If it gets cold, take a jacket."],
+      "variants": ["If the weather is good, we'll go out."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0438.opus"
       }
     },
     {
       "id": "ph-b-0439",
-      "text_en": "If you heat water, it boils.",
-      "translation_ru": "Если нагреть воду, она кипит.",
+      "text_en": "If I have time, I'll call you.",
+      "translation_ru": "Если будет время, я позвоню.",
       "grammar_point_id": "gp-b-10",
-      "variants": ["If you heat water, it boils."],
+      "variants": ["If I have time, I'll call you."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0439.opus"
       }
     },
     {
       "id": "ph-b-0440",
-      "text_en": "If you press this button, the light comes on.",
-      "translation_ru": "Если нажать эту кнопку, включается свет.",
+      "text_en": "If you need anything, just ask.",
+      "translation_ru": "Если что-нибудь понадобится — просто скажи.",
       "grammar_point_id": "gp-b-10",
-      "variants": ["If you press this button, the light comes on."],
+      "variants": ["If you need anything, just ask."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0440.opus"
       }
     },
     {
       "id": "ph-b-0441",
-      "text_en": "Ice melts if you heat it.",
-      "translation_ru": "Лёд тает, если его нагреть.",
+      "text_en": "If it gets cold, take a jacket.",
+      "translation_ru": "Если похолодает, возьми куртку.",
       "grammar_point_id": "gp-b-10",
-      "variants": ["Ice melts if you heat it."],
+      "variants": ["If it gets cold, take a jacket."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0441.opus"
       }
     },
     {
       "id": "ph-b-0442",
-      "text_en": "Plants die if you don't water them.",
-      "translation_ru": "Растения погибают, если их не поливать.",
+      "text_en": "If you heat water, it boils.",
+      "translation_ru": "Если нагреть воду, она кипит.",
       "grammar_point_id": "gp-b-10",
-      "variants": ["Plants die if you don't water them."],
+      "variants": ["If you heat water, it boils."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0442.opus"
       }
     },
     {
       "id": "ph-b-0443",
-      "text_en": "If I wake up early, I go for a walk.",
-      "translation_ru": "Если я встаю рано, я иду гулять.",
+      "text_en": "If you press this button, the light comes on.",
+      "translation_ru": "Если нажать эту кнопку, включается свет.",
       "grammar_point_id": "gp-b-10",
-      "variants": ["If I wake up early, I go for a walk."],
+      "variants": ["If you press this button, the light comes on."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0443.opus"
       }
     },
     {
       "id": "ph-b-0444",
-      "text_en": "If you mix blue and yellow, you get green.",
-      "translation_ru": "Если смешать синий и жёлтый, получится зелёный.",
+      "text_en": "Ice melts if you heat it.",
+      "translation_ru": "Лёд тает, если его нагреть.",
       "grammar_point_id": "gp-b-10",
-      "variants": ["If you mix blue and yellow, you get green."],
+      "variants": ["Ice melts if you heat it."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0444.opus"
       }
     },
     {
       "id": "ph-b-0445",
-      "text_en": "I'll do it if you want.",
-      "translation_ru": "Я сделаю это, если хочешь.",
+      "text_en": "Plants die if you don't water them.",
+      "translation_ru": "Растения погибают, если их не поливать.",
       "grammar_point_id": "gp-b-10",
-      "variants": ["I'll do it if you want."],
+      "variants": ["Plants die if you don't water them."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0445.opus"
       }
     },
     {
       "id": "ph-b-0446",
-      "text_en": "We'll leave if you're ready.",
-      "translation_ru": "Мы поедем, если ты готов.",
+      "text_en": "If I wake up early, I go for a walk.",
+      "translation_ru": "Если я встаю рано, я иду гулять.",
       "grammar_point_id": "gp-b-10",
-      "variants": ["We'll leave if you're ready."],
+      "variants": ["If I wake up early, I go for a walk."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0446.opus"
       }
     },
     {
       "id": "ph-b-0447",
-      "text_en": "I won't go if it rains.",
-      "translation_ru": "Я не пойду, если будет дождь.",
+      "text_en": "If you mix blue and yellow, you get green.",
+      "translation_ru": "Если смешать синий и жёлтый, получится зелёный.",
       "grammar_point_id": "gp-b-10",
-      "variants": ["I won't go if it rains."],
+      "variants": ["If you mix blue and yellow, you get green."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0447.opus"
       }
     },
     {
       "id": "ph-b-0448",
-      "text_en": "She won't come if she's busy.",
-      "translation_ru": "Она не придёт, если будет занята.",
+      "text_en": "I'll do it if you want.",
+      "translation_ru": "Я сделаю это, если хочешь.",
       "grammar_point_id": "gp-b-10",
-      "variants": ["She won't come if she's busy."],
+      "variants": ["I'll do it if you want."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0448.opus"
       }
     },
     {
       "id": "ph-b-0449",
-      "text_en": "Will you help me if I ask?",
-      "translation_ru": "Ты поможешь, если я попрошу?",
+      "text_en": "We'll leave if you're ready.",
+      "translation_ru": "Мы поедем, если ты готов.",
       "grammar_point_id": "gp-b-10",
-      "variants": ["Will you help me if I ask?"],
+      "variants": ["We'll leave if you're ready."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0449.opus"
       }
     },
     {
       "id": "ph-b-0450",
-      "text_en": "What will you do if it snows?",
-      "translation_ru": "Что ты будешь делать, если пойдёт снег?",
+      "text_en": "I won't go if it rains.",
+      "translation_ru": "Я не пойду, если будет дождь.",
       "grammar_point_id": "gp-b-10",
-      "variants": ["What will you do if it snows?"],
+      "variants": ["I won't go if it rains."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0450.opus"
       }
     },
     {
       "id": "ph-b-0451",
-      "text_en": "What happens if I press this?",
-      "translation_ru": "Что будет, если я нажму на это?",
+      "text_en": "She won't come if she's busy.",
+      "translation_ru": "Она не придёт, если будет занята.",
       "grammar_point_id": "gp-b-10",
-      "variants": ["What happens if I press this?"],
+      "variants": ["She won't come if she's busy."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0451.opus"
       }
     },
     {
       "id": "ph-b-0452",
-      "text_en": "Nothing happens.",
-      "translation_ru": "Ничего не произойдёт.",
+      "text_en": "Will you help me if I ask?",
+      "translation_ru": "Ты поможешь, если я попрошу?",
       "grammar_point_id": "gp-b-10",
-      "variants": ["Nothing happens."],
+      "variants": ["Will you help me if I ask?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0452.opus"
       }
     },
     {
       "id": "ph-b-0453",
-      "text_en": "If you disturb me, I'll kill you.",
-      "translation_ru": "Если ты меня побеспокоишь, я тебя убью.",
+      "text_en": "What will you do if it snows?",
+      "translation_ru": "Что ты будешь делать, если пойдёт снег?",
       "grammar_point_id": "gp-b-10",
-      "variants": ["If you disturb me, I'll kill you."],
+      "variants": ["What will you do if it snows?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0453.opus"
       }
     },
     {
       "id": "ph-b-0454",
-      "text_en": "If you leave now, you'll catch the train.",
-      "translation_ru": "Если уйдёшь сейчас, успеешь на поезд.",
+      "text_en": "What happens if I press this?",
+      "translation_ru": "Что будет, если я нажму на это?",
       "grammar_point_id": "gp-b-10",
-      "variants": ["If you leave now, you'll catch the train."],
+      "variants": ["What happens if I press this?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0454.opus"
       }
     },
     {
       "id": "ph-b-0455",
-      "text_en": "If I see him, I'll tell him.",
-      "translation_ru": "Если я его увижу, я ему скажу.",
+      "text_en": "Nothing happens.",
+      "translation_ru": "Ничего не произойдёт.",
       "grammar_point_id": "gp-b-10",
-      "variants": ["If I see him, I'll tell him."],
+      "variants": ["Nothing happens."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0455.opus"
       }
     },
     {
       "id": "ph-b-0456",
-      "text_en": "If you're good, you'll get a reward.",
-      "translation_ru": "Если будешь хорошо себя вести, получишь награду.",
+      "text_en": "If you disturb me, I'll kill you.",
+      "translation_ru": "Если ты меня побеспокоишь, я тебя убью.",
       "grammar_point_id": "gp-b-10",
-      "variants": ["If you're good, you'll get a reward."],
+      "variants": ["If you disturb me, I'll kill you."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0456.opus"
       }
     },
     {
       "id": "ph-b-0457",
-      "text_en": "If it works, it works.",
-      "translation_ru": "Если работает — работает.",
+      "text_en": "If you leave now, you'll catch the train.",
+      "translation_ru": "Если уйдёшь сейчас, успеешь на поезд.",
       "grammar_point_id": "gp-b-10",
-      "variants": ["If it works, it works."],
+      "variants": ["If you leave now, you'll catch the train."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0457.opus"
       }
     },
     {
       "id": "ph-b-0458",
-      "text_en": "If not, we'll try again.",
-      "translation_ru": "Если нет — попробуем ещё раз.",
+      "text_en": "If I see him, I'll tell him.",
+      "translation_ru": "Если я его увижу, я ему скажу.",
       "grammar_point_id": "gp-b-10",
-      "variants": ["If not, we'll try again."],
+      "variants": ["If I see him, I'll tell him."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0458.opus"
       }
     },
     {
       "id": "ph-b-0459",
-      "text_en": "Do whatever you want.",
-      "translation_ru": "Делай что хочешь.",
+      "text_en": "If you're good, you'll get a reward.",
+      "translation_ru": "Если будешь хорошо себя вести, получишь награду.",
       "grammar_point_id": "gp-b-10",
-      "variants": ["Do whatever you want."],
+      "variants": ["If you're good, you'll get a reward."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0459.opus"
       }
     },
     {
       "id": "ph-b-0460",
-      "text_en": "Suit yourself.",
-      "translation_ru": "Как знаешь.",
+      "text_en": "If it works, it works.",
+      "translation_ru": "Если работает — работает.",
       "grammar_point_id": "gp-b-10",
-      "variants": ["Suit yourself."],
+      "variants": ["If it works, it works."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0460.opus"
       }
     },
     {
       "id": "ph-b-0461",
-      "text_en": "It's up to you.",
-      "translation_ru": "Решать тебе.",
+      "text_en": "If not, we'll try again.",
+      "translation_ru": "Если нет — попробуем ещё раз.",
       "grammar_point_id": "gp-b-10",
-      "variants": ["It's up to you."],
+      "variants": ["If not, we'll try again."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0461.opus"
       }
     },
     {
       "id": "ph-b-0462",
-      "text_en": "Whatever works.",
-      "translation_ru": "Что работает, то и хорошо.",
+      "text_en": "Do whatever you want.",
+      "translation_ru": "Делай что хочешь.",
       "grammar_point_id": "gp-b-10",
-      "variants": ["Whatever works."],
+      "variants": ["Do whatever you want."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0462.opus"
       }
     },
     {
       "id": "ph-b-0463",
-      "text_en": "It depends.",
-      "translation_ru": "Как посмотреть.",
+      "text_en": "Suit yourself.",
+      "translation_ru": "Как знаешь.",
       "grammar_point_id": "gp-b-10",
-      "variants": ["It depends."],
+      "variants": ["Suit yourself."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0463.opus"
       }
     },
     {
       "id": "ph-b-0464",
-      "text_en": "In that case…",
-      "translation_ru": "В таком случае…",
+      "text_en": "It's up to you.",
+      "translation_ru": "Решать тебе.",
       "grammar_point_id": "gp-b-10",
-      "variants": ["In that case…"],
+      "variants": ["It's up to you."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0464.opus"
       }
     },
     {
       "id": "ph-b-0465",
-      "text_en": "In any case, call me.",
-      "translation_ru": "В любом случае позвони мне.",
+      "text_en": "Whatever works.",
+      "translation_ru": "Что работает, то и хорошо.",
       "grammar_point_id": "gp-b-10",
-      "variants": ["In any case, call me."],
+      "variants": ["Whatever works."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0465.opus"
       }
     },
     {
       "id": "ph-b-0466",
-      "text_en": "Just in case.",
-      "translation_ru": "На всякий случай.",
+      "text_en": "It depends.",
+      "translation_ru": "Как посмотреть.",
       "grammar_point_id": "gp-b-10",
-      "variants": ["Just in case."],
+      "variants": ["It depends."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0466.opus"
       }
     },
     {
       "id": "ph-b-0467",
-      "text_en": "You never know.",
-      "translation_ru": "Всякое бывает.",
+      "text_en": "In that case…",
+      "translation_ru": "В таком случае…",
       "grammar_point_id": "gp-b-10",
-      "variants": ["You never know."],
+      "variants": ["In that case…"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0467.opus"
       }
     },
     {
       "id": "ph-b-0468",
-      "text_en": "Better safe than sorry.",
-      "translation_ru": "Бережёного бог бережёт.",
+      "text_en": "In any case, call me.",
+      "translation_ru": "В любом случае позвони мне.",
       "grammar_point_id": "gp-b-10",
-      "variants": ["Better safe than sorry."],
+      "variants": ["In any case, call me."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0468.opus"
       }
     },
     {
       "id": "ph-b-0469",
-      "text_en": "If I were you, I'd go.",
-      "translation_ru": "На твоём месте я бы пошёл.",
+      "text_en": "Just in case.",
+      "translation_ru": "На всякий случай.",
       "grammar_point_id": "gp-b-10",
-      "variants": ["If I were you, I'd go."],
+      "variants": ["Just in case."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0469.opus"
       }
     },
     {
       "id": "ph-b-0470",
-      "text_en": "Unless it rains, we'll walk.",
-      "translation_ru": "Если не будет дождя, пойдём пешком.",
+      "text_en": "You never know.",
+      "translation_ru": "Всякое бывает.",
       "grammar_point_id": "gp-b-10",
-      "variants": ["Unless it rains, we'll walk."],
+      "variants": ["You never know."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0470.opus"
       }
     },
     {
       "id": "ph-b-0471",
-      "text_en": "Unless you object.",
-      "translation_ru": "Если только ты не против.",
+      "text_en": "Better safe than sorry.",
+      "translation_ru": "Бережёного бог бережёт.",
       "grammar_point_id": "gp-b-10",
-      "variants": ["Unless you object."],
+      "variants": ["Better safe than sorry."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0471.opus"
       }
     },
     {
       "id": "ph-b-0472",
-      "text_en": "As long as you're happy.",
-      "translation_ru": "Лишь бы ты был счастлив.",
+      "text_en": "Unless it rains, we'll walk.",
+      "translation_ru": "Если не будет дождя, пойдём пешком.",
       "grammar_point_id": "gp-b-10",
-      "variants": ["As long as you're happy."],
+      "variants": ["Unless it rains, we'll walk."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0472.opus"
       }
     },
     {
       "id": "ph-b-0473",
-      "text_en": "If I had more time, I would travel.",
-      "translation_ru": "Если бы у меня было больше времени, я бы путешествовал.",
-      "grammar_point_id": "gp-b-11",
-      "variants": ["If I had more time, I would travel."],
+      "text_en": "Unless you object.",
+      "translation_ru": "Если только ты не против.",
+      "grammar_point_id": "gp-b-10",
+      "variants": ["Unless you object."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0473.opus"
       }
     },
     {
       "id": "ph-b-0474",
-      "text_en": "If I had time, I would travel.",
-      "translation_ru": "Если бы у меня было время, я бы путешествовал.",
-      "grammar_point_id": "gp-b-11",
-      "variants": ["If I had time, I would travel."],
+      "text_en": "As long as you're happy.",
+      "translation_ru": "Лишь бы ты был счастлив.",
+      "grammar_point_id": "gp-b-10",
+      "variants": ["As long as you're happy."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0474.opus"
       }
     },
     {
       "id": "ph-b-0475",
-      "text_en": "I would travel the world.",
-      "translation_ru": "Я бы путешествовал по миру.",
+      "text_en": "If I had more time, I would travel.",
+      "translation_ru": "Если бы у меня было больше времени, я бы путешествовал.",
       "grammar_point_id": "gp-b-11",
-      "variants": ["I would travel the world."],
+      "variants": ["If I had more time, I would travel."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0475.opus"
       }
     },
     {
       "id": "ph-b-0476",
-      "text_en": "If I were rich, I would buy a house.",
-      "translation_ru": "Если бы я был богат, я бы купил дом.",
+      "text_en": "If I had time, I would travel.",
+      "translation_ru": "Если бы у меня было время, я бы путешествовал.",
       "grammar_point_id": "gp-b-11",
-      "variants": ["If I were rich, I would buy a house."],
+      "variants": ["If I had time, I would travel."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0476.opus"
       }
     },
     {
       "id": "ph-b-0477",
-      "text_en": "If she were here, she would help.",
-      "translation_ru": "Если бы она была здесь, она бы помогла.",
+      "text_en": "I would travel the world.",
+      "translation_ru": "Я бы путешествовал по миру.",
       "grammar_point_id": "gp-b-11",
-      "variants": ["If she were here, she would help."],
+      "variants": ["I would travel the world."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0477.opus"
       }
     },
     {
       "id": "ph-b-0478",
-      "text_en": "If I knew the answer, I would tell you.",
-      "translation_ru": "Если бы я знал ответ, я бы тебе сказал.",
+      "text_en": "If I were rich, I would buy a house.",
+      "translation_ru": "Если бы я был богат, я бы купил дом.",
       "grammar_point_id": "gp-b-11",
-      "variants": ["If I knew the answer, I would tell you."],
+      "variants": ["If I were rich, I would buy a house."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0478.opus"
       }
     },
     {
       "id": "ph-b-0479",
-      "text_en": "If we had a car, we would drive.",
-      "translation_ru": "Если бы у нас была машина, мы бы поехали.",
+      "text_en": "If she were here, she would help.",
+      "translation_ru": "Если бы она была здесь, она бы помогла.",
       "grammar_point_id": "gp-b-11",
-      "variants": ["If we had a car, we would drive."],
+      "variants": ["If she were here, she would help."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0479.opus"
       }
     },
     {
       "id": "ph-b-0480",
-      "text_en": "If he studied harder, he would pass.",
-      "translation_ru": "Если бы он учился усерднее, он бы сдал.",
+      "text_en": "If I knew the answer, I would tell you.",
+      "translation_ru": "Если бы я знал ответ, я бы тебе сказал.",
       "grammar_point_id": "gp-b-11",
-      "variants": ["If he studied harder, he would pass."],
+      "variants": ["If I knew the answer, I would tell you."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0480.opus"
       }
     },
     {
       "id": "ph-b-0481",
-      "text_en": "I would go if I could.",
-      "translation_ru": "Я бы пошёл, если бы мог.",
+      "text_en": "If we had a car, we would drive.",
+      "translation_ru": "Если бы у нас была машина, мы бы поехали.",
       "grammar_point_id": "gp-b-11",
-      "variants": ["I would go if I could."],
+      "variants": ["If we had a car, we would drive."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0481.opus"
       }
     },
     {
       "id": "ph-b-0482",
-      "text_en": "She would stay if you asked.",
-      "translation_ru": "Она бы осталась, если бы ты попросил.",
+      "text_en": "If he studied harder, he would pass.",
+      "translation_ru": "Если бы он учился усерднее, он бы сдал.",
       "grammar_point_id": "gp-b-11",
-      "variants": ["She would stay if you asked."],
+      "variants": ["If he studied harder, he would pass."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0482.opus"
       }
     },
     {
       "id": "ph-b-0483",
-      "text_en": "I would help you if I had time.",
-      "translation_ru": "Я бы помог тебе, если бы было время.",
+      "text_en": "I would go if I could.",
+      "translation_ru": "Я бы пошёл, если бы мог.",
       "grammar_point_id": "gp-b-11",
-      "variants": ["I would help you if I had time."],
+      "variants": ["I would go if I could."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0483.opus"
       }
     },
     {
       "id": "ph-b-0484",
-      "text_en": "They would win if they played better.",
-      "translation_ru": "Они бы выиграли, если бы играли лучше.",
+      "text_en": "She would stay if you asked.",
+      "translation_ru": "Она бы осталась, если бы ты попросил.",
       "grammar_point_id": "gp-b-11",
-      "variants": ["They would win if they played better."],
+      "variants": ["She would stay if you asked."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0484.opus"
       }
     },
     {
       "id": "ph-b-0485",
-      "text_en": "If I won the lottery, I would travel the world.",
-      "translation_ru": "Если бы я выиграл в лотерею, я бы объехал мир.",
+      "text_en": "I would help you if I had time.",
+      "translation_ru": "Я бы помог тебе, если бы было время.",
       "grammar_point_id": "gp-b-11",
-      "variants": ["If I won the lottery, I would travel the world."],
+      "variants": ["I would help you if I had time."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0485.opus"
       }
     },
     {
       "id": "ph-b-0486",
-      "text_en": "What would you do if you were the boss?",
-      "translation_ru": "Что бы ты делал, если бы был начальником?",
+      "text_en": "They would win if they played better.",
+      "translation_ru": "Они бы выиграли, если бы играли лучше.",
       "grammar_point_id": "gp-b-11",
-      "variants": ["What would you do if you were the boss?"],
+      "variants": ["They would win if they played better."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0486.opus"
       }
     },
     {
       "id": "ph-b-0487",
-      "text_en": "What would you buy if you had the money?",
-      "translation_ru": "Что бы ты купил, если бы были деньги?",
+      "text_en": "If I won the lottery, I would travel the world.",
+      "translation_ru": "Если бы я выиграл в лотерею, я бы объехал мир.",
       "grammar_point_id": "gp-b-11",
-      "variants": ["What would you buy if you had the money?"],
+      "variants": ["If I won the lottery, I would travel the world."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0487.opus"
       }
     },
     {
       "id": "ph-b-0488",
-      "text_en": "I would relax.",
-      "translation_ru": "Я бы отдыхал.",
+      "text_en": "What would you do if you were the boss?",
+      "translation_ru": "Что бы ты делал, если бы был начальником?",
       "grammar_point_id": "gp-b-11",
-      "variants": ["I would relax."],
+      "variants": ["What would you do if you were the boss?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0488.opus"
       }
     },
     {
       "id": "ph-b-0489",
-      "text_en": "I would sleep all day.",
-      "translation_ru": "Я бы спал весь день.",
+      "text_en": "What would you buy if you had the money?",
+      "translation_ru": "Что бы ты купил, если бы были деньги?",
       "grammar_point_id": "gp-b-11",
-      "variants": ["I would sleep all day."],
+      "variants": ["What would you buy if you had the money?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0489.opus"
       }
     },
     {
       "id": "ph-b-0490",
-      "text_en": "I would learn to fly.",
-      "translation_ru": "Я бы научился летать.",
+      "text_en": "I would relax.",
+      "translation_ru": "Я бы отдыхал.",
       "grammar_point_id": "gp-b-11",
-      "variants": ["I would learn to fly."],
+      "variants": ["I would relax."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0490.opus"
       }
     },
     {
       "id": "ph-b-0491",
-      "text_en": "If I could choose, I would live by the sea.",
-      "translation_ru": "Если бы я мог выбрать, я бы жил у моря.",
+      "text_en": "I would sleep all day.",
+      "translation_ru": "Я бы спал весь день.",
       "grammar_point_id": "gp-b-11",
-      "variants": ["If I could choose, I would live by the sea."],
+      "variants": ["I would sleep all day."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0491.opus"
       }
     },
     {
       "id": "ph-b-0492",
-      "text_en": "If it weren't so far, we would go more often.",
-      "translation_ru": "Если бы это было не так далеко, мы бы ходили туда чаще.",
+      "text_en": "I would learn to fly.",
+      "translation_ru": "Я бы научился летать.",
       "grammar_point_id": "gp-b-11",
-      "variants": ["If it weren't so far, we would go more often."],
+      "variants": ["I would learn to fly."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0492.opus"
       }
     },
     {
       "id": "ph-b-0493",
-      "text_en": "If I were younger, I would try again.",
-      "translation_ru": "Если бы я был моложе, я бы попробовал снова.",
+      "text_en": "If I could choose, I would live by the sea.",
+      "translation_ru": "Если бы я мог выбрать, я бы жил у моря.",
       "grammar_point_id": "gp-b-11",
-      "variants": ["If I were younger, I would try again."],
+      "variants": ["If I could choose, I would live by the sea."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0493.opus"
       }
     },
     {
       "id": "ph-b-0494",
-      "text_en": "Nah, I'd win.",
-      "translation_ru": "Не-а, я бы выиграл.",
+      "text_en": "If it weren't so far, we would go more often.",
+      "translation_ru": "Если бы это было не так далеко, мы бы ходили туда чаще.",
       "grammar_point_id": "gp-b-11",
-      "variants": ["Nah, I'd win."],
+      "variants": ["If it weren't so far, we would go more often."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0494.opus"
       }
     },
     {
       "id": "ph-b-0495",
-      "text_en": "I'd rather fight for my life than live it.",
-      "translation_ru": "Я бы скорее сражался за жизнь, чем просто жил.",
+      "text_en": "If I were younger, I would try again.",
+      "translation_ru": "Если бы я был моложе, я бы попробовал снова.",
       "grammar_point_id": "gp-b-11",
-      "variants": ["I'd rather fight for my life than live it."],
+      "variants": ["If I were younger, I would try again."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0495.opus"
       }
     },
     {
       "id": "ph-b-0496",
-      "text_en": "I would rather stay.",
-      "translation_ru": "Я бы лучше остался.",
+      "text_en": "Nah, I'd win.",
+      "translation_ru": "Не-а, я бы выиграл.",
       "grammar_point_id": "gp-b-11",
-      "variants": ["I would rather stay."],
+      "variants": ["Nah, I'd win."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0496.opus"
       }
     },
     {
       "id": "ph-b-0497",
-      "text_en": "I would rather not talk about it.",
-      "translation_ru": "Я бы предпочёл об этом не говорить.",
+      "text_en": "I'd rather fight for my life than live it.",
+      "translation_ru": "Я бы скорее сражался за жизнь, чем просто жил.",
       "grammar_point_id": "gp-b-11",
-      "variants": ["I would rather not talk about it."],
+      "variants": ["I'd rather fight for my life than live it."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0497.opus"
       }
     },
     {
       "id": "ph-b-0498",
-      "text_en": "Would you rather stay or go?",
-      "translation_ru": "Ты бы лучше остался или пошёл?",
+      "text_en": "I would rather stay.",
+      "translation_ru": "Я бы лучше остался.",
       "grammar_point_id": "gp-b-11",
-      "variants": ["Would you rather stay or go?"],
+      "variants": ["I would rather stay."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0498.opus"
       }
     },
     {
       "id": "ph-b-0499",
-      "text_en": "If only I knew.",
-      "translation_ru": "Если бы я только знал.",
+      "text_en": "I would rather not talk about it.",
+      "translation_ru": "Я бы предпочёл об этом не говорить.",
       "grammar_point_id": "gp-b-11",
-      "variants": ["If only I knew."],
+      "variants": ["I would rather not talk about it."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0499.opus"
       }
     },
     {
       "id": "ph-b-0500",
-      "text_en": "If only it were Friday.",
-      "translation_ru": "Если бы сегодня была пятница.",
+      "text_en": "Would you rather stay or go?",
+      "translation_ru": "Ты бы лучше остался или пошёл?",
       "grammar_point_id": "gp-b-11",
-      "variants": ["If only it were Friday."],
+      "variants": ["Would you rather stay or go?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0500.opus"
       }
@@ -5045,7 +5045,7 @@
     {
       "id": "ph-b-0505",
       "text_en": "In your dreams.",
-      "translation_ru": "В мечтах.",
+      "translation_ru": "Мечтай!",
       "grammar_point_id": "gp-b-11",
       "variants": ["In your dreams."],
       "audio": {
@@ -5305,7 +5305,7 @@
     {
       "id": "ph-b-0531",
       "text_en": "If only I were younger.",
-      "translation_ru": "Если бы я был только моложе.",
+      "translation_ru": "Если бы я только был моложе.",
       "grammar_point_id": "gp-b-12",
       "variants": ["If only I were younger."],
       "audio": {
@@ -6545,7 +6545,7 @@
     {
       "id": "ph-b-0655",
       "text_en": "I will travel the world.",
-      "translation_ru": "Я путешествую по миру.",
+      "translation_ru": "Я буду путешествовать по миру.",
       "grammar_point_id": "gp-b-14",
       "variants": ["I will travel the world."],
       "audio": {

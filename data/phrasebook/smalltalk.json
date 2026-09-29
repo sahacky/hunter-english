@@ -85,6 +85,90 @@
           "accepted": ["It is nice to talk to you. See you later!"]
         }
       ]
+    },
+    {
+      "id": "pb-smalltalk-03",
+      "rank": "B",
+      "topic": "smalltalk",
+      "situation_ru": "Путешествия: опыт",
+      "user_role": "traveler",
+      "lines": [
+        {
+          "role": "local",
+          "text_en": "Have you ever been abroad?",
+          "translation_ru": "Ты когда-нибудь был за границей?"
+        },
+        {
+          "role": "traveler",
+          "text_en": "Yes, I have been to three countries.",
+          "translation_ru": "Да, я был в трёх странах.",
+          "accepted": ["Yes, I have been to three countries.", "I have been to three countries."]
+        },
+        {
+          "role": "local",
+          "text_en": "Which one did you like best?",
+          "translation_ru": "Какая понравилась больше всего?"
+        },
+        {
+          "role": "traveler",
+          "text_en": "Italy, I think. I went there last spring.",
+          "translation_ru": "Италия, думаю. Я ездил туда прошлой весной.",
+          "accepted": ["Italy, I think.", "Italy, I think. I went there last spring."]
+        },
+        {
+          "role": "local",
+          "text_en": "How long have you been learning English?",
+          "translation_ru": "Как долго ты учишь английский?"
+        },
+        {
+          "role": "traveler",
+          "text_en": "For about two years now.",
+          "translation_ru": "Около двух лет уже.",
+          "accepted": ["For about two years now.", "Two years."]
+        }
+      ]
+    },
+    {
+      "id": "pb-smalltalk-04",
+      "rank": "B",
+      "topic": "smalltalk",
+      "situation_ru": "Детство",
+      "user_role": "traveler",
+      "lines": [
+        {
+          "role": "local",
+          "text_en": "Did you use to play any sports as a child?",
+          "translation_ru": "Ты в детстве занимался спортом?"
+        },
+        {
+          "role": "traveler",
+          "text_en": "I used to play football every day.",
+          "translation_ru": "Я раньше каждый день играл в футбол.",
+          "accepted": ["I used to play football every day.", "I used to play football."]
+        },
+        {
+          "role": "local",
+          "text_en": "Do you still play?",
+          "translation_ru": "Ты всё ещё играешь?"
+        },
+        {
+          "role": "traveler",
+          "text_en": "Not anymore. I don't have time now.",
+          "translation_ru": "Уже нет. Сейчас нет времени.",
+          "accepted": ["Not anymore.", "Not anymore. I don't have time now."]
+        },
+        {
+          "role": "local",
+          "text_en": "Those were the days!",
+          "translation_ru": "Вот это были времена!"
+        },
+        {
+          "role": "traveler",
+          "text_en": "Indeed! It feels like yesterday.",
+          "translation_ru": "Точно! Кажется, это было вчера.",
+          "accepted": ["Indeed!", "Indeed! It feels like yesterday."]
+        }
+      ]
     }
   ]
 }
