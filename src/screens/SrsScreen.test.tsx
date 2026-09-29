@@ -11,6 +11,10 @@ import type { ProgressRepository } from '../domain/progress'
 import type { Note } from '../domain/srs/types'
 import { uuidv7 } from '../lib/uuidv7'
 import SrsScreen from './SrsScreen'
+import { SettingsProvider } from '../state/settings'
+import { saveSettings } from '../data/settings'
+import { db as globalDb } from '../data/db'
+import { DEFAULT_SETTINGS } from '../domain/settings/types'
 import '../i18n'
 
 const WORDS: Array<[string, string]> = [
@@ -228,6 +232,85 @@ describe('SrsScreen', () => {
     )
     expect(
       await screen.findByText(/Пройдено 0 из/, undefined, { timeout: 10_000 }),
+    ).toBeInTheDocument()
+  })
+})
+
+describe('SrsScreen + настройки (plan://M10#10.3)', () => {
+  it('режим 4 кнопок: Трудно/Легко появляются, клавиша 3 = Good', async () => {
+    await saveSettings(globalDb.meta, { ...DEFAULT_SETTINGS, srsButtons: 4 })
+    await bootstrap()
+    render(
+      <SettingsProvider>
+        <HashRouter>
+          <SrsScreen repo={repo} notes={notes} />
+        </HashRouter>
+      </SettingsProvider>,
+    )
+
+    expect(await screen.findByText('house')).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: /Показать ответ/ }))
+    expect(screen.getByRole('button', { name: /Трудно/ })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: /Легко/ })).toBeInTheDocument()
+    // подсказка о режиме 4 не показывается
+    expect(screen.queryByText(/включить в настройках/)).not.toBeInTheDocument()
+
+    fireEvent.keyDown(window, { key: '3' })
+    expect(await screen.findByText('water')).toBeInTheDocument()
+    const [log] = await db.review_log.toArray()
+    expect(log.rating).toBe(3)
+  })
+
+  it('интервалы на кнопках в 4-режиме (showIntervals)', async () => {
+    await saveSettings(globalDb.meta, { ...DEFAULT_SETTINGS, srsButtons: 4, showIntervals: true })
+    await bootstrap()
+    render(
+      <SettingsProvider>
+        <HashRouter>
+          <SrsScreen repo={repo} notes={notes} />
+        </HashRouter>
+      </SettingsProvider>,
+    )
+
+    await screen.findByText('house')
+    fireEvent.click(screen.getByRole('button', { name: /Показать ответ/ }))
+    // у всех четырёх кнопок mono-подпись следующего интервала (specs/08 §5)
+    const intervals = screen.getAllByText(/^\d+[мчдг](\.\d)?$/)
+    expect(intervals.length).toBe(4)
+  })
+
+  it('режим 2: после переворота — ненавязчивая подсказка про настройки (specs/03 §6)', async () => {
+    await bootstrap()
+    renderScreen()
+
+    await screen.findByText('house')
+    expect(screen.queryByText(/включить в настройках/)).not.toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: /Показать ответ/ }))
+    expect(screen.getByText(/включить в настройках/)).toBeInTheDocument()
+  })
+
+  it('Esc в сессии открывает подтверждение прерывания, «Закончить» завершает', async () => {
+    await bootstrap()
+    renderScreen()
+
+    await screen.findByText('house')
+    fireEvent.click(screen.getByRole('button', { name: /Показать ответ/ }))
+    fireEvent.click(screen.getByRole('button', { name: /Вспомнил/ }))
+    await screen.findByText('water')
+
+    fireEvent.keyDown(window, { key: 'Escape' })
+    expect(await screen.findByText(/Прервать сессию\?/)).toBeInTheDocument()
+    // повторный Esc закрывает диалог (specs/07 §5.1), оценки заблокированы при открытом
+    fireEvent.keyDown(window, { key: 'Escape' })
+    expect(screen.queryByText(/Прервать сессию\?/)).not.toBeInTheDocument()
+    fireEvent.keyDown(window, { key: 'Escape' })
+    fireEvent.keyDown(window, { key: '2' }) // диалог открыт — не отвечает
+    expect(await screen.findByText(/Прервать сессию\?/)).toBeInTheDocument()
+    expect(screen.queryByText('water')).toBeInTheDocument()
+    // «Закончить» в диалоге — вторая кнопка с этим именем (первая — шапка)
+    fireEvent.click(screen.getAllByRole('button', { name: 'Закончить' })[1])
+    expect(
+      await screen.findByText(/Сессия завершена/, undefined, { timeout: 4000 }),
     ).toBeInTheDocument()
   })
 })

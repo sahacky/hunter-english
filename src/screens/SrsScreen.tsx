@@ -7,7 +7,8 @@ import {
   buildQueue,
   applyAnswer,
   dayStart,
-  DEFAULT_NEW_LIMIT,
+  formatInterval,
+  previewDue,
   type QueueItem,
 } from '../domain/srs/scheduler'
 import type { Note, QueueEntry, SessionPlan } from '../domain/srs/types'
@@ -18,6 +19,8 @@ import { DexieProgressRepository } from '../data/progress-repository'
 import { uuidv7 } from '../lib/uuidv7'
 import { speak, stopSpeak } from '../lib/tts'
 import { anySlotDone, awardXp, closeStudyDay } from '../domain/game/award'
+import { useSettings } from '../state/settings'
+import { showToast } from '../lib/toast'
 
 const BLOCK_SIZE = 20
 
@@ -34,7 +37,6 @@ interface SrsScreenProps {
   /** Заметки слов (инъекция для тестов; по умолчанию — data/words). */
   notes?: Note[]
 }
-
 export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
   const { t } = useTranslation()
   const defaultRepo = useMemo(() => new DexieProgressRepository(), [])
@@ -45,12 +47,21 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
   const [revealed, setRevealed] = useState(false)
   const [answeredTotal, setAnsweredTotal] = useState(0)
   const [answeredInBlock, setAnsweredInBlock] = useState(0)
+  const [confirmExit, setConfirmExit] = useState(false)
   const [sessionId] = useState(() => uuidv7())
   // Защита от двойного ответа, пока saveAnswer в полёте (review_log append-only —
   // дубль нельзя перезаписать, specs/06 §1)
   const busyRef = useRef(false)
   // Время показа текущей карточки — duration_ms в review_log (specs/06 §1)
   const cardShownAt = useRef(Date.now())
+  // Момент показа карточки — единый `now` для превью интервалов И applyAnswer:
+  // seed fuzz в ts-fsrs включает review_time (DefaultInitSeedStrategy), поэтому
+  // превью и фактический ответ обязаны зваться с одним now — иначе подпись
+  // кнопки соврёт (ревью M10, Б1). reviewed_at = момент показа (допустимо:
+  // duration_ms считается точно, гранулярность FSRS — дни).
+  const previewNowRef = useRef(new Date())
+
+  const { settings, ready: settingsReady } = useSettings()
 
   useEffect(() => {
     let alive = true
@@ -79,50 +90,73 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
         const newShownToday = await repo.countNewAnsweredSince(dayStart(now).toISOString())
         const nextPlan = buildQueue(items, {
           now,
-          baseNewLimit: Math.max(0, DEFAULT_NEW_LIMIT - newShownToday),
+          baseNewLimit: Math.max(0, settings.newPerDay - newShownToday),
         })
         if (!alive) return
         setPlan(nextPlan)
         setQueue(nextPlan.entries)
         cardShownAt.current = Date.now()
+        previewNowRef.current = new Date()
         if (nextPlan.entries.length > 0) setPhase({ kind: 'review' })
         else setPhase({ kind: 'done', empty: true })
       } catch {
         if (alive) setPhase({ kind: 'error' })
       }
     }
-    void start()
+    // настройки грузятся асинхронно: ждём ready, чтобы строить очередь
+    // с сохранённым newPerDay (ревью M10, минор 6)
+    if (settingsReady || notes) void start()
     return () => {
       alive = false
     }
     // бустрап один раз на монтирование; notes/repo — инъекция, не триггерят перезапуск
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  }, [settingsReady])
 
   useEffect(() => {
     cardShownAt.current = Date.now()
+    previewNowRef.current = new Date()
   }, [queue[0]?.card.card_id, phase.kind])
 
   // уход с экрана останавливает озвучку (plan://M6#6.3, ревью)
   useEffect(() => stopSpeak, [])
 
+  // beforeunload в активной сессии: ответы уже в review_log, но пользователь
+  // должен осознанно закрыть вкладку (specs/07 §4.3, решение M10#5)
+  useEffect(() => {
+    if (phase.kind !== 'review' || answeredTotal === 0) return
+    const onBeforeUnload = (event: BeforeUnloadEvent) => {
+      event.preventDefault()
+      event.returnValue = ''
+    }
+    window.addEventListener('beforeunload', onBeforeUnload)
+    return () => window.removeEventListener('beforeunload', onBeforeUnload)
+  }, [phase.kind, answeredTotal])
+
   const answer = useCallback(
-    async (rating: 1 | 3) => {
+    async (rating: 1 | 2 | 3 | 4) => {
       const entry = queue[0]
       if (!entry || busyRef.current) return
       busyRef.current = true
-      const now = new Date()
+      // единый now с превью интервалов (seed fuzz включает review_time — ревью M10 Б1)
+      const now = previewNowRef.current
       const { next, log } = applyAnswer(entry.card, rating, now, {
         logId: uuidv7(now),
         sessionId,
-        durationMs: now.getTime() - cardShownAt.current,
+        durationMs: Date.now() - cardShownAt.current,
       })
       try {
         await repo.saveAnswer(next, log) // мгновенное сохранение каждого ответа
         // XP-шина (plan://M7#7.3): повтор 1 XP; выпуск новой карточки в Review +2
         const released = entry.card.state === 1 && next.state === 2
-        const award = await awardXp(repo, now, 1 + (released ? 2 : 0), 'reviews', { reviews: 1 })
-        if (anySlotDone(award.quest)) await closeStudyDay(repo, now)
+        const award = await awardXp(repo, new Date(), 1 + (released ? 2 : 0), 'reviews', {
+          reviews: 1,
+        })
+        if (anySlotDone(award.quest)) {
+          const closed = await closeStudyDay(repo, new Date())
+          showToast(t('toast.questDone')) // решение M10#2: значимые события
+          if (closed.freezeGained) showToast(t('toast.freezeGained'))
+        }
       } catch {
         setPhase({ kind: 'error' })
         return
@@ -154,7 +188,13 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
       const key = event.key.toLowerCase()
       const onControl = event.target instanceof HTMLElement && event.target.tagName === 'BUTTON'
       if (event.repeat || event.ctrlKey || event.metaKey || event.altKey) return
-      // пробел на сфокусированной кнопке — её штатная активация; остальные клавиши (r/s/1/2) работают всегда
+      if (event.key === 'Escape') {
+        // specs/07 §4.3/§5.1: Esc открывает подтверждение; повторный Esc закрывает
+        setConfirmExit((prev) => !prev)
+        return
+      }
+      if (confirmExit) return // диалог открыт — оценки не срабатывают (ревью M10 м2)
+      // пробел на сфокусированной кнопке — её штатная активация; остальные клавиши (r/s/1..4) работают всегда
       if (event.code === 'Space') {
         if (onControl) return
         event.preventDefault()
@@ -165,15 +205,18 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
         speak(entry.note.en, { src: entry.note.audio })
       } else if (key === 's') {
         speak(entry.note.en, { src: entry.note.audio, rate: 0.75 })
-      } else if (revealed && event.key === '1') {
-        void answer(1)
-      } else if (revealed && event.key === '2') {
-        void answer(3)
+      } else if (revealed && ['1', '2', '3', '4'].includes(event.key)) {
+        const digit = Number(event.key) as 1 | 2 | 3 | 4
+        // режим 2: 1=Again, 2=Good (Hard/Easy — только в режиме 4, specs/03 §6)
+        const rating = settings.srsButtons === 4 ? digit : digit === 1 ? 1 : 3
+        if (settings.srsButtons === 2 && digit >= 3) return
+        void answer(rating)
       }
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-  }, [phase.kind, revealed, answer])
+    // entry не в deps (объявлен ниже): замыкание свежее через answer (меняется с queue)
+  }, [phase.kind, revealed, answer, settings.srsButtons, confirmExit])
 
   const counters = useMemo(() => {
     const count = (kind: QueueEntry['kind']) => queue.filter(({ kind: k }) => k === kind).length
@@ -186,6 +229,7 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
 
   const finish = () => {
     stopSpeak()
+    setConfirmExit(false)
     setPhase({ kind: 'done', empty: false })
   }
 
@@ -237,6 +281,39 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
   }
 
   const entry = queue[0]
+  // Превью интервалов для кнопок (specs/03 §6): from = замороженный момент показа
+  // (previewNowRef), тот же now уходит в applyAnswer — подпись не врёт (ревью M10 Б1)
+  const units = {
+    m: t('srs.intervalUnits.m'),
+    h: t('srs.intervalUnits.h'),
+    d: t('srs.intervalUnits.d'),
+    y: t('srs.intervalUnits.y'),
+  }
+  const intervals =
+    settings.showIntervals && revealed
+      ? {
+          1: formatInterval(
+            previewNowRef.current,
+            previewDue(entry.card, 1, previewNowRef.current),
+            units,
+          ),
+          2: formatInterval(
+            previewNowRef.current,
+            previewDue(entry.card, 2, previewNowRef.current),
+            units,
+          ),
+          3: formatInterval(
+            previewNowRef.current,
+            previewDue(entry.card, 3, previewNowRef.current),
+            units,
+          ),
+          4: formatInterval(
+            previewNowRef.current,
+            previewDue(entry.card, 4, previewNowRef.current),
+            units,
+          ),
+        }
+      : null
   return (
     <section className="panel srs-panel">
       <header className="srs-head">
@@ -290,14 +367,45 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
 
       <div className="srs-actions">
         {revealed ? (
-          <>
-            <button type="button" className="srs-btn srs-btn-again" onClick={() => void answer(1)}>
-              {t('srs.again')} <kbd>1</kbd>
-            </button>
-            <button type="button" className="srs-btn srs-btn-good" onClick={() => void answer(3)}>
-              {t('srs.good')} <kbd>2</kbd>
-            </button>
-          </>
+          settings.srsButtons === 4 ? (
+            <>
+              <button
+                type="button"
+                className="srs-btn srs-btn-again"
+                onClick={() => void answer(1)}
+              >
+                {t('srs.again4')} <kbd>1</kbd>
+                {intervals && <span className="srs-btn-interval">{intervals[1]}</span>}
+              </button>
+              <button type="button" className="srs-btn" onClick={() => void answer(2)}>
+                {t('srs.hard')} <kbd>2</kbd>
+                {intervals && <span className="srs-btn-interval">{intervals[2]}</span>}
+              </button>
+              <button type="button" className="srs-btn srs-btn-good" onClick={() => void answer(3)}>
+                {t('srs.good')} <kbd>3</kbd>
+                {intervals && <span className="srs-btn-interval">{intervals[3]}</span>}
+              </button>
+              <button type="button" className="srs-btn" onClick={() => void answer(4)}>
+                {t('srs.easy')} <kbd>4</kbd>
+                {intervals && <span className="srs-btn-interval">{intervals[4]}</span>}
+              </button>
+            </>
+          ) : (
+            <>
+              <button
+                type="button"
+                className="srs-btn srs-btn-again"
+                onClick={() => void answer(1)}
+              >
+                {t('srs.again')} <kbd>1</kbd>
+                {intervals && <span className="srs-btn-interval">{intervals[1]}</span>}
+              </button>
+              <button type="button" className="srs-btn srs-btn-good" onClick={() => void answer(3)}>
+                {t('srs.good')} <kbd>2</kbd>
+                {intervals && <span className="srs-btn-interval">{intervals[3]}</span>}
+              </button>
+            </>
+          )
         ) : (
           <button
             type="button"
@@ -308,6 +416,22 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
           </button>
         )}
       </div>
+      {revealed && settings.srsButtons === 2 && !settings.showIntervals && (
+        <p className="srs-mode-hint dim">{t('srs.modeHint')}</p>
+      )}
+      {confirmExit && (
+        <p className="srs-exit-confirm" role="alertdialog" aria-label={t('srs.exitConfirmTitle')}>
+          <span>{t('srs.exitConfirm', { count: answeredTotal })}</span>
+          <span className="srs-actions">
+            <button type="button" className="srs-btn" onClick={() => setConfirmExit(false)}>
+              {t('srs.exitCancel')}
+            </button>
+            <button type="button" className="srs-btn srs-btn-again" onClick={finish}>
+              {t('srs.finish')}
+            </button>
+          </span>
+        </p>
+      )}
       <footer className="srs-progress dim">
         {t('srs.progress', { done: answeredTotal, total: plan?.entries.length ?? 0 })}
       </footer>

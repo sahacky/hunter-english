@@ -13,6 +13,31 @@
   --success: #4ade80;
 }
 
+/* Светлая тема (specs/08 §2.2): свечение/неон не используются */
+:root[data-theme='light'] {
+  color-scheme: light;
+  --bg: #f2f6fb;
+  --surface: #ffffff;
+  --surface-2: #e8f0f9;
+  --border: #c5d5e4;
+  --text: #10233b;
+  --text-dim: #51677f;
+  --primary: #1d7fb8;
+  --accent-2: #6d4fc4;
+  --danger: #d6334e;
+  --warn: #9a6a00;
+  --success: #1e9e6a;
+}
+
+/* Анимации off (настройка M10): гасим все keyframes-анимации на корне */
+:root[data-animations='off'] *,
+:root[data-animations='off'] *::before,
+:root[data-animations='off'] *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -645,4 +670,115 @@ body {
 }
 .pb-bubble-user {
   border-color: var(--primary);
+}
+
+/* ===== M10: тосты «Системы» (specs/04 §10) ===== */
+.toast-host {
+  position: fixed;
+  top: calc(12px + env(safe-area-inset-top));
+  right: calc(12px + env(safe-area-inset-right));
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: min(360px, calc(100vw - 24px));
+}
+
+.toast {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 10px 14px;
+  border: 1px solid var(--primary);
+  background: var(--surface);
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  font-size: 0.9rem;
+}
+
+:root[data-theme='light'] .toast {
+  box-shadow: 0 4px 16px rgba(16, 35, 59, 0.12);
+}
+
+.toast-sigil {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .toast {
+    animation: none;
+  }
+}
+
+/* ===== M10: экран настроек ===== */
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 680px;
+}
+
+.settings-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 0;
+  flex-wrap: wrap;
+}
+
+.settings-row select,
+.settings-row input[type='number'] {
+  background: var(--surface-2);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-size: 1rem;
+  min-height: 44px;
+}
+
+.settings-row input[type='number'] {
+  width: 90px;
+}
+
+.settings-actions {
+  justify-content: flex-start;
+}
+
+.settings-note {
+  font-size: 0.85rem;
+  margin: 4px 0 0;
+}
+
+.settings-file-input {
+  display: none;
+}
+
+/* ===== M10: SRS — 4 кнопки и интервалы (specs/03 §6, specs/08 §5 mono) ===== */
+.srs-btn-interval {
+  display: block;
+  font-size: 0.78rem;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  opacity: 0.75;
+}
+
+.srs-mode-hint {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.srs-exit-confirm {
+  margin: 0;
+  padding: 10px 14px;
+  border: 1px solid var(--warn);
+  color: var(--warn);
+  background: var(--surface-2);
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
 }

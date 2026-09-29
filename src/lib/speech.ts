@@ -45,9 +45,14 @@ export function cancelListening(): void {
 
 /**
  * Одна попытка распознавания: resolve с наилучшей транскриптом или reject
- * (нет речи / ошибка / прервано). Отмена — cancelListening().
+ * (нет речи / ошибка / прервано / таймаут — зависания Chrome, ревью M10 м10).
+ * Отмена — cancelListening().
  */
-export function listenOnce(options: { lang?: string; onEnd?: () => void }): Promise<string> {
+export function listenOnce(options: {
+  lang?: string
+  onEnd?: () => void
+  timeoutMs?: number
+}): Promise<string> {
   return new Promise((resolve, reject) => {
     const Ctor = recognitionCtor()
     if (!Ctor) {
@@ -61,20 +66,33 @@ export function listenOnce(options: { lang?: string; onEnd?: () => void }): Prom
     recognition.interimResults = false
     recognition.maxAlternatives = 3
     let settled = false
+    const timeout = setTimeout(() => {
+      if (settled) return
+      settled = true
+      try {
+        recognition.stop() // триггерит onend → onEnd-колбэк
+      } catch {
+        // уже мёртв
+      }
+      reject(new Error('speech-timeout'))
+    }, options.timeoutMs ?? 15_000)
     recognition.onresult = (event) => {
       const first = event.results[0]?.[0]?.transcript
       if (typeof first === 'string' && !settled) {
         settled = true
+        clearTimeout(timeout)
         resolve(first)
       }
     }
     recognition.onerror = () => {
       if (!settled) {
         settled = true
+        clearTimeout(timeout)
         reject(new Error('speech-error'))
       }
     }
     recognition.onend = () => {
+      clearTimeout(timeout)
       options.onEnd?.()
       if (current === recognition) current = null
       if (!settled) {

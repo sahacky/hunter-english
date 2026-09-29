@@ -7,6 +7,17 @@
     <meta name="description" content="Hunter English — английский с нуля до C1" />
     <link rel="icon" type="image/svg+xml" href="icons/favicon.svg" />
     <link rel="apple-touch-icon" href="icons/maskable-512.png" />
+    <script>
+      // Анти-FOUC темы: зеркало выбора (he-theme) пишется SettingsProvider;
+      // до загрузки бандла ставим сохранённую тему, иначе системную
+      try {
+        var saved = localStorage.getItem('he-theme')
+        var dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        document.documentElement.dataset.theme = saved || (dark ? 'dark' : 'light')
+      } catch (e) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
     <title>Hunter English</title>
   </head>
   <body>

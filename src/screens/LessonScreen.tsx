@@ -3,7 +3,7 @@
 // В колоду. Чекпоинт пишется после каждого ответа (specs/02 §5, единица — задание).
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import { useParams, useSearchParams } from 'react-router-dom'
+import { useNavigate, useParams, useSearchParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import {
   advanceStep,
@@ -28,6 +28,7 @@ import {
 } from '../content/lessons'
 import { createFirstCards } from '../content/words'
 import { awardLessonFinish, closeStudyDay, anySlotDone } from '../domain/game/award'
+import { showToast } from '../lib/toast'
 import { xpCategory } from '../domain/game/game'
 import type { ProgressRepository } from '../domain/progress'
 import { DexieProgressRepository } from '../data/progress-repository'
@@ -143,6 +144,7 @@ export default function LessonScreen({
   traps: trapsProp,
 }: LessonScreenProps) {
   const { t } = useTranslation()
+  const navigate = useNavigate()
   const params = useParams<{ id: string }>()
   const [searchParams] = useSearchParams()
   const defaultRepo = useMemo(() => new DexieProgressRepository(), [])
@@ -150,6 +152,7 @@ export default function LessonScreen({
   const [view, setView] = useState<LessonView | null>(viewProp ?? null)
   const [traps, setTraps] = useState<Map<string, TrapItem>>(trapsProp ?? new Map())
   const [phase, setPhase] = useState<Phase>({ kind: 'loading' })
+  const [confirmExit, setConfirmExit] = useState(false)
   const [checkpoint, setCheckpoint] = useState<LessonCheckpoint>(() => createCheckpoint())
   const [exerciseIndex, setExerciseIndex] = useState(0)
   const [ruleShown, setRuleShown] = useState(false)
@@ -435,7 +438,11 @@ export default function LessonScreen({
         bonusByType,
         isRepeat: Boolean(previous && previous.status !== 'in_progress'),
       })
-      if (anySlotDone(award.quest)) await closeStudyDay(repo, new Date())
+      if (anySlotDone(award.quest)) {
+        const closed = await closeStudyDay(repo, new Date())
+        showToast(t('toast.questDone')) // решение M10#2: значимые события
+        if (closed.freezeGained) showToast(t('toast.freezeGained'))
+      }
       setSummary((prev) => (prev ? { ...prev, xp: award.awarded } : prev))
       setPhase({ kind: 'done' })
     } catch {
@@ -464,6 +471,32 @@ export default function LessonScreen({
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
   }, [phase.kind, ruleShown, step, handleNext])
+
+  // Выход из незавершённого урока — осознанный (specs/07 §4.3–4.4): прогресс
+  // сохранён, продолжить можно с шага N. Esc открывает/закрывает подтверждение,
+  // но не срабатывает из полей ввода (specs/07 §5.1 — шорткоты вне input).
+  useEffect(() => {
+    if (phase.kind !== 'step') return
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key !== 'Escape') return
+      const target = event.target
+      if (target instanceof HTMLInputElement || target instanceof HTMLTextAreaElement) return
+      setConfirmExit((prev) => !prev)
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [phase.kind])
+
+  // beforeunload в незавершённом уроке (решение M10#5: нативный диалог браузера)
+  useEffect(() => {
+    if (phase.kind !== 'step' && phase.kind !== 'deck') return
+    const onBeforeUnload = (event: BeforeUnloadEvent) => {
+      event.preventDefault()
+      event.returnValue = ''
+    }
+    window.addEventListener('beforeunload', onBeforeUnload)
+    return () => window.removeEventListener('beforeunload', onBeforeUnload)
+  }, [phase.kind])
 
   if (phase.kind === 'loading') {
     return (
@@ -581,7 +614,35 @@ export default function LessonScreen({
           {t(`lesson.steps.${step?.kind ?? 'rule'}`)} ·{' '}
           {t('lesson.stepProgress', { current: checkpoint.stepIndex, total: view.steps.length })}
         </p>
+        <button type="button" className="srs-finish" onClick={() => setConfirmExit(true)}>
+          ✕ {t('lesson.exit')}
+        </button>
       </header>
+
+      {confirmExit && (
+        <p
+          className="srs-exit-confirm"
+          role="alertdialog"
+          aria-label={t('lesson.exitConfirmTitle')}
+        >
+          <span>{t('lesson.exitConfirm', { step: checkpoint.stepIndex })}</span>
+          <span className="srs-actions">
+            <button type="button" className="srs-btn" onClick={() => setConfirmExit(false)}>
+              {t('lesson.exitCancel')}
+            </button>
+            <button
+              type="button"
+              className="srs-btn srs-btn-again"
+              onClick={() => {
+                stopSpeak()
+                navigate('/')
+              }}
+            >
+              {t('lesson.exitYes')}
+            </button>
+          </span>
+        </p>
+      )}
 
       {isRuleStep && !ruleShown && (
         <RuleCard

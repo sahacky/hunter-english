@@ -118,6 +118,36 @@ export function applyAnswer(
 }
 
 /**
+ * Превью следующего due для оценки (кнопки с интервалами, specs/03 §6).
+ * Чистая функция: то же планирование, что в applyAnswer, без записи лога.
+ */
+export function previewDue(state: CardState, rating: 1 | 2 | 3 | 4, now: Date): Date {
+  const { card } = scheduler.next(toFsrsCard(state), now, rating as Grade)
+  return card.due
+}
+
+/** Единицы подписи интервалов (локализуются вызывающим экраном). */
+export interface IntervalUnits {
+  m: string
+  h: string
+  d: string
+  y: string
+}
+
+const RU_UNITS: IntervalUnits = { m: 'м', h: 'ч', d: 'д', y: 'г' }
+
+/** Человекочитаемый интервал до due: Nм / Nч / Nд (mono-подпись кнопок SRS). */
+export function formatInterval(from: Date, to: Date, units: IntervalUnits = RU_UNITS): string {
+  const minutes = Math.max(0, Math.round((to.getTime() - from.getTime()) / 60000))
+  if (minutes < 60) return `${Math.max(1, minutes)}${units.m}`
+  const hours = Math.round(minutes / 60)
+  if (hours < 24) return `${hours}${units.h}`
+  const days = Math.round(hours / 24)
+  if (days < 365) return `${days}${units.d}`
+  return `${(days / 365).toFixed(1)}${units.y}`
+}
+
+/**
  * Начало текущего дня обучения: 4:00 локального времени (srs://day-boundary).
  * Для момента до 4:00 — 4:00 предыдущего календарного дня.
  */
