@@ -6,6 +6,8 @@ import { db, HunterDb, LOCAL_USER_ID } from '../data/db'
 import { useSettings } from '../state/settings'
 import type { Locale, SrsButtonMode, ThemeChoice, TtsRate } from '../domain/settings/types'
 import { showToast } from '../lib/toast'
+import { useAuth } from '../state/auth'
+import { readSyncStatus, syncNow, type SyncStatus } from '../data/sync'
 
 /** Таблицы прогресса в экспорте (sync_queue — локальная механика, не выгружается). */
 const EXPORT_TABLES = [
@@ -133,6 +135,15 @@ export default function SettingsScreen({ database }: SettingsScreenProps) {
   const [confirmReset, setConfirmReset] = useState(false)
   const [busy, setBusy] = useState(false)
   const [newPerDayDraft, setNewPerDayDraft] = useState(String(settings.newPerDay))
+  const auth = useAuth()
+  const [sync, setSync] = useState<SyncStatus | null>(null)
+  const [syncBusy, setSyncBusy] = useState(false)
+
+  useEffect(() => {
+    void readSyncStatus(database ?? db)
+      .then(setSync)
+      .catch(() => undefined)
+  }, [database])
   const dbName = useMemo(() => database?.name ?? 'local', [database])
 
   // внешний источник изменения (импорт/сброс дефолтов) синхронизирует черновик
@@ -289,6 +300,54 @@ export default function SettingsScreen({ database }: SettingsScreenProps) {
           </select>
         </label>
         <p className="dim settings-note">{t('settings.voice.note')}</p>
+      </section>
+
+      <section className="panel">
+        <h2>{t('settings.account.title')}</h2>
+        <p className="dim">
+          {auth.guest
+            ? t('settings.account.guest')
+            : t('settings.account.signedIn', { email: auth.email ?? '' })}
+        </p>
+        <div className="settings-row settings-actions">
+          {auth.guest ? (
+            <a className="srs-btn" href="#/login">
+              {t('settings.account.signIn')}
+            </a>
+          ) : (
+            <button type="button" className="srs-btn" onClick={() => void auth.signOut()}>
+              {t('settings.account.signOut')}
+            </button>
+          )}
+          {sync?.configured && !auth.guest && (
+            <button
+              type="button"
+              className="srs-btn"
+              disabled={syncBusy}
+              onClick={() => {
+                setSyncBusy(true)
+                void syncNow(database ?? db)
+                  .then(() => readSyncStatus(database ?? db))
+                  .then(setSync)
+                  .catch(() => undefined)
+                  .finally(() => setSyncBusy(false))
+              }}
+            >
+              {t('settings.account.syncNow')}
+            </button>
+          )}
+        </div>
+        {sync && !auth.guest && (
+          <p className="dim settings-note">
+            {t('settings.account.queue', { count: sync.queue })} ·{' '}
+            {sync.failed > 0 ? t('settings.account.failed', { count: sync.failed }) + ' · ' : ''}
+            {sync.lastSyncAt
+              ? t('settings.account.lastSync', {
+                  time: new Date(sync.lastSyncAt).toLocaleString(),
+                })
+              : t('settings.account.neverSynced')}
+          </p>
+        )}
       </section>
 
       <section className="panel">
