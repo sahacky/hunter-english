@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-29T13:10:05Z",
+  "generated_at": "2026-09-29T13:38:12Z",
   "files": [
     {
       "path": "lessons/exercises-c.json",
       "kind": "exercises",
       "schema_version": 1,
-      "items": 726,
-      "sha256": "7c47ebbf717d56acf6ddf3509220811cf0114f15b1f2ab406c142641d12732f4"
+      "items": 727,
+      "sha256": "b3e1cbfaec6026ce3ca54797464dc29d39b790198740d9336214346638a6cde1"
     },
     {
       "path": "lessons/exercises-d.json",
@@ -28,7 +28,7 @@
       "kind": "lessons",
       "schema_version": 1,
       "items": 15,
-      "sha256": "84a223903ba88448678904a11c6677bd83accc0f62630aeb0892386f9d040fa9"
+      "sha256": "fa7f6f97397f570b9b0b7d314b0269ff7a257cf4cbdb7e3c38806a14e812f0dd"
     },
     {
       "path": "lessons/lessons-d.json",
@@ -63,14 +63,14 @@
       "kind": "phrasebook",
       "schema_version": 1,
       "items": 3,
-      "sha256": "e5a8adabc769efb46f9922cb0a17ac7bf75337cffbe8be4f5feeac482ccbd998"
+      "sha256": "dcce5be263f61e285efb7323401d5fac899cc22e62388b1599a65c91067be1d2"
     },
     {
       "path": "phrasebook/hotel.json",
       "kind": "phrasebook",
       "schema_version": 1,
       "items": 2,
-      "sha256": "7b55efa0e981356cf66746827e476ca952834a117eeaa1327d7508c57c9458e6"
+      "sha256": "823875e2e79f9bc25bc7386563eeba53a6b7f2d425f0e9524b58553f55136a8f"
     },
     {
       "path": "phrasebook/pharmacy.json",
@@ -105,7 +105,7 @@
       "kind": "phrases",
       "schema_version": 1,
       "items": 684,
-      "sha256": "cb4265df085ad5bf3052734e27ebac7ca7fe4e7ff99595b3bbdcf824a88280b6"
+      "sha256": "26f78f3618a318281acb93b1f5ebd230f276fe4e91fb742a52eab9d501874707"
     },
     {
       "path": "phrases/phrases-d.json",

@@ -65,8 +65,8 @@
         },
         {
           "role": "receptionist",
-          "text_en": "What was the problem, sir?",
-          "translation_ru": "В чём была проблема, сэр?"
+          "text_en": "What is the problem, sir?",
+          "translation_ru": "В чём проблема, сэр?"
         },
         {
           "role": "guest",

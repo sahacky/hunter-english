@@ -2081,7 +2081,7 @@ def build_rank(lessons, *, rank: str, stem: str, seed: int):
         build_pool = [
             p
             for p in lesson_phrase_items
-            if p["text_en"] not in {q for q, _ in spec["quotes"]}
+            if p["text_en"] not in {q[0] for q in spec["quotes"]}
             and p["translation_ru"] not in ambiguous
         ]
         rng.shuffle(build_pool)
@@ -2202,7 +2202,9 @@ def build_rank(lessons, *, rank: str, stem: str, seed: int):
             lesson_exercises.append({"id": eid})
 
         # --- Шаг 6: из сериала — cloze в цитатах ------------------------------
-        for quote_id, gap_word in spec["quotes"]:
+        for quote_spec in spec["quotes"]:
+            quote_id, gap_word = quote_spec[0], quote_spec[1]
+            extra_answers = list(quote_spec[2]) if len(quote_spec) > 2 else []
             q = load_quote(quote_id)
             text = q["text"]
             gap_re = re.compile(rf"\b{re.escape(gap_word)}\b")
@@ -2214,7 +2216,7 @@ def build_rank(lessons, *, rank: str, stem: str, seed: int):
                 "payload": {
                     "kind": "cloze",
                     "text_with_gap": gap_re.sub("___", text, count=1),
-                    "gap_answers": [gap_word],
+                    "gap_answers": [gap_word] + extra_answers,
                     "quote": {"title": q["title"], "season_episode": q["season_episode"]},
                 },
                 "answer": {"normalization": "default", "typo": "exact",

@@ -162,10 +162,10 @@
           "id": "ex-c-0046"
         },
         {
-          "id": "ex-c-0697"
+          "id": "ex-c-0698"
         },
         {
-          "id": "ex-c-0698"
+          "id": "ex-c-0699"
         }
       ],
       "bebris_video": {
@@ -335,10 +335,10 @@
           "id": "ex-c-0092"
         },
         {
-          "id": "ex-c-0699"
+          "id": "ex-c-0700"
         },
         {
-          "id": "ex-c-0700"
+          "id": "ex-c-0701"
         }
       ],
       "bebris_video": {
@@ -508,10 +508,10 @@
           "id": "ex-c-0138"
         },
         {
-          "id": "ex-c-0701"
+          "id": "ex-c-0702"
         },
         {
-          "id": "ex-c-0702"
+          "id": "ex-c-0703"
         }
       ],
       "bebris_video": {
@@ -681,10 +681,10 @@
           "id": "ex-c-0184"
         },
         {
-          "id": "ex-c-0703"
+          "id": "ex-c-0704"
         },
         {
-          "id": "ex-c-0704"
+          "id": "ex-c-0705"
         }
       ],
       "bebris_video": {
@@ -854,10 +854,10 @@
           "id": "ex-c-0230"
         },
         {
-          "id": "ex-c-0705"
+          "id": "ex-c-0706"
         },
         {
-          "id": "ex-c-0706"
+          "id": "ex-c-0707"
         }
       ],
       "bebris_video": null
@@ -1022,10 +1022,13 @@
           "id": "ex-c-0276"
         },
         {
-          "id": "ex-c-0707"
+          "id": "ex-c-0277"
         },
         {
           "id": "ex-c-0708"
+        },
+        {
+          "id": "ex-c-0709"
         }
       ],
       "bebris_video": {
@@ -1056,9 +1059,6 @@
       "trap_id": "trap-question-word-order",
       "quotes_topic": "questions",
       "exercises": [
-        {
-          "id": "ex-c-0277"
-        },
         {
           "id": "ex-c-0278"
         },
@@ -1195,10 +1195,13 @@
           "id": "ex-c-0322"
         },
         {
-          "id": "ex-c-0709"
+          "id": "ex-c-0323"
         },
         {
           "id": "ex-c-0710"
+        },
+        {
+          "id": "ex-c-0711"
         }
       ],
       "bebris_video": {
@@ -1229,9 +1232,6 @@
       "trap_id": "trap-third-person-s",
       "quotes_topic": "mixed",
       "exercises": [
-        {
-          "id": "ex-c-0323"
-        },
         {
           "id": "ex-c-0324"
         },
@@ -1368,10 +1368,13 @@
           "id": "ex-c-0368"
         },
         {
-          "id": "ex-c-0711"
+          "id": "ex-c-0369"
         },
         {
           "id": "ex-c-0712"
+        },
+        {
+          "id": "ex-c-0713"
         }
       ],
       "bebris_video": {
@@ -1402,9 +1405,6 @@
       "trap_id": "trap-question-word-order",
       "quotes_topic": "questions",
       "exercises": [
-        {
-          "id": "ex-c-0369"
-        },
         {
           "id": "ex-c-0370"
         },
@@ -1541,10 +1541,13 @@
           "id": "ex-c-0414"
         },
         {
-          "id": "ex-c-0713"
+          "id": "ex-c-0415"
         },
         {
           "id": "ex-c-0714"
+        },
+        {
+          "id": "ex-c-0715"
         }
       ],
       "bebris_video": {
@@ -1575,9 +1578,6 @@
       "trap_id": "trap-didnt-past",
       "quotes_topic": "mixed",
       "exercises": [
-        {
-          "id": "ex-c-0415"
-        },
         {
           "id": "ex-c-0416"
         },
@@ -1723,10 +1723,13 @@
           "id": "ex-c-0463"
         },
         {
-          "id": "ex-c-0715"
+          "id": "ex-c-0464"
         },
         {
           "id": "ex-c-0716"
+        },
+        {
+          "id": "ex-c-0717"
         }
       ],
       "bebris_video": null
@@ -1752,9 +1755,6 @@
       "trap_id": "trap-if-will",
       "quotes_topic": "future",
       "exercises": [
-        {
-          "id": "ex-c-0464"
-        },
         {
           "id": "ex-c-0465"
         },
@@ -1891,10 +1891,13 @@
           "id": "ex-c-0509"
         },
         {
-          "id": "ex-c-0717"
+          "id": "ex-c-0510"
         },
         {
           "id": "ex-c-0718"
+        },
+        {
+          "id": "ex-c-0719"
         }
       ],
       "bebris_video": {
@@ -1925,9 +1928,6 @@
       "trap_id": "trap-if-will",
       "quotes_topic": "future",
       "exercises": [
-        {
-          "id": "ex-c-0510"
-        },
         {
           "id": "ex-c-0511"
         },
@@ -2064,10 +2064,13 @@
           "id": "ex-c-0555"
         },
         {
-          "id": "ex-c-0719"
+          "id": "ex-c-0556"
         },
         {
           "id": "ex-c-0720"
+        },
+        {
+          "id": "ex-c-0721"
         }
       ],
       "bebris_video": {
@@ -2098,9 +2101,6 @@
       "trap_id": "trap-if-will",
       "quotes_topic": "future",
       "exercises": [
-        {
-          "id": "ex-c-0556"
-        },
         {
           "id": "ex-c-0557"
         },
@@ -2237,10 +2237,13 @@
           "id": "ex-c-0601"
         },
         {
-          "id": "ex-c-0721"
+          "id": "ex-c-0602"
         },
         {
           "id": "ex-c-0722"
+        },
+        {
+          "id": "ex-c-0723"
         }
       ],
       "bebris_video": {
@@ -2258,7 +2261,7 @@
       "grammar_point": {
         "id": "gp-c-14",
         "title_ru": "going to vs will",
-        "rule_md": "**be going to: планы и намерения.**\nam/is/are going to + 1-я форма: I'**m going to travel** this summer.\nПлан заранее: We **are going to visit** Rome.\nОчевидное будущее: It **is going to** rain (небо тёмное).\nwill — решение сейчас; going to — план заранее.",
+        "rule_md": "**be going to: планы и намерения.**\nam/is/are going to + 1-я форма: I'**m going to travel** this summer.\nПлан заранее: We **are going to visit** Rome.\nОчевидное будущее: It **is going to** rain (небо тёмное).\nwill — решение сейчас; going to — план заранее.\n⚠️ Ловушка: I'm going **to bed** — это настоящее время («иду спать»), не план!",
         "phrase_ids": ["ph-c-0589", "ph-c-0590", "ph-c-0591", "ph-c-0592", "ph-c-0593"],
         "trap_id": "trap-want-that"
       },
@@ -2271,9 +2274,6 @@
       "trap_id": "trap-want-that",
       "quotes_topic": "future",
       "exercises": [
-        {
-          "id": "ex-c-0602"
-        },
         {
           "id": "ex-c-0603"
         },
@@ -2410,10 +2410,13 @@
           "id": "ex-c-0647"
         },
         {
-          "id": "ex-c-0723"
+          "id": "ex-c-0648"
         },
         {
           "id": "ex-c-0724"
+        },
+        {
+          "id": "ex-c-0725"
         }
       ],
       "bebris_video": null
@@ -2439,9 +2442,6 @@
       "trap_id": "trap-didnt-past",
       "quotes_topic": "mixed",
       "exercises": [
-        {
-          "id": "ex-c-0648"
-        },
         {
           "id": "ex-c-0649"
         },
@@ -2587,10 +2587,13 @@
           "id": "ex-c-0696"
         },
         {
-          "id": "ex-c-0725"
+          "id": "ex-c-0697"
         },
         {
           "id": "ex-c-0726"
+        },
+        {
+          "id": "ex-c-0727"
         }
       ],
       "bebris_video": null

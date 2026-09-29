@@ -100,7 +100,7 @@
         {
           "role": "local",
           "text_en": "You should go to the police station. It is two streets from here.",
-          "translation_ru": "Вам следует пойти в полицию. Это в двух улицах отсюда."
+          "translation_ru": "Вам следует пойти в полицию. Это в двух кварталах отсюда."
         },
         {
           "role": "traveler",
@@ -113,14 +113,14 @@
         },
         {
           "role": "local",
-          "text_en": "A man found a bag and gave it to the security. Check there first.",
+          "text_en": "A man found a bag and gave it to security. Check there first.",
           "translation_ru": "Мужчина нашёл сумку и отдал охране. Сначала проверьте там."
         },
         {
           "role": "traveler",
-          "text_en": "Thank you so much. You saved my day!",
-          "translation_ru": "Большое спасибо. Вы спасли мой день!",
-          "accepted": ["Thank you so much.", "Thank you so much. You saved my day!"]
+          "text_en": "Thank you so much. You made my day!",
+          "translation_ru": "Большое спасибо. Вы меня так выручили!",
+          "accepted": ["Thank you so much.", "Thank you so much. You made my day!"]
         }
       ]
     }

@@ -45,7 +45,7 @@
     {
       "id": "ph-c-0005",
       "text_en": "He walked to the station.",
-      "translation_ru": "Он пошёл до вокзала пешком.",
+      "translation_ru": "Он дошёл до вокзала пешком.",
       "grammar_point_id": "gp-c-01",
       "variants": ["He walked to the station."],
       "audio": {
@@ -1965,7 +1965,7 @@
     {
       "id": "ph-c-0197",
       "text_en": "She didn't feel well.",
-      "translation_ru": "Ей было нездоровится.",
+      "translation_ru": "Ей было нездорово.",
       "grammar_point_id": "gp-c-05",
       "variants": ["She didn't feel well."],
       "audio": {
@@ -2225,7 +2225,7 @@
     {
       "id": "ph-c-0223",
       "text_en": "I want to go back.",
-      "translation_ru": "Я хочу вернуться туда снова.",
+      "translation_ru": "Я хочу туда вернуться.",
       "grammar_point_id": "gp-c-05",
       "variants": ["I want to go back."],
       "audio": {
@@ -3725,7 +3725,7 @@
     {
       "id": "ph-c-0373",
       "text_en": "What hurt him?",
-      "translation_ru": "Что его ушибло?",
+      "translation_ru": "Что причинило ему боль?",
       "grammar_point_id": "gp-c-09",
       "variants": ["What hurt him?"],
       "audio": {
@@ -5195,7 +5195,7 @@
     {
       "id": "ph-c-0520",
       "text_en": "No, I won't.",
-      "translation_ru": "Нет.",
+      "translation_ru": "Нет, не буду.",
       "grammar_point_id": "gp-c-12",
       "variants": ["No, I won't."],
       "audio": {
@@ -5555,7 +5555,7 @@
     {
       "id": "ph-c-0556",
       "text_en": "I can swim now, and I will be able to swim there too.",
-      "translation_ru": "Я умею плавать и там смогу плавать тоже.",
+      "translation_ru": "Я умею плавать и там тоже смогу плавать.",
       "grammar_point_id": "gp-c-13",
       "variants": ["I can swim now, and I will be able to swim there too."],
       "audio": {
@@ -5815,7 +5815,7 @@
     {
       "id": "ph-c-0582",
       "text_en": "It will be worth it.",
-      "translation_ru": "Это того будет стоить.",
+      "translation_ru": "Это будет того стоить.",
       "grammar_point_id": "gp-c-13",
       "variants": ["It will be worth it."],
       "audio": {
@@ -6077,7 +6077,7 @@
       "text_en": "We're going to win.",
       "translation_ru": "Мы победим.",
       "grammar_point_id": "gp-c-14",
-      "variants": ["We're going to win."],
+      "variants": ["We're going to win.", "We will win."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-0608.opus"
       }
@@ -6107,7 +6107,7 @@
       "text_en": "I'm going to try.",
       "translation_ru": "Я попробую.",
       "grammar_point_id": "gp-c-14",
-      "variants": ["I'm going to try."],
+      "variants": ["I'm going to try.", "I'll try."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-0611.opus"
       }
@@ -6127,7 +6127,7 @@
       "text_en": "Nothing is going to stop me.",
       "translation_ru": "Меня ничто не остановит.",
       "grammar_point_id": "gp-c-14",
-      "variants": ["Nothing is going to stop me."],
+      "variants": ["Nothing is going to stop me.", "Nothing will stop me."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-0613.opus"
       }
@@ -6227,7 +6227,7 @@
       "text_en": "This is going to be great.",
       "translation_ru": "Это будет здорово.",
       "grammar_point_id": "gp-c-14",
-      "variants": ["This is going to be great."],
+      "variants": ["This is going to be great.", "This will be great."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-0623.opus"
       }
@@ -6237,7 +6237,7 @@
       "text_en": "It's not going to be easy.",
       "translation_ru": "Это будет непросто.",
       "grammar_point_id": "gp-c-14",
-      "variants": ["It's not going to be easy."],
+      "variants": ["It's not going to be easy.", "It won't be easy."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-0624.opus"
       }
@@ -6257,7 +6257,7 @@
       "text_en": "Everything is going to change.",
       "translation_ru": "Всё изменится.",
       "grammar_point_id": "gp-c-14",
-      "variants": ["Everything is going to change."],
+      "variants": ["Everything is going to change.", "Everything will change."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-0626.opus"
       }
@@ -6277,7 +6277,7 @@
       "text_en": "We're going to have a great time.",
       "translation_ru": "Мы отлично проведём время.",
       "grammar_point_id": "gp-c-14",
-      "variants": ["We're going to have a great time."],
+      "variants": ["We're going to have a great time.", "We will have a great time."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-0628.opus"
       }
@@ -6315,7 +6315,7 @@
     {
       "id": "ph-c-0632",
       "text_en": "Watch me.",
-      "translation_ru": "Смотри на меня.",
+      "translation_ru": "Ну смотри.",
       "grammar_point_id": "gp-c-14",
       "variants": ["Watch me."],
       "audio": {
@@ -6455,9 +6455,9 @@
     {
       "id": "ph-c-0646",
       "text_en": "I'm going to start a new job.",
-      "translation_ru": "Я начинаю новую работу.",
+      "translation_ru": "Я собираюсь начать новую работу.",
       "grammar_point_id": "gp-c-15",
-      "variants": ["I'm going to start a new job."],
+      "variants": ["I'm going to start a new job.", "I will start a new job."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-0646.opus"
       }
@@ -6697,7 +6697,7 @@
       "text_en": "Everything is going to be fine.",
       "translation_ru": "Всё будет хорошо.",
       "grammar_point_id": "gp-c-15",
-      "variants": ["Everything is going to be fine."],
+      "variants": ["Everything is going to be fine.", "Everything will be fine."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-0670.opus"
       }

@@ -11,7 +11,7 @@ C01 = [
     ("I usually visit my parents.", "Я обычно навещаю родителей.", None),
     ("We stayed at a small hotel.", "Мы остановились в маленьком отеле.", None),
     ("She booked the tickets online.", "Она забронировала билеты онлайн.", None),
-    ("He walked to the station.", "Он пошёл до вокзала пешком.", None),
+    ("He walked to the station.", "Он дошёл до вокзала пешком.", None),
     ("They watched a film yesterday.", "Вчера они посмотрели фильм.", None),
     ("I worked all day.", "Я проработал весь день.", None),
     ("Yesterday I worked all day.", "Вчера я проработал весь день.", None),
@@ -215,7 +215,7 @@ C05 = [
     ("They didn't have time.", "У них не было времени.", None),
     ("I didn't know that.", "Я этого не знал.", None),
     ("We didn't eat much.", "Мы мало ели.", None),
-    ("She didn't feel well.", "Ей было нездоровится.", None),
+    ("She didn't feel well.", "Ей было нездорово.", None),
     ("I wasn't at work yesterday.", "Вчера меня не было на работе.", None),
     ("They weren't at home.", "Их не было дома.", None),
     ("Did you visit the old town?", "Ты ходил в старый город?", None),
@@ -241,7 +241,7 @@ C05 = [
     ("We spoke English all day.", "Мы весь день говорили по-английски.", None),
     ("I understood almost everything.", "Я понял почти всё.", None),
     ("That was a good trip.", "Это была хорошая поездка.", None),
-    ("I want to go back.", "Я хочу вернуться туда снова.", None),
+    ("I want to go back.", "Я хочу туда вернуться.", None),
 ]
 
 C06 = [
@@ -403,7 +403,7 @@ C09 = [
     ("What made you laugh?", "Что тебя рассмешило?", None),
     ("What went wrong?", "Что пошло не так?", None),
     ("What surprised you?", "Что тебя удивило?", None),
-    ("What hurt him?", "Что его ушибло?", None),
+    ("What hurt him?", "Что причинило ему боль?", None),
     ("Who saw him last?", "Кто видел его последним?", None),
     ("Who told you the news?", "Кто рассказал тебе новость?", None),
     ("Who wrote this letter?", "Кто написал это письмо?", None),
@@ -562,7 +562,7 @@ C12 = [
     ("Will the flight be on time?", "Рейс будет вовремя?", None),
     ("Will you be at home tonight?", "Ты будешь дома вечером?", None),
     ("Yes, I will.", "Да.", None),
-    ("No, I won't.", "Нет.", None),
+    ("No, I won't.", "Нет, не буду.", None),
     ("Yes, we will.", "Да.", None),
     ("I hope so.", "Надеюсь.", None),
     ("I'm afraid not.", "Боюсь, что нет.", None),
@@ -601,7 +601,7 @@ C13 = [
     ("I will be able to help you tomorrow.", "Я смогу помочь тебе завтра.", None),
     ("Will you be able to come?", "Ты сможешь прийти?", None),
     ("She won't be able to work this week.", "На этой неделе она не сможет работать.", None),
-    ("I can swim now, and I will be able to swim there too.", "Я умею плавать и там смогу плавать тоже.", None),
+    ("I can swim now, and I will be able to swim there too.", "Я умею плавать и там тоже смогу плавать.", None),
     ("I will be able to help you.", "Я смогу тебе помочь.", None),
     ("I won't be able to come.", "Я не смогу прийти.", None),
     ("He managed to find the hotel.", "Ему удалось найти отель.", None),
@@ -627,7 +627,7 @@ C13 = [
     ("We will see about that.", "Это мы ещё посмотрим.", None),
     ("I will never do it again.", "Я больше никогда так не сделаю.", None),
     ("You will regret it.", "Ты об этом пожалеешь.", None),
-    ("It will be worth it.", "Это того будет стоить.", None),
+    ("It will be worth it.", "Это будет того стоить.", None),
     ("This will be our secret.", "Это будет наш секрет.", None),
     ("I will do my best.", "Я сделаю всё возможное.", None),
     ("We will find a way.", "Мы найдём выход.", None),
@@ -656,12 +656,12 @@ C14 = [
     ("Is he going to help us?", "Он собирается нам помочь?", None),
     ("Are they going to come?", "Они собираются прийти?", None),
     ("I'm going to be a hunter.", "Я стану охотником.", None),
-    ("We're going to win.", "Мы победим.", None),
+    ("We're going to win.", "Мы победим.", ["We will win."]),
     ("I'm going to protect my family.", "Я защищу свою семью.", None),
     ("Look at the clouds!", "Посмотри на облака!", None),
-    ("I'm going to try.", "Я попробую.", None),
+    ("I'm going to try.", "Я попробую.", ["I'll try."]),
     ("What's going to happen?", "Что будет?", None),
-    ("Nothing is going to stop me.", "Меня ничто не остановит.", None),
+    ("Nothing is going to stop me.", "Меня ничто не остановит.", ["Nothing will stop me."]),
     ("I'm going to say what I think.", "Я скажу, что думаю.", None),
     ("We are going to be late.", "Мы опоздаем.", None),
     ("The bus is going to leave.", "Автобус сейчас отойдёт.", None),
@@ -671,16 +671,16 @@ C14 = [
     ("She was going to tell him.", "Она собиралась ему сказать.", None),
     ("We were going to take a taxi.", "Мы собирались взять такси.", None),
     ("I'm going to do what's called a pro gamer move.", "Я сделаю то, что называется про-геймерским приёмом.", None),
-    ("This is going to be great.", "Это будет здорово.", None),
-    ("It's not going to be easy.", "Это будет непросто.", None),
+    ("This is going to be great.", "Это будет здорово.", ["This will be great."]),
+    ("It's not going to be easy.", "Это будет непросто.", ["It won't be easy."]),
     ("Who is going to help us?", "Кто нам поможет?", None),
-    ("Everything is going to change.", "Всё изменится.", None),
+    ("Everything is going to change.", "Всё изменится.", ["Everything will change."]),
     ("I'm going to remember this moment.", "Я запомню этот момент.", None),
-    ("We're going to have a great time.", "Мы отлично проведём время.", None),
+    ("We're going to have a great time.", "Мы отлично проведём время.", ["We will have a great time."]),
     ("Plans are going to change.", "Планы изменятся.", None),
     ("I'm going to start next Monday.", "Я начну в следующий понедельник.", None),
     ("Nothing is going to happen.", "Ничего не случится.", None),
-    ("Watch me.", "Смотри на меня.", None),
+    ("Watch me.", "Ну смотри.", None),
 ]
 
 C15 = [
@@ -697,7 +697,7 @@ C15 = [
     ("Will you help me?", "Ты мне поможешь?", None),
     ("Are you going to eat now?", "Ты будешь есть сейчас?", None),
     ("I'll be back.", "Я вернусь.", None),
-    ("I'm going to start a new job.", "Я начинаю новую работу.", None),
+    ("I'm going to start a new job.", "Я собираюсь начать новую работу.", ["I will start a new job."]),
     ("The flight will be late.", "Рейс задержится.", None),
     ("The shop is going to close.", "Магазин сейчас закроется.", None),
     ("We won't be long.", "Мы ненадолго.", None),
@@ -721,7 +721,7 @@ C15 = [
     ("Who told you that?", "Кто тебе это сказал?", None),
     ("What happened at the end?", "Что случилось в конце?", None),
     ("I'll never forget those days.", "Я никогда не забуду те дни.", None),
-    ("Everything is going to be fine.", "Всё будет хорошо.", None),
+    ("Everything is going to be fine.", "Всё будет хорошо.", ["Everything will be fine."]),
     ("I promise.", "Обещаю.", None),
     ("Trust me.", "Доверься мне.", None),
     ("Time will tell.", "Время покажет.", None),
@@ -809,7 +809,8 @@ RULE_C14 = """**be going to: планы и намерения.**
 am/is/are going to + 1-я форма: I'**m going to travel** this summer.
 План заранее: We **are going to visit** Rome.
 Очевидное будущее: It **is going to** rain (небо тёмное).
-will — решение сейчас; going to — план заранее."""
+will — решение сейчас; going to — план заранее.
+⚠️ Ловушка: I'm going **to bed** — это настоящее время («иду спать»), не план!"""
 
 RULE_C15 = """**Повторение №12: будущее и прошедшее.**
 will vs be going to: решение vs план; won't, Will you…?
@@ -862,7 +863,7 @@ LESSONS_C1_C2 = [
         "answer_question": [("Did you see him yesterday?", "I saw him yesterday.")],
         "find_error": [("He maked coffee.", "He made coffee.")],
         "verb_tense": [
-            ("She ___ home early.", "yesterday", ["went"]),
+            ("She ___ home early.", "go", ["went", "came"]),
             ("I ___ a message.", "last night", ["got"]),
             ("He ___ a mistake.", "last week", ["made"]),
         ],
@@ -926,7 +927,7 @@ LESSONS_C1_C2 = [
         "rule_cloze": [
             ("___ did you do yesterday?", ["What"]),
             ("I ___ at work yesterday.", ["wasn't", "was not"]),
-            ("She didn't ___ the message.", ["see"]),
+            ("She didn't ___ the message.", ["see", "read"]),
         ],
         "quotes": [("q-igry-0003", "took"), ("q-igry-0014", "died")],
         "trap_id": "trap-didnt-past",
@@ -951,7 +952,7 @@ LESSONS_C1_C2 = [
         "rule_cloze": [
             ("I ___ go to work.", ["didn't", "did not"]),
             ("He ___ call me.", ["didn't", "did not"]),
-            ("We didn't ___ breakfast.", ["have"]),
+            ("We didn't ___ breakfast.", ["have", "eat"]),
         ],
         "quotes": [("q-memy-0010", "pay"), ("q-igry-0008", "still")],
         "trap_id": "trap-didnt-past",
@@ -965,6 +966,7 @@ LESSONS_C1_C2 = [
             ("They didn't ___ about it.", "знать", ["know"]),
             ("I didn't ___ well.", "спать", ["sleep"]),
             ("He didn't ___ anything.", "покупать", ["buy"]),
+            ("We didn't ___ breakfast.", "еда", ["have", "eat"]),
         ],
     },
     {
@@ -1001,7 +1003,7 @@ LESSONS_C1_C2 = [
         "rule_cloze": [
             ("I usually ___ up at seven.", ["get"]),
             ("Yesterday I ___ up at nine.", ["got"]),
-            ("Last week we ___ by car.", ["travelled"]),
+            ("Last week we ___ by car.", ["travelled", "went"]),
         ],
         "quotes": [("q-lord-of-the-rings-0003", "had"), ("q-stranger-things-0013", "are")],
         "trap_id": "trap-third-person-s",
@@ -1014,7 +1016,7 @@ LESSONS_C1_C2 = [
         "verb_tense": [
             ("He always ___ tea.", "обычно", ["drinks"]),
             ("This morning he ___ coffee.", "прош.", ["drank"]),
-            ("We ___ to Italy last year.", "прош.", ["went"]),
+            ("We ___ to Italy last year.", "прош.", ["went", "travelled"]),
         ],
     },
     {
@@ -1025,7 +1027,7 @@ LESSONS_C1_C2 = [
         "phrases": C09,
         "rule_cloze": [
             ("What ___?", ["happened"]),
-            ("Who ___ that?", ["said"]),
+            ("Who ___ that?", ["said", "did", "made"]),
             ("Who ___ my pen?", ["took"]),
         ],
         "quotes": [("q-igry-0014", "died"), ("q-igry-0003", "took")],
@@ -1050,8 +1052,8 @@ LESSONS_C1_C2 = [
         "phrases": C10,
         "rule_cloze": [
             ("The weather ___ perfect.", ["was"]),
-            ("___ did you have dinner?", ["Where"]),
-            ("He ___ his phone on the way.", ["lost"]),
+            ("___ did you have dinner?", ["Where", "When"]),
+            ("He ___ his phone on the way.", ["lost", "found"]),
         ],
         "quotes": [("q-berserk-0003", "is"), ("q-supernatural-0018", "don't")],
         "trap_id": "trap-didnt-past",
@@ -1105,7 +1107,7 @@ LESSONS_C1_C2 = [
         "phrases": C12,
         "rule_cloze": [
             ("I ___ tell anyone.", ["won't", "will not"]),
-            ("___ you help me?", ["Will"]),
+            ("___ you help me tomorrow?", ["Will"]),
             ("___ will you stay?", ["Where"]),
         ],
         "quotes": [("q-game-of-thrones-0001", "won't"), ("q-berserk-0017", "get")],
@@ -1158,7 +1160,7 @@ LESSONS_C1_C2 = [
             ("It is ___ to rain.", ["going"]),
             ("What are you ___ to do?", ["going"]),
         ],
-        "quotes": [("q-memy-0003", "gonna"), ("q-solo-leveling-0009", "going")],
+        "quotes": [("q-memy-0003", "gonna", ["going to"]), ("q-solo-leveling-0009", "going")],
         "trap_id": "trap-want-that",
         "vocab_band": {"list": "ngsl-spoken", "from": 2741, "to": 2800},
         "phrasebook_topic": "emergency",
