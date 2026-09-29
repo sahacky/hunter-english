@@ -2149,9 +2149,12 @@ def build_rank(lessons, *, rank: str, stem: str, seed: int):
 
         for chain in spec.get("transform", []):
             source_id = phrase_id_by_text(chain[0])
-            if len(chain) == 3 and chain[1] in ("past", "future"):
-                # цепочка времени: (утверждение, задача, результат) — M14
-                steps = [{"task": chain[1], "phrase_id": phrase_id_by_text(chain[2])}]
+            if len(chain) == 3 and isinstance(chain[1], str) and chain[1] not in ("negative",):
+                # цепочка времени: (утверждение, задача, результат) — M14/M15
+                # perfect/past perfect маппятся в past (enum схемы)
+                task_map = {"perfect": "past", "past perfect": "past", "cond1": "future", "cond2": "future"}
+                task = task_map.get(chain[1], chain[1])
+                steps = [{"task": task, "phrase_id": phrase_id_by_text(chain[2])}]
             else:
                 # цепочка ±?: (утверждение, отрицание, вопрос|None) — M12
                 steps = [{"task": "negative", "phrase_id": phrase_id_by_text(chain[1])}]
