@@ -57,9 +57,10 @@ data/
 | `translation_ru` | string[] (1–3) | ✅ | главные переводы, сгруппированы по значению (kaikki → ручная курация; CURATED-слой build_words для функциональных лемм) |
 | `part_of_speech` | enum | ✅ | `noun, verb, adjective, adverb, preposition, pronoun, conjunction, interjection, determiner, phrase` |
 | `cefr_level` | enum \| null | ✅ | `A1…C2` или `null`; в M3 выводится **только из частотного ранга** (1–500 A1, 501–1000 A2, 1001–2000 B1, 2001+ B2); Oxford-разметка не публикуется (Watch out в WAL) |
-| `freq_rank_ngsl` | integer ≥ 1 | ✅ | ранг по `NGSL_12_stats.csv`; у spoken-only лемм — sentinel `100000+freq_rank_spoken` (сортировать по `freq_rank_spoken`) |
+| `freq_rank_ngsl` | integer ≥ 1 | ✅/— | ранг по `NGSL_12_stats.csv`; у spoken-only лемм — sentinel `100000+freq_rank_spoken` (сортировать по `freq_rank_spoken`). **Обязателен, если нет `freq_rank_sub`** (M11) |
+| `freq_rank_sub` | integer ≥ 1 | — | субтитровый ранг (FrequencyWords en_50k, порядок частоты среди лемм вне NGSL/NGSL-Spoken) — у слов полосы `words-2807-5000.json` (M11, решение M11#5: best effort); взаимоисключим с `freq_rank_ngsl` |
 | `freq_rank_spoken` | integer ≥ 1 | — | ранг по NGSL-Spoken (если слово входит в разговорные 719) |
-| `tags` | string[] | ✅ | напр. `ngsl`, `spoken-top719`, `irregular-verb`, `phrasal-have` (M5+), `trap:to-home` |
+| `tags` | string[] | ✅ | напр. `ngsl`, `subtitles` (полоса 2807–5000, M11), `spoken-top719`, `irregular-verb`, `phrasal-have` (M5+), `trap:to-home` |
 | `example_en` / `example_ru` | string | ✅ | фраза-пример (Tatoeba / урок / цитата); EN и RU заполняются парой |
 | `audio` | object | ✅ | `{ "en_gb": "<путь>" }` — путь в `audio/`, формат `audio/words/cori/<id>.opus` |
 
@@ -70,8 +71,14 @@ data/
   "title": "word",
   "type": "object",
   "required": ["id", "lemma", "translation_ru", "part_of_speech", "cefr_level",
-               "freq_rank_ngsl", "tags", "example_en", "example_ru", "audio"],
+               "tags", "example_en", "example_ru", "audio"],
   "additionalProperties": false,
+  "allOf": [
+    { "if": { "required": ["freq_rank_sub"] },
+      "then": { "not": { "required": ["freq_rank_ngsl"] } } },
+    { "if": { "not": { "required": ["freq_rank_sub"] } },
+      "then": { "required": ["freq_rank_ngsl"] } }
+  ],
   "properties": {
     "id":    { "type": "string", "pattern": "^[a-z0-9-]+$" },
     "lemma": { "type": "string", "minLength": 1 },
@@ -80,6 +87,7 @@ data/
                                  "pronoun", "conjunction", "interjection", "determiner", "phrase"] },
     "cefr_level": { "enum": ["A1", "A2", "B1", "B2", "C1", "C2", null] },
     "freq_rank_ngsl":   { "type": "integer", "minimum": 1 },
+    "freq_rank_sub":    { "type": "integer", "minimum": 1 },
     "freq_rank_spoken": { "type": "integer", "minimum": 1 },
     "tags": { "type": "array", "items": { "type": "string" } },
     "example_en": { "type": "string", "minLength": 1 },

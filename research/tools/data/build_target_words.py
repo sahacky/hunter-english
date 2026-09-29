@@ -43,11 +43,39 @@ def main() -> None:
     ap = argparse.ArgumentParser(description="Целевой список слов из NGSL")
     ap.add_argument("--full", action="store_true",
                     help="union всех лемм NGSL-Spoken и NGSL -> target_words_full.txt")
+    ap.add_argument("--sub5000", action="store_true",
+                    help="полный набор до ~5000: NGSL+Spoken плюс топ FrequencyWords "
+                         "en_50k (субтитры) -> target_words_sub5000.txt (plan://M11#11.5)")
     args = ap.parse_args()
 
     spoken = read_stats(RAW / "ngsl/NGSL-Spoken_12_stats.csv", keep_bad_rank=True)
     ngsl = read_stats(RAW / "ngsl/NGSL_12_stats.csv")
     spoken_set = {w for w, _ in spoken}
+
+    if args.sub5000:
+        base = {w for w, _ in spoken} | {w for w, _ in ngsl}
+        # en_50k: «token count» по субтитрам (не лемматизирован — best effort,
+        # решение M11#5: токены без kaikki-перевода отсеются дальше по пайплайну)
+        sub = []
+        with (RAW / "frequencywords/en_50k.txt").open(encoding="utf-8") as f:
+            for line in f:
+                parts = line.split()
+                if len(parts) != 2:
+                    continue
+                word = parts[0].lower()
+                if not re.fullmatch(r"[a-z][a-z'-]*", word):
+                    continue
+                if word in base:
+                    continue
+                sub.append(word)
+                base.add(word)
+                if len(base) >= 5000:
+                    break
+        out = RAW / "kaikki/target_words_sub5000.txt"
+        out.write_text("\n".join(sorted(base)) + "\n", encoding="utf-8")
+        print(f"spoken: {len(spoken)}, ngsl: {len(ngsl)}, +субтитры: {len(sub)}")
+        print(f"цель: {len(base)} слов -> {out}")
+        return
 
     if args.full:
         target = {w for w, _ in spoken} | {w for w, _ in ngsl}

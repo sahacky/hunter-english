@@ -145,6 +145,58 @@ describe('LessonScreen /#/lesson/:id', () => {
     expect(phraseCards.every((card) => card.type === 'en-ru')).toBe(true)
   })
 
+  it('финал: проход по ошибкам — только ошибочные задания, без XP/персиста (M11#11.3)', async () => {
+    const view = await loadLessonView('les-e-01')
+    if (!view) throw new Error('нет данных урока les-e-01')
+    const allExercises = view.steps.flatMap((step) => view.content[step.index] ?? [])
+    const scores = view.steps.map((step) => ({
+      stepIndex: step.index,
+      total: (view.content[step.index] ?? []).length,
+      answered: (view.content[step.index] ?? []).length,
+      firstTryCorrect: (view.content[step.index] ?? []).length,
+    }))
+    const results = Object.fromEntries(
+      allExercises.map(({ exercise }, index) => [
+        exercise.id,
+        // первые два задания — «с ошибкой»: со второй попытки и подсказка
+        index === 0
+          ? { attempts: 2, outcome: 'correct_retry' as const }
+          : index === 1
+            ? { attempts: 1, outcome: 'hint' as const }
+            : { attempts: 1, outcome: 'correct' as const },
+      ]),
+    )
+    await repo.putLessonProgress({
+      lesson_id: 'les-e-01',
+      status: 'in_progress',
+      score: null,
+      checkpoint: { passIndex: 0, stepIndex: 7, scores, srsEnqueued: [], passesDone: 0, results },
+      completed_at: null,
+      updated_at: new Date().toISOString(),
+    })
+    renderScreen('E-01')
+    fireEvent.click(await screen.findByRole('button', { name: /Продолжить/ }))
+    fireEvent.click(await screen.findByRole('button', { name: /Завершить урок/ }))
+    expect(await screen.findByText('Урок завершён')).toBeInTheDocument()
+
+    // на финале — кнопка прохода по ошибкам с числом ошибок
+    expect(await screen.findByText('Повторить ошибочные (2)')).toBeInTheDocument()
+    const xpBefore = (await repo.getStats()).xp
+    const checkpointBefore = (await repo.getLessonProgress('les-e-01'))?.checkpoint
+
+    fireEvent.click(screen.getByRole('button', { name: /Повторить ошибочные/ }))
+    expect(await screen.findByText('Проход по ошибкам')).toBeInTheDocument()
+    expect(screen.getByText('задание 1 из 2')).toBeInTheDocument()
+    // первое ошибочное задание повторно показано (cloze правила E-01)
+    expect(await screen.findByRole('textbox')).toBeInTheDocument()
+
+    // прогресс урока не затёрт повтором (решение M11#11.3)
+    const checkpointAfter = (await repo.getLessonProgress('les-e-01'))?.checkpoint
+    expect(checkpointAfter).toEqual(checkpointBefore)
+    const xpAfter = (await repo.getStats()).xp
+    expect(xpAfter).toBe(xpBefore)
+  })
+
   it('голосовое упражнение: фолбэк «Сказал(-а)» без микрофона (jsdom)', async () => {
     // записываем прогресс прямо на шаге 5 (речь)
     const view = await loadLessonView('les-e-01')

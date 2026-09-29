@@ -383,8 +383,42 @@ def quotes_fallback_examples():
     return json.loads(src.read_text(encoding="utf-8"))
 
 
+def sub_ranks() -> dict[str, int]:
+    """Ранги субтитровых лемм (M11): en_50k по порядку частоты, минус NGSL/Spoken.
+
+    Слово получает ранг 1..N в порядке убывания субтитровой частоты; суммарный
+    объём датасета ограничен ~5000 (target_words_sub5000.txt, best effort —
+    решение M11#5: токены без kaikki-перевода отсеиваются дальше по пайплайну).
+    """
+    src = RAW / "kaikki/target_words_sub5000.txt"
+    if not src.exists():
+        return {}
+    ngsl = set(read_ranks(RAW / "ngsl/NGSL_12_stats.csv"))
+    spoken = set(read_ranks(RAW / "ngsl/NGSL-Spoken_12_stats.csv"))
+    seen = ngsl | spoken
+    ranks = {}
+    with (RAW / "frequencywords/en_50k.txt").open(encoding="utf-8") as f:
+        for line in f:
+            parts = line.split()
+            if len(parts) != 2:
+                continue
+            word = parts[0].lower()
+            if not re.fullmatch(r"[a-z][a-z'-]*", word):
+                continue
+            if word in seen:
+                continue
+            ranks[word] = len(ranks) + 1
+            seen.add(word)
+            if len(ranks) >= 2200:
+                break
+    return ranks
+
+
 def main():
+    sub_targets = sub_ranks()
+    # полный набор: NGSL+Spoken (target_words_full) + субтитровые (sub5000)
     targets = (RAW / "kaikki/target_words_full.txt").read_text(encoding="utf-8").split()
+    targets += [w for w in sub_targets if w not in set(targets)]
     ngsl_rank = read_ranks(RAW / "ngsl/NGSL_12_stats.csv")
     spoken_rank = read_ranks(RAW / "ngsl/NGSL-Spoken_12_stats.csv")
     examples = load_examples()
@@ -393,6 +427,7 @@ def main():
     dropped_no_tr = []
     dropped_no_ex = []
     spoken_only = []
+    sub_items = []
     entries = OrderedDict()
 
     for lemma in targets:
@@ -422,6 +457,8 @@ def main():
         if is_spoken_only:
             spoken_only.append(lemma)
             n_rank = SENTINEL_BASE + s_rank
+        sub_rank = sub_targets.get(lemma)
+        is_sub = n_rank is None and s_rank is None and sub_rank is not None
 
         ex = examples.get(lemma)
         if curated_example:
@@ -438,11 +475,11 @@ def main():
                 continue
         example_ru = strip_accents_ru(example_ru)
 
-        rank_for_cefr = s_rank if is_spoken_only and s_rank else n_rank
+        rank_for_cefr = s_rank if is_spoken_only and s_rank else (sub_rank if is_sub else n_rank)
         for pos, trs in curated:
             lvl = cefr_from_rank(rank_for_cefr)
-            tags = ["ngsl"]
-            if s_rank is not None:
+            tags = ["subtitles"] if is_sub else ["ngsl"]
+            if not is_sub and s_rank is not None:
                 tags.append("spoken-top719")
             if pos == "verb" and lemma in IRREGULAR_VERBS:
                 tags.append("irregular-verb")
@@ -451,8 +488,11 @@ def main():
                 part_of_speech=pos,
                 translation_ru=trs,
                 cefr_level=lvl,
-                freq_rank_ngsl=n_rank,
             )
+            if is_sub:
+                e["freq_rank_sub"] = sub_rank
+            else:
+                e["freq_rank_ngsl"] = n_rank
             if s_rank is not None:
                 e["freq_rank_spoken"] = s_rank
             e.update(tags=tags, example_en=example_en, example_ru=example_ru)
@@ -470,10 +510,12 @@ def main():
     for p in OUT.glob("*.json"):
         p.unlink()
 
-    by_rank = sorted((w for w in words if w["freq_rank_ngsl"] < SENTINEL_BASE),
+    ngsl_ranked = [w for w in words if "freq_rank_ngsl" in w]
+    by_rank = sorted((w for w in ngsl_ranked if w["freq_rank_ngsl"] < SENTINEL_BASE),
                      key=lambda x: x["freq_rank_ngsl"])
-    spoken_only_items = [w for w in words if w["freq_rank_ngsl"] >= SENTINEL_BASE]
+    spoken_only_items = [w for w in ngsl_ranked if w["freq_rank_ngsl"] >= SENTINEL_BASE]
     spoken_only_items.sort(key=lambda x: x.get("freq_rank_spoken", 10**6))
+    sub_out = sorted((w for w in words if "freq_rank_sub" in w), key=lambda x: x["freq_rank_sub"])
 
     lines = []
 
@@ -494,6 +536,10 @@ def main():
             dump(f"words-{lo:04d}-{hi:04d}.json", chunk)
     if spoken_only_items:
         dump("words-spoken-only.json", spoken_only_items)
+    # Субтитровая полоса 2807–5000 (решение M3#5): имя фиксировано, состав —
+    # лучшие по частоте токены вне NGSL с переводом и примером (best effort)
+    if sub_out:
+        dump("words-2807-5000.json", sub_out)
 
     total = len(words)
     summary = [
@@ -501,6 +547,7 @@ def main():
         f"без перевода/курации: {len(dropped_no_tr)} -> {', '.join(dropped_no_tr)}",
         f"без примера: {len(dropped_no_ex)} -> {', '.join(dropped_no_ex)}",
         f"spoken-only (sentinel {SENTINEL_BASE}+spoken_rank): {len(spoken_only)}",
+        f"subtitles (freq_rank_sub, M11): {len(sub_out)}",
     ]
     print("\n".join(summary))
     (RAW / "build_words_report.txt").write_text("\n".join(lines + [""] + summary) + "\n", encoding="utf-8")

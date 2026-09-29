@@ -134,6 +134,32 @@ export class DexieProgressRepository implements ProgressRepository {
     return row ? (row.data as GateAttempt) : null
   }
 
+  /** Отметка «понял без перевода» на цитате (specs/07 §2.1, plan://M11#11.2). */
+  async getQuoteMark(quoteId: string): Promise<boolean> {
+    const row = await this.db.item_progress.get([LOCAL_USER_ID, quoteId, 'quote'])
+    return row ? Boolean((row.data as { understood?: boolean } | null)?.understood) : false
+  }
+
+  async putQuoteMark(quoteId: string, understood: boolean): Promise<void> {
+    const row: ItemProgressRow = {
+      user_id: LOCAL_USER_ID,
+      item_id: quoteId,
+      kind: 'quote',
+      data: { understood },
+      updated_at: new Date().toISOString(),
+    }
+    await this.db.transaction('rw', this.db.item_progress, this.db.sync_queue, async () => {
+      await this.db.item_progress.put(row)
+      await this.db.sync_queue.add({
+        table: 'item_progress',
+        op: 'upsert',
+        payload: row,
+        tries: 0,
+        created_at: row.updated_at,
+      })
+    })
+  }
+
   async putGateAttempt(attempt: GateAttempt): Promise<void> {
     const row: ItemProgressRow = {
       user_id: LOCAL_USER_ID,

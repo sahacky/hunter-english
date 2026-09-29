@@ -34,4 +34,7 @@ export interface ProgressRepository {
   /** Попытка Врат (item_progress kind='gate_attempts'). */
   getGateAttempt(gate: string): Promise<GateAttempt | null>
   putGateAttempt(attempt: GateAttempt): Promise<void>
+  /** Отметка «понял без перевода» на цитате (item_progress kind='quote'). */
+  getQuoteMark(quoteId: string): Promise<boolean>
+  putQuoteMark(quoteId: string, understood: boolean): Promise<void>
 }

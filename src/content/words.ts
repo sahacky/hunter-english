@@ -12,7 +12,9 @@ export interface WordItem {
   part_of_speech: string
   translation_ru: string[]
   cefr_level: string
-  freq_rank_ngsl: number
+  /** NGSL-ранг; у субтитровых слов (M11) вместо него freq_rank_sub. */
+  freq_rank_ngsl?: number
+  freq_rank_sub?: number
   audio: { en_gb?: string }
 }
 
