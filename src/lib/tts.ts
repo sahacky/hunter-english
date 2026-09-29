@@ -12,6 +12,13 @@ export interface SpeakOptions {
 
 let audioEl: HTMLAudioElement | null = null
 
+/** Скорость воспроизведения по умолчанию (настройка M10; 🐢 всегда 0.75). */
+let defaultRate = 1
+
+export function setDefaultRate(rate: number): void {
+  defaultRate = rate === 0.75 ? 0.75 : 1
+}
+
 /** Выбранный en-GB голос speechSynthesis (кэш; голоса появляются асинхронно). */
 let cachedVoice: SpeechSynthesisVoice | null = null
 
@@ -54,7 +61,7 @@ export function isTtsSupported(): boolean {
  * Возвращает true, если воспроизведение реально запущено.
  */
 export function speak(text: string, options: SpeakOptions = {}): boolean {
-  const rate = options.rate ?? 1
+  const rate = options.rate ?? defaultRate
   stopSpeak()
   if (options.src) {
     const el = new Audio(options.src)

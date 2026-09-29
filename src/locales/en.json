@@ -66,7 +66,14 @@
       "review": "Due",
       "new": "New"
     },
-    "audioLabel": "Word audio"
+    "audioLabel": "Word audio",
+    "again4": "Forgot",
+    "hard": "Hard",
+    "easy": "Easy",
+    "modeHint": "Hard/Easy buttons can be enabled in settings",
+    "exitConfirmTitle": "Interrupt session?",
+    "exitConfirm": "Interrupt session? Reviews counted: {{count}}.",
+    "exitCancel": "Keep going"
   },
   "common": {
     "loading": "Loading…",
@@ -137,7 +144,12 @@
     "completionNote": "The lesson is marked as passed once ≥90% of its phrases are learned in reviews (interval ≥7 days).",
     "giveUp": "Give up",
     "findErrorHint": "Spot the mistake and type the correct phrase",
-    "markerHint": "Time marker"
+    "markerHint": "Time marker",
+    "exit": "Exit",
+    "exitConfirmTitle": "Leave the lesson?",
+    "exitConfirm": "Lesson is not finished. Progress is saved — you can continue from step {{step}}.",
+    "exitCancel": "Keep going",
+    "exitYes": "Leave"
   },
   "ranks": {
     "statusTitle": "Hunter status",
@@ -193,6 +205,54 @@
       "hotel": "Hotel",
       "restaurant": "Restaurant",
       "pharmacy": "Pharmacy and doctor"
+    },
+    "answerByVoice": "Answer by voice"
+  },
+  "toast": {
+    "questDone": "Daily quest complete. The system logs your progress.",
+    "rankUp": "Rank up: {{rank}}. The system confirms the level.",
+    "freezeGained": "Streak freeze gained: ❄ +1"
+  },
+  "settings": {
+    "appearance": {
+      "title": "Appearance",
+      "theme": "Theme",
+      "themeDark": "Dark",
+      "themeLight": "Light",
+      "themeSystem": "System",
+      "locale": "Interface language",
+      "animations": "Animations"
+    },
+    "srs": {
+      "title": "Reviews",
+      "newPerDay": "New cards per day",
+      "buttons": "Grade buttons",
+      "buttons2": "2: Good / Again",
+      "buttons4": "4: + Hard / Easy",
+      "intervals": "Interval on buttons",
+      "note": "Switching the mode does not change accumulated card state."
+    },
+    "voice": {
+      "title": "Voice",
+      "rate": "Playback rate",
+      "note": "The 🐢 button is always slow (0.75×)."
+    },
+    "data": {
+      "title": "Data",
+      "export": "Export progress (JSON)",
+      "import": "Import from file",
+      "importDone": "Progress imported.",
+      "importFailed": "Import failed: file is corrupt or has wrong format.",
+      "reset": "Reset progress",
+      "resetConfirm": "Delete all progress? This cannot be undone.",
+      "resetYes": "Delete",
+      "resetNo": "Cancel",
+      "resetDone": "Progress reset.",
+      "note": "Storage: IndexedDB ({{db}}). Sync comes later."
+    },
+    "common": {
+      "on": "On",
+      "off": "Off"
     }
   }
 }

@@ -5,11 +5,12 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { judge } from '../domain/check/checker'
+import { judge, judgeVoice } from '../domain/check/checker'
 import type { CheckResult } from '../domain/check/types'
 import { loadPhrasebook, SITUATIONS, type PhrasebookDialog } from '../content/phrasebook'
 import { FeedbackPlate } from '../components/lesson/ExerciseView'
 import { speak } from '../lib/tts'
+import { cancelListening, isSpeechSupported, listenOnce } from '../lib/speech'
 
 export function PhrasebookScreen() {
   const { t } = useTranslation()
@@ -75,6 +76,7 @@ export function PhrasebookSituationScreen() {
   const [value, setValue] = useState('')
   const [result, setResult] = useState<CheckResult | null>(null)
   const [lineState, setLineState] = useState<LineState>('pending')
+  const [listening, setListening] = useState(false)
 
   useEffect(() => {
     let alive = true
@@ -83,6 +85,7 @@ export function PhrasebookSituationScreen() {
     })
     return () => {
       alive = false
+      cancelListening() // микрофон освобождается при уходе с экрана
     }
   }, [])
 
@@ -117,6 +120,25 @@ export function PhrasebookSituationScreen() {
     setResult(verdict)
     if (verdict.verdict === 'correct' || verdict.verdict === 'correct_typo') {
       setLineState('passed')
+    }
+  }
+
+  // Голосовой ответ (plan://M10#10.7, M8-решение 1 → M10): judgeVoice по accepted[],
+  // мягкая проверка §4.8; фолбэк текстом остаётся
+  const answerByVoice = async () => {
+    if (!line?.accepted || listening) return
+    setListening(true)
+    try {
+      const heard = await listenOnce({})
+      const verdict = judgeVoice(heard, { accepted: line.accepted })
+      setResult(verdict)
+      if (verdict.verdict === 'correct' || verdict.verdict === 'correct_typo') {
+        setLineState('passed')
+      }
+    } catch {
+      // нет речи / ошибка микрофона — остаёмся на текстовом вводе (best effort)
+    } finally {
+      setListening(false)
     }
   }
 
@@ -193,6 +215,16 @@ export function PhrasebookSituationScreen() {
                   </button>
                 )}
               </form>
+              {isSpeechSupported() && (
+                <button
+                  type="button"
+                  className="srs-btn"
+                  disabled={listening}
+                  onClick={() => void answerByVoice()}
+                >
+                  🎤 {listening ? t('lesson.listening') : t('phrasebook.answerByVoice')}
+                </button>
+              )}
               <button type="button" className="srs-btn" onClick={() => setLineState('revealed')}>
                 {t('phrasebook.showAnswer')}
               </button>

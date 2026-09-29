@@ -19,6 +19,7 @@ import { cooldownPassed, judgeGate, NEXT_RANK } from '../domain/game/game'
 import type { GateAttempt, GateSectionScore } from '../domain/game/types'
 import type { ProgressRepository } from '../domain/progress'
 import { DexieProgressRepository } from '../data/progress-repository'
+import { showToast } from '../lib/toast'
 
 interface GatesScreenProps {
   repo?: ProgressRepository
@@ -252,6 +253,7 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
             ],
             updated_at: finishedAt,
           })
+          showToast(t('toast.rankUp', { rank: nextRank })) // решение M10#2
         }
       }
     },
