@@ -2,7 +2,7 @@
 // Экспорт/импорт — Dexie-дамп таблиц прогресса (решение M10#3); сброс — с подтверждением.
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { db, HunterDb, LOCAL_USER_ID } from '../data/db'
+import { db, HunterDb, getCurrentUserId } from '../data/db'
 import { useSettings } from '../state/settings'
 import type { Locale, SrsButtonMode, ThemeChoice, TtsRate } from '../domain/settings/types'
 import { showToast } from '../lib/toast'
@@ -83,7 +83,9 @@ function sanitizeImport(payload: ExportPayload): Record<string, unknown[]> {
         throw new Error(`bad row in ${name}[${index}]`)
       }
       const record = { ...(row as Record<string, unknown>) }
-      if (USER_ID_TABLES.has(name)) record.user_id = LOCAL_USER_ID
+      // импорт ложится под АКТИВНОГО владельца: гость 'local' или uid после
+      // входа (ревью M13 М4 — раньше молча ломал прогресс залогиненного)
+      if (USER_ID_TABLES.has(name)) record.user_id = getCurrentUserId()
       if (name === 'card_states') {
         if (typeof record.card_id !== 'string' || typeof record.note_id !== 'string') {
           throw new Error(`bad row in ${name}[${index}]`)

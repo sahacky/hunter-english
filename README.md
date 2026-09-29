@@ -88,9 +88,12 @@ VITE_SUPABASE_PUBLISHABLE_KEY=<anon key>
    (схема + RLS из specs/06).
 3. Authentication → Providers → Email: включить, **снять** «Allow new users
    to sign up» (регистрация только по приглашениям).
-4. Друзьям: Authentication → Users → Add user → Send invitation (magic link).
+4. Authentication → URL Configuration → Redirect URLs: добавить
+   `https://<user>.github.io/hunter-english/` (и `http://localhost:5173/**`
+   для дева) — иначе magic link/OAuth-редирект не вернётся в приложение.
+5. Друзьям: Authentication → Users → Add user → Send invitation (magic link).
    Google-провайдер — опционально.
-5. Прописать URL + anon key в `.env.local` устройств (publishable, не service!).
+6. Прописать URL + anon key в `.env.local` устройств (publishable, не service!).
 
 Первый вход: локальный прогресс автоматически переносится в аккаунт
 (гость → uid, одна транзакция), затем push/pull (LWW по `updated_at`,

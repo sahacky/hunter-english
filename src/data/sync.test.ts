@@ -1,9 +1,9 @@
 // Implements: plan://M13#13.3 — тесты движка синка на моках клиента (LWW,
 // retry-queue, дедуп review_log по PK) и переноса гостевого прогресса.
 import 'fake-indexeddb/auto'
-import { beforeEach, describe, expect, it, vi } from 'vitest'
+import { beforeEach, describe, expect, it } from 'vitest'
 import { HunterDb, LOCAL_USER_ID, getCurrentUserId, remapLocalToUser, setCurrentUserId } from './db'
-import { flush, mergeLww, readSyncStatus } from './sync'
+import { flush, mergeLww, pull, readSyncStatus } from './sync'
 import { uuidv7 } from '../lib/uuidv7'
 
 let db: HunterDb
@@ -199,4 +199,179 @@ describe('remapLocalToUser (перенос гостевого прогресса
   })
 })
 
-vi.stubGlobal('navigator', navigator)
+// ---------------------------------------------------------------- pull ----
+function mockPullSupabase(
+  pages: Record<string, unknown[][]>,
+  errors: Record<string, boolean> = {},
+) {
+  const state: Record<string, { index: number; gtLog: string[] }> = {}
+  for (const table of Object.keys(pages)) state[table] = { index: 0, gtLog: [] }
+  const selectCalls: { table: string; gt: string }[] = []
+  return {
+    selectCalls,
+    from: (table: string) => ({
+      upsert: async () => ({ error: null }),
+      insert: async () => ({ error: null }),
+      select: () => {
+        const q = {
+          eq: () => q,
+          gt: (_column: string, value: string) => {
+            selectCalls.push({ table, gt: value })
+            state[table]!.gtLog.push(value)
+            return q
+          },
+          order: () => q,
+          limit: async (count: number) => {
+            if (errors[table]) return { data: null, error: new Error('network') }
+            const page = pages[table]?.[state[table]!.index] ?? []
+            // промежуточные страницы моделируются ПОЛНЫМИ (как PostgREST):
+            // короткая порция = конец таблицы
+            const rows = page.length >= count ? page.slice(0, count) : page
+            state[table]!.index += 1
+            return { data: rows, error: null }
+          },
+        }
+        return q
+      },
+    }),
+  }
+}
+
+describe('pull (specs/06 §3, ревью M13 Б1/Б2/М6)', () => {
+  it('LWW-таблица: страницы дочитываются до конца, курсор = max(updated_at) строк', async () => {
+    await db.meta.put(
+      { key: 'cursor:card_states', value: '1970-01-01T00:00:00Z' },
+      'cursor:card_states',
+    )
+    // первая страница — ПОЛНАЯ (PULL_PAGE строк), вторая — хвост из 1 строки
+    const fullPage = Array.from({ length: 5000 }, (_, i) => ({
+      user_id: 'u1',
+      card_id: `a${i}`,
+      updated_at: '2026-09-01T00:00:00Z',
+    }))
+    const sb = mockPullSupabase({
+      card_states: [
+        fullPage,
+        [{ user_id: 'u1', card_id: 'b', updated_at: '2026-09-02T00:00:00Z' }],
+      ],
+      lesson_progress: [[]],
+      user_stats: [[]],
+      item_progress: [[]],
+      review_log: [[]],
+    })
+    await pull(db, sb as never)
+    // за полной страницей запросили вторую, после хвоста — остановились
+    const cardCalls = sb.selectCalls.filter(({ table }) => table === 'card_states')
+    expect(cardCalls.length).toBe(2)
+    // курсор — max полученных, НЕ now(): зафиксирован датой данных
+    const cursor = (await db.meta.get('cursor:card_states'))?.value
+    expect(cursor).toBe('2026-09-02T00:00:00Z')
+    expect((await db.card_states.get(['u1', 'b']))?.updated_at).toBe('2026-09-02T00:00:00Z')
+    expect(await db.card_states.where('user_id').equals('u1').count()).toBe(5001)
+    const lastSync = (await db.meta.get('last_sync_at'))?.value
+    expect(typeof lastSync).toBe('string')
+  })
+
+  it('ошибка таблицы: курсор не двигается, last_sync не пишется', async () => {
+    await db.meta.put(
+      { key: 'cursor:card_states', value: '2026-09-01T00:00:00Z' },
+      'cursor:card_states',
+    )
+    const sb = mockPullSupabase(
+      {
+        card_states: [[{ user_id: 'u1', card_id: 'x', updated_at: '2026-09-05T00:00:00Z' }]],
+        lesson_progress: [[]],
+        user_stats: [[]],
+        item_progress: [[]],
+        review_log: [[]],
+      },
+      { user_stats: true },
+    )
+    await pull(db, sb as never)
+    expect((await db.meta.get('last_sync_at'))?.value).toBeUndefined()
+    // успешная card_states сохранила свой курсор — повтор возьмёт только ошибочную таблицу
+    expect((await db.meta.get('cursor:card_states'))?.value).toBe('2026-09-05T00:00:00Z')
+  })
+
+  it('review_log: только недостающие строки по курсору reviewed_at (Б1)', async () => {
+    await db.review_log.put({
+      user_id: 'u1',
+      id: 'log-old',
+      card_id: 'c',
+      rating: 3,
+      state: 0,
+      state_after: 2,
+      elapsed_days: 0,
+      scheduled_days: 1,
+      duration_ms: 100,
+      client: 'web',
+      session_id: null,
+      reviewed_at: '2026-09-01T00:00:00Z',
+    })
+    const sb = mockPullSupabase({
+      card_states: [[]],
+      lesson_progress: [[]],
+      user_stats: [[]],
+      item_progress: [[]],
+      review_log: [
+        [
+          {
+            user_id: 'u1',
+            id: 'log-old',
+            card_id: 'c',
+            rating: 3,
+            reviewed_at: '2026-09-02T00:00:00Z',
+          },
+          {
+            user_id: 'u1',
+            id: 'log-new',
+            card_id: 'c',
+            rating: 1,
+            reviewed_at: '2026-09-03T00:00:00Z',
+          },
+        ],
+      ],
+    })
+    await pull(db, sb as never)
+    expect(await db.review_log.count()).toBe(2)
+    expect((await db.meta.get('cursor:review_log'))?.value).toBe('2026-09-03T00:00:00Z')
+  })
+})
+
+describe('flush дедуп по conflict-ключу (ревью M13 М1)', () => {
+  it('два снимка одной карточки — на сервер уходит последний', async () => {
+    await db.sync_queue.bulkAdd([
+      {
+        table: 'card_states',
+        op: 'upsert',
+        payload: { user_id: 'u1', card_id: 'a', reps: 1 },
+        tries: 0,
+        created_at: '2026-09-29T01:00:00Z',
+      },
+      {
+        table: 'card_states',
+        op: 'upsert',
+        payload: { user_id: 'u1', card_id: 'a', reps: 2 },
+        tries: 0,
+        created_at: '2026-09-29T02:00:00Z',
+      },
+      {
+        table: 'card_states',
+        op: 'upsert',
+        payload: { user_id: 'u1', card_id: 'b', reps: 7 },
+        tries: 0,
+        created_at: '2026-09-29T03:00:00Z',
+      },
+    ])
+    const calls: { table: string; op: string; rows: unknown[] }[] = []
+    const sb = mockSupabase({ calls: calls as never })
+    await flush(db, sb as never)
+    const upserts = calls.find(({ op }) => op === 'upsert')
+    expect(upserts?.rows).toHaveLength(2)
+    const a = upserts?.rows.find((r) => (r as { card_id: string }).card_id === 'a') as {
+      reps: number
+    }
+    expect(a.reps).toBe(2) // последний seq победил
+    expect(await db.sync_queue.count()).toBe(0)
+  })
+})

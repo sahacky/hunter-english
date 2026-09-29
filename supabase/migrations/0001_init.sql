@@ -162,3 +162,25 @@ end; $$;
 create trigger on_auth_user_created
   after insert on auth.users
   for each row execute function public.handle_new_user();
+
+-- ============ серверная защита LWW (план M13, ревью М1) ============
+-- Устаревший upsert (updated_at прихода < текущего) молча пропускается:
+-- офлайн-устройство не откатывает сервер к старому снимку. «Победитель
+-- пишется в обе стороны» (specs/06 §3) — теперь и на push-стороне.
+create function public.suppress_stale_update() returns trigger
+language plpgsql as $$
+begin
+  if excluded.updated_at < old.updated_at then
+    return null; -- пропустить устаревшую запись
+  end if;
+  return new;
+end; $$;
+
+create trigger card_states_lww before update on public.card_states
+  for each row execute function public.suppress_stale_update();
+create trigger lesson_progress_lww before update on public.lesson_progress
+  for each row execute function public.suppress_stale_update();
+create trigger user_stats_lww before update on public.user_stats
+  for each row execute function public.suppress_stale_update();
+create trigger item_progress_lww before update on public.item_progress
+  for each row execute function public.suppress_stale_update();

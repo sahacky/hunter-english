@@ -1,10 +1,11 @@
 // Implements: plan://M13#13.4 — аутентификация Supabase (guest-first).
 // Без env — всегда гость; вход: magic link / Google. После login/logout —
 // location.reload(): репозитории пересоздаются с активным user_id (db.ts).
+// Фоновые триггеры specs/06 §3 (лайт): flush по 'online', pull каждые 5 мин.
 import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from 'react'
 import { getSupabase, isSyncConfigured } from '../data/supabase'
 import { db, getCurrentUserId, remapLocalToUser, setCurrentUserId } from '../data/db'
-import { syncNow } from '../data/sync'
+import { enqueueAllRows, syncNow } from '../data/sync'
 
 export interface AuthState {
   configured: boolean
@@ -28,6 +29,11 @@ const AuthContext = createContext<AuthState>({
   signOut: async () => undefined,
 })
 
+/** Редирект с учётом подпапки деплоя (GH Pages, ревью M13 М3). */
+function appOriginUrl(): string {
+  return new URL(import.meta.env.BASE_URL, window.location.origin).href
+}
+
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [state, setState] = useState<{ userId: string | null; email: string | null }>({
     userId: null,
@@ -43,17 +49,18 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     void (async () => {
       try {
         const supabase = await getSupabase()
-        const { data } = await supabase.auth.getSession()
-        const user = data.session?.user ?? null
-        if (user) await activateUser(user.id, user.email ?? null)
-        if (alive)
-          setState({ userId: user ? user.id : getCurrentUserId(), email: user?.email ?? null })
+        // подписка ДО долгих операций: события окна первого синка не теряются
         supabase.auth.onAuthStateChange((event) => {
           if (event === 'SIGNED_OUT') {
             setCurrentUserId('local')
             window.location.reload()
           }
         })
+        const { data } = await supabase.auth.getSession()
+        const user = data.session?.user ?? null
+        if (user) await activateUser(user.id)
+        if (alive)
+          setState({ userId: user ? user.id : getCurrentUserId(), email: user?.email ?? null })
       } catch {
         if (alive) setState({ userId: getCurrentUserId(), email: null })
       }
@@ -62,6 +69,18 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       alive = false
     }
   }, [])
+
+  // фоновые триггеры (ревью M13 М5, лайт-объём): online → syncNow; период 5 мин
+  useEffect(() => {
+    if (!isSyncConfigured() || state.email === null) return
+    const onOnline = () => void syncNow(db).catch(() => undefined)
+    const timer = window.setInterval(() => void syncNow(db).catch(() => undefined), 5 * 60_000)
+    window.addEventListener('online', onOnline)
+    return () => {
+      window.removeEventListener('online', onOnline)
+      window.clearInterval(timer)
+    }
+  }, [state.email])
 
   const value = useMemo<AuthState>(
     () => ({
@@ -74,7 +93,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         const supabase = await getSupabase()
         const { error } = await supabase.auth.signInWithOtp({
           email,
-          options: { emailRedirectTo: window.location.origin },
+          options: { emailRedirectTo: appOriginUrl() },
         })
         return error ? { ok: false, error: error.message } : { ok: true }
       },
@@ -83,7 +102,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         const supabase = await getSupabase()
         const { error } = await supabase.auth.signInWithOAuth({
           provider: 'google',
-          options: { redirectTo: window.location.origin },
+          options: { redirectTo: appOriginUrl() },
         })
         return error ? { ok: false, error: error.message } : { ok: true }
       },
@@ -100,16 +119,17 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>
 }
 
-/** Активация вошедшего пользователя: перенос локального прогресса + синк. */
-async function activateUser(userId: string, email: string | null): Promise<void> {
+/**
+ * Активация вошедшего пользователя: перенос локального прогресса (гость → uid),
+ * полная постановка строк в очередь (у гостя очередь могла не вестись/быть
+ * частичной — дедуп flush по conflict-key разрулит), затем push+pull.
+ */
+async function activateUser(userId: string): Promise<void> {
   const wasGuest = getCurrentUserId() === 'local'
   await remapLocalToUser(db, userId)
   setCurrentUserId(userId)
-  // локальный профиль-заглушка для гостя не нужен на сервере: profiles создаёт
-  // триггер; первичная выгрузка ремапнутых строк + pull облачных
-  if (wasGuest) await syncNow(db).catch(() => undefined)
-  else await syncNow(db).catch(() => undefined)
-  void email
+  if (wasGuest) await enqueueAllRows(db)
+  await syncNow(db).catch(() => undefined)
 }
 
 export function useAuth(): AuthState {
