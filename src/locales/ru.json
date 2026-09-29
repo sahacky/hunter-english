@@ -203,7 +203,13 @@
     "completionNote": "Отметка «пройден» появится, когда ≥90% фраз урока станут «выучено» в повторениях (интервал ≥7 дней).",
     "giveUp": "Сдаться",
     "findErrorHint": "Найди и исправь ошибку — запиши правильную фразу",
-    "markerHint": "Маркер времени"
+    "markerHint": "Маркер времени",
+    "replayButton": "Повторить ошибочные ({{count}})",
+    "replayTitle": "Проход по ошибкам",
+    "replayProgress": "задание {{current}} из {{total}}",
+    "replayFinished": "Ошибочные задания пройдены. Система довольна.",
+    "replayEmpty": "Ошибок не осталось.",
+    "replayBackToSummary": "К финалу урока"
   },
   "ranks": {
     "statusTitle": "Статус охотника",
@@ -261,5 +267,29 @@
       "restaurant": "Ресторан",
       "pharmacy": "Аптека и врач"
     }
+  },
+  "quotes": {
+    "title": "Цитаты",
+    "filterUnderstood": "понятные мне сейчас",
+    "count": "{{count}} цитат",
+    "understoodCount": "понятных: {{count}}",
+    "understoodShort": "понятно",
+    "vocabCoverage": "топ-1000: {{percent}}%",
+    "empty": "Колода собирается — цитаты появятся позже.",
+    "notFound": "Такой цитаты нет.",
+    "backToTitles": "ко всем тайтлам",
+    "back": "К цитатам",
+    "showRu": "Показать перевод",
+    "hideRu": "Скрыть перевод",
+    "playphrase": "Услышать в оригинале",
+    "cloze": "Cloze по цитате",
+    "clozePrompt": "Вставь пропущенное слово:",
+    "markUnderstood": "Понял без перевода",
+    "understood": "понял без перевода",
+    "noTranslation": "Слова нет в датасете (пока).",
+    "toDeck": "В колоду",
+    "addedToDeck": "В колоду добавлено карточек: {{count}}",
+    "alreadyInDeck": "уже в колоде",
+    "close": "Закрыть"
   }
 }

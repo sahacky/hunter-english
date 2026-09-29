@@ -67,6 +67,8 @@ function delayRepo(inner: DexieProgressRepository, ms: number): ProgressReposito
     putQuestDay: (state) => inner.putQuestDay(state),
     getGateAttempt: (gate) => inner.getGateAttempt(gate),
     putGateAttempt: (attempt) => inner.putGateAttempt(attempt),
+    getQuoteMark: (quoteId) => inner.getQuoteMark(quoteId),
+    putQuoteMark: (quoteId, understood) => inner.putQuoteMark(quoteId, understood),
   }
 }
 

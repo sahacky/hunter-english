@@ -137,11 +137,15 @@ def main() -> None:
     args = ap.parse_args()
 
     ranks = load_ranks()
-    target_path = RAW / "kaikki/target_words_full.txt"
-    targets = [w.strip().lower() for w in target_path.read_text(encoding="utf-8").splitlines() if w.strip()]
+    # целевые леммы: NGSL-набор + субтитровая полоса до ~5000 (M11)
+    targets: list[str] = []
+    for name in ("target_words_full.txt", "target_words_sub5000.txt"):
+        path = RAW / "kaikki" / name
+        if path.exists():
+            targets += [w.strip().lower() for w in path.read_text(encoding="utf-8").splitlines() if w.strip()]
+    targets = sorted(set(targets))
     if not targets:
-        sys.exit(f"пустой список целевых лемм: {target_path} — "
-                 f"сначала запусти research/tools/data/build_target_words.py --full")
+        sys.exit("пустые списки целевых лемм — сначала запусти build_target_words.py")
     print(f"целевых лемм: {len(targets)}")
 
     en_map, ru_map = load_pairs(args.tatoeba_dir)

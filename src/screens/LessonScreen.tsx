@@ -24,6 +24,7 @@ import {
   type ExerciseItem,
   type LessonView,
   type PhraseItem,
+  type ResolvedExercise,
   type TrapItem,
 } from '../content/lessons'
 import { createFirstCards } from '../content/words'
@@ -51,6 +52,7 @@ type Phase =
   | { kind: 'step' }
   | { kind: 'deck' } // шаг 7 «В колоду»
   | { kind: 'done' }
+  | { kind: 'replay'; index: number } // проход по ошибкам (M11#11.3)
 
 interface LessonScreenProps {
   repo?: ProgressRepository
@@ -157,6 +159,8 @@ export default function LessonScreen({
   const [exerciseIndex, setExerciseIndex] = useState(0)
   const [ruleShown, setRuleShown] = useState(false)
   const [summary, setSummary] = useState<PassSummary | null>(null)
+  /** Проход по ошибкам (M11#11.3): id заданий, где были ошибки (без XP и персиста). */
+  const [replayIds, setReplayIds] = useState<string[]>([])
   const [startedAt] = useState(() => Date.now())
   /** прошлый статус записи: повтор пройденного не затирает оригинал (specs/07 §4.4) */
   const previousRowRef = useRef<{ status: string; score: number | null } | null>(null)
@@ -271,6 +275,16 @@ export default function LessonScreen({
 
   const step = view?.steps.find((s) => s.index === checkpoint.stepIndex)
   const stepExercises = step ? (view?.content[step.index] ?? []) : []
+  /** id → упражнение по всему уроку (для «прохода по ошибкам», M11#11.3). */
+  const exerciseById = useMemo(() => {
+    const map = new Map<string, ResolvedExercise>()
+    if (view) {
+      for (const items of Object.values(view.content)) {
+        for (const item of items) map.set(item.exercise.id, item)
+      }
+    }
+    return map
+  }, [view])
   const trap: TrapItem | null = view?.lesson.trap_id
     ? (traps.get(view.lesson.trap_id) ?? null)
     : null
@@ -364,6 +378,15 @@ export default function LessonScreen({
       const accuracy = passAccuracy(finished.scores) ?? 0
       const minutes = Math.max(1, Math.round((Date.now() - startedAt) / 60_000))
       setSummary({ xp: 0, accuracy, minutes })
+      // ошибки для «прохода по ошибкам» (M11#11.3): не-первая попытка, подсказка, пропуск
+      setReplayIds(
+        Object.entries(finished.results)
+          .filter(
+            ([, result]) =>
+              result.attempts > 1 || result.outcome === 'hint' || result.outcome === 'skip',
+          )
+          .map(([exerciseId]) => exerciseId),
+      )
       // статус по правилам specs/02 §5; повтор не затирает оригинал (specs/07 §4.4)
       const cards = await repo.getAllCards()
       const previous = previousRowRef.current
@@ -570,6 +593,17 @@ export default function LessonScreen({
           <li>{t('lesson.summaryDeck', { count: lessonPhrases(view).length })}</li>
         </ul>
         <p className="dim">{t('lesson.completionNote')}</p>
+        {replayIds.length > 0 && (
+          <div className="lesson-actions" style={{ margin: '12px 0' }}>
+            <button
+              type="button"
+              className="srs-btn"
+              onClick={() => setPhase({ kind: 'replay', index: 0 })}
+            >
+              {t('lesson.replayButton', { count: replayIds.length })}
+            </button>
+          </div>
+        )}
         {view.lesson.bebris_video?.youtube_id && (
           <p className="dim">
             {t('lesson.videoTopic')}:{' '}
@@ -582,6 +616,54 @@ export default function LessonScreen({
             </a>
           </p>
         )}
+      </section>
+    )
+  }
+  if (phase.kind === 'replay') {
+    const list = replayIds
+      .map((id) => exerciseById.get(id))
+      .filter((item): item is ResolvedExercise => item !== undefined)
+    const currentReplay = list[phase.index]
+    if (!currentReplay) {
+      // защитный случай (пустой список) — возврат на финал
+      return (
+        <section className="panel lesson-panel">
+          <h2>{t('lesson.lessonDone')}</h2>
+          <p className="dim">{t('lesson.replayEmpty')}</p>
+          <div className="lesson-actions">
+            <button type="button" className="srs-btn" onClick={() => setPhase({ kind: 'done' })}>
+              {t('lesson.replayBackToSummary')}
+            </button>
+          </div>
+        </section>
+      )
+    }
+    return (
+      <section className="panel lesson-panel">
+        <header className="lesson-head">
+          <h2>{t('lesson.replayTitle')}</h2>
+          <p className="dim">
+            {t('lesson.replayProgress', { current: phase.index + 1, total: list.length })}
+          </p>
+          <button type="button" className="srs-finish" onClick={() => setPhase({ kind: 'done' })}>
+            ✕ {t('lesson.exit')}
+          </button>
+        </header>
+        <ExerciseRouter
+          key={currentReplay.exercise.id}
+          current={currentReplay}
+          trap={trap}
+          onAnswer={() => undefined}
+          onDispute={() => undefined}
+          onNext={() => {
+            if (phase.index + 1 < list.length) {
+              setPhase({ kind: 'replay', index: phase.index + 1 })
+            } else {
+              showToast(t('lesson.replayFinished'))
+              setPhase({ kind: 'done' })
+            }
+          }}
+        />
       </section>
     )
   }

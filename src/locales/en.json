@@ -155,7 +155,13 @@
     "exitConfirmTitle": "Leave the lesson?",
     "exitConfirm": "Lesson is not finished. Progress is saved — you can continue from step {{step}}.",
     "exitCancel": "Keep going",
-    "exitYes": "Leave"
+    "exitYes": "Leave",
+    "replayButton": "Retry mistakes ({{count}})",
+    "replayTitle": "Mistake replay",
+    "replayProgress": "task {{current}} of {{total}}",
+    "replayFinished": "Mistakes replayed. The system approves.",
+    "replayEmpty": "No mistakes left.",
+    "replayBackToSummary": "Back to summary"
   },
   "ranks": {
     "statusTitle": "Hunter status",
@@ -261,5 +267,29 @@
       "on": "On",
       "off": "Off"
     }
+  },
+  "quotes": {
+    "title": "Quotes",
+    "filterUnderstood": "understandable right now",
+    "count": "{{count}} quotes",
+    "understoodCount": "understood: {{count}}",
+    "understoodShort": "understood",
+    "vocabCoverage": "top-1000: {{percent}}%",
+    "empty": "The deck is being collected — quotes will appear later.",
+    "notFound": "No such quote.",
+    "backToTitles": "all titles",
+    "back": "Back to quotes",
+    "showRu": "Show translation",
+    "hideRu": "Hide translation",
+    "playphrase": "Hear it in the original",
+    "cloze": "Cloze this quote",
+    "clozePrompt": "Fill in the missing word:",
+    "markUnderstood": "Understood without translation",
+    "understood": "understood without translation",
+    "noTranslation": "The word is not in the dataset (yet).",
+    "toDeck": "Add to deck",
+    "addedToDeck": "Cards added: {{count}}",
+    "alreadyInDeck": "already in the deck",
+    "close": "Close"
   }
 }

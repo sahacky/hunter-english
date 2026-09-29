@@ -24,7 +24,7 @@ export type UserStatsRow = import('../domain/game/types').UserStats & { user_id:
 export interface ItemProgressRow {
   user_id: string
   item_id: string
-  kind: 'quest_day' | 'gate_attempts' | 'achievement'
+  kind: 'quest_day' | 'gate_attempts' | 'achievement' | 'quote'
   data: unknown
   updated_at: string
 }

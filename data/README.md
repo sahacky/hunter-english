@@ -10,6 +10,8 @@ data/
   schemas/      *.schema.json (draft-07) — из спеки 05, не редактировать руками
   words/        слова, фиксированные диапазоны freq_rank_ngsl:
                 words-0001-0500 … words-2401-2809 + words-spoken-only.json
+                + words-2810-4000.json / words-4001-5000.json
+                  (субтитровая полоса, freq_rank_sub — M11, курация форм/джанка)
   quotes/       цитаты по тайтлам (274 записи, все с RU-переводом)
   traps.json    22 ловушки русскоязычных (ЛТ-01…ЛТ-22)
   manifest.json манифест сборки (пути, kind, counts, sha256) — для PWA

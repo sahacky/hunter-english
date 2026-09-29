@@ -12,7 +12,9 @@ export interface WordItem {
   part_of_speech: string
   translation_ru: string[]
   cefr_level: string
-  freq_rank_ngsl: number
+  /** NGSL-ранг; у субтитровых слов (M11) вместо него freq_rank_sub. */
+  freq_rank_ngsl?: number
+  freq_rank_sub?: number
   audio: { en_gb?: string }
 }
 
@@ -27,6 +29,18 @@ const wordModules = import.meta.glob('/data/words/*.json') as Record<
   string,
   () => Promise<WordsFile>
 >
+
+/** Леммы с NGSL-рангом ≤ maxRank (топ-1000 — cloze цитат, решение M11#4). */
+export async function loadTopNgslLemmas(maxRank = 1000): Promise<Set<string>> {
+  const files = await Promise.all(Object.values(wordModules).map((load) => load()))
+  const top = new Set<string>()
+  for (const file of files) {
+    for (const item of file.items) {
+      if ((item.freq_rank_ngsl ?? Number.POSITIVE_INFINITY) <= maxRank) top.add(item.lemma)
+    }
+  }
+  return top
+}
 
 function toNote(item: WordItem): Note {
   return {
