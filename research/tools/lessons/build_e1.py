@@ -17,6 +17,8 @@ import random
 import re
 from pathlib import Path
 
+from wordranks import distractor_pool
+
 REPO = Path(__file__).resolve().parents[3]
 DATA = REPO / "data"
 SEED = 20260928
@@ -1967,6 +1969,15 @@ def load_quote(quote_id: str) -> dict:
 
 
 def build():
+    """Ранг E: делегирует параметризованному движку build_rank (см. build_d.py)."""
+    build_rank(LESSONS, rank="E", stem="e", seed=SEED)
+
+
+def build_rank(lessons, *, rank: str, stem: str, seed: int):
+    """Сборка контента одного ранка: rank — поле lesson.rank ('E'|'D'),
+    stem — префиксы id (ph-e-/ex-e-) и имена файлов (phrases-e.json…).
+    Детерминизм: random.Random(seed)."""
+    rng = random.Random(seed)
     phrases_out, exercises_out, lessons_out = [], [], []
     audio_rows = []
     ph_n = 0
@@ -1975,14 +1986,14 @@ def build():
     def next_ex() -> str:
         nonlocal ex_n
         ex_n += 1
-        return f"ex-e-{ex_n:04d}"
+        return f"ex-{stem}-{ex_n:04d}"
 
-    for spec in LESSONS:
+    for spec in lessons:
         lesson_phrase_ids = []
         lesson_phrase_items = []
         for en, ru, variants in spec["phrases"]:
             ph_n += 1
-            pid = f"ph-e-{ph_n:04d}"
+            pid = f"ph-{stem}-{ph_n:04d}"
             lesson_phrase_ids.append(pid)
             item = {
                 "id": pid,
@@ -2032,11 +2043,10 @@ def build():
         ]
         rng.shuffle(short)
         for target in short[:WARMUP_CHOOSE]:
-            pool = [
-                p["text_en"]
-                for p in short
-                if p is not target and p["translation_ru"] != target["translation_ru"]
-            ][:3]
+            # Дистракторы по частотной полосе ±50 (решение M11#6): ключевые слова
+            # (самый редкий токен фразы в датасете слов) цели и варианта — рядом;
+            # фолбэк при пустом окне — прежний пул урока
+            pool = distractor_pool(target, short)[:3]
             options = pool + [target["text_en"]]
             rng.shuffle(options)
             correct = options.index(target["text_en"])
@@ -2183,7 +2193,7 @@ def build():
 
         lessons_out.append({
             "id": spec["id"],
-            "rank": "E",
+            "rank": rank,
             "module": spec["module"],
             "title": spec["title"],
             "grammar_point": {
@@ -2202,7 +2212,7 @@ def build():
         })
 
     # find_error и answer_question ссылаются на фразы любых уроков — после всех пулов
-    for li, spec in enumerate(LESSONS):
+    for li, spec in enumerate(lessons):
         for question_en, answer_text in spec.get("answer_question", []):
             target = next((item for item in phrases_out if item["text_en"] == answer_text), None)
             if target is None:
@@ -2233,25 +2243,25 @@ def build():
             lessons_out[li]["exercises"].append({"id": eid})
 
     (DATA / "phrases").mkdir(exist_ok=True)
-    (DATA / "phrases" / "phrases-e.json").write_text(
+    (DATA / "phrases" / f"phrases-{stem}.json").write_text(
         json.dumps({"schema_version": 1, "kind": "phrases", "items": phrases_out},
                    ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     (DATA / "lessons").mkdir(exist_ok=True)
-    (DATA / "lessons" / "exercises-e.json").write_text(
+    (DATA / "lessons" / f"exercises-{stem}.json").write_text(
         json.dumps({"schema_version": 1, "kind": "exercises", "items": exercises_out},
                    ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    (DATA / "lessons" / "lessons-e.json").write_text(
+    (DATA / "lessons" / f"lessons-{stem}.json").write_text(
         json.dumps({"schema_version": 1, "kind": "lessons", "items": lessons_out},
                    ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     raw = DATA / "raw"
     raw.mkdir(exist_ok=True)
-    (raw / "phrase_audio_e1.tsv").write_text(
+    (raw / f"phrase_audio_{stem}.tsv").write_text(
         "".join(f"{pid}\t{text}\n" for pid, text in audio_rows), encoding="utf-8")
 
-    per_lesson = {spec["id"]: len(spec["phrases"]) for spec in LESSONS}
+    per_lesson = {spec["id"]: len(spec["phrases"]) for spec in lessons}
     print(f"фраз: {len(phrases_out)} {per_lesson}")
     print(f"упражнений: {len(exercises_out)}; уроков: {len(lessons_out)}")
-    print(f"аудио-список: {raw / 'phrase_audio_e1.tsv'}")
+    print(f"аудио-список: {raw / f'phrase_audio_{stem}.tsv'}")
 
 
 if __name__ == "__main__":

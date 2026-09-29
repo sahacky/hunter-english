@@ -59,7 +59,7 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Я здесь.",
-        "options": ["I am from Russia.", "I am here.", "Moscow is my city.", "He is from Canada."],
+        "options": ["You are right.", "I am here.", "We are here.", "Life is good."],
         "correct": 1
       },
       "answer": {
@@ -77,7 +77,12 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Москва — мой город.",
-        "options": ["Moscow is my city.", "I am here.", "He is from Canada.", "I am from Russia."],
+        "options": [
+          "Moscow is my city.",
+          "Russia is my country.",
+          "This is my friend.",
+          "My name is Anna."
+        ],
         "correct": 0
       },
       "answer": {
@@ -95,7 +100,7 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Он из Канады.",
-        "options": ["He is from Canada.", "Moscow is my city.", "I am from Russia.", "I am here."],
+        "options": ["He is from Canada.", "We are friends.", "This is Anna.", "I am from Russia."],
         "correct": 0
       },
       "answer": {
@@ -113,7 +118,7 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Я из России.",
-        "options": ["Moscow is my city.", "He is from Canada.", "I am from Russia.", "I am here."],
+        "options": ["We are friends.", "This is Anna.", "I am from Russia.", "He is from Canada."],
         "correct": 2
       },
       "answer": {
@@ -885,12 +890,7 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Этот кофе хороший.",
-        "options": [
-          "This city is big.",
-          "It is an apple.",
-          "I am a student.",
-          "This coffee is good."
-        ],
+        "options": ["I am an engineer.", "It is a secret.", "I am busy.", "This coffee is good."],
         "correct": 3
       },
       "answer": {
@@ -931,12 +931,7 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Я студент.",
-        "options": [
-          "It is an apple.",
-          "This coffee is good.",
-          "I am a student.",
-          "This city is big."
-        ],
+        "options": ["I have a question.", "This city is big.", "I am a student.", "She is kind."],
         "correct": 2
       },
       "answer": {
@@ -954,12 +949,7 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Этот город большой.",
-        "options": [
-          "I am a student.",
-          "This city is big.",
-          "It is an apple.",
-          "This coffee is good."
-        ],
+        "options": ["She is kind.", "This city is big.", "I have a question.", "I am a student."],
         "correct": 1
       },
       "answer": {
@@ -1732,10 +1722,10 @@
         "kind": "choose_translation",
         "prompt": "Не жарко.",
         "options": [
-          "They are not friends.",
-          "They are not here.",
+          "I am not ready.",
+          "It is not expensive.",
           "It is not hot.",
-          "She is not sad."
+          "We are not ready."
         ],
         "correct": 2
       },
@@ -1755,10 +1745,10 @@
         "kind": "choose_translation",
         "prompt": "Их здесь нет.",
         "options": [
-          "She is not sad.",
-          "They are not friends.",
+          "He is not here.",
+          "You are not right.",
           "They are not here.",
-          "It is not hot."
+          "She is not here."
         ],
         "correct": 2
       },
@@ -1778,10 +1768,10 @@
         "kind": "choose_translation",
         "prompt": "Они не друзья.",
         "options": [
-          "It is not hot.",
+          "I am not tired.",
           "They are not friends.",
-          "She is not sad.",
-          "They are not here."
+          "It is not true.",
+          "I have no brothers."
         ],
         "correct": 1
       },
@@ -2631,7 +2621,7 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Тебе холодно?",
-        "options": ["Are you thirsty?", "I am thirsty.", "Are you cold?", "Are you happy?"],
+        "options": ["Are you okay?", "Are you ready?", "Are you cold?", "Is it okay?"],
         "correct": 2
       },
       "answer": {
@@ -3403,7 +3393,7 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Москва большая?",
-        "options": ["And you?", "Have a good day.", "It is a secret.", "Is Moscow big?"],
+        "options": ["Have a good day.", "Yes, they are.", "Not bad.", "Is Moscow big?"],
         "correct": 3
       },
       "answer": {
@@ -3421,7 +3411,7 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "А ты?",
-        "options": ["Is Moscow big?", "And you?", "It is a secret.", "Have a good day."],
+        "options": ["No, they are not.", "And you?", "Good to see you.", "So-so."],
         "correct": 1
       },
       "answer": {
@@ -3439,7 +3429,12 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Хорошего дня.",
-        "options": ["And you?", "It is a secret.", "Have a good day.", "Is Moscow big?"],
+        "options": [
+          "Good to see you.",
+          "Long time no see.",
+          "Have a good day.",
+          "No, they are not."
+        ],
         "correct": 2
       },
       "answer": {
@@ -4229,12 +4224,7 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Кто она?",
-        "options": [
-          "Who is your teacher?",
-          "Where is my phone?",
-          "Who is she?",
-          "Who is that man?"
-        ],
+        "options": ["Where is he from?", "London is in England.", "Who is she?", "How much is it?"],
         "correct": 2
       },
       "answer": {
@@ -4253,10 +4243,10 @@
         "kind": "choose_translation",
         "prompt": "Кто твой учитель?",
         "options": [
-          "Where is my phone?",
+          "Where is my bag?",
           "Who is your teacher?",
-          "Who is that man?",
-          "Who is she?"
+          "Where is your family?",
+          "Where is my phone?"
         ],
         "correct": 1
       },
@@ -4276,9 +4266,9 @@
         "kind": "choose_translation",
         "prompt": "Где мой телефон?",
         "options": [
+          "Where is my bag?",
+          "Where is your family?",
           "Who is your teacher?",
-          "Who is that man?",
-          "Who is she?",
           "Where is my phone?"
         ],
         "correct": 3
@@ -4299,10 +4289,10 @@
         "kind": "choose_translation",
         "prompt": "Кто тот мужчина?",
         "options": [
-          "Where is my phone?",
-          "Who is your teacher?",
+          "Where is Anna from?",
+          "How much is it?",
           "Who is that man?",
-          "Who is she?"
+          "Where is he from?"
         ],
         "correct": 2
       },
@@ -5079,7 +5069,7 @@
           "Those people are kind.",
           "These shoes are new.",
           "This is our room.",
-          "That door is closed."
+          "Is that your car?"
         ],
         "correct": 2
       },
@@ -5102,7 +5092,7 @@
           "Those people are kind.",
           "These shoes are new.",
           "This is our room.",
-          "That door is closed."
+          "Is that your car?"
         ],
         "correct": 1
       },
@@ -5125,7 +5115,7 @@
           "Those people are kind.",
           "These shoes are new.",
           "This is our room.",
-          "That door is closed."
+          "Is that your car?"
         ],
         "correct": 0
       },
@@ -5968,10 +5958,10 @@
         "kind": "choose_translation",
         "prompt": "Её зовут Анна.",
         "options": [
-          "Where is Ivan's bag?",
+          "We are their guests.",
           "Her name is Anna.",
-          "This is Dima's sister.",
-          "We are their guests."
+          "It is their cat.",
+          "Their house is big."
         ],
         "correct": 1
       },
@@ -5992,9 +5982,9 @@
         "prompt": "Мы их гости.",
         "options": [
           "We are their guests.",
-          "Her name is Anna.",
-          "This is Dima's sister.",
-          "Where is Ivan's bag?"
+          "Their house is big.",
+          "It is their cat.",
+          "Her name is Anna."
         ],
         "correct": 0
       },
@@ -6791,10 +6781,10 @@
         "kind": "choose_translation",
         "prompt": "Эти апельсины сладкие.",
         "options": [
-          "We have two watches.",
-          "The buses are slow.",
+          "Those are her keys.",
+          "My friends are students.",
           "These oranges are sweet.",
-          "My friends are students."
+          "These cities are big."
         ],
         "correct": 2
       },
@@ -6814,10 +6804,10 @@
         "kind": "choose_translation",
         "prompt": "У нас двое часов.",
         "options": [
-          "The buses are slow.",
+          "Two tickets to London.",
           "We have two watches.",
-          "These oranges are sweet.",
-          "My friends are students."
+          "I have three children.",
+          "Five days a week."
         ],
         "correct": 1
       },
@@ -6837,10 +6827,10 @@
         "kind": "choose_translation",
         "prompt": "Мои друзья студенты.",
         "options": [
+          "Those are her keys.",
           "These oranges are sweet.",
-          "The buses are slow.",
           "My friends are students.",
-          "We have two watches."
+          "These cities are big."
         ],
         "correct": 2
       },
@@ -7614,10 +7604,10 @@
         "kind": "choose_translation",
         "prompt": "Её чай горячий.",
         "options": [
-          "His car is black.",
-          "Her tea is hot.",
           "These are my keys.",
-          "The station is far."
+          "Her tea is hot.",
+          "Who are those people?",
+          "Her eyes are blue."
         ],
         "correct": 1
       },
@@ -7661,9 +7651,9 @@
         "prompt": "Это мои ключи.",
         "options": [
           "Her tea is hot.",
-          "The station is far.",
+          "Her eyes are blue.",
           "These are my keys.",
-          "His car is black."
+          "Who are those people?"
         ],
         "correct": 2
       },
@@ -8495,9 +8485,9 @@
         "kind": "choose_translation",
         "prompt": "Я говорю по-русски.",
         "options": [
+          "I like this city.",
+          "I understand you.",
           "They speak English.",
-          "We work every day.",
-          "I know this song.",
           "I speak Russian."
         ],
         "correct": 3
@@ -8519,9 +8509,9 @@
         "prompt": "Мы работаем каждый день.",
         "options": [
           "We work every day.",
-          "I speak Russian.",
-          "They speak English.",
-          "I know this song."
+          "They need money.",
+          "They want to help.",
+          "They live in London."
         ],
         "correct": 0
       },
@@ -8541,10 +8531,10 @@
         "kind": "choose_translation",
         "prompt": "Они говорят по-английски.",
         "options": [
-          "We work every day.",
+          "I like this city.",
           "They speak English.",
-          "I know this song.",
-          "I speak Russian."
+          "I speak Russian.",
+          "I understand you."
         ],
         "correct": 1
       },
@@ -9341,9 +9331,9 @@
         "kind": "choose_translation",
         "prompt": "Она преподаёт английский.",
         "options": [
-          "She knows my sister.",
           "It works.",
-          "He plays football.",
+          "He speaks English.",
+          "She sings beautifully.",
           "She teaches English."
         ],
         "correct": 3
@@ -9364,10 +9354,10 @@
         "kind": "choose_translation",
         "prompt": "Это работает.",
         "options": [
-          "He plays football.",
-          "She knows my sister.",
+          "She sings beautifully.",
+          "She teaches English.",
           "It works.",
-          "She teaches English."
+          "He speaks English."
         ],
         "correct": 2
       },
@@ -10165,9 +10155,9 @@
         "prompt": "Я не согласен.",
         "options": [
           "I don't agree.",
-          "I don't understand.",
-          "I don't need money.",
-          "I don't mean it."
+          "I don't watch TV.",
+          "They don't speak Russian.",
+          "I don't understand."
         ],
         "correct": 0
       },
@@ -10187,10 +10177,10 @@
         "kind": "choose_translation",
         "prompt": "Я не это имею в виду.",
         "options": [
-          "I don't agree.",
+          "They don't like tourists.",
           "I don't mean it.",
-          "I don't need money.",
-          "I don't understand."
+          "You don't need this.",
+          "I don't have time."
         ],
         "correct": 1
       },
@@ -10210,9 +10200,9 @@
         "kind": "choose_translation",
         "prompt": "Я не понимаю.",
         "options": [
-          "I don't agree.",
           "I don't need money.",
-          "I don't mean it.",
+          "I don't understand you.",
+          "They don't speak Russian.",
           "I don't understand."
         ],
         "correct": 3
@@ -10234,9 +10224,9 @@
         "prompt": "Мне не нужны деньги.",
         "options": [
           "I don't need money.",
-          "I don't mean it.",
-          "I don't agree.",
-          "I don't understand."
+          "We don't live here.",
+          "I don't understand.",
+          "I don't understand you."
         ],
         "correct": 0
       },
@@ -11010,10 +11000,10 @@
         "kind": "choose_translation",
         "prompt": "Это звучит неправильно.",
         "options": [
-          "It doesn't matter.",
+          "She doesn't agree.",
           "That doesn't make sense.",
           "It doesn't sound right.",
-          "He doesn't play tennis."
+          "It doesn't matter."
         ],
         "correct": 2
       },
@@ -11034,8 +11024,8 @@
         "prompt": "Это не имеет смысла.",
         "options": [
           "It doesn't sound right.",
+          "She doesn't agree.",
           "It doesn't matter.",
-          "He doesn't play tennis.",
           "That doesn't make sense."
         ],
         "correct": 3
@@ -11080,7 +11070,7 @@
         "prompt": "Это не важно.",
         "options": [
           "It doesn't matter.",
-          "He doesn't play tennis.",
+          "She doesn't work today.",
           "That doesn't make sense.",
           "It doesn't sound right."
         ],
@@ -11857,9 +11847,9 @@
         "prompt": "Мне нужен врач.",
         "options": [
           "I need a doctor.",
+          "Where is the hospital?",
           "I know this street.",
-          "It is an emergency.",
-          "We need a map."
+          "Everything works fine."
         ],
         "correct": 0
       },
@@ -11926,9 +11916,9 @@
         "prompt": "Я знаю эту улицу.",
         "options": [
           "I need a doctor.",
-          "It is an emergency.",
+          "Everything works fine.",
           "I know this street.",
-          "We need a map."
+          "Where is the hospital?"
         ],
         "correct": 2
       },
@@ -12737,9 +12727,9 @@
         "kind": "choose_translation",
         "prompt": "Я тебя знаю?",
         "options": [
-          "Do you accept cards?",
-          "Do they live here?",
-          "Yes, I like it.",
+          "Do we have time?",
+          "Do we need tickets?",
+          "Do you have time?",
           "Do I know you?"
         ],
         "correct": 3
@@ -12760,10 +12750,10 @@
         "kind": "choose_translation",
         "prompt": "Да, мне нравится.",
         "options": [
-          "Do they live here?",
-          "Do you accept cards?",
+          "Don't you understand?",
+          "Do you need money?",
           "Yes, I like it.",
-          "Do I know you?"
+          "Yes, I work here."
         ],
         "correct": 2
       },
@@ -12784,9 +12774,9 @@
         "prompt": "Они живут здесь?",
         "options": [
           "Do they live here?",
-          "Yes, I like it.",
-          "Do you accept cards?",
-          "Do I know you?"
+          "Why do you ask?",
+          "Do you need help?",
+          "Do you need money?"
         ],
         "correct": 0
       },
@@ -13560,10 +13550,10 @@
         "kind": "choose_translation",
         "prompt": "Где он живёт?",
         "options": [
-          "Does he want coffee?",
+          "Where does she work?",
           "Where does he live?",
           "How does it work?",
-          "Where does she work?"
+          "Does she work today?"
         ],
         "correct": 1
       },
@@ -13583,10 +13573,10 @@
         "kind": "choose_translation",
         "prompt": "Как это работает?",
         "options": [
-          "Where does he live?",
-          "Does he want coffee?",
+          "Where does she work?",
+          "Does it work?",
           "How does it work?",
-          "Where does she work?"
+          "Does he work here?"
         ],
         "correct": 2
       },
@@ -13629,9 +13619,9 @@
         "kind": "choose_translation",
         "prompt": "Где она работает?",
         "options": [
-          "Does he want coffee?",
+          "Does he work here?",
+          "Does it work?",
           "How does it work?",
-          "Where does he live?",
           "Where does she work?"
         ],
         "correct": 3
@@ -14407,8 +14397,8 @@
         "prompt": "Почему она спрашивает?",
         "options": [
           "Why does she ask?",
-          "On Friday I rest.",
           "Where do you live?",
+          "Where do you work?",
           "What do you mean?"
         ],
         "correct": 0
@@ -14429,10 +14419,10 @@
         "kind": "choose_translation",
         "prompt": "Что ты имеешь в виду?",
         "options": [
-          "On Friday I rest.",
-          "Why does she ask?",
+          "What does he want?",
+          "Where do you work?",
           "What do you mean?",
-          "Where do you live?"
+          "What time is it?"
         ],
         "correct": 2
       },
@@ -14477,7 +14467,7 @@
         "options": [
           "Why does she ask?",
           "Where do you live?",
-          "On Friday I rest.",
+          "Where do you work?",
           "What do you mean?"
         ],
         "correct": 1
@@ -15269,7 +15259,7 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Ты любишь рыбу?",
-        "options": ["They need a plan.", "Do you like fish?", "I like pizza.", "I need a map."],
+        "options": ["I need a doctor.", "Do you like fish?", "I want to sleep.", "I like fish."],
         "correct": 1
       },
       "answer": {
@@ -15287,7 +15277,12 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Им нужен план.",
-        "options": ["I need a map.", "I like pizza.", "They need a plan.", "Do you like fish?"],
+        "options": [
+          "I want water.",
+          "I don't need help.",
+          "They need a plan.",
+          "I don't want money."
+        ],
         "correct": 2
       },
       "answer": {
@@ -16102,9 +16097,9 @@
         "prompt": "Где мы встречаемся?",
         "options": [
           "Where do we meet?",
-          "No, I don't understand.",
-          "Yes, I understand.",
-          "John's car is new."
+          "What does she want?",
+          "I want the same.",
+          "What do you think?"
         ],
         "correct": 0
       },
@@ -16923,7 +16918,7 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Мне нужна передышка.",
-        "options": ["I need to go.", "I want more.", "I need a break.", "We need a plan."],
+        "options": ["I want to read.", "We need a plan.", "I need a break.", "They need to stop."],
         "correct": 2
       },
       "answer": {
@@ -16941,7 +16936,7 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Я хочу ещё.",
-        "options": ["We need a plan.", "I need a break.", "I want more.", "I need to go."],
+        "options": ["I have to go.", "I need to go.", "I want more.", "I have to work."],
         "correct": 2
       },
       "answer": {
@@ -16959,7 +16954,7 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Мне нужно идти.",
-        "options": ["We need a plan.", "I need to go.", "I need a break.", "I want more."],
+        "options": ["We want to help.", "I need to go.", "I want more.", "I have to work."],
         "correct": 1
       },
       "answer": {
@@ -17797,9 +17792,9 @@
         "prompt": "Я не часто путешествую.",
         "options": [
           "I don't often travel.",
-          "He often plays tennis.",
-          "I am always hungry.",
-          "They are always together."
+          "I sometimes rest.",
+          "Do you often travel?",
+          "We sometimes eat out."
         ],
         "correct": 0
       },
@@ -17820,9 +17815,9 @@
         "prompt": "Они всегда вместе.",
         "options": [
           "They are always together.",
-          "I don't often travel.",
-          "I am always hungry.",
-          "He often plays tennis."
+          "He is often tired.",
+          "He works hard.",
+          "We often go out."
         ],
         "correct": 0
       },
@@ -18596,9 +18591,9 @@
         "kind": "choose_translation",
         "prompt": "Ты сидишь здесь.",
         "options": [
-          "I am cooking dinner.",
-          "Listen! She is singing.",
-          "I am drinking tea.",
+          "They are working now.",
+          "She is coming back.",
+          "I am working now.",
           "You are sitting here."
         ],
         "correct": 3
@@ -19441,7 +19436,7 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Он работает?",
-        "options": ["Help! I'm lost!", "I am not waiting.", "Are they coming?", "Is he working?"],
+        "options": ["Are you sleeping?", "I am not waiting.", "Are they coming?", "Is he working?"],
         "correct": 3
       },
       "answer": {
@@ -19459,7 +19454,7 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Они приходят?",
-        "options": ["I am not waiting.", "Is he working?", "Are they coming?", "Help! I'm lost!"],
+        "options": ["I am not waiting.", "Is he working?", "Are they coming?", "Are you sleeping?"],
         "correct": 2
       },
       "answer": {
@@ -19477,7 +19472,7 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Я не жду.",
-        "options": ["I am not waiting.", "Help! I'm lost!", "Are they coming?", "Is he working?"],
+        "options": ["I am not waiting.", "Are you sleeping?", "Are they coming?", "Is he working?"],
         "correct": 0
       },
       "answer": {
