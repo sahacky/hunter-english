@@ -121,7 +121,7 @@ D03 = [
     ("There is a hotel near the station.", "Возле вокзала есть отель.", None),
     ("There is water in the bottle.", "В бутылке есть вода.", None),
     ("There is milk in the fridge.", "В холодильнике есть молоко.", None),
-    ("There is a market on Sundays.", "По воскресеньям здесь есть рынок.", None),
+    ("There is a market on Sundays.", "По воскресеньям есть рынок.", None),
     ("There are two cafés here.", "Здесь есть два кафе.", None),
     ("There are many people in the street.", "На улице много людей.", None),
     ("There are a lot of tourists here.", "Здесь много туристов.", None),
@@ -155,7 +155,7 @@ D03 = [
     ("Are there many tourists today?", "Сегодня много туристов?", None),
     ("What is there in the box?", "Что есть в коробке?", None),
     ("There is no time.", "Времени нет.", None),
-    ("There is nothing to fear.", "Здесь нечего бояться.", None),
+    ("There is nothing to fear.", "Нечего бояться.", None),
 ]
 
 D04 = [
@@ -163,7 +163,7 @@ D04 = [
     ("There isn't any milk.", "Молока нет.", None),
     ("There isn't a hospital in the village.", "В деревне нет больницы.", None),
     ("There aren't any shops here.", "Здесь нет магазинов.", None),
-    ("There aren't many cafés in this area.", "В этом районе не много кафе.", None),
+    ("There aren't many cafés in this area.", "В этом районе мало кафе.", None),
     ("There isn't much time.", "Времени не так много.", None),
     ("There isn't a pharmacy here.", "Здесь нет аптеки.", None),
     ("There aren't any buses today.", "Сегодня нет автобусов.", None),
@@ -188,7 +188,7 @@ D04 = [
     ("The museum is near the river.", "Музей рядом с рекой.", None),
     ("It is on the left.", "Это слева.", None),
     ("It is on the right.", "Это справа.", None),
-    ("Go straight and it is there.", "Идите прямо, и оно там.", None),
+    ("Go straight and it is there.", "Идите прямо — и вы на месте.", None),
     ("It is across the street.", "Это через дорогу.", None),
     ("It is two blocks from here.", "Это в двух кварталах отсюда.", None),
     ("It is not far from here.", "Это недалеко отсюда.", None),
@@ -244,8 +244,8 @@ D05 = [
     ("She knows what she wants.", "Она знает, чего хочет.", None),
     ("I think that there is a way.", "Думаю, что выход есть.", None),
     ("We believe that the city is beautiful.", "Мы верим, что город красивый.", None),
-    ("He says that there are two cafés.", "Он говорит, что здесь два кафе.", None),
-    ("I hope that there is a hotel.", "Надеюсь, что здесь есть отель.", None),
+    ("He says that there are two cafés.", "Он говорит, что есть два кафе.", None),
+    ("I hope that there is a hotel.", "Надеюсь, что отель есть.", None),
     ("Nobody knows the answer.", "Никто не знает ответа.", None),
     ("Everyone is waiting.", "Все ждут.", None),
     ("It is important to me.", "Это важно для меня.", None),
@@ -347,7 +347,7 @@ D07 = [
     ("Can we sit outside?", "Можно сесть на улице?", None),
     ("Can we order now?", "Можно сделать заказ?", None),
     ("Can we go home now?", "Можно уже домой?", None),
-    ("Can I have two tickets?", "Два билета, пожалуйста.", None),
+    ("Can I have two tickets?", "Можно два билета?", None),
 ]
 
 D08 = [
@@ -642,8 +642,8 @@ LESSONS_D = [
         "rule_md": RULE_D04,
         "phrases": D04,
         "rule_cloze": [
-            ("There ___ a bank here.", ["isn't"]),
-            ("The pharmacy is ___ Main Street.", ["in"]),
+            ("There ___ any shops here.", ["aren't"]),
+            ("The pharmacy is ___ Main Street.", ["in", "on"]),
             ("The café is ___ to the bank.", ["next"]),
         ],
         "quotes": [("q-game-of-thrones-0010", "There's"), ("q-star-wars-0017", "looking")],
@@ -656,7 +656,7 @@ LESSONS_D = [
         "find_error": [("The cat is under of the table.", "The cat is under the table.")],
         "verb_tense": [
             ("___ there a pharmacy near here?", "вопрос", ["Is"]),
-            ("The book is ___ the bag.", "внутри", ["in"]),
+            ("The book is ___ the bag.", "внутри", ["in", "inside"]),
             ("The station is ___ front of the hotel.", "напротив", ["in"]),
         ],
     },
@@ -692,7 +692,7 @@ LESSONS_D = [
         "rule_md": RULE_D06,
         "phrases": D06,
         "rule_cloze": [
-            ("I ___ swim.", ["can"]),
+            ("I ___ swim. (умение)", ["can"]),
             ("I ___ do this alone.", ["can't"]),
             ("___ you swim?", ["Can"]),
         ],
@@ -719,7 +719,7 @@ LESSONS_D = [
         "rule_cloze": [
             ("___ you help me, please?", ["Can"]),
             ("___ I sit here?", ["Can"]),
-            ("Can you ___ that?", ["repeat"]),
+            ("Can you ___ that again? (повторить)", ["repeat"]),
         ],
         "quotes": [("q-attack-on-titan-0009", "May"), ("q-supernatural-0004", "can't")],
         "trap_id": "trap-question-word-order",
@@ -767,9 +767,9 @@ LESSONS_D = [
         "rule_md": RULE_D09,
         "phrases": D09,
         "rule_cloze": [
-            ("___ the door.", ["Open"]),
+            ("___ the door. (открой)", ["Open"]),
             ("___ touch it.", ["Don't"]),
-            ("___ left.", ["Turn"]),
+            ("___ left. (поворот)", ["Turn"]),
         ],
         "quotes": [("q-lord-of-the-rings-0001", "Fly"), ("q-black-mirror-0013", "Shut")],
         "trap_id": "trap-no-do-negative",
@@ -778,7 +778,7 @@ LESSONS_D = [
         "quotes_topic": "directions",
         "bebris_video": None,
         "answer_question": [("Where is the café?", "Turn left and go straight.")],
-        "find_error": [("You turn left here.", "Turn left.")],
+        "find_error": [("Turn to left.", "Turn left.")],
         "verb_tense": [
             ("___ be late!", "запрет", ["Don't"]),
             ("___ me, please.", "следовать", ["Follow"]),
@@ -803,7 +803,7 @@ LESSONS_D = [
         "quotes_topic": "mixed",
         "bebris_video": None,
         "answer_question": [("Have you got a map?", "I have got a map.")],
-        "find_error": [("She cans help you.", "We can help you.")],
+        "find_error": [("We cans help you.", "We can help you.")],
         "verb_tense": [
             ("___ I sit here?", "разрешение", ["Can"]),
             ("He ___ got an idea.", "3-е лицо", ["has"]),

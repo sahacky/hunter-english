@@ -1995,12 +1995,15 @@ def build_rank(lessons, *, rank: str, stem: str, seed: int):
             ph_n += 1
             pid = f"ph-{stem}-{ph_n:04d}"
             lesson_phrase_ids.append(pid)
+            # эталон всегда входит в варианты (specs/05 §2; ревью M12 Б-1:
+            # явные варианты ДОПОЛНЯЮТ text_en, а не заменяют — иначе диктант/
+            # word_bank проверяют не то, что звучит/собирается)
             item = {
                 "id": pid,
                 "text_en": en,
                 "translation_ru": ru,
                 "grammar_point_id": spec["gp_id"],
-                "variants": variants if variants else [en],
+                "variants": list(dict.fromkeys([en] + (variants or []))),
                 "audio": {"en_gb": f"audio/phrases/cori/{pid}.opus"},
             }
             phrases_out.append(item)

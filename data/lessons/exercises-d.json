@@ -2202,7 +2202,7 @@
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "По воскресеньям здесь есть рынок.",
+        "prompt_ru": "По воскресеньям есть рынок.",
         "phrase_id": "ph-d-0099"
       },
       "answer": {
@@ -2535,8 +2535,8 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "There ___ a bank here.",
-        "gap_answers": ["isn't"]
+        "text_with_gap": "There ___ any shops here.",
+        "gap_answers": ["aren't"]
       },
       "answer": {
         "normalization": "default",
@@ -2553,7 +2553,7 @@
       "payload": {
         "kind": "cloze",
         "text_with_gap": "The pharmacy is ___ Main Street.",
-        "gap_answers": ["in"]
+        "gap_answers": ["in", "on"]
       },
       "answer": {
         "normalization": "default",
@@ -3155,7 +3155,7 @@
         "kind": "verb_tense",
         "sentence_with_gap": "The book is ___ the bag.",
         "marker": "внутри",
-        "gap_answers": ["in"]
+        "gap_answers": ["in", "inside"]
       },
       "answer": {
         "normalization": "default",
@@ -3687,7 +3687,7 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Он говорит, что здесь два кафе.",
+        "prompt_ru": "Он говорит, что есть два кафе.",
         "phrase_id": "ph-d-0216",
         "tokens": ["cafés", "She", "He", "that", "two", "says", "there", "are", "waiting"]
       },
@@ -3860,7 +3860,7 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Надеюсь, что здесь есть отель.",
+        "prompt_ru": "Надеюсь, что отель есть.",
         "phrase_id": "ph-d-0217"
       },
       "answer": {
@@ -4227,7 +4227,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "I ___ swim.",
+        "text_with_gap": "I ___ swim. (умение)",
         "gap_answers": ["can"]
       },
       "answer": {
@@ -5102,7 +5102,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "Can you ___ that?",
+        "text_with_gap": "Can you ___ that again? (повторить)",
         "gap_answers": ["repeat"]
       },
       "answer": {
@@ -6755,7 +6755,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "___ the door.",
+        "text_with_gap": "___ the door. (открой)",
         "gap_answers": ["Open"]
       },
       "answer": {
@@ -6789,7 +6789,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "___ left.",
+        "text_with_gap": "___ left. (поворот)",
         "gap_answers": ["Turn"]
       },
       "answer": {
@@ -8741,7 +8741,7 @@
       "type": "find_error",
       "payload": {
         "kind": "find_error",
-        "wrong_en": "You turn left here.",
+        "wrong_en": "Turn to left.",
         "hint_ru": "Поверните налево.",
         "phrase_id": "ph-d-0371"
       },
@@ -8778,7 +8778,7 @@
       "type": "find_error",
       "payload": {
         "kind": "find_error",
-        "wrong_en": "She cans help you.",
+        "wrong_en": "We cans help you.",
         "hint_ru": "Мы можем тебе помочь.",
         "phrase_id": "ph-d-0225"
       },

@@ -985,7 +985,7 @@
     {
       "id": "ph-d-0099",
       "text_en": "There is a market on Sundays.",
-      "translation_ru": "По воскресеньям здесь есть рынок.",
+      "translation_ru": "По воскресеньям есть рынок.",
       "grammar_point_id": "gp-d-03",
       "variants": ["There is a market on Sundays."],
       "audio": {
@@ -1325,7 +1325,7 @@
     {
       "id": "ph-d-0133",
       "text_en": "There is nothing to fear.",
-      "translation_ru": "Здесь нечего бояться.",
+      "translation_ru": "Нечего бояться.",
       "grammar_point_id": "gp-d-03",
       "variants": ["There is nothing to fear."],
       "audio": {
@@ -1375,7 +1375,7 @@
     {
       "id": "ph-d-0138",
       "text_en": "There aren't many cafés in this area.",
-      "translation_ru": "В этом районе не много кафе.",
+      "translation_ru": "В этом районе мало кафе.",
       "grammar_point_id": "gp-d-04",
       "variants": ["There aren't many cafés in this area."],
       "audio": {
@@ -1625,7 +1625,7 @@
     {
       "id": "ph-d-0163",
       "text_en": "Go straight and it is there.",
-      "translation_ru": "Идите прямо, и оно там.",
+      "translation_ru": "Идите прямо — и вы на месте.",
       "grammar_point_id": "gp-d-04",
       "variants": ["Go straight and it is there."],
       "audio": {
@@ -2155,7 +2155,7 @@
     {
       "id": "ph-d-0216",
       "text_en": "He says that there are two cafés.",
-      "translation_ru": "Он говорит, что здесь два кафе.",
+      "translation_ru": "Он говорит, что есть два кафе.",
       "grammar_point_id": "gp-d-05",
       "variants": ["He says that there are two cafés."],
       "audio": {
@@ -2165,7 +2165,7 @@
     {
       "id": "ph-d-0217",
       "text_en": "I hope that there is a hotel.",
-      "translation_ru": "Надеюсь, что здесь есть отель.",
+      "translation_ru": "Надеюсь, что отель есть.",
       "grammar_point_id": "gp-d-05",
       "variants": ["I hope that there is a hotel."],
       "audio": {
@@ -3095,7 +3095,7 @@
     {
       "id": "ph-d-0310",
       "text_en": "Can I have two tickets?",
-      "translation_ru": "Два билета, пожалуйста.",
+      "translation_ru": "Можно два билета?",
       "grammar_point_id": "gp-d-07",
       "variants": ["Can I have two tickets?"],
       "audio": {
@@ -3117,7 +3117,7 @@
       "text_en": "I have got a ticket.",
       "translation_ru": "У меня есть билет.",
       "grammar_point_id": "gp-d-08",
-      "variants": ["I have a ticket."],
+      "variants": ["I have got a ticket.", "I have a ticket."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0312.opus"
       }
@@ -3137,7 +3137,7 @@
       "text_en": "She has got a phone.",
       "translation_ru": "У неё есть телефон.",
       "grammar_point_id": "gp-d-08",
-      "variants": ["She has a phone."],
+      "variants": ["She has got a phone.", "She has a phone."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0314.opus"
       }
@@ -3207,7 +3207,7 @@
       "text_en": "Have you got a pen?",
       "translation_ru": "У тебя есть ручка?",
       "grammar_point_id": "gp-d-08",
-      "variants": ["Do you have a pen?"],
+      "variants": ["Have you got a pen?", "Do you have a pen?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0321.opus"
       }
@@ -3217,7 +3217,7 @@
       "text_en": "I have got two brothers.",
       "translation_ru": "У меня есть два брата.",
       "grammar_point_id": "gp-d-08",
-      "variants": ["I have two brothers."],
+      "variants": ["I have got two brothers.", "I have two brothers."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0322.opus"
       }
@@ -3227,7 +3227,7 @@
       "text_en": "She has got a dog.",
       "translation_ru": "У неё есть собака.",
       "grammar_point_id": "gp-d-08",
-      "variants": ["She has a dog."],
+      "variants": ["She has got a dog.", "She has a dog."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0323.opus"
       }
@@ -3237,7 +3237,7 @@
       "text_en": "We have got tickets.",
       "translation_ru": "У нас есть билеты.",
       "grammar_point_id": "gp-d-08",
-      "variants": ["We have tickets."],
+      "variants": ["We have got tickets.", "We have tickets."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0324.opus"
       }
@@ -3247,7 +3247,7 @@
       "text_en": "He has got an idea.",
       "translation_ru": "У него есть идея.",
       "grammar_point_id": "gp-d-08",
-      "variants": ["He has an idea."],
+      "variants": ["He has got an idea.", "He has an idea."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0325.opus"
       }
@@ -3267,7 +3267,7 @@
       "text_en": "I don't have money.",
       "translation_ru": "У меня нет денег.",
       "grammar_point_id": "gp-d-08",
-      "variants": ["I haven't got money."],
+      "variants": ["I don't have money.", "I haven't got money."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0327.opus"
       }
@@ -4087,7 +4087,7 @@
       "text_en": "I have got a ticket.",
       "translation_ru": "У меня есть билет.",
       "grammar_point_id": "gp-d-10",
-      "variants": ["I have a ticket."],
+      "variants": ["I have got a ticket.", "I have a ticket."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0409.opus"
       }
@@ -4097,7 +4097,7 @@
       "text_en": "She has got a question.",
       "translation_ru": "У неё есть вопрос.",
       "grammar_point_id": "gp-d-10",
-      "variants": ["She has a question."],
+      "variants": ["She has got a question.", "She has a question."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0410.opus"
       }
@@ -4117,7 +4117,7 @@
       "text_en": "Have you got a pen?",
       "translation_ru": "У тебя есть ручка?",
       "grammar_point_id": "gp-d-10",
-      "variants": ["Do you have a pen?"],
+      "variants": ["Have you got a pen?", "Do you have a pen?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0412.opus"
       }
@@ -4447,7 +4447,7 @@
       "text_en": "I have got an idea.",
       "translation_ru": "У меня есть идея.",
       "grammar_point_id": "gp-d-10",
-      "variants": ["I have an idea."],
+      "variants": ["I have got an idea.", "I have an idea."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0445.opus"
       }
