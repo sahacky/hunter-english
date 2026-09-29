@@ -11,6 +11,8 @@ D2 «Мочь и иметь» (D-06…D-10), plan://M12#12.3–12.4.
   data/lessons/lessons-d.json
   data/raw/phrase_audio_d.tsv
 """
+from build_d_pools2 import LESSONS_D3_D4
+from build_d_pools3 import LESSONS_D5_D6
 from build_e1 import build_rank
 
 # --------------------------------------------------------------------------
@@ -813,4 +815,6 @@ LESSONS_D = [
 ]
 
 if __name__ == "__main__":
-    build_rank(LESSONS_D, rank="D", stem="d", seed=20260929)
+    # Полный ранг D: D1+D2 (этот файл) + D3/D4 + D5/D6 (модули пулов)
+    ALL_D = LESSONS_D + LESSONS_D3_D4 + LESSONS_D5_D6
+    build_rank(ALL_D, rank="D", stem="d", seed=20260929)

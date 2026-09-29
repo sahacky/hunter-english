@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-29T08:56:55Z",
+  "generated_at": "2026-09-29T11:26:58Z",
   "files": [
     {
       "path": "lessons/exercises-d.json",
       "kind": "exercises",
       "schema_version": 1,
-      "items": 480,
-      "sha256": "5d1d33e34225c1e84fa43b3ad36b956da4207067efe1c800efb01a05d4c6228e"
+      "items": 1361,
+      "sha256": "9f81802b17a6f5c33b5cac2e554f1715c17f68a9b596c60fae37e48b60c173a9"
     },
     {
       "path": "lessons/exercises-e.json",
@@ -20,8 +20,8 @@
       "path": "lessons/lessons-d.json",
       "kind": "lessons",
       "schema_version": 1,
-      "items": 10,
-      "sha256": "3ee4462df583168827f2232603e13ed3aa94d3b7c80cc73c3dbc687436bc2b56"
+      "items": 28,
+      "sha256": "50fb7b2b7d5188f25a2f8ab37d7975492e5c526288af71c5105a0ca60867e922"
     },
     {
       "path": "lessons/lessons-e.json",
@@ -29,6 +29,13 @@
       "schema_version": 1,
       "items": 24,
       "sha256": "2d65672f482561ee2625a721b09738f0a9fb45d3fdf67fbfed496c64ee5b4a4c"
+    },
+    {
+      "path": "phrasebook/airport.json",
+      "kind": "phrasebook",
+      "schema_version": 1,
+      "items": 1,
+      "sha256": "b4efbc769e49ec9afc09e9661bf57a91cf49ef0d26dd59aa8756ea1b15c36306"
     },
     {
       "path": "phrasebook/directions.json",
@@ -45,6 +52,20 @@
       "sha256": "463e780b8833c642f4a7f164a2e490a218a828b7b0e44afab7972045812c6858"
     },
     {
+      "path": "phrasebook/pharmacy.json",
+      "kind": "phrasebook",
+      "schema_version": 1,
+      "items": 1,
+      "sha256": "ca93ed97168500f30c0b2de526165f6cc3aaf148120de8b8724911c2d188f0cc"
+    },
+    {
+      "path": "phrasebook/shop.json",
+      "kind": "phrasebook",
+      "schema_version": 1,
+      "items": 2,
+      "sha256": "77f377cc28645864b41ea8230f316a55423831b2183cec984da5132f02380b49"
+    },
+    {
       "path": "phrasebook/smalltalk.json",
       "kind": "phrasebook",
       "schema_version": 1,
@@ -52,11 +73,18 @@
       "sha256": "3ae1528757c74c1ca9c37fb780ac67a3e2e0c1ff38831e105a346cc872b07ff3"
     },
     {
+      "path": "phrasebook/taxi.json",
+      "kind": "phrasebook",
+      "schema_version": 1,
+      "items": 2,
+      "sha256": "84c29905d65b70df413d0a9dafaeac7fdd13ddcbdda94e0adce6c640cddd8383"
+    },
+    {
       "path": "phrases/phrases-d.json",
       "kind": "phrases",
       "schema_version": 1,
-      "items": 447,
-      "sha256": "cb1773a4faf3f34fd7c478446ceeb3c92386f27f3d00bcd7a0744adac1756a19"
+      "items": 1250,
+      "sha256": "68bd540cfcf61113d5ed063eb4debd49c4a82e0af70376bb7be3621ab79b7991"
     },
     {
       "path": "phrases/phrases-e.json",

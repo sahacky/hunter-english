@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "kind": "phrasebook",
+  "items": [
+    {
+      "id": "pb-taxi-01",
+      "rank": "D",
+      "topic": "taxi",
+      "situation_ru": "Такси: отвезите меня в отель",
+      "user_role": "passenger",
+      "lines": [
+        {
+          "role": "driver",
+          "text_en": "Where to?",
+          "translation_ru": "Куда едем?"
+        },
+        {
+          "role": "passenger",
+          "text_en": "Take me to the Grand Hotel, please.",
+          "translation_ru": "Отвезите меня в «Гранд-отель», пожалуйста.",
+          "accepted": ["Take me to the Grand Hotel, please.", "To the Grand Hotel, please."]
+        },
+        {
+          "role": "driver",
+          "text_en": "OK. Is it far from here?",
+          "translation_ru": "Хорошо. Это далеко отсюда?"
+        },
+        {
+          "role": "passenger",
+          "text_en": "About twenty minutes. How much is the ride?",
+          "translation_ru": "Минут двадцать. Сколько стоит поездка?",
+          "accepted": ["About twenty minutes. How much is the ride?", "How much is the ride?"]
+        },
+        {
+          "role": "driver",
+          "text_en": "Fifteen dollars. Cash or card?",
+          "translation_ru": "Пятнадцать долларов. Наличные или карта?"
+        },
+        {
+          "role": "passenger",
+          "text_en": "By card. Stop here, please.",
+          "translation_ru": "Картой. Остановитесь здесь, пожалуйста.",
+          "accepted": ["By card. Stop here, please.", "Stop here, please."]
+        }
+      ]
+    },
+    {
+      "id": "pb-taxi-02",
+      "rank": "D",
+      "topic": "taxi",
+      "situation_ru": "На автобусной остановке",
+      "user_role": "passenger",
+      "lines": [
+        {
+          "role": "passenger",
+          "text_en": "Excuse me, does this bus go to the centre?",
+          "translation_ru": "Извините, этот автобус идёт в центр?",
+          "accepted": [
+            "Excuse me, does this bus go to the centre?",
+            "Does this bus go to the centre?"
+          ]
+        },
+        {
+          "role": "local",
+          "text_en": "Yes, it goes to the central station.",
+          "translation_ru": "Да, он идёт до центрального вокзала."
+        },
+        {
+          "role": "passenger",
+          "text_en": "How much is the ticket?",
+          "translation_ru": "Сколько стоит билет?",
+          "accepted": ["How much is the ticket?"]
+        },
+        {
+          "role": "local",
+          "text_en": "Two dollars. You can pay the driver.",
+          "translation_ru": "Два доллара. Можно заплатить водителю."
+        },
+        {
+          "role": "passenger",
+          "text_en": "Where do I get off?",
+          "translation_ru": "Где мне выходить?",
+          "accepted": ["Where do I get off?"]
+        },
+        {
+          "role": "local",
+          "text_en": "The third stop. The centre is right there.",
+          "translation_ru": "Третья остановка. Центр прямо там."
+        }
+      ]
+    }
+  ]
+}

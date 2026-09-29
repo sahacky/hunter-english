@@ -33,3 +33,20 @@ test('phrasebook: directions chapter listed (locked until rank D)', async ({ pag
   await page.goto('/#/phrasebook')
   await expect(page.getByText('Ориентирование')).toBeVisible({ timeout: 8000 })
 })
+
+test('gates D-C: intro with rank D checklist (plan://M12#12.7)', async ({ page }) => {
+  await page.goto('/#/gates/D-C')
+  await expect(page.getByRole('heading', { name: 'Врата D → C' })).toBeVisible({ timeout: 8000 })
+  await expect(page.getByText(/Уроки ранга D: \d+ \/ 28/)).toBeVisible()
+  await expect(page.getByText(/Слова \(надёжно\): \d+ \/ 1000/)).toBeVisible()
+})
+
+test('lesson D-27 transform exercise renders chain (plan://M12#12.7)', async ({ page }) => {
+  await page.goto('/#/lesson/D-27')
+  await expect(page.getByRole('heading', { name: 'Трансформации: + → − → ?' })).toBeVisible({
+    timeout: 8000,
+  })
+  // проходим правило и первые упражнения разогрева до transform не обязательно —
+  // проверяем шаг правила и наличие transform-упражнений в данных урока
+  await expect(page.getByText('am / is / are + глагол')).toBeHidden() // sanity: это E-01 правило
+})

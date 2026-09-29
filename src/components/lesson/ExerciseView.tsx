@@ -774,3 +774,150 @@ export function FeedbackPlate({
     </div>
   )
 }
+
+/**
+ * Трансформация ±? (specs/02 §3 №14, план M12#12.7): цепочка шагов
+ * утверждение → отрицание → вопрос. Источник шага N — фраза-эталон шага N-1,
+ * ответ проверяется по variants фразы текущего шага. onAnswer — один раз,
+ * финальным исходом всех шагов.
+ */
+export function TransformExercise({
+  exercise,
+  phrase,
+  onAnswer,
+  onNext,
+  phrasesById,
+}: ExerciseViewProps & { phrasesById: Record<string, PhraseItem> }) {
+  const { t } = useTranslation()
+  const payloadData = exercise.payload as unknown as {
+    source_phrase_id: string
+    steps: { task: 'question' | 'negative' | 'past' | 'future'; phrase_id: string }[]
+  }
+  const source = phrasesById[payloadData.source_phrase_id] ?? phrase
+  const [stepIndex, setStepIndex] = useState(0)
+  const [typed, setTyped] = useState('')
+  const [attempts, setAttempts] = useState(0)
+  const [totalAttempts, setTotalAttempts] = useState(0)
+  const [result, setResult] = useState<CheckResult | null>(null)
+  const [done, setDone] = useState(false)
+  const inputRef = useRef<HTMLInputElement>(null)
+
+  useEffect(() => {
+    inputRef.current?.focus()
+  }, [exercise.id, stepIndex])
+
+  const step = payloadData.steps[stepIndex]
+  const target = step ? phrasesById[step.phrase_id] : null
+  // источник текущего шага: сам source для первого, эталон предыдущего — дальше
+  const currentText =
+    stepIndex === 0
+      ? source?.text_en
+      : (phrasesById[payloadData.steps[stepIndex - 1]!.phrase_id]?.text_en ?? '')
+
+  const check = () => {
+    if (!target || !step) return
+    const task: CheckTask = {
+      accepted: target.variants.length > 0 ? target.variants : [target.text_en],
+    }
+    const nextAttempts = attempts + 1
+    const verdict = judge(typed, task)
+    setAttempts(nextAttempts)
+    setTotalAttempts((prev) => prev + 1)
+    setResult(verdict)
+  }
+
+  const advance = () => {
+    const isLast = stepIndex + 1 >= payloadData.steps.length
+    if (isLast) {
+      const steps = payloadData.steps.length
+      const firstTry = totalAttempts <= steps
+      onAnswer(firstTry ? 'correct' : 'correct_retry', totalAttempts)
+      setDone(true)
+      return
+    }
+    setStepIndex(stepIndex + 1)
+    setTyped('')
+    setAttempts(0)
+    setResult(null)
+  }
+
+  const ok = result?.verdict === 'correct' || result?.verdict === 'correct_typo'
+  const failed = result !== null && !ok && attempts >= 2
+
+  if (!step || !target) {
+    return (
+      <div className="lesson-exercise">
+        <p className="dim">{t('lesson.unknownExercise', { type: exercise.type })}</p>
+        <div className="lesson-actions">
+          <button type="button" className="srs-btn srs-btn-good" onClick={onNext}>
+            {t('lesson.next')} <kbd>⏎</kbd>
+          </button>
+        </div>
+      </div>
+    )
+  }
+
+  return (
+    <div className="lesson-exercise">
+      <p className="dim">
+        {t('lesson.transform.step', { current: stepIndex + 1, total: payloadData.steps.length })}
+      </p>
+      <p className="lesson-prompt" lang="en">
+        {currentText}
+      </p>
+      <p className="lesson-trap">{t(`lesson.transform.tasks.${step.task}`)}</p>
+      {!done && !ok && !failed && (
+        <form
+          className="lesson-input-row"
+          onSubmit={(event) => {
+            event.preventDefault()
+            // после двух неудач шага — эталон показан, «Дальше» ведёт по цепочке
+            if (result && !ok && attempts >= 2) {
+              advance()
+              return
+            }
+            if (typed.trim()) check()
+          }}
+        >
+          <input
+            ref={inputRef}
+            className="lesson-input"
+            lang="en"
+            value={typed}
+            onChange={(event) => setTyped(event.target.value)}
+          />
+          <button type="submit" className="srs-btn srs-btn-good" disabled={!typed.trim()}>
+            {t('lesson.check')} <kbd>⏎</kbd>
+          </button>
+        </form>
+      )}
+      {failed && (
+        <>
+          <p className="lesson-ref" lang="en">
+            {target.text_en}
+          </p>
+          <div className="lesson-actions">
+            <button type="button" className="srs-btn srs-btn-good" onClick={advance}>
+              {t('lesson.next')} <kbd>⏎</kbd>
+            </button>
+          </div>
+        </>
+      )}
+      {result && <FeedbackPlate result={result} showReference={false} phrase={target} />}
+      {ok && !done && (
+        <div className="lesson-actions">
+          <button type="button" className="srs-btn srs-btn-good" onClick={advance}>
+            {t('lesson.next')} <kbd>⏎</kbd>
+          </button>
+        </div>
+      )}
+      {done && (
+        <div className="lesson-actions">
+          <button type="button" className="srs-btn srs-btn-good" onClick={onNext}>
+            {t('lesson.next')} <kbd>⏎</kbd>
+          </button>
+        </div>
+      )}
+    </div>
+  )
+}

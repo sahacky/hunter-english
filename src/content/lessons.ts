@@ -196,6 +196,17 @@ export function assembleLesson(
   const lessonPhrases = Object.fromEntries(
     [...phraseById].filter(([, phrase]) => phrase.grammar_point_id === lesson.grammar_point.id),
   )
+  // Кросс-урочные ссылки (transform-цепочки, find_error, answer_question —
+  // ревью M12 Б-1): фразы, на которые ссылаются упражнения урока, доступны
+  // экрану через view.phrasesById, даже если они из другого урока
+  for (const { id } of lesson.exercises) {
+    const exercise = exerciseById.get(id)
+    if (!exercise) continue
+    for (const refId of exercisePhraseIds(exercise)) {
+      const ref = phraseById.get(refId)
+      if (ref && !(ref.id in lessonPhrases)) lessonPhrases[ref.id] = ref
+    }
+  }
   return { lesson, steps, content, phrasesById: lessonPhrases }
 }
 

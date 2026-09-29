@@ -193,8 +193,8 @@ describe('loadLessonView (реальные data/ ранга E)', () => {
     expect(phrases.every(({ audio }) => audio?.en_gb?.startsWith('audio/phrases/cori/'))).toBe(true)
 
     const lessons = await loadLessons()
-    // M12: E (24) + D-модули D1–D2 (10); D3–D6 добавят остальные
-    expect(lessons.length).toBe(34)
+    // M12: E (24) + D полный ранг (28)
+    expect(lessons.length).toBe(52)
     const phraseById = new Set(phrases.map(({ id }) => id))
     for (const lesson of lessons) {
       const lessonPhrases = phrases.filter(
@@ -210,7 +210,7 @@ describe('loadLessonView (реальные data/ ранга E)', () => {
   it('D-уроки: ранг, модули, ловушки, цитаты D-ранга (plan://M12#12.3–12.4)', async () => {
     const lessons = await loadLessons()
     const d = lessons.filter((lesson) => lesson.rank === 'D')
-    expect(d).toHaveLength(10)
+    expect(d).toHaveLength(28)
     expect(d.every((lesson) => lesson.module.startsWith('mod-d-'))).toBe(true)
     expect(d.every((lesson) => (lesson.trap_id ?? '').startsWith('trap-'))).toBe(true)
     // первый D-урок собирается в полный шаблон
@@ -228,5 +228,38 @@ describe('loadLessonView (реальные data/ ранга E)', () => {
     // разговорник directions привязан и открывается рангом D
     const withDirections = lessons.filter((lesson) => lesson.phrasebook_topic === 'directions')
     expect(withDirections.length).toBeGreaterThanOrEqual(3)
+    // transform-упражнения D-27/D-28 (specs/02 §3 №14, план M12#12.7)
+    const { loadExercises } = await import('./lessons')
+    const exercises = await loadExercises()
+    const transforms = exercises.filter((exercise) => exercise.type === 'transform')
+    expect(transforms.length).toBeGreaterThanOrEqual(17)
+    for (const exercise of transforms) {
+      const payload = exercise.payload as unknown as {
+        source_phrase_id: string
+        steps: { task: string; phrase_id: string }[]
+      }
+      expect(payload.steps.length).toBeGreaterThanOrEqual(1)
+      expect(['negative', 'question', 'past', 'future']).toContain(payload.steps[0]!.task)
+    }
+  })
+})
+
+describe('assembleLesson: кросс-урочные ссылки (transform, ревью M12 Б-1)', () => {
+  it('les-d-27: все ссылки упражнений резолвятся в view.phrasesById', async () => {
+    const view = await loadLessonView('les-d-27')
+    if (!view) throw new Error('нет данных урока les-d-27')
+    for (const items of Object.values(view.content)) {
+      for (const { exercise } of items) {
+        const ids = exercisePhraseIds(exercise)
+        for (const id of ids) {
+          expect(view.phrasesById[id], `${exercise.id} → ${id}`).toBeDefined()
+        }
+      }
+    }
+    // цепочка transform реально доходит до экрана: source и шаги на месте
+    const transforms = Object.values(view.content)
+      .flat()
+      .filter(({ exercise }) => exercise.type === 'transform')
+    expect(transforms.length).toBeGreaterThanOrEqual(15)
   })
 })
