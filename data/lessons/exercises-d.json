@@ -1,0 +1,8796 @@
+{
+  "schema_version": 1,
+  "kind": "exercises",
+  "items": [
+    {
+      "id": "ex-d-0001",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "I ___ working now.",
+        "gap_answers": ["am"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0002",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "She ___ sleeping.",
+        "gap_answers": ["is"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0003",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "___ you working now?",
+        "gap_answers": ["Are"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0004",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Он всё ещё ждёт.",
+        "options": [
+          "Life is changing.",
+          "Look! It is starting.",
+          "He is still waiting.",
+          "We are still friends."
+        ],
+        "correct": 2
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0005",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Автобус едет.",
+        "options": [
+          "She is sleeping.",
+          "The bus is coming.",
+          "He is still waiting.",
+          "He is making coffee."
+        ],
+        "correct": 1
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0006",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Он готовит кофе.",
+        "options": [
+          "He is making coffee.",
+          "He is still waiting.",
+          "The bus is coming.",
+          "She is sleeping."
+        ],
+        "correct": 0
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0007",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Она спит.",
+        "options": ["What are you doing?", "It is snowing.", "She is sleeping.", "It is raining."],
+        "correct": 2
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0008",
+      "type": "match_pairs",
+      "payload": {
+        "kind": "match_pairs",
+        "pairs": [
+          {
+            "en": "It is raining.",
+            "ru": "Идёт дождь."
+          },
+          {
+            "en": "Life is changing.",
+            "ru": "Жизнь меняется."
+          },
+          {
+            "en": "They are playing football.",
+            "ru": "Они играют в футбол."
+          },
+          {
+            "en": "It is snowing.",
+            "ru": "Идёт снег."
+          },
+          {
+            "en": "We are still friends.",
+            "ru": "Мы всё ещё друзья."
+          }
+        ]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0009",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "В последнее время она учится.",
+        "phrase_id": "ph-d-0012",
+        "tokens": ["these", "She", "The", "is", "studying", "Life", "days"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0010",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Малыш плачет.",
+        "phrase_id": "ph-d-0031",
+        "tokens": ["is", "baby", "Life", "crying", "She", "The"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0011",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Жизнь меняется.",
+        "phrase_id": "ph-d-0044",
+        "tokens": ["is", "Life", "changing", "She", "The"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0012",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Они идут?",
+        "phrase_id": "ph-d-0015",
+        "tokens": ["they", "coming", "She", "Are", "The"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0013",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Солнце светит.",
+        "phrase_id": "ph-d-0025",
+        "tokens": ["baby", "shining", "The", "sun", "She", "is"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0014",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Смотри! Начинается.",
+        "phrase_id": "ph-d-0038",
+        "tokens": ["Look", "It", "She", "starting", "The", "is"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0015",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Мы всё ещё друзья.",
+        "phrase_id": "ph-d-0009",
+        "tokens": ["She", "We", "friends", "The", "still", "are"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0016",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Слушай! Кто-то играет на пианино.",
+        "phrase_id": "ph-d-0039",
+        "tokens": ["Someone", "is", "playing", "the", "piano", "Listen", "The", "She"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0017",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Почему ты смеёшься?",
+        "phrase_id": "ph-d-0018"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0018",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Он готовит кофе.",
+        "phrase_id": "ph-d-0042"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0019",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Я жду тебя.",
+        "phrase_id": "ph-d-0033"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0020",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Они сейчас не играют.",
+        "phrase_id": "ph-d-0022"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0021",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Он пишет сообщение.",
+        "phrase_id": "ph-d-0035"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0022",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Он всё ещё ждёт.",
+        "phrase_id": "ph-d-0008"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0023",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "В эти дни я живу в Москве.",
+        "phrase_id": "ph-d-0010"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0024",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Мы смотрим телевизор.",
+        "phrase_id": "ph-d-0004"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0025",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Мы сейчас идём домой.",
+        "phrase_id": "ph-d-0037"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0026",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Она не спит.",
+        "phrase_id": "ph-d-0020"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0027",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Они играют в футбол.",
+        "phrase_id": "ph-d-0005"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0028",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Она готовит ужин.",
+        "phrase_id": "ph-d-0034"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0029",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Я всё ещё учу английский.",
+        "phrase_id": "ph-d-0006"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0030",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Я сейчас работаю.",
+        "phrase_id": "ph-d-0001"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0031",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Она всё ещё здесь.",
+        "phrase_id": "ph-d-0007"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0032",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Я думаю о тебе.",
+        "phrase_id": "ph-d-0040"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0033",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "She ___ sleeping now.",
+        "marker": "now",
+        "gap_answers": ["is sleeping"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0034",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "They ___ football now.",
+        "marker": "now",
+        "gap_answers": ["are playing"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0035",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "I ___ still learning English.",
+        "marker": "still",
+        "gap_answers": ["am still learning"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0036",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0005"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0037",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0001"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0038",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0015"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0039",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0002"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0040",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0026"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0041",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0017"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0042",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0037"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0043",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0025"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0044",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0023"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0045",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "I just ___ moving forward. Until I destroy my enemies.",
+        "gap_answers": ["keep"],
+        "quote": {
+          "title": "Attack on Titan",
+          "season_episode": "аниме, финальный сезон (эпизод не указан)"
+        }
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact",
+        "hint_ru": "Вспомни цитату из урока"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0046",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "Stand up and walk. ___ moving forward. You've got two good legs.",
+        "gap_answers": ["Keep"],
+        "quote": {
+          "title": "FMA / FMA:B",
+          "season_episode": "S01E03 «City of Heresy»"
+        }
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact",
+        "hint_ru": "Вспомни цитату из урока"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0047",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "I ___ this word.",
+        "gap_answers": ["know"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0048",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "She ___ to help.",
+        "gap_answers": ["wants"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0049",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "This book ___ to me.",
+        "gap_answers": ["belongs"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0050",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Мне нужна помощь.",
+        "options": ["I mean it.", "How do you know?", "I need help.", "I see the problem."],
+        "correct": 2
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0051",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Ты меня понимаешь?",
+        "options": [
+          "It belongs to her.",
+          "Do you understand me?",
+          "I know him.",
+          "Do you remember me?"
+        ],
+        "correct": 1
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0052",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Она знает ответ.",
+        "options": [
+          "We love this city.",
+          "Do you like music?",
+          "They want to win.",
+          "She knows the answer."
+        ],
+        "correct": 3
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0053",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Все это знают.",
+        "options": [
+          "Everyone knows it.",
+          "I need help.",
+          "She knows the answer.",
+          "Do you understand me?"
+        ],
+        "correct": 0
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0054",
+      "type": "match_pairs",
+      "payload": {
+        "kind": "match_pairs",
+        "pairs": [
+          {
+            "en": "I see the problem.",
+            "ru": "Я вижу проблему."
+          },
+          {
+            "en": "He doesn't like fish.",
+            "ru": "Ему не нравится рыба."
+          },
+          {
+            "en": "He believes in luck.",
+            "ru": "Он верит в удачу."
+          },
+          {
+            "en": "She needs time.",
+            "ru": "Ей нужно время."
+          },
+          {
+            "en": "We need a plan.",
+            "ru": "Нам нужен план."
+          }
+        ]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0055",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Надеюсь, ты прав.",
+        "phrase_id": "ph-d-0089",
+        "tokens": ["hope", "right", "you", "know", "believe", "are", "I"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0056",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Да, я знаю этот город.",
+        "phrase_id": "ph-d-0046",
+        "tokens": ["I", "city", "hope", "Yes,", "this", "believe", "know"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0057",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Я тебе верю.",
+        "phrase_id": "ph-d-0081",
+        "tokens": ["know", "believe", "I", "hope", "you"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0058",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Я знаю его.",
+        "phrase_id": "ph-d-0047",
+        "tokens": ["I", "him", "this", "hope", "know"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0059",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Ему не нравится рыба.",
+        "phrase_id": "ph-d-0068",
+        "tokens": ["like", "hope", "doesn't", "know", "He", "fish"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0060",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Это принадлежит ей.",
+        "phrase_id": "ph-d-0076",
+        "tokens": ["her", "belongs", "to", "It", "hope", "know"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0061",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Они хотят победить.",
+        "phrase_id": "ph-d-0060",
+        "tokens": ["to", "hope", "They", "want", "win", "know"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0062",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Мы хотим остаться здесь.",
+        "phrase_id": "ph-d-0059",
+        "tokens": ["want", "We", "hope", "know", "to", "stay", "here"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0063",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Эта идея принадлежит ему.",
+        "phrase_id": "ph-d-0077"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0064",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Я помню её имя.",
+        "phrase_id": "ph-d-0083"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0065",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Ты знаешь этот город?",
+        "phrase_id": "ph-d-0049"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0066",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Она любит книги.",
+        "phrase_id": "ph-d-0062"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0067",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Никто не знает.",
+        "phrase_id": "ph-d-0051"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0068",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Ей нужно время.",
+        "phrase_id": "ph-d-0071"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0069",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Что ты имеешь в виду?",
+        "phrase_id": "ph-d-0086"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0070",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Я тебя понимаю.",
+        "phrase_id": "ph-d-0078"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0071",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Ему нужны деньги.",
+        "phrase_id": "ph-d-0073"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0072",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Я серьёзно.",
+        "phrase_id": "ph-d-0085"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0073",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Мы любим этот город.",
+        "phrase_id": "ph-d-0065"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0074",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Она не понимает.",
+        "phrase_id": "ph-d-0080"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0075",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Что ты хочешь?",
+        "phrase_id": "ph-d-0057"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0076",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Тебе нравится музыка?",
+        "phrase_id": "ph-d-0069"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0077",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Мне нужна помощь.",
+        "phrase_id": "ph-d-0070"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0078",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Все это знают.",
+        "phrase_id": "ph-d-0052"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0079",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "I ___ him.",
+        "marker": "know",
+        "gap_answers": ["know"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0080",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "She ___ books.",
+        "marker": "love",
+        "gap_answers": ["loves"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0081",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "We ___ a plan.",
+        "marker": "need",
+        "gap_answers": ["need"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0082",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0070"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0083",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0067"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0084",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0071"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0085",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0052"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0086",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0078"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0087",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0070"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0088",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0071"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0089",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0088"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0090",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0077"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0091",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "I just ___ you to understand.",
+        "gap_answers": ["want"],
+        "quote": {
+          "title": "Supernatural",
+          "season_episode": "S06E10 «Caged Heat»"
+        }
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact",
+        "hint_ru": "Вспомни цитату из урока"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0092",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "Everything ___ for a reason.",
+        "gap_answers": ["happens"],
+        "quote": {
+          "title": "Black Mirror",
+          "season_episode": "S04E04 «Hang the DJ»"
+        }
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact",
+        "hint_ru": "Вспомни цитату из урока"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0093",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "___ a café near here.",
+        "gap_answers": ["There is"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0094",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "___ two cafés here.",
+        "gap_answers": ["There are"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0095",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "___ a problem?",
+        "gap_answers": ["Is there"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0096",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Есть проблема.",
+        "options": [
+          "There is no time.",
+          "Is there a problem?",
+          "There is a problem.",
+          "There is a solution."
+        ],
+        "correct": 2
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0097",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Есть проблема?",
+        "options": [
+          "There is a solution.",
+          "There is no time.",
+          "There is a problem.",
+          "Is there a problem?"
+        ],
+        "correct": 3
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0098",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Есть решение.",
+        "options": [
+          "Is there a problem?",
+          "There is no time.",
+          "There is a solution.",
+          "There is a problem."
+        ],
+        "correct": 2
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0099",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Времени нет.",
+        "options": [
+          "There is a solution.",
+          "There is no time.",
+          "Is there a problem?",
+          "There is a problem."
+        ],
+        "correct": 1
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0100",
+      "type": "match_pairs",
+      "payload": {
+        "kind": "match_pairs",
+        "pairs": [
+          {
+            "en": "There is a problem.",
+            "ru": "Есть проблема."
+          },
+          {
+            "en": "Is there a problem?",
+            "ru": "Есть проблема?"
+          },
+          {
+            "en": "There is a solution.",
+            "ru": "Есть решение."
+          },
+          {
+            "en": "There is no time.",
+            "ru": "Времени нет."
+          },
+          {
+            "en": "Is there any milk?",
+            "ru": "Есть молоко?"
+          }
+        ]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0101",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "В нашем городе есть парк.",
+        "phrase_id": "ph-d-0093",
+        "tokens": ["in", "a", "There", "is", "books", "our", "park", "are", "city"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0102",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "На этой улице есть старые дома.",
+        "phrase_id": "ph-d-0123",
+        "tokens": ["street", "in", "are", "park", "this", "books", "There", "old", "houses"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0103",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "На столе есть книги.",
+        "phrase_id": "ph-d-0120",
+        "tokens": ["are", "There", "old", "park", "on", "books", "the", "table"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0104",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "В тексте есть ошибка.",
+        "phrase_id": "ph-d-0114",
+        "tokens": ["There", "mistake", "the", "a", "park", "are", "is", "text", "in"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0105",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Здесь много туристов.",
+        "phrase_id": "ph-d-0102",
+        "tokens": ["tourists", "lot", "here", "park", "a", "There", "are", "of", "old"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0106",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "В этом районе есть хорошие рестораны.",
+        "phrase_id": "ph-d-0105",
+        "tokens": ["in", "old", "area", "restaurants", "There", "this", "are", "park", "good"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0107",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "В этом районе есть большой торговый центр.",
+        "phrase_id": "ph-d-0118",
+        "tokens": ["district", "mall", "this", "is", "big", "There", "in", "are", "a", "park"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0108",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Есть много мест, которые стоит посмотреть.",
+        "phrase_id": "ph-d-0124",
+        "tokens": ["There", "old", "park", "to", "are", "places", "see", "many"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0109",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "В холодильнике есть молоко.",
+        "phrase_id": "ph-d-0098"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0110",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Возле отеля есть несколько магазинов.",
+        "phrase_id": "ph-d-0103"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0111",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "В комнате есть цветы.",
+        "phrase_id": "ph-d-0119"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0112",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Есть проблема?",
+        "phrase_id": "ph-d-0126"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0113",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Рядом есть аптека.",
+        "phrase_id": "ph-d-0092"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0114",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Здесь есть бесплатный вайфай.",
+        "phrase_id": "ph-d-0113"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0115",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Возле вокзала есть отель.",
+        "phrase_id": "ph-d-0096"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0116",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Есть молоко?",
+        "phrase_id": "ph-d-0128"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0117",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "На небе есть облака.",
+        "phrase_id": "ph-d-0121"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0118",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Здесь есть магазины?",
+        "phrase_id": "ph-d-0129"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0119",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Здесь есть два кафе.",
+        "phrase_id": "ph-d-0100"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0120",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "По воскресеньям есть рынок.",
+        "phrase_id": "ph-d-0099"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0121",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "На этой улице есть банк.",
+        "phrase_id": "ph-d-0091"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0122",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Есть выход.",
+        "phrase_id": "ph-d-0095"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0123",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Возле магазина есть банкомат.",
+        "phrase_id": "ph-d-0112"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0124",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "В бутылке есть вода.",
+        "phrase_id": "ph-d-0097"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0125",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "___ a bank in this street.",
+        "marker": "there + ед.ч.",
+        "gap_answers": ["There is"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0126",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "___ many people in the street.",
+        "marker": "there + мн.ч.",
+        "gap_answers": ["There are"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0127",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "___ a hotel near the station?",
+        "marker": "вопрос",
+        "gap_answers": ["Is there"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0128",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0129"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0129",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0113"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0130",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0126"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0131",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0095"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0132",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0132"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0133",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0130"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0134",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0126"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0135",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0128"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0136",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0100"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0137",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "No! Try not. Do... or do not. ___ is no try.",
+        "gap_answers": ["There"],
+        "quote": {
+          "title": "Star Wars",
+          "season_episode": "The Empire Strikes Back"
+        }
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact",
+        "hint_ru": "Вспомни цитату из урока"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0138",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "Chaos ___ a ladder",
+        "gap_answers": ["is"],
+        "quote": {
+          "title": "Game of Thrones",
+          "season_episode": "Littlefinger (3.06 The Climb)"
+        }
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact",
+        "hint_ru": "Вспомни цитату из урока"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0139",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "There ___ any shops here.",
+        "gap_answers": ["aren't"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0140",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "The pharmacy is ___ Main Street.",
+        "gap_answers": ["in", "on"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0141",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "The café is ___ to the bank.",
+        "gap_answers": ["next"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0142",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Где банк?",
+        "options": [
+          "There isn't much time.",
+          "Where is the exit?",
+          "Where is the centre?",
+          "Where is the bank?"
+        ],
+        "correct": 3
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0143",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Где выход?",
+        "options": [
+          "Where is the centre?",
+          "Where is the bank?",
+          "There isn't much time.",
+          "Where is the exit?"
+        ],
+        "correct": 3
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0144",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Где центр?",
+        "options": [
+          "Where is the bank?",
+          "Where is the exit?",
+          "There isn't much time.",
+          "Where is the centre?"
+        ],
+        "correct": 3
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0145",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Времени не так много.",
+        "options": [
+          "Where is the centre?",
+          "Where is the bank?",
+          "There isn't much time.",
+          "Where is the exit?"
+        ],
+        "correct": 2
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0146",
+      "type": "match_pairs",
+      "payload": {
+        "kind": "match_pairs",
+        "pairs": [
+          {
+            "en": "Where is the bank?",
+            "ru": "Где банк?"
+          },
+          {
+            "en": "Where is the exit?",
+            "ru": "Где выход?"
+          },
+          {
+            "en": "Where is the centre?",
+            "ru": "Где центр?"
+          },
+          {
+            "en": "There isn't much time.",
+            "ru": "Времени не так много."
+          },
+          {
+            "en": "There isn't any milk.",
+            "ru": "Молока нет."
+          }
+        ]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0147",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Это справа.",
+        "phrase_id": "ph-d-0162",
+        "tokens": ["right", "The", "the", "It", "on", "is", "five"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0148",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Отель на площади.",
+        "phrase_id": "ph-d-0151",
+        "tokens": ["square", "The", "the", "five", "is", "supermarket", "on", "hotel"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0149",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Это пять минут пешком.",
+        "phrase_id": "ph-d-0167",
+        "tokens": ["on", "It", "five", "foot", "is", "the", "minutes", "The"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0150",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Супермаркет сегодня закрыт.",
+        "phrase_id": "ph-d-0173",
+        "tokens": ["closed", "is", "supermarket", "The", "today", "the", "hotel"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0151",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Это через дорогу.",
+        "phrase_id": "ph-d-0164",
+        "tokens": ["It", "street", "across", "five", "the", "The", "is"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0152",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Книга в сумке.",
+        "phrase_id": "ph-d-0155",
+        "tokens": ["bag", "hotel", "the", "The", "in", "five", "is", "book"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0153",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Сейчас есть открытые кафе?",
+        "phrase_id": "ph-d-0171",
+        "tokens": ["open", "cafés", "now", "Are", "the", "The", "any", "there"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0154",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Здесь нет аптеки.",
+        "phrase_id": "ph-d-0140",
+        "tokens": ["There", "a", "The", "here", "isn't", "the", "pharmacy"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0155",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Это недалеко отсюда.",
+        "phrase_id": "ph-d-0166"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0156",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Это слева.",
+        "phrase_id": "ph-d-0161"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0157",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Времени не так много.",
+        "phrase_id": "ph-d-0139"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0158",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Где туалет?",
+        "phrase_id": "ph-d-0147"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0159",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Молока нет.",
+        "phrase_id": "ph-d-0135"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0160",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Извините, где вокзал?",
+        "phrase_id": "ph-d-0176"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0161",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Это в двух кварталах отсюда.",
+        "phrase_id": "ph-d-0165"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0162",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Где ближайшее кафе?",
+        "phrase_id": "ph-d-0145"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0163",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Извините, здесь рядом есть банк?",
+        "phrase_id": "ph-d-0177"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0164",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Кот под столом.",
+        "phrase_id": "ph-d-0154"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0165",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Музей рядом с рекой.",
+        "phrase_id": "ph-d-0160"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0166",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Кафе открыто до десяти.",
+        "phrase_id": "ph-d-0175"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0167",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Аптека на Мейн-стрит.",
+        "phrase_id": "ph-d-0150"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0168",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Магазин на углу.",
+        "phrase_id": "ph-d-0152"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0169",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "В деревне нет больницы.",
+        "phrase_id": "ph-d-0136"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0170",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Кафе рядом с банком.",
+        "phrase_id": "ph-d-0156"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0171",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "___ there a pharmacy near here?",
+        "marker": "вопрос",
+        "gap_answers": ["Is"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0172",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "The book is ___ the bag.",
+        "marker": "внутри",
+        "gap_answers": ["in", "inside"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0173",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "The station is ___ front of the hotel.",
+        "marker": "напротив",
+        "gap_answers": ["in"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0174",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0144"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0175",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0134"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0176",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0140"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0177",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0170"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0178",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0148"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0179",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0173"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0180",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0149"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0181",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0144"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0182",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0145"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0183",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "___ nothing to forgive.",
+        "gap_answers": ["There's"],
+        "quote": {
+          "title": "Game of Thrones",
+          "season_episode": "S06E04 «Book of the Stranger»"
+        }
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact",
+        "hint_ru": "Вспомни цитату из урока"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0184",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "These aren't the droids you're ___ for",
+        "gap_answers": ["looking"],
+        "quote": {
+          "title": "Star Wars",
+          "season_episode": "Obi-Wan (ANH)"
+        }
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact",
+        "hint_ru": "Вспомни цитату из урока"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0185",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "I know ___ you are right.",
+        "gap_answers": ["that"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0186",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "___ there a problem?",
+        "gap_answers": ["Is"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0187",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "She is ___ for a job.",
+        "gap_answers": ["looking"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0188",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Есть билеты?",
+        "options": [
+          "Are there any tickets?",
+          "What are you doing?",
+          "We need more time.",
+          "I am working now."
+        ],
+        "correct": 0
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0189",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Мне нравится это место.",
+        "options": [
+          "I love this place.",
+          "It is raining again.",
+          "I remember that day.",
+          "Are there any tickets?"
+        ],
+        "correct": 0
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0190",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Я помню тот день.",
+        "options": [
+          "I love this place.",
+          "She wants to stay.",
+          "It is raining again.",
+          "I remember that day."
+        ],
+        "correct": 3
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0191",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Солнце светит.",
+        "options": [
+          "The sun is shining.",
+          "Are there any tickets?",
+          "I love this place.",
+          "I remember that day."
+        ],
+        "correct": 0
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0192",
+      "type": "match_pairs",
+      "payload": {
+        "kind": "match_pairs",
+        "pairs": [
+          {
+            "en": "It is raining again.",
+            "ru": "Опять идёт дождь."
+          },
+          {
+            "en": "I am working now.",
+            "ru": "Я сейчас работаю."
+          },
+          {
+            "en": "Everyone is waiting.",
+            "ru": "Все ждут."
+          },
+          {
+            "en": "What are you doing?",
+            "ru": "Что ты делаешь?"
+          },
+          {
+            "en": "She wants to stay.",
+            "ru": "Она хочет остаться."
+          }
+        ]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0193",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Я жду автобус.",
+        "phrase_id": "ph-d-0205",
+        "tokens": ["the", "I", "understand", "for", "She", "bus", "am", "waiting"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0194",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Она не спит.",
+        "phrase_id": "ph-d-0189",
+        "tokens": ["She", "not", "is", "waiting", "sleeping", "understand"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0195",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Я не понимаю это слово.",
+        "phrase_id": "ph-d-0199",
+        "tokens": ["this", "waiting", "don't", "She", "word", "I", "understand"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0196",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Я помню тот день.",
+        "phrase_id": "ph-d-0183",
+        "tokens": ["waiting", "remember", "that", "She", "I", "day"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0197",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Я сейчас работаю.",
+        "phrase_id": "ph-d-0188",
+        "tokens": ["working", "I", "now", "She", "waiting", "am"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0198",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Что ты делаешь?",
+        "phrase_id": "ph-d-0190",
+        "tokens": ["She", "What", "doing", "you", "are", "waiting"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0199",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Мы верим, что город красивый.",
+        "phrase_id": "ph-d-0215",
+        "tokens": ["beautiful", "waiting", "that", "is", "the", "She", "city", "We", "believe"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0200",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Он говорит, что есть два кафе.",
+        "phrase_id": "ph-d-0216",
+        "tokens": ["cafés", "She", "He", "that", "two", "says", "there", "are", "waiting"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0201",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "В центре много магазинов.",
+        "phrase_id": "ph-d-0185"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0202",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Это место красивое.",
+        "phrase_id": "ph-d-0221"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0203",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Есть проблема?",
+        "phrase_id": "ph-d-0209"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0204",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Магазин рядом с кафе.",
+        "phrase_id": "ph-d-0201"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0205",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Я знаю, где это.",
+        "phrase_id": "ph-d-0212"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0206",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Она хочет остаться.",
+        "phrase_id": "ph-d-0196"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0207",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Ты знаешь этого человека?",
+        "phrase_id": "ph-d-0198"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0208",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Опять идёт дождь.",
+        "phrase_id": "ph-d-0203"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0209",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Возле вокзала есть кафе.",
+        "phrase_id": "ph-d-0184"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0210",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Надеюсь, что отель есть.",
+        "phrase_id": "ph-d-0217"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0211",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "В последнее время я много читаю.",
+        "phrase_id": "ph-d-0194"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0212",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Нет времени ждать.",
+        "phrase_id": "ph-d-0211"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0213",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Мне нравится это место.",
+        "phrase_id": "ph-d-0200"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0214",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Есть билеты?",
+        "phrase_id": "ph-d-0210"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0215",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Я хочу знать правду.",
+        "phrase_id": "ph-d-0195"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0216",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "У двери кто-то есть.",
+        "phrase_id": "ph-d-0208"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0217",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "I ___ that you are right.",
+        "marker": "мнение",
+        "gap_answers": ["think"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0218",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "What ___ you doing?",
+        "marker": "процесс",
+        "gap_answers": ["are"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0219",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "___ there many shops in the centre?",
+        "marker": "вопрос",
+        "gap_answers": ["Are"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0220",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0190"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0221",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0200"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0222",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0189"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0223",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0219"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0224",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0188"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0225",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0192"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0226",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0203"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0227",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0219"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0228",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0188"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0229",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "This ___ is cruel... But it's also very beautiful.",
+        "gap_answers": ["world"],
+        "quote": {
+          "title": "Attack on Titan",
+          "season_episode": "аниме (эпизод не указан)"
+        }
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact",
+        "hint_ru": "Вспомни цитату из урока"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0230",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "Nothing ___ certain.",
+        "gap_answers": ["is"],
+        "quote": {
+          "title": "Lord of the Rings",
+          "season_episode": "The Lord of the Rings: The Return of the King"
+        }
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact",
+        "hint_ru": "Вспомни цитату из урока"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0231",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "I ___ swim. (умение)",
+        "gap_answers": ["can"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0232",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "I ___ do this alone.",
+        "gap_answers": ["can't"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0233",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "___ you swim?",
+        "gap_answers": ["Can"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0234",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Мы можем попробовать снова.",
+        "options": [
+          "We can try again.",
+          "I can't hear you.",
+          "I can hear you.",
+          "We can help you."
+        ],
+        "correct": 0
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0235",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Он не может уснуть.",
+        "options": [
+          "Anyone can make mistakes.",
+          "He can fix it.",
+          "She can come tomorrow.",
+          "He can't sleep."
+        ],
+        "correct": 3
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0236",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Ты умеешь плавать?",
+        "options": ["It can be dangerous.", "I can't swim.", "I can swim.", "Can you swim?"],
+        "correct": 3
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0237",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Ты можешь стать кем угодно.",
+        "options": [
+          "They can speak English.",
+          "You can be anything.",
+          "She can't stop laughing.",
+          "I can walk there."
+        ],
+        "correct": 1
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0238",
+      "type": "match_pairs",
+      "payload": {
+        "kind": "match_pairs",
+        "pairs": [
+          {
+            "en": "She can drive.",
+            "ru": "Она умеет водить."
+          },
+          {
+            "en": "I can't swim.",
+            "ru": "Я не умею плавать."
+          },
+          {
+            "en": "I can't hear you.",
+            "ru": "Я тебя не слышу."
+          },
+          {
+            "en": "I can hear you.",
+            "ru": "Я тебя слышу."
+          },
+          {
+            "en": "We can't wait.",
+            "ru": "Мы не можем ждать."
+          }
+        ]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0239",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Он не может уснуть.",
+        "phrase_id": "ph-d-0240",
+        "tokens": ["He", "She", "sleep", "can't", "can"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0240",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Мы можем попробовать снова.",
+        "phrase_id": "ph-d-0264",
+        "tokens": ["Can", "can", "We", "again", "She", "try"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0241",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Она умеет водить.",
+        "phrase_id": "ph-d-0223",
+        "tokens": ["Can", "can", "She", "try", "drive"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0242",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Они могут нам помочь?",
+        "phrase_id": "ph-d-0246",
+        "tokens": ["us", "help", "can", "Can", "She", "they"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0243",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Я вижу море.",
+        "phrase_id": "ph-d-0227",
+        "tokens": ["can", "try", "sea", "I", "She", "see", "the"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0244",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Я умею плавать.",
+        "phrase_id": "ph-d-0222",
+        "tokens": ["She", "can", "swim", "I", "try"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0245",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Мы не можем ждать.",
+        "phrase_id": "ph-d-0235",
+        "tokens": ["can", "She", "We", "can't", "wait"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0246",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Любой может ошибаться.",
+        "phrase_id": "ph-d-0255",
+        "tokens": ["try", "She", "Anyone", "mistakes", "make", "can"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0247",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Ты сможешь это сделать.",
+        "phrase_id": "ph-d-0230"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0248",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Это может быть опасно.",
+        "phrase_id": "ph-d-0253"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0249",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Они не могут нам помочь.",
+        "phrase_id": "ph-d-0236"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0250",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Он не может прийти сегодня.",
+        "phrase_id": "ph-d-0232"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0251",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Ты это видишь?",
+        "phrase_id": "ph-d-0247"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0252",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Она умеет водить?",
+        "phrase_id": "ph-d-0245"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0253",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Где я могу купить билет?",
+        "phrase_id": "ph-d-0250"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0254",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Я не умею плавать.",
+        "phrase_id": "ph-d-0231"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0255",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Она может прийти завтра.",
+        "phrase_id": "ph-d-0229"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0256",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Никто не может мне помочь.",
+        "phrase_id": "ph-d-0265"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0257",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Он может это починить.",
+        "phrase_id": "ph-d-0261"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0258",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Это может подождать.",
+        "phrase_id": "ph-d-0254"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0259",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Она не умеет водить.",
+        "phrase_id": "ph-d-0234"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0260",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Я могу сделать это сам.",
+        "phrase_id": "ph-d-0242"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0261",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Он хорошо готовит.",
+        "phrase_id": "ph-d-0224"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0262",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Мы можем взять такси.",
+        "phrase_id": "ph-d-0257"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0263",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "He ___ come today.",
+        "marker": "can + не мочь",
+        "gap_answers": ["can't"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0264",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "They ___ speak English.",
+        "marker": "умение",
+        "gap_answers": ["can"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0265",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "___ you see it?",
+        "marker": "вопрос",
+        "gap_answers": ["Can"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0266",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0245"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0267",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0223"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0268",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0234"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0269",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0235"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0270",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0222"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0271",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0255"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0272",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0231"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0273",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0262"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0274",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0222"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0275",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "I ___ carry it for you...BUT I CAN CARRY YOU!",
+        "gap_answers": ["can't"],
+        "quote": {
+          "title": "Lord of the Rings",
+          "season_episode": "The Lord of the Rings: The Return of the King"
+        }
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact",
+        "hint_ru": "Вспомни цитату из урока"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0276",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "___ find a door, make your own!",
+        "gap_answers": ["Can't"],
+        "quote": {
+          "title": "FMA / FMA:B",
+          "season_episode": "Edward (1.02)"
+        }
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact",
+        "hint_ru": "Вспомни цитату из урока"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0277",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "___ you help me, please?",
+        "gap_answers": ["Can"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0278",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "___ I sit here?",
+        "gap_answers": ["Can"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0279",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "Can you ___ that again? (повторить)",
+        "gap_answers": ["repeat"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0280",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Здесь можно парковаться?",
+        "options": [
+          "Can I park here?",
+          "Can I come in?",
+          "Can I smoke here?",
+          "Can we sit outside?"
+        ],
+        "correct": 0
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0281",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Здесь можно курить?",
+        "options": [
+          "Can we sit outside?",
+          "Can I smoke here?",
+          "Can I park here?",
+          "Can I come in?"
+        ],
+        "correct": 1
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0282",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Можно сесть на улице?",
+        "options": [
+          "Can I park here?",
+          "Can I come in?",
+          "Can I smoke here?",
+          "Can we sit outside?"
+        ],
+        "correct": 3
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0283",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Можно войти?",
+        "options": ["No, you can't.", "How can I help?", "I can help you.", "Can I come in?"],
+        "correct": 3
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0284",
+      "type": "match_pairs",
+      "payload": {
+        "kind": "match_pairs",
+        "pairs": [
+          {
+            "en": "I can help you.",
+            "ru": "Я могу вам помочь."
+          },
+          {
+            "en": "No, you can't.",
+            "ru": "Нет, нельзя."
+          },
+          {
+            "en": "How can I help?",
+            "ru": "Чем я могу помочь?"
+          },
+          {
+            "en": "Can I help you?",
+            "ru": "Чем могу помочь?"
+          },
+          {
+            "en": "Sure, no problem.",
+            "ru": "Конечно, без проблем."
+          }
+        ]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0285",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Можно сделать заказ?",
+        "phrase_id": "ph-d-0308",
+        "tokens": ["Can", "we", "course", "have", "now", "order"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0286",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Можно воды?",
+        "phrase_id": "ph-d-0290",
+        "tokens": ["water", "course", "have", "Can", "order", "I", "some"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0287",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Да, конечно можно.",
+        "phrase_id": "ph-d-0295",
+        "tokens": ["of", "Yes,", "have", "can", "Can", "you", "course"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0288",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Здесь можно курить?",
+        "phrase_id": "ph-d-0292",
+        "tokens": ["Can", "order", "have", "smoke", "here", "I"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0289",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Я могу вам помочь.",
+        "phrase_id": "ph-d-0294",
+        "tokens": ["can", "have", "I", "Can", "help", "you"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0290",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Можно воспользоваться вашим телефоном?",
+        "phrase_id": "ph-d-0293",
+        "tokens": ["order", "phone", "your", "use", "have", "I", "Can"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0291",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Вы можете вызвать такси?",
+        "phrase_id": "ph-d-0274",
+        "tokens": ["a", "order", "you", "Can", "have", "call", "taxi"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0292",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Можно это примерить?",
+        "phrase_id": "ph-d-0285",
+        "tokens": ["Can", "on", "try", "have", "I", "order", "it"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0293",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Чем я могу помочь?",
+        "phrase_id": "ph-d-0305"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0294",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Конечно, без проблем.",
+        "phrase_id": "ph-d-0299"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0295",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Подержите мою сумку?",
+        "phrase_id": "ph-d-0303"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0296",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Нет, нельзя.",
+        "phrase_id": "ph-d-0297"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0297",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Можно взять вашу ручку?",
+        "phrase_id": "ph-d-0286"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0298",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Можно открыть окно?",
+        "phrase_id": "ph-d-0281"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0299",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Можно занять ваше место?",
+        "phrase_id": "ph-d-0287"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0300",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Можно кофе, пожалуйста?",
+        "phrase_id": "ph-d-0282"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0301",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Можно счёт?",
+        "phrase_id": "ph-d-0283"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0302",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Вы можете сказать это снова?",
+        "phrase_id": "ph-d-0269"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0303",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Можно здесь сесть?",
+        "phrase_id": "ph-d-0279"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0304",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Вы можете мне помочь?",
+        "phrase_id": "ph-d-0266"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0305",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Вы можете сделать фото?",
+        "phrase_id": "ph-d-0275"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0306",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Вы можете повторить?",
+        "phrase_id": "ph-d-0268"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0307",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Скажете, сколько времени?",
+        "phrase_id": "ph-d-0301"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0308",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Ты слышишь музыку?",
+        "phrase_id": "ph-d-0306"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0309",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "___ I have a coffee, please?",
+        "marker": "разрешение",
+        "gap_answers": ["Can"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0310",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "___ you open the window?",
+        "marker": "просьба",
+        "gap_answers": ["Can"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0311",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "Can I ___ here?",
+        "marker": "сесть",
+        "gap_answers": ["sit"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0312",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0291"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0313",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0299"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0314",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0298"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0315",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0270"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0316",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0296"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0317",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0284"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0318",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0302"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0319",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0300"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0320",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0267"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0321",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "___ I please have some of that Potato?",
+        "gap_answers": ["May"],
+        "quote": {
+          "title": "Attack on Titan",
+          "season_episode": "аниме (эпизод не указан)"
+        }
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact",
+        "hint_ru": "Вспомни цитату из урока"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0322",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "Sorry, I ___ hear you. The music's too loud.",
+        "gap_answers": ["can't"],
+        "quote": {
+          "title": "Supernatural",
+          "season_episode": "S01E01 «Pilot»"
+        }
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact",
+        "hint_ru": "Вспомни цитату из урока"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0323",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "I ___ got a ticket.",
+        "gap_answers": ["have"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0324",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "She ___ got a phone.",
+        "gap_answers": ["has"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0325",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "___ you got a pen?",
+        "gap_answers": ["Have"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0326",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "У меня есть вопрос.",
+        "options": [
+          "He has a car.",
+          "We have a plan.",
+          "I have a question.",
+          "Do you have change?"
+        ],
+        "correct": 2
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0327",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "У нас нет времени.",
+        "options": [
+          "I have a reservation.",
+          "They haven't got children.",
+          "We haven't got time.",
+          "We have got tickets."
+        ],
+        "correct": 2
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0328",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "У нас есть план.",
+        "options": [
+          "Do you have change?",
+          "We haven't got time.",
+          "I have a question.",
+          "We have a plan."
+        ],
+        "correct": 3
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0329",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "У вас есть мелочь?",
+        "options": [
+          "Do you have change?",
+          "We haven't got time.",
+          "They haven't got children.",
+          "I have a question."
+        ],
+        "correct": 0
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0330",
+      "type": "match_pairs",
+      "payload": {
+        "kind": "match_pairs",
+        "pairs": [
+          {
+            "en": "They haven't got children.",
+            "ru": "У них нет детей."
+          },
+          {
+            "en": "We have got tickets.",
+            "ru": "У нас есть билеты."
+          },
+          {
+            "en": "He has a car.",
+            "ru": "У него есть машина."
+          },
+          {
+            "en": "I have a reservation.",
+            "ru": "У меня бронь."
+          },
+          {
+            "en": "She has her keys.",
+            "ru": "Ключи при ней."
+          }
+        ]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0331",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "У вас есть размер побольше?",
+        "phrase_id": "ph-d-0352",
+        "tokens": ["you", "have", "got", "size", "You", "a", "bigger", "Have"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0332",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "У меня есть два брата.",
+        "phrase_id": "ph-d-0322",
+        "tokens": ["have", "Have", "I", "brothers", "got", "You", "two"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0333",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Здесь у тебя есть друг.",
+        "phrase_id": "ph-d-0357",
+        "tokens": ["here", "You", "friend", "got", "two", "Have", "have", "a"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0334",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "У меня нет визы.",
+        "phrase_id": "ph-d-0332",
+        "tokens": ["Have", "I", "don't", "a", "have", "got", "visa"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0335",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Ключи при ней.",
+        "phrase_id": "ph-d-0341",
+        "tokens": ["has", "She", "keys", "Have", "her", "have"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0336",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "У него есть идея.",
+        "phrase_id": "ph-d-0325",
+        "tokens": ["got", "an", "He", "have", "Have", "idea", "has"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0337",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "У этого телефона хорошая камера.",
+        "phrase_id": "ph-d-0349",
+        "tokens": ["good", "camera", "have", "Have", "has", "This", "phone", "a", "got"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0338",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "У тебя есть сообщение.",
+        "phrase_id": "ph-d-0345",
+        "tokens": ["got", "message", "a", "You", "Have", "two", "have"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0339",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "У тебя есть карта?",
+        "phrase_id": "ph-d-0334"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0340",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "У него есть машина.",
+        "phrase_id": "ph-d-0315"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0341",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "У меня есть карта.",
+        "phrase_id": "ph-d-0335"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0342",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "У меня болит голова.",
+        "phrase_id": "ph-d-0342"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0343",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "У нас есть билеты.",
+        "phrase_id": "ph-d-0324"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0344",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Нам ещё долго идти.",
+        "phrase_id": "ph-d-0356"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0345",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "У меня есть вопрос.",
+        "phrase_id": "ph-d-0318"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0346",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "У вас есть дети?",
+        "phrase_id": "ph-d-0336"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0347",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "У вас есть что-нибудь дешевле?",
+        "phrase_id": "ph-d-0351"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0348",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "У них нет детей.",
+        "phrase_id": "ph-d-0331"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0349",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "В отеле есть вайфай.",
+        "phrase_id": "ph-d-0347"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0350",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Что у тебя там?",
+        "phrase_id": "ph-d-0337"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0351",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "У вас есть мелочь?",
+        "phrase_id": "ph-d-0353"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0352",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "В комнате есть окно.",
+        "phrase_id": "ph-d-0346"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0353",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Мой багаж при мне.",
+        "phrase_id": "ph-d-0340"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0354",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "У вас есть номер?",
+        "phrase_id": "ph-d-0354"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0355",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "She ___ got a dog.",
+        "marker": "3-е лицо",
+        "gap_answers": ["has"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0356",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "I ___ got time.",
+        "marker": "не иметь",
+        "gap_answers": ["haven't"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0357",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "___ you got a map?",
+        "marker": "вопрос",
+        "gap_answers": ["Have"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0358",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0341"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0359",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0324"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0360",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0316"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0361",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0318"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0362",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0315"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0363",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0329"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0364",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0341"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0365",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0328"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0366",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0323"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0367",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "I ___ a very bad feeling about this.",
+        "gap_answers": ["have"],
+        "quote": {
+          "title": "Star Wars",
+          "season_episode": "Star Wars (film)"
+        }
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact",
+        "hint_ru": "Вспомни цитату из урока"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0368",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "You ___ to respect the chemistry",
+        "gap_answers": ["need"],
+        "quote": {
+          "title": "Breaking Bad",
+          "season_episode": "Walter (3.05)"
+        }
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact",
+        "hint_ru": "Вспомни цитату из урока"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0369",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "___ the door. (открой)",
+        "gap_answers": ["Open"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0370",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "___ touch it.",
+        "gap_answers": ["Don't"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0371",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "___ left. (поворот)",
+        "gap_answers": ["Turn"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0372",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Закрой окно.",
+        "options": ["Call a doctor.", "Don't touch it.", "Close the window.", "Don't worry."],
+        "correct": 2
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0373",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Вызовите врача.",
+        "options": ["Call a doctor.", "Don't worry.", "Close the window.", "Don't touch it."],
+        "correct": 0
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0374",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Подожди!",
+        "options": ["Please, wait here.", "Wait!", "Sit down.", "Hold the door."],
+        "correct": 1
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0375",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Смотри!",
+        "options": ["Look!", "Get out!", "Don't give up.", "Don't look back."],
+        "correct": 0
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0376",
+      "type": "match_pairs",
+      "payload": {
+        "kind": "match_pairs",
+        "pairs": [
+          {
+            "en": "Be quiet.",
+            "ru": "Тише."
+          },
+          {
+            "en": "Go straight.",
+            "ru": "Идите прямо."
+          },
+          {
+            "en": "Sit down.",
+            "ru": "Садись."
+          },
+          {
+            "en": "Hold the door.",
+            "ru": "Придержи дверь."
+          },
+          {
+            "en": "Please, wait here.",
+            "ru": "Пожалуйста, подождите здесь."
+          }
+        ]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0377",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Поверните налево и идите прямо.",
+        "phrase_id": "ph-d-0374",
+        "tokens": ["touch", "and", "go", "straight", "Turn", "sit", "left"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0378",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Пожалуйста, садитесь.",
+        "phrase_id": "ph-d-0397",
+        "tokens": ["touch", "down", "Turn", "Please,", "sit"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0379",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Не трогай это.",
+        "phrase_id": "ph-d-0389",
+        "tokens": ["Don't", "sit", "Turn", "it", "touch"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0380",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Открой дверь.",
+        "phrase_id": "ph-d-0365",
+        "tokens": ["the", "Turn", "door", "sit", "Open"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0381",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Не сдавайся.",
+        "phrase_id": "ph-d-0393",
+        "tokens": ["up", "sit", "Don't", "Turn", "give"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0382",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Перейдите дорогу.",
+        "phrase_id": "ph-d-0378",
+        "tokens": ["street", "sit", "Cross", "Turn", "the"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0383",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Следуй за мной.",
+        "phrase_id": "ph-d-0369",
+        "tokens": ["Follow", "sit", "me", "Turn"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0384",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Смотри!",
+        "phrase_id": "ph-d-0361",
+        "tokens": ["sit", "Turn", "Look"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0385",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Не двигайся.",
+        "phrase_id": "ph-d-0395"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0386",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Не бойся.",
+        "phrase_id": "ph-d-0390"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0387",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Встань.",
+        "phrase_id": "ph-d-0364"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0388",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Поверь мне.",
+        "phrase_id": "ph-d-0400"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0389",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Не останавливайся.",
+        "phrase_id": "ph-d-0388"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0390",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Доверься мне.",
+        "phrase_id": "ph-d-0399"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0391",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Закрой окно.",
+        "phrase_id": "ph-d-0366"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0392",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Возьми меня за руку.",
+        "phrase_id": "ph-d-0368"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0393",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Вызовите полицию.",
+        "phrase_id": "ph-d-0380"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0394",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Иди сюда!",
+        "phrase_id": "ph-d-0362"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0395",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Следуйте указателям.",
+        "phrase_id": "ph-d-0370"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0396",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Стой!",
+        "phrase_id": "ph-d-0358"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0397",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Поверните направо.",
+        "phrase_id": "ph-d-0372"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0398",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Не опаздывай.",
+        "phrase_id": "ph-d-0391"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0399",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Не плачь.",
+        "phrase_id": "ph-d-0396"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0400",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Садись.",
+        "phrase_id": "ph-d-0363"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0401",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "___ be late!",
+        "marker": "запрет",
+        "gap_answers": ["Don't"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0402",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "___ me, please.",
+        "marker": "следовать",
+        "gap_answers": ["Follow"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0403",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "___ up!",
+        "marker": "поторопиться",
+        "gap_answers": ["Hurry"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0404",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0370"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0405",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0380"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0406",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0389"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0407",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0368"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0408",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0390"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0409",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0402"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0410",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0380"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0411",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0384"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0412",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0394"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0413",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "___, you fools!",
+        "gap_answers": ["Fly"],
+        "quote": {
+          "title": "Lord of the Rings",
+          "season_episode": "The Lord of the Rings: The Fellowship of the Ring"
+        }
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact",
+        "hint_ru": "Вспомни цитату из урока"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0414",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "___ up and dance.",
+        "gap_answers": ["Shut"],
+        "quote": {
+          "title": "Black Mirror",
+          "season_episode": "Аноним (3.03)"
+        }
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact",
+        "hint_ru": "Вспомни цитату из урока"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0415",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "___ you help me, please?",
+        "gap_answers": ["Can"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0416",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "I ___ got a ticket.",
+        "gap_answers": ["have"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0417",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "___ worry.",
+        "gap_answers": ["Don't"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0418",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "У них есть план.",
+        "options": [
+          "I love this city.",
+          "You can do anything.",
+          "They have a plan.",
+          "I don't understand you."
+        ],
+        "correct": 2
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0419",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "У нас проблема.",
+        "options": [
+          "What are you doing?",
+          "I am working now.",
+          "We have a problem.",
+          "I haven't got time."
+        ],
+        "correct": 2
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0420",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Ты можешь всё.",
+        "options": [
+          "Don't stop here.",
+          "You can do anything.",
+          "Can I sit here?",
+          "I love this city."
+        ],
+        "correct": 1
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0421",
+      "type": "choose_translation",
+      "payload": {
+        "kind": "choose_translation",
+        "prompt": "Я сейчас работаю.",
+        "options": [
+          "I am working now.",
+          "We have a problem.",
+          "I haven't got time.",
+          "What are you doing?"
+        ],
+        "correct": 0
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0422",
+      "type": "match_pairs",
+      "payload": {
+        "kind": "match_pairs",
+        "pairs": [
+          {
+            "en": "We need a taxi.",
+            "ru": "Нам нужно такси."
+          },
+          {
+            "en": "Don't worry about me.",
+            "ru": "Не волнуйся за меня."
+          },
+          {
+            "en": "Stop and listen.",
+            "ru": "Остановись и слушай."
+          },
+          {
+            "en": "Can I sit here?",
+            "ru": "Можно здесь сесть?"
+          },
+          {
+            "en": "I haven't got time.",
+            "ru": "У меня нет времени."
+          }
+        ]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "words",
+        "xp": 1
+      }
+    },
+    {
+      "id": "ex-d-0423",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "У меня есть билет.",
+        "phrase_id": "ph-d-0409",
+        "tokens": ["I", "They", "Turn", "have", "got", "ticket", "a"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0424",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Поверните налево и идите прямо.",
+        "phrase_id": "ph-d-0419",
+        "tokens": ["and", "straight", "go", "have", "They", "left", "Turn"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0425",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Они ждут такси.",
+        "phrase_id": "ph-d-0432",
+        "tokens": ["waiting", "are", "They", "for", "the", "taxi", "have", "Turn"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0426",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Я тебя не понимаю.",
+        "phrase_id": "ph-d-0440",
+        "tokens": ["you", "understand", "have", "Turn", "I", "don't"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0427",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Я хорошо плаваю.",
+        "phrase_id": "ph-d-0403",
+        "tokens": ["have", "well", "can", "Turn", "I", "swim"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0428",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Осторожно со ступеньками.",
+        "phrase_id": "ph-d-0422",
+        "tokens": ["steps", "have", "the", "Turn", "Be", "careful", "with"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0429",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "У меня есть карта.",
+        "phrase_id": "ph-d-0414",
+        "tokens": ["They", "got", "have", "a", "Turn", "map", "I"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0430",
+      "type": "word_bank",
+      "payload": {
+        "kind": "word_bank",
+        "prompt_ru": "Можно оплатить картой?",
+        "phrase_id": "ph-d-0408",
+        "tokens": ["pay", "Turn", "card", "Can", "I", "have", "by"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0431",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Говорите медленнее, пожалуйста.",
+        "phrase_id": "ph-d-0441"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0432",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "У нас проблема.",
+        "phrase_id": "ph-d-0415"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0433",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Хорошего дня!",
+        "phrase_id": "ph-d-0447"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0434",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Я хочу тебе помочь.",
+        "phrase_id": "ph-d-0436"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0435",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Она умеет водить машину.",
+        "phrase_id": "ph-d-0404"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0436",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Помогите мне, пожалуйста.",
+        "phrase_id": "ph-d-0406"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0437",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Я сейчас работаю.",
+        "phrase_id": "ph-d-0429"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0438",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "У меня нет времени.",
+        "phrase_id": "ph-d-0411"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0439",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Ты можешь всё.",
+        "phrase_id": "ph-d-0443"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0440",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Не волнуйся за меня.",
+        "phrase_id": "ph-d-0421"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0441",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Я люблю этот город.",
+        "phrase_id": "ph-d-0438"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0442",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Нам нужно такси.",
+        "phrase_id": "ph-d-0437"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0443",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Что ты делаешь?",
+        "phrase_id": "ph-d-0430"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0444",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Она говорит, что у неё есть время.",
+        "phrase_id": "ph-d-0434"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0445",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Извини, я не могу помочь тебе сейчас.",
+        "phrase_id": "ph-d-0444"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0446",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "У них есть план.",
+        "phrase_id": "ph-d-0416"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0447",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "___ I sit here?",
+        "marker": "разрешение",
+        "gap_answers": ["Can"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0448",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "He ___ got an idea.",
+        "marker": "3-е лицо",
+        "gap_answers": ["has"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0449",
+      "type": "verb_tense",
+      "payload": {
+        "kind": "verb_tense",
+        "sentence_with_gap": "___ follow the signs.",
+        "marker": "указание",
+        "gap_answers": ["Follow"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0450",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0429"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0451",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0420"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0452",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0418"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0453",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0415"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0454",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-d-0421"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0455",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0419"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0456",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0407"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0457",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0418"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0458",
+      "type": "shadowing",
+      "payload": {
+        "kind": "shadowing",
+        "phrase_id": "ph-d-0430"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0459",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "___ jerking me around!",
+        "gap_answers": ["Stop"],
+        "quote": {
+          "title": "FMA / FMA:B",
+          "season_episode": "Edward (коронное, дубляж)"
+        }
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact",
+        "hint_ru": "Вспомни цитату из урока"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0460",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "Saving people, ___ things. The family business.",
+        "gap_answers": ["hunting"],
+        "quote": {
+          "title": "Supernatural",
+          "season_episode": "S08E22 «Clip Show»"
+        }
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact",
+        "hint_ru": "Вспомни цитату из урока"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-d-0461",
+      "type": "answer_question",
+      "payload": {
+        "kind": "answer_question",
+        "question_en": "What are you doing?",
+        "phrase_id": "ph-d-0001"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0462",
+      "type": "find_error",
+      "payload": {
+        "kind": "find_error",
+        "wrong_en": "I am work now.",
+        "hint_ru": "Я сейчас работаю.",
+        "phrase_id": "ph-d-0001"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "accepted": ["I am working now."]
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0463",
+      "type": "answer_question",
+      "payload": {
+        "kind": "answer_question",
+        "question_en": "Do you know this city?",
+        "phrase_id": "ph-d-0046"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0464",
+      "type": "find_error",
+      "payload": {
+        "kind": "find_error",
+        "wrong_en": "I am knowing him.",
+        "hint_ru": "Я знаю его.",
+        "phrase_id": "ph-d-0047"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "accepted": ["I know him."]
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0465",
+      "type": "answer_question",
+      "payload": {
+        "kind": "answer_question",
+        "question_en": "Is there a café near here?",
+        "phrase_id": "ph-d-0090"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0466",
+      "type": "find_error",
+      "payload": {
+        "kind": "find_error",
+        "wrong_en": "There is two cafés here.",
+        "hint_ru": "Здесь есть два кафе.",
+        "phrase_id": "ph-d-0100"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "accepted": ["There are two cafés here."]
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0467",
+      "type": "answer_question",
+      "payload": {
+        "kind": "answer_question",
+        "question_en": "Where is the nearest café?",
+        "phrase_id": "ph-d-0156"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0468",
+      "type": "find_error",
+      "payload": {
+        "kind": "find_error",
+        "wrong_en": "The cat is under of the table.",
+        "hint_ru": "Кот под столом.",
+        "phrase_id": "ph-d-0154"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "accepted": ["The cat is under the table."]
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0469",
+      "type": "answer_question",
+      "payload": {
+        "kind": "answer_question",
+        "question_en": "Is there a problem?",
+        "phrase_id": "ph-d-0094"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0470",
+      "type": "find_error",
+      "payload": {
+        "kind": "find_error",
+        "wrong_en": "I know, that you are right.",
+        "hint_ru": "Я знаю, что ты прав.",
+        "phrase_id": "ph-d-0178"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "accepted": ["I know that you are right."]
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0471",
+      "type": "answer_question",
+      "payload": {
+        "kind": "answer_question",
+        "question_en": "Can you swim?",
+        "phrase_id": "ph-d-0222"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0472",
+      "type": "find_error",
+      "payload": {
+        "kind": "find_error",
+        "wrong_en": "She cans drive.",
+        "hint_ru": "Она умеет водить.",
+        "phrase_id": "ph-d-0223"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "accepted": ["She can drive."]
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0473",
+      "type": "answer_question",
+      "payload": {
+        "kind": "answer_question",
+        "question_en": "Can you help me?",
+        "phrase_id": "ph-d-0294"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0474",
+      "type": "find_error",
+      "payload": {
+        "kind": "find_error",
+        "wrong_en": "You can help me?",
+        "hint_ru": "Вы можете мне помочь?",
+        "phrase_id": "ph-d-0266"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "accepted": ["Can you help me?"]
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0475",
+      "type": "answer_question",
+      "payload": {
+        "kind": "answer_question",
+        "question_en": "Have you got a pen?",
+        "phrase_id": "ph-d-0320"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0476",
+      "type": "find_error",
+      "payload": {
+        "kind": "find_error",
+        "wrong_en": "Does she has got a car?",
+        "hint_ru": "У неё есть машина?",
+        "phrase_id": "ph-d-0328"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "accepted": ["Has she got a car?"]
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0477",
+      "type": "answer_question",
+      "payload": {
+        "kind": "answer_question",
+        "question_en": "Where is the café?",
+        "phrase_id": "ph-d-0374"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0478",
+      "type": "find_error",
+      "payload": {
+        "kind": "find_error",
+        "wrong_en": "Turn to left.",
+        "hint_ru": "Поверните налево.",
+        "phrase_id": "ph-d-0371"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "accepted": ["Turn left."]
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-d-0479",
+      "type": "answer_question",
+      "payload": {
+        "kind": "answer_question",
+        "question_en": "Have you got a map?",
+        "phrase_id": "ph-d-0335"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-0480",
+      "type": "find_error",
+      "payload": {
+        "kind": "find_error",
+        "wrong_en": "We cans help you.",
+        "hint_ru": "Мы можем тебе помочь.",
+        "phrase_id": "ph-d-0225"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "accepted": ["We can help you."]
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 3
+      }
+    }
+  ]
+}

@@ -193,7 +193,8 @@ describe('loadLessonView (реальные data/ ранга E)', () => {
     expect(phrases.every(({ audio }) => audio?.en_gb?.startsWith('audio/phrases/cori/'))).toBe(true)
 
     const lessons = await loadLessons()
-    expect(lessons.length).toBe(24)
+    // M12: E (24) + D-модули D1–D2 (10); D3–D6 добавят остальные
+    expect(lessons.length).toBe(34)
     const phraseById = new Set(phrases.map(({ id }) => id))
     for (const lesson of lessons) {
       const lessonPhrases = phrases.filter(
@@ -204,5 +205,28 @@ describe('loadLessonView (реальные data/ ранга E)', () => {
         expect(phraseById.has(pid), `${lesson.id} → ${pid}`).toBe(true)
       }
     }
+  })
+
+  it('D-уроки: ранг, модули, ловушки, цитаты D-ранга (plan://M12#12.3–12.4)', async () => {
+    const lessons = await loadLessons()
+    const d = lessons.filter((lesson) => lesson.rank === 'D')
+    expect(d).toHaveLength(10)
+    expect(d.every((lesson) => lesson.module.startsWith('mod-d-'))).toBe(true)
+    expect(d.every((lesson) => (lesson.trap_id ?? '').startsWith('trap-'))).toBe(true)
+    // первый D-урок собирается в полный шаблон
+    const view = await loadLessonView('les-d-01')
+    expect(view?.lesson.title).toContain('Present Continuous')
+    expect(view?.steps.map(({ kind }) => kind)).toEqual([
+      'rule',
+      'warmup',
+      'build',
+      'listening',
+      'speaking',
+      'quotes',
+      'deck',
+    ])
+    // разговорник directions привязан и открывается рангом D
+    const withDirections = lessons.filter((lesson) => lesson.phrasebook_topic === 'directions')
+    expect(withDirections.length).toBeGreaterThanOrEqual(3)
   })
 })

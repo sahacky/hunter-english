@@ -1,13 +1,27 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-29T07:42:10Z",
+  "generated_at": "2026-09-29T08:56:55Z",
   "files": [
+    {
+      "path": "lessons/exercises-d.json",
+      "kind": "exercises",
+      "schema_version": 1,
+      "items": 480,
+      "sha256": "5d1d33e34225c1e84fa43b3ad36b956da4207067efe1c800efb01a05d4c6228e"
+    },
     {
       "path": "lessons/exercises-e.json",
       "kind": "exercises",
       "schema_version": 1,
       "items": 1145,
-      "sha256": "c2f1034e7a224c16a0d18c71aa8f4d53b2b0132612c9d08332519e9ea2dd8152"
+      "sha256": "b35c5f220e23b6f8f4acf7962a8e09e3c59339e32d0313220f51fbacd174a0bb"
+    },
+    {
+      "path": "lessons/lessons-d.json",
+      "kind": "lessons",
+      "schema_version": 1,
+      "items": 10,
+      "sha256": "3ee4462df583168827f2232603e13ed3aa94d3b7c80cc73c3dbc687436bc2b56"
     },
     {
       "path": "lessons/lessons-e.json",
@@ -15,6 +29,13 @@
       "schema_version": 1,
       "items": 24,
       "sha256": "2d65672f482561ee2625a721b09738f0a9fb45d3fdf67fbfed496c64ee5b4a4c"
+    },
+    {
+      "path": "phrasebook/directions.json",
+      "kind": "phrasebook",
+      "schema_version": 1,
+      "items": 2,
+      "sha256": "d087235fc096f5bb204e218f5a603d91c5f52c9561c2d4477febd299562b3822"
     },
     {
       "path": "phrasebook/emergency.json",
@@ -29,6 +50,13 @@
       "schema_version": 1,
       "items": 2,
       "sha256": "3ae1528757c74c1ca9c37fb780ac67a3e2e0c1ff38831e105a346cc872b07ff3"
+    },
+    {
+      "path": "phrases/phrases-d.json",
+      "kind": "phrases",
+      "schema_version": 1,
+      "items": 447,
+      "sha256": "cb1773a4faf3f34fd7c478446ceeb3c92386f27f3d00bcd7a0744adac1756a19"
     },
     {
       "path": "phrases/phrases-e.json",

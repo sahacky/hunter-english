@@ -1,0 +1,4476 @@
+{
+  "schema_version": 1,
+  "kind": "phrases",
+  "items": [
+    {
+      "id": "ph-d-0001",
+      "text_en": "I am working now.",
+      "translation_ru": "Я сейчас работаю.",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["I am working now."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0001.opus"
+      }
+    },
+    {
+      "id": "ph-d-0002",
+      "text_en": "She is sleeping.",
+      "translation_ru": "Она спит.",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["She is sleeping."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0002.opus"
+      }
+    },
+    {
+      "id": "ph-d-0003",
+      "text_en": "He is reading a book.",
+      "translation_ru": "Он читает книгу.",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["He is reading a book."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0003.opus"
+      }
+    },
+    {
+      "id": "ph-d-0004",
+      "text_en": "We are watching TV.",
+      "translation_ru": "Мы смотрим телевизор.",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["We are watching TV."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0004.opus"
+      }
+    },
+    {
+      "id": "ph-d-0005",
+      "text_en": "They are playing football.",
+      "translation_ru": "Они играют в футбол.",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["They are playing football."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0005.opus"
+      }
+    },
+    {
+      "id": "ph-d-0006",
+      "text_en": "I am still learning English.",
+      "translation_ru": "Я всё ещё учу английский.",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["I am still learning English."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0006.opus"
+      }
+    },
+    {
+      "id": "ph-d-0007",
+      "text_en": "She is still here.",
+      "translation_ru": "Она всё ещё здесь.",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["She is still here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0007.opus"
+      }
+    },
+    {
+      "id": "ph-d-0008",
+      "text_en": "He is still waiting.",
+      "translation_ru": "Он всё ещё ждёт.",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["He is still waiting."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0008.opus"
+      }
+    },
+    {
+      "id": "ph-d-0009",
+      "text_en": "We are still friends.",
+      "translation_ru": "Мы всё ещё друзья.",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["We are still friends."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0009.opus"
+      }
+    },
+    {
+      "id": "ph-d-0010",
+      "text_en": "I am living in Moscow these days.",
+      "translation_ru": "В эти дни я живу в Москве.",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["I am living in Moscow these days."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0010.opus"
+      }
+    },
+    {
+      "id": "ph-d-0011",
+      "text_en": "These days I work a lot.",
+      "translation_ru": "В последнее время я много работаю.",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["These days I work a lot."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0011.opus"
+      }
+    },
+    {
+      "id": "ph-d-0012",
+      "text_en": "She is studying these days.",
+      "translation_ru": "В последнее время она учится.",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["She is studying these days."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0012.opus"
+      }
+    },
+    {
+      "id": "ph-d-0013",
+      "text_en": "Are you working now?",
+      "translation_ru": "Ты сейчас работаешь?",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["Are you working now?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0013.opus"
+      }
+    },
+    {
+      "id": "ph-d-0014",
+      "text_en": "Is he sleeping?",
+      "translation_ru": "Он спит?",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["Is he sleeping?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0014.opus"
+      }
+    },
+    {
+      "id": "ph-d-0015",
+      "text_en": "Are they coming?",
+      "translation_ru": "Они идут?",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["Are they coming?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0015.opus"
+      }
+    },
+    {
+      "id": "ph-d-0016",
+      "text_en": "What are you doing?",
+      "translation_ru": "Что ты делаешь?",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["What are you doing?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0016.opus"
+      }
+    },
+    {
+      "id": "ph-d-0017",
+      "text_en": "Where is she going?",
+      "translation_ru": "Куда она идёт?",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["Where is she going?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0017.opus"
+      }
+    },
+    {
+      "id": "ph-d-0018",
+      "text_en": "Why are you laughing?",
+      "translation_ru": "Почему ты смеёшься?",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["Why are you laughing?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0018.opus"
+      }
+    },
+    {
+      "id": "ph-d-0019",
+      "text_en": "I am not working today.",
+      "translation_ru": "Я сегодня не работаю.",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["I am not working today."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0019.opus"
+      }
+    },
+    {
+      "id": "ph-d-0020",
+      "text_en": "She is not sleeping.",
+      "translation_ru": "Она не спит.",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["She is not sleeping."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0020.opus"
+      }
+    },
+    {
+      "id": "ph-d-0021",
+      "text_en": "We are not watching TV.",
+      "translation_ru": "Мы не смотрим телевизор.",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["We are not watching TV."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0021.opus"
+      }
+    },
+    {
+      "id": "ph-d-0022",
+      "text_en": "They are not playing now.",
+      "translation_ru": "Они сейчас не играют.",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["They are not playing now."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0022.opus"
+      }
+    },
+    {
+      "id": "ph-d-0023",
+      "text_en": "He is not listening.",
+      "translation_ru": "Он не слушает.",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["He is not listening."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0023.opus"
+      }
+    },
+    {
+      "id": "ph-d-0024",
+      "text_en": "I am not laughing.",
+      "translation_ru": "Я не смеюсь.",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["I am not laughing."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0024.opus"
+      }
+    },
+    {
+      "id": "ph-d-0025",
+      "text_en": "The sun is shining.",
+      "translation_ru": "Солнце светит.",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["The sun is shining."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0025.opus"
+      }
+    },
+    {
+      "id": "ph-d-0026",
+      "text_en": "It is raining.",
+      "translation_ru": "Идёт дождь.",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["It is raining."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0026.opus"
+      }
+    },
+    {
+      "id": "ph-d-0027",
+      "text_en": "It is snowing.",
+      "translation_ru": "Идёт снег.",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["It is snowing."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0027.opus"
+      }
+    },
+    {
+      "id": "ph-d-0028",
+      "text_en": "The bus is coming.",
+      "translation_ru": "Автобус едет.",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["The bus is coming."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0028.opus"
+      }
+    },
+    {
+      "id": "ph-d-0029",
+      "text_en": "The train is leaving.",
+      "translation_ru": "Поезд отправляется.",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["The train is leaving."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0029.opus"
+      }
+    },
+    {
+      "id": "ph-d-0030",
+      "text_en": "Someone is singing.",
+      "translation_ru": "Кто-то поёт.",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["Someone is singing."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0030.opus"
+      }
+    },
+    {
+      "id": "ph-d-0031",
+      "text_en": "The baby is crying.",
+      "translation_ru": "Малыш плачет.",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["The baby is crying."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0031.opus"
+      }
+    },
+    {
+      "id": "ph-d-0032",
+      "text_en": "People are walking in the park.",
+      "translation_ru": "Люди гуляют в парке.",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["People are walking in the park."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0032.opus"
+      }
+    },
+    {
+      "id": "ph-d-0033",
+      "text_en": "I am waiting for you.",
+      "translation_ru": "Я жду тебя.",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["I am waiting for you."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0033.opus"
+      }
+    },
+    {
+      "id": "ph-d-0034",
+      "text_en": "She is cooking dinner.",
+      "translation_ru": "Она готовит ужин.",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["She is cooking dinner."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0034.opus"
+      }
+    },
+    {
+      "id": "ph-d-0035",
+      "text_en": "He is writing a message.",
+      "translation_ru": "Он пишет сообщение.",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["He is writing a message."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0035.opus"
+      }
+    },
+    {
+      "id": "ph-d-0036",
+      "text_en": "They are talking about the film.",
+      "translation_ru": "Они говорят о фильме.",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["They are talking about the film."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0036.opus"
+      }
+    },
+    {
+      "id": "ph-d-0037",
+      "text_en": "We are going home now.",
+      "translation_ru": "Мы сейчас идём домой.",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["We are going home now."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0037.opus"
+      }
+    },
+    {
+      "id": "ph-d-0038",
+      "text_en": "Look! It is starting.",
+      "translation_ru": "Смотри! Начинается.",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["Look! It is starting."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0038.opus"
+      }
+    },
+    {
+      "id": "ph-d-0039",
+      "text_en": "Listen! Someone is playing the piano.",
+      "translation_ru": "Слушай! Кто-то играет на пианино.",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["Listen! Someone is playing the piano."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0039.opus"
+      }
+    },
+    {
+      "id": "ph-d-0040",
+      "text_en": "I am thinking about you.",
+      "translation_ru": "Я думаю о тебе.",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["I am thinking about you."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0040.opus"
+      }
+    },
+    {
+      "id": "ph-d-0041",
+      "text_en": "She is looking for her keys.",
+      "translation_ru": "Она ищет свои ключи.",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["She is looking for her keys."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0041.opus"
+      }
+    },
+    {
+      "id": "ph-d-0042",
+      "text_en": "He is making coffee.",
+      "translation_ru": "Он готовит кофе.",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["He is making coffee."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0042.opus"
+      }
+    },
+    {
+      "id": "ph-d-0043",
+      "text_en": "The city is waking up.",
+      "translation_ru": "Город просыпается.",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["The city is waking up."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0043.opus"
+      }
+    },
+    {
+      "id": "ph-d-0044",
+      "text_en": "Life is changing.",
+      "translation_ru": "Жизнь меняется.",
+      "grammar_point_id": "gp-d-01",
+      "variants": ["Life is changing."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0044.opus"
+      }
+    },
+    {
+      "id": "ph-d-0045",
+      "text_en": "I know this word.",
+      "translation_ru": "Я знаю это слово.",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["I know this word."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0045.opus"
+      }
+    },
+    {
+      "id": "ph-d-0046",
+      "text_en": "Yes, I know this city.",
+      "translation_ru": "Да, я знаю этот город.",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["Yes, I know this city."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0046.opus"
+      }
+    },
+    {
+      "id": "ph-d-0047",
+      "text_en": "I know him.",
+      "translation_ru": "Я знаю его.",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["I know him."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0047.opus"
+      }
+    },
+    {
+      "id": "ph-d-0048",
+      "text_en": "She knows the answer.",
+      "translation_ru": "Она знает ответ.",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["She knows the answer."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0048.opus"
+      }
+    },
+    {
+      "id": "ph-d-0049",
+      "text_en": "Do you know this city?",
+      "translation_ru": "Ты знаешь этот город?",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["Do you know this city?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0049.opus"
+      }
+    },
+    {
+      "id": "ph-d-0050",
+      "text_en": "I don't know.",
+      "translation_ru": "Я не знаю.",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["I don't know."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0050.opus"
+      }
+    },
+    {
+      "id": "ph-d-0051",
+      "text_en": "Nobody knows.",
+      "translation_ru": "Никто не знает.",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["Nobody knows."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0051.opus"
+      }
+    },
+    {
+      "id": "ph-d-0052",
+      "text_en": "Everyone knows it.",
+      "translation_ru": "Все это знают.",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["Everyone knows it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0052.opus"
+      }
+    },
+    {
+      "id": "ph-d-0053",
+      "text_en": "How do you know?",
+      "translation_ru": "Откуда ты знаешь?",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["How do you know?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0053.opus"
+      }
+    },
+    {
+      "id": "ph-d-0054",
+      "text_en": "I want some tea.",
+      "translation_ru": "Я хочу чаю.",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["I want some tea."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0054.opus"
+      }
+    },
+    {
+      "id": "ph-d-0055",
+      "text_en": "She wants to help.",
+      "translation_ru": "Она хочет помочь.",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["She wants to help."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0055.opus"
+      }
+    },
+    {
+      "id": "ph-d-0056",
+      "text_en": "He wants to sleep.",
+      "translation_ru": "Он хочет спать.",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["He wants to sleep."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0056.opus"
+      }
+    },
+    {
+      "id": "ph-d-0057",
+      "text_en": "What do you want?",
+      "translation_ru": "Что ты хочешь?",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["What do you want?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0057.opus"
+      }
+    },
+    {
+      "id": "ph-d-0058",
+      "text_en": "I don't want to go.",
+      "translation_ru": "Я не хочу идти.",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["I don't want to go."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0058.opus"
+      }
+    },
+    {
+      "id": "ph-d-0059",
+      "text_en": "We want to stay here.",
+      "translation_ru": "Мы хотим остаться здесь.",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["We want to stay here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0059.opus"
+      }
+    },
+    {
+      "id": "ph-d-0060",
+      "text_en": "They want to win.",
+      "translation_ru": "Они хотят победить.",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["They want to win."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0060.opus"
+      }
+    },
+    {
+      "id": "ph-d-0061",
+      "text_en": "I love this song.",
+      "translation_ru": "Я люблю эту песню.",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["I love this song."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0061.opus"
+      }
+    },
+    {
+      "id": "ph-d-0062",
+      "text_en": "She loves books.",
+      "translation_ru": "Она любит книги.",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["She loves books."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0062.opus"
+      }
+    },
+    {
+      "id": "ph-d-0063",
+      "text_en": "He loves his job.",
+      "translation_ru": "Он любит свою работу.",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["He loves his job."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0063.opus"
+      }
+    },
+    {
+      "id": "ph-d-0064",
+      "text_en": "I love you.",
+      "translation_ru": "Я люблю тебя.",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["I love you."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0064.opus"
+      }
+    },
+    {
+      "id": "ph-d-0065",
+      "text_en": "We love this city.",
+      "translation_ru": "Мы любим этот город.",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["We love this city."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0065.opus"
+      }
+    },
+    {
+      "id": "ph-d-0066",
+      "text_en": "I like this film.",
+      "translation_ru": "Мне нравится этот фильм.",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["I like this film."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0066.opus"
+      }
+    },
+    {
+      "id": "ph-d-0067",
+      "text_en": "She likes coffee.",
+      "translation_ru": "Ей нравится кофе.",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["She likes coffee."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0067.opus"
+      }
+    },
+    {
+      "id": "ph-d-0068",
+      "text_en": "He doesn't like fish.",
+      "translation_ru": "Ему не нравится рыба.",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["He doesn't like fish."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0068.opus"
+      }
+    },
+    {
+      "id": "ph-d-0069",
+      "text_en": "Do you like music?",
+      "translation_ru": "Тебе нравится музыка?",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["Do you like music?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0069.opus"
+      }
+    },
+    {
+      "id": "ph-d-0070",
+      "text_en": "I need help.",
+      "translation_ru": "Мне нужна помощь.",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["I need help."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0070.opus"
+      }
+    },
+    {
+      "id": "ph-d-0071",
+      "text_en": "She needs time.",
+      "translation_ru": "Ей нужно время.",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["She needs time."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0071.opus"
+      }
+    },
+    {
+      "id": "ph-d-0072",
+      "text_en": "We need a plan.",
+      "translation_ru": "Нам нужен план.",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["We need a plan."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0072.opus"
+      }
+    },
+    {
+      "id": "ph-d-0073",
+      "text_en": "He needs money.",
+      "translation_ru": "Ему нужны деньги.",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["He needs money."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0073.opus"
+      }
+    },
+    {
+      "id": "ph-d-0074",
+      "text_en": "I don't need it.",
+      "translation_ru": "Мне это не нужно.",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["I don't need it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0074.opus"
+      }
+    },
+    {
+      "id": "ph-d-0075",
+      "text_en": "This book belongs to me.",
+      "translation_ru": "Эта книга принадлежит мне.",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["This book belongs to me."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0075.opus"
+      }
+    },
+    {
+      "id": "ph-d-0076",
+      "text_en": "It belongs to her.",
+      "translation_ru": "Это принадлежит ей.",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["It belongs to her."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0076.opus"
+      }
+    },
+    {
+      "id": "ph-d-0077",
+      "text_en": "That idea belongs to him.",
+      "translation_ru": "Эта идея принадлежит ему.",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["That idea belongs to him."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0077.opus"
+      }
+    },
+    {
+      "id": "ph-d-0078",
+      "text_en": "I understand you.",
+      "translation_ru": "Я тебя понимаю.",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["I understand you."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0078.opus"
+      }
+    },
+    {
+      "id": "ph-d-0079",
+      "text_en": "Do you understand me?",
+      "translation_ru": "Ты меня понимаешь?",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["Do you understand me?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0079.opus"
+      }
+    },
+    {
+      "id": "ph-d-0080",
+      "text_en": "She doesn't understand.",
+      "translation_ru": "Она не понимает.",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["She doesn't understand."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0080.opus"
+      }
+    },
+    {
+      "id": "ph-d-0081",
+      "text_en": "I believe you.",
+      "translation_ru": "Я тебе верю.",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["I believe you."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0081.opus"
+      }
+    },
+    {
+      "id": "ph-d-0082",
+      "text_en": "He believes in luck.",
+      "translation_ru": "Он верит в удачу.",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["He believes in luck."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0082.opus"
+      }
+    },
+    {
+      "id": "ph-d-0083",
+      "text_en": "I remember her name.",
+      "translation_ru": "Я помню её имя.",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["I remember her name."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0083.opus"
+      }
+    },
+    {
+      "id": "ph-d-0084",
+      "text_en": "Do you remember me?",
+      "translation_ru": "Ты меня помнишь?",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["Do you remember me?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0084.opus"
+      }
+    },
+    {
+      "id": "ph-d-0085",
+      "text_en": "I mean it.",
+      "translation_ru": "Я серьёзно.",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["I mean it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0085.opus"
+      }
+    },
+    {
+      "id": "ph-d-0086",
+      "text_en": "What do you mean?",
+      "translation_ru": "Что ты имеешь в виду?",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["What do you mean?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0086.opus"
+      }
+    },
+    {
+      "id": "ph-d-0087",
+      "text_en": "She means well.",
+      "translation_ru": "Она хочет как лучше.",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["She means well."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0087.opus"
+      }
+    },
+    {
+      "id": "ph-d-0088",
+      "text_en": "I see the problem.",
+      "translation_ru": "Я вижу проблему.",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["I see the problem."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0088.opus"
+      }
+    },
+    {
+      "id": "ph-d-0089",
+      "text_en": "I hope you are right.",
+      "translation_ru": "Надеюсь, ты прав.",
+      "grammar_point_id": "gp-d-02",
+      "variants": ["I hope you are right."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0089.opus"
+      }
+    },
+    {
+      "id": "ph-d-0090",
+      "text_en": "There is a café near here.",
+      "translation_ru": "Здесь рядом есть кафе.",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["There is a café near here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0090.opus"
+      }
+    },
+    {
+      "id": "ph-d-0091",
+      "text_en": "There is a bank in this street.",
+      "translation_ru": "На этой улице есть банк.",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["There is a bank in this street."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0091.opus"
+      }
+    },
+    {
+      "id": "ph-d-0092",
+      "text_en": "There is a pharmacy next door.",
+      "translation_ru": "Рядом есть аптека.",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["There is a pharmacy next door."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0092.opus"
+      }
+    },
+    {
+      "id": "ph-d-0093",
+      "text_en": "There is a park in our city.",
+      "translation_ru": "В нашем городе есть парк.",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["There is a park in our city."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0093.opus"
+      }
+    },
+    {
+      "id": "ph-d-0094",
+      "text_en": "There is a problem.",
+      "translation_ru": "Есть проблема.",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["There is a problem."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0094.opus"
+      }
+    },
+    {
+      "id": "ph-d-0095",
+      "text_en": "There is a way out.",
+      "translation_ru": "Есть выход.",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["There is a way out."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0095.opus"
+      }
+    },
+    {
+      "id": "ph-d-0096",
+      "text_en": "There is a hotel near the station.",
+      "translation_ru": "Возле вокзала есть отель.",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["There is a hotel near the station."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0096.opus"
+      }
+    },
+    {
+      "id": "ph-d-0097",
+      "text_en": "There is water in the bottle.",
+      "translation_ru": "В бутылке есть вода.",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["There is water in the bottle."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0097.opus"
+      }
+    },
+    {
+      "id": "ph-d-0098",
+      "text_en": "There is milk in the fridge.",
+      "translation_ru": "В холодильнике есть молоко.",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["There is milk in the fridge."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0098.opus"
+      }
+    },
+    {
+      "id": "ph-d-0099",
+      "text_en": "There is a market on Sundays.",
+      "translation_ru": "По воскресеньям есть рынок.",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["There is a market on Sundays."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0099.opus"
+      }
+    },
+    {
+      "id": "ph-d-0100",
+      "text_en": "There are two cafés here.",
+      "translation_ru": "Здесь есть два кафе.",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["There are two cafés here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0100.opus"
+      }
+    },
+    {
+      "id": "ph-d-0101",
+      "text_en": "There are many people in the street.",
+      "translation_ru": "На улице много людей.",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["There are many people in the street."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0101.opus"
+      }
+    },
+    {
+      "id": "ph-d-0102",
+      "text_en": "There are a lot of tourists here.",
+      "translation_ru": "Здесь много туристов.",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["There are a lot of tourists here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0102.opus"
+      }
+    },
+    {
+      "id": "ph-d-0103",
+      "text_en": "There are some shops near the hotel.",
+      "translation_ru": "Возле отеля есть несколько магазинов.",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["There are some shops near the hotel."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0103.opus"
+      }
+    },
+    {
+      "id": "ph-d-0104",
+      "text_en": "There are three rooms in the house.",
+      "translation_ru": "В доме три комнаты.",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["There are three rooms in the house."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0104.opus"
+      }
+    },
+    {
+      "id": "ph-d-0105",
+      "text_en": "There are good restaurants in this area.",
+      "translation_ru": "В этом районе есть хорошие рестораны.",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["There are good restaurants in this area."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0105.opus"
+      }
+    },
+    {
+      "id": "ph-d-0106",
+      "text_en": "There are no buses at night.",
+      "translation_ru": "Ночью нет автобусов.",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["There are no buses at night."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0106.opus"
+      }
+    },
+    {
+      "id": "ph-d-0107",
+      "text_en": "There are two ways to do it.",
+      "translation_ru": "Есть два способа это сделать.",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["There are two ways to do it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0107.opus"
+      }
+    },
+    {
+      "id": "ph-d-0108",
+      "text_en": "There is a solution.",
+      "translation_ru": "Есть решение.",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["There is a solution."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0108.opus"
+      }
+    },
+    {
+      "id": "ph-d-0109",
+      "text_en": "There is a church on the square.",
+      "translation_ru": "На площади есть церковь.",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["There is a church on the square."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0109.opus"
+      }
+    },
+    {
+      "id": "ph-d-0110",
+      "text_en": "There is a bridge over the river.",
+      "translation_ru": "Через реку есть мост.",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["There is a bridge over the river."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0110.opus"
+      }
+    },
+    {
+      "id": "ph-d-0111",
+      "text_en": "There is a hospital in this town.",
+      "translation_ru": "В этом городе есть больница.",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["There is a hospital in this town."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0111.opus"
+      }
+    },
+    {
+      "id": "ph-d-0112",
+      "text_en": "There is an ATM near the shop.",
+      "translation_ru": "Возле магазина есть банкомат.",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["There is an ATM near the shop."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0112.opus"
+      }
+    },
+    {
+      "id": "ph-d-0113",
+      "text_en": "There is free wifi here.",
+      "translation_ru": "Здесь есть бесплатный вайфай.",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["There is free wifi here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0113.opus"
+      }
+    },
+    {
+      "id": "ph-d-0114",
+      "text_en": "There is a mistake in the text.",
+      "translation_ru": "В тексте есть ошибка.",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["There is a mistake in the text."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0114.opus"
+      }
+    },
+    {
+      "id": "ph-d-0115",
+      "text_en": "There is a metro station nearby.",
+      "translation_ru": "Рядом есть станция метро.",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["There is a metro station nearby."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0115.opus"
+      }
+    },
+    {
+      "id": "ph-d-0116",
+      "text_en": "There is a bus stop here.",
+      "translation_ru": "Здесь есть автобусная остановка.",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["There is a bus stop here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0116.opus"
+      }
+    },
+    {
+      "id": "ph-d-0117",
+      "text_en": "There is a post office in the centre.",
+      "translation_ru": "В центре есть почта.",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["There is a post office in the centre."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0117.opus"
+      }
+    },
+    {
+      "id": "ph-d-0118",
+      "text_en": "There is a big mall in this district.",
+      "translation_ru": "В этом районе есть большой торговый центр.",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["There is a big mall in this district."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0118.opus"
+      }
+    },
+    {
+      "id": "ph-d-0119",
+      "text_en": "There are flowers in the room.",
+      "translation_ru": "В комнате есть цветы.",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["There are flowers in the room."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0119.opus"
+      }
+    },
+    {
+      "id": "ph-d-0120",
+      "text_en": "There are books on the table.",
+      "translation_ru": "На столе есть книги.",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["There are books on the table."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0120.opus"
+      }
+    },
+    {
+      "id": "ph-d-0121",
+      "text_en": "There are clouds in the sky.",
+      "translation_ru": "На небе есть облака.",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["There are clouds in the sky."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0121.opus"
+      }
+    },
+    {
+      "id": "ph-d-0122",
+      "text_en": "There are children in the yard.",
+      "translation_ru": "Во дворе есть дети.",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["There are children in the yard."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0122.opus"
+      }
+    },
+    {
+      "id": "ph-d-0123",
+      "text_en": "There are old houses in this street.",
+      "translation_ru": "На этой улице есть старые дома.",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["There are old houses in this street."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0123.opus"
+      }
+    },
+    {
+      "id": "ph-d-0124",
+      "text_en": "There are many places to see.",
+      "translation_ru": "Есть много мест, которые стоит посмотреть.",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["There are many places to see."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0124.opus"
+      }
+    },
+    {
+      "id": "ph-d-0125",
+      "text_en": "Is there a café near here?",
+      "translation_ru": "Здесь рядом есть кафе?",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["Is there a café near here?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0125.opus"
+      }
+    },
+    {
+      "id": "ph-d-0126",
+      "text_en": "Is there a problem?",
+      "translation_ru": "Есть проблема?",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["Is there a problem?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0126.opus"
+      }
+    },
+    {
+      "id": "ph-d-0127",
+      "text_en": "Is there a hotel in the town?",
+      "translation_ru": "В городе есть отель?",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["Is there a hotel in the town?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0127.opus"
+      }
+    },
+    {
+      "id": "ph-d-0128",
+      "text_en": "Is there any milk?",
+      "translation_ru": "Есть молоко?",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["Is there any milk?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0128.opus"
+      }
+    },
+    {
+      "id": "ph-d-0129",
+      "text_en": "Are there any shops here?",
+      "translation_ru": "Здесь есть магазины?",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["Are there any shops here?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0129.opus"
+      }
+    },
+    {
+      "id": "ph-d-0130",
+      "text_en": "Are there many tourists today?",
+      "translation_ru": "Сегодня много туристов?",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["Are there many tourists today?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0130.opus"
+      }
+    },
+    {
+      "id": "ph-d-0131",
+      "text_en": "What is there in the box?",
+      "translation_ru": "Что есть в коробке?",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["What is there in the box?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0131.opus"
+      }
+    },
+    {
+      "id": "ph-d-0132",
+      "text_en": "There is no time.",
+      "translation_ru": "Времени нет.",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["There is no time."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0132.opus"
+      }
+    },
+    {
+      "id": "ph-d-0133",
+      "text_en": "There is nothing to fear.",
+      "translation_ru": "Нечего бояться.",
+      "grammar_point_id": "gp-d-03",
+      "variants": ["There is nothing to fear."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0133.opus"
+      }
+    },
+    {
+      "id": "ph-d-0134",
+      "text_en": "There isn't a bank here.",
+      "translation_ru": "Здесь нет банка.",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["There isn't a bank here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0134.opus"
+      }
+    },
+    {
+      "id": "ph-d-0135",
+      "text_en": "There isn't any milk.",
+      "translation_ru": "Молока нет.",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["There isn't any milk."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0135.opus"
+      }
+    },
+    {
+      "id": "ph-d-0136",
+      "text_en": "There isn't a hospital in the village.",
+      "translation_ru": "В деревне нет больницы.",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["There isn't a hospital in the village."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0136.opus"
+      }
+    },
+    {
+      "id": "ph-d-0137",
+      "text_en": "There aren't any shops here.",
+      "translation_ru": "Здесь нет магазинов.",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["There aren't any shops here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0137.opus"
+      }
+    },
+    {
+      "id": "ph-d-0138",
+      "text_en": "There aren't many cafés in this area.",
+      "translation_ru": "В этом районе мало кафе.",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["There aren't many cafés in this area."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0138.opus"
+      }
+    },
+    {
+      "id": "ph-d-0139",
+      "text_en": "There isn't much time.",
+      "translation_ru": "Времени не так много.",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["There isn't much time."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0139.opus"
+      }
+    },
+    {
+      "id": "ph-d-0140",
+      "text_en": "There isn't a pharmacy here.",
+      "translation_ru": "Здесь нет аптеки.",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["There isn't a pharmacy here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0140.opus"
+      }
+    },
+    {
+      "id": "ph-d-0141",
+      "text_en": "There aren't any buses today.",
+      "translation_ru": "Сегодня нет автобусов.",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["There aren't any buses today."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0141.opus"
+      }
+    },
+    {
+      "id": "ph-d-0142",
+      "text_en": "There is nothing on the table.",
+      "translation_ru": "На столе ничего нет.",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["There is nothing on the table."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0142.opus"
+      }
+    },
+    {
+      "id": "ph-d-0143",
+      "text_en": "There is nobody at home.",
+      "translation_ru": "Дома никого нет.",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["There is nobody at home."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0143.opus"
+      }
+    },
+    {
+      "id": "ph-d-0144",
+      "text_en": "Where is the bank?",
+      "translation_ru": "Где банк?",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["Where is the bank?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0144.opus"
+      }
+    },
+    {
+      "id": "ph-d-0145",
+      "text_en": "Where is the nearest café?",
+      "translation_ru": "Где ближайшее кафе?",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["Where is the nearest café?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0145.opus"
+      }
+    },
+    {
+      "id": "ph-d-0146",
+      "text_en": "Where is the metro station?",
+      "translation_ru": "Где станция метро?",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["Where is the metro station?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0146.opus"
+      }
+    },
+    {
+      "id": "ph-d-0147",
+      "text_en": "Where is the toilet?",
+      "translation_ru": "Где туалет?",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["Where is the toilet?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0147.opus"
+      }
+    },
+    {
+      "id": "ph-d-0148",
+      "text_en": "Where is the exit?",
+      "translation_ru": "Где выход?",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["Where is the exit?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0148.opus"
+      }
+    },
+    {
+      "id": "ph-d-0149",
+      "text_en": "Where is the centre?",
+      "translation_ru": "Где центр?",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["Where is the centre?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0149.opus"
+      }
+    },
+    {
+      "id": "ph-d-0150",
+      "text_en": "The pharmacy is in Main Street.",
+      "translation_ru": "Аптека на Мейн-стрит.",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["The pharmacy is in Main Street."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0150.opus"
+      }
+    },
+    {
+      "id": "ph-d-0151",
+      "text_en": "The hotel is on the square.",
+      "translation_ru": "Отель на площади.",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["The hotel is on the square."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0151.opus"
+      }
+    },
+    {
+      "id": "ph-d-0152",
+      "text_en": "The shop is at the corner.",
+      "translation_ru": "Магазин на углу.",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["The shop is at the corner."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0152.opus"
+      }
+    },
+    {
+      "id": "ph-d-0153",
+      "text_en": "The keys are on the table.",
+      "translation_ru": "Ключи на столе.",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["The keys are on the table."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0153.opus"
+      }
+    },
+    {
+      "id": "ph-d-0154",
+      "text_en": "The cat is under the table.",
+      "translation_ru": "Кот под столом.",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["The cat is under the table."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0154.opus"
+      }
+    },
+    {
+      "id": "ph-d-0155",
+      "text_en": "The book is in the bag.",
+      "translation_ru": "Книга в сумке.",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["The book is in the bag."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0155.opus"
+      }
+    },
+    {
+      "id": "ph-d-0156",
+      "text_en": "The café is next to the bank.",
+      "translation_ru": "Кафе рядом с банком.",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["The café is next to the bank."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0156.opus"
+      }
+    },
+    {
+      "id": "ph-d-0157",
+      "text_en": "The park is behind the church.",
+      "translation_ru": "Парк за церковью.",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["The park is behind the church."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0157.opus"
+      }
+    },
+    {
+      "id": "ph-d-0158",
+      "text_en": "The station is in front of the hotel.",
+      "translation_ru": "Вокзал напротив отеля.",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["The station is in front of the hotel."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0158.opus"
+      }
+    },
+    {
+      "id": "ph-d-0159",
+      "text_en": "The bank is between the shop and the café.",
+      "translation_ru": "Банк между магазином и кафе.",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["The bank is between the shop and the café."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0159.opus"
+      }
+    },
+    {
+      "id": "ph-d-0160",
+      "text_en": "The museum is near the river.",
+      "translation_ru": "Музей рядом с рекой.",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["The museum is near the river."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0160.opus"
+      }
+    },
+    {
+      "id": "ph-d-0161",
+      "text_en": "It is on the left.",
+      "translation_ru": "Это слева.",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["It is on the left."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0161.opus"
+      }
+    },
+    {
+      "id": "ph-d-0162",
+      "text_en": "It is on the right.",
+      "translation_ru": "Это справа.",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["It is on the right."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0162.opus"
+      }
+    },
+    {
+      "id": "ph-d-0163",
+      "text_en": "Go straight and it is there.",
+      "translation_ru": "Идите прямо — и вы на месте.",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["Go straight and it is there."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0163.opus"
+      }
+    },
+    {
+      "id": "ph-d-0164",
+      "text_en": "It is across the street.",
+      "translation_ru": "Это через дорогу.",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["It is across the street."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0164.opus"
+      }
+    },
+    {
+      "id": "ph-d-0165",
+      "text_en": "It is two blocks from here.",
+      "translation_ru": "Это в двух кварталах отсюда.",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["It is two blocks from here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0165.opus"
+      }
+    },
+    {
+      "id": "ph-d-0166",
+      "text_en": "It is not far from here.",
+      "translation_ru": "Это недалеко отсюда.",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["It is not far from here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0166.opus"
+      }
+    },
+    {
+      "id": "ph-d-0167",
+      "text_en": "It is five minutes on foot.",
+      "translation_ru": "Это пять минут пешком.",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["It is five minutes on foot."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0167.opus"
+      }
+    },
+    {
+      "id": "ph-d-0168",
+      "text_en": "Is it far from here?",
+      "translation_ru": "Это далеко отсюда?",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["Is it far from here?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0168.opus"
+      }
+    },
+    {
+      "id": "ph-d-0169",
+      "text_en": "Is there a pharmacy near here?",
+      "translation_ru": "Здесь рядом есть аптека?",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["Is there a pharmacy near here?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0169.opus"
+      }
+    },
+    {
+      "id": "ph-d-0170",
+      "text_en": "Is the station near?",
+      "translation_ru": "Вокзал рядом?",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["Is the station near?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0170.opus"
+      }
+    },
+    {
+      "id": "ph-d-0171",
+      "text_en": "Are there any cafés open now?",
+      "translation_ru": "Сейчас есть открытые кафе?",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["Are there any cafés open now?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0171.opus"
+      }
+    },
+    {
+      "id": "ph-d-0172",
+      "text_en": "Is there a toilet here?",
+      "translation_ru": "Здесь есть туалет?",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["Is there a toilet here?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0172.opus"
+      }
+    },
+    {
+      "id": "ph-d-0173",
+      "text_en": "The supermarket is closed today.",
+      "translation_ru": "Супермаркет сегодня закрыт.",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["The supermarket is closed today."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0173.opus"
+      }
+    },
+    {
+      "id": "ph-d-0174",
+      "text_en": "The museum is open on Mondays.",
+      "translation_ru": "Музей работает по понедельникам.",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["The museum is open on Mondays."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0174.opus"
+      }
+    },
+    {
+      "id": "ph-d-0175",
+      "text_en": "The café is open until ten.",
+      "translation_ru": "Кафе открыто до десяти.",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["The café is open until ten."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0175.opus"
+      }
+    },
+    {
+      "id": "ph-d-0176",
+      "text_en": "Excuse me, where is the station?",
+      "translation_ru": "Извините, где вокзал?",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["Excuse me, where is the station?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0176.opus"
+      }
+    },
+    {
+      "id": "ph-d-0177",
+      "text_en": "Excuse me, is there a bank near here?",
+      "translation_ru": "Извините, здесь рядом есть банк?",
+      "grammar_point_id": "gp-d-04",
+      "variants": ["Excuse me, is there a bank near here?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0177.opus"
+      }
+    },
+    {
+      "id": "ph-d-0178",
+      "text_en": "I know that you are right.",
+      "translation_ru": "Я знаю, что ты прав.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["I know that you are right."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0178.opus"
+      }
+    },
+    {
+      "id": "ph-d-0179",
+      "text_en": "She says that she is busy.",
+      "translation_ru": "Она говорит, что занята.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["She says that she is busy."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0179.opus"
+      }
+    },
+    {
+      "id": "ph-d-0180",
+      "text_en": "He thinks that we are wrong.",
+      "translation_ru": "Он думает, что мы не правы.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["He thinks that we are wrong."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0180.opus"
+      }
+    },
+    {
+      "id": "ph-d-0181",
+      "text_en": "I believe that it is true.",
+      "translation_ru": "Я верю, что это правда.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["I believe that it is true."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0181.opus"
+      }
+    },
+    {
+      "id": "ph-d-0182",
+      "text_en": "We hope that you are OK.",
+      "translation_ru": "Мы надеемся, что у тебя всё хорошо.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["We hope that you are OK."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0182.opus"
+      }
+    },
+    {
+      "id": "ph-d-0183",
+      "text_en": "I remember that day.",
+      "translation_ru": "Я помню тот день.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["I remember that day."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0183.opus"
+      }
+    },
+    {
+      "id": "ph-d-0184",
+      "text_en": "There is a café near the station.",
+      "translation_ru": "Возле вокзала есть кафе.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["There is a café near the station."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0184.opus"
+      }
+    },
+    {
+      "id": "ph-d-0185",
+      "text_en": "There are many shops in the centre.",
+      "translation_ru": "В центре много магазинов.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["There are many shops in the centre."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0185.opus"
+      }
+    },
+    {
+      "id": "ph-d-0186",
+      "text_en": "There isn't a pharmacy here.",
+      "translation_ru": "Здесь нет аптеки.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["There isn't a pharmacy here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0186.opus"
+      }
+    },
+    {
+      "id": "ph-d-0187",
+      "text_en": "Where is the nearest bank?",
+      "translation_ru": "Где ближайший банк?",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["Where is the nearest bank?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0187.opus"
+      }
+    },
+    {
+      "id": "ph-d-0188",
+      "text_en": "I am working now.",
+      "translation_ru": "Я сейчас работаю.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["I am working now."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0188.opus"
+      }
+    },
+    {
+      "id": "ph-d-0189",
+      "text_en": "She is not sleeping.",
+      "translation_ru": "Она не спит.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["She is not sleeping."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0189.opus"
+      }
+    },
+    {
+      "id": "ph-d-0190",
+      "text_en": "What are you doing?",
+      "translation_ru": "Что ты делаешь?",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["What are you doing?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0190.opus"
+      }
+    },
+    {
+      "id": "ph-d-0191",
+      "text_en": "They are playing in the yard.",
+      "translation_ru": "Они играют во дворе.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["They are playing in the yard."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0191.opus"
+      }
+    },
+    {
+      "id": "ph-d-0192",
+      "text_en": "I still remember this song.",
+      "translation_ru": "Я всё ещё помню эту песню.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["I still remember this song."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0192.opus"
+      }
+    },
+    {
+      "id": "ph-d-0193",
+      "text_en": "He is still waiting for you.",
+      "translation_ru": "Он всё ещё ждёт тебя.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["He is still waiting for you."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0193.opus"
+      }
+    },
+    {
+      "id": "ph-d-0194",
+      "text_en": "These days I am reading a lot.",
+      "translation_ru": "В последнее время я много читаю.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["These days I am reading a lot."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0194.opus"
+      }
+    },
+    {
+      "id": "ph-d-0195",
+      "text_en": "I want to know the truth.",
+      "translation_ru": "Я хочу знать правду.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["I want to know the truth."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0195.opus"
+      }
+    },
+    {
+      "id": "ph-d-0196",
+      "text_en": "She wants to stay.",
+      "translation_ru": "Она хочет остаться.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["She wants to stay."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0196.opus"
+      }
+    },
+    {
+      "id": "ph-d-0197",
+      "text_en": "We need more time.",
+      "translation_ru": "Нам нужно больше времени.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["We need more time."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0197.opus"
+      }
+    },
+    {
+      "id": "ph-d-0198",
+      "text_en": "Do you know this man?",
+      "translation_ru": "Ты знаешь этого человека?",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["Do you know this man?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0198.opus"
+      }
+    },
+    {
+      "id": "ph-d-0199",
+      "text_en": "I don't understand this word.",
+      "translation_ru": "Я не понимаю это слово.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["I don't understand this word."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0199.opus"
+      }
+    },
+    {
+      "id": "ph-d-0200",
+      "text_en": "I love this place.",
+      "translation_ru": "Мне нравится это место.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["I love this place."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0200.opus"
+      }
+    },
+    {
+      "id": "ph-d-0201",
+      "text_en": "The shop is next to the café.",
+      "translation_ru": "Магазин рядом с кафе.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["The shop is next to the café."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0201.opus"
+      }
+    },
+    {
+      "id": "ph-d-0202",
+      "text_en": "The hotel is on the left.",
+      "translation_ru": "Отель слева.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["The hotel is on the left."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0202.opus"
+      }
+    },
+    {
+      "id": "ph-d-0203",
+      "text_en": "It is raining again.",
+      "translation_ru": "Опять идёт дождь.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["It is raining again."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0203.opus"
+      }
+    },
+    {
+      "id": "ph-d-0204",
+      "text_en": "The sun is shining.",
+      "translation_ru": "Солнце светит.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["The sun is shining."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0204.opus"
+      }
+    },
+    {
+      "id": "ph-d-0205",
+      "text_en": "I am waiting for the bus.",
+      "translation_ru": "Я жду автобус.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["I am waiting for the bus."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0205.opus"
+      }
+    },
+    {
+      "id": "ph-d-0206",
+      "text_en": "She is looking for a job.",
+      "translation_ru": "Она ищет работу.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["She is looking for a job."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0206.opus"
+      }
+    },
+    {
+      "id": "ph-d-0207",
+      "text_en": "He is making breakfast.",
+      "translation_ru": "Он готовит завтрак.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["He is making breakfast."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0207.opus"
+      }
+    },
+    {
+      "id": "ph-d-0208",
+      "text_en": "There is someone at the door.",
+      "translation_ru": "У двери кто-то есть.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["There is someone at the door."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0208.opus"
+      }
+    },
+    {
+      "id": "ph-d-0209",
+      "text_en": "Is there a problem?",
+      "translation_ru": "Есть проблема?",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["Is there a problem?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0209.opus"
+      }
+    },
+    {
+      "id": "ph-d-0210",
+      "text_en": "Are there any tickets?",
+      "translation_ru": "Есть билеты?",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["Are there any tickets?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0210.opus"
+      }
+    },
+    {
+      "id": "ph-d-0211",
+      "text_en": "There is no time to wait.",
+      "translation_ru": "Нет времени ждать.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["There is no time to wait."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0211.opus"
+      }
+    },
+    {
+      "id": "ph-d-0212",
+      "text_en": "I know where it is.",
+      "translation_ru": "Я знаю, где это.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["I know where it is."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0212.opus"
+      }
+    },
+    {
+      "id": "ph-d-0213",
+      "text_en": "She knows what she wants.",
+      "translation_ru": "Она знает, чего хочет.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["She knows what she wants."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0213.opus"
+      }
+    },
+    {
+      "id": "ph-d-0214",
+      "text_en": "I think that there is a way.",
+      "translation_ru": "Думаю, что выход есть.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["I think that there is a way."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0214.opus"
+      }
+    },
+    {
+      "id": "ph-d-0215",
+      "text_en": "We believe that the city is beautiful.",
+      "translation_ru": "Мы верим, что город красивый.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["We believe that the city is beautiful."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0215.opus"
+      }
+    },
+    {
+      "id": "ph-d-0216",
+      "text_en": "He says that there are two cafés.",
+      "translation_ru": "Он говорит, что есть два кафе.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["He says that there are two cafés."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0216.opus"
+      }
+    },
+    {
+      "id": "ph-d-0217",
+      "text_en": "I hope that there is a hotel.",
+      "translation_ru": "Надеюсь, что отель есть.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["I hope that there is a hotel."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0217.opus"
+      }
+    },
+    {
+      "id": "ph-d-0218",
+      "text_en": "Nobody knows the answer.",
+      "translation_ru": "Никто не знает ответа.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["Nobody knows the answer."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0218.opus"
+      }
+    },
+    {
+      "id": "ph-d-0219",
+      "text_en": "Everyone is waiting.",
+      "translation_ru": "Все ждут.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["Everyone is waiting."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0219.opus"
+      }
+    },
+    {
+      "id": "ph-d-0220",
+      "text_en": "It is important to me.",
+      "translation_ru": "Это важно для меня.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["It is important to me."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0220.opus"
+      }
+    },
+    {
+      "id": "ph-d-0221",
+      "text_en": "This place is beautiful.",
+      "translation_ru": "Это место красивое.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["This place is beautiful."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0221.opus"
+      }
+    },
+    {
+      "id": "ph-d-0222",
+      "text_en": "I can swim.",
+      "translation_ru": "Я умею плавать.",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["I can swim."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0222.opus"
+      }
+    },
+    {
+      "id": "ph-d-0223",
+      "text_en": "She can drive.",
+      "translation_ru": "Она умеет водить.",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["She can drive."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0223.opus"
+      }
+    },
+    {
+      "id": "ph-d-0224",
+      "text_en": "He can cook well.",
+      "translation_ru": "Он хорошо готовит.",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["He can cook well."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0224.opus"
+      }
+    },
+    {
+      "id": "ph-d-0225",
+      "text_en": "We can help you.",
+      "translation_ru": "Мы можем тебе помочь.",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["We can help you."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0225.opus"
+      }
+    },
+    {
+      "id": "ph-d-0226",
+      "text_en": "They can speak English.",
+      "translation_ru": "Они умеют говорить по-английски.",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["They can speak English."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0226.opus"
+      }
+    },
+    {
+      "id": "ph-d-0227",
+      "text_en": "I can see the sea.",
+      "translation_ru": "Я вижу море.",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["I can see the sea."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0227.opus"
+      }
+    },
+    {
+      "id": "ph-d-0228",
+      "text_en": "I can hear you.",
+      "translation_ru": "Я тебя слышу.",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["I can hear you."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0228.opus"
+      }
+    },
+    {
+      "id": "ph-d-0229",
+      "text_en": "She can come tomorrow.",
+      "translation_ru": "Она может прийти завтра.",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["She can come tomorrow."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0229.opus"
+      }
+    },
+    {
+      "id": "ph-d-0230",
+      "text_en": "You can do it.",
+      "translation_ru": "Ты сможешь это сделать.",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["You can do it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0230.opus"
+      }
+    },
+    {
+      "id": "ph-d-0231",
+      "text_en": "I can't swim.",
+      "translation_ru": "Я не умею плавать.",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["I can't swim."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0231.opus"
+      }
+    },
+    {
+      "id": "ph-d-0232",
+      "text_en": "He can't come today.",
+      "translation_ru": "Он не может прийти сегодня.",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["He can't come today."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0232.opus"
+      }
+    },
+    {
+      "id": "ph-d-0233",
+      "text_en": "I can't hear you.",
+      "translation_ru": "Я тебя не слышу.",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["I can't hear you."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0233.opus"
+      }
+    },
+    {
+      "id": "ph-d-0234",
+      "text_en": "She can't drive.",
+      "translation_ru": "Она не умеет водить.",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["She can't drive."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0234.opus"
+      }
+    },
+    {
+      "id": "ph-d-0235",
+      "text_en": "We can't wait.",
+      "translation_ru": "Мы не можем ждать.",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["We can't wait."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0235.opus"
+      }
+    },
+    {
+      "id": "ph-d-0236",
+      "text_en": "They can't help us.",
+      "translation_ru": "Они не могут нам помочь.",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["They can't help us."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0236.opus"
+      }
+    },
+    {
+      "id": "ph-d-0237",
+      "text_en": "I can't find my phone.",
+      "translation_ru": "Я не могу найти свой телефон.",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["I can't find my phone."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0237.opus"
+      }
+    },
+    {
+      "id": "ph-d-0238",
+      "text_en": "I can't open the door.",
+      "translation_ru": "Я не могу открыть дверь.",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["I can't open the door."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0238.opus"
+      }
+    },
+    {
+      "id": "ph-d-0239",
+      "text_en": "She can't stop laughing.",
+      "translation_ru": "Она не может перестать смеяться.",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["She can't stop laughing."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0239.opus"
+      }
+    },
+    {
+      "id": "ph-d-0240",
+      "text_en": "He can't sleep.",
+      "translation_ru": "Он не может уснуть.",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["He can't sleep."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0240.opus"
+      }
+    },
+    {
+      "id": "ph-d-0241",
+      "text_en": "I can't believe it.",
+      "translation_ru": "Я не могу в это поверить.",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["I can't believe it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0241.opus"
+      }
+    },
+    {
+      "id": "ph-d-0242",
+      "text_en": "I can do this alone.",
+      "translation_ru": "Я могу сделать это сам.",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["I can do this alone."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0242.opus"
+      }
+    },
+    {
+      "id": "ph-d-0243",
+      "text_en": "I can't do this alone.",
+      "translation_ru": "Я не могу сделать это один.",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["I can't do this alone."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0243.opus"
+      }
+    },
+    {
+      "id": "ph-d-0244",
+      "text_en": "Can you swim?",
+      "translation_ru": "Ты умеешь плавать?",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["Can you swim?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0244.opus"
+      }
+    },
+    {
+      "id": "ph-d-0245",
+      "text_en": "Can she drive?",
+      "translation_ru": "Она умеет водить?",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["Can she drive?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0245.opus"
+      }
+    },
+    {
+      "id": "ph-d-0246",
+      "text_en": "Can they help us?",
+      "translation_ru": "Они могут нам помочь?",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["Can they help us?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0246.opus"
+      }
+    },
+    {
+      "id": "ph-d-0247",
+      "text_en": "Can you see it?",
+      "translation_ru": "Ты это видишь?",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["Can you see it?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0247.opus"
+      }
+    },
+    {
+      "id": "ph-d-0248",
+      "text_en": "Can you hear me now?",
+      "translation_ru": "Теперь меня слышно?",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["Can you hear me now?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0248.opus"
+      }
+    },
+    {
+      "id": "ph-d-0249",
+      "text_en": "What can you do?",
+      "translation_ru": "Что ты умеешь делать?",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["What can you do?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0249.opus"
+      }
+    },
+    {
+      "id": "ph-d-0250",
+      "text_en": "Where can I buy a ticket?",
+      "translation_ru": "Где я могу купить билет?",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["Where can I buy a ticket?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0250.opus"
+      }
+    },
+    {
+      "id": "ph-d-0251",
+      "text_en": "How can I help you?",
+      "translation_ru": "Чем я могу помочь?",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["How can I help you?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0251.opus"
+      }
+    },
+    {
+      "id": "ph-d-0252",
+      "text_en": "You can be anything.",
+      "translation_ru": "Ты можешь стать кем угодно.",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["You can be anything."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0252.opus"
+      }
+    },
+    {
+      "id": "ph-d-0253",
+      "text_en": "It can be dangerous.",
+      "translation_ru": "Это может быть опасно.",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["It can be dangerous."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0253.opus"
+      }
+    },
+    {
+      "id": "ph-d-0254",
+      "text_en": "This can wait.",
+      "translation_ru": "Это может подождать.",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["This can wait."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0254.opus"
+      }
+    },
+    {
+      "id": "ph-d-0255",
+      "text_en": "Anyone can make mistakes.",
+      "translation_ru": "Любой может ошибаться.",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["Anyone can make mistakes."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0255.opus"
+      }
+    },
+    {
+      "id": "ph-d-0256",
+      "text_en": "I can show you the way.",
+      "translation_ru": "Я могу показать тебе дорогу.",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["I can show you the way."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0256.opus"
+      }
+    },
+    {
+      "id": "ph-d-0257",
+      "text_en": "We can take a taxi.",
+      "translation_ru": "Мы можем взять такси.",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["We can take a taxi."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0257.opus"
+      }
+    },
+    {
+      "id": "ph-d-0258",
+      "text_en": "You can call me later.",
+      "translation_ru": "Ты можешь позвонить мне позже.",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["You can call me later."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0258.opus"
+      }
+    },
+    {
+      "id": "ph-d-0259",
+      "text_en": "I can walk there.",
+      "translation_ru": "Я могу дойти туда пешком.",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["I can walk there."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0259.opus"
+      }
+    },
+    {
+      "id": "ph-d-0260",
+      "text_en": "She can sing really well.",
+      "translation_ru": "Она действительно хорошо поёт.",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["She can sing really well."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0260.opus"
+      }
+    },
+    {
+      "id": "ph-d-0261",
+      "text_en": "He can fix it.",
+      "translation_ru": "Он может это починить.",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["He can fix it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0261.opus"
+      }
+    },
+    {
+      "id": "ph-d-0262",
+      "text_en": "Money can't buy love.",
+      "translation_ru": "Деньги не могут купить любовь.",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["Money can't buy love."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0262.opus"
+      }
+    },
+    {
+      "id": "ph-d-0263",
+      "text_en": "I can wait a little.",
+      "translation_ru": "Я могу немного подождать.",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["I can wait a little."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0263.opus"
+      }
+    },
+    {
+      "id": "ph-d-0264",
+      "text_en": "We can try again.",
+      "translation_ru": "Мы можем попробовать снова.",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["We can try again."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0264.opus"
+      }
+    },
+    {
+      "id": "ph-d-0265",
+      "text_en": "Nobody can help me.",
+      "translation_ru": "Никто не может мне помочь.",
+      "grammar_point_id": "gp-d-06",
+      "variants": ["Nobody can help me."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0265.opus"
+      }
+    },
+    {
+      "id": "ph-d-0266",
+      "text_en": "Can you help me?",
+      "translation_ru": "Вы можете мне помочь?",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Can you help me?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0266.opus"
+      }
+    },
+    {
+      "id": "ph-d-0267",
+      "text_en": "Can you help me, please?",
+      "translation_ru": "Помогите мне, пожалуйста.",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Can you help me, please?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0267.opus"
+      }
+    },
+    {
+      "id": "ph-d-0268",
+      "text_en": "Can you repeat that?",
+      "translation_ru": "Вы можете повторить?",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Can you repeat that?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0268.opus"
+      }
+    },
+    {
+      "id": "ph-d-0269",
+      "text_en": "Can you say it again?",
+      "translation_ru": "Вы можете сказать это снова?",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Can you say it again?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0269.opus"
+      }
+    },
+    {
+      "id": "ph-d-0270",
+      "text_en": "Can you speak slowly?",
+      "translation_ru": "Вы можете говорить медленнее?",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Can you speak slowly?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0270.opus"
+      }
+    },
+    {
+      "id": "ph-d-0271",
+      "text_en": "Can you open the window?",
+      "translation_ru": "Вы можете открыть окно?",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Can you open the window?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0271.opus"
+      }
+    },
+    {
+      "id": "ph-d-0272",
+      "text_en": "Can you close the door?",
+      "translation_ru": "Вы можете закрыть дверь?",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Can you close the door?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0272.opus"
+      }
+    },
+    {
+      "id": "ph-d-0273",
+      "text_en": "Can you pass me the salt?",
+      "translation_ru": "Передадите мне соль?",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Can you pass me the salt?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0273.opus"
+      }
+    },
+    {
+      "id": "ph-d-0274",
+      "text_en": "Can you call a taxi?",
+      "translation_ru": "Вы можете вызвать такси?",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Can you call a taxi?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0274.opus"
+      }
+    },
+    {
+      "id": "ph-d-0275",
+      "text_en": "Can you take a photo?",
+      "translation_ru": "Вы можете сделать фото?",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Can you take a photo?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0275.opus"
+      }
+    },
+    {
+      "id": "ph-d-0276",
+      "text_en": "Can you show me on the map?",
+      "translation_ru": "Вы можете показать на карте?",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Can you show me on the map?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0276.opus"
+      }
+    },
+    {
+      "id": "ph-d-0277",
+      "text_en": "Can you write it down?",
+      "translation_ru": "Вы можете это записать?",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Can you write it down?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0277.opus"
+      }
+    },
+    {
+      "id": "ph-d-0278",
+      "text_en": "Can I ask you something?",
+      "translation_ru": "Можно вас кое о чём спросить?",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Can I ask you something?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0278.opus"
+      }
+    },
+    {
+      "id": "ph-d-0279",
+      "text_en": "Can I sit here?",
+      "translation_ru": "Можно здесь сесть?",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Can I sit here?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0279.opus"
+      }
+    },
+    {
+      "id": "ph-d-0280",
+      "text_en": "Can I come in?",
+      "translation_ru": "Можно войти?",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Can I come in?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0280.opus"
+      }
+    },
+    {
+      "id": "ph-d-0281",
+      "text_en": "Can I open the window?",
+      "translation_ru": "Можно открыть окно?",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Can I open the window?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0281.opus"
+      }
+    },
+    {
+      "id": "ph-d-0282",
+      "text_en": "Can I have a coffee, please?",
+      "translation_ru": "Можно кофе, пожалуйста?",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Can I have a coffee, please?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0282.opus"
+      }
+    },
+    {
+      "id": "ph-d-0283",
+      "text_en": "Can I have the bill?",
+      "translation_ru": "Можно счёт?",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Can I have the bill?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0283.opus"
+      }
+    },
+    {
+      "id": "ph-d-0284",
+      "text_en": "Can I pay by card?",
+      "translation_ru": "Можно оплатить картой?",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Can I pay by card?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0284.opus"
+      }
+    },
+    {
+      "id": "ph-d-0285",
+      "text_en": "Can I try it on?",
+      "translation_ru": "Можно это примерить?",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Can I try it on?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0285.opus"
+      }
+    },
+    {
+      "id": "ph-d-0286",
+      "text_en": "Can I borrow your pen?",
+      "translation_ru": "Можно взять вашу ручку?",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Can I borrow your pen?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0286.opus"
+      }
+    },
+    {
+      "id": "ph-d-0287",
+      "text_en": "Can I take your seat?",
+      "translation_ru": "Можно занять ваше место?",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Can I take your seat?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0287.opus"
+      }
+    },
+    {
+      "id": "ph-d-0288",
+      "text_en": "Can I have a minute?",
+      "translation_ru": "Можно минуту вашего внимания?",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Can I have a minute?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0288.opus"
+      }
+    },
+    {
+      "id": "ph-d-0289",
+      "text_en": "Can I see the menu?",
+      "translation_ru": "Можно посмотреть меню?",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Can I see the menu?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0289.opus"
+      }
+    },
+    {
+      "id": "ph-d-0290",
+      "text_en": "Can I have some water?",
+      "translation_ru": "Можно воды?",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Can I have some water?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0290.opus"
+      }
+    },
+    {
+      "id": "ph-d-0291",
+      "text_en": "Can I park here?",
+      "translation_ru": "Здесь можно парковаться?",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Can I park here?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0291.opus"
+      }
+    },
+    {
+      "id": "ph-d-0292",
+      "text_en": "Can I smoke here?",
+      "translation_ru": "Здесь можно курить?",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Can I smoke here?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0292.opus"
+      }
+    },
+    {
+      "id": "ph-d-0293",
+      "text_en": "Can I use your phone?",
+      "translation_ru": "Можно воспользоваться вашим телефоном?",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Can I use your phone?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0293.opus"
+      }
+    },
+    {
+      "id": "ph-d-0294",
+      "text_en": "I can help you.",
+      "translation_ru": "Я могу вам помочь.",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["I can help you."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0294.opus"
+      }
+    },
+    {
+      "id": "ph-d-0295",
+      "text_en": "Yes, of course you can.",
+      "translation_ru": "Да, конечно можно.",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Yes, of course you can."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0295.opus"
+      }
+    },
+    {
+      "id": "ph-d-0296",
+      "text_en": "Yes, you can.",
+      "translation_ru": "Да, можно.",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Yes, you can."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0296.opus"
+      }
+    },
+    {
+      "id": "ph-d-0297",
+      "text_en": "No, you can't.",
+      "translation_ru": "Нет, нельзя.",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["No, you can't."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0297.opus"
+      }
+    },
+    {
+      "id": "ph-d-0298",
+      "text_en": "Sorry, you can't.",
+      "translation_ru": "Извините, нельзя.",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Sorry, you can't."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0298.opus"
+      }
+    },
+    {
+      "id": "ph-d-0299",
+      "text_en": "Sure, no problem.",
+      "translation_ru": "Конечно, без проблем.",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Sure, no problem."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0299.opus"
+      }
+    },
+    {
+      "id": "ph-d-0300",
+      "text_en": "Sorry, I am busy.",
+      "translation_ru": "Извини, я занят.",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Sorry, I am busy."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0300.opus"
+      }
+    },
+    {
+      "id": "ph-d-0301",
+      "text_en": "Can you tell me the time?",
+      "translation_ru": "Скажете, сколько времени?",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Can you tell me the time?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0301.opus"
+      }
+    },
+    {
+      "id": "ph-d-0302",
+      "text_en": "Can you wait a minute?",
+      "translation_ru": "Вы можете минутку подождать?",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Can you wait a minute?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0302.opus"
+      }
+    },
+    {
+      "id": "ph-d-0303",
+      "text_en": "Can you hold my bag?",
+      "translation_ru": "Подержите мою сумку?",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Can you hold my bag?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0303.opus"
+      }
+    },
+    {
+      "id": "ph-d-0304",
+      "text_en": "Can I help you?",
+      "translation_ru": "Чем могу помочь?",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Can I help you?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0304.opus"
+      }
+    },
+    {
+      "id": "ph-d-0305",
+      "text_en": "How can I help?",
+      "translation_ru": "Чем я могу помочь?",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["How can I help?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0305.opus"
+      }
+    },
+    {
+      "id": "ph-d-0306",
+      "text_en": "Can you hear the music?",
+      "translation_ru": "Ты слышишь музыку?",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Can you hear the music?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0306.opus"
+      }
+    },
+    {
+      "id": "ph-d-0307",
+      "text_en": "Can we sit outside?",
+      "translation_ru": "Можно сесть на улице?",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Can we sit outside?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0307.opus"
+      }
+    },
+    {
+      "id": "ph-d-0308",
+      "text_en": "Can we order now?",
+      "translation_ru": "Можно сделать заказ?",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Can we order now?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0308.opus"
+      }
+    },
+    {
+      "id": "ph-d-0309",
+      "text_en": "Can we go home now?",
+      "translation_ru": "Можно уже домой?",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Can we go home now?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0309.opus"
+      }
+    },
+    {
+      "id": "ph-d-0310",
+      "text_en": "Can I have two tickets?",
+      "translation_ru": "Можно два билета?",
+      "grammar_point_id": "gp-d-07",
+      "variants": ["Can I have two tickets?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0310.opus"
+      }
+    },
+    {
+      "id": "ph-d-0311",
+      "text_en": "I have a ticket.",
+      "translation_ru": "У меня есть билет.",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["I have a ticket."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0311.opus"
+      }
+    },
+    {
+      "id": "ph-d-0312",
+      "text_en": "I have got a ticket.",
+      "translation_ru": "У меня есть билет.",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["I have got a ticket.", "I have a ticket."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0312.opus"
+      }
+    },
+    {
+      "id": "ph-d-0313",
+      "text_en": "She has a phone.",
+      "translation_ru": "У неё есть телефон.",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["She has a phone."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0313.opus"
+      }
+    },
+    {
+      "id": "ph-d-0314",
+      "text_en": "She has got a phone.",
+      "translation_ru": "У неё есть телефон.",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["She has got a phone.", "She has a phone."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0314.opus"
+      }
+    },
+    {
+      "id": "ph-d-0315",
+      "text_en": "He has a car.",
+      "translation_ru": "У него есть машина.",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["He has a car."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0315.opus"
+      }
+    },
+    {
+      "id": "ph-d-0316",
+      "text_en": "We have a plan.",
+      "translation_ru": "У нас есть план.",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["We have a plan."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0316.opus"
+      }
+    },
+    {
+      "id": "ph-d-0317",
+      "text_en": "They have a small house.",
+      "translation_ru": "У них маленький дом.",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["They have a small house."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0317.opus"
+      }
+    },
+    {
+      "id": "ph-d-0318",
+      "text_en": "I have a question.",
+      "translation_ru": "У меня есть вопрос.",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["I have a question."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0318.opus"
+      }
+    },
+    {
+      "id": "ph-d-0319",
+      "text_en": "Do you have a pen?",
+      "translation_ru": "У тебя есть ручка?",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["Do you have a pen?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0319.opus"
+      }
+    },
+    {
+      "id": "ph-d-0320",
+      "text_en": "I have got a pen.",
+      "translation_ru": "У меня есть ручка.",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["I have got a pen."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0320.opus"
+      }
+    },
+    {
+      "id": "ph-d-0321",
+      "text_en": "Have you got a pen?",
+      "translation_ru": "У тебя есть ручка?",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["Have you got a pen?", "Do you have a pen?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0321.opus"
+      }
+    },
+    {
+      "id": "ph-d-0322",
+      "text_en": "I have got two brothers.",
+      "translation_ru": "У меня есть два брата.",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["I have got two brothers.", "I have two brothers."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0322.opus"
+      }
+    },
+    {
+      "id": "ph-d-0323",
+      "text_en": "She has got a dog.",
+      "translation_ru": "У неё есть собака.",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["She has got a dog.", "She has a dog."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0323.opus"
+      }
+    },
+    {
+      "id": "ph-d-0324",
+      "text_en": "We have got tickets.",
+      "translation_ru": "У нас есть билеты.",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["We have got tickets.", "We have tickets."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0324.opus"
+      }
+    },
+    {
+      "id": "ph-d-0325",
+      "text_en": "He has got an idea.",
+      "translation_ru": "У него есть идея.",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["He has got an idea.", "He has an idea."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0325.opus"
+      }
+    },
+    {
+      "id": "ph-d-0326",
+      "text_en": "I haven't got money.",
+      "translation_ru": "У меня нет денег.",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["I haven't got money."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0326.opus"
+      }
+    },
+    {
+      "id": "ph-d-0327",
+      "text_en": "I don't have money.",
+      "translation_ru": "У меня нет денег.",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["I don't have money.", "I haven't got money."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0327.opus"
+      }
+    },
+    {
+      "id": "ph-d-0328",
+      "text_en": "Has she got a car?",
+      "translation_ru": "У неё есть машина?",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["Has she got a car?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0328.opus"
+      }
+    },
+    {
+      "id": "ph-d-0329",
+      "text_en": "She hasn't got a car.",
+      "translation_ru": "У неё нет машины.",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["She hasn't got a car."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0329.opus"
+      }
+    },
+    {
+      "id": "ph-d-0330",
+      "text_en": "We haven't got time.",
+      "translation_ru": "У нас нет времени.",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["We haven't got time."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0330.opus"
+      }
+    },
+    {
+      "id": "ph-d-0331",
+      "text_en": "They haven't got children.",
+      "translation_ru": "У них нет детей.",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["They haven't got children."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0331.opus"
+      }
+    },
+    {
+      "id": "ph-d-0332",
+      "text_en": "I don't have a visa.",
+      "translation_ru": "У меня нет визы.",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["I don't have a visa."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0332.opus"
+      }
+    },
+    {
+      "id": "ph-d-0333",
+      "text_en": "He doesn't have a phone.",
+      "translation_ru": "У него нет телефона.",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["He doesn't have a phone."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0333.opus"
+      }
+    },
+    {
+      "id": "ph-d-0334",
+      "text_en": "Have you got a map?",
+      "translation_ru": "У тебя есть карта?",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["Have you got a map?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0334.opus"
+      }
+    },
+    {
+      "id": "ph-d-0335",
+      "text_en": "I have got a map.",
+      "translation_ru": "У меня есть карта.",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["I have got a map."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0335.opus"
+      }
+    },
+    {
+      "id": "ph-d-0336",
+      "text_en": "Have you got children?",
+      "translation_ru": "У вас есть дети?",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["Have you got children?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0336.opus"
+      }
+    },
+    {
+      "id": "ph-d-0337",
+      "text_en": "What have you got there?",
+      "translation_ru": "Что у тебя там?",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["What have you got there?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0337.opus"
+      }
+    },
+    {
+      "id": "ph-d-0338",
+      "text_en": "I have got a bad feeling.",
+      "translation_ru": "У меня плохое предчувствие.",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["I have got a bad feeling."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0338.opus"
+      }
+    },
+    {
+      "id": "ph-d-0339",
+      "text_en": "I have my passport with me.",
+      "translation_ru": "Мой паспорт при мне.",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["I have my passport with me."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0339.opus"
+      }
+    },
+    {
+      "id": "ph-d-0340",
+      "text_en": "I have my luggage with me.",
+      "translation_ru": "Мой багаж при мне.",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["I have my luggage with me."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0340.opus"
+      }
+    },
+    {
+      "id": "ph-d-0341",
+      "text_en": "She has her keys.",
+      "translation_ru": "Ключи при ней.",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["She has her keys."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0341.opus"
+      }
+    },
+    {
+      "id": "ph-d-0342",
+      "text_en": "I have got a headache.",
+      "translation_ru": "У меня болит голова.",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["I have got a headache."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0342.opus"
+      }
+    },
+    {
+      "id": "ph-d-0343",
+      "text_en": "He has got a cold.",
+      "translation_ru": "Он простудился.",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["He has got a cold."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0343.opus"
+      }
+    },
+    {
+      "id": "ph-d-0344",
+      "text_en": "We have got a problem.",
+      "translation_ru": "У нас проблема.",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["We have got a problem."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0344.opus"
+      }
+    },
+    {
+      "id": "ph-d-0345",
+      "text_en": "You have got a message.",
+      "translation_ru": "У тебя есть сообщение.",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["You have got a message."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0345.opus"
+      }
+    },
+    {
+      "id": "ph-d-0346",
+      "text_en": "The room has got a window.",
+      "translation_ru": "В комнате есть окно.",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["The room has got a window."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0346.opus"
+      }
+    },
+    {
+      "id": "ph-d-0347",
+      "text_en": "The hotel has got wifi.",
+      "translation_ru": "В отеле есть вайфай.",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["The hotel has got wifi."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0347.opus"
+      }
+    },
+    {
+      "id": "ph-d-0348",
+      "text_en": "The house has got a garden.",
+      "translation_ru": "У дома есть сад.",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["The house has got a garden."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0348.opus"
+      }
+    },
+    {
+      "id": "ph-d-0349",
+      "text_en": "This phone has got a good camera.",
+      "translation_ru": "У этого телефона хорошая камера.",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["This phone has got a good camera."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0349.opus"
+      }
+    },
+    {
+      "id": "ph-d-0350",
+      "text_en": "Have you got a table for two?",
+      "translation_ru": "У вас есть столик на двоих?",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["Have you got a table for two?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0350.opus"
+      }
+    },
+    {
+      "id": "ph-d-0351",
+      "text_en": "Have you got anything cheaper?",
+      "translation_ru": "У вас есть что-нибудь дешевле?",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["Have you got anything cheaper?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0351.opus"
+      }
+    },
+    {
+      "id": "ph-d-0352",
+      "text_en": "Have you got a bigger size?",
+      "translation_ru": "У вас есть размер побольше?",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["Have you got a bigger size?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0352.opus"
+      }
+    },
+    {
+      "id": "ph-d-0353",
+      "text_en": "Do you have change?",
+      "translation_ru": "У вас есть мелочь?",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["Do you have change?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0353.opus"
+      }
+    },
+    {
+      "id": "ph-d-0354",
+      "text_en": "Do you have a room?",
+      "translation_ru": "У вас есть номер?",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["Do you have a room?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0354.opus"
+      }
+    },
+    {
+      "id": "ph-d-0355",
+      "text_en": "I have a reservation.",
+      "translation_ru": "У меня бронь.",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["I have a reservation."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0355.opus"
+      }
+    },
+    {
+      "id": "ph-d-0356",
+      "text_en": "We have got a long way to go.",
+      "translation_ru": "Нам ещё долго идти.",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["We have got a long way to go."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0356.opus"
+      }
+    },
+    {
+      "id": "ph-d-0357",
+      "text_en": "You have got a friend here.",
+      "translation_ru": "Здесь у тебя есть друг.",
+      "grammar_point_id": "gp-d-08",
+      "variants": ["You have got a friend here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0357.opus"
+      }
+    },
+    {
+      "id": "ph-d-0358",
+      "text_en": "Stop!",
+      "translation_ru": "Стой!",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Stop!"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0358.opus"
+      }
+    },
+    {
+      "id": "ph-d-0359",
+      "text_en": "Wait!",
+      "translation_ru": "Подожди!",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Wait!"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0359.opus"
+      }
+    },
+    {
+      "id": "ph-d-0360",
+      "text_en": "Listen!",
+      "translation_ru": "Слушай!",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Listen!"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0360.opus"
+      }
+    },
+    {
+      "id": "ph-d-0361",
+      "text_en": "Look!",
+      "translation_ru": "Смотри!",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Look!"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0361.opus"
+      }
+    },
+    {
+      "id": "ph-d-0362",
+      "text_en": "Come here!",
+      "translation_ru": "Иди сюда!",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Come here!"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0362.opus"
+      }
+    },
+    {
+      "id": "ph-d-0363",
+      "text_en": "Sit down.",
+      "translation_ru": "Садись.",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Sit down."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0363.opus"
+      }
+    },
+    {
+      "id": "ph-d-0364",
+      "text_en": "Stand up.",
+      "translation_ru": "Встань.",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Stand up."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0364.opus"
+      }
+    },
+    {
+      "id": "ph-d-0365",
+      "text_en": "Open the door.",
+      "translation_ru": "Открой дверь.",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Open the door."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0365.opus"
+      }
+    },
+    {
+      "id": "ph-d-0366",
+      "text_en": "Close the window.",
+      "translation_ru": "Закрой окно.",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Close the window."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0366.opus"
+      }
+    },
+    {
+      "id": "ph-d-0367",
+      "text_en": "Give me the bag.",
+      "translation_ru": "Дай мне сумку.",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Give me the bag."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0367.opus"
+      }
+    },
+    {
+      "id": "ph-d-0368",
+      "text_en": "Take my hand.",
+      "translation_ru": "Возьми меня за руку.",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Take my hand."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0368.opus"
+      }
+    },
+    {
+      "id": "ph-d-0369",
+      "text_en": "Follow me.",
+      "translation_ru": "Следуй за мной.",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Follow me."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0369.opus"
+      }
+    },
+    {
+      "id": "ph-d-0370",
+      "text_en": "Follow the signs.",
+      "translation_ru": "Следуйте указателям.",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Follow the signs."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0370.opus"
+      }
+    },
+    {
+      "id": "ph-d-0371",
+      "text_en": "Turn left.",
+      "translation_ru": "Поверните налево.",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Turn left."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0371.opus"
+      }
+    },
+    {
+      "id": "ph-d-0372",
+      "text_en": "Turn right.",
+      "translation_ru": "Поверните направо.",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Turn right."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0372.opus"
+      }
+    },
+    {
+      "id": "ph-d-0373",
+      "text_en": "Go straight.",
+      "translation_ru": "Идите прямо.",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Go straight."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0373.opus"
+      }
+    },
+    {
+      "id": "ph-d-0374",
+      "text_en": "Turn left and go straight.",
+      "translation_ru": "Поверните налево и идите прямо.",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Turn left and go straight."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0374.opus"
+      }
+    },
+    {
+      "id": "ph-d-0375",
+      "text_en": "Go back.",
+      "translation_ru": "Вернитесь назад.",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Go back."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0375.opus"
+      }
+    },
+    {
+      "id": "ph-d-0376",
+      "text_en": "Go upstairs.",
+      "translation_ru": "Поднимитесь наверх.",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Go upstairs."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0376.opus"
+      }
+    },
+    {
+      "id": "ph-d-0377",
+      "text_en": "Go downstairs.",
+      "translation_ru": "Спуститесь вниз.",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Go downstairs."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0377.opus"
+      }
+    },
+    {
+      "id": "ph-d-0378",
+      "text_en": "Cross the street.",
+      "translation_ru": "Перейдите дорогу.",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Cross the street."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0378.opus"
+      }
+    },
+    {
+      "id": "ph-d-0379",
+      "text_en": "Take the first street on the left.",
+      "translation_ru": "Сверните на первую улицу слева.",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Take the first street on the left."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0379.opus"
+      }
+    },
+    {
+      "id": "ph-d-0380",
+      "text_en": "Call the police.",
+      "translation_ru": "Вызовите полицию.",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Call the police."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0380.opus"
+      }
+    },
+    {
+      "id": "ph-d-0381",
+      "text_en": "Call a doctor.",
+      "translation_ru": "Вызовите врача.",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Call a doctor."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0381.opus"
+      }
+    },
+    {
+      "id": "ph-d-0382",
+      "text_en": "Help me!",
+      "translation_ru": "Помогите!",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Help me!"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0382.opus"
+      }
+    },
+    {
+      "id": "ph-d-0383",
+      "text_en": "Be careful!",
+      "translation_ru": "Осторожно!",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Be careful!"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0383.opus"
+      }
+    },
+    {
+      "id": "ph-d-0384",
+      "text_en": "Be quiet.",
+      "translation_ru": "Тише.",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Be quiet."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0384.opus"
+      }
+    },
+    {
+      "id": "ph-d-0385",
+      "text_en": "Hurry up!",
+      "translation_ru": "Поторопись!",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Hurry up!"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0385.opus"
+      }
+    },
+    {
+      "id": "ph-d-0386",
+      "text_en": "Keep moving.",
+      "translation_ru": "Продолжай идти.",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Keep moving."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0386.opus"
+      }
+    },
+    {
+      "id": "ph-d-0387",
+      "text_en": "Stay here.",
+      "translation_ru": "Оставайся здесь.",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Stay here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0387.opus"
+      }
+    },
+    {
+      "id": "ph-d-0388",
+      "text_en": "Don't stop.",
+      "translation_ru": "Не останавливайся.",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Don't stop."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0388.opus"
+      }
+    },
+    {
+      "id": "ph-d-0389",
+      "text_en": "Don't touch it.",
+      "translation_ru": "Не трогай это.",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Don't touch it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0389.opus"
+      }
+    },
+    {
+      "id": "ph-d-0390",
+      "text_en": "Don't be afraid.",
+      "translation_ru": "Не бойся.",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Don't be afraid."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0390.opus"
+      }
+    },
+    {
+      "id": "ph-d-0391",
+      "text_en": "Don't be late.",
+      "translation_ru": "Не опаздывай.",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Don't be late."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0391.opus"
+      }
+    },
+    {
+      "id": "ph-d-0392",
+      "text_en": "Don't look back.",
+      "translation_ru": "Не оглядывайся.",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Don't look back."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0392.opus"
+      }
+    },
+    {
+      "id": "ph-d-0393",
+      "text_en": "Don't give up.",
+      "translation_ru": "Не сдавайся.",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Don't give up."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0393.opus"
+      }
+    },
+    {
+      "id": "ph-d-0394",
+      "text_en": "Don't worry.",
+      "translation_ru": "Не волнуйся.",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Don't worry."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0394.opus"
+      }
+    },
+    {
+      "id": "ph-d-0395",
+      "text_en": "Don't move.",
+      "translation_ru": "Не двигайся.",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Don't move."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0395.opus"
+      }
+    },
+    {
+      "id": "ph-d-0396",
+      "text_en": "Don't cry.",
+      "translation_ru": "Не плачь.",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Don't cry."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0396.opus"
+      }
+    },
+    {
+      "id": "ph-d-0397",
+      "text_en": "Please, sit down.",
+      "translation_ru": "Пожалуйста, садитесь.",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Please, sit down."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0397.opus"
+      }
+    },
+    {
+      "id": "ph-d-0398",
+      "text_en": "Please, wait here.",
+      "translation_ru": "Пожалуйста, подождите здесь.",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Please, wait here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0398.opus"
+      }
+    },
+    {
+      "id": "ph-d-0399",
+      "text_en": "Trust me.",
+      "translation_ru": "Доверься мне.",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Trust me."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0399.opus"
+      }
+    },
+    {
+      "id": "ph-d-0400",
+      "text_en": "Believe me.",
+      "translation_ru": "Поверь мне.",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Believe me."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0400.opus"
+      }
+    },
+    {
+      "id": "ph-d-0401",
+      "text_en": "Hold the door.",
+      "translation_ru": "Придержи дверь.",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Hold the door."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0401.opus"
+      }
+    },
+    {
+      "id": "ph-d-0402",
+      "text_en": "Get out!",
+      "translation_ru": "Уходи!",
+      "grammar_point_id": "gp-d-09",
+      "variants": ["Get out!"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0402.opus"
+      }
+    },
+    {
+      "id": "ph-d-0403",
+      "text_en": "I can swim well.",
+      "translation_ru": "Я хорошо плаваю.",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["I can swim well."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0403.opus"
+      }
+    },
+    {
+      "id": "ph-d-0404",
+      "text_en": "She can drive a car.",
+      "translation_ru": "Она умеет водить машину.",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["She can drive a car."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0404.opus"
+      }
+    },
+    {
+      "id": "ph-d-0405",
+      "text_en": "I can't find my keys.",
+      "translation_ru": "Я не могу найти свои ключи.",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["I can't find my keys."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0405.opus"
+      }
+    },
+    {
+      "id": "ph-d-0406",
+      "text_en": "Can you help me, please?",
+      "translation_ru": "Помогите мне, пожалуйста.",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["Can you help me, please?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0406.opus"
+      }
+    },
+    {
+      "id": "ph-d-0407",
+      "text_en": "Can I have the bill?",
+      "translation_ru": "Можно счёт?",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["Can I have the bill?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0407.opus"
+      }
+    },
+    {
+      "id": "ph-d-0408",
+      "text_en": "Can I pay by card?",
+      "translation_ru": "Можно оплатить картой?",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["Can I pay by card?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0408.opus"
+      }
+    },
+    {
+      "id": "ph-d-0409",
+      "text_en": "I have got a ticket.",
+      "translation_ru": "У меня есть билет.",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["I have got a ticket.", "I have a ticket."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0409.opus"
+      }
+    },
+    {
+      "id": "ph-d-0410",
+      "text_en": "She has got a question.",
+      "translation_ru": "У неё есть вопрос.",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["She has got a question.", "She has a question."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0410.opus"
+      }
+    },
+    {
+      "id": "ph-d-0411",
+      "text_en": "I haven't got time.",
+      "translation_ru": "У меня нет времени.",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["I haven't got time."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0411.opus"
+      }
+    },
+    {
+      "id": "ph-d-0412",
+      "text_en": "Have you got a pen?",
+      "translation_ru": "У тебя есть ручка?",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["Have you got a pen?", "Do you have a pen?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0412.opus"
+      }
+    },
+    {
+      "id": "ph-d-0413",
+      "text_en": "Have you got a map?",
+      "translation_ru": "У тебя есть карта?",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["Have you got a map?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0413.opus"
+      }
+    },
+    {
+      "id": "ph-d-0414",
+      "text_en": "I have got a map.",
+      "translation_ru": "У меня есть карта.",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["I have got a map."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0414.opus"
+      }
+    },
+    {
+      "id": "ph-d-0415",
+      "text_en": "We have a problem.",
+      "translation_ru": "У нас проблема.",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["We have a problem."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0415.opus"
+      }
+    },
+    {
+      "id": "ph-d-0416",
+      "text_en": "They have a plan.",
+      "translation_ru": "У них есть план.",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["They have a plan."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0416.opus"
+      }
+    },
+    {
+      "id": "ph-d-0417",
+      "text_en": "Stop and listen.",
+      "translation_ru": "Остановись и слушай.",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["Stop and listen."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0417.opus"
+      }
+    },
+    {
+      "id": "ph-d-0418",
+      "text_en": "Don't stop here.",
+      "translation_ru": "Не останавливайся здесь.",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["Don't stop here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0418.opus"
+      }
+    },
+    {
+      "id": "ph-d-0419",
+      "text_en": "Turn left and go straight.",
+      "translation_ru": "Поверните налево и идите прямо.",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["Turn left and go straight."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0419.opus"
+      }
+    },
+    {
+      "id": "ph-d-0420",
+      "text_en": "Follow me, please.",
+      "translation_ru": "Следуйте за мной, пожалуйста.",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["Follow me, please."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0420.opus"
+      }
+    },
+    {
+      "id": "ph-d-0421",
+      "text_en": "Don't worry about me.",
+      "translation_ru": "Не волнуйся за меня.",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["Don't worry about me."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0421.opus"
+      }
+    },
+    {
+      "id": "ph-d-0422",
+      "text_en": "Be careful with the steps.",
+      "translation_ru": "Осторожно со ступеньками.",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["Be careful with the steps."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0422.opus"
+      }
+    },
+    {
+      "id": "ph-d-0423",
+      "text_en": "Take my hand and come with me.",
+      "translation_ru": "Возьми меня за руку и пойдём со мной.",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["Take my hand and come with me."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0423.opus"
+      }
+    },
+    {
+      "id": "ph-d-0424",
+      "text_en": "There is a café near the hotel.",
+      "translation_ru": "Возле отеля есть кафе.",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["There is a café near the hotel."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0424.opus"
+      }
+    },
+    {
+      "id": "ph-d-0425",
+      "text_en": "There are two banks in this street.",
+      "translation_ru": "На этой улице два банка.",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["There are two banks in this street."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0425.opus"
+      }
+    },
+    {
+      "id": "ph-d-0426",
+      "text_en": "There isn't a toilet here.",
+      "translation_ru": "Здесь нет туалета.",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["There isn't a toilet here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0426.opus"
+      }
+    },
+    {
+      "id": "ph-d-0427",
+      "text_en": "Where is the nearest pharmacy?",
+      "translation_ru": "Где ближайшая аптека?",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["Where is the nearest pharmacy?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0427.opus"
+      }
+    },
+    {
+      "id": "ph-d-0428",
+      "text_en": "The museum is next to the park.",
+      "translation_ru": "Музей рядом с парком.",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["The museum is next to the park."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0428.opus"
+      }
+    },
+    {
+      "id": "ph-d-0429",
+      "text_en": "I am working now.",
+      "translation_ru": "Я сейчас работаю.",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["I am working now."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0429.opus"
+      }
+    },
+    {
+      "id": "ph-d-0430",
+      "text_en": "What are you doing?",
+      "translation_ru": "Что ты делаешь?",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["What are you doing?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0430.opus"
+      }
+    },
+    {
+      "id": "ph-d-0431",
+      "text_en": "She is looking for her phone.",
+      "translation_ru": "Она ищет свой телефон.",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["She is looking for her phone."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0431.opus"
+      }
+    },
+    {
+      "id": "ph-d-0432",
+      "text_en": "They are waiting for the taxi.",
+      "translation_ru": "Они ждут такси.",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["They are waiting for the taxi."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0432.opus"
+      }
+    },
+    {
+      "id": "ph-d-0433",
+      "text_en": "I know that you can do it.",
+      "translation_ru": "Я знаю, что ты сможешь это сделать.",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["I know that you can do it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0433.opus"
+      }
+    },
+    {
+      "id": "ph-d-0434",
+      "text_en": "She says that she has time.",
+      "translation_ru": "Она говорит, что у неё есть время.",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["She says that she has time."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0434.opus"
+      }
+    },
+    {
+      "id": "ph-d-0435",
+      "text_en": "He thinks that there is a way.",
+      "translation_ru": "Он думает, что выход есть.",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["He thinks that there is a way."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0435.opus"
+      }
+    },
+    {
+      "id": "ph-d-0436",
+      "text_en": "I want to help you.",
+      "translation_ru": "Я хочу тебе помочь.",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["I want to help you."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0436.opus"
+      }
+    },
+    {
+      "id": "ph-d-0437",
+      "text_en": "We need a taxi.",
+      "translation_ru": "Нам нужно такси.",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["We need a taxi."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0437.opus"
+      }
+    },
+    {
+      "id": "ph-d-0438",
+      "text_en": "I love this city.",
+      "translation_ru": "Я люблю этот город.",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["I love this city."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0438.opus"
+      }
+    },
+    {
+      "id": "ph-d-0439",
+      "text_en": "Do you know this street?",
+      "translation_ru": "Ты знаешь эту улицу?",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["Do you know this street?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0439.opus"
+      }
+    },
+    {
+      "id": "ph-d-0440",
+      "text_en": "I don't understand you.",
+      "translation_ru": "Я тебя не понимаю.",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["I don't understand you."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0440.opus"
+      }
+    },
+    {
+      "id": "ph-d-0441",
+      "text_en": "Can you speak slowly, please?",
+      "translation_ru": "Говорите медленнее, пожалуйста.",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["Can you speak slowly, please?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0441.opus"
+      }
+    },
+    {
+      "id": "ph-d-0442",
+      "text_en": "Can I sit here?",
+      "translation_ru": "Можно здесь сесть?",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["Can I sit here?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0442.opus"
+      }
+    },
+    {
+      "id": "ph-d-0443",
+      "text_en": "You can do anything.",
+      "translation_ru": "Ты можешь всё.",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["You can do anything."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0443.opus"
+      }
+    },
+    {
+      "id": "ph-d-0444",
+      "text_en": "Sorry, I can't help you now.",
+      "translation_ru": "Извини, я не могу помочь тебе сейчас.",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["Sorry, I can't help you now."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0444.opus"
+      }
+    },
+    {
+      "id": "ph-d-0445",
+      "text_en": "I have got an idea.",
+      "translation_ru": "У меня есть идея.",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["I have got an idea.", "I have an idea."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0445.opus"
+      }
+    },
+    {
+      "id": "ph-d-0446",
+      "text_en": "Don't be shy.",
+      "translation_ru": "Не стесняйся.",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["Don't be shy."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0446.opus"
+      }
+    },
+    {
+      "id": "ph-d-0447",
+      "text_en": "Have a good day!",
+      "translation_ru": "Хорошего дня!",
+      "grammar_point_id": "gp-d-10",
+      "variants": ["Have a good day!"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-0447.opus"
+      }
+    }
+  ]
+}

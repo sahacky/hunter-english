@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "kind": "phrasebook",
+  "items": [
+    {
+      "id": "pb-directions-01",
+      "rank": "D",
+      "topic": "directions",
+      "situation_ru": "Где это? Ориентирование в городе",
+      "user_role": "traveler",
+      "lines": [
+        {
+          "role": "traveler",
+          "text_en": "Excuse me, where is the station?",
+          "translation_ru": "Извините, где вокзал?",
+          "accepted": ["Excuse me, where is the station?", "Where is the station?"]
+        },
+        {
+          "role": "local",
+          "text_en": "The station? It is not far. Go straight and turn left.",
+          "translation_ru": "Вокзал? Это недалеко. Идите прямо и поверните налево."
+        },
+        {
+          "role": "traveler",
+          "text_en": "Sorry, can you repeat that slowly?",
+          "translation_ru": "Извините, можете повторить медленно?",
+          "accepted": ["Sorry, can you repeat that slowly?", "Can you repeat that slowly?"]
+        },
+        {
+          "role": "local",
+          "text_en": "Sure. Go straight. Turn left at the bank. The station is next to the café.",
+          "translation_ru": "Конечно. Идите прямо. Поверните налево у банка. Вокзал рядом с кафе."
+        },
+        {
+          "role": "traveler",
+          "text_en": "Thank you very much!",
+          "translation_ru": "Большое спасибо!",
+          "accepted": ["Thank you very much!", "Thanks a lot!"]
+        }
+      ]
+    },
+    {
+      "id": "pb-directions-02",
+      "rank": "D",
+      "topic": "directions",
+      "situation_ru": "Ищу аптеку и банкомат",
+      "user_role": "traveler",
+      "lines": [
+        {
+          "role": "traveler",
+          "text_en": "Is there a pharmacy near here?",
+          "translation_ru": "Здесь рядом есть аптека?",
+          "accepted": ["Is there a pharmacy near here?", "Is there a pharmacy nearby?"]
+        },
+        {
+          "role": "local",
+          "text_en": "Yes, there is one on Main Street, next to the bank.",
+          "translation_ru": "Да, есть одна на Мейн-стрит, рядом с банком."
+        },
+        {
+          "role": "traveler",
+          "text_en": "And where can I find an ATM?",
+          "translation_ru": "А где я могу найти банкомат?",
+          "accepted": ["And where can I find an ATM?", "Where can I find an ATM?"]
+        },
+        {
+          "role": "local",
+          "text_en": "There is an ATM at the corner, in front of the hotel.",
+          "translation_ru": "Банкомат на углу, напротив отеля."
+        },
+        {
+          "role": "traveler",
+          "text_en": "Great. Is it far?",
+          "translation_ru": "Отлично. Это далеко?",
+          "accepted": ["Great. Is it far?", "Is it far?"]
+        },
+        {
+          "role": "local",
+          "text_en": "No, it is five minutes on foot.",
+          "translation_ru": "Нет, пять минут пешком."
+        }
+      ]
+    }
+  ]
+}
