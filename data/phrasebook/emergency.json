@@ -80,6 +80,49 @@
           "accepted": ["Thank you very much!", "Thanks a lot!"]
         }
       ]
+    },
+    {
+      "id": "pb-emergency-03",
+      "rank": "C",
+      "topic": "emergency",
+      "situation_ru": "Я потерял паспорт",
+      "user_role": "traveler",
+      "lines": [
+        {
+          "role": "traveler",
+          "text_en": "Excuse me, I lost my passport. What should I do?",
+          "translation_ru": "Извините, я потерял паспорт. Что мне делать?",
+          "accepted": [
+            "Excuse me, I lost my passport. What should I do?",
+            "I lost my passport. What should I do?"
+          ]
+        },
+        {
+          "role": "local",
+          "text_en": "You should go to the police station. It is two streets from here.",
+          "translation_ru": "Вам следует пойти в полицию. Это в двух улицах отсюда."
+        },
+        {
+          "role": "traveler",
+          "text_en": "Did anyone find a bag here? I left it on the bench.",
+          "translation_ru": "Никто не находил здесь сумку? Я оставил её на скамейке.",
+          "accepted": [
+            "Did anyone find a bag here?",
+            "Did anyone find a bag here? I left it on the bench."
+          ]
+        },
+        {
+          "role": "local",
+          "text_en": "A man found a bag and gave it to the security. Check there first.",
+          "translation_ru": "Мужчина нашёл сумку и отдал охране. Сначала проверьте там."
+        },
+        {
+          "role": "traveler",
+          "text_en": "Thank you so much. You saved my day!",
+          "translation_ru": "Большое спасибо. Вы спасли мой день!",
+          "accepted": ["Thank you so much.", "Thank you so much. You saved my day!"]
+        }
+      ]
     }
   ]
 }

@@ -2149,9 +2149,14 @@ def build_rank(lessons, *, rank: str, stem: str, seed: int):
 
         for chain in spec.get("transform", []):
             source_id = phrase_id_by_text(chain[0])
-            steps = [{"task": "negative", "phrase_id": phrase_id_by_text(chain[1])}]
-            if chain[2] is not None:
-                steps.append({"task": "question", "phrase_id": phrase_id_by_text(chain[2])})
+            if len(chain) == 3 and chain[1] in ("past", "future"):
+                # цепочка времени: (утверждение, задача, результат) — M14
+                steps = [{"task": chain[1], "phrase_id": phrase_id_by_text(chain[2])}]
+            else:
+                # цепочка ±?: (утверждение, отрицание, вопрос|None) — M12
+                steps = [{"task": "negative", "phrase_id": phrase_id_by_text(chain[1])}]
+                if chain[2] is not None:
+                    steps.append({"task": "question", "phrase_id": phrase_id_by_text(chain[2])})
             eid = next_ex()
             exercises_out.append({
                 "id": eid, "type": "transform",
