@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-29T13:38:12Z",
+  "generated_at": "2026-09-29T15:13:09Z",
   "files": [
     {
       "path": "lessons/exercises-c.json",
       "kind": "exercises",
       "schema_version": 1,
-      "items": 727,
-      "sha256": "b3e1cbfaec6026ce3ca54797464dc29d39b790198740d9336214346638a6cde1"
+      "items": 1449,
+      "sha256": "3ff918e60955ca8d40abdf04291a7947b58cb8ab7debb64ae9601a056441f9d1"
     },
     {
       "path": "lessons/exercises-d.json",
@@ -27,8 +27,8 @@
       "path": "lessons/lessons-c.json",
       "kind": "lessons",
       "schema_version": 1,
-      "items": 15,
-      "sha256": "fa7f6f97397f570b9b0b7d314b0269ff7a257cf4cbdb7e3c38806a14e812f0dd"
+      "items": 30,
+      "sha256": "0c3ca6826a80f50914c8c42fa2db7454221cefa668c98544804f22e7b1255b21"
     },
     {
       "path": "lessons/lessons-d.json",
@@ -48,8 +48,8 @@
       "path": "phrasebook/airport.json",
       "kind": "phrasebook",
       "schema_version": 1,
-      "items": 1,
-      "sha256": "b4efbc769e49ec9afc09e9661bf57a91cf49ef0d26dd59aa8756ea1b15c36306"
+      "items": 2,
+      "sha256": "162016c0ff015a49062f96292e784ccd178afe5d6007d5ea69848456fba564b3"
     },
     {
       "path": "phrasebook/directions.json",
@@ -73,11 +73,25 @@
       "sha256": "823875e2e79f9bc25bc7386563eeba53a6b7f2d425f0e9524b58553f55136a8f"
     },
     {
+      "path": "phrasebook/passport.json",
+      "kind": "phrasebook",
+      "schema_version": 1,
+      "items": 2,
+      "sha256": "c84d899a9ee3c87604465fa091b9af4d97476694a826bc8771e3457d694e356f"
+    },
+    {
       "path": "phrasebook/pharmacy.json",
       "kind": "phrasebook",
       "schema_version": 1,
       "items": 1,
       "sha256": "ca93ed97168500f30c0b2de526165f6cc3aaf148120de8b8724911c2d188f0cc"
+    },
+    {
+      "path": "phrasebook/restaurant.json",
+      "kind": "phrasebook",
+      "schema_version": 1,
+      "items": 1,
+      "sha256": "3c006b052afb23326aa2d0644b937e6cc97aa2e5b34f2e0b45a12f6a7bf39b9f"
     },
     {
       "path": "phrasebook/shop.json",
@@ -104,8 +118,8 @@
       "path": "phrases/phrases-c.json",
       "kind": "phrases",
       "schema_version": 1,
-      "items": 684,
-      "sha256": "26f78f3618a318281acb93b1f5ebd230f276fe4e91fb742a52eab9d501874707"
+      "items": 1365,
+      "sha256": "5a9e2644b24395ba4995db3e5745925aa0e0ed9904e7551a844b329b9d7add32"
     },
     {
       "path": "phrases/phrases-d.json",

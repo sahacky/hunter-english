@@ -32,3 +32,26 @@ test('phrasebook: hotel chapter listed (rank C)', async ({ page }) => {
   await page.goto('/#/phrasebook')
   await expect(page.getByText('Отель')).toBeVisible({ timeout: 8000 })
 })
+
+test('lesson C-16 must/have to opens', async ({ page }) => {
+  await page.goto('/#/lesson/C-16')
+  await expect(page.getByRole('heading', { name: 'must / have to: необходимость' })).toBeVisible({
+    timeout: 8000,
+  })
+  await expect(
+    page.getByText('mustn’t = «запрещено»').or(page.getByText(/mustn't = «запрещено»/)),
+  ).toBeVisible()
+})
+
+test('gates C-B: intro with rank C checklist (plan://M14#14.7)', async ({ page }) => {
+  await page.goto('/#/gates/C-B')
+  await expect(page.getByRole('heading', { name: 'Врата C → B' })).toBeVisible({ timeout: 8000 })
+  await expect(page.getByText(/Уроки ранга C: \d+ \/ 30/)).toBeVisible()
+  await expect(page.getByText(/Слова \(надёжно\): \d+ \/ 1800/)).toBeVisible()
+})
+
+test('phrasebook: passport and restaurant chapters listed (rank C)', async ({ page }) => {
+  await page.goto('/#/phrasebook')
+  await expect(page.getByText('Паспортный контроль')).toBeVisible({ timeout: 8000 })
+  await expect(page.getByText('Ресторан')).toBeVisible()
+})

@@ -51,6 +51,53 @@
           "translation_ru": "Выход 5 слева, после паспортного контроля. Хорошего полёта!"
         }
       ]
+    },
+    {
+      "id": "pb-airport-02",
+      "rank": "C",
+      "topic": "airport",
+      "situation_ru": "Контроль безопасности и посадка",
+      "user_role": "passenger",
+      "lines": [
+        {
+          "role": "officer",
+          "text_en": "Put your bag on the belt, please. Take out your liquids.",
+          "translation_ru": "Положите сумку на ленту, пожалуйста. Достаньте жидкости."
+        },
+        {
+          "role": "passenger",
+          "text_en": "Sure. Laptop in a separate tray?",
+          "translation_ru": "Конечно. Ноутбук в отдельный лоток?",
+          "accepted": ["Sure. Laptop in a separate tray?", "Laptop in a separate tray?"]
+        },
+        {
+          "role": "officer",
+          "text_en": "Yes, please. Step through the scanner.",
+          "translation_ru": "Да, пожалуйста. Пройдите через сканер."
+        },
+        {
+          "role": "passenger",
+          "text_en": "Excuse me, where is gate 5?",
+          "translation_ru": "Извините, где выход 5?",
+          "accepted": ["Excuse me, where is gate 5?", "Where is gate 5?"]
+        },
+        {
+          "role": "officer",
+          "text_en": "Follow the signs — gate 5 is this way. Boarding starts in twenty minutes.",
+          "translation_ru": "Следуйте за указателями — выход 5 в эту сторону. Посадка через двадцать минут."
+        },
+        {
+          "role": "passenger",
+          "text_en": "Is the flight on time?",
+          "translation_ru": "Рейс по расписанию?",
+          "accepted": ["Is the flight on time?"]
+        },
+        {
+          "role": "officer",
+          "text_en": "Yes, on time. Final call will be announced. Have a nice flight!",
+          "translation_ru": "Да, по расписанию. Объявят последний вызов. Хорошего полёта!"
+        }
+      ]
     }
   ]
 }

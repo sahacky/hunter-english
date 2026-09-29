@@ -198,6 +198,14 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
       lessonsOkAt: 14,
       wordsMaxRank: 1960,
     },
+    'C-B': {
+      from: 'C',
+      to: 'B',
+      phrasePrefix: 'ph-c-',
+      wordsTarget: 1800,
+      lessonsOkAt: 15,
+      wordsMaxRank: 2809,
+    },
   }
   const gate = GATE_CONFIG[gateId]
   const valid = gate !== undefined
