@@ -247,50 +247,82 @@ export async function pull(database: HunterDb, sb?: SupabaseLike): Promise<void>
   }
 }
 
-/** LWW: серверная строка побеждает локальную при updated_at ≥; локаль новее — остаётся. */
+/**
+ * LWW: серверная строка побеждает локальную при updated_at ≥; локаль новее —
+ * остаётся. Постраничный merge: локальные строки владельца читаются одним
+ * запросом, победители пишутся bulkPut — 5000 строк не должны порождать
+ * 2×N точечных операций (ревью M13, CI-таймаут).
+ */
 export async function mergeLww(
   database: HunterDb,
   table: string,
   incoming: LwwRow[],
 ): Promise<void> {
+  if (incoming.length === 0) return
+  const winners: LwwRow[] = []
+  if (table === 'user_stats') {
+    for (const row of incoming) {
+      const local = (await database.user_stats.get(row.user_id ?? '')) as LwwRow | null
+      if ((row.updated_at ?? '') >= (local?.updated_at ?? '')) winners.push(row)
+    }
+    await database.user_stats.bulkPut(winners as never)
+    return
+  }
+  const byOwner = new Map<string, LwwRow[]>()
   for (const row of incoming) {
-    const local = await findLocal(database, table, row)
-    const localAt = (local as LwwRow | null)?.updated_at ?? ''
-    if ((row.updated_at ?? '') >= localAt) {
-      await putRow(database, table, row)
+    const list = byOwner.get(row.user_id ?? '') ?? []
+    list.push(row)
+    byOwner.set(row.user_id ?? '', list)
+  }
+  for (const [owner, rows] of byOwner) {
+    const localRows = await readOwnerRows(database, table, owner)
+    const localByKey = new Map<string, LwwRow>()
+    for (const local of localRows) localByKey.set(localKey(table, local), local)
+    for (const row of rows) {
+      const local = localByKey.get(localKey(table, row))
+      if ((row.updated_at ?? '') >= (local?.updated_at ?? '')) winners.push(row)
     }
   }
+  await bulkPutRows(database, table, winners)
 }
 
-async function putRow(database: HunterDb, table: string, row: LwwRow): Promise<void> {
+function localKey(table: string, row: LwwRow): string {
   switch (table) {
     case 'card_states':
-      await database.card_states.put(row as never)
-      break
+      return String(row.card_id ?? '')
     case 'lesson_progress':
-      await database.lesson_progress.put(row as never)
-      break
-    case 'user_stats':
-      await database.user_stats.put(row as never)
-      break
+      return String(row.lesson_id ?? '')
     case 'item_progress':
-      await database.item_progress.put(row as never)
-      break
+      return `${row.item_id}:${row.kind}`
+    default:
+      return ''
   }
 }
 
-async function findLocal(database: HunterDb, table: string, row: LwwRow): Promise<unknown | null> {
+async function readOwnerRows(database: HunterDb, table: string, owner: string): Promise<LwwRow[]> {
   switch (table) {
     case 'card_states':
-      return (await database.card_states.get([row.user_id, row.card_id])) ?? null
+      return (await database.card_states.where('user_id').equals(owner).toArray()) as never
     case 'lesson_progress':
-      return (await database.lesson_progress.get([row.user_id, row.lesson_id])) ?? null
-    case 'user_stats':
-      return (await database.user_stats.get(row.user_id ?? '')) ?? null
+      return (await database.lesson_progress.where('user_id').equals(owner).toArray()) as never
     case 'item_progress':
-      return (await database.item_progress.get([row.user_id, row.item_id, row.kind])) ?? null
+      return (await database.item_progress.where('user_id').equals(owner).toArray()) as never
     default:
-      return null
+      return []
+  }
+}
+
+async function bulkPutRows(database: HunterDb, table: string, rows: LwwRow[]): Promise<void> {
+  switch (table) {
+    case 'card_states':
+      await database.card_states.bulkPut(rows as never)
+      break
+    case 'lesson_progress':
+      await database.lesson_progress.bulkPut(rows as never)
+      break
+    case 'item_progress':
+      await database.item_progress.bulkPut(rows as never)
+      break
   }
 }
 
