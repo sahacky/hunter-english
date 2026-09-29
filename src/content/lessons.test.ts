@@ -193,8 +193,8 @@ describe('loadLessonView (реальные data/ ранга E)', () => {
     expect(phrases.every(({ audio }) => audio?.en_gb?.startsWith('audio/phrases/cori/'))).toBe(true)
 
     const lessons = await loadLessons()
-    // M12: E (24) + D полный ранг (28)
-    expect(lessons.length).toBe(52)
+    // M14: E (24) + D (28) + C1-C2 (15); C3-C5 добавят остальные
+    expect(lessons.length).toBe(67)
     const phraseById = new Set(phrases.map(({ id }) => id))
     for (const lesson of lessons) {
       const lessonPhrases = phrases.filter(
@@ -241,6 +241,40 @@ describe('loadLessonView (реальные data/ ранга E)', () => {
       expect(payload.steps.length).toBeGreaterThanOrEqual(1)
       expect(['negative', 'question', 'past', 'future']).toContain(payload.steps[0]!.task)
     }
+  })
+
+  it('C-уроки: ранг C, Past Simple/will, transform past/future (plan://M14#14.2–14.3)', async () => {
+    const lessons = await loadLessons()
+    const c = lessons.filter((lesson) => lesson.rank === 'C')
+    expect(c).toHaveLength(15)
+    expect(c.every((lesson) => lesson.module.startsWith('mod-c-'))).toBe(true)
+    const view = await loadLessonView('les-c-01')
+    expect(view?.lesson.title).toContain('Past Simple')
+    expect(view?.steps.map(({ kind }) => kind)).toEqual([
+      'rule',
+      'warmup',
+      'build',
+      'listening',
+      'speaking',
+      'quotes',
+      'deck',
+    ])
+    // transform-цепочки времени: past/future (движок M14)
+    const { loadExercises } = await import('./lessons')
+    const exercises = await loadExercises()
+    const cTransforms = exercises.filter(
+      (exercise) => exercise.type === 'transform' && exercise.id.startsWith('ex-c-'),
+    )
+    expect(cTransforms.length).toBeGreaterThanOrEqual(6)
+    for (const exercise of cTransforms) {
+      const payload = exercise.payload as unknown as {
+        steps: { task: string; phrase_id: string }[]
+      }
+      expect(['past', 'future']).toContain(payload.steps[0]!.task)
+    }
+    // разговорник hotel ранга C существует и привязан
+    const withHotel = lessons.filter((lesson) => lesson.phrasebook_topic === 'hotel')
+    expect(withHotel.length).toBeGreaterThanOrEqual(1)
   })
 })
 
