@@ -95,13 +95,13 @@
 
 ### item_progress {#db://table-item_progress}
 
-Прогресс по отдельным сущностям контента: `quote_progress` (цитаты), `gate_attempts` (попытки «Врат»), `achievement` (достижения). Позволяет добавлять новые виды прогресса без миграций — payload в `data` зависит от `kind`.
+Прогресс по отдельным сущностям контента: `quote_progress` (цитаты; в Dexie-MVP — `quote`, план://M11#11.2), `gate_attempts` (попытки «Врат»), `achievement` (достижения), `quest_day` (квест дня — M7). Позволяет добавлять новые виды прогресса без миграций — payload в `data` зависит от `kind`.
 
 | Колонка | Тип | Описание |
 |---|---|---|
 | `user_id` | uuid | FK → auth.users |
 | `item_id` | text | id сущности контента (цитата, «Врата», достижение) |
-| `kind` | text | `quote_progress` \| `gate_attempts` \| `achievement` |
+| `kind` | text | `quote_progress` \| `gate_attempts` \| `achievement` \| `quest_day` (Dexie-MVP) |
 | `data` | jsonb not null default '{}' | payload записи |
 | `updated_at` | timestamptz not null default now() | клиентское, для LWW |
 
@@ -240,7 +240,7 @@ create policy "user_stats_update_own" on public.user_stats
 create table public.item_progress (
   user_id    uuid not null references auth.users (id) on delete cascade,
   item_id    text not null,
-  kind       text not null,                      -- 'quote_progress' | 'gate_attempts' | 'achievement'
+  kind       text not null,                      -- 'quote_progress' | 'gate_attempts' | 'achievement' | 'quest_day'
   data       jsonb not null default '{}'::jsonb,
   updated_at timestamptz not null default now(),
   primary key (user_id, item_id, kind)

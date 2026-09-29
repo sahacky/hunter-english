@@ -30,6 +30,18 @@ const wordModules = import.meta.glob('/data/words/*.json') as Record<
   () => Promise<WordsFile>
 >
 
+/** Леммы с NGSL-рангом ≤ maxRank (топ-1000 — cloze цитат, решение M11#4). */
+export async function loadTopNgslLemmas(maxRank = 1000): Promise<Set<string>> {
+  const files = await Promise.all(Object.values(wordModules).map((load) => load()))
+  const top = new Set<string>()
+  for (const file of files) {
+    for (const item of file.items) {
+      if ((item.freq_rank_ngsl ?? Number.POSITIVE_INFINITY) <= maxRank) top.add(item.lemma)
+    }
+  }
+  return top
+}
+
 function toNote(item: WordItem): Note {
   return {
     id: `note_${item.id}`,

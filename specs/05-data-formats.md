@@ -28,7 +28,7 @@ data/
 
 | Каталог | Файлы | Принцип |
 |---|---|---|
-| `data/words/` | фиксированные диапазоны `freq_rank_ngsl`: `words-0001-0500.json`, `words-0501-1000.json`, `words-1001-1500.json`, `words-1501-2000.json`, `words-2001-2400.json`, `words-2401-2809.json` + `words-spoken-only.json` (леммы только NGSL-Spoken с sentinel-рангом); `words-2807-5000.json` появится в M11 | по диапазону `freq_rank_ngsl`; имена файлов стабильны при пересборках |
+| `data/words/` | фиксированные диапазоны `freq_rank_ngsl`: `words-0001-0500.json`, `words-0501-1000.json`, `words-1001-1500.json`, `words-1501-2000.json`, `words-2001-2400.json`, `words-2401-2809.json` + `words-spoken-only.json` (леммы только NGSL-Spoken с sentinel-рангом); субтитровая полоса M11 — `words-2810-4000.json` + `words-4001-5000.json` (по `freq_rank_sub`, курация форм/джанка — ревью M11) | по диапазону ранга; имена файлов стабильны при пересборках |
 | `data/phrases/` | `phrases-e.json`, `phrases-d.json`, … | по рангу |
 | `data/lessons/` | `lessons-e.json`, `exercises-e.json`, … | уроки и упражнения отдельно, по рангу |
 | `data/quotes/` | `supernatural.json`, `game-of-thrones.json`, … | по тайтлу, ≤ 40–60 цитат в файле |
@@ -58,7 +58,7 @@ data/
 | `part_of_speech` | enum | ✅ | `noun, verb, adjective, adverb, preposition, pronoun, conjunction, interjection, determiner, phrase` |
 | `cefr_level` | enum \| null | ✅ | `A1…C2` или `null`; в M3 выводится **только из частотного ранга** (1–500 A1, 501–1000 A2, 1001–2000 B1, 2001+ B2); Oxford-разметка не публикуется (Watch out в WAL) |
 | `freq_rank_ngsl` | integer ≥ 1 | ✅/— | ранг по `NGSL_12_stats.csv`; у spoken-only лемм — sentinel `100000+freq_rank_spoken` (сортировать по `freq_rank_spoken`). **Обязателен, если нет `freq_rank_sub`** (M11) |
-| `freq_rank_sub` | integer ≥ 1 | — | субтитровый ранг (FrequencyWords en_50k, порядок частоты среди лемм вне NGSL/NGSL-Spoken) — у слов полосы `words-2807-5000.json` (M11, решение M11#5: best effort); взаимоисключим с `freq_rank_ngsl` |
+| `freq_rank_sub` | integer ≥ 1 | — | субтитровый ранг (FrequencyWords en_50k, порядок частоты среди лемм вне NGSL/NGSL-Spoken) — у слов субтитровой полосы 2810–5000 (M11, решение M11#5: best effort; CEFR полосы — A1 только базовые местоимения, прочее B2 — ревью M11); взаимоисключим с `freq_rank_ngsl` |
 | `freq_rank_spoken` | integer ≥ 1 | — | ранг по NGSL-Spoken (если слово входит в разговорные 719) |
 | `tags` | string[] | ✅ | напр. `ngsl`, `subtitles` (полоса 2807–5000, M11), `spoken-top719`, `irregular-verb`, `phrasal-have` (M5+), `trap:to-home` |
 | `example_en` / `example_ru` | string | ✅ | фраза-пример (Tatoeba / урок / цитата); EN и RU заполняются парой |

@@ -807,6 +807,12 @@ body {
   color: var(--primary);
 }
 
+.quote-word-absent {
+  color: inherit;
+  border-bottom: none;
+  cursor: default;
+}
+
 .quote-word-none {
   color: var(--text-dim);
 }

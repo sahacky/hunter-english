@@ -52,7 +52,7 @@ type Phase =
   | { kind: 'step' }
   | { kind: 'deck' } // шаг 7 «В колоду»
   | { kind: 'done' }
-  | { kind: 'replay'; index: number; wrongCount: number } // проход по ошибкам (M11#11.3)
+  | { kind: 'replay'; index: number } // проход по ошибкам (M11#11.3)
 
 interface LessonScreenProps {
   repo?: ProgressRepository
@@ -598,7 +598,7 @@ export default function LessonScreen({
             <button
               type="button"
               className="srs-btn"
-              onClick={() => setPhase({ kind: 'replay', index: 0, wrongCount: replayIds.length })}
+              onClick={() => setPhase({ kind: 'replay', index: 0 })}
             >
               {t('lesson.replayButton', { count: replayIds.length })}
             </button>
@@ -630,6 +630,11 @@ export default function LessonScreen({
         <section className="panel lesson-panel">
           <h2>{t('lesson.lessonDone')}</h2>
           <p className="dim">{t('lesson.replayEmpty')}</p>
+          <div className="lesson-actions">
+            <button type="button" className="srs-btn" onClick={() => setPhase({ kind: 'done' })}>
+              {t('lesson.replayBackToSummary')}
+            </button>
+          </div>
         </section>
       )
     }
@@ -652,7 +657,7 @@ export default function LessonScreen({
           onDispute={() => undefined}
           onNext={() => {
             if (phase.index + 1 < list.length) {
-              setPhase({ kind: 'replay', index: phase.index + 1, wrongCount: list.length })
+              setPhase({ kind: 'replay', index: phase.index + 1 })
             } else {
               showToast(t('lesson.replayFinished'))
               setPhase({ kind: 'done' })

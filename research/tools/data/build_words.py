@@ -414,13 +414,79 @@ def sub_ranks() -> dict[str, int]:
     return ranks
 
 
+# --- Курация субтитровой полосы (ревью M11 Б1) -------------------------------
+# en_50k не лемматизирован: формы известных лемм (are/said/doing), обрывки
+# сокращений (didn/isn/m), однобуквенные глоссы (n/f/u) и джанк-пары
+# (saw «пилить» при примере "He saw you") отсеиваются стоп-листом и
+# стем-дедупликацией против NGSL/Spoken-лемм.
+
+SUB_STOP = set("""
+are am was were been being isn aren wasn weren don doesn didn
+hasn hadn haven haven-t gonna wanna gotta outta kinda sorta
+couldn wouldn shouldn mustn ain em ya ya ll ve re ve
+n f e u o s x b c d g h j l p q r t v w y
+don ho la li lo de le da ai aii oi yo heh
+saw doing thinking looks coming going getting looking talking
+said told came taking making gives asking happens happens
+""".split())
+
+# Базовые местоимения/детерминативы, реально A1 (полоса поздняя — но эти
+# формы базовые): CEFR-оверрайд, остальные суб-слова — B2 (ревью M11 М1).
+SUB_A1 = set("""
+me my your her his its our their them us him these those
+ours yours hers theirs myself yourself thou thee thy
+""".split())
+
+
+def _stems(word: str) -> list[str]:
+    """Вероятные леммы словоформы (простой стеммер, без словаря)."""
+    out = [word]
+    if word.endswith("ies"):
+        out.append(word[:-3] + "y")
+    if word.endswith("es"):
+        out.append(word[:-2])
+    if word.endswith("s"):
+        out.append(word[:-1])
+    if word.endswith("ing"):
+        stem = word[:-3]
+        out.append(stem)
+        if len(stem) > 2 and stem[-1] == stem[-2]:
+            out.append(stem[:-1])  # running → run
+        out.append(stem + "e")  # coming → come
+    if word.endswith("ed"):
+        stem = word[:-2]
+        out.append(stem)
+        if len(stem) > 2 and stem[-1] == stem[-2]:
+            out.append(stem[:-1])
+        out.append(stem + "e")  # said → say не покроет, ловится стоп-листом
+    if word.endswith("en"):
+        out.append(word[:-2])
+    return out
+
+
+def sub_candidates_ok(sub: dict[str, int], known_lemmas: set[str]) -> dict[str, int]:
+    """Фильтр суб-полосы: не формы известных лемм, не стоп-слова, ≥2 букв."""
+    out = {}
+    for word, rank in sub.items():
+        if word in SUB_STOP or len(word) < 2:
+            continue
+        # дедупликация: словоформа известной леммы (days→day, men→man нет —
+        # нерегулярные формы остаются, их мало и они самостоятельны в речи)
+        if any(stem in known_lemmas for stem in _stems(word) if stem != word):
+            continue
+        out[word] = rank
+    return out
+
+
 def main():
     sub_targets = sub_ranks()
+    ngsl_rank = read_ranks(RAW / "ngsl/NGSL_12_stats.csv")
+    spoken_rank = read_ranks(RAW / "ngsl/NGSL-Spoken_12_stats.csv")
+    # курация полосы (ревью M11 Б1): формы NGSL-лемм и джанк не попадают
+    sub_targets = sub_candidates_ok(sub_targets, set(ngsl_rank) | set(spoken_rank))
     # полный набор: NGSL+Spoken (target_words_full) + субтитровые (sub5000)
     targets = (RAW / "kaikki/target_words_full.txt").read_text(encoding="utf-8").split()
     targets += [w for w in sub_targets if w not in set(targets)]
-    ngsl_rank = read_ranks(RAW / "ngsl/NGSL_12_stats.csv")
-    spoken_rank = read_ranks(RAW / "ngsl/NGSL-Spoken_12_stats.csv")
     examples = load_examples()
     quotes = quotes_fallback_examples()
 
@@ -477,7 +543,12 @@ def main():
 
         rank_for_cefr = s_rank if is_spoken_only and s_rank else (sub_rank if is_sub else n_rank)
         for pos, trs in curated:
-            lvl = cefr_from_rank(rank_for_cefr)
+            # CEFR суб-полосы: базовые местоимения — A1, остальное — B2
+            # (полоса по построению реже NGSL-2809; ревью M11 М1)
+            if is_sub:
+                lvl = "A1" if lemma in SUB_A1 else "B2"
+            else:
+                lvl = cefr_from_rank(rank_for_cefr)
             tags = ["subtitles"] if is_sub else ["ngsl"]
             if not is_sub and s_rank is not None:
                 tags.append("spoken-top719")
@@ -536,10 +607,12 @@ def main():
             dump(f"words-{lo:04d}-{hi:04d}.json", chunk)
     if spoken_only_items:
         dump("words-spoken-only.json", spoken_only_items)
-    # Субтитровая полоса 2807–5000 (решение M3#5): имя фиксировано, состав —
-    # лучшие по частоте токены вне NGSL с переводом и примером (best effort)
+    # Субтитровая полоса 2807–5000 (решение M3#5): сплит по ~1200 в файл,
+    # имена стабильны, каждый ≤ ~300 КБ (ревью M11 М3)
     if sub_out:
-        dump("words-2807-5000.json", sub_out)
+        mid = (len(sub_out) + 1) // 2
+        dump("words-2810-4000.json", sub_out[:mid])
+        dump("words-4001-5000.json", sub_out[mid:])
 
     total = len(words)
     summary = [

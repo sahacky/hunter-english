@@ -160,7 +160,8 @@
     "replayTitle": "Mistake replay",
     "replayProgress": "task {{current}} of {{total}}",
     "replayFinished": "Mistakes replayed. The system approves.",
-    "replayEmpty": "No mistakes left."
+    "replayEmpty": "No mistakes left.",
+    "replayBackToSummary": "Back to summary"
   },
   "ranks": {
     "statusTitle": "Hunter status",

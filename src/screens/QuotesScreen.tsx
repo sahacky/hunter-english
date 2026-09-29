@@ -13,7 +13,7 @@ import {
   type QuoteItem,
   type QuoteTitle,
 } from '../content/quotes'
-import { createFirstCards, loadWordNotes } from '../content/words'
+import { createFirstCards, loadTopNgslLemmas, loadWordNotes } from '../content/words'
 import type { CardState, Note } from '../domain/srs/types'
 import type { ProgressRepository } from '../domain/progress'
 import { DexieProgressRepository } from '../data/progress-repository'
@@ -21,17 +21,7 @@ import { speak, stopSpeak } from '../lib/tts'
 import { showToast } from '../lib/toast'
 import { FeedbackPlate } from '../components/lesson/ExerciseView'
 
-/** Знание слова: лучшее состояние карточек заметок этой леммы. */
-type WordKnowledge = 'none' | 'learning' | 'known'
-
-interface Vocab {
-  /** лемма → заметки (переводы, «в колоду»). */
-  byWord: Map<string, Note[]>
-  /** note_id → лучшее состояние карточки (0 new, 1/3 learning, 2 review). */
-  states: Map<string, number>
-}
-
-function buildVocab(notes: Note[], cards: CardState[]): Vocab {
+function buildVocab(notes: Note[], cards: CardState[], top1000: Set<string>): Vocab {
   const byWord = new Map<string, Note[]>()
   for (const note of notes) {
     const list = byWord.get(note.en) ?? []
@@ -44,28 +34,72 @@ function buildVocab(notes: Note[], cards: CardState[]): Vocab {
     // «лучшее» = максимум состояния (2 Review выше Learning); suspended игнорируем
     if (!card.suspended && card.state > prev) states.set(card.note_id, card.state)
   }
-  return { byWord, states }
+  return { byWord, states, top1000 }
+}
+
+/** Знание слова: лучшее состояние карточек заметок этой леммы. */
+type WordKnowledge = 'absent' | 'none' | 'learning' | 'known'
+
+interface Vocab {
+  /** лемма → заметки (переводы, «в колоду»). */
+  byWord: Map<string, Note[]>
+  /** note_id → лучшее состояние карточки (0 new, 1/3 learning, 2 review). */
+  states: Map<string, number>
+  /** Леммы топ-1000 NGSL (для cloze, решение M11#4). */
+  top1000: Set<string>
+}
+
+/** Кандидаты-леммы токена: точное совпадение + простые словоформы (ревью M11 М4). */
+function lookupStems(vocab: Vocab, word: string): string | null {
+  const candidates = [word]
+  if (word.endsWith('ies')) candidates.push(`${word.slice(0, -3)}y`)
+  if (word.endsWith('es')) candidates.push(word.slice(0, -2))
+  if (word.endsWith('s')) candidates.push(word.slice(0, -1))
+  if (word.endsWith('ing')) {
+    const stem = word.slice(0, -3)
+    candidates.push(stem)
+    if (stem.length > 2 && stem.at(-1) === stem.at(-2)) candidates.push(stem.slice(0, -1))
+    candidates.push(`${stem}e`)
+  }
+  if (word.endsWith('ed')) {
+    const stem = word.slice(0, -2)
+    candidates.push(stem)
+    if (stem.length > 2 && stem.at(-1) === stem.at(-2)) candidates.push(stem.slice(0, -1))
+    candidates.push(`${stem}e`)
+  }
+  for (const candidate of candidates) {
+    if (vocab.byWord.has(candidate)) return candidate
+  }
+  return null
 }
 
 function wordKnowledge(vocab: Vocab, word: string): WordKnowledge {
-  const notes = vocab.byWord.get(word)
-  if (!notes) return 'none' // слова нет в датасете — считаем незнакомым-нераскрашенным
+  const lemma = lookupStems(vocab, word)
+  if (!lemma) return 'absent' // нет в датасете (имена/редкие) — не считаем незнакомым
+  const notes = vocab.byWord.get(lemma) ?? []
   let best: WordKnowledge = 'none'
   for (const note of notes) {
     const state = vocab.states.get(note.id)
     if (state === 2) return 'known'
     if (state === 1 || state === 3) best = 'learning'
-    else if (state === undefined && best === 'none') best = 'none'
   }
   return best
 }
 
-/** Доля знакомых слов цитаты (для фильтра «понятные сейчас», ≥90% — канон). */
+/** Доля знакомых слов цитаты (для фильтра «понятные сейчас», ≥90% — канон).
+ * Знаменатель — только слова датасета: имена и прочие отсутствующие
+ * не занижают фильтр (ревью M11 М4). */
 export function quoteUnderstanding(vocab: Vocab, quote: QuoteItem): number {
   const words = quoteWords(quote.text)
-  if (words.length === 0) return 0
-  const known = words.filter((word) => wordKnowledge(vocab, word) === 'known').length
-  return known / words.length
+  let total = 0
+  let known = 0
+  for (const word of words) {
+    const knowledge = wordKnowledge(vocab, word)
+    if (knowledge === 'absent') continue
+    total += 1
+    if (knowledge === 'known') known += 1
+  }
+  return total === 0 ? 0 : known / total
 }
 
 /* ============================ /#/quotes — галерея ============================ */
@@ -84,14 +118,15 @@ export function QuotesScreen({ repo: repoProp }: { repo?: ProgressRepository }) 
     let alive = true
     void (async () => {
       try {
-        const [loadedTitles, notes, cards] = await Promise.all([
+        const [loadedTitles, notes, cardsList, top1000] = await Promise.all([
           loadQuoteTitles(),
           loadWordNotes(),
           repo.getAllCards(),
+          loadTopNgslLemmas(),
         ])
         if (alive) {
           setTitles(loadedTitles)
-          setVocab(buildVocab(notes, cards))
+          setVocab(buildVocab(notes, cardsList, top1000))
         }
       } catch {
         if (alive) setTitles([])
@@ -233,6 +268,11 @@ export function QuoteScreen({ repo: repoProp }: { repo?: ProgressRepository }) {
 
   useEffect(() => {
     let alive = true
+    // смена :id сбрасывает прошлое состояние (404/цитата) — ревью M11 м1
+    setNotFound(false)
+    setState(null)
+    setPopover(null)
+    setCloze(null)
     void (async () => {
       try {
         const quote = await findQuote(params.id ?? '')
@@ -240,12 +280,13 @@ export function QuoteScreen({ repo: repoProp }: { repo?: ProgressRepository }) {
           if (alive) setNotFound(true)
           return
         }
-        const [notes, cards, understood] = await Promise.all([
+        const [notes, cards, understood, top1000] = await Promise.all([
           loadWordNotes(),
           repo.getAllCards(),
           repo.getQuoteMark(quote.id),
+          loadTopNgslLemmas(),
         ])
-        if (alive) setState({ quote, vocab: buildVocab(notes, cards), understood })
+        if (alive) setState({ quote, vocab: buildVocab(notes, cards, top1000), understood })
       } catch {
         if (alive) setNotFound(true)
       }
@@ -276,10 +317,17 @@ export function QuoteScreen({ repo: repoProp }: { repo?: ProgressRepository }) {
   const startCloze = useCallback(() => {
     if (!state) return
     const words = quoteWords(state.quote.text)
-    // пропускаем слово, которое есть в датасете (есть чему учить)
-    const candidate = words.find((word) => state.vocab.byWord.has(word))
+    // кандидат — слово из топ-1000 NGSL (решение M11#4), фолбэк — любое из датасета;
+    // ответ — сам токен цитаты (без притяжательного 's)
+    const inDataset = (word: string) => lookupStems(state.vocab, word) !== null
+    const candidate =
+      words.find((word) => {
+        const lemma = lookupStems(state.vocab, word)
+        return lemma !== null && state.vocab.top1000.has(lemma)
+      }) ?? words.find(inDataset)
     if (!candidate) return
-    setCloze({ word: candidate, value: '', result: null })
+    const answer = candidate.endsWith("'s") ? candidate.slice(0, -2) : candidate
+    setCloze({ word: answer, value: '', result: null })
   }, [state])
 
   if (notFound) {
@@ -300,7 +348,9 @@ export function QuoteScreen({ repo: repoProp }: { repo?: ProgressRepository }) {
 
   const { quote, vocab } = state
   const segments = splitSegments(quote.text)
-  const popoverNotes = popover ? (vocab.byWord.get(popover) ?? []) : []
+  // лемма по токену через стем-кандидатов (формы: dreams → dream — ревью M11 М4)
+  const popoverLemma = popover ? lookupStems(vocab, popover) : null
+  const popoverNotes = popoverLemma ? (vocab.byWord.get(popoverLemma) ?? []) : []
   const inDeck = popoverNotes.some((note) => vocab.states.has(note.id))
 
   const addToDeck = async () => {

@@ -208,7 +208,8 @@
     "replayTitle": "Проход по ошибкам",
     "replayProgress": "задание {{current}} из {{total}}",
     "replayFinished": "Ошибочные задания пройдены. Система довольна.",
-    "replayEmpty": "Ошибок не осталось."
+    "replayEmpty": "Ошибок не осталось.",
+    "replayBackToSummary": "К финалу урока"
   },
   "ranks": {
     "statusTitle": "Статус охотника",

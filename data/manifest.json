@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-29T07:20:14Z",
+  "generated_at": "2026-09-29T07:42:10Z",
   "files": [
     {
       "path": "lessons/exercises-e.json",
@@ -192,11 +192,18 @@
       "sha256": "ae75c86ee455b43117add8527fe51fd3cef070778c96ff79c43ed9a883c5007f"
     },
     {
-      "path": "words/words-2807-5000.json",
+      "path": "words/words-2810-4000.json",
       "kind": "words",
       "schema_version": 1,
-      "items": 1141,
-      "sha256": "8b4c86b86c74c2bc5c64d13ae8c360f0859f5d10f0a424d21d322fe5d45c6182"
+      "items": 442,
+      "sha256": "98c9ef743fc28211441c591911508c03c91fd07048d18d45f26891215ebafb31"
+    },
+    {
+      "path": "words/words-4001-5000.json",
+      "kind": "words",
+      "schema_version": 1,
+      "items": 441,
+      "sha256": "ff7b4b33fd8578e23e7acc84344f8d12bd5ba7420d083130c728c7c7651d689f"
     },
     {
       "path": "words/words-spoken-only.json",

@@ -75,6 +75,67 @@ describe('QuotesScreen /#/quotes', () => {
       .filter((a) => a.getAttribute('href')?.startsWith('#/quotes/q-'))
     expect(links.length).toBeGreaterThan(0)
   })
+
+  it('?title= несуществующий → общая галерея (не 404, решение M11)', async () => {
+    renderAt('#/quotes?title=no-such-title')
+    expect(await screen.findByText('Цитаты')).toBeInTheDocument()
+    expect(screen.getByText('Supernatural')).toBeInTheDocument()
+  })
+
+  it('понимание: карточки в Review + морфология (dreams→dream, имена не в знаменателе)', async () => {
+    // находим цитату со словом-формой (напр. dreams) и леммой в датасете
+    const notes = await loadWordNotes()
+    const byWord = new Map<string, typeof notes>()
+    for (const note of notes) {
+      const list = byWord.get(note.en) ?? []
+      list.push(note)
+      byWord.set(note.en, list)
+    }
+    let quote: import('../content/quotes').QuoteItem | null = null
+    let lemma = ''
+    outer: for (const { quotes } of await loadQuoteTitles()) {
+      for (const q of quotes) {
+        for (const word of quoteWords(q.text)) {
+          const stem = word.endsWith('s') ? word.slice(0, -1) : word
+          if (word.length > 3 && word.endsWith('s') && byWord.has(stem) && !byWord.has(word)) {
+            quote = q
+            lemma = stem
+            break outer
+          }
+        }
+      }
+    }
+    if (!quote) return // в данных нет подходящей пары — тест пропускается
+
+    // создаём карточку леммы в Review (state=2)
+    const note = byWord.get(lemma)![0]
+    const { createFirstCards } = await import('../content/words')
+    const [card] = createFirstCards([note], new Date())
+    await repo.saveAnswer(
+      { ...card, state: 2, stability: 10, difficulty: 5, reps: 2, scheduled_days: 10 },
+      {
+        id: 'test-log',
+        card_id: card.card_id,
+        rating: 3,
+        state: 0,
+        state_after: 2,
+        elapsed_days: 0,
+        scheduled_days: 10,
+        duration_ms: 0,
+        client: 'web',
+        session_id: null,
+        reviewed_at: new Date().toISOString(),
+      },
+    )
+
+    renderAt(`#/quotes/${quote.id}`)
+    // форма окрашена как известная (стем-резолв dreams→dream)
+    await screen.findByText('Показать перевод')
+    const knownWord = screen
+      .getAllByRole('button')
+      .find((b) => b.classList.contains('quote-word') && b.classList.contains('quote-word-known'))
+    expect(knownWord).toBeInTheDocument()
+  })
 })
 
 describe('QuoteScreen /#/quotes/:id', () => {
