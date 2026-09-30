@@ -3563,6 +3563,222 @@
   "confidence": "verbatim (parallel research) — needs source check"
  },
  {
+  "title": "Black Mirror",
+  "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+  "season_episode": "S01E03 «The Entire History of You»",
+  "speaker": "Ffion",
+  "text": "Not everything that isn't true is a lie.",
+  "translation_ru": "Не всё, что неправда, — ложь.",
+  "grammar_tags": [
+   "Double Negative",
+   "Logic"
+  ],
+  "est_rank": "S",
+  "confidence": "verbatim (Wikiquote)",
+  "note": "⚠ сверить с дубляжом"
+ },
+ {
+  "title": "Black Mirror",
+  "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+  "season_episode": "S04E06 «Black Museum» (флешбэк Уайт-Кристмас)",
+  "speaker": "Matt",
+  "text": "Most people are too easy to read.",
+  "translation_ru": "Большинство людей читаются слишком легко.",
+  "grammar_tags": [
+   "too...to"
+  ],
+  "est_rank": "B",
+  "confidence": "verbatim (Wikiquote)",
+  "note": "⚠ сверить с дубляжом"
+ },
+ {
+  "title": "Black Mirror",
+  "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+  "season_episode": "S04E06 «Black Museum» (флешбэк Уайт-Кристмас)",
+  "speaker": "Matt",
+  "text": "There's nothing more tantalizing than that.",
+  "translation_ru": "Нет ничего более дразнящего, чем это.",
+  "grammar_tags": [
+   "Comparative"
+  ],
+  "est_rank": "S",
+  "confidence": "verbatim (Wikiquote)",
+  "note": "⚠ сверить с дубляжом"
+ },
+ {
+  "title": "Black Mirror",
+  "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+  "season_episode": "S03E02 «Playtest»",
+  "speaker": "Shou Saito",
+  "text": "The incoming signal must have interfered with the upload sequence.",
+  "translation_ru": "Входящий сигнал, должно быть, помешал последовательности загрузки.",
+  "grammar_tags": [
+   "Modal Perfect"
+  ],
+  "est_rank": "S",
+  "confidence": "verbatim (Wikiquote)",
+  "note": "⚠ сверить с дубляжом"
+ },
+ {
+  "title": "Black Mirror",
+  "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+  "season_episode": "S03E02 «Playtest»",
+  "speaker": "Shou Saito",
+  "text": "Every synapse in his brain lit up at once.",
+  "translation_ru": "Каждый синапс в его мозге вспыхнул одновременно.",
+  "grammar_tags": [
+   "Past Simple"
+  ],
+  "est_rank": "A",
+  "confidence": "verbatim (Wikiquote)",
+  "note": "⚠ сверить с дубляжом"
+ },
+ {
+  "title": "Black Mirror",
+  "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+  "season_episode": "S04E01 «USS Callister»",
+  "speaker": "Daly",
+  "text": "Killing in cold blood is against Space Fleet code.",
+  "translation_ru": "Убийство хладнокровно противоречит кодексу Космического флота.",
+  "grammar_tags": [
+   "Gerund Subject",
+   "Idiom"
+  ],
+  "est_rank": "A",
+  "confidence": "verbatim (Wikiquote)",
+  "note": "⚠ сверить с дубляжом"
+ },
+ {
+  "title": "Black Mirror",
+  "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+  "season_episode": "S04E01 «USS Callister»",
+  "speaker": "Daly",
+  "text": "I tried the carrot, now meet the stick.",
+  "translation_ru": "Я пробовал пряник — теперь встречай кнут.",
+  "grammar_tags": [
+   "Idiom",
+   "Imperative"
+  ],
+  "est_rank": "B",
+  "confidence": "verbatim (Wikiquote)",
+  "note": "⚠ сверить с дубляжом"
+ },
+ {
+  "title": "Black Mirror",
+  "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+  "season_episode": "S04E01 «USS Callister»",
+  "speaker": "Walton",
+  "text": "I take my hat off to Daly.",
+  "translation_ru": "Снимаю шляпу перед Дейли.",
+  "grammar_tags": [
+   "Idiom"
+  ],
+  "est_rank": "B",
+  "confidence": "verbatim (Wikiquote)",
+  "note": "⚠ сверить с дубляжом"
+ },
+ {
+  "title": "Black Mirror",
+  "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+  "season_episode": "S07E05 «Plaything»",
+  "speaker": "Cameron Walker",
+  "text": "It's always been our downfall, the human operating system.",
+  "translation_ru": "Это всегда было нашей погибелью — человеческая операционная система.",
+  "grammar_tags": [
+   "Present Perfect",
+   "Apposition"
+  ],
+  "est_rank": "A",
+  "confidence": "verbatim (Wikiquote)",
+  "note": "⚠ сверить с дубляжом"
+ },
+ {
+  "title": "Black Mirror",
+  "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+  "season_episode": "S07E05 «Plaything»",
+  "speaker": "Cameron Walker",
+  "text": "They'd be at the mercy of God knows who.",
+  "translation_ru": "Они окажутся во власти кого попало.",
+  "grammar_tags": [
+   "Conditional",
+   "Idiom"
+  ],
+  "est_rank": "A",
+  "confidence": "verbatim (Wikiquote)",
+  "note": "⚠ сверить с дубляжом"
+ },
+ {
+  "title": "Black Mirror",
+  "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+  "season_episode": "S02E01 «Be Right Back»",
+  "speaker": "Martha",
+  "text": "You're just a few ripples of you.",
+  "translation_ru": "Ты — всего лишь несколько рябей его самого.",
+  "grammar_tags": [
+   "Metaphor"
+  ],
+  "est_rank": "S",
+  "confidence": "verbatim (Wikiquote)",
+  "note": "⚠ сверить с дубляжом"
+ },
+ {
+  "title": "Black Mirror",
+  "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+  "season_episode": "S03H «Hated in the Nation»",
+  "speaker": "Susan",
+  "text": "It turned out a lot of my friends didn't care for honesty.",
+  "translation_ru": "Оказалось, многим из моих друзей честность была не нужна.",
+  "grammar_tags": [
+   "Phrasal turn out"
+  ],
+  "est_rank": "B",
+  "confidence": "verbatim (Wikiquote)",
+  "note": "⚠ сверить с дубляжом"
+ },
+ {
+  "title": "Black Mirror",
+  "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+  "season_episode": "S04E06 «Black Museum»",
+  "speaker": "Rolo Haynes",
+  "text": "But persevere and it becomes addictive.",
+  "translation_ru": "Но упорствуй — и это станет зависимостью.",
+  "grammar_tags": [
+   "Imperative + and"
+  ],
+  "est_rank": "A",
+  "confidence": "verbatim (Wikiquote)",
+  "note": "⚠ сверить с дубляжом"
+ },
+ {
+  "title": "Black Mirror",
+  "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+  "season_episode": "S01E02 «Fifteen Million Merits»",
+  "speaker": "Bing",
+  "text": "Fake fodder, it's all that we can stomach.",
+  "translation_ru": "Фальшивая жвачка — всё, что мы можем переварить.",
+  "grammar_tags": [
+   "Cleft-like"
+  ],
+  "est_rank": "S",
+  "confidence": "verbatim (Wikiquote)",
+  "note": "⚠ сверить с дубляжом"
+ },
+ {
+  "title": "Black Mirror",
+  "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+  "season_episode": "S01E02 «Fifteen Million Merits»",
+  "speaker": "Bing",
+  "text": "Show us something real and free and beautiful.",
+  "translation_ru": "Покажите нам что-то настоящее, свободное и прекрасное.",
+  "grammar_tags": [
+   "Imperative",
+   "Adjectives"
+  ],
+  "est_rank": "B",
+  "confidence": "verbatim (Wikiquote)",
+  "note": "⚠ сверить с дубляжом"
+ },
+ {
   "title": "Lord of the Rings",
   "source_url": null,
   "season_episode": "Gandalf",
@@ -3995,6 +4211,123 @@
   "confidence": "verbatim (parallel research) — needs source check"
  },
  {
+  "title": "Berserk",
+  "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+  "season_episode": "аниме 1997: вступление",
+  "speaker": "Narrator",
+  "text": "It was much too big to be called a sword.",
+  "translation_ru": "Он был слишком велик, чтобы называться мечом.",
+  "grammar_tags": [
+   "too...to",
+   "Passive Infinitive"
+  ],
+  "est_rank": "B",
+  "confidence": "verbatim (Wikiquote)",
+  "note": "⚠ сверить с дубляжом"
+ },
+ {
+  "title": "Berserk",
+  "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+  "season_episode": "аниме 1997",
+  "speaker": "(не указан на Wikiquote)",
+  "text": "If you're always worried about crushing the ants beneath you, you won't be able to walk.",
+  "translation_ru": "Если ты вечно боишься раздавить муравьёв под ногами, ты не сможешь ходить.",
+  "grammar_tags": [
+   "First Conditional",
+   "Gerund"
+  ],
+  "est_rank": "A",
+  "confidence": "verbatim (Wikiquote)",
+  "note": "⚠ сверить с дубляжом"
+ },
+ {
+  "title": "Berserk",
+  "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+  "season_episode": "аниме 1997",
+  "speaker": "(не указан на Wikiquote)",
+  "text": "You have the strongest armor, because you are the weakest!",
+  "translation_ru": "У тебя сильнейшая броня, потому что ты слабейший!",
+  "grammar_tags": [
+   "Superlative"
+  ],
+  "est_rank": "A",
+  "confidence": "verbatim (Wikiquote)",
+  "note": "⚠ сверить с дубляжом"
+ },
+ {
+  "title": "Berserk",
+  "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+  "season_episode": "аниме 1997",
+  "speaker": "(не указан на Wikiquote)",
+  "text": "Couldn't you settle for a smile, and a fond farewell?",
+  "translation_ru": "Разве тебя не устроили бы улыбка и тёплое прощание?",
+  "grammar_tags": [
+   "Modal Question",
+   "Phrasal settle for"
+  ],
+  "est_rank": "S",
+  "confidence": "verbatim (Wikiquote)",
+  "note": "⚠ сверить с дубляжом"
+ },
+ {
+  "title": "Berserk",
+  "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+  "season_episode": "аниме 1997",
+  "speaker": "Casca",
+  "text": "I was too foolish and stubborn to notice.",
+  "translation_ru": "Я был слишком глуп и упрям, чтобы заметить.",
+  "grammar_tags": [
+   "too...to"
+  ],
+  "est_rank": "B",
+  "confidence": "verbatim (Wikiquote)",
+  "note": "⚠ сверить с дубляжом"
+ },
+ {
+  "title": "Berserk",
+  "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+  "season_episode": "аниме 1997: вступление",
+  "speaker": "Narrator",
+  "text": "When will man learn a way to control his soul?",
+  "translation_ru": "Когда человек научится управлять своей душой?",
+  "grammar_tags": [
+   "Question"
+  ],
+  "est_rank": "S",
+  "confidence": "verbatim (Wikiquote)",
+  "note": "⚠ сверить с дубляжом"
+ },
+ {
+  "title": "Berserk",
+  "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+  "season_episode": "аниме 1997: вступление",
+  "speaker": "Narrator",
+  "text": "In this world, is man ever able to possess anything more solid, than a dream?",
+  "translation_ru": "Способен ли человек в этом мире обладать чем-то более прочным, чем мечта?",
+  "grammar_tags": [
+   "Question",
+   "Comparative"
+  ],
+  "est_rank": "S",
+  "confidence": "verbatim (Wikiquote)",
+  "note": "⚠ сверить с дубляжом"
+ },
+ {
+  "title": "Berserk",
+  "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+  "season_episode": "аниме 1997",
+  "speaker": "(не указан на Wikiquote)",
+  "text": "Even if we painstakingly piece together something lost, it doesn't mean things will ever go back to how they were.",
+  "translation_ru": "Даже если мы кропотливо соберём утраченное, это не значит, что всё вернётся, как было.",
+  "grammar_tags": [
+   "Conditional",
+   "Phrasal piece together"
+  ],
+  "est_rank": "S",
+  "confidence": "verbatim (Wikiquote)",
+  "note": "⚠ сверить с дубляжом"
+ },
+ {
   "title": "Attack on Titan",
   "source_url": null,
   "season_episode": "Armin (1.01, пролог)",
@@ -4191,6 +4524,21 @@
   "confidence": "verbatim (parallel research) — needs source check"
  },
  {
+  "title": "Jujutsu Kaisen",
+  "source_url": "https://screenrant.com/best-jujutsu-kaisen-quotes/",
+  "season_episode": "аниме S2 «Hidden Inventory»",
+  "speaker": "Suguru Geto",
+  "text": "Are you the strongest because you're Satoru Gojo, or are you Satoru Gojo because you're the strongest?",
+  "translation_ru": "Ты сильнейший, потому что ты Сатору Годзё, — или ты Сатору Годзё, потому что ты сильнейший?",
+  "grammar_tags": [
+   "Chiasmus",
+   "Question"
+  ],
+  "est_rank": "S",
+  "confidence": "статья Screen Rant; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
+  "note": "⚠ сверить с дубляжом"
+ },
+ {
   "title": "Solo Leveling",
   "source_url": null,
   "season_episode": "Jinwoo (вебтун гл. 148, эпиграф страницы фан-вики)",
@@ -4280,5 +4628,19 @@
   "est_rank": "D",
   "auto_vocab": null,
   "confidence": "verbatim (parallel research) — needs source check"
+ },
+ {
+  "title": "Solo Leveling",
+  "source_url": "https://screenrant.com/solo-leveling-best-jinwoo-quotes/",
+  "season_episode": "аниме S1",
+  "speaker": "Sung Jinwoo",
+  "text": "I alone level up.",
+  "translation_ru": "Только я повышаю уровень.",
+  "grammar_tags": [
+   "Word Order"
+  ],
+  "est_rank": "A",
+  "confidence": "статья Screen Rant; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
+  "note": "⚠ сверить с дубляжом"
  }
 ]

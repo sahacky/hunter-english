@@ -383,6 +383,297 @@
    },
    "confidence": "verbatim (parallel research) — needs source check",
    "link_playphrase": "https://www.playphrase.me/#/search?q=It%20becomes%20honey.%20Kids%20love%20honey"
+  },
+  {
+   "id": "q-black-mirror-0021",
+   "title": "Black Mirror",
+   "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+   "season_episode": "S01E03 «The Entire History of You»",
+   "speaker": "Ffion",
+   "text": "Not everything that isn't true is a lie.",
+   "translation_ru": "Не всё, что неправда, — ложь.",
+   "grammar_tags": [
+    "Double Negative",
+    "Logic"
+   ],
+   "est_rank": "S",
+   "auto_vocab": {
+    "top1000": 0.75
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "⚠ сверить с дубляжом",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Not%20everything%20that%20isn%27t%20true%20is%20a%20lie."
+  },
+  {
+   "id": "q-black-mirror-0022",
+   "title": "Black Mirror",
+   "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+   "season_episode": "S04E06 «Black Museum» (флешбэк Уайт-Кристмас)",
+   "speaker": "Matt",
+   "text": "Most people are too easy to read.",
+   "translation_ru": "Большинство людей читаются слишком легко.",
+   "grammar_tags": [
+    "too...to"
+   ],
+   "est_rank": "B",
+   "auto_vocab": {
+    "top1000": 0.86
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "⚠ сверить с дубляжом",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Most%20people%20are%20too%20easy%20to%20read."
+  },
+  {
+   "id": "q-black-mirror-0023",
+   "title": "Black Mirror",
+   "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+   "season_episode": "S04E06 «Black Museum» (флешбэк Уайт-Кристмас)",
+   "speaker": "Matt",
+   "text": "There's nothing more tantalizing than that.",
+   "translation_ru": "Нет ничего более дразнящего, чем это.",
+   "grammar_tags": [
+    "Comparative"
+   ],
+   "est_rank": "S",
+   "auto_vocab": {
+    "top1000": 0.67
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "⚠ сверить с дубляжом",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=There%27s%20nothing%20more%20tantalizing%20than%20that."
+  },
+  {
+   "id": "q-black-mirror-0024",
+   "title": "Black Mirror",
+   "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+   "season_episode": "S03E02 «Playtest»",
+   "speaker": "Shou Saito",
+   "text": "The incoming signal must have interfered with the upload sequence.",
+   "translation_ru": "Входящий сигнал, должно быть, помешал последовательности загрузки.",
+   "grammar_tags": [
+    "Modal Perfect"
+   ],
+   "est_rank": "S",
+   "auto_vocab": {
+    "top1000": 0.5
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "⚠ сверить с дубляжом",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=The%20incoming%20signal%20must%20have%20interfered%20with%20the%20upload%20sequence."
+  },
+  {
+   "id": "q-black-mirror-0025",
+   "title": "Black Mirror",
+   "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+   "season_episode": "S03E02 «Playtest»",
+   "speaker": "Shou Saito",
+   "text": "Every synapse in his brain lit up at once.",
+   "translation_ru": "Каждый синапс в его мозге вспыхнул одновременно.",
+   "grammar_tags": [
+    "Past Simple"
+   ],
+   "est_rank": "A",
+   "auto_vocab": {
+    "top1000": 0.56
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "⚠ сверить с дубляжом",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Every%20synapse%20in%20his%20brain%20lit%20up%20at%20once."
+  },
+  {
+   "id": "q-black-mirror-0026",
+   "title": "Black Mirror",
+   "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+   "season_episode": "S04E01 «USS Callister»",
+   "speaker": "Daly",
+   "text": "Killing in cold blood is against Space Fleet code.",
+   "translation_ru": "Убийство хладнокровно противоречит кодексу Космического флота.",
+   "grammar_tags": [
+    "Gerund Subject",
+    "Idiom"
+   ],
+   "est_rank": "A",
+   "auto_vocab": {
+    "top1000": 0.44
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "⚠ сверить с дубляжом",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Killing%20in%20cold%20blood%20is%20against%20Space%20Fleet%20code."
+  },
+  {
+   "id": "q-black-mirror-0027",
+   "title": "Black Mirror",
+   "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+   "season_episode": "S04E01 «USS Callister»",
+   "speaker": "Daly",
+   "text": "I tried the carrot, now meet the stick.",
+   "translation_ru": "Я пробовал пряник — теперь встречай кнут.",
+   "grammar_tags": [
+    "Idiom",
+    "Imperative"
+   ],
+   "est_rank": "B",
+   "auto_vocab": {
+    "top1000": 0.62
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "⚠ сверить с дубляжом",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20tried%20the%20carrot%2C%20now%20meet%20the%20stick."
+  },
+  {
+   "id": "q-black-mirror-0028",
+   "title": "Black Mirror",
+   "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+   "season_episode": "S04E01 «USS Callister»",
+   "speaker": "Walton",
+   "text": "I take my hat off to Daly.",
+   "translation_ru": "Снимаю шляпу перед Дейли.",
+   "grammar_tags": [
+    "Idiom"
+   ],
+   "est_rank": "B",
+   "auto_vocab": {
+    "top1000": 0.57
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "⚠ сверить с дубляжом",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20take%20my%20hat%20off%20to%20Daly."
+  },
+  {
+   "id": "q-black-mirror-0029",
+   "title": "Black Mirror",
+   "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+   "season_episode": "S07E05 «Plaything»",
+   "speaker": "Cameron Walker",
+   "text": "It's always been our downfall, the human operating system.",
+   "translation_ru": "Это всегда было нашей погибелью — человеческая операционная система.",
+   "grammar_tags": [
+    "Present Perfect",
+    "Apposition"
+   ],
+   "est_rank": "A",
+   "auto_vocab": {
+    "top1000": 0.44
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "⚠ сверить с дубляжом",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=It%27s%20always%20been%20our%20downfall%2C%20the%20human%20operating%20system."
+  },
+  {
+   "id": "q-black-mirror-0030",
+   "title": "Black Mirror",
+   "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+   "season_episode": "S07E05 «Plaything»",
+   "speaker": "Cameron Walker",
+   "text": "They'd be at the mercy of God knows who.",
+   "translation_ru": "Они окажутся во власти кого попало.",
+   "grammar_tags": [
+    "Conditional",
+    "Idiom"
+   ],
+   "est_rank": "A",
+   "auto_vocab": {
+    "top1000": 0.56
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "⚠ сверить с дубляжом",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=They%27d%20be%20at%20the%20mercy%20of%20God%20knows%20who."
+  },
+  {
+   "id": "q-black-mirror-0031",
+   "title": "Black Mirror",
+   "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+   "season_episode": "S02E01 «Be Right Back»",
+   "speaker": "Martha",
+   "text": "You're just a few ripples of you.",
+   "translation_ru": "Ты — всего лишь несколько рябей его самого.",
+   "grammar_tags": [
+    "Metaphor"
+   ],
+   "est_rank": "S",
+   "auto_vocab": {
+    "top1000": 0.71
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "⚠ сверить с дубляжом",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=You%27re%20just%20a%20few%20ripples%20of%20you."
+  },
+  {
+   "id": "q-black-mirror-0032",
+   "title": "Black Mirror",
+   "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+   "season_episode": "S03H «Hated in the Nation»",
+   "speaker": "Susan",
+   "text": "It turned out a lot of my friends didn't care for honesty.",
+   "translation_ru": "Оказалось, многим из моих друзей честность была не нужна.",
+   "grammar_tags": [
+    "Phrasal turn out"
+   ],
+   "est_rank": "B",
+   "auto_vocab": {
+    "top1000": 0.58
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "⚠ сверить с дубляжом",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=It%20turned%20out%20a%20lot%20of%20my%20friends%20didn%27t%20care%20for%20honesty."
+  },
+  {
+   "id": "q-black-mirror-0033",
+   "title": "Black Mirror",
+   "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+   "season_episode": "S04E06 «Black Museum»",
+   "speaker": "Rolo Haynes",
+   "text": "But persevere and it becomes addictive.",
+   "translation_ru": "Но упорствуй — и это станет зависимостью.",
+   "grammar_tags": [
+    "Imperative + and"
+   ],
+   "est_rank": "A",
+   "auto_vocab": {
+    "top1000": 0.5
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "⚠ сверить с дубляжом",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=But%20persevere%20and%20it%20becomes%20addictive."
+  },
+  {
+   "id": "q-black-mirror-0034",
+   "title": "Black Mirror",
+   "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+   "season_episode": "S01E02 «Fifteen Million Merits»",
+   "speaker": "Bing",
+   "text": "Fake fodder, it's all that we can stomach.",
+   "translation_ru": "Фальшивая жвачка — всё, что мы можем переварить.",
+   "grammar_tags": [
+    "Cleft-like"
+   ],
+   "est_rank": "S",
+   "auto_vocab": {
+    "top1000": 0.5
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "⚠ сверить с дубляжом",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Fake%20fodder%2C%20it%27s%20all%20that%20we%20can%20stomach."
+  },
+  {
+   "id": "q-black-mirror-0035",
+   "title": "Black Mirror",
+   "source_url": "https://en.wikiquote.org/wiki/Black_Mirror",
+   "season_episode": "S01E02 «Fifteen Million Merits»",
+   "speaker": "Bing",
+   "text": "Show us something real and free and beautiful.",
+   "translation_ru": "Покажите нам что-то настоящее, свободное и прекрасное.",
+   "grammar_tags": [
+    "Imperative",
+    "Adjectives"
+   ],
+   "est_rank": "B",
+   "auto_vocab": {
+    "top1000": 0.88
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "⚠ сверить с дубляжом",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Show%20us%20something%20real%20and%20free%20and%20beautiful."
   }
  ]
 }

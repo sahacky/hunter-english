@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-30T08:27:07Z",
+  "generated_at": "2026-09-30T20:09:14Z",
   "files": [
     {
       "path": "lessons/exercises-a.json",
@@ -188,15 +188,15 @@
       "path": "quotes/berserk.json",
       "kind": "quotes",
       "schema_version": 1,
-      "items": 19,
-      "sha256": "a4e550f9e1fda4012d87bda3521bf726401b8bb656bfcf3bcbb8a13de71ad7ce"
+      "items": 27,
+      "sha256": "5de1524c148c6f87abd0342ca97c2b141c0190ed7932dc27b201874105b365eb"
     },
     {
       "path": "quotes/black-mirror.json",
       "kind": "quotes",
       "schema_version": 1,
-      "items": 20,
-      "sha256": "47635d28c66a21c791594fad2d488a8087b755850fd1de7332217187ddc8b695"
+      "items": 35,
+      "sha256": "6142b121fd2c51b4cb54d55936f2bb01d7f98621080a9f5dc279b5fdfabf4e1e"
     },
     {
       "path": "quotes/breaking-bad.json",
@@ -230,8 +230,8 @@
       "path": "quotes/jujutsu-kaisen.json",
       "kind": "quotes",
       "schema_version": 1,
-      "items": 16,
-      "sha256": "ba6e8615a37377905e9f9ef014e13062d528fc8955b256c48b7f5c038867484a"
+      "items": 17,
+      "sha256": "57f1f8f8afe81b081a5a851ff8cf8a57e14ad2677d8d4fb635f2eb9fb72befac"
     },
     {
       "path": "quotes/lord-of-the-rings.json",
@@ -251,8 +251,8 @@
       "path": "quotes/solo-leveling.json",
       "kind": "quotes",
       "schema_version": 1,
-      "items": 14,
-      "sha256": "1d9669636da3fdbcf5b0f5d5720eadff11360fb1839e757c7f0c4dcdef820f17"
+      "items": 15,
+      "sha256": "9b87ff4d39b3710f2f003c9806fb4a7d56898be41e61758df06f68122a3aa0bf"
     },
     {
       "path": "quotes/star-wars.json",

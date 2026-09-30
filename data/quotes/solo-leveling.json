@@ -271,6 +271,25 @@
    },
    "confidence": "verbatim (parallel research) — needs source check",
    "link_playphrase": "https://www.playphrase.me/#/search?q=Don%27t%20worry%20about%20me.%20I%27m%20stronger%20than%20yesterday"
+  },
+  {
+   "id": "q-solo-leveling-0015",
+   "title": "Solo Leveling",
+   "source_url": "https://screenrant.com/solo-leveling-best-jinwoo-quotes/",
+   "season_episode": "аниме S1",
+   "speaker": "Sung Jinwoo",
+   "text": "I alone level up.",
+   "translation_ru": "Только я повышаю уровень.",
+   "grammar_tags": [
+    "Word Order"
+   ],
+   "est_rank": "A",
+   "auto_vocab": {
+    "top1000": 1.0
+   },
+   "confidence": "статья Screen Rant; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
+   "note": "⚠ сверить с дубляжом",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20alone%20level%20up."
   }
  ]
 }
