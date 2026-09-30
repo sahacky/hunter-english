@@ -219,7 +219,7 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
       to: 'S',
       phrasePrefix: 'ph-a-',
       wordsTarget: 4000,
-      lessonsOkAt: 11,
+      lessonsOkAt: 22,
       wordsMaxRank: 2809,
     },
   }

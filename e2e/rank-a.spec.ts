@@ -28,6 +28,25 @@ test('lesson A-09 third conditional opens', async ({ page }) => {
 test('gates A-S: intro with rank A checklist (plan://M16#16.3)', async ({ page }) => {
   await page.goto('/#/gates/A-S')
   await expect(page.getByRole('heading', { name: 'Врата A → S' })).toBeVisible({ timeout: 8000 })
-  await expect(page.getByText(/Уроки ранга A: \d+ \/ 11/)).toBeVisible()
+  await expect(page.getByText(/Уроки ранга A: \d+ \/ 22/)).toBeVisible()
   await expect(page.getByText(/Слова \(надёжно\): \d+ \/ 4000/)).toBeVisible()
+})
+
+test('lesson A-12 causative opens (plan://M16#16.4)', async ({ page }) => {
+  await page.goto('/#/lesson/A-12')
+  await expect(page.getByRole('heading', { name: /have something done/ })).toBeVisible({
+    timeout: 8000,
+  })
+})
+
+test('lesson A-19 inversion opens (plan://M16#16.4)', async ({ page }) => {
+  await page.goto('/#/lesson/A-19')
+  await expect(page.getByRole('heading', { name: /Инверсия/ })).toBeVisible({ timeout: 8000 })
+})
+
+test('lesson A-22 final review opens (plan://M16#16.4)', async ({ page }) => {
+  await page.goto('/#/lesson/A-22')
+  await expect(page.getByRole('heading', { name: /Большое повторение ранга A/ })).toBeVisible({
+    timeout: 8000,
+  })
 })
