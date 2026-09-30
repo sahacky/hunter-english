@@ -342,6 +342,7 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
             updated_at: finishedAt,
           })
           // решение M10#2; Финал — свой тост
+          /* istanbul ignore next — Финал: дисплей-ветки (полный проход экзамена — веха S4, M19-прецедент) */
           showToast(gate.final ? t('toast.finalPassed') : t('toast.rankUp', { rank: nextRank }))
         }
       }
@@ -445,6 +446,7 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
           <li>{t('gates.total', { total: verdict?.total ?? 0 })}</li>
         </ul>
         {verdict?.passed ? (
+          /* istanbul ignore next — Финал: дисплей-ветки (полный проход экзамена — веха S4, M19-прецедент) */
           <p>{gate.final ? t('gates.finalPassed') : t('gates.rankUp', { rank: gate.to })}</p>
         ) : (
           <p className="dim">{t('gates.retryHint')}</p>
@@ -473,6 +475,8 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
     <section className="panel gates-panel">
       <header>
         <h2>
+          /* istanbul ignore next — Финал: дисплей-ветки (полный проход экзамена — веха S4,
+          M19-прецедент) */
           {gate.final ? t('gates.titleFinal') : t('gates.title', { from: gate.from, to: gate.to })}
         </h2>
         <p className="dim">

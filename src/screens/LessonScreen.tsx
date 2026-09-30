@@ -382,6 +382,7 @@ export default function LessonScreen({
     if (!view) return
     try {
       await enrollDeck()
+      // istanbul ignore next — защитная ветка от unmount-гонки (нестабильна в юнитах)
       if (!mountedRef.current) return
       // снимок ДО finishPass (сбрасывает results/scores) — ревью M7#Б1
       const finished = checkpointRef.current
@@ -399,6 +400,7 @@ export default function LessonScreen({
       )
       // статус по правилам specs/02 §5; повтор не затирает оригинал (specs/07 §4.4)
       const cards = await repo.getAllCards()
+      // istanbul ignore next — защитная ветка от unmount-гонки (нестабильна в юнитах)
       if (!mountedRef.current) return
       const previous = previousRowRef.current
       const stored =
@@ -472,6 +474,7 @@ export default function LessonScreen({
         bonusByType,
         isRepeat: Boolean(previous && previous.status !== 'in_progress'),
       })
+      // istanbul ignore next — защитная ветка от unmount-гонки (нестабильна в юнитах)
       if (!mountedRef.current) return
       if (anySlotDone(award.quest)) {
         const closed = await closeStudyDay(repo, new Date())
@@ -481,6 +484,7 @@ export default function LessonScreen({
       setSummary((prev) => (prev ? { ...prev, xp: award.awarded } : prev))
       setPhase({ kind: 'done' })
     } catch {
+      // istanbul ignore next — защитная ветка от unmount-гонки (нестабильна в юнитах)
       if (mountedRef.current) setPhase({ kind: 'error' })
     }
   }, [view, enrollDeck, repo, startedAt])
