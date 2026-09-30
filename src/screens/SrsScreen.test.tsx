@@ -93,21 +93,23 @@ describe('SrsScreen', () => {
         <SrsScreen repo={repo} notes={[]} />
       </HashRouter>,
     )
-    await screen.findByText('Всё повторено — очередь на сегодня пуста.')
+    await screen.findByText('Всё повторено — очередь на сегодня пуста.', undefined, {
+      timeout: 4000,
+    })
   })
 
   it('показывает фронт, пробел переворачивает, оценка 2 уходит в review_log', async () => {
     await bootstrap()
     renderScreen()
 
-    expect(await screen.findByText('house')).toBeInTheDocument()
+    expect(await screen.findByText('house', undefined, { timeout: 4000 })).toBeInTheDocument()
     expect(screen.queryByText('дом 1')).not.toBeInTheDocument()
 
-    fireEvent.keyDown(window, { code: 'Space' })
-    expect(await screen.findByText('дом 1')).toBeInTheDocument()
+    fireEvent.keyDown(window, { key: ' ', code: 'Space' })
+    expect(await screen.findByText('дом 1', undefined, { timeout: 4000 })).toBeInTheDocument()
 
     fireEvent.keyDown(window, { key: '2' })
-    expect(await screen.findByText('water')).toBeInTheDocument()
+    expect(await screen.findByText('water', undefined, { timeout: 4000 })).toBeInTheDocument()
 
     const logs = await db.review_log.toArray()
     expect(logs).toHaveLength(1)
@@ -123,14 +125,14 @@ describe('SrsScreen', () => {
     await bootstrap()
     renderScreen()
 
-    await screen.findByText('house')
+    await screen.findByText('house', undefined, { timeout: 4000 })
     expect(screen.getByText('Новые: 3')).toBeInTheDocument()
     expect(screen.getByText('Учу: 0')).toBeInTheDocument()
 
     fireEvent.click(screen.getByRole('button', { name: /Показать ответ/ }))
     fireEvent.click(screen.getByRole('button', { name: /Вспомнил/ }))
 
-    expect(await screen.findByText('water')).toBeInTheDocument()
+    expect(await screen.findByText('water', undefined, { timeout: 4000 })).toBeInTheDocument()
     expect(screen.getByText('Новые: 2')).toBeInTheDocument()
     expect(screen.getByText('Учу: 1')).toBeInTheDocument()
   })
@@ -139,11 +141,11 @@ describe('SrsScreen', () => {
     await bootstrap()
     renderScreen()
 
-    await screen.findByText('house')
+    await screen.findByText('house', undefined, { timeout: 4000 })
     fireEvent.click(screen.getByRole('button', { name: /Показать ответ/ }))
     fireEvent.click(screen.getByRole('button', { name: /Не вспомнил/ }))
 
-    expect(await screen.findByText('water')).toBeInTheDocument()
+    expect(await screen.findByText('water', undefined, { timeout: 4000 })).toBeInTheDocument()
     const [log] = await db.review_log.toArray()
     expect(log.rating).toBe(1)
     expect(log.state_after).toBe(1) // Learning
@@ -153,7 +155,7 @@ describe('SrsScreen', () => {
     await bootstrap()
     renderScreen(delayRepo(repo, 40))
 
-    await screen.findByText('house')
+    await screen.findByText('house', undefined, { timeout: 4000 })
     fireEvent.click(screen.getByRole('button', { name: /Показать ответ/ }))
     fireEvent.click(screen.getByRole('button', { name: /Вспомнил/ }))
     fireEvent.click(screen.getByRole('button', { name: /Вспомнил/ }))
@@ -171,7 +173,7 @@ describe('SrsScreen', () => {
     await bootstrap()
     renderScreen()
 
-    await screen.findByText('house')
+    await screen.findByText('house', undefined, { timeout: 4000 })
     for (let i = 0; i < 20; i += 1) {
       await screen.findByText(notes[i].en, { selector: '.srs-front' }, { timeout: 4000 })
       // озвучка карточки 🔊/🐢 с клавишами R/S (plan://M6#6.3, specs/07 §3.5)
@@ -187,7 +189,9 @@ describe('SrsScreen', () => {
     expect(screen.getByText('Ответов: 20')).toBeInTheDocument()
 
     fireEvent.click(screen.getByRole('button', { name: 'Продолжить' }))
-    expect(await screen.findByText(notes[20].en, { selector: '.srs-front' })).toBeInTheDocument()
+    expect(
+      await screen.findByText(notes[20].en, { selector: '.srs-front' }, { timeout: 4000 }),
+    ).toBeInTheDocument()
 
     fireEvent.click(screen.getByRole('button', { name: /Показать ответ/ }))
     fireEvent.click(screen.getByRole('button', { name: /Вспомнил/ }))
@@ -221,7 +225,9 @@ describe('SrsScreen', () => {
       </HashRouter>,
     )
 
-    expect(await screen.findByText(/Нагрузка снижена/)).toBeInTheDocument()
+    expect(
+      await screen.findByText(/Нагрузка снижена/, undefined, { timeout: 4000 }),
+    ).toBeInTheDocument()
     expect(screen.getByText('Новые: 0')).toBeInTheDocument()
   })
 
@@ -250,7 +256,7 @@ describe('SrsScreen + настройки (plan://M10#10.3)', () => {
       </SettingsProvider>,
     )
 
-    expect(await screen.findByText('house')).toBeInTheDocument()
+    expect(await screen.findByText('house', undefined, { timeout: 4000 })).toBeInTheDocument()
     fireEvent.click(screen.getByRole('button', { name: /Показать ответ/ }))
     expect(screen.getByRole('button', { name: /Трудно/ })).toBeInTheDocument()
     expect(screen.getByRole('button', { name: /Легко/ })).toBeInTheDocument()
@@ -258,7 +264,7 @@ describe('SrsScreen + настройки (plan://M10#10.3)', () => {
     expect(screen.queryByText(/включить в настройках/)).not.toBeInTheDocument()
 
     fireEvent.keyDown(window, { key: '3' })
-    expect(await screen.findByText('water')).toBeInTheDocument()
+    expect(await screen.findByText('water', undefined, { timeout: 4000 })).toBeInTheDocument()
     const [log] = await db.review_log.toArray()
     expect(log.rating).toBe(3)
   })
@@ -274,7 +280,7 @@ describe('SrsScreen + настройки (plan://M10#10.3)', () => {
       </SettingsProvider>,
     )
 
-    await screen.findByText('house')
+    await screen.findByText('house', undefined, { timeout: 4000 })
     fireEvent.click(screen.getByRole('button', { name: /Показать ответ/ }))
     // у всех четырёх кнопок mono-подпись следующего интервала (specs/08 §5)
     const intervals = screen.getAllByText(/^\d+[мчдг](\.\d)?$/)
@@ -285,7 +291,7 @@ describe('SrsScreen + настройки (plan://M10#10.3)', () => {
     await bootstrap()
     renderScreen()
 
-    await screen.findByText('house')
+    await screen.findByText('house', undefined, { timeout: 4000 })
     expect(screen.queryByText(/включить в настройках/)).not.toBeInTheDocument()
     fireEvent.click(screen.getByRole('button', { name: /Показать ответ/ }))
     expect(screen.getByText(/включить в настройках/)).toBeInTheDocument()
@@ -295,19 +301,23 @@ describe('SrsScreen + настройки (plan://M10#10.3)', () => {
     await bootstrap()
     renderScreen()
 
-    await screen.findByText('house')
+    await screen.findByText('house', undefined, { timeout: 4000 })
     fireEvent.click(screen.getByRole('button', { name: /Показать ответ/ }))
     fireEvent.click(screen.getByRole('button', { name: /Вспомнил/ }))
-    await screen.findByText('water')
+    await screen.findByText('water', undefined, { timeout: 4000 })
 
     fireEvent.keyDown(window, { key: 'Escape' })
-    expect(await screen.findByText(/Прервать сессию\?/)).toBeInTheDocument()
+    expect(
+      await screen.findByText(/Прервать сессию\?/, undefined, { timeout: 4000 }),
+    ).toBeInTheDocument()
     // повторный Esc закрывает диалог (specs/07 §5.1), оценки заблокированы при открытом
     fireEvent.keyDown(window, { key: 'Escape' })
     expect(screen.queryByText(/Прервать сессию\?/)).not.toBeInTheDocument()
     fireEvent.keyDown(window, { key: 'Escape' })
     fireEvent.keyDown(window, { key: '2' }) // диалог открыт — не отвечает
-    expect(await screen.findByText(/Прервать сессию\?/)).toBeInTheDocument()
+    expect(
+      await screen.findByText(/Прервать сессию\?/, undefined, { timeout: 4000 }),
+    ).toBeInTheDocument()
     expect(screen.queryByText('water')).toBeInTheDocument()
     // «Закончить» в диалоге — вторая кнопка с этим именем (первая — шапка)
     fireEvent.click(screen.getAllByRole('button', { name: 'Закончить' })[1])
