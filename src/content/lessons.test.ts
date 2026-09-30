@@ -194,13 +194,15 @@ describe('loadLessonView (реальные data/ ранга E)', () => {
 
     const lessons = await loadLessons()
     // M15: E (24) + D (28) + C (30) + B1-B2 (14); B3-B5 добавят остальные
-    expect(lessons.length).toBe(111)
+    expect(lessons.length).toBe(122)
     const phraseById = new Set(phrases.map(({ id }) => id))
     for (const lesson of lessons) {
       const lessonPhrases = phrases.filter(
         ({ grammar_point_id }) => grammar_point_id === lesson.grammar_point.id,
       )
-      expect(lessonPhrases.length, lesson.id).toBeGreaterThanOrEqual(40)
+      // A-ранг: сложнее грамматика, меньше дрилл-фраз на урок (M16)
+      const min = lesson.rank === 'A' ? 20 : 40
+      expect(lessonPhrases.length, lesson.id).toBeGreaterThanOrEqual(min)
       for (const pid of lesson.grammar_point.phrase_ids) {
         expect(phraseById.has(pid), `${lesson.id} → ${pid}`).toBe(true)
       }
@@ -249,6 +251,8 @@ describe('loadLessonView (реальные data/ ранга E)', () => {
     expect(c).toHaveLength(30)
     const b = lessons.filter((lesson) => lesson.rank === 'B')
     expect(b).toHaveLength(29)
+    const a = lessons.filter((lesson) => lesson.rank === 'A')
+    expect(a).toHaveLength(11)
     expect(c.every((lesson) => lesson.module.startsWith('mod-c-'))).toBe(true)
     const view = await loadLessonView('les-c-01')
     expect(view?.lesson.title).toContain('Past Simple')
