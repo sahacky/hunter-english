@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "kind": "phrasebook",
+  "items": [
+    {
+      "id": "pb-idioms-01",
+      "rank": "S",
+      "topic": "idioms",
+      "situation_ru": "Перелёт сорвался: идиомы в аэропорту",
+      "user_role": "traveler",
+      "lines": [
+        {
+          "role": "local",
+          "text_en": "I'm afraid your flight was overbooked.",
+          "translation_ru": "Боюсь, ваш рейс был перепродан."
+        },
+        {
+          "role": "traveler",
+          "text_en": "You're kidding. I booked at the last minute as it is.",
+          "translation_ru": "Да вы издеваетесь. Я и так бронировал в последний момент.",
+          "accepted": [
+            "You're kidding. I booked at the last minute as it is.",
+            "You're kidding. I booked at the last minute."
+          ]
+        },
+        {
+          "role": "local",
+          "text_en": "There's a red-eye tonight. It won't break the bank.",
+          "translation_ru": "Есть ночной рейс сегодня. Он не разорит вас."
+        },
+        {
+          "role": "traveler",
+          "text_en": "Fine, I'll bite the bullet. Better safe than sorry.",
+          "translation_ru": "Ладно, соберусь с духом. Лучше перестраховаться.",
+          "accepted": [
+            "Fine, I'll bite the bullet. Better safe than sorry.",
+            "Fine. I'll bite the bullet.",
+            "Better safe than sorry."
+          ]
+        },
+        {
+          "role": "local",
+          "text_en": "Keep an eye on the gate board. It changes around the corner.",
+          "translation_ru": "Следите за табло. Оно вот-вот обновится."
+        },
+        {
+          "role": "traveler",
+          "text_en": "Got it. This trip has hit a snag, but let's hit the road anyway.",
+          "translation_ru": "Понял. Поездка пошла наперекосяк, но всё равно двинемся в путь.",
+          "accepted": [
+            "Got it. This trip has hit a snag, but let's hit the road anyway.",
+            "Got it. Let's hit the road anyway."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pb-idioms-02",
+      "rank": "S",
+      "topic": "idioms",
+      "situation_ru": "Идиомы за ужином с хозяевами",
+      "user_role": "traveler",
+      "lines": [
+        {
+          "role": "local",
+          "text_en": "How was the city? Did it grow on you?",
+          "translation_ru": "Как вам город? Пришёлся по душе?"
+        },
+        {
+          "role": "traveler",
+          "text_en": "Honestly, it's grown on me. Total culture shock at first.",
+          "translation_ru": "Честно, он мне понравился со временем. Сначала был полный культурный шок.",
+          "accepted": [
+            "Honestly, it's grown on me. Total culture shock at first.",
+            "It's grown on me. Total culture shock at first.",
+            "Honestly, it's grown on me."
+          ]
+        },
+        {
+          "role": "local",
+          "text_en": "You look worn out. Jet lag, I bet.",
+          "translation_ru": "Вы выглядите уставшим. Ставку делаю, джетлаг."
+        },
+        {
+          "role": "traveler",
+          "text_en": "Exactly. I'm a bit under the weather, but it's part of the fun.",
+          "translation_ru": "Точно. Я немного неважно себя чувствую, но в этом часть удовольствия.",
+          "accepted": [
+            "Exactly. I'm a bit under the weather, but it's part of the fun.",
+            "Exactly. I'm a bit under the weather."
+          ]
+        },
+        {
+          "role": "local",
+          "text_en": "Should we call it a day, then?",
+          "translation_ru": "Может, закруглимся?"
+        },
+        {
+          "role": "traveler",
+          "text_en": "Sounds like a plan. It was a once-in-a-lifetime trip.",
+          "translation_ru": "Звучит как план. Это была поездка раз в жизни.",
+          "accepted": [
+            "Sounds like a plan. It was a once-in-a-lifetime trip.",
+            "Sounds like a plan."
+          ]
+        }
+      ]
+    }
+  ]
+}

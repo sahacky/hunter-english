@@ -1,270 +1,307 @@
 {
-  "schema_version": 1,
-  "kind": "traps",
-  "items": [
-    {
-      "id": "trap-no-to-be",
-      "lt_id": "ЛТ-01",
-      "title_ru": "Пропуск to be",
-      "wrong_en": "I hungry. She doctor.",
-      "right_en": "I'm hungry. She's a doctor.",
-      "explanation_ru": "В русском связка «есть/является» опускается, в английском to be в настоящем времени обязателен всегда. Не забудь и неопределённый артикль перед профессией: She's a doctor.",
-      "tags": [
-        "trap",
-        "to be"
-      ]
-    },
-    {
-      "id": "trap-to-home",
-      "lt_id": "ЛТ-02",
-      "title_ru": "Предлог с home",
-      "wrong_en": "I go to home.",
-      "right_en": "I go home.",
-      "explanation_ru": "Home здесь наречие («куда?»), поэтому предлог to не нужен. Сравни: at home («где?»).",
-      "tags": [
-        "trap",
-        "prepositions"
-      ]
-    },
-    {
-      "id": "trap-third-person-s",
-      "lt_id": "ЛТ-03",
-      "title_ru": "-s в 3-м лице",
-      "wrong_en": "He live here.",
-      "right_en": "He lives here.",
-      "explanation_ru": "В Present Simple после he/she/it к глаголу добавляется окончание -s.",
-      "tags": [
-        "trap",
-        "present-simple"
-      ]
-    },
-    {
-      "id": "trap-no-do-negative",
-      "lt_id": "ЛТ-04",
-      "title_ru": "Отрицание без do",
-      "wrong_en": "I no speak English.",
-      "right_en": "I don't speak English.",
-      "explanation_ru": "Отрицание в Present/Past Simple строится через вспомогательный do/does/did + not. Простое «no» перед глаголом по-английски не работает.",
-      "tags": [
-        "trap",
-        "do-support"
-      ]
-    },
-    {
-      "id": "trap-im-agree",
-      "lt_id": "ЛТ-05",
-      "title_ru": "agree как прилагательное",
-      "wrong_en": "I'm agree.",
-      "right_en": "I agree.",
-      "explanation_ru": "Agree — это глагол («соглашаться»), связка to be не нужна. Вопрос: Do you agree?",
-      "tags": [
-        "trap",
-        "verbs"
-      ]
-    },
-    {
-      "id": "trap-articles",
-      "lt_id": "ЛТ-06",
-      "title_ru": "Артикли",
-      "wrong_en": "The Russia. I have brother.",
-      "right_en": "Russia. I have a brother.",
-      "explanation_ru": "Названия стран (почти все) используются без the, а исчисляемое существительное в единственном числе требует артикля a/an.",
-      "tags": [
-        "trap",
-        "articles"
-      ]
-    },
-    {
-      "id": "trap-double-negative",
-      "lt_id": "ЛТ-07",
-      "title_ru": "Двойное отрицание",
-      "wrong_en": "I don't know nothing.",
-      "right_en": "I don't know anything.",
-      "explanation_ru": "В английском на одну мысль — только одно отрицание: not … anything, а не not … nothing.",
-      "tags": [
-        "trap",
-        "negation"
-      ]
-    },
-    {
-      "id": "trap-didnt-past",
-      "lt_id": "ЛТ-08",
-      "title_ru": "didn't + прошедшая форма",
-      "wrong_en": "I didn't went.",
-      "right_en": "I didn't go.",
-      "explanation_ru": "Прошедшее время уже выражено вспомогательным did, поэтому смысловой глагол возвращается в начальную форму.",
-      "tags": [
-        "trap",
-        "past-simple"
-      ]
-    },
-    {
-      "id": "trap-feel-myself",
-      "lt_id": "ЛТ-09",
-      "title_ru": "feel myself",
-      "wrong_en": "I feel myself good.",
-      "right_en": "I feel good.",
-      "explanation_ru": "В значении «чувствовать себя» feel — не возвратный глагол: I feel good, без myself.",
-      "tags": [
-        "trap",
-        "verbs"
-      ]
-    },
-    {
-      "id": "trap-wait-for",
-      "lt_id": "ЛТ-10",
-      "title_ru": "wait без for",
-      "wrong_en": "I'm waiting my friend.",
-      "right_en": "I'm waiting for my friend.",
-      "explanation_ru": "Глагол wait требует предлог for перед тем, кого/чего ждём: wait for somebody/something.",
-      "tags": [
-        "trap",
-        "prepositions"
-      ]
-    },
-    {
-      "id": "trap-said-me",
-      "lt_id": "ЛТ-11",
-      "title_ru": "say / tell",
-      "wrong_en": "Say me.",
-      "right_en": "Tell me.",
-      "explanation_ru": "«Скажи мне» — tell me (у tell адресат идёт сразу после глагола). Say адресата без to не берёт: say something, say to me.",
-      "tags": [
-        "trap",
-        "verbs-of-speech"
-      ]
-    },
-    {
-      "id": "trap-interested",
-      "lt_id": "ЛТ-12",
-      "title_ru": "interesting / interested",
-      "wrong_en": "I'm interesting in music.",
-      "right_en": "I'm interested in music.",
-      "explanation_ru": "Interested — «заинтересованный в чём-то», interesting — «интересный». «I'm interesting» значит «я интересный (человек)».",
-      "tags": [
-        "trap",
-        "adjectives"
-      ]
-    },
-    {
-      "id": "trap-do-make",
-      "lt_id": "ЛТ-13",
-      "title_ru": "do / make",
-      "wrong_en": "do a mistake",
-      "right_en": "make a mistake",
-      "explanation_ru": "Выбор между do и make определяется устойчивым сочетанием, а не русским «делать»: make a mistake, make plans, но do homework.",
-      "tags": [
-        "trap",
-        "collocations"
-      ]
-    },
-    {
-      "id": "trap-uncountable-plurals",
-      "lt_id": "ЛТ-14",
-      "title_ru": "Неисчисляемые существительные",
-      "wrong_en": "advices, informations, moneys",
-      "right_en": "advice, information, money",
-      "explanation_ru": "Advice, information, money — неисчисляемые и формы множественного числа не образуют. Количество выражаем через some / a piece of.",
-      "tags": [
-        "trap",
-        "nouns"
-      ]
-    },
-    {
-      "id": "trap-people",
-      "lt_id": "ЛТ-15",
-      "title_ru": "people",
-      "wrong_en": "peoples, this people",
-      "right_en": "people, these people",
-      "explanation_ru": "People — уже множественное число («люди»): these people, people are. Peoples означает «народы».",
-      "tags": [
-        "trap",
-        "nouns"
-      ]
-    },
-    {
-      "id": "trap-present-perfect",
-      "lt_id": "ЛТ-16",
-      "title_ru": "Present Perfect vs Past Simple",
-      "wrong_en": "I saw this film before.",
-      "right_en": "I've seen this film before.",
-      "explanation_ru": "Если важен опыт «когда-то до настоящего момента» (маркеры before, ever, already) — Present Perfect. Past Simple требует конкретного времени в прошлом.",
-      "tags": [
-        "trap",
-        "present-perfect"
-      ]
-    },
-    {
-      "id": "trap-if-will",
-      "lt_id": "ЛТ-17",
-      "title_ru": "will после if",
-      "wrong_en": "If it will rain, I…",
-      "right_en": "If it rains, I…",
-      "explanation_ru": "В придаточном условия (if/when) будущее время не ставится: вместо will — Present Simple.",
-      "tags": [
-        "trap",
-        "conditionals"
-      ]
-    },
-    {
-      "id": "trap-want-that",
-      "lt_id": "ЛТ-18",
-      "title_ru": "want that",
-      "wrong_en": "I want that he comes.",
-      "right_en": "I want him to come.",
-      "explanation_ru": "После want используется оборот want somebody to do something (объектный падеж + инфинитив), а не придаточное с that.",
-      "tags": [
-        "trap",
-        "infinitive"
-      ]
-    },
-    {
-      "id": "trap-question-word-order",
-      "lt_id": "ЛТ-19",
-      "title_ru": "Порядок слов в вопросе",
-      "wrong_en": "Where you live?",
-      "right_en": "Where do you live?",
-      "explanation_ru": "В вопросе перед подлежащим нужен вспомогательный do/does/did: Where do you live?",
-      "tags": [
-        "trap",
-        "questions"
-      ]
-    },
-    {
-      "id": "trap-indirect-question",
-      "lt_id": "ЛТ-20",
-      "title_ru": "Косвенный вопрос",
-      "wrong_en": "Tell me where is the station?",
-      "right_en": "Tell me where the station is.",
-      "explanation_ru": "В косвенном вопросе порядок слов прямой, как в утверждении, — без вспомогательного does/do и без вопросительного знака.",
-      "tags": [
-        "trap",
-        "questions"
-      ]
-    },
-    {
-      "id": "trap-comma-that",
-      "lt_id": "ЛТ-21",
-      "title_ru": "Запятая перед that",
-      "wrong_en": "I think, that…",
-      "right_en": "I think that…",
-      "explanation_ru": "В отличие от русского «я думаю, что…», перед союзом that в английском запятая не ставится.",
-      "tags": [
-        "trap",
-        "punctuation"
-      ]
-    },
-    {
-      "id": "trap-very-like",
-      "lt_id": "ЛТ-22",
-      "title_ru": "very перед глаголом",
-      "wrong_en": "I very like it.",
-      "right_en": "I like it very much.",
-      "explanation_ru": "Very усиливает только прилагательные и наречия, не глаголы. С глаголом — very much в конце или усиленный синоним: I really like it. Экстремальные прилагательные (freezing, exhausted, brilliant) не усиливаются very — только absolutely/utterly: It's absolutely freezing, I'm utterly exhausted.",
-      "tags": [
-        "trap",
-        "adverbs"
-      ]
-    }
-  ]
+ "schema_version": 1,
+ "kind": "traps",
+ "items": [
+  {
+   "id": "trap-no-to-be",
+   "lt_id": "ЛТ-01",
+   "title_ru": "Пропуск to be",
+   "wrong_en": "I hungry. She doctor.",
+   "right_en": "I'm hungry. She's a doctor.",
+   "explanation_ru": "В русском связка «есть/является» опускается, в английском to be в настоящем времени обязателен всегда. Не забудь и неопределённый артикль перед профессией: She's a doctor.",
+   "tags": [
+    "trap",
+    "to be"
+   ]
+  },
+  {
+   "id": "trap-to-home",
+   "lt_id": "ЛТ-02",
+   "title_ru": "Предлог с home",
+   "wrong_en": "I go to home.",
+   "right_en": "I go home.",
+   "explanation_ru": "Home здесь наречие («куда?»), поэтому предлог to не нужен. Сравни: at home («где?»).",
+   "tags": [
+    "trap",
+    "prepositions"
+   ]
+  },
+  {
+   "id": "trap-third-person-s",
+   "lt_id": "ЛТ-03",
+   "title_ru": "-s в 3-м лице",
+   "wrong_en": "He live here.",
+   "right_en": "He lives here.",
+   "explanation_ru": "В Present Simple после he/she/it к глаголу добавляется окончание -s.",
+   "tags": [
+    "trap",
+    "present-simple"
+   ]
+  },
+  {
+   "id": "trap-no-do-negative",
+   "lt_id": "ЛТ-04",
+   "title_ru": "Отрицание без do",
+   "wrong_en": "I no speak English.",
+   "right_en": "I don't speak English.",
+   "explanation_ru": "Отрицание в Present/Past Simple строится через вспомогательный do/does/did + not. Простое «no» перед глаголом по-английски не работает.",
+   "tags": [
+    "trap",
+    "do-support"
+   ]
+  },
+  {
+   "id": "trap-im-agree",
+   "lt_id": "ЛТ-05",
+   "title_ru": "agree как прилагательное",
+   "wrong_en": "I'm agree.",
+   "right_en": "I agree.",
+   "explanation_ru": "Agree — это глагол («соглашаться»), связка to be не нужна. Вопрос: Do you agree?",
+   "tags": [
+    "trap",
+    "verbs"
+   ]
+  },
+  {
+   "id": "trap-articles",
+   "lt_id": "ЛТ-06",
+   "title_ru": "Артикли",
+   "wrong_en": "The Russia. I have brother.",
+   "right_en": "Russia. I have a brother.",
+   "explanation_ru": "Названия стран (почти все) используются без the, а исчисляемое существительное в единственном числе требует артикля a/an.",
+   "tags": [
+    "trap",
+    "articles"
+   ]
+  },
+  {
+   "id": "trap-double-negative",
+   "lt_id": "ЛТ-07",
+   "title_ru": "Двойное отрицание",
+   "wrong_en": "I don't know nothing.",
+   "right_en": "I don't know anything.",
+   "explanation_ru": "В английском на одну мысль — только одно отрицание: not … anything, а не not … nothing.",
+   "tags": [
+    "trap",
+    "negation"
+   ]
+  },
+  {
+   "id": "trap-didnt-past",
+   "lt_id": "ЛТ-08",
+   "title_ru": "didn't + прошедшая форма",
+   "wrong_en": "I didn't went.",
+   "right_en": "I didn't go.",
+   "explanation_ru": "Прошедшее время уже выражено вспомогательным did, поэтому смысловой глагол возвращается в начальную форму.",
+   "tags": [
+    "trap",
+    "past-simple"
+   ]
+  },
+  {
+   "id": "trap-feel-myself",
+   "lt_id": "ЛТ-09",
+   "title_ru": "feel myself",
+   "wrong_en": "I feel myself good.",
+   "right_en": "I feel good.",
+   "explanation_ru": "В значении «чувствовать себя» feel — не возвратный глагол: I feel good, без myself.",
+   "tags": [
+    "trap",
+    "verbs"
+   ]
+  },
+  {
+   "id": "trap-wait-for",
+   "lt_id": "ЛТ-10",
+   "title_ru": "wait без for",
+   "wrong_en": "I'm waiting my friend.",
+   "right_en": "I'm waiting for my friend.",
+   "explanation_ru": "Глагол wait требует предлог for перед тем, кого/чего ждём: wait for somebody/something.",
+   "tags": [
+    "trap",
+    "prepositions"
+   ]
+  },
+  {
+   "id": "trap-said-me",
+   "lt_id": "ЛТ-11",
+   "title_ru": "say / tell",
+   "wrong_en": "Say me.",
+   "right_en": "Tell me.",
+   "explanation_ru": "«Скажи мне» — tell me (у tell адресат идёт сразу после глагола). Say адресата без to не берёт: say something, say to me.",
+   "tags": [
+    "trap",
+    "verbs-of-speech"
+   ]
+  },
+  {
+   "id": "trap-interested",
+   "lt_id": "ЛТ-12",
+   "title_ru": "interesting / interested",
+   "wrong_en": "I'm interesting in music.",
+   "right_en": "I'm interested in music.",
+   "explanation_ru": "Interested — «заинтересованный в чём-то», interesting — «интересный». «I'm interesting» значит «я интересный (человек)».",
+   "tags": [
+    "trap",
+    "adjectives"
+   ]
+  },
+  {
+   "id": "trap-do-make",
+   "lt_id": "ЛТ-13",
+   "title_ru": "do / make",
+   "wrong_en": "do a mistake",
+   "right_en": "make a mistake",
+   "explanation_ru": "Выбор между do и make определяется устойчивым сочетанием, а не русским «делать»: make a mistake, make plans, но do homework.",
+   "tags": [
+    "trap",
+    "collocations"
+   ]
+  },
+  {
+   "id": "trap-uncountable-plurals",
+   "lt_id": "ЛТ-14",
+   "title_ru": "Неисчисляемые существительные",
+   "wrong_en": "advices, informations, moneys",
+   "right_en": "advice, information, money",
+   "explanation_ru": "Advice, information, money — неисчисляемые и формы множественного числа не образуют. Количество выражаем через some / a piece of.",
+   "tags": [
+    "trap",
+    "nouns"
+   ]
+  },
+  {
+   "id": "trap-people",
+   "lt_id": "ЛТ-15",
+   "title_ru": "people",
+   "wrong_en": "peoples, this people",
+   "right_en": "people, these people",
+   "explanation_ru": "People — уже множественное число («люди»): these people, people are. Peoples означает «народы».",
+   "tags": [
+    "trap",
+    "nouns"
+   ]
+  },
+  {
+   "id": "trap-present-perfect",
+   "lt_id": "ЛТ-16",
+   "title_ru": "Present Perfect vs Past Simple",
+   "wrong_en": "I saw this film before.",
+   "right_en": "I've seen this film before.",
+   "explanation_ru": "Если важен опыт «когда-то до настоящего момента» (маркеры before, ever, already) — Present Perfect. Past Simple требует конкретного времени в прошлом.",
+   "tags": [
+    "trap",
+    "present-perfect"
+   ]
+  },
+  {
+   "id": "trap-if-will",
+   "lt_id": "ЛТ-17",
+   "title_ru": "will после if",
+   "wrong_en": "If it will rain, I…",
+   "right_en": "If it rains, I…",
+   "explanation_ru": "В придаточном условия (if/when) будущее время не ставится: вместо will — Present Simple.",
+   "tags": [
+    "trap",
+    "conditionals"
+   ]
+  },
+  {
+   "id": "trap-want-that",
+   "lt_id": "ЛТ-18",
+   "title_ru": "want that",
+   "wrong_en": "I want that he comes.",
+   "right_en": "I want him to come.",
+   "explanation_ru": "После want используется оборот want somebody to do something (объектный падеж + инфинитив), а не придаточное с that.",
+   "tags": [
+    "trap",
+    "infinitive"
+   ]
+  },
+  {
+   "id": "trap-question-word-order",
+   "lt_id": "ЛТ-19",
+   "title_ru": "Порядок слов в вопросе",
+   "wrong_en": "Where you live?",
+   "right_en": "Where do you live?",
+   "explanation_ru": "В вопросе перед подлежащим нужен вспомогательный do/does/did: Where do you live?",
+   "tags": [
+    "trap",
+    "questions"
+   ]
+  },
+  {
+   "id": "trap-indirect-question",
+   "lt_id": "ЛТ-20",
+   "title_ru": "Косвенный вопрос",
+   "wrong_en": "Tell me where is the station?",
+   "right_en": "Tell me where the station is.",
+   "explanation_ru": "В косвенном вопросе порядок слов прямой, как в утверждении, — без вспомогательного does/do и без вопросительного знака.",
+   "tags": [
+    "trap",
+    "questions"
+   ]
+  },
+  {
+   "id": "trap-comma-that",
+   "lt_id": "ЛТ-21",
+   "title_ru": "Запятая перед that",
+   "wrong_en": "I think, that…",
+   "right_en": "I think that…",
+   "explanation_ru": "В отличие от русского «я думаю, что…», перед союзом that в английском запятая не ставится.",
+   "tags": [
+    "trap",
+    "punctuation"
+   ]
+  },
+  {
+   "id": "trap-very-like",
+   "lt_id": "ЛТ-22",
+   "title_ru": "very перед глаголом",
+   "wrong_en": "I very like it.",
+   "right_en": "I like it very much.",
+   "explanation_ru": "Very усиливает только прилагательные и наречия, не глаголы. С глаголом — very much в конце или усиленный синоним: I really like it. Экстремальные прилагательные (freezing, exhausted, brilliant) не усиливаются very — только absolutely/utterly: It's absolutely freezing, I'm utterly exhausted.",
+   "tags": [
+    "trap",
+    "adverbs"
+   ]
+  },
+  {
+   "id": "trap-despite-of",
+   "lt_id": "ЛТ-23",
+   "title_ru": "despite of",
+   "wrong_en": "Despite of the rain, we went out.",
+   "right_en": "Despite the rain, we went out.",
+   "explanation_ru": "Despite используется без of: despite the traffic. Синоним с of — in spite of: in spite of the traffic. Смешивать нельзя: «despite of» — типичная ошибка для русских.",
+   "tags": [
+    "trap",
+    "connectors"
+   ]
+  },
+  {
+   "id": "trap-slang-register",
+   "lt_id": "ЛТ-24",
+   "title_ru": "сленг в формальном контексте",
+   "wrong_en": "I'm gonna submit the report to the committee.",
+   "right_en": "I'm going to submit the report to the committee.",
+   "explanation_ru": "gonna/wanna/gotta/ain't — только в разговорной речи. В письмах, документах и на экзамене — полные формы: going to, want to, have got to. Распознавать сленг на слух обязательно, писать — только в неформальном регистре.",
+   "tags": [
+    "trap",
+    "register",
+    "slang"
+   ]
+  },
+  {
+   "id": "trap-false-friends",
+   "lt_id": "ЛТ-25",
+   "title_ru": "ложные друзья EN-RU",
+   "wrong_en": "This topic is very actual.",
+   "right_en": "This topic is very topical.",
+   "explanation_ru": "Ложные друзья: actual = фактический, реальный (актуальный = topical). pretend = притворяться (претендовать = apply for / claim). sympathy = сочувствие (симпатия = a soft spot / attraction). genius = гений (не «гениальность»): brilliance.",
+   "tags": [
+    "trap",
+    "false-friends"
+   ]
+  }
+ ]
 }

@@ -1,0 +1,2599 @@
+{
+  "schema_version": 1,
+  "kind": "lessons",
+  "items": [
+    {
+      "id": "les-s-01",
+      "rank": "S",
+      "module": "mod-s-1",
+      "title": "Инверсия продвинутая: Not only…, No sooner…",
+      "grammar_point": {
+        "id": "gp-s-01",
+        "title_ru": "Эмфаза: наречие вперёд — порядок слов как в вопросе",
+        "rule_md": "**Инверсия продвинутая — эмфаза.**\nПосле отрицательных/ограничительных наречий — вопросительный порядок слов:\n**Not only did he** apologise… / **No sooner had we** left **than**… /\n**Hardly had I** sat down **when**… / **Not until midnight did** he call.\n**Only then did** I understand. / **Under no circumstances should** you sign it.\nSo + прилагательное вперёд: **So loud was the music** that…\nОтвет-согласие: **Neither do I. / Nor do I.**",
+        "phrase_ids": ["ph-s-0001", "ph-s-0002", "ph-s-0003", "ph-s-0004", "ph-s-0005"],
+        "trap_id": "trap-question-word-order"
+      },
+      "vocab_band": {
+        "list": "subtitles",
+        "from": 4001,
+        "to": 4060
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-question-word-order",
+      "quotes_topic": "emphatic",
+      "exercises": [
+        {
+          "id": "ex-s-0001"
+        },
+        {
+          "id": "ex-s-0002"
+        },
+        {
+          "id": "ex-s-0003"
+        },
+        {
+          "id": "ex-s-0004"
+        },
+        {
+          "id": "ex-s-0005"
+        },
+        {
+          "id": "ex-s-0006"
+        },
+        {
+          "id": "ex-s-0007"
+        },
+        {
+          "id": "ex-s-0008"
+        },
+        {
+          "id": "ex-s-0009"
+        },
+        {
+          "id": "ex-s-0010"
+        },
+        {
+          "id": "ex-s-0011"
+        },
+        {
+          "id": "ex-s-0012"
+        },
+        {
+          "id": "ex-s-0013"
+        },
+        {
+          "id": "ex-s-0014"
+        },
+        {
+          "id": "ex-s-0015"
+        },
+        {
+          "id": "ex-s-0016"
+        },
+        {
+          "id": "ex-s-0017"
+        },
+        {
+          "id": "ex-s-0018"
+        },
+        {
+          "id": "ex-s-0019"
+        },
+        {
+          "id": "ex-s-0020"
+        },
+        {
+          "id": "ex-s-0021"
+        },
+        {
+          "id": "ex-s-0022"
+        },
+        {
+          "id": "ex-s-0023"
+        },
+        {
+          "id": "ex-s-0024"
+        },
+        {
+          "id": "ex-s-0025"
+        },
+        {
+          "id": "ex-s-0026"
+        },
+        {
+          "id": "ex-s-0027"
+        },
+        {
+          "id": "ex-s-0028"
+        },
+        {
+          "id": "ex-s-0029"
+        },
+        {
+          "id": "ex-s-0030"
+        },
+        {
+          "id": "ex-s-0031"
+        },
+        {
+          "id": "ex-s-0032"
+        },
+        {
+          "id": "ex-s-0033"
+        },
+        {
+          "id": "ex-s-0034"
+        },
+        {
+          "id": "ex-s-0035"
+        },
+        {
+          "id": "ex-s-0036"
+        },
+        {
+          "id": "ex-s-0037"
+        },
+        {
+          "id": "ex-s-0038"
+        },
+        {
+          "id": "ex-s-0039"
+        },
+        {
+          "id": "ex-s-0040"
+        },
+        {
+          "id": "ex-s-0041"
+        },
+        {
+          "id": "ex-s-0042"
+        },
+        {
+          "id": "ex-s-0043"
+        },
+        {
+          "id": "ex-s-0044"
+        },
+        {
+          "id": "ex-s-0045"
+        },
+        {
+          "id": "ex-s-0046"
+        },
+        {
+          "id": "ex-s-0709"
+        },
+        {
+          "id": "ex-s-0710"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "2.331",
+        "playlist_index": 882,
+        "youtube_id": "i2cHBmDAuHk",
+        "title": null
+      }
+    },
+    {
+      "id": "les-s-02",
+      "rank": "S",
+      "module": "mod-s-1",
+      "title": "Идиомы путешественника (топ-50)",
+      "grammar_point": {
+        "id": "gp-s-02",
+        "title_ru": "Идиома — цельная единица, не дословный перевод",
+        "rule_md": "**Идиомы путешественника.**\nИдиому учи целиком, смысл не складывается из слов:\n**red-eye** — ночной рейс; **overbooked** — перепродан;\n**at the last minute** — в последний момент; **hit the road** — отправиться в путь;\n**break the bank** — разорить; **jet lag** — сбой биоритмов после перелёта;\n**off the beaten track** — вдали от туристов; **travel light** — налегке;\n**call it a day** — закругляться; **take a rain check** — перенести на потом;\n**under the weather** — неважно себя чувствовать; **a piece of cake** — проще простого;\n**miss the boat** — упустить шанс; **bite the bullet** — собраться с духом;\n**better safe than sorry** — лучше перестраховаться.",
+        "phrase_ids": ["ph-s-0036", "ph-s-0037", "ph-s-0038", "ph-s-0039", "ph-s-0040"],
+        "trap_id": "trap-do-make"
+      },
+      "vocab_band": {
+        "list": "subtitles",
+        "from": 4061,
+        "to": 4120
+      },
+      "phrasebook_topic": "idioms",
+      "trap_id": "trap-do-make",
+      "quotes_topic": "idioms",
+      "exercises": [
+        {
+          "id": "ex-s-0047"
+        },
+        {
+          "id": "ex-s-0048"
+        },
+        {
+          "id": "ex-s-0049"
+        },
+        {
+          "id": "ex-s-0050"
+        },
+        {
+          "id": "ex-s-0051"
+        },
+        {
+          "id": "ex-s-0052"
+        },
+        {
+          "id": "ex-s-0053"
+        },
+        {
+          "id": "ex-s-0054"
+        },
+        {
+          "id": "ex-s-0055"
+        },
+        {
+          "id": "ex-s-0056"
+        },
+        {
+          "id": "ex-s-0057"
+        },
+        {
+          "id": "ex-s-0058"
+        },
+        {
+          "id": "ex-s-0059"
+        },
+        {
+          "id": "ex-s-0060"
+        },
+        {
+          "id": "ex-s-0061"
+        },
+        {
+          "id": "ex-s-0062"
+        },
+        {
+          "id": "ex-s-0063"
+        },
+        {
+          "id": "ex-s-0064"
+        },
+        {
+          "id": "ex-s-0065"
+        },
+        {
+          "id": "ex-s-0066"
+        },
+        {
+          "id": "ex-s-0067"
+        },
+        {
+          "id": "ex-s-0068"
+        },
+        {
+          "id": "ex-s-0069"
+        },
+        {
+          "id": "ex-s-0070"
+        },
+        {
+          "id": "ex-s-0071"
+        },
+        {
+          "id": "ex-s-0072"
+        },
+        {
+          "id": "ex-s-0073"
+        },
+        {
+          "id": "ex-s-0074"
+        },
+        {
+          "id": "ex-s-0075"
+        },
+        {
+          "id": "ex-s-0076"
+        },
+        {
+          "id": "ex-s-0077"
+        },
+        {
+          "id": "ex-s-0078"
+        },
+        {
+          "id": "ex-s-0079"
+        },
+        {
+          "id": "ex-s-0080"
+        },
+        {
+          "id": "ex-s-0081"
+        },
+        {
+          "id": "ex-s-0082"
+        },
+        {
+          "id": "ex-s-0083"
+        },
+        {
+          "id": "ex-s-0084"
+        },
+        {
+          "id": "ex-s-0085"
+        },
+        {
+          "id": "ex-s-0086"
+        },
+        {
+          "id": "ex-s-0087"
+        },
+        {
+          "id": "ex-s-0088"
+        },
+        {
+          "id": "ex-s-0089"
+        },
+        {
+          "id": "ex-s-0090"
+        },
+        {
+          "id": "ex-s-0091"
+        },
+        {
+          "id": "ex-s-0092"
+        },
+        {
+          "id": "ex-s-0711"
+        },
+        {
+          "id": "ex-s-0712"
+        }
+      ],
+      "bebris_video": null
+    },
+    {
+      "id": "les-s-03",
+      "rank": "S",
+      "module": "mod-s-1",
+      "title": "Тонкости модальных: might well, can't have been, needn't have",
+      "grammar_point": {
+        "id": "gp-s-03",
+        "title_ru": "Догадки о прошлом и упрёки",
+        "rule_md": "**Тонкости модальных: догадки и упрёки.**\nСтепень уверенности о прошлом: **must have** done (наверняка) → **might/may well have** done (возможно) → **can't have** done (исключено).\n**needn't have** done — делал, но было зря: You **needn't have worried**.\n**should have** done — упрёк: He **should have** double-checked.\n**might as well** — не хуже чем: We **might as well** walk.\n**would rather / 'd sooner** — предпочитаю: I**'d rather** stay in.\n**had better ('d better)** — совет с оттенком угрозы: You**'d better** hurry.",
+        "phrase_ids": ["ph-s-0070", "ph-s-0071", "ph-s-0072", "ph-s-0073", "ph-s-0074"],
+        "trap_id": null
+      },
+      "vocab_band": {
+        "list": "subtitles",
+        "from": 4121,
+        "to": 4180
+      },
+      "phrasebook_topic": null,
+      "trap_id": null,
+      "quotes_topic": "modals",
+      "exercises": [
+        {
+          "id": "ex-s-0093"
+        },
+        {
+          "id": "ex-s-0094"
+        },
+        {
+          "id": "ex-s-0095"
+        },
+        {
+          "id": "ex-s-0096"
+        },
+        {
+          "id": "ex-s-0097"
+        },
+        {
+          "id": "ex-s-0098"
+        },
+        {
+          "id": "ex-s-0099"
+        },
+        {
+          "id": "ex-s-0100"
+        },
+        {
+          "id": "ex-s-0101"
+        },
+        {
+          "id": "ex-s-0102"
+        },
+        {
+          "id": "ex-s-0103"
+        },
+        {
+          "id": "ex-s-0104"
+        },
+        {
+          "id": "ex-s-0105"
+        },
+        {
+          "id": "ex-s-0106"
+        },
+        {
+          "id": "ex-s-0107"
+        },
+        {
+          "id": "ex-s-0108"
+        },
+        {
+          "id": "ex-s-0109"
+        },
+        {
+          "id": "ex-s-0110"
+        },
+        {
+          "id": "ex-s-0111"
+        },
+        {
+          "id": "ex-s-0112"
+        },
+        {
+          "id": "ex-s-0113"
+        },
+        {
+          "id": "ex-s-0114"
+        },
+        {
+          "id": "ex-s-0115"
+        },
+        {
+          "id": "ex-s-0116"
+        },
+        {
+          "id": "ex-s-0117"
+        },
+        {
+          "id": "ex-s-0118"
+        },
+        {
+          "id": "ex-s-0119"
+        },
+        {
+          "id": "ex-s-0120"
+        },
+        {
+          "id": "ex-s-0121"
+        },
+        {
+          "id": "ex-s-0122"
+        },
+        {
+          "id": "ex-s-0123"
+        },
+        {
+          "id": "ex-s-0124"
+        },
+        {
+          "id": "ex-s-0125"
+        },
+        {
+          "id": "ex-s-0126"
+        },
+        {
+          "id": "ex-s-0127"
+        },
+        {
+          "id": "ex-s-0128"
+        },
+        {
+          "id": "ex-s-0129"
+        },
+        {
+          "id": "ex-s-0130"
+        },
+        {
+          "id": "ex-s-0131"
+        },
+        {
+          "id": "ex-s-0132"
+        },
+        {
+          "id": "ex-s-0133"
+        },
+        {
+          "id": "ex-s-0134"
+        },
+        {
+          "id": "ex-s-0135"
+        },
+        {
+          "id": "ex-s-0136"
+        },
+        {
+          "id": "ex-s-0137"
+        },
+        {
+          "id": "ex-s-0138"
+        },
+        {
+          "id": "ex-s-0713"
+        },
+        {
+          "id": "ex-s-0714"
+        }
+      ],
+      "bebris_video": null
+    },
+    {
+      "id": "les-s-04",
+      "rank": "S",
+      "module": "mod-s-1",
+      "title": "Продвинутые связки: however, nevertheless, whereas, despite",
+      "grammar_point": {
+        "id": "gp-s-04",
+        "title_ru": "Дискурс: противопоставление и уступка",
+        "rule_md": "**Продвинутые связки.**\nПротивопоставление: **however**, **nevertheless**, **nonetheless**, **all the same**, **even so** — «тем не менее».\nСопоставление: **whereas** — тогда как: The north is rich, **whereas** the south is poor.\nУступка: **despite / in spite of** + существительное или герундий (НЕ «despite of»):\n**Despite the rain** / **Despite being tired**. Хотя = **although / even though / though**.\nСледствие: **therefore / consequently / hence**. Добавка: **moreover / furthermore**.",
+        "phrase_ids": ["ph-s-0104", "ph-s-0105", "ph-s-0106", "ph-s-0107", "ph-s-0108"],
+        "trap_id": "trap-despite-of"
+      },
+      "vocab_band": {
+        "list": "subtitles",
+        "from": 4181,
+        "to": 4240
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-despite-of",
+      "quotes_topic": "discourse",
+      "exercises": [
+        {
+          "id": "ex-s-0139"
+        },
+        {
+          "id": "ex-s-0140"
+        },
+        {
+          "id": "ex-s-0141"
+        },
+        {
+          "id": "ex-s-0142"
+        },
+        {
+          "id": "ex-s-0143"
+        },
+        {
+          "id": "ex-s-0144"
+        },
+        {
+          "id": "ex-s-0145"
+        },
+        {
+          "id": "ex-s-0146"
+        },
+        {
+          "id": "ex-s-0147"
+        },
+        {
+          "id": "ex-s-0148"
+        },
+        {
+          "id": "ex-s-0149"
+        },
+        {
+          "id": "ex-s-0150"
+        },
+        {
+          "id": "ex-s-0151"
+        },
+        {
+          "id": "ex-s-0152"
+        },
+        {
+          "id": "ex-s-0153"
+        },
+        {
+          "id": "ex-s-0154"
+        },
+        {
+          "id": "ex-s-0155"
+        },
+        {
+          "id": "ex-s-0156"
+        },
+        {
+          "id": "ex-s-0157"
+        },
+        {
+          "id": "ex-s-0158"
+        },
+        {
+          "id": "ex-s-0159"
+        },
+        {
+          "id": "ex-s-0160"
+        },
+        {
+          "id": "ex-s-0161"
+        },
+        {
+          "id": "ex-s-0162"
+        },
+        {
+          "id": "ex-s-0163"
+        },
+        {
+          "id": "ex-s-0164"
+        },
+        {
+          "id": "ex-s-0165"
+        },
+        {
+          "id": "ex-s-0166"
+        },
+        {
+          "id": "ex-s-0167"
+        },
+        {
+          "id": "ex-s-0168"
+        },
+        {
+          "id": "ex-s-0169"
+        },
+        {
+          "id": "ex-s-0170"
+        },
+        {
+          "id": "ex-s-0171"
+        },
+        {
+          "id": "ex-s-0172"
+        },
+        {
+          "id": "ex-s-0173"
+        },
+        {
+          "id": "ex-s-0174"
+        },
+        {
+          "id": "ex-s-0175"
+        },
+        {
+          "id": "ex-s-0176"
+        },
+        {
+          "id": "ex-s-0177"
+        },
+        {
+          "id": "ex-s-0178"
+        },
+        {
+          "id": "ex-s-0179"
+        },
+        {
+          "id": "ex-s-0180"
+        },
+        {
+          "id": "ex-s-0181"
+        },
+        {
+          "id": "ex-s-0182"
+        },
+        {
+          "id": "ex-s-0183"
+        },
+        {
+          "id": "ex-s-0184"
+        },
+        {
+          "id": "ex-s-0715"
+        },
+        {
+          "id": "ex-s-0716"
+        }
+      ],
+      "bebris_video": null
+    },
+    {
+      "id": "les-s-05",
+      "rank": "S",
+      "module": "mod-s-1",
+      "title": "Разговорное сжатие: gonna/wanna/gotta/ain't",
+      "grammar_point": {
+        "id": "gp-s-05",
+        "title_ru": "Сленг на слух — полные формы на письме",
+        "rule_md": "**Разговорное сжатие: gonna / wanna / gotta / ain't.**\nНа слух обязательно, на письме — только в переписке с друзьями (ЛТ-24).\n**gonna** = going to: I'**m gonna** be late. **wanna** = want to: I **wanna** go home.\n**gotta** = have got to: I **gotta** go. **ain't** = am/is/are not: She **ain't** coming.\nСжатия: **dunno** = don't know, **gimme** = give me, **lemme** = let me,\n**kinda/sorta** = kind of / sort of, **outta** = out of, **whatcha** = what are you.\nВ деловом письме: going to, want to, have to, is not.",
+        "phrase_ids": ["ph-s-0138", "ph-s-0139", "ph-s-0140", "ph-s-0141", "ph-s-0142"],
+        "trap_id": "trap-slang-register"
+      },
+      "vocab_band": {
+        "list": "subtitles",
+        "from": 4241,
+        "to": 4300
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-slang-register",
+      "quotes_topic": "slang",
+      "exercises": [
+        {
+          "id": "ex-s-0185"
+        },
+        {
+          "id": "ex-s-0186"
+        },
+        {
+          "id": "ex-s-0187"
+        },
+        {
+          "id": "ex-s-0188"
+        },
+        {
+          "id": "ex-s-0189"
+        },
+        {
+          "id": "ex-s-0190"
+        },
+        {
+          "id": "ex-s-0191"
+        },
+        {
+          "id": "ex-s-0192"
+        },
+        {
+          "id": "ex-s-0193"
+        },
+        {
+          "id": "ex-s-0194"
+        },
+        {
+          "id": "ex-s-0195"
+        },
+        {
+          "id": "ex-s-0196"
+        },
+        {
+          "id": "ex-s-0197"
+        },
+        {
+          "id": "ex-s-0198"
+        },
+        {
+          "id": "ex-s-0199"
+        },
+        {
+          "id": "ex-s-0200"
+        },
+        {
+          "id": "ex-s-0201"
+        },
+        {
+          "id": "ex-s-0202"
+        },
+        {
+          "id": "ex-s-0203"
+        },
+        {
+          "id": "ex-s-0204"
+        },
+        {
+          "id": "ex-s-0205"
+        },
+        {
+          "id": "ex-s-0206"
+        },
+        {
+          "id": "ex-s-0207"
+        },
+        {
+          "id": "ex-s-0208"
+        },
+        {
+          "id": "ex-s-0209"
+        },
+        {
+          "id": "ex-s-0210"
+        },
+        {
+          "id": "ex-s-0211"
+        },
+        {
+          "id": "ex-s-0212"
+        },
+        {
+          "id": "ex-s-0213"
+        },
+        {
+          "id": "ex-s-0214"
+        },
+        {
+          "id": "ex-s-0215"
+        },
+        {
+          "id": "ex-s-0216"
+        },
+        {
+          "id": "ex-s-0217"
+        },
+        {
+          "id": "ex-s-0218"
+        },
+        {
+          "id": "ex-s-0219"
+        },
+        {
+          "id": "ex-s-0220"
+        },
+        {
+          "id": "ex-s-0221"
+        },
+        {
+          "id": "ex-s-0222"
+        },
+        {
+          "id": "ex-s-0223"
+        },
+        {
+          "id": "ex-s-0224"
+        },
+        {
+          "id": "ex-s-0225"
+        },
+        {
+          "id": "ex-s-0226"
+        },
+        {
+          "id": "ex-s-0227"
+        },
+        {
+          "id": "ex-s-0228"
+        },
+        {
+          "id": "ex-s-0229"
+        },
+        {
+          "id": "ex-s-0230"
+        },
+        {
+          "id": "ex-s-0717"
+        },
+        {
+          "id": "ex-s-0718"
+        }
+      ],
+      "bebris_video": null
+    },
+    {
+      "id": "les-s-06",
+      "rank": "S",
+      "module": "mod-s-1",
+      "title": "Повторение №25",
+      "grammar_point": {
+        "id": "gp-s-06",
+        "title_ru": "Микс модуля «Эмфаза и стиль»",
+        "rule_md": "**Повторение №25: эмфаза и стиль.**\nИнверсия: No sooner had we left… / Neither do I. / So loud was the music…\nИдиомы: red-eye, call it a day, bite the bullet, better safe than sorry.\nМодальные оттенки: needn't have worried, must have left, 'd rather, 'd better.\nСвязки: whereas, despite (без of!), nevertheless. Сленг на слух: gonna, gotta, gimme.",
+        "phrase_ids": ["ph-s-0168", "ph-s-0169", "ph-s-0170", "ph-s-0171", "ph-s-0172"],
+        "trap_id": "trap-despite-of"
+      },
+      "vocab_band": {
+        "list": "subtitles",
+        "from": 4301,
+        "to": 4360
+      },
+      "phrasebook_topic": "idioms",
+      "trap_id": "trap-despite-of",
+      "quotes_topic": "mixed",
+      "exercises": [
+        {
+          "id": "ex-s-0231"
+        },
+        {
+          "id": "ex-s-0232"
+        },
+        {
+          "id": "ex-s-0233"
+        },
+        {
+          "id": "ex-s-0234"
+        },
+        {
+          "id": "ex-s-0235"
+        },
+        {
+          "id": "ex-s-0236"
+        },
+        {
+          "id": "ex-s-0237"
+        },
+        {
+          "id": "ex-s-0238"
+        },
+        {
+          "id": "ex-s-0239"
+        },
+        {
+          "id": "ex-s-0240"
+        },
+        {
+          "id": "ex-s-0241"
+        },
+        {
+          "id": "ex-s-0242"
+        },
+        {
+          "id": "ex-s-0243"
+        },
+        {
+          "id": "ex-s-0244"
+        },
+        {
+          "id": "ex-s-0245"
+        },
+        {
+          "id": "ex-s-0246"
+        },
+        {
+          "id": "ex-s-0247"
+        },
+        {
+          "id": "ex-s-0248"
+        },
+        {
+          "id": "ex-s-0249"
+        },
+        {
+          "id": "ex-s-0250"
+        },
+        {
+          "id": "ex-s-0251"
+        },
+        {
+          "id": "ex-s-0252"
+        },
+        {
+          "id": "ex-s-0253"
+        },
+        {
+          "id": "ex-s-0254"
+        },
+        {
+          "id": "ex-s-0255"
+        },
+        {
+          "id": "ex-s-0256"
+        },
+        {
+          "id": "ex-s-0257"
+        },
+        {
+          "id": "ex-s-0258"
+        },
+        {
+          "id": "ex-s-0259"
+        },
+        {
+          "id": "ex-s-0260"
+        },
+        {
+          "id": "ex-s-0261"
+        },
+        {
+          "id": "ex-s-0262"
+        },
+        {
+          "id": "ex-s-0263"
+        },
+        {
+          "id": "ex-s-0264"
+        },
+        {
+          "id": "ex-s-0265"
+        },
+        {
+          "id": "ex-s-0266"
+        },
+        {
+          "id": "ex-s-0267"
+        },
+        {
+          "id": "ex-s-0268"
+        },
+        {
+          "id": "ex-s-0269"
+        },
+        {
+          "id": "ex-s-0270"
+        },
+        {
+          "id": "ex-s-0271"
+        },
+        {
+          "id": "ex-s-0272"
+        },
+        {
+          "id": "ex-s-0273"
+        },
+        {
+          "id": "ex-s-0274"
+        },
+        {
+          "id": "ex-s-0275"
+        },
+        {
+          "id": "ex-s-0276"
+        },
+        {
+          "id": "ex-s-0719"
+        },
+        {
+          "id": "ex-s-0720"
+        }
+      ],
+      "bebris_video": null
+    },
+    {
+      "id": "les-s-07",
+      "rank": "S",
+      "module": "mod-s-2",
+      "title": "Колоды C1: JJK и Black Mirror",
+      "grammar_point": {
+        "id": "gp-s-07",
+        "title_ru": "Лексика обсуждения + cloze по цитатам",
+        "rule_md": "**Колоды C1: JJK и Black Mirror.**\nУрок-колода: десять цитат уровня C1 + cloze + разбор.\nЛексика обсуждения: **plot twist** — поворот сюжета; **pacing** — темп;\n**the finale paid off** — финал оправдал ожидания; **steals the show** — крадёт шоу;\n**subvert expectations** — ломать ожидания; **slow burn** — медленный разгон;\n**binge-watch** — глотать сезонами; **it lingers** — остаётся с тобой.\nСмотри в оригинале: «Watch it subbed, trust me».",
+        "phrase_ids": ["ph-s-0196", "ph-s-0197", "ph-s-0198", "ph-s-0199", "ph-s-0200"],
+        "trap_id": null
+      },
+      "vocab_band": {
+        "list": "subtitles",
+        "from": 4361,
+        "to": 4420
+      },
+      "phrasebook_topic": null,
+      "trap_id": null,
+      "quotes_topic": "decks",
+      "exercises": [
+        {
+          "id": "ex-s-0277"
+        },
+        {
+          "id": "ex-s-0278"
+        },
+        {
+          "id": "ex-s-0279"
+        },
+        {
+          "id": "ex-s-0280"
+        },
+        {
+          "id": "ex-s-0281"
+        },
+        {
+          "id": "ex-s-0282"
+        },
+        {
+          "id": "ex-s-0283"
+        },
+        {
+          "id": "ex-s-0284"
+        },
+        {
+          "id": "ex-s-0285"
+        },
+        {
+          "id": "ex-s-0286"
+        },
+        {
+          "id": "ex-s-0287"
+        },
+        {
+          "id": "ex-s-0288"
+        },
+        {
+          "id": "ex-s-0289"
+        },
+        {
+          "id": "ex-s-0290"
+        },
+        {
+          "id": "ex-s-0291"
+        },
+        {
+          "id": "ex-s-0292"
+        },
+        {
+          "id": "ex-s-0293"
+        },
+        {
+          "id": "ex-s-0294"
+        },
+        {
+          "id": "ex-s-0295"
+        },
+        {
+          "id": "ex-s-0296"
+        },
+        {
+          "id": "ex-s-0297"
+        },
+        {
+          "id": "ex-s-0298"
+        },
+        {
+          "id": "ex-s-0299"
+        },
+        {
+          "id": "ex-s-0300"
+        },
+        {
+          "id": "ex-s-0301"
+        },
+        {
+          "id": "ex-s-0302"
+        },
+        {
+          "id": "ex-s-0303"
+        },
+        {
+          "id": "ex-s-0304"
+        },
+        {
+          "id": "ex-s-0305"
+        },
+        {
+          "id": "ex-s-0306"
+        },
+        {
+          "id": "ex-s-0307"
+        },
+        {
+          "id": "ex-s-0308"
+        },
+        {
+          "id": "ex-s-0309"
+        },
+        {
+          "id": "ex-s-0310"
+        },
+        {
+          "id": "ex-s-0311"
+        },
+        {
+          "id": "ex-s-0312"
+        },
+        {
+          "id": "ex-s-0313"
+        },
+        {
+          "id": "ex-s-0314"
+        },
+        {
+          "id": "ex-s-0315"
+        },
+        {
+          "id": "ex-s-0316"
+        },
+        {
+          "id": "ex-s-0317"
+        },
+        {
+          "id": "ex-s-0318"
+        },
+        {
+          "id": "ex-s-0319"
+        },
+        {
+          "id": "ex-s-0320"
+        },
+        {
+          "id": "ex-s-0321"
+        },
+        {
+          "id": "ex-s-0322"
+        },
+        {
+          "id": "ex-s-0323"
+        },
+        {
+          "id": "ex-s-0324"
+        },
+        {
+          "id": "ex-s-0325"
+        },
+        {
+          "id": "ex-s-0326"
+        },
+        {
+          "id": "ex-s-0327"
+        },
+        {
+          "id": "ex-s-0328"
+        },
+        {
+          "id": "ex-s-0329"
+        },
+        {
+          "id": "ex-s-0330"
+        },
+        {
+          "id": "ex-s-0721"
+        },
+        {
+          "id": "ex-s-0722"
+        }
+      ],
+      "bebris_video": null
+    },
+    {
+      "id": "les-s-08",
+      "rank": "S",
+      "module": "mod-s-2",
+      "title": "Инверсия условных: Had I known…, Were it not for…",
+      "grammar_point": {
+        "id": "gp-s-08",
+        "title_ru": "Условные без if",
+        "rule_md": "**Инверсия условных: Had I known…, Were it not for…**\nIf исчезает, вспомогательный глагол выходит вперёд:\n**Had I known**, I would have called = If I had known…\n**Were it not for** you = If it weren't for you.\n**Should you need** help = If you should need help (вежливое «вдруг понадобится»).\nРазговорный дубль остаётся нормой: If I had known… — тоже верно.\nИнверсия звучит формально и литературно.",
+        "phrase_ids": ["ph-s-0220", "ph-s-0221", "ph-s-0222", "ph-s-0223", "ph-s-0224"],
+        "trap_id": "trap-if-will"
+      },
+      "vocab_band": {
+        "list": "subtitles",
+        "from": 4421,
+        "to": 4480
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-if-will",
+      "quotes_topic": "conditionals-inv",
+      "exercises": [
+        {
+          "id": "ex-s-0331"
+        },
+        {
+          "id": "ex-s-0332"
+        },
+        {
+          "id": "ex-s-0333"
+        },
+        {
+          "id": "ex-s-0334"
+        },
+        {
+          "id": "ex-s-0335"
+        },
+        {
+          "id": "ex-s-0336"
+        },
+        {
+          "id": "ex-s-0337"
+        },
+        {
+          "id": "ex-s-0338"
+        },
+        {
+          "id": "ex-s-0339"
+        },
+        {
+          "id": "ex-s-0340"
+        },
+        {
+          "id": "ex-s-0341"
+        },
+        {
+          "id": "ex-s-0342"
+        },
+        {
+          "id": "ex-s-0343"
+        },
+        {
+          "id": "ex-s-0344"
+        },
+        {
+          "id": "ex-s-0345"
+        },
+        {
+          "id": "ex-s-0346"
+        },
+        {
+          "id": "ex-s-0347"
+        },
+        {
+          "id": "ex-s-0348"
+        },
+        {
+          "id": "ex-s-0349"
+        },
+        {
+          "id": "ex-s-0350"
+        },
+        {
+          "id": "ex-s-0351"
+        },
+        {
+          "id": "ex-s-0352"
+        },
+        {
+          "id": "ex-s-0353"
+        },
+        {
+          "id": "ex-s-0354"
+        },
+        {
+          "id": "ex-s-0355"
+        },
+        {
+          "id": "ex-s-0356"
+        },
+        {
+          "id": "ex-s-0357"
+        },
+        {
+          "id": "ex-s-0358"
+        },
+        {
+          "id": "ex-s-0359"
+        },
+        {
+          "id": "ex-s-0360"
+        },
+        {
+          "id": "ex-s-0361"
+        },
+        {
+          "id": "ex-s-0362"
+        },
+        {
+          "id": "ex-s-0363"
+        },
+        {
+          "id": "ex-s-0364"
+        },
+        {
+          "id": "ex-s-0365"
+        },
+        {
+          "id": "ex-s-0366"
+        },
+        {
+          "id": "ex-s-0367"
+        },
+        {
+          "id": "ex-s-0368"
+        },
+        {
+          "id": "ex-s-0369"
+        },
+        {
+          "id": "ex-s-0370"
+        },
+        {
+          "id": "ex-s-0371"
+        },
+        {
+          "id": "ex-s-0372"
+        },
+        {
+          "id": "ex-s-0373"
+        },
+        {
+          "id": "ex-s-0374"
+        },
+        {
+          "id": "ex-s-0375"
+        },
+        {
+          "id": "ex-s-0376"
+        },
+        {
+          "id": "ex-s-0723"
+        },
+        {
+          "id": "ex-s-0724"
+        }
+      ],
+      "bebris_video": null
+    },
+    {
+      "id": "les-s-09",
+      "rank": "S",
+      "module": "mod-s-2",
+      "title": "Пассив в формальном стиле: It is believed that…",
+      "grammar_point": {
+        "id": "gp-s-09",
+        "title_ru": "Безличный доклад и пассив инфинитива",
+        "rule_md": "**Пассив в формальном стиле.**\nБезличный доклад: **It is believed/reported/thought that…** — считается/сообщается/полагают.\n**He is said to be…** — говорят, он…; **She is expected to resign** — ожидается отставка.\nПерфект/длительный пассив: **has been announced**, **is being looked into**.\n**It cannot be ruled out** — исключить нельзя. **Little is known about…** — мало известно.\nЭто язык новостей и документов — учи блоками.",
+        "phrase_ids": ["ph-s-0252", "ph-s-0253", "ph-s-0254", "ph-s-0255", "ph-s-0256"],
+        "trap_id": "trap-present-perfect"
+      },
+      "vocab_band": {
+        "list": "subtitles",
+        "from": 4481,
+        "to": 4540
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-present-perfect",
+      "quotes_topic": "formal",
+      "exercises": [
+        {
+          "id": "ex-s-0377"
+        },
+        {
+          "id": "ex-s-0378"
+        },
+        {
+          "id": "ex-s-0379"
+        },
+        {
+          "id": "ex-s-0380"
+        },
+        {
+          "id": "ex-s-0381"
+        },
+        {
+          "id": "ex-s-0382"
+        },
+        {
+          "id": "ex-s-0383"
+        },
+        {
+          "id": "ex-s-0384"
+        },
+        {
+          "id": "ex-s-0385"
+        },
+        {
+          "id": "ex-s-0386"
+        },
+        {
+          "id": "ex-s-0387"
+        },
+        {
+          "id": "ex-s-0388"
+        },
+        {
+          "id": "ex-s-0389"
+        },
+        {
+          "id": "ex-s-0390"
+        },
+        {
+          "id": "ex-s-0391"
+        },
+        {
+          "id": "ex-s-0392"
+        },
+        {
+          "id": "ex-s-0393"
+        },
+        {
+          "id": "ex-s-0394"
+        },
+        {
+          "id": "ex-s-0395"
+        },
+        {
+          "id": "ex-s-0396"
+        },
+        {
+          "id": "ex-s-0397"
+        },
+        {
+          "id": "ex-s-0398"
+        },
+        {
+          "id": "ex-s-0399"
+        },
+        {
+          "id": "ex-s-0400"
+        },
+        {
+          "id": "ex-s-0401"
+        },
+        {
+          "id": "ex-s-0402"
+        },
+        {
+          "id": "ex-s-0403"
+        },
+        {
+          "id": "ex-s-0404"
+        },
+        {
+          "id": "ex-s-0405"
+        },
+        {
+          "id": "ex-s-0406"
+        },
+        {
+          "id": "ex-s-0407"
+        },
+        {
+          "id": "ex-s-0408"
+        },
+        {
+          "id": "ex-s-0409"
+        },
+        {
+          "id": "ex-s-0410"
+        },
+        {
+          "id": "ex-s-0411"
+        },
+        {
+          "id": "ex-s-0412"
+        },
+        {
+          "id": "ex-s-0413"
+        },
+        {
+          "id": "ex-s-0414"
+        },
+        {
+          "id": "ex-s-0415"
+        },
+        {
+          "id": "ex-s-0416"
+        },
+        {
+          "id": "ex-s-0417"
+        },
+        {
+          "id": "ex-s-0418"
+        },
+        {
+          "id": "ex-s-0419"
+        },
+        {
+          "id": "ex-s-0420"
+        },
+        {
+          "id": "ex-s-0421"
+        },
+        {
+          "id": "ex-s-0422"
+        },
+        {
+          "id": "ex-s-0725"
+        },
+        {
+          "id": "ex-s-0726"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "2.226",
+        "playlist_index": 777,
+        "youtube_id": "k30PW6j0i50",
+        "title": null
+      }
+    },
+    {
+      "id": "les-s-10",
+      "rank": "S",
+      "module": "mod-s-2",
+      "title": "Повторение №26: контрольная",
+      "grammar_point": {
+        "id": "gp-s-10",
+        "title_ru": "Микс модуля «Колоды и формальный стиль»",
+        "rule_md": "**Повторение №26: контрольная.**\nКолоды: plot twist, pacing, steals the show, binge-watch.\nИнверсия условных: Had I known… / Were it not for… / Should you need…\nФормальный пассив: It is believed that… / Measures are being taken.\nФорматы Врат: найди ошибку, выбери форму, трансформация.",
+        "phrase_ids": ["ph-s-0284", "ph-s-0285", "ph-s-0286", "ph-s-0287", "ph-s-0288"],
+        "trap_id": "trap-if-will"
+      },
+      "vocab_band": {
+        "list": "subtitles",
+        "from": 4541,
+        "to": 4600
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-if-will",
+      "quotes_topic": "mixed",
+      "exercises": [
+        {
+          "id": "ex-s-0423"
+        },
+        {
+          "id": "ex-s-0424"
+        },
+        {
+          "id": "ex-s-0425"
+        },
+        {
+          "id": "ex-s-0426"
+        },
+        {
+          "id": "ex-s-0427"
+        },
+        {
+          "id": "ex-s-0428"
+        },
+        {
+          "id": "ex-s-0429"
+        },
+        {
+          "id": "ex-s-0430"
+        },
+        {
+          "id": "ex-s-0431"
+        },
+        {
+          "id": "ex-s-0432"
+        },
+        {
+          "id": "ex-s-0433"
+        },
+        {
+          "id": "ex-s-0434"
+        },
+        {
+          "id": "ex-s-0435"
+        },
+        {
+          "id": "ex-s-0436"
+        },
+        {
+          "id": "ex-s-0437"
+        },
+        {
+          "id": "ex-s-0438"
+        },
+        {
+          "id": "ex-s-0439"
+        },
+        {
+          "id": "ex-s-0440"
+        },
+        {
+          "id": "ex-s-0441"
+        },
+        {
+          "id": "ex-s-0442"
+        },
+        {
+          "id": "ex-s-0443"
+        },
+        {
+          "id": "ex-s-0444"
+        },
+        {
+          "id": "ex-s-0445"
+        },
+        {
+          "id": "ex-s-0446"
+        },
+        {
+          "id": "ex-s-0447"
+        },
+        {
+          "id": "ex-s-0448"
+        },
+        {
+          "id": "ex-s-0449"
+        },
+        {
+          "id": "ex-s-0450"
+        },
+        {
+          "id": "ex-s-0451"
+        },
+        {
+          "id": "ex-s-0452"
+        },
+        {
+          "id": "ex-s-0453"
+        },
+        {
+          "id": "ex-s-0454"
+        },
+        {
+          "id": "ex-s-0455"
+        },
+        {
+          "id": "ex-s-0456"
+        },
+        {
+          "id": "ex-s-0457"
+        },
+        {
+          "id": "ex-s-0458"
+        },
+        {
+          "id": "ex-s-0459"
+        },
+        {
+          "id": "ex-s-0460"
+        },
+        {
+          "id": "ex-s-0461"
+        },
+        {
+          "id": "ex-s-0462"
+        },
+        {
+          "id": "ex-s-0463"
+        },
+        {
+          "id": "ex-s-0464"
+        },
+        {
+          "id": "ex-s-0465"
+        },
+        {
+          "id": "ex-s-0466"
+        },
+        {
+          "id": "ex-s-0467"
+        },
+        {
+          "id": "ex-s-0468"
+        },
+        {
+          "id": "ex-s-0727"
+        },
+        {
+          "id": "ex-s-0728"
+        }
+      ],
+      "bebris_video": null
+    },
+    {
+      "id": "les-s-11",
+      "rank": "S",
+      "module": "mod-s-3",
+      "title": "Free talk: капсула импровизации",
+      "grammar_point": {
+        "id": "gp-s-11",
+        "title_ru": "Держать разговор без подготовки",
+        "rule_md": "**Free talk: капсула импровизации.** <!-- REVIEW: спека S-11 требует «7 мин непрерывной речи» — таймер свободной речи за границами движка; реализована импровизация answer_question без подготовки -->\nФункции, которыми держат разговор, когда нечего ответить:\nТянуть время: **That's a tough one. / Let me think for a second. / Off the top of my head…**\nМнение: **The way I see it… / If you ask me… / I'm on the fence about it.**\nУступить или удержать: **That's a fair point. / That's not how I'd put it. / Let's agree to disagree.**\nСжать: **In a nutshell… / Long story short… / What it boils down to is…**\nЗдесь нет «правильного» ответа — только твоя позиция.",
+        "phrase_ids": ["ph-s-0310", "ph-s-0311", "ph-s-0312", "ph-s-0313", "ph-s-0314"],
+        "trap_id": null
+      },
+      "vocab_band": {
+        "list": "subtitles",
+        "from": 4601,
+        "to": 4700
+      },
+      "phrasebook_topic": null,
+      "trap_id": null,
+      "quotes_topic": "improv",
+      "exercises": [
+        {
+          "id": "ex-s-0469"
+        },
+        {
+          "id": "ex-s-0470"
+        },
+        {
+          "id": "ex-s-0471"
+        },
+        {
+          "id": "ex-s-0472"
+        },
+        {
+          "id": "ex-s-0473"
+        },
+        {
+          "id": "ex-s-0474"
+        },
+        {
+          "id": "ex-s-0475"
+        },
+        {
+          "id": "ex-s-0476"
+        },
+        {
+          "id": "ex-s-0477"
+        },
+        {
+          "id": "ex-s-0478"
+        },
+        {
+          "id": "ex-s-0479"
+        },
+        {
+          "id": "ex-s-0480"
+        },
+        {
+          "id": "ex-s-0481"
+        },
+        {
+          "id": "ex-s-0482"
+        },
+        {
+          "id": "ex-s-0483"
+        },
+        {
+          "id": "ex-s-0484"
+        },
+        {
+          "id": "ex-s-0485"
+        },
+        {
+          "id": "ex-s-0486"
+        },
+        {
+          "id": "ex-s-0487"
+        },
+        {
+          "id": "ex-s-0488"
+        },
+        {
+          "id": "ex-s-0489"
+        },
+        {
+          "id": "ex-s-0490"
+        },
+        {
+          "id": "ex-s-0491"
+        },
+        {
+          "id": "ex-s-0492"
+        },
+        {
+          "id": "ex-s-0493"
+        },
+        {
+          "id": "ex-s-0494"
+        },
+        {
+          "id": "ex-s-0495"
+        },
+        {
+          "id": "ex-s-0496"
+        },
+        {
+          "id": "ex-s-0497"
+        },
+        {
+          "id": "ex-s-0498"
+        },
+        {
+          "id": "ex-s-0499"
+        },
+        {
+          "id": "ex-s-0500"
+        },
+        {
+          "id": "ex-s-0501"
+        },
+        {
+          "id": "ex-s-0502"
+        },
+        {
+          "id": "ex-s-0503"
+        },
+        {
+          "id": "ex-s-0504"
+        },
+        {
+          "id": "ex-s-0505"
+        },
+        {
+          "id": "ex-s-0506"
+        },
+        {
+          "id": "ex-s-0507"
+        },
+        {
+          "id": "ex-s-0508"
+        },
+        {
+          "id": "ex-s-0509"
+        },
+        {
+          "id": "ex-s-0510"
+        },
+        {
+          "id": "ex-s-0511"
+        },
+        {
+          "id": "ex-s-0512"
+        },
+        {
+          "id": "ex-s-0513"
+        },
+        {
+          "id": "ex-s-0514"
+        },
+        {
+          "id": "ex-s-0729"
+        },
+        {
+          "id": "ex-s-0730"
+        },
+        {
+          "id": "ex-s-0731"
+        },
+        {
+          "id": "ex-s-0732"
+        },
+        {
+          "id": "ex-s-0733"
+        }
+      ],
+      "bebris_video": null
+    },
+    {
+      "id": "les-s-12",
+      "rank": "S",
+      "module": "mod-s-3",
+      "title": "Дискурс-маркеры носителей",
+      "grammar_point": {
+        "id": "gp-s-12",
+        "title_ru": "Связки живой речи",
+        "rule_md": "**Дискурс-маркеры носителей.**\nСлова-связки, на которых держится живая речь:\n**You know what I mean.** — понимаешь, о чём я. **sort of / kind of** — как бы.\n**I mean…** — ну, то есть. **Actually…** — вообще-то. **Basically…** — по сути.\n**To be fair…** — справедливости ради. **At the end of the day…** — в конечном счёте.\n**Fair enough.** — справедливо. **No worries.** — без проблем. **Mind you…** — между прочим.\n**That said…** — тем не менее. **Apparently…** — судя по всему. **Like I said…** — как я уже говорил.\nНе переводятся дословно — ловятся на слух и вставляются в свою речь.",
+        "phrase_ids": ["ph-s-0340", "ph-s-0341", "ph-s-0342", "ph-s-0343", "ph-s-0344"],
+        "trap_id": null
+      },
+      "vocab_band": {
+        "list": "subtitles",
+        "from": 4701,
+        "to": 4760
+      },
+      "phrasebook_topic": null,
+      "trap_id": null,
+      "quotes_topic": "discourse",
+      "exercises": [
+        {
+          "id": "ex-s-0515"
+        },
+        {
+          "id": "ex-s-0516"
+        },
+        {
+          "id": "ex-s-0517"
+        },
+        {
+          "id": "ex-s-0518"
+        },
+        {
+          "id": "ex-s-0519"
+        },
+        {
+          "id": "ex-s-0520"
+        },
+        {
+          "id": "ex-s-0521"
+        },
+        {
+          "id": "ex-s-0522"
+        },
+        {
+          "id": "ex-s-0523"
+        },
+        {
+          "id": "ex-s-0524"
+        },
+        {
+          "id": "ex-s-0525"
+        },
+        {
+          "id": "ex-s-0526"
+        },
+        {
+          "id": "ex-s-0527"
+        },
+        {
+          "id": "ex-s-0528"
+        },
+        {
+          "id": "ex-s-0529"
+        },
+        {
+          "id": "ex-s-0530"
+        },
+        {
+          "id": "ex-s-0531"
+        },
+        {
+          "id": "ex-s-0532"
+        },
+        {
+          "id": "ex-s-0533"
+        },
+        {
+          "id": "ex-s-0534"
+        },
+        {
+          "id": "ex-s-0535"
+        },
+        {
+          "id": "ex-s-0536"
+        },
+        {
+          "id": "ex-s-0537"
+        },
+        {
+          "id": "ex-s-0538"
+        },
+        {
+          "id": "ex-s-0539"
+        },
+        {
+          "id": "ex-s-0540"
+        },
+        {
+          "id": "ex-s-0541"
+        },
+        {
+          "id": "ex-s-0542"
+        },
+        {
+          "id": "ex-s-0543"
+        },
+        {
+          "id": "ex-s-0544"
+        },
+        {
+          "id": "ex-s-0545"
+        },
+        {
+          "id": "ex-s-0546"
+        },
+        {
+          "id": "ex-s-0547"
+        },
+        {
+          "id": "ex-s-0548"
+        },
+        {
+          "id": "ex-s-0549"
+        },
+        {
+          "id": "ex-s-0550"
+        },
+        {
+          "id": "ex-s-0551"
+        },
+        {
+          "id": "ex-s-0552"
+        },
+        {
+          "id": "ex-s-0553"
+        },
+        {
+          "id": "ex-s-0554"
+        },
+        {
+          "id": "ex-s-0555"
+        },
+        {
+          "id": "ex-s-0556"
+        },
+        {
+          "id": "ex-s-0557"
+        },
+        {
+          "id": "ex-s-0558"
+        },
+        {
+          "id": "ex-s-0559"
+        },
+        {
+          "id": "ex-s-0560"
+        },
+        {
+          "id": "ex-s-0734"
+        },
+        {
+          "id": "ex-s-0735"
+        }
+      ],
+      "bebris_video": null
+    },
+    {
+      "id": "les-s-13",
+      "rank": "S",
+      "module": "mod-s-3",
+      "title": "False friends и стилистические регистры",
+      "grammar_point": {
+        "id": "gp-s-13",
+        "title_ru": "actual ≠ актуальный; kids ≠ children",
+        "rule_md": "**False friends и стилистические регистры.**\nЛожные друзья (ЛТ-25): **actual** = фактический, реальный (актуальный = **topical**).\n**pretend** = притворяться (претендовать = **apply for**). **sympathy** = сочувствие (симпатия = **a soft spot**).\n**pretext** = отговорка (предлог = **preposition**).\nРегистры: детям и друзьям — **kids, help, need, start, Later!**;\nв документах и вежливо — **children, assist, require, commence, Regards**.\nСмысл один — окраска разная.",
+        "phrase_ids": ["ph-s-0370", "ph-s-0371", "ph-s-0372", "ph-s-0373", "ph-s-0374"],
+        "trap_id": "trap-false-friends"
+      },
+      "vocab_band": {
+        "list": "subtitles",
+        "from": 4761,
+        "to": 4820
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-false-friends",
+      "quotes_topic": null,
+      "exercises": [
+        {
+          "id": "ex-s-0561"
+        },
+        {
+          "id": "ex-s-0562"
+        },
+        {
+          "id": "ex-s-0563"
+        },
+        {
+          "id": "ex-s-0564"
+        },
+        {
+          "id": "ex-s-0565"
+        },
+        {
+          "id": "ex-s-0566"
+        },
+        {
+          "id": "ex-s-0567"
+        },
+        {
+          "id": "ex-s-0568"
+        },
+        {
+          "id": "ex-s-0569"
+        },
+        {
+          "id": "ex-s-0570"
+        },
+        {
+          "id": "ex-s-0571"
+        },
+        {
+          "id": "ex-s-0572"
+        },
+        {
+          "id": "ex-s-0573"
+        },
+        {
+          "id": "ex-s-0574"
+        },
+        {
+          "id": "ex-s-0575"
+        },
+        {
+          "id": "ex-s-0576"
+        },
+        {
+          "id": "ex-s-0577"
+        },
+        {
+          "id": "ex-s-0578"
+        },
+        {
+          "id": "ex-s-0579"
+        },
+        {
+          "id": "ex-s-0580"
+        },
+        {
+          "id": "ex-s-0581"
+        },
+        {
+          "id": "ex-s-0582"
+        },
+        {
+          "id": "ex-s-0583"
+        },
+        {
+          "id": "ex-s-0584"
+        },
+        {
+          "id": "ex-s-0585"
+        },
+        {
+          "id": "ex-s-0586"
+        },
+        {
+          "id": "ex-s-0587"
+        },
+        {
+          "id": "ex-s-0588"
+        },
+        {
+          "id": "ex-s-0589"
+        },
+        {
+          "id": "ex-s-0590"
+        },
+        {
+          "id": "ex-s-0591"
+        },
+        {
+          "id": "ex-s-0592"
+        },
+        {
+          "id": "ex-s-0593"
+        },
+        {
+          "id": "ex-s-0594"
+        },
+        {
+          "id": "ex-s-0595"
+        },
+        {
+          "id": "ex-s-0596"
+        },
+        {
+          "id": "ex-s-0597"
+        },
+        {
+          "id": "ex-s-0598"
+        },
+        {
+          "id": "ex-s-0599"
+        },
+        {
+          "id": "ex-s-0600"
+        },
+        {
+          "id": "ex-s-0601"
+        },
+        {
+          "id": "ex-s-0602"
+        },
+        {
+          "id": "ex-s-0603"
+        },
+        {
+          "id": "ex-s-0604"
+        },
+        {
+          "id": "ex-s-0736"
+        },
+        {
+          "id": "ex-s-0737"
+        }
+      ],
+      "bebris_video": null
+    },
+    {
+      "id": "les-s-14",
+      "rank": "S",
+      "module": "mod-s-3",
+      "title": "Повторение №27 + большой диктант",
+      "grammar_point": {
+        "id": "gp-s-14",
+        "title_ru": "Микс S3 + диктант на скорости",
+        "rule_md": "**Повторение №27 + большой диктант.**\nFree talk: tough one, fair point, on the fence, agree to disagree.\nМаркеры: sort of, actually, fair enough, that said, in other words.\nТочность: actual/topical, pretend/pretext, assist/help.\nБольшой диктант: быстрые фразы из сериалов — слушай два раза, пиши сразу.",
+        "phrase_ids": ["ph-s-0398", "ph-s-0399", "ph-s-0400", "ph-s-0401", "ph-s-0402"],
+        "trap_id": "trap-false-friends"
+      },
+      "vocab_band": {
+        "list": "subtitles",
+        "from": 4821,
+        "to": 4880
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-false-friends",
+      "quotes_topic": "mixed",
+      "exercises": [
+        {
+          "id": "ex-s-0605"
+        },
+        {
+          "id": "ex-s-0606"
+        },
+        {
+          "id": "ex-s-0607"
+        },
+        {
+          "id": "ex-s-0608"
+        },
+        {
+          "id": "ex-s-0609"
+        },
+        {
+          "id": "ex-s-0610"
+        },
+        {
+          "id": "ex-s-0611"
+        },
+        {
+          "id": "ex-s-0612"
+        },
+        {
+          "id": "ex-s-0613"
+        },
+        {
+          "id": "ex-s-0614"
+        },
+        {
+          "id": "ex-s-0615"
+        },
+        {
+          "id": "ex-s-0616"
+        },
+        {
+          "id": "ex-s-0617"
+        },
+        {
+          "id": "ex-s-0618"
+        },
+        {
+          "id": "ex-s-0619"
+        },
+        {
+          "id": "ex-s-0620"
+        },
+        {
+          "id": "ex-s-0621"
+        },
+        {
+          "id": "ex-s-0622"
+        },
+        {
+          "id": "ex-s-0623"
+        },
+        {
+          "id": "ex-s-0624"
+        },
+        {
+          "id": "ex-s-0625"
+        },
+        {
+          "id": "ex-s-0626"
+        },
+        {
+          "id": "ex-s-0627"
+        },
+        {
+          "id": "ex-s-0628"
+        },
+        {
+          "id": "ex-s-0629"
+        },
+        {
+          "id": "ex-s-0630"
+        },
+        {
+          "id": "ex-s-0631"
+        },
+        {
+          "id": "ex-s-0632"
+        },
+        {
+          "id": "ex-s-0633"
+        },
+        {
+          "id": "ex-s-0634"
+        },
+        {
+          "id": "ex-s-0635"
+        },
+        {
+          "id": "ex-s-0636"
+        },
+        {
+          "id": "ex-s-0637"
+        },
+        {
+          "id": "ex-s-0638"
+        },
+        {
+          "id": "ex-s-0639"
+        },
+        {
+          "id": "ex-s-0640"
+        },
+        {
+          "id": "ex-s-0641"
+        },
+        {
+          "id": "ex-s-0642"
+        },
+        {
+          "id": "ex-s-0643"
+        },
+        {
+          "id": "ex-s-0644"
+        },
+        {
+          "id": "ex-s-0645"
+        },
+        {
+          "id": "ex-s-0646"
+        },
+        {
+          "id": "ex-s-0647"
+        },
+        {
+          "id": "ex-s-0648"
+        },
+        {
+          "id": "ex-s-0649"
+        },
+        {
+          "id": "ex-s-0650"
+        },
+        {
+          "id": "ex-s-0651"
+        },
+        {
+          "id": "ex-s-0652"
+        },
+        {
+          "id": "ex-s-0653"
+        },
+        {
+          "id": "ex-s-0654"
+        },
+        {
+          "id": "ex-s-0738"
+        },
+        {
+          "id": "ex-s-0739"
+        }
+      ],
+      "bebris_video": null
+    },
+    {
+      "id": "les-s-15",
+      "rank": "S",
+      "module": "mod-s-3",
+      "title": "Разбор сцены: колода цитат",
+      "grammar_point": {
+        "id": "gp-s-15",
+        "title_ru": "Язык кинокритика + cloze по сценам",
+        "rule_md": "**Разбор сцены: колода цитат.** <!-- REVIEW: литеральная «кликабельная читалка» эпизода — отдельная будущая механика (specs/01 §10 «перспектива»); в M20 — разбор-колода на механиках M11 -->\nДесять цитат-сцен + словарь кинокритика:\n**foreshadow** — предвещать; **open to interpretation** — простор для трактовки;\n**read between the lines** — читать между строк; **subvert the trope** — ломать штамп;\n**deliberately ambiguous** — намеренно двусмысленно; **recurring motif** — повторяющийся мотив;\n**the payoff** — отдача, кульминационная награда; **subtext** — подтекст.\nСмотри сцену дважды: **It rewards a second watch.**",
+        "phrase_ids": ["ph-s-0428", "ph-s-0429", "ph-s-0430", "ph-s-0431", "ph-s-0432"],
+        "trap_id": null
+      },
+      "vocab_band": {
+        "list": "subtitles",
+        "from": 4881,
+        "to": 5000
+      },
+      "phrasebook_topic": null,
+      "trap_id": null,
+      "quotes_topic": "scenes",
+      "exercises": [
+        {
+          "id": "ex-s-0655"
+        },
+        {
+          "id": "ex-s-0656"
+        },
+        {
+          "id": "ex-s-0657"
+        },
+        {
+          "id": "ex-s-0658"
+        },
+        {
+          "id": "ex-s-0659"
+        },
+        {
+          "id": "ex-s-0660"
+        },
+        {
+          "id": "ex-s-0661"
+        },
+        {
+          "id": "ex-s-0662"
+        },
+        {
+          "id": "ex-s-0663"
+        },
+        {
+          "id": "ex-s-0664"
+        },
+        {
+          "id": "ex-s-0665"
+        },
+        {
+          "id": "ex-s-0666"
+        },
+        {
+          "id": "ex-s-0667"
+        },
+        {
+          "id": "ex-s-0668"
+        },
+        {
+          "id": "ex-s-0669"
+        },
+        {
+          "id": "ex-s-0670"
+        },
+        {
+          "id": "ex-s-0671"
+        },
+        {
+          "id": "ex-s-0672"
+        },
+        {
+          "id": "ex-s-0673"
+        },
+        {
+          "id": "ex-s-0674"
+        },
+        {
+          "id": "ex-s-0675"
+        },
+        {
+          "id": "ex-s-0676"
+        },
+        {
+          "id": "ex-s-0677"
+        },
+        {
+          "id": "ex-s-0678"
+        },
+        {
+          "id": "ex-s-0679"
+        },
+        {
+          "id": "ex-s-0680"
+        },
+        {
+          "id": "ex-s-0681"
+        },
+        {
+          "id": "ex-s-0682"
+        },
+        {
+          "id": "ex-s-0683"
+        },
+        {
+          "id": "ex-s-0684"
+        },
+        {
+          "id": "ex-s-0685"
+        },
+        {
+          "id": "ex-s-0686"
+        },
+        {
+          "id": "ex-s-0687"
+        },
+        {
+          "id": "ex-s-0688"
+        },
+        {
+          "id": "ex-s-0689"
+        },
+        {
+          "id": "ex-s-0690"
+        },
+        {
+          "id": "ex-s-0691"
+        },
+        {
+          "id": "ex-s-0692"
+        },
+        {
+          "id": "ex-s-0693"
+        },
+        {
+          "id": "ex-s-0694"
+        },
+        {
+          "id": "ex-s-0695"
+        },
+        {
+          "id": "ex-s-0696"
+        },
+        {
+          "id": "ex-s-0697"
+        },
+        {
+          "id": "ex-s-0698"
+        },
+        {
+          "id": "ex-s-0699"
+        },
+        {
+          "id": "ex-s-0700"
+        },
+        {
+          "id": "ex-s-0701"
+        },
+        {
+          "id": "ex-s-0702"
+        },
+        {
+          "id": "ex-s-0703"
+        },
+        {
+          "id": "ex-s-0704"
+        },
+        {
+          "id": "ex-s-0705"
+        },
+        {
+          "id": "ex-s-0706"
+        },
+        {
+          "id": "ex-s-0707"
+        },
+        {
+          "id": "ex-s-0708"
+        },
+        {
+          "id": "ex-s-0740"
+        },
+        {
+          "id": "ex-s-0741"
+        }
+      ],
+      "bebris_video": null
+    }
+  ]
+}

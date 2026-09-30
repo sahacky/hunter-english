@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-30T20:09:14Z",
+  "generated_at": "2026-09-30T20:27:32Z",
   "files": [
     {
       "path": "lessons/exercises-a.json",
@@ -38,6 +38,13 @@
       "sha256": "b35c5f220e23b6f8f4acf7962a8e09e3c59339e32d0313220f51fbacd174a0bb"
     },
     {
+      "path": "lessons/exercises-s.json",
+      "kind": "exercises",
+      "schema_version": 1,
+      "items": 741,
+      "sha256": "622ba90d65b7dd01a2b458a5346926649aef57371e4ac12aa3b492d5b693c5e9"
+    },
+    {
       "path": "lessons/lessons-a.json",
       "kind": "lessons",
       "schema_version": 1,
@@ -73,6 +80,13 @@
       "sha256": "2d65672f482561ee2625a721b09738f0a9fb45d3fdf67fbfed496c64ee5b4a4c"
     },
     {
+      "path": "lessons/lessons-s.json",
+      "kind": "lessons",
+      "schema_version": 1,
+      "items": 15,
+      "sha256": "44705fb6e19e60e1b3d16214f1870dfeb7129bdd723a259fcd34c222a62d117f"
+    },
+    {
       "path": "phrasebook/airport.json",
       "kind": "phrasebook",
       "schema_version": 1,
@@ -99,6 +113,13 @@
       "schema_version": 1,
       "items": 2,
       "sha256": "823875e2e79f9bc25bc7386563eeba53a6b7f2d425f0e9524b58553f55136a8f"
+    },
+    {
+      "path": "phrasebook/idioms.json",
+      "kind": "phrasebook",
+      "schema_version": 1,
+      "items": 2,
+      "sha256": "94f9258f68d1c467124873432e34c9366ab1a2517f46a64517165f767c7d5a33"
     },
     {
       "path": "phrasebook/passport.json",
@@ -176,6 +197,13 @@
       "schema_version": 1,
       "items": 1054,
       "sha256": "fb33871c16953d354f255872ffcc8104921240d8f1323f2b5545592857477d06"
+    },
+    {
+      "path": "phrases/phrases-s.json",
+      "kind": "phrases",
+      "schema_version": 1,
+      "items": 451,
+      "sha256": "947dbf3d7fcd3bbed884123cfdd701333816b84dc713440afb3c109a1d5931de"
     },
     {
       "path": "quotes/attack-on-titan.json",
@@ -286,8 +314,8 @@
       "path": "traps.json",
       "kind": "traps",
       "schema_version": 1,
-      "items": 22,
-      "sha256": "849ddd28963625c4c2a9b3bae4b9dfa407c700fdf182f664b4f6d2fd76c51c7e"
+      "items": 25,
+      "sha256": "b536303a36ef9314875af35a001701af8a80b08463db5996276412afeb9cdee1"
     },
     {
       "path": "words/words-0001-0500.json",

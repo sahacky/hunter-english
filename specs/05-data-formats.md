@@ -40,7 +40,7 @@ data/
 { "schema_version": 1, "kind": "words", "items": [ "..." ] }
 ```
 
-Соответствие ловушек: ЛТ-01…ЛТ-22 (01) ↔ slug `trap-*` (05) — таблица соответствия в `data/traps.json` при наполнении.
+Соответствие ловушек: ЛТ-01…ЛТ-25 (01) ↔ slug `trap-*` (05) — таблица соответствия в `data/traps.json` при наполнении.
 
 `kind` ∈ `words | phrases | lessons | exercises | quotes | phrasebook | traps`. Элементы `items` валидируются схемой соответствующей сущности.
 
