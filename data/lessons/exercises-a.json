@@ -61,9 +61,9 @@
         "prompt": "Все будут смотреть.",
         "options": [
           "Everyone will be watching.",
-          "They'll be waiting.",
-          "She'll be late.",
-          "We'll be ready."
+          "He'll be snoring.",
+          "We'll be waiting outside.",
+          "They'll be watching."
         ],
         "correct": 0
       },
@@ -81,12 +81,12 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Мы будем готовы.",
+        "prompt": "Они будут смотреть.",
         "options": [
           "Everyone will be watching.",
-          "We'll be ready.",
-          "They'll be waiting.",
-          "She'll be late."
+          "They'll be watching.",
+          "He'll be snoring.",
+          "We'll be waiting outside."
         ],
         "correct": 1
       },
@@ -104,12 +104,12 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Они будут ждать.",
+        "prompt": "Он будет храпеть.",
         "options": [
-          "They'll be waiting.",
-          "He'll be sleeping.",
-          "She'll be late.",
-          "I'll be there."
+          "He'll be snoring.",
+          "They'll be watching.",
+          "Everyone will be watching.",
+          "We'll be waiting outside."
         ],
         "correct": 0
       },
@@ -127,12 +127,12 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Она опоздает.",
+        "prompt": "Мы будем ждать снаружи.",
         "options": [
-          "They'll be waiting.",
-          "I'll be there.",
-          "She'll be late.",
-          "He'll be sleeping."
+          "Everyone will be watching.",
+          "He'll be snoring.",
+          "We'll be waiting outside.",
+          "They'll be watching."
         ],
         "correct": 2
       },
@@ -156,16 +156,16 @@
             "ru": "Все будут смотреть."
           },
           {
-            "en": "We'll be ready.",
-            "ru": "Мы будем готовы."
+            "en": "They'll be watching.",
+            "ru": "Они будут смотреть."
           },
           {
-            "en": "They'll be waiting.",
-            "ru": "Они будут ждать."
+            "en": "He'll be snoring.",
+            "ru": "Он будет храпеть."
           },
           {
-            "en": "She'll be late.",
-            "ru": "Она опоздает."
+            "en": "We'll be waiting outside.",
+            "ru": "Мы будем ждать снаружи."
           },
           {
             "en": "I'll be cooking dinner.",
@@ -189,7 +189,7 @@
         "kind": "word_bank",
         "prompt_ru": "Она будет готовиться к экзамену.",
         "phrase_id": "ph-a-0019",
-        "tokens": ["studying", "thinking", "exam", "needing", "be", "her", "She'll", "for"]
+        "tokens": ["studying", "thinking", "exam", "sitting", "be", "her", "She'll", "for"]
       },
       "answer": {
         "normalization": "default",
@@ -207,7 +207,7 @@
         "kind": "word_bank",
         "prompt_ru": "Я буду думать о тебе.",
         "phrase_id": "ph-a-0018",
-        "tokens": ["needing", "you", "I'll", "of", "be", "thinking", "studying"]
+        "tokens": ["sitting", "you", "I'll", "of", "be", "thinking", "studying"]
       },
       "answer": {
         "normalization": "default",
@@ -223,9 +223,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Я буду там.",
+        "prompt_ru": "Я буду сидеть в офисе.",
         "phrase_id": "ph-a-0026",
-        "tokens": ["studying", "there", "I'll", "be", "thinking"]
+        "tokens": ["studying", "office", "thinking", "the", "sitting", "be", "I'll", "in"]
       },
       "answer": {
         "normalization": "default",
@@ -243,7 +243,7 @@
         "kind": "word_bank",
         "prompt_ru": "Мне это не понадобится.",
         "phrase_id": "ph-a-0014",
-        "tokens": ["I", "needing", "won't", "studying", "it", "thinking", "be"]
+        "tokens": ["I", "it", "be", "won't", "studying", "needing", "thinking"]
       },
       "answer": {
         "normalization": "default",
@@ -262,17 +262,17 @@
         "prompt_ru": "Что ты будешь делать в это время на следующей неделе?",
         "phrase_id": "ph-a-0009",
         "tokens": [
-          "studying",
-          "thinking",
-          "be",
-          "doing",
-          "What",
           "this",
           "week",
-          "will",
-          "next",
+          "be",
+          "doing",
           "time",
-          "you"
+          "thinking",
+          "What",
+          "studying",
+          "you",
+          "will",
+          "next"
         ]
       },
       "answer": {
@@ -291,7 +291,7 @@
         "kind": "word_bank",
         "prompt_ru": "Она не будет работать в пятницу.",
         "phrase_id": "ph-a-0012",
-        "tokens": ["working", "Friday", "be", "on", "thinking", "studying", "won't", "She"]
+        "tokens": ["be", "Friday", "studying", "won't", "working", "thinking", "on", "She"]
       },
       "answer": {
         "normalization": "default",
@@ -309,7 +309,7 @@
         "kind": "word_bank",
         "prompt_ru": "Все будут смотреть.",
         "phrase_id": "ph-a-0016",
-        "tokens": ["studying", "be", "thinking", "Everyone", "watching", "will"]
+        "tokens": ["thinking", "Everyone", "will", "studying", "watching", "be"]
       },
       "answer": {
         "normalization": "default",
@@ -327,7 +327,7 @@
         "kind": "word_bank",
         "prompt_ru": "К тому времени мы будем жить в Берлине.",
         "phrase_id": "ph-a-0020",
-        "tokens": ["thinking", "then", "living", "be", "by", "in", "We'll", "Berlin", "studying"]
+        "tokens": ["We'll", "living", "in", "thinking", "by", "Berlin", "be", "studying", "then"]
       },
       "answer": {
         "normalization": "default",
@@ -429,7 +429,7 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Они будут ждать.",
+        "prompt_ru": "Они будут смотреть.",
         "phrase_id": "ph-a-0029"
       },
       "answer": {
@@ -515,7 +515,7 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Он будет спать.",
+        "prompt_ru": "Он будет храпеть.",
         "phrase_id": "ph-a-0030"
       },
       "answer": {
@@ -567,7 +567,7 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Она опоздает.",
+        "prompt_ru": "Она будет опаздывать.",
         "phrase_id": "ph-a-0027"
       },
       "answer": {
@@ -584,7 +584,7 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Мы будем готовы.",
+        "prompt_ru": "Мы будем ждать снаружи.",
         "phrase_id": "ph-a-0028"
       },
       "answer": {
@@ -673,7 +673,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0026"
+        "phrase_id": "ph-a-0029"
       },
       "answer": {
         "normalization": "default",
@@ -689,7 +689,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0016"
+        "phrase_id": "ph-a-0030"
       },
       "answer": {
         "normalization": "default",
@@ -705,7 +705,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0027"
+        "phrase_id": "ph-a-0016"
       },
       "answer": {
         "normalization": "default",
@@ -721,7 +721,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0004"
+        "phrase_id": "ph-a-0010"
       },
       "answer": {
         "normalization": "default",
@@ -737,7 +737,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0010"
+        "phrase_id": "ph-a-0013"
       },
       "answer": {
         "normalization": "default",
@@ -753,7 +753,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0016"
+        "phrase_id": "ph-a-0027"
       },
       "answer": {
         "normalization": "default",
@@ -770,7 +770,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0017"
+        "phrase_id": "ph-a-0031"
       },
       "answer": {
         "normalization": "default",
@@ -787,7 +787,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0031"
+        "phrase_id": "ph-a-0010"
       },
       "answer": {
         "normalization": "default",
@@ -804,7 +804,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0010"
+        "phrase_id": "ph-a-0029"
       },
       "answer": {
         "normalization": "default",
@@ -916,12 +916,12 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Мы приедем.",
+        "prompt": "Они поедят.",
         "options": [
-          "They'll have eaten.",
           "I'll have finished.",
           "He'll have gone.",
-          "We'll have arrived."
+          "We'll have arrived.",
+          "They'll have eaten."
         ],
         "correct": 3
       },
@@ -941,12 +941,12 @@
         "kind": "choose_translation",
         "prompt": "Он уйдёт.",
         "options": [
-          "He'll have gone.",
           "We'll have arrived.",
+          "I'll have finished.",
           "They'll have eaten.",
-          "I'll have finished."
+          "He'll have gone."
         ],
-        "correct": 0
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -964,12 +964,12 @@
         "kind": "choose_translation",
         "prompt": "Я закончу.",
         "options": [
+          "I'll have finished.",
           "They'll have eaten.",
           "We'll have arrived.",
-          "He'll have gone.",
-          "I'll have finished."
+          "He'll have gone."
         ],
-        "correct": 3
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -985,14 +985,14 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Она уедет.",
+        "prompt": "Всё изменится.",
         "options": [
-          "We'll have arrived.",
-          "She'll have left.",
+          "I'll have finished.",
+          "They'll have eaten.",
           "He'll have gone.",
-          "I'll have finished."
+          "Everything will have changed."
         ],
-        "correct": 1
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -1010,8 +1010,8 @@
         "kind": "match_pairs",
         "pairs": [
           {
-            "en": "We'll have arrived.",
-            "ru": "Мы приедем."
+            "en": "They'll have eaten.",
+            "ru": "Они поедят."
           },
           {
             "en": "He'll have gone.",
@@ -1022,8 +1022,8 @@
             "ru": "Я закончу."
           },
           {
-            "en": "She'll have left.",
-            "ru": "Она уедет."
+            "en": "Everything will have changed.",
+            "ru": "Всё изменится."
           },
           {
             "en": "Nothing will have happened.",
@@ -1045,20 +1045,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "К тому времени он будет работать там двадцать лет.",
-        "phrase_id": "ph-a-0047",
-        "tokens": [
-          "He'll",
-          "years",
-          "there",
-          "married",
-          "twenty",
-          "working",
-          "have",
-          "for",
-          "been",
-          "Nothing"
-        ]
+        "prompt_ru": "Это будет долгое путешествие.",
+        "phrase_id": "ph-a-0052",
+        "tokens": ["the", "It", "will", "been", "journey", "a", "left", "long", "have"]
       },
       "answer": {
         "normalization": "default",
@@ -1074,9 +1063,21 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "К тому времени мы будем женаты десять лет.",
-        "phrase_id": "ph-a-0035",
-        "tokens": ["ten", "married", "have", "We'll", "Nothing", "working", "for", "been", "years"]
+        "prompt_ru": "К твоему приходу я уже приготовлю ужин.",
+        "phrase_id": "ph-a-0034",
+        "tokens": [
+          "By",
+          "cooked",
+          "the",
+          "arrive,",
+          "will",
+          "dinner",
+          "left",
+          "you",
+          "have",
+          "time",
+          "I'll"
+        ]
       },
       "answer": {
         "normalization": "default",
@@ -1092,9 +1093,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Ничего не случится.",
-        "phrase_id": "ph-a-0049",
-        "tokens": ["will", "have", "been", "happened", "married", "Nothing"]
+        "prompt_ru": "К тому времени она уже уедет.",
+        "phrase_id": "ph-a-0035",
+        "tokens": ["will", "by", "the", "She'll", "left", "then", "have"]
       },
       "answer": {
         "normalization": "default",
@@ -1110,9 +1111,20 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Он забудет к завтрашнему дню.",
-        "phrase_id": "ph-a-0057",
-        "tokens": ["He'll", "been", "tomorrow", "have", "married", "by", "forgotten"]
+        "prompt_ru": "К следующему году он закончит учёбу.",
+        "phrase_id": "ph-a-0033",
+        "tokens": [
+          "have",
+          "the",
+          "finished",
+          "he'll",
+          "year,",
+          "degree",
+          "will",
+          "his",
+          "next",
+          "By"
+        ]
       },
       "answer": {
         "normalization": "default",
@@ -1128,9 +1140,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Они поедят.",
-        "phrase_id": "ph-a-0055",
-        "tokens": ["They'll", "been", "have", "eaten", "married"]
+        "prompt_ru": "Она уедет.",
+        "phrase_id": "ph-a-0054",
+        "tokens": ["She'll", "have", "left", "will", "the"]
       },
       "answer": {
         "normalization": "default",
@@ -1146,9 +1158,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Я закончу.",
-        "phrase_id": "ph-a-0052",
-        "tokens": ["have", "I'll", "married", "finished", "been"]
+        "prompt_ru": "Да, я закончу к пяти.",
+        "phrase_id": "ph-a-0032",
+        "tokens": ["five", "the", "I'll", "Yes,", "will", "finished", "have", "by"]
       },
       "answer": {
         "normalization": "default",
@@ -1165,8 +1177,8 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "К этому времени она напишет три книги.",
-        "phrase_id": "ph-a-0046",
-        "tokens": ["now", "have", "She'll", "by", "married", "written", "three", "books", "been"]
+        "phrase_id": "ph-a-0047",
+        "tokens": ["three", "have", "then", "by", "She'll", "written", "the", "books", "will"]
       },
       "answer": {
         "normalization": "default",
@@ -1182,9 +1194,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Всё изменится.",
-        "phrase_id": "ph-a-0048",
-        "tokens": ["married", "been", "will", "changed", "have", "Everything"]
+        "prompt_ru": "К завтрашнему дню он уже забудет.",
+        "phrase_id": "ph-a-0039",
+        "tokens": ["He'll", "have", "forgotten", "tomorrow", "the", "by", "will"]
       },
       "answer": {
         "normalization": "default",
@@ -1200,8 +1212,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Это будет долгое путешествие.",
-        "phrase_id": "ph-a-0051"
+        "prompt_ru": "Он уйдёт.",
+        "phrase_id": "ph-a-0057"
       },
       "answer": {
         "normalization": "default",
@@ -1217,8 +1229,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "К тому времени я уже прочитаю книгу.",
-        "phrase_id": "ph-a-0037"
+        "prompt_ru": "Всё изменится.",
+        "phrase_id": "ph-a-0049"
       },
       "answer": {
         "normalization": "default",
@@ -1234,8 +1246,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "К тому времени она уже уедет.",
-        "phrase_id": "ph-a-0034"
+        "prompt_ru": "К пятнице они всё продадут.",
+        "phrase_id": "ph-a-0037"
       },
       "answer": {
         "normalization": "default",
@@ -1251,8 +1263,8 @@
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "К твоему приходу я уже приготовлю ужин.",
-        "phrase_id": "ph-a-0033"
+        "prompt_ru": "К тому времени он будет работать там двадцать лет.",
+        "phrase_id": "ph-a-0048"
       },
       "answer": {
         "normalization": "default",
@@ -1269,8 +1281,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "К следующему году он закончит учёбу.",
-        "phrase_id": "ph-a-0032"
+        "prompt_ru": "Ничего не случится.",
+        "phrase_id": "ph-a-0050"
       },
       "answer": {
         "normalization": "default",
@@ -1286,8 +1298,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Он уйдёт.",
-        "phrase_id": "ph-a-0056"
+        "prompt_ru": "Мы приедем.",
+        "phrase_id": "ph-a-0055"
       },
       "answer": {
         "normalization": "default",
@@ -1303,8 +1315,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Самолёт уже приземлится к шести.",
-        "phrase_id": "ph-a-0039"
+        "prompt_ru": "К концу месяца я накоплю достаточно.",
+        "phrase_id": "ph-a-0046"
       },
       "answer": {
         "normalization": "default",
@@ -1320,8 +1332,8 @@
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "К 2030 году они построят мост.",
-        "phrase_id": "ph-a-0044"
+        "prompt_ru": "Результаты уже будут объявлены.",
+        "phrase_id": "ph-a-0051"
       },
       "answer": {
         "normalization": "default",
@@ -1338,8 +1350,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Результаты уже будут объявлены.",
-        "phrase_id": "ph-a-0050"
+        "prompt_ru": "Он забудет к завтрашнему дню.",
+        "phrase_id": "ph-a-0058"
       },
       "answer": {
         "normalization": "default",
@@ -1355,8 +1367,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Через два года я выучу английский.",
-        "phrase_id": "ph-a-0043"
+        "prompt_ru": "К тому времени я уже прочитаю книгу.",
+        "phrase_id": "ph-a-0038"
       },
       "answer": {
         "normalization": "default",
@@ -1372,8 +1384,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Мы приедем.",
-        "phrase_id": "ph-a-0054"
+        "prompt_ru": "Она ещё не услышит новость.",
+        "phrase_id": "ph-a-0042"
       },
       "answer": {
         "normalization": "default",
@@ -1389,8 +1401,8 @@
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "Она ещё не услышит новость.",
-        "phrase_id": "ph-a-0041"
+        "prompt_ru": "К 2030 году они построят мост.",
+        "phrase_id": "ph-a-0045"
       },
       "answer": {
         "normalization": "default",
@@ -1407,8 +1419,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "К завтрашнему дню он уже забудет.",
-        "phrase_id": "ph-a-0038"
+        "prompt_ru": "К тому времени мы будем женаты десять лет.",
+        "phrase_id": "ph-a-0036"
       },
       "answer": {
         "normalization": "default",
@@ -1424,8 +1436,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Мы ещё не приедем к тому времени.",
-        "phrase_id": "ph-a-0042"
+        "prompt_ru": "Я закончу.",
+        "phrase_id": "ph-a-0053"
       },
       "answer": {
         "normalization": "default",
@@ -1441,8 +1453,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "К концу месяца я накоплю достаточно.",
-        "phrase_id": "ph-a-0045"
+        "prompt_ru": "Самолёт уже приземлится к шести.",
+        "phrase_id": "ph-a-0040"
       },
       "answer": {
         "normalization": "default",
@@ -1458,8 +1470,8 @@
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "К пятнице они всё продадут.",
-        "phrase_id": "ph-a-0036"
+        "prompt_ru": "Через два года я выучу английский.",
+        "phrase_id": "ph-a-0044"
       },
       "answer": {
         "normalization": "default",
@@ -1530,7 +1542,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0055"
+        "phrase_id": "ph-a-0056"
       },
       "answer": {
         "normalization": "default",
@@ -1546,7 +1558,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0057"
+        "phrase_id": "ph-a-0055"
       },
       "answer": {
         "normalization": "default",
@@ -1562,7 +1574,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0038"
+        "phrase_id": "ph-a-0050"
       },
       "answer": {
         "normalization": "default",
@@ -1578,7 +1590,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0056"
+        "phrase_id": "ph-a-0057"
       },
       "answer": {
         "normalization": "default",
@@ -1594,7 +1606,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0052"
+        "phrase_id": "ph-a-0053"
       },
       "answer": {
         "normalization": "default",
@@ -1610,7 +1622,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0052"
+        "phrase_id": "ph-a-0053"
       },
       "answer": {
         "normalization": "default",
@@ -1627,7 +1639,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0057"
+        "phrase_id": "ph-a-0058"
       },
       "answer": {
         "normalization": "default",
@@ -1644,7 +1656,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0048"
+        "phrase_id": "ph-a-0049"
       },
       "answer": {
         "normalization": "default",
@@ -1661,7 +1673,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0054"
+        "phrase_id": "ph-a-0055"
       },
       "answer": {
         "normalization": "default",
@@ -1903,7 +1915,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Она готовит прямо сейчас.",
-        "phrase_id": "ph-a-0070",
+        "phrase_id": "ph-a-0071",
         "tokens": ["is", "She", "playing", "Choose", "cooking", "now", "right"]
       },
       "answer": {
@@ -1921,7 +1933,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Он играет сейчас.",
-        "phrase_id": "ph-a-0076",
+        "phrase_id": "ph-a-0077",
         "tokens": ["She", "Choose", "He", "now", "is", "playing"]
       },
       "answer": {
@@ -1939,7 +1951,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Выбирай время по маркеру.",
-        "phrase_id": "ph-a-0087",
+        "phrase_id": "ph-a-0088",
         "tokens": ["playing", "the", "tense", "marker", "by", "She", "the", "Choose"]
       },
       "answer": {
@@ -1957,7 +1969,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "к тому времени — будущее совершенное",
-        "phrase_id": "ph-a-0086",
+        "phrase_id": "ph-a-0087",
         "tokens": ["then", "Perfect", "playing", "She", "—", "Future", "by"]
       },
       "answer": {
@@ -1975,7 +1987,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Я буду работать завтра. (Future Simple)",
-        "phrase_id": "ph-a-0066",
+        "phrase_id": "ph-a-0067",
         "tokens": ["playing", "will", "She", "I", "work", "tomorrow"]
       },
       "answer": {
@@ -1993,7 +2005,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Я работаю здесь много лет. (Present Perfect)",
-        "phrase_id": "ph-a-0060",
+        "phrase_id": "ph-a-0061",
         "tokens": ["I", "for", "She", "here", "have", "worked", "years", "playing"]
       },
       "answer": {
@@ -2011,7 +2023,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Я работаю всё утро. (Present Perfect Continuous)",
-        "phrase_id": "ph-a-0061",
+        "phrase_id": "ph-a-0062",
         "tokens": ["been", "have", "working", "playing", "She", "morning", "all", "I"]
       },
       "answer": {
@@ -2029,7 +2041,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "вчера — простое прошедшее",
-        "phrase_id": "ph-a-0080",
+        "phrase_id": "ph-a-0081",
         "tokens": ["—", "Simple", "playing", "yesterday", "Past", "She"]
       },
       "answer": {
@@ -2047,7 +2059,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "каждый день — простое настоящее",
-        "phrase_id": "ph-a-0082"
+        "phrase_id": "ph-a-0083"
       },
       "answer": {
         "normalization": "default",
@@ -2064,7 +2076,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Он будет играть в следующее воскресенье.",
-        "phrase_id": "ph-a-0079"
+        "phrase_id": "ph-a-0080"
       },
       "answer": {
         "normalization": "default",
@@ -2081,7 +2093,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "с 2020 года — настоящее совершенное",
-        "phrase_id": "ph-a-0083"
+        "phrase_id": "ph-a-0084"
       },
       "answer": {
         "normalization": "default",
@@ -2098,7 +2110,7 @@
       "payload": {
         "kind": "speak",
         "prompt_ru": "Я работал уже часами. (Past Perfect Continuous)",
-        "phrase_id": "ph-a-0065"
+        "phrase_id": "ph-a-0066"
       },
       "answer": {
         "normalization": "default",
@@ -2116,7 +2128,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Он играет в футбол по воскресеньям.",
-        "phrase_id": "ph-a-0075"
+        "phrase_id": "ph-a-0076"
       },
       "answer": {
         "normalization": "default",
@@ -2133,7 +2145,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Он играл на прошлой неделе.",
-        "phrase_id": "ph-a-0077"
+        "phrase_id": "ph-a-0078"
       },
       "answer": {
         "normalization": "default",
@@ -2150,7 +2162,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Она приготовила еду.",
-        "phrase_id": "ph-a-0071"
+        "phrase_id": "ph-a-0072"
       },
       "answer": {
         "normalization": "default",
@@ -2167,7 +2179,7 @@
       "payload": {
         "kind": "speak",
         "prompt_ru": "Я работаю каждый день. (Present Simple)",
-        "phrase_id": "ph-a-0058"
+        "phrase_id": "ph-a-0059"
       },
       "answer": {
         "normalization": "default",
@@ -2185,7 +2197,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Я работал до твоего прихода. (Past Perfect)",
-        "phrase_id": "ph-a-0064"
+        "phrase_id": "ph-a-0065"
       },
       "answer": {
         "normalization": "default",
@@ -2202,7 +2214,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Он играл, когда начался дождь.",
-        "phrase_id": "ph-a-0078"
+        "phrase_id": "ph-a-0079"
       },
       "answer": {
         "normalization": "default",
@@ -2219,7 +2231,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Я буду работать в восемь. (Future Continuous)",
-        "phrase_id": "ph-a-0067"
+        "phrase_id": "ph-a-0068"
       },
       "answer": {
         "normalization": "default",
@@ -2236,7 +2248,7 @@
       "payload": {
         "kind": "speak",
         "prompt_ru": "Она будет готовить завтра.",
-        "phrase_id": "ph-a-0074"
+        "phrase_id": "ph-a-0075"
       },
       "answer": {
         "normalization": "default",
@@ -2254,7 +2266,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Я сейчас работаю. (Present Continuous)",
-        "phrase_id": "ph-a-0059"
+        "phrase_id": "ph-a-0060"
       },
       "answer": {
         "normalization": "default",
@@ -2271,7 +2283,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Она готовила вчера.",
-        "phrase_id": "ph-a-0072"
+        "phrase_id": "ph-a-0073"
       },
       "answer": {
         "normalization": "default",
@@ -2288,7 +2300,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "сейчас — настоящее длительное",
-        "phrase_id": "ph-a-0081"
+        "phrase_id": "ph-a-0082"
       },
       "answer": {
         "normalization": "default",
@@ -2305,7 +2317,7 @@
       "payload": {
         "kind": "speak",
         "prompt_ru": "Я работал вчера. (Past Simple)",
-        "phrase_id": "ph-a-0062"
+        "phrase_id": "ph-a-0063"
       },
       "answer": {
         "normalization": "default",
@@ -2376,7 +2388,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0058"
+        "phrase_id": "ph-a-0059"
       },
       "answer": {
         "normalization": "default",
@@ -2392,7 +2404,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0077"
+        "phrase_id": "ph-a-0078"
       },
       "answer": {
         "normalization": "default",
@@ -2408,7 +2420,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0066"
+        "phrase_id": "ph-a-0067"
       },
       "answer": {
         "normalization": "default",
@@ -2424,7 +2436,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0059"
+        "phrase_id": "ph-a-0060"
       },
       "answer": {
         "normalization": "default",
@@ -2440,7 +2452,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0080"
+        "phrase_id": "ph-a-0081"
       },
       "answer": {
         "normalization": "default",
@@ -2456,7 +2468,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0066"
+        "phrase_id": "ph-a-0067"
       },
       "answer": {
         "normalization": "default",
@@ -2473,7 +2485,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0081"
+        "phrase_id": "ph-a-0082"
       },
       "answer": {
         "normalization": "default",
@@ -2490,7 +2502,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0077"
+        "phrase_id": "ph-a-0078"
       },
       "answer": {
         "normalization": "default",
@@ -2507,7 +2519,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0076"
+        "phrase_id": "ph-a-0077"
       },
       "answer": {
         "normalization": "default",
@@ -2749,7 +2761,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Дорогу сейчас ремонтируют.",
-        "phrase_id": "ph-a-0088",
+        "phrase_id": "ph-a-0089",
         "tokens": ["road", "letter", "task", "is", "repaired", "being", "The"]
       },
       "answer": {
@@ -2767,7 +2779,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Задача завершена.",
-        "phrase_id": "ph-a-0118",
+        "phrase_id": "ph-a-0119",
         "tokens": ["road", "finished", "is", "letter", "The", "task"]
       },
       "answer": {
@@ -2785,7 +2797,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Письмо было отправлено до моего звонка.",
-        "phrase_id": "ph-a-0099",
+        "phrase_id": "ph-a-0100",
         "tokens": ["task", "sent", "I", "road", "The", "letter", "called", "before", "been", "had"]
       },
       "answer": {
@@ -2803,7 +2815,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Это нужно делать осторожно.",
-        "phrase_id": "ph-a-0109",
+        "phrase_id": "ph-a-0110",
         "tokens": ["should", "The", "carefully", "It", "done", "task", "be"]
       },
       "answer": {
@@ -2821,7 +2833,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Билеты забронированы.",
-        "phrase_id": "ph-a-0095",
+        "phrase_id": "ph-a-0096",
         "tokens": ["The", "task", "booked", "have", "tickets", "road", "been"]
       },
       "answer": {
@@ -2839,7 +2851,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Работа завершена.",
-        "phrase_id": "ph-a-0094",
+        "phrase_id": "ph-a-0095",
         "tokens": ["finished", "road", "The", "task", "been", "work", "has"]
       },
       "answer": {
@@ -2857,7 +2869,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Дом был продан к тому времени.",
-        "phrase_id": "ph-a-0100",
+        "phrase_id": "ph-a-0101",
         "tokens": ["by", "house", "had", "been", "task", "then", "sold", "road", "The"]
       },
       "answer": {
@@ -2875,7 +2887,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Комнату нужно убрать.",
-        "phrase_id": "ph-a-0110",
+        "phrase_id": "ph-a-0111",
         "tokens": ["The", "room", "to", "needs", "cleaned", "road", "be", "task"]
       },
       "answer": {
@@ -2893,7 +2905,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Говорят, что он богат.",
-        "phrase_id": "ph-a-0111"
+        "phrase_id": "ph-a-0112"
       },
       "answer": {
         "normalization": "default",
@@ -2910,7 +2922,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Дом продан.",
-        "phrase_id": "ph-a-0117"
+        "phrase_id": "ph-a-0118"
       },
       "answer": {
         "normalization": "default",
@@ -2927,7 +2939,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Мост построен.",
-        "phrase_id": "ph-a-0093"
+        "phrase_id": "ph-a-0094"
       },
       "answer": {
         "normalization": "default",
@@ -2944,7 +2956,7 @@
       "payload": {
         "kind": "speak",
         "prompt_ru": "Комната была убрана, когда я пришёл.",
-        "phrase_id": "ph-a-0101"
+        "phrase_id": "ph-a-0102"
       },
       "answer": {
         "normalization": "default",
@@ -2962,7 +2974,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Ожидаются дожди.",
-        "phrase_id": "ph-a-0113"
+        "phrase_id": "ph-a-0114"
       },
       "answer": {
         "normalization": "default",
@@ -2979,7 +2991,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Проблема решается.",
-        "phrase_id": "ph-a-0090"
+        "phrase_id": "ph-a-0091"
       },
       "answer": {
         "normalization": "default",
@@ -2996,7 +3008,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Это строится.",
-        "phrase_id": "ph-a-0114"
+        "phrase_id": "ph-a-0115"
       },
       "answer": {
         "normalization": "default",
@@ -3013,7 +3025,7 @@
       "payload": {
         "kind": "speak",
         "prompt_ru": "Отчёт нужно подать к понедельнику.",
-        "phrase_id": "ph-a-0107"
+        "phrase_id": "ph-a-0108"
       },
       "answer": {
         "normalization": "default",
@@ -3031,7 +3043,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Считается, что она невиновна.",
-        "phrase_id": "ph-a-0112"
+        "phrase_id": "ph-a-0113"
       },
       "answer": {
         "normalization": "default",
@@ -3048,7 +3060,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Всё устроено.",
-        "phrase_id": "ph-a-0097"
+        "phrase_id": "ph-a-0098"
       },
       "answer": {
         "normalization": "default",
@@ -3065,7 +3077,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Комнаты убирают.",
-        "phrase_id": "ph-a-0092"
+        "phrase_id": "ph-a-0093"
       },
       "answer": {
         "normalization": "default",
@@ -3082,7 +3094,7 @@
       "payload": {
         "kind": "speak",
         "prompt_ru": "Проект будет завершён к пятнице.",
-        "phrase_id": "ph-a-0103"
+        "phrase_id": "ph-a-0104"
       },
       "answer": {
         "normalization": "default",
@@ -3100,7 +3112,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Дорога закрыта.",
-        "phrase_id": "ph-a-0116"
+        "phrase_id": "ph-a-0117"
       },
       "answer": {
         "normalization": "default",
@@ -3117,7 +3129,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Дорогу ремонтировали, когда мы проезжали.",
-        "phrase_id": "ph-a-0105"
+        "phrase_id": "ph-a-0106"
       },
       "answer": {
         "normalization": "default",
@@ -3134,7 +3146,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Работа сделана.",
-        "phrase_id": "ph-a-0115"
+        "phrase_id": "ph-a-0116"
       },
       "answer": {
         "normalization": "default",
@@ -3151,7 +3163,7 @@
       "payload": {
         "kind": "speak",
         "prompt_ru": "Здание ремонтировалось.",
-        "phrase_id": "ph-a-0104"
+        "phrase_id": "ph-a-0105"
       },
       "answer": {
         "normalization": "default",
@@ -3222,7 +3234,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0097"
+        "phrase_id": "ph-a-0098"
       },
       "answer": {
         "normalization": "default",
@@ -3238,7 +3250,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0089"
+        "phrase_id": "ph-a-0090"
       },
       "answer": {
         "normalization": "default",
@@ -3254,7 +3266,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0117"
+        "phrase_id": "ph-a-0118"
       },
       "answer": {
         "normalization": "default",
@@ -3270,7 +3282,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0088"
+        "phrase_id": "ph-a-0089"
       },
       "answer": {
         "normalization": "default",
@@ -3286,7 +3298,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0114"
+        "phrase_id": "ph-a-0115"
       },
       "answer": {
         "normalization": "default",
@@ -3302,7 +3314,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0104"
+        "phrase_id": "ph-a-0105"
       },
       "answer": {
         "normalization": "default",
@@ -3319,7 +3331,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0106"
+        "phrase_id": "ph-a-0107"
       },
       "answer": {
         "normalization": "default",
@@ -3336,7 +3348,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0095"
+        "phrase_id": "ph-a-0096"
       },
       "answer": {
         "normalization": "default",
@@ -3353,7 +3365,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0116"
+        "phrase_id": "ph-a-0117"
       },
       "answer": {
         "normalization": "default",
@@ -3595,7 +3607,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Меня попросили помочь.",
-        "phrase_id": "ph-a-0139",
+        "phrase_id": "ph-a-0140",
         "tokens": ["can", "to", "help", "I", "asked", "This", "was"]
       },
       "answer": {
@@ -3613,7 +3625,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Это можно устроить.",
-        "phrase_id": "ph-a-0125",
+        "phrase_id": "ph-a-0126",
         "tokens": ["This", "can", "was", "could", "arranged", "be"]
       },
       "answer": {
@@ -3631,7 +3643,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Это можно сделать онлайн.",
-        "phrase_id": "ph-a-0123",
+        "phrase_id": "ph-a-0124",
         "tokens": ["This", "be", "was", "can", "It", "online", "done"]
       },
       "answer": {
@@ -3649,7 +3661,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Комнату следует убрать.",
-        "phrase_id": "ph-a-0122",
+        "phrase_id": "ph-a-0123",
         "tokens": ["The", "be", "cleaned", "This", "room", "should", "was"]
       },
       "answer": {
@@ -3667,7 +3679,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Нас пригласили на вечеринку.",
-        "phrase_id": "ph-a-0137",
+        "phrase_id": "ph-a-0138",
         "tokens": ["were", "the", "invited", "to", "was", "We", "party", "This"]
       },
       "answer": {
@@ -3685,7 +3697,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Это считается грубым.",
-        "phrase_id": "ph-a-0140",
+        "phrase_id": "ph-a-0141",
         "tokens": ["is", "was", "It", "rude", "This", "considered"]
       },
       "answer": {
@@ -3703,7 +3715,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Фотографировать запрещено.",
-        "phrase_id": "ph-a-0142",
+        "phrase_id": "ph-a-0143",
         "tokens": ["Photography", "prohibited", "is", "This", "was"]
       },
       "answer": {
@@ -3721,7 +3733,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "На английском говорят во всём мире.",
-        "phrase_id": "ph-a-0131",
+        "phrase_id": "ph-a-0132",
         "tokens": ["is", "over", "the", "English", "world", "This", "spoken", "all", "was"]
       },
       "answer": {
@@ -3739,7 +3751,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Проблема скоро будет решена.",
-        "phrase_id": "ph-a-0128"
+        "phrase_id": "ph-a-0129"
       },
       "answer": {
         "normalization": "default",
@@ -3756,7 +3768,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Дом продан.",
-        "phrase_id": "ph-a-0130"
+        "phrase_id": "ph-a-0131"
       },
       "answer": {
         "normalization": "default",
@@ -3773,7 +3785,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Ей дали медаль.",
-        "phrase_id": "ph-a-0136"
+        "phrase_id": "ph-a-0137"
       },
       "answer": {
         "normalization": "default",
@@ -3790,7 +3802,7 @@
       "payload": {
         "kind": "speak",
         "prompt_ru": "Здесь курить запрещено.",
-        "phrase_id": "ph-a-0141"
+        "phrase_id": "ph-a-0142"
       },
       "answer": {
         "normalization": "default",
@@ -3808,7 +3820,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Здесь построят новую школу.",
-        "phrase_id": "ph-a-0127"
+        "phrase_id": "ph-a-0128"
       },
       "answer": {
         "normalization": "default",
@@ -3825,7 +3837,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Форму нужно заполнить.",
-        "phrase_id": "ph-a-0121"
+        "phrase_id": "ph-a-0122"
       },
       "answer": {
         "normalization": "default",
@@ -3842,7 +3854,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Лучший игрок был выбран в команду.",
-        "phrase_id": "ph-a-0134"
+        "phrase_id": "ph-a-0135"
       },
       "answer": {
         "normalization": "default",
@@ -3859,7 +3871,7 @@
       "payload": {
         "kind": "speak",
         "prompt_ru": "Результаты объявят завтра.",
-        "phrase_id": "ph-a-0126"
+        "phrase_id": "ph-a-0127"
       },
       "answer": {
         "normalization": "default",
@@ -3877,7 +3889,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Это нужно сделать.",
-        "phrase_id": "ph-a-0119"
+        "phrase_id": "ph-a-0120"
       },
       "answer": {
         "normalization": "default",
@@ -3894,7 +3906,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Им сказали ждать.",
-        "phrase_id": "ph-a-0138"
+        "phrase_id": "ph-a-0139"
       },
       "answer": {
         "normalization": "default",
@@ -3911,7 +3923,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Билеты можно купить на вокзале.",
-        "phrase_id": "ph-a-0124"
+        "phrase_id": "ph-a-0125"
       },
       "answer": {
         "normalization": "default",
@@ -3928,7 +3940,7 @@
       "payload": {
         "kind": "speak",
         "prompt_ru": "Отчёт нужно закончить к понедельнику.",
-        "phrase_id": "ph-a-0120"
+        "phrase_id": "ph-a-0121"
       },
       "answer": {
         "normalization": "default",
@@ -3946,7 +3958,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Дорогу сейчас ремонтируют.",
-        "phrase_id": "ph-a-0129"
+        "phrase_id": "ph-a-0130"
       },
       "answer": {
         "normalization": "default",
@@ -3963,7 +3975,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Кредитные карты принимаются.",
-        "phrase_id": "ph-a-0143"
+        "phrase_id": "ph-a-0144"
       },
       "answer": {
         "normalization": "default",
@@ -3980,7 +3992,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Он был награждён призом.",
-        "phrase_id": "ph-a-0135"
+        "phrase_id": "ph-a-0136"
       },
       "answer": {
         "normalization": "default",
@@ -3997,7 +4009,7 @@
       "payload": {
         "kind": "speak",
         "prompt_ru": "Победителя выберет жюри.",
-        "phrase_id": "ph-a-0133"
+        "phrase_id": "ph-a-0134"
       },
       "answer": {
         "normalization": "default",
@@ -4068,7 +4080,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0143"
+        "phrase_id": "ph-a-0144"
       },
       "answer": {
         "normalization": "default",
@@ -4084,7 +4096,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0129"
+        "phrase_id": "ph-a-0130"
       },
       "answer": {
         "normalization": "default",
@@ -4100,7 +4112,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0135"
+        "phrase_id": "ph-a-0136"
       },
       "answer": {
         "normalization": "default",
@@ -4116,7 +4128,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0122"
+        "phrase_id": "ph-a-0123"
       },
       "answer": {
         "normalization": "default",
@@ -4132,7 +4144,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0140"
+        "phrase_id": "ph-a-0141"
       },
       "answer": {
         "normalization": "default",
@@ -4148,7 +4160,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0135"
+        "phrase_id": "ph-a-0136"
       },
       "answer": {
         "normalization": "default",
@@ -4165,7 +4177,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0123"
+        "phrase_id": "ph-a-0124"
       },
       "answer": {
         "normalization": "default",
@@ -4182,7 +4194,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0129"
+        "phrase_id": "ph-a-0130"
       },
       "answer": {
         "normalization": "default",
@@ -4199,7 +4211,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0125"
+        "phrase_id": "ph-a-0126"
       },
       "answer": {
         "normalization": "default",
@@ -4441,7 +4453,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Новый закон обсуждается.",
-        "phrase_id": "ph-a-0169",
+        "phrase_id": "ph-a-0170",
         "tokens": ["is", "being", "Choose", "new", "discussed", "law", "had", "The"]
       },
       "answer": {
@@ -4459,7 +4471,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Выбирай время по маркеру.",
-        "phrase_id": "ph-a-0173",
+        "phrase_id": "ph-a-0174",
         "tokens": ["by", "marker", "the", "Choose", "the", "tense", "The", "had"]
       },
       "answer": {
@@ -4477,7 +4489,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Я работал до твоего прихода.",
-        "phrase_id": "ph-a-0157",
+        "phrase_id": "ph-a-0158",
         "tokens": ["The", "before", "you", "worked", "I", "came", "Choose", "had"]
       },
       "answer": {
@@ -4495,7 +4507,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Я работаю здесь много лет.",
-        "phrase_id": "ph-a-0156",
+        "phrase_id": "ph-a-0157",
         "tokens": ["for", "have", "here", "The", "Choose", "I", "years", "worked"]
       },
       "answer": {
@@ -4513,7 +4525,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Я буду работать весь день.",
-        "phrase_id": "ph-a-0150",
+        "phrase_id": "ph-a-0151",
         "tokens": ["The", "working", "be", "all", "Choose", "day", "I'll"]
       },
       "answer": {
@@ -4531,7 +4543,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Всё устроено.",
-        "phrase_id": "ph-a-0161",
+        "phrase_id": "ph-a-0162",
         "tokens": ["Everything", "Choose", "The", "been", "has", "arranged"]
       },
       "answer": {
@@ -4549,7 +4561,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Дом построен, строится, будет построен.",
-        "phrase_id": "ph-a-0160",
+        "phrase_id": "ph-a-0161",
         "tokens": [
           "was",
           "new",
@@ -4580,7 +4592,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "К следующему году он закончит.",
-        "phrase_id": "ph-a-0147",
+        "phrase_id": "ph-a-0148",
         "tokens": ["have", "By", "he'll", "finished", "year,", "Choose", "next", "The"]
       },
       "answer": {
@@ -4598,7 +4610,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Я работал вчера.",
-        "phrase_id": "ph-a-0153"
+        "phrase_id": "ph-a-0154"
       },
       "answer": {
         "normalization": "default",
@@ -4615,7 +4627,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Она готовит, готовит сейчас, готовила.",
-        "phrase_id": "ph-a-0159"
+        "phrase_id": "ph-a-0160"
       },
       "answer": {
         "normalization": "default",
@@ -4632,7 +4644,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Завтра в это время я буду лежать на пляже.",
-        "phrase_id": "ph-a-0164"
+        "phrase_id": "ph-a-0165"
       },
       "answer": {
         "normalization": "default",
@@ -4649,7 +4661,7 @@
       "payload": {
         "kind": "speak",
         "prompt_ru": "Завтра я буду лететь в Рим.",
-        "phrase_id": "ph-a-0148"
+        "phrase_id": "ph-a-0149"
       },
       "answer": {
         "normalization": "default",
@@ -4667,7 +4679,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "К концу месяца я накоплю достаточно.",
-        "phrase_id": "ph-a-0165"
+        "phrase_id": "ph-a-0166"
       },
       "answer": {
         "normalization": "default",
@@ -4684,7 +4696,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Мост построен.",
-        "phrase_id": "ph-a-0168"
+        "phrase_id": "ph-a-0169"
       },
       "answer": {
         "normalization": "default",
@@ -4701,7 +4713,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Это нужно сделать сегодня.",
-        "phrase_id": "ph-a-0146"
+        "phrase_id": "ph-a-0147"
       },
       "answer": {
         "normalization": "default",
@@ -4718,7 +4730,7 @@
       "payload": {
         "kind": "speak",
         "prompt_ru": "Дорогу сейчас ремонтируют.",
-        "phrase_id": "ph-a-0144"
+        "phrase_id": "ph-a-0145"
       },
       "answer": {
         "normalization": "default",
@@ -4736,7 +4748,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Дом продан.",
-        "phrase_id": "ph-a-0145"
+        "phrase_id": "ph-a-0146"
       },
       "answer": {
         "normalization": "default",
@@ -4753,7 +4765,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Результаты уже будут объявлены.",
-        "phrase_id": "ph-a-0151"
+        "phrase_id": "ph-a-0152"
       },
       "answer": {
         "normalization": "default",
@@ -4770,7 +4782,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Ты закончишь к пяти?",
-        "phrase_id": "ph-a-0166"
+        "phrase_id": "ph-a-0167"
       },
       "answer": {
         "normalization": "default",
@@ -4787,7 +4799,7 @@
       "payload": {
         "kind": "speak",
         "prompt_ru": "Я сейчас работаю.",
-        "phrase_id": "ph-a-0154"
+        "phrase_id": "ph-a-0155"
       },
       "answer": {
         "normalization": "default",
@@ -4805,7 +4817,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "К тому времени она уже уедет.",
-        "phrase_id": "ph-a-0149"
+        "phrase_id": "ph-a-0150"
       },
       "answer": {
         "normalization": "default",
@@ -4822,7 +4834,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Я работал, когда ты позвонил.",
-        "phrase_id": "ph-a-0155"
+        "phrase_id": "ph-a-0156"
       },
       "answer": {
         "normalization": "default",
@@ -4839,7 +4851,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "вчера — прошедшее",
-        "phrase_id": "ph-a-0170"
+        "phrase_id": "ph-a-0171"
       },
       "answer": {
         "normalization": "default",
@@ -4856,7 +4868,7 @@
       "payload": {
         "kind": "speak",
         "prompt_ru": "Что ты будешь делать на следующей неделе?",
-        "phrase_id": "ph-a-0167"
+        "phrase_id": "ph-a-0168"
       },
       "answer": {
         "normalization": "default",
@@ -4927,7 +4939,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0144"
+        "phrase_id": "ph-a-0145"
       },
       "answer": {
         "normalization": "default",
@@ -4943,7 +4955,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0145"
+        "phrase_id": "ph-a-0146"
       },
       "answer": {
         "normalization": "default",
@@ -4959,7 +4971,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0154"
+        "phrase_id": "ph-a-0155"
       },
       "answer": {
         "normalization": "default",
@@ -4975,7 +4987,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0153"
+        "phrase_id": "ph-a-0154"
       },
       "answer": {
         "normalization": "default",
@@ -4991,7 +5003,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0171"
+        "phrase_id": "ph-a-0172"
       },
       "answer": {
         "normalization": "default",
@@ -5007,7 +5019,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0154"
+        "phrase_id": "ph-a-0155"
       },
       "answer": {
         "normalization": "default",
@@ -5024,7 +5036,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0144"
+        "phrase_id": "ph-a-0145"
       },
       "answer": {
         "normalization": "default",
@@ -5041,7 +5053,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0168"
+        "phrase_id": "ph-a-0169"
       },
       "answer": {
         "normalization": "default",
@@ -5058,7 +5070,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0153"
+        "phrase_id": "ph-a-0154"
       },
       "answer": {
         "normalization": "default",
@@ -5300,7 +5312,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Тебе следовало мне сказать.",
-        "phrase_id": "ph-a-0197",
+        "phrase_id": "ph-a-0198",
         "tokens": ["They", "me", "should", "You", "told", "have", "must"]
       },
       "answer": {
@@ -5318,7 +5330,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Возможно, они пошли домой.",
-        "phrase_id": "ph-a-0185",
+        "phrase_id": "ph-a-0186",
         "tokens": ["You", "have", "They", "may", "must", "gone", "home"]
       },
       "answer": {
@@ -5336,7 +5348,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Должно быть, он забыл.",
-        "phrase_id": "ph-a-0174",
+        "phrase_id": "ph-a-0175",
         "tokens": ["must", "forgotten", "You", "He", "have", "They"]
       },
       "answer": {
@@ -5354,7 +5366,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Возможно, он опоздал на поезд.",
-        "phrase_id": "ph-a-0184",
+        "phrase_id": "ph-a-0185",
         "tokens": ["have", "the", "may", "train", "missed", "You", "He", "They"]
       },
       "answer": {
@@ -5372,7 +5384,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Возможно, она передумала.",
-        "phrase_id": "ph-a-0183",
+        "phrase_id": "ph-a-0184",
         "tokens": ["have", "They", "You", "She", "changed", "may", "mind", "her"]
       },
       "answer": {
@@ -5390,7 +5402,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Всё было бы иначе.",
-        "phrase_id": "ph-a-0205",
+        "phrase_id": "ph-a-0206",
         "tokens": ["different", "You", "have", "It", "been", "would", "They"]
       },
       "answer": {
@@ -5408,7 +5420,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Она могла бы победить.",
-        "phrase_id": "ph-a-0189",
+        "phrase_id": "ph-a-0190",
         "tokens": ["She", "They", "have", "could", "You", "won"]
       },
       "answer": {
@@ -5426,7 +5438,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Возможно, он забыл.",
-        "phrase_id": "ph-a-0187",
+        "phrase_id": "ph-a-0188",
         "tokens": ["You", "might", "They", "forgotten", "He", "have"]
       },
       "answer": {
@@ -5444,7 +5456,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Должно быть, они опоздали на автобус.",
-        "phrase_id": "ph-a-0176"
+        "phrase_id": "ph-a-0177"
       },
       "answer": {
         "normalization": "default",
@@ -5461,7 +5473,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Ему не следовало так быстро ехать.",
-        "phrase_id": "ph-a-0195"
+        "phrase_id": "ph-a-0196"
       },
       "answer": {
         "normalization": "default",
@@ -5478,7 +5490,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Не может быть, чтобы он это сказал.",
-        "phrase_id": "ph-a-0179"
+        "phrase_id": "ph-a-0180"
       },
       "answer": {
         "normalization": "default",
@@ -5495,7 +5507,7 @@
       "payload": {
         "kind": "speak",
         "prompt_ru": "Куда она могла уйти?",
-        "phrase_id": "ph-a-0208"
+        "phrase_id": "ph-a-0209"
       },
       "answer": {
         "normalization": "default",
@@ -5513,7 +5525,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Тебе бы понравилось.",
-        "phrase_id": "ph-a-0204"
+        "phrase_id": "ph-a-0205"
       },
       "answer": {
         "normalization": "default",
@@ -5530,7 +5542,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Возможно, их задержали.",
-        "phrase_id": "ph-a-0188"
+        "phrase_id": "ph-a-0189"
       },
       "answer": {
         "normalization": "default",
@@ -5547,7 +5559,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Она, должно быть, устала.",
-        "phrase_id": "ph-a-0200"
+        "phrase_id": "ph-a-0201"
       },
       "answer": {
         "normalization": "default",
@@ -5564,7 +5576,7 @@
       "payload": {
         "kind": "speak",
         "prompt_ru": "Возможно, она это взяла.",
-        "phrase_id": "ph-a-0186"
+        "phrase_id": "ph-a-0187"
       },
       "answer": {
         "normalization": "default",
@@ -5582,7 +5594,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Не может быть, чтобы он мне солгал.",
-        "phrase_id": "ph-a-0182"
+        "phrase_id": "ph-a-0183"
       },
       "answer": {
         "normalization": "default",
@@ -5599,7 +5611,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Кто мог это сделать?",
-        "phrase_id": "ph-a-0206"
+        "phrase_id": "ph-a-0207"
       },
       "answer": {
         "normalization": "default",
@@ -5616,7 +5628,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Надо было учиться больше.",
-        "phrase_id": "ph-a-0193"
+        "phrase_id": "ph-a-0194"
       },
       "answer": {
         "normalization": "default",
@@ -5633,7 +5645,7 @@
       "payload": {
         "kind": "speak",
         "prompt_ru": "Мы могли бы успеть на поезд.",
-        "phrase_id": "ph-a-0191"
+        "phrase_id": "ph-a-0192"
       },
       "answer": {
         "normalization": "default",
@@ -5651,7 +5663,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Ей не следовало этого говорить.",
-        "phrase_id": "ph-a-0194"
+        "phrase_id": "ph-a-0195"
       },
       "answer": {
         "normalization": "default",
@@ -5668,7 +5680,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Я бы помог, если бы мог.",
-        "phrase_id": "ph-a-0203"
+        "phrase_id": "ph-a-0204"
       },
       "answer": {
         "normalization": "default",
@@ -5685,7 +5697,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Нам следовало бронировать раньше.",
-        "phrase_id": "ph-a-0199"
+        "phrase_id": "ph-a-0200"
       },
       "answer": {
         "normalization": "default",
@@ -5702,7 +5714,7 @@
       "payload": {
         "kind": "speak",
         "prompt_ru": "Тебе следовало позвонить.",
-        "phrase_id": "ph-a-0192"
+        "phrase_id": "ph-a-0193"
       },
       "answer": {
         "normalization": "default",
@@ -5773,7 +5785,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0190"
+        "phrase_id": "ph-a-0191"
       },
       "answer": {
         "normalization": "default",
@@ -5789,7 +5801,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0178"
+        "phrase_id": "ph-a-0179"
       },
       "answer": {
         "normalization": "default",
@@ -5805,7 +5817,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0192"
+        "phrase_id": "ph-a-0193"
       },
       "answer": {
         "normalization": "default",
@@ -5821,7 +5833,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0179"
+        "phrase_id": "ph-a-0180"
       },
       "answer": {
         "normalization": "default",
@@ -5837,7 +5849,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0180"
+        "phrase_id": "ph-a-0181"
       },
       "answer": {
         "normalization": "default",
@@ -5853,7 +5865,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0175"
+        "phrase_id": "ph-a-0176"
       },
       "answer": {
         "normalization": "default",
@@ -5870,7 +5882,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0208"
+        "phrase_id": "ph-a-0209"
       },
       "answer": {
         "normalization": "default",
@@ -5887,7 +5899,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0194"
+        "phrase_id": "ph-a-0195"
       },
       "answer": {
         "normalization": "default",
@@ -5904,7 +5916,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0202"
+        "phrase_id": "ph-a-0203"
       },
       "answer": {
         "normalization": "default",
@@ -6146,7 +6158,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Надо было учиться усерднее.",
-        "phrase_id": "ph-a-0210",
+        "phrase_id": "ph-a-0211",
         "tokens": ["only", "studied", "She", "I", "should", "have", "harder"]
       },
       "answer": {
@@ -6164,7 +6176,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Она жалеет, что не старалась сильнее.",
-        "phrase_id": "ph-a-0231",
+        "phrase_id": "ph-a-0232",
         "tokens": ["should", "harder", "tried", "She", "had", "only", "wishes", "she"]
       },
       "answer": {
@@ -6182,7 +6194,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Если бы я только знал!",
-        "phrase_id": "ph-a-0225",
+        "phrase_id": "ph-a-0226",
         "tokens": ["If", "should", "only", "I", "She", "known", "had"]
       },
       "answer": {
@@ -6200,7 +6212,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Сделанного не воротишь.",
-        "phrase_id": "ph-a-0235",
+        "phrase_id": "ph-a-0236",
         "tokens": ["She", "is", "done", "should", "done", "What's"]
       },
       "answer": {
@@ -6218,7 +6230,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Нам следовало выйти раньше.",
-        "phrase_id": "ph-a-0211",
+        "phrase_id": "ph-a-0212",
         "tokens": ["She", "left", "have", "studied", "earlier", "We", "should"]
       },
       "answer": {
@@ -6236,7 +6248,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Сейчас уже поздно.",
-        "phrase_id": "ph-a-0234",
+        "phrase_id": "ph-a-0235",
         "tokens": ["should", "too", "now", "She", "It's", "late"]
       },
       "answer": {
@@ -6254,7 +6266,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Век живи — век учись.",
-        "phrase_id": "ph-a-0238",
+        "phrase_id": "ph-a-0239",
         "tokens": ["live", "She", "learn", "should", "You", "and"]
       },
       "answer": {
@@ -6272,7 +6284,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Задним умом все крепки.",
-        "phrase_id": "ph-a-0237",
+        "phrase_id": "ph-a-0238",
         "tokens": ["should", "is", "20/20", "always", "She", "Hindsight"]
       },
       "answer": {
@@ -6290,7 +6302,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Тебе не следовало туда ходить.",
-        "phrase_id": "ph-a-0215"
+        "phrase_id": "ph-a-0216"
       },
       "answer": {
         "normalization": "default",
@@ -6307,7 +6319,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Жаль, что я не знал.",
-        "phrase_id": "ph-a-0229"
+        "phrase_id": "ph-a-0230"
       },
       "answer": {
         "normalization": "default",
@@ -6324,7 +6336,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Он жалеет, что сказал это.",
-        "phrase_id": "ph-a-0232"
+        "phrase_id": "ph-a-0233"
       },
       "answer": {
         "normalization": "default",
@@ -6341,7 +6353,7 @@
       "payload": {
         "kind": "speak",
         "prompt_ru": "Мог бы меня предупредить!",
-        "phrase_id": "ph-a-0220"
+        "phrase_id": "ph-a-0221"
       },
       "answer": {
         "normalization": "default",
@@ -6359,7 +6371,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Мы могли бы выиграть игру.",
-        "phrase_id": "ph-a-0222"
+        "phrase_id": "ph-a-0223"
       },
       "answer": {
         "normalization": "default",
@@ -6376,7 +6388,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Он мог погибнуть!",
-        "phrase_id": "ph-a-0223"
+        "phrase_id": "ph-a-0224"
       },
       "answer": {
         "normalization": "default",
@@ -6393,7 +6405,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Не надо было это говорить.",
-        "phrase_id": "ph-a-0214"
+        "phrase_id": "ph-a-0215"
       },
       "answer": {
         "normalization": "default",
@@ -6410,7 +6422,7 @@
       "payload": {
         "kind": "speak",
         "prompt_ru": "Не надо было есть тот торт.",
-        "phrase_id": "ph-a-0219"
+        "phrase_id": "ph-a-0220"
       },
       "answer": {
         "normalization": "default",
@@ -6428,7 +6440,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Прости себя.",
-        "phrase_id": "ph-a-0243"
+        "phrase_id": "ph-a-0244"
       },
       "answer": {
         "normalization": "default",
@@ -6445,7 +6457,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Жаль, что я пошёл.",
-        "phrase_id": "ph-a-0233"
+        "phrase_id": "ph-a-0234"
       },
       "answer": {
         "normalization": "default",
@@ -6462,7 +6474,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Ей следовало попросить помощи.",
-        "phrase_id": "ph-a-0212"
+        "phrase_id": "ph-a-0213"
       },
       "answer": {
         "normalization": "default",
@@ -6479,7 +6491,7 @@
       "payload": {
         "kind": "speak",
         "prompt_ru": "Все ошибаются.",
-        "phrase_id": "ph-a-0241"
+        "phrase_id": "ph-a-0242"
       },
       "answer": {
         "normalization": "default",
@@ -6497,7 +6509,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Учись на своих ошибках.",
-        "phrase_id": "ph-a-0239"
+        "phrase_id": "ph-a-0240"
       },
       "answer": {
         "normalization": "default",
@@ -6514,7 +6526,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Тебе следовало мне позвонить.",
-        "phrase_id": "ph-a-0209"
+        "phrase_id": "ph-a-0210"
       },
       "answer": {
         "normalization": "default",
@@ -6531,7 +6543,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Если бы она только слушала!",
-        "phrase_id": "ph-a-0227"
+        "phrase_id": "ph-a-0228"
       },
       "answer": {
         "normalization": "default",
@@ -6548,7 +6560,7 @@
       "payload": {
         "kind": "speak",
         "prompt_ru": "Жаль, что я не учился.",
-        "phrase_id": "ph-a-0228"
+        "phrase_id": "ph-a-0229"
       },
       "answer": {
         "normalization": "default",
@@ -6619,7 +6631,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0238"
+        "phrase_id": "ph-a-0239"
       },
       "answer": {
         "normalization": "default",
@@ -6635,7 +6647,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0237"
+        "phrase_id": "ph-a-0238"
       },
       "answer": {
         "normalization": "default",
@@ -6651,7 +6663,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0242"
+        "phrase_id": "ph-a-0243"
       },
       "answer": {
         "normalization": "default",
@@ -6667,7 +6679,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0240"
+        "phrase_id": "ph-a-0241"
       },
       "answer": {
         "normalization": "default",
@@ -6683,7 +6695,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0223"
+        "phrase_id": "ph-a-0224"
       },
       "answer": {
         "normalization": "default",
@@ -6699,7 +6711,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0243"
+        "phrase_id": "ph-a-0244"
       },
       "answer": {
         "normalization": "default",
@@ -6716,7 +6728,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0237"
+        "phrase_id": "ph-a-0238"
       },
       "answer": {
         "normalization": "default",
@@ -6733,7 +6745,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0223"
+        "phrase_id": "ph-a-0224"
       },
       "answer": {
         "normalization": "default",
@@ -6750,7 +6762,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0233"
+        "phrase_id": "ph-a-0234"
       },
       "answer": {
         "normalization": "default",
@@ -6960,7 +6972,7 @@
           },
           {
             "en": "I wish I had.",
-            "ru": "Жаль, что не было."
+            "ru": "Жаль, что не было у меня."
           },
           {
             "en": "You died.",
@@ -6987,7 +6999,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Я бы помог, если бы мог.",
-        "phrase_id": "ph-a-0262",
+        "phrase_id": "ph-a-0263",
         "tokens": ["have", "helped", "wish", "have", "could", "would", "I", "if", "She", "I"]
       },
       "answer": {
@@ -7005,7 +7017,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Она бы не ушла, если бы ты её попросил.",
-        "phrase_id": "ph-a-0256",
+        "phrase_id": "ph-a-0257",
         "tokens": [
           "have",
           "you",
@@ -7034,8 +7046,8 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Жаль, что не было.",
-        "phrase_id": "ph-a-0276",
+        "prompt_ru": "Жаль, что не было у меня.",
+        "phrase_id": "ph-a-0277",
         "tokens": ["would", "had", "wish", "She", "I", "I"]
       },
       "answer": {
@@ -7053,7 +7065,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Где бы они остановились?",
-        "phrase_id": "ph-a-0260",
+        "phrase_id": "ph-a-0261",
         "tokens": ["helped", "have", "stayed", "would", "they", "Where", "She"]
       },
       "answer": {
@@ -7071,7 +7083,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Если бы знал!",
-        "phrase_id": "ph-a-0277",
+        "phrase_id": "ph-a-0278",
         "tokens": ["She", "If", "knew", "I", "only", "would"]
       },
       "answer": {
@@ -7089,7 +7101,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Всё происходит не просто так.",
-        "phrase_id": "ph-a-0271",
+        "phrase_id": "ph-a-0272",
         "tokens": ["She", "for", "happens", "Everything", "a", "would", "reason"]
       },
       "answer": {
@@ -7107,7 +7119,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Если бы мог!",
-        "phrase_id": "ph-a-0278",
+        "phrase_id": "ph-a-0279",
         "tokens": ["I", "could", "would", "She", "If", "only"]
       },
       "answer": {
@@ -7125,7 +7137,7 @@
       "payload": {
         "kind": "word_bank",
         "prompt_ru": "Если бы она знала, она бы пришла.",
-        "phrase_id": "ph-a-0245",
+        "phrase_id": "ph-a-0246",
         "tokens": ["helped", "would", "she", "She", "she", "known,", "If", "had", "have", "come"]
       },
       "answer": {
@@ -7143,7 +7155,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Что бы ты сделал?",
-        "phrase_id": "ph-a-0259"
+        "phrase_id": "ph-a-0260"
       },
       "answer": {
         "normalization": "default",
@@ -7160,7 +7172,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Если бы я учился, я бы сдал.",
-        "phrase_id": "ph-a-0244"
+        "phrase_id": "ph-a-0245"
       },
       "answer": {
         "normalization": "default",
@@ -7177,7 +7189,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Жаль, что не могу.",
-        "phrase_id": "ph-a-0275"
+        "phrase_id": "ph-a-0276"
       },
       "answer": {
         "normalization": "default",
@@ -7194,7 +7206,7 @@
       "payload": {
         "kind": "speak",
         "prompt_ru": "Я бы не сделал этого, если бы знал.",
-        "phrase_id": "ph-a-0255"
+        "phrase_id": "ph-a-0256"
       },
       "answer": {
         "normalization": "default",
@@ -7212,7 +7224,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Кто бы мог подумать?",
-        "phrase_id": "ph-a-0261"
+        "phrase_id": "ph-a-0262"
       },
       "answer": {
         "normalization": "default",
@@ -7229,7 +7241,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Но будущее — можно.",
-        "phrase_id": "ph-a-0273"
+        "phrase_id": "ph-a-0274"
       },
       "answer": {
         "normalization": "default",
@@ -7246,7 +7258,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Надо было учиться.",
-        "phrase_id": "ph-a-0264"
+        "phrase_id": "ph-a-0265"
       },
       "answer": {
         "normalization": "default",
@@ -7263,7 +7275,7 @@
       "payload": {
         "kind": "speak",
         "prompt_ru": "Если бы мы забронировали, мы бы получили номер.",
-        "phrase_id": "ph-a-0251"
+        "phrase_id": "ph-a-0252"
       },
       "answer": {
         "normalization": "default",
@@ -7281,7 +7293,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Если бы я знал, я бы тебе сказал.",
-        "phrase_id": "ph-a-0249"
+        "phrase_id": "ph-a-0250"
       },
       "answer": {
         "normalization": "default",
@@ -7298,7 +7310,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Если бы мы вышли раньше, мы бы успели на поезд.",
-        "phrase_id": "ph-a-0246"
+        "phrase_id": "ph-a-0247"
       },
       "answer": {
         "normalization": "default",
@@ -7315,7 +7327,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Мы бы не пропустили это, если бы проверили.",
-        "phrase_id": "ph-a-0257"
+        "phrase_id": "ph-a-0258"
       },
       "answer": {
         "normalization": "default",
@@ -7332,7 +7344,7 @@
       "payload": {
         "kind": "speak",
         "prompt_ru": "На твоём месте я бы извинился.",
-        "phrase_id": "ph-a-0266"
+        "phrase_id": "ph-a-0267"
       },
       "answer": {
         "normalization": "default",
@@ -7350,7 +7362,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Ты бы пошёл, если бы знал?",
-        "phrase_id": "ph-a-0258"
+        "phrase_id": "ph-a-0259"
       },
       "answer": {
         "normalization": "default",
@@ -7367,7 +7379,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Если бы я только учился!",
-        "phrase_id": "ph-a-0263"
+        "phrase_id": "ph-a-0264"
       },
       "answer": {
         "normalization": "default",
@@ -7384,7 +7396,7 @@
       "payload": {
         "kind": "translate",
         "prompt_ru": "Я мог бы сдать.",
-        "phrase_id": "ph-a-0265"
+        "phrase_id": "ph-a-0266"
       },
       "answer": {
         "normalization": "default",
@@ -7401,7 +7413,7 @@
       "payload": {
         "kind": "speak",
         "prompt_ru": "Могло быть и хуже.",
-        "phrase_id": "ph-a-0270"
+        "phrase_id": "ph-a-0271"
       },
       "answer": {
         "normalization": "default",
@@ -7472,7 +7484,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0259"
+        "phrase_id": "ph-a-0260"
       },
       "answer": {
         "normalization": "default",
@@ -7488,7 +7500,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0276"
+        "phrase_id": "ph-a-0277"
       },
       "answer": {
         "normalization": "default",
@@ -7504,7 +7516,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0275"
+        "phrase_id": "ph-a-0276"
       },
       "answer": {
         "normalization": "default",
@@ -7520,7 +7532,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0265"
+        "phrase_id": "ph-a-0266"
       },
       "answer": {
         "normalization": "default",
@@ -7536,7 +7548,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0264"
+        "phrase_id": "ph-a-0265"
       },
       "answer": {
         "normalization": "default",
@@ -7552,7 +7564,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0271"
+        "phrase_id": "ph-a-0272"
       },
       "answer": {
         "normalization": "default",
@@ -7569,7 +7581,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0277"
+        "phrase_id": "ph-a-0278"
       },
       "answer": {
         "normalization": "default",
@@ -7586,7 +7598,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0268"
+        "phrase_id": "ph-a-0269"
       },
       "answer": {
         "normalization": "default",
@@ -7603,7 +7615,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0270"
+        "phrase_id": "ph-a-0271"
       },
       "answer": {
         "normalization": "default",
@@ -7716,13 +7728,8 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Сделанного не воротишь.",
-        "options": [
-          "What's done is done.",
-          "If only I could!",
-          "If only I had!",
-          "I wish I could."
-        ],
-        "correct": 0
+        "options": ["I wish I could.", "If only I had!", "What's done is done.", "I wish I knew."],
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -7738,14 +7745,9 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Жаль, что не могу.",
-        "options": [
-          "I wish I could.",
-          "If only I could!",
-          "What's done is done.",
-          "If only I had!"
-        ],
-        "correct": 0
+        "prompt": "Если бы он у меня был!",
+        "options": ["What's done is done.", "I wish I could.", "I wish I knew.", "If only I had!"],
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -7761,14 +7763,9 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Если бы смочь!",
-        "options": [
-          "If only I could!",
-          "If only I had!",
-          "I wish I could.",
-          "What's done is done."
-        ],
-        "correct": 0
+        "prompt": "Жаль, что не могу.",
+        "options": ["I wish I knew.", "I wish I could.", "If only I had!", "What's done is done."],
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -7784,14 +7781,9 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Если бы иметь!",
-        "options": [
-          "If only I could!",
-          "If only I had!",
-          "I wish I could.",
-          "What's done is done."
-        ],
-        "correct": 1
+        "prompt": "Жаль, что не знаю.",
+        "options": ["I wish I could.", "What's done is done.", "If only I had!", "I wish I knew."],
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -7813,20 +7805,20 @@
             "ru": "Сделанного не воротишь."
           },
           {
+            "en": "If only I had!",
+            "ru": "Если бы он у меня был!"
+          },
+          {
             "en": "I wish I could.",
             "ru": "Жаль, что не могу."
           },
           {
-            "en": "If only I could!",
-            "ru": "Если бы смочь!"
-          },
-          {
-            "en": "If only I had!",
-            "ru": "Если бы иметь!"
-          },
-          {
             "en": "I wish I knew.",
             "ru": "Жаль, что не знаю."
+          },
+          {
+            "en": "If only I could!",
+            "ru": "Если бы мог!"
           }
         ]
       },
@@ -7844,9 +7836,21 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Если бы знать!",
-        "phrase_id": "ph-a-0282",
-        "tokens": ["wish", "If", "I", "knew", "she", "only"]
+        "prompt_ru": "Если бы он не проспал, он не был бы таким напряжённым.",
+        "phrase_id": "ph-a-0313",
+        "tokens": [
+          "wouldn't",
+          "wish",
+          "be",
+          "had",
+          "overslept,",
+          "he",
+          "he",
+          "so",
+          "If",
+          "stressed",
+          "hadn't"
+        ]
       },
       "answer": {
         "normalization": "default",
@@ -7862,22 +7866,20 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Если бы она не опоздала на поезд, она была бы сейчас здесь.",
-        "phrase_id": "ph-a-0293",
+        "prompt_ru": "Если бы мы забронировали, мы были бы сейчас внутри.",
+        "phrase_id": "ph-a-0294",
         "tokens": [
-          "only",
-          "hadn't",
-          "be",
-          "she",
+          "inside",
+          "had",
           "now",
-          "train,",
-          "she",
+          "we",
+          "were",
+          "would",
+          "be",
           "If",
-          "missed",
-          "here",
-          "the",
+          "booked,",
           "wish",
-          "would"
+          "we"
         ]
       },
       "answer": {
@@ -7894,9 +7896,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Жаль, что я не научился играть на пианино.",
-        "phrase_id": "ph-a-0302",
-        "tokens": ["I", "I", "play", "to", "piano", "learned", "had", "she", "wish", "only", "the"]
+        "prompt_ru": "Жаль, что не могу.",
+        "phrase_id": "ph-a-0281",
+        "tokens": ["were", "wish", "I", "I", "had", "could"]
       },
       "answer": {
         "normalization": "default",
@@ -7912,21 +7914,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Если бы он не проспал, он не был бы таким напряжённым.",
-        "phrase_id": "ph-a-0313",
-        "tokens": [
-          "overslept,",
-          "so",
-          "wouldn't",
-          "she",
-          "If",
-          "he",
-          "only",
-          "be",
-          "hadn't",
-          "he",
-          "stressed"
-        ]
+        "prompt_ru": "Я не знал, поэтому не помог.",
+        "phrase_id": "ph-a-0297",
+        "tokens": ["I", "I", "know,", "had", "didn't", "didn't", "wish", "so", "help"]
       },
       "answer": {
         "normalization": "default",
@@ -7942,9 +7932,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Если бы смочь!",
-        "phrase_id": "ph-a-0283",
-        "tokens": ["she", "only", "I", "could", "If", "wish"]
+        "prompt_ru": "Жаль, что меня там нет.",
+        "phrase_id": "ph-a-0289",
+        "tokens": ["But", "I", "had", "were", "wish", "I", "there"]
       },
       "answer": {
         "normalization": "default",
@@ -7960,9 +7950,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Смешанное: условие в прошлом → результат сейчас.",
-        "phrase_id": "ph-a-0311",
-        "tokens": ["→", "condition", "only", "past", "Mixed:", "result", "present", "she"]
+        "prompt_ru": "Но будущее изменить можно.",
+        "phrase_id": "ph-a-0310",
+        "tokens": ["the", "you", "can", "wish", "had", "change", "But", "future"]
       },
       "answer": {
         "normalization": "default",
@@ -7978,22 +7968,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Если бы я работал усерднее, я был бы сейчас богат.",
-        "phrase_id": "ph-a-0291",
-        "tokens": [
-          "had",
-          "If",
-          "be",
-          "I",
-          "worked",
-          "harder,",
-          "I",
-          "would",
-          "only",
-          "now",
-          "rich",
-          "she"
-        ]
+        "prompt_ru": "Если бы мог!",
+        "phrase_id": "ph-a-0283",
+        "tokens": ["only", "I", "wish", "If", "had", "could"]
       },
       "answer": {
         "normalization": "default",
@@ -8009,9 +7986,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Если бы он учился, он бы сдал.",
-        "phrase_id": "ph-a-0296",
-        "tokens": ["passed", "had", "studied,", "he", "she", "If", "would", "he", "only", "have"]
+        "prompt_ru": "Она жалеет, что вышла за него замуж.",
+        "phrase_id": "ph-a-0306",
+        "tokens": ["She", "wish", "she", "hadn't", "had", "married", "him", "wishes"]
       },
       "answer": {
         "normalization": "default",
@@ -8027,8 +8004,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Прошлое не изменишь.",
-        "phrase_id": "ph-a-0309"
+        "prompt_ru": "Если бы он у меня был!",
+        "phrase_id": "ph-a-0284"
       },
       "answer": {
         "normalization": "default",
@@ -8041,23 +8018,6 @@
     },
     {
       "id": "ex-a-0432",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Он не учился, поэтому провалился.",
-        "phrase_id": "ph-a-0295"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-a-0433",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -8074,25 +8034,7 @@
       }
     },
     {
-      "id": "ex-a-0434",
-      "type": "speak",
-      "payload": {
-        "kind": "speak",
-        "prompt_ru": "Если бы иметь!",
-        "phrase_id": "ph-a-0284"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow",
-        "speech_threshold": 0.85
-      },
-      "meta": {
-        "skill": "speaking",
-        "xp": 4
-      }
-    },
-    {
-      "id": "ex-a-0435",
+      "id": "ex-a-0433",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -8109,12 +8051,47 @@
       }
     },
     {
+      "id": "ex-a-0434",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Он жалеет, что не взял ту работу.",
+        "phrase_id": "ph-a-0305"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-a-0435",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Если бы она не опоздала, она бы это видела.",
+        "phrase_id": "ph-a-0300"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
       "id": "ex-a-0436",
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Я не знал, поэтому не помог.",
-        "phrase_id": "ph-a-0297"
+        "prompt_ru": "Если пойдёт дождь, я останусь дома.",
+        "phrase_id": "ph-a-0287"
       },
       "answer": {
         "normalization": "default",
@@ -8130,8 +8107,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Жаль, что я мало путешествовал в молодости.",
-        "phrase_id": "ph-a-0304"
+        "prompt_ru": "Сделанного не воротишь.",
+        "phrase_id": "ph-a-0308"
       },
       "answer": {
         "normalization": "default",
@@ -8144,6 +8121,75 @@
     },
     {
       "id": "ex-a-0438",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Хотел бы я, чтобы дождь прекратился.",
+        "phrase_id": "ph-a-0290"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-a-0439",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Если бы знать!",
+        "phrase_id": "ph-a-0282"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-a-0440",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Если бы она не опоздала на поезд, она была бы сейчас здесь.",
+        "phrase_id": "ph-a-0293"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-a-0441",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Она опоздала, поэтому пропустила встречу.",
+        "phrase_id": "ph-a-0299"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-a-0442",
       "type": "speak",
       "payload": {
         "kind": "speak",
@@ -8161,81 +8207,12 @@
       }
     },
     {
-      "id": "ex-a-0439",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Она жалеет, что вышла за него замуж.",
-        "phrase_id": "ph-a-0306"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-a-0440",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Она опоздала, поэтому пропустила встречу.",
-        "phrase_id": "ph-a-0299"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-a-0441",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Жаль, что не знаю.",
-        "phrase_id": "ph-a-0279"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-a-0442",
-      "type": "speak",
-      "payload": {
-        "kind": "speak",
-        "prompt_ru": "Если бы мы забронировали, мы были бы сейчас внутри.",
-        "phrase_id": "ph-a-0294"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow",
-        "speech_threshold": 0.85
-      },
-      "meta": {
-        "skill": "speaking",
-        "xp": 4
-      }
-    },
-    {
       "id": "ex-a-0443",
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Жаль, что меня там нет.",
-        "phrase_id": "ph-a-0289"
+        "prompt_ru": "Если бы я работал усерднее, я был бы сейчас богат.",
+        "phrase_id": "ph-a-0291"
       },
       "answer": {
         "normalization": "default",
@@ -8251,8 +8228,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Жаль, что нет.",
-        "phrase_id": "ph-a-0281"
+        "prompt_ru": "Смешанное: условие в прошлом → результат сейчас.",
+        "phrase_id": "ph-a-0311"
       },
       "answer": {
         "normalization": "default",
@@ -8268,8 +8245,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Если бы я научился плавать, я был бы сейчас на пляже.",
-        "phrase_id": "ph-a-0292"
+        "prompt_ru": "Жаль, что я не научился играть на пианино.",
+        "phrase_id": "ph-a-0302"
       },
       "answer": {
         "normalization": "default",
@@ -8285,8 +8262,8 @@
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "Если бы она не опоздала, она бы это видела.",
-        "phrase_id": "ph-a-0300"
+        "prompt_ru": "Прошлое не изменишь.",
+        "phrase_id": "ph-a-0309"
       },
       "answer": {
         "normalization": "default",
@@ -8339,7 +8316,7 @@
       "type": "verb_tense",
       "payload": {
         "kind": "verb_tense",
-        "sentence_with_gap": "I wish I ___ said that.",
+        "sentence_with_gap": "I wish I ___ said that. (не сказал)",
         "marker": "форма",
         "gap_answers": ["hadn't", "had not"]
       },
@@ -8357,7 +8334,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0280"
+        "phrase_id": "ph-a-0289"
       },
       "answer": {
         "normalization": "default",
@@ -8373,7 +8350,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0279"
+        "phrase_id": "ph-a-0288"
       },
       "answer": {
         "normalization": "default",
@@ -8389,7 +8366,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0281"
+        "phrase_id": "ph-a-0290"
       },
       "answer": {
         "normalization": "default",
@@ -8405,7 +8382,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0288"
+        "phrase_id": "ph-a-0280"
       },
       "answer": {
         "normalization": "default",
@@ -8421,7 +8398,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0308"
+        "phrase_id": "ph-a-0309"
       },
       "answer": {
         "normalization": "default",
@@ -8437,7 +8414,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0280"
+        "phrase_id": "ph-a-0308"
       },
       "answer": {
         "normalization": "default",
@@ -8454,7 +8431,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0289"
+        "phrase_id": "ph-a-0283"
       },
       "answer": {
         "normalization": "default",
@@ -8471,7 +8448,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0279"
+        "phrase_id": "ph-a-0288"
       },
       "answer": {
         "normalization": "default",
@@ -8488,7 +8465,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0283"
+        "phrase_id": "ph-a-0282"
       },
       "answer": {
         "normalization": "default",
@@ -8600,14 +8577,14 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Мы могли бы выиграть.",
+        "prompt": "Но будущее — можно.",
         "options": [
-          "We could have won.",
-          "Learn from your mistakes.",
+          "You should have called.",
           "Who would have thought?",
-          "Better late than never."
+          "I would have helped.",
+          "But the future can."
         ],
-        "correct": 0
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -8623,14 +8600,14 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Кто бы мог подумать?",
+        "prompt": "Я бы помог.",
         "options": [
-          "Who would have thought?",
-          "We could have won.",
-          "Learn from your mistakes.",
-          "Better late than never."
+          "It's too late now.",
+          "Move on.",
+          "You should have called.",
+          "I would have helped."
         ],
-        "correct": 0
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -8646,14 +8623,14 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Двигайся дальше.",
+        "prompt": "Тебе следовало позвонить.",
         "options": [
-          "It's too late now.",
-          "I would have helped.",
           "You should have called.",
-          "Move on."
+          "Move on.",
+          "I would have helped.",
+          "It's too late now."
         ],
-        "correct": 3
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -8669,14 +8646,14 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Учись на своих ошибках.",
+        "prompt": "Кто бы мог подумать?",
         "options": [
           "Better late than never.",
           "We could have won.",
           "Learn from your mistakes.",
           "Who would have thought?"
         ],
-        "correct": 2
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -8694,24 +8671,24 @@
         "kind": "match_pairs",
         "pairs": [
           {
-            "en": "He must have forgotten.",
-            "ru": "Должно быть, он забыл."
+            "en": "Learn from your mistakes.",
+            "ru": "Учись на своих ошибках."
           },
           {
-            "en": "You should have called.",
-            "ru": "Тебе следовало позвонить."
-          },
-          {
-            "en": "Better late than never.",
-            "ru": "Лучше поздно, чем никогда."
+            "en": "We could have won.",
+            "ru": "Мы могли бы выиграть."
           },
           {
             "en": "It's too late now.",
             "ru": "Сейчас уже поздно."
           },
           {
-            "en": "I would have helped.",
-            "ru": "Я бы помог."
+            "en": "He must have forgotten.",
+            "ru": "Должно быть, он забыл."
+          },
+          {
+            "en": "Move on.",
+            "ru": "Двигайся дальше."
           }
         ]
       },
@@ -8729,9 +8706,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Куда она могла уйти?",
-        "phrase_id": "ph-a-0333",
-        "tokens": ["gone", "She", "have", "could", "Where", "would", "she"]
+        "prompt_ru": "Я бы помог.",
+        "phrase_id": "ph-a-0327",
+        "tokens": ["I", "have", "But", "had", "helped", "would"]
       },
       "answer": {
         "normalization": "default",
@@ -8747,9 +8724,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Всё было бы иначе.",
-        "phrase_id": "ph-a-0334",
-        "tokens": ["She", "have", "Where", "would", "different", "It", "been"]
+        "prompt_ru": "Но будущее — можно.",
+        "phrase_id": "ph-a-0341",
+        "tokens": ["future", "the", "had", "But", "can", "would"]
       },
       "answer": {
         "normalization": "default",
@@ -8765,9 +8742,22 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Не может быть, чтобы она это сказала.",
-        "phrase_id": "ph-a-0315",
-        "tokens": ["have", "can't", "would", "She", "that", "said", "Where"]
+        "prompt_ru": "Если бы мы вышли раньше, мы бы успели.",
+        "phrase_id": "ph-a-0330",
+        "tokens": [
+          "But",
+          "She",
+          "have",
+          "we",
+          "it",
+          "caught",
+          "had",
+          "earlier,",
+          "left",
+          "If",
+          "we",
+          "would"
+        ]
       },
       "answer": {
         "normalization": "default",
@@ -8783,9 +8773,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Возможно, она передумала.",
-        "phrase_id": "ph-a-0320",
-        "tokens": ["would", "her", "have", "mind", "Where", "changed", "may", "She"]
+        "prompt_ru": "Не может быть, чтобы она это сказала.",
+        "phrase_id": "ph-a-0315",
+        "tokens": ["have", "can't", "But", "She", "that", "said", "would"]
       },
       "answer": {
         "normalization": "default",
@@ -8801,9 +8791,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Должно быть, он забыл.",
-        "phrase_id": "ph-a-0314",
-        "tokens": ["He", "must", "would", "forgotten", "have", "Where"]
+        "prompt_ru": "Учись на своих ошибках.",
+        "phrase_id": "ph-a-0337",
+        "tokens": ["your", "would", "But", "mistakes", "from", "Learn"]
       },
       "answer": {
         "normalization": "default",
@@ -8819,9 +8809,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Что бы ты сделал?",
-        "phrase_id": "ph-a-0332",
-        "tokens": ["been", "done", "What", "would", "have", "you", "Where"]
+        "prompt_ru": "Жаль, что я это сказал.",
+        "phrase_id": "ph-a-0331",
+        "tokens": ["I", "wish", "But", "it", "hadn't", "I", "said", "would"]
       },
       "answer": {
         "normalization": "default",
@@ -8837,9 +8827,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Если бы я мог повернуть время вспять!",
-        "phrase_id": "ph-a-0339",
-        "tokens": ["If", "would", "back", "time", "Where", "could", "I", "only", "turn"]
+        "prompt_ru": "Он, должно быть, устал.",
+        "phrase_id": "ph-a-0324",
+        "tokens": ["tired", "would", "But", "have", "He", "must", "been"]
       },
       "answer": {
         "normalization": "default",
@@ -8855,22 +8845,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Если бы мы вышли раньше, мы бы успели.",
-        "phrase_id": "ph-a-0330",
-        "tokens": [
-          "have",
-          "would",
-          "If",
-          "it",
-          "been",
-          "caught",
-          "we",
-          "had",
-          "left",
-          "we",
-          "earlier,",
-          "Where"
-        ]
+        "prompt_ru": "Что бы ты сделал?",
+        "phrase_id": "ph-a-0332",
+        "tokens": ["done", "would", "But", "have", "you", "What", "had"]
       },
       "answer": {
         "normalization": "default",
@@ -8883,161 +8860,6 @@
     },
     {
       "id": "ex-a-0477",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Он, должно быть, устал.",
-        "phrase_id": "ph-a-0324"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-a-0478",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Ей не следовало туда ходить.",
-        "phrase_id": "ph-a-0328"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-a-0479",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Прошлое нельзя изменить.",
-        "phrase_id": "ph-a-0340"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-a-0480",
-      "type": "speak",
-      "payload": {
-        "kind": "speak",
-        "prompt_ru": "Жаль, что я это сказал.",
-        "phrase_id": "ph-a-0331"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow",
-        "speech_threshold": 0.85
-      },
-      "meta": {
-        "skill": "speaking",
-        "xp": 4
-      }
-    },
-    {
-      "id": "ex-a-0481",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Я бы помог.",
-        "phrase_id": "ph-a-0327"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-a-0482",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Возможно, их задержали.",
-        "phrase_id": "ph-a-0321"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-a-0483",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Тебе следовало позвонить.",
-        "phrase_id": "ph-a-0316"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-a-0484",
-      "type": "speak",
-      "payload": {
-        "kind": "speak",
-        "prompt_ru": "Сейчас уже поздно.",
-        "phrase_id": "ph-a-0352"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow",
-        "speech_threshold": 0.85
-      },
-      "meta": {
-        "skill": "speaking",
-        "xp": 4
-      }
-    },
-    {
-      "id": "ex-a-0485",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Мы могли бы выиграть.",
-        "phrase_id": "ph-a-0322"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-a-0486",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -9054,59 +8876,7 @@
       }
     },
     {
-      "id": "ex-a-0487",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Не может быть, чтобы это было легко.",
-        "phrase_id": "ph-a-0325"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-a-0488",
-      "type": "speak",
-      "payload": {
-        "kind": "speak",
-        "prompt_ru": "Жаль, что я не знал.",
-        "phrase_id": "ph-a-0319"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow",
-        "speech_threshold": 0.85
-      },
-      "meta": {
-        "skill": "speaking",
-        "xp": 4
-      }
-    },
-    {
-      "id": "ex-a-0489",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Но будущее — можно.",
-        "phrase_id": "ph-a-0341"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-a-0490",
+      "id": "ex-a-0478",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -9123,7 +8893,7 @@
       }
     },
     {
-      "id": "ex-a-0491",
+      "id": "ex-a-0479",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -9140,12 +8910,219 @@
       }
     },
     {
-      "id": "ex-a-0492",
+      "id": "ex-a-0480",
       "type": "speak",
       "payload": {
         "kind": "speak",
         "prompt_ru": "Если бы я учился, я бы сдал.",
         "phrase_id": "ph-a-0318"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-a-0481",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Сейчас уже поздно.",
+        "phrase_id": "ph-a-0352"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-a-0482",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Возможно, она передумала.",
+        "phrase_id": "ph-a-0320"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-a-0483",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Всё происходит не просто так.",
+        "phrase_id": "ph-a-0336"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-a-0484",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Если бы я только знал!",
+        "phrase_id": "ph-a-0323"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-a-0485",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Если бы я мог повернуть время вспять!",
+        "phrase_id": "ph-a-0339"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-a-0486",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Куда она могла уйти?",
+        "phrase_id": "ph-a-0333"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-a-0487",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Кто бы мог подумать?",
+        "phrase_id": "ph-a-0335"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-a-0488",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Если бы она знала, она бы пришла.",
+        "phrase_id": "ph-a-0329"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-a-0489",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Возможно, их задержали.",
+        "phrase_id": "ph-a-0321"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-a-0490",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Всё было бы иначе.",
+        "phrase_id": "ph-a-0334"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-a-0491",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Тебе следовало позвонить.",
+        "phrase_id": "ph-a-0316"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-a-0492",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Должно быть, он забыл.",
+        "phrase_id": "ph-a-0314"
       },
       "answer": {
         "normalization": "default",
@@ -9216,7 +9193,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0315"
+        "phrase_id": "ph-a-0337"
       },
       "answer": {
         "normalization": "default",
@@ -9232,7 +9209,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0338"
+        "phrase_id": "ph-a-0327"
       },
       "answer": {
         "normalization": "default",
@@ -9248,7 +9225,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0341"
+        "phrase_id": "ph-a-0322"
       },
       "answer": {
         "normalization": "default",
@@ -9264,7 +9241,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0337"
+        "phrase_id": "ph-a-0341"
       },
       "answer": {
         "normalization": "default",
@@ -9280,7 +9257,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-a-0314"
+        "phrase_id": "ph-a-0316"
       },
       "answer": {
         "normalization": "default",
@@ -9296,7 +9273,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0332"
+        "phrase_id": "ph-a-0326"
       },
       "answer": {
         "normalization": "default",
@@ -9313,7 +9290,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0319"
+        "phrase_id": "ph-a-0337"
       },
       "answer": {
         "normalization": "default",
@@ -9330,7 +9307,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0353"
+        "phrase_id": "ph-a-0332"
       },
       "answer": {
         "normalization": "default",
@@ -9347,7 +9324,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-a-0314"
+        "phrase_id": "ph-a-0324"
       },
       "answer": {
         "normalization": "default",
@@ -9426,7 +9403,7 @@
       "type": "find_error",
       "payload": {
         "kind": "find_error",
-        "wrong_en": "I'll be cook at eight.",
+        "wrong_en": "I'll be cook dinner.",
         "hint_ru": "Я буду готовить ужин.",
         "phrase_id": "ph-a-0031"
       },
@@ -9446,7 +9423,7 @@
       "payload": {
         "kind": "answer_question",
         "question_en": "Will you have finished by five?",
-        "phrase_id": "ph-a-0037"
+        "phrase_id": "ph-a-0032"
       },
       "answer": {
         "normalization": "default",
@@ -9463,9 +9440,9 @@
       "type": "find_error",
       "payload": {
         "kind": "find_error",
-        "wrong_en": "He'll have finish by then.",
+        "wrong_en": "He'll have forget by tomorrow.",
         "hint_ru": "К завтрашнему дню он уже забудет.",
-        "phrase_id": "ph-a-0038"
+        "phrase_id": "ph-a-0039"
       },
       "answer": {
         "normalization": "default",
@@ -9482,8 +9459,8 @@
       "type": "answer_question",
       "payload": {
         "kind": "answer_question",
-        "question_en": "What marker means Past Simple?",
-        "phrase_id": "ph-a-0080"
+        "question_en": "Which word is a Past Simple marker?",
+        "phrase_id": "ph-a-0081"
       },
       "answer": {
         "normalization": "default",
@@ -9502,7 +9479,7 @@
         "kind": "find_error",
         "wrong_en": "I am work every day.",
         "hint_ru": "Я работаю каждый день. (Present Simple)",
-        "phrase_id": "ph-a-0058"
+        "phrase_id": "ph-a-0059"
       },
       "answer": {
         "normalization": "default",
@@ -9520,7 +9497,7 @@
       "payload": {
         "kind": "answer_question",
         "question_en": "What is being done?",
-        "phrase_id": "ph-a-0088"
+        "phrase_id": "ph-a-0089"
       },
       "answer": {
         "normalization": "default",
@@ -9539,7 +9516,7 @@
         "kind": "find_error",
         "wrong_en": "The road is been repaired.",
         "hint_ru": "Дорогу сейчас ремонтируют.",
-        "phrase_id": "ph-a-0088"
+        "phrase_id": "ph-a-0089"
       },
       "answer": {
         "normalization": "default",
@@ -9557,7 +9534,7 @@
       "payload": {
         "kind": "answer_question",
         "question_en": "When will the results be announced?",
-        "phrase_id": "ph-a-0126"
+        "phrase_id": "ph-a-0127"
       },
       "answer": {
         "normalization": "default",
@@ -9576,7 +9553,7 @@
         "kind": "find_error",
         "wrong_en": "This must been done today.",
         "hint_ru": "Это нужно сделать сегодня.",
-        "phrase_id": "ph-a-0106"
+        "phrase_id": "ph-a-0107"
       },
       "answer": {
         "normalization": "default",
@@ -9594,7 +9571,7 @@
       "payload": {
         "kind": "answer_question",
         "question_en": "What will you be doing?",
-        "phrase_id": "ph-a-0150"
+        "phrase_id": "ph-a-0151"
       },
       "answer": {
         "normalization": "default",
@@ -9613,7 +9590,7 @@
         "kind": "find_error",
         "wrong_en": "The road is been repaired.",
         "hint_ru": "Дорогу сейчас ремонтируют.",
-        "phrase_id": "ph-a-0088"
+        "phrase_id": "ph-a-0089"
       },
       "answer": {
         "normalization": "default",
@@ -9630,8 +9607,8 @@
       "type": "answer_question",
       "payload": {
         "kind": "answer_question",
-        "question_en": "Where is he?",
-        "phrase_id": "ph-a-0183"
+        "question_en": "Where is she?",
+        "phrase_id": "ph-a-0176"
       },
       "answer": {
         "normalization": "default",
@@ -9650,7 +9627,7 @@
         "kind": "find_error",
         "wrong_en": "He must has forgotten.",
         "hint_ru": "Должно быть, он забыл.",
-        "phrase_id": "ph-a-0174"
+        "phrase_id": "ph-a-0175"
       },
       "answer": {
         "normalization": "default",
@@ -9668,7 +9645,7 @@
       "payload": {
         "kind": "answer_question",
         "question_en": "Did you study?",
-        "phrase_id": "ph-a-0193"
+        "phrase_id": "ph-a-0194"
       },
       "answer": {
         "normalization": "default",
@@ -9687,7 +9664,7 @@
         "kind": "find_error",
         "wrong_en": "You should has called.",
         "hint_ru": "Тебе следовало позвонить.",
-        "phrase_id": "ph-a-0192"
+        "phrase_id": "ph-a-0193"
       },
       "answer": {
         "normalization": "default",
@@ -9724,7 +9701,7 @@
         "kind": "find_error",
         "wrong_en": "If I would have studied, I would have passed.",
         "hint_ru": "Если бы я учился, я бы сдал.",
-        "phrase_id": "ph-a-0244"
+        "phrase_id": "ph-a-0245"
       },
       "answer": {
         "normalization": "default",
@@ -9742,7 +9719,7 @@
       "payload": {
         "kind": "answer_question",
         "question_en": "What do you wish?",
-        "phrase_id": "ph-a-0229"
+        "phrase_id": "ph-a-0230"
       },
       "answer": {
         "normalization": "default",
@@ -9779,7 +9756,7 @@
       "payload": {
         "kind": "answer_question",
         "question_en": "What do you wish you had done?",
-        "phrase_id": "ph-a-0228"
+        "phrase_id": "ph-a-0229"
       },
       "answer": {
         "normalization": "default",
@@ -9798,7 +9775,7 @@
         "kind": "find_error",
         "wrong_en": "If I would have studied, I would have passed.",
         "hint_ru": "Если бы я учился, я бы сдал.",
-        "phrase_id": "ph-a-0244"
+        "phrase_id": "ph-a-0245"
       },
       "answer": {
         "normalization": "default",

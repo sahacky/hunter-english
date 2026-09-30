@@ -352,12 +352,12 @@
       "id": "les-a-03",
       "rank": "A",
       "module": "mod-a-1",
-      "title": "Карта всех 12 времён",
+      "title": "Карта всех времён",
       "grammar_point": {
         "id": "gp-a-03",
         "title_ru": "Выбор времени по маркеру",
-        "rule_md": "**Карта всех 12 времён.**\nPresent: I work / I am working / I have worked / I have been working\nPast: I worked / I was working / I had worked / I had been working\nFuture: I will work / I will be working / I will have worked\nВыбирай время по маркеру: yesterday → Past, now → Pres.Cont., every day → Pres.S.",
-        "phrase_ids": ["ph-a-0058", "ph-a-0059", "ph-a-0060", "ph-a-0061", "ph-a-0062"],
+        "rule_md": "**Карта всех основных времён (11 из 12).**\nPresent: I work / I am working / I have worked / I have been working\nPast: I worked / I was working / I had worked / I had been working\nFuture: I will work / I will be working / I will have worked\nВыбирай время по маркеру: yesterday → Past, now → Pres.Cont., every day → Pres.S.",
+        "phrase_ids": ["ph-a-0059", "ph-a-0060", "ph-a-0061", "ph-a-0062", "ph-a-0063"],
         "trap_id": "trap-present-perfect"
       },
       "vocab_band": {
@@ -530,7 +530,7 @@
         "id": "gp-a-04",
         "title_ru": "being + V3 / been + V3",
         "rule_md": "**Пассив: Continuous и Perfect.**\nPres.Cont.Passive: is/are **being** + V3: The road **is being repaired**.\nPres.Perf.Passive: has/have **been** + V3: The bridge **has been built**.\nPast Perf.Passive: had been + V3: The house **had been sold**.",
-        "phrase_ids": ["ph-a-0088", "ph-a-0089", "ph-a-0090", "ph-a-0091", "ph-a-0092"],
+        "phrase_ids": ["ph-a-0089", "ph-a-0090", "ph-a-0091", "ph-a-0092", "ph-a-0093"],
         "trap_id": "trap-present-perfect"
       },
       "vocab_band": {
@@ -703,7 +703,7 @@
         "id": "gp-a-05",
         "title_ru": "will be / must be done",
         "rule_md": "**Пассив: будущее и модальные.**\nFuture Passive: will **be** + V3: The results **will be announced**.\nModal Passive: must/can/should **be** + V3: This **must be done**.\nВыбор: актив (кто делает) vs пассив (что происходит).",
-        "phrase_ids": ["ph-a-0119", "ph-a-0120", "ph-a-0121", "ph-a-0122", "ph-a-0123"],
+        "phrase_ids": ["ph-a-0120", "ph-a-0121", "ph-a-0122", "ph-a-0123", "ph-a-0124"],
         "trap_id": "trap-present-perfect"
       },
       "vocab_band": {
@@ -876,7 +876,7 @@
         "id": "gp-a-06",
         "title_ru": "Повторение модуля A1",
         "rule_md": "**Повторение №21: все времена + пассив.**\nFuture Continuous/Perfect; все 12 времён по маркерам; пассив всех\nвремен (is made / was built / is being built / has been built / will be done).\nКонтрольная: выбери время и залог.",
-        "phrase_ids": ["ph-a-0144", "ph-a-0145", "ph-a-0146", "ph-a-0147", "ph-a-0148"],
+        "phrase_ids": ["ph-a-0145", "ph-a-0146", "ph-a-0147", "ph-a-0148", "ph-a-0149"],
         "trap_id": "trap-present-perfect"
       },
       "vocab_band": {
@@ -1044,7 +1044,7 @@
         "id": "gp-a-07",
         "title_ru": "Модальные + have + V3",
         "rule_md": "**must have / can't have / may have done.**\n**must have** + V3 = «должно быть» (уверенность):\nHe **must have forgotten**.\n**can't have** + V3 = «не может быть»:\nHe **can't have said** that.\n**may/might have** + V3 = «возможно»:\nShe **may have changed** her mind.",
-        "phrase_ids": ["ph-a-0174", "ph-a-0175", "ph-a-0176", "ph-a-0177", "ph-a-0178"],
+        "phrase_ids": ["ph-a-0175", "ph-a-0176", "ph-a-0177", "ph-a-0178", "ph-a-0179"],
         "trap_id": "trap-present-perfect"
       },
       "vocab_band": {
@@ -1217,7 +1217,7 @@
         "id": "gp-a-08",
         "title_ru": "Сожаления и упрёки",
         "rule_md": "**should have done: сожаления и упрёки.**\n**should have** + V3 = «надо было»: You **should have called**.\n**shouldn't have** + V3 = «не надо было»: I **shouldn't have said** that.\n**could have** + V3 = «мог бы»: We **could have won**.\nwish + had + V3 = «жаль, что не…»: I **wish I had studied**.",
-        "phrase_ids": ["ph-a-0209", "ph-a-0210", "ph-a-0211", "ph-a-0212", "ph-a-0213"],
+        "phrase_ids": ["ph-a-0210", "ph-a-0211", "ph-a-0212", "ph-a-0213", "ph-a-0214"],
         "trap_id": "trap-present-perfect"
       },
       "vocab_band": {
@@ -1390,7 +1390,7 @@
         "id": "gp-a-09",
         "title_ru": "Нереальное прошлое",
         "rule_md": "**3-е условное: нереальное прошлое.**\n**If** + Past Perfect, **would have** + V3:\nIf I **had studied**, I **would have passed**.\nЕсли бы… тогда (обе части — в прошлом, изменить нельзя).\nОтрицание: If he **hadn't lied**, she **would have stayed**.",
-        "phrase_ids": ["ph-a-0244", "ph-a-0245", "ph-a-0246", "ph-a-0247", "ph-a-0248"],
+        "phrase_ids": ["ph-a-0245", "ph-a-0246", "ph-a-0247", "ph-a-0248", "ph-a-0249"],
         "trap_id": "trap-if-will"
       },
       "vocab_band": {
@@ -1563,7 +1563,7 @@
         "id": "gp-a-10",
         "title_ru": "Mixed conditionals",
         "rule_md": "**Смешанные условные + wish глубже.**\nПрошлое → настоящее: If I **had saved** money, I **would be** rich **now**.\nwish + Past Perfect = «жаль, что не…» в прошлом:\nI wish I **had studied**. (= I didn't study)\nwish + wouldn't = раздражение: I wish it **would stop**.",
-        "phrase_ids": ["ph-a-0279", "ph-a-0280", "ph-a-0281", "ph-a-0282", "ph-a-0283"],
+        "phrase_ids": ["ph-a-0280", "ph-a-0281", "ph-a-0282", "ph-a-0283", "ph-a-0284"],
         "trap_id": "trap-if-will"
       },
       "vocab_band": {

@@ -254,50 +254,50 @@
     },
     {
       "id": "ph-a-0026",
-      "text_en": "I'll be there.",
-      "translation_ru": "Я буду там.",
+      "text_en": "I'll be sitting in the office.",
+      "translation_ru": "Я буду сидеть в офисе.",
       "grammar_point_id": "gp-a-01",
-      "variants": ["I'll be there."],
+      "variants": ["I'll be sitting in the office."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0026.opus"
       }
     },
     {
       "id": "ph-a-0027",
-      "text_en": "She'll be late.",
-      "translation_ru": "Она опоздает.",
+      "text_en": "She'll be running late.",
+      "translation_ru": "Она будет опаздывать.",
       "grammar_point_id": "gp-a-01",
-      "variants": ["She'll be late."],
+      "variants": ["She'll be running late."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0027.opus"
       }
     },
     {
       "id": "ph-a-0028",
-      "text_en": "We'll be ready.",
-      "translation_ru": "Мы будем готовы.",
+      "text_en": "We'll be waiting outside.",
+      "translation_ru": "Мы будем ждать снаружи.",
       "grammar_point_id": "gp-a-01",
-      "variants": ["We'll be ready."],
+      "variants": ["We'll be waiting outside."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0028.opus"
       }
     },
     {
       "id": "ph-a-0029",
-      "text_en": "They'll be waiting.",
-      "translation_ru": "Они будут ждать.",
+      "text_en": "They'll be watching.",
+      "translation_ru": "Они будут смотреть.",
       "grammar_point_id": "gp-a-01",
-      "variants": ["They'll be waiting."],
+      "variants": ["They'll be watching."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0029.opus"
       }
     },
     {
       "id": "ph-a-0030",
-      "text_en": "He'll be sleeping.",
-      "translation_ru": "Он будет спать.",
+      "text_en": "He'll be snoring.",
+      "translation_ru": "Он будет храпеть.",
       "grammar_point_id": "gp-a-01",
-      "variants": ["He'll be sleeping."],
+      "variants": ["He'll be snoring."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0030.opus"
       }
@@ -314,2500 +314,2500 @@
     },
     {
       "id": "ph-a-0032",
-      "text_en": "By next year, he'll have finished his degree.",
-      "translation_ru": "К следующему году он закончит учёбу.",
+      "text_en": "Yes, I'll have finished by five.",
+      "translation_ru": "Да, я закончу к пяти.",
       "grammar_point_id": "gp-a-02",
-      "variants": ["By next year, he'll have finished his degree."],
+      "variants": ["Yes, I'll have finished by five."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0032.opus"
       }
     },
     {
       "id": "ph-a-0033",
-      "text_en": "By the time you arrive, I'll have cooked dinner.",
-      "translation_ru": "К твоему приходу я уже приготовлю ужин.",
+      "text_en": "By next year, he'll have finished his degree.",
+      "translation_ru": "К следующему году он закончит учёбу.",
       "grammar_point_id": "gp-a-02",
-      "variants": ["By the time you arrive, I'll have cooked dinner."],
+      "variants": ["By next year, he'll have finished his degree."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0033.opus"
       }
     },
     {
       "id": "ph-a-0034",
-      "text_en": "She'll have left by then.",
-      "translation_ru": "К тому времени она уже уедет.",
+      "text_en": "By the time you arrive, I'll have cooked dinner.",
+      "translation_ru": "К твоему приходу я уже приготовлю ужин.",
       "grammar_point_id": "gp-a-02",
-      "variants": ["She'll have left by then."],
+      "variants": ["By the time you arrive, I'll have cooked dinner."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0034.opus"
       }
     },
     {
       "id": "ph-a-0035",
-      "text_en": "We'll have been married for ten years.",
-      "translation_ru": "К тому времени мы будем женаты десять лет.",
+      "text_en": "She'll have left by then.",
+      "translation_ru": "К тому времени она уже уедет.",
       "grammar_point_id": "gp-a-02",
-      "variants": ["We'll have been married for ten years."],
+      "variants": ["She'll have left by then."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0035.opus"
       }
     },
     {
       "id": "ph-a-0036",
-      "text_en": "They'll have sold everything by Friday.",
-      "translation_ru": "К пятнице они всё продадут.",
+      "text_en": "We'll have been married for ten years.",
+      "translation_ru": "К тому времени мы будем женаты десять лет.",
       "grammar_point_id": "gp-a-02",
-      "variants": ["They'll have sold everything by Friday."],
+      "variants": ["We'll have been married for ten years."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0036.opus"
       }
     },
     {
       "id": "ph-a-0037",
-      "text_en": "I'll have read the book by then.",
-      "translation_ru": "К тому времени я уже прочитаю книгу.",
+      "text_en": "They'll have sold everything by Friday.",
+      "translation_ru": "К пятнице они всё продадут.",
       "grammar_point_id": "gp-a-02",
-      "variants": ["I'll have read the book by then."],
+      "variants": ["They'll have sold everything by Friday."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0037.opus"
       }
     },
     {
       "id": "ph-a-0038",
-      "text_en": "He'll have forgotten by tomorrow.",
-      "translation_ru": "К завтрашнему дню он уже забудет.",
+      "text_en": "I'll have read the book by then.",
+      "translation_ru": "К тому времени я уже прочитаю книгу.",
       "grammar_point_id": "gp-a-02",
-      "variants": ["He'll have forgotten by tomorrow."],
+      "variants": ["I'll have read the book by then."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0038.opus"
       }
     },
     {
       "id": "ph-a-0039",
-      "text_en": "The plane will have landed by six.",
-      "translation_ru": "Самолёт уже приземлится к шести.",
+      "text_en": "He'll have forgotten by tomorrow.",
+      "translation_ru": "К завтрашнему дню он уже забудет.",
       "grammar_point_id": "gp-a-02",
-      "variants": ["The plane will have landed by six."],
+      "variants": ["He'll have forgotten by tomorrow."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0039.opus"
       }
     },
     {
       "id": "ph-a-0040",
-      "text_en": "Will you have finished by five?",
-      "translation_ru": "Ты закончишь к пяти?",
+      "text_en": "The plane will have landed by six.",
+      "translation_ru": "Самолёт уже приземлится к шести.",
       "grammar_point_id": "gp-a-02",
-      "variants": ["Will you have finished by five?"],
+      "variants": ["The plane will have landed by six."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0040.opus"
       }
     },
     {
       "id": "ph-a-0041",
-      "text_en": "She won't have heard the news yet.",
-      "translation_ru": "Она ещё не услышит новость.",
+      "text_en": "Will you have finished by five?",
+      "translation_ru": "Ты закончишь к пяти?",
       "grammar_point_id": "gp-a-02",
-      "variants": ["She won't have heard the news yet."],
+      "variants": ["Will you have finished by five?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0041.opus"
       }
     },
     {
       "id": "ph-a-0042",
-      "text_en": "We won't have arrived by then.",
-      "translation_ru": "Мы ещё не приедем к тому времени.",
+      "text_en": "She won't have heard the news yet.",
+      "translation_ru": "Она ещё не услышит новость.",
       "grammar_point_id": "gp-a-02",
-      "variants": ["We won't have arrived by then."],
+      "variants": ["She won't have heard the news yet."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0042.opus"
       }
     },
     {
       "id": "ph-a-0043",
-      "text_en": "In two years, I'll have learned English.",
-      "translation_ru": "Через два года я выучу английский.",
+      "text_en": "We won't have arrived by then.",
+      "translation_ru": "Мы ещё не приедем к тому времени.",
       "grammar_point_id": "gp-a-02",
-      "variants": ["In two years, I'll have learned English."],
+      "variants": ["We won't have arrived by then."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0043.opus"
       }
     },
     {
       "id": "ph-a-0044",
-      "text_en": "By 2030, they'll have built the bridge.",
-      "translation_ru": "К 2030 году они построят мост.",
+      "text_en": "In two years, I'll have learned English.",
+      "translation_ru": "Через два года я выучу английский.",
       "grammar_point_id": "gp-a-02",
-      "variants": ["By 2030, they'll have built the bridge."],
+      "variants": ["In two years, I'll have learned English."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0044.opus"
       }
     },
     {
       "id": "ph-a-0045",
-      "text_en": "By the end of the month, I'll have saved enough.",
-      "translation_ru": "К концу месяца я накоплю достаточно.",
+      "text_en": "By 2030, they'll have built the bridge.",
+      "translation_ru": "К 2030 году они построят мост.",
       "grammar_point_id": "gp-a-02",
-      "variants": ["By the end of the month, I'll have saved enough."],
+      "variants": ["By 2030, they'll have built the bridge."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0045.opus"
       }
     },
     {
       "id": "ph-a-0046",
-      "text_en": "She'll have written three books by now.",
-      "translation_ru": "К этому времени она напишет три книги.",
+      "text_en": "By the end of the month, I'll have saved enough.",
+      "translation_ru": "К концу месяца я накоплю достаточно.",
       "grammar_point_id": "gp-a-02",
-      "variants": ["She'll have written three books by now."],
+      "variants": ["By the end of the month, I'll have saved enough."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0046.opus"
       }
     },
     {
       "id": "ph-a-0047",
-      "text_en": "He'll have been working there for twenty years.",
-      "translation_ru": "К тому времени он будет работать там двадцать лет.",
+      "text_en": "She'll have written three books by then.",
+      "translation_ru": "К этому времени она напишет три книги.",
       "grammar_point_id": "gp-a-02",
-      "variants": ["He'll have been working there for twenty years."],
+      "variants": ["She'll have written three books by then."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0047.opus"
       }
     },
     {
       "id": "ph-a-0048",
-      "text_en": "Everything will have changed.",
-      "translation_ru": "Всё изменится.",
+      "text_en": "He'll have been working there for twenty years.",
+      "translation_ru": "К тому времени он будет работать там двадцать лет.",
       "grammar_point_id": "gp-a-02",
-      "variants": ["Everything will have changed."],
+      "variants": ["He'll have been working there for twenty years."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0048.opus"
       }
     },
     {
       "id": "ph-a-0049",
-      "text_en": "Nothing will have happened.",
-      "translation_ru": "Ничего не случится.",
+      "text_en": "Everything will have changed.",
+      "translation_ru": "Всё изменится.",
       "grammar_point_id": "gp-a-02",
-      "variants": ["Nothing will have happened."],
+      "variants": ["Everything will have changed."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0049.opus"
       }
     },
     {
       "id": "ph-a-0050",
-      "text_en": "The results will have been announced.",
-      "translation_ru": "Результаты уже будут объявлены.",
+      "text_en": "Nothing will have happened.",
+      "translation_ru": "Ничего не случится.",
       "grammar_point_id": "gp-a-02",
-      "variants": ["The results will have been announced."],
+      "variants": ["Nothing will have happened."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0050.opus"
       }
     },
     {
       "id": "ph-a-0051",
-      "text_en": "It will have been a long journey.",
-      "translation_ru": "Это будет долгое путешествие.",
+      "text_en": "The results will have been announced.",
+      "translation_ru": "Результаты уже будут объявлены.",
       "grammar_point_id": "gp-a-02",
-      "variants": ["It will have been a long journey."],
+      "variants": ["The results will have been announced."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0051.opus"
       }
     },
     {
       "id": "ph-a-0052",
-      "text_en": "I'll have finished.",
-      "translation_ru": "Я закончу.",
+      "text_en": "It will have been a long journey.",
+      "translation_ru": "Это будет долгое путешествие.",
       "grammar_point_id": "gp-a-02",
-      "variants": ["I'll have finished."],
+      "variants": ["It will have been a long journey."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0052.opus"
       }
     },
     {
       "id": "ph-a-0053",
-      "text_en": "She'll have left.",
-      "translation_ru": "Она уедет.",
+      "text_en": "I'll have finished.",
+      "translation_ru": "Я закончу.",
       "grammar_point_id": "gp-a-02",
-      "variants": ["She'll have left."],
+      "variants": ["I'll have finished."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0053.opus"
       }
     },
     {
       "id": "ph-a-0054",
-      "text_en": "We'll have arrived.",
-      "translation_ru": "Мы приедем.",
+      "text_en": "She'll have left.",
+      "translation_ru": "Она уедет.",
       "grammar_point_id": "gp-a-02",
-      "variants": ["We'll have arrived."],
+      "variants": ["She'll have left."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0054.opus"
       }
     },
     {
       "id": "ph-a-0055",
-      "text_en": "They'll have eaten.",
-      "translation_ru": "Они поедят.",
+      "text_en": "We'll have arrived.",
+      "translation_ru": "Мы приедем.",
       "grammar_point_id": "gp-a-02",
-      "variants": ["They'll have eaten."],
+      "variants": ["We'll have arrived."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0055.opus"
       }
     },
     {
       "id": "ph-a-0056",
-      "text_en": "He'll have gone.",
-      "translation_ru": "Он уйдёт.",
+      "text_en": "They'll have eaten.",
+      "translation_ru": "Они поедят.",
       "grammar_point_id": "gp-a-02",
-      "variants": ["He'll have gone."],
+      "variants": ["They'll have eaten."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0056.opus"
       }
     },
     {
       "id": "ph-a-0057",
-      "text_en": "He'll have forgotten by tomorrow.",
-      "translation_ru": "Он забудет к завтрашнему дню.",
+      "text_en": "He'll have gone.",
+      "translation_ru": "Он уйдёт.",
       "grammar_point_id": "gp-a-02",
-      "variants": ["He'll have forgotten by tomorrow."],
+      "variants": ["He'll have gone."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0057.opus"
       }
     },
     {
       "id": "ph-a-0058",
-      "text_en": "I work every day.",
-      "translation_ru": "Я работаю каждый день. (Present Simple)",
-      "grammar_point_id": "gp-a-03",
-      "variants": ["I work every day."],
+      "text_en": "He'll have forgotten by tomorrow.",
+      "translation_ru": "Он забудет к завтрашнему дню.",
+      "grammar_point_id": "gp-a-02",
+      "variants": ["He'll have forgotten by tomorrow."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0058.opus"
       }
     },
     {
       "id": "ph-a-0059",
-      "text_en": "I am working now.",
-      "translation_ru": "Я сейчас работаю. (Present Continuous)",
+      "text_en": "I work every day.",
+      "translation_ru": "Я работаю каждый день. (Present Simple)",
       "grammar_point_id": "gp-a-03",
-      "variants": ["I am working now."],
+      "variants": ["I work every day."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0059.opus"
       }
     },
     {
       "id": "ph-a-0060",
-      "text_en": "I have worked here for years.",
-      "translation_ru": "Я работаю здесь много лет. (Present Perfect)",
+      "text_en": "I am working now.",
+      "translation_ru": "Я сейчас работаю. (Present Continuous)",
       "grammar_point_id": "gp-a-03",
-      "variants": ["I have worked here for years."],
+      "variants": ["I am working now."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0060.opus"
       }
     },
     {
       "id": "ph-a-0061",
-      "text_en": "I have been working all morning.",
-      "translation_ru": "Я работаю всё утро. (Present Perfect Continuous)",
+      "text_en": "I have worked here for years.",
+      "translation_ru": "Я работаю здесь много лет. (Present Perfect)",
       "grammar_point_id": "gp-a-03",
-      "variants": ["I have been working all morning."],
+      "variants": ["I have worked here for years."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0061.opus"
       }
     },
     {
       "id": "ph-a-0062",
-      "text_en": "I worked yesterday.",
-      "translation_ru": "Я работал вчера. (Past Simple)",
+      "text_en": "I have been working all morning.",
+      "translation_ru": "Я работаю всё утро. (Present Perfect Continuous)",
       "grammar_point_id": "gp-a-03",
-      "variants": ["I worked yesterday."],
+      "variants": ["I have been working all morning."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0062.opus"
       }
     },
     {
       "id": "ph-a-0063",
-      "text_en": "I was working when you called.",
-      "translation_ru": "Я работал, когда ты позвонил. (Past Continuous)",
+      "text_en": "I worked yesterday.",
+      "translation_ru": "Я работал вчера. (Past Simple)",
       "grammar_point_id": "gp-a-03",
-      "variants": ["I was working when you called."],
+      "variants": ["I worked yesterday."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0063.opus"
       }
     },
     {
       "id": "ph-a-0064",
-      "text_en": "I had worked before you came.",
-      "translation_ru": "Я работал до твоего прихода. (Past Perfect)",
+      "text_en": "I was working when you called.",
+      "translation_ru": "Я работал, когда ты позвонил. (Past Continuous)",
       "grammar_point_id": "gp-a-03",
-      "variants": ["I had worked before you came."],
+      "variants": ["I was working when you called."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0064.opus"
       }
     },
     {
       "id": "ph-a-0065",
-      "text_en": "I had been working for hours.",
-      "translation_ru": "Я работал уже часами. (Past Perfect Continuous)",
+      "text_en": "I had worked before you came.",
+      "translation_ru": "Я работал до твоего прихода. (Past Perfect)",
       "grammar_point_id": "gp-a-03",
-      "variants": ["I had been working for hours."],
+      "variants": ["I had worked before you came."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0065.opus"
       }
     },
     {
       "id": "ph-a-0066",
-      "text_en": "I will work tomorrow.",
-      "translation_ru": "Я буду работать завтра. (Future Simple)",
+      "text_en": "I had been working for hours.",
+      "translation_ru": "Я работал уже часами. (Past Perfect Continuous)",
       "grammar_point_id": "gp-a-03",
-      "variants": ["I will work tomorrow."],
+      "variants": ["I had been working for hours."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0066.opus"
       }
     },
     {
       "id": "ph-a-0067",
-      "text_en": "I will be working at eight.",
-      "translation_ru": "Я буду работать в восемь. (Future Continuous)",
+      "text_en": "I will work tomorrow.",
+      "translation_ru": "Я буду работать завтра. (Future Simple)",
       "grammar_point_id": "gp-a-03",
-      "variants": ["I will be working at eight."],
+      "variants": ["I will work tomorrow."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0067.opus"
       }
     },
     {
       "id": "ph-a-0068",
-      "text_en": "I will have worked by then.",
-      "translation_ru": "Я уже закончу работу к тому времени. (Future Perfect)",
+      "text_en": "I will be working at eight.",
+      "translation_ru": "Я буду работать в восемь. (Future Continuous)",
       "grammar_point_id": "gp-a-03",
-      "variants": ["I will have worked by then."],
+      "variants": ["I will be working at eight."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0068.opus"
       }
     },
     {
       "id": "ph-a-0069",
-      "text_en": "She cooks dinner every day.",
-      "translation_ru": "Она готовит ужин каждый день.",
+      "text_en": "I will have worked by then.",
+      "translation_ru": "Я уже закончу работу к тому времени. (Future Perfect)",
       "grammar_point_id": "gp-a-03",
-      "variants": ["She cooks dinner every day."],
+      "variants": ["I will have worked by then."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0069.opus"
       }
     },
     {
       "id": "ph-a-0070",
-      "text_en": "She is cooking right now.",
-      "translation_ru": "Она готовит прямо сейчас.",
+      "text_en": "She cooks dinner every day.",
+      "translation_ru": "Она готовит ужин каждый день.",
       "grammar_point_id": "gp-a-03",
-      "variants": ["She is cooking right now."],
+      "variants": ["She cooks dinner every day."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0070.opus"
       }
     },
     {
       "id": "ph-a-0071",
-      "text_en": "She has cooked the meal.",
-      "translation_ru": "Она приготовила еду.",
+      "text_en": "She is cooking right now.",
+      "translation_ru": "Она готовит прямо сейчас.",
       "grammar_point_id": "gp-a-03",
-      "variants": ["She has cooked the meal."],
+      "variants": ["She is cooking right now."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0071.opus"
       }
     },
     {
       "id": "ph-a-0072",
-      "text_en": "She cooked yesterday.",
-      "translation_ru": "Она готовила вчера.",
+      "text_en": "She has cooked the meal.",
+      "translation_ru": "Она приготовила еду.",
       "grammar_point_id": "gp-a-03",
-      "variants": ["She cooked yesterday."],
+      "variants": ["She has cooked the meal."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0072.opus"
       }
     },
     {
       "id": "ph-a-0073",
-      "text_en": "She was cooking when I arrived.",
-      "translation_ru": "Она готовила, когда я пришёл.",
+      "text_en": "She cooked yesterday.",
+      "translation_ru": "Она готовила вчера.",
       "grammar_point_id": "gp-a-03",
-      "variants": ["She was cooking when I arrived."],
+      "variants": ["She cooked yesterday."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0073.opus"
       }
     },
     {
       "id": "ph-a-0074",
-      "text_en": "She will cook tomorrow.",
-      "translation_ru": "Она будет готовить завтра.",
+      "text_en": "She was cooking when I arrived.",
+      "translation_ru": "Она готовила, когда я пришёл.",
       "grammar_point_id": "gp-a-03",
-      "variants": ["She will cook tomorrow."],
+      "variants": ["She was cooking when I arrived."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0074.opus"
       }
     },
     {
       "id": "ph-a-0075",
-      "text_en": "He plays football on Sundays.",
-      "translation_ru": "Он играет в футбол по воскресеньям.",
+      "text_en": "She will cook tomorrow.",
+      "translation_ru": "Она будет готовить завтра.",
       "grammar_point_id": "gp-a-03",
-      "variants": ["He plays football on Sundays."],
+      "variants": ["She will cook tomorrow."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0075.opus"
       }
     },
     {
       "id": "ph-a-0076",
-      "text_en": "He is playing now.",
-      "translation_ru": "Он играет сейчас.",
+      "text_en": "He plays football on Sundays.",
+      "translation_ru": "Он играет в футбол по воскресеньям.",
       "grammar_point_id": "gp-a-03",
-      "variants": ["He is playing now."],
+      "variants": ["He plays football on Sundays."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0076.opus"
       }
     },
     {
       "id": "ph-a-0077",
-      "text_en": "He played last week.",
-      "translation_ru": "Он играл на прошлой неделе.",
+      "text_en": "He is playing now.",
+      "translation_ru": "Он играет сейчас.",
       "grammar_point_id": "gp-a-03",
-      "variants": ["He played last week."],
+      "variants": ["He is playing now."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0077.opus"
       }
     },
     {
       "id": "ph-a-0078",
-      "text_en": "He was playing when it started to rain.",
-      "translation_ru": "Он играл, когда начался дождь.",
+      "text_en": "He played last week.",
+      "translation_ru": "Он играл на прошлой неделе.",
       "grammar_point_id": "gp-a-03",
-      "variants": ["He was playing when it started to rain."],
+      "variants": ["He played last week."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0078.opus"
       }
     },
     {
       "id": "ph-a-0079",
-      "text_en": "He will play next Sunday.",
-      "translation_ru": "Он будет играть в следующее воскресенье.",
+      "text_en": "He was playing when it started to rain.",
+      "translation_ru": "Он играл, когда начался дождь.",
       "grammar_point_id": "gp-a-03",
-      "variants": ["He will play next Sunday."],
+      "variants": ["He was playing when it started to rain."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0079.opus"
       }
     },
     {
       "id": "ph-a-0080",
-      "text_en": "yesterday — Past Simple",
-      "translation_ru": "вчера — простое прошедшее",
+      "text_en": "He will play next Sunday.",
+      "translation_ru": "Он будет играть в следующее воскресенье.",
       "grammar_point_id": "gp-a-03",
-      "variants": ["yesterday — Past Simple"],
+      "variants": ["He will play next Sunday."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0080.opus"
       }
     },
     {
       "id": "ph-a-0081",
-      "text_en": "now — Present Continuous",
-      "translation_ru": "сейчас — настоящее длительное",
+      "text_en": "yesterday — Past Simple",
+      "translation_ru": "вчера — простое прошедшее",
       "grammar_point_id": "gp-a-03",
-      "variants": ["now — Present Continuous"],
+      "variants": ["yesterday — Past Simple"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0081.opus"
       }
     },
     {
       "id": "ph-a-0082",
-      "text_en": "every day — Present Simple",
-      "translation_ru": "каждый день — простое настоящее",
+      "text_en": "now — Present Continuous",
+      "translation_ru": "сейчас — настоящее длительное",
       "grammar_point_id": "gp-a-03",
-      "variants": ["every day — Present Simple"],
+      "variants": ["now — Present Continuous"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0082.opus"
       }
     },
     {
       "id": "ph-a-0083",
-      "text_en": "since 2020 — Present Perfect",
-      "translation_ru": "с 2020 года — настоящее совершенное",
+      "text_en": "every day — Present Simple",
+      "translation_ru": "каждый день — простое настоящее",
       "grammar_point_id": "gp-a-03",
-      "variants": ["since 2020 — Present Perfect"],
+      "variants": ["every day — Present Simple"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0083.opus"
       }
     },
     {
       "id": "ph-a-0084",
-      "text_en": "tomorrow — Future Simple",
-      "translation_ru": "завтра — простое будущее",
+      "text_en": "since 2020 — Present Perfect",
+      "translation_ru": "с 2020 года — настоящее совершенное",
       "grammar_point_id": "gp-a-03",
-      "variants": ["tomorrow — Future Simple"],
+      "variants": ["since 2020 — Present Perfect"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0084.opus"
       }
     },
     {
       "id": "ph-a-0085",
-      "text_en": "when I arrived — Past Continuous",
-      "translation_ru": "когда я пришёл — прошедшее длительное",
+      "text_en": "tomorrow — Future Simple",
+      "translation_ru": "завтра — простое будущее",
       "grammar_point_id": "gp-a-03",
-      "variants": ["when I arrived — Past Continuous"],
+      "variants": ["tomorrow — Future Simple"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0085.opus"
       }
     },
     {
       "id": "ph-a-0086",
-      "text_en": "by then — Future Perfect",
-      "translation_ru": "к тому времени — будущее совершенное",
+      "text_en": "when I arrived — Past Continuous",
+      "translation_ru": "когда я пришёл — прошедшее длительное",
       "grammar_point_id": "gp-a-03",
-      "variants": ["by then — Future Perfect"],
+      "variants": ["when I arrived — Past Continuous"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0086.opus"
       }
     },
     {
       "id": "ph-a-0087",
-      "text_en": "Choose the tense by the marker.",
-      "translation_ru": "Выбирай время по маркеру.",
+      "text_en": "by then — Future Perfect",
+      "translation_ru": "к тому времени — будущее совершенное",
       "grammar_point_id": "gp-a-03",
-      "variants": ["Choose the tense by the marker."],
+      "variants": ["by then — Future Perfect"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0087.opus"
       }
     },
     {
       "id": "ph-a-0088",
-      "text_en": "The road is being repaired.",
-      "translation_ru": "Дорогу сейчас ремонтируют.",
-      "grammar_point_id": "gp-a-04",
-      "variants": ["The road is being repaired."],
+      "text_en": "Choose the tense by the marker.",
+      "translation_ru": "Выбирай время по маркеру.",
+      "grammar_point_id": "gp-a-03",
+      "variants": ["Choose the tense by the marker."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0088.opus"
       }
     },
     {
       "id": "ph-a-0089",
-      "text_en": "The house is being built.",
-      "translation_ru": "Дом строится.",
+      "text_en": "The road is being repaired.",
+      "translation_ru": "Дорогу сейчас ремонтируют.",
       "grammar_point_id": "gp-a-04",
-      "variants": ["The house is being built."],
+      "variants": ["The road is being repaired."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0089.opus"
       }
     },
     {
       "id": "ph-a-0090",
-      "text_en": "The problem is being solved.",
-      "translation_ru": "Проблема решается.",
+      "text_en": "The house is being built.",
+      "translation_ru": "Дом строится.",
       "grammar_point_id": "gp-a-04",
-      "variants": ["The problem is being solved."],
+      "variants": ["The house is being built."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0090.opus"
       }
     },
     {
       "id": "ph-a-0091",
-      "text_en": "The new law is being discussed.",
-      "translation_ru": "Новый закон обсуждается.",
+      "text_en": "The problem is being solved.",
+      "translation_ru": "Проблема решается.",
       "grammar_point_id": "gp-a-04",
-      "variants": ["The new law is being discussed."],
+      "variants": ["The problem is being solved."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0091.opus"
       }
     },
     {
       "id": "ph-a-0092",
-      "text_en": "The rooms are being cleaned.",
-      "translation_ru": "Комнаты убирают.",
+      "text_en": "The new law is being discussed.",
+      "translation_ru": "Новый закон обсуждается.",
       "grammar_point_id": "gp-a-04",
-      "variants": ["The rooms are being cleaned."],
+      "variants": ["The new law is being discussed."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0092.opus"
       }
     },
     {
       "id": "ph-a-0093",
-      "text_en": "The bridge has been built.",
-      "translation_ru": "Мост построен.",
+      "text_en": "The rooms are being cleaned.",
+      "translation_ru": "Комнаты убирают.",
       "grammar_point_id": "gp-a-04",
-      "variants": ["The bridge has been built."],
+      "variants": ["The rooms are being cleaned."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0093.opus"
       }
     },
     {
       "id": "ph-a-0094",
-      "text_en": "The work has been finished.",
-      "translation_ru": "Работа завершена.",
+      "text_en": "The bridge has been built.",
+      "translation_ru": "Мост построен.",
       "grammar_point_id": "gp-a-04",
-      "variants": ["The work has been finished."],
+      "variants": ["The bridge has been built."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0094.opus"
       }
     },
     {
       "id": "ph-a-0095",
-      "text_en": "The tickets have been booked.",
-      "translation_ru": "Билеты забронированы.",
+      "text_en": "The work has been finished.",
+      "translation_ru": "Работа завершена.",
       "grammar_point_id": "gp-a-04",
-      "variants": ["The tickets have been booked."],
+      "variants": ["The work has been finished."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0095.opus"
       }
     },
     {
       "id": "ph-a-0096",
-      "text_en": "The message has been sent.",
-      "translation_ru": "Сообщение отправлено.",
+      "text_en": "The tickets have been booked.",
+      "translation_ru": "Билеты забронированы.",
       "grammar_point_id": "gp-a-04",
-      "variants": ["The message has been sent."],
+      "variants": ["The tickets have been booked."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0096.opus"
       }
     },
     {
       "id": "ph-a-0097",
-      "text_en": "Everything has been arranged.",
-      "translation_ru": "Всё устроено.",
+      "text_en": "The message has been sent.",
+      "translation_ru": "Сообщение отправлено.",
       "grammar_point_id": "gp-a-04",
-      "variants": ["Everything has been arranged."],
+      "variants": ["The message has been sent."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0097.opus"
       }
     },
     {
       "id": "ph-a-0098",
-      "text_en": "The results have been announced.",
-      "translation_ru": "Результаты объявлены.",
+      "text_en": "Everything has been arranged.",
+      "translation_ru": "Всё устроено.",
       "grammar_point_id": "gp-a-04",
-      "variants": ["The results have been announced."],
+      "variants": ["Everything has been arranged."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0098.opus"
       }
     },
     {
       "id": "ph-a-0099",
-      "text_en": "The letter had been sent before I called.",
-      "translation_ru": "Письмо было отправлено до моего звонка.",
+      "text_en": "The results have been announced.",
+      "translation_ru": "Результаты объявлены.",
       "grammar_point_id": "gp-a-04",
-      "variants": ["The letter had been sent before I called."],
+      "variants": ["The results have been announced."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0099.opus"
       }
     },
     {
       "id": "ph-a-0100",
-      "text_en": "The house had been sold by then.",
-      "translation_ru": "Дом был продан к тому времени.",
+      "text_en": "The letter had been sent before I called.",
+      "translation_ru": "Письмо было отправлено до моего звонка.",
       "grammar_point_id": "gp-a-04",
-      "variants": ["The house had been sold by then."],
+      "variants": ["The letter had been sent before I called."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0100.opus"
       }
     },
     {
       "id": "ph-a-0101",
-      "text_en": "The room had been cleaned when I arrived.",
-      "translation_ru": "Комната была убрана, когда я пришёл.",
+      "text_en": "The house had been sold by then.",
+      "translation_ru": "Дом был продан к тому времени.",
       "grammar_point_id": "gp-a-04",
-      "variants": ["The room had been cleaned when I arrived."],
+      "variants": ["The house had been sold by then."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0101.opus"
       }
     },
     {
       "id": "ph-a-0102",
-      "text_en": "The road will have been repaired by June.",
-      "translation_ru": "Дорогу отремонтируют к июню.",
+      "text_en": "The room had been cleaned when I arrived.",
+      "translation_ru": "Комната была убрана, когда я пришёл.",
       "grammar_point_id": "gp-a-04",
-      "variants": ["The road will have been repaired by June."],
+      "variants": ["The room had been cleaned when I arrived."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0102.opus"
       }
     },
     {
       "id": "ph-a-0103",
-      "text_en": "The project will have been completed by Friday.",
-      "translation_ru": "Проект будет завершён к пятнице.",
+      "text_en": "The road will have been repaired by June.",
+      "translation_ru": "Дорогу отремонтируют к июню.",
       "grammar_point_id": "gp-a-04",
-      "variants": ["The project will have been completed by Friday."],
+      "variants": ["The road will have been repaired by June."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0103.opus"
       }
     },
     {
       "id": "ph-a-0104",
-      "text_en": "The building was being renovated.",
-      "translation_ru": "Здание ремонтировалось.",
+      "text_en": "The project will have been completed by Friday.",
+      "translation_ru": "Проект будет завершён к пятнице.",
       "grammar_point_id": "gp-a-04",
-      "variants": ["The building was being renovated."],
+      "variants": ["The project will have been completed by Friday."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0104.opus"
       }
     },
     {
       "id": "ph-a-0105",
-      "text_en": "The road was being repaired when we drove past.",
-      "translation_ru": "Дорогу ремонтировали, когда мы проезжали.",
+      "text_en": "The building was being renovated.",
+      "translation_ru": "Здание ремонтировалось.",
       "grammar_point_id": "gp-a-04",
-      "variants": ["The road was being repaired when we drove past."],
+      "variants": ["The building was being renovated."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0105.opus"
       }
     },
     {
       "id": "ph-a-0106",
-      "text_en": "This must be done today.",
-      "translation_ru": "Это нужно сделать сегодня.",
+      "text_en": "The road was being repaired when we drove past.",
+      "translation_ru": "Дорогу ремонтировали, когда мы проезжали.",
       "grammar_point_id": "gp-a-04",
-      "variants": ["This must be done today."],
+      "variants": ["The road was being repaired when we drove past."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0106.opus"
       }
     },
     {
       "id": "ph-a-0107",
-      "text_en": "The report must be submitted by Monday.",
-      "translation_ru": "Отчёт нужно подать к понедельнику.",
+      "text_en": "This must be done today.",
+      "translation_ru": "Это нужно сделать сегодня.",
       "grammar_point_id": "gp-a-04",
-      "variants": ["The report must be submitted by Monday."],
+      "variants": ["This must be done today."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0107.opus"
       }
     },
     {
       "id": "ph-a-0108",
-      "text_en": "This can be fixed.",
-      "translation_ru": "Это можно починить.",
+      "text_en": "The report must be submitted by Monday.",
+      "translation_ru": "Отчёт нужно подать к понедельнику.",
       "grammar_point_id": "gp-a-04",
-      "variants": ["This can be fixed."],
+      "variants": ["The report must be submitted by Monday."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0108.opus"
       }
     },
     {
       "id": "ph-a-0109",
-      "text_en": "It should be done carefully.",
-      "translation_ru": "Это нужно делать осторожно.",
+      "text_en": "This can be fixed.",
+      "translation_ru": "Это можно починить.",
       "grammar_point_id": "gp-a-04",
-      "variants": ["It should be done carefully."],
+      "variants": ["This can be fixed."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0109.opus"
       }
     },
     {
       "id": "ph-a-0110",
-      "text_en": "The room needs to be cleaned.",
-      "translation_ru": "Комнату нужно убрать.",
+      "text_en": "It should be done carefully.",
+      "translation_ru": "Это нужно делать осторожно.",
       "grammar_point_id": "gp-a-04",
-      "variants": ["The room needs to be cleaned."],
+      "variants": ["It should be done carefully."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0110.opus"
       }
     },
     {
       "id": "ph-a-0111",
-      "text_en": "He is said to be rich.",
-      "translation_ru": "Говорят, что он богат.",
+      "text_en": "The room needs to be cleaned.",
+      "translation_ru": "Комнату нужно убрать.",
       "grammar_point_id": "gp-a-04",
-      "variants": ["He is said to be rich."],
+      "variants": ["The room needs to be cleaned."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0111.opus"
       }
     },
     {
       "id": "ph-a-0112",
-      "text_en": "She is believed to be innocent.",
-      "translation_ru": "Считается, что она невиновна.",
+      "text_en": "He is said to be rich.",
+      "translation_ru": "Говорят, что он богат.",
       "grammar_point_id": "gp-a-04",
-      "variants": ["She is believed to be innocent."],
+      "variants": ["He is said to be rich."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0112.opus"
       }
     },
     {
       "id": "ph-a-0113",
-      "text_en": "It is expected to rain.",
-      "translation_ru": "Ожидаются дожди.",
+      "text_en": "She is believed to be innocent.",
+      "translation_ru": "Считается, что она невиновна.",
       "grammar_point_id": "gp-a-04",
-      "variants": ["It is expected to rain."],
+      "variants": ["She is believed to be innocent."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0113.opus"
       }
     },
     {
       "id": "ph-a-0114",
-      "text_en": "It is being built.",
-      "translation_ru": "Это строится.",
+      "text_en": "It is expected to rain.",
+      "translation_ru": "Ожидаются дожди.",
       "grammar_point_id": "gp-a-04",
-      "variants": ["It is being built."],
+      "variants": ["It is expected to rain."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0114.opus"
       }
     },
     {
       "id": "ph-a-0115",
-      "text_en": "The work is done.",
-      "translation_ru": "Работа сделана.",
+      "text_en": "It is being built.",
+      "translation_ru": "Это строится.",
       "grammar_point_id": "gp-a-04",
-      "variants": ["The work is done."],
+      "variants": ["It is being built."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0115.opus"
       }
     },
     {
       "id": "ph-a-0116",
-      "text_en": "The road is closed.",
-      "translation_ru": "Дорога закрыта.",
+      "text_en": "The work is done.",
+      "translation_ru": "Работа сделана.",
       "grammar_point_id": "gp-a-04",
-      "variants": ["The road is closed."],
+      "variants": ["The work is done."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0116.opus"
       }
     },
     {
       "id": "ph-a-0117",
-      "text_en": "The house is sold.",
-      "translation_ru": "Дом продан.",
+      "text_en": "The road is closed.",
+      "translation_ru": "Дорога закрыта.",
       "grammar_point_id": "gp-a-04",
-      "variants": ["The house is sold."],
+      "variants": ["The road is closed."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0117.opus"
       }
     },
     {
       "id": "ph-a-0118",
-      "text_en": "The task is finished.",
-      "translation_ru": "Задача завершена.",
+      "text_en": "The house is sold.",
+      "translation_ru": "Дом продан.",
       "grammar_point_id": "gp-a-04",
-      "variants": ["The task is finished."],
+      "variants": ["The house is sold."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0118.opus"
       }
     },
     {
       "id": "ph-a-0119",
-      "text_en": "This must be done.",
-      "translation_ru": "Это нужно сделать.",
-      "grammar_point_id": "gp-a-05",
-      "variants": ["This must be done."],
+      "text_en": "The task is finished.",
+      "translation_ru": "Задача завершена.",
+      "grammar_point_id": "gp-a-04",
+      "variants": ["The task is finished."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0119.opus"
       }
     },
     {
       "id": "ph-a-0120",
-      "text_en": "The report must be finished by Monday.",
-      "translation_ru": "Отчёт нужно закончить к понедельнику.",
+      "text_en": "This must be done.",
+      "translation_ru": "Это нужно сделать.",
       "grammar_point_id": "gp-a-05",
-      "variants": ["The report must be finished by Monday."],
+      "variants": ["This must be done."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0120.opus"
       }
     },
     {
       "id": "ph-a-0121",
-      "text_en": "The form has to be filled in.",
-      "translation_ru": "Форму нужно заполнить.",
+      "text_en": "The report must be finished by Monday.",
+      "translation_ru": "Отчёт нужно закончить к понедельнику.",
       "grammar_point_id": "gp-a-05",
-      "variants": ["The form has to be filled in."],
+      "variants": ["The report must be finished by Monday."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0121.opus"
       }
     },
     {
       "id": "ph-a-0122",
-      "text_en": "The room should be cleaned.",
-      "translation_ru": "Комнату следует убрать.",
+      "text_en": "The form has to be filled in.",
+      "translation_ru": "Форму нужно заполнить.",
       "grammar_point_id": "gp-a-05",
-      "variants": ["The room should be cleaned."],
+      "variants": ["The form has to be filled in."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0122.opus"
       }
     },
     {
       "id": "ph-a-0123",
-      "text_en": "It can be done online.",
-      "translation_ru": "Это можно сделать онлайн.",
+      "text_en": "The room should be cleaned.",
+      "translation_ru": "Комнату следует убрать.",
       "grammar_point_id": "gp-a-05",
-      "variants": ["It can be done online."],
+      "variants": ["The room should be cleaned."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0123.opus"
       }
     },
     {
       "id": "ph-a-0124",
-      "text_en": "Tickets can be bought at the station.",
-      "translation_ru": "Билеты можно купить на вокзале.",
+      "text_en": "It can be done online.",
+      "translation_ru": "Это можно сделать онлайн.",
       "grammar_point_id": "gp-a-05",
-      "variants": ["Tickets can be bought at the station."],
+      "variants": ["It can be done online."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0124.opus"
       }
     },
     {
       "id": "ph-a-0125",
-      "text_en": "This could be arranged.",
-      "translation_ru": "Это можно устроить.",
+      "text_en": "Tickets can be bought at the station.",
+      "translation_ru": "Билеты можно купить на вокзале.",
       "grammar_point_id": "gp-a-05",
-      "variants": ["This could be arranged."],
+      "variants": ["Tickets can be bought at the station."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0125.opus"
       }
     },
     {
       "id": "ph-a-0126",
-      "text_en": "The results will be announced tomorrow.",
-      "translation_ru": "Результаты объявят завтра.",
+      "text_en": "This could be arranged.",
+      "translation_ru": "Это можно устроить.",
       "grammar_point_id": "gp-a-05",
-      "variants": ["The results will be announced tomorrow."],
+      "variants": ["This could be arranged."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0126.opus"
       }
     },
     {
       "id": "ph-a-0127",
-      "text_en": "A new school will be built here.",
-      "translation_ru": "Здесь построят новую школу.",
+      "text_en": "The results will be announced tomorrow.",
+      "translation_ru": "Результаты объявят завтра.",
       "grammar_point_id": "gp-a-05",
-      "variants": ["A new school will be built here."],
+      "variants": ["The results will be announced tomorrow."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0127.opus"
       }
     },
     {
       "id": "ph-a-0128",
-      "text_en": "The problem will be solved soon.",
-      "translation_ru": "Проблема скоро будет решена.",
+      "text_en": "A new school will be built here.",
+      "translation_ru": "Здесь построят новую школу.",
       "grammar_point_id": "gp-a-05",
-      "variants": ["The problem will be solved soon."],
+      "variants": ["A new school will be built here."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0128.opus"
       }
     },
     {
       "id": "ph-a-0129",
-      "text_en": "The road is being repaired.",
-      "translation_ru": "Дорогу сейчас ремонтируют.",
+      "text_en": "The problem will be solved soon.",
+      "translation_ru": "Проблема скоро будет решена.",
       "grammar_point_id": "gp-a-05",
-      "variants": ["The road is being repaired."],
+      "variants": ["The problem will be solved soon."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0129.opus"
       }
     },
     {
       "id": "ph-a-0130",
-      "text_en": "The house has been sold.",
-      "translation_ru": "Дом продан.",
+      "text_en": "The road is being repaired.",
+      "translation_ru": "Дорогу сейчас ремонтируют.",
       "grammar_point_id": "gp-a-05",
-      "variants": ["The house has been sold."],
+      "variants": ["The road is being repaired."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0130.opus"
       }
     },
     {
       "id": "ph-a-0131",
-      "text_en": "English is spoken all over the world.",
-      "translation_ru": "На английском говорят во всём мире.",
+      "text_en": "The house has been sold.",
+      "translation_ru": "Дом продан.",
       "grammar_point_id": "gp-a-05",
-      "variants": ["English is spoken all over the world."],
+      "variants": ["The house has been sold."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0131.opus"
       }
     },
     {
       "id": "ph-a-0132",
-      "text_en": "This brand is made in Italy.",
-      "translation_ru": "Этот бренд производится в Италии.",
+      "text_en": "English is spoken all over the world.",
+      "translation_ru": "На английском говорят во всём мире.",
       "grammar_point_id": "gp-a-05",
-      "variants": ["This brand is made in Italy."],
+      "variants": ["English is spoken all over the world."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0132.opus"
       }
     },
     {
       "id": "ph-a-0133",
-      "text_en": "The winner will be chosen by the jury.",
-      "translation_ru": "Победителя выберет жюри.",
+      "text_en": "This brand is made in Italy.",
+      "translation_ru": "Этот бренд производится в Италии.",
       "grammar_point_id": "gp-a-05",
-      "variants": ["The winner will be chosen by the jury."],
+      "variants": ["This brand is made in Italy."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0133.opus"
       }
     },
     {
       "id": "ph-a-0134",
-      "text_en": "The best player was selected for the team.",
-      "translation_ru": "Лучший игрок был выбран в команду.",
+      "text_en": "The winner will be chosen by the jury.",
+      "translation_ru": "Победителя выберет жюри.",
       "grammar_point_id": "gp-a-05",
-      "variants": ["The best player was selected for the team."],
+      "variants": ["The winner will be chosen by the jury."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0134.opus"
       }
     },
     {
       "id": "ph-a-0135",
-      "text_en": "He was awarded a prize.",
-      "translation_ru": "Он был награждён призом.",
+      "text_en": "The best player was selected for the team.",
+      "translation_ru": "Лучший игрок был выбран в команду.",
       "grammar_point_id": "gp-a-05",
-      "variants": ["He was awarded a prize."],
+      "variants": ["The best player was selected for the team."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0135.opus"
       }
     },
     {
       "id": "ph-a-0136",
-      "text_en": "She was given a medal.",
-      "translation_ru": "Ей дали медаль.",
+      "text_en": "He was awarded a prize.",
+      "translation_ru": "Он был награждён призом.",
       "grammar_point_id": "gp-a-05",
-      "variants": ["She was given a medal."],
+      "variants": ["He was awarded a prize."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0136.opus"
       }
     },
     {
       "id": "ph-a-0137",
-      "text_en": "We were invited to the party.",
-      "translation_ru": "Нас пригласили на вечеринку.",
+      "text_en": "She was given a medal.",
+      "translation_ru": "Ей дали медаль.",
       "grammar_point_id": "gp-a-05",
-      "variants": ["We were invited to the party."],
+      "variants": ["She was given a medal."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0137.opus"
       }
     },
     {
       "id": "ph-a-0138",
-      "text_en": "They were told to wait.",
-      "translation_ru": "Им сказали ждать.",
+      "text_en": "We were invited to the party.",
+      "translation_ru": "Нас пригласили на вечеринку.",
       "grammar_point_id": "gp-a-05",
-      "variants": ["They were told to wait."],
+      "variants": ["We were invited to the party."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0138.opus"
       }
     },
     {
       "id": "ph-a-0139",
-      "text_en": "I was asked to help.",
-      "translation_ru": "Меня попросили помочь.",
+      "text_en": "They were told to wait.",
+      "translation_ru": "Им сказали ждать.",
       "grammar_point_id": "gp-a-05",
-      "variants": ["I was asked to help."],
+      "variants": ["They were told to wait."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0139.opus"
       }
     },
     {
       "id": "ph-a-0140",
-      "text_en": "It is considered rude.",
-      "translation_ru": "Это считается грубым.",
+      "text_en": "I was asked to help.",
+      "translation_ru": "Меня попросили помочь.",
       "grammar_point_id": "gp-a-05",
-      "variants": ["It is considered rude."],
+      "variants": ["I was asked to help."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0140.opus"
       }
     },
     {
       "id": "ph-a-0141",
-      "text_en": "Smoking is not allowed here.",
-      "translation_ru": "Здесь курить запрещено.",
+      "text_en": "It is considered rude.",
+      "translation_ru": "Это считается грубым.",
       "grammar_point_id": "gp-a-05",
-      "variants": ["Smoking is not allowed here."],
+      "variants": ["It is considered rude."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0141.opus"
       }
     },
     {
       "id": "ph-a-0142",
-      "text_en": "Photography is prohibited.",
-      "translation_ru": "Фотографировать запрещено.",
+      "text_en": "Smoking is not allowed here.",
+      "translation_ru": "Здесь курить запрещено.",
       "grammar_point_id": "gp-a-05",
-      "variants": ["Photography is prohibited."],
+      "variants": ["Smoking is not allowed here."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0142.opus"
       }
     },
     {
       "id": "ph-a-0143",
-      "text_en": "Credit cards are accepted.",
-      "translation_ru": "Кредитные карты принимаются.",
+      "text_en": "Photography is prohibited.",
+      "translation_ru": "Фотографировать запрещено.",
       "grammar_point_id": "gp-a-05",
-      "variants": ["Credit cards are accepted."],
+      "variants": ["Photography is prohibited."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0143.opus"
       }
     },
     {
       "id": "ph-a-0144",
-      "text_en": "The road is being repaired.",
-      "translation_ru": "Дорогу сейчас ремонтируют.",
-      "grammar_point_id": "gp-a-06",
-      "variants": ["The road is being repaired."],
+      "text_en": "Credit cards are accepted.",
+      "translation_ru": "Кредитные карты принимаются.",
+      "grammar_point_id": "gp-a-05",
+      "variants": ["Credit cards are accepted."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0144.opus"
       }
     },
     {
       "id": "ph-a-0145",
-      "text_en": "The house has been sold.",
-      "translation_ru": "Дом продан.",
+      "text_en": "The road is being repaired.",
+      "translation_ru": "Дорогу сейчас ремонтируют.",
       "grammar_point_id": "gp-a-06",
-      "variants": ["The house has been sold."],
+      "variants": ["The road is being repaired."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0145.opus"
       }
     },
     {
       "id": "ph-a-0146",
-      "text_en": "This must be done today.",
-      "translation_ru": "Это нужно сделать сегодня.",
+      "text_en": "The house has been sold.",
+      "translation_ru": "Дом продан.",
       "grammar_point_id": "gp-a-06",
-      "variants": ["This must be done today."],
+      "variants": ["The house has been sold."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0146.opus"
       }
     },
     {
       "id": "ph-a-0147",
-      "text_en": "By next year, he'll have finished.",
-      "translation_ru": "К следующему году он закончит.",
+      "text_en": "This must be done today.",
+      "translation_ru": "Это нужно сделать сегодня.",
       "grammar_point_id": "gp-a-06",
-      "variants": ["By next year, he'll have finished."],
+      "variants": ["This must be done today."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0147.opus"
       }
     },
     {
       "id": "ph-a-0148",
-      "text_en": "I'll be flying to Rome tomorrow.",
-      "translation_ru": "Завтра я буду лететь в Рим.",
+      "text_en": "By next year, he'll have finished.",
+      "translation_ru": "К следующему году он закончит.",
       "grammar_point_id": "gp-a-06",
-      "variants": ["I'll be flying to Rome tomorrow."],
+      "variants": ["By next year, he'll have finished."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0148.opus"
       }
     },
     {
       "id": "ph-a-0149",
-      "text_en": "She'll have left by then.",
-      "translation_ru": "К тому времени она уже уедет.",
+      "text_en": "I'll be flying to Rome tomorrow.",
+      "translation_ru": "Завтра я буду лететь в Рим.",
       "grammar_point_id": "gp-a-06",
-      "variants": ["She'll have left by then."],
+      "variants": ["I'll be flying to Rome tomorrow."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0149.opus"
       }
     },
     {
       "id": "ph-a-0150",
-      "text_en": "I'll be working all day.",
-      "translation_ru": "Я буду работать весь день.",
+      "text_en": "She'll have left by then.",
+      "translation_ru": "К тому времени она уже уедет.",
       "grammar_point_id": "gp-a-06",
-      "variants": ["I'll be working all day."],
+      "variants": ["She'll have left by then."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0150.opus"
       }
     },
     {
       "id": "ph-a-0151",
-      "text_en": "The results will have been announced.",
-      "translation_ru": "Результаты уже будут объявлены.",
+      "text_en": "I'll be working all day.",
+      "translation_ru": "Я буду работать весь день.",
       "grammar_point_id": "gp-a-06",
-      "variants": ["The results will have been announced."],
+      "variants": ["I'll be working all day."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0151.opus"
       }
     },
     {
       "id": "ph-a-0152",
-      "text_en": "I work every day.",
-      "translation_ru": "Я работаю каждый день.",
+      "text_en": "The results will have been announced.",
+      "translation_ru": "Результаты уже будут объявлены.",
       "grammar_point_id": "gp-a-06",
-      "variants": ["I work every day."],
+      "variants": ["The results will have been announced."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0152.opus"
       }
     },
     {
       "id": "ph-a-0153",
-      "text_en": "I worked yesterday.",
-      "translation_ru": "Я работал вчера.",
+      "text_en": "I work every day.",
+      "translation_ru": "Я работаю каждый день.",
       "grammar_point_id": "gp-a-06",
-      "variants": ["I worked yesterday."],
+      "variants": ["I work every day."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0153.opus"
       }
     },
     {
       "id": "ph-a-0154",
-      "text_en": "I am working now.",
-      "translation_ru": "Я сейчас работаю.",
+      "text_en": "I worked yesterday.",
+      "translation_ru": "Я работал вчера.",
       "grammar_point_id": "gp-a-06",
-      "variants": ["I am working now."],
+      "variants": ["I worked yesterday."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0154.opus"
       }
     },
     {
       "id": "ph-a-0155",
-      "text_en": "I was working when you called.",
-      "translation_ru": "Я работал, когда ты позвонил.",
+      "text_en": "I am working now.",
+      "translation_ru": "Я сейчас работаю.",
       "grammar_point_id": "gp-a-06",
-      "variants": ["I was working when you called."],
+      "variants": ["I am working now."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0155.opus"
       }
     },
     {
       "id": "ph-a-0156",
-      "text_en": "I have worked here for years.",
-      "translation_ru": "Я работаю здесь много лет.",
+      "text_en": "I was working when you called.",
+      "translation_ru": "Я работал, когда ты позвонил.",
       "grammar_point_id": "gp-a-06",
-      "variants": ["I have worked here for years."],
+      "variants": ["I was working when you called."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0156.opus"
       }
     },
     {
       "id": "ph-a-0157",
-      "text_en": "I had worked before you came.",
-      "translation_ru": "Я работал до твоего прихода.",
+      "text_en": "I have worked here for years.",
+      "translation_ru": "Я работаю здесь много лет.",
       "grammar_point_id": "gp-a-06",
-      "variants": ["I had worked before you came."],
+      "variants": ["I have worked here for years."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0157.opus"
       }
     },
     {
       "id": "ph-a-0158",
-      "text_en": "I will work tomorrow.",
-      "translation_ru": "Я буду работать завтра.",
+      "text_en": "I had worked before you came.",
+      "translation_ru": "Я работал до твоего прихода.",
       "grammar_point_id": "gp-a-06",
-      "variants": ["I will work tomorrow."],
+      "variants": ["I had worked before you came."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0158.opus"
       }
     },
     {
       "id": "ph-a-0159",
-      "text_en": "She cooks, she is cooking, she cooked.",
-      "translation_ru": "Она готовит, готовит сейчас, готовила.",
+      "text_en": "I will work tomorrow.",
+      "translation_ru": "Я буду работать завтра.",
       "grammar_point_id": "gp-a-06",
-      "variants": ["She cooks, she is cooking, she cooked."],
+      "variants": ["I will work tomorrow."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0159.opus"
       }
     },
     {
       "id": "ph-a-0160",
-      "text_en": "The house was built, is being built, will be built.",
-      "translation_ru": "Дом построен, строится, будет построен.",
+      "text_en": "She cooks, she is cooking, she cooked.",
+      "translation_ru": "Она готовит, готовит сейчас, готовила.",
       "grammar_point_id": "gp-a-06",
-      "variants": ["The house was built, is being built, will be built."],
+      "variants": ["She cooks, she is cooking, she cooked."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0160.opus"
       }
     },
     {
       "id": "ph-a-0161",
-      "text_en": "Everything has been arranged.",
-      "translation_ru": "Всё устроено.",
+      "text_en": "The house was built, is being built, will be built.",
+      "translation_ru": "Дом построен, строится, будет построен.",
       "grammar_point_id": "gp-a-06",
-      "variants": ["Everything has been arranged."],
+      "variants": ["The house was built, is being built, will be built."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0161.opus"
       }
     },
     {
       "id": "ph-a-0162",
-      "text_en": "It can be done.",
-      "translation_ru": "Это можно сделать.",
+      "text_en": "Everything has been arranged.",
+      "translation_ru": "Всё устроено.",
       "grammar_point_id": "gp-a-06",
-      "variants": ["It can be done."],
+      "variants": ["Everything has been arranged."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0162.opus"
       }
     },
     {
       "id": "ph-a-0163",
-      "text_en": "The report should be submitted.",
-      "translation_ru": "Отчёт следует подать.",
+      "text_en": "It can be done.",
+      "translation_ru": "Это можно сделать.",
       "grammar_point_id": "gp-a-06",
-      "variants": ["The report should be submitted."],
+      "variants": ["It can be done."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0163.opus"
       }
     },
     {
       "id": "ph-a-0164",
-      "text_en": "This time tomorrow I'll be lying on a beach.",
-      "translation_ru": "Завтра в это время я буду лежать на пляже.",
+      "text_en": "The report should be submitted.",
+      "translation_ru": "Отчёт следует подать.",
       "grammar_point_id": "gp-a-06",
-      "variants": ["This time tomorrow I'll be lying on a beach."],
+      "variants": ["The report should be submitted."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0164.opus"
       }
     },
     {
       "id": "ph-a-0165",
-      "text_en": "By the end of the month, I'll have saved enough.",
-      "translation_ru": "К концу месяца я накоплю достаточно.",
+      "text_en": "This time tomorrow I'll be lying on a beach.",
+      "translation_ru": "Завтра в это время я буду лежать на пляже.",
       "grammar_point_id": "gp-a-06",
-      "variants": ["By the end of the month, I'll have saved enough."],
+      "variants": ["This time tomorrow I'll be lying on a beach."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0165.opus"
       }
     },
     {
       "id": "ph-a-0166",
-      "text_en": "Will you have finished by five?",
-      "translation_ru": "Ты закончишь к пяти?",
+      "text_en": "By the end of the month, I'll have saved enough.",
+      "translation_ru": "К концу месяца я накоплю достаточно.",
       "grammar_point_id": "gp-a-06",
-      "variants": ["Will you have finished by five?"],
+      "variants": ["By the end of the month, I'll have saved enough."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0166.opus"
       }
     },
     {
       "id": "ph-a-0167",
-      "text_en": "What will you be doing next week?",
-      "translation_ru": "Что ты будешь делать на следующей неделе?",
+      "text_en": "Will you have finished by five?",
+      "translation_ru": "Ты закончишь к пяти?",
       "grammar_point_id": "gp-a-06",
-      "variants": ["What will you be doing next week?"],
+      "variants": ["Will you have finished by five?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0167.opus"
       }
     },
     {
       "id": "ph-a-0168",
-      "text_en": "The bridge has been built.",
-      "translation_ru": "Мост построен.",
+      "text_en": "What will you be doing next week?",
+      "translation_ru": "Что ты будешь делать на следующей неделе?",
       "grammar_point_id": "gp-a-06",
-      "variants": ["The bridge has been built."],
+      "variants": ["What will you be doing next week?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0168.opus"
       }
     },
     {
       "id": "ph-a-0169",
-      "text_en": "The new law is being discussed.",
-      "translation_ru": "Новый закон обсуждается.",
+      "text_en": "The bridge has been built.",
+      "translation_ru": "Мост построен.",
       "grammar_point_id": "gp-a-06",
-      "variants": ["The new law is being discussed."],
+      "variants": ["The bridge has been built."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0169.opus"
       }
     },
     {
       "id": "ph-a-0170",
-      "text_en": "yesterday — Past Simple",
-      "translation_ru": "вчера — прошедшее",
+      "text_en": "The new law is being discussed.",
+      "translation_ru": "Новый закон обсуждается.",
       "grammar_point_id": "gp-a-06",
-      "variants": ["yesterday — Past Simple"],
+      "variants": ["The new law is being discussed."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0170.opus"
       }
     },
     {
       "id": "ph-a-0171",
-      "text_en": "now — Present Continuous",
-      "translation_ru": "сейчас — настоящее длительное",
+      "text_en": "yesterday — Past Simple",
+      "translation_ru": "вчера — прошедшее",
       "grammar_point_id": "gp-a-06",
-      "variants": ["now — Present Continuous"],
+      "variants": ["yesterday — Past Simple"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0171.opus"
       }
     },
     {
       "id": "ph-a-0172",
-      "text_en": "by then — Future Perfect",
-      "translation_ru": "к тому времени — будущее совершенное",
+      "text_en": "now — Present Continuous",
+      "translation_ru": "сейчас — настоящее длительное",
       "grammar_point_id": "gp-a-06",
-      "variants": ["by then — Future Perfect"],
+      "variants": ["now — Present Continuous"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0172.opus"
       }
     },
     {
       "id": "ph-a-0173",
-      "text_en": "Choose the tense by the marker.",
-      "translation_ru": "Выбирай время по маркеру.",
+      "text_en": "by then — Future Perfect",
+      "translation_ru": "к тому времени — будущее совершенное",
       "grammar_point_id": "gp-a-06",
-      "variants": ["Choose the tense by the marker."],
+      "variants": ["by then — Future Perfect"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0173.opus"
       }
     },
     {
       "id": "ph-a-0174",
-      "text_en": "He must have forgotten.",
-      "translation_ru": "Должно быть, он забыл.",
-      "grammar_point_id": "gp-a-07",
-      "variants": ["He must have forgotten."],
+      "text_en": "Choose the tense by the marker.",
+      "translation_ru": "Выбирай время по маркеру.",
+      "grammar_point_id": "gp-a-06",
+      "variants": ["Choose the tense by the marker."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0174.opus"
       }
     },
     {
       "id": "ph-a-0175",
-      "text_en": "She must have left already.",
-      "translation_ru": "Должно быть, она уже ушла.",
+      "text_en": "He must have forgotten.",
+      "translation_ru": "Должно быть, он забыл.",
       "grammar_point_id": "gp-a-07",
-      "variants": ["She must have left already."],
+      "variants": ["He must have forgotten."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0175.opus"
       }
     },
     {
       "id": "ph-a-0176",
-      "text_en": "They must have missed the bus.",
-      "translation_ru": "Должно быть, они опоздали на автобус.",
+      "text_en": "She must have left already.",
+      "translation_ru": "Должно быть, она уже ушла.",
       "grammar_point_id": "gp-a-07",
-      "variants": ["They must have missed the bus."],
+      "variants": ["She must have left already."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0176.opus"
       }
     },
     {
       "id": "ph-a-0177",
-      "text_en": "It must have rained last night.",
-      "translation_ru": "Должно быть, ночью шёл дождь.",
+      "text_en": "They must have missed the bus.",
+      "translation_ru": "Должно быть, они опоздали на автобус.",
       "grammar_point_id": "gp-a-07",
-      "variants": ["It must have rained last night."],
+      "variants": ["They must have missed the bus."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0177.opus"
       }
     },
     {
       "id": "ph-a-0178",
-      "text_en": "You must have worked hard.",
-      "translation_ru": "Ты, должно быть, усердно работал.",
+      "text_en": "It must have rained last night.",
+      "translation_ru": "Должно быть, ночью шёл дождь.",
       "grammar_point_id": "gp-a-07",
-      "variants": ["You must have worked hard."],
+      "variants": ["It must have rained last night."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0178.opus"
       }
     },
     {
       "id": "ph-a-0179",
-      "text_en": "He can't have said that.",
-      "translation_ru": "Не может быть, чтобы он это сказал.",
+      "text_en": "You must have worked hard.",
+      "translation_ru": "Ты, должно быть, усердно работал.",
       "grammar_point_id": "gp-a-07",
-      "variants": ["He can't have said that."],
+      "variants": ["You must have worked hard."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0179.opus"
       }
     },
     {
       "id": "ph-a-0180",
-      "text_en": "She can't have forgotten.",
-      "translation_ru": "Не может быть, чтобы она забыла.",
+      "text_en": "He can't have said that.",
+      "translation_ru": "Не может быть, чтобы он это сказал.",
       "grammar_point_id": "gp-a-07",
-      "variants": ["She can't have forgotten."],
+      "variants": ["He can't have said that."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0180.opus"
       }
     },
     {
       "id": "ph-a-0181",
-      "text_en": "They can't have finished already.",
-      "translation_ru": "Не может быть, чтобы они уже закончили.",
+      "text_en": "She can't have forgotten.",
+      "translation_ru": "Не может быть, чтобы она забыла.",
       "grammar_point_id": "gp-a-07",
-      "variants": ["They can't have finished already."],
+      "variants": ["She can't have forgotten."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0181.opus"
       }
     },
     {
       "id": "ph-a-0182",
-      "text_en": "He can't have lied to me.",
-      "translation_ru": "Не может быть, чтобы он мне солгал.",
+      "text_en": "They can't have finished already.",
+      "translation_ru": "Не может быть, чтобы они уже закончили.",
       "grammar_point_id": "gp-a-07",
-      "variants": ["He can't have lied to me."],
+      "variants": ["They can't have finished already."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0182.opus"
       }
     },
     {
       "id": "ph-a-0183",
-      "text_en": "She may have changed her mind.",
-      "translation_ru": "Возможно, она передумала.",
+      "text_en": "He can't have lied to me.",
+      "translation_ru": "Не может быть, чтобы он мне солгал.",
       "grammar_point_id": "gp-a-07",
-      "variants": ["She may have changed her mind."],
+      "variants": ["He can't have lied to me."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0183.opus"
       }
     },
     {
       "id": "ph-a-0184",
-      "text_en": "He may have missed the train.",
-      "translation_ru": "Возможно, он опоздал на поезд.",
+      "text_en": "She may have changed her mind.",
+      "translation_ru": "Возможно, она передумала.",
       "grammar_point_id": "gp-a-07",
-      "variants": ["He may have missed the train."],
+      "variants": ["She may have changed her mind."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0184.opus"
       }
     },
     {
       "id": "ph-a-0185",
-      "text_en": "They may have gone home.",
-      "translation_ru": "Возможно, они пошли домой.",
+      "text_en": "He may have missed the train.",
+      "translation_ru": "Возможно, он опоздал на поезд.",
       "grammar_point_id": "gp-a-07",
-      "variants": ["They may have gone home."],
+      "variants": ["He may have missed the train."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0185.opus"
       }
     },
     {
       "id": "ph-a-0186",
-      "text_en": "She might have taken it.",
-      "translation_ru": "Возможно, она это взяла.",
+      "text_en": "They may have gone home.",
+      "translation_ru": "Возможно, они пошли домой.",
       "grammar_point_id": "gp-a-07",
-      "variants": ["She might have taken it."],
+      "variants": ["They may have gone home."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0186.opus"
       }
     },
     {
       "id": "ph-a-0187",
-      "text_en": "He might have forgotten.",
-      "translation_ru": "Возможно, он забыл.",
+      "text_en": "She might have taken it.",
+      "translation_ru": "Возможно, она это взяла.",
       "grammar_point_id": "gp-a-07",
-      "variants": ["He might have forgotten."],
+      "variants": ["She might have taken it."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0187.opus"
       }
     },
     {
       "id": "ph-a-0188",
-      "text_en": "They might have been delayed.",
-      "translation_ru": "Возможно, их задержали.",
+      "text_en": "He might have forgotten.",
+      "translation_ru": "Возможно, он забыл.",
       "grammar_point_id": "gp-a-07",
-      "variants": ["They might have been delayed."],
+      "variants": ["He might have forgotten."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0188.opus"
       }
     },
     {
       "id": "ph-a-0189",
-      "text_en": "She could have won.",
-      "translation_ru": "Она могла бы победить.",
+      "text_en": "They might have been delayed.",
+      "translation_ru": "Возможно, их задержали.",
       "grammar_point_id": "gp-a-07",
-      "variants": ["She could have won."],
+      "variants": ["They might have been delayed."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0189.opus"
       }
     },
     {
       "id": "ph-a-0190",
-      "text_en": "He could have helped.",
-      "translation_ru": "Он мог бы помочь.",
+      "text_en": "She could have won.",
+      "translation_ru": "Она могла бы победить.",
       "grammar_point_id": "gp-a-07",
-      "variants": ["He could have helped."],
+      "variants": ["She could have won."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0190.opus"
       }
     },
     {
       "id": "ph-a-0191",
-      "text_en": "We could have caught the train.",
-      "translation_ru": "Мы могли бы успеть на поезд.",
+      "text_en": "He could have helped.",
+      "translation_ru": "Он мог бы помочь.",
       "grammar_point_id": "gp-a-07",
-      "variants": ["We could have caught the train."],
+      "variants": ["He could have helped."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0191.opus"
       }
     },
     {
       "id": "ph-a-0192",
-      "text_en": "You should have called.",
-      "translation_ru": "Тебе следовало позвонить.",
+      "text_en": "We could have caught the train.",
+      "translation_ru": "Мы могли бы успеть на поезд.",
       "grammar_point_id": "gp-a-07",
-      "variants": ["You should have called."],
+      "variants": ["We could have caught the train."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0192.opus"
       }
     },
     {
       "id": "ph-a-0193",
-      "text_en": "I should have studied more.",
-      "translation_ru": "Надо было учиться больше.",
+      "text_en": "You should have called.",
+      "translation_ru": "Тебе следовало позвонить.",
       "grammar_point_id": "gp-a-07",
-      "variants": ["I should have studied more."],
+      "variants": ["You should have called."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0193.opus"
       }
     },
     {
       "id": "ph-a-0194",
-      "text_en": "She shouldn't have said that.",
-      "translation_ru": "Ей не следовало этого говорить.",
+      "text_en": "I should have studied more.",
+      "translation_ru": "Надо было учиться больше.",
       "grammar_point_id": "gp-a-07",
-      "variants": ["She shouldn't have said that."],
+      "variants": ["I should have studied more."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0194.opus"
       }
     },
     {
       "id": "ph-a-0195",
-      "text_en": "He shouldn't have driven so fast.",
-      "translation_ru": "Ему не следовало так быстро ехать.",
+      "text_en": "She shouldn't have said that.",
+      "translation_ru": "Ей не следовало этого говорить.",
       "grammar_point_id": "gp-a-07",
-      "variants": ["He shouldn't have driven so fast."],
+      "variants": ["She shouldn't have said that."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0195.opus"
       }
     },
     {
       "id": "ph-a-0196",
-      "text_en": "I shouldn't have eaten so much.",
-      "translation_ru": "Не надо было так много есть.",
+      "text_en": "He shouldn't have driven so fast.",
+      "translation_ru": "Ему не следовало так быстро ехать.",
       "grammar_point_id": "gp-a-07",
-      "variants": ["I shouldn't have eaten so much."],
+      "variants": ["He shouldn't have driven so fast."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0196.opus"
       }
     },
     {
       "id": "ph-a-0197",
-      "text_en": "You should have told me.",
-      "translation_ru": "Тебе следовало мне сказать.",
+      "text_en": "I shouldn't have eaten so much.",
+      "translation_ru": "Не надо было так много есть.",
       "grammar_point_id": "gp-a-07",
-      "variants": ["You should have told me."],
+      "variants": ["I shouldn't have eaten so much."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0197.opus"
       }
     },
     {
       "id": "ph-a-0198",
-      "text_en": "I should have known better.",
-      "translation_ru": "Мне следовало быть умнее.",
+      "text_en": "You should have told me.",
+      "translation_ru": "Тебе следовало мне сказать.",
       "grammar_point_id": "gp-a-07",
-      "variants": ["I should have known better."],
+      "variants": ["You should have told me."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0198.opus"
       }
     },
     {
       "id": "ph-a-0199",
-      "text_en": "We should have booked earlier.",
-      "translation_ru": "Нам следовало бронировать раньше.",
+      "text_en": "I should have known better.",
+      "translation_ru": "Мне следовало быть умнее.",
       "grammar_point_id": "gp-a-07",
-      "variants": ["We should have booked earlier."],
+      "variants": ["I should have known better."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0199.opus"
       }
     },
     {
       "id": "ph-a-0200",
-      "text_en": "She must have been tired.",
-      "translation_ru": "Она, должно быть, устала.",
+      "text_en": "We should have booked earlier.",
+      "translation_ru": "Нам следовало бронировать раньше.",
       "grammar_point_id": "gp-a-07",
-      "variants": ["She must have been tired."],
+      "variants": ["We should have booked earlier."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0200.opus"
       }
     },
     {
       "id": "ph-a-0201",
-      "text_en": "He must have been in a hurry.",
-      "translation_ru": "Он, должно быть, спешил.",
+      "text_en": "She must have been tired.",
+      "translation_ru": "Она, должно быть, устала.",
       "grammar_point_id": "gp-a-07",
-      "variants": ["He must have been in a hurry."],
+      "variants": ["She must have been tired."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0201.opus"
       }
     },
     {
       "id": "ph-a-0202",
-      "text_en": "They can't have been happy.",
-      "translation_ru": "Не может быть, чтобы они были счастливы.",
+      "text_en": "He must have been in a hurry.",
+      "translation_ru": "Он, должно быть, спешил.",
       "grammar_point_id": "gp-a-07",
-      "variants": ["They can't have been happy."],
+      "variants": ["He must have been in a hurry."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0202.opus"
       }
     },
     {
       "id": "ph-a-0203",
-      "text_en": "I would have helped if I could.",
-      "translation_ru": "Я бы помог, если бы мог.",
+      "text_en": "They can't have been happy.",
+      "translation_ru": "Не может быть, чтобы они были счастливы.",
       "grammar_point_id": "gp-a-07",
-      "variants": ["I would have helped if I could."],
+      "variants": ["They can't have been happy."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0203.opus"
       }
     },
     {
       "id": "ph-a-0204",
-      "text_en": "You would have loved it.",
-      "translation_ru": "Тебе бы понравилось.",
+      "text_en": "I would have helped if I could.",
+      "translation_ru": "Я бы помог, если бы мог.",
       "grammar_point_id": "gp-a-07",
-      "variants": ["You would have loved it."],
+      "variants": ["I would have helped if I could."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0204.opus"
       }
     },
     {
       "id": "ph-a-0205",
-      "text_en": "It would have been different.",
-      "translation_ru": "Всё было бы иначе.",
+      "text_en": "You would have loved it.",
+      "translation_ru": "Тебе бы понравилось.",
       "grammar_point_id": "gp-a-07",
-      "variants": ["It would have been different."],
+      "variants": ["You would have loved it."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0205.opus"
       }
     },
     {
       "id": "ph-a-0206",
-      "text_en": "Who could have done this?",
-      "translation_ru": "Кто мог это сделать?",
+      "text_en": "It would have been different.",
+      "translation_ru": "Всё было бы иначе.",
       "grammar_point_id": "gp-a-07",
-      "variants": ["Who could have done this?"],
+      "variants": ["It would have been different."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0206.opus"
       }
     },
     {
       "id": "ph-a-0207",
-      "text_en": "What could have happened?",
-      "translation_ru": "Что могло случиться?",
+      "text_en": "Who could have done this?",
+      "translation_ru": "Кто мог это сделать?",
       "grammar_point_id": "gp-a-07",
-      "variants": ["What could have happened?"],
+      "variants": ["Who could have done this?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0207.opus"
       }
     },
     {
       "id": "ph-a-0208",
-      "text_en": "Where could she have gone?",
-      "translation_ru": "Куда она могла уйти?",
+      "text_en": "What could have happened?",
+      "translation_ru": "Что могло случиться?",
       "grammar_point_id": "gp-a-07",
-      "variants": ["Where could she have gone?"],
+      "variants": ["What could have happened?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0208.opus"
       }
     },
     {
       "id": "ph-a-0209",
-      "text_en": "You should have called me.",
-      "translation_ru": "Тебе следовало мне позвонить.",
-      "grammar_point_id": "gp-a-08",
-      "variants": ["You should have called me."],
+      "text_en": "Where could she have gone?",
+      "translation_ru": "Куда она могла уйти?",
+      "grammar_point_id": "gp-a-07",
+      "variants": ["Where could she have gone?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0209.opus"
       }
     },
     {
       "id": "ph-a-0210",
-      "text_en": "I should have studied harder.",
-      "translation_ru": "Надо было учиться усерднее.",
+      "text_en": "You should have called me.",
+      "translation_ru": "Тебе следовало мне позвонить.",
       "grammar_point_id": "gp-a-08",
-      "variants": ["I should have studied harder."],
+      "variants": ["You should have called me."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0210.opus"
       }
     },
     {
       "id": "ph-a-0211",
-      "text_en": "We should have left earlier.",
-      "translation_ru": "Нам следовало выйти раньше.",
+      "text_en": "I should have studied harder.",
+      "translation_ru": "Надо было учиться усерднее.",
       "grammar_point_id": "gp-a-08",
-      "variants": ["We should have left earlier."],
+      "variants": ["I should have studied harder."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0211.opus"
       }
     },
     {
       "id": "ph-a-0212",
-      "text_en": "She should have asked for help.",
-      "translation_ru": "Ей следовало попросить помощи.",
+      "text_en": "We should have left earlier.",
+      "translation_ru": "Нам следовало выйти раньше.",
       "grammar_point_id": "gp-a-08",
-      "variants": ["She should have asked for help."],
+      "variants": ["We should have left earlier."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0212.opus"
       }
     },
     {
       "id": "ph-a-0213",
-      "text_en": "He should have listened to me.",
-      "translation_ru": "Ему следовало меня послушать.",
+      "text_en": "She should have asked for help.",
+      "translation_ru": "Ей следовало попросить помощи.",
       "grammar_point_id": "gp-a-08",
-      "variants": ["He should have listened to me."],
+      "variants": ["She should have asked for help."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0213.opus"
       }
     },
     {
       "id": "ph-a-0214",
-      "text_en": "I shouldn't have said that.",
-      "translation_ru": "Не надо было это говорить.",
+      "text_en": "He should have listened to me.",
+      "translation_ru": "Ему следовало меня послушать.",
       "grammar_point_id": "gp-a-08",
-      "variants": ["I shouldn't have said that."],
+      "variants": ["He should have listened to me."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0214.opus"
       }
     },
     {
       "id": "ph-a-0215",
-      "text_en": "You shouldn't have gone there.",
-      "translation_ru": "Тебе не следовало туда ходить.",
+      "text_en": "I shouldn't have said that.",
+      "translation_ru": "Не надо было это говорить.",
       "grammar_point_id": "gp-a-08",
-      "variants": ["You shouldn't have gone there."],
+      "variants": ["I shouldn't have said that."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0215.opus"
       }
     },
     {
       "id": "ph-a-0216",
-      "text_en": "She shouldn't have spent so much.",
-      "translation_ru": "Ей не следовало столько тратить.",
+      "text_en": "You shouldn't have gone there.",
+      "translation_ru": "Тебе не следовало туда ходить.",
       "grammar_point_id": "gp-a-08",
-      "variants": ["She shouldn't have spent so much."],
+      "variants": ["You shouldn't have gone there."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0216.opus"
       }
     },
     {
       "id": "ph-a-0217",
-      "text_en": "We shouldn't have stayed so late.",
-      "translation_ru": "Нам не следовало так долго оставаться.",
+      "text_en": "She shouldn't have spent so much.",
+      "translation_ru": "Ей не следовало столько тратить.",
       "grammar_point_id": "gp-a-08",
-      "variants": ["We shouldn't have stayed so late."],
+      "variants": ["She shouldn't have spent so much."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0217.opus"
       }
     },
     {
       "id": "ph-a-0218",
-      "text_en": "He shouldn't have driven.",
-      "translation_ru": "Ему не следовало вести машину.",
+      "text_en": "We shouldn't have stayed so late.",
+      "translation_ru": "Нам не следовало так долго оставаться.",
       "grammar_point_id": "gp-a-08",
-      "variants": ["He shouldn't have driven."],
+      "variants": ["We shouldn't have stayed so late."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0218.opus"
       }
     },
     {
       "id": "ph-a-0219",
-      "text_en": "I shouldn't have eaten that cake.",
-      "translation_ru": "Не надо было есть тот торт.",
+      "text_en": "He shouldn't have driven.",
+      "translation_ru": "Ему не следовало вести машину.",
       "grammar_point_id": "gp-a-08",
-      "variants": ["I shouldn't have eaten that cake."],
+      "variants": ["He shouldn't have driven."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0219.opus"
       }
     },
     {
       "id": "ph-a-0220",
-      "text_en": "You could have warned me!",
-      "translation_ru": "Мог бы меня предупредить!",
+      "text_en": "I shouldn't have eaten that cake.",
+      "translation_ru": "Не надо было есть тот торт.",
       "grammar_point_id": "gp-a-08",
-      "variants": ["You could have warned me!"],
+      "variants": ["I shouldn't have eaten that cake."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0220.opus"
       }
     },
     {
       "id": "ph-a-0221",
-      "text_en": "She could have been a doctor.",
-      "translation_ru": "Она могла бы стать врачом.",
+      "text_en": "You could have warned me!",
+      "translation_ru": "Мог бы меня предупредить!",
       "grammar_point_id": "gp-a-08",
-      "variants": ["She could have been a doctor."],
+      "variants": ["You could have warned me!"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0221.opus"
       }
     },
     {
       "id": "ph-a-0222",
-      "text_en": "We could have won the game.",
-      "translation_ru": "Мы могли бы выиграть игру.",
+      "text_en": "She could have been a doctor.",
+      "translation_ru": "Она могла бы стать врачом.",
       "grammar_point_id": "gp-a-08",
-      "variants": ["We could have won the game."],
+      "variants": ["She could have been a doctor."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0222.opus"
       }
     },
     {
       "id": "ph-a-0223",
-      "text_en": "He could have died!",
-      "translation_ru": "Он мог погибнуть!",
+      "text_en": "We could have won the game.",
+      "translation_ru": "Мы могли бы выиграть игру.",
       "grammar_point_id": "gp-a-08",
-      "variants": ["He could have died!"],
+      "variants": ["We could have won the game."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0223.opus"
       }
     },
     {
       "id": "ph-a-0224",
-      "text_en": "I could have gone to university.",
-      "translation_ru": "Я мог бы пойти в университет.",
+      "text_en": "He could have died!",
+      "translation_ru": "Он мог погибнуть!",
       "grammar_point_id": "gp-a-08",
-      "variants": ["I could have gone to university."],
+      "variants": ["He could have died!"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0224.opus"
       }
     },
     {
       "id": "ph-a-0225",
-      "text_en": "If only I had known!",
-      "translation_ru": "Если бы я только знал!",
+      "text_en": "I could have gone to university.",
+      "translation_ru": "Я мог бы пойти в университет.",
       "grammar_point_id": "gp-a-08",
-      "variants": ["If only I had known!"],
+      "variants": ["I could have gone to university."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0225.opus"
       }
     },
     {
       "id": "ph-a-0226",
-      "text_en": "If only we had more time!",
-      "translation_ru": "Если бы только у нас было больше времени!",
+      "text_en": "If only I had known!",
+      "translation_ru": "Если бы я только знал!",
       "grammar_point_id": "gp-a-08",
-      "variants": ["If only we had more time!"],
+      "variants": ["If only I had known!"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0226.opus"
       }
     },
     {
       "id": "ph-a-0227",
-      "text_en": "If only she had listened!",
-      "translation_ru": "Если бы она только слушала!",
+      "text_en": "If only we had more time!",
+      "translation_ru": "Если бы только у нас было больше времени!",
       "grammar_point_id": "gp-a-08",
-      "variants": ["If only she had listened!"],
+      "variants": ["If only we had more time!"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0227.opus"
       }
     },
     {
       "id": "ph-a-0228",
-      "text_en": "I wish I had studied.",
-      "translation_ru": "Жаль, что я не учился.",
+      "text_en": "If only she had listened!",
+      "translation_ru": "Если бы она только слушала!",
       "grammar_point_id": "gp-a-08",
-      "variants": ["I wish I had studied."],
+      "variants": ["If only she had listened!"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0228.opus"
       }
     },
     {
       "id": "ph-a-0229",
-      "text_en": "I wish I had known.",
-      "translation_ru": "Жаль, что я не знал.",
+      "text_en": "I wish I had studied.",
+      "translation_ru": "Жаль, что я не учился.",
       "grammar_point_id": "gp-a-08",
-      "variants": ["I wish I had known."],
+      "variants": ["I wish I had studied."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0229.opus"
       }
     },
     {
       "id": "ph-a-0230",
-      "text_en": "I wish we had stayed.",
-      "translation_ru": "Жаль, что мы не остались.",
+      "text_en": "I wish I had known.",
+      "translation_ru": "Жаль, что я не знал.",
       "grammar_point_id": "gp-a-08",
-      "variants": ["I wish we had stayed."],
+      "variants": ["I wish I had known."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0230.opus"
       }
     },
     {
       "id": "ph-a-0231",
-      "text_en": "She wishes she had tried harder.",
-      "translation_ru": "Она жалеет, что не старалась сильнее.",
+      "text_en": "I wish we had stayed.",
+      "translation_ru": "Жаль, что мы не остались.",
       "grammar_point_id": "gp-a-08",
-      "variants": ["She wishes she had tried harder."],
+      "variants": ["I wish we had stayed."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0231.opus"
       }
     },
     {
       "id": "ph-a-0232",
-      "text_en": "He wishes he hadn't said it.",
-      "translation_ru": "Он жалеет, что сказал это.",
+      "text_en": "She wishes she had tried harder.",
+      "translation_ru": "Она жалеет, что не старалась сильнее.",
       "grammar_point_id": "gp-a-08",
-      "variants": ["He wishes he hadn't said it."],
+      "variants": ["She wishes she had tried harder."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0232.opus"
       }
     },
     {
       "id": "ph-a-0233",
-      "text_en": "I wish I hadn't gone.",
-      "translation_ru": "Жаль, что я пошёл.",
+      "text_en": "He wishes he hadn't said it.",
+      "translation_ru": "Он жалеет, что сказал это.",
       "grammar_point_id": "gp-a-08",
-      "variants": ["I wish I hadn't gone."],
+      "variants": ["He wishes he hadn't said it."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0233.opus"
       }
     },
     {
       "id": "ph-a-0234",
-      "text_en": "It's too late now.",
-      "translation_ru": "Сейчас уже поздно.",
+      "text_en": "I wish I hadn't gone.",
+      "translation_ru": "Жаль, что я пошёл.",
       "grammar_point_id": "gp-a-08",
-      "variants": ["It's too late now."],
+      "variants": ["I wish I hadn't gone."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0234.opus"
       }
     },
     {
       "id": "ph-a-0235",
-      "text_en": "What's done is done.",
-      "translation_ru": "Сделанного не воротишь.",
+      "text_en": "It's too late now.",
+      "translation_ru": "Сейчас уже поздно.",
       "grammar_point_id": "gp-a-08",
-      "variants": ["What's done is done."],
+      "variants": ["It's too late now."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0235.opus"
       }
     },
     {
       "id": "ph-a-0236",
-      "text_en": "No use crying over spilt milk.",
-      "translation_ru": "Слезами делу не поможешь.",
+      "text_en": "What's done is done.",
+      "translation_ru": "Сделанного не воротишь.",
       "grammar_point_id": "gp-a-08",
-      "variants": ["No use crying over spilt milk."],
+      "variants": ["What's done is done."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0236.opus"
       }
     },
     {
       "id": "ph-a-0237",
-      "text_en": "Hindsight is always 20/20.",
-      "translation_ru": "Задним умом все крепки.",
+      "text_en": "No use crying over spilt milk.",
+      "translation_ru": "Слезами делу не поможешь.",
       "grammar_point_id": "gp-a-08",
-      "variants": ["Hindsight is always 20/20."],
+      "variants": ["No use crying over spilt milk."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0237.opus"
       }
     },
     {
       "id": "ph-a-0238",
-      "text_en": "You live and learn.",
-      "translation_ru": "Век живи — век учись.",
+      "text_en": "Hindsight is always 20/20.",
+      "translation_ru": "Задним умом все крепки.",
       "grammar_point_id": "gp-a-08",
-      "variants": ["You live and learn."],
+      "variants": ["Hindsight is always 20/20."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0238.opus"
       }
     },
     {
       "id": "ph-a-0239",
-      "text_en": "Learn from your mistakes.",
-      "translation_ru": "Учись на своих ошибках.",
+      "text_en": "You live and learn.",
+      "translation_ru": "Век живи — век учись.",
       "grammar_point_id": "gp-a-08",
-      "variants": ["Learn from your mistakes."],
+      "variants": ["You live and learn."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0239.opus"
       }
     },
     {
       "id": "ph-a-0240",
-      "text_en": "Better luck next time.",
-      "translation_ru": "Удачи в следующий раз.",
+      "text_en": "Learn from your mistakes.",
+      "translation_ru": "Учись на своих ошибках.",
       "grammar_point_id": "gp-a-08",
-      "variants": ["Better luck next time."],
+      "variants": ["Learn from your mistakes."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0240.opus"
       }
     },
     {
       "id": "ph-a-0241",
-      "text_en": "Everyone makes mistakes.",
-      "translation_ru": "Все ошибаются.",
+      "text_en": "Better luck next time.",
+      "translation_ru": "Удачи в следующий раз.",
       "grammar_point_id": "gp-a-08",
-      "variants": ["Everyone makes mistakes."],
+      "variants": ["Better luck next time."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0241.opus"
       }
     },
     {
       "id": "ph-a-0242",
-      "text_en": "To err is human.",
-      "translation_ru": "Человеку свойственно ошибаться.",
+      "text_en": "Everyone makes mistakes.",
+      "translation_ru": "Все ошибаются.",
       "grammar_point_id": "gp-a-08",
-      "variants": ["To err is human."],
+      "variants": ["Everyone makes mistakes."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0242.opus"
       }
     },
     {
       "id": "ph-a-0243",
-      "text_en": "Forgive yourself.",
-      "translation_ru": "Прости себя.",
+      "text_en": "To err is human.",
+      "translation_ru": "Человеку свойственно ошибаться.",
       "grammar_point_id": "gp-a-08",
-      "variants": ["Forgive yourself."],
+      "variants": ["To err is human."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0243.opus"
       }
     },
     {
       "id": "ph-a-0244",
-      "text_en": "If I had studied, I would have passed.",
-      "translation_ru": "Если бы я учился, я бы сдал.",
-      "grammar_point_id": "gp-a-09",
-      "variants": ["If I had studied, I would have passed."],
+      "text_en": "Forgive yourself.",
+      "translation_ru": "Прости себя.",
+      "grammar_point_id": "gp-a-08",
+      "variants": ["Forgive yourself."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0244.opus"
       }
     },
     {
       "id": "ph-a-0245",
-      "text_en": "If she had known, she would have come.",
-      "translation_ru": "Если бы она знала, она бы пришла.",
+      "text_en": "If I had studied, I would have passed.",
+      "translation_ru": "Если бы я учился, я бы сдал.",
       "grammar_point_id": "gp-a-09",
-      "variants": ["If she had known, she would have come."],
+      "variants": ["If I had studied, I would have passed."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0245.opus"
       }
     },
     {
       "id": "ph-a-0246",
-      "text_en": "If we had left earlier, we would have caught the train.",
-      "translation_ru": "Если бы мы вышли раньше, мы бы успели на поезд.",
+      "text_en": "If she had known, she would have come.",
+      "translation_ru": "Если бы она знала, она бы пришла.",
       "grammar_point_id": "gp-a-09",
-      "variants": ["If we had left earlier, we would have caught the train."],
+      "variants": ["If she had known, she would have come."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0246.opus"
       }
     },
     {
       "id": "ph-a-0247",
-      "text_en": "If he had asked me, I would have helped.",
-      "translation_ru": "Если бы он меня спросил, я бы помог.",
+      "text_en": "If we had left earlier, we would have caught the train.",
+      "translation_ru": "Если бы мы вышли раньше, мы бы успели на поезд.",
       "grammar_point_id": "gp-a-09",
-      "variants": ["If he had asked me, I would have helped."],
+      "variants": ["If we had left earlier, we would have caught the train."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0247.opus"
       }
     },
     {
       "id": "ph-a-0248",
-      "text_en": "If they had tried harder, they would have won.",
-      "translation_ru": "Если бы они старались сильнее, они бы выиграли.",
+      "text_en": "If he had asked me, I would have helped.",
+      "translation_ru": "Если бы он меня спросил, я бы помог.",
       "grammar_point_id": "gp-a-09",
-      "variants": ["If they had tried harder, they would have won."],
+      "variants": ["If he had asked me, I would have helped."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0248.opus"
       }
     },
     {
       "id": "ph-a-0249",
-      "text_en": "If I had known, I would have told you.",
-      "translation_ru": "Если бы я знал, я бы тебе сказал.",
+      "text_en": "If they had tried harder, they would have won.",
+      "translation_ru": "Если бы они старались сильнее, они бы выиграли.",
       "grammar_point_id": "gp-a-09",
-      "variants": ["If I had known, I would have told you."],
+      "variants": ["If they had tried harder, they would have won."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0249.opus"
       }
     },
     {
       "id": "ph-a-0250",
-      "text_en": "If she had been there, she would have seen it.",
-      "translation_ru": "Если бы она была там, она бы это видела.",
+      "text_en": "If I had known, I would have told you.",
+      "translation_ru": "Если бы я знал, я бы тебе сказал.",
       "grammar_point_id": "gp-a-09",
-      "variants": ["If she had been there, she would have seen it."],
+      "variants": ["If I had known, I would have told you."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0250.opus"
       }
     },
     {
       "id": "ph-a-0251",
-      "text_en": "If we had booked, we would have got a room.",
-      "translation_ru": "Если бы мы забронировали, мы бы получили номер.",
+      "text_en": "If she had been there, she would have seen it.",
+      "translation_ru": "Если бы она была там, она бы это видела.",
       "grammar_point_id": "gp-a-09",
-      "variants": ["If we had booked, we would have got a room."],
+      "variants": ["If she had been there, she would have seen it."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0251.opus"
       }
     },
     {
       "id": "ph-a-0252",
-      "text_en": "If I hadn't been so tired, I would have gone.",
-      "translation_ru": "Если бы я не был так устал, я бы пошёл.",
+      "text_en": "If we had booked, we would have got a room.",
+      "translation_ru": "Если бы мы забронировали, мы бы получили номер.",
       "grammar_point_id": "gp-a-09",
-      "variants": ["If I hadn't been so tired, I would have gone."],
+      "variants": ["If we had booked, we would have got a room."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0252.opus"
       }
     },
     {
       "id": "ph-a-0253",
-      "text_en": "If he hadn't lied, she would have stayed.",
-      "translation_ru": "Если бы он не солгал, она бы осталась.",
+      "text_en": "If I hadn't been so tired, I would have gone.",
+      "translation_ru": "Если бы я не был так устал, я бы пошёл.",
       "grammar_point_id": "gp-a-09",
-      "variants": ["If he hadn't lied, she would have stayed."],
+      "variants": ["If I hadn't been so tired, I would have gone."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0253.opus"
       }
     },
     {
       "id": "ph-a-0254",
-      "text_en": "If they hadn't arrived late, they would have seen the start.",
-      "translation_ru": "Если бы они не опоздали, они бы увидели начало.",
+      "text_en": "If he hadn't lied, she would have stayed.",
+      "translation_ru": "Если бы он не солгал, она бы осталась.",
       "grammar_point_id": "gp-a-09",
-      "variants": ["If they hadn't arrived late, they would have seen the start."],
+      "variants": ["If he hadn't lied, she would have stayed."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0254.opus"
       }
     },
     {
       "id": "ph-a-0255",
-      "text_en": "I wouldn't have done it if I had known.",
-      "translation_ru": "Я бы не сделал этого, если бы знал.",
+      "text_en": "If they hadn't arrived late, they would have seen the start.",
+      "translation_ru": "Если бы они не опоздали, они бы увидели начало.",
       "grammar_point_id": "gp-a-09",
-      "variants": ["I wouldn't have done it if I had known."],
+      "variants": ["If they hadn't arrived late, they would have seen the start."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0255.opus"
       }
     },
     {
       "id": "ph-a-0256",
-      "text_en": "She wouldn't have left if you had asked her.",
-      "translation_ru": "Она бы не ушла, если бы ты её попросил.",
+      "text_en": "I wouldn't have done it if I had known.",
+      "translation_ru": "Я бы не сделал этого, если бы знал.",
       "grammar_point_id": "gp-a-09",
-      "variants": ["She wouldn't have left if you had asked her."],
+      "variants": ["I wouldn't have done it if I had known."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0256.opus"
       }
     },
     {
       "id": "ph-a-0257",
-      "text_en": "We wouldn't have missed it if we had checked.",
-      "translation_ru": "Мы бы не пропустили это, если бы проверили.",
+      "text_en": "She wouldn't have left if you had asked her.",
+      "translation_ru": "Она бы не ушла, если бы ты её попросил.",
       "grammar_point_id": "gp-a-09",
-      "variants": ["We wouldn't have missed it if we had checked."],
+      "variants": ["She wouldn't have left if you had asked her."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0257.opus"
       }
     },
     {
       "id": "ph-a-0258",
-      "text_en": "Would you have gone if you had known?",
-      "translation_ru": "Ты бы пошёл, если бы знал?",
+      "text_en": "We wouldn't have missed it if we had checked.",
+      "translation_ru": "Мы бы не пропустили это, если бы проверили.",
       "grammar_point_id": "gp-a-09",
-      "variants": ["Would you have gone if you had known?"],
+      "variants": ["We wouldn't have missed it if we had checked."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0258.opus"
       }
     },
     {
       "id": "ph-a-0259",
-      "text_en": "What would you have done?",
-      "translation_ru": "Что бы ты сделал?",
+      "text_en": "Would you have gone if you had known?",
+      "translation_ru": "Ты бы пошёл, если бы знал?",
       "grammar_point_id": "gp-a-09",
-      "variants": ["What would you have done?"],
+      "variants": ["Would you have gone if you had known?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0259.opus"
       }
     },
     {
       "id": "ph-a-0260",
-      "text_en": "Where would they have stayed?",
-      "translation_ru": "Где бы они остановились?",
+      "text_en": "What would you have done?",
+      "translation_ru": "Что бы ты сделал?",
       "grammar_point_id": "gp-a-09",
-      "variants": ["Where would they have stayed?"],
+      "variants": ["What would you have done?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0260.opus"
       }
     },
     {
       "id": "ph-a-0261",
-      "text_en": "Who would have thought?",
-      "translation_ru": "Кто бы мог подумать?",
+      "text_en": "Where would they have stayed?",
+      "translation_ru": "Где бы они остановились?",
       "grammar_point_id": "gp-a-09",
-      "variants": ["Who would have thought?"],
+      "variants": ["Where would they have stayed?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0261.opus"
       }
     },
     {
       "id": "ph-a-0262",
-      "text_en": "I would have helped if I could have.",
-      "translation_ru": "Я бы помог, если бы мог.",
+      "text_en": "Who would have thought?",
+      "translation_ru": "Кто бы мог подумать?",
       "grammar_point_id": "gp-a-09",
-      "variants": ["I would have helped if I could have."],
+      "variants": ["Who would have thought?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0262.opus"
       }
     },
     {
       "id": "ph-a-0263",
-      "text_en": "If only I had studied!",
-      "translation_ru": "Если бы я только учился!",
+      "text_en": "I would have helped if I could have.",
+      "translation_ru": "Я бы помог, если бы мог.",
       "grammar_point_id": "gp-a-09",
-      "variants": ["If only I had studied!"],
+      "variants": ["I would have helped if I could have."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0263.opus"
       }
     },
     {
       "id": "ph-a-0264",
-      "text_en": "I should have studied.",
-      "translation_ru": "Надо было учиться.",
+      "text_en": "If only I had studied!",
+      "translation_ru": "Если бы я только учился!",
       "grammar_point_id": "gp-a-09",
-      "variants": ["I should have studied."],
+      "variants": ["If only I had studied!"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0264.opus"
       }
     },
     {
       "id": "ph-a-0265",
-      "text_en": "I could have passed.",
-      "translation_ru": "Я мог бы сдать.",
+      "text_en": "I should have studied.",
+      "translation_ru": "Надо было учиться.",
       "grammar_point_id": "gp-a-09",
-      "variants": ["I could have passed."],
+      "variants": ["I should have studied."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0265.opus"
       }
     },
     {
       "id": "ph-a-0266",
-      "text_en": "If I were you, I would have apologized.",
-      "translation_ru": "На твоём месте я бы извинился.",
+      "text_en": "I could have passed.",
+      "translation_ru": "Я мог бы сдать.",
       "grammar_point_id": "gp-a-09",
-      "variants": ["If I were you, I would have apologized."],
+      "variants": ["I could have passed."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0266.opus"
       }
     },
     {
       "id": "ph-a-0267",
-      "text_en": "Being a child is not a sin.",
-      "translation_ru": "Быть ребёнком — не грех.",
+      "text_en": "If I were you, I would have apologized.",
+      "translation_ru": "На твоём месте я бы извинился.",
       "grammar_point_id": "gp-a-09",
-      "variants": ["Being a child is not a sin."],
+      "variants": ["If I were you, I would have apologized."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0267.opus"
       }
     },
     {
       "id": "ph-a-0268",
-      "text_en": "You died.",
-      "translation_ru": "Ты умер.",
+      "text_en": "Being a child is not a sin.",
+      "translation_ru": "Быть ребёнком — не грех.",
       "grammar_point_id": "gp-a-09",
-      "variants": ["You died."],
+      "variants": ["Being a child is not a sin."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0268.opus"
       }
     },
     {
       "id": "ph-a-0269",
-      "text_en": "What if it had happened to you?",
-      "translation_ru": "А если бы это случилось с тобой?",
+      "text_en": "You died.",
+      "translation_ru": "Ты умер.",
       "grammar_point_id": "gp-a-09",
-      "variants": ["What if it had happened to you?"],
+      "variants": ["You died."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0269.opus"
       }
     },
     {
       "id": "ph-a-0270",
-      "text_en": "It could have been worse.",
-      "translation_ru": "Могло быть и хуже.",
+      "text_en": "What if it had happened to you?",
+      "translation_ru": "А если бы это случилось с тобой?",
       "grammar_point_id": "gp-a-09",
-      "variants": ["It could have been worse."],
+      "variants": ["What if it had happened to you?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0270.opus"
       }
     },
     {
       "id": "ph-a-0271",
-      "text_en": "Everything happens for a reason.",
-      "translation_ru": "Всё происходит не просто так.",
+      "text_en": "It could have been worse.",
+      "translation_ru": "Могло быть и хуже.",
       "grammar_point_id": "gp-a-09",
-      "variants": ["Everything happens for a reason."],
+      "variants": ["It could have been worse."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0271.opus"
       }
     },
     {
       "id": "ph-a-0272",
-      "text_en": "The past cannot be changed.",
-      "translation_ru": "Прошлое нельзя изменить.",
+      "text_en": "Everything happens for a reason.",
+      "translation_ru": "Всё происходит не просто так.",
       "grammar_point_id": "gp-a-09",
-      "variants": ["The past cannot be changed."],
+      "variants": ["Everything happens for a reason."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0272.opus"
       }
     },
     {
       "id": "ph-a-0273",
-      "text_en": "But the future can.",
-      "translation_ru": "Но будущее — можно.",
+      "text_en": "The past cannot be changed.",
+      "translation_ru": "Прошлое нельзя изменить.",
       "grammar_point_id": "gp-a-09",
-      "variants": ["But the future can."],
+      "variants": ["The past cannot be changed."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0273.opus"
       }
     },
     {
       "id": "ph-a-0274",
-      "text_en": "I wish I knew.",
-      "translation_ru": "Жаль, что не знаю.",
+      "text_en": "But the future can.",
+      "translation_ru": "Но будущее — можно.",
       "grammar_point_id": "gp-a-09",
-      "variants": ["I wish I knew."],
+      "variants": ["But the future can."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0274.opus"
       }
     },
     {
       "id": "ph-a-0275",
-      "text_en": "I wish I could.",
-      "translation_ru": "Жаль, что не могу.",
+      "text_en": "I wish I knew.",
+      "translation_ru": "Жаль, что не знаю.",
       "grammar_point_id": "gp-a-09",
-      "variants": ["I wish I could."],
+      "variants": ["I wish I knew."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0275.opus"
       }
     },
     {
       "id": "ph-a-0276",
-      "text_en": "I wish I had.",
-      "translation_ru": "Жаль, что не было.",
+      "text_en": "I wish I could.",
+      "translation_ru": "Жаль, что не могу.",
       "grammar_point_id": "gp-a-09",
-      "variants": ["I wish I had."],
+      "variants": ["I wish I could."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0276.opus"
       }
     },
     {
       "id": "ph-a-0277",
-      "text_en": "If only I knew!",
-      "translation_ru": "Если бы знал!",
+      "text_en": "I wish I had.",
+      "translation_ru": "Жаль, что не было у меня.",
       "grammar_point_id": "gp-a-09",
-      "variants": ["If only I knew!"],
+      "variants": ["I wish I had."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0277.opus"
       }
     },
     {
       "id": "ph-a-0278",
-      "text_en": "If only I could!",
-      "translation_ru": "Если бы мог!",
+      "text_en": "If only I knew!",
+      "translation_ru": "Если бы знал!",
       "grammar_point_id": "gp-a-09",
-      "variants": ["If only I could!"],
+      "variants": ["If only I knew!"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0278.opus"
       }
     },
     {
       "id": "ph-a-0279",
-      "text_en": "I wish I knew.",
-      "translation_ru": "Жаль, что не знаю.",
-      "grammar_point_id": "gp-a-10",
-      "variants": ["I wish I knew."],
+      "text_en": "If only I could!",
+      "translation_ru": "Если бы мог!",
+      "grammar_point_id": "gp-a-09",
+      "variants": ["If only I could!"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0279.opus"
       }
     },
     {
       "id": "ph-a-0280",
-      "text_en": "I wish I could.",
-      "translation_ru": "Жаль, что не могу.",
+      "text_en": "I wish I knew.",
+      "translation_ru": "Жаль, что не знаю.",
       "grammar_point_id": "gp-a-10",
-      "variants": ["I wish I could."],
+      "variants": ["I wish I knew."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0280.opus"
       }
     },
     {
       "id": "ph-a-0281",
-      "text_en": "I wish I can.",
-      "translation_ru": "Жаль, что нет.",
+      "text_en": "I wish I could.",
+      "translation_ru": "Жаль, что не могу.",
       "grammar_point_id": "gp-a-10",
-      "variants": ["I wish I can."],
+      "variants": ["I wish I could."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0281.opus"
       }
@@ -2825,7 +2825,7 @@
     {
       "id": "ph-a-0283",
       "text_en": "If only I could!",
-      "translation_ru": "Если бы смочь!",
+      "translation_ru": "Если бы мог!",
       "grammar_point_id": "gp-a-10",
       "variants": ["If only I could!"],
       "audio": {
@@ -2835,7 +2835,7 @@
     {
       "id": "ph-a-0284",
       "text_en": "If only I had!",
-      "translation_ru": "Если бы иметь!",
+      "translation_ru": "Если бы он у меня был!",
       "grammar_point_id": "gp-a-10",
       "variants": ["If only I had!"],
       "audio": {
@@ -3435,7 +3435,7 @@
     {
       "id": "ph-a-0344",
       "text_en": "I wish I had.",
-      "translation_ru": "Жаль, что не было.",
+      "translation_ru": "Жаль, что не было у меня.",
       "grammar_point_id": "gp-a-11",
       "variants": ["I wish I had."],
       "audio": {
@@ -3485,7 +3485,7 @@
     {
       "id": "ph-a-0349",
       "text_en": "I wish I had.",
-      "translation_ru": "Жаль, что не было.",
+      "translation_ru": "Жаль, что не было у меня.",
       "grammar_point_id": "gp-a-11",
       "variants": ["I wish I had."],
       "audio": {

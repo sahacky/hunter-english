@@ -29,15 +29,16 @@ A01 = [
     ("While you're sleeping, I'll be working.", "Пока ты будешь спать, я буду работать.", None),
     ("The children will be playing in the garden.", "Дети будут играть в саду.", None),
     ("At this rate, we'll be losing money.", "Такими темпами мы будем терять деньги.", None),
-    ("I'll be there.", "Я буду там.", None),
-    ("She'll be late.", "Она опоздает.", None),
-    ("We'll be ready.", "Мы будем готовы.", None),
-    ("They'll be waiting.", "Они будут ждать.", None),
-    ("He'll be sleeping.", "Он будет спать.", None),
+    ("I'll be sitting in the office.", "Я буду сидеть в офисе.", None),
+    ("She'll be running late.", "Она будет опаздывать.", None),
+    ("We'll be waiting outside.", "Мы будем ждать снаружи.", None),
+    ("They'll be watching.", "Они будут смотреть.", None),
+    ("He'll be snoring.", "Он будет храпеть.", None),
     ("I'll be cooking dinner.", "Я буду готовить ужин.", None),
 ]
 
 A02 = [
+    ("Yes, I'll have finished by five.", "Да, я закончу к пяти.", None),
     ("By next year, he'll have finished his degree.", "К следующему году он закончит учёбу.", None),
     ("By the time you arrive, I'll have cooked dinner.", "К твоему приходу я уже приготовлю ужин.", None),
     ("She'll have left by then.", "К тому времени она уже уедет.", None),
@@ -52,7 +53,7 @@ A02 = [
     ("In two years, I'll have learned English.", "Через два года я выучу английский.", None),
     ("By 2030, they'll have built the bridge.", "К 2030 году они построят мост.", None),
     ("By the end of the month, I'll have saved enough.", "К концу месяца я накоплю достаточно.", None),
-    ("She'll have written three books by now.", "К этому времени она напишет три книги.", None),
+    ("She'll have written three books by then.", "К этому времени она напишет три книги.", None),
     ("He'll have been working there for twenty years.", "К тому времени он будет работать там двадцать лет.", None),
     ("Everything will have changed.", "Всё изменится.", None),
     ("Nothing will have happened.", "Ничего не случится.", None),
@@ -303,7 +304,7 @@ A09 = [
     ("But the future can.", "Но будущее — можно.", None),
     ("I wish I knew.", "Жаль, что не знаю.", None),
     ("I wish I could.", "Жаль, что не могу.", None),
-    ("I wish I had.", "Жаль, что не было.", None),
+    ("I wish I had.", "Жаль, что не было у меня.", None),
     ("If only I knew!", "Если бы знал!", None),
     ("If only I could!", "Если бы мог!", None),
 ]
@@ -311,10 +312,9 @@ A09 = [
 A10 = [
     ("I wish I knew.", "Жаль, что не знаю.", None),
     ("I wish I could.", "Жаль, что не могу.", None),
-    ("I wish I can.", "Жаль, что нет.", None),
     ("If only I knew!", "Если бы знать!", None),
-    ("If only I could!", "Если бы смочь!", None),
-    ("If only I had!", "Если бы иметь!", None),
+    ("If only I could!", "Если бы мог!", None),
+    ("If only I had!", "Если бы он у меня был!", None),
     ("If I had studied, I would have passed.", "Если бы я учился, я бы сдал.", None),
     ("If I were rich, I would travel.", "Если бы я был богат, я бы путешествовал.", None),
     ("If it rains, I'll stay at home.", "Если пойдёт дождь, я останусь дома.", None),
@@ -377,12 +377,12 @@ A11 = [
     ("But the future can.", "Но будущее — можно.", None),
     ("I wish I knew.", "Жаль, что не знаю.", None),
     ("I wish I could.", "Жаль, что не могу.", None),
-    ("I wish I had.", "Жаль, что не было.", None),
+    ("I wish I had.", "Жаль, что не было у меня.", None),
     ("If only I knew!", "Если бы знал!", None),
     ("If only I could!", "Если бы мог!", None),
     ("I wish I knew.", "Жаль, что не знаю.", None),
     ("I wish I could.", "Жаль, что не могу.", None),
-    ("I wish I had.", "Жаль, что не было.", None),
+    ("I wish I had.", "Жаль, что не было у меня.", None),
     ("If only I knew!", "Если бы знал!", None),
     ("If only I could!", "Если бы мог!", None),
     ("It's too late now.", "Сейчас уже поздно.", None),
@@ -399,7 +399,7 @@ RULE_A02 = """**Future Perfect: will have + V3.**
 Маркеры: by then, by the time, by 2030, in two years.
 She'**ll have left** by then. = «уже уедет к тому времени»."""
 
-RULE_A03 = """**Карта всех 12 времён.**
+RULE_A03 = """**Карта всех основных времён (11 из 12).**
 Present: I work / I am working / I have worked / I have been working
 Past: I worked / I was working / I had worked / I had been working
 Future: I will work / I will be working / I will have worked
@@ -471,7 +471,7 @@ LESSONS_A1_A2 = [
         "quotes_topic": "future",
         "bebris_video": {"lesson": "2.196", "playlist_index": 747, "youtube_id": "6k6QwYL6NzA", "title": None},
         "answer_question": [("What will you be doing next week?", "I'll be travelling around Europe.")],
-        "find_error": [("I'll be cook at eight.", "I'll be cooking dinner.")],
+        "find_error": [("I'll be cook dinner.", "I'll be cooking dinner.")],
         "verb_tense": [
             ("He'll be ___ when you get home. (спать)", "форма", ["sleeping"]),
             ("The train will be ___ at six. (отправляться)", "форма", ["leaving"]),
@@ -495,8 +495,8 @@ LESSONS_A1_A2 = [
         "phrasebook_topic": None,
         "quotes_topic": "future",
         "bebris_video": {"lesson": "2.211", "playlist_index": 762, "youtube_id": "JSHrZuAy9uo", "title": None},
-        "answer_question": [("Will you have finished by five?", "I'll have read the book by then.")],
-        "find_error": [("He'll have finish by then.", "He'll have forgotten by tomorrow.")],
+        "answer_question": [("Will you have finished by five?", "Yes, I'll have finished by five.")],
+        "find_error": [("He'll have forget by tomorrow.", "He'll have forgotten by tomorrow.")],
         "verb_tense": [
             ("The plane will have ___ by six. (приземлиться)", "форма", ["landed"]),
             ("We'll have been ___ for ten years. (женаты)", "форма", ["married"]),
@@ -505,7 +505,7 @@ LESSONS_A1_A2 = [
     },
     {
         "id": "les-a-03", "module": "mod-a-1",
-        "title": "Карта всех 12 времён",
+        "title": "Карта всех времён",
         "gp_id": "gp-a-03", "gp_title": "Выбор времени по маркеру",
         "rule_md": RULE_A03,
         "phrases": A03,
@@ -520,7 +520,7 @@ LESSONS_A1_A2 = [
         "phrasebook_topic": None,
         "quotes_topic": "tenses",
         "bebris_video": {"lesson": "2.193", "playlist_index": 744, "youtube_id": "fhiXo0tmZTM", "title": None},
-        "answer_question": [("What marker means Past Simple?", "yesterday — Past Simple")],
+        "answer_question": [("Which word is a Past Simple marker?", "yesterday — Past Simple")],
         "find_error": [("I am work every day.", "I work every day.")],
         "verb_tense": [
             ("I was ___ when you called. (работать)", "форма", ["working"]),
@@ -620,7 +620,7 @@ LESSONS_A1_A2 = [
         "phrasebook_topic": None,
         "quotes_topic": "modals",
         "bebris_video": {"lesson": "2.297", "playlist_index": 848, "youtube_id": "RIPD00DDXEk", "title": None},
-        "answer_question": [("Where is he?", "She may have changed her mind.")],
+        "answer_question": [("Where is she?", "She must have left already.")],
         "find_error": [("He must has forgotten.", "He must have forgotten.")],
         "verb_tense": [
             ("She must ___ left already.", "форма", ["have"]),
@@ -700,7 +700,7 @@ LESSONS_A1_A2 = [
         "verb_tense": [
             ("I wish I ___ learned to swim.", "форма", ["had"]),
             ("If he ___ overslept, he wouldn't be stressed.", "форма", ["hadn't", "had not"]),
-            ("I wish I ___ said that.", "форма", ["hadn't", "had not"]),
+            ("I wish I ___ said that. (не сказал)", "форма", ["hadn't", "had not"]),
         ],
     },
     {
