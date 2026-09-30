@@ -4,6 +4,9 @@
 /** Ранг охотника = CEFR (specs/04 §2.1); меняется только через «Врата». */
 export type Rank = 'E' | 'D' | 'C' | 'B' | 'A' | 'S'
 
+/** Идентификатор экзамена: обычные Врата по целевому рангу + особый Финал (specs/07 §2 S-FINAL). */
+export type GateId = Rank | 'S-FINAL'
+
 /** user_stats — зеркало specs/06 §3 (db://table-user_stats). */
 export interface UserStats {
   xp: number
@@ -12,7 +15,7 @@ export interface UserStats {
   freezes_left: number
   rank: Rank
   /** [{ gate, passed_at, score }] — история Врат (jsonb specs/06 §3). */
-  gates_history: { gate: Rank; passed_at: string; score: number }[]
+  gates_history: { gate: GateId; passed_at: string; score: number }[]
   /** учебный день (ISO dayStart) последнего засчитанного дня — для стрика. */
   last_counted_day: string | null
   updated_at: string
@@ -92,7 +95,7 @@ export interface GateSectionScore {
 
 /** Результат попытки Врат (item_progress kind='gate_attempts'). */
 export interface GateAttempt {
-  gate: Rank
+  gate: GateId
   started_at: string
   finished_at: string | null
   /** секции прошлой попытки, сохранённые для пересдачи (game://gate-retry-sections). */

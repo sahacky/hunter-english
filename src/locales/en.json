@@ -175,6 +175,7 @@
   "ranks": {
     "statusTitle": "Hunter status",
     "gatesLink": "Gates {{from}} → {{to}}",
+    "finalLink": "Final trial (S confirmation)",
     "totalXp": "Total XP: {{xp}}",
     "streaks": "Streak: {{current}} d · Best: {{best}} d",
     "gatesPassed": "Gates passed: {{count}} · latest: {{last}}",
@@ -184,6 +185,7 @@
   "gates": {
     "notFound": "These gates do not exist.",
     "title": "Gates {{from}} → {{to}}",
+    "titleFinal": "Final trial: S (C1) confirmation",
     "check": {
       "words": "Words (reliable): {{known}} / {{target}}",
       "lessons": "Rank {{rank}} lessons: {{done}} / {{total}}",
@@ -193,6 +195,7 @@
     "enter": "Enter",
     "passed": "Gates passed",
     "failed": "Gates not passed",
+    "finalPassed": "Final trial passed. Rank S confirmed. +200 XP",
     "sections": {
       "vocab": "Vocabulary",
       "grammar": "Grammar",
@@ -225,13 +228,15 @@
       "passport": "Passport control",
       "hotel": "Hotel",
       "restaurant": "Restaurant",
-      "pharmacy": "Pharmacy and doctor"
+      "pharmacy": "Pharmacy and doctor",
+      "idioms": "Traveler idioms"
     },
     "answerByVoice": "Answer by voice"
   },
   "toast": {
     "questDone": "Daily quest complete. The system logs your progress.",
     "rankUp": "Rank up: {{rank}}. The system confirms the level.",
+    "finalPassed": "Final trial passed. Rank S confirmed.",
     "freezeGained": "Streak freeze gained: ❄ +1"
   },
   "settings": {

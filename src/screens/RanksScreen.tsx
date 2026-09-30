@@ -126,6 +126,14 @@ export default function RanksScreen({ repo: repoProp }: DashboardProps) {
             </Link>
           </p>
         )}
+        {stats.rank === 'S' && !stats.gates_history.some((g) => g.gate === 'S-FINAL') && (
+          <p style={{ margin: '12px 0 0' }}>
+            {/* Финальное испытание — specs/07 §2 (plan://M20#20.4) */}
+            <Link className="ranks-gate-link" to="/gates/S-FINAL">
+              {t('ranks.finalLink')}
+            </Link>
+          </p>
+        )}
       </section>
       <section className="panel">
         <h2>[{t('ranks.titles')}]</h2>
