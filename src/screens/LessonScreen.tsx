@@ -169,6 +169,14 @@ export default function LessonScreen({
   checkpointRef.current = checkpoint
   const saveBusy = useRef(false)
   const pendingRef = useRef<LessonCheckpoint | null>(null)
+  // setState после размонтирования — unhandled rejection в CI (прецедент M19)
+  const mountedRef = useRef(true)
+  useEffect(
+    () => () => {
+      mountedRef.current = false
+    },
+    [],
+  )
 
   const courseId = params.id ?? ''
   const valid = COURSE_ID_RE.test(courseId)
@@ -374,6 +382,7 @@ export default function LessonScreen({
     if (!view) return
     try {
       await enrollDeck()
+      if (!mountedRef.current) return
       // снимок ДО finishPass (сбрасывает results/scores) — ревью M7#Б1
       const finished = checkpointRef.current
       const accuracy = passAccuracy(finished.scores) ?? 0
@@ -390,6 +399,7 @@ export default function LessonScreen({
       )
       // статус по правилам specs/02 §5; повтор не затирает оригинал (specs/07 §4.4)
       const cards = await repo.getAllCards()
+      if (!mountedRef.current) return
       const previous = previousRowRef.current
       const stored =
         previous && previous.status !== 'in_progress'
@@ -462,6 +472,7 @@ export default function LessonScreen({
         bonusByType,
         isRepeat: Boolean(previous && previous.status !== 'in_progress'),
       })
+      if (!mountedRef.current) return
       if (anySlotDone(award.quest)) {
         const closed = await closeStudyDay(repo, new Date())
         showToast(t('toast.questDone')) // решение M10#2: значимые события
@@ -470,7 +481,7 @@ export default function LessonScreen({
       setSummary((prev) => (prev ? { ...prev, xp: award.awarded } : prev))
       setPhase({ kind: 'done' })
     } catch {
-      setPhase({ kind: 'error' })
+      if (mountedRef.current) setPhase({ kind: 'error' })
     }
   }, [view, enrollDeck, repo, startedAt])
 
