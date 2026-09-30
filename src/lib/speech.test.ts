@@ -40,7 +40,7 @@ function install(ctor: new () => FakeRecognition = FakeRecognition) {
   const Capturing = class extends ctor {
     constructor() {
       super()
-      // eslint-disable-next-line @typescript-eslint/no-this-alias — тестовый захват
+      // eslint-disable-next-line @typescript-eslint/no-this-alias
       const self: FakeRecognition = this
       instance = self
     }
