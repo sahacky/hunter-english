@@ -12461,7 +12461,7 @@
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "Ничто из того, что я делаю, не правильно.",
+        "prompt_ru": "Ничто из того, что я делаю, неправильно.",
         "phrase_id": "ph-b-0681"
       },
       "answer": {
@@ -12759,7 +12759,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "Stop ___!",
+        "text_with_gap": "Stop ___! (разговаривать)",
         "gap_answers": ["talking"]
       },
       "answer": {
@@ -13325,8 +13325,8 @@
       "type": "verb_tense",
       "payload": {
         "kind": "verb_tense",
-        "sentence_with_gap": "She enjoys ___. (готовить)",
-        "marker": "ответ",
+        "sentence_with_gap": "She enjoys ___.",
+        "marker": "герундий",
         "gap_answers": ["cooking"]
       },
       "answer": {
@@ -13344,7 +13344,7 @@
       "payload": {
         "kind": "verb_tense",
         "sentence_with_gap": "He decided ___ stay.",
-        "marker": "ответ",
+        "marker": "заполни",
         "gap_answers": ["to"]
       },
       "answer": {
@@ -13362,7 +13362,7 @@
       "payload": {
         "kind": "verb_tense",
         "sentence_with_gap": "I finished ___ the room.",
-        "marker": "ответ",
+        "marker": "заполни",
         "gap_answers": ["cleaning"]
       },
       "answer": {
@@ -13605,7 +13605,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "Get ___ the bus.",
+        "text_with_gap": "Get ___ the bus. (садись)",
         "gap_answers": ["on"]
       },
       "answer": {
@@ -13872,7 +13872,7 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Полет прошёл спокойно.",
+        "prompt_ru": "Полёт прошёл спокойно.",
         "phrase_id": "ph-b-0773",
         "tokens": ["She", "What", "smooth", "was", "The", "flight"]
       },
@@ -14131,7 +14131,7 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Где мне выйти до музея?",
+        "prompt_ru": "Где мне выйти к музею?",
         "phrase_id": "ph-b-0766"
       },
       "answer": {
@@ -15059,7 +15059,7 @@
       "payload": {
         "kind": "verb_tense",
         "sentence_with_gap": "I'm looking forward ___ the trip.",
-        "marker": "ответ",
+        "marker": "заполни",
         "gap_answers": ["to"]
       },
       "answer": {
@@ -15859,7 +15859,7 @@
       "payload": {
         "kind": "verb_tense",
         "sentence_with_gap": "The man ___ lives here is a doctor.",
-        "marker": "ответ",
+        "marker": "заполни",
         "gap_answers": ["who", "that"]
       },
       "answer": {
@@ -15877,7 +15877,7 @@
       "payload": {
         "kind": "verb_tense",
         "sentence_with_gap": "We check ___ online.",
-        "marker": "ответ",
+        "marker": "заполни",
         "gap_answers": ["in"]
       },
       "answer": {
@@ -15895,7 +15895,7 @@
       "payload": {
         "kind": "verb_tense",
         "sentence_with_gap": "It turned ___ well.",
-        "marker": "ответ",
+        "marker": "заполни",
         "gap_answers": ["out"]
       },
       "answer": {
@@ -16138,7 +16138,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "The results will be ___ tomorrow.",
+        "text_with_gap": "The results will be ___ tomorrow. (объявят)",
         "gap_answers": ["announced"]
       },
       "answer": {
@@ -16723,7 +16723,7 @@
       "payload": {
         "kind": "verb_tense",
         "sentence_with_gap": "English is ___ here.",
-        "marker": "V3 от speak",
+        "marker": "пассив, наст. время",
         "gap_answers": ["spoken"]
       },
       "answer": {
@@ -16741,7 +16741,7 @@
       "payload": {
         "kind": "verb_tense",
         "sentence_with_gap": "The problem will be ___.",
-        "marker": "V3 от solve",
+        "marker": "пассив, буд. время",
         "gap_answers": ["solved"]
       },
       "answer": {
@@ -16985,7 +16985,7 @@
       "payload": {
         "kind": "cloze",
         "text_with_gap": "He asked ___ I was ready.",
-        "gap_answers": ["if"]
+        "gap_answers": ["if", "whether"]
       },
       "answer": {
         "normalization": "default",
@@ -18377,7 +18377,7 @@
       "payload": {
         "kind": "verb_tense",
         "sentence_with_gap": "She works here, ___ she?",
-        "marker": "tag",
+        "marker": "хвостик",
         "gap_answers": ["doesn't"]
       },
       "answer": {
@@ -18395,7 +18395,7 @@
       "payload": {
         "kind": "verb_tense",
         "sentence_with_gap": "You can swim, ___ you?",
-        "marker": "tag",
+        "marker": "хвостик",
         "gap_answers": ["can't"]
       },
       "answer": {
@@ -18413,7 +18413,7 @@
       "payload": {
         "kind": "verb_tense",
         "sentence_with_gap": "They were late, ___ they?",
-        "marker": "tag",
+        "marker": "хвостик",
         "gap_answers": ["weren't"]
       },
       "answer": {
@@ -19223,7 +19223,7 @@
       "payload": {
         "kind": "verb_tense",
         "sentence_with_gap": "He is proud ___ his work.",
-        "marker": "ответ",
+        "marker": "заполни",
         "gap_answers": ["of"]
       },
       "answer": {
@@ -19241,7 +19241,7 @@
       "payload": {
         "kind": "verb_tense",
         "sentence_with_gap": "I'm tired ___ waiting.",
-        "marker": "ответ",
+        "marker": "заполни",
         "gap_answers": ["of"]
       },
       "answer": {
@@ -19424,8 +19424,8 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "Someone who ___ sacrifice anything, can't ever change anything.",
-        "gap_answers": ["can't"],
+        "text_with_gap": "Someone who can't ___ anything, can't ever change anything.",
+        "gap_answers": ["sacrifice"],
         "quote": {
           "title": "Attack on Titan",
           "season_episode": "Quotes to be Organized"
@@ -19446,8 +19446,8 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "All we have ___ decide is what to do with the time that is given to us",
-        "gap_answers": ["to"],
+        "text_with_gap": "All we have to ___ is what to do with the time that is given to us",
+        "gap_answers": ["decide"],
         "quote": {
           "title": "Lord of the Rings",
           "season_episode": "Gandalf"
@@ -20069,7 +20069,7 @@
       "payload": {
         "kind": "verb_tense",
         "sentence_with_gap": "English is ___ here.",
-        "marker": "V3 от speak",
+        "marker": "пассив, наст. время",
         "gap_answers": ["spoken"]
       },
       "answer": {
@@ -20087,7 +20087,7 @@
       "payload": {
         "kind": "verb_tense",
         "sentence_with_gap": "I'm afraid ___ flying.",
-        "marker": "ответ",
+        "marker": "заполни",
         "gap_answers": ["of"]
       },
       "answer": {
@@ -20105,7 +20105,7 @@
       "payload": {
         "kind": "verb_tense",
         "sentence_with_gap": "You know the answer, ___ you?",
-        "marker": "tag",
+        "marker": "хвостик",
         "gap_answers": ["don't"]
       },
       "answer": {
@@ -20401,7 +20401,7 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Давай поедим вне дома сегодня.",
+        "prompt": "Давай поужинаем вне дома сегодня.",
         "options": ["Anyway.", "Let's eat out tonight.", "It's up to you.", "Whatever."],
         "correct": 1
       },
@@ -20528,7 +20528,7 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Я наткнулся на бывшего начальника.",
+        "prompt_ru": "Я случайно встретил бывшего начальника.",
         "phrase_id": "ph-b-1179",
         "tokens": ["ex-boss", "I", "the", "fed", "ran", "my", "into"]
       },
@@ -20704,7 +20704,7 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Давай поедим вне дома сегодня.",
+        "prompt_ru": "Давай поужинаем вне дома сегодня.",
         "phrase_id": "ph-b-1156"
       },
       "answer": {
@@ -21290,7 +21290,7 @@
           },
           {
             "en": "You must be joking!",
-            "ru": "Ты, должно быть, шутишь!"
+            "ru": "Ты шутишь, что ли?"
           },
           {
             "en": "Are you sure?",
@@ -21464,7 +21464,7 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Ты, должно быть, шутишь!",
+        "prompt_ru": "Ты шутишь, что ли?",
         "phrase_id": "ph-b-1239"
       },
       "answer": {
@@ -21987,7 +21987,7 @@
       "payload": {
         "kind": "cloze",
         "text_with_gap": "It's ___ good. (довольно)",
-        "gap_answers": ["quite"]
+        "gap_answers": ["quite", "rather"]
       },
       "answer": {
         "normalization": "default",
@@ -22004,7 +22004,7 @@
       "payload": {
         "kind": "cloze",
         "text_with_gap": "I'm a ___ tired.",
-        "gap_answers": ["bit"]
+        "gap_answers": ["bit", "little"]
       },
       "answer": {
         "normalization": "default",
@@ -22037,12 +22037,12 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Ужасно жаль.",
+        "prompt": "Не так уж и плохо.",
         "options": [
-          "I'm terribly sorry.",
-          "She is incredibly talented.",
-          "It's incredibly fast.",
-          "It's terribly sorry."
+          "I rather like it.",
+          "It's far too early.",
+          "It's quite good.",
+          "It's not that bad."
         ],
         "correct": 3
       },
@@ -22060,14 +22060,14 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Не так уж и плохо.",
+        "prompt": "Она невероятно талантлива.",
         "options": [
+          "I really appreciate it.",
           "I rather like it.",
-          "It's quite good.",
           "It's not that bad.",
-          "I quite like it."
+          "She is incredibly talented."
         ],
-        "correct": 2
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -22083,12 +22083,12 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Я прекрасно понимаю.",
+        "prompt": "Мне это скорее нравится.",
         "options": [
-          "I really appreciate it.",
-          "It's rather strange.",
-          "I totally understand.",
-          "This is extremely important."
+          "It's not that bad.",
+          "It's far too early.",
+          "I rather like it.",
+          "It's quite good."
         ],
         "correct": 2
       },
@@ -22106,12 +22106,12 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Это невероятно быстро.",
+        "prompt": "Я действительно это ценю.",
         "options": [
-          "I'm terribly sorry.",
-          "It's terribly sorry.",
-          "It's incredibly fast.",
-          "She is incredibly talented."
+          "This is extremely important.",
+          "I totally understand.",
+          "I really appreciate it.",
+          "It's rather strange."
         ],
         "correct": 2
       },
@@ -22131,24 +22131,24 @@
         "kind": "match_pairs",
         "pairs": [
           {
-            "en": "It's not so difficult.",
-            "ru": "Не так уж и сложно."
+            "en": "She is quite beautiful.",
+            "ru": "Она довольно красивая."
           },
           {
-            "en": "I really appreciate it.",
-            "ru": "Я действительно это ценю."
+            "en": "This is extremely important.",
+            "ru": "Это чрезвычайно важно."
           },
           {
-            "en": "He drives too fast.",
-            "ru": "Он водит слишком быстро."
+            "en": "It's incredibly fast.",
+            "ru": "Это невероятно быстро."
           },
           {
-            "en": "It's frightfully good.",
-            "ru": "Ужасно хорошо."
+            "en": "It's a bit cold.",
+            "ru": "Немного холодно."
           },
           {
-            "en": "I rather like it.",
-            "ru": "Мне это скорее нравится."
+            "en": "She sings pretty well.",
+            "ru": "Она поёт довольно хорошо."
           }
         ]
       },
@@ -22166,9 +22166,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Это было абсолютно фантастически.",
-        "phrase_id": "ph-b-1263",
-        "tokens": ["absolutely", "fantastic", "It", "totally", "was", "The"]
+        "prompt_ru": "Это довольно потрясающе.",
+        "phrase_id": "ph-b-1285",
+        "tokens": ["This", "amazing", "The", "That's", "pretty"]
       },
       "answer": {
         "normalization": "default",
@@ -22184,9 +22184,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Я прекрасно понимаю.",
-        "phrase_id": "ph-b-1266",
-        "tokens": ["I", "understand", "totally", "was", "The"]
+        "prompt_ru": "Еда была довольно вкусной.",
+        "phrase_id": "ph-b-1247",
+        "tokens": ["The", "quite", "was", "delicious", "This", "food", "pretty"]
       },
       "answer": {
         "normalization": "default",
@@ -22202,9 +22202,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Еда была довольно вкусной.",
-        "phrase_id": "ph-b-1247",
-        "tokens": ["quite", "absolutely", "The", "was", "totally", "food", "delicious"]
+        "prompt_ru": "Это поразительно.",
+        "phrase_id": "ph-b-1262",
+        "tokens": ["This", "quite", "is", "amazing", "The", "pretty"]
       },
       "answer": {
         "normalization": "default",
@@ -22220,9 +22220,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Это довольно хорошо.",
-        "phrase_id": "ph-b-1244",
-        "tokens": ["quite", "totally", "was", "It's", "good"]
+        "prompt_ru": "Он недостаточно взрослый.",
+        "phrase_id": "ph-b-1280",
+        "tokens": ["old", "pretty", "He", "not", "The", "is", "enough"]
       },
       "answer": {
         "normalization": "default",
@@ -22238,9 +22238,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Вид абсолютно потрясающий.",
-        "phrase_id": "ph-b-1264",
-        "tokens": ["absolutely", "is", "stunning", "totally", "was", "The", "view"]
+        "prompt_ru": "Это чрезвычайно важно.",
+        "phrase_id": "ph-b-1269",
+        "tokens": ["is", "important", "The", "pretty", "This", "extremely"]
       },
       "answer": {
         "normalization": "default",
@@ -22256,9 +22256,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Это невероятно быстро.",
-        "phrase_id": "ph-b-1267",
-        "tokens": ["fast", "was", "It's", "totally", "incredibly"]
+        "prompt_ru": "Я действительно это ценю.",
+        "phrase_id": "ph-b-1252",
+        "tokens": ["The", "appreciate", "it", "pretty", "I", "really"]
       },
       "answer": {
         "normalization": "default",
@@ -22274,9 +22274,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Немного холодно.",
-        "phrase_id": "ph-b-1254",
-        "tokens": ["a", "It's", "was", "totally", "cold", "bit"]
+        "prompt_ru": "Это было абсолютно фантастически.",
+        "phrase_id": "ph-b-1263",
+        "tokens": ["absolutely", "fantastic", "It", "pretty", "The", "was"]
       },
       "answer": {
         "normalization": "default",
@@ -22292,9 +22292,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Не так уж и плохо.",
-        "phrase_id": "ph-b-1286",
-        "tokens": ["that", "was", "bad", "totally", "not", "It's"]
+        "prompt_ru": "Немного холодно.",
+        "phrase_id": "ph-b-1254",
+        "tokens": ["a", "It's", "pretty", "The", "cold", "bit"]
       },
       "answer": {
         "normalization": "default",
@@ -22310,8 +22310,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Довольно странно.",
-        "phrase_id": "ph-b-1282"
+        "prompt_ru": "Мне этого достаточно.",
+        "phrase_id": "ph-b-1279"
       },
       "answer": {
         "normalization": "default",
@@ -22327,8 +22327,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Это проще, чем я думал.",
-        "phrase_id": "ph-b-1288"
+        "prompt_ru": "Вид абсолютно потрясающий.",
+        "phrase_id": "ph-b-1264"
       },
       "answer": {
         "normalization": "default",
@@ -22344,8 +22344,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Погода невероятно жаркая.",
-        "phrase_id": "ph-b-1268"
+        "prompt_ru": "Она поёт довольно хорошо.",
+        "phrase_id": "ph-b-1284"
       },
       "answer": {
         "normalization": "default",
@@ -22361,8 +22361,8 @@
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "Я действительно это ценю.",
-        "phrase_id": "ph-b-1252"
+        "prompt_ru": "Это довольно хорошо.",
+        "phrase_id": "ph-b-1244"
       },
       "answer": {
         "normalization": "default",
@@ -22379,8 +22379,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Это поразительно.",
-        "phrase_id": "ph-b-1262"
+        "prompt_ru": "Я прекрасно понимаю.",
+        "phrase_id": "ph-b-1266"
       },
       "answer": {
         "normalization": "default",
@@ -22396,8 +22396,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Это безусловно лучшее.",
-        "phrase_id": "ph-b-1277"
+        "prompt_ru": "Это недостаточно хорошо.",
+        "phrase_id": "ph-b-1278"
       },
       "answer": {
         "normalization": "default",
@@ -22410,41 +22410,6 @@
     },
     {
       "id": "ex-b-1224",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Ужасно хорошо.",
-        "phrase_id": "ph-b-1273"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-b-1225",
-      "type": "speak",
-      "payload": {
-        "kind": "speak",
-        "prompt_ru": "Это недостаточно хорошо.",
-        "phrase_id": "ph-b-1278"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow",
-        "speech_threshold": 0.85
-      },
-      "meta": {
-        "skill": "speaking",
-        "xp": 4
-      }
-    },
-    {
-      "id": "ex-b-1226",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -22461,46 +22426,12 @@
       }
     },
     {
-      "id": "ex-b-1227",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Он водит слишком быстро.",
-        "phrase_id": "ph-b-1274"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-b-1228",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Она говорит слишком тихо.",
-        "phrase_id": "ph-b-1275"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-b-1229",
+      "id": "ex-b-1225",
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "Мне этого достаточно.",
-        "phrase_id": "ph-b-1279"
+        "prompt_ru": "Слишком рано.",
+        "phrase_id": "ph-b-1276"
       },
       "answer": {
         "normalization": "default",
@@ -22513,12 +22444,12 @@
       }
     },
     {
-      "id": "ex-b-1230",
+      "id": "ex-b-1226",
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Мне очень жаль.",
-        "phrase_id": "ph-b-1272"
+        "prompt_ru": "Погода невероятно жаркая.",
+        "phrase_id": "ph-b-1268"
       },
       "answer": {
         "normalization": "default",
@@ -22530,7 +22461,7 @@
       }
     },
     {
-      "id": "ex-b-1231",
+      "id": "ex-b-1227",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -22547,12 +22478,81 @@
       }
     },
     {
+      "id": "ex-b-1228",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Довольно холодно.",
+        "phrase_id": "ph-b-1281"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-b-1229",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Это невероятно быстро.",
+        "phrase_id": "ph-b-1267"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-b-1230",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Он водит слишком быстро.",
+        "phrase_id": "ph-b-1274"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-b-1231",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Я очень по тебе скучаю.",
+        "phrase_id": "ph-b-1259"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
       "id": "ex-b-1232",
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Слишком рано.",
-        "phrase_id": "ph-b-1276"
+        "prompt_ru": "Это безусловно лучшее.",
+        "phrase_id": "ph-b-1277"
       },
       "answer": {
         "normalization": "default",
@@ -22568,8 +22568,8 @@
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "Она поёт довольно хорошо.",
-        "phrase_id": "ph-b-1284"
+        "prompt_ru": "Мне это довольно нравится.",
+        "phrase_id": "ph-b-1248"
       },
       "answer": {
         "normalization": "default",
@@ -22640,7 +22640,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-1249"
+        "phrase_id": "ph-b-1266"
       },
       "answer": {
         "normalization": "default",
@@ -22656,7 +22656,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-1273"
+        "phrase_id": "ph-b-1267"
       },
       "answer": {
         "normalization": "default",
@@ -22672,7 +22672,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-1245"
+        "phrase_id": "ph-b-1282"
       },
       "answer": {
         "normalization": "default",
@@ -22688,7 +22688,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-1281"
+        "phrase_id": "ph-b-1285"
       },
       "answer": {
         "normalization": "default",
@@ -22704,7 +22704,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-1271"
+        "phrase_id": "ph-b-1249"
       },
       "answer": {
         "normalization": "default",
@@ -22720,7 +22720,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-1274"
+        "phrase_id": "ph-b-1279"
       },
       "answer": {
         "normalization": "default",
@@ -22737,7 +22737,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-1266"
+        "phrase_id": "ph-b-1283"
       },
       "answer": {
         "normalization": "default",
@@ -22754,7 +22754,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-1256"
+        "phrase_id": "ph-b-1261"
       },
       "answer": {
         "normalization": "default",
@@ -22771,7 +22771,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-1280"
+        "phrase_id": "ph-b-1268"
       },
       "answer": {
         "normalization": "default",
@@ -22832,7 +22832,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "It's quite ___.",
+        "text_with_gap": "It's quite ___. (хорошо)",
         "gap_answers": ["good"]
       },
       "answer": {
@@ -22883,12 +22883,12 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Довольно странно.",
+        "prompt": "Не сдавайся!",
         "options": [
-          "I really appreciate it.",
-          "Let's eat out tonight.",
-          "It's rather strange.",
-          "I'm afraid of flying."
+          "You should have called.",
+          "I'll look it up.",
+          "Don't give up!",
+          "It must be late."
         ],
         "correct": 2
       },
@@ -22906,14 +22906,14 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Всё будет хорошо.",
+        "prompt": "Тебе следовало позвонить.",
         "options": [
-          "I enjoy reading.",
-          "She is really nice.",
-          "He drives too fast.",
-          "Everything will be fine."
+          "Don't give up!",
+          "I'll look it up.",
+          "You should have called.",
+          "It must be late."
         ],
-        "correct": 3
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -22929,14 +22929,14 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Я действительно это ценю.",
+        "prompt": "Она, возможно, придёт позже.",
         "options": [
-          "It's rather strange.",
-          "I really appreciate it.",
-          "I'm afraid of flying.",
-          "Let's eat out tonight."
+          "Don't give up!",
+          "You should have called.",
+          "I'm a bit tired.",
+          "She might come later."
         ],
-        "correct": 1
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -22952,12 +22952,12 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Должно быть, уже поздно.",
+        "prompt": "Я немного устал.",
         "options": [
-          "I'll look it up.",
-          "It must be late.",
-          "You should have called.",
-          "Don't give up!"
+          "I'm interested in history.",
+          "I'm a bit tired.",
+          "It's not good enough.",
+          "I quite like it."
         ],
         "correct": 1
       },
@@ -22977,24 +22977,24 @@
         "kind": "match_pairs",
         "pairs": [
           {
-            "en": "I enjoy reading.",
-            "ru": "Я с удовольствием читаю."
+            "en": "It's rather strange.",
+            "ru": "Довольно странно."
+          },
+          {
+            "en": "I really appreciate it.",
+            "ru": "Я действительно это ценю."
+          },
+          {
+            "en": "I'm interested in history.",
+            "ru": "Я интересуюсь историей."
           },
           {
             "en": "Nice weather, isn't it?",
             "ru": "Хорошая погода, не так ли?"
           },
           {
-            "en": "Don't give up!",
-            "ru": "Не сдавайся!"
-          },
-          {
-            "en": "We check in online.",
-            "ru": "Мы регистрируемся онлайн."
-          },
-          {
-            "en": "Long story short.",
-            "ru": "Короче говоря."
+            "en": "You'd better hurry.",
+            "ru": "Тебе лучше поторопиться."
           }
         ]
       },
@@ -23012,9 +23012,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Я раньше жил в Лондоне.",
-        "phrase_id": "ph-b-1328",
-        "tokens": ["interested", "She", "London", "in", "used", "I", "to", "live"]
+        "prompt_ru": "Тебе следовало позвонить.",
+        "phrase_id": "ph-b-1309",
+        "tokens": ["should", "You", "called", "have", "want", "said"]
       },
       "answer": {
         "normalization": "default",
@@ -23030,9 +23030,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Она действительно милая.",
-        "phrase_id": "ph-b-1297",
-        "tokens": ["used", "is", "She", "nice", "really", "interested"]
+        "prompt_ru": "Я хочу пойти домой.",
+        "phrase_id": "ph-b-1320",
+        "tokens": ["go", "You", "home", "said", "I", "to", "want"]
       },
       "answer": {
         "normalization": "default",
@@ -23048,9 +23048,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Я интересуюсь историей.",
-        "phrase_id": "ph-b-1316",
-        "tokens": ["I'm", "used", "history", "in", "interested", "She"]
+        "prompt_ru": "Он сказал, что занят.",
+        "phrase_id": "ph-b-1312",
+        "tokens": ["busy", "said", "want", "was", "he", "You", "He"]
       },
       "answer": {
         "normalization": "default",
@@ -23066,9 +23066,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Он сказал, что занят.",
-        "phrase_id": "ph-b-1312",
-        "tokens": ["he", "She", "busy", "was", "used", "said", "He"]
+        "prompt_ru": "Она хорошо готовит.",
+        "phrase_id": "ph-b-1315",
+        "tokens": ["She", "cooking", "at", "good", "is", "You", "want"]
       },
       "answer": {
         "normalization": "default",
@@ -23084,9 +23084,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Это оказалось правдой.",
-        "phrase_id": "ph-b-1324",
-        "tokens": ["She", "used", "true", "out", "turned", "be", "It", "to"]
+        "prompt_ru": "Хорошая погода, не так ли?",
+        "phrase_id": "ph-b-1313",
+        "tokens": ["want", "isn't", "it", "You", "weather,", "Nice"]
       },
       "answer": {
         "normalization": "default",
@@ -23102,9 +23102,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Я это посмотрю.",
-        "phrase_id": "ph-b-1323",
-        "tokens": ["up", "look", "I'll", "She", "it", "used"]
+        "prompt_ru": "Комната была убрана вчера.",
+        "phrase_id": "ph-b-1311",
+        "tokens": ["cleaned", "was", "The", "You", "yesterday", "room", "want"]
       },
       "answer": {
         "normalization": "default",
@@ -23120,9 +23120,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "У нас кончилось время.",
-        "phrase_id": "ph-b-1301",
-        "tokens": ["out", "She", "time", "We", "used", "of", "ran"]
+        "prompt_ru": "Это оказалось правдой.",
+        "phrase_id": "ph-b-1324",
+        "tokens": ["You", "true", "turned", "out", "want", "It", "to", "be"]
       },
       "answer": {
         "normalization": "default",
@@ -23138,9 +23138,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Мужчина, который живёт здесь, — врач.",
-        "phrase_id": "ph-b-1318",
-        "tokens": ["doctor", "here", "The", "used", "lives", "a", "is", "man", "who", "She"]
+        "prompt_ru": "Я сыт по горло ожиданием.",
+        "phrase_id": "ph-b-1302",
+        "tokens": ["You", "I'm", "up", "waiting", "want", "fed", "with"]
       },
       "answer": {
         "normalization": "default",
@@ -23153,92 +23153,6 @@
     },
     {
       "id": "ex-b-1264",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Я закончил до того, как ты пришёл.",
-        "phrase_id": "ph-b-1330"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-b-1265",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Если бы у меня было больше времени, я бы путешествовал.",
-        "phrase_id": "ph-b-1327"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-b-1266",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Давай поедим вне дома сегодня.",
-        "phrase_id": "ph-b-1299"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-b-1267",
-      "type": "speak",
-      "payload": {
-        "kind": "speak",
-        "prompt_ru": "Это безусловно лучшее.",
-        "phrase_id": "ph-b-1298"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow",
-        "speech_threshold": 0.85
-      },
-      "meta": {
-        "skill": "speaking",
-        "xp": 4
-      }
-    },
-    {
-      "id": "ex-b-1268",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Она хорошо готовит.",
-        "phrase_id": "ph-b-1315"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-b-1269",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -23255,12 +23169,12 @@
       }
     },
     {
-      "id": "ex-b-1270",
+      "id": "ex-b-1265",
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Как долго ты ждёшь?",
-        "phrase_id": "ph-b-1331"
+        "prompt_ru": "У нас кончилось время.",
+        "phrase_id": "ph-b-1301"
       },
       "answer": {
         "normalization": "default",
@@ -23272,42 +23186,7 @@
       }
     },
     {
-      "id": "ex-b-1271",
-      "type": "speak",
-      "payload": {
-        "kind": "speak",
-        "prompt_ru": "Тебе следовало позвонить.",
-        "phrase_id": "ph-b-1309"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow",
-        "speech_threshold": 0.85
-      },
-      "meta": {
-        "skill": "speaking",
-        "xp": 4
-      }
-    },
-    {
-      "id": "ex-b-1272",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Довольно странно.",
-        "phrase_id": "ph-b-1295"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-b-1273",
+      "id": "ex-b-1266",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -23324,12 +23203,30 @@
       }
     },
     {
-      "id": "ex-b-1274",
+      "id": "ex-b-1267",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Должно быть, уже поздно.",
+        "phrase_id": "ph-b-1307"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-b-1268",
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Я горжусь тобой.",
-        "phrase_id": "ph-b-1317"
+        "prompt_ru": "Я это посмотрю.",
+        "phrase_id": "ph-b-1323"
       },
       "answer": {
         "normalization": "default",
@@ -23341,7 +23238,41 @@
       }
     },
     {
-      "id": "ex-b-1275",
+      "id": "ex-b-1269",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Она действительно милая.",
+        "phrase_id": "ph-b-1297"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-b-1270",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Давай поужинаем вне дома сегодня.",
+        "phrase_id": "ph-b-1299"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-b-1271",
       "type": "speak",
       "payload": {
         "kind": "speak",
@@ -23359,24 +23290,7 @@
       }
     },
     {
-      "id": "ex-b-1276",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Должно быть, уже поздно.",
-        "phrase_id": "ph-b-1307"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-b-1277",
+      "id": "ex-b-1272",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -23393,12 +23307,98 @@
       }
     },
     {
+      "id": "ex-b-1273",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Тебе лучше поторопиться.",
+        "phrase_id": "ph-b-1305"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-b-1274",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Если бы у меня было больше времени, я бы путешествовал.",
+        "phrase_id": "ph-b-1327"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-b-1275",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Я интересуюсь историей.",
+        "phrase_id": "ph-b-1316"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-b-1276",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Ему пришла в голову отличная идея.",
+        "phrase_id": "ph-b-1303"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-b-1277",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Я с удовольствием читаю.",
+        "phrase_id": "ph-b-1319"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
       "id": "ex-b-1278",
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Хорошая погода, не так ли?",
-        "phrase_id": "ph-b-1313"
+        "prompt_ru": "Это недостаточно хорошо.",
+        "phrase_id": "ph-b-1294"
       },
       "answer": {
         "normalization": "default",
@@ -23414,8 +23414,8 @@
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "Тебе лучше поторопиться.",
-        "phrase_id": "ph-b-1305"
+        "prompt_ru": "Это безусловно лучшее.",
+        "phrase_id": "ph-b-1298"
       },
       "answer": {
         "normalization": "default",
@@ -23486,7 +23486,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-1325"
+        "phrase_id": "ph-b-1292"
       },
       "answer": {
         "normalization": "default",
@@ -23502,7 +23502,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-1290"
+        "phrase_id": "ph-b-1329"
       },
       "answer": {
         "normalization": "default",
@@ -23518,7 +23518,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-1292"
+        "phrase_id": "ph-b-1290"
       },
       "answer": {
         "normalization": "default",
@@ -23534,7 +23534,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-1305"
+        "phrase_id": "ph-b-1333"
       },
       "answer": {
         "normalization": "default",
@@ -23550,7 +23550,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-1333"
+        "phrase_id": "ph-b-1305"
       },
       "answer": {
         "normalization": "default",
@@ -23566,7 +23566,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-1314"
+        "phrase_id": "ph-b-1316"
       },
       "answer": {
         "normalization": "default",
@@ -23583,7 +23583,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-1294"
+        "phrase_id": "ph-b-1301"
       },
       "answer": {
         "normalization": "default",
@@ -23600,7 +23600,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-1300"
+        "phrase_id": "ph-b-1319"
       },
       "answer": {
         "normalization": "default",
@@ -23617,7 +23617,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-1308"
+        "phrase_id": "ph-b-1300"
       },
       "answer": {
         "normalization": "default",
@@ -23678,7 +23678,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "I have ___ finished.",
+        "text_with_gap": "I have ___ finished. (только что)",
         "gap_answers": ["just"]
       },
       "answer": {
@@ -23729,9 +23729,14 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Что бы ты сделал?",
-        "options": ["What would you do?", "Don't give up!", "I'll look it up.", "I'm used to it."],
-        "correct": 0
+        "prompt": "Мы регистрируемся онлайн.",
+        "options": [
+          "I'll look it up.",
+          "We check in online.",
+          "I finished it yesterday.",
+          "It's a bit cold."
+        ],
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -23747,12 +23752,12 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Тебе лучше поторопиться.",
+        "prompt": "Немного холодно.",
         "options": [
-          "I used to smoke.",
-          "I'll look it up.",
-          "You'd better hurry.",
-          "What would you do?"
+          "I finished it yesterday.",
+          "We check in online.",
+          "It's a bit cold.",
+          "I'll look it up."
         ],
         "correct": 2
       },
@@ -23770,9 +23775,14 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Я это посмотрю.",
-        "options": ["It's up to you.", "Don't give up!", "What would you do?", "I'll look it up."],
-        "correct": 3
+        "prompt": "Я закончил это вчера.",
+        "options": [
+          "It's a bit cold.",
+          "I enjoy reading.",
+          "I finished it yesterday.",
+          "Everything will be fine."
+        ],
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -23788,13 +23798,8 @@
       "type": "choose_translation",
       "payload": {
         "kind": "choose_translation",
-        "prompt": "Я раньше курил.",
-        "options": [
-          "Nice weather, isn't it?",
-          "I used to smoke.",
-          "I'm afraid of flying.",
-          "Let's eat out tonight."
-        ],
+        "prompt": "Я это посмотрю.",
+        "options": ["It's up to you.", "I'll look it up.", "Don't give up!", "What would you do?"],
         "correct": 1
       },
       "answer": {
@@ -23813,24 +23818,24 @@
         "kind": "match_pairs",
         "pairs": [
           {
-            "en": "Don't give up!",
-            "ru": "Не сдавайся!"
+            "en": "Nice weather, isn't it?",
+            "ru": "Хорошая погода, не так ли?"
+          },
+          {
+            "en": "Everything will be fine.",
+            "ru": "Всё будет хорошо."
+          },
+          {
+            "en": "English is spoken here.",
+            "ru": "Здесь говорят по-английски."
           },
           {
             "en": "I'm afraid of flying.",
             "ru": "Я боюсь летать."
           },
           {
-            "en": "I'm used to it.",
-            "ru": "Я привык."
-          },
-          {
-            "en": "Long story short.",
-            "ru": "Короче говоря."
-          },
-          {
-            "en": "Let's eat out tonight.",
-            "ru": "Давай поедим вне дома."
+            "en": "It's quite good.",
+            "ru": "Это довольно хорошо."
           }
         ]
       },
@@ -23848,9 +23853,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Что бы ты сделал?",
-        "phrase_id": "ph-b-1367",
-        "tokens": ["you", "do", "What", "This", "would", "bumped"]
+        "prompt_ru": "Я это посмотрю.",
+        "phrase_id": "ph-b-1353",
+        "tokens": ["up", "enjoy", "it", "look", "I'll", "want"]
       },
       "answer": {
         "normalization": "default",
@@ -23866,9 +23871,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Это безусловно лучшее.",
-        "phrase_id": "ph-b-1377",
-        "tokens": ["This", "What", "best", "far", "bumped", "the", "by", "is"]
+        "prompt_ru": "Я хочу пойти домой.",
+        "phrase_id": "ph-b-1350",
+        "tokens": ["to", "go", "I", "home", "want", "enjoy", "look"]
       },
       "answer": {
         "normalization": "default",
@@ -23884,9 +23889,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Я встретил старого друга.",
-        "phrase_id": "ph-b-1372",
-        "tokens": ["friend", "an", "bumped", "This", "into", "What", "I", "old"]
+        "prompt_ru": "Я с удовольствием читаю.",
+        "phrase_id": "ph-b-1349",
+        "tokens": ["enjoy", "want", "look", "reading", "I"]
       },
       "answer": {
         "normalization": "default",
@@ -23902,9 +23907,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Он сказал, что занят.",
-        "phrase_id": "ph-b-1344",
-        "tokens": ["This", "was", "said", "he", "busy", "He", "What"]
+        "prompt_ru": "Мужчина, который здесь живёт, — врач.",
+        "phrase_id": "ph-b-1348",
+        "tokens": ["lives", "want", "man", "here", "The", "who", "a", "look", "is", "doctor"]
       },
       "answer": {
         "normalization": "default",
@@ -23920,9 +23925,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Условное 1: Если пойдёт дождь, я останусь.",
-        "phrase_id": "ph-b-1338",
-        "tokens": ["What", "Conditional", "1:", "This", "rains,", "I'll", "If", "stay", "it"]
+        "prompt_ru": "Здесь говорят по-английски.",
+        "phrase_id": "ph-b-1370",
+        "tokens": ["is", "English", "spoken", "want", "look", "here"]
       },
       "answer": {
         "normalization": "default",
@@ -23938,9 +23943,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Всё будет хорошо.",
-        "phrase_id": "ph-b-1376",
-        "tokens": ["This", "Everything", "What", "be", "fine", "will"]
+        "prompt_ru": "Не подскажете, где вокзал?",
+        "phrase_id": "ph-b-1368",
+        "tokens": ["Could", "the", "look", "is", "me", "you", "tell", "station", "where", "want"]
       },
       "answer": {
         "normalization": "default",
@@ -23956,9 +23961,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Это довольно хорошо.",
-        "phrase_id": "ph-b-1361",
-        "tokens": ["What", "quite", "It's", "This", "good"]
+        "prompt_ru": "Ты когда-нибудь был за границей?",
+        "phrase_id": "ph-b-1366",
+        "tokens": ["abroad", "ever", "look", "you", "Have", "been", "want"]
       },
       "answer": {
         "normalization": "default",
@@ -23974,9 +23979,9 @@
       "type": "word_bank",
       "payload": {
         "kind": "word_bank",
-        "prompt_ru": "Я это посмотрю.",
-        "phrase_id": "ph-b-1353",
-        "tokens": ["What", "look", "I'll", "up", "it", "This"]
+        "prompt_ru": "Я ездил в Париж в прошлом году.",
+        "phrase_id": "ph-b-1365",
+        "tokens": ["want", "last", "went", "I", "look", "year", "to", "Paris"]
       },
       "answer": {
         "normalization": "default",
@@ -23992,8 +23997,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Давай поедим вне дома.",
-        "phrase_id": "ph-b-1371"
+        "prompt_ru": "Я хорошо ладлю с людьми.",
+        "phrase_id": "ph-b-1358"
       },
       "answer": {
         "normalization": "default",
@@ -24009,8 +24014,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Короче говоря.",
-        "phrase_id": "ph-b-1374"
+        "prompt_ru": "Он сказал, что занят.",
+        "phrase_id": "ph-b-1344"
       },
       "answer": {
         "normalization": "default",
@@ -24023,41 +24028,6 @@
     },
     {
       "id": "ex-b-1312",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Не подскажете, где вокзал?",
-        "phrase_id": "ph-b-1368"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-b-1313",
-      "type": "speak",
-      "payload": {
-        "kind": "speak",
-        "prompt_ru": "Я правда это ценю.",
-        "phrase_id": "ph-b-1362"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow",
-        "speech_threshold": 0.85
-      },
-      "meta": {
-        "skill": "speaking",
-        "xp": 4
-      }
-    },
-    {
-      "id": "ex-b-1314",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -24074,12 +24044,47 @@
       }
     },
     {
+      "id": "ex-b-1313",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Если пойдёт дождь, я останусь.",
+        "phrase_id": "ph-b-1338"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-b-1314",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Это безусловно лучшее.",
+        "phrase_id": "ph-b-1377"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
       "id": "ex-b-1315",
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Ты когда-нибудь был за границей?",
-        "phrase_id": "ph-b-1366"
+        "prompt_ru": "Я правда это ценю.",
+        "phrase_id": "ph-b-1362"
       },
       "answer": {
         "normalization": "default",
@@ -24095,8 +24100,8 @@
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Я с удовольствием читаю.",
-        "phrase_id": "ph-b-1349"
+        "prompt_ru": "Я закончил это вчера.",
+        "phrase_id": "ph-b-1335"
       },
       "answer": {
         "normalization": "default",
@@ -24109,6 +24114,75 @@
     },
     {
       "id": "ex-b-1317",
+      "type": "speak",
+      "payload": {
+        "kind": "speak",
+        "prompt_ru": "Что бы ты сделал?",
+        "phrase_id": "ph-b-1367"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "speech_threshold": 0.85
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-b-1318",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Это довольно хорошо.",
+        "phrase_id": "ph-b-1361"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-b-1319",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Мост построен в 1900 году.",
+        "phrase_id": "ph-b-1343"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-b-1320",
+      "type": "translate",
+      "payload": {
+        "kind": "translate",
+        "prompt_ru": "Тебе лучше поторопиться.",
+        "phrase_id": "ph-b-1359"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-b-1321",
       "type": "speak",
       "payload": {
         "kind": "speak",
@@ -24126,12 +24200,12 @@
       }
     },
     {
-      "id": "ex-b-1318",
+      "id": "ex-b-1322",
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Past Simple: Я закончил вчера.",
-        "phrase_id": "ph-b-1335"
+        "prompt_ru": "Если бы было время, я бы путешествовал.",
+        "phrase_id": "ph-b-1339"
       },
       "answer": {
         "normalization": "default",
@@ -24143,12 +24217,12 @@
       }
     },
     {
-      "id": "ex-b-1319",
+      "id": "ex-b-1323",
       "type": "translate",
       "payload": {
         "kind": "translate",
-        "prompt_ru": "Я был в Париже.",
-        "phrase_id": "ph-b-1364"
+        "prompt_ru": "Давай поужинаем вне дома.",
+        "phrase_id": "ph-b-1371"
       },
       "answer": {
         "normalization": "default",
@@ -24160,7 +24234,7 @@
       }
     },
     {
-      "id": "ex-b-1320",
+      "id": "ex-b-1324",
       "type": "translate",
       "payload": {
         "kind": "translate",
@@ -24177,81 +24251,12 @@
       }
     },
     {
-      "id": "ex-b-1321",
-      "type": "speak",
-      "payload": {
-        "kind": "speak",
-        "prompt_ru": "Я привык.",
-        "phrase_id": "ph-b-1342"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow",
-        "speech_threshold": 0.85
-      },
-      "meta": {
-        "skill": "speaking",
-        "xp": 4
-      }
-    },
-    {
-      "id": "ex-b-1322",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Мост построен в 1900 году.",
-        "phrase_id": "ph-b-1343"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-b-1323",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Я ездил в Париж в прошлом году.",
-        "phrase_id": "ph-b-1365"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
-      "id": "ex-b-1324",
-      "type": "translate",
-      "payload": {
-        "kind": "translate",
-        "prompt_ru": "Я боюсь летать.",
-        "phrase_id": "ph-b-1346"
-      },
-      "answer": {
-        "normalization": "default",
-        "typo": "allow"
-      },
-      "meta": {
-        "skill": "grammar",
-        "xp": 2
-      }
-    },
-    {
       "id": "ex-b-1325",
       "type": "speak",
       "payload": {
         "kind": "speak",
-        "prompt_ru": "Решать тебе.",
-        "phrase_id": "ph-b-1375"
+        "prompt_ru": "Самолёт взлетает в шесть.",
+        "phrase_id": "ph-b-1352"
       },
       "answer": {
         "normalization": "default",
@@ -24305,7 +24310,7 @@
       "payload": {
         "kind": "verb_tense",
         "sentence_with_gap": "English is ___ here.",
-        "marker": "V3 от speak",
+        "marker": "пассив, наст. время",
         "gap_answers": ["spoken"]
       },
       "answer": {
@@ -24388,7 +24393,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-1351"
+        "phrase_id": "ph-b-1359"
       },
       "answer": {
         "normalization": "default",
@@ -24404,7 +24409,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-1342"
+        "phrase_id": "ph-b-1346"
       },
       "answer": {
         "normalization": "default",
@@ -24420,7 +24425,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-1346"
+        "phrase_id": "ph-b-1335"
       },
       "answer": {
         "normalization": "default",
@@ -24436,7 +24441,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-1341"
+        "phrase_id": "ph-b-1345"
       },
       "answer": {
         "normalization": "default",
@@ -24452,7 +24457,7 @@
       "type": "dictation",
       "payload": {
         "kind": "dictation",
-        "phrase_id": "ph-b-1361"
+        "phrase_id": "ph-b-1374"
       },
       "answer": {
         "normalization": "default",
@@ -24468,7 +24473,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-1362"
+        "phrase_id": "ph-b-1359"
       },
       "answer": {
         "normalization": "default",
@@ -24485,7 +24490,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-1349"
+        "phrase_id": "ph-b-1347"
       },
       "answer": {
         "normalization": "default",
@@ -24502,7 +24507,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-1355"
+        "phrase_id": "ph-b-1350"
       },
       "answer": {
         "normalization": "default",
@@ -24519,7 +24524,7 @@
       "type": "shadowing",
       "payload": {
         "kind": "shadowing",
-        "phrase_id": "ph-b-1353"
+        "phrase_id": "ph-b-1367"
       },
       "answer": {
         "normalization": "default",
@@ -25247,7 +25252,7 @@
       "payload": {
         "kind": "answer_question",
         "question_en": "Do you enjoy cooking?",
-        "phrase_id": "ph-b-0709"
+        "phrase_id": "ph-b-0796"
       },
       "answer": {
         "normalization": "default",
@@ -25265,13 +25270,13 @@
       "payload": {
         "kind": "find_error",
         "wrong_en": "I enjoy to read books.",
-        "hint_ru": "Я с удовольствием читаю.",
-        "phrase_id": "ph-b-0708"
+        "hint_ru": "Я с удовольствием читаю книги.",
+        "phrase_id": "ph-b-0796"
       },
       "answer": {
         "normalization": "default",
         "typo": "allow",
-        "accepted": ["I enjoy reading."]
+        "accepted": ["I enjoy reading books."]
       },
       "meta": {
         "skill": "grammar",
@@ -25301,7 +25306,7 @@
       "type": "find_error",
       "payload": {
         "kind": "find_error",
-        "wrong_en": "The bridge was build in 1900.",
+        "wrong_en": "This bridge was build in 1900.",
         "hint_ru": "Этот мост построен в 1900 году.",
         "phrase_id": "ph-b-0928"
       },
@@ -25375,7 +25380,7 @@
       "type": "find_error",
       "payload": {
         "kind": "find_error",
-        "wrong_en": "It's cold, is it?",
+        "wrong_en": "Nice weather, is it?",
         "hint_ru": "Хорошая погода, не так ли?",
         "phrase_id": "ph-b-1024"
       },
@@ -25431,8 +25436,8 @@
       "type": "answer_question",
       "payload": {
         "kind": "answer_question",
-        "question_en": "Where is the station?",
-        "phrase_id": "ph-b-0991"
+        "question_en": "What did she ask?",
+        "phrase_id": "ph-b-0980"
       },
       "answer": {
         "normalization": "default",

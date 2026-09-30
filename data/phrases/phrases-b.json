@@ -6805,7 +6805,7 @@
     {
       "id": "ph-b-0681",
       "text_en": "Nothing that I do is right.",
-      "translation_ru": "Ничто из того, что я делаю, не правильно.",
+      "translation_ru": "Ничто из того, что я делаю, неправильно.",
       "grammar_point_id": "gp-b-15",
       "variants": ["Nothing that I do is right."],
       "audio": {
@@ -7655,7 +7655,7 @@
     {
       "id": "ph-b-0766",
       "text_en": "Where do I get off for the museum?",
-      "translation_ru": "Где мне выйти до музея?",
+      "translation_ru": "Где мне выйти к музею?",
       "grammar_point_id": "gp-b-17",
       "variants": ["Where do I get off for the museum?"],
       "audio": {
@@ -7725,7 +7725,7 @@
     {
       "id": "ph-b-0773",
       "text_en": "The flight was smooth.",
-      "translation_ru": "Полет прошёл спокойно.",
+      "translation_ru": "Полёт прошёл спокойно.",
       "grammar_point_id": "gp-b-17",
       "variants": ["The flight was smooth."],
       "audio": {
@@ -11555,7 +11555,7 @@
     {
       "id": "ph-b-1156",
       "text_en": "Let's eat out tonight.",
-      "translation_ru": "Давай поедим вне дома сегодня.",
+      "translation_ru": "Давай поужинаем вне дома сегодня.",
       "grammar_point_id": "gp-b-25",
       "variants": ["Let's eat out tonight."],
       "audio": {
@@ -11785,7 +11785,7 @@
     {
       "id": "ph-b-1179",
       "text_en": "I ran into my ex-boss.",
-      "translation_ru": "Я наткнулся на бывшего начальника.",
+      "translation_ru": "Я случайно встретил бывшего начальника.",
       "grammar_point_id": "gp-b-25",
       "variants": ["I ran into my ex-boss."],
       "audio": {
@@ -12385,7 +12385,7 @@
     {
       "id": "ph-b-1239",
       "text_en": "You must be joking!",
-      "translation_ru": "Ты, должно быть, шутишь!",
+      "translation_ru": "Ты шутишь, что ли?",
       "grammar_point_id": "gp-b-26",
       "variants": ["You must be joking!"],
       "audio": {
@@ -12704,10 +12704,10 @@
     },
     {
       "id": "ph-b-1271",
-      "text_en": "It's terribly sorry.",
-      "translation_ru": "Ужасно жаль.",
+      "text_en": "I'm so sorry about that.",
+      "translation_ru": "Мне очень жаль.",
       "grammar_point_id": "gp-b-28",
-      "variants": ["It's terribly sorry."],
+      "variants": ["I'm so sorry about that."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-1271.opus"
       }
@@ -12724,10 +12724,10 @@
     },
     {
       "id": "ph-b-1273",
-      "text_en": "It's frightfully good.",
-      "translation_ru": "Ужасно хорошо.",
+      "text_en": "It's incredibly good.",
+      "translation_ru": "Это невероятно хорошо.",
       "grammar_point_id": "gp-b-28",
-      "variants": ["It's frightfully good."],
+      "variants": ["It's incredibly good."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-1273.opus"
       }
@@ -12985,7 +12985,7 @@
     {
       "id": "ph-b-1299",
       "text_en": "Let's eat out tonight.",
-      "translation_ru": "Давай поедим вне дома сегодня.",
+      "translation_ru": "Давай поужинаем вне дома сегодня.",
       "grammar_point_id": "gp-b-29",
       "variants": ["Let's eat out tonight."],
       "audio": {
@@ -13055,7 +13055,7 @@
     {
       "id": "ph-b-1306",
       "text_en": "You must be joking!",
-      "translation_ru": "Ты, должно быть, шутишь!",
+      "translation_ru": "Ты шутишь, что ли?",
       "grammar_point_id": "gp-b-29",
       "variants": ["You must be joking!"],
       "audio": {
@@ -13334,60 +13334,60 @@
     },
     {
       "id": "ph-b-1334",
-      "text_en": "Present Perfect: I have finished.",
-      "translation_ru": "Present Perfect: Я закончил.",
+      "text_en": "I have finished my work.",
+      "translation_ru": "Я закончил работу.",
       "grammar_point_id": "gp-b-30",
-      "variants": ["Present Perfect: I have finished."],
+      "variants": ["I have finished my work."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-1334.opus"
       }
     },
     {
       "id": "ph-b-1335",
-      "text_en": "Past Simple: I finished yesterday.",
-      "translation_ru": "Past Simple: Я закончил вчера.",
+      "text_en": "I finished it yesterday.",
+      "translation_ru": "Я закончил это вчера.",
       "grammar_point_id": "gp-b-30",
-      "variants": ["Past Simple: I finished yesterday."],
+      "variants": ["I finished it yesterday."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-1335.opus"
       }
     },
     {
       "id": "ph-b-1336",
-      "text_en": "PPC: I have been learning for two years.",
-      "translation_ru": "PPC: Я учусь уже два года.",
+      "text_en": "I have been learning it for two years.",
+      "translation_ru": "Я учу его уже два года.",
       "grammar_point_id": "gp-b-30",
-      "variants": ["PPC: I have been learning for two years."],
+      "variants": ["I have been learning it for two years."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-1336.opus"
       }
     },
     {
       "id": "ph-b-1337",
-      "text_en": "Past Perfect: I had finished before you came.",
-      "translation_ru": "Past Perfect: Я закончил до твоего прихода.",
+      "text_en": "I had finished it before you came.",
+      "translation_ru": "Я закончил это до твоего прихода.",
       "grammar_point_id": "gp-b-30",
-      "variants": ["Past Perfect: I had finished before you came."],
+      "variants": ["I had finished it before you came."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-1337.opus"
       }
     },
     {
       "id": "ph-b-1338",
-      "text_en": "Conditional 1: If it rains, I'll stay.",
-      "translation_ru": "Условное 1: Если пойдёт дождь, я останусь.",
+      "text_en": "If it rains, I'll stay.",
+      "translation_ru": "Если пойдёт дождь, я останусь.",
       "grammar_point_id": "gp-b-30",
-      "variants": ["Conditional 1: If it rains, I'll stay."],
+      "variants": ["If it rains, I'll stay."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-1338.opus"
       }
     },
     {
       "id": "ph-b-1339",
-      "text_en": "Conditional 2: If I had time, I would travel.",
-      "translation_ru": "Условное 2: Если бы было время, я бы путешествовал.",
+      "text_en": "If I had time, I would travel.",
+      "translation_ru": "Если бы было время, я бы путешествовал.",
       "grammar_point_id": "gp-b-30",
-      "variants": ["Conditional 2: If I had time, I would travel."],
+      "variants": ["If I had time, I would travel."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-1339.opus"
       }
@@ -13705,7 +13705,7 @@
     {
       "id": "ph-b-1371",
       "text_en": "Let's eat out tonight.",
-      "translation_ru": "Давай поедим вне дома.",
+      "translation_ru": "Давай поужинаем вне дома.",
       "grammar_point_id": "gp-b-30",
       "variants": ["Let's eat out tonight."],
       "audio": {

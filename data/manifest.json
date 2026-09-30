@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-30T05:32:38Z",
+  "generated_at": "2026-09-30T05:47:33Z",
   "files": [
     {
       "path": "lessons/exercises-b.json",
       "kind": "exercises",
       "schema_version": 1,
       "items": 1400,
-      "sha256": "82dceb35995225f689f95cfc9130ad5b411c880365b3fc624582e235d63a4a76"
+      "sha256": "3cae9492daf375c551b5d977f1ceed78b458897e87b161cdf6efcaf7c61ac3a3"
     },
     {
       "path": "lessons/exercises-c.json",
@@ -133,7 +133,7 @@
       "kind": "phrases",
       "schema_version": 1,
       "items": 1377,
-      "sha256": "fbc198859f2e1c36b7577055d9a78cfebcda4a3f661a80d5bf2d5ec6eb5b4510"
+      "sha256": "8cc2a8978a24aca99026855f999c8476132d42d204613408a8d8cbe18e458580"
     },
     {
       "path": "phrases/phrases-c.json",
