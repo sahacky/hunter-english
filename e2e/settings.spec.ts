@@ -41,3 +41,14 @@ test('lesson exit: button with confirm returns to dashboard', async ({ page }) =
   await page.getByRole('button', { name: 'Выйти' }).click()
   await expect(page.getByText('[Ежедневный квест]')).toBeVisible({ timeout: 8000 })
 })
+
+// Implements: plan://M18 — GAP-8 specs/09 §4.8 (TC-E2E-07: экспорт-файл доступен)
+test('settings screen: export triggers a JSON download (plan://M18)', async ({ page }) => {
+  await page.goto('/#/settings')
+  await expect(page.getByRole('heading', { name: 'Данные' })).toBeVisible({ timeout: 8000 })
+
+  const downloadPromise = page.waitForEvent('download', { timeout: 10000 })
+  await page.getByRole('button', { name: /Экспорт прогресса/ }).click()
+  const download = await downloadPromise
+  expect(download.suggestedFilename()).toMatch(/hunter-english.*\.json$/)
+})

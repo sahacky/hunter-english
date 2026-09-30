@@ -4,6 +4,7 @@
 import { createEmptyCard } from 'ts-fsrs'
 import type { CardState, Note } from '../domain/srs/types'
 import { WORD_CARD_ORDER } from '../domain/srs/types'
+import { assertEnvelope } from './envelope'
 
 /** Статья data/words/*.json — схема specs/05 §2 (kind: words). */
 export interface WordItem {
@@ -74,7 +75,10 @@ function toNote(item: WordItem): Note {
 /** Все заметки слов NGSL (~3 989), chunk-файлы грузятся параллельно. */
 export async function loadWordNotes(): Promise<Note[]> {
   const files = await Promise.all(Object.values(wordModules).map((load) => load()))
-  return files.flatMap((file) => file.items.map(toNote))
+  return files.flatMap((file, i) => {
+    assertEnvelope(file, 'words', `data/words #${i}`)
+    return file.items.map(toNote)
+  })
 }
 
 /** card_id по конвенции `<entity_id>.<тип>` (specs/03 §2, решение M1). */

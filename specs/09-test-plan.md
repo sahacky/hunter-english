@@ -62,10 +62,10 @@
 | TC-CHK-04 | I'm ↔ I am — двойное сравнение расширенной формы | П | ✔ checker.test |
 | TC-CHK-05 | Опечатка в пределах typoLimit → верно с опечаткой (полный XP) | Г | ✔ checker.test |
 | TC-CHK-06 | Опечатка за пределом → неверно | Г | ✔ checker.test |
-| TC-CHK-07 | typo=exact (cloze/verb_tense): одна опечатка = ошибка (exactTypos) | Г | **GAP-3** |
+| TC-CHK-07 | typo=exact (cloze/verb_tense): одна опечатка = ошибка (exactTypos) | Г | ✔ checker.test (M18) |
 | TC-CHK-08 | Ловушки-оверрайды: ЛТ-06/17/19 строгий вердикт при «похожем» ответе | Н | ✔ checker.test |
 | TC-CHK-09 | Ответ-вариант фразы (variants[]) принимается как эталон | П | ✔ checker.test |
-| TC-CHK-10 | Диктант: judgeDictation, пропущенный артикль (≤2) прощается | Г | **GAP-3** |
+| TC-CHK-10 | Диктант: judgeDictation, пропущенный артикль (≤2) прощается | Г | ✔ checker.test (M18) |
 | TC-CHK-11 | Голос: порог 0.85/0.80, артикли исключены из обеих сторон | Г | ✔ checker.test (judgeVoice) |
 | TC-CHK-12 | Голос ниже порога → «повтори» (не error) | Н | ✔ checker.test |
 | TC-CHK-13 | Пустой ответ / только пробелы → неверно, без краха | Н | частично (normalize.test — косвенно; прямой кейс judge('') — GAP-9) |
@@ -88,7 +88,7 @@
 | TC-SRS-08 | card_id = `<entity_id>.<тип>`; правило rule-1 (en-ru первой) | П | ✔ scheduler.test + words.test |
 | TC-SRS-09 | Просроченные карты (даты в прошлом/будущем) — не NaN | Г | ✔ scheduler.test |
 | TC-SRS-10 | Пробуждение обратных карточек ≤5/день (wokenToday) | Г | ✔ scheduler.test |
-| TC-SRS-11 | Параметры FSRS: retention 0.90, max interval 36500 | П | **GAP-3** (в коде есть, теста параметров нет) |
+| TC-SRS-11 | Параметры FSRS: retention 0.90, max interval 36500 | П | ✔ scheduler.test (M18) |
 
 ### 4.3 Урок (TC-LES) — specs/02 §2, §5
 
@@ -148,8 +148,8 @@
 | TC-CONT-03 | Уникальность id внутри типа; манифест strict (FAIL на расхождение) | Н | ✔ validate:data (постмортем M3-ревью) |
 | TC-CONT-04 | Аудио: файл по каждой ссылке существует, в манифесте | Н | ✔ validate:data |
 | TC-CONT-05 | vocab_band: известный list; полосы уроков одного ранга не пересекаются | Г | ✔ validate:data (enum); непересечение — билдер (round-trip ✔ lessons.test) |
-| TC-CONT-06 | Лоадеры: ленивые чанки грузятся; проверка schema_version при загрузке | Н | частично: чанки ✔ words/lessons.test; проверка версии — GAP-7 |
-| TC-CONT-07 | 404-поведение лоадеров при отсутствии файла (деградация, не белый экран) | Н | GAP-7 |
+| TC-CONT-06 | Лоадеры: ленивые чанки грузятся; проверка schema_version при загрузке | Н | ✔ assertEnvelope-гварды в words/lessons/phrasebook/quotes + envelope.test (M18) |
+| TC-CONT-07 | 404-поведение лоадеров при отсутствии файла (деградация, не белый экран) | Н | закрыто иначе (M18): чанки бандлятся в dist, «отсутствующего файла» в рантайме нет; рассинхрон версий ловит assertEnvelope |
 | TC-CONT-08 | Целостность после регенерации билдером (round-trip): количество уроков/фраз по рангам | Г | ✔ lessons.test |
 
 ### 4.7 Экраны (TC-UI) — specs/07
@@ -160,16 +160,16 @@
 | TC-UI-02 | /srs: блок 20 → пауза → продолжить → финал | Г | ✔ SrsScreen.test |
 | TC-UI-03 | /srs: гонка двойного клика → один ответ | Н | ✔ SrsScreen.test |
 | TC-UI-04 | /srs: режим 4 кнопок + превью интервалов; 2 — подпись про настройки | Г | ✔ SrsScreen.test |
-| TC-UI-05 | /srs: Esc-подтверждение «прервать» ✔; beforeunload в активной сессии | Н | частично: Esc ✔ SrsScreen.test; beforeunload — GAP-4 |
+| TC-UI-05 | /srs: Esc-подтверждение «прервать» ✔; beforeunload в активной сессии | Н | ✔ SrsScreen.test (M18: оба) |
 | TC-UI-06 | /lesson: все типы упражнений рендерятся и проверяются | П | ✔ LessonScreen.test + e2e rank-* |
 | TC-UI-07 | /lesson: «Я был прав» → dispute, точность корректируется | Н | ✔ LessonScreen.test |
 | TC-UI-08 | /lesson: голос с фолбэком текстом/self_reported при недоступном микрофоне | Г | ✔ LessonScreen.test |
 | TC-UI-09 | /lesson: выход-гард «прогресс сохранён» (кнопка + beforeunload) | Н | частично: кнопка ✔ e2e settings.spec; beforeunload — GAP-4 |
-| TC-UI-10 | Врата: intro→exam (без фидбэка до конца секции)→result (пороги/пересдача слабых секций) | Г | частично: intro+старт ✔ RanksGates.test + e2e; result-фаза и пересдача — GAP-5 |
+| TC-UI-10 | Врата: intro→exam (без фидбэка до конца секции)→result (пороги/пересдача слабых секций) | Г | ✔ RanksGates.test (M18: полный проход 65 заданий → result → пересдача) |
 | TC-UI-11 | /quotes: галерея, фильтр «понятные» (card_state ≥90%), раскраска слов, поповер «в колоду» | П | ✔ QuotesScreen.test + e2e |
 | TC-UI-12 | /quotes: cloze по top1000, «понял без перевода» | П | ✔ QuotesScreen.test |
-| TC-UI-13 | /phrasebook: замки по рангу (список глав) ✔; сценка с ответами текстом/голосом | П | частично: список/замки ✔ e2e rank-c/d + лоадер lessons.test; сценка-ответы — GAP-5 |
-| TC-UI-14 | /settings: тема/локаль ✔ live; SRS-кнопки ✔; экспорт-пейлоад ✔; **сброс с подтверждением** | П/Н | частично: тема/локаль/экспорт ✔ SettingsScreen.test + e2e; сброс (деструктивная операция!) — GAP-3; скорость/анимации live — GAP-9 |
+| TC-UI-13 | /phrasebook: список глав ✔; сценка с ответами текстом/голосом | П | ✔ PhrasebookScreen.test (M18; найден и починен баг: финал-экран был недостижим — 404 вместо «Ситуация пройдена») |
+| TC-UI-14 | /settings: тема/локаль ✔ live; SRS-кнопки ✔; экспорт-пейлоад ✔; **сброс с подтверждением** ✔ (M18: таблицы очищены, meta сохранена) | П/Н | частично: скорость/анимации live — GAP-9 |
 | TC-UI-15 | Дашборд: квест-окно [N/M] ✔; таймер до 4:00; «Начать день»; цитата дня (seed) | П | частично: квест-окно/навигация ✔ App.test + e2e smoke; таймер/цитата дня/«Начать день» — GAP-9 |
 | TC-UI-16 | Тосты: квест/ранг-ап/заморозка; aria-live polite | Н | ✔ ToastHost.test |
 | TC-UI-17 | 404-маршрут: nav.notFound | Н | ✔ App.test |
@@ -187,22 +187,22 @@
 | TC-E2E-02 | Урок ранга E целиком (шаги 1–7, финал, проход по ошибкам) | ✔ smoke.spec (M11) |
 | TC-E2E-03 | Уроки каждого контент-ранга открываются (D/C/B/A по 1–2 урока, Врата чеклист) | ✔ rank-d/c/b/a.spec |
 | TC-E2E-04 | PWA: manifest 200, sw.js 200, иконки, офлайн app shell + кэш аудио | ✔ pwa.spec |
-| TC-E2E-05 | Гость без env: /#/login показывает гостевой режим; приложение не ломается | ✔ auth.spec (гостевой режим; проверку отсутствия чанка supabase-js — GAP-8) |
+| TC-E2E-05 | Гость без env: /#/login гостевой режим; приложение не ломается; чанк supabase-js не грузится | ✔ auth.spec (M18: + network-проверка чанка) |
 | TC-E2E-06 | Цитаты: галерея → тайтл → цитата → cloze | ✔ quotes.spec |
-| TC-E2E-07 | Настройки: смена темы/локали; **экспорт-файл доступен** | частично: тема/локаль ✔ settings.spec; экспорт — GAP-8 |
+| TC-E2E-07 | Настройки: смена темы/локали; **экспорт-файл доступен** (download) | ✔ settings.spec (M18) |
 | TC-E2E-08 | Вход magic link (полный флоу с мок-Supabase) | GAP-6 |
 
 ### 4.9 i18n / доступность / безопасность (TC-XXX)
 
 | ID | Кейс | Тип | Покрытие |
 |---|---|---|---|
-| TC-I18N-01 | Все ключи ru/en синхронны (нет missing в обеих локалах). Фиксированная команда сверки: `node -e "const a=require('./src/locales/ru.json'),b=require('./src/locales/en.json');const k=o=>Object.keys(o).flatMap(x=>typeof o[x]==='object'?Object.keys(o[x]).map(y=>x+'.'+y):[x]);const A=new Set(k(a));console.log('только ru:',k(b).filter(x=>!A.has(x)));const B=new Set(k(b));console.log('только en:',k(a).filter(x=>!B.has(x))))"` (пустые списки = ок) | П | регламентно (не в CI) — GAP-9 (опц.: шаг CI) |
+| TC-I18N-01 | Все ключи ru/en синхронны — шаг CI `npm run check:i18n` (scripts/check-i18n.mjs, M18). Ручная команда сверки: `node -e "const a=require('./src/locales/ru.json'),b=require('./src/locales/en.json');const k=o=>Object.keys(o).flatMap(x=>typeof o[x]==='object'?Object.keys(o[x]).map(y=>x+'.'+y):[x]);const A=new Set(k(a));console.log('только ru:',k(b).filter(x=>!A.has(x)));const B=new Set(k(b));console.log('только en:',k(a).filter(x=>!B.has(x))))"` (пустые списки = ок) | П | регламентно (не в CI) — GAP-9 (опц.: шаг CI) |
 | TC-I18N-02 | Переключение локали live; персистится после перезагрузки | П | частично: live ✔ e2e settings; persistence после reload — GAP-9 |
 | TC-I18N-03 | Хардкод-строки интерфейса отсутствуют (только t()) | Н | ревью + чеклист; ESLint-правило — GAP-9 (опц.) |
 | TC-A11Y-01 | Клавиатурная навигация: Space/1–4/R/S/Esc/Enter/Backspace | П | ✔ screen-тесты |
 | TC-A11Y-02 | aria: счётчики очереди ✔, toast polite ✔; волна микрофона aria | П | частично: счётчики/тост ✔; волна — GAP-9 |
 | TC-A11Y-03 | Тач-цели ≥44×44 на мобиле | Г | GAP-8 (визуальная проверка; автомат — опц.) |
-| TC-A11Y-04 | Space на сфокусированной кнопке — её активация, не переворот карточки (onControl, постмортем M10) | Г | GAP-4 (гарды в коде есть) |
+| TC-A11Y-04 | Space на сфокусированной кнопке — её активация, не переворот карточки (onControl, постмортем M10) | Г | ✔ SrsScreen.test (M18) |
 | TC-SEC-01 | npm audit: 0 high/critical | Н | ✔ CI-гейт |
 | TC-SEC-02 | Секреты не в git: .env* в ignore, diff-ревью чеклист | Н | ✔ чеклист коммита |
 | TC-SEC-03 | RLS-политики Supabase: аноним не читает чужие схемы | Н | GAP-6 (sql-тесты — с активацией Supabase) |
@@ -212,7 +212,7 @@
 
 | ID | Бюджет | Контроль |
 |---|---|---|
-| TC-PERF-01 | Сборка: чанк гостя без supabase-js (lazy-import) | частично: lazy-импорт ✔ sync.test; e2e-проверка чанка — GAP-8 |
+| TC-PERF-01 | Сборка: чанк гостя без supabase-js (lazy-import) | ✔ sync.test + e2e network-проверка (M18) |
 | TC-PERF-02 | Аудио не в precache SW (23 МБ+) | ✔ pwa.spec + Watch out M9 |
 | TC-PERF-03 | mergeLww пачкой (без квадратичной деградации) | ✔ sync.test (постмортем M13) |
 | TC-PERF-04 | Unit-набор < 60 с на CI (замер по логам CI); e2e — локально < 3 мин (замер вручную при прогоне §6; вынос e2e на CI — отдельная задача) | мониторинг CI-времени |
@@ -255,12 +255,12 @@
 
 | GAP | Что не покрыто | Приоритет | Веха |
 |---|---|---|---|
-| GAP-3 | Поведенческие контракты без юнит-тестов: judgeDictation (артикли), exactTypos (typo=exact), параметры FSRS (retention/max-interval), сброс прогресса в /settings (деструктивная операция), beforeunload в SRS/уроке, onControl-Space | **высокий** | S2 |
-| GAP-4 | beforeunload-гарды и Space-на-кнопке: прямые юнит-кейсы (код есть, тестов нет) | высокий | S2 |
-| GAP-5 | Экранные фазы: result+пересдача Врат, сценка разговорника с ответами | высокий | S2 |
+| ~~GAP-3~~ | judgeDictation, exactTypos, FSRS-параметры, сброс /settings, beforeunload, onControl-Space | ~~высокий~~ | **закрыт M18** |
+| ~~GAP-4~~ | beforeunload-гарды и Space-на-кнопке | ~~высокий~~ | **закрыт M18 (влит в GAP-3)** |
+| ~~GAP-5~~ | Экранные фазы: result+пересдача Врат, сценка разговорника | ~~высокий~~ | **закрыт M18; найден баг финала разговорника — починен** |
 | GAP-6 | Supabase: e2e входа с мок-сервером, SQL-тесты RLS, серверный suppress_stale_update | средний | S3 |
-| GAP-7 | Контент-лоадеры: проверка schema_version, 404-деградация отсутствующего файла | средний | S2 |
-| GAP-8 | E2E: экспорт в settings.spec, проверка чанка supabase-js, reduced-motion, autoUpdate-reload, deep-links (?step=, ?stage=), тач-цели | средний | S2/S3 |
+| ~~GAP-7~~ | Контент-лоадеры: schema_version (assertEnvelope), 404-деградация | ~~средний~~ | **закрыт M18** |
+| GAP-8 | E2E: ~~экспорт~~, ~~чанк supabase-js~~ закрыты M18; остались reduced-motion, autoUpdate-reload, deep-links (?stage=), тач-цели | средний | S2/S3 |
 | GAP-9 | Мелкое: judge(''), стресс/unicode-ввод, Relearning-возврат, слияние секций пересдачи, online-триггер синка, автосинк-интервал, скорость/анимации live, таймер 4:00/цитата дня/«Начать день», safe-area, FOUC, волна aria, I18N-сверка в CI, I18N-persistence после reload, ESLint-правило i18n | низкий/средний | S2 (по мере) |
 
 Решение о сроках закрытия GAP — за разработчиком (протокол: предложить добавление в PLANS отдельной задачей).
@@ -270,4 +270,5 @@
 | Дата | Изменение | Причина |
 |------|-----------|---------|
 | 2026-09-30 | Создан тест-план 1.0 (уровни, кейсы, flaky-политика, регламент, GAP) | plan://M17#17.2, постмортем a45b3a5 |
+| 2026-09-30 | M18: закрыты GAP-3/4/5/7 и часть 8/9 (+20 unit, +2 e2e: 269/49); e2e теперь в CI (джоба с chromium и артефактом отчёта) + шаг check:i18n; **найден и починен баг: финал разговорника показывал 404** (порядок проверок dialogIndex/-2) | plan://M18, задача разработчика «закрой баги и cicd» |
 | 2026-09-30 | Версия 1.1 по ревью суб-агента: аудит трассировки (~15 ложных ✔ → частично/GAP: judgeDictation, exactTypos, FSRS-параметры, beforeunload, result Врат, фразбук-сценка, сброс, reduced-motion, экспорт e2e, чанк supabase-js, onControl, FOUC и др.); flood-guard 51–120→8/121–200→4/>200→0; 24 unit-файла; e2e-бюджет → локально; добавлены TC-DATA-13/14, TC-UI-21/22, TC-PERF-05; GAP переписан вехами S1–S3 (9 групп) | plan://M17#17.3, ревью тест-плана |

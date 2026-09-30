@@ -1,7 +1,7 @@
 // Implements: plan://M5#5.1 — unit-тесты алгоритма проверки (specs/02 §4.3–§4.8)
 import { describe, expect, it } from 'vitest'
 import { alignWords, countTypos, countWrong } from './align'
-import { checkText, judge, judgeVoice, STRICT_TYPO_TRAPS } from './checker'
+import { checkText, judge, judgeDictation, judgeVoice, STRICT_TYPO_TRAPS } from './checker'
 import { compareWords, levenshtein, typoLimit } from './levenshtein'
 import type { CheckTask } from './types'
 
@@ -235,5 +235,42 @@ describe('judge — сводный вердикт (specs/02 §4.7)', () => {
     const result = judge('I go to home', task(['I go home']))
     expect(result.verdict).toBe('wrong')
     expect(result.ref).toBe('I go home')
+  })
+})
+
+// Implements: plan://M18 — GAP-3 specs/09 §4.1 (TC-CHK-07, TC-CHK-10)
+describe('exactTypos: typo=exact — опечатка не прощается (specs/02 §4.4)', () => {
+  it('точное совпадение → correct', () => {
+    expect(judge('finished', task(['finished'], { exactTypos: true })).verdict).toBe('correct')
+  })
+
+  it('одна опечатка → wrong (cloze/verb_tense)', () => {
+    expect(judge('finshed', task(['finished'], { exactTypos: true })).verdict).toBe('wrong')
+  })
+
+  it('без флага та же опечатка → correct_typo', () => {
+    expect(judge('finshed', task(['finished'])).verdict).toBe('correct_typo')
+  })
+})
+
+describe('judgeDictation: пропущенные артикли ≤2 прощаются (specs/02 §4.4 диктант)', () => {
+  it('один пропущенный артикль → correct_typo', () => {
+    const verdict = judgeDictation('house is big', task(['The house is big']))
+    expect(verdict.verdict).toBe('correct_typo')
+  })
+
+  it('два пропущенных артикля → correct_typo', () => {
+    const verdict = judgeDictation('I see dog in park', task(['I see a dog in the park']))
+    expect(verdict.verdict).toBe('correct_typo')
+  })
+
+  it('три пропущенных артикля → wrong (лимит ≤2)', () => {
+    const verdict = judgeDictation('cat on mat in hall', task(['The cat on the mat in the hall']))
+    expect(verdict.verdict).toBe('wrong')
+  })
+
+  it('пропущенное знаменательное слово → wrong (артикли ни при чём)', () => {
+    const verdict = judgeDictation('The house is', task(['The house is big']))
+    expect(verdict.verdict).toBe('wrong')
   })
 })

@@ -2,6 +2,7 @@
 // Контент живёт в data/lessons и data/phrases; ленивые чанки — как в words.ts.
 // Домен (specs/02) работает с логическими шагами; здесь — связка payload → phrase.
 
+import { assertEnvelope } from './envelope'
 import { groupIntoSteps } from '../domain/lesson/steps'
 import type { LessonStep } from '../domain/lesson/types'
 import type { Note } from '../domain/srs/types'
@@ -111,7 +112,10 @@ export function lessonToCourseId(lessonId: string): string {
 /** Все уроки всех рангов (для `/#/path`); файлы-чанки грузятся параллельно. */
 export async function loadLessons(): Promise<LessonItem[]> {
   const files = await Promise.all(Object.values(lessonModules).map((load) => load()))
-  return files.flatMap((file) => file.items)
+  return files.flatMap((file, i) => {
+    assertEnvelope(file, 'lessons', `data/lessons/lessons #${i}`)
+    return file.items
+  })
 }
 
 /** Урок по id (напр. `les-e-01`); null — урока нет в данных. */
@@ -123,13 +127,19 @@ export async function loadLesson(lessonId: string): Promise<LessonItem | null> {
 /** Все упражнения всех рангов; файлы-чанки грузятся параллельно. */
 export async function loadExercises(): Promise<ExerciseItem[]> {
   const files = await Promise.all(Object.values(exerciseModules).map((load) => load()))
-  return files.flatMap((file) => file.items)
+  return files.flatMap((file, i) => {
+    assertEnvelope(file, 'exercises', `data/lessons/exercises #${i}`)
+    return file.items
+  })
 }
 
 /** Все фразы всех рангов; файлы-чанки грузятся параллельно. */
 export async function loadPhrases(): Promise<PhraseItem[]> {
   const files = await Promise.all(Object.values(phraseModules).map((load) => load()))
-  return files.flatMap((file) => file.items)
+  return files.flatMap((file, i) => {
+    assertEnvelope(file, 'phrases', `data/phrases #${i}`)
+    return file.items
+  })
 }
 
 /** Задание урока, связанное с эталонной фразой (specs/05 §3: payload.phrase_id). */
@@ -281,7 +291,10 @@ const quoteModules = import.meta.glob('/data/quotes/*.json') as Record<
 /** Все цитаты всех тайтлов. */
 export async function loadQuotes(): Promise<QuoteItem[]> {
   const files = await Promise.all(Object.values(quoteModules).map((load) => load()))
-  return files.flatMap((file) => file.items)
+  return files.flatMap((file, i) => {
+    assertEnvelope(file, 'quotes', `data/quotes #${i}`)
+    return file.items
+  })
 }
 
 /** Каталог ловушек: slug → запись (для CheckTask ловушек, specs/02 §4.3/§4.7). */

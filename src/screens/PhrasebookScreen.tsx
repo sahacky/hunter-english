@@ -105,6 +105,17 @@ export function PhrasebookSituationScreen() {
       </section>
     )
   }
+  // фикс M18 (GAP-5, найден тестом): финал проверяется ДО 404 — иначе
+  // dialogIndex=-2 (сценарий пройден) попадает в ветку «!dialog» и
+  // показывает 404 вместо экрана завершения
+  if (dialogIndex === -2) {
+    return (
+      <section className="panel">
+        <h2>{t('phrasebook.doneTitle')}</h2>
+        <p className="dim">{t('phrasebook.doneText')}</p>
+      </section>
+    )
+  }
   if (!dialog) {
     return (
       <section className="panel">
@@ -154,15 +165,6 @@ export function PhrasebookSituationScreen() {
     } else {
       setDialogIndex(-2) // завершено
     }
-  }
-
-  if (dialogIndex === -2) {
-    return (
-      <section className="panel">
-        <h2>{t('phrasebook.doneTitle')}</h2>
-        <p className="dim">{t('phrasebook.doneText')}</p>
-      </section>
-    )
   }
 
   return (

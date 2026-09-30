@@ -1,7 +1,7 @@
 // Implements: plan://M7#7.5–7.6 — smoke-тесты экранов Рангов и Врат
 import 'fake-indexeddb/auto'
 import { beforeEach, describe, expect, it } from 'vitest'
-import { fireEvent, render, screen } from '@testing-library/react'
+import { fireEvent, render, screen, waitFor } from '@testing-library/react'
 import { HashRouter, Route, Routes } from 'react-router-dom'
 import '../i18n'
 import { HunterDb } from '../data/db'
@@ -92,4 +92,80 @@ describe('GatesScreen /#/gates/E-D', () => {
     expect(enter).toBeDisabled()
     expect(screen.getByText(/Повторная попытка будет доступна/)).toBeInTheDocument()
   })
+})
+
+// Implements: plan://M18 — GAP-5 specs/09 §4.7 (TC-UI-10 result-фаза + пересдача слабых)
+describe('GatesScreen: экзамен → result → пересдача слабых секций (GAP-5)', () => {
+  function renderGatesLocal(id = 'E-D') {
+    window.location.hash = `#/gates/${id}`
+    return render(
+      <HashRouter>
+        <Routes>
+          <Route path="/gates/:id" element={<GatesScreen repo={repo} />} />
+        </Routes>
+      </HashRouter>,
+    )
+  }
+
+  it('провал по всем секциям → вердикт, оценки, пересдача возвращается в экзамен', async () => {
+    renderGatesLocal()
+    expect(await screen.findByText('Врата E → D', {}, { timeout: 8000 })).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: 'Войти' }))
+    expect(
+      await screen.findByText(/Лексика · секция 1 из 4/, {}, { timeout: 8000 }),
+    ).toBeInTheDocument()
+
+    // Проходим все 65 заданий неверными ответами (вердикт детерминированно «провал»):
+    // choose → первый вариант; ввод → «zzz» + Повторить; speak → самопроверка «Сказал(-а)»
+    for (let step = 0; step < 500; step += 1) {
+      if (screen.queryByText('Врата не пройдены')) break
+
+      const options = screen
+        .getAllByRole('button')
+        .filter((b) => b.className.includes('lesson-option') && !b.hasAttribute('disabled'))
+      if (options.length > 0) {
+        fireEvent.click(options[0]!)
+        continue
+      }
+      const said = screen.queryByRole('button', { name: /Сказал\(-а\)/ })
+      if (said) {
+        fireEvent.click(said)
+        continue
+      }
+      const next = screen.queryByRole('button', { name: /^Дальше/ })
+      if (next) {
+        fireEvent.click(next)
+        continue
+      }
+      const retry = screen.queryByRole('button', { name: /Ещё попытка/ })
+      if (retry) {
+        fireEvent.click(retry)
+        continue
+      }
+      const input = document.querySelector<HTMLInputElement>('.lesson-input:not([disabled])')
+      if (input) {
+        fireEvent.change(input, { target: { value: 'zzz' } })
+        fireEvent.submit(input.closest('form')!)
+        continue
+      }
+      throw new Error(`экзамен завис на шаге ${step}: нет интерактивных элементов`)
+    }
+
+    // result: вердикт, оценки секций, сумма, попытка сохранена
+    expect(screen.getByText('Врата не пройдены')).toBeInTheDocument()
+    expect(screen.getByText(/Лексика:/)).toBeInTheDocument()
+    expect(screen.getByText(/Сумма: \d+%/)).toBeInTheDocument()
+    // finishExam асинхронен (putGateAttempt) — ждём персиста попытки
+    const attempt = await waitFor(async () => {
+      const value = await repo.getGateAttempt('D')
+      expect(value?.finished_at).toBeTruthy()
+      expect(value?.scores).toHaveLength(4)
+      return value
+    })
+    void attempt
+
+    // пересдача слабых секций возвращает в экзамен
+    fireEvent.click(screen.getByRole('button', { name: 'Пересдать слабые секции' }))
+    expect(await screen.findByText(/секция 1 из 4/, {}, { timeout: 8000 })).toBeInTheDocument()
+  }, 45000)
 })

@@ -24,3 +24,18 @@ test('settings shows guest account block', async ({ page }) => {
   await expect(page.getByText(/Гостевой режим/)).toBeVisible()
   await expect(page.getByRole('link', { name: 'Войти' })).toHaveAttribute('href', '#/login')
 })
+
+// Implements: plan://M18 — GAP-8 specs/09 §4.9 (TC-E2E-05/TC-PERF-01: чанк supabase-js не грузится гостю)
+test('guest session loads no supabase chunks (lazy-import behind env gate)', async ({ page }) => {
+  const supabaseRequests: string[] = []
+  page.on('response', (response) => {
+    if (response.url().includes('supabase')) supabaseRequests.push(response.url())
+  })
+  await page.goto('/#/login')
+  await page.getByRole('link', { name: /Продолжить как гость/ }).click()
+  await expect(page.getByText('[Ежедневный квест]')).toBeVisible({ timeout: 8000 })
+  // прогрев навигации: экраны, за которыми может прятаться sync
+  await page.goto('/#/settings')
+  await expect(page.getByRole('heading', { name: 'Аккаунт' })).toBeVisible({ timeout: 8000 })
+  expect(supabaseRequests).toEqual([])
+})
