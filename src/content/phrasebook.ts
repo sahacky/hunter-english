@@ -37,8 +37,8 @@ export async function loadPhrasebook(): Promise<PhrasebookDialog[]> {
   })
 }
 
-/** Ситуации разговорника (specs/01 §2: 10 ситуаций путешественника). */
-export const SITUATIONS: { id: string; minRank: 'E' | 'D' | 'C' }[] = [
+/** Ситуации разговорника (specs/01 §2: 10 ситуаций путешественника + идиомы M20). */
+export const SITUATIONS: { id: string; minRank: 'E' | 'D' | 'C' | 'B' | 'A' | 'S' }[] = [
   { id: 'smalltalk', minRank: 'E' },
   { id: 'emergency', minRank: 'E' },
   { id: 'directions', minRank: 'D' },
@@ -49,6 +49,7 @@ export const SITUATIONS: { id: string; minRank: 'E' | 'D' | 'C' }[] = [
   { id: 'hotel', minRank: 'C' },
   { id: 'restaurant', minRank: 'C' },
   { id: 'pharmacy', minRank: 'D' }, // превью с D-19 (план M12#12.7); полная глава — C
+  { id: 'idioms', minRank: 'S' }, // идиомы путешественника (план M20#20.3, specs/01 §10 S-02)
 ]
 
 /** Заметки реплик разговорника для SRS (колода phrasebook). */

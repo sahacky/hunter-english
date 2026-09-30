@@ -223,3 +223,61 @@ describe('GatesScreen: успешный экзамен (M19)', () => {
     ).toBeInTheDocument()
   })
 })
+
+describe('Финальное испытание S-FINAL (M20)', () => {
+  it('intro: финальный заголовок и чеклист ранга S / 15', async () => {
+    window.location.hash = '#/gates/S-FINAL'
+    render(
+      <HashRouter>
+        <Routes>
+          <Route path="/gates/:id" element={<GatesScreen repo={repo} />} />
+        </Routes>
+      </HashRouter>,
+    )
+    expect(
+      await screen.findByText(/Финальное испытание: подтверждение S/, {}, { timeout: 8000 }),
+    ).toBeInTheDocument()
+    expect(screen.getByText(/Уроки ранга S: 0 \/ 15/)).toBeInTheDocument()
+    expect(screen.getByText(/Слова \(надёжно\): 0 \/ 5000/)).toBeInTheDocument()
+  })
+
+  it('RanksScreen: ранг S без Финала — ссылка на S-FINAL; после Финала — ссылки нет', async () => {
+    window.location.hash = '#/ranks'
+    const stats = {
+      xp: 9000,
+      streak_current: 3,
+      streak_best: 7,
+      freezes_left: 1,
+      rank: 'S' as const,
+      gates_history: [{ gate: 'S' as const, passed_at: new Date().toISOString(), score: 90 }],
+      last_counted_day: null,
+      updated_at: new Date().toISOString(),
+    }
+    await repo.putStats(stats)
+    const { unmount } = render(
+      <HashRouter>
+        <Routes>
+          <Route path="/ranks" element={<RanksScreen repo={repo} />} />
+        </Routes>
+      </HashRouter>,
+    )
+    expect(await screen.findByText(/Финальное испытание \(подтверждение S\)/)).toBeInTheDocument()
+    unmount()
+    await repo.putStats({
+      ...stats,
+      gates_history: [
+        ...stats.gates_history,
+        { gate: 'S-FINAL', passed_at: new Date().toISOString(), score: 88 },
+      ],
+    })
+    render(
+      <HashRouter>
+        <Routes>
+          <Route path="/ranks" element={<RanksScreen repo={repo} />} />
+        </Routes>
+      </HashRouter>,
+    )
+    await screen.findByText(/\[Титулы\]/)
+    expect(screen.queryByText(/Финальное испытание \(подтверждение S\)/)).not.toBeInTheDocument()
+  })
+})

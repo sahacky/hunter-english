@@ -1,0 +1,4516 @@
+{
+  "schema_version": 1,
+  "kind": "phrases",
+  "items": [
+    {
+      "id": "ph-s-0001",
+      "text_en": "Not only did we lose the map, but we also lost the tent.",
+      "translation_ru": "Мы не только потеряли карту, но и палатку.",
+      "grammar_point_id": "gp-s-01",
+      "variants": ["Not only did we lose the map, but we also lost the tent."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0001.opus"
+      }
+    },
+    {
+      "id": "ph-s-0002",
+      "text_en": "No sooner had the bell rung than the students vanished.",
+      "translation_ru": "Не успел прозвенеть звонок, как ученики исчезли.",
+      "grammar_point_id": "gp-s-01",
+      "variants": ["No sooner had the bell rung than the students vanished."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0002.opus"
+      }
+    },
+    {
+      "id": "ph-s-0003",
+      "text_en": "Hardly had I sat down when the phone rang.",
+      "translation_ru": "Едва я сел, как зазвонил телефон.",
+      "grammar_point_id": "gp-s-01",
+      "variants": ["Hardly had I sat down when the phone rang."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0003.opus"
+      }
+    },
+    {
+      "id": "ph-s-0004",
+      "text_en": "Not until midnight did he finally call.",
+      "translation_ru": "Только в полночь он наконец позвонил.",
+      "grammar_point_id": "gp-s-01",
+      "variants": ["Not until midnight did he finally call."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0004.opus"
+      }
+    },
+    {
+      "id": "ph-s-0005",
+      "text_en": "Only then did I understand the truth.",
+      "translation_ru": "Только тогда я понял правду.",
+      "grammar_point_id": "gp-s-01",
+      "variants": ["Only then did I understand the truth."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0005.opus"
+      }
+    },
+    {
+      "id": "ph-s-0006",
+      "text_en": "Never have I seen such chaos.",
+      "translation_ru": "Никогда я не видел такого хаоса.",
+      "grammar_point_id": "gp-s-01",
+      "variants": ["Never have I seen such chaos."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0006.opus"
+      }
+    },
+    {
+      "id": "ph-s-0007",
+      "text_en": "Little did she suspect the surprise party.",
+      "translation_ru": "Она и не подозревала о вечеринке-сюрпризе.",
+      "grammar_point_id": "gp-s-01",
+      "variants": ["Little did she suspect the surprise party."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0007.opus"
+      }
+    },
+    {
+      "id": "ph-s-0008",
+      "text_en": "So loud was the music that we left.",
+      "translation_ru": "Настолько громкой была музыка, что мы ушли.",
+      "grammar_point_id": "gp-s-01",
+      "variants": ["So loud was the music that we left."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0008.opus"
+      }
+    },
+    {
+      "id": "ph-s-0009",
+      "text_en": "So beautiful was the view that we stopped.",
+      "translation_ru": "Настолько прекрасным был вид, что мы остановились.",
+      "grammar_point_id": "gp-s-01",
+      "variants": ["So beautiful was the view that we stopped."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0009.opus"
+      }
+    },
+    {
+      "id": "ph-s-0010",
+      "text_en": "Neither do I.",
+      "translation_ru": "Я тоже (не).",
+      "grammar_point_id": "gp-s-01",
+      "variants": ["Neither do I."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0010.opus"
+      }
+    },
+    {
+      "id": "ph-s-0011",
+      "text_en": "Nor do I believe a word of it.",
+      "translation_ru": "И я в это ни за что не поверю.",
+      "grammar_point_id": "gp-s-01",
+      "variants": ["Nor do I believe a word of it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0011.opus"
+      }
+    },
+    {
+      "id": "ph-s-0012",
+      "text_en": "Not only is she brilliant, but she is also kind.",
+      "translation_ru": "Она не только блестяща, но и добра.",
+      "grammar_point_id": "gp-s-01",
+      "variants": ["Not only is she brilliant, but she is also kind."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0012.opus"
+      }
+    },
+    {
+      "id": "ph-s-0013",
+      "text_en": "No sooner said than done.",
+      "translation_ru": "Сказано — сделано.",
+      "grammar_point_id": "gp-s-01",
+      "variants": ["No sooner said than done."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0013.opus"
+      }
+    },
+    {
+      "id": "ph-s-0014",
+      "text_en": "Hardly a day goes by without a new message.",
+      "translation_ru": "Не проходит и дня без нового сообщения.",
+      "grammar_point_id": "gp-s-01",
+      "variants": ["Hardly a day goes by without a new message."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0014.opus"
+      }
+    },
+    {
+      "id": "ph-s-0015",
+      "text_en": "Not once did he mention the price.",
+      "translation_ru": "Ни разу он не упомянул цену.",
+      "grammar_point_id": "gp-s-01",
+      "variants": ["Not once did he mention the price."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0015.opus"
+      }
+    },
+    {
+      "id": "ph-s-0016",
+      "text_en": "Only later did we realise our mistake.",
+      "translation_ru": "Только позже мы осознали нашу ошибку.",
+      "grammar_point_id": "gp-s-01",
+      "variants": ["Only later did we realise our mistake."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0016.opus"
+      }
+    },
+    {
+      "id": "ph-s-0017",
+      "text_en": "Never again will I trust that website.",
+      "translation_ru": "Никогда больше я не буду доверять тому сайту.",
+      "grammar_point_id": "gp-s-01",
+      "variants": ["Never again will I trust that website."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0017.opus"
+      }
+    },
+    {
+      "id": "ph-s-0018",
+      "text_en": "Rarely does the train arrive on time.",
+      "translation_ru": "Редко поезд приходит вовремя.",
+      "grammar_point_id": "gp-s-01",
+      "variants": ["Rarely does the train arrive on time."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0018.opus"
+      }
+    },
+    {
+      "id": "ph-s-0019",
+      "text_en": "Seldom have I heard such nonsense.",
+      "translation_ru": "Редко я слышал такой вздор.",
+      "grammar_point_id": "gp-s-01",
+      "variants": ["Seldom have I heard such nonsense."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0019.opus"
+      }
+    },
+    {
+      "id": "ph-s-0020",
+      "text_en": "In no way is this acceptable.",
+      "translation_ru": "Это никоим образом не приемлемо.",
+      "grammar_point_id": "gp-s-01",
+      "variants": ["In no way is this acceptable."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0020.opus"
+      }
+    },
+    {
+      "id": "ph-s-0021",
+      "text_en": "Under no circumstances should you sign it.",
+      "translation_ru": "Ни при каких обстоятельствах не подписывай это.",
+      "grammar_point_id": "gp-s-01",
+      "variants": ["Under no circumstances should you sign it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0021.opus"
+      }
+    },
+    {
+      "id": "ph-s-0022",
+      "text_en": "At no point did she lose her temper.",
+      "translation_ru": "Она ни разу не потеряла самообладание.",
+      "grammar_point_id": "gp-s-01",
+      "variants": ["At no point did she lose her temper."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0022.opus"
+      }
+    },
+    {
+      "id": "ph-s-0023",
+      "text_en": "Not only did we finish early, but we also saved money.",
+      "translation_ru": "Мы не только закончили рано, но и сэкономили деньги.",
+      "grammar_point_id": "gp-s-01",
+      "variants": ["Not only did we finish early, but we also saved money."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0023.opus"
+      }
+    },
+    {
+      "id": "ph-s-0024",
+      "text_en": "No sooner had the show started than the power went out.",
+      "translation_ru": "Не успело шоу начаться, как отключилось электричество.",
+      "grammar_point_id": "gp-s-01",
+      "variants": ["No sooner had the show started than the power went out."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0024.opus"
+      }
+    },
+    {
+      "id": "ph-s-0025",
+      "text_en": "Hardly had we arrived when the storm began.",
+      "translation_ru": "Едва мы прибыли, как начался шторм.",
+      "grammar_point_id": "gp-s-01",
+      "variants": ["Hardly had we arrived when the storm began."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0025.opus"
+      }
+    },
+    {
+      "id": "ph-s-0026",
+      "text_en": "Only now do I see the whole picture.",
+      "translation_ru": "Только сейчас я вижу всю картину.",
+      "grammar_point_id": "gp-s-01",
+      "variants": ["Only now do I see the whole picture."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0026.opus"
+      }
+    },
+    {
+      "id": "ph-s-0027",
+      "text_en": "Never before had technology moved this fast.",
+      "translation_ru": "Никогда прежде технологии не двигались так быстро.",
+      "grammar_point_id": "gp-s-01",
+      "variants": ["Never before had technology moved this fast."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0027.opus"
+      }
+    },
+    {
+      "id": "ph-s-0028",
+      "text_en": "So strange was his answer that nobody replied.",
+      "translation_ru": "Таким странным был его ответ, что никто не ответил.",
+      "grammar_point_id": "gp-s-01",
+      "variants": ["So strange was his answer that nobody replied."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0028.opus"
+      }
+    },
+    {
+      "id": "ph-s-0029",
+      "text_en": "Not a single word did she say.",
+      "translation_ru": "Она не сказала ни единого слова.",
+      "grammar_point_id": "gp-s-01",
+      "variants": ["Not a single word did she say."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0029.opus"
+      }
+    },
+    {
+      "id": "ph-s-0030",
+      "text_en": "Never have I felt more alive.",
+      "translation_ru": "Ещё никогда я не чувствовал себя настолько живым.",
+      "grammar_point_id": "gp-s-01",
+      "variants": ["Never have I felt more alive."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0030.opus"
+      }
+    },
+    {
+      "id": "ph-s-0031",
+      "text_en": "Never again!",
+      "translation_ru": "Никогда больше!",
+      "grammar_point_id": "gp-s-01",
+      "variants": ["Never again!"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0031.opus"
+      }
+    },
+    {
+      "id": "ph-s-0032",
+      "text_en": "Not a chance.",
+      "translation_ru": "Ни за что.",
+      "grammar_point_id": "gp-s-01",
+      "variants": ["Not a chance."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0032.opus"
+      }
+    },
+    {
+      "id": "ph-s-0033",
+      "text_en": "Here comes the train.",
+      "translation_ru": "Вот идёт поезд.",
+      "grammar_point_id": "gp-s-01",
+      "variants": ["Here comes the train."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0033.opus"
+      }
+    },
+    {
+      "id": "ph-s-0034",
+      "text_en": "Down came the rain.",
+      "translation_ru": "И хлынул дождь.",
+      "grammar_point_id": "gp-s-01",
+      "variants": ["Down came the rain."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0034.opus"
+      }
+    },
+    {
+      "id": "ph-s-0035",
+      "text_en": "Off we went!",
+      "translation_ru": "И мы отправились!",
+      "grammar_point_id": "gp-s-01",
+      "variants": ["Off we went!"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0035.opus"
+      }
+    },
+    {
+      "id": "ph-s-0036",
+      "text_en": "The flight was overbooked.",
+      "translation_ru": "Рейс был перепродан.",
+      "grammar_point_id": "gp-s-02",
+      "variants": ["The flight was overbooked."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0036.opus"
+      }
+    },
+    {
+      "id": "ph-s-0037",
+      "text_en": "We took the red-eye to London.",
+      "translation_ru": "Мы взяли ночной рейс на Лондон.",
+      "grammar_point_id": "gp-s-02",
+      "variants": ["We took the red-eye to London."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0037.opus"
+      }
+    },
+    {
+      "id": "ph-s-0038",
+      "text_en": "We booked at the last minute.",
+      "translation_ru": "Мы забронировали в последний момент.",
+      "grammar_point_id": "gp-s-02",
+      "variants": ["We booked at the last minute."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0038.opus"
+      }
+    },
+    {
+      "id": "ph-s-0039",
+      "text_en": "Let's hit the road early.",
+      "translation_ru": "Выедем пораньше.",
+      "grammar_point_id": "gp-s-02",
+      "variants": ["Let's hit the road early."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0039.opus"
+      }
+    },
+    {
+      "id": "ph-s-0040",
+      "text_en": "A guided tour won't break the bank.",
+      "translation_ru": "Экскурсия не разорит.",
+      "grammar_point_id": "gp-s-02",
+      "variants": ["A guided tour won't break the bank."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0040.opus"
+      }
+    },
+    {
+      "id": "ph-s-0041",
+      "text_en": "We arrived just in time to check in.",
+      "translation_ru": "Мы пришли как раз вовремя на регистрацию.",
+      "grammar_point_id": "gp-s-02",
+      "variants": ["We arrived just in time to check in."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0041.opus"
+      }
+    },
+    {
+      "id": "ph-s-0042",
+      "text_en": "I always suffer from jet lag.",
+      "translation_ru": "Я всегда страдаю от джетлага.",
+      "grammar_point_id": "gp-s-02",
+      "variants": ["I always suffer from jet lag."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0042.opus"
+      }
+    },
+    {
+      "id": "ph-s-0043",
+      "text_en": "Total culture shock, honestly.",
+      "translation_ru": "Полный культурный шок, честно.",
+      "grammar_point_id": "gp-s-02",
+      "variants": ["Total culture shock, honestly."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0043.opus"
+      }
+    },
+    {
+      "id": "ph-s-0044",
+      "text_en": "We prefer places off the beaten track.",
+      "translation_ru": "Мы предпочитаем места вдали от проторённых маршрутов.",
+      "grammar_point_id": "gp-s-02",
+      "variants": ["We prefer places off the beaten track."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0044.opus"
+      }
+    },
+    {
+      "id": "ph-s-0045",
+      "text_en": "We travel light, always.",
+      "translation_ru": "Мы путешествуем налегке, всегда.",
+      "grammar_point_id": "gp-s-02",
+      "variants": ["We travel light, always."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0045.opus"
+      }
+    },
+    {
+      "id": "ph-s-0046",
+      "text_en": "We're on a tight budget.",
+      "translation_ru": "У нас ограниченный бюджет.",
+      "grammar_point_id": "gp-s-02",
+      "variants": ["We're on a tight budget."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0046.opus"
+      }
+    },
+    {
+      "id": "ph-s-0047",
+      "text_en": "Let's call it a day.",
+      "translation_ru": "Давай закончим на сегодня.",
+      "grammar_point_id": "gp-s-02",
+      "variants": ["Let's call it a day."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0047.opus"
+      }
+    },
+    {
+      "id": "ph-s-0048",
+      "text_en": "Sorry, we're running late.",
+      "translation_ru": "Извините, мы опаздываем.",
+      "grammar_point_id": "gp-s-02",
+      "variants": ["Sorry, we're running late."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0048.opus"
+      }
+    },
+    {
+      "id": "ph-s-0049",
+      "text_en": "You'll get the hang of the metro.",
+      "translation_ru": "Ты освоишь метро.",
+      "grammar_point_id": "gp-s-02",
+      "variants": ["You'll get the hang of the metro."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0049.opus"
+      }
+    },
+    {
+      "id": "ph-s-0050",
+      "text_en": "Can I take a rain check on dinner?",
+      "translation_ru": "Можно отложить ужин на другой раз?",
+      "grammar_point_id": "gp-s-02",
+      "variants": ["Can I take a rain check on dinner?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0050.opus"
+      }
+    },
+    {
+      "id": "ph-s-0051",
+      "text_en": "I'm feeling a bit under the weather.",
+      "translation_ru": "Я чувствую себя неважно.",
+      "grammar_point_id": "gp-s-02",
+      "variants": ["I'm feeling a bit under the weather."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0051.opus"
+      }
+    },
+    {
+      "id": "ph-s-0052",
+      "text_en": "Climbing here is a piece of cake.",
+      "translation_ru": "Подниматься здесь — проще простого.",
+      "grammar_point_id": "gp-s-02",
+      "variants": ["Climbing here is a piece of cake."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0052.opus"
+      }
+    },
+    {
+      "id": "ph-s-0053",
+      "text_en": "Museums are not my cup of tea.",
+      "translation_ru": "Музеи — не моё.",
+      "grammar_point_id": "gp-s-02",
+      "variants": ["Museums are not my cup of tea."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0053.opus"
+      }
+    },
+    {
+      "id": "ph-s-0054",
+      "text_en": "It was a once-in-a-lifetime trip.",
+      "translation_ru": "Это была поездка всей жизни.",
+      "grammar_point_id": "gp-s-02",
+      "variants": ["It was a once-in-a-lifetime trip."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0054.opus"
+      }
+    },
+    {
+      "id": "ph-s-0055",
+      "text_en": "The deadline is around the corner.",
+      "translation_ru": "Крайний срок не за горами.",
+      "grammar_point_id": "gp-s-02",
+      "variants": ["The deadline is around the corner."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0055.opus"
+      }
+    },
+    {
+      "id": "ph-s-0056",
+      "text_en": "In the long run, it saves money.",
+      "translation_ru": "В долгосрочной перспективе это экономит деньги.",
+      "grammar_point_id": "gp-s-02",
+      "variants": ["In the long run, it saves money."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0056.opus"
+      }
+    },
+    {
+      "id": "ph-s-0057",
+      "text_en": "Coffee helps me stay on the go.",
+      "translation_ru": "Кофе помогает мне быть в движении.",
+      "grammar_point_id": "gp-s-02",
+      "variants": ["Coffee helps me stay on the go."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0057.opus"
+      }
+    },
+    {
+      "id": "ph-s-0058",
+      "text_en": "Our plans hit a snag at the border.",
+      "translation_ru": "На границе наши планы дали сбой.",
+      "grammar_point_id": "gp-s-02",
+      "variants": ["Our plans hit a snag at the border."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0058.opus"
+      }
+    },
+    {
+      "id": "ph-s-0059",
+      "text_en": "Book now or you'll miss the boat.",
+      "translation_ru": "Бронируй сейчас, иначе упустишь шанс.",
+      "grammar_point_id": "gp-s-02",
+      "variants": ["Book now or you'll miss the boat."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0059.opus"
+      }
+    },
+    {
+      "id": "ph-s-0060",
+      "text_en": "We had to bite the bullet and pay.",
+      "translation_ru": "Пришлось собраться с духом и заплатить.",
+      "grammar_point_id": "gp-s-02",
+      "variants": ["We had to bite the bullet and pay."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0060.opus"
+      }
+    },
+    {
+      "id": "ph-s-0061",
+      "text_en": "Keep an eye on your bag.",
+      "translation_ru": "Следи за сумкой.",
+      "grammar_point_id": "gp-s-02",
+      "variants": ["Keep an eye on your bag."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0061.opus"
+      }
+    },
+    {
+      "id": "ph-s-0062",
+      "text_en": "We made a detour to the coast.",
+      "translation_ru": "Мы сделали крюк до побережья.",
+      "grammar_point_id": "gp-s-02",
+      "variants": ["We made a detour to the coast."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0062.opus"
+      }
+    },
+    {
+      "id": "ph-s-0063",
+      "text_en": "Dinner at eight sounds like a plan.",
+      "translation_ru": "Ужин в восемь звучит как план.",
+      "grammar_point_id": "gp-s-02",
+      "variants": ["Dinner at eight sounds like a plan."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0063.opus"
+      }
+    },
+    {
+      "id": "ph-s-0064",
+      "text_en": "I got cold feet before the flight.",
+      "translation_ru": "Я занервничал перед рейсом.",
+      "grammar_point_id": "gp-s-02",
+      "variants": ["I got cold feet before the flight."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0064.opus"
+      }
+    },
+    {
+      "id": "ph-s-0065",
+      "text_en": "The city grew on me.",
+      "translation_ru": "Город мне понравился со временем.",
+      "grammar_point_id": "gp-s-02",
+      "variants": ["The city grew on me."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0065.opus"
+      }
+    },
+    {
+      "id": "ph-s-0066",
+      "text_en": "We were worn out by noon.",
+      "translation_ru": "К полудню мы выдохлись.",
+      "grammar_point_id": "gp-s-02",
+      "variants": ["We were worn out by noon."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0066.opus"
+      }
+    },
+    {
+      "id": "ph-s-0067",
+      "text_en": "When in doubt, book ahead.",
+      "translation_ru": "Сомневаешься — бронируй заранее.",
+      "grammar_point_id": "gp-s-02",
+      "variants": ["When in doubt, book ahead."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0067.opus"
+      }
+    },
+    {
+      "id": "ph-s-0068",
+      "text_en": "Red-eye, please.",
+      "translation_ru": "Ночной рейс, пожалуйста.",
+      "grammar_point_id": "gp-s-02",
+      "variants": ["Red-eye, please."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0068.opus"
+      }
+    },
+    {
+      "id": "ph-s-0069",
+      "text_en": "Around the corner.",
+      "translation_ru": "Не за горами.",
+      "grammar_point_id": "gp-s-02",
+      "variants": ["Around the corner."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0069.opus"
+      }
+    },
+    {
+      "id": "ph-s-0070",
+      "text_en": "She might well be right.",
+      "translation_ru": "Она вполне может быть права.",
+      "grammar_point_id": "gp-s-03",
+      "variants": ["She might well be right."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0070.opus"
+      }
+    },
+    {
+      "id": "ph-s-0071",
+      "text_en": "He can't have been at home.",
+      "translation_ru": "Не может быть, чтобы он был дома.",
+      "grammar_point_id": "gp-s-03",
+      "variants": ["He can't have been at home."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0071.opus"
+      }
+    },
+    {
+      "id": "ph-s-0072",
+      "text_en": "You needn't have worried.",
+      "translation_ru": "Мог бы и не волноваться — зря волновался.",
+      "grammar_point_id": "gp-s-03",
+      "variants": ["You needn't have worried."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0072.opus"
+      }
+    },
+    {
+      "id": "ph-s-0073",
+      "text_en": "They may well change their minds.",
+      "translation_ru": "Они вполне могут передумать.",
+      "grammar_point_id": "gp-s-03",
+      "variants": ["They may well change their minds."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0073.opus"
+      }
+    },
+    {
+      "id": "ph-s-0074",
+      "text_en": "We should have read the reviews.",
+      "translation_ru": "Нам следовало почитать отзывы.",
+      "grammar_point_id": "gp-s-03",
+      "variants": ["We should have read the reviews."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0074.opus"
+      }
+    },
+    {
+      "id": "ph-s-0075",
+      "text_en": "He must have left already.",
+      "translation_ru": "Должно быть, он уже ушёл.",
+      "grammar_point_id": "gp-s-03",
+      "variants": ["He must have left already."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0075.opus"
+      }
+    },
+    {
+      "id": "ph-s-0076",
+      "text_en": "We might as well walk.",
+      "translation_ru": "Можем с тем же успехом пойти пешком.",
+      "grammar_point_id": "gp-s-03",
+      "variants": ["We might as well walk."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0076.opus"
+      }
+    },
+    {
+      "id": "ph-s-0077",
+      "text_en": "I'd rather stay in tonight.",
+      "translation_ru": "Я бы лучше остался дома сегодня.",
+      "grammar_point_id": "gp-s-03",
+      "variants": ["I'd rather stay in tonight."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0077.opus"
+      }
+    },
+    {
+      "id": "ph-s-0078",
+      "text_en": "You'd better hurry up.",
+      "translation_ru": "Тебе лучше поторопиться.",
+      "grammar_point_id": "gp-s-03",
+      "variants": ["You'd better hurry up."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0078.opus"
+      }
+    },
+    {
+      "id": "ph-s-0079",
+      "text_en": "She couldn't have asked for more.",
+      "translation_ru": "Она и большего желать не могла.",
+      "grammar_point_id": "gp-s-03",
+      "variants": ["She couldn't have asked for more."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0079.opus"
+      }
+    },
+    {
+      "id": "ph-s-0080",
+      "text_en": "They needn't have paid extra.",
+      "translation_ru": "Могли и не платить дополнительно — зря заплатили.",
+      "grammar_point_id": "gp-s-03",
+      "variants": ["They needn't have paid extra."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0080.opus"
+      }
+    },
+    {
+      "id": "ph-s-0081",
+      "text_en": "You might have told me!",
+      "translation_ru": "Мог бы и сказать мне!",
+      "grammar_point_id": "gp-s-03",
+      "variants": ["You might have told me!"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0081.opus"
+      }
+    },
+    {
+      "id": "ph-s-0082",
+      "text_en": "He can't have finished so fast.",
+      "translation_ru": "Не может быть, что он закончил так быстро.",
+      "grammar_point_id": "gp-s-03",
+      "variants": ["He can't have finished so fast."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0082.opus"
+      }
+    },
+    {
+      "id": "ph-s-0083",
+      "text_en": "I may well be wrong.",
+      "translation_ru": "Возможно, я и неправ.",
+      "grammar_point_id": "gp-s-03",
+      "variants": ["I may well be wrong."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0083.opus"
+      }
+    },
+    {
+      "id": "ph-s-0084",
+      "text_en": "We'd better not be late.",
+      "translation_ru": "Лучше нам не опаздывать.",
+      "grammar_point_id": "gp-s-03",
+      "variants": ["We'd better not be late."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0084.opus"
+      }
+    },
+    {
+      "id": "ph-s-0085",
+      "text_en": "She must have mixed up the dates.",
+      "translation_ru": "Должно быть, она перепутала даты.",
+      "grammar_point_id": "gp-s-03",
+      "variants": ["She must have mixed up the dates."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0085.opus"
+      }
+    },
+    {
+      "id": "ph-s-0086",
+      "text_en": "You needn't have brought anything.",
+      "translation_ru": "Мог бы ничего и не приносить.",
+      "grammar_point_id": "gp-s-03",
+      "variants": ["You needn't have brought anything."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0086.opus"
+      }
+    },
+    {
+      "id": "ph-s-0087",
+      "text_en": "I'd rather not say.",
+      "translation_ru": "Я бы предпочёл не говорить.",
+      "grammar_point_id": "gp-s-03",
+      "variants": ["I'd rather not say."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0087.opus"
+      }
+    },
+    {
+      "id": "ph-s-0088",
+      "text_en": "They might as well have stayed home.",
+      "translation_ru": "Могли с тем же успехом остаться дома.",
+      "grammar_point_id": "gp-s-03",
+      "variants": ["They might as well have stayed home."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0088.opus"
+      }
+    },
+    {
+      "id": "ph-s-0089",
+      "text_en": "He should have double-checked the booking.",
+      "translation_ru": "Ему следовало перепроверить бронь.",
+      "grammar_point_id": "gp-s-03",
+      "variants": ["He should have double-checked the booking."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0089.opus"
+      }
+    },
+    {
+      "id": "ph-s-0090",
+      "text_en": "It can't have been easy for them.",
+      "translation_ru": "Наверняка им было непросто.",
+      "grammar_point_id": "gp-s-03",
+      "variants": ["It can't have been easy for them."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0090.opus"
+      }
+    },
+    {
+      "id": "ph-s-0091",
+      "text_en": "You might well ask.",
+      "translation_ru": "Вполне резонный вопрос.",
+      "grammar_point_id": "gp-s-03",
+      "variants": ["You might well ask."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0091.opus"
+      }
+    },
+    {
+      "id": "ph-s-0092",
+      "text_en": "We may as well get started.",
+      "translation_ru": "Можем уж начинать.",
+      "grammar_point_id": "gp-s-03",
+      "variants": ["We may as well get started."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0092.opus"
+      }
+    },
+    {
+      "id": "ph-s-0093",
+      "text_en": "I'd sooner quit than cheat.",
+      "translation_ru": "Я скорее уйду, чем буду жульничать.",
+      "grammar_point_id": "gp-s-03",
+      "variants": ["I'd sooner quit than cheat."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0093.opus"
+      }
+    },
+    {
+      "id": "ph-s-0094",
+      "text_en": "She ought to have apologised.",
+      "translation_ru": "Ей следовало извиниться.",
+      "grammar_point_id": "gp-s-03",
+      "variants": ["She ought to have apologised."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0094.opus"
+      }
+    },
+    {
+      "id": "ph-s-0095",
+      "text_en": "He couldn't have heard us from there.",
+      "translation_ru": "Оттуда он не мог нас слышать.",
+      "grammar_point_id": "gp-s-03",
+      "variants": ["He couldn't have heard us from there."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0095.opus"
+      }
+    },
+    {
+      "id": "ph-s-0096",
+      "text_en": "You must have been exhausted.",
+      "translation_ru": "Ты, должно быть, был измотан.",
+      "grammar_point_id": "gp-s-03",
+      "variants": ["You must have been exhausted."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0096.opus"
+      }
+    },
+    {
+      "id": "ph-s-0097",
+      "text_en": "They should have seen it coming.",
+      "translation_ru": "Они должны были это предвидеть.",
+      "grammar_point_id": "gp-s-03",
+      "variants": ["They should have seen it coming."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0097.opus"
+      }
+    },
+    {
+      "id": "ph-s-0098",
+      "text_en": "I needn't have rushed.",
+      "translation_ru": "Зря я торопился.",
+      "grammar_point_id": "gp-s-03",
+      "variants": ["I needn't have rushed."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0098.opus"
+      }
+    },
+    {
+      "id": "ph-s-0099",
+      "text_en": "It might well snow tonight.",
+      "translation_ru": "Вполне может выпасть снег сегодня вечером.",
+      "grammar_point_id": "gp-s-03",
+      "variants": ["It might well snow tonight."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0099.opus"
+      }
+    },
+    {
+      "id": "ph-s-0100",
+      "text_en": "You had better believe it.",
+      "translation_ru": "Можешь не сомневаться.",
+      "grammar_point_id": "gp-s-03",
+      "variants": ["You had better believe it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0100.opus"
+      }
+    },
+    {
+      "id": "ph-s-0101",
+      "text_en": "None of it can have been true.",
+      "translation_ru": "Ничто из этого не могло быть правдой.",
+      "grammar_point_id": "gp-s-03",
+      "variants": ["None of it can have been true."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0101.opus"
+      }
+    },
+    {
+      "id": "ph-s-0102",
+      "text_en": "Might as well.",
+      "translation_ru": "Чем чёрт не шутит.",
+      "grammar_point_id": "gp-s-03",
+      "variants": ["Might as well."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0102.opus"
+      }
+    },
+    {
+      "id": "ph-s-0103",
+      "text_en": "Better not risk it.",
+      "translation_ru": "Лучше не рисковать.",
+      "grammar_point_id": "gp-s-03",
+      "variants": ["Better not risk it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0103.opus"
+      }
+    },
+    {
+      "id": "ph-s-0104",
+      "text_en": "However, we decided to go.",
+      "translation_ru": "Однако мы решили пойти.",
+      "grammar_point_id": "gp-s-04",
+      "variants": ["However, we decided to go."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0104.opus"
+      }
+    },
+    {
+      "id": "ph-s-0105",
+      "text_en": "Nevertheless, the show went on.",
+      "translation_ru": "Тем не менее шоу продолжилось.",
+      "grammar_point_id": "gp-s-04",
+      "variants": ["Nevertheless, the show went on."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0105.opus"
+      }
+    },
+    {
+      "id": "ph-s-0106",
+      "text_en": "The north is rich, whereas the south is poor.",
+      "translation_ru": "Север богат, тогда как юг беден.",
+      "grammar_point_id": "gp-s-04",
+      "variants": ["The north is rich, whereas the south is poor."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0106.opus"
+      }
+    },
+    {
+      "id": "ph-s-0107",
+      "text_en": "Despite the rain, the match went ahead.",
+      "translation_ru": "Несмотря на дождь, матч состоялся.",
+      "grammar_point_id": "gp-s-04",
+      "variants": ["Despite the rain, the match went ahead."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0107.opus"
+      }
+    },
+    {
+      "id": "ph-s-0108",
+      "text_en": "In spite of the traffic, we made it.",
+      "translation_ru": "Несмотря на пробки, мы успели.",
+      "grammar_point_id": "gp-s-04",
+      "variants": ["In spite of the traffic, we made it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0108.opus"
+      }
+    },
+    {
+      "id": "ph-s-0109",
+      "text_en": "Although it was late, nobody left.",
+      "translation_ru": "Хотя было поздно, никто не ушёл.",
+      "grammar_point_id": "gp-s-04",
+      "variants": ["Although it was late, nobody left."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0109.opus"
+      }
+    },
+    {
+      "id": "ph-s-0110",
+      "text_en": "Even though she knew the risk, she agreed.",
+      "translation_ru": "Даже зная риск, она согласилась.",
+      "grammar_point_id": "gp-s-04",
+      "variants": ["Even though she knew the risk, she agreed."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0110.opus"
+      }
+    },
+    {
+      "id": "ph-s-0111",
+      "text_en": "He's loud; nevertheless, everyone likes him.",
+      "translation_ru": "Он громкий; тем не менее все его любят.",
+      "grammar_point_id": "gp-s-04",
+      "variants": ["He's loud; nevertheless, everyone likes him."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0111.opus"
+      }
+    },
+    {
+      "id": "ph-s-0112",
+      "text_en": "The plan was risky; however, it worked.",
+      "translation_ru": "План был рискованным; однако он сработал.",
+      "grammar_point_id": "gp-s-04",
+      "variants": ["The plan was risky; however, it worked."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0112.opus"
+      }
+    },
+    {
+      "id": "ph-s-0113",
+      "text_en": "I like tea, whereas she prefers coffee.",
+      "translation_ru": "Я люблю чай, тогда как она предпочитает кофе.",
+      "grammar_point_id": "gp-s-04",
+      "variants": ["I like tea, whereas she prefers coffee."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0113.opus"
+      }
+    },
+    {
+      "id": "ph-s-0114",
+      "text_en": "Despite being tired, they kept walking.",
+      "translation_ru": "Несмотря на усталость, они продолжали идти.",
+      "grammar_point_id": "gp-s-04",
+      "variants": ["Despite being tired, they kept walking."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0114.opus"
+      }
+    },
+    {
+      "id": "ph-s-0115",
+      "text_en": "Therefore, we need a backup plan.",
+      "translation_ru": "Следовательно, нам нужен запасной план.",
+      "grammar_point_id": "gp-s-04",
+      "variants": ["Therefore, we need a backup plan."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0115.opus"
+      }
+    },
+    {
+      "id": "ph-s-0116",
+      "text_en": "Moreover, the tickets are refundable.",
+      "translation_ru": "Более того, билеты возвратные.",
+      "grammar_point_id": "gp-s-04",
+      "variants": ["Moreover, the tickets are refundable."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0116.opus"
+      }
+    },
+    {
+      "id": "ph-s-0117",
+      "text_en": "The food was bland; the service, however, was excellent.",
+      "translation_ru": "Еда была пресной; сервис, однако, был отличным.",
+      "grammar_point_id": "gp-s-04",
+      "variants": ["The food was bland; the service, however, was excellent."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0117.opus"
+      }
+    },
+    {
+      "id": "ph-s-0118",
+      "text_en": "Nonetheless, it's worth a try.",
+      "translation_ru": "Тем не менее, стоит попробовать.",
+      "grammar_point_id": "gp-s-04",
+      "variants": ["Nonetheless, it's worth a try."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0118.opus"
+      }
+    },
+    {
+      "id": "ph-s-0119",
+      "text_en": "On the other hand, flying saves time.",
+      "translation_ru": "С другой стороны, самолёт экономит время.",
+      "grammar_point_id": "gp-s-04",
+      "variants": ["On the other hand, flying saves time."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0119.opus"
+      }
+    },
+    {
+      "id": "ph-s-0120",
+      "text_en": "Consequently, prices went up.",
+      "translation_ru": "В результате цены выросли.",
+      "grammar_point_id": "gp-s-04",
+      "variants": ["Consequently, prices went up."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0120.opus"
+      }
+    },
+    {
+      "id": "ph-s-0121",
+      "text_en": "Despite the delay, the mood stayed high.",
+      "translation_ru": "Несмотря на задержку, настроение оставалось отличным.",
+      "grammar_point_id": "gp-s-04",
+      "variants": ["Despite the delay, the mood stayed high."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0121.opus"
+      }
+    },
+    {
+      "id": "ph-s-0122",
+      "text_en": "Whereas I walk, he drives everywhere.",
+      "translation_ru": "Тогда как я хожу, он везде ездит.",
+      "grammar_point_id": "gp-s-04",
+      "variants": ["Whereas I walk, he drives everywhere."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0122.opus"
+      }
+    },
+    {
+      "id": "ph-s-0123",
+      "text_en": "Furthermore, there's no service charge.",
+      "translation_ru": "Кроме того, нет платы за обслуживание.",
+      "grammar_point_id": "gp-s-04",
+      "variants": ["Furthermore, there's no service charge."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0123.opus"
+      }
+    },
+    {
+      "id": "ph-s-0124",
+      "text_en": "It was expensive; still, we bought it.",
+      "translation_ru": "Это было дорого; и всё же мы купили.",
+      "grammar_point_id": "gp-s-04",
+      "variants": ["It was expensive; still, we bought it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0124.opus"
+      }
+    },
+    {
+      "id": "ph-s-0125",
+      "text_en": "Though small, the flat feels airy.",
+      "translation_ru": "Хоть и маленькая, квартира кажется просторной.",
+      "grammar_point_id": "gp-s-04",
+      "variants": ["Though small, the flat feels airy."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0125.opus"
+      }
+    },
+    {
+      "id": "ph-s-0126",
+      "text_en": "All the same, I'd rather wait.",
+      "translation_ru": "Тем не менее, я бы предпочёл подождать.",
+      "grammar_point_id": "gp-s-04",
+      "variants": ["All the same, I'd rather wait."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0126.opus"
+      }
+    },
+    {
+      "id": "ph-s-0127",
+      "text_en": "Despite the cost, quality comes first.",
+      "translation_ru": "Несмотря на цену, качество — прежде всего.",
+      "grammar_point_id": "gp-s-04",
+      "variants": ["Despite the cost, quality comes first."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0127.opus"
+      }
+    },
+    {
+      "id": "ph-s-0128",
+      "text_en": "Hence the delay, apparently.",
+      "translation_ru": "Отсюда, видимо, и задержка.",
+      "grammar_point_id": "gp-s-04",
+      "variants": ["Hence the delay, apparently."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0128.opus"
+      }
+    },
+    {
+      "id": "ph-s-0129",
+      "text_en": "Even so, the trip was worth it.",
+      "translation_ru": "Даже так, поездка того стоила.",
+      "grammar_point_id": "gp-s-04",
+      "variants": ["Even so, the trip was worth it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0129.opus"
+      }
+    },
+    {
+      "id": "ph-s-0130",
+      "text_en": "In contrast, our rivals cut corners.",
+      "translation_ru": "Напротив, конкуренты экономят на качестве.",
+      "grammar_point_id": "gp-s-04",
+      "variants": ["In contrast, our rivals cut corners."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0130.opus"
+      }
+    },
+    {
+      "id": "ph-s-0131",
+      "text_en": "Meanwhile, back home, life went on.",
+      "translation_ru": "Тем временем дома жизнь шла своим чередом.",
+      "grammar_point_id": "gp-s-04",
+      "variants": ["Meanwhile, back home, life went on."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0131.opus"
+      }
+    },
+    {
+      "id": "ph-s-0132",
+      "text_en": "Instead of complaining, act.",
+      "translation_ru": "Вместо того чтобы жаловаться, действуй.",
+      "grammar_point_id": "gp-s-04",
+      "variants": ["Instead of complaining, act."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0132.opus"
+      }
+    },
+    {
+      "id": "ph-s-0133",
+      "text_en": "Admittedly, the first version was rough.",
+      "translation_ru": "Признаю, первая версия была сырой.",
+      "grammar_point_id": "gp-s-04",
+      "variants": ["Admittedly, the first version was rough."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0133.opus"
+      }
+    },
+    {
+      "id": "ph-s-0134",
+      "text_en": "Granted, it takes practice.",
+      "translation_ru": "Согласен, это требует практики.",
+      "grammar_point_id": "gp-s-04",
+      "variants": ["Granted, it takes practice."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0134.opus"
+      }
+    },
+    {
+      "id": "ph-s-0135",
+      "text_en": "After all, we're only human.",
+      "translation_ru": "В конце концов, мы всего лишь люди.",
+      "grammar_point_id": "gp-s-04",
+      "variants": ["After all, we're only human."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0135.opus"
+      }
+    },
+    {
+      "id": "ph-s-0136",
+      "text_en": "Granted.",
+      "translation_ru": "Согласен.",
+      "grammar_point_id": "gp-s-04",
+      "variants": ["Granted."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0136.opus"
+      }
+    },
+    {
+      "id": "ph-s-0137",
+      "text_en": "After all.",
+      "translation_ru": "В конце концов.",
+      "grammar_point_id": "gp-s-04",
+      "variants": ["After all."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0137.opus"
+      }
+    },
+    {
+      "id": "ph-s-0138",
+      "text_en": "I'm gonna be late.",
+      "translation_ru": "Я опоздаю.",
+      "grammar_point_id": "gp-s-05",
+      "variants": ["I'm gonna be late."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0138.opus"
+      }
+    },
+    {
+      "id": "ph-s-0139",
+      "text_en": "What are you gonna do?",
+      "translation_ru": "И что ты будешь делать?",
+      "grammar_point_id": "gp-s-05",
+      "variants": ["What are you gonna do?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0139.opus"
+      }
+    },
+    {
+      "id": "ph-s-0140",
+      "text_en": "I wanna go home.",
+      "translation_ru": "Я хочу домой.",
+      "grammar_point_id": "gp-s-05",
+      "variants": ["I wanna go home."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0140.opus"
+      }
+    },
+    {
+      "id": "ph-s-0141",
+      "text_en": "I gotta go.",
+      "translation_ru": "Мне пора бежать.",
+      "grammar_point_id": "gp-s-05",
+      "variants": ["I gotta go."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0141.opus"
+      }
+    },
+    {
+      "id": "ph-s-0142",
+      "text_en": "She ain't coming.",
+      "translation_ru": "Она не придёт.",
+      "grammar_point_id": "gp-s-05",
+      "variants": ["She ain't coming."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0142.opus"
+      }
+    },
+    {
+      "id": "ph-s-0143",
+      "text_en": "You gotta be kidding me.",
+      "translation_ru": "Ты издеваешься.",
+      "grammar_point_id": "gp-s-05",
+      "variants": ["You gotta be kidding me."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0143.opus"
+      }
+    },
+    {
+      "id": "ph-s-0144",
+      "text_en": "Nothing's gonna change.",
+      "translation_ru": "Ничего не изменится.",
+      "grammar_point_id": "gp-s-05",
+      "variants": ["Nothing's gonna change."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0144.opus"
+      }
+    },
+    {
+      "id": "ph-s-0145",
+      "text_en": "We're gonna make it.",
+      "translation_ru": "Мы успеем.",
+      "grammar_point_id": "gp-s-05",
+      "variants": ["We're gonna make it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0145.opus"
+      }
+    },
+    {
+      "id": "ph-s-0146",
+      "text_en": "I dunno what you mean.",
+      "translation_ru": "Не знаю, о чём ты.",
+      "grammar_point_id": "gp-s-05",
+      "variants": ["I dunno what you mean."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0146.opus"
+      }
+    },
+    {
+      "id": "ph-s-0147",
+      "text_en": "Gimme a second.",
+      "translation_ru": "Дай секунду.",
+      "grammar_point_id": "gp-s-05",
+      "variants": ["Gimme a second."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0147.opus"
+      }
+    },
+    {
+      "id": "ph-s-0148",
+      "text_en": "Wanna grab a coffee?",
+      "translation_ru": "Хочешь взять кофе?",
+      "grammar_point_id": "gp-s-05",
+      "variants": ["Wanna grab a coffee?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0148.opus"
+      }
+    },
+    {
+      "id": "ph-s-0149",
+      "text_en": "He's gonna regret this.",
+      "translation_ru": "Он пожалеет об этом.",
+      "grammar_point_id": "gp-s-05",
+      "variants": ["He's gonna regret this."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0149.opus"
+      }
+    },
+    {
+      "id": "ph-s-0150",
+      "text_en": "Ain't nobody got time for that.",
+      "translation_ru": "Ни у кого нет на это времени.",
+      "grammar_point_id": "gp-s-05",
+      "variants": ["Ain't nobody got time for that."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0150.opus"
+      }
+    },
+    {
+      "id": "ph-s-0151",
+      "text_en": "I'm not gonna lie, it was rough.",
+      "translation_ru": "Не буду врать, было тяжело.",
+      "grammar_point_id": "gp-s-05",
+      "variants": ["I'm not gonna lie, it was rough."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0151.opus"
+      }
+    },
+    {
+      "id": "ph-s-0152",
+      "text_en": "You wanna bet?",
+      "translation_ru": "Спорим?",
+      "grammar_point_id": "gp-s-05",
+      "variants": ["You wanna bet?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0152.opus"
+      }
+    },
+    {
+      "id": "ph-s-0153",
+      "text_en": "Gotta run, see you.",
+      "translation_ru": "Побежал, до встречи.",
+      "grammar_point_id": "gp-s-05",
+      "variants": ["Gotta run, see you."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0153.opus"
+      }
+    },
+    {
+      "id": "ph-s-0154",
+      "text_en": "Whatcha doing?",
+      "translation_ru": "Чем занимаешься?",
+      "grammar_point_id": "gp-s-05",
+      "variants": ["Whatcha doing?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0154.opus"
+      }
+    },
+    {
+      "id": "ph-s-0155",
+      "text_en": "Kinda busy right now.",
+      "translation_ru": "Как бы занят сейчас.",
+      "grammar_point_id": "gp-s-05",
+      "variants": ["Kinda busy right now."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0155.opus"
+      }
+    },
+    {
+      "id": "ph-s-0156",
+      "text_en": "Sorta funny, actually.",
+      "translation_ru": "Как бы смешно, вообще-то.",
+      "grammar_point_id": "gp-s-05",
+      "variants": ["Sorta funny, actually."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0156.opus"
+      }
+    },
+    {
+      "id": "ph-s-0157",
+      "text_en": "C'mon, we're late.",
+      "translation_ru": "Да ладно, мы опаздываем.",
+      "grammar_point_id": "gp-s-05",
+      "variants": ["C'mon, we're late."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0157.opus"
+      }
+    },
+    {
+      "id": "ph-s-0158",
+      "text_en": "Outta my way!",
+      "translation_ru": "С дороги!",
+      "grammar_point_id": "gp-s-05",
+      "variants": ["Outta my way!"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0158.opus"
+      }
+    },
+    {
+      "id": "ph-s-0159",
+      "text_en": "Lemme think about it.",
+      "translation_ru": "Дай мне подумать.",
+      "grammar_point_id": "gp-s-05",
+      "variants": ["Lemme think about it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0159.opus"
+      }
+    },
+    {
+      "id": "ph-s-0160",
+      "text_en": "I'm gonna grab some shut-eye.",
+      "translation_ru": "Я пойду вздремну.",
+      "grammar_point_id": "gp-s-05",
+      "variants": ["I'm gonna grab some shut-eye."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0160.opus"
+      }
+    },
+    {
+      "id": "ph-s-0161",
+      "text_en": "Nope, not gonna happen.",
+      "translation_ru": "Неа, этого не будет.",
+      "grammar_point_id": "gp-s-05",
+      "variants": ["Nope, not gonna happen."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0161.opus"
+      }
+    },
+    {
+      "id": "ph-s-0162",
+      "text_en": "Yeah, I'm down.",
+      "translation_ru": "Да, я за.",
+      "grammar_point_id": "gp-s-05",
+      "variants": ["Yeah, I'm down."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0162.opus"
+      }
+    },
+    {
+      "id": "ph-s-0163",
+      "text_en": "It's gonna cost ya.",
+      "translation_ru": "Это тебе влетит в копеечку.",
+      "grammar_point_id": "gp-s-05",
+      "variants": ["It's gonna cost ya."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0163.opus"
+      }
+    },
+    {
+      "id": "ph-s-0164",
+      "text_en": "Dunno, maybe tomorrow.",
+      "translation_ru": "Не знаю, может, завтра.",
+      "grammar_point_id": "gp-s-05",
+      "variants": ["Dunno, maybe tomorrow."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0164.opus"
+      }
+    },
+    {
+      "id": "ph-s-0165",
+      "text_en": "She's kinda upset with you.",
+      "translation_ru": "Она на тебя слегка обижена.",
+      "grammar_point_id": "gp-s-05",
+      "variants": ["She's kinda upset with you."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0165.opus"
+      }
+    },
+    {
+      "id": "ph-s-0166",
+      "text_en": "I'm wiped out, honestly.",
+      "translation_ru": "Я вымотан, честно.",
+      "grammar_point_id": "gp-s-05",
+      "variants": ["I'm wiped out, honestly."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0166.opus"
+      }
+    },
+    {
+      "id": "ph-s-0167",
+      "text_en": "Hang on a sec.",
+      "translation_ru": "Погоди секунду.",
+      "grammar_point_id": "gp-s-05",
+      "variants": ["Hang on a sec."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0167.opus"
+      }
+    },
+    {
+      "id": "ph-s-0168",
+      "text_en": "No sooner had we left than it started to rain.",
+      "translation_ru": "Не успели мы выйти, как начался дождь.",
+      "grammar_point_id": "gp-s-06",
+      "variants": ["No sooner had we left than it started to rain."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0168.opus"
+      }
+    },
+    {
+      "id": "ph-s-0169",
+      "text_en": "Only then did I understand the truth.",
+      "translation_ru": "Только тогда я понял правду.",
+      "grammar_point_id": "gp-s-06",
+      "variants": ["Only then did I understand the truth."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0169.opus"
+      }
+    },
+    {
+      "id": "ph-s-0170",
+      "text_en": "Neither do I.",
+      "translation_ru": "Я тоже (не).",
+      "grammar_point_id": "gp-s-06",
+      "variants": ["Neither do I."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0170.opus"
+      }
+    },
+    {
+      "id": "ph-s-0171",
+      "text_en": "Rarely does the train arrive on time.",
+      "translation_ru": "Редко поезд приходит вовремя.",
+      "grammar_point_id": "gp-s-06",
+      "variants": ["Rarely does the train arrive on time."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0171.opus"
+      }
+    },
+    {
+      "id": "ph-s-0172",
+      "text_en": "Under no circumstances should you sign it.",
+      "translation_ru": "Ни при каких обстоятельствах не подписывай это.",
+      "grammar_point_id": "gp-s-06",
+      "variants": ["Under no circumstances should you sign it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0172.opus"
+      }
+    },
+    {
+      "id": "ph-s-0173",
+      "text_en": "Never have I felt more alive.",
+      "translation_ru": "Ещё никогда я не чувствовал себя настолько живым.",
+      "grammar_point_id": "gp-s-06",
+      "variants": ["Never have I felt more alive."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0173.opus"
+      }
+    },
+    {
+      "id": "ph-s-0174",
+      "text_en": "The flight was overbooked.",
+      "translation_ru": "Рейс был перепродан.",
+      "grammar_point_id": "gp-s-06",
+      "variants": ["The flight was overbooked."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0174.opus"
+      }
+    },
+    {
+      "id": "ph-s-0175",
+      "text_en": "Let's call it a day.",
+      "translation_ru": "Давай закончим на сегодня.",
+      "grammar_point_id": "gp-s-06",
+      "variants": ["Let's call it a day."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0175.opus"
+      }
+    },
+    {
+      "id": "ph-s-0176",
+      "text_en": "Museums are not my cup of tea.",
+      "translation_ru": "Музеи — не моё.",
+      "grammar_point_id": "gp-s-06",
+      "variants": ["Museums are not my cup of tea."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0176.opus"
+      }
+    },
+    {
+      "id": "ph-s-0177",
+      "text_en": "Keep an eye on your bag.",
+      "translation_ru": "Следи за сумкой.",
+      "grammar_point_id": "gp-s-06",
+      "variants": ["Keep an eye on your bag."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0177.opus"
+      }
+    },
+    {
+      "id": "ph-s-0178",
+      "text_en": "When in doubt, book ahead.",
+      "translation_ru": "Сомневаешься — бронируй заранее.",
+      "grammar_point_id": "gp-s-06",
+      "variants": ["When in doubt, book ahead."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0178.opus"
+      }
+    },
+    {
+      "id": "ph-s-0179",
+      "text_en": "Our plans hit a snag at the border.",
+      "translation_ru": "На границе наши планы дали сбой.",
+      "grammar_point_id": "gp-s-06",
+      "variants": ["Our plans hit a snag at the border."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0179.opus"
+      }
+    },
+    {
+      "id": "ph-s-0180",
+      "text_en": "You needn't have worried.",
+      "translation_ru": "Мог бы и не волноваться — зря волновался.",
+      "grammar_point_id": "gp-s-06",
+      "variants": ["You needn't have worried."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0180.opus"
+      }
+    },
+    {
+      "id": "ph-s-0181",
+      "text_en": "She might well be right.",
+      "translation_ru": "Она вполне может быть права.",
+      "grammar_point_id": "gp-s-06",
+      "variants": ["She might well be right."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0181.opus"
+      }
+    },
+    {
+      "id": "ph-s-0182",
+      "text_en": "You'd better hurry up.",
+      "translation_ru": "Тебе лучше поторопиться.",
+      "grammar_point_id": "gp-s-06",
+      "variants": ["You'd better hurry up."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0182.opus"
+      }
+    },
+    {
+      "id": "ph-s-0183",
+      "text_en": "He must have left already.",
+      "translation_ru": "Должно быть, он уже ушёл.",
+      "grammar_point_id": "gp-s-06",
+      "variants": ["He must have left already."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0183.opus"
+      }
+    },
+    {
+      "id": "ph-s-0184",
+      "text_en": "I'd rather not say.",
+      "translation_ru": "Я бы предпочёл не говорить.",
+      "grammar_point_id": "gp-s-06",
+      "variants": ["I'd rather not say."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0184.opus"
+      }
+    },
+    {
+      "id": "ph-s-0185",
+      "text_en": "It can't have been easy for them.",
+      "translation_ru": "Наверняка им было непросто.",
+      "grammar_point_id": "gp-s-06",
+      "variants": ["It can't have been easy for them."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0185.opus"
+      }
+    },
+    {
+      "id": "ph-s-0186",
+      "text_en": "Nevertheless, the show went on.",
+      "translation_ru": "Тем не менее шоу продолжилось.",
+      "grammar_point_id": "gp-s-06",
+      "variants": ["Nevertheless, the show went on."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0186.opus"
+      }
+    },
+    {
+      "id": "ph-s-0187",
+      "text_en": "Despite the rain, the match went ahead.",
+      "translation_ru": "Несмотря на дождь, матч состоялся.",
+      "grammar_point_id": "gp-s-06",
+      "variants": ["Despite the rain, the match went ahead."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0187.opus"
+      }
+    },
+    {
+      "id": "ph-s-0188",
+      "text_en": "I like tea, whereas she prefers coffee.",
+      "translation_ru": "Я люблю чай, тогда как она предпочитает кофе.",
+      "grammar_point_id": "gp-s-06",
+      "variants": ["I like tea, whereas she prefers coffee."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0188.opus"
+      }
+    },
+    {
+      "id": "ph-s-0189",
+      "text_en": "Consequently, prices went up.",
+      "translation_ru": "В результате цены выросли.",
+      "grammar_point_id": "gp-s-06",
+      "variants": ["Consequently, prices went up."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0189.opus"
+      }
+    },
+    {
+      "id": "ph-s-0190",
+      "text_en": "Instead of complaining, act.",
+      "translation_ru": "Вместо того чтобы жаловаться, действуй.",
+      "grammar_point_id": "gp-s-06",
+      "variants": ["Instead of complaining, act."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0190.opus"
+      }
+    },
+    {
+      "id": "ph-s-0191",
+      "text_en": "I wanna go home.",
+      "translation_ru": "Я хочу домой.",
+      "grammar_point_id": "gp-s-06",
+      "variants": ["I wanna go home."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0191.opus"
+      }
+    },
+    {
+      "id": "ph-s-0192",
+      "text_en": "I gotta go.",
+      "translation_ru": "Мне пора бежать.",
+      "grammar_point_id": "gp-s-06",
+      "variants": ["I gotta go."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0192.opus"
+      }
+    },
+    {
+      "id": "ph-s-0193",
+      "text_en": "You gotta be kidding me.",
+      "translation_ru": "Ты издеваешься.",
+      "grammar_point_id": "gp-s-06",
+      "variants": ["You gotta be kidding me."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0193.opus"
+      }
+    },
+    {
+      "id": "ph-s-0194",
+      "text_en": "Gimme a second.",
+      "translation_ru": "Дай секунду.",
+      "grammar_point_id": "gp-s-06",
+      "variants": ["Gimme a second."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0194.opus"
+      }
+    },
+    {
+      "id": "ph-s-0195",
+      "text_en": "Hang on a sec.",
+      "translation_ru": "Погоди секунду.",
+      "grammar_point_id": "gp-s-06",
+      "variants": ["Hang on a sec."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0195.opus"
+      }
+    },
+    {
+      "id": "ph-s-0196",
+      "text_en": "The plot twist hit hard.",
+      "translation_ru": "Поворот сюжета ударил сильно.",
+      "grammar_point_id": "gp-s-07",
+      "variants": ["The plot twist hit hard."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0196.opus"
+      }
+    },
+    {
+      "id": "ph-s-0197",
+      "text_en": "It's overrated, honestly.",
+      "translation_ru": "Переоценено, честно.",
+      "grammar_point_id": "gp-s-07",
+      "variants": ["It's overrated, honestly."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0197.opus"
+      }
+    },
+    {
+      "id": "ph-s-0198",
+      "text_en": "The pacing drags a bit.",
+      "translation_ru": "Темп немного провисает.",
+      "grammar_point_id": "gp-s-07",
+      "variants": ["The pacing drags a bit."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0198.opus"
+      }
+    },
+    {
+      "id": "ph-s-0199",
+      "text_en": "The finale paid off.",
+      "translation_ru": "Финал оправдал ожидания.",
+      "grammar_point_id": "gp-s-07",
+      "variants": ["The finale paid off."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0199.opus"
+      }
+    },
+    {
+      "id": "ph-s-0200",
+      "text_en": "It's dark, but compelling.",
+      "translation_ru": "Мрачно, но увлекательно.",
+      "grammar_point_id": "gp-s-07",
+      "variants": ["It's dark, but compelling."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0200.opus"
+      }
+    },
+    {
+      "id": "ph-s-0201",
+      "text_en": "The villain steals the show.",
+      "translation_ru": "Злодей крадёт шоу.",
+      "grammar_point_id": "gp-s-07",
+      "variants": ["The villain steals the show."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0201.opus"
+      }
+    },
+    {
+      "id": "ph-s-0202",
+      "text_en": "The stakes feel real.",
+      "translation_ru": "Ставки ощущаются настоящими.",
+      "grammar_point_id": "gp-s-07",
+      "variants": ["The stakes feel real."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0202.opus"
+      }
+    },
+    {
+      "id": "ph-s-0203",
+      "text_en": "It subverts your expectations.",
+      "translation_ru": "Это ломает ожидания.",
+      "grammar_point_id": "gp-s-07",
+      "variants": ["It subverts your expectations."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0203.opus"
+      }
+    },
+    {
+      "id": "ph-s-0204",
+      "text_en": "Slow burn, worth it.",
+      "translation_ru": "Медленный разгон — того стоит.",
+      "grammar_point_id": "gp-s-07",
+      "variants": ["Slow burn, worth it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0204.opus"
+      }
+    },
+    {
+      "id": "ph-s-0205",
+      "text_en": "The dub ruins the mood.",
+      "translation_ru": "Дубляж портит атмосферу.",
+      "grammar_point_id": "gp-s-07",
+      "variants": ["The dub ruins the mood."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0205.opus"
+      }
+    },
+    {
+      "id": "ph-s-0206",
+      "text_en": "I binge-watched the whole season.",
+      "translation_ru": "Я проглотил весь сезон за раз.",
+      "grammar_point_id": "gp-s-07",
+      "variants": ["I binge-watched the whole season."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0206.opus"
+      }
+    },
+    {
+      "id": "ph-s-0207",
+      "text_en": "It's heavy on symbolism.",
+      "translation_ru": "Там много символизма.",
+      "grammar_point_id": "gp-s-07",
+      "variants": ["It's heavy on symbolism."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0207.opus"
+      }
+    },
+    {
+      "id": "ph-s-0208",
+      "text_en": "The ending divides fans.",
+      "translation_ru": "Финал разделил фанатов.",
+      "grammar_point_id": "gp-s-07",
+      "variants": ["The ending divides fans."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0208.opus"
+      }
+    },
+    {
+      "id": "ph-s-0209",
+      "text_en": "Nihilistic, yet oddly hopeful.",
+      "translation_ru": "Нигилистично, и всё же странно воодушевляюще.",
+      "grammar_point_id": "gp-s-07",
+      "variants": ["Nihilistic, yet oddly hopeful."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0209.opus"
+      }
+    },
+    {
+      "id": "ph-s-0210",
+      "text_en": "The sound design is immersive.",
+      "translation_ru": "Звук полностью погружает.",
+      "grammar_point_id": "gp-s-07",
+      "variants": ["The sound design is immersive."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0210.opus"
+      }
+    },
+    {
+      "id": "ph-s-0211",
+      "text_en": "It explores grief and memory.",
+      "translation_ru": "Он исследует горе и память.",
+      "grammar_point_id": "gp-s-07",
+      "variants": ["It explores grief and memory."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0211.opus"
+      }
+    },
+    {
+      "id": "ph-s-0212",
+      "text_en": "The satire cuts deep.",
+      "translation_ru": "Сатира бьёт глубоко.",
+      "grammar_point_id": "gp-s-07",
+      "variants": ["The satire cuts deep."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0212.opus"
+      }
+    },
+    {
+      "id": "ph-s-0213",
+      "text_en": "Every episode stands alone.",
+      "translation_ru": "Каждая серия самостоятельна.",
+      "grammar_point_id": "gp-s-07",
+      "variants": ["Every episode stands alone."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0213.opus"
+      }
+    },
+    {
+      "id": "ph-s-0214",
+      "text_en": "The premise is unsettling.",
+      "translation_ru": "Завязка тревожная.",
+      "grammar_point_id": "gp-s-07",
+      "variants": ["The premise is unsettling."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0214.opus"
+      }
+    },
+    {
+      "id": "ph-s-0215",
+      "text_en": "Consequences feel permanent.",
+      "translation_ru": "Последствия ощущаются необратимыми.",
+      "grammar_point_id": "gp-s-07",
+      "variants": ["Consequences feel permanent."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0215.opus"
+      }
+    },
+    {
+      "id": "ph-s-0216",
+      "text_en": "The protagonist isn't likeable, just fascinating.",
+      "translation_ru": "Герой не приятный — просто завораживающий.",
+      "grammar_point_id": "gp-s-07",
+      "variants": ["The protagonist isn't likeable, just fascinating."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0216.opus"
+      }
+    },
+    {
+      "id": "ph-s-0217",
+      "text_en": "Watch it subbed, trust me.",
+      "translation_ru": "Смотри в субтитрах, поверь.",
+      "grammar_point_id": "gp-s-07",
+      "variants": ["Watch it subbed, trust me."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0217.opus"
+      }
+    },
+    {
+      "id": "ph-s-0218",
+      "text_en": "It lingers after the credits.",
+      "translation_ru": "Он остаётся с тобой после титров.",
+      "grammar_point_id": "gp-s-07",
+      "variants": ["It lingers after the credits."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0218.opus"
+      }
+    },
+    {
+      "id": "ph-s-0219",
+      "text_en": "Dystopia dressed as entertainment.",
+      "translation_ru": "Дистопия, замаскированная под развлечение.",
+      "grammar_point_id": "gp-s-07",
+      "variants": ["Dystopia dressed as entertainment."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0219.opus"
+      }
+    },
+    {
+      "id": "ph-s-0220",
+      "text_en": "Had I known about the strike, I'd have driven.",
+      "translation_ru": "Знай я о забастовке — поехал бы на машине.",
+      "grammar_point_id": "gp-s-08",
+      "variants": ["Had I known about the strike, I'd have driven."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0220.opus"
+      }
+    },
+    {
+      "id": "ph-s-0221",
+      "text_en": "Were it not for you, we'd be lost.",
+      "translation_ru": "Не будь тебя, мы бы заблудились.",
+      "grammar_point_id": "gp-s-08",
+      "variants": ["Were it not for you, we'd be lost."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0221.opus"
+      }
+    },
+    {
+      "id": "ph-s-0222",
+      "text_en": "Should you need help, just ask.",
+      "translation_ru": "Если понадобится помощь — просто спроси.",
+      "grammar_point_id": "gp-s-08",
+      "variants": ["Should you need help, just ask."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0222.opus"
+      }
+    },
+    {
+      "id": "ph-s-0223",
+      "text_en": "Had it not been for the delay, we'd have won.",
+      "translation_ru": "Не задержись мы, мы бы выиграли.",
+      "grammar_point_id": "gp-s-08",
+      "variants": ["Had it not been for the delay, we'd have won."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0223.opus"
+      }
+    },
+    {
+      "id": "ph-s-0224",
+      "text_en": "Were I in your shoes, I'd decline.",
+      "translation_ru": "На твоём месте я бы отказался.",
+      "grammar_point_id": "gp-s-08",
+      "variants": ["Were I in your shoes, I'd decline."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0224.opus"
+      }
+    },
+    {
+      "id": "ph-s-0225",
+      "text_en": "Had she studied, she would have passed.",
+      "translation_ru": "Позанимайся она — прошла бы.",
+      "grammar_point_id": "gp-s-08",
+      "variants": ["Had she studied, she would have passed."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0225.opus"
+      }
+    },
+    {
+      "id": "ph-s-0226",
+      "text_en": "Should it rain, we'll move inside.",
+      "translation_ru": "Если будет дождь, перейдём внутрь.",
+      "grammar_point_id": "gp-s-08",
+      "variants": ["Should it rain, we'll move inside."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0226.opus"
+      }
+    },
+    {
+      "id": "ph-s-0227",
+      "text_en": "Had they arrived on time, we'd have seen it.",
+      "translation_ru": "Приди они вовремя, мы бы успели посмотреть.",
+      "grammar_point_id": "gp-s-08",
+      "variants": ["Had they arrived on time, we'd have seen it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0227.opus"
+      }
+    },
+    {
+      "id": "ph-s-0228",
+      "text_en": "Were the stakes lower, I'd relax.",
+      "translation_ru": "Будь ставки ниже, я бы расслабился.",
+      "grammar_point_id": "gp-s-08",
+      "variants": ["Were the stakes lower, I'd relax."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0228.opus"
+      }
+    },
+    {
+      "id": "ph-s-0229",
+      "text_en": "Had you warned us, nothing would have burned.",
+      "translation_ru": "Предупреди ты нас — ничего бы не сгорело.",
+      "grammar_point_id": "gp-s-08",
+      "variants": ["Had you warned us, nothing would have burned."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0229.opus"
+      }
+    },
+    {
+      "id": "ph-s-0230",
+      "text_en": "Should anyone call, take a message.",
+      "translation_ru": "Если кто-нибудь позвонит, запиши.",
+      "grammar_point_id": "gp-s-08",
+      "variants": ["Should anyone call, take a message."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0230.opus"
+      }
+    },
+    {
+      "id": "ph-s-0231",
+      "text_en": "Had I been there, it wouldn't have happened.",
+      "translation_ru": "Будь я там, этого бы не случилось.",
+      "grammar_point_id": "gp-s-08",
+      "variants": ["Had I been there, it wouldn't have happened."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0231.opus"
+      }
+    },
+    {
+      "id": "ph-s-0232",
+      "text_en": "Were it not for the internet, we'd never have met.",
+      "translation_ru": "Не будь интернета, мы бы никогда не встретились.",
+      "grammar_point_id": "gp-s-08",
+      "variants": ["Were it not for the internet, we'd never have met."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0232.opus"
+      }
+    },
+    {
+      "id": "ph-s-0233",
+      "text_en": "Should the worst happen, stay calm.",
+      "translation_ru": "Если случится худшее, сохраняй спокойствие.",
+      "grammar_point_id": "gp-s-08",
+      "variants": ["Should the worst happen, stay calm."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0233.opus"
+      }
+    },
+    {
+      "id": "ph-s-0234",
+      "text_en": "Had we booked sooner, it'd have been cheaper.",
+      "translation_ru": "Забронируй мы раньше — вышло бы дешевле.",
+      "grammar_point_id": "gp-s-08",
+      "variants": ["Had we booked sooner, it'd have been cheaper."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0234.opus"
+      }
+    },
+    {
+      "id": "ph-s-0235",
+      "text_en": "Were she here, she'd know what to do.",
+      "translation_ru": "Будь она здесь, она бы знала, что делать.",
+      "grammar_point_id": "gp-s-08",
+      "variants": ["Were she here, she'd know what to do."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0235.opus"
+      }
+    },
+    {
+      "id": "ph-s-0236",
+      "text_en": "Had the alarm worked, we'd have woken up.",
+      "translation_ru": "Работай сигнализация — мы бы проснулись.",
+      "grammar_point_id": "gp-s-08",
+      "variants": ["Had the alarm worked, we'd have woken up."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0236.opus"
+      }
+    },
+    {
+      "id": "ph-s-0237",
+      "text_en": "Should you change your mind, I'm here.",
+      "translation_ru": "Передумаешь — я здесь.",
+      "grammar_point_id": "gp-s-08",
+      "variants": ["Should you change your mind, I'm here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0237.opus"
+      }
+    },
+    {
+      "id": "ph-s-0238",
+      "text_en": "Had it been anyone else, I'd have refused.",
+      "translation_ru": "Будь это кто-то другой, я бы отказался.",
+      "grammar_point_id": "gp-s-08",
+      "variants": ["Had it been anyone else, I'd have refused."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0238.opus"
+      }
+    },
+    {
+      "id": "ph-s-0239",
+      "text_en": "Were it possible, I'd do it again.",
+      "translation_ru": "Если бы это было возможно, я бы сделал это снова.",
+      "grammar_point_id": "gp-s-08",
+      "variants": ["Were it possible, I'd do it again."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0239.opus"
+      }
+    },
+    {
+      "id": "ph-s-0240",
+      "text_en": "Had I listened to you, I'd be rich now.",
+      "translation_ru": "Послушай я тебя — был бы сейчас богат.",
+      "grammar_point_id": "gp-s-08",
+      "variants": ["Had I listened to you, I'd be rich now."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0240.opus"
+      }
+    },
+    {
+      "id": "ph-s-0241",
+      "text_en": "Should you see him, don't mention it.",
+      "translation_ru": "Увидишь его — не упоминай об этом.",
+      "grammar_point_id": "gp-s-08",
+      "variants": ["Should you see him, don't mention it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0241.opus"
+      }
+    },
+    {
+      "id": "ph-s-0242",
+      "text_en": "Had we known the rules, we'd have played differently.",
+      "translation_ru": "Знай мы правила — играли бы иначе.",
+      "grammar_point_id": "gp-s-08",
+      "variants": ["Had we known the rules, we'd have played differently."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0242.opus"
+      }
+    },
+    {
+      "id": "ph-s-0243",
+      "text_en": "Were it not for coffee, mornings would not exist.",
+      "translation_ru": "Не будь кофе, утро не существовало бы.",
+      "grammar_point_id": "gp-s-08",
+      "variants": ["Were it not for coffee, mornings would not exist."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0243.opus"
+      }
+    },
+    {
+      "id": "ph-s-0244",
+      "text_en": "Had I one more chance, I'd take it.",
+      "translation_ru": "Будь у меня ещё один шанс, я бы его взял.",
+      "grammar_point_id": "gp-s-08",
+      "variants": ["Had I one more chance, I'd take it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0244.opus"
+      }
+    },
+    {
+      "id": "ph-s-0245",
+      "text_en": "Should you ever visit Rome, call me.",
+      "translation_ru": "Если когда-нибудь приедешь в Рим — позвони.",
+      "grammar_point_id": "gp-s-08",
+      "variants": ["Should you ever visit Rome, call me."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0245.opus"
+      }
+    },
+    {
+      "id": "ph-s-0246",
+      "text_en": "Had anyone objected, the plan would have died.",
+      "translation_ru": "Возрази кто-нибудь — план бы умер.",
+      "grammar_point_id": "gp-s-08",
+      "variants": ["Had anyone objected, the plan would have died."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0246.opus"
+      }
+    },
+    {
+      "id": "ph-s-0247",
+      "text_en": "Were it my decision, we'd leave tonight.",
+      "translation_ru": "Будь это моё решение, мы бы уехали сегодня.",
+      "grammar_point_id": "gp-s-08",
+      "variants": ["Were it my decision, we'd leave tonight."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0247.opus"
+      }
+    },
+    {
+      "id": "ph-s-0248",
+      "text_en": "Had I known.",
+      "translation_ru": "Если бы я знал.",
+      "grammar_point_id": "gp-s-08",
+      "variants": ["Had I known."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0248.opus"
+      }
+    },
+    {
+      "id": "ph-s-0249",
+      "text_en": "Should it rain.",
+      "translation_ru": "Если будет дождь.",
+      "grammar_point_id": "gp-s-08",
+      "variants": ["Should it rain."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0249.opus"
+      }
+    },
+    {
+      "id": "ph-s-0250",
+      "text_en": "Were it possible.",
+      "translation_ru": "Если бы это было возможно.",
+      "grammar_point_id": "gp-s-08",
+      "variants": ["Were it possible."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0250.opus"
+      }
+    },
+    {
+      "id": "ph-s-0251",
+      "text_en": "Had they known.",
+      "translation_ru": "Если бы они знали.",
+      "grammar_point_id": "gp-s-08",
+      "variants": ["Had they known."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0251.opus"
+      }
+    },
+    {
+      "id": "ph-s-0252",
+      "text_en": "It is believed that the house is haunted.",
+      "translation_ru": "Считается, что в доме живёт призрак.",
+      "grammar_point_id": "gp-s-09",
+      "variants": ["It is believed that the house is haunted."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0252.opus"
+      }
+    },
+    {
+      "id": "ph-s-0253",
+      "text_en": "It is reported that talks have collapsed.",
+      "translation_ru": "Сообщается, что переговоры провалились.",
+      "grammar_point_id": "gp-s-09",
+      "variants": ["It is reported that talks have collapsed."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0253.opus"
+      }
+    },
+    {
+      "id": "ph-s-0254",
+      "text_en": "It has been announced that fares will rise.",
+      "translation_ru": "Объявлено, что тарифы вырастут.",
+      "grammar_point_id": "gp-s-09",
+      "variants": ["It has been announced that fares will rise."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0254.opus"
+      }
+    },
+    {
+      "id": "ph-s-0255",
+      "text_en": "He is said to be a genius.",
+      "translation_ru": "Говорят, он гений.",
+      "grammar_point_id": "gp-s-09",
+      "variants": ["He is said to be a genius."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0255.opus"
+      }
+    },
+    {
+      "id": "ph-s-0256",
+      "text_en": "The matter is being looked into.",
+      "translation_ru": "Делом занимаются.",
+      "grammar_point_id": "gp-s-09",
+      "variants": ["The matter is being looked into."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0256.opus"
+      }
+    },
+    {
+      "id": "ph-s-0257",
+      "text_en": "Measures are being taken.",
+      "translation_ru": "Меры принимаются.",
+      "grammar_point_id": "gp-s-09",
+      "variants": ["Measures are being taken."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0257.opus"
+      }
+    },
+    {
+      "id": "ph-s-0258",
+      "text_en": "It is thought that the painting is fake.",
+      "translation_ru": "Полагают, что картина — подделка.",
+      "grammar_point_id": "gp-s-09",
+      "variants": ["It is thought that the painting is fake."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0258.opus"
+      }
+    },
+    {
+      "id": "ph-s-0259",
+      "text_en": "The decision was made last night.",
+      "translation_ru": "Решение было принято вчера ночью.",
+      "grammar_point_id": "gp-s-09",
+      "variants": ["The decision was made last night."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0259.opus"
+      }
+    },
+    {
+      "id": "ph-s-0260",
+      "text_en": "Nothing is known about his whereabouts.",
+      "translation_ru": "О его местонахождении ничего не известно.",
+      "grammar_point_id": "gp-s-09",
+      "variants": ["Nothing is known about his whereabouts."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0260.opus"
+      }
+    },
+    {
+      "id": "ph-s-0261",
+      "text_en": "Steps will be taken to prevent this.",
+      "translation_ru": "Будут приняты меры, чтобы это предотвратить.",
+      "grammar_point_id": "gp-s-09",
+      "variants": ["Steps will be taken to prevent this."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0261.opus"
+      }
+    },
+    {
+      "id": "ph-s-0262",
+      "text_en": "It was agreed that the deadline stands.",
+      "translation_ru": "Было согласовано, что дедлайн в силе.",
+      "grammar_point_id": "gp-s-09",
+      "variants": ["It was agreed that the deadline stands."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0262.opus"
+      }
+    },
+    {
+      "id": "ph-s-0263",
+      "text_en": "The bridge is due to be opened in May.",
+      "translation_ru": "Мост должен быть открыт в мае.",
+      "grammar_point_id": "gp-s-09",
+      "variants": ["The bridge is due to be opened in May."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0263.opus"
+      }
+    },
+    {
+      "id": "ph-s-0264",
+      "text_en": "She is expected to resign.",
+      "translation_ru": "Ожидается, что она уйдёт в отставку.",
+      "grammar_point_id": "gp-s-09",
+      "variants": ["She is expected to resign."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0264.opus"
+      }
+    },
+    {
+      "id": "ph-s-0265",
+      "text_en": "The letter is believed to have been lost.",
+      "translation_ru": "Считается, что письмо было утеряно.",
+      "grammar_point_id": "gp-s-09",
+      "variants": ["The letter is believed to have been lost."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0265.opus"
+      }
+    },
+    {
+      "id": "ph-s-0266",
+      "text_en": "It cannot be ruled out.",
+      "translation_ru": "Это нельзя исключать.",
+      "grammar_point_id": "gp-s-09",
+      "variants": ["It cannot be ruled out."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0266.opus"
+      }
+    },
+    {
+      "id": "ph-s-0267",
+      "text_en": "The policy is widely criticised.",
+      "translation_ru": "Политика широко критикуется.",
+      "grammar_point_id": "gp-s-09",
+      "variants": ["The policy is widely criticised."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0267.opus"
+      }
+    },
+    {
+      "id": "ph-s-0268",
+      "text_en": "It has been confirmed that nobody was hurt.",
+      "translation_ru": "Подтверждено, что никто не пострадал.",
+      "grammar_point_id": "gp-s-09",
+      "variants": ["It has been confirmed that nobody was hurt."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0268.opus"
+      }
+    },
+    {
+      "id": "ph-s-0269",
+      "text_en": "The substance was found to be harmless.",
+      "translation_ru": "Вещество было признано безвредным.",
+      "grammar_point_id": "gp-s-09",
+      "variants": ["The substance was found to be harmless."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0269.opus"
+      }
+    },
+    {
+      "id": "ph-s-0270",
+      "text_en": "Little is known about the author.",
+      "translation_ru": "Об авторе мало что известно.",
+      "grammar_point_id": "gp-s-09",
+      "variants": ["Little is known about the author."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0270.opus"
+      }
+    },
+    {
+      "id": "ph-s-0271",
+      "text_en": "The results are to be published in June.",
+      "translation_ru": "Результаты будут опубликованы в июне.",
+      "grammar_point_id": "gp-s-09",
+      "variants": ["The results are to be published in June."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0271.opus"
+      }
+    },
+    {
+      "id": "ph-s-0272",
+      "text_en": "It should be noted that prices vary.",
+      "translation_ru": "Следует отметить, что цены различаются.",
+      "grammar_point_id": "gp-s-09",
+      "variants": ["It should be noted that prices vary."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0272.opus"
+      }
+    },
+    {
+      "id": "ph-s-0273",
+      "text_en": "The flight was delayed due to fog.",
+      "translation_ru": "Рейс был задержан из-за тумана.",
+      "grammar_point_id": "gp-s-09",
+      "variants": ["The flight was delayed due to fog."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0273.opus"
+      }
+    },
+    {
+      "id": "ph-s-0274",
+      "text_en": "He is rumoured to be leaving.",
+      "translation_ru": "Ходят слухи, что он уходит.",
+      "grammar_point_id": "gp-s-09",
+      "variants": ["He is rumoured to be leaving."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0274.opus"
+      }
+    },
+    {
+      "id": "ph-s-0275",
+      "text_en": "It is estimated that millions watched.",
+      "translation_ru": "По оценкам, смотрели миллионы.",
+      "grammar_point_id": "gp-s-09",
+      "variants": ["It is estimated that millions watched."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0275.opus"
+      }
+    },
+    {
+      "id": "ph-s-0276",
+      "text_en": "The system is being upgraded this weekend.",
+      "translation_ru": "Систему обновляют в эти выходные.",
+      "grammar_point_id": "gp-s-09",
+      "variants": ["The system is being upgraded this weekend."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0276.opus"
+      }
+    },
+    {
+      "id": "ph-s-0277",
+      "text_en": "No decision has been reached yet.",
+      "translation_ru": "Решение пока не принято.",
+      "grammar_point_id": "gp-s-09",
+      "variants": ["No decision has been reached yet."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0277.opus"
+      }
+    },
+    {
+      "id": "ph-s-0278",
+      "text_en": "The ruins are said to be older than Rome.",
+      "translation_ru": "Говорят, руины старше Рима.",
+      "grammar_point_id": "gp-s-09",
+      "variants": ["The ruins are said to be older than Rome."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0278.opus"
+      }
+    },
+    {
+      "id": "ph-s-0279",
+      "text_en": "It was felt that a change was needed.",
+      "translation_ru": "Чувствовалось, что перемены необходимы.",
+      "grammar_point_id": "gp-s-09",
+      "variants": ["It was felt that a change was needed."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0279.opus"
+      }
+    },
+    {
+      "id": "ph-s-0280",
+      "text_en": "Nothing is known.",
+      "translation_ru": "Ничего не известно.",
+      "grammar_point_id": "gp-s-09",
+      "variants": ["Nothing is known."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0280.opus"
+      }
+    },
+    {
+      "id": "ph-s-0281",
+      "text_en": "It was agreed.",
+      "translation_ru": "Было согласовано.",
+      "grammar_point_id": "gp-s-09",
+      "variants": ["It was agreed."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0281.opus"
+      }
+    },
+    {
+      "id": "ph-s-0282",
+      "text_en": "The decision was made.",
+      "translation_ru": "Решение было принято.",
+      "grammar_point_id": "gp-s-09",
+      "variants": ["The decision was made."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0282.opus"
+      }
+    },
+    {
+      "id": "ph-s-0283",
+      "text_en": "It has been confirmed.",
+      "translation_ru": "Подтверждено.",
+      "grammar_point_id": "gp-s-09",
+      "variants": ["It has been confirmed."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0283.opus"
+      }
+    },
+    {
+      "id": "ph-s-0284",
+      "text_en": "The plot twist hit hard.",
+      "translation_ru": "Поворот сюжета ударил сильно.",
+      "grammar_point_id": "gp-s-10",
+      "variants": ["The plot twist hit hard."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0284.opus"
+      }
+    },
+    {
+      "id": "ph-s-0285",
+      "text_en": "It's overrated, honestly.",
+      "translation_ru": "Переоценено, честно.",
+      "grammar_point_id": "gp-s-10",
+      "variants": ["It's overrated, honestly."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0285.opus"
+      }
+    },
+    {
+      "id": "ph-s-0286",
+      "text_en": "The villain steals the show.",
+      "translation_ru": "Злодей крадёт шоу.",
+      "grammar_point_id": "gp-s-10",
+      "variants": ["The villain steals the show."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0286.opus"
+      }
+    },
+    {
+      "id": "ph-s-0287",
+      "text_en": "It subverts your expectations.",
+      "translation_ru": "Это ломает ожидания.",
+      "grammar_point_id": "gp-s-10",
+      "variants": ["It subverts your expectations."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0287.opus"
+      }
+    },
+    {
+      "id": "ph-s-0288",
+      "text_en": "I binge-watched the whole season.",
+      "translation_ru": "Я проглотил весь сезон за раз.",
+      "grammar_point_id": "gp-s-10",
+      "variants": ["I binge-watched the whole season."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0288.opus"
+      }
+    },
+    {
+      "id": "ph-s-0289",
+      "text_en": "Watch it subbed, trust me.",
+      "translation_ru": "Смотри в субтитрах, поверь.",
+      "grammar_point_id": "gp-s-10",
+      "variants": ["Watch it subbed, trust me."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0289.opus"
+      }
+    },
+    {
+      "id": "ph-s-0290",
+      "text_en": "It lingers after the credits.",
+      "translation_ru": "Он остаётся с тобой после титров.",
+      "grammar_point_id": "gp-s-10",
+      "variants": ["It lingers after the credits."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0290.opus"
+      }
+    },
+    {
+      "id": "ph-s-0291",
+      "text_en": "Had I known about the strike, I'd have driven.",
+      "translation_ru": "Знай я о забастовке — поехал бы на машине.",
+      "grammar_point_id": "gp-s-10",
+      "variants": ["Had I known about the strike, I'd have driven."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0291.opus"
+      }
+    },
+    {
+      "id": "ph-s-0292",
+      "text_en": "Were it not for you, we'd be lost.",
+      "translation_ru": "Не будь тебя, мы бы заблудились.",
+      "grammar_point_id": "gp-s-10",
+      "variants": ["Were it not for you, we'd be lost."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0292.opus"
+      }
+    },
+    {
+      "id": "ph-s-0293",
+      "text_en": "Should you need help, just ask.",
+      "translation_ru": "Если понадобится помощь — просто спроси.",
+      "grammar_point_id": "gp-s-10",
+      "variants": ["Should you need help, just ask."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0293.opus"
+      }
+    },
+    {
+      "id": "ph-s-0294",
+      "text_en": "Had I been there, it wouldn't have happened.",
+      "translation_ru": "Будь я там, этого бы не случилось.",
+      "grammar_point_id": "gp-s-10",
+      "variants": ["Had I been there, it wouldn't have happened."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0294.opus"
+      }
+    },
+    {
+      "id": "ph-s-0295",
+      "text_en": "Were she here, she'd know what to do.",
+      "translation_ru": "Будь она здесь, она бы знала, что делать.",
+      "grammar_point_id": "gp-s-10",
+      "variants": ["Were she here, she'd know what to do."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0295.opus"
+      }
+    },
+    {
+      "id": "ph-s-0296",
+      "text_en": "Should the worst happen, stay calm.",
+      "translation_ru": "Если случится худшее, сохраняй спокойствие.",
+      "grammar_point_id": "gp-s-10",
+      "variants": ["Should the worst happen, stay calm."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0296.opus"
+      }
+    },
+    {
+      "id": "ph-s-0297",
+      "text_en": "Were it not for coffee, mornings would not exist.",
+      "translation_ru": "Не будь кофе, утро не существовало бы.",
+      "grammar_point_id": "gp-s-10",
+      "variants": ["Were it not for coffee, mornings would not exist."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0297.opus"
+      }
+    },
+    {
+      "id": "ph-s-0298",
+      "text_en": "It is believed that the house is haunted.",
+      "translation_ru": "Считается, что в доме живёт призрак.",
+      "grammar_point_id": "gp-s-10",
+      "variants": ["It is believed that the house is haunted."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0298.opus"
+      }
+    },
+    {
+      "id": "ph-s-0299",
+      "text_en": "It is reported that talks have collapsed.",
+      "translation_ru": "Сообщается, что переговоры провалились.",
+      "grammar_point_id": "gp-s-10",
+      "variants": ["It is reported that talks have collapsed."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0299.opus"
+      }
+    },
+    {
+      "id": "ph-s-0300",
+      "text_en": "He is said to be a genius.",
+      "translation_ru": "Говорят, он гений.",
+      "grammar_point_id": "gp-s-10",
+      "variants": ["He is said to be a genius."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0300.opus"
+      }
+    },
+    {
+      "id": "ph-s-0301",
+      "text_en": "Measures are being taken.",
+      "translation_ru": "Меры принимаются.",
+      "grammar_point_id": "gp-s-10",
+      "variants": ["Measures are being taken."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0301.opus"
+      }
+    },
+    {
+      "id": "ph-s-0302",
+      "text_en": "The matter is being looked into.",
+      "translation_ru": "Делом занимаются.",
+      "grammar_point_id": "gp-s-10",
+      "variants": ["The matter is being looked into."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0302.opus"
+      }
+    },
+    {
+      "id": "ph-s-0303",
+      "text_en": "Steps will be taken to prevent this.",
+      "translation_ru": "Будут приняты меры, чтобы это предотвратить.",
+      "grammar_point_id": "gp-s-10",
+      "variants": ["Steps will be taken to prevent this."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0303.opus"
+      }
+    },
+    {
+      "id": "ph-s-0304",
+      "text_en": "Little is known about the author.",
+      "translation_ru": "Об авторе мало что известно.",
+      "grammar_point_id": "gp-s-10",
+      "variants": ["Little is known about the author."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0304.opus"
+      }
+    },
+    {
+      "id": "ph-s-0305",
+      "text_en": "It cannot be ruled out.",
+      "translation_ru": "Это нельзя исключать.",
+      "grammar_point_id": "gp-s-10",
+      "variants": ["It cannot be ruled out."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0305.opus"
+      }
+    },
+    {
+      "id": "ph-s-0306",
+      "text_en": "The results are to be published in June.",
+      "translation_ru": "Результаты будут опубликованы в июне.",
+      "grammar_point_id": "gp-s-10",
+      "variants": ["The results are to be published in June."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0306.opus"
+      }
+    },
+    {
+      "id": "ph-s-0307",
+      "text_en": "No decision has been reached yet.",
+      "translation_ru": "Решение пока не принято.",
+      "grammar_point_id": "gp-s-10",
+      "variants": ["No decision has been reached yet."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0307.opus"
+      }
+    },
+    {
+      "id": "ph-s-0308",
+      "text_en": "The ruins are said to be older than Rome.",
+      "translation_ru": "Говорят, руины старше Рима.",
+      "grammar_point_id": "gp-s-10",
+      "variants": ["The ruins are said to be older than Rome."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0308.opus"
+      }
+    },
+    {
+      "id": "ph-s-0309",
+      "text_en": "It has been confirmed.",
+      "translation_ru": "Подтверждено.",
+      "grammar_point_id": "gp-s-10",
+      "variants": ["It has been confirmed."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0309.opus"
+      }
+    },
+    {
+      "id": "ph-s-0310",
+      "text_en": "That's a tough one.",
+      "translation_ru": "Сложный вопрос.",
+      "grammar_point_id": "gp-s-11",
+      "variants": ["That's a tough one."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0310.opus"
+      }
+    },
+    {
+      "id": "ph-s-0311",
+      "text_en": "Let me think for a second.",
+      "translation_ru": "Дай подумать секунду.",
+      "grammar_point_id": "gp-s-11",
+      "variants": ["Let me think for a second."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0311.opus"
+      }
+    },
+    {
+      "id": "ph-s-0312",
+      "text_en": "The way I see it, it's freedom.",
+      "translation_ru": "Как я это вижу, это свобода.",
+      "grammar_point_id": "gp-s-11",
+      "variants": ["The way I see it, it's freedom."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0312.opus"
+      }
+    },
+    {
+      "id": "ph-s-0313",
+      "text_en": "If you ask me, it's overrated.",
+      "translation_ru": "Если спросишь меня, это переоценено.",
+      "grammar_point_id": "gp-s-11",
+      "variants": ["If you ask me, it's overrated."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0313.opus"
+      }
+    },
+    {
+      "id": "ph-s-0314",
+      "text_en": "To be honest, I haven't decided.",
+      "translation_ru": "Честно говоря, я не решил.",
+      "grammar_point_id": "gp-s-11",
+      "variants": ["To be honest, I haven't decided."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0314.opus"
+      }
+    },
+    {
+      "id": "ph-s-0315",
+      "text_en": "It depends on the season.",
+      "translation_ru": "Зависит от сезона.",
+      "grammar_point_id": "gp-s-11",
+      "variants": ["It depends on the season."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0315.opus"
+      }
+    },
+    {
+      "id": "ph-s-0316",
+      "text_en": "Off the top of my head, ten.",
+      "translation_ru": "Навскидку — десять.",
+      "grammar_point_id": "gp-s-11",
+      "variants": ["Off the top of my head, ten."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0316.opus"
+      }
+    },
+    {
+      "id": "ph-s-0317",
+      "text_en": "I'd say it's worth it.",
+      "translation_ru": "Я бы сказал, оно того стоит.",
+      "grammar_point_id": "gp-s-11",
+      "variants": ["I'd say it's worth it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0317.opus"
+      }
+    },
+    {
+      "id": "ph-s-0318",
+      "text_en": "Frankly, I don't buy it.",
+      "translation_ru": "Откровенно говоря, я в это не верю.",
+      "grammar_point_id": "gp-s-11",
+      "variants": ["Frankly, I don't buy it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0318.opus"
+      }
+    },
+    {
+      "id": "ph-s-0319",
+      "text_en": "That's a fair point.",
+      "translation_ru": "Справедливо.",
+      "grammar_point_id": "gp-s-11",
+      "variants": ["That's a fair point."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0319.opus"
+      }
+    },
+    {
+      "id": "ph-s-0320",
+      "text_en": "You've got a point there.",
+      "translation_ru": "Тут ты прав.",
+      "grammar_point_id": "gp-s-11",
+      "variants": ["You've got a point there."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0320.opus"
+      }
+    },
+    {
+      "id": "ph-s-0321",
+      "text_en": "I see it differently.",
+      "translation_ru": "Я вижу это иначе.",
+      "grammar_point_id": "gp-s-11",
+      "variants": ["I see it differently."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0321.opus"
+      }
+    },
+    {
+      "id": "ph-s-0322",
+      "text_en": "Correct me if I'm wrong.",
+      "translation_ru": "Поправь меня, если я не прав.",
+      "grammar_point_id": "gp-s-11",
+      "variants": ["Correct me if I'm wrong."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0322.opus"
+      }
+    },
+    {
+      "id": "ph-s-0323",
+      "text_en": "As far as I know, yes.",
+      "translation_ru": "Насколько я знаю, да.",
+      "grammar_point_id": "gp-s-11",
+      "variants": ["As far as I know, yes."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0323.opus"
+      }
+    },
+    {
+      "id": "ph-s-0324",
+      "text_en": "In a nutshell, it's chaos.",
+      "translation_ru": "Если коротко, это хаос.",
+      "grammar_point_id": "gp-s-11",
+      "variants": ["In a nutshell, it's chaos."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0324.opus"
+      }
+    },
+    {
+      "id": "ph-s-0325",
+      "text_en": "Long story short, we stayed.",
+      "translation_ru": "Короче говоря, мы остались.",
+      "grammar_point_id": "gp-s-11",
+      "variants": ["Long story short, we stayed."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0325.opus"
+      }
+    },
+    {
+      "id": "ph-s-0326",
+      "text_en": "Speaking of which, did you book?",
+      "translation_ru": "Кстати, ты забронировал?",
+      "grammar_point_id": "gp-s-11",
+      "variants": ["Speaking of which, did you book?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0326.opus"
+      }
+    },
+    {
+      "id": "ph-s-0327",
+      "text_en": "That reminds me of home.",
+      "translation_ru": "Это напоминает мне дом.",
+      "grammar_point_id": "gp-s-11",
+      "variants": ["That reminds me of home."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0327.opus"
+      }
+    },
+    {
+      "id": "ph-s-0328",
+      "text_en": "Come to think of it, you're right.",
+      "translation_ru": "Если подумать, ты прав.",
+      "grammar_point_id": "gp-s-11",
+      "variants": ["Come to think of it, you're right."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0328.opus"
+      }
+    },
+    {
+      "id": "ph-s-0329",
+      "text_en": "It's hard to put into words.",
+      "translation_ru": "Трудно выразить словами.",
+      "grammar_point_id": "gp-s-11",
+      "variants": ["It's hard to put into words."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0329.opus"
+      }
+    },
+    {
+      "id": "ph-s-0330",
+      "text_en": "I'm on the fence about it.",
+      "translation_ru": "Я пока сомневаюсь.",
+      "grammar_point_id": "gp-s-11",
+      "variants": ["I'm on the fence about it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0330.opus"
+      }
+    },
+    {
+      "id": "ph-s-0331",
+      "text_en": "That's not how I'd put it.",
+      "translation_ru": "Я бы так не сказал.",
+      "grammar_point_id": "gp-s-11",
+      "variants": ["That's not how I'd put it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0331.opus"
+      }
+    },
+    {
+      "id": "ph-s-0332",
+      "text_en": "If I had to choose, the mountains.",
+      "translation_ru": "Если выбирать, горы.",
+      "grammar_point_id": "gp-s-11",
+      "variants": ["If I had to choose, the mountains."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0332.opus"
+      }
+    },
+    {
+      "id": "ph-s-0333",
+      "text_en": "Don't get me wrong, I like it.",
+      "translation_ru": "Не пойми неправильно, мне нравится.",
+      "grammar_point_id": "gp-s-11",
+      "variants": ["Don't get me wrong, I like it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0333.opus"
+      }
+    },
+    {
+      "id": "ph-s-0334",
+      "text_en": "Let's agree to disagree.",
+      "translation_ru": "Давай останемся каждый при своём.",
+      "grammar_point_id": "gp-s-11",
+      "variants": ["Let's agree to disagree."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0334.opus"
+      }
+    },
+    {
+      "id": "ph-s-0335",
+      "text_en": "What it boils down to is time.",
+      "translation_ru": "Суть сводится ко времени.",
+      "grammar_point_id": "gp-s-11",
+      "variants": ["What it boils down to is time."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0335.opus"
+      }
+    },
+    {
+      "id": "ph-s-0336",
+      "text_en": "I was getting to that.",
+      "translation_ru": "Я как раз к этому шёл.",
+      "grammar_point_id": "gp-s-11",
+      "variants": ["I was getting to that."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0336.opus"
+      }
+    },
+    {
+      "id": "ph-s-0337",
+      "text_en": "Where do you stand on this?",
+      "translation_ru": "На какой ты стороне в этом вопросе?",
+      "grammar_point_id": "gp-s-11",
+      "variants": ["Where do you stand on this?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0337.opus"
+      }
+    },
+    {
+      "id": "ph-s-0338",
+      "text_en": "That's beside the point.",
+      "translation_ru": "Это не по существу.",
+      "grammar_point_id": "gp-s-11",
+      "variants": ["That's beside the point."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0338.opus"
+      }
+    },
+    {
+      "id": "ph-s-0339",
+      "text_en": "At the end of the day, it's your call.",
+      "translation_ru": "В итоге решать тебе.",
+      "grammar_point_id": "gp-s-11",
+      "variants": ["At the end of the day, it's your call."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0339.opus"
+      }
+    },
+    {
+      "id": "ph-s-0340",
+      "text_en": "You know what I mean.",
+      "translation_ru": "Ты понимаешь, о чём я.",
+      "grammar_point_id": "gp-s-12",
+      "variants": ["You know what I mean."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0340.opus"
+      }
+    },
+    {
+      "id": "ph-s-0341",
+      "text_en": "It's sort of complicated.",
+      "translation_ru": "Это как бы сложно.",
+      "grammar_point_id": "gp-s-12",
+      "variants": ["It's sort of complicated."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0341.opus"
+      }
+    },
+    {
+      "id": "ph-s-0342",
+      "text_en": "I kind of expected it.",
+      "translation_ru": "Я как бы ожидал этого.",
+      "grammar_point_id": "gp-s-12",
+      "variants": ["I kind of expected it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0342.opus"
+      }
+    },
+    {
+      "id": "ph-s-0343",
+      "text_en": "I mean, why not?",
+      "translation_ru": "Ну, почему бы и нет?",
+      "grammar_point_id": "gp-s-12",
+      "variants": ["I mean, why not?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0343.opus"
+      }
+    },
+    {
+      "id": "ph-s-0344",
+      "text_en": "It was, like, three in the morning.",
+      "translation_ru": "Было, типа, три утра.",
+      "grammar_point_id": "gp-s-12",
+      "variants": ["It was, like, three in the morning."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0344.opus"
+      }
+    },
+    {
+      "id": "ph-s-0345",
+      "text_en": "Actually, that works better.",
+      "translation_ru": "Вообще, так даже лучше.",
+      "grammar_point_id": "gp-s-12",
+      "variants": ["Actually, that works better."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0345.opus"
+      }
+    },
+    {
+      "id": "ph-s-0346",
+      "text_en": "Basically, nothing changed.",
+      "translation_ru": "По сути, ничего не изменилось.",
+      "grammar_point_id": "gp-s-12",
+      "variants": ["Basically, nothing changed."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0346.opus"
+      }
+    },
+    {
+      "id": "ph-s-0347",
+      "text_en": "To be fair, we were warned.",
+      "translation_ru": "Справедливости ради, нас предупреждали.",
+      "grammar_point_id": "gp-s-12",
+      "variants": ["To be fair, we were warned."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0347.opus"
+      }
+    },
+    {
+      "id": "ph-s-0348",
+      "text_en": "At the end of the day, it's a job.",
+      "translation_ru": "В конечном счёте, это работа.",
+      "grammar_point_id": "gp-s-12",
+      "variants": ["At the end of the day, it's a job."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0348.opus"
+      }
+    },
+    {
+      "id": "ph-s-0349",
+      "text_en": "If that makes sense.",
+      "translation_ru": "Если так можно сказать.",
+      "grammar_point_id": "gp-s-12",
+      "variants": ["If that makes sense."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0349.opus"
+      }
+    },
+    {
+      "id": "ph-s-0350",
+      "text_en": "Or something like that.",
+      "translation_ru": "Или что-то в этом духе.",
+      "grammar_point_id": "gp-s-12",
+      "variants": ["Or something like that."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0350.opus"
+      }
+    },
+    {
+      "id": "ph-s-0351",
+      "text_en": "You see, it's not about money.",
+      "translation_ru": "Понимаешь, дело не в деньгах.",
+      "grammar_point_id": "gp-s-12",
+      "variants": ["You see, it's not about money."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0351.opus"
+      }
+    },
+    {
+      "id": "ph-s-0352",
+      "text_en": "I guess you're right.",
+      "translation_ru": "Наверное, ты прав.",
+      "grammar_point_id": "gp-s-12",
+      "variants": ["I guess you're right."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0352.opus"
+      }
+    },
+    {
+      "id": "ph-s-0353",
+      "text_en": "No worries, take your time.",
+      "translation_ru": "Без проблем, не спеши.",
+      "grammar_point_id": "gp-s-12",
+      "variants": ["No worries, take your time."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0353.opus"
+      }
+    },
+    {
+      "id": "ph-s-0354",
+      "text_en": "Works for me.",
+      "translation_ru": "Меня устраивает.",
+      "grammar_point_id": "gp-s-12",
+      "variants": ["Works for me."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0354.opus"
+      }
+    },
+    {
+      "id": "ph-s-0355",
+      "text_en": "Mind you, the food was great.",
+      "translation_ru": "Между прочим, еда была отличная.",
+      "grammar_point_id": "gp-s-12",
+      "variants": ["Mind you, the food was great."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0355.opus"
+      }
+    },
+    {
+      "id": "ph-s-0356",
+      "text_en": "Anyway, where were we?",
+      "translation_ru": "В общем, на чём мы остановились?",
+      "grammar_point_id": "gp-s-12",
+      "variants": ["Anyway, where were we?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0356.opus"
+      }
+    },
+    {
+      "id": "ph-s-0357",
+      "text_en": "By the way, I found a flat.",
+      "translation_ru": "Кстати, я нашёл квартиру.",
+      "grammar_point_id": "gp-s-12",
+      "variants": ["By the way, I found a flat."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0357.opus"
+      }
+    },
+    {
+      "id": "ph-s-0358",
+      "text_en": "It's not bad, to be honest.",
+      "translation_ru": "В принципе неплохо, честно.",
+      "grammar_point_id": "gp-s-12",
+      "variants": ["It's not bad, to be honest."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0358.opus"
+      }
+    },
+    {
+      "id": "ph-s-0359",
+      "text_en": "All of a sudden, the lights died.",
+      "translation_ru": "Вдруг свет погас.",
+      "grammar_point_id": "gp-s-12",
+      "variants": ["All of a sudden, the lights died."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0359.opus"
+      }
+    },
+    {
+      "id": "ph-s-0360",
+      "text_en": "In the meantime, order a pizza.",
+      "translation_ru": "А пока закажи пиццу.",
+      "grammar_point_id": "gp-s-12",
+      "variants": ["In the meantime, order a pizza."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0360.opus"
+      }
+    },
+    {
+      "id": "ph-s-0361",
+      "text_en": "As I was saying, the bus is faster.",
+      "translation_ru": "Как я говорил, автобус быстрее.",
+      "grammar_point_id": "gp-s-12",
+      "variants": ["As I was saying, the bus is faster."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0361.opus"
+      }
+    },
+    {
+      "id": "ph-s-0362",
+      "text_en": "That said, the view is priceless.",
+      "translation_ru": "Тем не менее, вид бесценен.",
+      "grammar_point_id": "gp-s-12",
+      "variants": ["That said, the view is priceless."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0362.opus"
+      }
+    },
+    {
+      "id": "ph-s-0363",
+      "text_en": "Come to think of it, I'm hungry.",
+      "translation_ru": "Кстати, я голоден.",
+      "grammar_point_id": "gp-s-12",
+      "variants": ["Come to think of it, I'm hungry."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0363.opus"
+      }
+    },
+    {
+      "id": "ph-s-0364",
+      "text_en": "Apparently, it's normal here.",
+      "translation_ru": "Судя по всему, здесь это нормально.",
+      "grammar_point_id": "gp-s-12",
+      "variants": ["Apparently, it's normal here."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0364.opus"
+      }
+    },
+    {
+      "id": "ph-s-0365",
+      "text_en": "Honestly, I forgot.",
+      "translation_ru": "Честно, я забыл.",
+      "grammar_point_id": "gp-s-12",
+      "variants": ["Honestly, I forgot."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0365.opus"
+      }
+    },
+    {
+      "id": "ph-s-0366",
+      "text_en": "Frankly, that's nonsense.",
+      "translation_ru": "Откровенно, это чепуха.",
+      "grammar_point_id": "gp-s-12",
+      "variants": ["Frankly, that's nonsense."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0366.opus"
+      }
+    },
+    {
+      "id": "ph-s-0367",
+      "text_en": "You know, it might work.",
+      "translation_ru": "Знаешь, это может сработать.",
+      "grammar_point_id": "gp-s-12",
+      "variants": ["You know, it might work."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0367.opus"
+      }
+    },
+    {
+      "id": "ph-s-0368",
+      "text_en": "Like I said, no rush.",
+      "translation_ru": "Как я уже сказал, не торопись.",
+      "grammar_point_id": "gp-s-12",
+      "variants": ["Like I said, no rush."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0368.opus"
+      }
+    },
+    {
+      "id": "ph-s-0369",
+      "text_en": "In other words, we're stuck.",
+      "translation_ru": "Другими словами, мы застряли.",
+      "grammar_point_id": "gp-s-12",
+      "variants": ["In other words, we're stuck."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0369.opus"
+      }
+    },
+    {
+      "id": "ph-s-0370",
+      "text_en": "This topic is very topical.",
+      "translation_ru": "Эта тема очень актуальна.",
+      "grammar_point_id": "gp-s-13",
+      "variants": ["This topic is very topical."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0370.opus"
+      }
+    },
+    {
+      "id": "ph-s-0371",
+      "text_en": "The actual cost was lower.",
+      "translation_ru": "Фактическая цена была ниже.",
+      "grammar_point_id": "gp-s-13",
+      "variants": ["The actual cost was lower."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0371.opus"
+      }
+    },
+    {
+      "id": "ph-s-0372",
+      "text_en": "He pretends to be busy.",
+      "translation_ru": "Он притворяется занятым.",
+      "grammar_point_id": "gp-s-13",
+      "variants": ["He pretends to be busy."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0372.opus"
+      }
+    },
+    {
+      "id": "ph-s-0373",
+      "text_en": "She applied for a visa.",
+      "translation_ru": "Она подала заявку на визу.",
+      "grammar_point_id": "gp-s-13",
+      "variants": ["She applied for a visa."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0373.opus"
+      }
+    },
+    {
+      "id": "ph-s-0374",
+      "text_en": "I sympathise with you.",
+      "translation_ru": "Я тебе сочувствую.",
+      "grammar_point_id": "gp-s-13",
+      "variants": ["I sympathise with you."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0374.opus"
+      }
+    },
+    {
+      "id": "ph-s-0375",
+      "text_en": "He has a soft spot for cats.",
+      "translation_ru": "Он питает слабость к кошкам.",
+      "grammar_point_id": "gp-s-13",
+      "variants": ["He has a soft spot for cats."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0375.opus"
+      }
+    },
+    {
+      "id": "ph-s-0376",
+      "text_en": "Her complexion is pale.",
+      "translation_ru": "У неё бледный цвет лица.",
+      "grammar_point_id": "gp-s-13",
+      "variants": ["Her complexion is pale."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0376.opus"
+      }
+    },
+    {
+      "id": "ph-s-0377",
+      "text_en": "Kids, dinner's ready!",
+      "translation_ru": "Дети, ужин готов!",
+      "grammar_point_id": "gp-s-13",
+      "variants": ["Kids, dinner's ready!"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0377.opus"
+      }
+    },
+    {
+      "id": "ph-s-0378",
+      "text_en": "Children should be in bed by nine.",
+      "translation_ru": "Детям следует спать к девяти.",
+      "grammar_point_id": "gp-s-13",
+      "variants": ["Children should be in bed by nine."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0378.opus"
+      }
+    },
+    {
+      "id": "ph-s-0379",
+      "text_en": "Please assist the customer.",
+      "translation_ru": "Пожалуйста, помогите клиенту.",
+      "grammar_point_id": "gp-s-13",
+      "variants": ["Please assist the customer."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0379.opus"
+      }
+    },
+    {
+      "id": "ph-s-0380",
+      "text_en": "Can you help me real quick?",
+      "translation_ru": "Можешь быстро помочь?",
+      "grammar_point_id": "gp-s-13",
+      "variants": ["Can you help me real quick?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0380.opus"
+      }
+    },
+    {
+      "id": "ph-s-0381",
+      "text_en": "We require the original documents.",
+      "translation_ru": "Нам необходимы оригиналы документов.",
+      "grammar_point_id": "gp-s-13",
+      "variants": ["We require the original documents."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0381.opus"
+      }
+    },
+    {
+      "id": "ph-s-0382",
+      "text_en": "We need the originals, just scan them.",
+      "translation_ru": "Нам нужны оригиналы, просто отсканируй.",
+      "grammar_point_id": "gp-s-13",
+      "variants": ["We need the originals, just scan them."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0382.opus"
+      }
+    },
+    {
+      "id": "ph-s-0383",
+      "text_en": "The concert commenced at eight.",
+      "translation_ru": "Концерт начался в восемь.",
+      "grammar_point_id": "gp-s-13",
+      "variants": ["The concert commenced at eight."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0383.opus"
+      }
+    },
+    {
+      "id": "ph-s-0384",
+      "text_en": "The show started late, as usual.",
+      "translation_ru": "Шоу началось поздно, как обычно.",
+      "grammar_point_id": "gp-s-13",
+      "variants": ["The show started late, as usual."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0384.opus"
+      }
+    },
+    {
+      "id": "ph-s-0385",
+      "text_en": "Permit me to introduce myself.",
+      "translation_ru": "Позвольте представиться.",
+      "grammar_point_id": "gp-s-13",
+      "variants": ["Permit me to introduce myself."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0385.opus"
+      }
+    },
+    {
+      "id": "ph-s-0386",
+      "text_en": "Hi, I'm Dima.",
+      "translation_ru": "Привет, я Дима.",
+      "grammar_point_id": "gp-s-13",
+      "variants": ["Hi, I'm Dima."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0386.opus"
+      }
+    },
+    {
+      "id": "ph-s-0387",
+      "text_en": "It's a brilliant idea.",
+      "translation_ru": "Это блестящая идея.",
+      "grammar_point_id": "gp-s-13",
+      "variants": ["It's a brilliant idea."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0387.opus"
+      }
+    },
+    {
+      "id": "ph-s-0388",
+      "text_en": "The data is accurate, not approximate.",
+      "translation_ru": "Данные точные, а не приблизительные.",
+      "grammar_point_id": "gp-s-13",
+      "variants": ["The data is accurate, not approximate."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0388.opus"
+      }
+    },
+    {
+      "id": "ph-s-0389",
+      "text_en": "Don't treat it as a pretext.",
+      "translation_ru": "Не считай это отговоркой.",
+      "grammar_point_id": "gp-s-13",
+      "variants": ["Don't treat it as a pretext."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0389.opus"
+      }
+    },
+    {
+      "id": "ph-s-0390",
+      "text_en": "Could you clarify the fee?",
+      "translation_ru": "Не могли бы вы уточнить гонорар?",
+      "grammar_point_id": "gp-s-13",
+      "variants": ["Could you clarify the fee?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0390.opus"
+      }
+    },
+    {
+      "id": "ph-s-0391",
+      "text_en": "How much do I owe you?",
+      "translation_ru": "Сколько я тебе должен?",
+      "grammar_point_id": "gp-s-13",
+      "variants": ["How much do I owe you?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0391.opus"
+      }
+    },
+    {
+      "id": "ph-s-0392",
+      "text_en": "I appreciate your assistance.",
+      "translation_ru": "Я ценю вашу помощь.",
+      "grammar_point_id": "gp-s-13",
+      "variants": ["I appreciate your assistance."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0392.opus"
+      }
+    },
+    {
+      "id": "ph-s-0393",
+      "text_en": "Thanks a million!",
+      "translation_ru": "Спасибо огромное!",
+      "grammar_point_id": "gp-s-13",
+      "variants": ["Thanks a million!"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0393.opus"
+      }
+    },
+    {
+      "id": "ph-s-0394",
+      "text_en": "Regards, Anna.",
+      "translation_ru": "С уважением, Анна.",
+      "grammar_point_id": "gp-s-13",
+      "variants": ["Regards, Anna."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0394.opus"
+      }
+    },
+    {
+      "id": "ph-s-0395",
+      "text_en": "Later!",
+      "translation_ru": "Пока!",
+      "grammar_point_id": "gp-s-13",
+      "variants": ["Later!"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0395.opus"
+      }
+    },
+    {
+      "id": "ph-s-0396",
+      "text_en": "The article is topical for our region.",
+      "translation_ru": "Статья актуальна для нашего региона.",
+      "grammar_point_id": "gp-s-13",
+      "variants": ["The article is topical for our region."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0396.opus"
+      }
+    },
+    {
+      "id": "ph-s-0397",
+      "text_en": "It was an actual emergency.",
+      "translation_ru": "Это была настоящая чрезвычайная ситуация.",
+      "grammar_point_id": "gp-s-13",
+      "variants": ["It was an actual emergency."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0397.opus"
+      }
+    },
+    {
+      "id": "ph-s-0398",
+      "text_en": "That's a tough one.",
+      "translation_ru": "Сложный вопрос.",
+      "grammar_point_id": "gp-s-14",
+      "variants": ["That's a tough one."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0398.opus"
+      }
+    },
+    {
+      "id": "ph-s-0399",
+      "text_en": "Let me think for a second.",
+      "translation_ru": "Дай подумать секунду.",
+      "grammar_point_id": "gp-s-14",
+      "variants": ["Let me think for a second."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0399.opus"
+      }
+    },
+    {
+      "id": "ph-s-0400",
+      "text_en": "The way I see it, it's freedom.",
+      "translation_ru": "Как я это вижу, это свобода.",
+      "grammar_point_id": "gp-s-14",
+      "variants": ["The way I see it, it's freedom."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0400.opus"
+      }
+    },
+    {
+      "id": "ph-s-0401",
+      "text_en": "I'd say it's worth it.",
+      "translation_ru": "Я бы сказал, оно того стоит.",
+      "grammar_point_id": "gp-s-14",
+      "variants": ["I'd say it's worth it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0401.opus"
+      }
+    },
+    {
+      "id": "ph-s-0402",
+      "text_en": "Frankly, I don't buy it.",
+      "translation_ru": "Откровенно говоря, я в это не верю.",
+      "grammar_point_id": "gp-s-14",
+      "variants": ["Frankly, I don't buy it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0402.opus"
+      }
+    },
+    {
+      "id": "ph-s-0403",
+      "text_en": "In a nutshell, it's chaos.",
+      "translation_ru": "Если коротко, это хаос.",
+      "grammar_point_id": "gp-s-14",
+      "variants": ["In a nutshell, it's chaos."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0403.opus"
+      }
+    },
+    {
+      "id": "ph-s-0404",
+      "text_en": "Long story short, we stayed.",
+      "translation_ru": "Короче говоря, мы остались.",
+      "grammar_point_id": "gp-s-14",
+      "variants": ["Long story short, we stayed."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0404.opus"
+      }
+    },
+    {
+      "id": "ph-s-0405",
+      "text_en": "I'm on the fence about it.",
+      "translation_ru": "Я пока сомневаюсь.",
+      "grammar_point_id": "gp-s-14",
+      "variants": ["I'm on the fence about it."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0405.opus"
+      }
+    },
+    {
+      "id": "ph-s-0406",
+      "text_en": "Let's agree to disagree.",
+      "translation_ru": "Давай останемся каждый при своём.",
+      "grammar_point_id": "gp-s-14",
+      "variants": ["Let's agree to disagree."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0406.opus"
+      }
+    },
+    {
+      "id": "ph-s-0407",
+      "text_en": "At the end of the day, it's your call.",
+      "translation_ru": "В итоге решать тебе.",
+      "grammar_point_id": "gp-s-14",
+      "variants": ["At the end of the day, it's your call."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0407.opus"
+      }
+    },
+    {
+      "id": "ph-s-0408",
+      "text_en": "You know what I mean.",
+      "translation_ru": "Ты понимаешь, о чём я.",
+      "grammar_point_id": "gp-s-14",
+      "variants": ["You know what I mean."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0408.opus"
+      }
+    },
+    {
+      "id": "ph-s-0409",
+      "text_en": "It's sort of complicated.",
+      "translation_ru": "Это как бы сложно.",
+      "grammar_point_id": "gp-s-14",
+      "variants": ["It's sort of complicated."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0409.opus"
+      }
+    },
+    {
+      "id": "ph-s-0410",
+      "text_en": "To be fair, we were warned.",
+      "translation_ru": "Справедливости ради, нас предупреждали.",
+      "grammar_point_id": "gp-s-14",
+      "variants": ["To be fair, we were warned."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0410.opus"
+      }
+    },
+    {
+      "id": "ph-s-0411",
+      "text_en": "No worries, take your time.",
+      "translation_ru": "Без проблем, не спеши.",
+      "grammar_point_id": "gp-s-14",
+      "variants": ["No worries, take your time."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0411.opus"
+      }
+    },
+    {
+      "id": "ph-s-0412",
+      "text_en": "Works for me.",
+      "translation_ru": "Меня устраивает.",
+      "grammar_point_id": "gp-s-14",
+      "variants": ["Works for me."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0412.opus"
+      }
+    },
+    {
+      "id": "ph-s-0413",
+      "text_en": "Anyway, where were we?",
+      "translation_ru": "В общем, на чём мы остановились?",
+      "grammar_point_id": "gp-s-14",
+      "variants": ["Anyway, where were we?"],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0413.opus"
+      }
+    },
+    {
+      "id": "ph-s-0414",
+      "text_en": "All of a sudden, the lights died.",
+      "translation_ru": "Вдруг свет погас.",
+      "grammar_point_id": "gp-s-14",
+      "variants": ["All of a sudden, the lights died."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0414.opus"
+      }
+    },
+    {
+      "id": "ph-s-0415",
+      "text_en": "That said, the view is priceless.",
+      "translation_ru": "Тем не менее, вид бесценен.",
+      "grammar_point_id": "gp-s-14",
+      "variants": ["That said, the view is priceless."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0415.opus"
+      }
+    },
+    {
+      "id": "ph-s-0416",
+      "text_en": "In other words, we're stuck.",
+      "translation_ru": "Другими словами, мы застряли.",
+      "grammar_point_id": "gp-s-14",
+      "variants": ["In other words, we're stuck."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0416.opus"
+      }
+    },
+    {
+      "id": "ph-s-0417",
+      "text_en": "This topic is very topical.",
+      "translation_ru": "Эта тема очень актуальна.",
+      "grammar_point_id": "gp-s-14",
+      "variants": ["This topic is very topical."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0417.opus"
+      }
+    },
+    {
+      "id": "ph-s-0418",
+      "text_en": "The actual cost was lower.",
+      "translation_ru": "Фактическая цена была ниже.",
+      "grammar_point_id": "gp-s-14",
+      "variants": ["The actual cost was lower."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0418.opus"
+      }
+    },
+    {
+      "id": "ph-s-0419",
+      "text_en": "He pretends to be busy.",
+      "translation_ru": "Он притворяется занятым.",
+      "grammar_point_id": "gp-s-14",
+      "variants": ["He pretends to be busy."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0419.opus"
+      }
+    },
+    {
+      "id": "ph-s-0420",
+      "text_en": "Please assist the customer.",
+      "translation_ru": "Пожалуйста, помогите клиенту.",
+      "grammar_point_id": "gp-s-14",
+      "variants": ["Please assist the customer."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0420.opus"
+      }
+    },
+    {
+      "id": "ph-s-0421",
+      "text_en": "It's a brilliant idea.",
+      "translation_ru": "Это блестящая идея.",
+      "grammar_point_id": "gp-s-14",
+      "variants": ["It's a brilliant idea."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0421.opus"
+      }
+    },
+    {
+      "id": "ph-s-0422",
+      "text_en": "Don't treat it as a pretext.",
+      "translation_ru": "Не считай это отговоркой.",
+      "grammar_point_id": "gp-s-14",
+      "variants": ["Don't treat it as a pretext."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0422.opus"
+      }
+    },
+    {
+      "id": "ph-s-0423",
+      "text_en": "It was an actual emergency.",
+      "translation_ru": "Это была настоящая чрезвычайная ситуация.",
+      "grammar_point_id": "gp-s-14",
+      "variants": ["It was an actual emergency."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0423.opus"
+      }
+    },
+    {
+      "id": "ph-s-0424",
+      "text_en": "I binge-watched the whole season.",
+      "translation_ru": "Я проглотил весь сезон за раз.",
+      "grammar_point_id": "gp-s-14",
+      "variants": ["I binge-watched the whole season."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0424.opus"
+      }
+    },
+    {
+      "id": "ph-s-0425",
+      "text_en": "Measures are being taken.",
+      "translation_ru": "Меры принимаются.",
+      "grammar_point_id": "gp-s-14",
+      "variants": ["Measures are being taken."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0425.opus"
+      }
+    },
+    {
+      "id": "ph-s-0426",
+      "text_en": "Had I known, I would have called.",
+      "translation_ru": "Если бы я знал, я бы позвонил.",
+      "grammar_point_id": "gp-s-14",
+      "variants": ["Had I known, I would have called."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0426.opus"
+      }
+    },
+    {
+      "id": "ph-s-0427",
+      "text_en": "It is believed that the house is haunted.",
+      "translation_ru": "Считается, что в доме живёт призрак.",
+      "grammar_point_id": "gp-s-14",
+      "variants": ["It is believed that the house is haunted."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0427.opus"
+      }
+    },
+    {
+      "id": "ph-s-0428",
+      "text_en": "The scene takes place at dawn.",
+      "translation_ru": "Сцена происходит на рассвете.",
+      "grammar_point_id": "gp-s-15",
+      "variants": ["The scene takes place at dawn."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0428.opus"
+      }
+    },
+    {
+      "id": "ph-s-0429",
+      "text_en": "It foreshadows the ending.",
+      "translation_ru": "Это предвещает финал.",
+      "grammar_point_id": "gp-s-15",
+      "variants": ["It foreshadows the ending."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0429.opus"
+      }
+    },
+    {
+      "id": "ph-s-0430",
+      "text_en": "The pacing feels deliberate.",
+      "translation_ru": "Темп ощущается выверенным.",
+      "grammar_point_id": "gp-s-15",
+      "variants": ["The pacing feels deliberate."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0430.opus"
+      }
+    },
+    {
+      "id": "ph-s-0431",
+      "text_en": "It's open to interpretation.",
+      "translation_ru": "Это оставляет простор для трактовки.",
+      "grammar_point_id": "gp-s-15",
+      "variants": ["It's open to interpretation."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0431.opus"
+      }
+    },
+    {
+      "id": "ph-s-0432",
+      "text_en": "The tension builds slowly.",
+      "translation_ru": "Напряжение нарастает медленно.",
+      "grammar_point_id": "gp-s-15",
+      "variants": ["The tension builds slowly."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0432.opus"
+      }
+    },
+    {
+      "id": "ph-s-0433",
+      "text_en": "It mirrors the opening scene.",
+      "translation_ru": "Это зеркалит начальную сцену.",
+      "grammar_point_id": "gp-s-15",
+      "variants": ["It mirrors the opening scene."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0433.opus"
+      }
+    },
+    {
+      "id": "ph-s-0434",
+      "text_en": "Read between the lines.",
+      "translation_ru": "Читай между строк.",
+      "grammar_point_id": "gp-s-15",
+      "variants": ["Read between the lines."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0434.opus"
+      }
+    },
+    {
+      "id": "ph-s-0435",
+      "text_en": "The dialogue does the heavy lifting.",
+      "translation_ru": "Диалог делает основную работу.",
+      "grammar_point_id": "gp-s-15",
+      "variants": ["The dialogue does the heavy lifting."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0435.opus"
+      }
+    },
+    {
+      "id": "ph-s-0436",
+      "text_en": "It's a study in restraint.",
+      "translation_ru": "Это этюд сдержанности.",
+      "grammar_point_id": "gp-s-15",
+      "variants": ["It's a study in restraint."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0436.opus"
+      }
+    },
+    {
+      "id": "ph-s-0437",
+      "text_en": "The framing tells the story.",
+      "translation_ru": "Кадр рассказывает историю.",
+      "grammar_point_id": "gp-s-15",
+      "variants": ["The framing tells the story."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0437.opus"
+      }
+    },
+    {
+      "id": "ph-s-0438",
+      "text_en": "Nothing here is accidental.",
+      "translation_ru": "Здесь ничего случайного.",
+      "grammar_point_id": "gp-s-15",
+      "variants": ["Nothing here is accidental."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0438.opus"
+      }
+    },
+    {
+      "id": "ph-s-0439",
+      "text_en": "The silence speaks louder.",
+      "translation_ru": "Молчание говорит громче.",
+      "grammar_point_id": "gp-s-15",
+      "variants": ["The silence speaks louder."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0439.opus"
+      }
+    },
+    {
+      "id": "ph-s-0440",
+      "text_en": "It subverts the trope.",
+      "translation_ru": "Это ломает штамп.",
+      "grammar_point_id": "gp-s-15",
+      "variants": ["It subverts the trope."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0440.opus"
+      }
+    },
+    {
+      "id": "ph-s-0441",
+      "text_en": "Watch the background characters.",
+      "translation_ru": "Следи за персонажами на фоне.",
+      "grammar_point_id": "gp-s-15",
+      "variants": ["Watch the background characters."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0441.opus"
+      }
+    },
+    {
+      "id": "ph-s-0442",
+      "text_en": "The music carries the emotion.",
+      "translation_ru": "Музыка несёт эмоцию.",
+      "grammar_point_id": "gp-s-15",
+      "variants": ["The music carries the emotion."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0442.opus"
+      }
+    },
+    {
+      "id": "ph-s-0443",
+      "text_en": "It's deliberately ambiguous.",
+      "translation_ru": "Это намеренно двусмысленно.",
+      "grammar_point_id": "gp-s-15",
+      "variants": ["It's deliberately ambiguous."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0443.opus"
+      }
+    },
+    {
+      "id": "ph-s-0444",
+      "text_en": "The stakes shift midway.",
+      "translation_ru": "Ставки меняются на середине.",
+      "grammar_point_id": "gp-s-15",
+      "variants": ["The stakes shift midway."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0444.opus"
+      }
+    },
+    {
+      "id": "ph-s-0445",
+      "text_en": "Notice the recurring motif.",
+      "translation_ru": "Заметь повторяющийся мотив.",
+      "grammar_point_id": "gp-s-15",
+      "variants": ["Notice the recurring motif."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0445.opus"
+      }
+    },
+    {
+      "id": "ph-s-0446",
+      "text_en": "The payoff lands in the last shot.",
+      "translation_ru": "Кульминация приходится на последний кадр.",
+      "grammar_point_id": "gp-s-15",
+      "variants": ["The payoff lands in the last shot."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0446.opus"
+      }
+    },
+    {
+      "id": "ph-s-0447",
+      "text_en": "It rewards a second watch.",
+      "translation_ru": "Он раскрывается при повторном просмотре.",
+      "grammar_point_id": "gp-s-15",
+      "variants": ["It rewards a second watch."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0447.opus"
+      }
+    },
+    {
+      "id": "ph-s-0448",
+      "text_en": "The subtext is the story.",
+      "translation_ru": "Подтекст и есть история.",
+      "grammar_point_id": "gp-s-15",
+      "variants": ["The subtext is the story."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0448.opus"
+      }
+    },
+    {
+      "id": "ph-s-0449",
+      "text_en": "Every glance is loaded.",
+      "translation_ru": "Каждый взгляд многозначителен.",
+      "grammar_point_id": "gp-s-15",
+      "variants": ["Every glance is loaded."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0449.opus"
+      }
+    },
+    {
+      "id": "ph-s-0450",
+      "text_en": "The ending reframes everything.",
+      "translation_ru": "Финал переосмысляет всё.",
+      "grammar_point_id": "gp-s-15",
+      "variants": ["The ending reframes everything."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0450.opus"
+      }
+    },
+    {
+      "id": "ph-s-0451",
+      "text_en": "Cinema of few words.",
+      "translation_ru": "Кинематограф немногих слов.",
+      "grammar_point_id": "gp-s-15",
+      "variants": ["Cinema of few words."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0451.opus"
+      }
+    }
+  ]
+}

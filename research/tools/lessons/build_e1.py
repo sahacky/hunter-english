@@ -2171,13 +2171,15 @@ def build_rank(lessons, *, rank: str, stem: str, seed: int):
             lesson_exercises.append({"id": eid})
 
         # --- Шаг 4: слух — диктант -------------------------------------------
+        # dict_count — переопределение на урок (M20#20.4: большой диктант S-14)
+        dict_n = spec.get("dict_count", DICT_COUNT)
         dict_pool = sorted(
             [p for p in lesson_phrase_items if p["translation_ru"] not in ambiguous],
             key=lambda p: len(p["text_en"].split()),
         )
-        dict_pool = [p for p in dict_pool if 3 <= len(p["text_en"].split()) <= 6][: DICT_COUNT * 2]
+        dict_pool = [p for p in dict_pool if 3 <= len(p["text_en"].split()) <= 6][: dict_n * 2]
         rng.shuffle(dict_pool)
-        for target in dict_pool[:DICT_COUNT]:
+        for target in dict_pool[:dict_n]:
             eid = next_ex()
             exercises_out.append({
                 "id": eid, "type": "dictation",

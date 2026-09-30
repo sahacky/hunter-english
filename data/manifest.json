@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-30T08:27:07Z",
+  "generated_at": "2026-09-30T20:59:49Z",
   "files": [
     {
       "path": "lessons/exercises-a.json",
@@ -38,6 +38,13 @@
       "sha256": "b35c5f220e23b6f8f4acf7962a8e09e3c59339e32d0313220f51fbacd174a0bb"
     },
     {
+      "path": "lessons/exercises-s.json",
+      "kind": "exercises",
+      "schema_version": 1,
+      "items": 741,
+      "sha256": "9c80bbed72c7ca8913cf6c6771f2a3ee0d74fff7a509f6fca920dd4023a17e1e"
+    },
+    {
       "path": "lessons/lessons-a.json",
       "kind": "lessons",
       "schema_version": 1,
@@ -73,6 +80,13 @@
       "sha256": "2d65672f482561ee2625a721b09738f0a9fb45d3fdf67fbfed496c64ee5b4a4c"
     },
     {
+      "path": "lessons/lessons-s.json",
+      "kind": "lessons",
+      "schema_version": 1,
+      "items": 15,
+      "sha256": "7a697d5c13e27b755628b0b854ff029878f1898bde06997b02bfb9e82d698f79"
+    },
+    {
       "path": "phrasebook/airport.json",
       "kind": "phrasebook",
       "schema_version": 1,
@@ -99,6 +113,13 @@
       "schema_version": 1,
       "items": 2,
       "sha256": "823875e2e79f9bc25bc7386563eeba53a6b7f2d425f0e9524b58553f55136a8f"
+    },
+    {
+      "path": "phrasebook/idioms.json",
+      "kind": "phrasebook",
+      "schema_version": 1,
+      "items": 2,
+      "sha256": "88330ddd33ccaccdfb1bfbb3c8d988a56cf1472270c7bc6329f0f3f442d5c02a"
     },
     {
       "path": "phrasebook/passport.json",
@@ -178,6 +199,13 @@
       "sha256": "fb33871c16953d354f255872ffcc8104921240d8f1323f2b5545592857477d06"
     },
     {
+      "path": "phrases/phrases-s.json",
+      "kind": "phrases",
+      "schema_version": 1,
+      "items": 451,
+      "sha256": "b733aa4d12b8a0eeefa378bb5a166c511eb3685fcb144e9d5d70a0baefed31ec"
+    },
+    {
       "path": "quotes/attack-on-titan.json",
       "kind": "quotes",
       "schema_version": 1,
@@ -188,15 +216,15 @@
       "path": "quotes/berserk.json",
       "kind": "quotes",
       "schema_version": 1,
-      "items": 19,
-      "sha256": "a4e550f9e1fda4012d87bda3521bf726401b8bb656bfcf3bcbb8a13de71ad7ce"
+      "items": 27,
+      "sha256": "5de1524c148c6f87abd0342ca97c2b141c0190ed7932dc27b201874105b365eb"
     },
     {
       "path": "quotes/black-mirror.json",
       "kind": "quotes",
       "schema_version": 1,
-      "items": 20,
-      "sha256": "47635d28c66a21c791594fad2d488a8087b755850fd1de7332217187ddc8b695"
+      "items": 35,
+      "sha256": "6142b121fd2c51b4cb54d55936f2bb01d7f98621080a9f5dc279b5fdfabf4e1e"
     },
     {
       "path": "quotes/breaking-bad.json",
@@ -230,8 +258,8 @@
       "path": "quotes/jujutsu-kaisen.json",
       "kind": "quotes",
       "schema_version": 1,
-      "items": 16,
-      "sha256": "ba6e8615a37377905e9f9ef014e13062d528fc8955b256c48b7f5c038867484a"
+      "items": 17,
+      "sha256": "57f1f8f8afe81b081a5a851ff8cf8a57e14ad2677d8d4fb635f2eb9fb72befac"
     },
     {
       "path": "quotes/lord-of-the-rings.json",
@@ -251,8 +279,8 @@
       "path": "quotes/solo-leveling.json",
       "kind": "quotes",
       "schema_version": 1,
-      "items": 14,
-      "sha256": "1d9669636da3fdbcf5b0f5d5720eadff11360fb1839e757c7f0c4dcdef820f17"
+      "items": 15,
+      "sha256": "9b87ff4d39b3710f2f003c9806fb4a7d56898be41e61758df06f68122a3aa0bf"
     },
     {
       "path": "quotes/star-wars.json",
@@ -286,8 +314,8 @@
       "path": "traps.json",
       "kind": "traps",
       "schema_version": 1,
-      "items": 22,
-      "sha256": "849ddd28963625c4c2a9b3bae4b9dfa407c700fdf182f664b4f6d2fd76c51c7e"
+      "items": 25,
+      "sha256": "c8bd673df0fe0b2d0dfbe5809e8562c905d0fdd28997bc0e6b363741913c0949"
     },
     {
       "path": "words/words-0001-0500.json",

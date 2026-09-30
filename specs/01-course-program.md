@@ -97,6 +97,9 @@
 | ЛТ-20 | косвенный вопрос | Tell me where is the station → Tell me where the station is |
 | ЛТ-21 | запятая перед that | I think, that… → I think that… |
 | ЛТ-22 | very перед глаголом | I very like it → I like it very much |
+| ЛТ-23 | despite of | Despite of the rain → Despite the rain |
+| ЛТ-24 | сленг в формальном контексте | gonna/wanna/gotta/ain't только в разговорной речи |
+| ЛТ-25 | ложные друзья EN-RU | actual ≠ актуальный (topical); pretend ≠ претендовать |
 
 Пунктуация — мини-модуль из 01 §5, распределён по урокам-повторениям рангов (строки «Пунктуация: …»).
 

@@ -98,14 +98,14 @@ def wav_to_opus(wav_path: Path, out_opus: Path) -> None:
     )
 
 
-def synth_one(voice, text: str, out_opus: Path) -> bool:
+def synth_one(voice, text: str, out_opus: Path, max_sec: float = MAX_SEC) -> bool:
     """Синтез с гейтом длительности. True — попытка попала в гейт."""
     wav_path: Path | None = None
     in_gate = False
     try:
         for cfg in ATTEMPT_CONFIGS:
             wav_path, duration = synth_wav(voice, text, cfg)
-            if MIN_SEC <= duration <= MAX_SEC:
+            if MIN_SEC <= duration <= max_sec:
                 in_gate = True
                 break
         wav_to_opus(wav_path, out_opus)
@@ -125,6 +125,8 @@ def main() -> int:
                     default=REPO / "data/raw/models/piper/en_GB-cori-high.onnx")
     ap.add_argument("--gc", action="store_true",
                     help="удалить из out-dir файлы, чей id не во входных данных")
+    ap.add_argument("--max-sec", type=float, default=MAX_SEC,
+                    help="верхний гейт длительности (M20: 6.0 для длинных C1-фраз)")
     args = ap.parse_args()
 
     out_dir = args.out_dir if args.out_dir.is_absolute() else REPO / args.out_dir
@@ -161,12 +163,12 @@ def main() -> int:
             if out_opus.exists() and out_opus.stat().st_size > MIN_OPUS_BYTES:
                 skipped += 1
             else:
-                if synth_one(voice, text, out_opus):
+                if synth_one(voice, text, out_opus, args.max_sec):
                     done += 1
                 else:
                     outliers += 1
                     outlier_ids.append(word_id)
-                    print(f"OUTLIER {word_id}: длительность вне {MIN_SEC}–{MAX_SEC} с "
+                    print(f"OUTLIER {word_id}: длительность вне {MIN_SEC}–{args.max_sec} с "
                           f"после {len(ATTEMPT_CONFIGS)} попыток")
         except Exception as e:  # noqa: BLE001 — пишем дальше, ошибка в итогах
             errors += 1

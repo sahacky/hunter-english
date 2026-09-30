@@ -368,6 +368,163 @@
    },
    "confidence": "verbatim (parallel research) — needs source check",
    "link_playphrase": "https://www.playphrase.me/#/search?q=You%20have%20the%20strongest%20armor%2C%20because%20you%20are%20the%20weakest%21"
+  },
+  {
+   "id": "q-berserk-0020",
+   "title": "Berserk",
+   "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+   "season_episode": "аниме 1997: вступление",
+   "speaker": "Narrator",
+   "text": "It was much too big to be called a sword.",
+   "translation_ru": "Он был слишком велик, чтобы называться мечом.",
+   "grammar_tags": [
+    "too...to",
+    "Passive Infinitive"
+   ],
+   "est_rank": "B",
+   "auto_vocab": {
+    "top1000": 0.7
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "⚠ сверить с дубляжом",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=It%20was%20much%20too%20big%20to%20be%20called%20a%20sword."
+  },
+  {
+   "id": "q-berserk-0021",
+   "title": "Berserk",
+   "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+   "season_episode": "аниме 1997",
+   "speaker": "(не указан на Wikiquote)",
+   "text": "If you're always worried about crushing the ants beneath you, you won't be able to walk.",
+   "translation_ru": "Если ты вечно боишься раздавить муравьёв под ногами, ты не сможешь ходить.",
+   "grammar_tags": [
+    "First Conditional",
+    "Gerund"
+   ],
+   "est_rank": "A",
+   "auto_vocab": {
+    "top1000": 0.62
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "⚠ сверить с дубляжом",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=If%20you%27re%20always%20worried%20about%20crushing%20the%20ants%20beneath%20you%2C%20you%20won%27t%20be%20able%20to%20walk."
+  },
+  {
+   "id": "q-berserk-0022",
+   "title": "Berserk",
+   "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+   "season_episode": "аниме 1997",
+   "speaker": "(не указан на Wikiquote)",
+   "text": "You have the strongest armor, because you are the weakest!",
+   "translation_ru": "У тебя сильнейшая броня, потому что ты слабейший!",
+   "grammar_tags": [
+    "Superlative"
+   ],
+   "est_rank": "A",
+   "auto_vocab": {
+    "top1000": 0.6
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "⚠ сверить с дубляжом",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=You%20have%20the%20strongest%20armor%2C%20because%20you%20are%20the%20weakest%21"
+  },
+  {
+   "id": "q-berserk-0023",
+   "title": "Berserk",
+   "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+   "season_episode": "аниме 1997",
+   "speaker": "(не указан на Wikiquote)",
+   "text": "Couldn't you settle for a smile, and a fond farewell?",
+   "translation_ru": "Разве тебя не устроили бы улыбка и тёплое прощание?",
+   "grammar_tags": [
+    "Modal Question",
+    "Phrasal settle for"
+   ],
+   "est_rank": "S",
+   "auto_vocab": {
+    "top1000": 0.6
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "⚠ сверить с дубляжом",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Couldn%27t%20you%20settle%20for%20a%20smile%2C%20and%20a%20fond%20farewell%3F"
+  },
+  {
+   "id": "q-berserk-0024",
+   "title": "Berserk",
+   "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+   "season_episode": "аниме 1997",
+   "speaker": "Casca",
+   "text": "I was too foolish and stubborn to notice.",
+   "translation_ru": "Я был слишком глуп и упрям, чтобы заметить.",
+   "grammar_tags": [
+    "too...to"
+   ],
+   "est_rank": "B",
+   "auto_vocab": {
+    "top1000": 0.62
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "⚠ сверить с дубляжом",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20was%20too%20foolish%20and%20stubborn%20to%20notice."
+  },
+  {
+   "id": "q-berserk-0025",
+   "title": "Berserk",
+   "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+   "season_episode": "аниме 1997: вступление",
+   "speaker": "Narrator",
+   "text": "When will man learn a way to control his soul?",
+   "translation_ru": "Когда человек научится управлять своей душой?",
+   "grammar_tags": [
+    "Question"
+   ],
+   "est_rank": "S",
+   "auto_vocab": {
+    "top1000": 0.8
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "⚠ сверить с дубляжом",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=When%20will%20man%20learn%20a%20way%20to%20control%20his%20soul%3F"
+  },
+  {
+   "id": "q-berserk-0026",
+   "title": "Berserk",
+   "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+   "season_episode": "аниме 1997: вступление",
+   "speaker": "Narrator",
+   "text": "In this world, is man ever able to possess anything more solid, than a dream?",
+   "translation_ru": "Способен ли человек в этом мире обладать чем-то более прочным, чем мечта?",
+   "grammar_tags": [
+    "Question",
+    "Comparative"
+   ],
+   "est_rank": "S",
+   "auto_vocab": {
+    "top1000": 0.8
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "⚠ сверить с дубляжом",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=In%20this%20world%2C%20is%20man%20ever%20able%20to%20possess%20anything%20more%20solid%2C%20than%20a%20dream%3F"
+  },
+  {
+   "id": "q-berserk-0027",
+   "title": "Berserk",
+   "source_url": "https://en.wikiquote.org/wiki/Berserk_(anime)",
+   "season_episode": "аниме 1997",
+   "speaker": "(не указан на Wikiquote)",
+   "text": "Even if we painstakingly piece together something lost, it doesn't mean things will ever go back to how they were.",
+   "translation_ru": "Даже если мы кропотливо соберём утраченное, это не значит, что всё вернётся, как было.",
+   "grammar_tags": [
+    "Conditional",
+    "Phrasal piece together"
+   ],
+   "est_rank": "S",
+   "auto_vocab": {
+    "top1000": 0.75
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "note": "⚠ сверить с дубляжом",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Even%20if%20we%20painstakingly%20piece%20together%20something%20lost%2C%20it%20doesn%27t%20mean%20things%20will%20ever%20go%20back%20to%20how%20they%20were."
   }
  ]
 }

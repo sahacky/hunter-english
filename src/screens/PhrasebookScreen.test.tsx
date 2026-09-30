@@ -22,7 +22,7 @@ function renderSituation(id = 'smalltalk') {
 }
 
 describe('PhrasebookScreen /#/phrasebook', () => {
-  it('список: все 10 ситуаций, карточки ведут на главы', async () => {
+  it('список: все 11 ситуаций (10 путешественника + идиомы M20), карточки ведут на главы', async () => {
     window.location.hash = '#/phrasebook'
     render(
       <HashRouter>
@@ -34,7 +34,7 @@ describe('PhrasebookScreen /#/phrasebook', () => {
     expect(await screen.findByText('Разговорник')).toBeInTheDocument()
     const cards = screen.getAllByRole('link')
     expect(cards.filter((c) => c.getAttribute('href')?.startsWith('#/phrasebook/'))).toHaveLength(
-      10,
+      11,
     )
     // контент всех глав уже поставлен (M8–M14) — ни одна карточка не «закрыта»
     expect(screen.queryByText(/главы пока не готовы/)).not.toBeInTheDocument()

@@ -193,15 +193,15 @@ describe('loadLessonView (реальные data/ ранга E)', () => {
     expect(phrases.every(({ audio }) => audio?.en_gb?.startsWith('audio/phrases/cori/'))).toBe(true)
 
     const lessons = await loadLessons()
-    // M16: E (24) + D (28) + C (30) + B (29) + A (22) — полный ранг A
-    expect(lessons.length).toBe(133)
+    // M20: E (24) + D (28) + C (30) + B (29) + A (22) + S (15) — полный ранг S
+    expect(lessons.length).toBe(148)
     const phraseById = new Set(phrases.map(({ id }) => id))
     for (const lesson of lessons) {
       const lessonPhrases = phrases.filter(
         ({ grammar_point_id }) => grammar_point_id === lesson.grammar_point.id,
       )
-      // A-ранг: сложнее грамматика, меньше дрилл-фраз на урок (M16)
-      const min = lesson.rank === 'A' ? 20 : 40
+      // A/S-ранги: сложнее материал, меньше дрилл-фраз на урок (M16, M20)
+      const min = lesson.rank === 'A' || lesson.rank === 'S' ? 20 : 40
       expect(lessonPhrases.length, lesson.id).toBeGreaterThanOrEqual(min)
       for (const pid of lesson.grammar_point.phrase_ids) {
         expect(phraseById.has(pid), `${lesson.id} → ${pid}`).toBe(true)

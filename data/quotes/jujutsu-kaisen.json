@@ -307,6 +307,26 @@
    },
    "confidence": "verbatim (parallel research) — needs source check",
    "link_playphrase": "https://www.playphrase.me/#/search?q=It%27s%20your%20fault%20for%20being%20weak"
+  },
+  {
+   "id": "q-jujutsu-kaisen-0017",
+   "title": "Jujutsu Kaisen",
+   "source_url": "https://screenrant.com/best-jujutsu-kaisen-quotes/",
+   "season_episode": "аниме S2 «Hidden Inventory»",
+   "speaker": "Suguru Geto",
+   "text": "Are you the strongest because you're Satoru Gojo, or are you Satoru Gojo because you're the strongest?",
+   "translation_ru": "Ты сильнейший, потому что ты Сатору Годзё, — или ты Сатору Годзё, потому что ты сильнейший?",
+   "grammar_tags": [
+    "Chiasmus",
+    "Question"
+   ],
+   "est_rank": "S",
+   "auto_vocab": {
+    "top1000": 0.41
+   },
+   "confidence": "статья Screen Rant; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
+   "note": "⚠ сверить с дубляжом",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Are%20you%20the%20strongest%20because%20you%27re%20Satoru%20Gojo%2C%20or%20are%20you%20Satoru%20Gojo%20because%20you%27re%20the%20strongest%3F"
   }
  ]
 }
