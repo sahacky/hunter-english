@@ -1,0 +1,1899 @@
+{
+  "schema_version": 1,
+  "kind": "lessons",
+  "items": [
+    {
+      "id": "les-a-01",
+      "rank": "A",
+      "module": "mod-a-1",
+      "title": "Future Continuous: she'll be cooking",
+      "grammar_point": {
+        "id": "gp-a-01",
+        "title_ru": "Процесс в будущем",
+        "rule_md": "**Future Continuous: will be + V-ing.**\nПроцесс в будущем: This time tomorrow I'**ll be flying** to Rome.\n«Занят в момент»: Don't call at eight — I'**ll be cooking**.\nЗапрос вежливо: **Will** you **be using** the car tomorrow?",
+        "phrase_ids": ["ph-a-0001", "ph-a-0002", "ph-a-0003", "ph-a-0004", "ph-a-0005"],
+        "trap_id": "trap-present-perfect"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 5501,
+        "to": 5560
+      },
+      "phrasebook_topic": "smalltalk",
+      "trap_id": "trap-present-perfect",
+      "quotes_topic": "future",
+      "exercises": [
+        {
+          "id": "ex-a-0001"
+        },
+        {
+          "id": "ex-a-0002"
+        },
+        {
+          "id": "ex-a-0003"
+        },
+        {
+          "id": "ex-a-0004"
+        },
+        {
+          "id": "ex-a-0005"
+        },
+        {
+          "id": "ex-a-0006"
+        },
+        {
+          "id": "ex-a-0007"
+        },
+        {
+          "id": "ex-a-0008"
+        },
+        {
+          "id": "ex-a-0009"
+        },
+        {
+          "id": "ex-a-0010"
+        },
+        {
+          "id": "ex-a-0011"
+        },
+        {
+          "id": "ex-a-0012"
+        },
+        {
+          "id": "ex-a-0013"
+        },
+        {
+          "id": "ex-a-0014"
+        },
+        {
+          "id": "ex-a-0015"
+        },
+        {
+          "id": "ex-a-0016"
+        },
+        {
+          "id": "ex-a-0017"
+        },
+        {
+          "id": "ex-a-0018"
+        },
+        {
+          "id": "ex-a-0019"
+        },
+        {
+          "id": "ex-a-0020"
+        },
+        {
+          "id": "ex-a-0021"
+        },
+        {
+          "id": "ex-a-0022"
+        },
+        {
+          "id": "ex-a-0023"
+        },
+        {
+          "id": "ex-a-0024"
+        },
+        {
+          "id": "ex-a-0025"
+        },
+        {
+          "id": "ex-a-0026"
+        },
+        {
+          "id": "ex-a-0027"
+        },
+        {
+          "id": "ex-a-0028"
+        },
+        {
+          "id": "ex-a-0029"
+        },
+        {
+          "id": "ex-a-0030"
+        },
+        {
+          "id": "ex-a-0031"
+        },
+        {
+          "id": "ex-a-0032"
+        },
+        {
+          "id": "ex-a-0033"
+        },
+        {
+          "id": "ex-a-0034"
+        },
+        {
+          "id": "ex-a-0035"
+        },
+        {
+          "id": "ex-a-0036"
+        },
+        {
+          "id": "ex-a-0037"
+        },
+        {
+          "id": "ex-a-0038"
+        },
+        {
+          "id": "ex-a-0039"
+        },
+        {
+          "id": "ex-a-0040"
+        },
+        {
+          "id": "ex-a-0041"
+        },
+        {
+          "id": "ex-a-0042"
+        },
+        {
+          "id": "ex-a-0043"
+        },
+        {
+          "id": "ex-a-0044"
+        },
+        {
+          "id": "ex-a-0045"
+        },
+        {
+          "id": "ex-a-0046"
+        },
+        {
+          "id": "ex-a-0507"
+        },
+        {
+          "id": "ex-a-0508"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "2.196",
+        "playlist_index": 747,
+        "youtube_id": "6k6QwYL6NzA",
+        "title": null
+      }
+    },
+    {
+      "id": "les-a-02",
+      "rank": "A",
+      "module": "mod-a-1",
+      "title": "Future Perfect: he'll have finished",
+      "grammar_point": {
+        "id": "gp-a-02",
+        "title_ru": "Завершённость к моменту",
+        "rule_md": "**Future Perfect: will have + V3.**\nЗавершённость к моменту: By next year, he'**ll have finished**.\nМаркеры: by then, by the time, by 2030, in two years.\nShe'**ll have left** by then. = «уже уедет к тому времени».",
+        "phrase_ids": ["ph-a-0032", "ph-a-0033", "ph-a-0034", "ph-a-0035", "ph-a-0036"],
+        "trap_id": "trap-present-perfect"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 5561,
+        "to": 5620
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-present-perfect",
+      "quotes_topic": "future",
+      "exercises": [
+        {
+          "id": "ex-a-0047"
+        },
+        {
+          "id": "ex-a-0048"
+        },
+        {
+          "id": "ex-a-0049"
+        },
+        {
+          "id": "ex-a-0050"
+        },
+        {
+          "id": "ex-a-0051"
+        },
+        {
+          "id": "ex-a-0052"
+        },
+        {
+          "id": "ex-a-0053"
+        },
+        {
+          "id": "ex-a-0054"
+        },
+        {
+          "id": "ex-a-0055"
+        },
+        {
+          "id": "ex-a-0056"
+        },
+        {
+          "id": "ex-a-0057"
+        },
+        {
+          "id": "ex-a-0058"
+        },
+        {
+          "id": "ex-a-0059"
+        },
+        {
+          "id": "ex-a-0060"
+        },
+        {
+          "id": "ex-a-0061"
+        },
+        {
+          "id": "ex-a-0062"
+        },
+        {
+          "id": "ex-a-0063"
+        },
+        {
+          "id": "ex-a-0064"
+        },
+        {
+          "id": "ex-a-0065"
+        },
+        {
+          "id": "ex-a-0066"
+        },
+        {
+          "id": "ex-a-0067"
+        },
+        {
+          "id": "ex-a-0068"
+        },
+        {
+          "id": "ex-a-0069"
+        },
+        {
+          "id": "ex-a-0070"
+        },
+        {
+          "id": "ex-a-0071"
+        },
+        {
+          "id": "ex-a-0072"
+        },
+        {
+          "id": "ex-a-0073"
+        },
+        {
+          "id": "ex-a-0074"
+        },
+        {
+          "id": "ex-a-0075"
+        },
+        {
+          "id": "ex-a-0076"
+        },
+        {
+          "id": "ex-a-0077"
+        },
+        {
+          "id": "ex-a-0078"
+        },
+        {
+          "id": "ex-a-0079"
+        },
+        {
+          "id": "ex-a-0080"
+        },
+        {
+          "id": "ex-a-0081"
+        },
+        {
+          "id": "ex-a-0082"
+        },
+        {
+          "id": "ex-a-0083"
+        },
+        {
+          "id": "ex-a-0084"
+        },
+        {
+          "id": "ex-a-0085"
+        },
+        {
+          "id": "ex-a-0086"
+        },
+        {
+          "id": "ex-a-0087"
+        },
+        {
+          "id": "ex-a-0088"
+        },
+        {
+          "id": "ex-a-0089"
+        },
+        {
+          "id": "ex-a-0090"
+        },
+        {
+          "id": "ex-a-0091"
+        },
+        {
+          "id": "ex-a-0092"
+        },
+        {
+          "id": "ex-a-0509"
+        },
+        {
+          "id": "ex-a-0510"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "2.211",
+        "playlist_index": 762,
+        "youtube_id": "JSHrZuAy9uo",
+        "title": null
+      }
+    },
+    {
+      "id": "les-a-03",
+      "rank": "A",
+      "module": "mod-a-1",
+      "title": "Карта всех времён",
+      "grammar_point": {
+        "id": "gp-a-03",
+        "title_ru": "Выбор времени по маркеру",
+        "rule_md": "**Карта всех основных времён (11 из 12).**\nPresent: I work / I am working / I have worked / I have been working\nPast: I worked / I was working / I had worked / I had been working\nFuture: I will work / I will be working / I will have worked\nВыбирай время по маркеру: yesterday → Past, now → Pres.Cont., every day → Pres.S.",
+        "phrase_ids": ["ph-a-0059", "ph-a-0060", "ph-a-0061", "ph-a-0062", "ph-a-0063"],
+        "trap_id": "trap-present-perfect"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 5621,
+        "to": 5680
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-present-perfect",
+      "quotes_topic": "tenses",
+      "exercises": [
+        {
+          "id": "ex-a-0093"
+        },
+        {
+          "id": "ex-a-0094"
+        },
+        {
+          "id": "ex-a-0095"
+        },
+        {
+          "id": "ex-a-0096"
+        },
+        {
+          "id": "ex-a-0097"
+        },
+        {
+          "id": "ex-a-0098"
+        },
+        {
+          "id": "ex-a-0099"
+        },
+        {
+          "id": "ex-a-0100"
+        },
+        {
+          "id": "ex-a-0101"
+        },
+        {
+          "id": "ex-a-0102"
+        },
+        {
+          "id": "ex-a-0103"
+        },
+        {
+          "id": "ex-a-0104"
+        },
+        {
+          "id": "ex-a-0105"
+        },
+        {
+          "id": "ex-a-0106"
+        },
+        {
+          "id": "ex-a-0107"
+        },
+        {
+          "id": "ex-a-0108"
+        },
+        {
+          "id": "ex-a-0109"
+        },
+        {
+          "id": "ex-a-0110"
+        },
+        {
+          "id": "ex-a-0111"
+        },
+        {
+          "id": "ex-a-0112"
+        },
+        {
+          "id": "ex-a-0113"
+        },
+        {
+          "id": "ex-a-0114"
+        },
+        {
+          "id": "ex-a-0115"
+        },
+        {
+          "id": "ex-a-0116"
+        },
+        {
+          "id": "ex-a-0117"
+        },
+        {
+          "id": "ex-a-0118"
+        },
+        {
+          "id": "ex-a-0119"
+        },
+        {
+          "id": "ex-a-0120"
+        },
+        {
+          "id": "ex-a-0121"
+        },
+        {
+          "id": "ex-a-0122"
+        },
+        {
+          "id": "ex-a-0123"
+        },
+        {
+          "id": "ex-a-0124"
+        },
+        {
+          "id": "ex-a-0125"
+        },
+        {
+          "id": "ex-a-0126"
+        },
+        {
+          "id": "ex-a-0127"
+        },
+        {
+          "id": "ex-a-0128"
+        },
+        {
+          "id": "ex-a-0129"
+        },
+        {
+          "id": "ex-a-0130"
+        },
+        {
+          "id": "ex-a-0131"
+        },
+        {
+          "id": "ex-a-0132"
+        },
+        {
+          "id": "ex-a-0133"
+        },
+        {
+          "id": "ex-a-0134"
+        },
+        {
+          "id": "ex-a-0135"
+        },
+        {
+          "id": "ex-a-0136"
+        },
+        {
+          "id": "ex-a-0137"
+        },
+        {
+          "id": "ex-a-0138"
+        },
+        {
+          "id": "ex-a-0511"
+        },
+        {
+          "id": "ex-a-0512"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "2.193",
+        "playlist_index": 744,
+        "youtube_id": "fhiXo0tmZTM",
+        "title": null
+      }
+    },
+    {
+      "id": "les-a-04",
+      "rank": "A",
+      "module": "mod-a-1",
+      "title": "Пассив: Continuous и Perfect",
+      "grammar_point": {
+        "id": "gp-a-04",
+        "title_ru": "being + V3 / been + V3",
+        "rule_md": "**Пассив: Continuous и Perfect.**\nPres.Cont.Passive: is/are **being** + V3: The road **is being repaired**.\nPres.Perf.Passive: has/have **been** + V3: The bridge **has been built**.\nPast Perf.Passive: had been + V3: The house **had been sold**.",
+        "phrase_ids": ["ph-a-0089", "ph-a-0090", "ph-a-0091", "ph-a-0092", "ph-a-0093"],
+        "trap_id": "trap-present-perfect"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 5681,
+        "to": 5740
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-present-perfect",
+      "quotes_topic": "passive",
+      "exercises": [
+        {
+          "id": "ex-a-0139"
+        },
+        {
+          "id": "ex-a-0140"
+        },
+        {
+          "id": "ex-a-0141"
+        },
+        {
+          "id": "ex-a-0142"
+        },
+        {
+          "id": "ex-a-0143"
+        },
+        {
+          "id": "ex-a-0144"
+        },
+        {
+          "id": "ex-a-0145"
+        },
+        {
+          "id": "ex-a-0146"
+        },
+        {
+          "id": "ex-a-0147"
+        },
+        {
+          "id": "ex-a-0148"
+        },
+        {
+          "id": "ex-a-0149"
+        },
+        {
+          "id": "ex-a-0150"
+        },
+        {
+          "id": "ex-a-0151"
+        },
+        {
+          "id": "ex-a-0152"
+        },
+        {
+          "id": "ex-a-0153"
+        },
+        {
+          "id": "ex-a-0154"
+        },
+        {
+          "id": "ex-a-0155"
+        },
+        {
+          "id": "ex-a-0156"
+        },
+        {
+          "id": "ex-a-0157"
+        },
+        {
+          "id": "ex-a-0158"
+        },
+        {
+          "id": "ex-a-0159"
+        },
+        {
+          "id": "ex-a-0160"
+        },
+        {
+          "id": "ex-a-0161"
+        },
+        {
+          "id": "ex-a-0162"
+        },
+        {
+          "id": "ex-a-0163"
+        },
+        {
+          "id": "ex-a-0164"
+        },
+        {
+          "id": "ex-a-0165"
+        },
+        {
+          "id": "ex-a-0166"
+        },
+        {
+          "id": "ex-a-0167"
+        },
+        {
+          "id": "ex-a-0168"
+        },
+        {
+          "id": "ex-a-0169"
+        },
+        {
+          "id": "ex-a-0170"
+        },
+        {
+          "id": "ex-a-0171"
+        },
+        {
+          "id": "ex-a-0172"
+        },
+        {
+          "id": "ex-a-0173"
+        },
+        {
+          "id": "ex-a-0174"
+        },
+        {
+          "id": "ex-a-0175"
+        },
+        {
+          "id": "ex-a-0176"
+        },
+        {
+          "id": "ex-a-0177"
+        },
+        {
+          "id": "ex-a-0178"
+        },
+        {
+          "id": "ex-a-0179"
+        },
+        {
+          "id": "ex-a-0180"
+        },
+        {
+          "id": "ex-a-0181"
+        },
+        {
+          "id": "ex-a-0182"
+        },
+        {
+          "id": "ex-a-0183"
+        },
+        {
+          "id": "ex-a-0184"
+        },
+        {
+          "id": "ex-a-0513"
+        },
+        {
+          "id": "ex-a-0514"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "2.226",
+        "playlist_index": 777,
+        "youtube_id": "k30PW6j0i50",
+        "title": null
+      }
+    },
+    {
+      "id": "les-a-05",
+      "rank": "A",
+      "module": "mod-a-1",
+      "title": "Пассив: будущее и модальные",
+      "grammar_point": {
+        "id": "gp-a-05",
+        "title_ru": "will be / must be done",
+        "rule_md": "**Пассив: будущее и модальные.**\nFuture Passive: will **be** + V3: The results **will be announced**.\nModal Passive: must/can/should **be** + V3: This **must be done**.\nВыбор: актив (кто делает) vs пассив (что происходит).",
+        "phrase_ids": ["ph-a-0120", "ph-a-0121", "ph-a-0122", "ph-a-0123", "ph-a-0124"],
+        "trap_id": "trap-present-perfect"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 5741,
+        "to": 5800
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-present-perfect",
+      "quotes_topic": "passive",
+      "exercises": [
+        {
+          "id": "ex-a-0185"
+        },
+        {
+          "id": "ex-a-0186"
+        },
+        {
+          "id": "ex-a-0187"
+        },
+        {
+          "id": "ex-a-0188"
+        },
+        {
+          "id": "ex-a-0189"
+        },
+        {
+          "id": "ex-a-0190"
+        },
+        {
+          "id": "ex-a-0191"
+        },
+        {
+          "id": "ex-a-0192"
+        },
+        {
+          "id": "ex-a-0193"
+        },
+        {
+          "id": "ex-a-0194"
+        },
+        {
+          "id": "ex-a-0195"
+        },
+        {
+          "id": "ex-a-0196"
+        },
+        {
+          "id": "ex-a-0197"
+        },
+        {
+          "id": "ex-a-0198"
+        },
+        {
+          "id": "ex-a-0199"
+        },
+        {
+          "id": "ex-a-0200"
+        },
+        {
+          "id": "ex-a-0201"
+        },
+        {
+          "id": "ex-a-0202"
+        },
+        {
+          "id": "ex-a-0203"
+        },
+        {
+          "id": "ex-a-0204"
+        },
+        {
+          "id": "ex-a-0205"
+        },
+        {
+          "id": "ex-a-0206"
+        },
+        {
+          "id": "ex-a-0207"
+        },
+        {
+          "id": "ex-a-0208"
+        },
+        {
+          "id": "ex-a-0209"
+        },
+        {
+          "id": "ex-a-0210"
+        },
+        {
+          "id": "ex-a-0211"
+        },
+        {
+          "id": "ex-a-0212"
+        },
+        {
+          "id": "ex-a-0213"
+        },
+        {
+          "id": "ex-a-0214"
+        },
+        {
+          "id": "ex-a-0215"
+        },
+        {
+          "id": "ex-a-0216"
+        },
+        {
+          "id": "ex-a-0217"
+        },
+        {
+          "id": "ex-a-0218"
+        },
+        {
+          "id": "ex-a-0219"
+        },
+        {
+          "id": "ex-a-0220"
+        },
+        {
+          "id": "ex-a-0221"
+        },
+        {
+          "id": "ex-a-0222"
+        },
+        {
+          "id": "ex-a-0223"
+        },
+        {
+          "id": "ex-a-0224"
+        },
+        {
+          "id": "ex-a-0225"
+        },
+        {
+          "id": "ex-a-0226"
+        },
+        {
+          "id": "ex-a-0227"
+        },
+        {
+          "id": "ex-a-0228"
+        },
+        {
+          "id": "ex-a-0229"
+        },
+        {
+          "id": "ex-a-0230"
+        },
+        {
+          "id": "ex-a-0515"
+        },
+        {
+          "id": "ex-a-0516"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "2.221",
+        "playlist_index": 772,
+        "youtube_id": "_QTpE9YRIog",
+        "title": null
+      }
+    },
+    {
+      "id": "les-a-06",
+      "rank": "A",
+      "module": "mod-a-1",
+      "title": "Повторение №21",
+      "grammar_point": {
+        "id": "gp-a-06",
+        "title_ru": "Повторение модуля A1",
+        "rule_md": "**Повторение №21: все времена + пассив.**\nFuture Continuous/Perfect; все 12 времён по маркерам; пассив всех\nвремен (is made / was built / is being built / has been built / will be done).\nКонтрольная: выбери время и залог.",
+        "phrase_ids": ["ph-a-0145", "ph-a-0146", "ph-a-0147", "ph-a-0148", "ph-a-0149"],
+        "trap_id": "trap-present-perfect"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 5801,
+        "to": 5860
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-present-perfect",
+      "quotes_topic": "mixed",
+      "exercises": [
+        {
+          "id": "ex-a-0231"
+        },
+        {
+          "id": "ex-a-0232"
+        },
+        {
+          "id": "ex-a-0233"
+        },
+        {
+          "id": "ex-a-0234"
+        },
+        {
+          "id": "ex-a-0235"
+        },
+        {
+          "id": "ex-a-0236"
+        },
+        {
+          "id": "ex-a-0237"
+        },
+        {
+          "id": "ex-a-0238"
+        },
+        {
+          "id": "ex-a-0239"
+        },
+        {
+          "id": "ex-a-0240"
+        },
+        {
+          "id": "ex-a-0241"
+        },
+        {
+          "id": "ex-a-0242"
+        },
+        {
+          "id": "ex-a-0243"
+        },
+        {
+          "id": "ex-a-0244"
+        },
+        {
+          "id": "ex-a-0245"
+        },
+        {
+          "id": "ex-a-0246"
+        },
+        {
+          "id": "ex-a-0247"
+        },
+        {
+          "id": "ex-a-0248"
+        },
+        {
+          "id": "ex-a-0249"
+        },
+        {
+          "id": "ex-a-0250"
+        },
+        {
+          "id": "ex-a-0251"
+        },
+        {
+          "id": "ex-a-0252"
+        },
+        {
+          "id": "ex-a-0253"
+        },
+        {
+          "id": "ex-a-0254"
+        },
+        {
+          "id": "ex-a-0255"
+        },
+        {
+          "id": "ex-a-0256"
+        },
+        {
+          "id": "ex-a-0257"
+        },
+        {
+          "id": "ex-a-0258"
+        },
+        {
+          "id": "ex-a-0259"
+        },
+        {
+          "id": "ex-a-0260"
+        },
+        {
+          "id": "ex-a-0261"
+        },
+        {
+          "id": "ex-a-0262"
+        },
+        {
+          "id": "ex-a-0263"
+        },
+        {
+          "id": "ex-a-0264"
+        },
+        {
+          "id": "ex-a-0265"
+        },
+        {
+          "id": "ex-a-0266"
+        },
+        {
+          "id": "ex-a-0267"
+        },
+        {
+          "id": "ex-a-0268"
+        },
+        {
+          "id": "ex-a-0269"
+        },
+        {
+          "id": "ex-a-0270"
+        },
+        {
+          "id": "ex-a-0271"
+        },
+        {
+          "id": "ex-a-0272"
+        },
+        {
+          "id": "ex-a-0273"
+        },
+        {
+          "id": "ex-a-0274"
+        },
+        {
+          "id": "ex-a-0275"
+        },
+        {
+          "id": "ex-a-0276"
+        },
+        {
+          "id": "ex-a-0517"
+        },
+        {
+          "id": "ex-a-0518"
+        }
+      ],
+      "bebris_video": null
+    },
+    {
+      "id": "les-a-07",
+      "rank": "A",
+      "module": "mod-a-2",
+      "title": "must have / can't have: догадки о прошлом",
+      "grammar_point": {
+        "id": "gp-a-07",
+        "title_ru": "Модальные + have + V3",
+        "rule_md": "**must have / can't have / may have done.**\n**must have** + V3 = «должно быть» (уверенность):\nHe **must have forgotten**.\n**can't have** + V3 = «не может быть»:\nHe **can't have said** that.\n**may/might have** + V3 = «возможно»:\nShe **may have changed** her mind.",
+        "phrase_ids": ["ph-a-0175", "ph-a-0176", "ph-a-0177", "ph-a-0178", "ph-a-0179"],
+        "trap_id": "trap-present-perfect"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 5861,
+        "to": 5920
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-present-perfect",
+      "quotes_topic": "modals",
+      "exercises": [
+        {
+          "id": "ex-a-0277"
+        },
+        {
+          "id": "ex-a-0278"
+        },
+        {
+          "id": "ex-a-0279"
+        },
+        {
+          "id": "ex-a-0280"
+        },
+        {
+          "id": "ex-a-0281"
+        },
+        {
+          "id": "ex-a-0282"
+        },
+        {
+          "id": "ex-a-0283"
+        },
+        {
+          "id": "ex-a-0284"
+        },
+        {
+          "id": "ex-a-0285"
+        },
+        {
+          "id": "ex-a-0286"
+        },
+        {
+          "id": "ex-a-0287"
+        },
+        {
+          "id": "ex-a-0288"
+        },
+        {
+          "id": "ex-a-0289"
+        },
+        {
+          "id": "ex-a-0290"
+        },
+        {
+          "id": "ex-a-0291"
+        },
+        {
+          "id": "ex-a-0292"
+        },
+        {
+          "id": "ex-a-0293"
+        },
+        {
+          "id": "ex-a-0294"
+        },
+        {
+          "id": "ex-a-0295"
+        },
+        {
+          "id": "ex-a-0296"
+        },
+        {
+          "id": "ex-a-0297"
+        },
+        {
+          "id": "ex-a-0298"
+        },
+        {
+          "id": "ex-a-0299"
+        },
+        {
+          "id": "ex-a-0300"
+        },
+        {
+          "id": "ex-a-0301"
+        },
+        {
+          "id": "ex-a-0302"
+        },
+        {
+          "id": "ex-a-0303"
+        },
+        {
+          "id": "ex-a-0304"
+        },
+        {
+          "id": "ex-a-0305"
+        },
+        {
+          "id": "ex-a-0306"
+        },
+        {
+          "id": "ex-a-0307"
+        },
+        {
+          "id": "ex-a-0308"
+        },
+        {
+          "id": "ex-a-0309"
+        },
+        {
+          "id": "ex-a-0310"
+        },
+        {
+          "id": "ex-a-0311"
+        },
+        {
+          "id": "ex-a-0312"
+        },
+        {
+          "id": "ex-a-0313"
+        },
+        {
+          "id": "ex-a-0314"
+        },
+        {
+          "id": "ex-a-0315"
+        },
+        {
+          "id": "ex-a-0316"
+        },
+        {
+          "id": "ex-a-0317"
+        },
+        {
+          "id": "ex-a-0318"
+        },
+        {
+          "id": "ex-a-0319"
+        },
+        {
+          "id": "ex-a-0320"
+        },
+        {
+          "id": "ex-a-0321"
+        },
+        {
+          "id": "ex-a-0322"
+        },
+        {
+          "id": "ex-a-0519"
+        },
+        {
+          "id": "ex-a-0520"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "2.297",
+        "playlist_index": 848,
+        "youtube_id": "RIPD00DDXEk",
+        "title": null
+      }
+    },
+    {
+      "id": "les-a-08",
+      "rank": "A",
+      "module": "mod-a-2",
+      "title": "should have done: сожаления",
+      "grammar_point": {
+        "id": "gp-a-08",
+        "title_ru": "Сожаления и упрёки",
+        "rule_md": "**should have done: сожаления и упрёки.**\n**should have** + V3 = «надо было»: You **should have called**.\n**shouldn't have** + V3 = «не надо было»: I **shouldn't have said** that.\n**could have** + V3 = «мог бы»: We **could have won**.\nwish + had + V3 = «жаль, что не…»: I **wish I had studied**.",
+        "phrase_ids": ["ph-a-0210", "ph-a-0211", "ph-a-0212", "ph-a-0213", "ph-a-0214"],
+        "trap_id": "trap-present-perfect"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 5921,
+        "to": 5980
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-present-perfect",
+      "quotes_topic": "regrets",
+      "exercises": [
+        {
+          "id": "ex-a-0323"
+        },
+        {
+          "id": "ex-a-0324"
+        },
+        {
+          "id": "ex-a-0325"
+        },
+        {
+          "id": "ex-a-0326"
+        },
+        {
+          "id": "ex-a-0327"
+        },
+        {
+          "id": "ex-a-0328"
+        },
+        {
+          "id": "ex-a-0329"
+        },
+        {
+          "id": "ex-a-0330"
+        },
+        {
+          "id": "ex-a-0331"
+        },
+        {
+          "id": "ex-a-0332"
+        },
+        {
+          "id": "ex-a-0333"
+        },
+        {
+          "id": "ex-a-0334"
+        },
+        {
+          "id": "ex-a-0335"
+        },
+        {
+          "id": "ex-a-0336"
+        },
+        {
+          "id": "ex-a-0337"
+        },
+        {
+          "id": "ex-a-0338"
+        },
+        {
+          "id": "ex-a-0339"
+        },
+        {
+          "id": "ex-a-0340"
+        },
+        {
+          "id": "ex-a-0341"
+        },
+        {
+          "id": "ex-a-0342"
+        },
+        {
+          "id": "ex-a-0343"
+        },
+        {
+          "id": "ex-a-0344"
+        },
+        {
+          "id": "ex-a-0345"
+        },
+        {
+          "id": "ex-a-0346"
+        },
+        {
+          "id": "ex-a-0347"
+        },
+        {
+          "id": "ex-a-0348"
+        },
+        {
+          "id": "ex-a-0349"
+        },
+        {
+          "id": "ex-a-0350"
+        },
+        {
+          "id": "ex-a-0351"
+        },
+        {
+          "id": "ex-a-0352"
+        },
+        {
+          "id": "ex-a-0353"
+        },
+        {
+          "id": "ex-a-0354"
+        },
+        {
+          "id": "ex-a-0355"
+        },
+        {
+          "id": "ex-a-0356"
+        },
+        {
+          "id": "ex-a-0357"
+        },
+        {
+          "id": "ex-a-0358"
+        },
+        {
+          "id": "ex-a-0359"
+        },
+        {
+          "id": "ex-a-0360"
+        },
+        {
+          "id": "ex-a-0361"
+        },
+        {
+          "id": "ex-a-0362"
+        },
+        {
+          "id": "ex-a-0363"
+        },
+        {
+          "id": "ex-a-0364"
+        },
+        {
+          "id": "ex-a-0365"
+        },
+        {
+          "id": "ex-a-0366"
+        },
+        {
+          "id": "ex-a-0367"
+        },
+        {
+          "id": "ex-a-0368"
+        },
+        {
+          "id": "ex-a-0521"
+        },
+        {
+          "id": "ex-a-0522"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "2.303",
+        "playlist_index": 854,
+        "youtube_id": "eE_sqWpL-lo",
+        "title": null
+      }
+    },
+    {
+      "id": "les-a-09",
+      "rank": "A",
+      "module": "mod-a-2",
+      "title": "3-е условное: If I had studied…",
+      "grammar_point": {
+        "id": "gp-a-09",
+        "title_ru": "Нереальное прошлое",
+        "rule_md": "**3-е условное: нереальное прошлое.**\n**If** + Past Perfect, **would have** + V3:\nIf I **had studied**, I **would have passed**.\nЕсли бы… тогда (обе части — в прошлом, изменить нельзя).\nОтрицание: If he **hadn't lied**, she **would have stayed**.",
+        "phrase_ids": ["ph-a-0245", "ph-a-0246", "ph-a-0247", "ph-a-0248", "ph-a-0249"],
+        "trap_id": "trap-if-will"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 5981,
+        "to": 6040
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-if-will",
+      "quotes_topic": "conditionals",
+      "exercises": [
+        {
+          "id": "ex-a-0369"
+        },
+        {
+          "id": "ex-a-0370"
+        },
+        {
+          "id": "ex-a-0371"
+        },
+        {
+          "id": "ex-a-0372"
+        },
+        {
+          "id": "ex-a-0373"
+        },
+        {
+          "id": "ex-a-0374"
+        },
+        {
+          "id": "ex-a-0375"
+        },
+        {
+          "id": "ex-a-0376"
+        },
+        {
+          "id": "ex-a-0377"
+        },
+        {
+          "id": "ex-a-0378"
+        },
+        {
+          "id": "ex-a-0379"
+        },
+        {
+          "id": "ex-a-0380"
+        },
+        {
+          "id": "ex-a-0381"
+        },
+        {
+          "id": "ex-a-0382"
+        },
+        {
+          "id": "ex-a-0383"
+        },
+        {
+          "id": "ex-a-0384"
+        },
+        {
+          "id": "ex-a-0385"
+        },
+        {
+          "id": "ex-a-0386"
+        },
+        {
+          "id": "ex-a-0387"
+        },
+        {
+          "id": "ex-a-0388"
+        },
+        {
+          "id": "ex-a-0389"
+        },
+        {
+          "id": "ex-a-0390"
+        },
+        {
+          "id": "ex-a-0391"
+        },
+        {
+          "id": "ex-a-0392"
+        },
+        {
+          "id": "ex-a-0393"
+        },
+        {
+          "id": "ex-a-0394"
+        },
+        {
+          "id": "ex-a-0395"
+        },
+        {
+          "id": "ex-a-0396"
+        },
+        {
+          "id": "ex-a-0397"
+        },
+        {
+          "id": "ex-a-0398"
+        },
+        {
+          "id": "ex-a-0399"
+        },
+        {
+          "id": "ex-a-0400"
+        },
+        {
+          "id": "ex-a-0401"
+        },
+        {
+          "id": "ex-a-0402"
+        },
+        {
+          "id": "ex-a-0403"
+        },
+        {
+          "id": "ex-a-0404"
+        },
+        {
+          "id": "ex-a-0405"
+        },
+        {
+          "id": "ex-a-0406"
+        },
+        {
+          "id": "ex-a-0407"
+        },
+        {
+          "id": "ex-a-0408"
+        },
+        {
+          "id": "ex-a-0409"
+        },
+        {
+          "id": "ex-a-0410"
+        },
+        {
+          "id": "ex-a-0411"
+        },
+        {
+          "id": "ex-a-0412"
+        },
+        {
+          "id": "ex-a-0413"
+        },
+        {
+          "id": "ex-a-0414"
+        },
+        {
+          "id": "ex-a-0523"
+        },
+        {
+          "id": "ex-a-0524"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "2.310",
+        "playlist_index": 861,
+        "youtube_id": "a2NXNeUKhcU",
+        "title": null
+      }
+    },
+    {
+      "id": "les-a-10",
+      "rank": "A",
+      "module": "mod-a-2",
+      "title": "Смешанные условные + wish глубже",
+      "grammar_point": {
+        "id": "gp-a-10",
+        "title_ru": "Mixed conditionals",
+        "rule_md": "**Смешанные условные + wish глубже.**\nПрошлое → настоящее: If I **had saved** money, I **would be** rich **now**.\nwish + Past Perfect = «жаль, что не…» в прошлом:\nI wish I **had studied**. (= I didn't study)\nwish + wouldn't = раздражение: I wish it **would stop**.",
+        "phrase_ids": ["ph-a-0280", "ph-a-0281", "ph-a-0282", "ph-a-0283", "ph-a-0284"],
+        "trap_id": "trap-if-will"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 6041,
+        "to": 6100
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-if-will",
+      "quotes_topic": "conditionals",
+      "exercises": [
+        {
+          "id": "ex-a-0415"
+        },
+        {
+          "id": "ex-a-0416"
+        },
+        {
+          "id": "ex-a-0417"
+        },
+        {
+          "id": "ex-a-0418"
+        },
+        {
+          "id": "ex-a-0419"
+        },
+        {
+          "id": "ex-a-0420"
+        },
+        {
+          "id": "ex-a-0421"
+        },
+        {
+          "id": "ex-a-0422"
+        },
+        {
+          "id": "ex-a-0423"
+        },
+        {
+          "id": "ex-a-0424"
+        },
+        {
+          "id": "ex-a-0425"
+        },
+        {
+          "id": "ex-a-0426"
+        },
+        {
+          "id": "ex-a-0427"
+        },
+        {
+          "id": "ex-a-0428"
+        },
+        {
+          "id": "ex-a-0429"
+        },
+        {
+          "id": "ex-a-0430"
+        },
+        {
+          "id": "ex-a-0431"
+        },
+        {
+          "id": "ex-a-0432"
+        },
+        {
+          "id": "ex-a-0433"
+        },
+        {
+          "id": "ex-a-0434"
+        },
+        {
+          "id": "ex-a-0435"
+        },
+        {
+          "id": "ex-a-0436"
+        },
+        {
+          "id": "ex-a-0437"
+        },
+        {
+          "id": "ex-a-0438"
+        },
+        {
+          "id": "ex-a-0439"
+        },
+        {
+          "id": "ex-a-0440"
+        },
+        {
+          "id": "ex-a-0441"
+        },
+        {
+          "id": "ex-a-0442"
+        },
+        {
+          "id": "ex-a-0443"
+        },
+        {
+          "id": "ex-a-0444"
+        },
+        {
+          "id": "ex-a-0445"
+        },
+        {
+          "id": "ex-a-0446"
+        },
+        {
+          "id": "ex-a-0447"
+        },
+        {
+          "id": "ex-a-0448"
+        },
+        {
+          "id": "ex-a-0449"
+        },
+        {
+          "id": "ex-a-0450"
+        },
+        {
+          "id": "ex-a-0451"
+        },
+        {
+          "id": "ex-a-0452"
+        },
+        {
+          "id": "ex-a-0453"
+        },
+        {
+          "id": "ex-a-0454"
+        },
+        {
+          "id": "ex-a-0455"
+        },
+        {
+          "id": "ex-a-0456"
+        },
+        {
+          "id": "ex-a-0457"
+        },
+        {
+          "id": "ex-a-0458"
+        },
+        {
+          "id": "ex-a-0459"
+        },
+        {
+          "id": "ex-a-0460"
+        },
+        {
+          "id": "ex-a-0525"
+        },
+        {
+          "id": "ex-a-0526"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "2.319",
+        "playlist_index": 870,
+        "youtube_id": "EEMmcyY2nvc",
+        "title": null
+      }
+    },
+    {
+      "id": "les-a-11",
+      "rank": "A",
+      "module": "mod-a-2",
+      "title": "Повторение №22: контрольная",
+      "grammar_point": {
+        "id": "gp-a-11",
+        "title_ru": "Контрольная: модальные в прошедшем",
+        "rule_md": "**Повторение №22: модальные в прошедшем.**\nmust have / can't have / may have — догадки о прошлом.\nshould(n't) have — сожаления. could have — упущенное.\n3-е условное (if had… would have). wish + had V3.\nКонтрольная: выбери форму, найди ошибку.",
+        "phrase_ids": ["ph-a-0314", "ph-a-0315", "ph-a-0316", "ph-a-0317", "ph-a-0318"],
+        "trap_id": "trap-if-will"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 6101,
+        "to": 6160
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-if-will",
+      "quotes_topic": "mixed",
+      "exercises": [
+        {
+          "id": "ex-a-0461"
+        },
+        {
+          "id": "ex-a-0462"
+        },
+        {
+          "id": "ex-a-0463"
+        },
+        {
+          "id": "ex-a-0464"
+        },
+        {
+          "id": "ex-a-0465"
+        },
+        {
+          "id": "ex-a-0466"
+        },
+        {
+          "id": "ex-a-0467"
+        },
+        {
+          "id": "ex-a-0468"
+        },
+        {
+          "id": "ex-a-0469"
+        },
+        {
+          "id": "ex-a-0470"
+        },
+        {
+          "id": "ex-a-0471"
+        },
+        {
+          "id": "ex-a-0472"
+        },
+        {
+          "id": "ex-a-0473"
+        },
+        {
+          "id": "ex-a-0474"
+        },
+        {
+          "id": "ex-a-0475"
+        },
+        {
+          "id": "ex-a-0476"
+        },
+        {
+          "id": "ex-a-0477"
+        },
+        {
+          "id": "ex-a-0478"
+        },
+        {
+          "id": "ex-a-0479"
+        },
+        {
+          "id": "ex-a-0480"
+        },
+        {
+          "id": "ex-a-0481"
+        },
+        {
+          "id": "ex-a-0482"
+        },
+        {
+          "id": "ex-a-0483"
+        },
+        {
+          "id": "ex-a-0484"
+        },
+        {
+          "id": "ex-a-0485"
+        },
+        {
+          "id": "ex-a-0486"
+        },
+        {
+          "id": "ex-a-0487"
+        },
+        {
+          "id": "ex-a-0488"
+        },
+        {
+          "id": "ex-a-0489"
+        },
+        {
+          "id": "ex-a-0490"
+        },
+        {
+          "id": "ex-a-0491"
+        },
+        {
+          "id": "ex-a-0492"
+        },
+        {
+          "id": "ex-a-0493"
+        },
+        {
+          "id": "ex-a-0494"
+        },
+        {
+          "id": "ex-a-0495"
+        },
+        {
+          "id": "ex-a-0496"
+        },
+        {
+          "id": "ex-a-0497"
+        },
+        {
+          "id": "ex-a-0498"
+        },
+        {
+          "id": "ex-a-0499"
+        },
+        {
+          "id": "ex-a-0500"
+        },
+        {
+          "id": "ex-a-0501"
+        },
+        {
+          "id": "ex-a-0502"
+        },
+        {
+          "id": "ex-a-0503"
+        },
+        {
+          "id": "ex-a-0504"
+        },
+        {
+          "id": "ex-a-0505"
+        },
+        {
+          "id": "ex-a-0506"
+        },
+        {
+          "id": "ex-a-0527"
+        },
+        {
+          "id": "ex-a-0528"
+        }
+      ],
+      "bebris_video": null
+    }
+  ]
+}
