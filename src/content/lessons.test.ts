@@ -193,8 +193,8 @@ describe('loadLessonView (реальные data/ ранга E)', () => {
     expect(phrases.every(({ audio }) => audio?.en_gb?.startsWith('audio/phrases/cori/'))).toBe(true)
 
     const lessons = await loadLessons()
-    // M15: E (24) + D (28) + C (30) + B1-B2 (14); B3-B5 добавят остальные
-    expect(lessons.length).toBe(122)
+    // M16: E (24) + D (28) + C (30) + B (29) + A (22) — полный ранг A
+    expect(lessons.length).toBe(133)
     const phraseById = new Set(phrases.map(({ id }) => id))
     for (const lesson of lessons) {
       const lessonPhrases = phrases.filter(
@@ -252,7 +252,7 @@ describe('loadLessonView (реальные data/ ранга E)', () => {
     const b = lessons.filter((lesson) => lesson.rank === 'B')
     expect(b).toHaveLength(29)
     const a = lessons.filter((lesson) => lesson.rank === 'A')
-    expect(a).toHaveLength(11)
+    expect(a).toHaveLength(22)
     expect(c.every((lesson) => lesson.module.startsWith('mod-c-'))).toBe(true)
     const view = await loadLessonView('les-c-01')
     expect(view?.lesson.title).toContain('Past Simple')

@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-30T07:10:19Z",
+  "generated_at": "2026-09-30T08:27:07Z",
   "files": [
     {
       "path": "lessons/exercises-a.json",
       "kind": "exercises",
       "schema_version": 1,
-      "items": 528,
-      "sha256": "63ac1c4710a855ce084ea7bc92ac28fccb0758f87fe2d8486b9eb85c1e15bb24"
+      "items": 1065,
+      "sha256": "2ae075884d3058b0a691e25f92fa3ecce199e71ee121d310ec98aacbd532d86a"
     },
     {
       "path": "lessons/exercises-b.json",
@@ -41,8 +41,8 @@
       "path": "lessons/lessons-a.json",
       "kind": "lessons",
       "schema_version": 1,
-      "items": 11,
-      "sha256": "7fd793de09baa2b4f94642c8d5eac47191d555984a099c32f81550abda3378c5"
+      "items": 22,
+      "sha256": "904ccad34e83f540343b684e6c24453e805553069ce17491fdb1012a17e1f8ad"
     },
     {
       "path": "lessons/lessons-b.json",
@@ -146,8 +146,8 @@
       "path": "phrases/phrases-a.json",
       "kind": "phrases",
       "schema_version": 1,
-      "items": 353,
-      "sha256": "06f80b3d8e606d87db5c851c2ff0b5b2d488d283bea0bbda8ec52efa00291374"
+      "items": 699,
+      "sha256": "49aa941475e10246e11205fe3e363d1287ca68eef97b23882a96ab279074a994"
     },
     {
       "path": "phrases/phrases-b.json",
@@ -287,7 +287,7 @@
       "kind": "traps",
       "schema_version": 1,
       "items": 22,
-      "sha256": "3c5412e06fefd143e52c28024e162b3575071d2f6929ec3dd748cd658d865498"
+      "sha256": "849ddd28963625c4c2a9b3bae4b9dfa407c700fdf182f664b4f6d2fd76c51c7e"
     },
     {
       "path": "words/words-0001-0500.json",

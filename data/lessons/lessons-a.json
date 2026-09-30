@@ -162,10 +162,10 @@
           "id": "ex-a-0046"
         },
         {
-          "id": "ex-a-0507"
+          "id": "ex-a-1011"
         },
         {
-          "id": "ex-a-0508"
+          "id": "ex-a-1012"
         }
       ],
       "bebris_video": {
@@ -335,10 +335,10 @@
           "id": "ex-a-0092"
         },
         {
-          "id": "ex-a-0509"
+          "id": "ex-a-1013"
         },
         {
-          "id": "ex-a-0510"
+          "id": "ex-a-1014"
         }
       ],
       "bebris_video": {
@@ -508,10 +508,10 @@
           "id": "ex-a-0138"
         },
         {
-          "id": "ex-a-0511"
+          "id": "ex-a-1015"
         },
         {
-          "id": "ex-a-0512"
+          "id": "ex-a-1016"
         }
       ],
       "bebris_video": {
@@ -681,10 +681,10 @@
           "id": "ex-a-0184"
         },
         {
-          "id": "ex-a-0513"
+          "id": "ex-a-1017"
         },
         {
-          "id": "ex-a-0514"
+          "id": "ex-a-1018"
         }
       ],
       "bebris_video": {
@@ -854,10 +854,10 @@
           "id": "ex-a-0230"
         },
         {
-          "id": "ex-a-0515"
+          "id": "ex-a-1019"
         },
         {
-          "id": "ex-a-0516"
+          "id": "ex-a-1020"
         }
       ],
       "bebris_video": {
@@ -1027,10 +1027,10 @@
           "id": "ex-a-0276"
         },
         {
-          "id": "ex-a-0517"
+          "id": "ex-a-1021"
         },
         {
-          "id": "ex-a-0518"
+          "id": "ex-a-1022"
         }
       ],
       "bebris_video": null
@@ -1195,10 +1195,10 @@
           "id": "ex-a-0322"
         },
         {
-          "id": "ex-a-0519"
+          "id": "ex-a-1023"
         },
         {
-          "id": "ex-a-0520"
+          "id": "ex-a-1024"
         }
       ],
       "bebris_video": {
@@ -1368,10 +1368,10 @@
           "id": "ex-a-0368"
         },
         {
-          "id": "ex-a-0521"
+          "id": "ex-a-1025"
         },
         {
-          "id": "ex-a-0522"
+          "id": "ex-a-1026"
         }
       ],
       "bebris_video": {
@@ -1541,10 +1541,10 @@
           "id": "ex-a-0414"
         },
         {
-          "id": "ex-a-0523"
+          "id": "ex-a-1027"
         },
         {
-          "id": "ex-a-0524"
+          "id": "ex-a-1028"
         }
       ],
       "bebris_video": {
@@ -1714,10 +1714,10 @@
           "id": "ex-a-0460"
         },
         {
-          "id": "ex-a-0525"
+          "id": "ex-a-1029"
         },
         {
-          "id": "ex-a-0526"
+          "id": "ex-a-1030"
         }
       ],
       "bebris_video": {
@@ -1887,10 +1887,1915 @@
           "id": "ex-a-0506"
         },
         {
+          "id": "ex-a-1031"
+        },
+        {
+          "id": "ex-a-1032"
+        }
+      ],
+      "bebris_video": null
+    },
+    {
+      "id": "les-a-12",
+      "rank": "A",
+      "module": "mod-a-3",
+      "title": "have something done: мне сделали",
+      "grammar_point": {
+        "id": "gp-a-12",
+        "title_ru": "Каузатив: услуга за нас",
+        "rule_md": "**have something done — «мне сделали».**\nРаботу делает кто-то другой для нас: I **had my hair cut** — мне подстригли волосы (не сам стриг).\nСхема: have + объект + V3. She's **having her car repaired** — ей сейчас ремонтируют машину.\nПрошедшее/вопрос через did: Where **did** you **have** it **done**?\nБудущее: I'**ll have** the room **cleaned** — мне уберут номер (отель).",
+        "phrase_ids": ["ph-a-0354", "ph-a-0355", "ph-a-0356", "ph-a-0357", "ph-a-0358"],
+        "trap_id": "trap-do-make"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 6161,
+        "to": 6220
+      },
+      "phrasebook_topic": "hotel",
+      "trap_id": "trap-do-make",
+      "quotes_topic": "services",
+      "exercises": [
+        {
+          "id": "ex-a-0507"
+        },
+        {
+          "id": "ex-a-0508"
+        },
+        {
+          "id": "ex-a-0509"
+        },
+        {
+          "id": "ex-a-0510"
+        },
+        {
+          "id": "ex-a-0511"
+        },
+        {
+          "id": "ex-a-0512"
+        },
+        {
+          "id": "ex-a-0513"
+        },
+        {
+          "id": "ex-a-0514"
+        },
+        {
+          "id": "ex-a-0515"
+        },
+        {
+          "id": "ex-a-0516"
+        },
+        {
+          "id": "ex-a-0517"
+        },
+        {
+          "id": "ex-a-0518"
+        },
+        {
+          "id": "ex-a-0519"
+        },
+        {
+          "id": "ex-a-0520"
+        },
+        {
+          "id": "ex-a-0521"
+        },
+        {
+          "id": "ex-a-0522"
+        },
+        {
+          "id": "ex-a-0523"
+        },
+        {
+          "id": "ex-a-0524"
+        },
+        {
+          "id": "ex-a-0525"
+        },
+        {
+          "id": "ex-a-0526"
+        },
+        {
           "id": "ex-a-0527"
         },
         {
           "id": "ex-a-0528"
+        },
+        {
+          "id": "ex-a-0529"
+        },
+        {
+          "id": "ex-a-0530"
+        },
+        {
+          "id": "ex-a-0531"
+        },
+        {
+          "id": "ex-a-0532"
+        },
+        {
+          "id": "ex-a-0533"
+        },
+        {
+          "id": "ex-a-0534"
+        },
+        {
+          "id": "ex-a-0535"
+        },
+        {
+          "id": "ex-a-0536"
+        },
+        {
+          "id": "ex-a-0537"
+        },
+        {
+          "id": "ex-a-0538"
+        },
+        {
+          "id": "ex-a-0539"
+        },
+        {
+          "id": "ex-a-0540"
+        },
+        {
+          "id": "ex-a-0541"
+        },
+        {
+          "id": "ex-a-0542"
+        },
+        {
+          "id": "ex-a-0543"
+        },
+        {
+          "id": "ex-a-0544"
+        },
+        {
+          "id": "ex-a-0545"
+        },
+        {
+          "id": "ex-a-0546"
+        },
+        {
+          "id": "ex-a-0547"
+        },
+        {
+          "id": "ex-a-0548"
+        },
+        {
+          "id": "ex-a-0549"
+        },
+        {
+          "id": "ex-a-0550"
+        },
+        {
+          "id": "ex-a-0551"
+        },
+        {
+          "id": "ex-a-0552"
+        },
+        {
+          "id": "ex-a-1033"
+        },
+        {
+          "id": "ex-a-1034"
+        },
+        {
+          "id": "ex-a-1035"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "2.334",
+        "playlist_index": 885,
+        "youtube_id": "NzG1Hio8rO0",
+        "title": null
+      }
+    },
+    {
+      "id": "les-a-13",
+      "rank": "A",
+      "module": "mod-a-3",
+      "title": "get used to / feel like doing",
+      "grammar_point": {
+        "id": "gp-a-13",
+        "title_ru": "Привычки и желания",
+        "rule_md": "**get used to / be used to / feel like.**\nget used to = привыкать (процесс): I'**m getting used to** the climate.\nbe used to + герундий/существительное = уже привык: She'**s used to working** nights.\nПосле to — герундий: used to **living**, не «to live».\nfeel like + герундий = хочется: I **feel like eating** out tonight.\nОтдельно: used to + V1 = «раньше»: I **used to live** alone (прошлая привычка, не путай с be used to living).",
+        "phrase_ids": ["ph-a-0388", "ph-a-0389", "ph-a-0390", "ph-a-0391", "ph-a-0392"],
+        "trap_id": "trap-feel-myself"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 6221,
+        "to": 6280
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-feel-myself",
+      "quotes_topic": "habits",
+      "exercises": [
+        {
+          "id": "ex-a-0553"
+        },
+        {
+          "id": "ex-a-0554"
+        },
+        {
+          "id": "ex-a-0555"
+        },
+        {
+          "id": "ex-a-0556"
+        },
+        {
+          "id": "ex-a-0557"
+        },
+        {
+          "id": "ex-a-0558"
+        },
+        {
+          "id": "ex-a-0559"
+        },
+        {
+          "id": "ex-a-0560"
+        },
+        {
+          "id": "ex-a-0561"
+        },
+        {
+          "id": "ex-a-0562"
+        },
+        {
+          "id": "ex-a-0563"
+        },
+        {
+          "id": "ex-a-0564"
+        },
+        {
+          "id": "ex-a-0565"
+        },
+        {
+          "id": "ex-a-0566"
+        },
+        {
+          "id": "ex-a-0567"
+        },
+        {
+          "id": "ex-a-0568"
+        },
+        {
+          "id": "ex-a-0569"
+        },
+        {
+          "id": "ex-a-0570"
+        },
+        {
+          "id": "ex-a-0571"
+        },
+        {
+          "id": "ex-a-0572"
+        },
+        {
+          "id": "ex-a-0573"
+        },
+        {
+          "id": "ex-a-0574"
+        },
+        {
+          "id": "ex-a-0575"
+        },
+        {
+          "id": "ex-a-0576"
+        },
+        {
+          "id": "ex-a-0577"
+        },
+        {
+          "id": "ex-a-0578"
+        },
+        {
+          "id": "ex-a-0579"
+        },
+        {
+          "id": "ex-a-0580"
+        },
+        {
+          "id": "ex-a-0581"
+        },
+        {
+          "id": "ex-a-0582"
+        },
+        {
+          "id": "ex-a-0583"
+        },
+        {
+          "id": "ex-a-0584"
+        },
+        {
+          "id": "ex-a-0585"
+        },
+        {
+          "id": "ex-a-0586"
+        },
+        {
+          "id": "ex-a-0587"
+        },
+        {
+          "id": "ex-a-0588"
+        },
+        {
+          "id": "ex-a-0589"
+        },
+        {
+          "id": "ex-a-0590"
+        },
+        {
+          "id": "ex-a-0591"
+        },
+        {
+          "id": "ex-a-0592"
+        },
+        {
+          "id": "ex-a-0593"
+        },
+        {
+          "id": "ex-a-0594"
+        },
+        {
+          "id": "ex-a-0595"
+        },
+        {
+          "id": "ex-a-0596"
+        },
+        {
+          "id": "ex-a-0597"
+        },
+        {
+          "id": "ex-a-0598"
+        },
+        {
+          "id": "ex-a-1036"
+        },
+        {
+          "id": "ex-a-1037"
+        },
+        {
+          "id": "ex-a-1038"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "2.334",
+        "playlist_index": 885,
+        "youtube_id": "NzG1Hio8rO0",
+        "title": null
+      }
+    },
+    {
+      "id": "les-a-14",
+      "rank": "A",
+      "module": "mod-a-3",
+      "title": "Сложные relative clauses",
+      "grammar_point": {
+        "id": "gp-a-14",
+        "title_ru": "whose, предлог + whom/which",
+        "rule_md": "**Сложные relative clauses.**\nwhose = чей: The man **whose** car was stolen…\nФормальный стиль — предлог перед whom/which: the people **with whom** I work…\nРазговорный — предлог в конце: the friend I told you **about**.\nЗапятые — только в добавочных уточнениях (о том, кто и так известен): My brother, who lives in Rome, is a chef.",
+        "phrase_ids": ["ph-a-0423", "ph-a-0424", "ph-a-0425", "ph-a-0426", "ph-a-0427"],
+        "trap_id": "trap-comma-that"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 6281,
+        "to": 6340
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-comma-that",
+      "quotes_topic": "people",
+      "exercises": [
+        {
+          "id": "ex-a-0599"
+        },
+        {
+          "id": "ex-a-0600"
+        },
+        {
+          "id": "ex-a-0601"
+        },
+        {
+          "id": "ex-a-0602"
+        },
+        {
+          "id": "ex-a-0603"
+        },
+        {
+          "id": "ex-a-0604"
+        },
+        {
+          "id": "ex-a-0605"
+        },
+        {
+          "id": "ex-a-0606"
+        },
+        {
+          "id": "ex-a-0607"
+        },
+        {
+          "id": "ex-a-0608"
+        },
+        {
+          "id": "ex-a-0609"
+        },
+        {
+          "id": "ex-a-0610"
+        },
+        {
+          "id": "ex-a-0611"
+        },
+        {
+          "id": "ex-a-0612"
+        },
+        {
+          "id": "ex-a-0613"
+        },
+        {
+          "id": "ex-a-0614"
+        },
+        {
+          "id": "ex-a-0615"
+        },
+        {
+          "id": "ex-a-0616"
+        },
+        {
+          "id": "ex-a-0617"
+        },
+        {
+          "id": "ex-a-0618"
+        },
+        {
+          "id": "ex-a-0619"
+        },
+        {
+          "id": "ex-a-0620"
+        },
+        {
+          "id": "ex-a-0621"
+        },
+        {
+          "id": "ex-a-0622"
+        },
+        {
+          "id": "ex-a-0623"
+        },
+        {
+          "id": "ex-a-0624"
+        },
+        {
+          "id": "ex-a-0625"
+        },
+        {
+          "id": "ex-a-0626"
+        },
+        {
+          "id": "ex-a-0627"
+        },
+        {
+          "id": "ex-a-0628"
+        },
+        {
+          "id": "ex-a-0629"
+        },
+        {
+          "id": "ex-a-0630"
+        },
+        {
+          "id": "ex-a-0631"
+        },
+        {
+          "id": "ex-a-0632"
+        },
+        {
+          "id": "ex-a-0633"
+        },
+        {
+          "id": "ex-a-0634"
+        },
+        {
+          "id": "ex-a-0635"
+        },
+        {
+          "id": "ex-a-0636"
+        },
+        {
+          "id": "ex-a-0637"
+        },
+        {
+          "id": "ex-a-0638"
+        },
+        {
+          "id": "ex-a-0639"
+        },
+        {
+          "id": "ex-a-0640"
+        },
+        {
+          "id": "ex-a-0641"
+        },
+        {
+          "id": "ex-a-0642"
+        },
+        {
+          "id": "ex-a-0643"
+        },
+        {
+          "id": "ex-a-0644"
+        },
+        {
+          "id": "ex-a-1039"
+        },
+        {
+          "id": "ex-a-1040"
+        },
+        {
+          "id": "ex-a-1041"
+        }
+      ],
+      "bebris_video": null
+    },
+    {
+      "id": "les-a-15",
+      "rank": "A",
+      "module": "mod-a-3",
+      "title": "Повторение №23: контрольная",
+      "grammar_point": {
+        "id": "gp-a-15",
+        "title_ru": "Контрольная: продвинутые конструкции",
+        "rule_md": "**Повторение №23: продвинутые конструкции.**\nhave something done — мне сделали: I **had** my hair **cut**.\nbe/get used to + герундий: She'**s used to working** under pressure.\nrelative clauses: whose, предлог + whom/which, контактные.\nКонтрольная: найди ошибку, выбери форму.",
+        "phrase_ids": ["ph-a-0457", "ph-a-0458", "ph-a-0459", "ph-a-0460", "ph-a-0461"],
+        "trap_id": "trap-do-make"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 6341,
+        "to": 6400
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-do-make",
+      "quotes_topic": "mixed",
+      "exercises": [
+        {
+          "id": "ex-a-0645"
+        },
+        {
+          "id": "ex-a-0646"
+        },
+        {
+          "id": "ex-a-0647"
+        },
+        {
+          "id": "ex-a-0648"
+        },
+        {
+          "id": "ex-a-0649"
+        },
+        {
+          "id": "ex-a-0650"
+        },
+        {
+          "id": "ex-a-0651"
+        },
+        {
+          "id": "ex-a-0652"
+        },
+        {
+          "id": "ex-a-0653"
+        },
+        {
+          "id": "ex-a-0654"
+        },
+        {
+          "id": "ex-a-0655"
+        },
+        {
+          "id": "ex-a-0656"
+        },
+        {
+          "id": "ex-a-0657"
+        },
+        {
+          "id": "ex-a-0658"
+        },
+        {
+          "id": "ex-a-0659"
+        },
+        {
+          "id": "ex-a-0660"
+        },
+        {
+          "id": "ex-a-0661"
+        },
+        {
+          "id": "ex-a-0662"
+        },
+        {
+          "id": "ex-a-0663"
+        },
+        {
+          "id": "ex-a-0664"
+        },
+        {
+          "id": "ex-a-0665"
+        },
+        {
+          "id": "ex-a-0666"
+        },
+        {
+          "id": "ex-a-0667"
+        },
+        {
+          "id": "ex-a-0668"
+        },
+        {
+          "id": "ex-a-0669"
+        },
+        {
+          "id": "ex-a-0670"
+        },
+        {
+          "id": "ex-a-0671"
+        },
+        {
+          "id": "ex-a-0672"
+        },
+        {
+          "id": "ex-a-0673"
+        },
+        {
+          "id": "ex-a-0674"
+        },
+        {
+          "id": "ex-a-0675"
+        },
+        {
+          "id": "ex-a-0676"
+        },
+        {
+          "id": "ex-a-0677"
+        },
+        {
+          "id": "ex-a-0678"
+        },
+        {
+          "id": "ex-a-0679"
+        },
+        {
+          "id": "ex-a-0680"
+        },
+        {
+          "id": "ex-a-0681"
+        },
+        {
+          "id": "ex-a-0682"
+        },
+        {
+          "id": "ex-a-0683"
+        },
+        {
+          "id": "ex-a-0684"
+        },
+        {
+          "id": "ex-a-0685"
+        },
+        {
+          "id": "ex-a-0686"
+        },
+        {
+          "id": "ex-a-0687"
+        },
+        {
+          "id": "ex-a-0688"
+        },
+        {
+          "id": "ex-a-0689"
+        },
+        {
+          "id": "ex-a-0690"
+        },
+        {
+          "id": "ex-a-1042"
+        },
+        {
+          "id": "ex-a-1043"
+        },
+        {
+          "id": "ex-a-1044"
+        }
+      ],
+      "bebris_video": null
+    },
+    {
+      "id": "les-a-16",
+      "rank": "A",
+      "module": "mod-a-3",
+      "title": "Фразовые глаголы B2",
+      "grammar_point": {
+        "id": "gp-a-16",
+        "title_ru": "figure out, fall through, put up with",
+        "rule_md": "**Фразовые глаголы B2.**\nfigure **out** — разобраться; come **across** — наткнуться.\nbe up **to** — затевать; fall **through** — сорваться.\nturn **out** — оказаться; end **up** — закончить тем, что.\nput up **with** — терпеть; run **out of** — закончиться.\nЧастица меняет смысл — учи глагол целиком.",
+        "phrase_ids": ["ph-a-0487", "ph-a-0488", "ph-a-0489", "ph-a-0490", "ph-a-0491"],
+        "trap_id": "trap-wait-for"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 6401,
+        "to": 6460
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-wait-for",
+      "quotes_topic": "phrasal",
+      "exercises": [
+        {
+          "id": "ex-a-0691"
+        },
+        {
+          "id": "ex-a-0692"
+        },
+        {
+          "id": "ex-a-0693"
+        },
+        {
+          "id": "ex-a-0694"
+        },
+        {
+          "id": "ex-a-0695"
+        },
+        {
+          "id": "ex-a-0696"
+        },
+        {
+          "id": "ex-a-0697"
+        },
+        {
+          "id": "ex-a-0698"
+        },
+        {
+          "id": "ex-a-0699"
+        },
+        {
+          "id": "ex-a-0700"
+        },
+        {
+          "id": "ex-a-0701"
+        },
+        {
+          "id": "ex-a-0702"
+        },
+        {
+          "id": "ex-a-0703"
+        },
+        {
+          "id": "ex-a-0704"
+        },
+        {
+          "id": "ex-a-0705"
+        },
+        {
+          "id": "ex-a-0706"
+        },
+        {
+          "id": "ex-a-0707"
+        },
+        {
+          "id": "ex-a-0708"
+        },
+        {
+          "id": "ex-a-0709"
+        },
+        {
+          "id": "ex-a-0710"
+        },
+        {
+          "id": "ex-a-0711"
+        },
+        {
+          "id": "ex-a-0712"
+        },
+        {
+          "id": "ex-a-0713"
+        },
+        {
+          "id": "ex-a-0714"
+        },
+        {
+          "id": "ex-a-0715"
+        },
+        {
+          "id": "ex-a-0716"
+        },
+        {
+          "id": "ex-a-0717"
+        },
+        {
+          "id": "ex-a-0718"
+        },
+        {
+          "id": "ex-a-0719"
+        },
+        {
+          "id": "ex-a-0720"
+        },
+        {
+          "id": "ex-a-0721"
+        },
+        {
+          "id": "ex-a-0722"
+        },
+        {
+          "id": "ex-a-0723"
+        },
+        {
+          "id": "ex-a-0724"
+        },
+        {
+          "id": "ex-a-0725"
+        },
+        {
+          "id": "ex-a-0726"
+        },
+        {
+          "id": "ex-a-0727"
+        },
+        {
+          "id": "ex-a-0728"
+        },
+        {
+          "id": "ex-a-0729"
+        },
+        {
+          "id": "ex-a-0730"
+        },
+        {
+          "id": "ex-a-0731"
+        },
+        {
+          "id": "ex-a-0732"
+        },
+        {
+          "id": "ex-a-0733"
+        },
+        {
+          "id": "ex-a-0734"
+        },
+        {
+          "id": "ex-a-0735"
+        },
+        {
+          "id": "ex-a-0736"
+        },
+        {
+          "id": "ex-a-1045"
+        },
+        {
+          "id": "ex-a-1046"
+        },
+        {
+          "id": "ex-a-1047"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "2.354",
+        "playlist_index": 905,
+        "youtube_id": "6rFJkFq5f0s",
+        "title": null
+      }
+    },
+    {
+      "id": "les-a-17",
+      "rank": "A",
+      "module": "mod-a-4",
+      "title": "Усилители: highly unlikely",
+      "grammar_point": {
+        "id": "gp-a-17",
+        "title_ru": "Формальная оценка",
+        "rule_md": "**Усилители.**\nНаречие подбирается к прилагательному:\n**highly** unlikely / successful; **deeply** disappointed / grateful.\n**absolutely / utterly** + «экстремальные» прилагательные: freezing, exhausted, brilliant.\n«Very freezing» — нельзя: freezing уже экстремальное, его не усиливают very.",
+        "phrase_ids": ["ph-a-0519", "ph-a-0520", "ph-a-0521", "ph-a-0522", "ph-a-0523"],
+        "trap_id": "trap-very-like"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 6461,
+        "to": 6520
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-very-like",
+      "quotes_topic": "feelings",
+      "exercises": [
+        {
+          "id": "ex-a-0737"
+        },
+        {
+          "id": "ex-a-0738"
+        },
+        {
+          "id": "ex-a-0739"
+        },
+        {
+          "id": "ex-a-0740"
+        },
+        {
+          "id": "ex-a-0741"
+        },
+        {
+          "id": "ex-a-0742"
+        },
+        {
+          "id": "ex-a-0743"
+        },
+        {
+          "id": "ex-a-0744"
+        },
+        {
+          "id": "ex-a-0745"
+        },
+        {
+          "id": "ex-a-0746"
+        },
+        {
+          "id": "ex-a-0747"
+        },
+        {
+          "id": "ex-a-0748"
+        },
+        {
+          "id": "ex-a-0749"
+        },
+        {
+          "id": "ex-a-0750"
+        },
+        {
+          "id": "ex-a-0751"
+        },
+        {
+          "id": "ex-a-0752"
+        },
+        {
+          "id": "ex-a-0753"
+        },
+        {
+          "id": "ex-a-0754"
+        },
+        {
+          "id": "ex-a-0755"
+        },
+        {
+          "id": "ex-a-0756"
+        },
+        {
+          "id": "ex-a-0757"
+        },
+        {
+          "id": "ex-a-0758"
+        },
+        {
+          "id": "ex-a-0759"
+        },
+        {
+          "id": "ex-a-0760"
+        },
+        {
+          "id": "ex-a-0761"
+        },
+        {
+          "id": "ex-a-0762"
+        },
+        {
+          "id": "ex-a-0763"
+        },
+        {
+          "id": "ex-a-0764"
+        },
+        {
+          "id": "ex-a-0765"
+        },
+        {
+          "id": "ex-a-0766"
+        },
+        {
+          "id": "ex-a-0767"
+        },
+        {
+          "id": "ex-a-0768"
+        },
+        {
+          "id": "ex-a-0769"
+        },
+        {
+          "id": "ex-a-0770"
+        },
+        {
+          "id": "ex-a-0771"
+        },
+        {
+          "id": "ex-a-0772"
+        },
+        {
+          "id": "ex-a-0773"
+        },
+        {
+          "id": "ex-a-0774"
+        },
+        {
+          "id": "ex-a-0775"
+        },
+        {
+          "id": "ex-a-0776"
+        },
+        {
+          "id": "ex-a-0777"
+        },
+        {
+          "id": "ex-a-0778"
+        },
+        {
+          "id": "ex-a-0779"
+        },
+        {
+          "id": "ex-a-1048"
+        },
+        {
+          "id": "ex-a-1049"
+        },
+        {
+          "id": "ex-a-1050"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "2.322",
+        "playlist_index": 873,
+        "youtube_id": "cTtcmycgs9o",
+        "title": null
+      }
+    },
+    {
+      "id": "les-a-18",
+      "rank": "A",
+      "module": "mod-a-4",
+      "title": "there's no point in…",
+      "grammar_point": {
+        "id": "gp-a-18",
+        "title_ru": "Оценка действий: герундий",
+        "rule_md": "**there's no point / have difficulty.**\nThere's no point **in arguing** — нет смысла спорить (герундий!).\nhave difficulty **finding** — трудно найти: We **had difficulty finding** the place.\nIt's no use **complaining**. / It's worth **seeing**.\nПосле этих конструкций — всегда герундий, не инфинитив.",
+        "phrase_ids": ["ph-a-0549", "ph-a-0550", "ph-a-0551", "ph-a-0552", "ph-a-0553"],
+        "trap_id": "trap-want-that"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 6521,
+        "to": 6580
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-want-that",
+      "quotes_topic": "actions",
+      "exercises": [
+        {
+          "id": "ex-a-0780"
+        },
+        {
+          "id": "ex-a-0781"
+        },
+        {
+          "id": "ex-a-0782"
+        },
+        {
+          "id": "ex-a-0783"
+        },
+        {
+          "id": "ex-a-0784"
+        },
+        {
+          "id": "ex-a-0785"
+        },
+        {
+          "id": "ex-a-0786"
+        },
+        {
+          "id": "ex-a-0787"
+        },
+        {
+          "id": "ex-a-0788"
+        },
+        {
+          "id": "ex-a-0789"
+        },
+        {
+          "id": "ex-a-0790"
+        },
+        {
+          "id": "ex-a-0791"
+        },
+        {
+          "id": "ex-a-0792"
+        },
+        {
+          "id": "ex-a-0793"
+        },
+        {
+          "id": "ex-a-0794"
+        },
+        {
+          "id": "ex-a-0795"
+        },
+        {
+          "id": "ex-a-0796"
+        },
+        {
+          "id": "ex-a-0797"
+        },
+        {
+          "id": "ex-a-0798"
+        },
+        {
+          "id": "ex-a-0799"
+        },
+        {
+          "id": "ex-a-0800"
+        },
+        {
+          "id": "ex-a-0801"
+        },
+        {
+          "id": "ex-a-0802"
+        },
+        {
+          "id": "ex-a-0803"
+        },
+        {
+          "id": "ex-a-0804"
+        },
+        {
+          "id": "ex-a-0805"
+        },
+        {
+          "id": "ex-a-0806"
+        },
+        {
+          "id": "ex-a-0807"
+        },
+        {
+          "id": "ex-a-0808"
+        },
+        {
+          "id": "ex-a-0809"
+        },
+        {
+          "id": "ex-a-0810"
+        },
+        {
+          "id": "ex-a-0811"
+        },
+        {
+          "id": "ex-a-0812"
+        },
+        {
+          "id": "ex-a-0813"
+        },
+        {
+          "id": "ex-a-0814"
+        },
+        {
+          "id": "ex-a-0815"
+        },
+        {
+          "id": "ex-a-0816"
+        },
+        {
+          "id": "ex-a-0817"
+        },
+        {
+          "id": "ex-a-0818"
+        },
+        {
+          "id": "ex-a-0819"
+        },
+        {
+          "id": "ex-a-0820"
+        },
+        {
+          "id": "ex-a-0821"
+        },
+        {
+          "id": "ex-a-0822"
+        },
+        {
+          "id": "ex-a-0823"
+        },
+        {
+          "id": "ex-a-0824"
+        },
+        {
+          "id": "ex-a-0825"
+        },
+        {
+          "id": "ex-a-1051"
+        },
+        {
+          "id": "ex-a-1052"
+        },
+        {
+          "id": "ex-a-1053"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "2.328",
+        "playlist_index": 879,
+        "youtube_id": "dmbTKXB2SNY",
+        "title": null
+      }
+    },
+    {
+      "id": "les-a-19",
+      "rank": "A",
+      "module": "mod-a-4",
+      "title": "Инверсия: Little did they know",
+      "grammar_point": {
+        "id": "gp-a-19",
+        "title_ru": "Эмфаза обратным порядком",
+        "rule_md": "**Инверсия — эмфаза.**\nОтрицательное наречие вперёд + вопросительный порядок слов:\n**Never have I** seen… / **Little did they** know. / Rarely **does he** complain.\nУсловные без if: **Had I** known… = If I had known… / **Were I** you… / **Should you** need…\nNo sooner **had we left** than… — не успели мы выйти, как…",
+        "phrase_ids": ["ph-a-0579", "ph-a-0580", "ph-a-0581", "ph-a-0582", "ph-a-0583"],
+        "trap_id": "trap-question-word-order"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 6581,
+        "to": 6640
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-question-word-order",
+      "quotes_topic": "emphasis",
+      "exercises": [
+        {
+          "id": "ex-a-0826"
+        },
+        {
+          "id": "ex-a-0827"
+        },
+        {
+          "id": "ex-a-0828"
+        },
+        {
+          "id": "ex-a-0829"
+        },
+        {
+          "id": "ex-a-0830"
+        },
+        {
+          "id": "ex-a-0831"
+        },
+        {
+          "id": "ex-a-0832"
+        },
+        {
+          "id": "ex-a-0833"
+        },
+        {
+          "id": "ex-a-0834"
+        },
+        {
+          "id": "ex-a-0835"
+        },
+        {
+          "id": "ex-a-0836"
+        },
+        {
+          "id": "ex-a-0837"
+        },
+        {
+          "id": "ex-a-0838"
+        },
+        {
+          "id": "ex-a-0839"
+        },
+        {
+          "id": "ex-a-0840"
+        },
+        {
+          "id": "ex-a-0841"
+        },
+        {
+          "id": "ex-a-0842"
+        },
+        {
+          "id": "ex-a-0843"
+        },
+        {
+          "id": "ex-a-0844"
+        },
+        {
+          "id": "ex-a-0845"
+        },
+        {
+          "id": "ex-a-0846"
+        },
+        {
+          "id": "ex-a-0847"
+        },
+        {
+          "id": "ex-a-0848"
+        },
+        {
+          "id": "ex-a-0849"
+        },
+        {
+          "id": "ex-a-0850"
+        },
+        {
+          "id": "ex-a-0851"
+        },
+        {
+          "id": "ex-a-0852"
+        },
+        {
+          "id": "ex-a-0853"
+        },
+        {
+          "id": "ex-a-0854"
+        },
+        {
+          "id": "ex-a-0855"
+        },
+        {
+          "id": "ex-a-0856"
+        },
+        {
+          "id": "ex-a-0857"
+        },
+        {
+          "id": "ex-a-0858"
+        },
+        {
+          "id": "ex-a-0859"
+        },
+        {
+          "id": "ex-a-0860"
+        },
+        {
+          "id": "ex-a-0861"
+        },
+        {
+          "id": "ex-a-0862"
+        },
+        {
+          "id": "ex-a-0863"
+        },
+        {
+          "id": "ex-a-0864"
+        },
+        {
+          "id": "ex-a-0865"
+        },
+        {
+          "id": "ex-a-0866"
+        },
+        {
+          "id": "ex-a-0867"
+        },
+        {
+          "id": "ex-a-0868"
+        },
+        {
+          "id": "ex-a-0869"
+        },
+        {
+          "id": "ex-a-0870"
+        },
+        {
+          "id": "ex-a-0871"
+        },
+        {
+          "id": "ex-a-1054"
+        },
+        {
+          "id": "ex-a-1055"
+        },
+        {
+          "id": "ex-a-1056"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "2.331",
+        "playlist_index": 882,
+        "youtube_id": "i2cHBmDAuHk",
+        "title": null
+      }
+    },
+    {
+      "id": "les-a-20",
+      "rank": "A",
+      "module": "mod-a-4",
+      "title": "Повторение №24: контрольная",
+      "grammar_point": {
+        "id": "gp-a-20",
+        "title_ru": "Контрольная: стиль",
+        "rule_md": "**Повторение №24: стиль.**\nУсилители: highly unlikely, deeply grateful, absolutely freezing.\nГерундий: there's no point in arguing, have difficulty parking, it's worth trying.\nИнверсия: Little did they know… / Never have I… / Had I known…\nФразовые: fall through, figure out, put up with, run out of.",
+        "phrase_ids": ["ph-a-0609", "ph-a-0610", "ph-a-0611", "ph-a-0612", "ph-a-0613"],
+        "trap_id": "trap-very-like"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 6641,
+        "to": 6700
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-very-like",
+      "quotes_topic": "mixed",
+      "exercises": [
+        {
+          "id": "ex-a-0872"
+        },
+        {
+          "id": "ex-a-0873"
+        },
+        {
+          "id": "ex-a-0874"
+        },
+        {
+          "id": "ex-a-0875"
+        },
+        {
+          "id": "ex-a-0876"
+        },
+        {
+          "id": "ex-a-0877"
+        },
+        {
+          "id": "ex-a-0878"
+        },
+        {
+          "id": "ex-a-0879"
+        },
+        {
+          "id": "ex-a-0880"
+        },
+        {
+          "id": "ex-a-0881"
+        },
+        {
+          "id": "ex-a-0882"
+        },
+        {
+          "id": "ex-a-0883"
+        },
+        {
+          "id": "ex-a-0884"
+        },
+        {
+          "id": "ex-a-0885"
+        },
+        {
+          "id": "ex-a-0886"
+        },
+        {
+          "id": "ex-a-0887"
+        },
+        {
+          "id": "ex-a-0888"
+        },
+        {
+          "id": "ex-a-0889"
+        },
+        {
+          "id": "ex-a-0890"
+        },
+        {
+          "id": "ex-a-0891"
+        },
+        {
+          "id": "ex-a-0892"
+        },
+        {
+          "id": "ex-a-0893"
+        },
+        {
+          "id": "ex-a-0894"
+        },
+        {
+          "id": "ex-a-0895"
+        },
+        {
+          "id": "ex-a-0896"
+        },
+        {
+          "id": "ex-a-0897"
+        },
+        {
+          "id": "ex-a-0898"
+        },
+        {
+          "id": "ex-a-0899"
+        },
+        {
+          "id": "ex-a-0900"
+        },
+        {
+          "id": "ex-a-0901"
+        },
+        {
+          "id": "ex-a-0902"
+        },
+        {
+          "id": "ex-a-0903"
+        },
+        {
+          "id": "ex-a-0904"
+        },
+        {
+          "id": "ex-a-0905"
+        },
+        {
+          "id": "ex-a-0906"
+        },
+        {
+          "id": "ex-a-0907"
+        },
+        {
+          "id": "ex-a-0908"
+        },
+        {
+          "id": "ex-a-0909"
+        },
+        {
+          "id": "ex-a-0910"
+        },
+        {
+          "id": "ex-a-0911"
+        },
+        {
+          "id": "ex-a-0912"
+        },
+        {
+          "id": "ex-a-0913"
+        },
+        {
+          "id": "ex-a-0914"
+        },
+        {
+          "id": "ex-a-0915"
+        },
+        {
+          "id": "ex-a-0916"
+        },
+        {
+          "id": "ex-a-0917"
+        },
+        {
+          "id": "ex-a-1057"
+        },
+        {
+          "id": "ex-a-1058"
+        },
+        {
+          "id": "ex-a-1059"
+        }
+      ],
+      "bebris_video": null
+    },
+    {
+      "id": "les-a-21",
+      "rank": "A",
+      "module": "mod-a-4",
+      "title": "Капсула: разбор сцены",
+      "grammar_point": {
+        "id": "gp-a-21",
+        "title_ru": "Три цитаты уровня B2",
+        "rule_md": "**Капсула: разбор сцены.**\nТри цитаты уровня B2: «My friends… you bow to no one» (LOTR), «It makes them feel invisible» (Black Mirror), «We'll fight to survive» (Berserk).\nВслушайся в регистр: торжественный, бытовой, эпический.\nРазбор сцены: Кто? Что поставлено на карту? Где переломный момент?",
+        "phrase_ids": ["ph-a-0639", "ph-a-0640", "ph-a-0641", "ph-a-0642", "ph-a-0643"],
+        "trap_id": "trap-feel-myself"
+      },
+      "vocab_band": {
+        "list": "subtitles",
+        "from": 2810,
+        "to": 4000
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-feel-myself",
+      "quotes_topic": "scenes",
+      "exercises": [
+        {
+          "id": "ex-a-0918"
+        },
+        {
+          "id": "ex-a-0919"
+        },
+        {
+          "id": "ex-a-0920"
+        },
+        {
+          "id": "ex-a-0921"
+        },
+        {
+          "id": "ex-a-0922"
+        },
+        {
+          "id": "ex-a-0923"
+        },
+        {
+          "id": "ex-a-0924"
+        },
+        {
+          "id": "ex-a-0925"
+        },
+        {
+          "id": "ex-a-0926"
+        },
+        {
+          "id": "ex-a-0927"
+        },
+        {
+          "id": "ex-a-0928"
+        },
+        {
+          "id": "ex-a-0929"
+        },
+        {
+          "id": "ex-a-0930"
+        },
+        {
+          "id": "ex-a-0931"
+        },
+        {
+          "id": "ex-a-0932"
+        },
+        {
+          "id": "ex-a-0933"
+        },
+        {
+          "id": "ex-a-0934"
+        },
+        {
+          "id": "ex-a-0935"
+        },
+        {
+          "id": "ex-a-0936"
+        },
+        {
+          "id": "ex-a-0937"
+        },
+        {
+          "id": "ex-a-0938"
+        },
+        {
+          "id": "ex-a-0939"
+        },
+        {
+          "id": "ex-a-0940"
+        },
+        {
+          "id": "ex-a-0941"
+        },
+        {
+          "id": "ex-a-0942"
+        },
+        {
+          "id": "ex-a-0943"
+        },
+        {
+          "id": "ex-a-0944"
+        },
+        {
+          "id": "ex-a-0945"
+        },
+        {
+          "id": "ex-a-0946"
+        },
+        {
+          "id": "ex-a-0947"
+        },
+        {
+          "id": "ex-a-0948"
+        },
+        {
+          "id": "ex-a-0949"
+        },
+        {
+          "id": "ex-a-0950"
+        },
+        {
+          "id": "ex-a-0951"
+        },
+        {
+          "id": "ex-a-0952"
+        },
+        {
+          "id": "ex-a-0953"
+        },
+        {
+          "id": "ex-a-0954"
+        },
+        {
+          "id": "ex-a-0955"
+        },
+        {
+          "id": "ex-a-0956"
+        },
+        {
+          "id": "ex-a-0957"
+        },
+        {
+          "id": "ex-a-0958"
+        },
+        {
+          "id": "ex-a-0959"
+        },
+        {
+          "id": "ex-a-0960"
+        },
+        {
+          "id": "ex-a-0961"
+        },
+        {
+          "id": "ex-a-0962"
+        },
+        {
+          "id": "ex-a-0963"
+        },
+        {
+          "id": "ex-a-0964"
+        },
+        {
+          "id": "ex-a-1060"
+        },
+        {
+          "id": "ex-a-1061"
+        },
+        {
+          "id": "ex-a-1062"
+        }
+      ],
+      "bebris_video": null
+    },
+    {
+      "id": "les-a-22",
+      "rank": "A",
+      "module": "mod-a-4",
+      "title": "Большое повторение ранга A",
+      "grammar_point": {
+        "id": "gp-a-22",
+        "title_ru": "Финальная тренировка перед Вратами S",
+        "rule_md": "**Большое повторение ранга A.**\nВремена: Future Continuous/Perfect, пассив всех времён.\nМодальные в прошедшем: must have / should have / 3-е условное / wish.\nКонструкции: have something done, be/get used to, relative clauses.\nСтиль: фразовые B2, усилители, инверсия, there's no point.\nЭто последняя тренировка перед Вратами S.",
+        "phrase_ids": ["ph-a-0669", "ph-a-0670", "ph-a-0671", "ph-a-0672", "ph-a-0673"],
+        "trap_id": "trap-if-will"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 6701,
+        "to": 6760
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-if-will",
+      "quotes_topic": "mixed",
+      "exercises": [
+        {
+          "id": "ex-a-0965"
+        },
+        {
+          "id": "ex-a-0966"
+        },
+        {
+          "id": "ex-a-0967"
+        },
+        {
+          "id": "ex-a-0968"
+        },
+        {
+          "id": "ex-a-0969"
+        },
+        {
+          "id": "ex-a-0970"
+        },
+        {
+          "id": "ex-a-0971"
+        },
+        {
+          "id": "ex-a-0972"
+        },
+        {
+          "id": "ex-a-0973"
+        },
+        {
+          "id": "ex-a-0974"
+        },
+        {
+          "id": "ex-a-0975"
+        },
+        {
+          "id": "ex-a-0976"
+        },
+        {
+          "id": "ex-a-0977"
+        },
+        {
+          "id": "ex-a-0978"
+        },
+        {
+          "id": "ex-a-0979"
+        },
+        {
+          "id": "ex-a-0980"
+        },
+        {
+          "id": "ex-a-0981"
+        },
+        {
+          "id": "ex-a-0982"
+        },
+        {
+          "id": "ex-a-0983"
+        },
+        {
+          "id": "ex-a-0984"
+        },
+        {
+          "id": "ex-a-0985"
+        },
+        {
+          "id": "ex-a-0986"
+        },
+        {
+          "id": "ex-a-0987"
+        },
+        {
+          "id": "ex-a-0988"
+        },
+        {
+          "id": "ex-a-0989"
+        },
+        {
+          "id": "ex-a-0990"
+        },
+        {
+          "id": "ex-a-0991"
+        },
+        {
+          "id": "ex-a-0992"
+        },
+        {
+          "id": "ex-a-0993"
+        },
+        {
+          "id": "ex-a-0994"
+        },
+        {
+          "id": "ex-a-0995"
+        },
+        {
+          "id": "ex-a-0996"
+        },
+        {
+          "id": "ex-a-0997"
+        },
+        {
+          "id": "ex-a-0998"
+        },
+        {
+          "id": "ex-a-0999"
+        },
+        {
+          "id": "ex-a-1000"
+        },
+        {
+          "id": "ex-a-1001"
+        },
+        {
+          "id": "ex-a-1002"
+        },
+        {
+          "id": "ex-a-1003"
+        },
+        {
+          "id": "ex-a-1004"
+        },
+        {
+          "id": "ex-a-1005"
+        },
+        {
+          "id": "ex-a-1006"
+        },
+        {
+          "id": "ex-a-1007"
+        },
+        {
+          "id": "ex-a-1008"
+        },
+        {
+          "id": "ex-a-1009"
+        },
+        {
+          "id": "ex-a-1010"
+        },
+        {
+          "id": "ex-a-1063"
+        },
+        {
+          "id": "ex-a-1064"
+        },
+        {
+          "id": "ex-a-1065"
         }
       ],
       "bebris_video": null

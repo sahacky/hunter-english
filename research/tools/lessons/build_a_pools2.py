@@ -1,0 +1,767 @@
+#!/usr/bin/env python3
+"""Пулы уроков A3 «Продвинутые конструкции» (A-12…A-16) и A4 «Стиль»
+(A-17…A-22) — план M16#16.4. specs/01 §9.
+"""
+
+A12 = [
+    ("I had my hair cut yesterday.", "Вчера мне подстригли волосы.", None),
+    ("She's having her car repaired.", "Ей сейчас ремонтируют машину.", None),
+    ("We had the room cleaned.", "Нам убрали номер.", None),
+    ("I'll have the photos printed.", "Мне напечатают фотографии.", None),
+    ("He's had his phone fixed.", "Ему починили телефон.", None),
+    ("You should have it checked.", "Пусть это проверят.", None),
+    ("I'm having my eyes tested tomorrow.", "Завтра мне проверят зрение.", None),
+    ("We've had the kitchen painted.", "Нам покрасили кухню.", None),
+    ("She had her bags delivered.", "Ей доставили сумки.", None),
+    ("They're having the house painted.", "Их дом сейчас красят.", None),
+    ("I must have this suit dry-cleaned.", "Мне нужно отдать костюм в химчистку.", None),
+    ("He had his tooth taken out.", "Ему удалили зуб.", None),
+    ("I'll have the Wi-Fi connected.", "Мне подключат Wi-Fi.", None),
+    ("We had the windows replaced.", "Нам заменили окна.", None),
+    ("She's going to have a dress made.", "Ей сошьют платье.", None),
+    ("I've just had my bike repaired.", "Мне только что починили велосипед.", None),
+    ("Where did you have it done?", "Где тебе это сделали?", None),
+    ("They didn't have the car repaired.", "Они так и не отремонтировали машину.", None),
+    ("When are you having it cleaned?", "Когда тебе это почистят?", None),
+    ("I'll have the room cleaned.", "Мне уберут номер.", None),
+    ("Can I have the bill brought up?", "Можно поднять счёт в номер?", None),
+    ("I'm having lunch delivered today.", "Сегодня мне доставят обед.", None),
+    ("She has her nails done every month.", "Она делает маникюр каждый месяц.", None),
+    ("We'll have the documents translated.", "Нам переведут документы.", None),
+    ("He's having a suit made.", "Ему шьют костюм.", None),
+    ("I had my licence renewed.", "Мне продлили права.", None),
+    ("Do you have your car serviced here?", "Тебе обслуживают машину здесь?", None),
+    ("They had the error corrected.", "Им исправили ошибку.", None),
+    ("I need to have my watch repaired.", "Мне нужно отдать часы в ремонт.", None),
+    ("She's just had her hair dyed.", "Ей только что покрасили волосы.", None),
+    ("Consider it done.", "Считай, что сделано.", None),
+    ("Just get it done.", "Просто сделай это.", None),
+    ("I'll get it fixed.", "Я его починю.", None),
+    ("We'll get it sorted.", "Мы это уладим.", None),
+]
+
+A13 = [
+    ("I'm getting used to the climate.", "Я привыкаю к климату.", None),
+    ("She's used to working nights.", "Она привыкла работать по ночам.", None),
+    ("I can't get used to this weather.", "Не могу привыкнуть к этой погоде.", None),
+    ("He's used to being alone.", "Он привык быть один.", None),
+    ("Did you get used to driving on the left?", "Ты привык водить по левой стороне?", None),
+    ("I'm not used to spicy food.", "Я не привык к острой еде.", None),
+    ("You'll get used to it.", "Ты к этому привыкнешь.", None),
+    ("It takes time to get used to a new city.", "Нужно время, чтобы привыкнуть к новому городу.", None),
+    ("I feel like eating out tonight.", "Сегодня мне хочется поесть куда-нибудь.", None),
+    ("Do you feel like watching a film?", "Хочешь посмотреть фильм?", None),
+    ("I don't feel like going out.", "Мне не хочется никуда идти.", None),
+    ("She feels like a cup of tea.", "Ей хочется чашку чая.", None),
+    ("We feel like staying home.", "Нам хочется остаться дома.", None),
+    ("After a month, I got used to getting up early.", "Через месяц я привык рано вставать.", None),
+    ("I used to live alone.", "Раньше я жил один.", None),
+    ("He's used to hard work.", "Он привык к тяжёлой работе.", None),
+    ("They're getting used to the new rules.", "Они привыкают к новым правилам.", None),
+    ("I'll never get used to this.", "Я никогда к этому не привыкну.", None),
+    ("She's not used to being criticised.", "Она не привыкла к критике.", None),
+    ("Do you feel like a walk?", "Хочешь прогуляться?", None),
+    ("I feel like I'm at home here.", "Я чувствую себя здесь как дома.", None),
+    ("We're used to travelling light.", "Мы привыкли путешествовать налегке.", None),
+    ("It feels like rain.", "Похоже, будет дождь.", None),
+    ("I don't feel like talking.", "Мне не хочется разговаривать.", None),
+    ("He got used to the noise quickly.", "Он быстро привык к шуму.", None),
+    ("Are you used to the food here?", "Ты привык к здешней еде?", None),
+    ("I feel like something sweet.", "Мне хочется чего-нибудь сладкого.", None),
+    ("She used to work nights.", "Раньше она работала по ночам.", None),
+    ("You get used to everything.", "Ко всему можно привыкнуть.", None),
+    ("I'm still getting used to it.", "Я всё ещё к этому привыкаю.", None),
+    ("I'm used to living here.", "Я привык жить здесь.", None),
+    ("I feel fine here.", "Здесь я чувствую себя хорошо.", None),
+    ("I'm used to it.", "Я к этому привык.", None),
+    ("It takes time.", "Это требует времени.", None),
+    ("Feel like a coffee?", "Хочешь кофе?", None),
+]
+
+A14 = [
+    ("The man whose car was stolen called the police.", "Мужчина, у которого угнали машину, позвонил в полицию.", None),
+    ("That's the woman whose son won the prize.", "Это женщина, чей сын получил приз.", None),
+    ("It's a city whose history goes back centuries.", "Это город, чья история уходит корнями в века.", None),
+    ("The writer, whose books are famous, lives in Paris.", "Писатель, чьи книги знамениты, живёт в Париже.", None),
+    ("The people with whom I work are friendly.", "Люди, с которыми я работаю, дружелюбны.", None),
+    ("The colleague on whom I rely has left.", "Коллега, на которого я полагаюсь, ушёл.", None),
+    ("That's the book from which I quoted.", "Это книга, из которой я цитировал.", None),
+    ("The house in which I grew up has been sold.", "Дом, в котором я вырос, продали.", None),
+    ("She's the author about whom everyone is talking.", "Это автор, о котором все говорят.", None),
+    ("The team for which he plays is famous.", "Команда, за которую он играет, знаменита.", None),
+    ("That's the friend I was telling you about.", "Это друг, о котором я тебе рассказывал.",
+     ["That's the friend about whom I was telling you."]),
+    ("The film we talked about was long.", "Фильм, о котором мы говорили, был длинным.", None),
+    ("The place we stayed at was lovely.", "Место, где мы остановились, было чудесным.", None),
+    ("The woman who lives next door is a doctor.", "Женщина, которая живёт рядом, врач.", None),
+    ("This is the book which changed my life.", "Это книга, которая изменила мою жизнь.", None),
+    ("The people who live here are quiet.", "Люди, которые живут здесь, тихие.",
+     ["The people that live here are quiet."]),
+    ("Everything that he said was true.", "Всё, что он сказал, было правдой.", None),
+    ("The only thing that matters is trust.", "Единственное, что важно, — доверие.", None),
+    ("My brother, who lives in Rome, is a chef.", "Мой брат, который живёт в Риме, повар.", None),
+    ("The train that goes to Rome leaves at six.", "Поезд, который идёт в Рим, отправляется в шесть.", None),
+    ("I met a girl whose eyes were green.", "Я встретил девушку, у которой были зелёные глаза.", None),
+    ("He's the man to whom the letter was sent.", "Это человек, которому отправили письмо.", None),
+    ("The hotel at which we stayed was full.", "Отель, в котором мы остановились, был полон.", None),
+    ("That's the reason why I called.", "Вот причина, по которой я позвонил.", None),
+    ("It was the day when everything changed.", "Это был день, когда всё изменилось.", None),
+    ("She has a friend who speaks Japanese.", "У неё есть друг, который говорит по-японски.", None),
+    ("The man I saw was tall.", "Мужчина, которого я видел, был высоким.",
+     ["The man whom I saw was tall.", "The man that I saw was tall."]),
+    ("This is the road that leads to the castle.", "Это дорога, которая ведёт к замку.", None),
+    ("The gift you gave me is precious.", "Подарок, который ты мне подарил, дорог мне.", None),
+    ("Nothing that I do is right.", "Всё, что я делаю, неправильно.", None),
+    ("That's all I know.", "Это всё, что я знаю.", None),
+    ("It's all I have.", "Это всё, что у меня есть.", None),
+    ("Nothing I can't handle.", "Нет ничего, с чем бы я не справился.", None),
+    ("That's all I need.", "Это всё, что мне нужно.", None),
+]
+
+A15 = [
+    ("I had my hair cut last week.", "На прошлой неделе мне подстригли волосы.", None),
+    ("He's having his laptop repaired.", "Ему чинят ноутбук.", None),
+    ("We had the windows cleaned.", "Нам помыли окна.", None),
+    ("I'm getting used to the local food.", "Я привыкаю к местной еде.", None),
+    ("She's used to working under pressure.", "Она привыкла работать под давлением.", None),
+    ("I feel like staying in bed all day.", "Мне хочется весь день проваляться в постели.", None),
+    ("She married a man whose name I forgot.", "Она вышла за человека, чьё имя я забыл.", None),
+    ("The film we discussed won a prize.", "Фильм, который мы обсуждали, получил приз.", None),
+    ("Everything that could go wrong went wrong.", "Всё, что могло пойти не так, пошло не так.", None),
+    ("I'll have it done by Friday.", "Мне сделают это к пятнице.", None),
+    ("Did you have your suit cleaned?", "Тебе почистили костюм?", None),
+    ("He's used to being ignored.", "Он привык, что его игнорируют.", None),
+    ("You'll get used to the accent.", "Ты привыкнешь к акценту.", None),
+    ("Do you feel like dancing?", "Хочешь потанцевать?", None),
+    ("The colleague on whom I rely is on holiday.", "Коллега, на которого я полагаюсь, в отпуске.", None),
+    ("The town in which I was born is small.", "Город, в котором я родился, маленький.", None),
+    ("That's the book I told you about.", "Это та книга, о которой я тебе говорил.", None),
+    ("The driver whose car was towed called the police.", "Водитель, чью машину эвакуировали, позвонил в полицию.", None),
+    ("I had my passport photo taken.", "Мне сделали фото на паспорт.", None),
+    ("We're having the roof fixed.", "Нам чинят крышу.", None),
+    ("I used to smoke.", "Раньше я курил.", None),
+    ("She didn't use to like coffee.", "Раньше она не любила кофе.", None),
+    ("Did you use to play tennis?", "Раньше ты играл в теннис?", None),
+    ("It feels like home.", "Здесь как дома.", None),
+    ("Keep moving forward.", "Продолжай двигаться вперёд.", None),
+    ("The skills that I learned still help me.", "Навыки, которые я освоил, всё ещё помогают мне.", None),
+    ("Have it your way.", "Пусть будет по-твоему.", None),
+    ("She had her portrait painted.", "Ей написали портрет.", None),
+    ("I'm used to waiting.", "Я привык ждать.", None),
+    ("It was the moment when everything made sense.", "Это был момент, когда всё обрело смысл.", None),
+]
+
+A16 = [
+    ("I can't figure out this rule.", "Не могу разобраться в этом правиле.", None),
+    ("She figured it out.", "Она разгадала это.", None),
+    ("We came across an old photo.", "Мы наткнулись на старую фотографию.", None),
+    ("He came across an old friend.", "Он случайно встретил старого друга.", None),
+    ("What are you up to?", "Чем ты занимаешься?", None),
+    ("I'm up to no good.", "Я замышляю недоброе.", None),
+    ("She's up to something.", "Она что-то затевает.", None),
+    ("The plan fell through.", "План сорвался.", None),
+    ("Our trip fell through.", "Наша поездка не состоялась.", None),
+    ("The deal might fall through.", "Сделка может сорваться.", None),
+    ("It turned out well.", "В итоге всё закончилось хорошо.", None),
+    ("It turns out he was right.", "Оказалось, он был прав.", None),
+    ("We ended up staying home.", "В итоге мы остались дома.", None),
+    ("I ended up paying for everyone.", "В итоге я заплатил за всех.", None),
+    ("I can't put up with the noise.", "Я не могу терпеть этот шум.", None),
+    ("She came up with a great idea.", "Ей пришла в голову отличная идея.", None),
+    ("We've run out of time.", "У нас закончилось время.", None),
+    ("They ran out of money.", "У них кончились деньги.", None),
+    ("He got away with it.", "Ему это сошло с рук.", None),
+    ("I'm looking forward to the trip.", "Я с нетерпением жду поездки.", None),
+    ("Catch up with me later.", "Потом расскажешь, как у тебя дела.", None),
+    ("It worked out in the end.", "В конце концов всё устроилось.", None),
+    ("I need to sort out my papers.", "Мне нужно разобрать документы.", None),
+    ("We sorted it out.", "Мы это уладили.", None),
+    ("Don't bring that up again.", "Не поднимай эту тему снова.", None),
+    ("She brought up an old argument.", "Она подняла старый спор.", None),
+    ("I'm not up to it today.", "Сегодня я не в форме.", None),
+    ("The car broke down again.", "Машина снова сломалась.", None),
+    ("Let me think it over.", "Дай мне это обдумать.", None),
+    ("Watch out for the steps.", "Осторожно, ступеньки.", None),
+    ("I ran into an old classmate.", "Я случайно встретил одноклассника.", None),
+    ("Keep up with the group.", "Не отставай от группы.", None),
+]
+
+A17 = [
+    ("It's highly unlikely.", "Это крайне маловероятно.", None),
+    ("She's deeply disappointed.", "Она глубоко разочарована.", None),
+    ("I'm fully aware of the risk.", "Я полностью осознаю риск.", None),
+    ("It's absolutely freezing.", "Ужасно холодно.", None),
+    ("That's completely absurd.", "Это полный абсурд.", None),
+    ("I'm terribly sorry.", "Мне ужасно жаль.", None),
+    ("It's strongly recommended.", "Настоятельно рекомендуется.", None),
+    ("The results are highly encouraging.", "Результаты очень обнадёживающие.", None),
+    ("She's bitterly disappointed.", "Она горько разочарована.", None),
+    ("It's utterly ridiculous.", "Это абсолютный вздор.", None),
+    ("I'm totally exhausted.", "Я совершенно измотан.",
+     ["I'm absolutely exhausted.", "I'm utterly exhausted.", "I'm completely exhausted."]),
+    ("You're sorely mistaken.", "Ты глубоко заблуждаешься.", None),
+    ("He's highly successful.", "Он крайне успешен.", None),
+    ("I deeply regret it.", "Я глубоко об этом жалею.", None),
+    ("We fully understand.", "Мы полностью понимаем.", None),
+    ("The film was absolutely brilliant.", "Фильм был абсолютно блистательным.", None),
+    ("It's vitally important.", "Это жизненно важно.", None),
+    ("She was terribly upset.", "Она была ужасно расстроена.", None),
+    ("I'm perfectly happy with it.", "Я совершенно им доволен.", None),
+    ("The risk is extremely high.", "Риск крайне высок.", None),
+    ("It's completely wrong.", "Это совершенно неверно.", None),
+    ("He's deeply suspicious.", "Он крайне подозрителен.", None),
+    ("I'm seriously impressed.", "Я серьёзно впечатлён.", None),
+    ("The food was absolutely delicious.", "Еда была просто восхитительной.", None),
+    ("It's barely possible.", "Это едва ли возможно.", None),
+    ("She hardly ever complains.", "Она почти никогда не жалуется.", None),
+    ("I quite agree.", "Я совершенно согласен.", None),
+    ("The room was spotlessly clean.", "Комната была безупречно чистой.", None),
+    ("It's almost perfect.", "Это почти идеально.", None),
+    ("He's widely respected.", "Он пользуется широким уважением.", None),
+]
+
+A18 = [
+    ("There's no point in arguing.", "Нет смысла спорить.", ["There's no point arguing."]),
+    ("There's no point in waiting.", "Нет смысла ждать.", None),
+    ("There's no point crying over it.", "Нет смысла из-за этого плакать.", None),
+    ("We had difficulty finding the place.", "Нам было сложно найти это место.", None),
+    ("She had no difficulty passing the exam.", "Ей без труда удалось сдать экзамен.", None),
+    ("I have difficulty understanding him.", "Мне трудно его понимать.", None),
+    ("They had difficulty getting tickets.", "Им было трудно достать билеты.", None),
+    ("It's no use complaining.", "Бесполезно жаловаться.", None),
+    ("It's no good pretending.", "Нет смысла притворяться.", None),
+    ("It's worth seeing.", "Это стоит посмотреть.", None),
+    ("Is it worth reading?", "Стоит ли это читать?", None),
+    ("The film is worth watching.", "Этот фильм стоит посмотреть.", None),
+    ("What's the point of asking?", "Какой смысл спрашивать?", None),
+    ("There's no point in talking to him.", "Нет смысла с ним разговаривать.", None),
+    ("I had little difficulty convincing them.", "Мне почти не составило труда их убедить.", None),
+    ("It's not worth the trouble.", "Оно не стоит хлопот.", None),
+    ("There's no point in rushing.", "Нет смысла спешить.", None),
+    ("He has difficulty expressing himself.", "Ему трудно выражать свои мысли.", None),
+    ("We had no difficulty finding the hotel.", "Мы без труда нашли отель.", None),
+    ("It's no use crying over spilt milk.", "Слезами делу не поможешь.", None),
+    ("There's no point in explaining.", "Нет смысла объяснять.", None),
+    ("Is there any point in continuing?", "Есть ли смысл продолжать?", None),
+    ("The museum is worth visiting.", "Музей стоит посетить.", None),
+    ("I have great difficulty waking up.", "Мне очень тяжело просыпаться.", None),
+    ("It's hardly worth the effort.", "Это вряд ли стоит усилий.", None),
+    ("There was no point in staying.", "Не было смысла оставаться.", None),
+    ("She had difficulty breathing.", "Ей было трудно дышать.", None),
+    ("It's worth trying.", "Стоит попробовать.", None),
+    ("There's no point in lying.", "Нет смысла врать.", None),
+    ("Do you have difficulty sleeping?", "Тебе трудно засыпать?", None),
+]
+
+A19 = [
+    ("Little did they know.", "Они и не подозревали.", None),
+    ("Never have I seen such a thing.", "Никогда я не видел ничего подобного.",
+     ["I have never seen such a thing."]),
+    ("Rarely does he complain.", "Он редко жалуется.", None),
+    ("Not only did she win, but she also set a record.", "Она не только победила, но и установила рекорд.", None),
+    ("Had I known, I would have called.", "Знай я об этом, я бы позвонил.", None),
+    ("Were I you, I'd apologise.", "На твоём месте я бы извинился.", None),
+    ("Should you need help, call me.", "Если тебе понадобится помощь, позвони мне.", None),
+    ("No sooner had we left than it started to rain.", "Не успели мы выйти, как пошёл дождь.", None),
+    ("Only then did I understand.", "Только тогда я понял.", None),
+    ("Seldom do we get the chance.", "Редко нам выпадает такой шанс.", None),
+    ("Under no circumstances should you open it.", "Ни при каких обстоятельствах не открывай это.", None),
+    ("At no point did he lie.", "Он ни разу не солгал.", None),
+    ("Never will I return.", "Я никогда не вернусь.", None),
+    ("Hardly had she spoken when the phone rang.", "Едва она заговорила, как зазвонил телефон.", None),
+    ("Not until then did it make sense.", "Только тогда это обрело смысл.", None),
+    ("Little does he care.", "Его это мало волнует.", None),
+    ("Only later did she realise the truth.", "Только позже она осознала правду.", None),
+    ("Never before have I felt so free.", "Никогда прежде я не чувствовал себя таким свободным.", None),
+    ("Nowhere else will you find this.", "Больше нигде ты это не найдёшь.", None),
+    ("Not a word did he say.", "Он не сказал ни слова.", None),
+    ("So tired was he that he fell asleep standing.", "Он был так утомлён, что заснул стоя.", None),
+    ("Such was his anger that everyone froze.", "Его гнев был таков, что все замерли.", None),
+    ("Were it not for you, I'd be lost.", "Если бы не ты, я бы пропал.", None),
+    ("Had he asked, I would have helped.", "Если бы он спросил, я бы помог.", None),
+    ("Should the weather change, we'll stay in.", "Если погода изменится, мы останемся дома.", None),
+    ("Never in my life have I heard such nonsense.", "Никогда в жизни я не слышал такого вздора.", None),
+    ("Barely had we started when it ended.", "Не успели мы начать, как всё закончилось.", None),
+    ("All your base belong to us.", "Все ваши базы принадлежат нам.", None),
+    ("Only in dreams are we free.", "Только во сне мы свободны.", None),
+    ("Little did she know what awaited her.", "Она и не подозревала, что её ждёт.", None),
+]
+
+A20 = [
+    ("It's absolutely freezing today.", "Сегодня жуткий холод.", None),
+    ("There's no point in arguing with him.", "Нет смысла с ним спорить.", None),
+    ("Little did they know what was coming.", "Они и не подозревали, что грядёт.", None),
+    ("I'm terribly sorry for being late.", "Мне очень жаль, что я опоздал.", None),
+    ("We had difficulty parking.", "Нам было сложно припарковаться.", None),
+    ("Never have I tasted anything better.", "Никогда я не пробовал ничего вкуснее.",
+     ["I have never tasted anything better."]),
+    ("It's highly unlikely to happen.", "Крайне маловероятно, что это случится.", None),
+    ("She's deeply involved in the project.", "Она глубоко вовлечена в проект.", None),
+    ("It's no use hiding the truth.", "Бесполезно скрывать правду.", None),
+    ("Had I known about the delay, I would have stayed home.", "Знай я о задержке, я бы остался дома.", None),
+    ("The plan fell through at the last moment.", "План сорвался в последний момент.", None),
+    ("I can't figure out what he wants.", "Не могу понять, чего он хочет.", None),
+    ("It's worth every penny.", "Оно стоит каждого пенни.", None),
+    ("Not only is it cheap, but it's also fast.", "Это не только дёшево, но и быстро.", None),
+    ("I'm fully aware of the consequences.", "Я полностью осознаю последствия.", None),
+    ("We ran out of options.", "У нас закончились варианты.", None),
+    ("There's no point in crying.", "Нет смысла плакать.", None),
+    ("Only then did the truth come out.", "Только тогда правда всплыла.", None),
+    ("She came up with a plan.", "Она придумала план.", None),
+    ("It was utterly hopeless.", "Это было совершенно безнадёжно.", None),
+    ("I ended up walking home.", "В итоге я пошёл домой пешком.", None),
+    ("Under no circumstances is he allowed in.", "Ни при каких обстоятельствах его нельзя впускать.", None),
+    ("He got away with murder.", "Ему всё сходит с рук.", None),
+    ("The results were deeply disappointing.", "Результаты были крайне разочаровывающими.", None),
+    ("It's barely worth mentioning.", "Об этом едва ли стоит упоминать.", None),
+    ("I put up with it for too long.", "Я слишком долго это терпел.", None),
+    ("Never say never.", "Никогда не говори «никогда».", None),
+    ("We're looking forward to seeing you.", "Мы с нетерпением ждём встречи с тобой.", None),
+    ("So close was the finish that nobody breathed.", "Финиш был так близок, что никто не дышал.", None),
+    ("It turned out to be a trap.", "Оказалось, это была ловушка.", None),
+]
+
+A21 = [
+    ("What's going on here?", "Что здесь происходит?", None),
+    ("He's about to give up.", "Он вот-вот сдастся.", None),
+    ("She refuses to surrender.", "Она отказывается сдаваться.", None),
+    ("The scene takes place at night.", "Сцена происходит ночью.", None),
+    ("Let me rewatch that moment.", "Дай пересмотреть этот момент.", None),
+    ("I didn't quite catch that.", "Я не совсем уловил это.", None),
+    ("That moment hit hard.", "Этот момент сильно задел.", None),
+    ("Pure chills.", "Мурашки.", None),
+    ("A king bows to no one.", "Король ни перед кем не склоняется.", None),
+    ("They knelt in silence.", "Они молча преклонили колени.", None),
+    ("He sacrificed everything for his friends.", "Он пожертвовал всем ради друзей.", None),
+    ("Mortal but unbroken.", "Смертны, но не сломлены.", None),
+    ("They fought to survive.", "Они сражались, чтобы выжить.", None),
+    ("The wounded soldier kept walking.", "Раненый солдат продолжал идти.", None),
+    ("He felt invisible among them.", "Он чувствовал себя невидимкой среди них.", None),
+    ("Everyone wanted to be noticed.", "Все хотели, чтобы их замечали.", None),
+    ("Being shut out hurts.", "Когда тебя не замечают, это больно.", None),
+    ("The crowd fell silent.", "Толпа замолчала.", None),
+    ("The audience burst into applause.", "Зрители разразились аплодисментами.", None),
+    ("It was a bitter defeat.", "Это было горькое поражение.", None),
+    ("Fate can be cruel.", "Судьба может быть жестокой.", None),
+    ("Yet hope remains.", "И всё же надежда остаётся.", None),
+    ("The hero faced his destiny.", "Герой встретил свою судьбу.", None),
+    ("No words were needed.", "Слова были не нужны.", None),
+    ("That look said it all.", "Тот взгляд сказал всё.", None),
+    ("The battle was fierce.", "Битва была яростной.", None),
+    ("Survival was all that mattered.", "Выживание было единственным, что имело значение.", None),
+    ("Grief turned into rage.", "Горе превратилось в ярость.", None),
+    ("The prophecy came true.", "Пророчество сбылось.", None),
+    ("It ends where it began.", "Всё заканчивается там, где началось.", None),
+]
+
+A22 = [
+    ("This time tomorrow I'll be flying home.", "Завтра в это время я буду лететь домой.", None),
+    ("By Friday, everything will have changed.", "К пятнице всё изменится.", None),
+    ("The road is being repaired again.", "Дорогу снова ремонтируют.", None),
+    ("He must have missed the train.", "Должно быть, он опоздал на поезд.", None),
+    ("She can't have done that.", "Не может быть, что она это сделала.", None),
+    ("You should have warned me.", "Тебе следовало меня предупредить.", None),
+    ("If I had known, I would have stayed.", "Если бы я знал, я бы остался.", None),
+    ("I wish I had listened to you.", "Жаль, что я тебя не послушал.", None),
+    ("I had my car washed.", "Мне помыли машину.", None),
+    ("She's used to speaking in public.", "Она привыкла выступать публично.", None),
+    ("The coach whose advice I trust has retired.", "Тренер, чьим советам я доверяю, ушёл на пенсию.", None),
+    ("That's the café I told you about.", "Это то кафе, о котором я тебе говорил.", None),
+    ("The deal fell through.", "Сделка сорвалась.", None),
+    ("I can't put up with this behaviour.", "Я не потерплю такого поведения.", None),
+    ("It turned out to be a mistake.", "Оказалось, это была ошибка.", None),
+    ("We ended up laughing about it.", "В итоге мы смеялись над этим.", None),
+    ("Success is highly unlikely.", "Успех крайне маловероятен.", None),
+    ("I'm deeply grateful.", "Я глубоко благодарен.", None),
+    ("There's no point in arguing now.", "Теперь нет смысла спорить.", None),
+    ("We had difficulty finding a taxi.", "Нам было трудно найти такси.", None),
+    ("Little did they know the truth.", "Они и не подозревали правду.", None),
+    ("Never have I been so wrong.", "Никогда я так не ошибался.", None),
+    ("Had we left earlier, we would have caught it.", "Если бы мы вышли раньше, мы бы успели.", None),
+    ("Not only did he apologise, but he also paid.", "Он не только извинился, но и заплатил.", None),
+    ("It's absolutely worth watching.", "Это определённо стоит просмотра.", None),
+    ("The results have already been announced.", "Результаты уже объявлены.", None),
+    ("You'll get used to the pace.", "Ты привыкнешь к темпу.", None),
+    ("I feel like I've been here before.", "Мне кажется, я уже был здесь раньше.", None),
+    ("That was when it all made sense.", "Именно тогда всё обрело смысл.", None),
+    ("Keep fighting until the end.", "Борись до конца.", None),
+    ("We'll have covered everything by then.", "К тому времени мы пройдём всё.", None),
+]
+
+RULE_A12 = """**have something done — «мне сделали».**
+Работу делает кто-то другой для нас: I **had my hair cut** — мне подстригли волосы (не сам стриг).
+Схема: have + объект + V3. She's **having her car repaired** — ей сейчас ремонтируют машину.
+Прошедшее/вопрос через did: Where **did** you **have** it **done**?
+Будущее: I'**ll have** the room **cleaned** — мне уберут номер (отель)."""
+
+RULE_A13 = """**get used to / be used to / feel like.**
+get used to = привыкать (процесс): I'**m getting used to** the climate.
+be used to + герундий/существительное = уже привык: She'**s used to working** nights.
+После to — герундий: used to **living**, не «to live».
+feel like + герундий = хочется: I **feel like eating** out tonight.
+Отдельно: used to + V1 = «раньше»: I **used to live** alone (прошлая привычка, не путай с be used to living)."""
+
+RULE_A14 = """**Сложные relative clauses.**
+whose = чей: The man **whose** car was stolen…
+Формальный стиль — предлог перед whom/which: the people **with whom** I work…
+Разговорный — предлог в конце: the friend I told you **about**.
+Запятые — только в добавочных уточнениях (о том, кто и так известен): My brother, who lives in Rome, is a chef."""
+
+RULE_A15 = """**Повторение №23: продвинутые конструкции.**
+have something done — мне сделали: I **had** my hair **cut**.
+be/get used to + герундий: She'**s used to working** under pressure.
+relative clauses: whose, предлог + whom/which, контактные.
+Контрольная: найди ошибку, выбери форму."""
+
+RULE_A16 = """**Фразовые глаголы B2.**
+figure **out** — разобраться; come **across** — наткнуться.
+be up **to** — затевать; fall **through** — сорваться.
+turn **out** — оказаться; end **up** — закончить тем, что.
+put up **with** — терпеть; run **out of** — закончиться.
+Частица меняет смысл — учи глагол целиком."""
+
+RULE_A17 = """**Усилители.**
+Наречие подбирается к прилагательному:
+**highly** unlikely / successful; **deeply** disappointed / grateful.
+**absolutely / utterly** + «экстремальные» прилагательные: freezing, exhausted, brilliant.
+«Very freezing» — нельзя: freezing уже экстремальное, его не усиливают very."""
+
+RULE_A18 = """**there's no point / have difficulty.**
+There's no point **in arguing** — нет смысла спорить (герундий!).
+have difficulty **finding** — трудно найти: We **had difficulty finding** the place.
+It's no use **complaining**. / It's worth **seeing**.
+После этих конструкций — всегда герундий, не инфинитив."""
+
+RULE_A19 = """**Инверсия — эмфаза.**
+Отрицательное наречие вперёд + вопросительный порядок слов:
+**Never have I** seen… / **Little did they** know. / Rarely **does he** complain.
+Условные без if: **Had I** known… = If I had known… / **Were I** you… / **Should you** need…
+No sooner **had we left** than… — не успели мы выйти, как…"""
+
+RULE_A20 = """**Повторение №24: стиль.**
+Усилители: highly unlikely, deeply grateful, absolutely freezing.
+Герундий: there's no point in arguing, have difficulty parking, it's worth trying.
+Инверсия: Little did they know… / Never have I… / Had I known…
+Фразовые: fall through, figure out, put up with, run out of."""
+
+RULE_A21 = """**Капсула: разбор сцены.**
+Три цитаты уровня B2: «My friends… you bow to no one» (LOTR), «It makes them feel invisible» (Black Mirror), «We'll fight to survive» (Berserk).
+Вслушайся в регистр: торжественный, бытовой, эпический.
+Разбор сцены: Кто? Что поставлено на карту? Где переломный момент?"""
+
+RULE_A22 = """**Большое повторение ранга A.**
+Времена: Future Continuous/Perfect, пассив всех времён.
+Модальные в прошедшем: must have / should have / 3-е условное / wish.
+Конструкции: have something done, be/get used to, relative clauses.
+Стиль: фразовые B2, усилители, инверсия, there's no point.
+Это последняя тренировка перед Вратами S."""
+
+LESSONS_A3_A4 = [
+    {
+        "id": "les-a-12", "module": "mod-a-3",
+        "title": "have something done: мне сделали",
+        "gp_id": "gp-a-12", "gp_title": "Каузатив: услуга за нас",
+        "rule_md": RULE_A12,
+        "phrases": A12,
+        "rule_cloze": [
+            ("I had my ___ cut. (волосы)", ["hair"]),
+            ("She's having her car ___. (ремонтировать)", ["repaired"]),
+            ("He's had his phone ___. (чинить)", ["fixed"]),
+        ],
+        "quotes": [("q-fma-fma-b-0015", "make"), ("q-fma-fma-b-0012", "do")],
+        "trap_id": "trap-do-make",
+        "vocab_band": {"list": "ngsl-spoken", "from": 6161, "to": 6220},
+        "phrasebook_topic": "hotel",
+        "quotes_topic": "services",
+        "bebris_video": {"lesson": "2.334", "playlist_index": 885, "youtube_id": "NzG1Hio8rO0", "title": None},
+        "answer_question": [("What are you doing tomorrow?", "I'm having my eyes tested tomorrow.")],
+        "find_error": [
+            ("She's having her car repair.", "She's having her car repaired."),
+            ("He's had his phone fixing.", "He's had his phone fixed."),
+        ],
+        "verb_tense": [
+            ("We had the windows ___. (заменить)", "форма", ["replaced"]),
+            ("I'll have the photos ___. (напечатать)", "форма", ["printed"]),
+            ("I must have this suit dry-___. (чистить)", "форма", ["cleaned"]),
+        ],
+    },
+    {
+        "id": "les-a-13", "module": "mod-a-3",
+        "title": "get used to / feel like doing",
+        "gp_id": "gp-a-13", "gp_title": "Привычки и желания",
+        "rule_md": RULE_A13,
+        "phrases": A13,
+        "rule_cloze": [
+            ("I'm getting ___ to the climate. (привыкать)", ["used"]),
+            ("She's used to ___ nights. (работать)", ["working"]),
+            ("I feel ___ eating out. (хочется)", ["like"]),
+        ],
+        "quotes": [("q-igry-0003", "used"), ("q-stranger-things-0013", "coffee", ["tea"])],
+        "trap_id": "trap-feel-myself",
+        "vocab_band": {"list": "ngsl-spoken", "from": 6221, "to": 6280},
+        "phrasebook_topic": None,
+        "quotes_topic": "habits",
+        "bebris_video": {"lesson": "2.334", "playlist_index": 885, "youtube_id": "NzG1Hio8rO0", "title": None},
+        "answer_question": [("Do you want to eat out tonight?", "I feel like eating out tonight.")],
+        "find_error": [
+            ("I am used to live here.", "I'm used to living here."),
+            ("I feel myself fine here.", "I feel fine here."),
+        ],
+        "verb_tense": [
+            ("He's used to ___ alone. (быть)", "форма", ["being"]),
+            ("I got used to ___ up early. (вставать)", "форма", ["getting"]),
+            ("Do you feel like ___ a film? (смотреть)", "форма", ["watching"]),
+        ],
+    },
+    {
+        "id": "les-a-14", "module": "mod-a-3",
+        "title": "Сложные relative clauses",
+        "gp_id": "gp-a-14", "gp_title": "whose, предлог + whom/which",
+        "rule_md": RULE_A14,
+        "phrases": A14,
+        "rule_cloze": [
+            ("The man ___ car was stolen called the police.", ["whose"]),
+            ("That's the friend I was telling you ___. (предлог)", ["about"]),
+            ("The woman ___ lives next door is a doctor.", ["who", "that"]),
+        ],
+        "quotes": [("q-game-of-thrones-0015", "who"), ("q-attack-on-titan-0016", "met")],
+        "trap_id": "trap-comma-that",
+        "vocab_band": {"list": "ngsl-spoken", "from": 6281, "to": 6340},
+        "phrasebook_topic": None,
+        "quotes_topic": "people",
+        "bebris_video": None,
+        "answer_question": [("Who lives next door?", "The woman who lives next door is a doctor.")],
+        "find_error": [
+            ("The people which live here are quiet.", "The people who live here are quiet."),
+            ("That's the friend about I was telling you.", "That's the friend I was telling you about."),
+        ],
+        "verb_tense": [
+            ("The train that ___ to Rome leaves at six. (идти)", "форма", ["goes"]),
+            ("The house in which I ___ up has been sold. (расти)", "форма", ["grew"]),
+            ("I ___ a girl whose eyes were green. (встретить)", "форма", ["met"]),
+        ],
+    },
+    {
+        "id": "les-a-15", "module": "mod-a-3",
+        "title": "Повторение №23: контрольная",
+        "gp_id": "gp-a-15", "gp_title": "Контрольная: продвинутые конструкции",
+        "rule_md": RULE_A15,
+        "phrases": A15,
+        "rule_cloze": [
+            ("I had my hair ___ last week. (подстричь)", ["cut"]),
+            ("She's used to ___ under pressure. (работать)", ["working"]),
+            ("The film we ___ won a prize. (обсуждать)", ["discussed"]),
+        ],
+        "quotes": [("q-fma-fma-b-0004", "moving"), ("q-supernatural-0025", "fighting")],
+        "trap_id": "trap-do-make",
+        "vocab_band": {"list": "ngsl-spoken", "from": 6341, "to": 6400},
+        "phrasebook_topic": None,
+        "quotes_topic": "mixed",
+        "bebris_video": None,
+        "answer_question": [("What do you feel like doing?", "I feel like staying in bed all day.")],
+        "find_error": [
+            ("I am used to wait.", "I'm used to waiting."),
+            ("The man which I saw was tall.", "The man I saw was tall."),
+        ],
+        "verb_tense": [
+            ("Did you ___ to play tennis? (раньше)", "форма", ["use", "used"]),
+            ("She didn't ___ to like coffee. (раньше)", "форма", ["use", "used"]),
+            ("I had my passport photo ___. (сделать)", "форма", ["taken"]),
+        ],
+    },
+    {
+        "id": "les-a-16", "module": "mod-a-3",
+        "title": "Фразовые глаголы B2",
+        "gp_id": "gp-a-16", "gp_title": "figure out, fall through, put up with",
+        "rule_md": RULE_A16,
+        "phrases": A16,
+        "rule_cloze": [
+            ("I can't figure ___ this rule.", ["out"]),
+            ("What are you up ___?", ["to"]),
+            ("We've run ___ of time.", ["out"]),
+        ],
+        "quotes": [("q-supernatural-0013", "get"), ("q-supernatural-0014", "hunting")],
+        "trap_id": "trap-wait-for",
+        "vocab_band": {"list": "ngsl-spoken", "from": 6401, "to": 6460},
+        "phrasebook_topic": None,
+        "quotes_topic": "phrasal",
+        "bebris_video": {"lesson": "2.354", "playlist_index": 905, "youtube_id": "6rFJkFq5f0s", "title": None},
+        "answer_question": [("What are you up to?", "I'm up to no good.")],
+        "find_error": [
+            ("We've run out time.", "We've run out of time."),
+            ("She came up a great idea.", "She came up with a great idea."),
+        ],
+        "verb_tense": [
+            ("The plan ___ through. (сорваться)", "форма", ["fell"]),
+            ("It ___ out he was right. (оказываться)", "форма", ["turns", "turned"]),
+            ("He ___ away with it. (сойти с рук)", "форма", ["got"]),
+        ],
+    },
+    {
+        "id": "les-a-17", "module": "mod-a-4",
+        "title": "Усилители: highly unlikely",
+        "gp_id": "gp-a-17", "gp_title": "Формальная оценка",
+        "rule_md": RULE_A17,
+        "phrases": A17,
+        "rule_cloze": [
+            ("It's highly ___. (маловероятно)", ["unlikely"]),
+            ("I'm ___ aware of the risk. (полностью)", ["fully"]),
+            ("That's completely ___. (абсурд)", ["absurd"]),
+        ],
+        "quotes": [("q-star-wars-0018", "disturbing"), ("q-attack-on-titan-0012", "grim")],
+        "trap_id": "trap-very-like",
+        "vocab_band": {"list": "ngsl-spoken", "from": 6461, "to": 6520},
+        "phrasebook_topic": None,
+        "quotes_topic": "feelings",
+        "bebris_video": {"lesson": "2.322", "playlist_index": 873, "youtube_id": "cTtcmycgs9o", "title": None},
+        "answer_question": [("Are you aware of the risk?", "I'm fully aware of the risk.")],
+        "find_error": [
+            ("It's very freezing.", "It's absolutely freezing."),
+            ("I'm very exhausted.", "I'm totally exhausted."),
+        ],
+    },
+    {
+        "id": "les-a-18", "module": "mod-a-4",
+        "title": "there's no point in…",
+        "gp_id": "gp-a-18", "gp_title": "Оценка действий: герундий",
+        "rule_md": RULE_A18,
+        "phrases": A18,
+        "rule_cloze": [
+            ("There's no point in ___. (спорить)", ["arguing"]),
+            ("We had difficulty ___ the place. (находить)", ["finding"]),
+            ("It's worth ___. (попробовать)", ["trying"]),
+        ],
+        "quotes": [("q-game-of-thrones-0010", "nothing"), ("q-stranger-things-0021", "forgiving")],
+        "trap_id": "trap-want-that",
+        "vocab_band": {"list": "ngsl-spoken", "from": 6521, "to": 6580},
+        "phrasebook_topic": None,
+        "quotes_topic": "actions",
+        "bebris_video": {"lesson": "2.328", "playlist_index": 879, "youtube_id": "dmbTKXB2SNY", "title": None},
+        "answer_question": [("Should I wait for him?", "There's no point in waiting.")],
+        "find_error": [
+            ("There's no point to argue.", "There's no point in arguing."),
+            ("It's no use to complain.", "It's no use complaining."),
+        ],
+        "verb_tense": [
+            ("She had no difficulty ___ the exam. (сдавать)", "форма", ["passing"]),
+            ("He has difficulty ___ himself. (выражать)", "форма", ["expressing"]),
+            ("The museum is worth ___. (посетить)", "форма", ["visiting"]),
+        ],
+    },
+    {
+        "id": "les-a-19", "module": "mod-a-4",
+        "title": "Инверсия: Little did they know",
+        "gp_id": "gp-a-19", "gp_title": "Эмфаза обратным порядком",
+        "rule_md": RULE_A19,
+        "phrases": A19,
+        "rule_cloze": [
+            ("Little ___ they know.", ["did"]),
+            ("Never ___ I seen such a thing.", ["have"]),
+            ("Rarely ___ he complain.", ["does"]),
+        ],
+        "quotes": [("q-game-of-thrones-0016", "forget"), ("q-the-100-0002", "May")],
+        "trap_id": "trap-question-word-order",
+        "vocab_band": {"list": "ngsl-spoken", "from": 6581, "to": 6640},
+        "phrasebook_topic": None,
+        "quotes_topic": "emphasis",
+        "bebris_video": {"lesson": "2.331", "playlist_index": 882, "youtube_id": "i2cHBmDAuHk", "title": None},
+        "answer_question": [("What would you do in my place?", "Were I you, I'd apologise.")],
+        "find_error": [
+            ("All your base are belong to us.", "All your base belong to us."),
+            ("Never I have seen such a thing.", "Never have I seen such a thing."),
+        ],
+        "verb_tense": [
+            ("No sooner had we ___ than it rained. (выйти)", "форма", ["left"]),
+            ("Not only did she ___, but she also set a record. (победить)", "форма", ["win"]),
+            ("Only then did I ___. (понять)", "форма", ["understand"]),
+        ],
+    },
+    {
+        "id": "les-a-20", "module": "mod-a-4",
+        "title": "Повторение №24: контрольная",
+        "gp_id": "gp-a-20", "gp_title": "Контрольная: стиль",
+        "rule_md": RULE_A20,
+        "phrases": A20,
+        "rule_cloze": [
+            ("It's ___ freezing today. (абсолютно)", ["absolutely"]),
+            ("There's no point in ___ with him. (спорить)", ["arguing"]),
+            ("Little ___ they know. (вспомогательный)", ["did"]),
+        ],
+        "quotes": [("q-star-wars-0005", "try"), ("q-memy-0002", "simply")],
+        "trap_id": "trap-very-like",
+        "vocab_band": {"list": "ngsl-spoken", "from": 6641, "to": 6700},
+        "phrasebook_topic": None,
+        "quotes_topic": "mixed",
+        "bebris_video": None,
+        "answer_question": [("What happened to the plan?", "The plan fell through at the last moment.")],
+        "find_error": [
+            ("It's very freezing today.", "It's absolutely freezing today."),
+            ("Never I have tasted anything better.", "Never have I tasted anything better."),
+        ],
+        "verb_tense": [
+            ("The plan ___ through at the last moment. (сорваться)", "форма", ["fell"]),
+            ("She ___ up with a plan. (придумать)", "форма", ["came"]),
+            ("Had I ___ about the delay, I would have stayed. (знать)", "форма", ["known"]),
+        ],
+    },
+    {
+        "id": "les-a-21", "module": "mod-a-4",
+        "title": "Капсула: разбор сцены",
+        "gp_id": "gp-a-21", "gp_title": "Три цитаты уровня B2",
+        "rule_md": RULE_A21,
+        "phrases": A21,
+        "rule_cloze": [
+            ("A king ___ to no one. (склоняться)", ["bows"]),
+            ("He felt ___ among them. (невидимкой)", ["invisible"]),
+            ("They fought to ___. (выжить)", ["survive"]),
+        ],
+        "quotes": [
+            ("q-lord-of-the-rings-0010", "bow"),
+            ("q-black-mirror-0015", "invisible"),
+            ("q-berserk-0016", "survive"),
+        ],
+        "trap_id": "trap-feel-myself",
+        "vocab_band": {"list": "subtitles", "from": 2810, "to": 4000},
+        "phrasebook_topic": None,
+        "quotes_topic": "scenes",
+        "bebris_video": None,
+        "answer_question": [("What did they fight for?", "They fought to survive.")],
+        "find_error": [
+            ("He felt himself invisible among them.", "He felt invisible among them."),
+            ("A king bow to no one.", "A king bows to no one."),
+        ],
+        "verb_tense": [
+            ("The wounded soldier kept ___. (идти)", "форма", ["walking"]),
+            ("The prophecy ___ true. (сбыться)", "форма", ["came"]),
+            ("Grief ___ into rage. (превратиться)", "форма", ["turned"]),
+        ],
+    },
+    {
+        "id": "les-a-22", "module": "mod-a-4",
+        "title": "Большое повторение ранга A",
+        "gp_id": "gp-a-22", "gp_title": "Финальная тренировка перед Вратами S",
+        "rule_md": RULE_A22,
+        "phrases": A22,
+        "rule_cloze": [
+            ("He must ___ missed the train. (вспомогательный)", ["have"]),
+            ("I had my car ___. (помыть)", ["washed"]),
+            ("Never ___ I been so wrong. (вспомогательный)", ["have"]),
+        ],
+        "quotes": [("q-lord-of-the-rings-0014", "shall"), ("q-solo-leveling-0010", "alone", ["will"])],
+        "trap_id": "trap-if-will",
+        "vocab_band": {"list": "ngsl-spoken", "from": 6701, "to": 6760},
+        "phrasebook_topic": None,
+        "quotes_topic": "mixed",
+        "bebris_video": None,
+        "answer_question": [("What do you wish you had done?", "I wish I had listened to you.")],
+        "find_error": [
+            ("If I would have known, I would have stayed.", "If I had known, I would have stayed."),
+            ("She can't has done that.", "She can't have done that."),
+        ],
+        "verb_tense": [
+            ("By Friday, everything will have ___. (измениться)", "форма", ["changed"]),
+            ("I wish I ___ listened to you. (вспомогательный)", "форма", ["had"]),
+            ("The deal ___ through. (сорваться)", "форма", ["fell"]),
+        ],
+    },
+]
