@@ -60,10 +60,18 @@ test('offline: app shell and cached audio served by service worker (M9)', async 
   await page.goto('/#/')
   await expect(page.getByText('[Ежедневный квест]')).toBeVisible({ timeout: 8000 })
 
-  // ждём активацию SW (precache установлен)
+  // ждём активацию SW: контроллер страницы появляется только после claim
+  // (Known Issue M9 закрыт: регистрация ≠ активация — прогрев аудио до claim
+  // уходит в сеть мимо SW → пустой audio-cache → офлайн-фетч падает, флейк ~5%)
   await expect
     .poll(async () => (await context.serviceWorkers()).length, { timeout: 10000 })
     .toBeGreaterThanOrEqual(1)
+  await expect
+    .poll(async () => await page.evaluate(() => navigator.serviceWorker.controller !== null), {
+      timeout: 15000,
+      message: 'SW не контролирует страницу (не активировался/claim)',
+    })
+    .toBe(true)
 
   // прогреваем аудио через страницу (runtime-кэш CacheFirst)
   const warm = await page.evaluate(async () => {
