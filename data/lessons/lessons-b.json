@@ -162,10 +162,10 @@
           "id": "ex-b-0046"
         },
         {
-          "id": "ex-b-0650"
+          "id": "ex-b-1343"
         },
         {
-          "id": "ex-b-0651"
+          "id": "ex-b-1344"
         }
       ],
       "bebris_video": {
@@ -335,10 +335,10 @@
           "id": "ex-b-0092"
         },
         {
-          "id": "ex-b-0652"
+          "id": "ex-b-1345"
         },
         {
-          "id": "ex-b-0653"
+          "id": "ex-b-1346"
         }
       ],
       "bebris_video": {
@@ -508,10 +508,10 @@
           "id": "ex-b-0138"
         },
         {
-          "id": "ex-b-0654"
+          "id": "ex-b-1347"
         },
         {
-          "id": "ex-b-0655"
+          "id": "ex-b-1348"
         }
       ],
       "bebris_video": null
@@ -676,10 +676,10 @@
           "id": "ex-b-0184"
         },
         {
-          "id": "ex-b-0656"
+          "id": "ex-b-1349"
         },
         {
-          "id": "ex-b-0657"
+          "id": "ex-b-1350"
         }
       ],
       "bebris_video": {
@@ -849,10 +849,10 @@
           "id": "ex-b-0230"
         },
         {
-          "id": "ex-b-0658"
+          "id": "ex-b-1351"
         },
         {
-          "id": "ex-b-0659"
+          "id": "ex-b-1352"
         }
       ],
       "bebris_video": null
@@ -1017,10 +1017,10 @@
           "id": "ex-b-0276"
         },
         {
-          "id": "ex-b-0660"
+          "id": "ex-b-1353"
         },
         {
-          "id": "ex-b-0661"
+          "id": "ex-b-1354"
         }
       ],
       "bebris_video": null
@@ -1185,10 +1185,10 @@
           "id": "ex-b-0322"
         },
         {
-          "id": "ex-b-0662"
+          "id": "ex-b-1355"
         },
         {
-          "id": "ex-b-0663"
+          "id": "ex-b-1356"
         }
       ],
       "bebris_video": {
@@ -1358,10 +1358,10 @@
           "id": "ex-b-0368"
         },
         {
-          "id": "ex-b-0664"
+          "id": "ex-b-1357"
         },
         {
-          "id": "ex-b-0665"
+          "id": "ex-b-1358"
         }
       ],
       "bebris_video": {
@@ -1540,10 +1540,10 @@
           "id": "ex-b-0417"
         },
         {
-          "id": "ex-b-0666"
+          "id": "ex-b-1359"
         },
         {
-          "id": "ex-b-0667"
+          "id": "ex-b-1360"
         }
       ],
       "bebris_video": null
@@ -1708,10 +1708,10 @@
           "id": "ex-b-0463"
         },
         {
-          "id": "ex-b-0668"
+          "id": "ex-b-1361"
         },
         {
-          "id": "ex-b-0669"
+          "id": "ex-b-1362"
         }
       ],
       "bebris_video": {
@@ -1881,10 +1881,10 @@
           "id": "ex-b-0509"
         },
         {
-          "id": "ex-b-0670"
+          "id": "ex-b-1363"
         },
         {
-          "id": "ex-b-0671"
+          "id": "ex-b-1364"
         }
       ],
       "bebris_video": {
@@ -2054,10 +2054,10 @@
           "id": "ex-b-0555"
         },
         {
-          "id": "ex-b-0672"
+          "id": "ex-b-1365"
         },
         {
-          "id": "ex-b-0673"
+          "id": "ex-b-1366"
         }
       ],
       "bebris_video": {
@@ -2227,10 +2227,10 @@
           "id": "ex-b-0601"
         },
         {
-          "id": "ex-b-0674"
+          "id": "ex-b-1367"
         },
         {
-          "id": "ex-b-0675"
+          "id": "ex-b-1368"
         }
       ],
       "bebris_video": {
@@ -2406,10 +2406,2589 @@
           "id": "ex-b-0649"
         },
         {
+          "id": "ex-b-1369"
+        },
+        {
+          "id": "ex-b-1370"
+        }
+      ],
+      "bebris_video": null
+    },
+    {
+      "id": "les-b-15",
+      "rank": "B",
+      "module": "mod-b-3",
+      "title": "Relative clauses: who / which / that",
+      "grammar_point": {
+        "id": "gp-b-15",
+        "title_ru": "Придаточные определительные",
+        "rule_md": "**Relative clauses: who / which / that.**\nwho — о людях: the man **who** lives here.\nwhich/that — о вещах: the book **that** I read.\nwhere — о местах: the town **where** I was born.\nМожно опустить that/who, если это не подлежащее:\nthe book (that) I read — можно без that.",
+        "phrase_ids": ["ph-b-0656", "ph-b-0657", "ph-b-0658", "ph-b-0659", "ph-b-0660"],
+        "trap_id": "trap-articles"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 4601,
+        "to": 4660
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-articles",
+      "quotes_topic": "relative",
+      "exercises": [
+        {
+          "id": "ex-b-0650"
+        },
+        {
+          "id": "ex-b-0651"
+        },
+        {
+          "id": "ex-b-0652"
+        },
+        {
+          "id": "ex-b-0653"
+        },
+        {
+          "id": "ex-b-0654"
+        },
+        {
+          "id": "ex-b-0655"
+        },
+        {
+          "id": "ex-b-0656"
+        },
+        {
+          "id": "ex-b-0657"
+        },
+        {
+          "id": "ex-b-0658"
+        },
+        {
+          "id": "ex-b-0659"
+        },
+        {
+          "id": "ex-b-0660"
+        },
+        {
+          "id": "ex-b-0661"
+        },
+        {
+          "id": "ex-b-0662"
+        },
+        {
+          "id": "ex-b-0663"
+        },
+        {
+          "id": "ex-b-0664"
+        },
+        {
+          "id": "ex-b-0665"
+        },
+        {
+          "id": "ex-b-0666"
+        },
+        {
+          "id": "ex-b-0667"
+        },
+        {
+          "id": "ex-b-0668"
+        },
+        {
+          "id": "ex-b-0669"
+        },
+        {
+          "id": "ex-b-0670"
+        },
+        {
+          "id": "ex-b-0671"
+        },
+        {
+          "id": "ex-b-0672"
+        },
+        {
+          "id": "ex-b-0673"
+        },
+        {
+          "id": "ex-b-0674"
+        },
+        {
+          "id": "ex-b-0675"
+        },
+        {
           "id": "ex-b-0676"
         },
         {
           "id": "ex-b-0677"
+        },
+        {
+          "id": "ex-b-0678"
+        },
+        {
+          "id": "ex-b-0679"
+        },
+        {
+          "id": "ex-b-0680"
+        },
+        {
+          "id": "ex-b-0681"
+        },
+        {
+          "id": "ex-b-0682"
+        },
+        {
+          "id": "ex-b-0683"
+        },
+        {
+          "id": "ex-b-0684"
+        },
+        {
+          "id": "ex-b-0685"
+        },
+        {
+          "id": "ex-b-0686"
+        },
+        {
+          "id": "ex-b-0687"
+        },
+        {
+          "id": "ex-b-0688"
+        },
+        {
+          "id": "ex-b-0689"
+        },
+        {
+          "id": "ex-b-0690"
+        },
+        {
+          "id": "ex-b-0691"
+        },
+        {
+          "id": "ex-b-0692"
+        },
+        {
+          "id": "ex-b-0693"
+        },
+        {
+          "id": "ex-b-0694"
+        },
+        {
+          "id": "ex-b-0695"
+        },
+        {
+          "id": "ex-b-1371"
+        },
+        {
+          "id": "ex-b-1372"
+        }
+      ],
+      "bebris_video": null
+    },
+    {
+      "id": "les-b-16",
+      "rank": "B",
+      "module": "mod-b-3",
+      "title": "Герундий vs инфинитив: enjoy doing / want to do",
+      "grammar_point": {
+        "id": "gp-b-16",
+        "title_ru": "Gerund or infinitive",
+        "rule_md": "**Герундий vs инфинитив.**\nГерундий (-ing) после: enjoy, finish, stop, give up:\nI enjoy **reading**. Stop **talking**.\nИнфинитив (to + V1) после: want, need, decide, hope, promise, plan:\nI want **to go**. She decided **to stay**.\nIt's + прил. + to: It's important **to be** honest.",
+        "phrase_ids": ["ph-b-0708", "ph-b-0709", "ph-b-0710", "ph-b-0711", "ph-b-0712"],
+        "trap_id": "trap-want-that"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 4661,
+        "to": 4720
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-want-that",
+      "quotes_topic": "grammar",
+      "exercises": [
+        {
+          "id": "ex-b-0696"
+        },
+        {
+          "id": "ex-b-0697"
+        },
+        {
+          "id": "ex-b-0698"
+        },
+        {
+          "id": "ex-b-0699"
+        },
+        {
+          "id": "ex-b-0700"
+        },
+        {
+          "id": "ex-b-0701"
+        },
+        {
+          "id": "ex-b-0702"
+        },
+        {
+          "id": "ex-b-0703"
+        },
+        {
+          "id": "ex-b-0704"
+        },
+        {
+          "id": "ex-b-0705"
+        },
+        {
+          "id": "ex-b-0706"
+        },
+        {
+          "id": "ex-b-0707"
+        },
+        {
+          "id": "ex-b-0708"
+        },
+        {
+          "id": "ex-b-0709"
+        },
+        {
+          "id": "ex-b-0710"
+        },
+        {
+          "id": "ex-b-0711"
+        },
+        {
+          "id": "ex-b-0712"
+        },
+        {
+          "id": "ex-b-0713"
+        },
+        {
+          "id": "ex-b-0714"
+        },
+        {
+          "id": "ex-b-0715"
+        },
+        {
+          "id": "ex-b-0716"
+        },
+        {
+          "id": "ex-b-0717"
+        },
+        {
+          "id": "ex-b-0718"
+        },
+        {
+          "id": "ex-b-0719"
+        },
+        {
+          "id": "ex-b-0720"
+        },
+        {
+          "id": "ex-b-0721"
+        },
+        {
+          "id": "ex-b-0722"
+        },
+        {
+          "id": "ex-b-0723"
+        },
+        {
+          "id": "ex-b-0724"
+        },
+        {
+          "id": "ex-b-0725"
+        },
+        {
+          "id": "ex-b-0726"
+        },
+        {
+          "id": "ex-b-0727"
+        },
+        {
+          "id": "ex-b-0728"
+        },
+        {
+          "id": "ex-b-0729"
+        },
+        {
+          "id": "ex-b-0730"
+        },
+        {
+          "id": "ex-b-0731"
+        },
+        {
+          "id": "ex-b-0732"
+        },
+        {
+          "id": "ex-b-0733"
+        },
+        {
+          "id": "ex-b-0734"
+        },
+        {
+          "id": "ex-b-0735"
+        },
+        {
+          "id": "ex-b-0736"
+        },
+        {
+          "id": "ex-b-0737"
+        },
+        {
+          "id": "ex-b-0738"
+        },
+        {
+          "id": "ex-b-0739"
+        },
+        {
+          "id": "ex-b-0740"
+        },
+        {
+          "id": "ex-b-0741"
+        },
+        {
+          "id": "ex-b-1373"
+        },
+        {
+          "id": "ex-b-1374"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "2.96",
+        "playlist_index": 647,
+        "youtube_id": "UxX1Ca2w7iY",
+        "title": null
+      }
+    },
+    {
+      "id": "les-b-17",
+      "rank": "B",
+      "module": "mod-b-3",
+      "title": "Фразовые глаголы I: путешествия",
+      "grammar_point": {
+        "id": "gp-b-17",
+        "title_ru": "Phrasal verbs: travel",
+        "rule_md": "**Фразовые глаголы I: путешествия.**\ncheck **in/out** — регистрироваться/выезжать\ntake **off** — взлетать; снимать (одежду)\nget **on/off** — садиться/выходить (транспорт)\nset **off** — отправляться\nturn **on/off/up/down** — включить/выключить/громче/тише",
+        "phrase_ids": ["ph-b-0752", "ph-b-0753", "ph-b-0754", "ph-b-0755", "ph-b-0756"],
+        "trap_id": "trap-articles"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 4721,
+        "to": 4780
+      },
+      "phrasebook_topic": "airport",
+      "trap_id": "trap-articles",
+      "quotes_topic": "travel",
+      "exercises": [
+        {
+          "id": "ex-b-0742"
+        },
+        {
+          "id": "ex-b-0743"
+        },
+        {
+          "id": "ex-b-0744"
+        },
+        {
+          "id": "ex-b-0745"
+        },
+        {
+          "id": "ex-b-0746"
+        },
+        {
+          "id": "ex-b-0747"
+        },
+        {
+          "id": "ex-b-0748"
+        },
+        {
+          "id": "ex-b-0749"
+        },
+        {
+          "id": "ex-b-0750"
+        },
+        {
+          "id": "ex-b-0751"
+        },
+        {
+          "id": "ex-b-0752"
+        },
+        {
+          "id": "ex-b-0753"
+        },
+        {
+          "id": "ex-b-0754"
+        },
+        {
+          "id": "ex-b-0755"
+        },
+        {
+          "id": "ex-b-0756"
+        },
+        {
+          "id": "ex-b-0757"
+        },
+        {
+          "id": "ex-b-0758"
+        },
+        {
+          "id": "ex-b-0759"
+        },
+        {
+          "id": "ex-b-0760"
+        },
+        {
+          "id": "ex-b-0761"
+        },
+        {
+          "id": "ex-b-0762"
+        },
+        {
+          "id": "ex-b-0763"
+        },
+        {
+          "id": "ex-b-0764"
+        },
+        {
+          "id": "ex-b-0765"
+        },
+        {
+          "id": "ex-b-0766"
+        },
+        {
+          "id": "ex-b-0767"
+        },
+        {
+          "id": "ex-b-0768"
+        },
+        {
+          "id": "ex-b-0769"
+        },
+        {
+          "id": "ex-b-0770"
+        },
+        {
+          "id": "ex-b-0771"
+        },
+        {
+          "id": "ex-b-0772"
+        },
+        {
+          "id": "ex-b-0773"
+        },
+        {
+          "id": "ex-b-0774"
+        },
+        {
+          "id": "ex-b-0775"
+        },
+        {
+          "id": "ex-b-0776"
+        },
+        {
+          "id": "ex-b-0777"
+        },
+        {
+          "id": "ex-b-0778"
+        },
+        {
+          "id": "ex-b-0779"
+        },
+        {
+          "id": "ex-b-0780"
+        },
+        {
+          "id": "ex-b-0781"
+        },
+        {
+          "id": "ex-b-0782"
+        },
+        {
+          "id": "ex-b-0783"
+        },
+        {
+          "id": "ex-b-0784"
+        },
+        {
+          "id": "ex-b-0785"
+        },
+        {
+          "id": "ex-b-0786"
+        },
+        {
+          "id": "ex-b-0787"
+        },
+        {
+          "id": "ex-b-1375"
+        },
+        {
+          "id": "ex-b-1376"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "2.336",
+        "playlist_index": 887,
+        "youtube_id": "fGxRBo8Prko",
+        "title": null
+      }
+    },
+    {
+      "id": "les-b-18",
+      "rank": "B",
+      "module": "mod-b-3",
+      "title": "Фразовые глаголы II: поиск и решения",
+      "grammar_point": {
+        "id": "gp-b-18",
+        "title_ru": "Phrasal verbs: search & decisions",
+        "rule_md": "**Фразовые глаголы II: поиск и решения.**\nlook **up** — посмотреть (в словаре)\nfind **out** — узнать, выяснить\nturn **out** — оказаться\ngive **up** — сдаваться, бросить\nrun **out of** — закончиться (запас)\nlook forward **to** — ждать с нетерпением\nget **along** — ладить\nwork **out** — сложиться, получиться",
+        "phrase_ids": ["ph-b-0818", "ph-b-0819", "ph-b-0820", "ph-b-0821", "ph-b-0822"],
+        "trap_id": "trap-wait-for"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 4781,
+        "to": 4840
+      },
+      "phrasebook_topic": "directions",
+      "trap_id": "trap-wait-for",
+      "quotes_topic": "phrasal",
+      "exercises": [
+        {
+          "id": "ex-b-0788"
+        },
+        {
+          "id": "ex-b-0789"
+        },
+        {
+          "id": "ex-b-0790"
+        },
+        {
+          "id": "ex-b-0791"
+        },
+        {
+          "id": "ex-b-0792"
+        },
+        {
+          "id": "ex-b-0793"
+        },
+        {
+          "id": "ex-b-0794"
+        },
+        {
+          "id": "ex-b-0795"
+        },
+        {
+          "id": "ex-b-0796"
+        },
+        {
+          "id": "ex-b-0797"
+        },
+        {
+          "id": "ex-b-0798"
+        },
+        {
+          "id": "ex-b-0799"
+        },
+        {
+          "id": "ex-b-0800"
+        },
+        {
+          "id": "ex-b-0801"
+        },
+        {
+          "id": "ex-b-0802"
+        },
+        {
+          "id": "ex-b-0803"
+        },
+        {
+          "id": "ex-b-0804"
+        },
+        {
+          "id": "ex-b-0805"
+        },
+        {
+          "id": "ex-b-0806"
+        },
+        {
+          "id": "ex-b-0807"
+        },
+        {
+          "id": "ex-b-0808"
+        },
+        {
+          "id": "ex-b-0809"
+        },
+        {
+          "id": "ex-b-0810"
+        },
+        {
+          "id": "ex-b-0811"
+        },
+        {
+          "id": "ex-b-0812"
+        },
+        {
+          "id": "ex-b-0813"
+        },
+        {
+          "id": "ex-b-0814"
+        },
+        {
+          "id": "ex-b-0815"
+        },
+        {
+          "id": "ex-b-0816"
+        },
+        {
+          "id": "ex-b-0817"
+        },
+        {
+          "id": "ex-b-0818"
+        },
+        {
+          "id": "ex-b-0819"
+        },
+        {
+          "id": "ex-b-0820"
+        },
+        {
+          "id": "ex-b-0821"
+        },
+        {
+          "id": "ex-b-0822"
+        },
+        {
+          "id": "ex-b-0823"
+        },
+        {
+          "id": "ex-b-0824"
+        },
+        {
+          "id": "ex-b-0825"
+        },
+        {
+          "id": "ex-b-0826"
+        },
+        {
+          "id": "ex-b-0827"
+        },
+        {
+          "id": "ex-b-0828"
+        },
+        {
+          "id": "ex-b-0829"
+        },
+        {
+          "id": "ex-b-0830"
+        },
+        {
+          "id": "ex-b-0831"
+        },
+        {
+          "id": "ex-b-0832"
+        },
+        {
+          "id": "ex-b-0833"
+        },
+        {
+          "id": "ex-b-1377"
+        },
+        {
+          "id": "ex-b-1378"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "2.344",
+        "playlist_index": 895,
+        "youtube_id": "HkFu9dLvRfQ",
+        "title": null
+      }
+    },
+    {
+      "id": "les-b-19",
+      "rank": "B",
+      "module": "mod-b-3",
+      "title": "Повторение №18",
+      "grammar_point": {
+        "id": "gp-b-19",
+        "title_ru": "Повторение модуля B3",
+        "rule_md": "**Повторение №18: связные фразы.**\nRelative clauses (who/which/that), герундий vs инфинитив,\nфразовые глаголы I (check in, take off, get on) и II (look up, find out,\nturn out, give up, run out of, look forward to).",
+        "phrase_ids": ["ph-b-0862", "ph-b-0863", "ph-b-0864", "ph-b-0865", "ph-b-0866"],
+        "trap_id": "trap-want-that"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 4841,
+        "to": 4900
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-want-that",
+      "quotes_topic": "mixed",
+      "exercises": [
+        {
+          "id": "ex-b-0834"
+        },
+        {
+          "id": "ex-b-0835"
+        },
+        {
+          "id": "ex-b-0836"
+        },
+        {
+          "id": "ex-b-0837"
+        },
+        {
+          "id": "ex-b-0838"
+        },
+        {
+          "id": "ex-b-0839"
+        },
+        {
+          "id": "ex-b-0840"
+        },
+        {
+          "id": "ex-b-0841"
+        },
+        {
+          "id": "ex-b-0842"
+        },
+        {
+          "id": "ex-b-0843"
+        },
+        {
+          "id": "ex-b-0844"
+        },
+        {
+          "id": "ex-b-0845"
+        },
+        {
+          "id": "ex-b-0846"
+        },
+        {
+          "id": "ex-b-0847"
+        },
+        {
+          "id": "ex-b-0848"
+        },
+        {
+          "id": "ex-b-0849"
+        },
+        {
+          "id": "ex-b-0850"
+        },
+        {
+          "id": "ex-b-0851"
+        },
+        {
+          "id": "ex-b-0852"
+        },
+        {
+          "id": "ex-b-0853"
+        },
+        {
+          "id": "ex-b-0854"
+        },
+        {
+          "id": "ex-b-0855"
+        },
+        {
+          "id": "ex-b-0856"
+        },
+        {
+          "id": "ex-b-0857"
+        },
+        {
+          "id": "ex-b-0858"
+        },
+        {
+          "id": "ex-b-0859"
+        },
+        {
+          "id": "ex-b-0860"
+        },
+        {
+          "id": "ex-b-0861"
+        },
+        {
+          "id": "ex-b-0862"
+        },
+        {
+          "id": "ex-b-0863"
+        },
+        {
+          "id": "ex-b-0864"
+        },
+        {
+          "id": "ex-b-0865"
+        },
+        {
+          "id": "ex-b-0866"
+        },
+        {
+          "id": "ex-b-0867"
+        },
+        {
+          "id": "ex-b-0868"
+        },
+        {
+          "id": "ex-b-0869"
+        },
+        {
+          "id": "ex-b-0870"
+        },
+        {
+          "id": "ex-b-0871"
+        },
+        {
+          "id": "ex-b-0872"
+        },
+        {
+          "id": "ex-b-0873"
+        },
+        {
+          "id": "ex-b-0874"
+        },
+        {
+          "id": "ex-b-0875"
+        },
+        {
+          "id": "ex-b-0876"
+        },
+        {
+          "id": "ex-b-0877"
+        },
+        {
+          "id": "ex-b-0878"
+        },
+        {
+          "id": "ex-b-0879"
+        },
+        {
+          "id": "ex-b-1379"
+        },
+        {
+          "id": "ex-b-1380"
+        }
+      ],
+      "bebris_video": null
+    },
+    {
+      "id": "les-b-20",
+      "rank": "B",
+      "module": "mod-b-4",
+      "title": "Пассив: be + V3",
+      "grammar_point": {
+        "id": "gp-b-20",
+        "title_ru": "Passive voice базово",
+        "rule_md": "**Пассив: be + V3.**\n**is/are made**, **was/were built**, **will be done**:\nThis bridge **was built** in 1900. English **is spoken** here.\nКто делает — не важно; важно — с кем/что делают:\nby + исполнитель: written **by** a famous author.",
+        "phrase_ids": ["ph-b-0928", "ph-b-0929", "ph-b-0930", "ph-b-0931", "ph-b-0932"],
+        "trap_id": "trap-present-perfect"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 4901,
+        "to": 4960
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-present-perfect",
+      "quotes_topic": "passive",
+      "exercises": [
+        {
+          "id": "ex-b-0880"
+        },
+        {
+          "id": "ex-b-0881"
+        },
+        {
+          "id": "ex-b-0882"
+        },
+        {
+          "id": "ex-b-0883"
+        },
+        {
+          "id": "ex-b-0884"
+        },
+        {
+          "id": "ex-b-0885"
+        },
+        {
+          "id": "ex-b-0886"
+        },
+        {
+          "id": "ex-b-0887"
+        },
+        {
+          "id": "ex-b-0888"
+        },
+        {
+          "id": "ex-b-0889"
+        },
+        {
+          "id": "ex-b-0890"
+        },
+        {
+          "id": "ex-b-0891"
+        },
+        {
+          "id": "ex-b-0892"
+        },
+        {
+          "id": "ex-b-0893"
+        },
+        {
+          "id": "ex-b-0894"
+        },
+        {
+          "id": "ex-b-0895"
+        },
+        {
+          "id": "ex-b-0896"
+        },
+        {
+          "id": "ex-b-0897"
+        },
+        {
+          "id": "ex-b-0898"
+        },
+        {
+          "id": "ex-b-0899"
+        },
+        {
+          "id": "ex-b-0900"
+        },
+        {
+          "id": "ex-b-0901"
+        },
+        {
+          "id": "ex-b-0902"
+        },
+        {
+          "id": "ex-b-0903"
+        },
+        {
+          "id": "ex-b-0904"
+        },
+        {
+          "id": "ex-b-0905"
+        },
+        {
+          "id": "ex-b-0906"
+        },
+        {
+          "id": "ex-b-0907"
+        },
+        {
+          "id": "ex-b-0908"
+        },
+        {
+          "id": "ex-b-0909"
+        },
+        {
+          "id": "ex-b-0910"
+        },
+        {
+          "id": "ex-b-0911"
+        },
+        {
+          "id": "ex-b-0912"
+        },
+        {
+          "id": "ex-b-0913"
+        },
+        {
+          "id": "ex-b-0914"
+        },
+        {
+          "id": "ex-b-0915"
+        },
+        {
+          "id": "ex-b-0916"
+        },
+        {
+          "id": "ex-b-0917"
+        },
+        {
+          "id": "ex-b-0918"
+        },
+        {
+          "id": "ex-b-0919"
+        },
+        {
+          "id": "ex-b-0920"
+        },
+        {
+          "id": "ex-b-0921"
+        },
+        {
+          "id": "ex-b-0922"
+        },
+        {
+          "id": "ex-b-0923"
+        },
+        {
+          "id": "ex-b-0924"
+        },
+        {
+          "id": "ex-b-0925"
+        },
+        {
+          "id": "ex-b-1381"
+        },
+        {
+          "id": "ex-b-1382"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "2.216",
+        "playlist_index": 767,
+        "youtube_id": "lx-HhzfqGVM",
+        "title": null
+      }
+    },
+    {
+      "id": "les-b-21",
+      "rank": "B",
+      "module": "mod-b-4",
+      "title": "Косвенная речь: He said he was busy",
+      "grammar_point": {
+        "id": "gp-b-21",
+        "title_ru": "Reported speech",
+        "rule_md": "**Косвенная речь.**\nHe said (that) he **was** busy. (was → было)\nShe said she **would** come. (will → would)\nHe said he **had** finished. (have → had)\nВопрос → if/whether + прямой порядок слов:\nHe asked **if I was** ready. (Нет do/does!)\nCould you tell me where the station **is**? (не «where is»)",
+        "phrase_ids": ["ph-b-0972", "ph-b-0973", "ph-b-0974", "ph-b-0975", "ph-b-0976"],
+        "trap_id": "trap-indirect-question"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 4961,
+        "to": 5020
+      },
+      "phrasebook_topic": "directions",
+      "trap_id": "trap-indirect-question",
+      "quotes_topic": "speech",
+      "exercises": [
+        {
+          "id": "ex-b-0926"
+        },
+        {
+          "id": "ex-b-0927"
+        },
+        {
+          "id": "ex-b-0928"
+        },
+        {
+          "id": "ex-b-0929"
+        },
+        {
+          "id": "ex-b-0930"
+        },
+        {
+          "id": "ex-b-0931"
+        },
+        {
+          "id": "ex-b-0932"
+        },
+        {
+          "id": "ex-b-0933"
+        },
+        {
+          "id": "ex-b-0934"
+        },
+        {
+          "id": "ex-b-0935"
+        },
+        {
+          "id": "ex-b-0936"
+        },
+        {
+          "id": "ex-b-0937"
+        },
+        {
+          "id": "ex-b-0938"
+        },
+        {
+          "id": "ex-b-0939"
+        },
+        {
+          "id": "ex-b-0940"
+        },
+        {
+          "id": "ex-b-0941"
+        },
+        {
+          "id": "ex-b-0942"
+        },
+        {
+          "id": "ex-b-0943"
+        },
+        {
+          "id": "ex-b-0944"
+        },
+        {
+          "id": "ex-b-0945"
+        },
+        {
+          "id": "ex-b-0946"
+        },
+        {
+          "id": "ex-b-0947"
+        },
+        {
+          "id": "ex-b-0948"
+        },
+        {
+          "id": "ex-b-0949"
+        },
+        {
+          "id": "ex-b-0950"
+        },
+        {
+          "id": "ex-b-0951"
+        },
+        {
+          "id": "ex-b-0952"
+        },
+        {
+          "id": "ex-b-0953"
+        },
+        {
+          "id": "ex-b-0954"
+        },
+        {
+          "id": "ex-b-0955"
+        },
+        {
+          "id": "ex-b-0956"
+        },
+        {
+          "id": "ex-b-0957"
+        },
+        {
+          "id": "ex-b-0958"
+        },
+        {
+          "id": "ex-b-0959"
+        },
+        {
+          "id": "ex-b-0960"
+        },
+        {
+          "id": "ex-b-0961"
+        },
+        {
+          "id": "ex-b-0962"
+        },
+        {
+          "id": "ex-b-0963"
+        },
+        {
+          "id": "ex-b-0964"
+        },
+        {
+          "id": "ex-b-0965"
+        },
+        {
+          "id": "ex-b-0966"
+        },
+        {
+          "id": "ex-b-0967"
+        },
+        {
+          "id": "ex-b-0968"
+        },
+        {
+          "id": "ex-b-0969"
+        },
+        {
+          "id": "ex-b-0970"
+        },
+        {
+          "id": "ex-b-0971"
+        },
+        {
+          "id": "ex-b-1383"
+        },
+        {
+          "id": "ex-b-1384"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "2.256",
+        "playlist_index": 807,
+        "youtube_id": "62kfQH0uwIU",
+        "title": null
+      }
+    },
+    {
+      "id": "les-b-22",
+      "rank": "B",
+      "module": "mod-b-4",
+      "title": "Разделительные вопросы: isn't it?",
+      "grammar_point": {
+        "id": "gp-b-22",
+        "title_ru": "Tag questions",
+        "rule_md": "**Разделительные вопросы (tag questions).**\n+, −: You know, **don't you?** / It's cold, **isn't it?**\n−, +: You don't smoke, **do you?** / It isn't raining, **is it?**\nПравило: повторить be/auxiliary в противоположном знаке.\nLet's go, **shall we?** — исключение.",
+        "phrase_ids": ["ph-b-1024", "ph-b-1025", "ph-b-1026", "ph-b-1027", "ph-b-1028"],
+        "trap_id": "trap-question-word-order"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 5021,
+        "to": 5080
+      },
+      "phrasebook_topic": "smalltalk",
+      "trap_id": "trap-question-word-order",
+      "quotes_topic": "tags",
+      "exercises": [
+        {
+          "id": "ex-b-0972"
+        },
+        {
+          "id": "ex-b-0973"
+        },
+        {
+          "id": "ex-b-0974"
+        },
+        {
+          "id": "ex-b-0975"
+        },
+        {
+          "id": "ex-b-0976"
+        },
+        {
+          "id": "ex-b-0977"
+        },
+        {
+          "id": "ex-b-0978"
+        },
+        {
+          "id": "ex-b-0979"
+        },
+        {
+          "id": "ex-b-0980"
+        },
+        {
+          "id": "ex-b-0981"
+        },
+        {
+          "id": "ex-b-0982"
+        },
+        {
+          "id": "ex-b-0983"
+        },
+        {
+          "id": "ex-b-0984"
+        },
+        {
+          "id": "ex-b-0985"
+        },
+        {
+          "id": "ex-b-0986"
+        },
+        {
+          "id": "ex-b-0987"
+        },
+        {
+          "id": "ex-b-0988"
+        },
+        {
+          "id": "ex-b-0989"
+        },
+        {
+          "id": "ex-b-0990"
+        },
+        {
+          "id": "ex-b-0991"
+        },
+        {
+          "id": "ex-b-0992"
+        },
+        {
+          "id": "ex-b-0993"
+        },
+        {
+          "id": "ex-b-0994"
+        },
+        {
+          "id": "ex-b-0995"
+        },
+        {
+          "id": "ex-b-0996"
+        },
+        {
+          "id": "ex-b-0997"
+        },
+        {
+          "id": "ex-b-0998"
+        },
+        {
+          "id": "ex-b-0999"
+        },
+        {
+          "id": "ex-b-1000"
+        },
+        {
+          "id": "ex-b-1001"
+        },
+        {
+          "id": "ex-b-1002"
+        },
+        {
+          "id": "ex-b-1003"
+        },
+        {
+          "id": "ex-b-1004"
+        },
+        {
+          "id": "ex-b-1005"
+        },
+        {
+          "id": "ex-b-1006"
+        },
+        {
+          "id": "ex-b-1007"
+        },
+        {
+          "id": "ex-b-1008"
+        },
+        {
+          "id": "ex-b-1009"
+        },
+        {
+          "id": "ex-b-1010"
+        },
+        {
+          "id": "ex-b-1011"
+        },
+        {
+          "id": "ex-b-1012"
+        },
+        {
+          "id": "ex-b-1013"
+        },
+        {
+          "id": "ex-b-1014"
+        },
+        {
+          "id": "ex-b-1015"
+        },
+        {
+          "id": "ex-b-1016"
+        },
+        {
+          "id": "ex-b-1017"
+        },
+        {
+          "id": "ex-b-1385"
+        },
+        {
+          "id": "ex-b-1386"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "2.266",
+        "playlist_index": 817,
+        "youtube_id": "HGwwoQB0BIA",
+        "title": null
+      }
+    },
+    {
+      "id": "les-b-23",
+      "rank": "B",
+      "module": "mod-b-4",
+      "title": "Предлоги после прилагательных: afraid of, good at",
+      "grammar_point": {
+        "id": "gp-b-23",
+        "title_ru": "Adjective + preposition",
+        "rule_md": "**Предлоги после прилагательных.**\nafraid **of**, good/bad **at**, interested **in**, fond **of**,\nproud **of**, tired/sick **of**, famous **for**, worried **about**,\nangry **with** (чел.) / **about** (о Situation), different **from**,\nsimilar **to**, keen **on**, full **of**, used **to**.",
+        "phrase_ids": ["ph-b-1068", "ph-b-1069", "ph-b-1070", "ph-b-1071", "ph-b-1072"],
+        "trap_id": "trap-wait-for"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 5081,
+        "to": 5140
+      },
+      "phrasebook_topic": "pharmacy",
+      "trap_id": "trap-wait-for",
+      "quotes_topic": "feelings",
+      "exercises": [
+        {
+          "id": "ex-b-1018"
+        },
+        {
+          "id": "ex-b-1019"
+        },
+        {
+          "id": "ex-b-1020"
+        },
+        {
+          "id": "ex-b-1021"
+        },
+        {
+          "id": "ex-b-1022"
+        },
+        {
+          "id": "ex-b-1023"
+        },
+        {
+          "id": "ex-b-1024"
+        },
+        {
+          "id": "ex-b-1025"
+        },
+        {
+          "id": "ex-b-1026"
+        },
+        {
+          "id": "ex-b-1027"
+        },
+        {
+          "id": "ex-b-1028"
+        },
+        {
+          "id": "ex-b-1029"
+        },
+        {
+          "id": "ex-b-1030"
+        },
+        {
+          "id": "ex-b-1031"
+        },
+        {
+          "id": "ex-b-1032"
+        },
+        {
+          "id": "ex-b-1033"
+        },
+        {
+          "id": "ex-b-1034"
+        },
+        {
+          "id": "ex-b-1035"
+        },
+        {
+          "id": "ex-b-1036"
+        },
+        {
+          "id": "ex-b-1037"
+        },
+        {
+          "id": "ex-b-1038"
+        },
+        {
+          "id": "ex-b-1039"
+        },
+        {
+          "id": "ex-b-1040"
+        },
+        {
+          "id": "ex-b-1041"
+        },
+        {
+          "id": "ex-b-1042"
+        },
+        {
+          "id": "ex-b-1043"
+        },
+        {
+          "id": "ex-b-1044"
+        },
+        {
+          "id": "ex-b-1045"
+        },
+        {
+          "id": "ex-b-1046"
+        },
+        {
+          "id": "ex-b-1047"
+        },
+        {
+          "id": "ex-b-1048"
+        },
+        {
+          "id": "ex-b-1049"
+        },
+        {
+          "id": "ex-b-1050"
+        },
+        {
+          "id": "ex-b-1051"
+        },
+        {
+          "id": "ex-b-1052"
+        },
+        {
+          "id": "ex-b-1053"
+        },
+        {
+          "id": "ex-b-1054"
+        },
+        {
+          "id": "ex-b-1055"
+        },
+        {
+          "id": "ex-b-1056"
+        },
+        {
+          "id": "ex-b-1057"
+        },
+        {
+          "id": "ex-b-1058"
+        },
+        {
+          "id": "ex-b-1059"
+        },
+        {
+          "id": "ex-b-1060"
+        },
+        {
+          "id": "ex-b-1061"
+        },
+        {
+          "id": "ex-b-1062"
+        },
+        {
+          "id": "ex-b-1063"
+        },
+        {
+          "id": "ex-b-1387"
+        },
+        {
+          "id": "ex-b-1388"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "2.269",
+        "playlist_index": 820,
+        "youtube_id": "qjb3rtyG8po",
+        "title": null
+      }
+    },
+    {
+      "id": "les-b-24",
+      "rank": "B",
+      "module": "mod-b-4",
+      "title": "Повторение №19",
+      "grammar_point": {
+        "id": "gp-b-24",
+        "title_ru": "Повторение модуля B4",
+        "rule_md": "**Повторение №19: чужая речь.**\nПассив, косвенная речь, разделительные вопросы,\nпредлоги после прилагательных.\nПунктуация: косвенный вопрос БЕЗ «?»: He asked if I was ready.",
+        "phrase_ids": ["ph-b-1112", "ph-b-1113", "ph-b-1114", "ph-b-1115", "ph-b-1116"],
+        "trap_id": "trap-indirect-question"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 5141,
+        "to": 5200
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-indirect-question",
+      "quotes_topic": "mixed",
+      "exercises": [
+        {
+          "id": "ex-b-1064"
+        },
+        {
+          "id": "ex-b-1065"
+        },
+        {
+          "id": "ex-b-1066"
+        },
+        {
+          "id": "ex-b-1067"
+        },
+        {
+          "id": "ex-b-1068"
+        },
+        {
+          "id": "ex-b-1069"
+        },
+        {
+          "id": "ex-b-1070"
+        },
+        {
+          "id": "ex-b-1071"
+        },
+        {
+          "id": "ex-b-1072"
+        },
+        {
+          "id": "ex-b-1073"
+        },
+        {
+          "id": "ex-b-1074"
+        },
+        {
+          "id": "ex-b-1075"
+        },
+        {
+          "id": "ex-b-1076"
+        },
+        {
+          "id": "ex-b-1077"
+        },
+        {
+          "id": "ex-b-1078"
+        },
+        {
+          "id": "ex-b-1079"
+        },
+        {
+          "id": "ex-b-1080"
+        },
+        {
+          "id": "ex-b-1081"
+        },
+        {
+          "id": "ex-b-1082"
+        },
+        {
+          "id": "ex-b-1083"
+        },
+        {
+          "id": "ex-b-1084"
+        },
+        {
+          "id": "ex-b-1085"
+        },
+        {
+          "id": "ex-b-1086"
+        },
+        {
+          "id": "ex-b-1087"
+        },
+        {
+          "id": "ex-b-1088"
+        },
+        {
+          "id": "ex-b-1089"
+        },
+        {
+          "id": "ex-b-1090"
+        },
+        {
+          "id": "ex-b-1091"
+        },
+        {
+          "id": "ex-b-1092"
+        },
+        {
+          "id": "ex-b-1093"
+        },
+        {
+          "id": "ex-b-1094"
+        },
+        {
+          "id": "ex-b-1095"
+        },
+        {
+          "id": "ex-b-1096"
+        },
+        {
+          "id": "ex-b-1097"
+        },
+        {
+          "id": "ex-b-1098"
+        },
+        {
+          "id": "ex-b-1099"
+        },
+        {
+          "id": "ex-b-1100"
+        },
+        {
+          "id": "ex-b-1101"
+        },
+        {
+          "id": "ex-b-1102"
+        },
+        {
+          "id": "ex-b-1103"
+        },
+        {
+          "id": "ex-b-1104"
+        },
+        {
+          "id": "ex-b-1105"
+        },
+        {
+          "id": "ex-b-1106"
+        },
+        {
+          "id": "ex-b-1107"
+        },
+        {
+          "id": "ex-b-1108"
+        },
+        {
+          "id": "ex-b-1109"
+        },
+        {
+          "id": "ex-b-1389"
+        },
+        {
+          "id": "ex-b-1390"
+        }
+      ],
+      "bebris_video": null
+    },
+    {
+      "id": "les-b-25",
+      "rank": "B",
+      "module": "mod-b-5",
+      "title": "Фразовые глаголы III: быт и отношения",
+      "grammar_point": {
+        "id": "gp-b-25",
+        "title_ru": "Phrasal verbs: life & relationships",
+        "rule_md": "**Фразовые глаголы III: быт и отношения.**\neat **out** — есть вне дома; look forward **to** — ждать с нетерпением;\nget **along** — ладить; run **out of** — закончиться;\nbe fed **up with** — быть сытым по горло; put **up with** — терпеть;\ncome **up with** — придумать; end **up** — оказаться в итоге;\nbump **into** — случайно встретить; come **across** — наткнуться;\ntake **care of** — заботиться.",
+        "phrase_ids": ["ph-b-1156", "ph-b-1157", "ph-b-1158", "ph-b-1159", "ph-b-1160"],
+        "trap_id": "trap-wait-for"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 5201,
+        "to": 5260
+      },
+      "phrasebook_topic": "restaurant",
+      "trap_id": "trap-wait-for",
+      "quotes_topic": "phrasal",
+      "exercises": [
+        {
+          "id": "ex-b-1110"
+        },
+        {
+          "id": "ex-b-1111"
+        },
+        {
+          "id": "ex-b-1112"
+        },
+        {
+          "id": "ex-b-1113"
+        },
+        {
+          "id": "ex-b-1114"
+        },
+        {
+          "id": "ex-b-1115"
+        },
+        {
+          "id": "ex-b-1116"
+        },
+        {
+          "id": "ex-b-1117"
+        },
+        {
+          "id": "ex-b-1118"
+        },
+        {
+          "id": "ex-b-1119"
+        },
+        {
+          "id": "ex-b-1120"
+        },
+        {
+          "id": "ex-b-1121"
+        },
+        {
+          "id": "ex-b-1122"
+        },
+        {
+          "id": "ex-b-1123"
+        },
+        {
+          "id": "ex-b-1124"
+        },
+        {
+          "id": "ex-b-1125"
+        },
+        {
+          "id": "ex-b-1126"
+        },
+        {
+          "id": "ex-b-1127"
+        },
+        {
+          "id": "ex-b-1128"
+        },
+        {
+          "id": "ex-b-1129"
+        },
+        {
+          "id": "ex-b-1130"
+        },
+        {
+          "id": "ex-b-1131"
+        },
+        {
+          "id": "ex-b-1132"
+        },
+        {
+          "id": "ex-b-1133"
+        },
+        {
+          "id": "ex-b-1134"
+        },
+        {
+          "id": "ex-b-1135"
+        },
+        {
+          "id": "ex-b-1136"
+        },
+        {
+          "id": "ex-b-1137"
+        },
+        {
+          "id": "ex-b-1138"
+        },
+        {
+          "id": "ex-b-1139"
+        },
+        {
+          "id": "ex-b-1140"
+        },
+        {
+          "id": "ex-b-1141"
+        },
+        {
+          "id": "ex-b-1142"
+        },
+        {
+          "id": "ex-b-1143"
+        },
+        {
+          "id": "ex-b-1144"
+        },
+        {
+          "id": "ex-b-1145"
+        },
+        {
+          "id": "ex-b-1146"
+        },
+        {
+          "id": "ex-b-1147"
+        },
+        {
+          "id": "ex-b-1148"
+        },
+        {
+          "id": "ex-b-1149"
+        },
+        {
+          "id": "ex-b-1150"
+        },
+        {
+          "id": "ex-b-1151"
+        },
+        {
+          "id": "ex-b-1152"
+        },
+        {
+          "id": "ex-b-1153"
+        },
+        {
+          "id": "ex-b-1154"
+        },
+        {
+          "id": "ex-b-1155"
+        },
+        {
+          "id": "ex-b-1391"
+        },
+        {
+          "id": "ex-b-1392"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "2.379",
+        "playlist_index": 930,
+        "youtube_id": "dkBIfciHgew",
+        "title": null
+      }
+    },
+    {
+      "id": "les-b-26",
+      "rank": "B",
+      "module": "mod-b-5",
+      "title": "Модальный микс: must / should / 'd better",
+      "grammar_point": {
+        "id": "gp-b-26",
+        "title_ru": "Modal verbs mix",
+        "rule_md": "**Модальный микс.**\nmust (обязательно!) / have to (вынужден) / should (совет) /\n'd better (лучше бы) / might (возможно) / can't be (не может быть!).\nУверенные догадки: must be late = «должно быть, поздно»;\ncan't be true = «не может быть правдой».",
+        "phrase_ids": ["ph-b-1200", "ph-b-1201", "ph-b-1202", "ph-b-1203", "ph-b-1204"],
+        "trap_id": "trap-if-will"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 5261,
+        "to": 5320
+      },
+      "phrasebook_topic": "pharmacy",
+      "trap_id": "trap-if-will",
+      "quotes_topic": "modals",
+      "exercises": [
+        {
+          "id": "ex-b-1156"
+        },
+        {
+          "id": "ex-b-1157"
+        },
+        {
+          "id": "ex-b-1158"
+        },
+        {
+          "id": "ex-b-1159"
+        },
+        {
+          "id": "ex-b-1160"
+        },
+        {
+          "id": "ex-b-1161"
+        },
+        {
+          "id": "ex-b-1162"
+        },
+        {
+          "id": "ex-b-1163"
+        },
+        {
+          "id": "ex-b-1164"
+        },
+        {
+          "id": "ex-b-1165"
+        },
+        {
+          "id": "ex-b-1166"
+        },
+        {
+          "id": "ex-b-1167"
+        },
+        {
+          "id": "ex-b-1168"
+        },
+        {
+          "id": "ex-b-1169"
+        },
+        {
+          "id": "ex-b-1170"
+        },
+        {
+          "id": "ex-b-1171"
+        },
+        {
+          "id": "ex-b-1172"
+        },
+        {
+          "id": "ex-b-1173"
+        },
+        {
+          "id": "ex-b-1174"
+        },
+        {
+          "id": "ex-b-1175"
+        },
+        {
+          "id": "ex-b-1176"
+        },
+        {
+          "id": "ex-b-1177"
+        },
+        {
+          "id": "ex-b-1178"
+        },
+        {
+          "id": "ex-b-1179"
+        },
+        {
+          "id": "ex-b-1180"
+        },
+        {
+          "id": "ex-b-1181"
+        },
+        {
+          "id": "ex-b-1182"
+        },
+        {
+          "id": "ex-b-1183"
+        },
+        {
+          "id": "ex-b-1184"
+        },
+        {
+          "id": "ex-b-1185"
+        },
+        {
+          "id": "ex-b-1186"
+        },
+        {
+          "id": "ex-b-1187"
+        },
+        {
+          "id": "ex-b-1188"
+        },
+        {
+          "id": "ex-b-1189"
+        },
+        {
+          "id": "ex-b-1190"
+        },
+        {
+          "id": "ex-b-1191"
+        },
+        {
+          "id": "ex-b-1192"
+        },
+        {
+          "id": "ex-b-1193"
+        },
+        {
+          "id": "ex-b-1194"
+        },
+        {
+          "id": "ex-b-1195"
+        },
+        {
+          "id": "ex-b-1196"
+        },
+        {
+          "id": "ex-b-1197"
+        },
+        {
+          "id": "ex-b-1198"
+        },
+        {
+          "id": "ex-b-1199"
+        },
+        {
+          "id": "ex-b-1200"
+        },
+        {
+          "id": "ex-b-1201"
+        },
+        {
+          "id": "ex-b-1393"
+        },
+        {
+          "id": "ex-b-1394"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "2.300",
+        "playlist_index": 851,
+        "youtube_id": "H4-rXitQBN8",
+        "title": null
+      }
+    },
+    {
+      "id": "les-b-28",
+      "rank": "B",
+      "module": "mod-b-5",
+      "title": "Наречия и усилители: quite, really, a bit",
+      "grammar_point": {
+        "id": "gp-b-28",
+        "title_ru": "Adverbs and intensifiers",
+        "rule_md": "**Наречия и усилители.**\nquite = довольно; really = действительно; a bit = немного;\nvery much = очень; absolutely = абсолютно; completely = полностью;\ntoo = слишком; enough = достаточно (ПОСЛЕ слова!);\nrather = довольно; pretty = довольно (разг.); by far = несомненно.",
+        "phrase_ids": ["ph-b-1244", "ph-b-1245", "ph-b-1246", "ph-b-1247", "ph-b-1248"],
+        "trap_id": "trap-very-like"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 5321,
+        "to": 5380
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-very-like",
+      "quotes_topic": "degree",
+      "exercises": [
+        {
+          "id": "ex-b-1202"
+        },
+        {
+          "id": "ex-b-1203"
+        },
+        {
+          "id": "ex-b-1204"
+        },
+        {
+          "id": "ex-b-1205"
+        },
+        {
+          "id": "ex-b-1206"
+        },
+        {
+          "id": "ex-b-1207"
+        },
+        {
+          "id": "ex-b-1208"
+        },
+        {
+          "id": "ex-b-1209"
+        },
+        {
+          "id": "ex-b-1210"
+        },
+        {
+          "id": "ex-b-1211"
+        },
+        {
+          "id": "ex-b-1212"
+        },
+        {
+          "id": "ex-b-1213"
+        },
+        {
+          "id": "ex-b-1214"
+        },
+        {
+          "id": "ex-b-1215"
+        },
+        {
+          "id": "ex-b-1216"
+        },
+        {
+          "id": "ex-b-1217"
+        },
+        {
+          "id": "ex-b-1218"
+        },
+        {
+          "id": "ex-b-1219"
+        },
+        {
+          "id": "ex-b-1220"
+        },
+        {
+          "id": "ex-b-1221"
+        },
+        {
+          "id": "ex-b-1222"
+        },
+        {
+          "id": "ex-b-1223"
+        },
+        {
+          "id": "ex-b-1224"
+        },
+        {
+          "id": "ex-b-1225"
+        },
+        {
+          "id": "ex-b-1226"
+        },
+        {
+          "id": "ex-b-1227"
+        },
+        {
+          "id": "ex-b-1228"
+        },
+        {
+          "id": "ex-b-1229"
+        },
+        {
+          "id": "ex-b-1230"
+        },
+        {
+          "id": "ex-b-1231"
+        },
+        {
+          "id": "ex-b-1232"
+        },
+        {
+          "id": "ex-b-1233"
+        },
+        {
+          "id": "ex-b-1234"
+        },
+        {
+          "id": "ex-b-1235"
+        },
+        {
+          "id": "ex-b-1236"
+        },
+        {
+          "id": "ex-b-1237"
+        },
+        {
+          "id": "ex-b-1238"
+        },
+        {
+          "id": "ex-b-1239"
+        },
+        {
+          "id": "ex-b-1240"
+        },
+        {
+          "id": "ex-b-1241"
+        },
+        {
+          "id": "ex-b-1242"
+        },
+        {
+          "id": "ex-b-1243"
+        },
+        {
+          "id": "ex-b-1244"
+        },
+        {
+          "id": "ex-b-1245"
+        },
+        {
+          "id": "ex-b-1246"
+        },
+        {
+          "id": "ex-b-1247"
+        },
+        {
+          "id": "ex-b-1395"
+        },
+        {
+          "id": "ex-b-1396"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "2.322",
+        "playlist_index": 873,
+        "youtube_id": "cTtcmycgs9o",
+        "title": null
+      }
+    },
+    {
+      "id": "les-b-29",
+      "rank": "B",
+      "module": "mod-b-5",
+      "title": "Повторение №20 + диктант-микс",
+      "grammar_point": {
+        "id": "gp-b-29",
+        "title_ru": "Повторение: весь ранг B",
+        "rule_md": "**Повторение №20: весь ранг B.**\nФразовые глаголы III, модальный микс, усилители — плюс всё из B1–B4:\nPresent Perfect семья, условные/wish/used to, пассив, косвенная речь.",
+        "phrase_ids": ["ph-b-1289", "ph-b-1290", "ph-b-1291", "ph-b-1292", "ph-b-1293"],
+        "trap_id": "trap-very-like"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 5381,
+        "to": 5440
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-very-like",
+      "quotes_topic": "mixed",
+      "exercises": [
+        {
+          "id": "ex-b-1248"
+        },
+        {
+          "id": "ex-b-1249"
+        },
+        {
+          "id": "ex-b-1250"
+        },
+        {
+          "id": "ex-b-1251"
+        },
+        {
+          "id": "ex-b-1252"
+        },
+        {
+          "id": "ex-b-1253"
+        },
+        {
+          "id": "ex-b-1254"
+        },
+        {
+          "id": "ex-b-1255"
+        },
+        {
+          "id": "ex-b-1256"
+        },
+        {
+          "id": "ex-b-1257"
+        },
+        {
+          "id": "ex-b-1258"
+        },
+        {
+          "id": "ex-b-1259"
+        },
+        {
+          "id": "ex-b-1260"
+        },
+        {
+          "id": "ex-b-1261"
+        },
+        {
+          "id": "ex-b-1262"
+        },
+        {
+          "id": "ex-b-1263"
+        },
+        {
+          "id": "ex-b-1264"
+        },
+        {
+          "id": "ex-b-1265"
+        },
+        {
+          "id": "ex-b-1266"
+        },
+        {
+          "id": "ex-b-1267"
+        },
+        {
+          "id": "ex-b-1268"
+        },
+        {
+          "id": "ex-b-1269"
+        },
+        {
+          "id": "ex-b-1270"
+        },
+        {
+          "id": "ex-b-1271"
+        },
+        {
+          "id": "ex-b-1272"
+        },
+        {
+          "id": "ex-b-1273"
+        },
+        {
+          "id": "ex-b-1274"
+        },
+        {
+          "id": "ex-b-1275"
+        },
+        {
+          "id": "ex-b-1276"
+        },
+        {
+          "id": "ex-b-1277"
+        },
+        {
+          "id": "ex-b-1278"
+        },
+        {
+          "id": "ex-b-1279"
+        },
+        {
+          "id": "ex-b-1280"
+        },
+        {
+          "id": "ex-b-1281"
+        },
+        {
+          "id": "ex-b-1282"
+        },
+        {
+          "id": "ex-b-1283"
+        },
+        {
+          "id": "ex-b-1284"
+        },
+        {
+          "id": "ex-b-1285"
+        },
+        {
+          "id": "ex-b-1286"
+        },
+        {
+          "id": "ex-b-1287"
+        },
+        {
+          "id": "ex-b-1288"
+        },
+        {
+          "id": "ex-b-1289"
+        },
+        {
+          "id": "ex-b-1290"
+        },
+        {
+          "id": "ex-b-1291"
+        },
+        {
+          "id": "ex-b-1292"
+        },
+        {
+          "id": "ex-b-1293"
+        },
+        {
+          "id": "ex-b-1397"
+        },
+        {
+          "id": "ex-b-1398"
+        }
+      ],
+      "bebris_video": null
+    },
+    {
+      "id": "les-b-30",
+      "rank": "B",
+      "module": "mod-b-5",
+      "title": "Большое повторение перед Вратами A",
+      "grammar_point": {
+        "id": "gp-b-30",
+        "title_ru": "Сборка всего ранга B",
+        "rule_md": "**Большое повторение перед Вратами A.**\nВСЁ ранга B: PP/PPC/Past Perfect, условные 0/1/2, wish, used to,\nпассив, косвенная речь, tag questions, adj+prep, relative clauses,\nгерундий vs инфинитив, фразовые глаголы I–III, модальный микс,\nусилители. Разговорник: все ситуации.\nВрата A ждут, Охотник!",
+        "phrase_ids": ["ph-b-1334", "ph-b-1335", "ph-b-1336", "ph-b-1337", "ph-b-1338"],
+        "trap_id": "trap-present-perfect"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 5441,
+        "to": 5500
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-present-perfect",
+      "quotes_topic": "mixed",
+      "exercises": [
+        {
+          "id": "ex-b-1294"
+        },
+        {
+          "id": "ex-b-1295"
+        },
+        {
+          "id": "ex-b-1296"
+        },
+        {
+          "id": "ex-b-1297"
+        },
+        {
+          "id": "ex-b-1298"
+        },
+        {
+          "id": "ex-b-1299"
+        },
+        {
+          "id": "ex-b-1300"
+        },
+        {
+          "id": "ex-b-1301"
+        },
+        {
+          "id": "ex-b-1302"
+        },
+        {
+          "id": "ex-b-1303"
+        },
+        {
+          "id": "ex-b-1304"
+        },
+        {
+          "id": "ex-b-1305"
+        },
+        {
+          "id": "ex-b-1306"
+        },
+        {
+          "id": "ex-b-1307"
+        },
+        {
+          "id": "ex-b-1308"
+        },
+        {
+          "id": "ex-b-1309"
+        },
+        {
+          "id": "ex-b-1310"
+        },
+        {
+          "id": "ex-b-1311"
+        },
+        {
+          "id": "ex-b-1312"
+        },
+        {
+          "id": "ex-b-1313"
+        },
+        {
+          "id": "ex-b-1314"
+        },
+        {
+          "id": "ex-b-1315"
+        },
+        {
+          "id": "ex-b-1316"
+        },
+        {
+          "id": "ex-b-1317"
+        },
+        {
+          "id": "ex-b-1318"
+        },
+        {
+          "id": "ex-b-1319"
+        },
+        {
+          "id": "ex-b-1320"
+        },
+        {
+          "id": "ex-b-1321"
+        },
+        {
+          "id": "ex-b-1322"
+        },
+        {
+          "id": "ex-b-1323"
+        },
+        {
+          "id": "ex-b-1324"
+        },
+        {
+          "id": "ex-b-1325"
+        },
+        {
+          "id": "ex-b-1326"
+        },
+        {
+          "id": "ex-b-1327"
+        },
+        {
+          "id": "ex-b-1328"
+        },
+        {
+          "id": "ex-b-1329"
+        },
+        {
+          "id": "ex-b-1330"
+        },
+        {
+          "id": "ex-b-1331"
+        },
+        {
+          "id": "ex-b-1332"
+        },
+        {
+          "id": "ex-b-1333"
+        },
+        {
+          "id": "ex-b-1334"
+        },
+        {
+          "id": "ex-b-1335"
+        },
+        {
+          "id": "ex-b-1336"
+        },
+        {
+          "id": "ex-b-1337"
+        },
+        {
+          "id": "ex-b-1338"
+        },
+        {
+          "id": "ex-b-1339"
+        },
+        {
+          "id": "ex-b-1340"
+        },
+        {
+          "id": "ex-b-1341"
+        },
+        {
+          "id": "ex-b-1342"
+        },
+        {
+          "id": "ex-b-1399"
+        },
+        {
+          "id": "ex-b-1400"
         }
       ],
       "bebris_video": null
