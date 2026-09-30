@@ -14,7 +14,7 @@ S07 = [
     ("The dub ruins the mood.", "Дубляж портит атмосферу.", None),
     ("I binge-watched the whole season.", "Я проглотил весь сезон за раз.", None),
     ("It's heavy on symbolism.", "Там много символизма.", None),
-    ("The ending divides fans.", "Финал делит фанатов.", None),
+    ("The ending divides fans.", "Финал разделил фанатов.", None),
     ("Nihilistic, yet oddly hopeful.", "Нигилистично, и всё же странно воодушевляюще.", None),
     ("The sound design is immersive.", "Звук полностью погружает.", None),
     ("It explores grief and memory.", "Он исследует горе и память.", None),
@@ -22,14 +22,14 @@ S07 = [
     ("Every episode stands alone.", "Каждая серия самостоятельна.", None),
     ("The premise is unsettling.", "Завязка тревожная.", None),
     ("Consequences feel permanent.", "Последствия ощущаются необратимыми.", None),
-    ("The protagonist isn't likable, just fascinating.", "Герой не приятный — просто завораживающий.", None),
+    ("The protagonist isn't likeable, just fascinating.", "Герой не приятный — просто завораживающий.", None),
     ("Watch it subbed, trust me.", "Смотри в субтитрах, поверь.", None),
     ("It lingers after the credits.", "Он остаётся с тобой после титров.", None),
-    ("Dystopia dressed as entertainment.", "Дистопия, наряженная в развлечения.", None),
+    ("Dystopia dressed as entertainment.", "Дистопия, замаскированная под развлечение.", None),
 ]
 
 S08 = [
-    ("Had I known, I would have called.", "Если бы я знал, я бы позвонил.", None),
+    ("Had I known about the strike, I'd have driven.", "Знай я о забастовке — поехал бы на машине.", None),
     ("Were it not for you, we'd be lost.", "Не будь тебя, мы бы заблудились.", None),
     ("Should you need help, just ask.", "Если понадобится помощь — просто спроси.", None),
     ("Had it not been for the delay, we'd have won.", "Не задержись мы, мы бы выиграли.", None),
@@ -107,7 +107,7 @@ S10 = [
     ("I binge-watched the whole season.", "Я проглотил весь сезон за раз.", None),
     ("Watch it subbed, trust me.", "Смотри в субтитрах, поверь.", None),
     ("It lingers after the credits.", "Он остаётся с тобой после титров.", None),
-    ("Had I known, I would have called.", "Если бы я знал, я бы позвонил.", None),
+    ("Had I known about the strike, I'd have driven.", "Знай я о забастовке — поехал бы на машине.", None),
     ("Were it not for you, we'd be lost.", "Не будь тебя, мы бы заблудились.", None),
     ("Should you need help, just ask.", "Если понадобится помощь — просто спроси.", None),
     ("Had I been there, it wouldn't have happened.", "Будь я там, этого бы не случилось.", None),
@@ -191,7 +191,7 @@ LESSONS_S2 = [
         "find_error": [("It's overated, honestly.", "It's overrated, honestly.")],
         "verb_tense": [
             ("The plot twist ___ hard. (ударил)", "форма", ["hit"]),
-            ("I ___ the whole season. (проглотил)", "форма", ["binge-watched"]),
+            ("I ___ the whole season. (проглотил)", "форма", ["binge-watched", "binged"]),
             ("The stakes ___ real. (ощущаются)", "форма", ["feel"]),
         ],
     },
@@ -202,7 +202,7 @@ LESSONS_S2 = [
         "rule_md": RULE_S08,
         "phrases": S08,
         "rule_cloze": [
-            ("___ I known, I would have called.", ["Had"]),
+            ("___ I known about the strike, I'd have driven.", ["Had"]),
             ("___ it not for you, we'd be lost.", ["Were"]),
             ("___ you need help, just ask.", ["Should"]),
         ],
@@ -213,9 +213,9 @@ LESSONS_S2 = [
         "quotes_topic": "conditionals-inv",
         "bebris_video": None,
         "answer_question": [("What would you do in my place?", "Were I in your shoes, I'd decline.")],
-        "find_error": [("Had I knew, I would have called.", "Had I known, I would have called.")],
+        "find_error": [("Had I knew about the strike, I'd have driven.", "Had I known about the strike, I'd have driven.")],
         "verb_tense": [
-            ("___ I known, I would have called.", "форма", ["Had"]),
+            ("___ I known about the strike, I'd have driven.", "форма", ["Had"]),
             ("Were it ___ for you, we'd be lost.", "форма", ["not"]),
             ("Should you ___ help, just ask.", "форма", ["need"]),
         ],
@@ -227,7 +227,7 @@ LESSONS_S2 = [
         "rule_md": RULE_S09,
         "phrases": S09,
         "rule_cloze": [
-            ("It is ___ that talks have collapsed.", ["reported"]),
+            ("It is ___ that talks have collapsed. (сообщается)", ["reported"]),
             ("He is said ___ be a genius.", ["to"]),
             ("Steps will be ___ to prevent this.", ["taken"]),
         ],
@@ -240,7 +240,7 @@ LESSONS_S2 = [
         "answer_question": [("What is happening about the problem?", "Measures are being taken.")],
         "find_error": [("It is believe that the house is haunted.", "It is believed that the house is haunted.")],
         "verb_tense": [
-            ("It ___ believed that the house is haunted.", "форма", ["is"]),
+            ("It ___ believed that the house is haunted. (настоящее)", "форма", ["is"]),
             ("The matter is ___ looked into.", "форма", ["being"]),
             ("The results are ___ be published in June.", "форма", ["to"]),
         ],
@@ -263,7 +263,7 @@ LESSONS_S2 = [
         "quotes_topic": "mixed",
         "bebris_video": None,
         "answer_question": [("Is the problem being solved?", "Measures are being taken.")],
-        "find_error": [("Had I knew, I would have called.", "Had I known, I would have called.")],
+        "find_error": [("Had I know about the strike, I'd have driven.", "Had I known about the strike, I'd have driven.")],
         "verb_tense": [
             ("Were it ___ for you, we'd be lost.", "форма", ["not"]),
             ("The results are ___ be published in June.", "форма", ["to"]),

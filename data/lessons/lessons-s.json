@@ -1901,7 +1901,7 @@
       "grammar_point": {
         "id": "gp-s-12",
         "title_ru": "Связки живой речи",
-        "rule_md": "**Дискурс-маркеры носителей.**\nСлова-связки, на которых держится живая речь:\n**You know what I mean.** — понимаешь, о чём я. **sort of / kind of** — как бы.\n**I mean…** — ну, то есть. **Actually…** — вообще-то. **Basically…** — по сути.\n**To be fair…** — справедливости ради. **At the end of the day…** — в конечном счёте.\n**Fair enough.** — справедливо. **No worries.** — без проблем. **Mind you…** — между прочим.\n**That said…** — тем не менее. **Apparently…** — судя по всему. **Like I said…** — как я уже говорил.\nНе переводятся дословно — ловятся на слух и вставляются в свою речь.",
+        "rule_md": "**Дискурс-маркеры носителей.**\nСлова-связки, на которых держится живая речь:\n**You know what I mean.** — понимаешь, о чём я. **sort of / kind of** — как бы.\n**I mean…** — ну, то есть. **Actually…** — вообще-то. **Basically…** — по сути.\n**To be fair…** — справедливости ради. **At the end of the day…** — в конечном счёте.\n**Works for me.** — меня устраивает. **No worries.** — без проблем. **Mind you…** — между прочим.\n**That said…** — тем не менее. **Apparently…** — судя по всему. **Like I said…** — как я уже говорил.\nНе переводятся дословно — ловятся на слух и вставляются в свою речь.",
         "phrase_ids": ["ph-s-0340", "ph-s-0341", "ph-s-0342", "ph-s-0343", "ph-s-0344"],
         "trap_id": null
       },
@@ -2069,7 +2069,7 @@
       "grammar_point": {
         "id": "gp-s-13",
         "title_ru": "actual ≠ актуальный; kids ≠ children",
-        "rule_md": "**False friends и стилистические регистры.**\nЛожные друзья (ЛТ-25): **actual** = фактический, реальный (актуальный = **topical**).\n**pretend** = притворяться (претендовать = **apply for**). **sympathy** = сочувствие (симпатия = **a soft spot**).\n**pretext** = отговорка (предлог = **preposition**).\nРегистры: детям и друзьям — **kids, help, need, start, Later!**;\nв документах и вежливо — **children, assist, require, commence, Regards**.\nСмысл один — окраска разная.",
+        "rule_md": "**False friends и стилистические регистры.**\nЛожные друзья (ЛТ-25): **actual** = фактический, реальный (актуальный = **topical**).\n**pretend** = притворяться (претендовать = **apply for**). **sympathy** = сочувствие (симпатия = **a soft spot**).\n**pretext** = отговорка (предлог = **preposition**).\n**complexion** = цвет лица (комплекция = **build/physique**). **brilliant** = отличный, блестящий (бриллиант = **diamond**).\n**accurate** = точный (аккуратный = **neat/careful**).\nРегистры: детям и друзьям — **kids, help, need, start, Later!**;\nв документах и вежливо — **children, assist, require, commence, Regards**.\nСмысл один — окраска разная.",
         "phrase_ids": ["ph-s-0370", "ph-s-0371", "ph-s-0372", "ph-s-0373", "ph-s-0374"],
         "trap_id": "trap-false-friends"
       },

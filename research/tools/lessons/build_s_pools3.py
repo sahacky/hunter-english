@@ -7,7 +7,7 @@ S11 = [
     ("The way I see it, it's freedom.", "Как я это вижу, это свобода.", None),
     ("If you ask me, it's overrated.", "Если спросишь меня, это переоценено.", None),
     ("To be honest, I haven't decided.", "Честно говоря, я не решил.", None),
-    ("It depends on the price.", "Зависит от цены.", None),
+    ("It depends on the season.", "Зависит от сезона.", None),
     ("Off the top of my head, ten.", "Навскидку — десять.", None),
     ("I'd say it's worth it.", "Я бы сказал, оно того стоит.", None),
     ("Frankly, I don't buy it.", "Откровенно говоря, я в это не верю.", None),
@@ -20,7 +20,7 @@ S11 = [
     ("Long story short, we stayed.", "Короче говоря, мы остались.", None),
     ("Speaking of which, did you book?", "Кстати, ты забронировал?", None),
     ("That reminds me of home.", "Это напоминает мне дом.", None),
-    ("Come to think of it, you're right.", "Подумав, ты прав.", None),
+    ("Come to think of it, you're right.", "Если подумать, ты прав.", None),
     ("It's hard to put into words.", "Трудно выразить словами.", None),
     ("I'm on the fence about it.", "Я пока сомневаюсь.", None),
     ("That's not how I'd put it.", "Я бы так не сказал.", None),
@@ -49,7 +49,7 @@ S12 = [
     ("You see, it's not about money.", "Понимаешь, дело не в деньгах.", None),
     ("I guess you're right.", "Наверное, ты прав.", None),
     ("No worries, take your time.", "Без проблем, не спеши.", None),
-    ("Fair enough.", "Справедливо.", None),
+    ("Works for me.", "Меня устраивает.", None),
     ("Mind you, the food was great.", "Между прочим, еда была отличная.", None),
     ("Anyway, where were we?", "В общем, на чём мы остановились?", None),
     ("By the way, I found a flat.", "Кстати, я нашёл квартиру.", None),
@@ -79,7 +79,7 @@ S13 = [
     ("Children should be in bed by nine.", "Детям следует спать к девяти.", None),
     ("Please assist the customer.", "Пожалуйста, помогите клиенту.", None),
     ("Can you help me real quick?", "Можешь быстро помочь?", None),
-    ("We require the original documents.", "Мы требуем оригиналы документов.", None),
+    ("We require the original documents.", "Нам необходимы оригиналы документов.", None),
     ("We need the originals, just scan them.", "Нам нужны оригиналы, просто отсканируй.", None),
     ("The concert commenced at eight.", "Концерт начался в восемь.", None),
     ("The show started late, as usual.", "Шоу началось поздно, как обычно.", None),
@@ -113,7 +113,7 @@ S14 = [
     ("It's sort of complicated.", "Это как бы сложно.", None),
     ("To be fair, we were warned.", "Справедливости ради, нас предупреждали.", None),
     ("No worries, take your time.", "Без проблем, не спеши.", None),
-    ("Fair enough.", "Справедливо.", None),
+    ("Works for me.", "Меня устраивает.", None),
     ("Anyway, where were we?", "В общем, на чём мы остановились?", None),
     ("All of a sudden, the lights died.", "Вдруг свет погас.", None),
     ("That said, the view is priceless.", "Тем не менее, вид бесценен.", None),
@@ -134,7 +134,7 @@ S14 = [
 S15 = [
     ("The scene takes place at dawn.", "Сцена происходит на рассвете.", None),
     ("It foreshadows the ending.", "Это предвещает финал.", None),
-    ("The pacing feels deliberate.", "Темп ощущается намеренным.", None),
+    ("The pacing feels deliberate.", "Темп ощущается выверенным.", None),
     ("It's open to interpretation.", "Это оставляет простор для трактовки.", None),
     ("The tension builds slowly.", "Напряжение нарастает медленно.", None),
     ("It mirrors the opening scene.", "Это зеркалит начальную сцену.", None),
@@ -150,8 +150,8 @@ S15 = [
     ("It's deliberately ambiguous.", "Это намеренно двусмысленно.", None),
     ("The stakes shift midway.", "Ставки меняются на середине.", None),
     ("Notice the recurring motif.", "Заметь повторяющийся мотив.", None),
-    ("The payoff lands in the last shot.", "Отдача приходит в последнем кадре.", None),
-    ("It rewards a second watch.", "Он вознаграждает второй просмотр.", None),
+    ("The payoff lands in the last shot.", "Кульминация приходится на последний кадр.", None),
+    ("It rewards a second watch.", "Он раскрывается при повторном просмотре.", None),
     ("The subtext is the story.", "Подтекст и есть история.", None),
     ("Every glance is loaded.", "Каждый взгляд многозначителен.", None),
     ("The ending reframes everything.", "Финал переосмысляет всё.", None),
@@ -171,7 +171,7 @@ RULE_S12 = """**Дискурс-маркеры носителей.**
 **You know what I mean.** — понимаешь, о чём я. **sort of / kind of** — как бы.
 **I mean…** — ну, то есть. **Actually…** — вообще-то. **Basically…** — по сути.
 **To be fair…** — справедливости ради. **At the end of the day…** — в конечном счёте.
-**Fair enough.** — справедливо. **No worries.** — без проблем. **Mind you…** — между прочим.
+**Works for me.** — меня устраивает. **No worries.** — без проблем. **Mind you…** — между прочим.
 **That said…** — тем не менее. **Apparently…** — судя по всему. **Like I said…** — как я уже говорил.
 Не переводятся дословно — ловятся на слух и вставляются в свою речь."""
 
@@ -179,6 +179,8 @@ RULE_S13 = """**False friends и стилистические регистры.*
 Ложные друзья (ЛТ-25): **actual** = фактический, реальный (актуальный = **topical**).
 **pretend** = притворяться (претендовать = **apply for**). **sympathy** = сочувствие (симпатия = **a soft spot**).
 **pretext** = отговорка (предлог = **preposition**).
+**complexion** = цвет лица (комплекция = **build/physique**). **brilliant** = отличный, блестящий (бриллиант = **diamond**).
+**accurate** = точный (аккуратный = **neat/careful**).
 Регистры: детям и друзьям — **kids, help, need, start, Later!**;
 в документах и вежливо — **children, assist, require, commence, Regards**.
 Смысл один — окраска разная."""
@@ -206,7 +208,7 @@ LESSONS_S3 = [
         "rule_md": RULE_S11,
         "phrases": S11,
         "rule_cloze": [
-            ("___ a tough one.", ["That's"]),
+            ("___ a tough one.", ["That's", "It's"]),
             ("I'm on the ___ about it.", ["fence"]),
             ("In a ___, it's chaos.", ["nutshell"]),
         ],
@@ -226,7 +228,7 @@ LESSONS_S3 = [
         "verb_tense": [
             ("That ___ me of home. (напоминает)", "форма", ["reminds"]),
             ("I was ___ to that. (шёл к этому)", "форма", ["getting"]),
-            ("What it ___ down to is time.", "форма", ["boils"]),
+            ("What it ___ down to is time.", "форма", ["boils", "comes"]),
         ],
     },
     {
@@ -236,8 +238,8 @@ LESSONS_S3 = [
         "rule_md": RULE_S12,
         "phrases": S12,
         "rule_cloze": [
-            ("It's ___ of complicated.", ["sort"]),
-            ("___, that works better.", ["Actually"]),
+            ("It's ___ of complicated.", ["sort", "kind"]),
+            ("___, that works better.", ["Actually", "Honestly"]),
             ("If that ___ sense.", ["makes"]),
         ],
         "quotes": [("q-memy-0004", "fellow"), ("q-memy-0001", "fine")],
@@ -247,10 +249,10 @@ LESSONS_S3 = [
         "quotes_topic": "discourse",
         "bebris_video": None,
         "answer_question": [("Can I send the file tomorrow?", "No worries, take your time.")],
-        "find_error": [("At the end of the day its a job.", "At the end of the day, it's a job.")],
+        "find_error": [("In other word, we're stuck.", "In other words, we're stuck.")],
         "verb_tense": [
             ("I ___ of expected it. (полная форма kinda)", "форма", ["kind"]),
-            ("All of a sudden, the lights ___. (погасли)", "форма", ["died"]),
+            ("All of a sudden, the lights ___. (погасли)", "форма", ["died", "went out"]),
             ("As I ___ saying, the bus is faster.", "форма", ["was"]),
         ],
     },
@@ -261,7 +263,7 @@ LESSONS_S3 = [
         "rule_md": RULE_S13,
         "phrases": S13,
         "rule_cloze": [
-            ("This topic is very ___.", ["topical"]),
+            ("This topic is very ___. (актуальна)", ["topical", "relevant"]),
             ("He ___ to be busy.", ["pretends"]),
             ("I ___ with you. (сочувствую)", ["sympathise"]),
         ],
@@ -272,10 +274,10 @@ LESSONS_S3 = [
         "quotes_topic": None,
         "bebris_video": None,
         "answer_question": [("Was it a real emergency?", "It was an actual emergency.")],
-        "find_error": [("This topic is very actual.", "This topic is very topical.")],
+        "find_error": [("I sympathise for you.", "I sympathise with you.")],
         "verb_tense": [
             ("The actual cost ___ lower. (была)", "форма", ["was"]),
-            ("She ___ for a visa. (подала заявку)", "форма", ["applied"]),
+            ("She ___ for a visa. (подала заявку)", "форма", ["applied", "has applied"]),
             ("The concert ___ at eight. (начался, формально)", "форма", ["commenced"]),
         ],
     },
@@ -287,8 +289,8 @@ LESSONS_S3 = [
         "phrases": S14,
         "rule_cloze": [
             ("I'm on the ___ about it.", ["fence"]),
-            ("___ enough.", ["Fair"]),
-            ("This topic is very ___.", ["topical"]),
+            ("Basically, nothing ___.", ["changed"]),
+            ("This topic is very ___. (актуальна)", ["topical", "relevant"]),
         ],
         "quotes": [("q-breaking-bad-0002", "danger"), ("q-jujutsu-kaisen-0015", "hero")],
         "trap_id": "trap-false-friends",
@@ -300,9 +302,9 @@ LESSONS_S3 = [
         "answer_question": [("So, is the deal worth it?", "I'd say it's worth it.")],
         "find_error": [("He pretend to be busy.", "He pretends to be busy.")],
         "verb_tense": [
-            ("All of a sudden, the lights ___. (погасли)", "форма", ["died"]),
+            ("All of a sudden, the lights ___. (погасли)", "форма", ["died", "went out"]),
             ("The actual cost ___ lower. (была)", "форма", ["was"]),
-            ("She ___ for a visa. (подала заявку)", "форма", ["applied"]),
+            ("She ___ for a visa. (подала заявку)", "форма", ["applied", "has applied"]),
         ],
     },
     {
@@ -336,9 +338,9 @@ LESSONS_S3 = [
         "answer_question": [("Why rewatch it?", "It rewards a second watch.")],
         "find_error": [("It's open to interpretations.", "It's open to interpretation.")],
         "verb_tense": [
-            ("The scene ___ place at dawn.", "форма", ["takes"]),
-            ("The tension ___ slowly.", "форма", ["builds"]),
-            ("It ___ the opening scene.", "форма", ["mirrors"]),
+            ("The scene ___ place at dawn. (настоящее)", "форма", ["takes"]),
+            ("The tension ___ slowly. (настоящее)", "форма", ["builds"]),
+            ("It ___ the opening scene. (настоящее)", "форма", ["mirrors"]),
         ],
     },
 ]

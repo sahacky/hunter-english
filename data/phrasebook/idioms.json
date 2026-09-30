@@ -40,8 +40,8 @@
         },
         {
           "role": "local",
-          "text_en": "Keep an eye on the gate board. It changes around the corner.",
-          "translation_ru": "Следите за табло. Оно вот-вот обновится."
+          "text_en": "Keep an eye on the gate board. It can change at any minute.",
+          "translation_ru": "Следите за табло. Оно может измениться в любую минуту."
         },
         {
           "role": "traveler",

@@ -4,20 +4,20 @@
   "items": [
     {
       "id": "ph-s-0001",
-      "text_en": "Not only did he apologise, but he also paid.",
-      "translation_ru": "Он не только извинился, но и заплатил.",
+      "text_en": "Not only did we lose the map, but we also lost the tent.",
+      "translation_ru": "Мы не только потеряли карту, но и палатку.",
       "grammar_point_id": "gp-s-01",
-      "variants": ["Not only did he apologise, but he also paid."],
+      "variants": ["Not only did we lose the map, but we also lost the tent."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-s-0001.opus"
       }
     },
     {
       "id": "ph-s-0002",
-      "text_en": "No sooner had we left than it started to rain.",
-      "translation_ru": "Не успели мы выйти, как начался дождь.",
+      "text_en": "No sooner had the bell rung than the students vanished.",
+      "translation_ru": "Не успел прозвенеть звонок, как ученики исчезли.",
       "grammar_point_id": "gp-s-01",
-      "variants": ["No sooner had we left than it started to rain."],
+      "variants": ["No sooner had the bell rung than the students vanished."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-s-0002.opus"
       }
@@ -64,10 +64,10 @@
     },
     {
       "id": "ph-s-0007",
-      "text_en": "Little did they know what was coming.",
-      "translation_ru": "Они и не догадывались, что приближается.",
+      "text_en": "Little did she suspect the surprise party.",
+      "translation_ru": "Она и не подозревала о вечеринке-сюрпризе.",
       "grammar_point_id": "gp-s-01",
-      "variants": ["Little did they know what was coming."],
+      "variants": ["Little did she suspect the surprise party."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-s-0007.opus"
       }
@@ -105,7 +105,7 @@
     {
       "id": "ph-s-0011",
       "text_en": "Nor do I believe a word of it.",
-      "translation_ru": "И я не верю в это ни на слово.",
+      "translation_ru": "И я в это ни за что не поверю.",
       "grammar_point_id": "gp-s-01",
       "variants": ["Nor do I believe a word of it."],
       "audio": {
@@ -215,7 +215,7 @@
     {
       "id": "ph-s-0022",
       "text_en": "At no point did she lose her temper.",
-      "translation_ru": "Ни разу за всё это она не потеряла самообладание.",
+      "translation_ru": "Она ни разу не потеряла самообладание.",
       "grammar_point_id": "gp-s-01",
       "variants": ["At no point did she lose her temper."],
       "audio": {
@@ -295,7 +295,7 @@
     {
       "id": "ph-s-0030",
       "text_en": "Never have I felt more alive.",
-      "translation_ru": "Никогда я не чувствовал себя более живым.",
+      "translation_ru": "Ещё никогда я не чувствовал себя настолько живым.",
       "grammar_point_id": "gp-s-01",
       "variants": ["Never have I felt more alive."],
       "audio": {
@@ -535,7 +535,7 @@
     {
       "id": "ph-s-0054",
       "text_en": "It was a once-in-a-lifetime trip.",
-      "translation_ru": "Это была поездка раз в жизни.",
+      "translation_ru": "Это была поездка всей жизни.",
       "grammar_point_id": "gp-s-02",
       "variants": ["It was a once-in-a-lifetime trip."],
       "audio": {
@@ -575,7 +575,7 @@
     {
       "id": "ph-s-0058",
       "text_en": "Our plans hit a snag at the border.",
-      "translation_ru": "Наши планы застряли на границе.",
+      "translation_ru": "На границе наши планы дали сбой.",
       "grammar_point_id": "gp-s-02",
       "variants": ["Our plans hit a snag at the border."],
       "audio": {
@@ -664,10 +664,10 @@
     },
     {
       "id": "ph-s-0067",
-      "text_en": "Better safe than sorry.",
-      "translation_ru": "Лучше перестраховаться.",
+      "text_en": "When in doubt, book ahead.",
+      "translation_ru": "Сомневаешься — бронируй заранее.",
       "grammar_point_id": "gp-s-02",
-      "variants": ["Better safe than sorry."],
+      "variants": ["When in doubt, book ahead."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-s-0067.opus"
       }
@@ -734,10 +734,10 @@
     },
     {
       "id": "ph-s-0074",
-      "text_en": "I should have known better.",
-      "translation_ru": "Мне следовало знать лучше.",
+      "text_en": "We should have read the reviews.",
+      "translation_ru": "Нам следовало почитать отзывы.",
       "grammar_point_id": "gp-s-03",
-      "variants": ["I should have known better."],
+      "variants": ["We should have read the reviews."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-s-0074.opus"
       }
@@ -995,7 +995,7 @@
     {
       "id": "ph-s-0100",
       "text_en": "You had better believe it.",
-      "translation_ru": "Ты лучше поверь этому.",
+      "translation_ru": "Можешь не сомневаться.",
       "grammar_point_id": "gp-s-03",
       "variants": ["You had better believe it."],
       "audio": {
@@ -1005,7 +1005,7 @@
     {
       "id": "ph-s-0101",
       "text_en": "None of it can have been true.",
-      "translation_ru": "Ни одно из этого не могло быть правдой.",
+      "translation_ru": "Ничто из этого не могло быть правдой.",
       "grammar_point_id": "gp-s-03",
       "variants": ["None of it can have been true."],
       "audio": {
@@ -1295,7 +1295,7 @@
     {
       "id": "ph-s-0130",
       "text_en": "In contrast, our rivals cut corners.",
-      "translation_ru": "В противоположность, конкуренты экономят на качестве.",
+      "translation_ru": "Напротив, конкуренты экономят на качестве.",
       "grammar_point_id": "gp-s-04",
       "variants": ["In contrast, our rivals cut corners."],
       "audio": {
@@ -1535,7 +1535,7 @@
     {
       "id": "ph-s-0154",
       "text_en": "Whatcha doing?",
-      "translation_ru": "Чего делаешь?",
+      "translation_ru": "Чем занимаешься?",
       "grammar_point_id": "gp-s-05",
       "variants": ["Whatcha doing?"],
       "audio": {
@@ -1725,7 +1725,7 @@
     {
       "id": "ph-s-0173",
       "text_en": "Never have I felt more alive.",
-      "translation_ru": "Никогда я не чувствовал себя более живым.",
+      "translation_ru": "Ещё никогда я не чувствовал себя настолько живым.",
       "grammar_point_id": "gp-s-06",
       "variants": ["Never have I felt more alive."],
       "audio": {
@@ -1774,10 +1774,10 @@
     },
     {
       "id": "ph-s-0178",
-      "text_en": "Better safe than sorry.",
-      "translation_ru": "Лучше перестраховаться.",
+      "text_en": "When in doubt, book ahead.",
+      "translation_ru": "Сомневаешься — бронируй заранее.",
       "grammar_point_id": "gp-s-06",
-      "variants": ["Better safe than sorry."],
+      "variants": ["When in doubt, book ahead."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-s-0178.opus"
       }
@@ -1785,7 +1785,7 @@
     {
       "id": "ph-s-0179",
       "text_en": "Our plans hit a snag at the border.",
-      "translation_ru": "Наши планы застряли на границе.",
+      "translation_ru": "На границе наши планы дали сбой.",
       "grammar_point_id": "gp-s-06",
       "variants": ["Our plans hit a snag at the border."],
       "audio": {
@@ -2075,7 +2075,7 @@
     {
       "id": "ph-s-0208",
       "text_en": "The ending divides fans.",
-      "translation_ru": "Финал делит фанатов.",
+      "translation_ru": "Финал разделил фанатов.",
       "grammar_point_id": "gp-s-07",
       "variants": ["The ending divides fans."],
       "audio": {
@@ -2154,10 +2154,10 @@
     },
     {
       "id": "ph-s-0216",
-      "text_en": "The protagonist isn't likable, just fascinating.",
+      "text_en": "The protagonist isn't likeable, just fascinating.",
       "translation_ru": "Герой не приятный — просто завораживающий.",
       "grammar_point_id": "gp-s-07",
-      "variants": ["The protagonist isn't likable, just fascinating."],
+      "variants": ["The protagonist isn't likeable, just fascinating."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-s-0216.opus"
       }
@@ -2185,7 +2185,7 @@
     {
       "id": "ph-s-0219",
       "text_en": "Dystopia dressed as entertainment.",
-      "translation_ru": "Дистопия, наряженная в развлечения.",
+      "translation_ru": "Дистопия, замаскированная под развлечение.",
       "grammar_point_id": "gp-s-07",
       "variants": ["Dystopia dressed as entertainment."],
       "audio": {
@@ -2194,10 +2194,10 @@
     },
     {
       "id": "ph-s-0220",
-      "text_en": "Had I known, I would have called.",
-      "translation_ru": "Если бы я знал, я бы позвонил.",
+      "text_en": "Had I known about the strike, I'd have driven.",
+      "translation_ru": "Знай я о забастовке — поехал бы на машине.",
       "grammar_point_id": "gp-s-08",
-      "variants": ["Had I known, I would have called."],
+      "variants": ["Had I known about the strike, I'd have driven."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-s-0220.opus"
       }
@@ -2904,10 +2904,10 @@
     },
     {
       "id": "ph-s-0291",
-      "text_en": "Had I known, I would have called.",
-      "translation_ru": "Если бы я знал, я бы позвонил.",
+      "text_en": "Had I known about the strike, I'd have driven.",
+      "translation_ru": "Знай я о забастовке — поехал бы на машине.",
       "grammar_point_id": "gp-s-10",
-      "variants": ["Had I known, I would have called."],
+      "variants": ["Had I known about the strike, I'd have driven."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-s-0291.opus"
       }
@@ -3144,10 +3144,10 @@
     },
     {
       "id": "ph-s-0315",
-      "text_en": "It depends on the price.",
-      "translation_ru": "Зависит от цены.",
+      "text_en": "It depends on the season.",
+      "translation_ru": "Зависит от сезона.",
       "grammar_point_id": "gp-s-11",
-      "variants": ["It depends on the price."],
+      "variants": ["It depends on the season."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-s-0315.opus"
       }
@@ -3275,7 +3275,7 @@
     {
       "id": "ph-s-0328",
       "text_en": "Come to think of it, you're right.",
-      "translation_ru": "Подумав, ты прав.",
+      "translation_ru": "Если подумать, ты прав.",
       "grammar_point_id": "gp-s-11",
       "variants": ["Come to think of it, you're right."],
       "audio": {
@@ -3534,10 +3534,10 @@
     },
     {
       "id": "ph-s-0354",
-      "text_en": "Fair enough.",
-      "translation_ru": "Справедливо.",
+      "text_en": "Works for me.",
+      "translation_ru": "Меня устраивает.",
       "grammar_point_id": "gp-s-12",
-      "variants": ["Fair enough."],
+      "variants": ["Works for me."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-s-0354.opus"
       }
@@ -3805,7 +3805,7 @@
     {
       "id": "ph-s-0381",
       "text_en": "We require the original documents.",
-      "translation_ru": "Мы требуем оригиналы документов.",
+      "translation_ru": "Нам необходимы оригиналы документов.",
       "grammar_point_id": "gp-s-13",
       "variants": ["We require the original documents."],
       "audio": {
@@ -4114,10 +4114,10 @@
     },
     {
       "id": "ph-s-0412",
-      "text_en": "Fair enough.",
-      "translation_ru": "Справедливо.",
+      "text_en": "Works for me.",
+      "translation_ru": "Меня устраивает.",
       "grammar_point_id": "gp-s-14",
-      "variants": ["Fair enough."],
+      "variants": ["Works for me."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-s-0412.opus"
       }
@@ -4295,7 +4295,7 @@
     {
       "id": "ph-s-0430",
       "text_en": "The pacing feels deliberate.",
-      "translation_ru": "Темп ощущается намеренным.",
+      "translation_ru": "Темп ощущается выверенным.",
       "grammar_point_id": "gp-s-15",
       "variants": ["The pacing feels deliberate."],
       "audio": {
@@ -4455,7 +4455,7 @@
     {
       "id": "ph-s-0446",
       "text_en": "The payoff lands in the last shot.",
-      "translation_ru": "Отдача приходит в последнем кадре.",
+      "translation_ru": "Кульминация приходится на последний кадр.",
       "grammar_point_id": "gp-s-15",
       "variants": ["The payoff lands in the last shot."],
       "audio": {
@@ -4465,7 +4465,7 @@
     {
       "id": "ph-s-0447",
       "text_en": "It rewards a second watch.",
-      "translation_ru": "Он вознаграждает второй просмотр.",
+      "translation_ru": "Он раскрывается при повторном просмотре.",
       "grammar_point_id": "gp-s-15",
       "variants": ["It rewards a second watch."],
       "audio": {
