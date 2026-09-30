@@ -403,3 +403,16 @@ describe('параметры FSRS — specs/03 §2 (srs://ts-fsrs)', () => {
     expect(params.enable_short_term).toBe(true)
   })
 })
+
+// M19: formatInterval — годы (строка 147)
+describe('formatInterval: человекочитаемые интервалы', () => {
+  it('минуты/часы/дни/годы', async () => {
+    const { formatInterval } = await import('./scheduler')
+    const from = new Date('2026-09-30T12:00:00Z')
+    const at = (minutes: number) => new Date(from.getTime() + minutes * 60_000)
+    expect(formatInterval(from, at(5))).toMatch(/м/)
+    expect(formatInterval(from, at(90))).toMatch(/ч/)
+    expect(formatInterval(from, at(60 * 24 * 3))).toMatch(/д/)
+    expect(formatInterval(from, at(60 * 24 * 400))).toMatch(/г/)
+  })
+})

@@ -117,3 +117,27 @@ describe('awardLessonFinish', () => {
     expect(result.awarded).toBe(10) // floor(21/2)
   })
 })
+
+// M19: бонус-слоты квеста (awardXp bonus / closeStudyDay awards)
+describe('award: бонус-слоты (M19)', () => {
+  it('awardXp закрывает бонус-слот по счётчику bonus', async () => {
+    const state = createQuestDay(dayStart(NOW).toISOString(), 20)
+    await repo.putQuestDay(state)
+    const result = await awardXp(repo, NOW, 1, 'dictation', { bonus: state.bonus.target })
+    expect(result.quest.bonusAwarded).toBe(true)
+  })
+
+  it('closeStudyDay засчитывает день, когда все слоты закрыты', async () => {
+    const state = createQuestDay(dayStart(NOW).toISOString(), 20)
+    await repo.putQuestDay({
+      ...state,
+      slots: {
+        reviews: { done: state.slots.reviews.target, target: state.slots.reviews.target },
+        lesson: { done: state.slots.lesson.target, target: state.slots.lesson.target },
+        dictation: { done: state.slots.dictation.target, target: state.slots.dictation.target },
+      },
+    })
+    const result = await closeStudyDay(repo, NOW)
+    expect(result.stats.streak_current).toBeGreaterThanOrEqual(1)
+  })
+})

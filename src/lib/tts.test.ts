@@ -177,3 +177,19 @@ describe('tts шлюз (plan://M6#6.1)', () => {
     expect(speakFn).not.toHaveBeenCalled()
   })
 })
+
+// M19: хвосты tts (нет API → false, смена голосов сбрасывает кэш)
+describe('tts: хвосты (M19)', () => {
+  it('без speechSynthesis speak — фолбэк false', () => {
+    vi.unstubAllGlobals()
+    expect(speak('hello')).toBe(false)
+  })
+
+  it('onvoiceschanged сбрасывает кэш голоса без крэша', () => {
+    const { api } = mockSpeechApi([{ lang: 'en-GB', name: 'Cori' }])
+    mockUtterance()
+    expect(speak('hello')).toBe(true)
+    ;(api as unknown as { onvoiceschanged: (() => void) | null }).onvoiceschanged?.()
+    expect(speak('hello')).toBe(true)
+  })
+})

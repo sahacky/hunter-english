@@ -1,6 +1,6 @@
 // Implements: plan://M7#7.5–7.6 — smoke-тесты экранов Рангов и Врат
 import 'fake-indexeddb/auto'
-import { beforeEach, describe, expect, it } from 'vitest'
+import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { fireEvent, render, screen, waitFor } from '@testing-library/react'
 import { HashRouter, Route, Routes } from 'react-router-dom'
 import '../i18n'
@@ -142,13 +142,24 @@ describe('GatesScreen: экзамен → result → пересдача слаб
         fireEvent.click(retry)
         continue
       }
+      // речь «поддержана» (мок): два неудачных слушания открывают самопроверку
+      const listeningNow = screen.queryByText(/Слушаю/)
+      if (listeningNow) {
+        await new Promise((resolve) => setTimeout(resolve, 10)) // мок завершает слушание
+        continue
+      }
+      const say = screen.queryByRole('button', { name: /Скажи/ })
+      if (say) {
+        fireEvent.click(say)
+        continue
+      }
       const input = document.querySelector<HTMLInputElement>('.lesson-input:not([disabled])')
       if (input) {
         fireEvent.change(input, { target: { value: 'zzz' } })
         fireEvent.submit(input.closest('form')!)
         continue
       }
-      throw new Error(`экзамен завис на шаге ${step}: нет интерактивных элементов`)
+      throw new Error(`экзамен завис ${step}: ${document.body.textContent?.slice(0, 220)}`)
     }
 
     // result: вердикт, оценки секций, сумма, попытка сохранена
@@ -168,4 +179,47 @@ describe('GatesScreen: экзамен → result → пересдача слаб
     fireEvent.click(screen.getByRole('button', { name: 'Пересдать слабые секции' }))
     expect(await screen.findByText(/секция 1 из 4/, {}, { timeout: 8000 })).toBeInTheDocument()
   }, 45000)
+})
+
+// M19: пройденный экзамен → rankUp; dispute в экзамене; чеклист пройденных уроков
+const gatesSpeech = vi.hoisted(() => ({ heard: null as string | null }))
+vi.mock('../lib/speech', () => ({
+  isSpeechSupported: () => true,
+  listenOnce: async () => {
+    if (gatesSpeech.heard === null) throw new Error('no-speech')
+    return gatesSpeech.heard
+  },
+  cancelListening: vi.fn(),
+}))
+vi.mock('../lib/tts', () => ({ speak: vi.fn(), stopSpeak: vi.fn(), setDefaultRate: vi.fn() }))
+
+describe('GatesScreen: успешный экзамен (M19)', () => {
+  it('чеклист intro считает пройденные уроки ранга', async () => {
+    await repo.putLessonProgress({
+      lesson_id: 'les-e-01',
+      status: 'completed',
+      score: 100,
+      checkpoint: {
+        passIndex: 0,
+        stepIndex: 7,
+        scores: [],
+        srsEnqueued: [],
+        passesDone: 1,
+        results: {},
+      },
+      completed_at: new Date().toISOString(),
+      updated_at: new Date().toISOString(),
+    })
+    window.location.hash = '#/gates/E-D'
+    render(
+      <HashRouter>
+        <Routes>
+          <Route path="/gates/:id" element={<GatesScreen repo={repo} />} />
+        </Routes>
+      </HashRouter>,
+    )
+    expect(
+      await screen.findByText(/Уроки ранга E: 1 \/ 24/, {}, { timeout: 8000 }),
+    ).toBeInTheDocument()
+  })
 })

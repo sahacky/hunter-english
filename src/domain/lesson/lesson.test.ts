@@ -316,3 +316,42 @@ describe('findStep', () => {
     expect(findStep(STEPS, 9)).toBeNull()
   })
 })
+
+// M19: хвосты runner
+describe('runner: хвосты (M19)', () => {
+  it('recordAnswer: спор возвращает исход, повторная ошибка снимает first-try', async () => {
+    const { recordAnswer } = await import('./runner')
+    const steps = [{ index: 1, kind: 'warmup' as const, exerciseIds: ['e1'] }]
+    type Cp = Parameters<typeof recordAnswer>[0]
+    let cp: Cp = {
+      passIndex: 0,
+      stepIndex: 1,
+      scores: [],
+      srsEnqueued: [],
+      passesDone: 0,
+      results: {},
+    } as Cp
+    cp = recordAnswer(cp, steps, 'e1', 'correct', 1)
+    cp = recordAnswer(cp, steps, 'e1', 'skip', 2) // был верным → стал ошибкой
+    const score = (cp as { scores: { stepIndex: number; firstTryCorrect: number }[] }).scores[0]
+    expect(score.firstTryCorrect).toBe(0)
+  })
+
+  it('advanceStep с последнего шага → null', async () => {
+    const { advanceStep } = await import('./runner')
+    const steps = [{ index: 7, kind: 'deck' as const, exerciseIds: [] }]
+    expect(
+      advanceStep(
+        {
+          passIndex: 0,
+          stepIndex: 7,
+          scores: [],
+          srsEnqueued: [],
+          passesDone: 0,
+          results: {},
+        } as Parameters<typeof advanceStep>[0],
+        steps,
+      ),
+    ).toBeNull()
+  })
+})

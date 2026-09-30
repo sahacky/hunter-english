@@ -808,6 +808,8 @@ function ExerciseRouter({
     case 'answer_question':
       return <VoiceExercise mode="answer" {...common} />
     default:
+      // типы перечислены схемой exercise (specs/05 §3) — default недостижим
+      /* istanbul ignore next */
       return (
         <div className="lesson-exercise">
           <p className="dim">{t('lesson.unknownExercise', { type: exercise.type })}</p>

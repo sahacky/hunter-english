@@ -295,6 +295,8 @@ function localKey(table: string, row: LwwRow): string {
     case 'item_progress':
       return `${row.item_id}:${row.kind}`
     default:
+      // недостижимо: mergeLww вызывается только для LWW-таблиц (защитный default)
+      /* istanbul ignore next */
       return ''
   }
 }
@@ -308,6 +310,8 @@ async function readOwnerRows(database: HunterDb, table: string, owner: string): 
     case 'item_progress':
       return (await database.item_progress.where('user_id').equals(owner).toArray()) as never
     default:
+      // недостижимо: readOwnerRows вызывается только для LWW-таблиц (защитный default)
+      /* istanbul ignore next */
       return []
   }
 }

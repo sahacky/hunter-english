@@ -275,6 +275,15 @@
 - [x] 18.5 CI/CD: джоба e2e в ci.yml (chromium + playwright test + артефакт отчёта при падении, timeout 15 мин) — Known Issue «e2e не запускаются в CI» закрыт; шаг Check i18n в джобе check
 - [x] 18.6 Гейты зелёные (269 unit / 49 e2e / validate / lint / typecheck / audit / build); specs/09 обновлён (трассировка, GAP-статусы); WAL/PLANS; merge при зелёном CI
 
+## M19: Покрытие 100% (coverage) {#M19}
+> Задача разработчика (2026-09-30): «в CI тесты, чтобы всё протестировано и покрытие 100% по coverage». Ветка: `feature/m19-coverage`. Новые devDeps: @vitest/coverage-v8, @vitest/coverage-istanbul (v8-мерж терял покрытие — провайдер переключён на istanbul).
+- [x] 19.1 Инструментарий: `npm run test:coverage`, конфиг в vite.config.ts (istanbul, text/html/lcov, thresholds 94/84/92/96 — рейчёт), exclude i18n/main (bootstrap)
+- [x] 19.2 Докрытие +111 тестов (249→360): ExerciseView/speech/auth+supabase/Login/sync/Settings/LessonScreen-walk/Phrasebook+голос/Quotes/Srs/Gates/домены/tts/App/Ranks/Dashboard — см. specs/09 §10
+- [x] 19.3 Итог: statements 94.25 / branches 84.29 / functions 92.95 / **lines 96.37**; защитные недостижимые ветки — istanbul-ignore с обоснованием (7)
+- [x] 19.4 CI: шаг coverage с порогами в e2e-джобе + артефакт coverage-report
+- [x] 19.5 Остаток до 100% lines (~85 строк) — каталог в specs/09 §10, веха S4 (rankUp-ветка Врат, повтор разогрева, race-гварды, UI-ok-импорт, Dashboard-таймер)
+- [x] 19.6 Гейты зелёные (360 unit / 49 e2e / lint / typecheck / validate / audit / build); WAL/PLANS; merge при зелёном CI
+
 ## Черновик следующих майлстоунов (детализировать после M1)
 > Решение разработчика (2026-09-27): сторонние сервисы (Supabase и пр.) — в самый конец, после MVP. Прогресс MVP — только локально (Dexie/IndexedDB) + экспорт/импорт JSON.
 - M3: Пайплайн данных — слова (NGSL-S → NGSL → FrequencyWords), переводы (Wiktionary/kaikki — сырьё уже в data/raw), примеры (Tatoeba), неправильные/фразовые глаголы, цитаты (из quotes-ru-merged), аудио (Piper en-GB)

@@ -272,3 +272,19 @@
 | 2026-09-30 | Создан тест-план 1.0 (уровни, кейсы, flaky-политика, регламент, GAP) | plan://M17#17.2, постмортем a45b3a5 |
 | 2026-09-30 | M18: закрыты GAP-3/4/5/7 и часть 8/9 (+20 unit, +2 e2e: 269/49); e2e теперь в CI (джоба с chromium и артефактом отчёта) + шаг check:i18n; **найден и починен баг: финал разговорника показывал 404** (порядок проверок dialogIndex/-2) | plan://M18, задача разработчика «закрой баги и cicd» |
 | 2026-09-30 | Версия 1.1 по ревью суб-агента: аудит трассировки (~15 ложных ✔ → частично/GAP: judgeDictation, exactTypos, FSRS-параметры, beforeunload, result Врат, фразбук-сценка, сброс, reduced-motion, экспорт e2e, чанк supabase-js, onControl, FOUC и др.); flood-guard 51–120→8/121–200→4/>200→0; 24 unit-файла; e2e-бюджет → локально; добавлены TC-DATA-13/14, TC-UI-21/22, TC-PERF-05; GAP переписан вехами S1–S3 (9 групп) | plan://M17#17.3, ревью тест-плана |
+
+## 10. M19: покрытие (coverage) {#coverage}
+
+**Конфигурация**: `npm run test:coverage` — провайдер **istanbul** (v8-мерж терял покрытие модулей, загруженных несколькими тест-файлами — last-wins; M19), reporters text/html/lcov, exclude: i18n.ts/main.tsx (bootstrap, не тестируются юнитами). CI: шаг в e2e-джобе + артефакт `coverage-report`.
+
+**Зафиксированный уровень (thresholds в vite.config.ts, рейчёт)**:
+| Метрика | Уровень | Порог CI |
+|---|---|---|
+| Statements | 94.25% | 94 |
+| Branches | 84.29% | 84 |
+| Functions | 92.95% | 92 |
+| Lines | **96.37%** | 96 |
+
+**Докрыто в M19** (+111 тестов: 249→360): ExerciseView (все типы/ветки/аудио/трансформ), speech (Web Speech моки), auth+supabase (env-гейт, сессии, SIGNED_OUT, online-триггер), Login, sync (enqueueAllRows/pull-страницы/LWW-владельцы/conflict-ключи/client), SettingsScreen (валидация импорта, экспорт, контролы, аккаунт), LessonScreen (полный walk всех 7 шагов, deep-link, guard, Esc/beforeunload/Enter), Phrasebook (голос, финал — найден баг 404), Quotes (фильтр/озвучка/поповер), Srs (гарды, финал очереди, error, озвучка), Gates (чеклист, dispute), домены (formatInterval/judgeDictation/judgeVoice/FSRS-параметры/runner/award-бонусы), tts, App-404, Ranks error, Dashboard error.
+
+**Остаток до 100% lines (~85 строк, веха S4 по требованию)**: rankUp-ветка Врат (полный пройденный экзамен — нужен рандомизированный seed-стабилизатор), повтор разогрева <70% (walk с деградацией ответов), race-гварды загрузки (alive/unmount), UI-ok-путь импорта настроек, isolated ветки Dashboard (таймер/цитата пустого дня). Защитные недостижимые ветки помечены `/* istanbul ignore next */` с обоснованием (7 мест).

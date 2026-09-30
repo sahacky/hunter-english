@@ -24,3 +24,16 @@ describe('App', () => {
     expect(screen.getByRole('navigation', { name: 'Основная навигация' })).toBeInTheDocument()
   })
 })
+
+// Implements: plan://M19 — App: 404-маршрут (Placeholder)
+describe('App: маршруты', () => {
+  it('неизвестный путь → 404 через Placeholder', async () => {
+    window.location.hash = '#/no-such-page'
+    render(
+      <HashRouter>
+        <App />
+      </HashRouter>,
+    )
+    expect(await screen.findByText('Страница не найдена')).toBeInTheDocument()
+  })
+})

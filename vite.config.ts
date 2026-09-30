@@ -58,5 +58,20 @@ export default defineConfig({
     globals: true,
     setupFiles: './src/test/setup.ts',
     exclude: ['**/node_modules/**', '**/dist/**', 'e2e/**'],
+    coverage: {
+      // istanbul: корректный мерж счётчиков между воркерами (v8 last-wins терял
+      // покрытие модулей, загруженных в нескольких тест-файлах — M19)
+      provider: 'istanbul',
+      reporter: ['text', 'html', 'lcov'],
+      include: ['src/**'],
+      exclude: ['src/test/**', 'src/i18n.ts', 'src/main.tsx'],
+      // рейчёт: порог = зафиксированный уровень M19; повышать при добавлении тестов
+      thresholds: {
+        statements: 94,
+        branches: 84,
+        functions: 92,
+        lines: 96,
+      },
+    },
   },
 })

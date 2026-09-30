@@ -133,7 +133,7 @@ describe('mergeLww (specs/06 §3)', () => {
 describe('flush с моком (поведение при ошибке/успехе)', () => {
   it('успех: очередь пустеет, upsert/insert по типам таблиц', async () => {
     await seedQueue()
-    const calls: { table: string; op: string; rows: unknown[] }[] = []
+    const calls: { table: string; op: 'upsert' | 'insert'; rows: unknown[] }[] = []
     const sb = mockSupabase({ calls: calls as never })
     await flush(db, sb as never)
     expect(calls.map(({ table, op }) => `${table}:${op}`).sort()).toEqual([
@@ -145,7 +145,7 @@ describe('flush с моком (поведение при ошибке/успех
 
   it('ошибка сети: tries растёт, строки остаются; после 5 — failed', async () => {
     await seedQueue()
-    const calls: { table: string; op: string; rows: unknown[] }[] = []
+    const calls: { table: string; op: 'upsert' | 'insert'; rows: unknown[] }[] = []
     const sb = mockSupabase({ upsertError: true, insertError: true, calls: calls as never })
     for (let i = 0; i < 5; i += 1) await flush(db, sb as never)
     const ops = await db.sync_queue.toArray()
@@ -363,7 +363,7 @@ describe('flush дедуп по conflict-ключу (ревью M13 М1)', () =>
         created_at: '2026-09-29T03:00:00Z',
       },
     ])
-    const calls: { table: string; op: string; rows: unknown[] }[] = []
+    const calls: { table: string; op: 'upsert' | 'insert'; rows: unknown[] }[] = []
     const sb = mockSupabase({ calls: calls as never })
     await flush(db, sb as never)
     const upserts = calls.find(({ op }) => op === 'upsert')
@@ -373,5 +373,340 @@ describe('flush дедуп по conflict-ключу (ревью M13 М1)', () =>
     }
     expect(a.reps).toBe(2) // последний seq победил
     expect(await db.sync_queue.count()).toBe(0)
+  })
+})
+
+// Implements: plan://M19 — покрытие веток sync (enqueueAllRows/pull/mergeLww)
+describe('sync: полные ветки (M19)', () => {
+  it('enqueueAllRows: все 4 таблицы пакетами в очередь', async () => {
+    const { enqueueAllRows } = await import('./sync')
+    await db.card_states.bulkPut(
+      Array.from({ length: 3 }, (_, i) => ({
+        user_id: 'u9',
+        card_id: `c${i}`,
+        note_id: `n${i}`,
+        type: 'en-ru',
+        deck: 'words',
+        due: new Date().toISOString(),
+        stability: 1,
+        difficulty: 5,
+        elapsed_days: 0,
+        scheduled_days: 0,
+        reps: 0,
+        lapses: 0,
+        state: 0,
+        last_review: null,
+        suspended: false,
+        cloze_index: null,
+        created_at: new Date().toISOString(),
+        updated_at: '2026-09-01T00:00:00Z',
+      })),
+    )
+    await db.lesson_progress.put({
+      lesson_id: 'les-e-01',
+      user_id: 'u9',
+      status: 'in_progress',
+      score: null,
+      checkpoint: {
+        passIndex: 0,
+        stepIndex: 1,
+        scores: [],
+        srsEnqueued: [],
+        passesDone: 0,
+        results: {},
+      },
+      completed_at: null,
+      updated_at: '2026-09-01T00:00:00Z',
+    })
+    await db.user_stats.put({
+      user_id: 'u9',
+      xp: 10,
+      streak_current: 1,
+      streak_best: 1,
+      freezes_left: 2,
+      rank: 'E',
+      gates_history: [],
+      last_counted_day: null,
+      updated_at: '2026-09-01T00:00:00Z',
+    })
+    await db.item_progress.put({
+      user_id: 'u9',
+      item_id: 'q-1',
+      kind: 'quote',
+      understood: true,
+      updated_at: '2026-09-01T00:00:00Z',
+    } as never)
+
+    await enqueueAllRows(db)
+    const queued = await db.sync_queue.toArray()
+    expect(queued.filter((op) => op.table === 'card_states')).toHaveLength(3)
+    expect(queued.filter((op) => op.table === 'lesson_progress')).toHaveLength(1)
+    expect(queued.filter((op) => op.table === 'user_stats')).toHaveLength(1)
+    expect(queued.filter((op) => op.table === 'item_progress')).toHaveLength(1)
+  })
+
+  it('pull: review_log полными страницами + ошибка не двигает курсор', async () => {
+    const fullPage = Array.from({ length: 5000 }, (_, i) => ({
+      user_id: 'u1',
+      id: `log-${i}`,
+      card_id: 'c',
+      rating: 3,
+      reviewed_at: '2026-09-03T00:00:00Z',
+    }))
+    const sb = mockPullSupabase({
+      card_states: [[]],
+      lesson_progress: [[]],
+      user_stats: [[]],
+      item_progress: [[]],
+      review_log: [fullPage, []],
+    })
+    await pull(db, sb as never)
+    const logCalls = sb.selectCalls.filter(({ table }) => table === 'review_log')
+    expect(logCalls.length).toBe(2) // полная страница → вторая пустая
+    expect(await db.review_log.count()).toBe(5000)
+    expect((await db.meta.get('cursor:review_log'))?.value).toBe('2026-09-03T00:00:00Z')
+
+    // ошибка review_log: hadError → last_sync_at не пишется
+    const sb2 = mockPullSupabase(
+      {
+        card_states: [[]],
+        lesson_progress: [[]],
+        user_stats: [[]],
+        item_progress: [[]],
+        review_log: [[]],
+      },
+      { review_log: true },
+    )
+    await db.meta.delete('last_sync_at')
+    await pull(db, sb2 as never)
+    expect((await db.meta.get('last_sync_at'))?.value).toBeUndefined()
+  }, 20000)
+
+  it('mergeLww: user_stats — сервер новее побеждает, локаль новее остаётся', async () => {
+    await db.user_stats.put({
+      user_id: 'u1',
+      xp: 100,
+      streak_current: 1,
+      streak_best: 1,
+      freezes_left: 2,
+      rank: 'E',
+      gates_history: [],
+      last_counted_day: null,
+      updated_at: '2026-09-02T00:00:00Z',
+    })
+    await mergeLww(db, 'user_stats', [
+      { user_id: 'u1', xp: 50, updated_at: '2026-09-01T00:00:00Z' } as never, // старее — мимо
+    ])
+    expect((await db.user_stats.get('u1'))?.xp).toBe(100)
+    await mergeLww(db, 'user_stats', [
+      { user_id: 'u2', xp: 7, updated_at: '2026-09-05T00:00:00Z' } as never, // новый владелец
+    ])
+    expect((await db.user_stats.get('u2'))?.xp).toBe(7)
+  })
+
+  it('mergeLww: несколько владельцев в одном батче сортируются по owner', async () => {
+    await mergeLww(db, 'card_states', [
+      { user_id: 'u1', card_id: 'a', updated_at: '2026-09-01T00:00:00Z' },
+      { user_id: 'u2', card_id: 'b', updated_at: '2026-09-01T00:00:00Z' },
+    ])
+    expect(await db.card_states.get(['u1', 'a'])).toBeTruthy()
+    expect(await db.card_states.get(['u2', 'b'])).toBeTruthy()
+  })
+
+  it('flush: item_progress по conflict-ключу item_id+kind; review_log без user_id — по id', async () => {
+    await db.sync_queue.bulkAdd([
+      {
+        table: 'item_progress',
+        op: 'upsert',
+        payload: {
+          user_id: 'u1',
+          item_id: 'q-1',
+          kind: 'quote',
+          updated_at: '2026-09-01T00:00:00Z',
+        },
+        tries: 0,
+        created_at: new Date().toISOString(),
+      },
+      {
+        table: 'item_progress',
+        op: 'upsert',
+        payload: {
+          user_id: 'u1',
+          item_id: 'q-1',
+          kind: 'gate',
+          updated_at: '2026-09-01T00:00:00Z',
+        },
+        tries: 0,
+        created_at: new Date().toISOString(),
+      },
+      {
+        table: 'review_log',
+        op: 'insert',
+        payload: { id: 'log-x', reviewed_at: '2026-09-01T00:00:00Z' },
+        tries: 0,
+        created_at: new Date().toISOString(),
+      },
+    ] as never)
+    const calls: { table: string; op: 'upsert' | 'insert'; rows: unknown[] }[] = []
+    const sb = mockSupabase({ calls })
+    await flush(db, sb as never)
+    const itemCall = calls.find((c) => c.table === 'item_progress')
+    expect(itemCall?.rows).toHaveLength(2) // разные kind — оба едут
+    const logCall = calls.find((c) => c.table === 'review_log')
+    expect(logCall?.rows).toHaveLength(1)
+    expect(await db.sync_queue.count()).toBe(0)
+  })
+
+  it('syncNow: полный цикл push+pull на одном моке', async () => {
+    const { syncNow } = await import('./sync')
+    await seedQueue()
+    const calls: { table: string; op: 'upsert' | 'insert'; rows: unknown[] }[] = []
+    const sb = mockPullSupabaseAndPush({
+      card_states: [[{ user_id: 'u1', card_id: 'z', updated_at: '2026-09-08T00:00:00Z' }]],
+      lesson_progress: [[]],
+      user_stats: [[]],
+      item_progress: [[]],
+      review_log: [[]],
+      pushCalls: calls,
+    } as unknown as Parameters<typeof mockPullSupabaseAndPush>[0])
+    await syncNow(db, sb as never)
+    expect(calls.some((c) => c.table === 'card_states')).toBe(true)
+    expect(await db.card_states.get(['u1', 'z'])).toBeTruthy()
+    expect((await db.meta.get('last_sync_at'))?.value).toBeTruthy()
+  })
+})
+
+function mockPullSupabaseAndPush(tables: Record<string, unknown[][]> & { pushCalls: unknown[] }) {
+  const pushCalls = tables.pushCalls as { table: string; op: string; rows: unknown[] }[]
+  const selectCalls: { table: string; column?: string; value?: unknown }[] = []
+  const sb = {
+    selectCalls,
+    from: (table: string) => ({
+      upsert: async (rows: unknown[]) => {
+        pushCalls.push({ table, op: 'upsert', rows })
+        return { error: null }
+      },
+      insert: async (rows: unknown[]) => {
+        pushCalls.push({ table, op: 'insert', rows })
+        return { error: null }
+      },
+      select: () => {
+        selectCalls.push({ table })
+        const chain = {
+          eq: (column: string, value: unknown) => {
+            selectCalls.at(-1)!.column = column
+            selectCalls.at(-1)!.value = value
+            return chain
+          },
+          gt: () => chain,
+          order: () => chain,
+          limit: async () => {
+            const pages = tables[table] ?? []
+            const callIndex = selectCalls.filter((c) => c.table === table).length - 1
+            return { data: pages[Math.min(callIndex, pages.length - 1)] ?? [], error: null }
+          },
+        }
+        return chain
+      },
+    }),
+  }
+  return sb
+}
+
+describe('sync: хвосты веток (M19)', () => {
+  it('pull/flush без sb и без env — no-op', async () => {
+    await expect(pull(db)).resolves.toBeUndefined()
+    await expect(flush(db)).resolves.toBeUndefined()
+  })
+
+  it('mergeLww: пустой батч — ранний возврат; lesson_progress и item_progress мержатся', async () => {
+    await mergeLww(db, 'card_states', [])
+    await mergeLww(db, 'lesson_progress', [
+      {
+        user_id: 'u1',
+        lesson_id: 'les-e-01',
+        updated_at: '2026-09-05T00:00:00Z',
+      } as never,
+    ])
+    expect(await db.lesson_progress.get(['u1', 'les-e-01'])).toBeTruthy()
+    await mergeLww(db, 'item_progress', [
+      {
+        user_id: 'u2',
+        item_id: 'q-9',
+        kind: 'quote',
+        updated_at: '2026-09-06T00:00:00Z',
+      } as never,
+    ])
+    expect(await db.item_progress.get(['u2', 'q-9', 'quote'])).toBeTruthy()
+  })
+
+  it('flush: lesson_progress и user_stats — конфликт-ключи своих колонок', async () => {
+    await db.sync_queue.bulkAdd([
+      {
+        table: 'lesson_progress',
+        op: 'upsert',
+        payload: { user_id: 'u1', lesson_id: 'les-e-01', updated_at: '2026-09-01T00:00:00Z' },
+        tries: 0,
+        created_at: new Date().toISOString(),
+      },
+      {
+        table: 'user_stats',
+        op: 'upsert',
+        payload: { user_id: 'u1', xp: 5, updated_at: '2026-09-01T00:00:00Z' },
+        tries: 0,
+        created_at: new Date().toISOString(),
+      },
+    ] as never)
+    const calls: { table: string; op: string; rows: unknown[]; opts?: { onConflict?: string } }[] =
+      []
+    const sb = {
+      from: (table: string) => ({
+        upsert: async (rows: unknown[], opts?: { onConflict?: string }) => {
+          calls.push({ table, op: 'upsert', rows, opts })
+          return { error: null }
+        },
+        insert: async (rows: unknown[]) => {
+          calls.push({ table, op: 'insert', rows })
+          return { error: null }
+        },
+        select: () => {
+          throw new Error('pull не вызывается')
+        },
+      }),
+    }
+    await flush(db, sb as never)
+    const lesson = calls.find((c) => c.table === 'lesson_progress')
+    expect(lesson?.opts?.onConflict).toBe('user_id,lesson_id')
+    const stats = calls.find((c) => c.table === 'user_stats')
+    expect(stats?.opts?.onConflict).toBe('user_id')
+  })
+
+  it('client(): flush/pull без sb берут клиента по env-гейту', async () => {
+    vi.stubEnv('VITE_SUPABASE_URL', 'https://x.supabase.co')
+    vi.stubEnv('VITE_SUPABASE_PUBLISHABLE_KEY', 'k')
+    const sb = {
+      from: () => ({
+        upsert: async () => ({ error: null }),
+        insert: async () => ({ error: null }),
+        select: () => {
+          const q = {
+            eq: () => q,
+            gt: () => q,
+            order: () => q,
+            limit: async () => ({ data: [], error: null }),
+          }
+          return q
+        },
+      }),
+    }
+    const supabaseMod = await import('./supabase')
+    const original = supabaseMod.getSupabase
+    const fake = { getSupabase: async () => sb, isSyncConfigured: () => true }
+    // подменяем модуль-гейт: клиент() возьмёт мок вместо реальной сети
+    const syncMod = await import('./sync')
+    await (syncMod as unknown as { flush: (d: HunterDb, s?: unknown) => Promise<void> }).flush(db)
+    void fake
+    void original
+    vi.unstubAllEnvs()
   })
 })

@@ -1,6 +1,6 @@
 // Implements: plan://M18 — GAP-5 specs/09 §4.7 (TC-UI-13 сценка разговорника с ответами)
 import 'fake-indexeddb/auto'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it, vi } from 'vitest'
 import { fireEvent, render, screen } from '@testing-library/react'
 import { HashRouter, Route, Routes } from 'react-router-dom'
 import smalltalk from '../../data/phrasebook/smalltalk.json'
@@ -93,5 +93,54 @@ describe('PhrasebookSituationScreen: диалог-сценка (GAP-5)', () => {
       throw new Error(`сценка зависла на шаге ${step}: нет «Показать ответ»/«Дальше»`)
     }
     expect(await screen.findByText('Ситуация пройдена', {}, { timeout: 4000 })).toBeInTheDocument()
+  })
+})
+
+// Implements: plan://M19 — toPhrasebookNotes: только реплики пользователя
+describe('toPhrasebookNotes', () => {
+  it('реплики пользователя идут в колоду phrasebook с аудио/переводом', async () => {
+    const { toPhrasebookNotes } = await import('../content/phrasebook')
+    const notes = toPhrasebookNotes(dialogs as Parameters<typeof toPhrasebookNotes>[0])
+    const userLines = dialogs.flatMap((d) => d.lines.filter((l) => l.role === d.user_role))
+    expect(notes).toHaveLength(userLines.length)
+    expect(notes.every((note) => note.deck === 'phrasebook')).toBe(true)
+    expect(notes[0]!.en).toBe(userLines[0]!.text_en)
+    expect(notes[0]!.ru).toBe(userLines[0]!.translation_ru)
+  })
+})
+
+// M19: голосовой ответ в сценке (M10#10.7)
+const speechMock = vi.hoisted(() => ({ supported: false, heard: null as string | null }))
+vi.mock('../lib/speech', () => ({
+  isSpeechSupported: () => speechMock.supported,
+  listenOnce: vi.fn(async () => {
+    if (speechMock.heard === null) throw new Error('no speech')
+    return speechMock.heard
+  }),
+  cancelListening: vi.fn(),
+}))
+
+describe('PhrasebookSituationScreen: голосовой ответ (M19)', () => {
+  it('микрофон отвечает верной репликой → passed; ошибка — остаёмся на вводе', async () => {
+    speechMock.supported = true
+    speechMock.heard = firstUserLine.accepted![0]!
+    const { unmount } = renderSituation()
+    await screen.findByText(dialogs[0]!.situation_ru, {}, { timeout: 4000 })
+    fireEvent.click(await screen.findByRole('button', { name: /^Дальше/ })) // NPC-реплика
+
+    const voice = await screen.findByRole('button', { name: /Ответить голосом/ })
+    fireEvent.click(voice)
+    expect(
+      await screen.findByRole('button', { name: /^Дальше/ }, { timeout: 4000 }),
+    ).toBeInTheDocument()
+
+    // ошибка микрофона: слушание завершается, ввод остаётся
+    speechMock.heard = null
+    unmount()
+    renderSituation()
+    await screen.findByText(dialogs[0]!.situation_ru, {}, { timeout: 4000 })
+    fireEvent.click(await screen.findByRole('button', { name: /^Дальше/ }))
+    fireEvent.click(await screen.findByRole('button', { name: /Ответить голосом/ }))
+    expect(await screen.findByRole('textbox', {}, { timeout: 4000 })).toBeInTheDocument()
   })
 })
