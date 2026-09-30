@@ -1,6 +1,7 @@
 // Implements: plan://M4#4.4 — интеграционные тесты экрана /srs (fake-indexeddb)
 import 'fake-indexeddb/auto'
-import { fireEvent, render, screen } from '@testing-library/react'
+import { fireEvent, render, screen, waitFor } from '@testing-library/react'
+import { vi } from 'vitest'
 import { HashRouter } from 'react-router-dom'
 import { beforeEach, describe, expect, it } from 'vitest'
 import App from '../App'
@@ -16,6 +17,8 @@ import { saveSettings } from '../data/settings'
 import { db as globalDb } from '../data/db'
 import { DEFAULT_SETTINGS } from '../domain/settings/types'
 import '../i18n'
+
+vi.mock('../lib/tts', () => ({ speak: vi.fn(), stopSpeak: vi.fn(), setDefaultRate: vi.fn() }))
 
 const WORDS: Array<[string, string]> = [
   ['house', 'дом'],
@@ -362,5 +365,83 @@ describe('SrsScreen: гарды (GAP-4)', () => {
     // Space вне контролов (target=window) всё ещё переворачивает
     fireEvent.keyDown(window, { key: ' ', code: 'Space' })
     expect(await screen.findByText('дом 1', undefined, { timeout: 4000 })).toBeInTheDocument()
+  })
+})
+
+// M19: хвосты SrsScreen (4 кнопки, гарды клавиш, финал очереди, error-фаза)
+describe('SrsScreen: хвосты (M19)', () => {
+  it('гарды клавиш: repeat/модификаторы/цифра ≥3 в режиме 2 кнопок — no-op', async () => {
+    await bootstrap()
+    renderScreen()
+    await screen.findByText('house', undefined, { timeout: 4000 })
+    fireEvent.keyDown(window, { key: 'r', repeat: true })
+    fireEvent.keyDown(window, { key: 'r', ctrlKey: true })
+    fireEvent.keyDown(window, { key: 'r', altKey: true })
+    fireEvent.keyDown(window, { code: 'Space' }) // переворот
+    expect(await screen.findByText('дом 1', undefined, { timeout: 4000 })).toBeInTheDocument()
+    fireEvent.keyDown(window, { key: '3' }) // режим 2: игнор
+    expect(screen.getByText('дом 1')).toBeInTheDocument()
+    fireEvent.keyDown(window, { key: '2' }) // штатная оценка
+    expect(await screen.findByText('water', undefined, { timeout: 4000 })).toBeInTheDocument()
+  })
+
+  it('озвучка 🔊/🐢 и отмена подтверждения выхода', async () => {
+    await bootstrap()
+    renderScreen()
+    await screen.findByText('house', undefined, { timeout: 4000 })
+    fireEvent.click(screen.getByRole('button', { name: /🔊/ }))
+    fireEvent.click(screen.getByRole('button', { name: /🐢/ }))
+    fireEvent.keyDown(window, { key: 'Escape' })
+    expect(screen.getByText(/Прервать сессию\?/)).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: /Продолжить/ }))
+    expect(screen.queryByText(/Прервать сессию\?/)).not.toBeInTheDocument()
+  })
+
+  it('очередь исчерпана (карточки ушли в Review) → финал «Сессия завершена»', async () => {
+    await bootstrap()
+    renderScreen()
+    for (let round = 0; round < 40; round += 1) {
+      await waitFor(
+        () => {
+          // либо финал, либо следующая карточка (гонка асинхронного сохранения)
+          const reveal = screen.queryByRole('button', { name: /Показать ответ/ })
+          const done = screen.queryByText(/Сессия завершена/)
+          expect(reveal ?? done).toBeInTheDocument()
+        },
+        { timeout: 4000 },
+      )
+      if (screen.queryByText(/Сессия завершена/)) break
+      fireEvent.click(screen.getByRole('button', { name: /Показать ответ/ }))
+      await waitFor(
+        () => {
+          expect(screen.getByRole('button', { name: /Вспомнил/ })).toBeInTheDocument()
+        },
+        { timeout: 4000 },
+      )
+      fireEvent.click(screen.getByRole('button', { name: /Вспомнил/ }))
+    }
+    await waitFor(
+      () => {
+        expect(screen.queryByText(/Сессия завершена/)).toBeInTheDocument()
+      },
+      { timeout: 4000 },
+    )
+  })
+
+  it('сбой сохранения → error-фаза (спокойная, без белого экрана)', async () => {
+    await bootstrap()
+    const failing: ProgressRepository = {
+      ...delayRepo(repo, 0),
+      saveAnswer: async () => {
+        throw new Error('disk full')
+      },
+    }
+    renderScreen(failing)
+    await screen.findByText('house', undefined, { timeout: 4000 })
+    fireEvent.click(screen.getByRole('button', { name: /Показать ответ/ }))
+    fireEvent.click(screen.getByRole('button', { name: /Вспомнил/ }))
+    expect(
+      await screen.findByText(/Ошибка|не удалось/i, undefined, { timeout: 4000 }),
+    ).toBeInTheDocument()
   })
 })

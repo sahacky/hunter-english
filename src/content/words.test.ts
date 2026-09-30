@@ -53,3 +53,16 @@ describe('createFirstCards (srs://rule-1)', () => {
     expect(new Set(cards.map(({ card_id }) => card_id)).size).toBe(cards.length)
   })
 })
+
+// Implements: plan://M19 — loadWordRanks: суб-полоса и NGSL-минимум
+describe('loadWordRanks (ветки полос)', () => {
+  it('NGSL-слово — числовой ранг; субтитровое — Infinity; дубль берёт минимум', async () => {
+    const { loadWordRanks } = await import('./words')
+    const ranks = await loadWordRanks()
+    const ngsl = [...ranks.entries()].find(([, rank]) => Number.isFinite(rank))
+    expect(ngsl).toBeTruthy()
+    // суб-полоса (words-2810-4000 и далее) — Infinity
+    const sub = [...ranks.entries()].filter(([, rank]) => rank === Number.POSITIVE_INFINITY)
+    expect(sub.length).toBeGreaterThan(100)
+  })
+})

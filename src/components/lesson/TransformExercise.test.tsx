@@ -140,3 +140,30 @@ describe('TransformExercise', () => {
     expect(onAnswer).not.toHaveBeenCalled()
   })
 })
+
+// M19: fallback при отсутствующей фразе шага
+describe('TransformExercise: отсутствующие ссылки', () => {
+  it('фраза шага не найдена → заглушка с «Дальше»', async () => {
+    const broken: ExerciseItem = {
+      ...exercise,
+      payload: {
+        kind: 'transform',
+        source_phrase_id: 'ph-test-0001',
+        steps: [{ task: 'negative', phrase_id: 'ph-missing-9999' }],
+      },
+    }
+    render(
+      <TransformExercise
+        exercise={broken}
+        phrase={null}
+        trap={null}
+        onAnswer={vi.fn()}
+        onDispute={vi.fn()}
+        onNext={vi.fn()}
+        phrasesById={phrasesById}
+      />,
+    )
+    expect(await screen.findByText(/Неизвестный тип упражнения/)).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: /^Дальше/ })).toBeInTheDocument()
+  })
+})

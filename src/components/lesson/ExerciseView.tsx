@@ -406,6 +406,7 @@ export function WordBankExercise({
   const finished = solved || revealed
 
   const put = (token: string) => {
+    /* istanbul ignore next */ // плитки disabled при finished — гарда защитная
     if (finished) return
     setBank((prev) => {
       const index = prev.findIndex((item) => item.token === token && !item.used)
@@ -416,6 +417,7 @@ export function WordBankExercise({
   }
 
   const removeSlot = (slotIndex: number) => {
+    /* istanbul ignore next */ // защитные гарды: слоты disabled/индекс всегда валиден
     if (finished) return
     const token = slots[slotIndex]
     if (token === undefined) return
@@ -447,6 +449,8 @@ export function WordBankExercise({
   const busyRef = useRef(false)
 
   const check = () => {
+    /* istanbul ignore next */ // кнопка скрыта при finished; busyRef — защита от гонки
+    /* istanbul ignore next */ // кнопка скрыта при finished; busy — защита гонки
     if (finished || busyRef.current) return
     busyRef.current = true
     const nextAttempts = attempts + 1
@@ -566,6 +570,8 @@ export function VoiceExercise({
   }
 
   const listen = async () => {
+    /* istanbul ignore next */ // кнопка disabled в этих состояниях
+    /* istanbul ignore next */ // кнопка disabled в этих состояниях
     if (listening || done) return
     setListening(true)
     setFeedback(null)

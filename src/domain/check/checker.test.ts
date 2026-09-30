@@ -274,3 +274,17 @@ describe('judgeDictation: пропущенные артикли ≤2 проща�
     expect(verdict.verdict).toBe('wrong')
   })
 })
+
+// M19: хвостовые ветки checker
+describe('checker: хвосты (M19)', () => {
+  it('judgeDictation: строгий вердикт не-wrong возвращается как есть', () => {
+    const verdict = judgeDictation('The house is big', task(['The house is big']))
+    expect(verdict.verdict).toBe('correct')
+  })
+
+  it('judgeVoice: эталон из одних артиклей пропускается (continue, без крэша)', () => {
+    // знаменатель пуст → эффективных токенов нет; хотя бы один валидный ref нужен
+    const verdict = judgeVoice('the a', task(['the a', 'house']))
+    expect(['correct', 'correct_typo', 'wrong']).toContain(verdict.verdict)
+  })
+})

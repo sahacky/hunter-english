@@ -232,3 +232,43 @@ describe('findQuote/quoteWords (данные)', () => {
     expect(await findQuote('q-nope')).toBeNull()
   })
 })
+
+// M19: хвосты QuotesScreen (озвучка, поповер-закрытие, гарды клавиш, фильтр)
+describe('QuotesScreen/QuoteScreen: хвосты (M19)', () => {
+  it('галерея: фильтр «понятные» скрывает пустые; карточка ведёт на тайтл', async () => {
+    renderAt('#/quotes')
+    // фильтр на галерее: без изученных слов список пуст
+    const filter = await screen.findByLabelText(/понятные мне сейчас/i)
+    fireEvent.click(filter)
+    await waitFor(() => {
+      expect(screen.queryAllByRole('button', { name: /цитат/i })).toHaveLength(0)
+    })
+    fireEvent.click(filter) // снять фильтр — карточки вернулись
+    const card = await screen.findAllByRole('button', { name: /цитат/i })
+    fireEvent.click(card[0]!)
+    await waitFor(() => expect(window.location.hash).toMatch(/title=/))
+  })
+
+  it('цитата: озвучка 🔊/🐢, закрытие поповера, клавиатурный гвард', async () => {
+    const { quote, word } = await quoteWithKnownWord()
+    renderAt(`#/quotes/${quote.id}`)
+    await screen.findByText('Показать перевод')
+
+    fireEvent.click(screen.getByRole('button', { name: /🔊/ }))
+    fireEvent.click(screen.getByRole('button', { name: /🐢/ }))
+    fireEvent.keyDown(window, { key: 'Enter', ctrlKey: true }) // гвард: ничего не ломает
+
+    // поповер: открыть и закрыть крестиком
+    const wordButton = screen
+      .getAllByRole('button')
+      .find(
+        (b) =>
+          b.classList.contains('quote-word') &&
+          (b.textContent ?? '').toLowerCase().replace(/'s$/, '') === word,
+      )!
+    fireEvent.click(wordButton)
+    expect(await screen.findByRole('dialog')).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: /Закрыть/ }))
+    await waitFor(() => expect(screen.queryByRole('dialog')).not.toBeInTheDocument())
+  })
+})

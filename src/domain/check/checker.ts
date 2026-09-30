@@ -65,6 +65,8 @@ export function checkText(userInput: string, task: CheckTask): CheckResult {
   if (bestPass) {
     return toResult(bestPass.typos > 0 ? 'correct_typo' : 'correct', bestPass, false)
   }
+  // bestFail всегда установлен (accepted непуст): резерв недостижим при валидных данных
+  /* istanbul ignore next */
   return toResult('wrong', bestFail ?? emptyCandidate(userInput), false)
 }
 
