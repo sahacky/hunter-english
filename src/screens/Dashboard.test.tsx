@@ -19,13 +19,14 @@ beforeEach(() => {
   repo = new DexieProgressRepository(db)
 })
 
-const failingStats = (): ProgressRepository =>
-  ({
-    ...repo,
-    getStats: async () => {
-      throw new Error('stats broken')
-    },
-  }) as unknown as ProgressRepository
+// прототипная делегация (spread ломает this у Dexie-методов — M19)
+const failingStats = (): ProgressRepository => {
+  const failing: ProgressRepository = Object.create(repo)
+  failing.getStats = async () => {
+    throw new Error('stats broken')
+  }
+  return failing
+}
 
 describe('Dashboard', () => {
   it('ошибка загрузки статов → error-фаза', async () => {
