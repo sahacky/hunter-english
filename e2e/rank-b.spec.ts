@@ -36,3 +36,23 @@ test('lesson B-13 used to mentions arrow in the knee', async ({ page }) => {
   await expect(page.getByText(/«раньше было»/).first()).toBeVisible()
   await expect(page.getByText(/«привык»/).first()).toBeVisible()
 })
+
+test('lesson B-15 relative clauses opens', async ({ page }) => {
+  await page.goto('/#/lesson/B-15')
+  await expect(page.getByRole('heading', { name: /Relative clauses/ })).toBeVisible({
+    timeout: 8000,
+  })
+})
+
+test('lesson B-20 passive voice opens', async ({ page }) => {
+  await page.goto('/#/lesson/B-20')
+  await expect(page.getByRole('heading', { name: /Пассив/ })).toBeVisible({ timeout: 8000 })
+  await expect(page.getByText(/be \+ V3/).first()).toBeVisible()
+})
+
+test('gates B-A: intro with rank B checklist (plan://M15#15.4)', async ({ page }) => {
+  await page.goto('/#/gates/B-A')
+  await expect(page.getByRole('heading', { name: 'Врата B → A' })).toBeVisible({ timeout: 8000 })
+  await expect(page.getByText(/Уроки ранга B: \d+ \/ 29/)).toBeVisible()
+  await expect(page.getByText(/Слова \(надёжно\): \d+ \/ 2800/)).toBeVisible()
+})

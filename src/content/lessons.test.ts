@@ -194,7 +194,7 @@ describe('loadLessonView (реальные data/ ранга E)', () => {
 
     const lessons = await loadLessons()
     // M15: E (24) + D (28) + C (30) + B1-B2 (14); B3-B5 добавят остальные
-    expect(lessons.length).toBe(96)
+    expect(lessons.length).toBe(111)
     const phraseById = new Set(phrases.map(({ id }) => id))
     for (const lesson of lessons) {
       const lessonPhrases = phrases.filter(
@@ -248,7 +248,7 @@ describe('loadLessonView (реальные data/ ранга E)', () => {
     const c = lessons.filter((lesson) => lesson.rank === 'C')
     expect(c).toHaveLength(30)
     const b = lessons.filter((lesson) => lesson.rank === 'B')
-    expect(b).toHaveLength(14)
+    expect(b).toHaveLength(29)
     expect(c.every((lesson) => lesson.module.startsWith('mod-c-'))).toBe(true)
     const view = await loadLessonView('les-c-01')
     expect(view?.lesson.title).toContain('Past Simple')
