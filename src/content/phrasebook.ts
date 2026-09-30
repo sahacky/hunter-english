@@ -1,5 +1,6 @@
 // Implements: plan://M8#8.1 — загрузчик разговорника (specs/05 §6, specs/07 §2.1)
 import type { Note } from '../domain/srs/types'
+import { assertEnvelope } from './envelope'
 
 /** Диалог разговорника — схема specs/05 §6. */
 export interface PhrasebookDialog {
@@ -30,7 +31,10 @@ const phrasebookModules = import.meta.glob('/data/phrasebook/*.json') as Record<
 /** Все диалоги разговорника. */
 export async function loadPhrasebook(): Promise<PhrasebookDialog[]> {
   const files = await Promise.all(Object.values(phrasebookModules).map((load) => load()))
-  return files.flatMap((file) => file.items)
+  return files.flatMap((file, i) => {
+    assertEnvelope(file, 'phrasebook', `data/phrasebook #${i}`)
+    return file.items
+  })
 }
 
 /** Ситуации разговорника (specs/01 §2: 10 ситуаций путешественника). */

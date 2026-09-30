@@ -1,6 +1,6 @@
 import 'fake-indexeddb/auto'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
-import { fireEvent, render } from '@testing-library/react'
+import { fireEvent, render, waitFor } from '@testing-library/react'
 import { HunterDb } from '../data/db'
 import { buildExportPayload, importPayload, type ExportPayload } from './SettingsScreen'
 import { uuidv7 } from '../lib/uuidv7'
@@ -175,5 +175,86 @@ describe('SettingsScreen render', () => {
     expect(input).toHaveValue(2) // черновик не клампится на каждый keystroke
     fireEvent.blur(input)
     expect(input).toHaveValue(5) // кламп 5–50 по фиксации
+  })
+})
+
+// Implements: plan://M18 — GAP-3 specs/09 §4.7 (TC-UI-14 сброс — деструктивная операция)
+describe('SettingsScreen: сброс прогресса (GAP-3)', () => {
+  it('подтверждение → таблицы прогресса очищены, meta (настройки) сохранена', async () => {
+    // reload отложен на 600мс реального таймера — гасим, чтобы не перезагрузить jsdom.
+    // jsdom Location.reload неперезаписываем — подменяем весь window.location
+    const originalLocation = window.location
+    Object.defineProperty(window, 'location', {
+      value: { ...originalLocation, reload: vi.fn() },
+      writable: true,
+      configurable: true,
+    })
+    try {
+      await db.card_states.put({
+        user_id: 'local',
+        card_id: 'x.en-ru',
+        note_id: 'x',
+        type: 'en-ru',
+        deck: 'words',
+        due: new Date().toISOString(),
+        stability: 1,
+        difficulty: 5,
+        elapsed_days: 0,
+        scheduled_days: 0,
+        reps: 3,
+        lapses: 0,
+        state: 2,
+        last_review: null,
+        suspended: false,
+        cloze_index: null,
+        created_at: new Date().toISOString(),
+        updated_at: new Date().toISOString(),
+      })
+      await db.review_log.bulkPut([
+        {
+          user_id: 'local',
+          id: 'log-1',
+          card_id: 'x.en-ru',
+          rating: 3,
+          state: 1,
+          state_after: 2,
+          elapsed_days: 0,
+          scheduled_days: 1,
+          duration_ms: 1200,
+          client: 'web',
+          session_id: null,
+          reviewed_at: new Date().toISOString(),
+        },
+      ])
+      await db.meta.put({ key: 'settings', value: '{"theme":"light"}' })
+
+      const { default: SettingsScreen } = await import('./SettingsScreen')
+      const { SettingsProvider } = await import('../state/settings')
+      const { findByText, getByText, queryByText } = render(
+        <SettingsProvider>
+          <SettingsScreen database={db} />
+        </SettingsProvider>,
+      )
+      // inline-подтверждение: первая кнопка только раскрывает опасную зону
+      fireEvent.click(await findByText('Сбросить прогресс'))
+      expect(getByText(/Удалить весь прогресс\? Действие необратимо/)).toBeInTheDocument()
+
+      fireEvent.click(getByText('Удалить'))
+      // транзакция сброса асинхронна — ждём очистки (reload подменён)
+      await waitFor(async () => {
+        expect(await db.card_states.count()).toBe(0)
+        expect(await db.review_log.count()).toBe(0)
+        expect(await db.sync_queue.count()).toBe(0)
+      })
+      // настройки не сбрасываются (RESET_TABLES без meta)
+      expect(await db.meta.get('settings')).toEqual({ key: 'settings', value: '{"theme":"light"}' })
+      expect(queryByText('Удалить')).not.toBeInTheDocument()
+    } finally {
+      Object.defineProperty(window, 'location', {
+        value: originalLocation,
+        writable: true,
+        configurable: true,
+      })
+    }
   })
 })

@@ -4,6 +4,7 @@ import type { CardState, Note } from './types'
 import {
   applyAnswer,
   buildQueue,
+  createScheduler,
   dayStart,
   DEFAULT_NEW_LIMIT,
   isWakeUpDue,
@@ -389,5 +390,16 @@ describe('buildQueue (srs://session-order)', () => {
       'words',
       'quotes',
     ])
+  })
+})
+
+// Implements: plan://M18 — GAP-3 specs/09 §4.2 (TC-SRS-11)
+describe('параметры FSRS — specs/03 §2 (srs://ts-fsrs)', () => {
+  it('retention 0.90, max interval 36500, fuzz и short-term включены', () => {
+    const params = createScheduler().parameters
+    expect(params.request_retention).toBe(0.9)
+    expect(params.maximum_interval).toBe(36500)
+    expect(params.enable_fuzz).toBe(true)
+    expect(params.enable_short_term).toBe(true)
   })
 })

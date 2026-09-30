@@ -326,3 +326,41 @@ describe('SrsScreen + настройки (plan://M10#10.3)', () => {
     ).toBeInTheDocument()
   })
 })
+
+// Implements: plan://M18 — GAP-4 specs/09 §4.7 (TC-UI-05 beforeunload, TC-A11Y-04 onControl)
+describe('SrsScreen: гарды (GAP-4)', () => {
+  it('beforeunload отменяется только в активной сессии с ответами', async () => {
+    await bootstrap()
+    renderScreen()
+
+    // до ответов — подтверждение не нужно
+    await screen.findByText('house', undefined, { timeout: 4000 })
+    const before = new Event('beforeunload', { cancelable: true })
+    window.dispatchEvent(before)
+    expect(before.defaultPrevented).toBe(false)
+
+    fireEvent.click(screen.getByRole('button', { name: /Показать ответ/ }))
+    fireEvent.click(screen.getByRole('button', { name: /Вспомнил/ }))
+    await screen.findByText('water', undefined, { timeout: 4000 })
+
+    const after = new Event('beforeunload', { cancelable: true })
+    window.dispatchEvent(after)
+    expect(after.defaultPrevented).toBe(true)
+  })
+
+  it('Space на сфокусированной кнопке — её активация, карточка не переворачивается (onControl)', async () => {
+    await bootstrap()
+    renderScreen()
+    await screen.findByText('house', undefined, { timeout: 4000 })
+
+    const reveal = screen.getByRole('button', { name: /Показать ответ/ })
+    reveal.focus()
+    expect(document.activeElement).toBe(reveal)
+    // keydown всплывает с target=кнопка (как в реальном браузере)
+    fireEvent.keyDown(reveal, { key: ' ', code: 'Space', bubbles: true })
+    expect(screen.queryByText('дом 1')).not.toBeInTheDocument()
+    // Space вне контролов (target=window) всё ещё переворачивает
+    fireEvent.keyDown(window, { key: ' ', code: 'Space' })
+    expect(await screen.findByText('дом 1', undefined, { timeout: 4000 })).toBeInTheDocument()
+  })
+})
