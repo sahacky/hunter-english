@@ -37,10 +37,12 @@ afterEach(() => {
 })
 
 function install(ctor: new () => FakeRecognition = FakeRecognition) {
-  class Capturing extends ctor {
+  const Capturing = class extends ctor {
     constructor() {
       super()
-      instance = this
+      // eslint-disable-next-line @typescript-eslint/no-this-alias — тестовый захват
+      const self: FakeRecognition = this
+      instance = self
     }
   }
   ;(window as unknown as Record<string, unknown>).SpeechRecognition = Capturing
