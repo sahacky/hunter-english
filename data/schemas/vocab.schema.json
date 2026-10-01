@@ -6,12 +6,22 @@
   "required": ["topic", "en", "ru"],
   "additionalProperties": false,
   "properties": {
-    "topic": { "type": "string", "pattern": "^[a-z]+(-[a-z]+)*$" },
-    "en": { "type": "string", "minLength": 1, "pattern": "^[A-Za-z0-9 .'/-]+$" },
-    "ru": { "type": "string", "minLength": 1 },
+    "topic": {
+      "type": "string",
+      "pattern": "^[a-z]+(-[a-z]+)*$"
+    },
+    "en": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[A-Za-z0-9 .'/-]+$"
+    },
+    "ru": {
+      "type": "string",
+      "minLength": 1
+    },
     "audio": {
       "type": "string",
-      "pattern": "^audio/words/cori/[a-z0-9-]+\\.opus$"
+      "pattern": "^audio/(words|vocab)/cori/[a-z0-9-]+\\.opus$"
     }
   }
 }

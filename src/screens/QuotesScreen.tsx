@@ -307,8 +307,9 @@ export function QuoteScreen({ repo: repoProp }: { repo?: ProgressRepository }) {
       const target = event.target
       if (target instanceof HTMLInputElement || target instanceof HTMLTextAreaElement) return
       const key = event.key.toLowerCase()
-      if (key === 'r') speak(state?.quote.text ?? '')
-      else if (key === 's') speak(state?.quote.text ?? '', { rate: 0.75 })
+      if (key === 'r') speak(state?.quote.text ?? '', { src: state?.quote.audio?.en_gb })
+      else if (key === 's')
+        speak(state?.quote.text ?? '', { src: state?.quote.audio?.en_gb, rate: 0.75 })
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
@@ -441,10 +442,18 @@ export function QuoteScreen({ repo: repoProp }: { repo?: ProgressRepository }) {
       )}
 
       <div className="lesson-audio" aria-label={t('srs.audioLabel')}>
-        <button type="button" className="srs-btn" onClick={() => speak(quote.text)}>
+        <button
+          type="button"
+          className="srs-btn"
+          onClick={() => speak(quote.text, { src: quote.audio?.en_gb })}
+        >
           🔊 <kbd>R</kbd>
         </button>
-        <button type="button" className="srs-btn" onClick={() => speak(quote.text, { rate: 0.75 })}>
+        <button
+          type="button"
+          className="srs-btn"
+          onClick={() => speak(quote.text, { src: quote.audio?.en_gb, rate: 0.75 })}
+        >
           🐢 <kbd>S</kbd>
         </button>
       </div>

@@ -11,66 +11,78 @@
       "lines": [
         {
           "role": "waiter",
+          "audio": "audio/phrasebook/cori/pb-restaurant-01-l0.opus",
           "text_en": "Good evening. A table for two?",
           "translation_ru": "Добрый вечер. Столик на двоих?"
         },
         {
           "role": "guest",
+          "audio": "audio/phrasebook/cori/pb-restaurant-01-l1.opus",
           "text_en": "Yes, please. We didn't book.",
           "translation_ru": "Да, пожалуйста. Мы не бронировали.",
           "accepted": ["Yes, please. We didn't book.", "A table for two, please."]
         },
         {
           "role": "waiter",
+          "audio": "audio/phrasebook/cori/pb-restaurant-01-l2.opus",
           "text_en": "This way, please. Here is the menu.",
           "translation_ru": "Сюда, пожалуйста. Вот меню."
         },
         {
           "role": "guest",
+          "audio": "audio/phrasebook/cori/pb-restaurant-01-l3.opus",
           "text_en": "What do you recommend?",
           "translation_ru": "Что вы посоветуете?",
           "accepted": ["What do you recommend?"]
         },
         {
           "role": "waiter",
+          "audio": "audio/phrasebook/cori/pb-restaurant-01-l4.opus",
           "text_en": "The special of the day is fish.",
           "translation_ru": "Блюдо дня — рыба."
         },
         {
           "role": "guest",
+          "audio": "audio/phrasebook/cori/pb-restaurant-01-l5.opus",
           "text_en": "I'll have the fish. I'm allergic to nuts.",
           "translation_ru": "Я возьму рыбу. У меня аллергия на орехи.",
           "accepted": ["I'll have the fish.", "I'll have the fish. I'm allergic to nuts."]
         },
         {
           "role": "waiter",
+          "audio": "audio/phrasebook/cori/pb-restaurant-01-l6.opus",
           "text_en": "No problem, the kitchen will be careful. Anything to drink?",
           "translation_ru": "Без проблем, кухня будет осторожна. Что будете пить?"
         },
         {
           "role": "guest",
+          "audio": "audio/phrasebook/cori/pb-restaurant-01-l7.opus",
           "text_en": "Sparkling water, please.",
           "translation_ru": "Воду с газом, пожалуйста.",
           "accepted": ["Sparkling water, please."]
         },
         {
           "role": "waiter",
+          "audio": "audio/phrasebook/cori/pb-restaurant-01-l8.opus",
           "text_en": "Here are your mains. Enjoy your meal!",
           "translation_ru": "Вот ваши основные блюда. Приятного аппетита!"
         },
         {
           "role": "guest",
+          "audio": "audio/phrasebook/cori/pb-restaurant-01-l9.opus",
           "text_en": "Could we have the bill?",
           "translation_ru": "Можно нам счёт?",
           "accepted": ["Could we have the bill?", "The bill, please."]
         },
         {
           "role": "waiter",
+          "audio": "audio/phrasebook/cori/pb-restaurant-01-l10.opus",
           "text_en": "Of course. Everything was OK?",
           "translation_ru": "Конечно. Всё было в порядке?"
         },
         {
           "role": "guest",
+          "audio": "audio/phrasebook/cori/pb-restaurant-01-l11.opus",
           "text_en": "Everything was delicious. Keep the change.",
           "translation_ru": "Всё было очень вкусно. Сдачи не надо.",
           "accepted": ["Everything was delicious.", "Everything was delicious. Keep the change."]

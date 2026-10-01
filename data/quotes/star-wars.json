@@ -18,7 +18,10 @@
     "top1000": 1.0
    },
    "confidence": "verbatim (Wikiquote)",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=May%20the%20Force%20be%20with%20you."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=May%20the%20Force%20be%20with%20you.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-star-wars-0001.opus"
+   }
   },
   {
    "id": "q-star-wars-0002",
@@ -36,7 +39,10 @@
     "top1000": 0.6
    },
    "confidence": "verbatim (Wikiquote)",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=No.%20I%20am%20your%20father."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=No.%20I%20am%20your%20father.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-star-wars-0002.opus"
+   }
   },
   {
    "id": "q-star-wars-0003",
@@ -55,7 +61,10 @@
    },
    "confidence": "verbatim (Wikiquote)",
    "note": "пара с «I know.»",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20love%20you."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20love%20you.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-star-wars-0003.opus"
+   }
   },
   {
    "id": "q-star-wars-0004",
@@ -74,7 +83,10 @@
    },
    "confidence": "verbatim (Wikiquote)",
    "note": "translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20know."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20know.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-star-wars-0004.opus"
+   }
   },
   {
    "id": "q-star-wars-0005",
@@ -93,7 +105,10 @@
     "top1000": 0.91
    },
    "confidence": "verbatim (Wikiquote)",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=No%21%20Try%20not.%20Do...%20or%20do%20not.%20There%20is%20no%20try."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=No%21%20Try%20not.%20Do...%20or%20do%20not.%20There%20is%20no%20try.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-star-wars-0005.opus"
+   }
   },
   {
    "id": "q-star-wars-0006",
@@ -112,7 +127,10 @@
    },
    "confidence": "verbatim (Wikiquote)",
    "note": "повторяется во всех фильмах; translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20have%20a%20very%20bad%20feeling%20about%20this."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20have%20a%20very%20bad%20feeling%20about%20this.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-star-wars-0006.opus"
+   }
   },
   {
    "id": "q-star-wars-0007",
@@ -130,7 +148,10 @@
     "top1000": 0.75
    },
    "confidence": "verbatim (Wikiquote)",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Use%20the%20Force%2C%20Luke."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Use%20the%20Force%2C%20Luke.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-star-wars-0007.opus"
+   }
   },
   {
    "id": "q-star-wars-0008",
@@ -148,7 +169,10 @@
     "top1000": 0.86
    },
    "confidence": "verbatim (Wikiquote)",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=The%20Force%20is%20strong%20with%20this%20one."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=The%20Force%20is%20strong%20with%20this%20one.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-star-wars-0008.opus"
+   }
   },
   {
    "id": "q-star-wars-0009",
@@ -167,7 +191,10 @@
     "top1000": 0.8
    },
    "confidence": "verbatim (Wikiquote)",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=That%20is%20why%20you%20fail."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=That%20is%20why%20you%20fail.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-star-wars-0009.opus"
+   }
   },
   {
    "id": "q-star-wars-0010",
@@ -187,7 +214,10 @@
    },
    "confidence": "verbatim (Wikiquote)",
    "note": "мем; translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=It%27s%20a%20trap%21"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=It%27s%20a%20trap%21",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-star-wars-0010.opus"
+   }
   },
   {
    "id": "q-star-wars-0011",
@@ -206,7 +236,10 @@
    },
    "confidence": "verbatim (Wikiquote)",
    "note": "translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=That%20boy%20is%20our%20last%20hope."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=That%20boy%20is%20our%20last%20hope.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-star-wars-0011.opus"
+   }
   },
   {
    "id": "q-star-wars-0012",
@@ -225,7 +258,10 @@
    },
    "confidence": "verbatim (Wikiquote)",
    "note": "translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=He%27s%20my%20father."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=He%27s%20my%20father.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-star-wars-0012.opus"
+   }
   },
   {
    "id": "q-star-wars-0013",
@@ -244,7 +280,10 @@
    },
    "confidence": "verbatim (Wikiquote)",
    "note": "odds — B2",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Never%20tell%20me%20the%20odds%21"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Never%20tell%20me%20the%20odds%21",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-star-wars-0013.opus"
+   }
   },
   {
    "id": "q-star-wars-0014",
@@ -264,7 +303,10 @@
    },
    "confidence": "verbatim (Wikiquote)",
    "note": "translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Search%20your%20feelings.%20You%20know%20it%20to%20be%20true."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Search%20your%20feelings.%20You%20know%20it%20to%20be%20true.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-star-wars-0014.opus"
+   }
   },
   {
    "id": "q-star-wars-0015",
@@ -283,7 +325,10 @@
     "top1000": 0.33
    },
    "confidence": "verbatim (parallel research) — needs source check",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Help%20me%2C%20Obi-Wan%20Kenobi.%20You%27re%20my%20only%20hope"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Help%20me%2C%20Obi-Wan%20Kenobi.%20You%27re%20my%20only%20hope",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-star-wars-0015.opus"
+   }
   },
   {
    "id": "q-star-wars-0016",
@@ -302,7 +347,10 @@
     "top1000": 0.86
    },
    "confidence": "verbatim (parallel research) — needs source check",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20have%20a%20bad%20feeling%20about%20this"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20have%20a%20bad%20feeling%20about%20this",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-star-wars-0016.opus"
+   }
   },
   {
    "id": "q-star-wars-0017",
@@ -321,7 +369,10 @@
     "top1000": 0.29
    },
    "confidence": "verbatim (parallel research) — needs source check",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=These%20aren%27t%20the%20droids%20you%27re%20looking%20for"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=These%20aren%27t%20the%20droids%20you%27re%20looking%20for",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-star-wars-0017.opus"
+   }
   },
   {
    "id": "q-star-wars-0018",
@@ -339,7 +390,10 @@
     "top1000": 0.57
    },
    "confidence": "verbatim (parallel research) — needs source check",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20find%20your%20lack%20of%20faith%20disturbing"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20find%20your%20lack%20of%20faith%20disturbing",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-star-wars-0018.opus"
+   }
   },
   {
    "id": "q-star-wars-0019",
@@ -358,7 +412,10 @@
     "top1000": 0.67
    },
    "confidence": "verbatim (parallel research) — needs source check",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Size%20matters%20not"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Size%20matters%20not",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-star-wars-0019.opus"
+   }
   }
  ]
 }

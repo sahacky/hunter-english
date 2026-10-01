@@ -14,6 +14,8 @@ export interface PhrasebookDialog {
     text_en: string
     translation_ru: string
     accepted?: string[]
+    /** Предзаписанное аудио cori (plan://voice-fix V2.2); нет — Web Speech. */
+    audio?: string
   }[]
 }
 

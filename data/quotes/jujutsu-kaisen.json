@@ -19,7 +19,10 @@
    },
    "confidence": "статья Screen Rant; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
    "note": "мем; у фразы спорная история перевода — см. KYM nah-id-win; translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Nah%2C%20I%27d%20win."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Nah%2C%20I%27d%20win.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-jujutsu-kaisen-0001.opus"
+   }
   },
   {
    "id": "q-jujutsu-kaisen-0002",
@@ -37,7 +40,10 @@
     "top1000": 0.6
    },
    "confidence": "статья Screen Rant; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Throughout%20Heaven%20and%20Earth%2C%20I%20alone%20am%20the%20honored%20one."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Throughout%20Heaven%20and%20Earth%2C%20I%20alone%20am%20the%20honored%20one.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-jujutsu-kaisen-0002.opus"
+   }
   },
   {
    "id": "q-jujutsu-kaisen-0003",
@@ -57,7 +63,10 @@
    },
    "confidence": "Screen Rant + ComicBook; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
    "note": "translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Love%20is%20the%20most%20twisted%20curse%20of%20all."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Love%20is%20the%20most%20twisted%20curse%20of%20all.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-jujutsu-kaisen-0003.opus"
+   }
   },
   {
    "id": "q-jujutsu-kaisen-0004",
@@ -76,7 +85,10 @@
    },
    "confidence": "ComicBook (указан англ. дубляж); уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
    "note": "разговорное опущение are; translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=You%20cryin%27%3F"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=You%20cryin%27%3F",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-jujutsu-kaisen-0004.opus"
+   }
   },
   {
    "id": "q-jujutsu-kaisen-0005",
@@ -96,7 +108,10 @@
    },
    "confidence": "ComicBook; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
    "note": "translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=We%27re%20the%20strongest."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=We%27re%20the%20strongest.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-jujutsu-kaisen-0005.opus"
+   }
   },
   {
    "id": "q-jujutsu-kaisen-0006",
@@ -116,7 +131,10 @@
    },
    "confidence": "ComicBook; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
    "note": "translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=What%20kind%20of%20woman%20is%20your%20type%3F"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=What%20kind%20of%20woman%20is%20your%20type%3F",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-jujutsu-kaisen-0006.opus"
+   }
   },
   {
    "id": "q-jujutsu-kaisen-0007",
@@ -136,7 +154,10 @@
    },
    "confidence": "ComicBook; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
    "note": "translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Being%20a%20child%20is%20not%20a%20sin."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Being%20a%20child%20is%20not%20a%20sin.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-jujutsu-kaisen-0007.opus"
+   }
   },
   {
    "id": "q-jujutsu-kaisen-0008",
@@ -155,7 +176,10 @@
    },
    "confidence": "ComicBook; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
    "note": "translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Itadori%2C%20you%27ve%20got%20it%20from%20here."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Itadori%2C%20you%27ve%20got%20it%20from%20here.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-jujutsu-kaisen-0008.opus"
+   }
   },
   {
    "id": "q-jujutsu-kaisen-0009",
@@ -176,7 +200,10 @@
    },
    "confidence": "Jujutsu Kaisen Wiki (Fandom), раздел Quotes — перевод манги",
    "note": "translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Smart%20people%20usually%20don%27t%20brag%20about%20being%20smart."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Smart%20people%20usually%20don%27t%20brag%20about%20being%20smart.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-jujutsu-kaisen-0009.opus"
+   }
   },
   {
    "id": "q-jujutsu-kaisen-0010",
@@ -194,7 +221,10 @@
     "top1000": 0.4
    },
    "confidence": "verbatim (parallel research) — needs source check",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Don%27t%20worry.%20I%27m%20the%20strongest"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Don%27t%20worry.%20I%27m%20the%20strongest",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-jujutsu-kaisen-0010.opus"
+   }
   },
   {
    "id": "q-jujutsu-kaisen-0011",
@@ -213,7 +243,10 @@
     "top1000": 0.5
    },
    "confidence": "verbatim (parallel research) — needs source check",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Stand%20proud.%20You%27re%20strong"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Stand%20proud.%20You%27re%20strong",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-jujutsu-kaisen-0011.opus"
+   }
   },
   {
    "id": "q-jujutsu-kaisen-0012",
@@ -232,7 +265,10 @@
     "top1000": 0.86
    },
    "confidence": "verbatim (parallel research) — needs source check",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=What%20kind%20of%20women%20do%20you%20like%3F"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=What%20kind%20of%20women%20do%20you%20like%3F",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-jujutsu-kaisen-0012.opus"
+   }
   },
   {
    "id": "q-jujutsu-kaisen-0013",
@@ -252,7 +288,10 @@
     "top1000": 0.82
    },
    "confidence": "verbatim (parallel research) — needs source check",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=You%27re%20a%20strong%20kid%2C%20so%20help%20people.%20Die%20surrounded%20by%20people"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=You%27re%20a%20strong%20kid%2C%20so%20help%20people.%20Die%20surrounded%20by%20people",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-jujutsu-kaisen-0013.opus"
+   }
   },
   {
    "id": "q-jujutsu-kaisen-0014",
@@ -270,7 +309,10 @@
     "top1000": 0.73
    },
    "confidence": "verbatim (parallel research) — needs source check",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Dying%20to%20win%20and%20risking%20death%20to%20win%20are%20completely%20different"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Dying%20to%20win%20and%20risking%20death%20to%20win%20are%20completely%20different",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-jujutsu-kaisen-0014.opus"
+   }
   },
   {
    "id": "q-jujutsu-kaisen-0015",
@@ -288,7 +330,10 @@
     "top1000": 0.38
    },
    "confidence": "verbatim (parallel research) — needs source check",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=I%27m%20not%20a%20hero.%20I%27m%20a%20jujutsu%20sorcerer"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%27m%20not%20a%20hero.%20I%27m%20a%20jujutsu%20sorcerer",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-jujutsu-kaisen-0015.opus"
+   }
   },
   {
    "id": "q-jujutsu-kaisen-0016",
@@ -306,7 +351,10 @@
     "top1000": 0.17
    },
    "confidence": "verbatim (parallel research) — needs source check",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=It%27s%20your%20fault%20for%20being%20weak"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=It%27s%20your%20fault%20for%20being%20weak",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-jujutsu-kaisen-0016.opus"
+   }
   },
   {
    "id": "q-jujutsu-kaisen-0017",
@@ -326,7 +374,10 @@
    },
    "confidence": "статья Screen Rant; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
    "note": "⚠ сверить с дубляжом",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Are%20you%20the%20strongest%20because%20you%27re%20Satoru%20Gojo%2C%20or%20are%20you%20Satoru%20Gojo%20because%20you%27re%20the%20strongest%3F"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Are%20you%20the%20strongest%20because%20you%27re%20Satoru%20Gojo%2C%20or%20are%20you%20Satoru%20Gojo%20because%20you%27re%20the%20strongest%3F",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-jujutsu-kaisen-0017.opus"
+   }
   }
  ]
 }

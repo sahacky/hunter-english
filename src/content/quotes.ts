@@ -11,6 +11,8 @@ export interface QuoteItem {
   auto_vocab?: { top1000: number }
   est_rank?: string
   link_playphrase?: string
+  /** Предзаписанное аудио cori (plan://voice-fix V2.1); нет — Web Speech. */
+  audio?: { en_gb?: string }
 }
 
 interface QuotesFile {

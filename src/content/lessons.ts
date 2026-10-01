@@ -367,6 +367,8 @@ export interface QuoteItem {
   text: string
   translation_ru: string
   auto_vocab: { top1000: number }
+  /** Предзаписанное аудио cori (plan://voice-fix V2.1); нет — Web Speech. */
+  audio?: { en_gb?: string }
 }
 
 interface QuotesFile {
