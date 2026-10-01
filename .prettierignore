@@ -6,3 +6,6 @@ data/words/
 data/quotes/
 data/traps.json
 data/manifest.json
+
+# Мини-словарь (research/tools/vocab/build_travel_vocab.py)
+data/vocab/

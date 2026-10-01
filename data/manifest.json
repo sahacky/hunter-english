@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-01T10:52:47Z",
+  "generated_at": "2026-10-01T13:10:03Z",
   "files": [
     {
       "path": "lessons/exercises-a.json",
@@ -316,6 +316,13 @@
       "schema_version": 1,
       "items": 31,
       "sha256": "8e42fc1a6388d1cacf531899193e1405d4d326f85466250576533f8403ab9456"
+    },
+    {
+      "path": "vocab/travel.json",
+      "kind": "vocab",
+      "schema_version": 1,
+      "items": 487,
+      "sha256": "16fe22b9c4d3a428fb3ae467bd21c781b205d0b205f3f32354d683777da10a91"
     },
     {
       "path": "words/words-0001-0500.json",

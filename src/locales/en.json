@@ -232,6 +232,20 @@
       "pharmacy": "Pharmacy and doctor",
       "idioms": "Traveler idioms"
     },
+    "vocabTitle": "Travel mini-dictionary",
+    "vocabHint": "Words by topic — tap 🔊 to hear the pronunciation.",
+    "playWord": "Play the word",
+    "vocabTopics": {
+      "politeness": "Small talk and politeness",
+      "communication": "Getting your message across",
+      "airport": "Airport and flight",
+      "hotel": "Hotel",
+      "restaurant": "Restaurant and food",
+      "shopping": "Shopping and money",
+      "transport": "Transport and city",
+      "health": "Health and pharmacy",
+      "numbers-time": "Numbers, time and dates"
+    },
     "answerByVoice": "Answer by voice"
   },
   "toast": {

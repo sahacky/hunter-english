@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next'
 import { judge, judgeVoice } from '../domain/check/checker'
 import type { CheckResult } from '../domain/check/types'
 import { loadPhrasebook, SITUATIONS, type PhrasebookDialog } from '../content/phrasebook'
+import { groupVocabByTopic, loadTravelVocab, type TravelVocabEntry } from '../content/vocab'
 import { FeedbackPlate } from '../components/lesson/ExerciseView'
 import { speak } from '../lib/tts'
 import { cancelListening, isSpeechSupported, listenOnce } from '../lib/speech'
@@ -60,6 +61,13 @@ export function PhrasebookScreen() {
             </li>
           )
         })}
+        <li>
+          {/* мини-словарь доступен всегда: справочник, не урок (plan://travel-vocab#V.3) */}
+          <a className="pb-card" href="#/phrasebook/vocab">
+            {t('phrasebook.vocabTitle')}
+            <span className="dim"> · 🔊</span>
+          </a>
+        </li>
       </ul>
     </section>
   )
@@ -97,6 +105,10 @@ export function PhrasebookSituationScreen() {
   const dialog = situationDialogs[dialogIndex]
   const line = dialog?.lines[lineIndex]
   const isUser = line !== undefined && dialog !== undefined && line.role === dialog.user_role
+
+  // мини-словарь — отдельный вид той же секции (plan://travel-vocab#V.3);
+  // после всех хуков: маршрут меняется внутри одного компонента
+  if (situation === 'vocab') return <TravelVocabView />
 
   if (!dialogs) {
     return (
@@ -244,6 +256,68 @@ export function PhrasebookSituationScreen() {
           )}
         </div>
       )}
+      <p className="dim">
+        <a href="#/phrasebook">← {t('phrasebook.back')}</a>
+      </p>
+    </section>
+  )
+}
+
+/** Мини-словарь путешественника: темы + слова с озвучкой (plan://travel-vocab#V.3). */
+function TravelVocabView() {
+  const { t } = useTranslation()
+  const [entries, setEntries] = useState<TravelVocabEntry[] | null>(null)
+
+  useEffect(() => {
+    let alive = true
+    void loadTravelVocab()
+      .then((value) => {
+        if (alive) setEntries(value)
+      })
+      .catch(() => {
+        if (alive) setEntries([])
+      })
+    return () => {
+      alive = false
+    }
+  }, [])
+
+  if (!entries) {
+    return (
+      <section className="panel">
+        <p className="dim">{t('common.loading')}</p>
+      </section>
+    )
+  }
+
+  const groups = groupVocabByTopic(entries)
+  return (
+    <section className="panel">
+      <h2>{t('phrasebook.vocabTitle')}</h2>
+      <p className="dim">{t('phrasebook.vocabHint')}</p>
+      {groups.map((group) => (
+        <section key={group.topic} className="pb-vocab-topic">
+          <h3>{t(`phrasebook.vocabTopics.${group.topic}`)}</h3>
+          <ul className="pb-vocab">
+            {group.words.map((word) => (
+              <li key={`${group.topic}-${word.en}`} className="pb-vocab-row">
+                <button
+                  type="button"
+                  className="srs-btn"
+                  aria-label={t('phrasebook.playWord')}
+                  onClick={() => speak(word.en, { src: word.audio })}
+                >
+                  🔊
+                </button>{' '}
+                <span lang="en">{word.en}</span>{' '}
+                <span className="dim" lang="ru">
+                  — {word.ru}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
       <p className="dim">
         <a href="#/phrasebook">← {t('phrasebook.back')}</a>
       </p>

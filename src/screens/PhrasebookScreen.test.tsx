@@ -13,6 +13,26 @@ vi.mock('../content/phrasebook', async (importOriginal) => {
   return { ...actual, loadPhrasebook: vi.fn(actual.loadPhrasebook) }
 })
 
+// plan://travel-vocab#V.5 — контролируемые слова мини-словаря (группировка real)
+vi.mock('../content/vocab', async (importOriginal) => {
+  const actual = await importOriginal<typeof import('../content/vocab')>()
+  return {
+    ...actual,
+    loadTravelVocab: vi.fn(async () => [
+      {
+        topic: 'airport',
+        en: 'boarding pass',
+        ru: 'посадочный талон',
+        audio: 'audio/words/cori/boarding-noun.opus',
+      },
+      { topic: 'airport', en: 'gate', ru: 'выход (на посадку)' },
+      { topic: 'politeness', en: 'thank you', ru: 'спасибо' },
+    ]),
+  }
+})
+
+vi.mock('../lib/tts', () => ({ speak: vi.fn(() => true), stopSpeak: vi.fn() }))
+
 const dialogs = smalltalk.items
 const firstUserLine = dialogs[0]!.lines.find((line) => line.accepted)!
 
@@ -28,7 +48,7 @@ function renderSituation(id = 'smalltalk') {
 }
 
 describe('PhrasebookScreen /#/phrasebook', () => {
-  it('список: все 11 ситуаций (10 путешественника + идиомы M20), карточки ведут на главы', async () => {
+  it('список: 11 ситуаций (10 путешественника + идиомы M20) + карточка мини-словаря', async () => {
     window.location.hash = '#/phrasebook'
     render(
       <HashRouter>
@@ -40,10 +60,48 @@ describe('PhrasebookScreen /#/phrasebook', () => {
     expect(await screen.findByText('Разговорник')).toBeInTheDocument()
     const cards = screen.getAllByRole('link')
     expect(cards.filter((c) => c.getAttribute('href')?.startsWith('#/phrasebook/'))).toHaveLength(
-      11,
+      12,
     )
     // контент всех глав уже поставлен (M8–M14) — ни одна карточка не «закрыта»
     expect(screen.queryByText(/главы пока не готовы/)).not.toBeInTheDocument()
+    // карточка мини-словаря ведёт на свой вид
+    expect(screen.getByText('Мини-словарь путешественника').closest('a')).toHaveAttribute(
+      'href',
+      '#/phrasebook/vocab',
+    )
+  })
+
+  it('мини-словарь: темы в каноническом порядке, 🔊 зовёт speak с аудио и без (TTS)', async () => {
+    renderSituation('vocab')
+    expect(await screen.findByText('Мини-словарь путешественника')).toBeInTheDocument()
+    expect(screen.getByText('Знакомство и вежливость')).toBeInTheDocument()
+    // канонический порядок тем: politeness раньше airport
+    const topics = screen
+      .getAllByRole('heading', { level: 3 })
+      .map((heading) => heading.textContent)
+    expect(topics.indexOf('Знакомство и вежливость')).toBeLessThan(
+      topics.indexOf('Аэропорт и самолёт'),
+    )
+    // слово без аудио (gate) и с аудио (boarding pass)
+    expect(screen.getByText('boarding pass')).toBeInTheDocument()
+    expect(screen.getByText('gate')).toBeInTheDocument()
+
+    const { speak } = await import('../lib/tts')
+    const buttons = screen.getAllByRole('button', { name: 'Прослушать слово' })
+    fireEvent.click(buttons[1]!) // boarding pass — с готовым аудио
+    expect(vi.mocked(speak)).toHaveBeenLastCalledWith('boarding pass', {
+      src: 'audio/words/cori/boarding-noun.opus',
+    })
+    fireEvent.click(buttons[2]!) // gate — TTS-фолбэк без src
+    expect(vi.mocked(speak)).toHaveBeenLastCalledWith('gate', { src: undefined })
+  })
+
+  it('мини-словарь: ошибка загрузки — экран без тем (S4-покрытие catch-ветки)', async () => {
+    const { loadTravelVocab } = await import('../content/vocab')
+    vi.mocked(loadTravelVocab).mockRejectedValueOnce(new Error('disk'))
+    renderSituation('vocab')
+    expect(await screen.findByText('Мини-словарь путешественника')).toBeInTheDocument()
+    expect(screen.queryByRole('heading', { level: 3 })).not.toBeInTheDocument()
   })
 })
 
