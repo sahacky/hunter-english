@@ -185,7 +185,9 @@ export default function LessonScreen({
   // --- сохранение чекпоинта: очередь «последний выигрывает» ------------------
   const persist = useCallback(
     async (cp: LessonCheckpoint) => {
+      /* istanbul ignore start — двойная гарда: все вызывающие уже проверили view */
       if (!view) return
+      /* istanbul ignore stop */
       pendingRef.current = cp
       if (saveBusy.current) return
       saveBusy.current = true
@@ -302,7 +304,9 @@ export default function LessonScreen({
   /** Финальный исход задания (компонент вызывает ровно один раз) — specs/02 §5. */
   const handleAnswer = useCallback(
     (outcome: ExerciseOutcome, attempts: number, exerciseId: string) => {
+      /* istanbul ignore start — двойная гарда: роутер рендерится только при view */
       if (!view) return
+      /* istanbul ignore stop */
       const next = recordAnswer(checkpointRef.current, view.steps, exerciseId, outcome, attempts)
       setCheckpoint(next)
       void persist(next)
@@ -313,7 +317,9 @@ export default function LessonScreen({
   /** Спор «Я был прав» (specs/02 §4.6): перезапись исхода на disputed (полный XP). */
   const handleDispute = useCallback(
     (exerciseId: string) => {
+      /* istanbul ignore start — двойная гарда: роутер рендерится только при view */
       if (!view) return
+      /* istanbul ignore stop */
       const result = checkpointRef.current.results[exerciseId]
       const attempts = result?.attempts ?? 1
       const next = recordAnswer(checkpointRef.current, view.steps, exerciseId, 'disputed', attempts)
@@ -369,7 +375,9 @@ export default function LessonScreen({
 
   /** Шаг 7: фразы урока → SRS (rule-1: en-ru первой) — specs/02 §2 шаг 7. */
   const enrollDeck = useCallback(async () => {
+    /* istanbul ignore start — двойная гарда: единственный вызывающий проверил view */
     if (!view) return
+    /* istanbul ignore stop */
     await repo.ensureCards(createFirstCards(toPhraseNotes(lessonPhrases(view)), new Date()))
     const cp: LessonCheckpoint = {
       ...checkpointRef.current,
@@ -380,7 +388,9 @@ export default function LessonScreen({
   }, [view, repo, persist])
 
   const finishLesson = useCallback(async () => {
+    /* istanbul ignore start — двойная гарда: кнопка финала рендерится только при view */
     if (!view) return
+    /* istanbul ignore stop */
     try {
       await enrollDeck()
       // istanbul ignore next — защитная ветка от unmount-гонки (нестабильна в юнитах)

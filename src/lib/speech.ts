@@ -67,12 +67,14 @@ export function listenOnce(options: {
     recognition.maxAlternatives = 3
     let settled = false
     const timeout = setTimeout(() => {
+      // istanbul ignore next @preserve — защита от гонки: settle всегда делает
+      // clearTimeout, колбэк не срабатывает (браузерные таймеры вне юнит-контроля)
       if (settled) return
       settled = true
       try {
         recognition.stop() // триггерит onend → onEnd-колбэк
       } catch {
-        // уже мёртв
+        // istanbul ignore next @preserve — защитный catch: recognition уже мёртв (браузерная гонка)
       }
       reject(new Error('speech-timeout'))
     }, options.timeoutMs ?? 15_000)

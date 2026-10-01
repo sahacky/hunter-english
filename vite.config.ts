@@ -67,10 +67,12 @@ export default defineConfig({
       exclude: ['src/test/**', 'src/i18n.ts', 'src/main.tsx'],
       // рейчёт: порог = зафиксированный уровень M19; повышать при добавлении тестов
       thresholds: {
-        statements: 94,
-        branches: 84,
-        functions: 92,
-        lines: 96,
+        // веха S4 (план M21#21.4): statements/lines 100%; branches/functions —
+        // зафиксированный уровень (остаток — обоснованные istanbul-ignore)
+        statements: 100,
+        branches: 90,
+        functions: 99,
+        lines: 100,
       },
     },
   },

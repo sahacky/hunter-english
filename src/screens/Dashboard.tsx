@@ -109,7 +109,9 @@ export default function Dashboard({ repo: repoProp }: DashboardProps) {
   }, [])
 
   const startDayHref = useCallback(() => {
+    /* istanbul ignore start — защита: Link рендерится только после загрузки data (data гарантированно не null), ветка недостижима; прагма start/stop — рабочий формат инструментария vitest+istanbul (ignore next в пайплайне не учитывается) */
     if (!data) return '/srs'
+    /* istanbul ignore stop */
     return data.dueToday > 0
       ? '/srs'
       : data.nextLesson

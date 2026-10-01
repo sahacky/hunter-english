@@ -6,6 +6,8 @@ import { HashRouter } from 'react-router-dom'
 import { beforeEach, describe, expect, it } from 'vitest'
 import App from '../App'
 import { createFirstCards } from '../content/words'
+import { dayStart } from '../domain/srs/scheduler'
+import { createQuestDay } from '../domain/game/game'
 import { DexieProgressRepository } from '../data/progress-repository'
 import { HunterDb } from '../data/db'
 import type { ProgressRepository } from '../domain/progress'
@@ -443,5 +445,97 @@ describe('SrsScreen: хвосты (M19)', () => {
     expect(
       await screen.findByText(/Ошибка|не удалось/i, undefined, { timeout: 4000 }),
     ).toBeInTheDocument()
+  })
+})
+
+// Веха S4 (M21#21.4): хвосты экрана — сбой бустрапа, клавиши R/S,
+// заморозка стрика в сессии, клики оценок в режиме 4 кнопок
+describe('SrsScreen: хвосты S4', () => {
+  it('сбой бустрапа (getAllCards) → error-фаза', async () => {
+    const broken: ProgressRepository = {
+      ...delayRepo(repo, 0),
+      getAllCards: async () => {
+        throw new Error('storage broken')
+      },
+    }
+    renderScreen(broken)
+    expect(
+      await screen.findByText(/Не удалось сохранить прогресс/, undefined, { timeout: 4000 }),
+    ).toBeInTheDocument()
+  })
+
+  it('клавиши R и S озвучивают карточку (обычный и медленный темп)', async () => {
+    await bootstrap()
+    renderScreen()
+    await screen.findByText('house', undefined, { timeout: 4000 })
+    const tts = await import('../lib/tts')
+    fireEvent.keyDown(window, { key: 'r' })
+    expect(vi.mocked(tts.speak)).toHaveBeenLastCalledWith('house', {
+      src: 'audio/words/cori/test001.opus',
+    })
+    fireEvent.keyDown(window, { key: 's' })
+    expect(vi.mocked(tts.speak)).toHaveBeenLastCalledWith('house', {
+      src: 'audio/words/cori/test001.opus',
+      rate: 0.75,
+    })
+  })
+
+  it('закрытие дня на стрике 7 → тост о заморозке (freezeGained)', async () => {
+    const { ToastHost } = await import('../components/ToastHost')
+    const dayIso = dayStart(new Date()).toISOString()
+    await repo.putStats({ ...(await repo.getStats()), streak_current: 6, streak_best: 6 })
+    const quest = createQuestDay(dayIso, 0)
+    quest.slots.reviews = { done: 19, target: 20 } // один ответ закроет слот повторов
+    await repo.putQuestDay(quest)
+    render(
+      <HashRouter>
+        <SrsScreen repo={repo} notes={notes} />
+        <ToastHost />
+      </HashRouter>,
+    )
+    await screen.findByText('house', undefined, { timeout: 4000 })
+    fireEvent.click(screen.getByRole('button', { name: /Показать ответ/ }))
+    fireEvent.click(screen.getByRole('button', { name: /^Вспомнил/ }))
+    // closeStudyDay: стрик 6→7 → +1 заморозка (тост «Получена заморозка стрика»)
+    expect(
+      await screen.findByText(/Получена заморозка стрика/i, undefined, { timeout: 4000 }),
+    ).toBeInTheDocument()
+    await waitFor(() => expect(repo.getStats()).resolves.toMatchObject({ freezes_left: 3 }))
+  })
+
+  it('режим 4 кнопок: клики Не вспомнил/Трудно/Вспомнил/Легко пишут рейтинги 1/2/3/4', async () => {
+    await saveSettings(globalDb.meta, { ...DEFAULT_SETTINGS, srsButtons: 4 })
+    try {
+      notes = mkNotes(4)
+      await bootstrap()
+      render(
+        <SettingsProvider>
+          <HashRouter>
+            <SrsScreen repo={repo} notes={notes} />
+          </HashRouter>
+        </SettingsProvider>,
+      )
+      // карточка 1: Again (learning — вернётся в очередь)
+      await screen.findByText('house', undefined, { timeout: 4000 })
+      fireEvent.click(screen.getByRole('button', { name: /Показать ответ/ }))
+      fireEvent.click(screen.getByRole('button', { name: /^Не вспомнил/ }))
+      // карточка 2: Hard
+      await screen.findByText('water', undefined, { timeout: 4000 })
+      fireEvent.click(screen.getByRole('button', { name: /Показать ответ/ }))
+      fireEvent.click(screen.getByRole('button', { name: /^Трудно/ }))
+      // карточка 3: Good
+      await screen.findByText('friend', undefined, { timeout: 4000 })
+      fireEvent.click(screen.getByRole('button', { name: /Показать ответ/ }))
+      fireEvent.click(screen.getByRole('button', { name: /^Вспомнил/ }))
+      // карточка 4: Easy
+      await screen.findByText('house', { selector: '.srs-front' }, { timeout: 4000 })
+      fireEvent.click(screen.getByRole('button', { name: /Показать ответ/ }))
+      fireEvent.click(screen.getByRole('button', { name: /^Легко/ }))
+      await waitFor(() => expect(db.review_log.count()).resolves.toBe(4), { timeout: 4000 })
+      const ratings = (await db.review_log.toArray()).map((log) => log.rating).sort()
+      expect(ratings).toEqual([1, 2, 3, 4])
+    } finally {
+      await saveSettings(globalDb.meta, DEFAULT_SETTINGS)
+    }
   })
 })

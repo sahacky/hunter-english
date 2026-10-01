@@ -8,7 +8,9 @@ import {
   lessonToCourseId,
   loadLessonView,
   loadLessons,
+  loadPhraseNotes,
   loadPhrases,
+  loadQuotes,
   withWarmupVariant,
   type ExerciseItem,
   type LessonItem,
@@ -223,6 +225,23 @@ describe('withWarmupVariant (план M21#21.1 — разогрев повтор
     // шага warmup нет вовсе → без изменений
     expect(withWarmupVariant(view)).toBe(view)
   })
+
+  it('warmup есть, но уникальных RU-фраз меньше минимума — view без изменений (M21#21.4)', () => {
+    // choose_translation даёт шаг warmup, но пул из 2 фраз < WARMUP_MIN_POOL (9)
+    const exercises = [
+      exercise('ex-w-01', 'choose_translation', {
+        prompt: 'Перевод ph-0001',
+        options: ['a'],
+        correct: 0,
+      }),
+    ]
+    const byId = new Map(exercises.map((e) => [e.id, e]))
+    const phrases = [phrase('ph-0001'), phrase('ph-0002')]
+    const phraseById = new Map(phrases.map((p) => [p.id, p]))
+    const view = assembleLesson(lesson(['ex-w-01']), byId, phraseById)
+    expect(view.steps.some(({ kind }) => kind === 'warmup')).toBe(true)
+    expect(withWarmupVariant(view)).toBe(view)
+  })
 })
 
 describe('loadLessonView (реальные data/ ранга E)', () => {
@@ -360,6 +379,24 @@ describe('loadLessonView (реальные data/ ранга E)', () => {
     const topics = new Set(lessons.map((lesson) => lesson.phrasebook_topic).filter(Boolean))
     for (const t of ['passport', 'restaurant', 'pharmacy', 'airport'])
       expect(topics.has(t), t).toBe(true)
+  })
+})
+
+describe('loadQuotes / loadPhraseNotes (specs/05 §5, /#/srs)', () => {
+  it('цитаты всех тайтлов проходят конверт и содержат поля UI', async () => {
+    const quotes = await loadQuotes()
+    expect(quotes.length).toBeGreaterThan(0)
+    expect(
+      quotes.every(({ id, title, season_episode, speaker, text, translation_ru }) =>
+        Boolean(id && title && season_episode && speaker && text && translation_ru),
+      ),
+    ).toBe(true)
+  })
+
+  it('заметки фраз — 1:1 с фразами, id с префиксом note_', async () => {
+    const [notes, phrases] = await Promise.all([loadPhraseNotes(), loadPhrases()])
+    expect(notes.length).toBe(phrases.length)
+    expect(notes.every((note) => note.id.startsWith('note_') && note.deck === 'phrases')).toBe(true)
   })
 })
 

@@ -1,6 +1,6 @@
 import 'fake-indexeddb/auto'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
-import { fireEvent, render, waitFor } from '@testing-library/react'
+import { fireEvent, render, screen, waitFor } from '@testing-library/react'
 import { HunterDb } from '../data/db'
 import { buildExportPayload, importPayload, type ExportPayload } from './SettingsScreen'
 import { uuidv7 } from '../lib/uuidv7'
@@ -280,12 +280,16 @@ vi.mock('../state/auth', () => ({
 const syncMock = vi.hoisted(() => ({
   now: vi.fn(async () => undefined),
   status: { configured: false, queue: 0, failed: 0, lastSyncAt: null as string | null },
+  statusFail: false, // флаг отказа readSyncStatus для теста catch-ветки (веха S4)
 }))
 // полный ручной мок (без importOriginal): загрузка оригинала в этом воркере
 // затирала бы покрытие sync.ts при мерже (v8 last-wins, M19)
 vi.mock('../data/sync', () => ({
   syncNow: syncMock.now,
-  readSyncStatus: async () => ({ ...syncMock.status }),
+  readSyncStatus: async () => {
+    if (syncMock.statusFail) throw new Error('status broken')
+    return { ...syncMock.status }
+  },
 }))
 
 describe('sanitizeImport: все защитные ветки (M19)', () => {
@@ -466,5 +470,176 @@ describe('SettingsScreen: данные и контролы (M19)', () => {
     authMock.email = null
     authMock.configured = false
     syncMock.status = { configured: false, queue: 0, failed: 0, lastSyncAt: null }
+  })
+
+  // Веха S4 (M21#21.4): хвосты экрана — отказ статуса, UI-путь импорта с reload,
+  // отказ сброса, локаль, выход, отказ синка, диалог файла, отмена сброса
+  it('readSyncStatus падает → экран жив (catch в эффекте)', async () => {
+    syncMock.statusFail = true
+    try {
+      const { findByText } = await renderScreen()
+      expect(await findByText('Данные')).toBeInTheDocument()
+      expect(screen.queryByText(/в очереди:/i)).not.toBeInTheDocument()
+    } finally {
+      syncMock.statusFail = false
+    }
+  })
+
+  it('импорт валидного файла через UI: importPayload → тост и reload через 600мс', async () => {
+    // jsdom не реализует Blob.text() — минимальный шим через FileReader
+    // (компонент и данные не меняются; в браузере метод есть)
+    if (typeof File.prototype.text !== 'function') {
+      File.prototype.text = async function (this: File) {
+        return new Promise<string>((resolve, reject) => {
+          const reader = new FileReader()
+          reader.onload = () => resolve(String(reader.result))
+          reader.onerror = () => reject(reader.error)
+          reader.readAsText(this)
+        })
+      }
+    }
+    const reload = vi.fn()
+    const original = window.location
+    Object.defineProperty(window, 'location', {
+      value: { ...original, reload },
+      writable: true,
+      configurable: true,
+    })
+    try {
+      const { container, findByText } = await renderScreen()
+      await findByText('Данные')
+      const input = container.querySelector<HTMLInputElement>('input[type="file"]')
+      if (!input) throw new Error('нет file input')
+      const payload = {
+        app: 'hunter-english',
+        export_version: 1,
+        exported_at: new Date().toISOString(),
+        tables: {
+          card_states: [
+            {
+              user_id: 'someone',
+              card_id: 'ui-import.en-ru',
+              note_id: 'ui-import',
+              type: 'en-ru',
+              deck: 'words',
+              due: new Date().toISOString(),
+              stability: 1,
+              difficulty: 5,
+              elapsed_days: 0,
+              scheduled_days: 0,
+              reps: 1,
+              lapses: 0,
+              state: 2,
+              last_review: null,
+              suspended: false,
+              cloze_index: null,
+              created_at: new Date().toISOString(),
+              updated_at: new Date().toISOString(),
+            },
+          ],
+        },
+      }
+      Object.defineProperty(input, 'files', {
+        value: [new File([JSON.stringify(payload)], 'ok.json')],
+        configurable: true,
+      })
+      fireEvent.change(input)
+      // строка импорта легла под активного владельца (детерминированный эффект UI-пути)
+      await waitFor(
+        async () => {
+          expect(await db.card_states.get(['local', 'ui-import.en-ru'])).toBeTruthy()
+        },
+        { timeout: 3000 },
+      )
+      // reloadWithToast откладывает reload на 600мс реального таймера
+      await waitFor(() => expect(reload).toHaveBeenCalled(), { timeout: 3000 })
+    } finally {
+      Object.defineProperty(window, 'location', {
+        value: original,
+        writable: true,
+        configurable: true,
+      })
+    }
+  })
+
+  it('сбой транзакции сброса → тост ошибки, база не тронута', async () => {
+    const brokenDb = {
+      name: 'broken-db',
+      transaction: async () => {
+        throw new Error('io error')
+      },
+    } as unknown as HunterDb
+    const { ToastHost } = await import('../components/ToastHost')
+    const { default: SettingsScreen } = await import('./SettingsScreen')
+    const { SettingsProvider } = await import('../state/settings')
+    const { findByText, getByText } = render(
+      <SettingsProvider>
+        <SettingsScreen database={brokenDb} />
+        <ToastHost />
+      </SettingsProvider>,
+    )
+    fireEvent.click(await findByText('Сбросить прогресс'))
+    fireEvent.click(getByText('Удалить'))
+    expect(
+      await findByText('Не удалось сбросить прогресс.', undefined, { timeout: 4000 }),
+    ).toBeInTheDocument()
+  })
+
+  it('локаль: селект «Язык интерфейса» переключает en и обратно', async () => {
+    const { findByLabelText } = await renderScreen()
+    const locale = await findByLabelText('Язык интерфейса')
+    fireEvent.change(locale, { target: { value: 'en' } })
+    await waitFor(() => expect(document.documentElement.lang).toBe('en'))
+    // после смены языка лейблы перерисовались — возвращаем по значению select
+    fireEvent.change(locale, { target: { value: 'ru' } })
+    await waitFor(() => expect(document.documentElement.lang).toBe('ru'))
+  })
+
+  it('вошедший пользователь: кнопка «Выйти» зовёт signOut', async () => {
+    authMock.guest = false
+    authMock.email = 'a@b.c'
+    try {
+      const { findByText } = await renderScreen()
+      fireEvent.click(await findByText('Выйти'))
+      await waitFor(() => expect(authMock.signOut).toHaveBeenCalled())
+    } finally {
+      authMock.guest = true
+      authMock.email = null
+    }
+  })
+
+  it('syncNow падает → catch глотает, кнопка разблокируется', async () => {
+    authMock.guest = false
+    authMock.configured = true
+    syncMock.status = { configured: true, queue: 1, failed: 0, lastSyncAt: null }
+    syncMock.now.mockRejectedValueOnce(new Error('offline'))
+    try {
+      const { findByRole } = await renderScreen()
+      const syncBtn = await findByRole('button', { name: /Синхронизировать/i })
+      fireEvent.click(syncBtn)
+      await waitFor(() => expect(syncBtn).toBeEnabled(), { timeout: 3000 })
+    } finally {
+      authMock.guest = true
+      authMock.configured = false
+      syncMock.status = { configured: false, queue: 0, failed: 0, lastSyncAt: null }
+      syncMock.now.mockClear()
+    }
+  })
+
+  it('кнопка «Импорт из файла» открывает диалог выбора файла', async () => {
+    const click = vi.fn()
+    HTMLInputElement.prototype.click = click
+    const { findByText } = await renderScreen()
+    fireEvent.click(await findByText('Импорт из файла'))
+    expect(click).toHaveBeenCalled()
+  })
+
+  it('«Отмена» в подтверждении сброса закрывает опасную зону без удаления', async () => {
+    const { findByText, getByText, queryByText } = await renderScreen()
+    fireEvent.click(await findByText('Сбросить прогресс'))
+    expect(getByText(/Удалить весь прогресс\?/)).toBeInTheDocument()
+    fireEvent.click(getByText('Отмена'))
+    expect(queryByText(/Удалить весь прогресс\?/)).not.toBeInTheDocument()
+    expect(await db.card_states.count()).toBe(0)
   })
 })

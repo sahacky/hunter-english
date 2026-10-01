@@ -406,10 +406,11 @@ export function WordBankExercise({
   const finished = solved || revealed
 
   const put = (token: string) => {
-    /* istanbul ignore next */ // плитки disabled при finished — гарда защитная
+    /* istanbul ignore next @preserve */ // плитки disabled при finished — гарда защитная
     if (finished) return
     setBank((prev) => {
       const index = prev.findIndex((item) => item.token === token && !item.used)
+      /* istanbul ignore next @preserve */ // повторный клик по used-плитке невозможен (disabled)
       if (index === -1) return prev
       return prev.map((item, i) => (i === index ? { ...item, used: true } : item))
     })
@@ -417,7 +418,7 @@ export function WordBankExercise({
   }
 
   const removeSlot = (slotIndex: number) => {
-    /* istanbul ignore next */ // защитные гарды: слоты disabled/индекс всегда валиден
+    /* istanbul ignore next @preserve */ // защитные гарды: слоты disabled/индекс всегда валиден
     if (finished) return
     const token = slots[slotIndex]
     if (token === undefined) return
@@ -570,8 +571,7 @@ export function VoiceExercise({
   }
 
   const listen = async () => {
-    /* istanbul ignore next */ // кнопка disabled в этих состояниях
-    /* istanbul ignore next */ // кнопка disabled в этих состояниях
+    /* istanbul ignore next @preserve */ // кнопка disabled в этих состояниях (React не диспатчит клики)
     if (listening || done) return
     setListening(true)
     setFeedback(null)
@@ -821,6 +821,7 @@ export function TransformExercise({
       : (phrasesById[payloadData.steps[stepIndex - 1]!.phrase_id]?.text_en ?? '')
 
   const check = () => {
+    /* istanbul ignore next @preserve — защитный гард: форма рендерится только при валидных step/target */
     if (!target || !step) return
     const task: CheckTask = {
       accepted: target.variants.length > 0 ? target.variants : [target.text_en],
@@ -877,7 +878,8 @@ export function TransformExercise({
           className="lesson-input-row"
           onSubmit={(event) => {
             event.preventDefault()
-            // после двух неудач шага — эталон показан, «Дальше» ведёт по цепочке
+            /* istanbul ignore next @preserve — защитная ветка: условие совпадает с failed,
+               при котором форма уже не рендерится (эталон и «Дальше» — вне формы) */
             if (result && !ok && attempts >= 2) {
               advance()
               return

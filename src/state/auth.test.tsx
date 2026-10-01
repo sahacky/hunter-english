@@ -19,15 +19,19 @@ const supabaseMock = vi.hoisted(() => {
         listeners.push(cb)
         return { data: { subscription: { unsubscribe: () => undefined } } }
       },
-      getSession: async () => ({
-        data: {
-          session: supabaseMock.session.user
-            ? {
-                user: supabaseMock.session.user,
-              }
-            : null,
-        },
-      }),
+      getSession: async () => {
+        // флаг включает реальный отказ сессии: catch-ветка провайдера (S4)
+        if (supabaseMock.throwOnSession) throw new Error('session broken')
+        return {
+          data: {
+            session: supabaseMock.session.user
+              ? {
+                  user: supabaseMock.session.user,
+                }
+              : null,
+          },
+        }
+      },
       signInWithOtp: vi.fn(async () => ({
         error: supabaseMock.otpError ? { message: supabaseMock.otpError } : null,
       })),
@@ -228,6 +232,56 @@ describe('AuthProvider', () => {
     window.dispatchEvent(new Event('online'))
     await onlineHandler
     await waitFor(() => expect(syncNow).toHaveBeenCalled())
+  })
+
+  // Веха S4 (M21#21.4): дефолтный контекст, ранний выход, фоновые триггеры при ошибке синка
+  it('useAuth без провайдера: дефолтные magic/google/signOut работают и отказывают', async () => {
+    render(<Probe />)
+    expect(await screen.findByTestId('guest')).toHaveTextContent('true')
+    fireEvent.click(screen.getByText('magic'))
+    await waitFor(() => expect(screen.getByTestId('magic')).toHaveTextContent('ok:false'))
+    fireEvent.click(screen.getByText('google'))
+    await waitFor(() => expect(screen.getByTestId('magic')).toHaveTextContent('ok'))
+    fireEvent.click(screen.getByText('out')) // дефолтный signOut — разрешается без действий
+  })
+
+  it('signOut без настроенного окружения — ранний return, клиент не зовётся', async () => {
+    render(
+      <AuthProvider>
+        <Probe />
+      </AuthProvider>,
+    )
+    await waitFor(() => expect(screen.getByTestId('guest')).toHaveTextContent('true'))
+    fireEvent.click(screen.getByText('out'))
+    await waitFor(() => expect(screen.getByTestId('u')).toHaveTextContent('local'))
+    expect(supabaseMock.auth.signOut).not.toHaveBeenCalled()
+  })
+
+  it('фоновые триггеры (online + 5-мин интервал) и activateUser глотают ошибку syncNow', async () => {
+    const { syncNow } = await import('../data/sync')
+    vi.useFakeTimers()
+    try {
+      supabaseMock.configured = true
+      supabaseMock.session.user = { id: 'uid-3', email: 'i@o.p' }
+      vi.mocked(syncNow).mockRejectedValue(new Error('offline'))
+      render(
+        <AuthProvider>
+          <Probe />
+        </AuthProvider>,
+      )
+      // activateUser: remap → enqueueAll → syncNow (reject поглощается catch-веткой)
+      await vi.advanceTimersByTimeAsync(1)
+      expect(screen.getByTestId('email')).toHaveTextContent('i@o.p')
+      // online-триггер: syncNow падает — onOnline глотает
+      window.dispatchEvent(new Event('online'))
+      // 5-минутный интервал: syncNow падает — catch глотает
+      await vi.advanceTimersByTimeAsync(5 * 60_000)
+      // activateUser + online + интервал
+      expect(vi.mocked(syncNow).mock.calls.length).toBeGreaterThanOrEqual(3)
+    } finally {
+      vi.useRealTimers()
+      vi.mocked(syncNow).mockImplementation(async () => undefined)
+    }
   })
 })
 

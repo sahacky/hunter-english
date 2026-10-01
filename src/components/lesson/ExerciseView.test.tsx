@@ -1,7 +1,7 @@
 // Implements: plan://M19 — покрытие ExerciseView (specs/09 §3: все типы упражнений)
 import 'fake-indexeddb/auto'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
-import { fireEvent, render, screen } from '@testing-library/react'
+import { act, fireEvent, render, screen } from '@testing-library/react'
 import type { ExerciseItem } from '../../content/lessons'
 import type { PhraseItem } from '../../content/lessons'
 import '../../i18n'
@@ -671,5 +671,116 @@ describe('ExerciseView: хвосты (M19)', () => {
     const input = document.querySelector<HTMLInputElement>('.lesson-input')!
     fireEvent.submit(input.closest('form')!) // пустое значение — guard
     expect(screen.queryByText(/Верно|Неверно/)).not.toBeInTheDocument()
+  })
+})
+
+// Implements: план M21#21.4 (веха S4) — хвосты покрытия ExerciseView
+describe('ExerciseView: хвосты покрытия (S4)', () => {
+  it('клавиши r/s игнорируются при фокусе в поле ввода (гард AudioButtons)', () => {
+    render(
+      <InputCheckExercise
+        mode="dictation"
+        exercise={ex('dictation', { phrase_id: phrase.id })}
+        phrase={phrase}
+        trap={null}
+        onAnswer={vi.fn()}
+        onDispute={vi.fn()}
+        onNext={vi.fn()}
+      />,
+    )
+    const input = document.querySelector<HTMLInputElement>('.lesson-input')!
+    fireEvent.keyDown(input, { key: 'r' }) // таргет — input → хоткей заглушён
+    fireEvent.keyDown(input, { key: 's' })
+    expect(screen.getByText('3/3')).toBeInTheDocument() // лимит прослушиваний не потрачен
+  })
+
+  it('клик по использованной плитке не меняет банк (гард put index=-1)', () => {
+    render(
+      <WordBankExercise
+        exercise={ex('word_bank', {
+          prompt_ru: phrase.translation_ru,
+          tokens: ['The', 'house'],
+          phrase_id: phrase.id,
+        })}
+        phrase={phrase}
+        trap={null}
+        onAnswer={vi.fn()}
+        onDispute={vi.fn()}
+        onNext={vi.fn()}
+      />,
+    )
+    fireEvent.click(screen.getByRole('button', { name: 'The' }))
+    // плитка The теперь used/disabled — повторный клик не должен ни снять её, ни задублить слот
+    const usedBankTile = screen
+      .getAllByRole('button', { name: 'The' })
+      .find((b) => b.hasAttribute('disabled'))!
+    fireEvent.click(usedBankTile)
+    // слот один: The; bank: The (disabled), house
+    expect(screen.getAllByRole('button', { name: 'The' })).toHaveLength(2)
+    expect(screen.getByRole('button', { name: 'house' })).toBeInTheDocument()
+  })
+
+  it('гарды WordBank: Backspace на пустых слотах, двойная проверка, клики после финиша', async () => {
+    const s = spy()
+    render(
+      <WordBankExercise
+        exercise={ex('word_bank', {
+          prompt_ru: phrase.translation_ru,
+          tokens: ['The', 'house', 'is', 'big'],
+          phrase_id: phrase.id,
+        })}
+        phrase={phrase}
+        trap={null}
+        onAnswer={s.onAnswer}
+        onDispute={vi.fn()}
+        onNext={s.onNext}
+      />,
+    )
+    // Backspace при пустых слотах — removeSlot(-1), токен undefined → return
+    fireEvent.keyDown(window, { key: 'Backspace' })
+    expect(screen.getByText(/Собери фразу из плиток/)).toBeInTheDocument()
+    for (const token of ['The', 'house', 'is', 'big']) {
+      fireEvent.click(
+        screen.getAllByRole('button', { name: token }).find((b) => !b.hasAttribute('disabled'))!,
+      )
+    }
+    // двойной клик по «Проверить» без промежуточного рендера: второй упирается в busyRef-гард
+    const check = screen.getByRole('button', { name: 'Проверить' })
+    act(() => {
+      check.dispatchEvent(new MouseEvent('click', { bubbles: true }))
+      check.dispatchEvent(new MouseEvent('click', { bubbles: true }))
+    })
+    expect(await screen.findByText('Верно!')).toBeInTheDocument()
+    expect(s.calls).toEqual([{ outcome: 'correct', attempts: 1 }]) // onAnswer ровно один раз
+    // после финиша клики по disabled плиткам — гарды finished (put/removeSlot)
+    fireEvent.click(
+      screen.getAllByRole('button', { name: 'house' }).find((b) => b.hasAttribute('disabled'))!,
+    )
+    fireEvent.click(
+      screen.getAllByRole('button').find((b) => b.className.includes('lesson-tile-slot'))!,
+    )
+    expect(s.calls).toEqual([{ outcome: 'correct', attempts: 1 }])
+  })
+
+  it('клик по микрофону после завершения — гард listen (done)', async () => {
+    speechMock.supported = true
+    speechMock.heard = 'The house is big'
+    const s = spy()
+    render(
+      <VoiceExercise
+        mode="speak"
+        exercise={ex('speak', { prompt_ru: 'Дом большой', phrase_id: phrase.id })}
+        phrase={phrase}
+        trap={null}
+        onAnswer={s.onAnswer}
+        onDispute={vi.fn()}
+        onNext={vi.fn()}
+      />,
+    )
+    fireEvent.click(screen.getByRole('button', { name: /Скажи/ }))
+    expect(await screen.findByText('Верно!')).toBeInTheDocument()
+    // кнопка задизейплена (done) — повторный клик не должен ни слушать, ни отвечать
+    fireEvent.click(screen.getByRole('button', { name: /Скажи/ }))
+    expect(s.calls).toEqual([{ outcome: 'correct', attempts: 1 }])
   })
 })

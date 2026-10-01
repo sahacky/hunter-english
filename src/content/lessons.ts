@@ -198,7 +198,9 @@ export function assembleLesson(
   for (const step of steps) {
     content[step.index] = step.exerciseIds.map((id) => {
       const exercise = exerciseById.get(id)
+      /* istanbul ignore start — дубль проверки из refs-цикла выше (та же Map, те же id) */
       if (!exercise) throw new Error(`упражнение "${id}" урока ${lesson.id} не найдено`)
+      /* istanbul ignore stop */
       const [phraseId] = exercisePhraseIds(exercise)
       return { exercise, phrase: phraseId ? (phraseById.get(phraseId) ?? null) : null }
     })
@@ -211,7 +213,9 @@ export function assembleLesson(
   // экрану через view.phrasesById, даже если они из другого урока
   for (const { id } of lesson.exercises) {
     const exercise = exerciseById.get(id)
+    /* istanbul ignore start — дубль проверки: отсутствующее упражнение уже дало throw выше */
     if (!exercise) continue
+    /* istanbul ignore stop */
     for (const refId of exercisePhraseIds(exercise)) {
       const ref = phraseById.get(refId)
       if (ref && !(ref.id in lessonPhrases)) lessonPhrases[ref.id] = ref
@@ -272,7 +276,9 @@ export function withWarmupVariant(view: LessonView, rng: () => number = Math.ran
       3,
       rng,
     )
+    /* istanbul ignore start — недостижимо: пул ≥9 с уникальными RU даёт ≥8 дистракторов */
     if (distractors.length < 3) return view
+    /* istanbul ignore stop */
     const options = [...distractors.map((p) => p.text_en), target.text_en]
     // перемешивание Фишера—Йетса на копии (rng инъецируется для тестов)
     for (let i = options.length - 1; i > 0; i -= 1) {
@@ -299,7 +305,9 @@ export function withWarmupVariant(view: LessonView, rng: () => number = Math.ran
     return true
   })
   const pairs = pickUnique(pairPool, 5, rng)
+  /* istanbul ignore start — недостижимо: pairPool ≥ pool−4 ≥ 5 при пуле ≥9 */
   if (pairs.length < 5) return view
+  /* istanbul ignore stop */
   exercises.push({
     id: 'ex-warmup-r-5',
     type: 'match_pairs',

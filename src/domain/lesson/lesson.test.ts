@@ -354,4 +354,10 @@ describe('runner: хвосты (M19)', () => {
       ),
     ).toBeNull()
   })
+
+  it('currentStepEvaluation: шаг не найден → null (M21#21.4)', async () => {
+    const { currentStepEvaluation } = await import('./runner')
+    expect(currentStepEvaluation(createCheckpoint(), [])).toBeNull()
+    expect(currentStepEvaluation({ ...createCheckpoint(), stepIndex: 9 }, STEPS)).toBeNull()
+  })
 })

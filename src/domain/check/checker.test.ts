@@ -317,3 +317,23 @@ describe('checker: пустой и unicode-ввод (M21#21.3)', () => {
     expect(['correct', 'correct_typo']).toContain(near.verdict)
   })
 })
+
+// Веха S4 (M21#21.4): хвостовые ветки judgeVoice/levenshtein
+describe('checker: вырожденный эталон и пустые строки (S4)', () => {
+  it("judgeVoice: эталон '', токенизирующийся в пустоту, пропускается — retry с пустым diff", () => {
+    // effective.length === 0 → continue; best остаётся null → emptyCandidate(recognized)
+    const result = judgeVoice('hello', task(['']))
+    expect(result.verdict).toBe('retry')
+    expect(result.diff).toEqual([])
+    expect(result.ref).toBe('hello')
+  })
+
+  it('levenshtein: пустая первая строка — длина второй (b.length)', () => {
+    expect(levenshtein('', 'cat')).toBe(3)
+    expect(levenshtein('', '')).toBe(0)
+  })
+
+  it('compareWords: равные токены — match', () => {
+    expect(compareWords('house', 'house')).toBe('match')
+  })
+})

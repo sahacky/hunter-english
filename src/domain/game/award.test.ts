@@ -116,6 +116,40 @@ describe('awardLessonFinish', () => {
     })
     expect(result.awarded).toBe(10) // floor(21/2)
   })
+
+  // Веха S4 (M21#21.4): награды квеста в финале урока
+  it('финал урока закрывает последний слот → награда allDone (+30, allDoneAwarded)', async () => {
+    const dayIso = dayStart(NOW).toISOString()
+    const state = createQuestDay(dayIso, 20)
+    state.slots.reviews.done = state.slots.reviews.target
+    state.slots.dictation.done = state.slots.dictation.target
+    await repo.putQuestDay(state)
+    const result = await awardLessonFinish(repo, NOW, {
+      xpByCategory: {},
+      dictationCount: 0,
+      bonusByType: {},
+      isRepeat: false,
+    })
+    expect(result.quest.slots.lesson.done).toBe(1)
+    expect(result.quest.allDoneAwarded).toBe(true)
+    expect(result.awarded).toBe(25 + 30) // бонус первого урока + награда за все слоты
+  })
+
+  it('финал урока закрывает бонус-квест по типу упражнения (+15, bonusAwarded)', async () => {
+    const dayIso = dayStart(NOW).toISOString()
+    const state = createQuestDay(dayIso, 20)
+    state.bonus = { id: 'speak-5', target: 2 }
+    await repo.putQuestDay(state)
+    const result = await awardLessonFinish(repo, NOW, {
+      xpByCategory: {},
+      dictationCount: 0,
+      bonusByType: { speak: 2 },
+      isRepeat: false,
+    })
+    expect(result.quest.bonusDone).toBe(2)
+    expect(result.quest.bonusAwarded).toBe(true)
+    expect(result.awarded).toBe(25 + 15) // бонус первого урока + награда бонус-квеста
+  })
 })
 
 // M19: бонус-слоты квеста (awardXp bonus / closeStudyDay awards)
