@@ -167,7 +167,11 @@ export default function LessonScreen({
   /** прошлый статус записи: повтор пройденного не затирает оригинал (specs/07 §4.4) */
   const previousRowRef = useRef<{ status: string; score: number | null } | null>(null)
   const checkpointRef = useRef(checkpoint)
-  checkpointRef.current = checkpoint
+  // зеркало актуального чекпоинта для асинхронных сохранений — запись в эффекте,
+  // не в рендере (react-hooks/refs; семантика та же: к моменту колбэков commit прошёл)
+  useEffect(() => {
+    checkpointRef.current = checkpoint
+  })
   const saveBusy = useRef(false)
   const pendingRef = useRef<LessonCheckpoint | null>(null)
   // setState после размонтирования — unhandled rejection в CI (прецедент M19)

@@ -77,8 +77,11 @@ describe('LessonScreen /#/lesson/:id', () => {
 
   it('шаг 1: правило → cloze → разогрев; чекпоинт пишется после каждого ответа', async () => {
     renderScreen('E-01')
-    // правило урока E-01
-    expect(await screen.findByText('Глагол to be в настоящем времени')).toBeInTheDocument()
+    // правило урока E-01; холодный CI-раннер + ленивый контент-чанк — таймаут
+    // с запасом (прецедент M17: постмортем a45b3a5, CI-цейтнот)
+    expect(
+      await screen.findByText('Глагол to be в настоящем времени', {}, { timeout: 4000 }),
+    ).toBeInTheDocument()
     // примеры правила — первые фразы пула E-01
     expect(screen.getByText('Hello!')).toBeInTheDocument()
 

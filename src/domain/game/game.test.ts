@@ -84,7 +84,7 @@ describe('стрик и заморозки (specs/04 §5)', () => {
   })
 
   it('пропуск в пределах заморозок — серия сохранена, заморозка списана', () => {
-    let stats = countStudyDay(base, '2026-09-10T00:00:00Z').stats
+    const stats = countStudyDay(base, '2026-09-10T00:00:00Z').stats
     const after = countStudyDay(stats, '2026-09-12T00:00:00Z') // 1 день пропущен
     expect(after.froze).toBe(true)
     expect(after.freezesSpent).toBe(1)
@@ -114,7 +114,7 @@ describe('квесты (specs/04 §6)', () => {
   })
 
   it('награды: все 3 слота +30, бонус +15 — единожды', () => {
-    let state = createQuestDay('2026-09-28T00:00:00Z', 20)
+    const state = createQuestDay('2026-09-28T00:00:00Z', 20)
     expect(questAwards(state)).toEqual({ allDone: 0, bonus: 0 })
     state.slots.reviews.done = 20
     state.slots.dictation.done = 10

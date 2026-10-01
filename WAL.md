@@ -1,6 +1,8 @@
 # WAL — Hunter English
 
 ## Current Phase
+**Обновление стека закрыто** (ветка feature/stack-upgrade): React 18.3→**19.3**, react-router-dom 6.26→**7.18.4** (закрыты 2 moderate CVE — npm audit **0 уязвимостей**), i18next 23→**26.4** + react-i18next 15→**17**, Vite 7→**8.3** + @vitejs/plugin-react 4→**6** (oxc-трансформ), eslint: @typescript-eslint/eslint-plugin+parser → пакет **typescript-eslint** (flat), eslint-plugin-react-hooks 5→**7** (новые compiler-правила refs/purity/set-state-in-effect/immutability — локальные disable с обоснованиями), @testing-library/react 16.3.3; пин **@babel/plugin-transform-runtime@7** (конфликт пиров с @babel/core@7 от istanbul-coverage — чинено версией, не --force). Адаптации: SrsScreen (cardShownAt useRef(0), entry до эффекта, preview-block disable), LessonScreen (checkpointRef-зеркало в effect), auth (act-обёртка флаша под React 19). Гейты: 448 unit + 59 e2e + build + coverage 100/90.22/99.7/100 + validate:data + i18n + audit — зелёные.
+
 **Интеграция внешнего ресёрча закрыта** (ветка feature/integration-research): карта Бебриса докачана и допроверена (859/1033 субтитров; **урок-введение Present Perfect найден — 2.38**, № 589; «Не охвачено» сокращено до 17 видео), quotes-sample.json +20 `translation_ru`, travel-словарь 487 слов → `research/data/travel-vocab-draft.json` (черновик-сырьё для разговорника), каталог ловушек расширен до **ЛТ-31** (ЛТ-23–25 синхронизированы обратно в build_traps.py — билдер снова источник правды; ЛТ-26–31 новые: explain-to, предлог с last/next, согласование времён, since→Present Perfect, to после модального, двойная сравнительная); ссылки на датасеты в 07 §3.1 уже были (M0.5). Гейты: validate:data + 448 unit + lint/typecheck/audit зелёные. 
 
 **M21 закрыт** (полировка, ветка feature/m21-polish): listening-плашка retrySuggested (UI), разогрев «с новыми заданиями» при повторе (withWarmupVariant: 4 choose + match из пула урока, синтетические id, защитный фолбэк при пуле <9), srs.progress clamp; 18 аудио-outlier'ов ph-a-* перегенерированы (--max-sec 6.0); GAP-8: e2e тач-цели (≥44px) + reduced-motion media-правила, GAP-9: judge('')/unicode; **веха S4 закрыта: statements/lines 100%** (пороги 100/90/99/100, +~50 unit по 12 модулям). **Найден и починен баг экзамена Врат: упражнения без key — состояние перетекало между однотипными заданиями (экзамен непроходим)**; istanbul-ignore обычный — placebo в этом тулчейне (esbuild стирает комментарии) → рабочая форма `@preserve`/`start-stop`. 448 unit / 59 e2e зелёные. До этого  (ранг S, PR #28): 15 уроков S-01…S-15 (инверсия, идиомы, тонкие модальные, связки, сленг, колоды C1, инверсия условных, формальный пассив, free talk капсула, дискурс-маркеры, false friends, разбор-колода; повторения №25–27, большой диктант dict_count) — 451 фраза / 741 упражнение / 451 аудио Piper (--max-sec 6.0, 0 outlier'ов); +25 цитат C1 (BM/Berserk вербатим из Wikiquote; JJK/SL — «сверить с дубляжом»), ловушки ЛТ-23–25 (despite-of, slang-register, false-friends), разговорник idioms.json (SITUATIONS+1); Финальное испытание **S-FINAL** (гейт: attemptId 'S-FINAL' отдельно от A→S, чеклист /15, wordsTarget 5000, ранг не повышает, ссылки: RanksScreen при ранге S). Контент-ревью суб-агентом: 1 блокер + 14 мажоров + 8 миноров — исправлены (дубли фраз A–C заменены, однозначность cloze/VT/AQ, RU-регистр), аудио перегенерировано. CI: гонка finishLesson (unhandled rejection) — mountedRef-гарды; покрытие: +2 теста S-FINAL, istanbul-ignore защитных веток; 362 unit / 57 e2e зелёные. Продукт: **148 уроков** (E24+D28+C30+B29+A22+S15) — курс A0→C1 закрыт. До этого **M19 закрыт** (покрытие): +111 тестов (249→360), `npm run test:coverage` (istanbul — v8-мерж терял покрытие), thresholds 94/84/92/96 в CI, артефакт отчёта; итог statements 94.25 / branches 84.29 / functions 92.95 / **lines 96.37**; 7 недостижимых защит помечены istanbul-ignore; остаток до 100% (~85 строк) каталогизирован specs/09 §10 (веха S4). Ранее **M18 закрыт** (тест-GAP + CI/CD): GAP-3/4/5/7 закрыты, GAP-8/9 частично, e2e в CI. Остались GAP-6 (S3, Supabase) и хвосты GAP-8/9 (reduced-motion, autoUpdate, deep-links ?stage=, тач-цели). **Следующий шаг — за разработчиком**: Supabase-проект / публикация репо.
@@ -66,7 +68,7 @@
 - Разработчику: сделать репо публичным → деплой GitHub Pages включится сам (deploy.yml готов)
 - ~~(опц.) Докачать 25 уроков Бебриса (research/04 «Не охвачено»), проверить Present Perfect (уроки 2.26–2.45)~~ — ЗАКРЫТО 2026-10-01: докачано 859/1033, Present Perfect = 2.38 (№ 589); без субтитров осталось 17 видео (список в research/04 §5)
 - Черновик travel-словаря (487 слов, 9 тем) в `research/data/travel-vocab-draft.json` — пул слов при расширении data/phrasebook и words (контентная задача, не назначена)
-- (опц., отдельной задачей) Обновить стек: React 19, react-router 7 (снимет audit moderate), i18next 26, Vite 8 + plugin-react 6, пакет `typescript-eslint`
+- ~~(опц., отдельной задачей) Обновить стек: React 19, react-router 7 (снимет audit moderate), i18next 26, Vite 8 + plugin-react 6, пакет `typescript-eslint`~~ — ЗАКРЫТО 2026-10-01 (feature/stack-upgrade, audit 0 уязвимостей)
 - (S-веха, M17→S4) Полный проход экзамена S-FINAL в юнитах + монолог 5 мин (REVIEW-маркер S-11/S-16) и таймер free talk 7 мин — механики за границами движка, отложены по решениям M20 2/6
 
 ## Known Issues
@@ -81,7 +83,8 @@
 - M4: `srs.progress` (Пройдено N из M) — M = длина начальной очереди; из-за живой очереди N может превысить M (косметика, не ломает логику)
 - ~~M9: e2e офлайн-тест считает, что SW активен по факту регистрации~~ — ЗАКРЫТО в M17: poll `navigator.serviceWorker.controller` перед прогревом аудио (флейк ~6% прогонов: прогрев до claim уходил в сеть, audio-cache пуст)
 - M9: иконки перегенерировать при смене мотивации: `python3 research/tools/icons/gen_icons.py` (Pillow)
-- `npm audit`: 2 moderate в `react-router-dom@6` (порог high не превышен); исправление только в v7
+- ~~`npm audit`: 2 moderate в `react-router-dom@6` (порог high не превышен); исправление только в v7~~ — ЗАКРЫТО в стек-апгрейде: react-router-dom 7.18.4, `npm audit` → 0 уязвимостей
+- Единичный флак SrsScreen beforeunload-теста при полном прогоне после апгрейда (в изоляции и повторном прогоне — зелёный); наблюдать, при повторении — стабилизировать по постмортему M17
 - `research/tools/quotes/merge_ru.py:17` — дефолтный путь с чужой машины (`/home/llm/...`); передавать путь аргументом
 - `research/tools/data/fetch_kaikki.py` — слова в URL не экранируются (для слов с `'`); лишний `import sys`; нет `requirements.txt`
 - ~~e2e (Playwright) не запускается в CI~~ — ЗАКРЫТО в M18: джоба e2e в ci.yml (chromium --with-deps, артефакт отчёта при падении); локально всё ещё нужен `npx playwright install chromium` один раз
@@ -114,6 +117,9 @@
 - Порядок «Present Continuous в конце E» (спека 01, открытые вопросы)
 
 ## Watch out:
+- `@babel/plugin-transform-runtime@7` пин в devDeps — удовлетворяет peerOptional `@rolldown/plugin-babel` (plugin-react 6) без конфликта с `@babel/core@7` от istanbul-покрытия; не поднимать до v8, пока coverage-istanbul на babel 7
+- eslint-plugin-react-hooks 7: compiler-правила (refs/purity/set-state-in-effect/immutability) — локальные eslint-disable с обоснованиями в SrsScreen (frozen previewNow, M10), LessonScreen, QuotesScreen (ресет по :id, M11), SettingsScreen, auth; не снимать без рефакторинга инвариантов
+- M9: `vite-plugin-pwa` 1.3.0 поддерживает Vite 3–8 (проверено на Vite 8.3); аудио НИКОГДА не класть в `globPatterns` precache (23 МБ)
 - ЛТ-23–25 id (`trap-despite-of`, `trap-slang-register`, `trap-false-friends`) зафиксированы — на них ссылаются уроки S (lessons-s.json); build_traps.py теперь снова источник правды (31 ловушка), не редактировать data/traps.json напрямую
 - M20: гейт S-FINAL хранит попытку под item_id 'S-FINAL' (attemptId), а не 'S' — 'S' занят Вратами A→S; не «унифицировать» обратно (кулдаун/attempt-конфликт)
 - M20: сленг S-05 — диктант требует точного написания (gonna/wanna, решение 5); cloze S-05 «She ___ coming» принимает ain't и isn't — не сужать
@@ -127,13 +133,13 @@
 - M12: find_error = порча ТОЧНОГО эталона (wrong_en), а не смена подлежащего — иначе «исправление» не засчитывается
 - M11: НЕ регенерировать exercises-e/phrases-e билдером без round-trip — ручные фиксы контент-ревью M8 живут в данных (11.4 отложен именно поэтому)
 - M11: суб-полоса слов курится в build_words.py (SUB_STOP + стем-дедуп) — при пополнении полосы не отключать фильтры (ревью Б1: are/don/saw/n-глоссы)
-- M9: не поднимать `vite-plugin-pwa` мажорно без сверки с Vite-версией (1.3.0 ↔ Vite 7); аудио НИКОГДА не класть в `globPatterns` precache (23 МБ)
+- M9: не поднимать `vite-plugin-pwa` мажорно без сверки с Vite-версией (текущая связка: 1.3.0 ↔ Vite 8.3, peer до 8); аудио НИКОГДА не класть в `globPatterns` precache (23 МБ)
 - M10: превью интервалов и applyAnswer обязаны использовать ОДИН now (fuzz-seed ts-fsrs включает review_time) — заморожено previewNowRef в SrsScreen; не «чинить» reviewed_at на клик
 - M10: импорт дампа идёт только через sanitizeImport (ремап user_id→local + валидация полей) — не ослаблять
 - В коммитах/PR НИКАКИХ упоминаний ИИ/Claude (без Co-Authored-By, Generated with и т.п.)
 - **Не мержить в `main` при красном CI** (branch protection нет — дисциплина вручную). Проверять `gh run list` / статус PR перед merge
 - Не использовать `--legacy-peer-deps` / `--force` для npm: конфликт peer-зависимостей = ошибка, которую надо чинить версиями
-- `@vitejs/plugin-react@4` поддерживает Vite ≤7 — не поднимать Vite до 8 без plugin-react 6 (только в рамках задачи обновления стека)
+- ~~`@vitejs/plugin-react@4` поддерживает Vite ≤7 — не поднимать Vite до 8 без plugin-react 6~~ — ЗАКРЫТО в стек-апгрейде: plugin-react 6.1.1 ↔ Vite 8.3; plugin-react 6 требует именно Vite ^8 (пир)
 - Не добавлять зависимости «на будущее» (`supabase-js` — только в M12, `vite-plugin-pwa` — в M9)
 - Работать в feature/hotfix-ветках через PR, не в `main`
 - `CLAUDE.md` — локальный (в .gitignore), только `@AGENTS.md`; правила писать в AGENTS.md
@@ -198,3 +204,4 @@
 | 2026-09-30 | M21 детализирован в PLANS (21.1–21.5); ветка `feature/m21-polish`; стек и B-27 — вне скоупа | Задача разработчика «полировку давай» |
 | 2026-09-30 | M21 закрыт: UX-хвосты (retrySuggested, разогрев-повтор, progress clamp), аудио A-outlier'ы, GAP-8/9 хвосты, веха S4 (100% statements/lines); найден и починен баг key экзамена Врат; 448 unit + 59 e2e | Автономная сессия |
 | 2026-10-01 | Интеграция внешнего ресёрча (study_eng): карта Бебриса допроверена по докачанным субтитрам (Present Perfect = 2.38, № 589; «Не охвачено» 25→17), quotes-sample +20 translation_ru, travel-словарь 487 слов (research/data/travel-vocab-draft.json), ловушки ЛТ-23–25 возвращены в билдер + новые ЛТ-26–31 (итого 31); validate:data + 448 unit зелёные | Слияние параллельного ресёрча, задача разработчика |
+| 2026-10-01 | Стек-апгрейд закрыт: React 19.3, react-router-dom 7.18.4 (audit 0 уязвимостей), i18next 26/react-i18next 17, Vite 8.3 + plugin-react 6, typescript-eslint-пакет, react-hooks 7; адаптации под новые правила и act-семантику React 19; 448 unit + 59 e2e + coverage 100/90.2/99.7/100 зелёные | Задача разработчика «обновление стека» |

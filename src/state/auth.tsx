@@ -42,6 +42,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     if (!isSyncConfigured()) {
+      // гостю локальный владелец сразу — синхронная инициализация на монтировании
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- инициализация гостя без supabase (specs/06 §2)
       setState({ userId: getCurrentUserId(), email: null })
       return
     }

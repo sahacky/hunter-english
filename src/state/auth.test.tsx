@@ -1,7 +1,7 @@
 // Implements: plan://M19 — покрытие auth-провайдера, supabase-гейта и экрана входа
 import 'fake-indexeddb/auto'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
-import { fireEvent, render, screen, waitFor } from '@testing-library/react'
+import { act, fireEvent, render, screen, waitFor } from '@testing-library/react'
 import { HashRouter } from 'react-router-dom'
 import { useState } from 'react'
 import '../i18n'
@@ -269,8 +269,11 @@ describe('AuthProvider', () => {
           <Probe />
         </AuthProvider>,
       )
-      // activateUser: remap → enqueueAll → syncNow (reject поглощается catch-веткой)
-      await vi.advanceTimersByTimeAsync(1)
+      // activateUser: remap → enqueueAll → syncNow (reject поглощается catch-веткой);
+      // async-цепочка обновляет state вне рендера — под React 19 флаш только в act
+      await act(async () => {
+        await vi.advanceTimersByTimeAsync(1)
+      })
       expect(screen.getByTestId('email')).toHaveTextContent('i@o.p')
       // online-триггер: syncNow падает — onOnline глотает
       window.dispatchEvent(new Event('online'))
