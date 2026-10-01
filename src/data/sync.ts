@@ -8,6 +8,10 @@
 // Без env и без явного клиента (тесты) — no-op (гость).
 import type { SupabaseClient } from '@supabase/supabase-js'
 import type { HunterDb } from './db'
+import { getCurrentUserId } from './db'
+import type { ReviewLogEntry } from '../domain/srs/types'
+import type { UserStatsRow } from './db'
+import { emptyStats } from '../domain/game/types'
 import { getSupabase, isSyncConfigured } from './supabase'
 
 /** Таблицы LWW (upsert); review_log — append-only (insert); profiles создаёт
@@ -132,6 +136,7 @@ interface LwwRow {
   kind?: string
   updated_at?: string
   reviewed_at?: string
+  xp?: number
 }
 
 /**
@@ -240,11 +245,55 @@ export async function pull(database: HunterDb, sb?: SupabaseLike): Promise<void>
     if (data.length < PULL_PAGE) break
   }
   if (!hadError) {
+    // долг M13 (specs/06 §3): LWW терял агрегат user_stats.xp при работе двух
+    // устройств офлайн — восстанавливаем «пол» из полного журнала (обе стороны
+    // уже слиты выше); max() не даёт дважды посчитать и никогда не занижает
+    await recalcXpFromReviewLog(database, getCurrentUserId())
     await database.meta.put(
       { key: 'last_sync_at', value: new Date().toISOString() },
       'last_sync_at',
     )
   }
+}
+
+/**
+ * XP одной строки review_log (specs/04 §4.1): повтор — 1 XP при любой оценке;
+ * выпуск карточки из Learning в Review — +2. Зеркало начисления в SrsScreen
+ * (released = state === 1 && next.state === 2).
+ */
+export function reviewXpOf(log: Pick<ReviewLogEntry, 'state' | 'state_after'>): number {
+  return 1 + (log.state === 1 && log.state_after === 2 ? 2 : 0)
+}
+
+/** Пересчёт «пола» XP из журнала повторений после merge (specs/06 §3). */
+export async function recalcXpFromReviewLog(database: HunterDb, userId: string): Promise<void> {
+  const logs = await database.review_log.where('user_id').equals(userId).toArray()
+  const floor = logs.reduce((sum, log) => sum + reviewXpOf(log), 0)
+  const stats = await database.user_stats.get(userId)
+  if ((stats?.xp ?? 0) >= floor) return
+  const base: UserStatsRow = stats ?? { ...emptyStats(new Date().toISOString()), user_id: userId }
+  await database.user_stats.put({ ...base, xp: floor, updated_at: new Date().toISOString() })
+}
+
+/**
+ * Трим очереди гостя (долг M13): без настроенного синка sync_queue только
+ * растёт (репозиторий пишет всегда). Строки гостя избыточны — при первом
+ * входе enqueueAllRows выгружает все актуальные строки заново, поэтому
+ * старше CAP-хвоста можно удалять. Возвращает число удалённых строк.
+ */
+export const GUEST_QUEUE_CAP = 2000
+
+export async function trimQueue(database: HunterDb, cap = GUEST_QUEUE_CAP): Promise<number> {
+  if (isSyncConfigured()) return 0
+  const count = await database.sync_queue.count()
+  if (count <= cap) return 0
+  const oldest = await database.sync_queue
+    .orderBy('seq')
+    .limit(count - cap)
+    .toArray()
+  const seqs = oldest.map((op) => op.seq).filter((seq): seq is number => seq !== undefined)
+  if (seqs.length > 0) await database.sync_queue.bulkDelete(seqs)
+  return seqs.length
 }
 
 /**
@@ -263,7 +312,13 @@ export async function mergeLww(
   if (table === 'user_stats') {
     for (const row of incoming) {
       const local = (await database.user_stats.get(row.user_id ?? '')) as LwwRow | null
-      if ((row.updated_at ?? '') >= (local?.updated_at ?? '')) winners.push(row)
+      // долг M13: XP — агрегат, LWW по updated_at терял накопленное устройство;
+      // победитель по updated_at, но XP берём max обеих сторон (никогда не падает)
+      const winner = (row.updated_at ?? '') >= (local?.updated_at ?? '') ? row : local
+      /* istanbul ignore next @preserve — защитный: row без updated_at и без local даёт winner=row ('' >= '') */
+      if (!winner) continue
+      const xp = Math.max(row.xp ?? 0, local?.xp ?? 0)
+      winners.push(xp > (winner.xp ?? 0) ? { ...winner, xp } : winner)
     }
     await database.user_stats.bulkPut(winners as never)
     return

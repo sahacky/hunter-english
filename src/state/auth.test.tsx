@@ -65,6 +65,7 @@ vi.mock('../data/db', () => ({
 vi.mock('../data/sync', () => ({
   enqueueAllRows: dbMock.enqueueAll,
   syncNow: vi.fn(async () => undefined),
+  trimQueue: vi.fn(async () => 0),
 }))
 
 import { AuthProvider, useAuth } from './auth'
