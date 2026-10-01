@@ -4,29 +4,12 @@
     "tagline": "Training system: rank E → S",
     "offline": "offline · progress is saved"
   },
-  "nav": {
-    "label": "Main navigation",
-    "tabbarLabel": "Tab bar",
-    "dashboard": "Dashboard",
-    "lesson": "Lesson",
-    "srs": "Review",
-    "ranks": "Ranks",
-    "gates": "Gates",
-    "quotes": "Quotes",
-    "phrasebook": "Phrasebook",
-    "settings": "Settings"
+  "common": {
+    "loading": "Loading…",
+    "backToDashboard": "Back to dashboard"
   },
   "dashboard": {
-    "error": "System unavailable: could not load progress.",
-    "questTitle": "Daily quest",
-    "statusTitle": "Status",
-    "quoteTitle": "Quote of the day",
-    "quests": {
-      "reviews": "Review cards",
-      "lesson": "Take a lesson",
-      "dictation": "Dictation",
-      "bonus": "Bonus"
-    },
+    "beginnerHint": "Welcome, Hunter! Complete the first lesson — the System will guide you from there. Unsure about your level? You can go back and take the assessment.",
     "bonus": {
       "speak-5": "say 5 phrases aloud",
       "shadowing-5": "shadow 5 phrases",
@@ -34,59 +17,52 @@
       "match-10": "match 10 word pairs"
     },
     "dayLeft": "until the day ends",
-    "rankAndLevel": "Hunter rank {{rank}}, lv. {{rank}}-{{level}}",
-    "xpProgress": "{{xp}} / {{next}} XP to the next level",
-    "streak": "{{days}} d",
+    "error": "System unavailable: could not load progress.",
     "freezes": "❄ {{count}}",
-    "wordsKnown": "cards known: {{count}}",
-    "startReviews": "Start the day · reviews: {{count}}",
-    "startLesson": "Start the day · lesson",
-    "nextLesson": "next lesson"
-  },
-  "srs": {
-    "title": "Review",
-    "loading": "Preparing cards…",
-    "error": "Could not save progress. Check the storage and try again.",
-    "empty": "All done — the queue is empty for today.",
-    "sessionDone": "Session finished. Well done, Hunter.",
-    "loadReduced": "Load reduced: the backlog is large — no new cards today.",
-    "answered": "Answers: {{count}}",
-    "progress": "{{done}} of {{total}} done",
-    "blockDone": "Block of {{count}} cards completed",
-    "continue": "Continue",
-    "finish": "Finish",
-    "showAnswer": "Show answer",
-    "again": "Forgot",
-    "good": "Got it",
-    "hint": "Recall the translation and check yourself",
-    "countersLabel": "Queue counters",
-    "counters": {
-      "learning": "Learn",
-      "review": "Due",
-      "new": "New"
+    "nextLesson": "next lesson",
+    "programLink": "Full learning program",
+    "questTitle": "Daily quest",
+    "quests": {
+      "reviews": "Review cards",
+      "lesson": "Take a lesson",
+      "dictation": "Dictation",
+      "bonus": "Bonus"
     },
-    "audioLabel": "Word audio",
-    "again4": "Forgot",
-    "hard": "Hard",
-    "easy": "Easy",
-    "modeHint": "Hard/Easy buttons can be enabled in settings",
-    "exitConfirmTitle": "Interrupt session?",
-    "exitConfirm": "Interrupt session? Reviews counted: {{count}}.",
-    "exitCancel": "Keep going",
-    "intervalUnits": {
-      "m": "m",
-      "h": "h",
-      "d": "d",
-      "y": "y"
-    }
+    "quoteTitle": "Quote of the day",
+    "rankAndLevel": "Hunter rank {{rank}}, lv. {{rank}}-{{level}}",
+    "startLesson": "Start the day · lesson",
+    "startReviews": "Start the day · reviews: {{count}}",
+    "statusTitle": "Status",
+    "streak": "{{days}} d",
+    "wordsKnown": "cards known: {{count}}",
+    "xpProgress": "{{xp}} / {{next}} XP to the next level"
   },
-  "common": {
-    "loading": "Loading…",
-    "backToDashboard": "Back to dashboard"
-  },
-  "notFound": {
-    "title": "404",
-    "text": "This page does not exist. Check the address."
+  "gates": {
+    "notFound": "These gates do not exist.",
+    "title": "Gates {{from}} → {{to}}",
+    "titleFinal": "Final trial: S (C1) confirmation",
+    "check": {
+      "words": "Words (reliable): {{known}} / {{target}}",
+      "lessons": "Rank {{rank}} lessons: {{done}} / {{total}}",
+      "hint": "The checklist is a recommendation: the gates are always open."
+    },
+    "cooldown": "The next attempt unlocks after {{time}}",
+    "enter": "Enter",
+    "passed": "Gates passed",
+    "failed": "Gates not passed",
+    "finalPassed": "Final trial passed. Rank S confirmed. +200 XP",
+    "sections": {
+      "vocab": "Vocabulary",
+      "grammar": "Grammar",
+      "listening": "Listening",
+      "speaking": "Speaking"
+    },
+    "total": "Total: {{total}}%",
+    "rankUp": "Rank up: {{rank}}. The system confirms the level. +200 XP",
+    "retryHint": "Weak sections are retaken; passed ones are kept. Next attempt in 72 hours.",
+    "retryWeak": "Retake weak sections",
+    "sectionProgress": "{{section}} · section {{index}} of {{total}}",
+    "totalFailHint": "Sections passed but the total is under 85% — retake the full exam after the cooldown."
   },
   "lesson": {
     "notFound": "This lesson is not in the program.",
@@ -168,42 +144,45 @@
       }
     }
   },
-  "ranks": {
-    "statusTitle": "Hunter status",
-    "gatesLink": "Gates {{from}} → {{to}}",
-    "finalLink": "Final trial (S confirmation)",
-    "totalXp": "Total XP: {{xp}}",
-    "streaks": "Streak: {{current}} d · Best: {{best}} d",
-    "gatesPassed": "Gates passed: {{count}} · latest: {{last}}",
-    "titles": "Titles",
-    "unlocked": "unlocked"
+  "login": {
+    "title": "Sign in",
+    "guestNote": "Guest mode is the default: all progress is stored locally. Sign in only to sync across devices.",
+    "continueGuest": "Continue as guest",
+    "emailPlaceholder": "email@example.com",
+    "sendLink": "Send link",
+    "magicSent": "Email sent — check your inbox and follow the link.",
+    "google": "Sign in with Google",
+    "genericError": "Sign-in failed. Try again.",
+    "notConfigured": "Sync is not configured on this device (no Supabase keys)."
   },
-  "gates": {
-    "notFound": "These gates do not exist.",
-    "title": "Gates {{from}} → {{to}}",
-    "titleFinal": "Final trial: S (C1) confirmation",
-    "check": {
-      "words": "Words (reliable): {{known}} / {{target}}",
-      "lessons": "Rank {{rank}} lessons: {{done}} / {{total}}",
-      "hint": "The checklist is a recommendation: the gates are always open."
+  "nav": {
+    "dashboard": "Dashboard",
+    "gates": "Gates",
+    "label": "Main navigation",
+    "lesson": "Lesson",
+    "path": "Program",
+    "phrasebook": "Phrasebook",
+    "quotes": "Quotes",
+    "ranks": "Ranks",
+    "settings": "Settings",
+    "srs": "Review",
+    "tabbarLabel": "Tab bar"
+  },
+  "notFound": {
+    "title": "404",
+    "text": "This page does not exist. Check the address."
+  },
+  "path": {
+    "rankHeader": "Rank {{rank}} · {{done}}/{{total}} lessons",
+    "status": {
+      "available": "available",
+      "completed": "completed",
+      "in_progress": "in progress",
+      "locked": "locked",
+      "review_due": "review due"
     },
-    "cooldown": "The next attempt unlocks after {{time}}",
-    "enter": "Enter",
-    "passed": "Gates passed",
-    "failed": "Gates not passed",
-    "finalPassed": "Final trial passed. Rank S confirmed. +200 XP",
-    "sections": {
-      "vocab": "Vocabulary",
-      "grammar": "Grammar",
-      "listening": "Listening",
-      "speaking": "Speaking"
-    },
-    "total": "Total: {{total}}%",
-    "rankUp": "Rank up: {{rank}}. The system confirms the level. +200 XP",
-    "retryHint": "Weak sections are retaken; passed ones are kept. Next attempt in 72 hours.",
-    "retryWeak": "Retake weak sections",
-    "sectionProgress": "{{section}} · section {{index}} of {{total}}",
-    "totalFailHint": "Sections passed but the total is under 85% — retake the full exam after the cooldown."
+    "title": "Training program",
+    "youAreHere": "you are here"
   },
   "phrasebook": {
     "title": "Phrasebook",
@@ -243,11 +222,39 @@
     },
     "answerByVoice": "Answer by voice"
   },
-  "toast": {
-    "questDone": "Daily quest complete. The system logs your progress.",
-    "rankUp": "Rank up: {{rank}}. The system confirms the level.",
-    "finalPassed": "Final trial passed. Rank S confirmed.",
-    "freezeGained": "Streak freeze gained: ❄ +1"
+  "quotes": {
+    "title": "Quotes",
+    "filterUnderstood": "understandable right now",
+    "count": "{{count}} quotes",
+    "understoodCount": "understood: {{count}}",
+    "understoodShort": "understood",
+    "vocabCoverage": "top-1000: {{percent}}%",
+    "empty": "The deck is being collected — quotes will appear later.",
+    "notFound": "No such quote.",
+    "backToTitles": "all titles",
+    "back": "Back to quotes",
+    "showRu": "Show translation",
+    "hideRu": "Hide translation",
+    "playphrase": "Hear it in the original",
+    "cloze": "Cloze this quote",
+    "clozePrompt": "Fill in the missing word:",
+    "markUnderstood": "Understood without translation",
+    "understood": "understood without translation",
+    "noTranslation": "The word is not in the dataset (yet).",
+    "toDeck": "Add to deck",
+    "addedToDeck": "Cards added: {{count}}",
+    "alreadyInDeck": "already in the deck",
+    "close": "Close"
+  },
+  "ranks": {
+    "statusTitle": "Hunter status",
+    "gatesLink": "Gates {{from}} → {{to}}",
+    "finalLink": "Final trial (S confirmation)",
+    "totalXp": "Total XP: {{xp}}",
+    "streaks": "Streak: {{current}} d · Best: {{best}} d",
+    "gatesPassed": "Gates passed: {{count}} · latest: {{last}}",
+    "titles": "Titles",
+    "unlocked": "unlocked"
   },
   "settings": {
     "appearance": {
@@ -304,39 +311,64 @@
       "neverSynced": "never synced"
     }
   },
-  "quotes": {
-    "title": "Quotes",
-    "filterUnderstood": "understandable right now",
-    "count": "{{count}} quotes",
-    "understoodCount": "understood: {{count}}",
-    "understoodShort": "understood",
-    "vocabCoverage": "top-1000: {{percent}}%",
-    "empty": "The deck is being collected — quotes will appear later.",
-    "notFound": "No such quote.",
-    "backToTitles": "all titles",
-    "back": "Back to quotes",
-    "showRu": "Show translation",
-    "hideRu": "Hide translation",
-    "playphrase": "Hear it in the original",
-    "cloze": "Cloze this quote",
-    "clozePrompt": "Fill in the missing word:",
-    "markUnderstood": "Understood without translation",
-    "understood": "understood without translation",
-    "noTranslation": "The word is not in the dataset (yet).",
-    "toDeck": "Add to deck",
-    "addedToDeck": "Cards added: {{count}}",
-    "alreadyInDeck": "already in the deck",
-    "close": "Close"
+  "srs": {
+    "title": "Review",
+    "loading": "Preparing cards…",
+    "error": "Could not save progress. Check the storage and try again.",
+    "empty": "All done — the queue is empty for today.",
+    "sessionDone": "Session finished. Well done, Hunter.",
+    "loadReduced": "Load reduced: the backlog is large — no new cards today.",
+    "answered": "Answers: {{count}}",
+    "progress": "{{done}} of {{total}} done",
+    "blockDone": "Block of {{count}} cards completed",
+    "continue": "Continue",
+    "finish": "Finish",
+    "showAnswer": "Show answer",
+    "again": "Forgot",
+    "good": "Got it",
+    "hint": "Recall the translation and check yourself",
+    "countersLabel": "Queue counters",
+    "counters": {
+      "learning": "Learn",
+      "review": "Due",
+      "new": "New"
+    },
+    "audioLabel": "Word audio",
+    "again4": "Forgot",
+    "hard": "Hard",
+    "easy": "Easy",
+    "modeHint": "Hard/Easy buttons can be enabled in settings",
+    "exitConfirmTitle": "Interrupt session?",
+    "exitConfirm": "Interrupt session? Reviews counted: {{count}}.",
+    "exitCancel": "Keep going",
+    "intervalUnits": {
+      "m": "m",
+      "h": "h",
+      "d": "d",
+      "y": "y"
+    }
   },
-  "login": {
-    "title": "Sign in",
-    "guestNote": "Guest mode is the default: all progress is stored locally. Sign in only to sync across devices.",
-    "continueGuest": "Continue as guest",
-    "emailPlaceholder": "email@example.com",
-    "sendLink": "Send link",
-    "magicSent": "Email sent — check your inbox and follow the link.",
-    "google": "Sign in with Google",
-    "genericError": "Sign-in failed. Try again.",
-    "notConfigured": "Sync is not configured on this device (no Supabase keys)."
+  "toast": {
+    "questDone": "Daily quest complete. The system logs your progress.",
+    "rankUp": "Rank up: {{rank}}. The system confirms the level.",
+    "finalPassed": "Final trial passed. Rank S confirmed.",
+    "freezeGained": "Streak freeze gained: ❄ +1"
+  },
+  "welcome": {
+    "applying": "The System is applying the rank…",
+    "assessmentTitle": "Hunter assessment",
+    "backToIntro": "Back",
+    "errorTitle": "The System failed to apply the rank",
+    "intro": "You are a Hunter. The System will determine your rank: a short assessment of a few phrases — and training starts at your level, not from scratch. Past merits will be credited.",
+    "progress": "Phrase {{current}} · band {{rank}}",
+    "retry": "Retry",
+    "startAssessment": "Take the rank assessment",
+    "startFromZero": "Start from scratch (rank E)",
+    "startLearning": "Start training",
+    "title": "Hunter registration",
+    "verdictHigh": "A clean cut: the band passed without mistakes.",
+    "verdictLow": "There were misses — the System hesitated. You can raise the rank via Gates.",
+    "verdictNote": "Lessons below the rank will be credited, words below the band — hidden from reviews.",
+    "verdictTitle": "The System assigns rank"
   }
 }

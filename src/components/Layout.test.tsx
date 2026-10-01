@@ -17,11 +17,11 @@ function renderLayout(route = '/') {
 }
 
 describe('Layout', () => {
-  it('рендерит десктоп-навигацию (7 пунктов)', () => {
+  it('рендерит десктоп-навигацию (8 пунктов)', () => {
     renderLayout()
     const nav = screen.getByRole('navigation', { name: 'Основная навигация' })
     expect(nav).toBeInTheDocument()
-    expect(nav.querySelectorAll('a')).toHaveLength(7)
+    expect(nav.querySelectorAll('a')).toHaveLength(8)
   })
 
   it('рендерит таб-бар из 5 пунктов с aria-подписью', () => {

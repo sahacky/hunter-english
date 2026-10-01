@@ -5,6 +5,7 @@ import { BookIcon, CardsIcon, GatesIcon, GearIcon, ShieldIcon } from './icons'
 
 const NAV = [
   { to: '/', key: 'dashboard' },
+  { to: '/path', key: 'path' },
   { to: '/srs', key: 'srs' },
   { to: '/ranks', key: 'ranks' },
   { to: '/gates', key: 'gates' },

@@ -1,8 +1,13 @@
 import 'fake-indexeddb/auto'
+import { ONBOARDING_KEY } from './data/onboarding'
 import { render, screen } from '@testing-library/react'
 import { HashRouter } from 'react-router-dom'
 import App from './App'
 import './i18n'
+
+beforeEach(() => {
+  localStorage.setItem(ONBOARDING_KEY, '1')
+})
 
 describe('App', () => {
   it('renders dashboard (quest window loads, plan://M7#7.4)', async () => {

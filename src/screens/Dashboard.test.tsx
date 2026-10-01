@@ -1,5 +1,6 @@
 // Implements: plan://M19 — Dashboard/RanksScreen error-фазы и дашборд-детали
 import 'fake-indexeddb/auto'
+import { ONBOARDING_KEY } from '../data/onboarding'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { render, screen, waitFor } from '@testing-library/react'
 import { HashRouter } from 'react-router-dom'
@@ -25,6 +26,7 @@ let db: HunterDb
 let repo: DexieProgressRepository
 
 beforeEach(() => {
+  localStorage.setItem(ONBOARDING_KEY, '1')
   db = new HunterDb(`hunter-dash-test-${uuidv7()}`)
   repo = new DexieProgressRepository(db)
 })
@@ -122,6 +124,16 @@ describe('Dashboard', () => {
     } finally {
       vi.useRealTimers()
     }
+  })
+  it('первый вход без онбординга — редирект на /#/welcome (plan://onboarding#O.4)', async () => {
+    localStorage.removeItem(ONBOARDING_KEY)
+    window.location.hash = '#/'
+    render(
+      <HashRouter>
+        <Dashboard repo={repo} />
+      </HashRouter>,
+    )
+    await waitFor(() => expect(window.location.hash).toBe('#/welcome'), { timeout: 8000 })
   })
 })
 
