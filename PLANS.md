@@ -341,6 +341,14 @@
 - [x] S.4 Тесты: reviewXpOf/пол/создание-строки/max-merge 3 сценария/pull-интеграция/trim 2 режима (+auth-мок trimQueue); 459 unit
 - [x] S.5 Гейты + WAL/PLANS + PR при зелёном CI
 
+## Мелкие хвосты Known Issues {#ki-tails}
+> Задача разработчика (2026-10-01, выбор 4). Ветка: `feature/ki-tails`.
+- [x] K.1 merge_ru.py: путь к markdown обязателен аргументом (дефолт с чужой машины убран)
+- [x] K.2 404-страница: notFound.title/text + ссылка «На дашборд»; мёртвые i18n-ключи удалены (nav.notFound, common.inDevelopment, lesson.startOver/trapInRule/dictationPlaceholder); App.test расширен
+- [x] K.3 Спека 03 §2/§5 синхронизирована с фактом ts-fsrs 4.7.1 (шаги задаёт библиотека: New Again 1м/Hard 5м/Good 10м, Relearning 5м; learning_steps в API нет) — Decisions Pending закрыт
+- [x] K.4 specs/09 GAP-9: I18N-persistence помечен покрытым (settings.test «сохранённая локаль»)
+- [x] K.5 Цитаты JJK/SL: авто-сверка исчерпана (у фан-вики JJK/SL нет секций цитат, api.php) — 13 цитат остаются на ручную проверку по субтитрам; fetch_kaikki.py — пункт WAL устарел (закрыт)
+
 ## Черновик следующих майлстоунов (детализировать после M1)
 > Решение разработчика (2026-09-27): сторонние сервисы (Supabase и пр.) — в самый конец, после MVP. Прогресс MVP — только локально (Dexie/IndexedDB) + экспорт/импорт JSON.
 - M3: Пайплайн данных — слова (NGSL-S → NGSL → FrequencyWords), переводы (Wiktionary/kaikki — сырьё уже в data/raw), примеры (Tatoeba), неправильные/фразовые глаголы, цитаты (из quotes-ru-merged), аудио (Piper en-GB)
@@ -406,3 +414,5 @@
 | 2026-09-30 | **M21 закрыт** (21.1–21.5): listening-плашка, разогрев-повтор «с новыми заданиями», progress clamp, 18 аудио-outlier'ов перегенерированы, GAP-8/9 хвосты, веха S4 — 100% statements/lines; найден и починен баг key экзамена Врат; 448 unit + 59 e2e | Автономная сессия |
 | 2026-10-01 | Добавлен и закрыт блок «Интеграция внешнего ресёрча study_eng» (I.1–I.6): карта Бебриса допроверена (Present Perfect = 2.38), quotes-sample +20 переводов, travel-словарь 487 слов, ловушки ЛТ-23–31; ветка feature/integration-research | Задача разработчика «продолжить интеграцию» |
 | 2026-10-01 | Добавлен и закрыт «Обновление стека» (U.1–U.4): React 19, router 7, i18next 26, Vite 8 + plugin-react 6, typescript-eslint, react-hooks 7; audit → 0; 448 unit + 59 e2e зелёные; ветка feature/stack-upgrade | Опциональная задача TODO, решение разработчика |
+| 2026-10-01 | Долги синка M13 закрыты (S.1–S.5): XP max-merge + пол из review_log + trim очереди гостя; 459 unit; ветка feature/sync-debts | Задача разработчика (выбор 3) |
+| 2026-10-01 | Добавлен и закрыт блок «Мелкие хвосты KI» (K.1–K.5): merge_ru аргумент, 404 + мёртвые i18n, спека 03 под ts-fsrs 4.7, GAP-9 пометка, JJK/SL — авто-сверка исчерпана; ветка feature/ki-tails | Задача разработчика (выбор 4) |
