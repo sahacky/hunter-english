@@ -324,6 +324,15 @@
 - [x] U.3 React 19: act-обёртка async-флаша в auth.test (setState вне act больше не флашится синхронно); роутер/i18n без ломких изменений (HashRouter/Routes совместимы)
 - [x] U.4 Гейты: lint 0 ошибок, typecheck, 448 unit, 59 e2e, build (Vite 8 + PWA 1.3.0), coverage 100/90.22/99.7/100, validate:data, check:i18n, **npm audit 0 уязвимостей** (было 2 moderate)
 
+## Разговорник: мини-словарь путешественника {#travel-vocab}
+> Задача разработчика (2026-10-01, выбор 2): travel-словарь из внешнего ресёрча (research/data/travel-vocab-draft.json, 487 слов / 9 тем) — в продукт. Ветка: `feature/travel-vocab`.
+- [x] V.1 Билдер `research/tools/vocab/build_travel_vocab.py`: черновик + датасет слов → `data/vocab/travel.json` (487 записей; 297 с готовым аудио по лемме, 190 — TTS-фолбэк: месяцы/дни/местоимения вне датасета NGSL)
+- [x] V.2 Схема `data/schemas/vocab.schema.json` + kind/dir в validate-data.mjs + envelope enum + манифест; data/vocab/ в .prettierignore (генерируемое)
+- [x] V.3 Лоадер `src/content/vocab.ts` (VOCAB_TOPICS, groupVocabByTopic: канонический порядок, неизвестные — в конец) + UI: карточка в списке разговорника + вид `#/phrasebook/vocab` (early-return после хуков)
+- [x] V.4 i18n ru/en: vocabTitle/vocabHint/playWord + 9 тем
+- [x] V.5 Тесты: лоадер+группировка (3) + экран (карточка, порядок тем, 🔊 с аудио/TTS, catch-ветка) — 453 unit
+- [x] V.6 Гейты: lint/typecheck/validate:data/i18n/build/e2e 59/coverage 100-90.22-99.71-100 зелёные; WAL/PLANS; PR при зелёном CI
+
 ## Черновик следующих майлстоунов (детализировать после M1)
 > Решение разработчика (2026-09-27): сторонние сервисы (Supabase и пр.) — в самый конец, после MVP. Прогресс MVP — только локально (Dexie/IndexedDB) + экспорт/импорт JSON.
 - M3: Пайплайн данных — слова (NGSL-S → NGSL → FrequencyWords), переводы (Wiktionary/kaikki — сырьё уже в data/raw), примеры (Tatoeba), неправильные/фразовые глаголы, цитаты (из quotes-ru-merged), аудио (Piper en-GB)
