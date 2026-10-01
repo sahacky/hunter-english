@@ -9,8 +9,10 @@ import {
   loadLessonView,
   loadLessons,
   loadPhrases,
+  withWarmupVariant,
   type ExerciseItem,
   type LessonItem,
+  type LessonView,
   type PhraseItem,
 } from './lessons'
 
@@ -146,6 +148,80 @@ describe('assembleLesson (specs/02 §2 + specs/05 §3–§4)', () => {
   it('урок без упражнений блока — шаг пропущен', () => {
     const view = assembleLesson(lesson(['ex-e-0004']), byId, phraseById)
     expect(view.steps.map(({ index }) => index)).toEqual([3, 7])
+  })
+})
+
+describe('withWarmupVariant (план M21#21.1 — разогрев повтора «с новыми заданиями»)', () => {
+  function bigPoolView(): LessonView {
+    const ids = Array.from({ length: 12 }, (_, i) => `ph-${String(i + 1).padStart(4, '0')}`)
+    const phrases = ids.map((id) => phrase(id))
+    const phraseById = new Map(phrases.map((p) => [p.id, p]))
+    const exercises = [
+      exercise('ex-w-01', 'choose_translation', {
+        prompt: 'Перевод ph-0001',
+        options: ['a'],
+        correct: 0,
+      }),
+      exercise('ex-w-02', 'translate', { prompt_ru: 'Я голоден.', phrase_id: 'ph-0001' }),
+    ]
+    const byId = new Map(exercises.map((e) => [e.id, e]))
+    // warmup + build: шаг 1 существует
+    return assembleLesson(lesson(['ex-w-01', 'ex-w-02']), byId, phraseById)
+  }
+
+  const seeded = (seed: number) => () => {
+    seed = (seed * 1103515245 + 12345) & 0x7fffffff
+    return seed / 0x7fffffff
+  }
+
+  it('шаг 1 заменён на 4 choose + 1 match с синтетическими id и xp=1', () => {
+    const view = withWarmupVariant(bigPoolView(), seeded(7))
+    const warmup = view.content[1] ?? []
+    expect(warmup).toHaveLength(5)
+    expect(warmup.map(({ exercise }) => exercise.type)).toEqual([
+      'choose_translation',
+      'choose_translation',
+      'choose_translation',
+      'choose_translation',
+      'match_pairs',
+    ])
+    for (const { exercise } of warmup) {
+      expect(exercise.id).toMatch(/^ex-warmup-r-\d$/)
+      expect(exercise.meta.xp).toBe(1)
+    }
+    for (const { exercise } of warmup.slice(0, 4)) {
+      expect(exercise.payload.options).toHaveLength(4)
+      expect(exercise.payload.correct).toBeGreaterThanOrEqual(0)
+      expect(exercise.payload.options).toContain(
+        `Text of ${(exercise.payload.prompt as string).replace('Перевод ', '')}`,
+      )
+    }
+  })
+
+  it('match-пары уникальны по RU и цели choose не дублируются', () => {
+    const view = withWarmupVariant(bigPoolView(), seeded(42))
+    const warmup = view.content[1] ?? []
+    const prompts = warmup.slice(0, 4).map(({ exercise }) => exercise.payload.prompt)
+    expect(new Set(prompts).size).toBe(4)
+    const pairs = (warmup[4].exercise.payload as unknown as { pairs: { ru: string[] }[] }).pairs
+    expect(pairs).toHaveLength(5)
+    expect(new Set(pairs.map((p) => p.ru)).size).toBe(5)
+  })
+
+  it('детерминизм: один rng — один результат', () => {
+    expect(withWarmupVariant(bigPoolView(), seeded(1))).toEqual(
+      withWarmupVariant(bigPoolView(), seeded(1)),
+    )
+  })
+
+  it('маленький пул — view возвращается без изменений', () => {
+    const exercises = [exercise('ex-w-01', 'translate', { phrase_id: 'ph-0001' })]
+    const byId = new Map(exercises.map((e) => [e.id, e]))
+    const phrases = [phrase('ph-0001'), phrase('ph-0002')]
+    const phraseById = new Map(phrases.map((p) => [p.id, p]))
+    const view = assembleLesson(lesson(['ex-w-01']), byId, phraseById)
+    // шага warmup нет вовсе → без изменений
+    expect(withWarmupVariant(view)).toBe(view)
   })
 })
 

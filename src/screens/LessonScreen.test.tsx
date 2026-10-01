@@ -408,9 +408,11 @@ describe('LessonScreen: обход и ветки (M19)', () => {
 
     const solve = () => {
       // повтор шага приоритетнее «Дальше»: при <70% разогрева advanceStep
-      // не пускает дальше, «Дальше» из упражнения — no-op (specs/02 §2)
+      // не пускает дальше, «Дальше» из упражнения — no-op (specs/02 §2).
+      // Listening-плашка (M21#21.1) — необязывающее предложение: её «Повторить
+      // шаг» не нажимаем (проход с неверными ответами зациклится), идём «Дальше».
       const repeatNow = screen.queryByRole('button', { name: /^Повторить шаг/ })
-      if (repeatNow) {
+      if (repeatNow && screen.queryByText(/Шаг не пройден/)) {
         fireEvent.click(repeatNow)
         return
       }
@@ -481,8 +483,10 @@ describe('LessonScreen: обход и ветки (M19)', () => {
 
     // «zzz»/неверные ответы на всё — проход дойдёт до финала
     let done = false
+    let seenListeningRetry = false
     for (let step = 0; step < 1200 && !done; step += 1) {
       await waitFor(() => undefined, { timeout: 20 })
+      if (screen.queryByText(/Слух просел/)) seenListeningRetry = true
       if (screen.queryByText('Урок завершён')) {
         done = true
         break
@@ -494,6 +498,8 @@ describe('LessonScreen: обход и ветки (M19)', () => {
       if (checkBtn && !checkBtn.hasAttribute('disabled')) fireEvent.click(checkBtn)
     }
     expect(done).toBe(true)
+    // слух <60% при неверных ответах → плашка-предложение показана (M21#21.1)
+    expect(seenListeningRetry).toBe(true)
     // видео урока E-01 присутствует на финале
     expect(screen.getByRole('link', { name: 'YouTube' })).toHaveAttribute(
       'href',

@@ -21,6 +21,7 @@ import {
   loadLessonView,
   loadTraps,
   toPhraseNotes,
+  withWarmupVariant,
   type ExerciseItem,
   type LessonView,
   type PhraseItem,
@@ -584,6 +585,8 @@ export default function LessonScreen({
               if (phase.repeat) {
                 const fresh = createCheckpoint()
                 setCheckpoint(fresh)
+                // разогрев «с новыми заданиями» при повторе (план M21#21.1)
+                if (view) setView(withWarmupVariant(view))
               }
               setExerciseIndex(0)
               setRuleShown(false)
@@ -768,6 +771,16 @@ export default function LessonScreen({
       {stepNeedsRepeat && (
         <div className="lesson-actions">
           <p className="dim">{t('lesson.stepIncomplete')}</p>
+          <button type="button" className="srs-btn" onClick={repeatStep}>
+            {t('lesson.repeatStep')}
+          </button>
+        </div>
+      )}
+
+      {/* слух <60%: шаг не блокируем, но предлагаем повтор (specs/02 §2, план M21#21.1) */}
+      {stepEvaluation?.retrySuggested && !stepNeedsRepeat && (
+        <div className="lesson-actions">
+          <p className="dim">{t('lesson.listeningRetryHint')}</p>
           <button type="button" className="srs-btn" onClick={repeatStep}>
             {t('lesson.repeatStep')}
           </button>
