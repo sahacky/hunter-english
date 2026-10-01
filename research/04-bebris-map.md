@@ -16,8 +16,8 @@
 
 **Охват:**
 - Часть 1: субтитрами проверены **все теоретические уроки 1–63** и уроки 94–106. Блоки «Правильные глаголы» (64–78) и «Неправильные глаголы» (79–93) определены по названиям, выборочно подтверждены субтитрами. Из уроков-повторений 108–132 проверены 4. Урок 107 не скачался.
-- Часть 2: взят каждый 5-й урок и все уроки с темой в названии, всего ~80 уроков. Блоки 2.2–2.10 и 2.24–2.44 скачать не удалось (429), см. «Не охвачено».
-- YouTube начал отвечать **HTTP 429** примерно на 130-м скачивании. Повторные попытки не прошли, поэтому 25 видео остались без субтитров (список в конце).
+- Часть 2: взят каждый 5-й урок и все уроки с темой в названии, всего ~80 уроков. Блоки 2.2–2.10 и 2.24–2.44 в первый проход скачать не удалось (429).
+- YouTube начал отвечать **HTTP 429** примерно на 130-м скачивании. **2026-10-01 докачано** возобновляемым батч-скриптом с ретраями и паузами: русские субтитры есть у **859 из 1033 видео**. Блок 2.24–2.45 закрыт выборочно (включая **введение Present Perfect — урок 2.38**), см. «Не охвачено» в конце.
 
 ---
 
@@ -58,8 +58,8 @@
 
 | Уроки ч.2 | № в плейлисте | Блок | Как проверено |
 |---|---|---|---|
-| 1–~25 | 552–~576 | **Present Continuous** (still, these days), глаголы состояния | С (уроки 1, 11, 16, 21); 2–10 не скачаны |
-| ~26–45 | ~577–596 | Не охвачено (429). Судя по соседним урокам, это Past Continuous (урок 36 про него) и, **вероятно**, введение в Present Perfect | С (урок 36) + **П** |
+| 1–~25 | 552–~576 | **Present Continuous** (still, these days), глаголы состояния | С (уроки 1, 11, 16, 21); 2.3/2.9 скачаны и подтверждены как Present Continuous, 2.2/2.4–2.5/2.7 скачаны (практика, тема без правила не объявляется) |
+| ~26–45 | ~577–596 | **Past Continuous** (2.34–2.36) и **введение в Present Perfect** (2.38: «переходим к следующему времени — Present Perfect, настоящее совершенное время»; 2.40–2.45: have + V3, been, Present Perfect vs Past Simple); 2.27/2.29/2.43 — практика перевода | С (2.27–2.45 выборочно) |
 | 46–~191 | 597–742 | **Интенсив «неправильные глаголы + лексика»** в смешанных временах (Past Simple / Present Perfect / Past Continuous / will), по несколько новых глаголов и выражений за урок (found, finish, drive, let, mislead, remain, declare, consist of…) | С (каждый 5-й) |
 | 193 | 744 | «ВСЕ ВРЕМЕНА»: обзор 12 времён | Н+С |
 | 196–~211 | 747–~762 | Future Continuous, Present Perfect Continuous, Future Perfect | С |
@@ -190,7 +190,16 @@
 | [562](https://www.youtube.com/watch?v=Dt6YcGWfAq8) | 2.11 | Т | Present Continuous: still, these days (I'm still waiting) | A1 | D | С |
 | [567](https://www.youtube.com/watch?v=VNoNT1ao4O0) | 2.16 | Т | Глаголы состояния без Continuous (belong, sound, contain) | A2–B1 | C | С |
 | [572](https://www.youtube.com/watch?v=VZ4sZGdG1L0) | 2.21 | Т | Present Continuous (Progressive): утверждение | A1 | D | С |
+| [554](https://www.youtube.com/watch?v=8AbGUAK9lFY) | 2.3 | Т | Present Continuous: продолжение блока | A1 | D | С |
+| [560](https://www.youtube.com/watch?v=aWkbGnJek3I) | 2.9 | Т | Present Continuous: продолжение блока | A1 | D | С |
+| [585](https://www.youtube.com/watch?v=OvtrUyXDpF4) | 2.34 | Т | Past Continuous | A2 | C | С |
+| [586](https://www.youtube.com/watch?v=2D-jdOX268Y) | 2.35 | Т | Past Continuous | A2 | C | С |
 | [587](https://www.youtube.com/watch?v=nag2dLag6Mw) | 2.36 | Т | Past Continuous vs Past Simple (I was waiting when she saw me) | A2 | C | С |
+| [589](https://www.youtube.com/watch?v=WoYnpIk0r2k) | 2.38 | Т | **Present Perfect: введение** («настоящее совершенное время», have + V3, контраст с Past Simple для однократного действия) | A2–B1 | C | С |
+| [591](https://www.youtube.com/watch?v=7Gy00D597Eo) | 2.40 | Т | Present Perfect: обзор групп времён + have/has been | A2–B1 | C | С |
+| [593](https://www.youtube.com/watch?v=yaPZmOtXBlQ) | 2.42 | Т | Present Perfect vs Past Simple (сравнение на фразах) | A2–B1 | C | С |
+| [595](https://www.youtube.com/watch?v=Rw27Qs2JOYI) | 2.44 | Т | Present Perfect (has been) | A2–B1 | C | С |
+| [596](https://www.youtube.com/watch?v=_xZWuUj1DOQ) | 2.45 | Т | Present Perfect + неправильные глаголы в перфекте | A2–B1 | C | С |
 | [597](https://www.youtube.com/watch?v=sABn1YHelKw) | 2.46 | Т | Интенсив неправильных глаголов: found/founded, was founded, offer | A2–B1 | C | С |
 | [602](https://www.youtube.com/watch?v=e9vi3UqDrNc) | 2.51 | Т | Неправильные глаголы + Present Perfect (already, never, ever: I've never driven) | A2–B1 | C | С |
 | [607](https://www.youtube.com/watch?v=Nztz_W8aEw4) | 2.56 | Т | Лексика: enjoy doing, increase/decrease, water the flowers | A2–B1 | C | С |
@@ -205,6 +214,7 @@
 | [652](https://www.youtube.com/watch?v=Zkc-HfcTxYg) | 2.101 | Т | 3-я форма неправильных глаголов (Have you ever driven…?), push, emphasis | B1 | B | С |
 | [657](https://www.youtube.com/watch?v=gCCiksORLrE) | 2.106 | Т | Лексика: treat unfairly, light/lit, should | B1 | B | С |
 | [662](https://www.youtube.com/watch?v=Z0U4jE0b5kE) | 2.111 | Т | Лексика: declare, refer to, ask | B1 | B | С |
+| [672](https://www.youtube.com/watch?v=DQ6i0kfwZsc) | 2.121 | Т | Косвенная речь + Past Perfect (he said that he'd already sent) | B1 | B | С |
 | [682](https://www.youtube.com/watch?v=1aSBuFMUQxg) | 2.131 | Т | Лексика в разных временах (decrease the price, hasn't informed) | B1 | B | С |
 | [697](https://www.youtube.com/watch?v=AdsiHDc3Gdc) | 2.146 | Т | Тема не определена (субтитры нечитаемые) | ? | ? | — |
 | [707](https://www.youtube.com/watch?v=t6IQQpOFxEg) | 2.156 | Т | Лексика: divide, join, for several reasons | B1 | B | С |
@@ -264,7 +274,7 @@
 | [990](https://www.youtube.com/watch?v=uPa4RrF6KRo) | 2.439 | ИК | Итоговая контрольная | B2–C1 | A | Н+С |
 | [1010](https://www.youtube.com/watch?v=qTKKaE7-8A4) | 2.459 | ИК | Итоговая контрольная | B2–C1 | A | Н+С |
 | [1032](https://www.youtube.com/watch?v=Vn0w_PdX5Ss) | 2.481 | ИК | Итоговая контрольная (последняя) | B2–C1 | A | Н+С |
-| [1033](https://www.youtube.com/watch?v=yT-Tlhe7hKk) | — | Тр | Супер-тренажёр (11,9 ч), субтитры не скачаны | все | — | Н |
+| [1033](https://www.youtube.com/watch?v=yT-Tlhe7hKk) | — | Тр | Супер-тренажёр (11,9 ч), сводный перевод без новой темы (субтитры скачаны 2026-10-01) | все | — | Н |
 
 ---
 
@@ -276,7 +286,7 @@
 2. to be: am/is/are → so/such, a/an, the best → − → ? → спецвопросы. *(1.26–1.34)*
 3. Future Simple (will): + → − → ? → спецвопросы, be able to / manage to → глаголы с предлогами. *(1.49–1.63)*
 4. Past Simple: 180 правильных глаголов → 100 неправильных → didn't → Did…? → спецвопрос → was/were (+, −, ?, спецвопрос) → сравнение с Present Simple. *(1.64–1.107)*
-5. Present Continuous → глаголы состояния → Past Continuous → (вероятно) Present Perfect. *(2.1–2.45, частично П)*
+5. Present Continuous → глаголы состояния → Past Continuous → Present Perfect (введение — урок 2.38). *(2.1–2.45, С выборочно)*
 6. Долгий интенсив «неправильные глаголы + лексика» во всех пройденных временах. *(2.46–2.191)*
 7. Обзор 12 времён → Future Continuous → Present Perfect Continuous → Future Perfect. *(2.193–2.211)*
 8. Пассив во всех временах. *(2.216–2.241)*
@@ -303,7 +313,7 @@
 | сравнения (bigger, the biggest) | A2 | только the best (1.27) и as … as possible (2.66); отдельного урока не найдено | не найдено |
 | much/many/some/any | A2 | how many (1.59), any/no/lots of (2.251) | у него позже |
 | must/have to/should | A2 | ч.2, 2.293–2.306, сразу с перфектом и пассивом | у него позже и сложнее |
-| Present Perfect | A2 базово / B1 | в контексте с 2.51; введение, **вероятно**, в 2.26–2.45 (П) | примерно совпадает |
+| Present Perfect | A2 базово / B1 | введение в 2.38–2.45, затем в контексте с 2.51 | примерно совпадает |
 | Past Continuous | A2 | 2.36 | совпадает (чуть позже) |
 | наречия частотности, like + -ing / want to | A2 | often/always в 1.3/1.24; want to/like/need to в 1.6–1.12 («правило двух глаголов») | у него раньше |
 | Present Perfect Continuous, Past Perfect | B1 | 2.201; Past Perfect в контексте (2.86, 2.241) | совпадает |
@@ -370,7 +380,7 @@
 | C | Past Continuous | 2.36 | [587](https://www.youtube.com/watch?v=nag2dLag6Mw) |  |
 | C | Глаголы с предлогами (depend on, pay for, look for) | 1.60, 2.273 | [182](https://www.youtube.com/watch?v=2bsDP-r-RGk), [824](https://www.youtube.com/watch?v=zMMSBNL4S4Q) |  |
 | C | as … as possible; сравнения | 2.66 | [617](https://www.youtube.com/watch?v=LBnXzY3pz6g) | отдельного урока по bigger/the biggest в выборке не найдено |
-| B | Present Perfect (already, never, ever) | 2.51, 2.101 (контекст) | [602](https://www.youtube.com/watch?v=e9vi3UqDrNc), [652](https://www.youtube.com/watch?v=Zkc-HfcTxYg) | **урок-введение в Present Perfect не найден** (вероятно ч.2 уроки 26–45, не скачаны) |
+| B | Present Perfect (already, never, ever) | 2.38 (введение), 2.51, 2.101 (контекст) | [589](https://www.youtube.com/watch?v=WoYnpIk0r2k), [602](https://www.youtube.com/watch?v=e9vi3UqDrNc), [652](https://www.youtube.com/watch?v=Zkc-HfcTxYg) | урок-введение найден по докачанным субтитрам (2.38) |
 | B | Present Perfect Continuous | 2.201 | [752](https://www.youtube.com/watch?v=IxjdanDgqWE) |  |
 | B | Условные 0/1/2 | 2.307, 2.316 | [858](https://www.youtube.com/watch?v=MC0EPmPnTH8), [867](https://www.youtube.com/watch?v=V5PCgdjBQf8) |  |
 | B | Пассив (базово) | 2.216, 2.236 | [767](https://www.youtube.com/watch?v=lx-HhzfqGVM), [787](https://www.youtube.com/watch?v=yvdUvIO4Wio) |  |
@@ -392,34 +402,24 @@
 
 ---
 
-## 5. Не охвачено (HTTP 429)
+## 5. Не охвачено
 
-YouTube перестал отдавать субтитры примерно после 130 запросов, повторные попытки тоже получили 429. Для этих видео тема **не проверена**:
+Первый проход (2026-09-27) упёрся в HTTP 429 после ~130 скачиваний. **2026-10-01 субтитры докачаны** возобновляемым батч-скриптом с ретраями и паузами (сырьё лежит локально, в репо не публикуется): русские субтитры получены для **859 из 1033 видео**. Из 25 ранее неохваченных докачаны 12 (№ 553–556, 558, 578, 580, 585, 595, 672, 692, 1033). По-прежнему без русских автосубтитров (17 видео) — темы не проверены:
 
 - [314](https://www.youtube.com/watch?v=mdt3OoadgRs) — УРОК 107 Past Simple прошедшее время в английском языке
-- [553](https://www.youtube.com/watch?v=7wN6Zi_KUE8) — ЧАСТЬ 2 УРОК 2
-- [554](https://www.youtube.com/watch?v=8AbGUAK9lFY) — ЧАСТЬ 2 УРОК 3
-- [555](https://www.youtube.com/watch?v=wmx8-shCavQ) — ЧАСТЬ 2 УРОК 4
-- [556](https://www.youtube.com/watch?v=b5p_jAGlS_U) — ЧАСТЬ 2 УРОК 5
 - [557](https://www.youtube.com/watch?v=Z3XpJfJbo5o) — ЧАСТЬ 2 УРОК 6
-- [558](https://www.youtube.com/watch?v=mOy4ovI0uVA) — ЧАСТЬ 2 УРОК 7
 - [575](https://www.youtube.com/watch?v=T6ZshkOzC20) — ЧАСТЬ 2 УРОК 24
 - [576](https://www.youtube.com/watch?v=AvLgysmpY3w) — ЧАСТЬ 2 УРОК 25
 - [577](https://www.youtube.com/watch?v=ooke6PBRcfg) — ЧАСТЬ 2 УРОК 26
-- [578](https://www.youtube.com/watch?v=6fBL9ISy-co) — ЧАСТЬ 2 УРОК 27
-- [580](https://www.youtube.com/watch?v=ztw1hFitLPk) — ЧАСТЬ 2 УРОК 29
 - [582](https://www.youtube.com/watch?v=0Ux7ikp5oU0) — ЧАСТЬ 2 УРОК 31
-- [585](https://www.youtube.com/watch?v=OvtrUyXDpF4) — ЧАСТЬ 2 УРОК 34
 - [590](https://www.youtube.com/watch?v=pD3c0_f-_AE) — ЧАСТЬ 2 УРОК 39
 - [592](https://www.youtube.com/watch?v=16L1uNFYPqs) — ЧАСТЬ 2 УРОК 41
-- [595](https://www.youtube.com/watch?v=Rw27Qs2JOYI) — ЧАСТЬ 2 УРОК 44
 - [667](https://www.youtube.com/watch?v=hDo-ksJ1vCA) — ЧАСТЬ 2 УРОК 116
-- [672](https://www.youtube.com/watch?v=DQ6i0kfwZsc) — ЧАСТЬ 2 УРОК 121
 - [677](https://www.youtube.com/watch?v=nMYs6du8Xq4) — ЧАСТЬ 2 УРОК 126
 - [687](https://www.youtube.com/watch?v=971qeC8FV38) — ЧАСТЬ 2 УРОК 136
-- [692](https://www.youtube.com/watch?v=OheAtXhdvck) — ЧАСТЬ 2 УРОК 141
 - [702](https://www.youtube.com/watch?v=YaTRJuFGZs0) — ЧАСТЬ 2 УРОК 151
 - [757](https://www.youtube.com/watch?v=F3e4Y2XSlfk) — ЧАСТЬ 2 УРОК 206
-- [1033](https://www.youtube.com/watch?v=yT-Tlhe7hKk) — СУПЕР ТРЕНАЖЕР АНГЛИЙСКИЙ С НУЛЯ
+
+Скачаны, но темы по субтитрам не определены (практика/контрольная — правило не объявляется): № 553, 555, 556, 578, 580, 594, 692. Супер-тренажёр (№ 1033) скачан, отдельной темы не имеет (сводный перевод).
 
 Кроме того, **не проверялись** по субтитрам: уроки ч.1 65–72, 74–78, 80–88, 90–93 и 100–101 (тема из названия, Н), повторения ч.1 109–131 кроме 116 и 121 (тема «повторение» из названия), все «Практики», «Упражнения» и «Контрольные» (в них нет новых тем), 4 из каждых 5 уроков ч.2 в блоках без темы в названии.
