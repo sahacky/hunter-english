@@ -30,6 +30,7 @@ test('settings screen: srs buttons mode reaches review screen', async ({ page })
 })
 
 test('lesson exit: button with confirm returns to dashboard', async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem('hunter-onboarding-done', '1'))
   await page.goto('/#/lesson/E-01')
   await expect(page.getByRole('heading', { name: 'to be: am / is / are. Знакомство' })).toBeVisible(
     {

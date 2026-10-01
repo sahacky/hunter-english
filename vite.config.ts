@@ -64,7 +64,7 @@ export default defineConfig({
       provider: 'istanbul',
       reporter: ['text', 'html', 'lcov'],
       include: ['src/**'],
-      exclude: ['src/test/**', 'src/i18n.ts', 'src/main.tsx'],
+      exclude: ['src/test/**', 'src/i18n.ts', 'src/main.tsx', '**/*.json'],
       // рейчёт: порог = зафиксированный уровень M19; повышать при добавлении тестов
       thresholds: {
         // веха S4 (план M21#21.4): statements/lines 100%; branches/functions —

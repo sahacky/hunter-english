@@ -11,6 +11,8 @@ export interface ProgressRepository {
   ensureCards(cards: CardState[]): Promise<void>
   /** Все карточки пользователя (для сборки очереди buildQueue). */
   getAllCards(): Promise<CardState[]>
+  /** Скрыть карточки заметок из колоды (suspend: стартовая полоса оценки, plan://onboarding#O.3). */
+  suspendNotes(noteIds: string[]): Promise<void>
   /** Ответ: upsert card_state + append review_log — одна транзакция (specs/06 §1). */
   saveAnswer(next: CardState, log: ReviewLogEntry): Promise<void>
   /**
@@ -20,6 +22,8 @@ export interface ProgressRepository {
   countNewAnsweredSince(iso: string): Promise<number>
   /** Чекпоинт урока (specs/06 §3 db://table-lesson_progress); null — урок не начат. */
   getLessonProgress(lessonId: string): Promise<LessonProgress | null>
+  /** Чекпоинты списка уроков одним чтением (карта пути, plan://onboarding#O.5). */
+  getManyLessonProgress(lessonIds: string[]): Promise<(LessonProgress | null)[]>
   /**
    * Сохраняет чекпоинт урока (upsert + sync_queue). Единица сохранения —
    * отдельное задание: экран пишет после каждого вердикта (specs/02 §5).

@@ -2,7 +2,7 @@
 // Окна Системы: ежедневный квест, статус, «Начать день», цитата дня.
 
 import { useCallback, useEffect, useMemo, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Navigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { dayStart } from '../domain/srs/scheduler'
 import { levelInfo } from '../domain/game/game'
@@ -13,12 +13,14 @@ import { loadLessons, loadQuotes } from '../content/lessons'
 import { createFirstCards, loadWordNotes } from '../content/words'
 import type { ProgressRepository } from '../domain/progress'
 import { DexieProgressRepository } from '../data/progress-repository'
+import { isOnboarded } from '../data/onboarding'
 
 interface DashboardProps {
   repo?: ProgressRepository
 }
 
 interface DashboardData {
+  onboarded: boolean
   stats: UserStats
   quest: QuestDayState
   dueToday: number
@@ -64,6 +66,7 @@ export default function Dashboard({ repo: repoProp }: DashboardProps) {
         loadQuotes(),
         loadWordNotes(),
       ])
+      const onboarded = await isOnboarded()
       if (!alive) return
       // карточки материализуются при первом заходе (как в /#/srs — M4)
       await repo.ensureCards(createFirstCards(wordNotes, now))
@@ -86,6 +89,7 @@ export default function Dashboard({ repo: repoProp }: DashboardProps) {
       }
       if (!alive) return
       setData({
+        onboarded,
         stats,
         quest,
         dueToday,
@@ -125,6 +129,10 @@ export default function Dashboard({ repo: repoProp }: DashboardProps) {
         <p className="srs-error">{t('dashboard.error')}</p>
       </section>
     )
+  }
+  if (data && !data.onboarded) {
+    // первый вход — оценка ранга (plan://onboarding#O.4, specs/07 §2.2)
+    return <Navigate to="/welcome" replace />
   }
   if (!data) {
     return (
@@ -216,6 +224,12 @@ export default function Dashboard({ repo: repoProp }: DashboardProps) {
             {data.nextLesson.title}
           </p>
         )}
+        {data.stats.xp === 0 && data.nextLesson?.id === 'les-e-01' && (
+          <p className="dim">{t('dashboard.beginnerHint')}</p>
+        )}
+        <p className="dim">
+          <Link to="/path">→ {t('dashboard.programLink')}</Link>
+        </p>
       </section>
 
       {data.quote && (

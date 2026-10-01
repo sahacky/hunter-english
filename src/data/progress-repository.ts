@@ -46,6 +46,32 @@ export class DexieProgressRepository implements ProgressRepository {
     })
   }
 
+  async suspendNotes(noteIds: string[]): Promise<void> {
+    // Implements: plan://onboarding#O.3 — suspend идемпотентен: повторный вызов
+    // не меняет уже скрытые карточки; в sync_queue уходит по одному снимку на карточку
+    if (noteIds.length === 0) return
+    await this.db.transaction('rw', this.db.card_states, this.db.sync_queue, async () => {
+      const rows = await this.db.card_states
+        .where('note_id')
+        .anyOf(noteIds)
+        .filter((row) => row.user_id === getCurrentUserId() && !row.suspended)
+        .toArray()
+      if (rows.length === 0) return
+      const updated = rows.map((row) => ({ ...row, suspended: true }))
+      await this.db.card_states.bulkPut(updated)
+      const created_at = new Date().toISOString()
+      await this.db.sync_queue.bulkAdd(
+        updated.map((row) => ({
+          table: 'card_states' as const,
+          op: 'upsert' as const,
+          payload: row,
+          tries: 0,
+          created_at,
+        })),
+      )
+    })
+  }
+
   async getAllCards(): Promise<CardState[]> {
     const rows = await this.db.card_states.where('user_id').equals(getCurrentUserId()).toArray()
     return rows.map(({ user_id: _user_id, ...card }) => card)
@@ -82,6 +108,18 @@ export class DexieProgressRepository implements ProgressRepository {
     if (!row) return null
     const { user_id: _user_id, ...progress } = row
     return progress
+  }
+
+  async getManyLessonProgress(lessonIds: string[]): Promise<(LessonProgress | null)[]> {
+    const user = getCurrentUserId()
+    const rows = await this.db.lesson_progress.bulkGet(
+      lessonIds.map((lessonId) => [user, lessonId] as [string, string]),
+    )
+    return rows.map((row) => {
+      if (!row) return null
+      const { user_id: _user_id, ...progress } = row
+      return progress
+    })
   }
 
   async getStats(): Promise<UserStats> {

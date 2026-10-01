@@ -5,6 +5,7 @@ import { expect, test } from '@playwright/test'
 test.use({ viewport: { width: 390, height: 844 } })
 
 test('mobile 390: tab bar visible, desktop nav hidden (M9)', async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem('hunter-onboarding-done', '1'))
   await page.goto('/#/')
   const tabbar = page.getByRole('navigation', { name: 'Нижняя навигация' })
   await expect(tabbar).toBeVisible()
@@ -15,6 +16,7 @@ test('mobile 390: tab bar visible, desktop nav hidden (M9)', async ({ page }) =>
 })
 
 test('mobile 390: tab bar navigation works', async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem('hunter-onboarding-done', '1'))
   await page.goto('/#/')
   await page
     .getByRole('navigation', { name: 'Нижняя навигация' })
@@ -57,6 +59,7 @@ test('offline: app shell and cached audio served by service worker (M9)', async 
   page,
   context,
 }) => {
+  await page.addInitScript(() => localStorage.setItem('hunter-onboarding-done', '1'))
   await page.goto('/#/')
   await expect(page.getByText('[Ежедневный квест]')).toBeVisible({ timeout: 8000 })
 
