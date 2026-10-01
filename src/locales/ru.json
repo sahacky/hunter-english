@@ -14,8 +14,7 @@
     "gates": "Врата",
     "quotes": "Цитаты",
     "phrasebook": "Разговорник",
-    "settings": "Настройки",
-    "notFound": "Страница не найдена"
+    "settings": "Настройки"
   },
   "dashboard": {
     "error": "Система недоступна: не удалось загрузить прогресс.",
@@ -144,7 +143,6 @@
   },
   "common": {
     "loading": "Загрузка…",
-    "inDevelopment": "Раздел в разработке — спецификации в specs/",
     "backToDashboard": "На дашборд"
   },
   "notFound": {
@@ -155,7 +153,6 @@
     "notFound": "Такого урока нет в программе.",
     "resumePrompt": "Вы остановились на шаге {{step}}.",
     "resume": "Продолжить",
-    "startOver": "Начать заново",
     "gotIt": "Понятно",
     "check": "Проверить",
     "next": "Дальше",
@@ -168,8 +165,6 @@
     "disputed": "ответ оспорен",
     "iWasRight": "Я был прав",
     "trapHint": "Сработала ловушка — смотри правило",
-    "trapInRule": "Ловушка для русскоязычных — внимание!",
-    "dictationPlaceholder": "Введи услышанное",
     "matchPrompt": "Соедини пары",
     "matchDoneWithMistakes": "Готово (ошибок: {{count}})",
     "wordBankHint": "Собери фразу из плиток; Backspace вернёт последнюю",

@@ -14,8 +14,7 @@
     "gates": "Gates",
     "quotes": "Quotes",
     "phrasebook": "Phrasebook",
-    "settings": "Settings",
-    "notFound": "Page not found"
+    "settings": "Settings"
   },
   "dashboard": {
     "error": "System unavailable: could not load progress.",
@@ -83,7 +82,6 @@
   },
   "common": {
     "loading": "Loading…",
-    "inDevelopment": "Section in development — see specs/",
     "backToDashboard": "Back to dashboard"
   },
   "notFound": {
@@ -94,7 +92,6 @@
     "notFound": "This lesson is not in the program.",
     "resumePrompt": "You stopped at step {{step}}.",
     "resume": "Continue",
-    "startOver": "Start over",
     "gotIt": "Got it",
     "check": "Check",
     "next": "Next",
@@ -107,8 +104,6 @@
     "disputed": "disputed",
     "iWasRight": "I was right",
     "trapHint": "A trap triggered — see the rule",
-    "trapInRule": "A trap for Russian speakers — watch out!",
-    "dictationPlaceholder": "Type what you hear",
     "matchPrompt": "Match the pairs",
     "matchDoneWithMistakes": "Done (mistakes: {{count}})",
     "wordBankHint": "Build the phrase from tiles; Backspace undoes the last one",
