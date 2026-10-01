@@ -58,6 +58,7 @@ async function bootstrap() {
 function delayRepo(inner: DexieProgressRepository, ms: number): ProgressRepository {
   return {
     ensureCards: (cards) => inner.ensureCards(cards),
+    suspendNotes: (noteIds) => inner.suspendNotes(noteIds),
     getAllCards: () => inner.getAllCards(),
     countNewAnsweredSince: (iso) => inner.countNewAnsweredSince(iso),
     saveAnswer: async (next, log) => {
@@ -65,6 +66,7 @@ function delayRepo(inner: DexieProgressRepository, ms: number): ProgressReposito
       await inner.saveAnswer(next, log)
     },
     getLessonProgress: (lessonId) => inner.getLessonProgress(lessonId),
+    getManyLessonProgress: (ids) => inner.getManyLessonProgress(ids),
     putLessonProgress: (progress) => inner.putLessonProgress(progress),
     getStats: () => inner.getStats(),
     putStats: (stats) => inner.putStats(stats),
