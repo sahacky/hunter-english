@@ -14,12 +14,15 @@ import SrsScreen from './screens/SrsScreen'
 import LoginScreen from './screens/LoginScreen'
 import QuotesScreen, { QuoteScreen } from './screens/QuotesScreen'
 
-function Placeholder({ page }: { page: string }) {
+function Placeholder() {
   const { t } = useTranslation()
   return (
     <section className="panel">
-      <h2>{t(`nav.${page}`)}</h2>
-      <p className="dim">{t('common.inDevelopment')}</p>
+      <h2>{t('notFound.title')}</h2>
+      <p className="dim">{t('notFound.text')}</p>
+      <p className="dim">
+        <a href="#/">{t('common.backToDashboard')}</a>
+      </p>
     </section>
   )
 }
@@ -41,7 +44,7 @@ export default function App() {
             <Route path="phrasebook/:situation" element={<PhrasebookSituationScreen />} />
             <Route path="settings" element={<SettingsScreen />} />
             <Route path="login" element={<LoginScreen />} />
-            <Route path="*" element={<Placeholder page="notFound" />} />
+            <Route path="*" element={<Placeholder />} />
           </Route>
         </Routes>
         <ToastHost />

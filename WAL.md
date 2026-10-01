@@ -1,6 +1,8 @@
 # WAL — Hunter English
 
 ## Current Phase
+**Мелкие хвосты Known Issues закрыты** (ветка feature/ki-tails): merge_ru.py — путь аргументом; 404-страница с текстом и ссылкой «На дашборд» (+мёртвые i18n-ключи удалены: nav.notFound, common.inDevelopment, lesson.startOver/trapInRule/dictationPlaceholder); **спека 03 §2/§5 синхронизирована с фактом ts-fsrs 4.7** (шаги ведёт библиотека, Decisions Pending закрыт); specs/09 GAP-9 — I18N-persistence помечен покрытым (settings.test); цитаты JJK/SL — проверено отсутствие секций цитат у фан-вики, остаётся ручная сверка по субтитрам; fetch_kaikki.py — пункт устарел (уже был починен).
+
 **Долги синка M13 закрыты** (ветка feature/sync-debts): mergeLww user_stats теперь **XP = max сторон** (агрегат не роняется LWW-победителем); после pull — **recalcXpFromReviewLog**: пол XP из полного журнала (повтор 1 + выпуск Learning→Review 2, зеркало SrsScreen), применяется как max (нет двойного счёта и занижения); **trimQueue** — без env хвост sync_queue старше 2000 удаляется на бутстрапе AuthProvider (при входе enqueueAllRows выгружает актуальное). 459 unit / coverage 100-90.19-99.71-100.
 
 **Мини-словарь путешественника закрыт** (ветка feature/travel-vocab): новый kind данных `vocab` (data/vocab/travel.json — 487 слов / 9 тем, билдер research/tools/vocab/build_travel_vocab.py связывает с датасетом слов по лемме: 297 с готовым аудио, 190 — TTS-фолбэк); схема vocab.schema.json + envelope enum + DIR_TO_KIND/KIND_TO_SCHEMA; лоадер src/content/vocab.ts (groupVocabByTopic); экран `#/phrasebook/vocab` (карточка в списке разговорника, темы, 🔊 аудио/TTS); i18n +12 ключей. 453 unit / 59 e2e / coverage 100-90.22-99.71-100.
@@ -89,13 +91,13 @@
 - M9: иконки перегенерировать при смене мотивации: `python3 research/tools/icons/gen_icons.py` (Pillow)
 - ~~`npm audit`: 2 moderate в `react-router-dom@6` (порог high не превышен); исправление только в v7~~ — ЗАКРЫТО в стек-апгрейде: react-router-dom 7.18.4, `npm audit` → 0 уязвимостей
 - Единичный флак SrsScreen beforeunload-теста при полном прогоне после апгрейда (в изоляции и повторном прогоне — зелёный); наблюдать, при повторении — стабилизировать по постмортему M17
-- `research/tools/quotes/merge_ru.py:17` — дефолтный путь с чужой машины (`/home/llm/...`); передавать путь аргументом
-- `research/tools/data/fetch_kaikki.py` — слова в URL не экранируются (для слов с `'`); лишний `import sys`; нет `requirements.txt`
+- ~~`research/tools/quotes/merge_ru.py:17` — дефолтный путь с чужой машины (`/home/llm/...`); передавать путь аргументом~~ — ЗАКРЫТО 2026-10-01: путь обязателен аргументом
+- ~~`research/tools/data/fetch_kaikki.py` — слова в URL не экранируются; лишний `import sys`; нет `requirements.txt`~~ — ЗАКРЫТО 2026-10-01: пункт устарел — quote() и sys используются, скрипт только на stdlib (requirements не нужен)
 - ~~e2e (Playwright) не запускается в CI~~ — ЗАКРЫТО в M18: джоба e2e в ci.yml (chromium --with-deps, артефакт отчёта при падении); локально всё ещё нужен `npx playwright install chromium` один раз
 - M9: `npm run test:e2e` теперь собирает dist при каждом запуске (build в webServer) — медленнее, но без рассинхрона dist/источников
 - M4: новые зависимости — `dexie` (runtime) и `fake-indexeddb` (devDep, тесты репозитория); API ts-fsrs сверен по node_modules (факт: 4.7.1 — fsrs(), generatorParameters(), createEmptyCard(), Rating, State; learning_steps в параметрах НЕТ, шаги: New Again=1м/Hard=5м/Good=10м, Relearning-шаг 5м; fuzz детерминирован seed'ом время+reps)
-- `src/App.tsx` 404 берёт `nav.notFound`; ключи `notFound.*`, `common.loading`, `common.backToDashboard` пока не используются
-- По AoT, JJK, Solo Leveling цитаты только ручным сбором; фанатские источники помечены «⚠ сверить с дубляжом»
+- ~~`src/App.tsx` 404 берёт `nav.notFound`; ключи `notFound.*`, `common.loading`, `common.backToDashboard` пока не используются~~ — ЗАКРЫТО 2026-10-01: 404 показывает notFound.title/text + ссылка common.backToDashboard; мёртвые (nav.notFound, common.inDevelopment, lesson.startOver/trapInRule/dictationPlaceholder) удалены
+- По AoT, JJK, Solo Leveling цитаты только ручным сбором; фанатские источники помечены «⚠ сверить с дубляжом». 2026-10-01: проверено — у фан-вики JJK/SL нет секций цитат (api.php), авто-сверка недоступна; 13 цитат JJK/SL остаются на ручную проверку по субтитрам
 - IMDb: ToS запрещает автоматический сбор — только ручная выборка
 - `data/raw/` не в git: kaikki-дампы пересоздаются `research/tools/data/fetch_kaikki.py` (возобновляемо)
 - (M12) Supabase free засыпает после 7 дней без активности
@@ -114,7 +116,7 @@
 - Разработка делегируется AI-агентам; каждый значимый этап — ревью и исправления
 
 ## Decisions Pending
-- specs/03 §2/§5: минутные шаги (learning/relearning steps) — синхронизировать спеку с фактом ts-fsrs 4.7 (шаги заданы библиотекой, REVIEW-маркер в scheduler.ts) или вернуться к обсуждению; решение за разработчиком
+- ~~specs/03 §2/§5: минутные шаги (learning/relearning steps) — синхронизировать спеку с фактом ts-fsrs 4.7~~ — РЕШЕНО 2026-10-01: спека синхронизирована с фактом (шаги задаёт библиотека при enable_short_term: New Again 1м/Hard 5м/Good 10м, Relearning 5м; параметры learning_steps отсутствуют в API), REVIEW-маркер в scheduler.ts — указание на источник факта
 - Если проект станет продуктом (много пользователей): свой бэкенд Django + Postgres в Docker, регионы РФ (152-ФЗ, ЮKassa, VK/Яндекс ID) и позже глобальный (Stripe/Paddle, Google/Apple); юр. проверка лицензий (цитаты, голос `cori`, NGSL CC BY-SA) — не планировать без решения разработчика
 - AI-собеседник — отложено (M12, опционально)
 - Утверждение визуального стиля разработчиком (открытые вопросы specs/08)
@@ -211,3 +213,4 @@
 | 2026-10-01 | Стек-апгрейд закрыт: React 19.3, react-router-dom 7.18.4 (audit 0 уязвимостей), i18next 26/react-i18next 17, Vite 8.3 + plugin-react 6, typescript-eslint-пакет, react-hooks 7; адаптации под новые правила и act-семантику React 19; 448 unit + 59 e2e + coverage 100/90.2/99.7/100 зелёные | Задача разработчика «обновление стека» |
 | 2026-10-01 | Мини-словарь путешественника закрыт: kind `vocab` (data/vocab/travel.json, 487 слов/9 тем, билдер + схема + валидатор), лоадер + вид #/phrasebook/vocab с аудио/TTS; 453 unit + 59 e2e; ветка feature/travel-vocab | Задача разработчика (выбор 2) |
 | 2026-10-01 | Долги синка M13 закрыты: XP = max при LWW-слиянии user_stats, пол XP из review_log после pull, trim очереди гостя (CAP 2000, бутстрап); 459 unit; ветка feature/sync-debts | Задача разработчика (выбор 3) |
+| 2026-10-01 | Мелкие хвосты KI закрыты: merge_ru путь-аргумент, 404-страница + чистка мёртвых i18n-ключей, спека 03 §2/§5 под факт ts-fsrs 4.7 (Decisions Pending), GAP-9 I18N-persistence помечен, JJK/SL-сверка — авто-путь исчерпан (вики без цитат), fetch_kaikki устарел | Задача разработчика (выбор 4) |

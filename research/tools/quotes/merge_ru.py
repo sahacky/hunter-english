@@ -13,8 +13,9 @@ import unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[3]
-SRC_MD = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(
-    "/home/llm/study_eng/research/05-universes-quotes.md")
+if len(sys.argv) < 2:
+    sys.exit("использование: python3 research/tools/quotes/merge_ru.py <путь к 05-universes-quotes.md>")
+SRC_MD = Path(sys.argv[1])
 SAMPLE = ROOT / "research/data/quotes-sample.json"
 OUT = ROOT / "research/data/quotes-ru-merged.json"
 

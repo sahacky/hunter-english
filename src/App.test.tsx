@@ -25,15 +25,17 @@ describe('App', () => {
   })
 })
 
-// Implements: plan://M19 — App: 404-маршрут (Placeholder)
+// Implements: plan://M19 — App: 404-маршрут (Placeholder); KI-2026-10-01: 404 с текстом и ссылкой
 describe('App: маршруты', () => {
-  it('неизвестный путь → 404 через Placeholder', async () => {
+  it('неизвестный путь → 404 с текстом и возвратом на дашборд', async () => {
     window.location.hash = '#/no-such-page'
     render(
       <HashRouter>
         <App />
       </HashRouter>,
     )
-    expect(await screen.findByText('Страница не найдена')).toBeInTheDocument()
+    expect(await screen.findByRole('heading', { name: '404' })).toBeInTheDocument()
+    expect(screen.getByText('Такой страницы нет. Проверь адрес.')).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'На дашборд' })).toHaveAttribute('href', '#/')
   })
 })
