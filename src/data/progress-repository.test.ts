@@ -4,6 +4,7 @@ import { beforeEach, describe, expect, it } from 'vitest'
 import type { LessonProgress } from '../domain/lesson/types'
 import { applyAnswer } from '../domain/srs/scheduler'
 import type { CardState, Note } from '../domain/srs/types'
+import { waivedLessonProgress } from '../domain/placement/apply'
 import { uuidv7 } from '../lib/uuidv7'
 import { HunterDb } from './db'
 import { DexieProgressRepository } from './progress-repository'
@@ -214,6 +215,42 @@ describe('DexieProgressRepository', () => {
     }
     await repo.putGateAttempt(attempt)
     expect(await repo.getGateAttempt('D')).toEqual(attempt)
+  })
+})
+
+describe('suspendNotes + getManyLessonProgress (plan://onboarding#O.3)', () => {
+  it('suspend прячет карточки заметок (идемпотентно) и кладёт снимки в sync_queue', async () => {
+    const { createFirstCards } = await import('../content/words')
+    const notes = [
+      { id: 'note_a-noun', deck: 'words' as const, entityId: 'a-noun', en: 'a', ru: 'а' },
+      { id: 'note_b-noun', deck: 'words' as const, entityId: 'b-noun', en: 'b', ru: 'б' },
+      { id: 'note_c-noun', deck: 'words' as const, entityId: 'c-noun', en: 'c', ru: 'в' },
+    ]
+    await repo.ensureCards(createFirstCards(notes, NOW))
+    await repo.suspendNotes(['note_a-noun', 'note_b-noun'])
+    let cards = await repo.getAllCards()
+    expect(
+      cards
+        .filter((card) => card.suspended)
+        .map((card) => card.note_id)
+        .sort(),
+    ).toEqual(['note_a-noun', 'note_b-noun'])
+    // повтор — no-op (уже скрыты, очередь не растёт)
+    const queueBefore = (await db.sync_queue.count()) ?? 0
+    await repo.suspendNotes(['note_a-noun'])
+    expect(await db.sync_queue.count()).toBe(queueBefore)
+    cards = await repo.getAllCards()
+    expect(cards.filter((card) => card.suspended)).toHaveLength(2)
+    // пустой список — no-op
+    await repo.suspendNotes([])
+    expect(await repo.getAllCards()).toHaveLength(3)
+  })
+
+  it('getManyLessonProgress читает чекпоинты пачкой, отсутствующие — null', async () => {
+    await repo.putLessonProgress(waivedLessonProgress('les-e-01', NOW.toISOString()))
+    const rows = await repo.getManyLessonProgress(['les-e-01', 'les-e-02'])
+    expect(rows[0]!.lesson_id).toBe('les-e-01')
+    expect(rows[1]).toBeNull()
   })
 })
 
