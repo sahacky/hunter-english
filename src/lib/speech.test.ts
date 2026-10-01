@@ -135,4 +135,20 @@ describe('listenOnce', () => {
     )
     await expect(listenOnce({})).resolves.toBe('first')
   })
+
+  it('таймаут после settle — выход без повторного reject (M21#21.4)', async () => {
+    vi.useFakeTimers()
+    install(
+      class extends FakeRecognition {
+        start() {
+          this.onresult?.({ results: [[{ transcript: 'done' }]] })
+        }
+      },
+    )
+    const promise = listenOnce({ timeoutMs: 50 })
+    await expect(promise).resolves.toBe('done')
+    // таймер ещё жив: тик после settle → гарда `if (settled) return`
+    vi.advanceTimersByTime(100)
+    vi.useRealTimers()
+  })
 })

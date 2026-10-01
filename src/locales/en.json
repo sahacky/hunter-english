@@ -121,6 +121,7 @@
     "voiceRetry": "Didn't catch that. Try again.",
     "voiceRetryHint": "Unlimited attempts; you can type it or self-check",
     "stepIncomplete": "Step not passed: under 70% on the first try.",
+    "listeningRetryHint": "Listening dipped below 60%. You can repeat the dictation block.",
     "repeatStep": "Repeat step",
     "deckTitle": "Into the deck",
     "deckText": "{{count}} lesson phrases will go into the review deck (first card — recognition).",

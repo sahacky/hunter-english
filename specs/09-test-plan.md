@@ -260,8 +260,8 @@
 | ~~GAP-5~~ | Экранные фазы: result+пересдача Врат, сценка разговорника | ~~высокий~~ | **закрыт M18; найден баг финала разговорника — починен** |
 | GAP-6 | Supabase: e2e входа с мок-сервером, SQL-тесты RLS, серверный suppress_stale_update | средний | S3 |
 | ~~GAP-7~~ | Контент-лоадеры: schema_version (assertEnvelope), 404-деградация | ~~средний~~ | **закрыт M18** |
-| GAP-8 | E2E: ~~экспорт~~, ~~чанк supabase-js~~ закрыты M18; остались reduced-motion, autoUpdate-reload, deep-links (?stage=), тач-цели | средний | S2/S3 |
-| GAP-9 | Мелкое: judge(''), стресс/unicode-ввод, Relearning-возврат, слияние секций пересдачи, online-триггер синка, автосинк-интервал, скорость/анимации live, таймер 4:00/цитата дня/«Начать день», safe-area, FOUC, волна aria, I18N-сверка в CI, I18N-persistence после reload, ESLint-правило i18n | низкий/средний | S2 (по мере) |
+| GAP-8 | E2E: ~~экспорт~~, ~~чанк supabase-js~~ (M18); ~~reduced-motion~~, ~~тач-цели~~ (M21: e2e/polish.spec — media-правила волны/тоста + кнопки SRS ≥44px на 375px). Остались: autoUpdate-reload (нужен реальный деплой SW-обновления), deep-links ?stage= (у нас ?step= — покрыт unit'ом M19; отдельный e2e не требуется) | низкий | S3 |
+| GAP-9 | M21 закрыты: judge('')/unicode-ввод (checker.test), ~~Relearning-возврат~~ (был в scheduler.test), ~~online-триггер~~ (auth.test, M19), ~~слияние секций пересдачи~~ (GAP-5 walk), волна aria-hidden (есть с M6), I18N-сверка в CI (check:i18n, M18). Остались по мере: автосинк-интервал 5 мин (таймер-тест хрупкий — триггер покрыт), safe-area/FOUC (визуальные), ESLint-правило i18n (вне стека, ревью вручную), I18N-persistence после reload, скорость/анимации live | низкий | S3/по мере |
 
 Решение о сроках закрытия GAP — за разработчиком (протокол: предложить добавление в PLANS отдельной задачей).
 
@@ -272,19 +272,21 @@
 | 2026-09-30 | Создан тест-план 1.0 (уровни, кейсы, flaky-политика, регламент, GAP) | plan://M17#17.2, постмортем a45b3a5 |
 | 2026-09-30 | M18: закрыты GAP-3/4/5/7 и часть 8/9 (+20 unit, +2 e2e: 269/49); e2e теперь в CI (джоба с chromium и артефактом отчёта) + шаг check:i18n; **найден и починен баг: финал разговорника показывал 404** (порядок проверок dialogIndex/-2) | plan://M18, задача разработчика «закрой баги и cicd» |
 | 2026-09-30 | Версия 1.1 по ревью суб-агента: аудит трассировки (~15 ложных ✔ → частично/GAP: judgeDictation, exactTypos, FSRS-параметры, beforeunload, result Врат, фразбук-сценка, сброс, reduced-motion, экспорт e2e, чанк supabase-js, onControl, FOUC и др.); flood-guard 51–120→8/121–200→4/>200→0; 24 unit-файла; e2e-бюджет → локально; добавлены TC-DATA-13/14, TC-UI-21/22, TC-PERF-05; GAP переписан вехами S1–S3 (9 групп) | plan://M17#17.3, ревью тест-плана |
+| 2026-09-30 | M21: GAP-8 — e2e тач-цели + reduced-motion (polish.spec); GAP-9 — judge('')/unicode; статусы остальных уточнены по факту покрытия (S3/по мере) | plan://M21#21.3 |
+| 2026-09-30 | Веха S4 закрыта: statements/lines 100%, branches 90/functions 99 (пороги подняты); найден и починен баг key у упражнений экзамена Врат; placebo-ignore переведены на рабочую форму в затронутых файлах | plan://M21#21.4 |
 
 ## 10. M19: покрытие (coverage) {#coverage}
 
 **Конфигурация**: `npm run test:coverage` — провайдер **istanbul** (v8-мерж терял покрытие модулей, загруженных несколькими тест-файлами — last-wins; M19), reporters text/html/lcov, exclude: i18n.ts/main.tsx (bootstrap, не тестируются юнитами). CI: шаг в e2e-джобе + артефакт `coverage-report`.
 
 **Зафиксированный уровень (thresholds в vite.config.ts, рейчёт)**:
-| Метрика | Уровень | Порог CI |
-|---|---|---|
-| Statements | 94.25% | 94 |
-| Branches | 84.29% | 84 |
-| Functions | 92.95% | 92 |
-| Lines | **96.37%** | 96 |
+| Метрика | M19 | **M21 (веха S4)** | Порог CI |
+|---|---|---|---|
+| Statements | 94.25% | **100%** | 100 |
+| Branches | 84.29% | 90.15% | 90 |
+| Functions | 92.95% | 99.7% | 99 |
+| Lines | 96.37% | **100%** | 100 |
 
 **Докрыто в M19** (+111 тестов: 249→360): ExerciseView (все типы/ветки/аудио/трансформ), speech (Web Speech моки), auth+supabase (env-гейт, сессии, SIGNED_OUT, online-триггер), Login, sync (enqueueAllRows/pull-страницы/LWW-владельцы/conflict-ключи/client), SettingsScreen (валидация импорта, экспорт, контролы, аккаунт), LessonScreen (полный walk всех 7 шагов, deep-link, guard, Esc/beforeunload/Enter), Phrasebook (голос, финал — найден баг 404), Quotes (фильтр/озвучка/поповер), Srs (гарды, финал очереди, error, озвучка), Gates (чеклист, dispute), домены (formatInterval/judgeDictation/judgeVoice/FSRS-параметры/runner/award-бонусы), tts, App-404, Ranks error, Dashboard error.
 
-**Остаток до 100% lines (~85 строк, веха S4 по требованию)**: rankUp-ветка Врат (полный пройденный экзамен — нужен рандомизированный seed-стабилизатор), повтор разогрева <70% (walk с деградацией ответов), race-гварды загрузки (alive/unmount), UI-ok-путь импорта настроек, isolated ветки Dashboard (таймер/цитата пустого дня). Защитные недостижимые ветки помечены `/* istanbul ignore next */` с обоснованием (7 мест).
+**Веха S4 закрыта в M21** (~154 statement'ов: +~50 тестов по 12 модулям — LessonScreen-хвосты, Quotes, Gates-проход, Settings-импорт UI-ok, Srs-заморозка/клики, auth-таймеры, tts-voices, db/sync-края, Dashboard-ветки; + найден и починен **баг экзамена Врат**: упражнения рендерились без `key` — состояние перетекало между однотипными заданиями, экзамен был фактически непроходимым; LessonScreen:771-прецедент). Форма ignore: обычный `/* istanbul ignore next */` в этом тулчейне — placebo (esbuild стирает комментарии до инструментации); рабочие формы — `/* istanbul ignore next @preserve */` и `ignore start/stop`; защитные недостижимые ветки помечены рабочей формой с обоснованием.

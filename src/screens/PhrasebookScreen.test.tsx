@@ -7,6 +7,12 @@ import smalltalk from '../../data/phrasebook/smalltalk.json'
 import '../i18n'
 import PhrasebookScreen, { PhrasebookSituationScreen } from './PhrasebookScreen'
 
+// S4: обёртка loadPhrasebook для rejectOnce (catch-ветка списка); остальное — real
+vi.mock('../content/phrasebook', async (importOriginal) => {
+  const actual = await importOriginal<typeof import('../content/phrasebook')>()
+  return { ...actual, loadPhrasebook: vi.fn(actual.loadPhrasebook) }
+})
+
 const dialogs = smalltalk.items
 const firstUserLine = dialogs[0]!.lines.find((line) => line.accepted)!
 
@@ -142,5 +148,64 @@ describe('PhrasebookSituationScreen: голосовой ответ (M19)', () =>
     fireEvent.click(await screen.findByRole('button', { name: /^Дальше/ }))
     fireEvent.click(await screen.findByRole('button', { name: /Ответить голосом/ }))
     expect(await screen.findByRole('textbox', {}, { timeout: 4000 })).toBeInTheDocument()
+  })
+})
+
+// Implements: план M21#21.4 (веха S4) — хвосты покрытия PhrasebookScreen
+describe('PhrasebookScreen: хвосты покрытия (S4)', () => {
+  it('ошибка загрузки диалогов → список со «закрытыми» главами (catch-ветка)', async () => {
+    const { loadPhrasebook } = await import('../content/phrasebook')
+    vi.mocked(loadPhrasebook).mockRejectedValueOnce(new Error('load fail'))
+    window.location.hash = '#/phrasebook'
+    render(
+      <HashRouter>
+        <Routes>
+          <Route path="/phrasebook" element={<PhrasebookScreen />} />
+        </Routes>
+      </HashRouter>,
+    )
+    expect(await screen.findByText('Разговорник')).toBeInTheDocument()
+    expect(screen.getAllByText(/главы пока не готовы/).length).toBeGreaterThan(0)
+  })
+
+  it('несуществующая ситуация → 404 (ветка !dialog)', async () => {
+    renderSituation('no-such-situation')
+    expect(
+      await screen.findByText('Такой ситуации нет в разговорнике.', {}, { timeout: 4000 }),
+    ).toBeInTheDocument()
+    expect(screen.getByText('404')).toBeInTheDocument()
+  })
+
+  it('верный ответ с первой попытки → реплика пройдена (setLineState passed)', async () => {
+    renderSituation()
+    await screen.findByText(dialogs[0]!.situation_ru, {}, { timeout: 4000 })
+    fireEvent.click(await screen.findByRole('button', { name: /^Дальше/ })) // NPC-реплика
+    const input = (await screen.findAllByRole('textbox'))[0]!
+    fireEvent.change(input, { target: { value: firstUserLine.accepted![0]! } })
+    fireEvent.submit(input.closest('form')!)
+    expect(
+      await screen.findByRole('button', { name: /^Дальше/ }, { timeout: 4000 }),
+    ).toBeInTheDocument()
+    // lineState = passed: форма ответа скрыта, остаётся только «Дальше»
+    expect(screen.queryByRole('textbox')).not.toBeInTheDocument()
+  })
+
+  it('озвучка реплики; повторный клик по микрофону во время слушания — гард', async () => {
+    speechMock.supported = true
+    speechMock.heard = firstUserLine.accepted![0]!
+    renderSituation()
+    await screen.findByText(dialogs[0]!.situation_ru, {}, { timeout: 4000 })
+    // 🔊 — speak по тексту реплики
+    fireEvent.click(await screen.findByRole('button', { name: '🔊' }))
+    fireEvent.click(await screen.findByRole('button', { name: /^Дальше/ })) // NPC-реплика
+    fireEvent.click(screen.getByRole('button', { name: '🔊' }))
+    // голосовой ответ: первый клик начинает слушание
+    fireEvent.click(await screen.findByRole('button', { name: /Ответить голосом/ }))
+    const listening = await screen.findByRole('button', { name: /Слушаю/ })
+    // повторный клик по disabled-кнопке — гард answerByVoice (listening)
+    fireEvent.click(listening)
+    expect(
+      await screen.findByRole('button', { name: /^Дальше/ }, { timeout: 4000 }),
+    ).toBeInTheDocument()
   })
 })

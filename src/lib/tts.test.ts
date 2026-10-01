@@ -1,6 +1,22 @@
 // Implements: plan://M6#6.1 — тесты TTS-шлюза (моки speechSynthesis/Audio)
+// init-фейк: существует только на время инициализации модуля tts, чтобы
+// выполнилась подписка onvoiceschanged (веха S4); сразу после импорта убираем,
+// чтобы не влиять на существующие тесты фолбэка.
+const initSynth = vi.hoisted(() => {
+  const synth = {
+    speak: () => undefined,
+    cancel: () => undefined,
+    getVoices: () => [] as unknown[],
+    onvoiceschanged: null as (() => void) | null,
+  }
+  ;(globalThis as { speechSynthesis?: unknown }).speechSynthesis = synth
+  return synth
+})
 import { afterEach, describe, expect, it, vi } from 'vitest'
 import { isTtsSupported, speak, stopSpeak } from './tts'
+
+// модуль tts уже инициализировался с initSynth — возвращаем окружение в jsdom-режим
+;(globalThis as { speechSynthesis?: unknown }).speechSynthesis = undefined
 
 function mockSpeechApi(voices: { lang: string; name: string }[] = []) {
   const speakFn = vi.fn()
@@ -191,5 +207,27 @@ describe('tts: хвосты (M19)', () => {
     expect(speak('hello')).toBe(true)
     ;(api as unknown as { onvoiceschanged: (() => void) | null }).onvoiceschanged?.()
     expect(speak('hello')).toBe(true)
+  })
+
+  // Веха S4 (M21#21.4): init-подписка onvoiceschanged и защитные ветки pickVoice/speak
+  it('voiceschanged после удаления API: pickVoice возвращает null (init-подписка жива)', () => {
+    expect(isTtsSupported()).toBe(false)
+    // обработчик подписан на initSynth при инициализации модуля tts;
+    // на момент события speechSynthesis уже нет — pickVoice должен вернуть null
+    vi.stubGlobal('speechSynthesis', undefined)
+    initSynth.onvoiceschanged?.()
+    expect(isTtsSupported()).toBe(false)
+  })
+
+  it('api.speak бросает исключение → false (защитный catch)', () => {
+    vi.stubGlobal('speechSynthesis', {
+      speak: () => {
+        throw new Error('engine broken')
+      },
+      cancel: vi.fn(),
+      getVoices: () => [],
+    })
+    mockUtterance()
+    expect(speak('hello')).toBe(false)
   })
 })

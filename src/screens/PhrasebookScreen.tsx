@@ -126,6 +126,7 @@ export function PhrasebookSituationScreen() {
   }
 
   const check = () => {
+    /* istanbul ignore next @preserve — защитный гард: форма ответа рендерится только при accepted */
     if (!line?.accepted) return
     const verdict = judge(value, { accepted: line.accepted })
     setResult(verdict)
@@ -137,6 +138,7 @@ export function PhrasebookSituationScreen() {
   // Голосовой ответ (plan://M10#10.7, M8-решение 1 → M10): judgeVoice по accepted[],
   // мягкая проверка §4.8; фолбэк текстом остаётся
   const answerByVoice = async () => {
+    /* istanbul ignore next @preserve */ // кнопка disabled при listening; accepted есть всегда (форма)
     if (!line?.accepted || listening) return
     setListening(true)
     try {

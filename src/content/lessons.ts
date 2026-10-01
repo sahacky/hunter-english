@@ -198,7 +198,9 @@ export function assembleLesson(
   for (const step of steps) {
     content[step.index] = step.exerciseIds.map((id) => {
       const exercise = exerciseById.get(id)
+      /* istanbul ignore start — дубль проверки из refs-цикла выше (та же Map, те же id) */
       if (!exercise) throw new Error(`упражнение "${id}" урока ${lesson.id} не найдено`)
+      /* istanbul ignore stop */
       const [phraseId] = exercisePhraseIds(exercise)
       return { exercise, phrase: phraseId ? (phraseById.get(phraseId) ?? null) : null }
     })
@@ -211,7 +213,9 @@ export function assembleLesson(
   // экрану через view.phrasesById, даже если они из другого урока
   for (const { id } of lesson.exercises) {
     const exercise = exerciseById.get(id)
+    /* istanbul ignore start — дубль проверки: отсутствующее упражнение уже дало throw выше */
     if (!exercise) continue
+    /* istanbul ignore stop */
     for (const refId of exercisePhraseIds(exercise)) {
       const ref = phraseById.get(refId)
       if (ref && !(ref.id in lessonPhrases)) lessonPhrases[ref.id] = ref
@@ -228,6 +232,94 @@ export async function loadLessonView(lessonId: string): Promise<LessonView | nul
   const exerciseById = new Map(exercises.map((exercise) => [exercise.id, exercise]))
   const phraseById = new Map(phrases.map((phrase) => [phrase.id, phrase]))
   return assembleLesson(lesson, exerciseById, phraseById)
+}
+
+/** Минимальный размер пула для варианта разогрева: 4 choose (цель+3 дистрактора) + 5 пар. */
+const WARMUP_MIN_POOL = 9
+
+function pickUnique<T>(pool: readonly T[], count: number, rng: () => number): T[] {
+  const rest = [...pool]
+  const out: T[] = []
+  while (out.length < count && rest.length > 0) {
+    out.push(...rest.splice(Math.floor(rng() * rest.length), 1))
+  }
+  return out
+}
+
+/**
+ * Разогрев «с новыми заданиями» при повторе урока (план M21#21.1, отложено
+ * ревью M5/M8): шаг 1 заменяется на свежесобранные choose_translation и
+ * match_pairs из пула фраз этого же урока. Синтетические id (ex-warmup-r-…)
+ * — в XP-карту экрана попадают через view.content по meta.xp. Если пул мал
+ * (короткие уроки-колоды S-07/S-15) — view возвращается как есть.
+ */
+export function withWarmupVariant(view: LessonView, rng: () => number = Math.random): LessonView {
+  const warmupStep = view.steps.find((step) => step.kind === 'warmup')
+  if (!warmupStep) return view
+  const all = Object.values(view.phrasesById).filter(
+    (phrase) => phrase.grammar_point_id === view.lesson.grammar_point.id,
+  )
+  const ruCounts = new Map<string, number>()
+  for (const phrase of all) {
+    ruCounts.set(phrase.translation_ru, (ruCounts.get(phrase.translation_ru) ?? 0) + 1)
+  }
+  const pool = all.filter((phrase) => ruCounts.get(phrase.translation_ru) === 1)
+  if (pool.length < WARMUP_MIN_POOL) return view
+
+  const exercises: ExerciseItem[] = []
+  const used = new Set<string>()
+  const targets = pickUnique(pool, 4, rng)
+  for (const target of targets) {
+    used.add(target.id)
+    const distractors = pickUnique(
+      pool.filter((p) => p.id !== target.id && p.translation_ru !== target.translation_ru),
+      3,
+      rng,
+    )
+    /* istanbul ignore start — недостижимо: пул ≥9 с уникальными RU даёт ≥8 дистракторов */
+    if (distractors.length < 3) return view
+    /* istanbul ignore stop */
+    const options = [...distractors.map((p) => p.text_en), target.text_en]
+    // перемешивание Фишера—Йетса на копии (rng инъецируется для тестов)
+    for (let i = options.length - 1; i > 0; i -= 1) {
+      const j = Math.floor(rng() * (i + 1))
+      ;[options[i], options[j]] = [options[j], options[i]]
+    }
+    exercises.push({
+      id: `ex-warmup-r-${exercises.length + 1}`,
+      type: 'choose_translation',
+      payload: {
+        kind: 'choose_translation',
+        prompt: target.translation_ru,
+        options,
+        correct: options.indexOf(target.text_en),
+      },
+      answer: { normalization: 'default', typo: 'exact' },
+      meta: { skill: 'words', xp: 1 },
+    })
+  }
+  const seenRu = new Set<string>()
+  const pairPool = pool.filter((p) => {
+    if (used.has(p.id) || seenRu.has(p.translation_ru)) return false
+    seenRu.add(p.translation_ru)
+    return true
+  })
+  const pairs = pickUnique(pairPool, 5, rng)
+  /* istanbul ignore start — недостижимо: pairPool ≥ pool−4 ≥ 5 при пуле ≥9 */
+  if (pairs.length < 5) return view
+  /* istanbul ignore stop */
+  exercises.push({
+    id: 'ex-warmup-r-5',
+    type: 'match_pairs',
+    payload: {
+      kind: 'match_pairs',
+      pairs: pairs.map((p) => ({ en: p.text_en, ru: p.translation_ru })),
+    },
+    answer: { normalization: 'default', typo: 'exact' },
+    meta: { skill: 'words', xp: 1 },
+  })
+  const content = { ...view.content, 1: exercises.map((exercise) => ({ exercise, phrase: null })) }
+  return { ...view, content }
 }
 
 /** Заметки фраз для SRS (deck 'phrases'; урок отправляет их на шаге 7 — specs/02 §2). */

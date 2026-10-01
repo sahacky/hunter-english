@@ -1,15 +1,27 @@
 // Implements: plan://M11#11.1–11.2 — тесты экранов Цитат (реальные data/quotes)
 import 'fake-indexeddb/auto'
-import { beforeEach, describe, expect, it } from 'vitest'
+import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { fireEvent, render, screen, waitFor } from '@testing-library/react'
 import { HashRouter, Route, Routes } from 'react-router-dom'
 import '../i18n'
 import { loadQuoteTitles, findQuote, quoteWords } from '../content/quotes'
-import { loadWordNotes } from '../content/words'
+import { loadTopNgslLemmas, loadWordNotes } from '../content/words'
+import { speak } from '../lib/tts'
 import { HunterDb } from '../data/db'
 import { DexieProgressRepository } from '../data/progress-repository'
 import { uuidv7 } from '../lib/uuidv7'
 import QuotesScreen, { QuoteScreen } from './QuotesScreen'
+
+// S4: обёртки для точечных rejectOnce в тестах ошибок загрузки (остальное — real)
+vi.mock('../content/quotes', async (importOriginal) => {
+  const actual = await importOriginal<typeof import('../content/quotes')>()
+  return { ...actual, loadQuoteTitles: vi.fn(actual.loadQuoteTitles) }
+})
+vi.mock('../content/words', async (importOriginal) => {
+  const actual = await importOriginal<typeof import('../content/words')>()
+  return { ...actual, loadWordNotes: vi.fn(actual.loadWordNotes) }
+})
+vi.mock('../lib/tts', () => ({ speak: vi.fn(), stopSpeak: vi.fn(), setDefaultRate: vi.fn() }))
 
 let db: HunterDb
 let repo: DexieProgressRepository
@@ -270,5 +282,141 @@ describe('QuotesScreen/QuoteScreen: хвосты (M19)', () => {
     expect(await screen.findByRole('dialog')).toBeInTheDocument()
     fireEvent.click(screen.getByRole('button', { name: /Закрыть/ }))
     await waitFor(() => expect(screen.queryByRole('dialog')).not.toBeInTheDocument())
+  })
+})
+
+// Implements: план M21#21.4 (веха S4) — хвосты покрытия QuotesScreen
+describe('QuotesScreen/QuoteScreen: хвосты покрытия (S4)', () => {
+  /** Кандидаты-леммы токена — копия lookupStems для поиска сценариев в данных. */
+  function stems(word: string): string[] {
+    const candidates = [word]
+    if (word.endsWith('ies')) candidates.push(`${word.slice(0, -3)}y`)
+    if (word.endsWith('es')) candidates.push(word.slice(0, -2))
+    if (word.endsWith('s')) candidates.push(word.slice(0, -1))
+    if (word.endsWith('ing')) {
+      const stem = word.slice(0, -3)
+      candidates.push(stem)
+      if (stem.length > 2 && stem.at(-1) === stem.at(-2)) candidates.push(stem.slice(0, -1))
+      candidates.push(`${stem}e`)
+    }
+    if (word.endsWith('ed')) {
+      const stem = word.slice(0, -2)
+      candidates.push(stem)
+      if (stem.length > 2 && stem.at(-1) === stem.at(-2)) candidates.push(stem.slice(0, -1))
+      candidates.push(`${stem}e`)
+    }
+    return candidates
+  }
+
+  it('ошибка загрузки тайтлов → галерея остаётся в загрузке (catch-ветка)', async () => {
+    vi.mocked(loadQuoteTitles).mockRejectedValueOnce(new Error('load fail'))
+    renderAt('#/quotes')
+    // titles=[] при vocab=null → cards null → экран остаётся в состоянии загрузки
+    expect(await screen.findByText('Загрузка…')).toBeInTheDocument()
+    expect(screen.queryByText('Цитаты')).not.toBeInTheDocument()
+  })
+
+  it('ошибка загрузки слов на экране цитаты → 404 (catch-ветка)', async () => {
+    vi.mocked(loadWordNotes).mockRejectedValueOnce(new Error('load fail'))
+    renderAt('#/quotes/q-breaking-bad-0006')
+    expect(await screen.findByText('404')).toBeInTheDocument()
+  })
+
+  it('галерея считает learning- и known-слова (best-ветки wordKnowledge)', async () => {
+    const notes = await loadWordNotes()
+    const pick = (en: string) => notes.find((note) => note.en === en)
+    const learning = pick('it')
+    const known = pick('dangerous')
+    expect(learning && known).toBeTruthy()
+    const { createFirstCards } = await import('../content/words')
+    const log = (index: number) => ({
+      id: `test-log-${index}`,
+      card_id: '',
+      rating: 3 as const,
+      state: 0 as const,
+      state_after: 0 as const,
+      elapsed_days: 0,
+      scheduled_days: 10,
+      duration_ms: 0,
+      client: 'web' as const,
+      session_id: null,
+      reviewed_at: new Date().toISOString(),
+    })
+    const [cardLearning] = createFirstCards([learning!], new Date())
+    await repo.saveAnswer(
+      { ...cardLearning, state: 1, stability: 1, difficulty: 5, reps: 1, scheduled_days: 0 },
+      { ...log(1), card_id: cardLearning.card_id, state_after: 1 },
+    )
+    const [cardKnown] = createFirstCards([known!], new Date())
+    await repo.saveAnswer(
+      { ...cardKnown, state: 2, stability: 10, difficulty: 5, reps: 2, scheduled_days: 10 },
+      { ...log(2), card_id: cardKnown.card_id, state_after: 2 },
+    )
+    renderAt('#/quotes')
+    // useMemo галереи прогоняет quoteUnderstanding по всем цитатам
+    expect(await screen.findByText('Цитаты')).toBeInTheDocument()
+    expect(screen.getAllByText(/цитат/).length).toBeGreaterThan(0)
+  })
+
+  it('cloze: фолбэк-кандидат из датасета, когда в цитате нет слов топ-1000', async () => {
+    const notes = await loadWordNotes()
+    const byWord = new Set(notes.map((note) => note.en))
+    const top1000 = await loadTopNgslLemmas()
+    const titles = await loadQuoteTitles()
+    let target: { id: string; word: string } | null = null
+    outer: for (const { quotes } of titles) {
+      for (const quote of quotes) {
+        const words = quoteWords(quote.text)
+        const hasTop = words.some((w) => stems(w).some((s) => top1000.has(s)))
+        const dataset = words.filter((w) => stems(w).some((s) => byWord.has(s)))
+        if (!hasTop && dataset.length > 0) {
+          target = { id: quote.id, word: dataset[0]!.replace(/'s$/, '') }
+          break outer
+        }
+      }
+    }
+    expect(target).not.toBeNull()
+    renderAt(`#/quotes/${target!.id}`)
+    await screen.findByText('Показать перевод')
+    fireEvent.click(screen.getByRole('button', { name: /Cloze по цитате/ }))
+    const input = await screen.findByRole('textbox')
+    fireEvent.change(input, { target: { value: target!.word } })
+    fireEvent.click(screen.getByRole('button', { name: /Проверить/ }))
+    expect(await screen.findByText('Верно!')).toBeInTheDocument()
+  })
+
+  it('cloze: пустой сабмит игнорируется; «Дальше» после вердикта закрывает форму', async () => {
+    const { quote, word } = await quoteWithKnownWord()
+    renderAt(`#/quotes/${quote.id}`)
+    await screen.findByText('Показать перевод')
+    fireEvent.click(screen.getByRole('button', { name: /Cloze по цитате/ }))
+    const input = await screen.findByRole('textbox')
+    // пустое значение → guard (Enter/сабмит пустой формы)
+    fireEvent.submit(input.closest('form')!)
+    expect(screen.queryByText(/Верно|Неверно/)).not.toBeInTheDocument()
+    expect(input.closest('form')).toBeInTheDocument()
+    fireEvent.change(input, { target: { value: word } })
+    fireEvent.submit(input.closest('form')!)
+    expect(await screen.findByText('Верно!')).toBeInTheDocument()
+    // «Дальше» (submit при установленном result) → setCloze(null), форма закрыта
+    fireEvent.click(screen.getByRole('button', { name: /^Дальше/ }))
+    await waitFor(() => expect(screen.queryByRole('textbox')).not.toBeInTheDocument())
+  })
+
+  it('клавиши R/S озвучивают цитату; фокус в поле ввода глушит хоткей', async () => {
+    const speakMock = vi.mocked(speak)
+    speakMock.mockClear()
+    const { quote } = await quoteWithKnownWord()
+    renderAt(`#/quotes/${quote.id}`)
+    await screen.findByText('Показать перевод')
+    fireEvent.keyDown(window, { key: 'r' })
+    expect(speakMock).toHaveBeenLastCalledWith(quote.text)
+    fireEvent.keyDown(window, { key: 's' })
+    expect(speakMock).toHaveBeenLastCalledWith(quote.text, { rate: 0.75 })
+    // хоткей не срабатывает, пока фокус/таргет — поле ввода (гард)
+    fireEvent.click(screen.getByRole('button', { name: /Cloze по цитате/ }))
+    const input = await screen.findByRole('textbox')
+    fireEvent.keyDown(input, { key: 'r' })
+    expect(speakMock).toHaveBeenCalledTimes(2)
   })
 })

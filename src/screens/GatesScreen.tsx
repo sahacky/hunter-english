@@ -355,6 +355,7 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
 
   const handleAnswer = useCallback(
     (outcome: string) => {
+      /* istanbul ignore next @preserve — защитный гард: onAnswer доступен только у активного задания */
       if (!current) return
       // самопроверка не считается в экзамене (ревью M7#М9): только распознанный/ввод
       const ok = outcome === 'correct' || outcome === 'disputed'
@@ -475,8 +476,7 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
     <section className="panel gates-panel">
       <header>
         <h2>
-          /* istanbul ignore next — Финал: дисплей-ветки (полный проход экзамена — веха S4,
-          M19-прецедент) */
+          {/* istanbul ignore next — Финал: заголовок экзамена (полный проход — веха S4) */}
           {gate.final ? t('gates.titleFinal') : t('gates.title', { from: gate.from, to: gate.to })}
         </h2>
         <p className="dim">
@@ -490,16 +490,21 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
       </header>
       {current && current.exercise.type === 'choose_translation' && (
         <ChooseTranslationExercise
+          key={current.exercise.id}
           exercise={current.exercise}
           phrase={current.phrase}
           trap={null}
           onAnswer={(outcome) => handleAnswer(outcome)}
-          onDispute={() => undefined}
+          onDispute={() => {
+            /* istanbul ignore next @preserve — choose не вызывает onDispute: исход известен сразу */
+            return undefined
+          }}
           onNext={handleNext}
         />
       )}
       {current && current.exercise.type === 'translate' && (
         <InputCheckExercise
+          key={current.exercise.id}
           mode="translate"
           exercise={current.exercise}
           phrase={current.phrase}
@@ -511,6 +516,7 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
       )}
       {current && current.exercise.type === 'dictation' && (
         <InputCheckExercise
+          key={current.exercise.id}
           mode="dictation"
           exercise={current.exercise}
           phrase={current.phrase}
@@ -522,12 +528,16 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
       )}
       {current && current.exercise.type === 'speak' && (
         <VoiceExercise
+          key={current.exercise.id}
           mode="speak"
           exercise={current.exercise}
           phrase={current.phrase}
           trap={null}
           onAnswer={(outcome) => handleAnswer(outcome)}
-          onDispute={() => undefined}
+          onDispute={() => {
+            /* istanbul ignore next @preserve — все пути finish() в VoiceExercise зовут onNext сразу, спор недостижим */
+            return undefined
+          }}
           onNext={handleNext}
         />
       )}

@@ -315,6 +315,7 @@ export function QuoteScreen({ repo: repoProp }: { repo?: ProgressRepository }) {
   useEffect(() => stopSpeak, [])
 
   const startCloze = useCallback(() => {
+    /* istanbul ignore next @preserve — защитный гард: кнопка cloze рендерится только при state */
     if (!state) return
     const words = quoteWords(state.quote.text)
     // кандидат — слово из топ-1000 NGSL (решение M11#4), фолбэк — любое из датасета;
@@ -325,6 +326,7 @@ export function QuoteScreen({ repo: repoProp }: { repo?: ProgressRepository }) {
         const lemma = lookupStems(state.vocab, word)
         return lemma !== null && state.vocab.top1000.has(lemma)
       }) ?? words.find(inDataset)
+    /* istanbul ignore next @preserve — защитный гард: canCloze гарантирует кандидата (canCloze в disabled) */
     if (!candidate) return
     const answer = candidate.endsWith("'s") ? candidate.slice(0, -2) : candidate
     setCloze({ word: answer, value: '', result: null })
@@ -354,6 +356,7 @@ export function QuoteScreen({ repo: repoProp }: { repo?: ProgressRepository }) {
   const inDeck = popoverNotes.some((note) => vocab.states.has(note.id))
 
   const addToDeck = async () => {
+    /* istanbul ignore next @preserve — защитный гард: кнопка «В колоду» рендерится только при заметках */
     if (popoverNotes.length === 0) return
     await repo.ensureCards(createFirstCards(popoverNotes, new Date()))
     const nextVocab: Vocab = {
@@ -480,6 +483,7 @@ export function QuoteScreen({ repo: repoProp }: { repo?: ProgressRepository }) {
           className="lesson-exercise"
           onSubmit={(event) => {
             event.preventDefault()
+            /* istanbul ignore next @preserve — защитный гард: форма рендерится только при cloze */
             if (!cloze) return
             if (cloze.result) {
               setCloze(null)

@@ -1,10 +1,27 @@
 // Implements: plan://M13#13.3 — тесты движка синка на моках клиента (LWW,
 // retry-queue, дедуп review_log по PK) и переноса гостевого прогресса.
 import 'fake-indexeddb/auto'
-import { beforeEach, describe, expect, it } from 'vitest'
+import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { HunterDb, LOCAL_USER_ID, getCurrentUserId, remapLocalToUser, setCurrentUserId } from './db'
-import { flush, mergeLww, pull, readSyncStatus } from './sync'
+import { flush, mergeLww, pull, readSyncStatus, syncNow } from './sync'
 import { uuidv7 } from '../lib/uuidv7'
+
+// обёртки над реальными функциями: дефолтное поведение не меняется,
+// отдельные тесты подменяют return-value через vi.mocked (S4: путь client())
+const supabaseActual = vi.hoisted(() => ({
+  isSyncConfigured: null as unknown as () => boolean,
+  getSupabase: null as unknown as () => Promise<import('@supabase/supabase-js').SupabaseClient>,
+}))
+vi.mock('./supabase', async (importOriginal) => {
+  const actual = await importOriginal<typeof import('./supabase')>()
+  supabaseActual.isSyncConfigured = actual.isSyncConfigured
+  supabaseActual.getSupabase = actual.getSupabase
+  return {
+    ...actual,
+    isSyncConfigured: vi.fn(actual.isSyncConfigured),
+    getSupabase: vi.fn(actual.getSupabase),
+  }
+})
 
 let db: HunterDb
 
@@ -681,6 +698,96 @@ describe('sync: хвосты веток (M19)', () => {
     expect(stats?.opts?.onConflict).toBe('user_id')
   })
 
+  it('syncNow без sb при настроенном окружении: client() берёт getSupabase', async () => {
+    await seedQueue()
+    const supabaseMod = await import('./supabase')
+    const calls: { table: string; op: string }[] = []
+    const sb = mockPullSupabaseAndPush({
+      card_states: [[]],
+      lesson_progress: [[]],
+      user_stats: [[]],
+      item_progress: [[]],
+      review_log: [[]],
+      pushCalls: calls,
+    } as unknown as Parameters<typeof mockPullSupabaseAndPush>[0])
+    vi.mocked(supabaseMod.isSyncConfigured).mockReturnValue(true)
+    vi.mocked(supabaseMod.getSupabase).mockResolvedValue(sb as never)
+    try {
+      await syncNow(db) // без sb: env-гейт → client() → getSupabase
+      expect(calls.some((c) => c.table === 'card_states')).toBe(true)
+      expect((await db.meta.get('last_sync_at'))?.value).toBeTruthy()
+    } finally {
+      vi.mocked(supabaseMod.isSyncConfigured).mockImplementation(supabaseActual.isSyncConfigured)
+      vi.mocked(supabaseMod.getSupabase).mockImplementation(supabaseActual.getSupabase)
+    }
+  })
+})
+
+describe('remapLocalToUser: пограничные id (веха S4)', () => {
+  it('review_log.id / user_stats / payload.id со значением local ремапятся на uid', async () => {
+    const nowIso = new Date().toISOString()
+    await db.review_log.put({
+      user_id: LOCAL_USER_ID,
+      id: LOCAL_USER_ID, // id-граничный случай: PK совпадает с LOCAL_USER_ID
+      card_id: 'c',
+      rating: 2,
+      state: 0,
+      state_after: 1,
+      elapsed_days: 0,
+      scheduled_days: 0,
+      duration_ms: 0,
+      client: 'web',
+      session_id: null,
+      reviewed_at: nowIso,
+    })
+    await db.user_stats.put({
+      user_id: LOCAL_USER_ID,
+      xp: 5,
+      streak_current: 0,
+      streak_best: 0,
+      freezes_left: 2,
+      rank: 'E',
+      gates_history: [],
+      last_counted_day: null,
+      updated_at: nowIso,
+    })
+    await db.sync_queue.add({
+      table: 'review_log',
+      op: 'insert',
+      payload: {
+        id: LOCAL_USER_ID,
+        user_id: LOCAL_USER_ID,
+        card_id: 'c',
+        rating: 2,
+        reviewed_at: nowIso,
+      },
+      tries: 0,
+      created_at: nowIso,
+    })
+    await remapLocalToUser(db, 'uid-77')
+    // review_log: id 'local' → 'uid-77', старая гостевая строка удалена
+    expect(await db.review_log.get('uid-77')).toBeTruthy()
+    expect(await db.review_log.get(LOCAL_USER_ID)).toBeUndefined()
+    // user_stats: единственная строка переезжает на uid
+    expect((await db.user_stats.get('uid-77'))?.xp).toBe(5)
+    expect(await db.user_stats.get(LOCAL_USER_ID)).toBeUndefined()
+    // payload очереди: id в payload тоже ремапится
+    const [op] = await db.sync_queue.toArray()
+    expect((op.payload as { id: string }).id).toBe('uid-77')
+  })
+})
+
+describe('mergeLww: защитный default для не-LWW таблиц (веха S4)', () => {
+  it('mergeLww с таблицей вне движка (review_log) — no-op без записи', async () => {
+    await mergeLww(db, 'review_log', [
+      { user_id: 'u1', id: 'log-1', updated_at: '2026-09-05T00:00:00Z' } as never,
+    ])
+    // readOwnerRows/localKey вернули default: строка не записана и не упала
+    expect(await db.review_log.count()).toBe(0)
+  })
+})
+
+describe('client(): путь без sb (env-гейт) — сохранение прежнего поведения', () => {
   it('client(): flush/pull без sb берут клиента по env-гейту', async () => {
     vi.stubEnv('VITE_SUPABASE_URL', 'https://x.supabase.co')
     vi.stubEnv('VITE_SUPABASE_PUBLISHABLE_KEY', 'k')

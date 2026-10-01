@@ -433,7 +433,11 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
         </p>
       )}
       <footer className="srs-progress dim">
-        {t('srs.progress', { done: answeredTotal, total: plan?.entries.length ?? 0 })}
+        {/* clamp: живая очередь может выдать больше ответов, чем стартовый план (Known Issue M4) */}
+        {t('srs.progress', {
+          done: Math.min(answeredTotal, plan?.entries.length ?? 0),
+          total: plan?.entries.length ?? 0,
+        })}
       </footer>
     </section>
   )
