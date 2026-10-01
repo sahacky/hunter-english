@@ -19,7 +19,10 @@
    },
    "confidence": "KYM",
    "note": "translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=This%20is%20fine."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=This%20is%20fine.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-memy-0001.opus"
+   }
   },
   {
    "id": "q-memy-0002",
@@ -38,7 +41,10 @@
    },
    "confidence": "KYM + IMDb (tt0120737)",
    "note": "в Wikiquote-странице фильма этой строки нет, есть на IMDb; translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=One%20does%20not%20simply%20walk%20into%20Mordor."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=One%20does%20not%20simply%20walk%20into%20Mordor.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-memy-0002.opus"
+   }
   },
   {
    "id": "q-memy-0003",
@@ -57,7 +63,10 @@
    },
    "confidence": "KYM",
    "note": "разговорное gonna; translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=I%27m%20gonna%20do%20what%27s%20called%20a%20pro%20gamer%20move."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%27m%20gonna%20do%20what%27s%20called%20a%20pro%20gamer%20move.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-memy-0003.opus"
+   }
   },
   {
    "id": "q-memy-0004",
@@ -76,7 +85,10 @@
    },
    "confidence": "KYM",
    "note": "translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=How%20do%20you%20do%2C%20fellow%20kids%3F"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=How%20do%20you%20do%2C%20fellow%20kids%3F",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-memy-0004.opus"
+   }
   },
   {
    "id": "q-memy-0005",
@@ -95,7 +107,10 @@
    },
    "confidence": "KYM / Wikipedia",
    "note": "аниме-мем; translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Is%20this%20a%20pigeon%3F"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Is%20this%20a%20pigeon%3F",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-memy-0005.opus"
+   }
   },
   {
    "id": "q-memy-0006",
@@ -115,7 +130,10 @@
    },
    "confidence": "KYM",
    "note": "аниме-мем; точная формулировка в оригинальном переводе — уточнить; translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=People%20die%20if%20they%20are%20killed."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=People%20die%20if%20they%20are%20killed.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-memy-0006.opus"
+   }
   },
   {
    "id": "q-memy-0007",
@@ -134,7 +152,10 @@
    },
    "confidence": "KYM",
    "note": "аниме-мем, дублирует JJK; translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Nah%2C%20I%27d%20win."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Nah%2C%20I%27d%20win.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-memy-0007.opus"
+   }
   },
   {
    "id": "q-memy-0008",
@@ -154,7 +175,10 @@
    },
    "confidence": "Wikiquote (Episode III, в капсе) + мем",
    "note": "translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=It%27s%20over%2C%20Anakin%21%20I%20have%20the%20high%20ground%21"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=It%27s%20over%2C%20Anakin%21%20I%20have%20the%20high%20ground%21",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-memy-0008.opus"
+   }
   },
   {
    "id": "q-memy-0009",
@@ -173,7 +197,10 @@
    },
    "confidence": "Polygon (#14)",
    "note": "показывать как «найди ошибку»; translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=All%20your%20base%20are%20belong%20to%20us."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=All%20your%20base%20are%20belong%20to%20us.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-memy-0009.opus"
+   }
   },
   {
    "id": "q-memy-0010",
@@ -193,7 +220,10 @@
    },
    "confidence": "Polygon",
    "note": "translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Press%20%27F%27%20to%20pay%20respects."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Press%20%27F%27%20to%20pay%20respects.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-memy-0010.opus"
+   }
   }
  ]
 }

@@ -19,7 +19,10 @@
     "top1000": 0.71
    },
    "confidence": "verbatim (Wikiquote)",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Give%20up%20on%20your%20dreams%20and%20die%21"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Give%20up%20on%20your%20dreams%20and%20die%21",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-attack-on-titan-0001.opus"
+   }
   },
   {
    "id": "q-attack-on-titan-0002",
@@ -38,7 +41,10 @@
     "top1000": 0.67
    },
    "confidence": "verbatim (Wikiquote)",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Someone%20who%20can%27t%20sacrifice%20anything%2C%20can%27t%20ever%20change%20anything."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Someone%20who%20can%27t%20sacrifice%20anything%2C%20can%27t%20ever%20change%20anything.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-attack-on-titan-0002.opus"
+   }
   },
   {
    "id": "q-attack-on-titan-0003",
@@ -56,7 +62,10 @@
     "top1000": 0.71
    },
    "confidence": "verbatim (Wikiquote)",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Because%20I%20was%20born%20into%20this%20world%21"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Because%20I%20was%20born%20into%20this%20world%21",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-attack-on-titan-0003.opus"
+   }
   },
   {
    "id": "q-attack-on-titan-0004",
@@ -75,7 +84,10 @@
    },
    "confidence": "verbatim (Wikiquote)",
    "note": "translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Sorry%2C%20that%20was%20a%20strange%20thing%20to%20ask."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Sorry%2C%20that%20was%20a%20strange%20thing%20to%20ask.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-attack-on-titan-0004.opus"
+   }
   },
   {
    "id": "q-attack-on-titan-0005",
@@ -94,7 +106,10 @@
     "top1000": 0.6
    },
    "confidence": "verbatim (Wikiquote)",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Who%27s%20the%20real%20enemy%20here%3F"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Who%27s%20the%20real%20enemy%20here%3F",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-attack-on-titan-0005.opus"
+   }
   },
   {
    "id": "q-attack-on-titan-0006",
@@ -114,7 +129,10 @@
    },
    "confidence": "IMDb (англ. дубляж/сабы, пользовательский ввод)",
    "note": "translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20just%20keep%20moving%20forward.%20Until%20I%20destroy%20my%20enemies."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20just%20keep%20moving%20forward.%20Until%20I%20destroy%20my%20enemies.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-attack-on-titan-0006.opus"
+   }
   },
   {
    "id": "q-attack-on-titan-0007",
@@ -134,7 +152,10 @@
    },
    "confidence": "IMDb",
    "note": "translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=This%20world%20is%20cruel...%20But%20it%27s%20also%20very%20beautiful."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=This%20world%20is%20cruel...%20But%20it%27s%20also%20very%20beautiful.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-attack-on-titan-0007.opus"
+   }
   },
   {
    "id": "q-attack-on-titan-0008",
@@ -153,7 +174,10 @@
    },
    "confidence": "IMDb",
    "note": "«Tatakae» в англ. версии; translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Fight%21"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Fight%21",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-attack-on-titan-0008.opus"
+   }
   },
   {
    "id": "q-attack-on-titan-0009",
@@ -172,7 +196,10 @@
    },
    "confidence": "IMDb",
    "note": "сцена Саши с картошкой; вежливая просьба — полезно в кафе; translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=May%20I%20please%20have%20some%20of%20that%20Potato%3F"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=May%20I%20please%20have%20some%20of%20that%20Potato%3F",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-attack-on-titan-0009.opus"
+   }
   },
   {
    "id": "q-attack-on-titan-0010",
@@ -192,7 +219,10 @@
    },
    "confidence": "IMDb",
    "note": "translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=You%27re%20a%20disease%21"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=You%27re%20a%20disease%21",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-attack-on-titan-0010.opus"
+   }
   },
   {
    "id": "q-attack-on-titan-0011",
@@ -212,7 +242,10 @@
    },
    "confidence": "IMDb",
    "note": "translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=I%27ll%20stay%20alive%20to%20keep%20his%20memory%20alive."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%27ll%20stay%20alive%20to%20keep%20his%20memory%20alive.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-attack-on-titan-0011.opus"
+   }
   },
   {
    "id": "q-attack-on-titan-0012",
@@ -232,7 +265,10 @@
     "top1000": 0.5
    },
    "confidence": "verbatim (parallel research) — needs source check",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=On%20that%20day%2C%20mankind%20received%20a%20grim%20reminder"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=On%20that%20day%2C%20mankind%20received%20a%20grim%20reminder",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-attack-on-titan-0012.opus"
+   }
   },
   {
    "id": "q-attack-on-titan-0013",
@@ -251,7 +287,10 @@
     "top1000": 0.6
    },
    "confidence": "verbatim (parallel research) — needs source check",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Hey%2C%20you%E2%80%A6%20It%27s%20dangerous%20here.%20Go%2C%20fly%20somewhere%20far%20away"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Hey%2C%20you%E2%80%A6%20It%27s%20dangerous%20here.%20Go%2C%20fly%20somewhere%20far%20away",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-attack-on-titan-0013.opus"
+   }
   },
   {
    "id": "q-attack-on-titan-0014",
@@ -271,7 +310,10 @@
     "top1000": 0.6
    },
    "confidence": "verbatim (parallel research) — needs source check",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=It%27s%20too%20late%20now%E2%80%A6%20I%20don%27t%20know%20what%27s%20right%20anymore"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=It%27s%20too%20late%20now%E2%80%A6%20I%20don%27t%20know%20what%27s%20right%20anymore",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-attack-on-titan-0014.opus"
+   }
   },
   {
    "id": "q-attack-on-titan-0015",
@@ -291,7 +333,10 @@
     "top1000": 0.69
    },
    "confidence": "verbatim (parallel research) — needs source check",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=There%20were%20never%20any%20Devils%20on%20this%20island.%20Just%20people.%20People%20like%20us"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=There%20were%20never%20any%20Devils%20on%20this%20island.%20Just%20people.%20People%20like%20us",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-attack-on-titan-0015.opus"
+   }
   },
   {
    "id": "q-attack-on-titan-0016",
@@ -310,7 +355,10 @@
    },
    "confidence": "verbatim (parallel research) — needs source check",
    "note": "(адапт. реплики Kaya, эп. 70)",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=How%20can%20people%20we%27ve%20never%20met%20hate%20us%20so%20much%3F"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=How%20can%20people%20we%27ve%20never%20met%20hate%20us%20so%20much%3F",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-attack-on-titan-0016.opus"
+   }
   },
   {
    "id": "q-attack-on-titan-0017",
@@ -330,7 +378,10 @@
     "top1000": 0.75
    },
    "confidence": "verbatim (parallel research) — needs source check",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=The%20world%20is%20cruel.%20And%20also%20very%20beautiful"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=The%20world%20is%20cruel.%20And%20also%20very%20beautiful",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-attack-on-titan-0017.opus"
+   }
   }
  ]
 }

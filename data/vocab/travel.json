@@ -35,17 +35,20 @@
   {
    "topic": "politeness",
    "en": "thank you",
-   "ru": "спасибо"
+   "ru": "спасибо",
+   "audio": "audio/vocab/cori/politeness-thank-you.opus"
   },
   {
    "topic": "politeness",
    "en": "thanks",
-   "ru": "благодарю"
+   "ru": "благодарю",
+   "audio": "audio/vocab/cori/politeness-thanks.opus"
   },
   {
    "topic": "politeness",
    "en": "you're welcome",
-   "ru": "пожалуйста (ответ)"
+   "ru": "пожалуйста (ответ)",
+   "audio": "audio/vocab/cori/politeness-you-re-welcome.opus"
   },
   {
    "topic": "politeness",
@@ -56,7 +59,8 @@
   {
    "topic": "politeness",
    "en": "excuse me",
-   "ru": "извините (обратить внимание)"
+   "ru": "извините (обратить внимание)",
+   "audio": "audio/vocab/cori/politeness-excuse-me.opus"
   },
   {
    "topic": "politeness",
@@ -73,12 +77,14 @@
   {
    "topic": "politeness",
    "en": "OK",
-   "ru": "хорошо"
+   "ru": "хорошо",
+   "audio": "audio/vocab/cori/politeness-ok.opus"
   },
   {
    "topic": "politeness",
    "en": "my name is",
-   "ru": "меня зовут"
+   "ru": "меня зовут",
+   "audio": "audio/vocab/cori/politeness-my-name-is.opus"
   },
   {
    "topic": "politeness",
@@ -89,22 +95,26 @@
   {
    "topic": "politeness",
    "en": "I am from",
-   "ru": "я из"
+   "ru": "я из",
+   "audio": "audio/vocab/cori/politeness-i-am-from.opus"
   },
   {
    "topic": "politeness",
    "en": "Russia",
-   "ru": "Россия"
+   "ru": "Россия",
+   "audio": "audio/vocab/cori/politeness-russia.opus"
   },
   {
    "topic": "politeness",
    "en": "nice to meet you",
-   "ru": "приятно познакомиться"
+   "ru": "приятно познакомиться",
+   "audio": "audio/vocab/cori/politeness-nice-to-meet-you.opus"
   },
   {
    "topic": "politeness",
    "en": "how are you",
-   "ru": "как дела"
+   "ru": "как дела",
+   "audio": "audio/vocab/cori/politeness-how-are-you.opus"
   },
   {
    "topic": "politeness",
@@ -115,12 +125,14 @@
   {
    "topic": "politeness",
    "en": "and you",
-   "ru": "а у вас"
+   "ru": "а у вас",
+   "audio": "audio/vocab/cori/politeness-and-you.opus"
   },
   {
    "topic": "politeness",
    "en": "I",
-   "ru": "я"
+   "ru": "я",
+   "audio": "audio/vocab/cori/politeness-i.opus"
   },
   {
    "topic": "politeness",
@@ -263,12 +275,14 @@
   {
    "topic": "politeness",
    "en": "let's",
-   "ru": "давай"
+   "ru": "давай",
+   "audio": "audio/vocab/cori/politeness-let-s.opus"
   },
   {
    "topic": "communication",
    "en": "English",
-   "ru": "английский"
+   "ru": "английский",
+   "audio": "audio/vocab/cori/communication-english.opus"
   },
   {
    "topic": "communication",
@@ -279,22 +293,26 @@
   {
    "topic": "communication",
    "en": "Russian",
-   "ru": "русский"
+   "ru": "русский",
+   "audio": "audio/vocab/cori/communication-russian.opus"
   },
   {
    "topic": "communication",
    "en": "do you speak English",
-   "ru": "вы говорите по-английски"
+   "ru": "вы говорите по-английски",
+   "audio": "audio/vocab/cori/communication-do-you-speak-english.opus"
   },
   {
    "topic": "communication",
    "en": "I don't understand",
-   "ru": "я не понимаю"
+   "ru": "я не понимаю",
+   "audio": "audio/vocab/cori/communication-i-don-t-understand.opus"
   },
   {
    "topic": "communication",
    "en": "I understand",
-   "ru": "я понимаю"
+   "ru": "я понимаю",
+   "audio": "audio/vocab/cori/communication-i-understand.opus"
   },
   {
    "topic": "communication",
@@ -323,12 +341,14 @@
   {
    "topic": "communication",
    "en": "what does it mean",
-   "ru": "что это значит"
+   "ru": "что это значит",
+   "audio": "audio/vocab/cori/communication-what-does-it-mean.opus"
   },
   {
    "topic": "communication",
    "en": "how do you say",
-   "ru": "как сказать"
+   "ru": "как сказать",
+   "audio": "audio/vocab/cori/communication-how-do-you-say.opus"
   },
   {
    "topic": "communication",
@@ -339,7 +359,8 @@
   {
    "topic": "communication",
    "en": "write it down",
-   "ru": "запишите"
+   "ru": "запишите",
+   "audio": "audio/vocab/cori/communication-write-it-down.opus"
   },
   {
    "topic": "communication",
@@ -368,12 +389,14 @@
   {
    "topic": "communication",
    "en": "translator",
-   "ru": "переводчик"
+   "ru": "переводчик",
+   "audio": "audio/vocab/cori/communication-translator.opus"
   },
   {
    "topic": "communication",
    "en": "dictionary",
-   "ru": "словарь"
+   "ru": "словарь",
+   "audio": "audio/vocab/cori/communication-dictionary.opus"
   },
   {
    "topic": "communication",
@@ -384,22 +407,26 @@
   {
    "topic": "communication",
    "en": "app",
-   "ru": "приложение"
+   "ru": "приложение",
+   "audio": "audio/vocab/cori/communication-app.opus"
   },
   {
    "topic": "communication",
    "en": "free Wi-Fi",
-   "ru": "бесплатный вай-фай"
+   "ru": "бесплатный вай-фай",
+   "audio": "audio/vocab/cori/communication-free-wi-fi.opus"
   },
   {
    "topic": "communication",
    "en": "internet",
-   "ru": "интернет"
+   "ru": "интернет",
+   "audio": "audio/vocab/cori/communication-internet.opus"
   },
   {
    "topic": "communication",
    "en": "charger",
-   "ru": "зарядное устройство"
+   "ru": "зарядное устройство",
+   "audio": "audio/vocab/cori/communication-charger.opus"
   },
   {
    "topic": "communication",
@@ -458,7 +485,8 @@
   {
    "topic": "airport",
    "en": "boarding pass",
-   "ru": "посадочный талон"
+   "ru": "посадочный талон",
+   "audio": "audio/vocab/cori/airport-boarding-pass.opus"
   },
   {
    "topic": "airport",
@@ -469,22 +497,26 @@
   {
    "topic": "airport",
    "en": "visa",
-   "ru": "виза"
+   "ru": "виза",
+   "audio": "audio/vocab/cori/airport-visa.opus"
   },
   {
    "topic": "airport",
    "en": "ID",
-   "ru": "удостоверение"
+   "ru": "удостоверение",
+   "audio": "audio/vocab/cori/airport-id.opus"
   },
   {
    "topic": "airport",
    "en": "check-in",
-   "ru": "регистрация"
+   "ru": "регистрация",
+   "audio": "audio/vocab/cori/airport-check-in.opus"
   },
   {
    "topic": "airport",
    "en": "check in",
-   "ru": "зарегистрироваться"
+   "ru": "зарегистрироваться",
+   "audio": "audio/vocab/cori/airport-check-in-2.opus"
   },
   {
    "topic": "airport",
@@ -495,7 +527,8 @@
   {
    "topic": "airport",
    "en": "terminal",
-   "ru": "терминал"
+   "ru": "терминал",
+   "audio": "audio/vocab/cori/airport-terminal.opus"
   },
   {
    "topic": "airport",
@@ -506,7 +539,8 @@
   {
    "topic": "airport",
    "en": "customs",
-   "ru": "таможня"
+   "ru": "таможня",
+   "audio": "audio/vocab/cori/airport-customs.opus"
   },
   {
    "topic": "airport",
@@ -517,22 +551,26 @@
   {
    "topic": "airport",
    "en": "baggage",
-   "ru": "багаж"
+   "ru": "багаж",
+   "audio": "audio/vocab/cori/airport-baggage.opus"
   },
   {
    "topic": "airport",
    "en": "luggage",
-   "ru": "багаж"
+   "ru": "багаж",
+   "audio": "audio/vocab/cori/airport-luggage.opus"
   },
   {
    "topic": "airport",
    "en": "suitcase",
-   "ru": "чемодан"
+   "ru": "чемодан",
+   "audio": "audio/vocab/cori/airport-suitcase.opus"
   },
   {
    "topic": "airport",
    "en": "backpack",
-   "ru": "рюкзак"
+   "ru": "рюкзак",
+   "audio": "audio/vocab/cori/airport-backpack.opus"
   },
   {
    "topic": "airport",
@@ -543,12 +581,14 @@
   {
    "topic": "airport",
    "en": "carry-on",
-   "ru": "ручная кладь"
+   "ru": "ручная кладь",
+   "audio": "audio/vocab/cori/airport-carry-on.opus"
   },
   {
    "topic": "airport",
    "en": "baggage claim",
-   "ru": "выдача багажа"
+   "ru": "выдача багажа",
+   "audio": "audio/vocab/cori/airport-baggage-claim.opus"
   },
   {
    "topic": "airport",
@@ -559,7 +599,8 @@
   {
    "topic": "airport",
    "en": "lost and found",
-   "ru": "бюро находок"
+   "ru": "бюро находок",
+   "audio": "audio/vocab/cori/airport-lost-and-found.opus"
   },
   {
    "topic": "airport",
@@ -570,7 +611,8 @@
   {
    "topic": "airport",
    "en": "overweight",
-   "ru": "перевес"
+   "ru": "перевес",
+   "audio": "audio/vocab/cori/airport-overweight.opus"
   },
   {
    "topic": "airport",
@@ -581,12 +623,14 @@
   {
    "topic": "airport",
    "en": "boarding",
-   "ru": "посадка"
+   "ru": "посадка",
+   "audio": "audio/vocab/cori/airport-boarding.opus"
   },
   {
    "topic": "airport",
    "en": "departure",
-   "ru": "вылет"
+   "ru": "вылет",
+   "audio": "audio/vocab/cori/airport-departure.opus"
   },
   {
    "topic": "airport",
@@ -597,17 +641,20 @@
   {
    "topic": "airport",
    "en": "delayed",
-   "ru": "задержан"
+   "ru": "задержан",
+   "audio": "audio/vocab/cori/airport-delayed.opus"
   },
   {
    "topic": "airport",
    "en": "cancelled",
-   "ru": "отменён"
+   "ru": "отменён",
+   "audio": "audio/vocab/cori/airport-cancelled.opus"
   },
   {
    "topic": "airport",
    "en": "on time",
-   "ru": "вовремя"
+   "ru": "вовремя",
+   "audio": "audio/vocab/cori/airport-on-time.opus"
   },
   {
    "topic": "airport",
@@ -630,7 +677,8 @@
   {
    "topic": "airport",
    "en": "flight attendant",
-   "ru": "бортпроводник"
+   "ru": "бортпроводник",
+   "audio": "audio/vocab/cori/airport-flight-attendant.opus"
   },
   {
    "topic": "airport",
@@ -641,22 +689,26 @@
   {
    "topic": "airport",
    "en": "window seat",
-   "ru": "место у окна"
+   "ru": "место у окна",
+   "audio": "audio/vocab/cori/airport-window-seat.opus"
   },
   {
    "topic": "airport",
    "en": "aisle",
-   "ru": "проход"
+   "ru": "проход",
+   "audio": "audio/vocab/cori/airport-aisle.opus"
   },
   {
    "topic": "airport",
    "en": "aisle seat",
-   "ru": "место у прохода"
+   "ru": "место у прохода",
+   "audio": "audio/vocab/cori/airport-aisle-seat.opus"
   },
   {
    "topic": "airport",
    "en": "take off",
-   "ru": "взлетать"
+   "ru": "взлетать",
+   "audio": "audio/vocab/cori/airport-take-off.opus"
   },
   {
    "topic": "airport",
@@ -667,7 +719,8 @@
   {
    "topic": "airport",
    "en": "turbulence",
-   "ru": "турбулентность"
+   "ru": "турбулентность",
+   "audio": "audio/vocab/cori/airport-turbulence.opus"
   },
   {
    "topic": "airport",
@@ -684,17 +737,20 @@
   {
    "topic": "airport",
    "en": "life jacket",
-   "ru": "спасательный жилет"
+   "ru": "спасательный жилет",
+   "audio": "audio/vocab/cori/airport-life-jacket.opus"
   },
   {
    "topic": "airport",
    "en": "blanket",
-   "ru": "одеяло"
+   "ru": "одеяло",
+   "audio": "audio/vocab/cori/airport-blanket.opus"
   },
   {
    "topic": "airport",
    "en": "pillow",
-   "ru": "подушка"
+   "ru": "подушка",
+   "audio": "audio/vocab/cori/airport-pillow.opus"
   },
   {
    "topic": "airport",
@@ -711,7 +767,8 @@
   {
    "topic": "airport",
    "en": "arrival hall",
-   "ru": "зал прилёта"
+   "ru": "зал прилёта",
+   "audio": "audio/vocab/cori/airport-arrival-hall.opus"
   },
   {
    "topic": "airport",
@@ -722,12 +779,14 @@
   {
    "topic": "airport",
    "en": "connecting flight",
-   "ru": "стыковочный рейс"
+   "ru": "стыковочный рейс",
+   "audio": "audio/vocab/cori/airport-connecting-flight.opus"
   },
   {
    "topic": "airport",
    "en": "duty free",
-   "ru": "дьюти-фри"
+   "ru": "дьюти-фри",
+   "audio": "audio/vocab/cori/airport-duty-free.opus"
   },
   {
    "topic": "airport",
@@ -744,7 +803,8 @@
   {
    "topic": "hotel",
    "en": "hostel",
-   "ru": "хостел"
+   "ru": "хостел",
+   "audio": "audio/vocab/cori/hotel-hostel.opus"
   },
   {
    "topic": "hotel",
@@ -755,12 +815,14 @@
   {
    "topic": "hotel",
    "en": "single room",
-   "ru": "одноместный номер"
+   "ru": "одноместный номер",
+   "audio": "audio/vocab/cori/hotel-single-room.opus"
   },
   {
    "topic": "hotel",
    "en": "double room",
-   "ru": "двухместный номер"
+   "ru": "двухместный номер",
+   "audio": "audio/vocab/cori/hotel-double-room.opus"
   },
   {
    "topic": "hotel",
@@ -771,12 +833,14 @@
   {
    "topic": "hotel",
    "en": "reservation",
-   "ru": "бронь"
+   "ru": "бронь",
+   "audio": "audio/vocab/cori/hotel-reservation.opus"
   },
   {
    "topic": "hotel",
    "en": "booking",
-   "ru": "бронирование"
+   "ru": "бронирование",
+   "audio": "audio/vocab/cori/hotel-booking.opus"
   },
   {
    "topic": "hotel",
@@ -787,22 +851,26 @@
   {
    "topic": "hotel",
    "en": "front desk",
-   "ru": "ресепшн"
+   "ru": "ресепшн",
+   "audio": "audio/vocab/cori/hotel-front-desk.opus"
   },
   {
    "topic": "hotel",
    "en": "receptionist",
-   "ru": "администратор"
+   "ru": "администратор",
+   "audio": "audio/vocab/cori/hotel-receptionist.opus"
   },
   {
    "topic": "hotel",
    "en": "check in",
-   "ru": "заселиться"
+   "ru": "заселиться",
+   "audio": "audio/vocab/cori/hotel-check-in.opus"
   },
   {
    "topic": "hotel",
    "en": "check out",
-   "ru": "выселиться"
+   "ru": "выселиться",
+   "audio": "audio/vocab/cori/hotel-check-out.opus"
   },
   {
    "topic": "hotel",
@@ -813,7 +881,8 @@
   {
    "topic": "hotel",
    "en": "key card",
-   "ru": "карта-ключ"
+   "ru": "карта-ключ",
+   "audio": "audio/vocab/cori/hotel-key-card.opus"
   },
   {
    "topic": "hotel",
@@ -830,12 +899,14 @@
   {
    "topic": "hotel",
    "en": "stairs",
-   "ru": "лестница"
+   "ru": "лестница",
+   "audio": "audio/vocab/cori/hotel-stairs.opus"
   },
   {
    "topic": "hotel",
    "en": "corridor",
-   "ru": "коридор"
+   "ru": "коридор",
+   "audio": "audio/vocab/cori/hotel-corridor.opus"
   },
   {
    "topic": "hotel",
@@ -852,7 +923,8 @@
   {
    "topic": "hotel",
    "en": "per night",
-   "ru": "за ночь"
+   "ru": "за ночь",
+   "audio": "audio/vocab/cori/hotel-per-night.opus"
   },
   {
    "topic": "hotel",
@@ -875,7 +947,8 @@
   {
    "topic": "hotel",
    "en": "included",
-   "ru": "включено"
+   "ru": "включено",
+   "audio": "audio/vocab/cori/hotel-included.opus"
   },
   {
    "topic": "hotel",
@@ -886,22 +959,26 @@
   {
    "topic": "hotel",
    "en": "twin beds",
-   "ru": "две отдельные кровати"
+   "ru": "две отдельные кровати",
+   "audio": "audio/vocab/cori/hotel-twin-beds.opus"
   },
   {
    "topic": "hotel",
    "en": "pillow",
-   "ru": "подушка"
+   "ru": "подушка",
+   "audio": "audio/vocab/cori/hotel-pillow.opus"
   },
   {
    "topic": "hotel",
    "en": "blanket",
-   "ru": "одеяло"
+   "ru": "одеяло",
+   "audio": "audio/vocab/cori/hotel-blanket.opus"
   },
   {
    "topic": "hotel",
    "en": "towel",
-   "ru": "полотенце"
+   "ru": "полотенце",
+   "audio": "audio/vocab/cori/hotel-towel.opus"
   },
   {
    "topic": "hotel",
@@ -930,22 +1007,26 @@
   {
    "topic": "hotel",
    "en": "hot water",
-   "ru": "горячая вода"
+   "ru": "горячая вода",
+   "audio": "audio/vocab/cori/hotel-hot-water.opus"
   },
   {
    "topic": "hotel",
    "en": "air conditioning",
-   "ru": "кондиционер"
+   "ru": "кондиционер",
+   "audio": "audio/vocab/cori/hotel-air-conditioning.opus"
   },
   {
    "topic": "hotel",
    "en": "heating",
-   "ru": "отопление"
+   "ru": "отопление",
+   "audio": "audio/vocab/cori/hotel-heating.opus"
   },
   {
    "topic": "hotel",
    "en": "noisy",
-   "ru": "шумный"
+   "ru": "шумный",
+   "audio": "audio/vocab/cori/hotel-noisy.opus"
   },
   {
    "topic": "hotel",
@@ -968,7 +1049,8 @@
   {
    "topic": "hotel",
    "en": "towels",
-   "ru": "полотенца (мн.)"
+   "ru": "полотенца (мн.)",
+   "audio": "audio/vocab/cori/hotel-towels.opus"
   },
   {
    "topic": "hotel",
@@ -997,7 +1079,8 @@
   {
    "topic": "hotel",
    "en": "receipt",
-   "ru": "квитанция"
+   "ru": "квитанция",
+   "audio": "audio/vocab/cori/hotel-receipt.opus"
   },
   {
    "topic": "hotel",
@@ -1020,7 +1103,8 @@
   {
    "topic": "hotel",
    "en": "refund",
-   "ru": "возврат денег"
+   "ru": "возврат денег",
+   "audio": "audio/vocab/cori/hotel-refund.opus"
   },
   {
    "topic": "hotel",
@@ -1031,12 +1115,14 @@
   {
    "topic": "hotel",
    "en": "wake-up call",
-   "ru": "звонок-будильник"
+   "ru": "звонок-будильник",
+   "audio": "audio/vocab/cori/hotel-wake-up-call.opus"
   },
   {
    "topic": "hotel",
    "en": "luggage storage",
-   "ru": "хранение багажа"
+   "ru": "хранение багажа",
+   "audio": "audio/vocab/cori/hotel-luggage-storage.opus"
   },
   {
    "topic": "hotel",
@@ -1053,7 +1139,8 @@
   {
    "topic": "restaurant",
    "en": "cafe",
-   "ru": "кафе"
+   "ru": "кафе",
+   "audio": "audio/vocab/cori/restaurant-cafe.opus"
   },
   {
    "topic": "restaurant",
@@ -1076,7 +1163,8 @@
   {
    "topic": "restaurant",
    "en": "waitress",
-   "ru": "официантка"
+   "ru": "официантка",
+   "audio": "audio/vocab/cori/restaurant-waitress.opus"
   },
   {
    "topic": "restaurant",
@@ -1129,17 +1217,20 @@
   {
    "topic": "restaurant",
    "en": "snack",
-   "ru": "перекус"
+   "ru": "перекус",
+   "audio": "audio/vocab/cori/restaurant-snack.opus"
   },
   {
    "topic": "restaurant",
    "en": "starter",
-   "ru": "закуска"
+   "ru": "закуска",
+   "audio": "audio/vocab/cori/restaurant-starter.opus"
   },
   {
    "topic": "restaurant",
    "en": "main course",
-   "ru": "основное блюдо"
+   "ru": "основное блюдо",
+   "audio": "audio/vocab/cori/restaurant-main-course.opus"
   },
   {
    "topic": "restaurant",
@@ -1186,7 +1277,8 @@
   {
    "topic": "restaurant",
    "en": "seafood",
-   "ru": "морепродукты"
+   "ru": "морепродукты",
+   "audio": "audio/vocab/cori/restaurant-seafood.opus"
   },
   {
    "topic": "restaurant",
@@ -1197,7 +1289,8 @@
   {
    "topic": "restaurant",
    "en": "pasta",
-   "ru": "паста"
+   "ru": "паста",
+   "audio": "audio/vocab/cori/restaurant-pasta.opus"
   },
   {
    "topic": "restaurant",
@@ -1232,7 +1325,8 @@
   {
    "topic": "restaurant",
    "en": "vegetables",
-   "ru": "овощи"
+   "ru": "овощи",
+   "audio": "audio/vocab/cori/restaurant-vegetables.opus"
   },
   {
    "topic": "restaurant",
@@ -1249,7 +1343,8 @@
   {
    "topic": "restaurant",
    "en": "banana",
-   "ru": "банан"
+   "ru": "банан",
+   "audio": "audio/vocab/cori/restaurant-banana.opus"
   },
   {
    "topic": "restaurant",
@@ -1326,7 +1421,8 @@
   {
    "topic": "restaurant",
    "en": "pepper",
-   "ru": "перец"
+   "ru": "перец",
+   "audio": "audio/vocab/cori/restaurant-pepper.opus"
   },
   {
    "topic": "restaurant",
@@ -1343,12 +1439,14 @@
   {
    "topic": "restaurant",
    "en": "still water",
-   "ru": "вода без газа"
+   "ru": "вода без газа",
+   "audio": "audio/vocab/cori/restaurant-still-water.opus"
   },
   {
    "topic": "restaurant",
    "en": "sparkling",
-   "ru": "газированный"
+   "ru": "газированный",
+   "audio": "audio/vocab/cori/restaurant-sparkling.opus"
   },
   {
    "topic": "restaurant",
@@ -1371,17 +1469,20 @@
   {
    "topic": "restaurant",
    "en": "vegetarian",
-   "ru": "вегетарианец"
+   "ru": "вегетарианец",
+   "audio": "audio/vocab/cori/restaurant-vegetarian.opus"
   },
   {
    "topic": "restaurant",
    "en": "allergic",
-   "ru": "аллергик"
+   "ru": "аллергик",
+   "audio": "audio/vocab/cori/restaurant-allergic.opus"
   },
   {
    "topic": "restaurant",
    "en": "allergy",
-   "ru": "аллергия"
+   "ru": "аллергия",
+   "audio": "audio/vocab/cori/restaurant-allergy.opus"
   },
   {
    "topic": "restaurant",
@@ -1398,12 +1499,14 @@
   {
    "topic": "restaurant",
    "en": "take away",
-   "ru": "с собой"
+   "ru": "с собой",
+   "audio": "audio/vocab/cori/restaurant-take-away.opus"
   },
   {
    "topic": "restaurant",
    "en": "table for two",
-   "ru": "столик на двоих"
+   "ru": "столик на двоих",
+   "audio": "audio/vocab/cori/restaurant-table-for-two.opus"
   },
   {
    "topic": "shopping",
@@ -1414,7 +1517,8 @@
   {
    "topic": "shopping",
    "en": "shopping",
-   "ru": "покупки"
+   "ru": "покупки",
+   "audio": "audio/vocab/cori/shopping-shopping.opus"
   },
   {
    "topic": "shopping",
@@ -1431,12 +1535,14 @@
   {
    "topic": "shopping",
    "en": "supermarket",
-   "ru": "супермаркет"
+   "ru": "супермаркет",
+   "audio": "audio/vocab/cori/shopping-supermarket.opus"
   },
   {
    "topic": "shopping",
    "en": "pharmacy",
-   "ru": "аптека"
+   "ru": "аптека",
+   "audio": "audio/vocab/cori/shopping-pharmacy.opus"
   },
   {
    "topic": "shopping",
@@ -1507,17 +1613,20 @@
   {
    "topic": "shopping",
    "en": "credit card",
-   "ru": "кредитная карта"
+   "ru": "кредитная карта",
+   "audio": "audio/vocab/cori/shopping-credit-card.opus"
   },
   {
    "topic": "shopping",
    "en": "debit card",
-   "ru": "дебетовая карта"
+   "ru": "дебетовая карта",
+   "audio": "audio/vocab/cori/shopping-debit-card.opus"
   },
   {
    "topic": "shopping",
    "en": "contactless",
-   "ru": "бесконтактный"
+   "ru": "бесконтактный",
+   "audio": "audio/vocab/cori/shopping-contactless.opus"
   },
   {
    "topic": "shopping",
@@ -1528,12 +1637,14 @@
   {
    "topic": "shopping",
    "en": "receipt",
-   "ru": "чек"
+   "ru": "чек",
+   "audio": "audio/vocab/cori/shopping-receipt.opus"
   },
   {
    "topic": "shopping",
    "en": "refund",
-   "ru": "возврат"
+   "ru": "возврат",
+   "audio": "audio/vocab/cori/shopping-refund.opus"
   },
   {
    "topic": "shopping",
@@ -1556,7 +1667,8 @@
   {
    "topic": "shopping",
    "en": "euro",
-   "ru": "евро"
+   "ru": "евро",
+   "audio": "audio/vocab/cori/shopping-euro.opus"
   },
   {
    "topic": "shopping",
@@ -1567,12 +1679,14 @@
   {
    "topic": "shopping",
    "en": "rouble",
-   "ru": "рубль"
+   "ru": "рубль",
+   "audio": "audio/vocab/cori/shopping-rouble.opus"
   },
   {
    "topic": "shopping",
    "en": "ATM/cash machine",
-   "ru": "банкомат"
+   "ru": "банкомат",
+   "audio": "audio/vocab/cori/shopping-atm-cash-machine.opus"
   },
   {
    "topic": "shopping",
@@ -1589,7 +1703,8 @@
   {
    "topic": "shopping",
    "en": "closed",
-   "ru": "закрыт"
+   "ru": "закрыт",
+   "audio": "audio/vocab/cori/shopping-closed.opus"
   },
   {
    "topic": "shopping",
@@ -1600,7 +1715,8 @@
   {
    "topic": "shopping",
    "en": "try on",
-   "ru": "примерить"
+   "ru": "примерить",
+   "audio": "audio/vocab/cori/shopping-try-on.opus"
   },
   {
    "topic": "shopping",
@@ -1611,17 +1727,20 @@
   {
    "topic": "shopping",
    "en": "too big",
-   "ru": "слишком большой"
+   "ru": "слишком большой",
+   "audio": "audio/vocab/cori/shopping-too-big.opus"
   },
   {
    "topic": "shopping",
    "en": "too small",
-   "ru": "слишком маленький"
+   "ru": "слишком маленький",
+   "audio": "audio/vocab/cori/shopping-too-small.opus"
   },
   {
    "topic": "shopping",
    "en": "colour",
-   "ru": "цвет"
+   "ru": "цвет",
+   "audio": "audio/vocab/cori/shopping-colour.opus"
   },
   {
    "topic": "shopping",
@@ -1662,7 +1781,8 @@
   {
    "topic": "shopping",
    "en": "souvenir",
-   "ru": "сувенир"
+   "ru": "сувенир",
+   "audio": "audio/vocab/cori/shopping-souvenir.opus"
   },
   {
    "topic": "shopping",
@@ -1679,17 +1799,20 @@
   {
    "topic": "shopping",
    "en": "just looking",
-   "ru": "просто смотрю"
+   "ru": "просто смотрю",
+   "audio": "audio/vocab/cori/shopping-just-looking.opus"
   },
   {
    "topic": "shopping",
    "en": "have you got",
-   "ru": "есть ли у вас"
+   "ru": "есть ли у вас",
+   "audio": "audio/vocab/cori/shopping-have-you-got.opus"
   },
   {
    "topic": "shopping",
    "en": "how much",
-   "ru": "сколько стоит"
+   "ru": "сколько стоит",
+   "audio": "audio/vocab/cori/shopping-how-much.opus"
   },
   {
    "topic": "shopping",
@@ -1700,12 +1823,14 @@
   {
    "topic": "shopping",
    "en": "VAT/tax",
-   "ru": "налог"
+   "ru": "налог",
+   "audio": "audio/vocab/cori/shopping-vat-tax.opus"
   },
   {
    "topic": "shopping",
    "en": "duty free",
-   "ru": "беспошлинный"
+   "ru": "беспошлинный",
+   "audio": "audio/vocab/cori/shopping-duty-free.opus"
   },
   {
    "topic": "transport",
@@ -1722,7 +1847,8 @@
   {
    "topic": "transport",
    "en": "metro/subway/underground",
-   "ru": "метро"
+   "ru": "метро",
+   "audio": "audio/vocab/cori/transport-metro-subway-underground.opus"
   },
   {
    "topic": "transport",
@@ -1733,17 +1859,20 @@
   {
    "topic": "transport",
    "en": "tram",
-   "ru": "трамвай"
+   "ru": "трамвай",
+   "audio": "audio/vocab/cori/transport-tram.opus"
   },
   {
    "topic": "transport",
    "en": "trolleybus",
-   "ru": "троллейбус"
+   "ru": "троллейбус",
+   "audio": "audio/vocab/cori/transport-trolleybus.opus"
   },
   {
    "topic": "transport",
    "en": "ferry",
-   "ru": "паром"
+   "ru": "паром",
+   "audio": "audio/vocab/cori/transport-ferry.opus"
   },
   {
    "topic": "transport",
@@ -1766,7 +1895,8 @@
   {
    "topic": "transport",
    "en": "on foot",
-   "ru": "пешком"
+   "ru": "пешком",
+   "audio": "audio/vocab/cori/transport-on-foot.opus"
   },
   {
    "topic": "transport",
@@ -1795,7 +1925,8 @@
   {
    "topic": "transport",
    "en": "timetable",
-   "ru": "расписание"
+   "ru": "расписание",
+   "audio": "audio/vocab/cori/transport-timetable.opus"
   },
   {
    "topic": "transport",
@@ -1818,12 +1949,14 @@
   {
    "topic": "transport",
    "en": "fare",
-   "ru": "плата за проезд"
+   "ru": "плата за проезд",
+   "audio": "audio/vocab/cori/transport-fare.opus"
   },
   {
    "topic": "transport",
    "en": "conductor",
-   "ru": "кондуктор"
+   "ru": "кондуктор",
+   "audio": "audio/vocab/cori/transport-conductor.opus"
   },
   {
    "topic": "transport",
@@ -1840,12 +1973,14 @@
   {
    "topic": "transport",
    "en": "get on",
-   "ru": "сесть (в транспорт)"
+   "ru": "сесть (в транспорт)",
+   "audio": "audio/vocab/cori/transport-get-on.opus"
   },
   {
    "topic": "transport",
    "en": "get off",
-   "ru": "выйти (из транспорта)"
+   "ru": "выйти (из транспорта)",
+   "audio": "audio/vocab/cori/transport-get-off.opus"
   },
   {
    "topic": "transport",
@@ -1928,12 +2063,14 @@
   {
    "topic": "transport",
    "en": "how far",
-   "ru": "как далеко"
+   "ru": "как далеко",
+   "audio": "audio/vocab/cori/transport-how-far.opus"
   },
   {
    "topic": "transport",
    "en": "how long",
-   "ru": "как долго"
+   "ru": "как долго",
+   "audio": "audio/vocab/cori/transport-how-long.opus"
   },
   {
    "topic": "transport",
@@ -1968,12 +2105,14 @@
   {
    "topic": "transport",
    "en": "crossroads",
-   "ru": "перекрёсток"
+   "ru": "перекрёсток",
+   "audio": "audio/vocab/cori/transport-crossroads.opus"
   },
   {
    "topic": "transport",
    "en": "traffic light",
-   "ru": "светофор"
+   "ru": "светофор",
+   "audio": "audio/vocab/cori/transport-traffic-light.opus"
   },
   {
    "topic": "transport",
@@ -1984,7 +2123,8 @@
   {
    "topic": "transport",
    "en": "crosswalk",
-   "ru": "пешеходный переход"
+   "ru": "пешеходный переход",
+   "audio": "audio/vocab/cori/transport-crosswalk.opus"
   },
   {
    "topic": "transport",
@@ -2001,12 +2141,14 @@
   {
    "topic": "transport",
    "en": "city centre/downtown",
-   "ru": "центр города"
+   "ru": "центр города",
+   "audio": "audio/vocab/cori/transport-city-centre-downtown.opus"
   },
   {
    "topic": "transport",
    "en": "old town",
-   "ru": "старый город"
+   "ru": "старый город",
+   "audio": "audio/vocab/cori/transport-old-town.opus"
   },
   {
    "topic": "transport",
@@ -2053,7 +2195,8 @@
   {
    "topic": "health",
    "en": "pharmacy/chemist",
-   "ru": "аптека"
+   "ru": "аптека",
+   "audio": "audio/vocab/cori/health-pharmacy-chemist.opus"
   },
   {
    "topic": "health",
@@ -2088,12 +2231,14 @@
   {
    "topic": "health",
    "en": "stomachache",
-   "ru": "боль в животе"
+   "ru": "боль в животе",
+   "audio": "audio/vocab/cori/health-stomachache.opus"
   },
   {
    "topic": "health",
    "en": "toothache",
-   "ru": "зубная боль"
+   "ru": "зубная боль",
+   "audio": "audio/vocab/cori/health-toothache.opus"
   },
   {
    "topic": "health",
@@ -2116,12 +2261,14 @@
   {
    "topic": "health",
    "en": "flu",
-   "ru": "грипп"
+   "ru": "грипп",
+   "audio": "audio/vocab/cori/health-flu.opus"
   },
   {
    "topic": "health",
    "en": "sore throat",
-   "ru": "больное горло"
+   "ru": "больное горло",
+   "audio": "audio/vocab/cori/health-sore-throat.opus"
   },
   {
    "topic": "health",
@@ -2132,17 +2279,20 @@
   {
    "topic": "health",
    "en": "nauseous",
-   "ru": "тошнота"
+   "ru": "тошнота",
+   "audio": "audio/vocab/cori/health-nauseous.opus"
   },
   {
    "topic": "health",
    "en": "dizzy",
-   "ru": "головокружение"
+   "ru": "головокружение",
+   "audio": "audio/vocab/cori/health-dizzy.opus"
   },
   {
    "topic": "health",
    "en": "tired",
-   "ru": "уставший"
+   "ru": "уставший",
+   "audio": "audio/vocab/cori/health-tired.opus"
   },
   {
    "topic": "health",
@@ -2171,47 +2321,56 @@
   {
    "topic": "health",
    "en": "allergy",
-   "ru": "аллергия"
+   "ru": "аллергия",
+   "audio": "audio/vocab/cori/health-allergy.opus"
   },
   {
    "topic": "health",
    "en": "prescription",
-   "ru": "рецепт"
+   "ru": "рецепт",
+   "audio": "audio/vocab/cori/health-prescription.opus"
   },
   {
    "topic": "health",
    "en": "antibiotics",
-   "ru": "антибиотики"
+   "ru": "антибиотики",
+   "audio": "audio/vocab/cori/health-antibiotics.opus"
   },
   {
    "topic": "health",
    "en": "painkiller",
-   "ru": "обезболивающее"
+   "ru": "обезболивающее",
+   "audio": "audio/vocab/cori/health-painkiller.opus"
   },
   {
    "topic": "health",
    "en": "plaster/band-aid",
-   "ru": "пластырь"
+   "ru": "пластырь",
+   "audio": "audio/vocab/cori/health-plaster-band-aid.opus"
   },
   {
    "topic": "health",
    "en": "bandage",
-   "ru": "бинт"
+   "ru": "бинт",
+   "audio": "audio/vocab/cori/health-bandage.opus"
   },
   {
    "topic": "health",
    "en": "ointment",
-   "ru": "мазь"
+   "ru": "мазь",
+   "audio": "audio/vocab/cori/health-ointment.opus"
   },
   {
    "topic": "health",
    "en": "drops",
-   "ru": "капли"
+   "ru": "капли",
+   "audio": "audio/vocab/cori/health-drops.opus"
   },
   {
    "topic": "health",
    "en": "vitamins",
-   "ru": "витамины"
+   "ru": "витамины",
+   "audio": "audio/vocab/cori/health-vitamins.opus"
   },
   {
    "topic": "health",
@@ -2246,7 +2405,8 @@
   {
    "topic": "health",
    "en": "injured",
-   "ru": "раненый"
+   "ru": "раненый",
+   "audio": "audio/vocab/cori/health-injured.opus"
   },
   {
    "topic": "health",
@@ -2257,12 +2417,14 @@
   {
    "topic": "health",
    "en": "allergic",
-   "ru": "аллергический"
+   "ru": "аллергический",
+   "audio": "audio/vocab/cori/health-allergic.opus"
   },
   {
    "topic": "health",
    "en": "diabetes",
-   "ru": "диабет"
+   "ru": "диабет",
+   "audio": "audio/vocab/cori/health-diabetes.opus"
   },
   {
    "topic": "health",
@@ -2285,7 +2447,8 @@
   {
    "topic": "health",
    "en": "how often",
-   "ru": "как часто (принимать)"
+   "ru": "как часто (принимать)",
+   "audio": "audio/vocab/cori/health-how-often.opus"
   },
   {
    "topic": "numbers-time",
@@ -2368,12 +2531,14 @@
   {
    "topic": "numbers-time",
    "en": "thirteen",
-   "ru": "тринадцать"
+   "ru": "тринадцать",
+   "audio": "audio/vocab/cori/numbers-time-thirteen.opus"
   },
   {
    "topic": "numbers-time",
    "en": "fourteen",
-   "ru": "четырнадцать"
+   "ru": "четырнадцать",
+   "audio": "audio/vocab/cori/numbers-time-fourteen.opus"
   },
   {
    "topic": "numbers-time",
@@ -2384,17 +2549,20 @@
   {
    "topic": "numbers-time",
    "en": "sixteen",
-   "ru": "шестнадцать"
+   "ru": "шестнадцать",
+   "audio": "audio/vocab/cori/numbers-time-sixteen.opus"
   },
   {
    "topic": "numbers-time",
    "en": "seventeen",
-   "ru": "семнадцать"
+   "ru": "семнадцать",
+   "audio": "audio/vocab/cori/numbers-time-seventeen.opus"
   },
   {
    "topic": "numbers-time",
    "en": "eighteen",
-   "ru": "восемнадцать"
+   "ru": "восемнадцать",
+   "audio": "audio/vocab/cori/numbers-time-eighteen.opus"
   },
   {
    "topic": "numbers-time",
@@ -2465,47 +2633,56 @@
   {
    "topic": "numbers-time",
    "en": "Monday",
-   "ru": "понедельник"
+   "ru": "понедельник",
+   "audio": "audio/vocab/cori/numbers-time-monday.opus"
   },
   {
    "topic": "numbers-time",
    "en": "Tuesday",
-   "ru": "вторник"
+   "ru": "вторник",
+   "audio": "audio/vocab/cori/numbers-time-tuesday.opus"
   },
   {
    "topic": "numbers-time",
    "en": "Wednesday",
-   "ru": "среда"
+   "ru": "среда",
+   "audio": "audio/vocab/cori/numbers-time-wednesday.opus"
   },
   {
    "topic": "numbers-time",
    "en": "Thursday",
-   "ru": "четверг"
+   "ru": "четверг",
+   "audio": "audio/vocab/cori/numbers-time-thursday.opus"
   },
   {
    "topic": "numbers-time",
    "en": "Friday",
-   "ru": "пятница"
+   "ru": "пятница",
+   "audio": "audio/vocab/cori/numbers-time-friday.opus"
   },
   {
    "topic": "numbers-time",
    "en": "Saturday",
-   "ru": "суббота"
+   "ru": "суббота",
+   "audio": "audio/vocab/cori/numbers-time-saturday.opus"
   },
   {
    "topic": "numbers-time",
    "en": "Sunday",
-   "ru": "воскресенье"
+   "ru": "воскресенье",
+   "audio": "audio/vocab/cori/numbers-time-sunday.opus"
   },
   {
    "topic": "numbers-time",
    "en": "January",
-   "ru": "январь"
+   "ru": "январь",
+   "audio": "audio/vocab/cori/numbers-time-january.opus"
   },
   {
    "topic": "numbers-time",
    "en": "February",
-   "ru": "февраль"
+   "ru": "февраль",
+   "audio": "audio/vocab/cori/numbers-time-february.opus"
   },
   {
    "topic": "numbers-time",
@@ -2516,7 +2693,8 @@
   {
    "topic": "numbers-time",
    "en": "April",
-   "ru": "апрель"
+   "ru": "апрель",
+   "audio": "audio/vocab/cori/numbers-time-april.opus"
   },
   {
    "topic": "numbers-time",
@@ -2527,12 +2705,14 @@
   {
    "topic": "numbers-time",
    "en": "June",
-   "ru": "июнь"
+   "ru": "июнь",
+   "audio": "audio/vocab/cori/numbers-time-june.opus"
   },
   {
    "topic": "numbers-time",
    "en": "July",
-   "ru": "июль"
+   "ru": "июль",
+   "audio": "audio/vocab/cori/numbers-time-july.opus"
   },
   {
    "topic": "numbers-time",
@@ -2543,22 +2723,26 @@
   {
    "topic": "numbers-time",
    "en": "September",
-   "ru": "сентябрь"
+   "ru": "сентябрь",
+   "audio": "audio/vocab/cori/numbers-time-september.opus"
   },
   {
    "topic": "numbers-time",
    "en": "October",
-   "ru": "октябрь"
+   "ru": "октябрь",
+   "audio": "audio/vocab/cori/numbers-time-october.opus"
   },
   {
    "topic": "numbers-time",
    "en": "November",
-   "ru": "ноябрь"
+   "ru": "ноябрь",
+   "audio": "audio/vocab/cori/numbers-time-november.opus"
   },
   {
    "topic": "numbers-time",
    "en": "December",
-   "ru": "декабрь"
+   "ru": "декабрь",
+   "audio": "audio/vocab/cori/numbers-time-december.opus"
   },
   {
    "topic": "numbers-time",
@@ -2689,27 +2873,32 @@
   {
    "topic": "numbers-time",
    "en": "what time is it",
-   "ru": "сколько времени"
+   "ru": "сколько времени",
+   "audio": "audio/vocab/cori/numbers-time-what-time-is-it.opus"
   },
   {
    "topic": "numbers-time",
    "en": "at 7 o'clock",
-   "ru": "в 7 часов"
+   "ru": "в 7 часов",
+   "audio": "audio/vocab/cori/numbers-time-at-7-o-clock.opus"
   },
   {
    "topic": "numbers-time",
    "en": "o'clock",
-   "ru": "ровно (час)"
+   "ru": "ровно (час)",
+   "audio": "audio/vocab/cori/numbers-time-o-clock.opus"
   },
   {
    "topic": "numbers-time",
    "en": "half past",
-   "ru": "пол (седьмого)"
+   "ru": "пол (седьмого)",
+   "audio": "audio/vocab/cori/numbers-time-half-past.opus"
   },
   {
    "topic": "numbers-time",
    "en": "a.m./p.m.",
-   "ru": "до/после полудня"
+   "ru": "до/после полудня",
+   "audio": "audio/vocab/cori/numbers-time-a-m-p-m.opus"
   },
   {
    "topic": "numbers-time",
@@ -2732,7 +2921,8 @@
   {
    "topic": "numbers-time",
    "en": "open 24 hours",
-   "ru": "открыто 24 часа"
+   "ru": "открыто 24 часа",
+   "audio": "audio/vocab/cori/numbers-time-open-24-hours.opus"
   }
  ]
 }

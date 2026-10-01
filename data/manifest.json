@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-01T13:10:03Z",
+  "generated_at": "2026-10-01T20:41:00Z",
   "files": [
     {
       "path": "lessons/exercises-a.json",
@@ -91,77 +91,77 @@
       "kind": "phrasebook",
       "schema_version": 1,
       "items": 2,
-      "sha256": "162016c0ff015a49062f96292e784ccd178afe5d6007d5ea69848456fba564b3"
+      "sha256": "f20e0fea044ec678d7748daee57c724674724448618561193d741f8359b6b7ed"
     },
     {
       "path": "phrasebook/directions.json",
       "kind": "phrasebook",
       "schema_version": 1,
       "items": 2,
-      "sha256": "d087235fc096f5bb204e218f5a603d91c5f52c9561c2d4477febd299562b3822"
+      "sha256": "bd8d3f6bd5b500b448f10b2521473ee6109810618813bdd5a4e64310c3f6dfbc"
     },
     {
       "path": "phrasebook/emergency.json",
       "kind": "phrasebook",
       "schema_version": 1,
       "items": 3,
-      "sha256": "dcce5be263f61e285efb7323401d5fac899cc22e62388b1599a65c91067be1d2"
+      "sha256": "31041512f6a2a69cb39938d6c98ded87e4990323d7ea870c7fa6177b52035e83"
     },
     {
       "path": "phrasebook/hotel.json",
       "kind": "phrasebook",
       "schema_version": 1,
       "items": 2,
-      "sha256": "823875e2e79f9bc25bc7386563eeba53a6b7f2d425f0e9524b58553f55136a8f"
+      "sha256": "597f0ab8186446720e981ae5f94cc61b65e016af33697b54cfa2bd7367901b75"
     },
     {
       "path": "phrasebook/idioms.json",
       "kind": "phrasebook",
       "schema_version": 1,
       "items": 2,
-      "sha256": "912fa48302a15bc2e0c7be521f302a9ab85762acd6aca12e3847a1978c541a9b"
+      "sha256": "60b7a8dc0aa98a51410a009c5b584714c756b775862ee3f82fed9aa22d3665e0"
     },
     {
       "path": "phrasebook/passport.json",
       "kind": "phrasebook",
       "schema_version": 1,
       "items": 2,
-      "sha256": "c84d899a9ee3c87604465fa091b9af4d97476694a826bc8771e3457d694e356f"
+      "sha256": "6a102dac4e9115d028d38ab6d9897fe44e7c8d2515511bb7cf0c88ecb9175d14"
     },
     {
       "path": "phrasebook/pharmacy.json",
       "kind": "phrasebook",
       "schema_version": 1,
       "items": 1,
-      "sha256": "ca93ed97168500f30c0b2de526165f6cc3aaf148120de8b8724911c2d188f0cc"
+      "sha256": "8782deabf43e3c112fc88ab0368011cd645ffa2095bf0281850274d28375ba30"
     },
     {
       "path": "phrasebook/restaurant.json",
       "kind": "phrasebook",
       "schema_version": 1,
       "items": 1,
-      "sha256": "3c006b052afb23326aa2d0644b937e6cc97aa2e5b34f2e0b45a12f6a7bf39b9f"
+      "sha256": "9f273d831c17123f14a0630cf8f0c8bdd445423c634452c599539989fdb00421"
     },
     {
       "path": "phrasebook/shop.json",
       "kind": "phrasebook",
       "schema_version": 1,
       "items": 2,
-      "sha256": "77f377cc28645864b41ea8230f316a55423831b2183cec984da5132f02380b49"
+      "sha256": "3e102dcc936ddfbd687767b0c813d5e44b781b8a2774cb14362675c032a1b20a"
     },
     {
       "path": "phrasebook/smalltalk.json",
       "kind": "phrasebook",
       "schema_version": 1,
       "items": 4,
-      "sha256": "93309a02979959697fa35e3bba344b04743f1a0b69d1b14956b3ad67bb0a19f5"
+      "sha256": "f0fd545e587486cd42def6aa3c1cdae5289bd0c6cb8124a779a3202b27d659bf"
     },
     {
       "path": "phrasebook/taxi.json",
       "kind": "phrasebook",
       "schema_version": 1,
       "items": 2,
-      "sha256": "84c29905d65b70df413d0a9dafaeac7fdd13ddcbdda94e0adce6c640cddd8383"
+      "sha256": "8dc4fa7d85ef20c36c9c8a8929f283e57e945602f7b4e0c4d6b30c57df191141"
     },
     {
       "path": "phrases/phrases-a.json",
@@ -210,105 +210,105 @@
       "kind": "quotes",
       "schema_version": 1,
       "items": 17,
-      "sha256": "88be3f2429cc07d62012ec2801f8b9929435f0dbf38e80f28ea6cc74a3109eb8"
+      "sha256": "b678dd6d6cae0457bf300d5e0b5ca1064417d1d67af39b2d8f810495726ff7d1"
     },
     {
       "path": "quotes/berserk.json",
       "kind": "quotes",
       "schema_version": 1,
       "items": 27,
-      "sha256": "5de1524c148c6f87abd0342ca97c2b141c0190ed7932dc27b201874105b365eb"
+      "sha256": "2185bcec3b6bf7e4c777bf1ef774f2dd7613425fcb0b93a77587038123313f58"
     },
     {
       "path": "quotes/black-mirror.json",
       "kind": "quotes",
       "schema_version": 1,
       "items": 35,
-      "sha256": "6142b121fd2c51b4cb54d55936f2bb01d7f98621080a9f5dc279b5fdfabf4e1e"
+      "sha256": "e28d871cb20b7316f9f9cb7018910acd541e385e879ab0d195e4157521eed085"
     },
     {
       "path": "quotes/breaking-bad.json",
       "kind": "quotes",
       "schema_version": 1,
       "items": 21,
-      "sha256": "74ed91f45ba953cb398f85fd113e61527e70f1ee400c4afa00b2bd2b65e81a2c"
+      "sha256": "8506b41e43fd3b17519e43d3c42d8a6c0a3839ee537ca8541e5d78df1d28280a"
     },
     {
       "path": "quotes/fma-fma-b.json",
       "kind": "quotes",
       "schema_version": 1,
       "items": 21,
-      "sha256": "ff6de1ecfa52f985e21caa949e0176a827ddacf9dff466ef629c4f10faceb2b1"
+      "sha256": "03353cc5326cefbaff033bcbf718eb31d599599f8269c579258a10ad21fd06bc"
     },
     {
       "path": "quotes/game-of-thrones.json",
       "kind": "quotes",
       "schema_version": 1,
       "items": 23,
-      "sha256": "a8e3db0404fd5718a6e36120c2191cfa96afb52f60a0f9a19bbeb2ae1e95abfc"
+      "sha256": "6c4110e28ecd9cd38b48cc28bc8cf412bc46785121fd08d2116a5f03af1ce84e"
     },
     {
       "path": "quotes/igry.json",
       "kind": "quotes",
       "schema_version": 1,
       "items": 16,
-      "sha256": "921da3fc9f20470f419c2cdb97defb2134ab1a2be118f323a69a19956392225e"
+      "sha256": "876cca07714f66c6bc97aa8e79414bba2e73ac62661517cb359f440df65ceab8"
     },
     {
       "path": "quotes/jujutsu-kaisen.json",
       "kind": "quotes",
       "schema_version": 1,
       "items": 17,
-      "sha256": "57f1f8f8afe81b081a5a851ff8cf8a57e14ad2677d8d4fb635f2eb9fb72befac"
+      "sha256": "95546e880d5e6830257a2b9c61399cc12f77c4c69cb01e682f548cc977f283ee"
     },
     {
       "path": "quotes/lord-of-the-rings.json",
       "kind": "quotes",
       "schema_version": 1,
       "items": 21,
-      "sha256": "3eb089979cf0522b84cc33157d8724fffde9decb7def13ee98a81ecdcde535e6"
+      "sha256": "c66dc53fbec5ac786411ba1c095aa3d9cabf20a65636316282555ce569cc02c2"
     },
     {
       "path": "quotes/memy.json",
       "kind": "quotes",
       "schema_version": 1,
       "items": 10,
-      "sha256": "0835339f5e9dcac833e19696f393652ed5ce8ed798b1d9c33e5c952137a84faf"
+      "sha256": "2b8f9177281373f28e42dd01099736ea39ca35eb63756fef4ae8c1114f2aa689"
     },
     {
       "path": "quotes/solo-leveling.json",
       "kind": "quotes",
       "schema_version": 1,
       "items": 15,
-      "sha256": "9b87ff4d39b3710f2f003c9806fb4a7d56898be41e61758df06f68122a3aa0bf"
+      "sha256": "87c98ed144dfb75909aaf90d86fb643e1c61a8d38dd5474252f39bd301b8aeac"
     },
     {
       "path": "quotes/star-wars.json",
       "kind": "quotes",
       "schema_version": 1,
       "items": 19,
-      "sha256": "a415fb987a772c3ea1167a97594811a3819af133018c8319e917a1f2dc44429a"
+      "sha256": "c1c67214d290652cd123dfcf9236bb1d273443afd69e27e80945c49193edadf7"
     },
     {
       "path": "quotes/stranger-things.json",
       "kind": "quotes",
       "schema_version": 1,
       "items": 21,
-      "sha256": "59f398999f0e844a6fe0384c13a90a215e818e1081a142b9f00127a1749aa224"
+      "sha256": "f833d6857ea73e7917a365434e29dc82c29ac69d29e10a4ee24e60b5762e9b2e"
     },
     {
       "path": "quotes/supernatural.json",
       "kind": "quotes",
       "schema_version": 1,
       "items": 25,
-      "sha256": "4cb10ed20f6e311eccc48bd7a99117c65acdd2f993b494ed6ce8d70eac6d9b13"
+      "sha256": "9807ab7abc40541c6943e1a598ef83c295bcee2743ddc4405244a4e74e1c2984"
     },
     {
       "path": "quotes/the-100.json",
       "kind": "quotes",
       "schema_version": 1,
       "items": 11,
-      "sha256": "93bbc91804eacc16fbaa1bbfba13d6d700df69cc561e6b1f1ec8c941ae4b5fcd"
+      "sha256": "097ce6764ee8c82f68a0380e37ec8405ae6c3cadf038139436bfa4b748361304"
     },
     {
       "path": "traps.json",
@@ -322,7 +322,7 @@
       "kind": "vocab",
       "schema_version": 1,
       "items": 487,
-      "sha256": "16fe22b9c4d3a428fb3ae467bd21c781b205d0b205f3f32354d683777da10a91"
+      "sha256": "6677e9420d91e25109a915fd9e9419fd11e49b92d8f43ad5aee42097ed29733f"
     },
     {
       "path": "words/words-0001-0500.json",

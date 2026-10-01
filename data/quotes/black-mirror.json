@@ -19,7 +19,10 @@
    },
    "confidence": "verbatim (Wikiquote)",
    "note": "translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=It%27s%20not%20stuff.%20It%27s%20truth."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=It%27s%20not%20stuff.%20It%27s%20truth.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-black-mirror-0001.opus"
+   }
   },
   {
    "id": "q-black-mirror-0002",
@@ -39,7 +42,10 @@
    },
    "confidence": "verbatim (Wikiquote)",
    "note": "translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=I%27m%20sorry%2C%20I%20can%27t%20help%20you."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%27m%20sorry%2C%20I%20can%27t%20help%20you.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-black-mirror-0002.opus"
+   }
   },
   {
    "id": "q-black-mirror-0003",
@@ -58,7 +64,10 @@
    },
    "confidence": "verbatim (Wikiquote)",
    "note": "translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=You%20don%27t%20know%20that."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=You%20don%27t%20know%20that.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-black-mirror-0003.opus"
+   }
   },
   {
    "id": "q-black-mirror-0004",
@@ -76,7 +85,10 @@
     "top1000": 0.8
    },
    "confidence": "verbatim (Wikiquote)",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Everything%20happens%20for%20a%20reason."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Everything%20happens%20for%20a%20reason.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-black-mirror-0004.opus"
+   }
   },
   {
    "id": "q-black-mirror-0005",
@@ -95,7 +107,10 @@
    },
    "confidence": "verbatim (Wikiquote)",
    "note": "translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=It%20doesn%27t%20work%20like%20that."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=It%20doesn%27t%20work%20like%20that.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-black-mirror-0005.opus"
+   }
   },
   {
    "id": "q-black-mirror-0006",
@@ -114,7 +129,10 @@
    },
    "confidence": "verbatim (Wikiquote)",
    "note": "translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Is%20that%20a%20problem%3F"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Is%20that%20a%20problem%3F",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-black-mirror-0006.opus"
+   }
   },
   {
    "id": "q-black-mirror-0007",
@@ -133,7 +151,10 @@
    },
    "confidence": "verbatim (Wikiquote)",
    "note": "translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Maybe%20you%27re%20old."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Maybe%20you%27re%20old.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-black-mirror-0007.opus"
+   }
   },
   {
    "id": "q-black-mirror-0008",
@@ -153,7 +174,10 @@
    },
    "confidence": "verbatim (Wikiquote)",
    "note": "разговорное there's two (норма: there are); translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20can%27t%20believe%20there%27s%20two%20of%20you%21"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20can%27t%20believe%20there%27s%20two%20of%20you%21",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-black-mirror-0008.opus"
+   }
   },
   {
    "id": "q-black-mirror-0009",
@@ -172,7 +196,10 @@
    },
    "confidence": "verbatim (Wikiquote)",
    "note": "translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=You%20can%20make%20friends%20with%20people."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=You%20can%20make%20friends%20with%20people.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-black-mirror-0009.opus"
+   }
   },
   {
    "id": "q-black-mirror-0010",
@@ -192,7 +219,10 @@
    },
    "confidence": "verbatim (Wikiquote)",
    "note": "translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Yeah%2C%20well%2C%20you%20aren%27t%20you%2C%20are%20you%3F"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Yeah%2C%20well%2C%20you%20aren%27t%20you%2C%20are%20you%3F",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-black-mirror-0010.opus"
+   }
   },
   {
    "id": "q-black-mirror-0011",
@@ -212,7 +242,10 @@
    },
    "confidence": "verbatim (Wikiquote)",
    "note": "humiliation — B2; translation needs review",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20know%20people.%20We%20love%20humiliation.%20We%20can%27t%20not%20laugh."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20know%20people.%20We%20love%20humiliation.%20We%20can%27t%20not%20laugh.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-black-mirror-0011.opus"
+   }
   },
   {
    "id": "q-black-mirror-0012",
@@ -230,7 +263,10 @@
     "top1000": 0.29
    },
    "confidence": "verbatim (parallel research) — needs source check",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Monkey%20needs%20a%20hug.%20%2F%20Monkey%20loves%20you"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Monkey%20needs%20a%20hug.%20%2F%20Monkey%20loves%20you",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-black-mirror-0012.opus"
+   }
   },
   {
    "id": "q-black-mirror-0013",
@@ -250,7 +286,10 @@
    },
    "confidence": "verbatim (parallel research) — needs source check",
    "note": "(название эпизода 3.03, фраза-лозунг в сюжете)",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Shut%20up%20and%20dance."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Shut%20up%20and%20dance.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-black-mirror-0013.opus"
+   }
   },
   {
    "id": "q-black-mirror-0014",
@@ -269,7 +308,10 @@
     "top1000": 1.0
    },
    "confidence": "verbatim (parallel research) — needs source check",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20just%20want%20something%20real%20to%20happen.%20Just%20once"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20just%20want%20something%20real%20to%20happen.%20Just%20once",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-black-mirror-0014.opus"
+   }
   },
   {
    "id": "q-black-mirror-0015",
@@ -288,7 +330,10 @@
     "top1000": 0.65
    },
    "confidence": "verbatim (parallel research) — needs source check",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=People%20want%20to%20be%20noticed.%20They%20don%27t%20like%20to%20be%20shut%20out.%20It%20makes%20them%20feel%20invisible"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=People%20want%20to%20be%20noticed.%20They%20don%27t%20like%20to%20be%20shut%20out.%20It%20makes%20them%20feel%20invisible",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-black-mirror-0015.opus"
+   }
   },
   {
    "id": "q-black-mirror-0016",
@@ -307,7 +352,10 @@
     "top1000": 0.4
    },
    "confidence": "verbatim (parallel research) — needs source check",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20don%27t%20like%20your%20aura"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20don%27t%20like%20your%20aura",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-black-mirror-0016.opus"
+   }
   },
   {
    "id": "q-black-mirror-0017",
@@ -326,7 +374,10 @@
     "top1000": 0.57
    },
    "confidence": "verbatim (parallel research) — needs source check",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=It%27d%20be%20a%20dull%20world%20without%20wondering"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=It%27d%20be%20a%20dull%20world%20without%20wondering",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-black-mirror-0017.opus"
+   }
   },
   {
    "id": "q-black-mirror-0018",
@@ -344,7 +395,10 @@
     "top1000": 0.5
    },
    "confidence": "verbatim (parallel research) — needs source check",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=You%20are%20still%20alive"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=You%20are%20still%20alive",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-black-mirror-0018.opus"
+   }
   },
   {
    "id": "q-black-mirror-0019",
@@ -363,7 +417,10 @@
     "top1000": 0.43
    },
    "confidence": "verbatim (parallel research) — needs source check",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=That%27s%20why%2090%25%20of%20seduction%20is%20just%20listening"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=That%27s%20why%2090%25%20of%20seduction%20is%20just%20listening",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-black-mirror-0019.opus"
+   }
   },
   {
    "id": "q-black-mirror-0020",
@@ -382,7 +439,10 @@
     "top1000": 0.33
    },
    "confidence": "verbatim (parallel research) — needs source check",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=It%20becomes%20honey.%20Kids%20love%20honey"
+   "link_playphrase": "https://www.playphrase.me/#/search?q=It%20becomes%20honey.%20Kids%20love%20honey",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-black-mirror-0020.opus"
+   }
   },
   {
    "id": "q-black-mirror-0021",
@@ -402,7 +462,10 @@
    },
    "confidence": "verbatim (Wikiquote)",
    "note": "⚠ сверить с дубляжом",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Not%20everything%20that%20isn%27t%20true%20is%20a%20lie."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Not%20everything%20that%20isn%27t%20true%20is%20a%20lie.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-black-mirror-0021.opus"
+   }
   },
   {
    "id": "q-black-mirror-0022",
@@ -421,7 +484,10 @@
    },
    "confidence": "verbatim (Wikiquote)",
    "note": "⚠ сверить с дубляжом",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Most%20people%20are%20too%20easy%20to%20read."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Most%20people%20are%20too%20easy%20to%20read.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-black-mirror-0022.opus"
+   }
   },
   {
    "id": "q-black-mirror-0023",
@@ -440,7 +506,10 @@
    },
    "confidence": "verbatim (Wikiquote)",
    "note": "⚠ сверить с дубляжом",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=There%27s%20nothing%20more%20tantalizing%20than%20that."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=There%27s%20nothing%20more%20tantalizing%20than%20that.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-black-mirror-0023.opus"
+   }
   },
   {
    "id": "q-black-mirror-0024",
@@ -459,7 +528,10 @@
    },
    "confidence": "verbatim (Wikiquote)",
    "note": "⚠ сверить с дубляжом",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=The%20incoming%20signal%20must%20have%20interfered%20with%20the%20upload%20sequence."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=The%20incoming%20signal%20must%20have%20interfered%20with%20the%20upload%20sequence.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-black-mirror-0024.opus"
+   }
   },
   {
    "id": "q-black-mirror-0025",
@@ -478,7 +550,10 @@
    },
    "confidence": "verbatim (Wikiquote)",
    "note": "⚠ сверить с дубляжом",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Every%20synapse%20in%20his%20brain%20lit%20up%20at%20once."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Every%20synapse%20in%20his%20brain%20lit%20up%20at%20once.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-black-mirror-0025.opus"
+   }
   },
   {
    "id": "q-black-mirror-0026",
@@ -498,7 +573,10 @@
    },
    "confidence": "verbatim (Wikiquote)",
    "note": "⚠ сверить с дубляжом",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Killing%20in%20cold%20blood%20is%20against%20Space%20Fleet%20code."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Killing%20in%20cold%20blood%20is%20against%20Space%20Fleet%20code.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-black-mirror-0026.opus"
+   }
   },
   {
    "id": "q-black-mirror-0027",
@@ -518,7 +596,10 @@
    },
    "confidence": "verbatim (Wikiquote)",
    "note": "⚠ сверить с дубляжом",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20tried%20the%20carrot%2C%20now%20meet%20the%20stick."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20tried%20the%20carrot%2C%20now%20meet%20the%20stick.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-black-mirror-0027.opus"
+   }
   },
   {
    "id": "q-black-mirror-0028",
@@ -537,7 +618,10 @@
    },
    "confidence": "verbatim (Wikiquote)",
    "note": "⚠ сверить с дубляжом",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20take%20my%20hat%20off%20to%20Daly."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20take%20my%20hat%20off%20to%20Daly.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-black-mirror-0028.opus"
+   }
   },
   {
    "id": "q-black-mirror-0029",
@@ -557,7 +641,10 @@
    },
    "confidence": "verbatim (Wikiquote)",
    "note": "⚠ сверить с дубляжом",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=It%27s%20always%20been%20our%20downfall%2C%20the%20human%20operating%20system."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=It%27s%20always%20been%20our%20downfall%2C%20the%20human%20operating%20system.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-black-mirror-0029.opus"
+   }
   },
   {
    "id": "q-black-mirror-0030",
@@ -577,7 +664,10 @@
    },
    "confidence": "verbatim (Wikiquote)",
    "note": "⚠ сверить с дубляжом",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=They%27d%20be%20at%20the%20mercy%20of%20God%20knows%20who."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=They%27d%20be%20at%20the%20mercy%20of%20God%20knows%20who.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-black-mirror-0030.opus"
+   }
   },
   {
    "id": "q-black-mirror-0031",
@@ -596,7 +686,10 @@
    },
    "confidence": "verbatim (Wikiquote)",
    "note": "⚠ сверить с дубляжом",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=You%27re%20just%20a%20few%20ripples%20of%20you."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=You%27re%20just%20a%20few%20ripples%20of%20you.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-black-mirror-0031.opus"
+   }
   },
   {
    "id": "q-black-mirror-0032",
@@ -615,7 +708,10 @@
    },
    "confidence": "verbatim (Wikiquote)",
    "note": "⚠ сверить с дубляжом",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=It%20turned%20out%20a%20lot%20of%20my%20friends%20didn%27t%20care%20for%20honesty."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=It%20turned%20out%20a%20lot%20of%20my%20friends%20didn%27t%20care%20for%20honesty.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-black-mirror-0032.opus"
+   }
   },
   {
    "id": "q-black-mirror-0033",
@@ -634,7 +730,10 @@
    },
    "confidence": "verbatim (Wikiquote)",
    "note": "⚠ сверить с дубляжом",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=But%20persevere%20and%20it%20becomes%20addictive."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=But%20persevere%20and%20it%20becomes%20addictive.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-black-mirror-0033.opus"
+   }
   },
   {
    "id": "q-black-mirror-0034",
@@ -653,7 +752,10 @@
    },
    "confidence": "verbatim (Wikiquote)",
    "note": "⚠ сверить с дубляжом",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Fake%20fodder%2C%20it%27s%20all%20that%20we%20can%20stomach."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Fake%20fodder%2C%20it%27s%20all%20that%20we%20can%20stomach.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-black-mirror-0034.opus"
+   }
   },
   {
    "id": "q-black-mirror-0035",
@@ -673,7 +775,10 @@
    },
    "confidence": "verbatim (Wikiquote)",
    "note": "⚠ сверить с дубляжом",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Show%20us%20something%20real%20and%20free%20and%20beautiful."
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Show%20us%20something%20real%20and%20free%20and%20beautiful.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-black-mirror-0035.opus"
+   }
   }
  ]
 }
