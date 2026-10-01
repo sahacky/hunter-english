@@ -196,7 +196,11 @@ export function PhrasebookSituationScreen() {
         <div className="pb-line">
           <p className={`pb-bubble ${isUser ? 'pb-bubble-user' : ''}`} lang="en">
             {lineState === 'revealed' || !isUser ? line.text_en : '…'}
-            <button type="button" className="srs-btn" onClick={() => speak(line.text_en)}>
+            <button
+              type="button"
+              className="srs-btn"
+              onClick={() => speak(line.text_en, { src: line.audio })}
+            >
               🔊
             </button>
           </p>
