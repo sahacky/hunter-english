@@ -317,6 +317,13 @@
 - [x] I.5 Ловушки: дифф с study_eng 04-grammar §4 → каталог расширен до ЛТ-31 (ЛТ-23–25 синхронизированы в build_traps.py, +6 новых ЛТ-26–31); 03-methods §4 таблица дополнена; data/traps.json + манифест пересобраны; validate:data зелёный
 - [x] I.6 Гейты: 448 unit / lint / typecheck / validate:data / audit (2 moderate известные) зелёные; WAL/PLANS обновлены; PR при зелёном CI
 
+## Обновление стека {#stack-upgrade}
+> Опциональная задача из TODO (решение разработчика 2026-10-01: «стек-апгрейд давай»). Ветка: `feature/stack-upgrade`. Без смены поведения приложения.
+- [x] U.1 Зависимости: react/react-dom 19.3 (+types 19), react-router-dom 7.18.4, i18next 26.4 + react-i18next 17, vite 8.3 + @vitejs/plugin-react 6.1, пакет typescript-eslint 8.71 (вместо @typescript-eslint/*), eslint-plugin-react-hooks 7; пин @babel/plugin-transform-runtime@7 (пир-конфликт с @babel/core@7 istanbul — решён версией, без --force/--legacy-peer-deps)
+- [x] U.2 Конфиг ESLint: flat на typescript-eslint meta; новые compiler-правила react-hooks 7 (refs/purity/set-state-in-effect/immutability) — точечные фиксы (SrsScreen cardShownAt/entry-порядок, LessonScreen checkpointRef в effect, prefer-const) + локальные disable с обоснованиями (frozen previewNow M10, ресет по :id M11, init гостя)
+- [x] U.3 React 19: act-обёртка async-флаша в auth.test (setState вне act больше не флашится синхронно); роутер/i18n без ломких изменений (HashRouter/Routes совместимы)
+- [x] U.4 Гейты: lint 0 ошибок, typecheck, 448 unit, 59 e2e, build (Vite 8 + PWA 1.3.0), coverage 100/90.22/99.7/100, validate:data, check:i18n, **npm audit 0 уязвимостей** (было 2 moderate)
+
 ## Черновик следующих майлстоунов (детализировать после M1)
 > Решение разработчика (2026-09-27): сторонние сервисы (Supabase и пр.) — в самый конец, после MVP. Прогресс MVP — только локально (Dexie/IndexedDB) + экспорт/импорт JSON.
 - M3: Пайплайн данных — слова (NGSL-S → NGSL → FrequencyWords), переводы (Wiktionary/kaikki — сырьё уже в data/raw), примеры (Tatoeba), неправильные/фразовые глаголы, цитаты (из quotes-ru-merged), аудио (Piper en-GB)
@@ -381,3 +388,4 @@
 | 2026-09-30 | Добавлен M21 «Полировка (пост-MVP)» (21.1–21.5): UX-хвосты (retrySuggested, разогрев-повтор, progress clamp), аудио-outlier'ы A, тесты S2 (GAP-8/9), веха S4 (100% lines); без стека и B-27 | Задача разработчика «полировку давай», состав подтверждён |
 | 2026-09-30 | **M21 закрыт** (21.1–21.5): listening-плашка, разогрев-повтор «с новыми заданиями», progress clamp, 18 аудио-outlier'ов перегенерированы, GAP-8/9 хвосты, веха S4 — 100% statements/lines; найден и починен баг key экзамена Врат; 448 unit + 59 e2e | Автономная сессия |
 | 2026-10-01 | Добавлен и закрыт блок «Интеграция внешнего ресёрча study_eng» (I.1–I.6): карта Бебриса допроверена (Present Perfect = 2.38), quotes-sample +20 переводов, travel-словарь 487 слов, ловушки ЛТ-23–31; ветка feature/integration-research | Задача разработчика «продолжить интеграцию» |
+| 2026-10-01 | Добавлен и закрыт «Обновление стека» (U.1–U.4): React 19, router 7, i18next 26, Vite 8 + plugin-react 6, typescript-eslint, react-hooks 7; audit → 0; 448 unit + 59 e2e зелёные; ветка feature/stack-upgrade | Опциональная задача TODO, решение разработчика |
