@@ -220,7 +220,8 @@
       "top1000": 0.86
     },
     "confidence": "verbatim (Wikiquote)",
-    "note": "фрагмент более длинной реплики. Кроули цитирует девиз братьев; оригинальная реплика Дина — S01E02, внутри длинного монолога"
+    "note": "фрагмент более длинной реплики. Кроули цитирует девиз братьев; оригинальная реплика Дина — S01E02, внутри длинного монолога",
+    "translation_ru": "Спасать людей, охотиться на тварей — семейный бизнес."
   },
   {
     "title": "Game of Thrones",
@@ -252,7 +253,8 @@
     "auto_vocab": {
       "top1000": 1.0
     },
-    "confidence": "verbatim (Wikiquote)"
+    "confidence": "verbatim (Wikiquote)",
+    "translation_ru": "Ты ничего не знаешь, Джон Сноу."
   },
   {
     "title": "Game of Thrones",
@@ -456,7 +458,8 @@
       "top1000": 0.78
     },
     "confidence": "verbatim (Wikiquote)",
-    "note": "фрагмент длинного монолога S04E06"
+    "note": "фрагмент длинного монолога S04E06",
+    "translation_ru": "Я не в опасности, Скайлер. Я и есть опасность."
   },
   {
     "title": "Breaking Bad",
@@ -663,7 +666,8 @@
       "top1000": 1.0
     },
     "confidence": "verbatim (Wikiquote)",
-    "note": "фрагмент реплики S02E05"
+    "note": "фрагмент реплики S02E05",
+    "translation_ru": "Друзья не врут."
   },
   {
     "title": "Stranger Things",
@@ -680,7 +684,8 @@
       "top1000": 1.0
     },
     "confidence": "verbatim (Wikiquote)",
-    "note": "фрагмент; в источнике капсом"
+    "note": "фрагмент; в источнике капсом",
+    "translation_ru": "Она наша подруга, и она чокнутая!"
   },
   {
     "title": "Stranger Things",
@@ -1069,7 +1074,8 @@
     "auto_vocab": {
       "top1000": 1.0
     },
-    "confidence": "verbatim (Wikiquote)"
+    "confidence": "verbatim (Wikiquote)",
+    "translation_ru": "Всё случается не просто так."
   },
   {
     "title": "Black Mirror",
@@ -1397,7 +1403,8 @@
     "auto_vocab": {
       "top1000": 1.0
     },
-    "confidence": "verbatim (Wikiquote)"
+    "confidence": "verbatim (Wikiquote)",
+    "translation_ru": "Да пребудет с тобой Сила."
   },
   {
     "title": "Star Wars",
@@ -1412,7 +1419,8 @@
     "auto_vocab": {
       "top1000": 1.0
     },
-    "confidence": "verbatim (Wikiquote)"
+    "confidence": "verbatim (Wikiquote)",
+    "translation_ru": "Нет. Я твой отец."
   },
   {
     "title": "Star Wars",
@@ -1490,7 +1498,8 @@
     "auto_vocab": {
       "top1000": 1.0
     },
-    "confidence": "verbatim (Wikiquote)"
+    "confidence": "verbatim (Wikiquote)",
+    "translation_ru": "Используй Силу, Люк."
   },
   {
     "title": "Star Wars",
@@ -1505,7 +1514,8 @@
     "auto_vocab": {
       "top1000": 1.0
     },
-    "confidence": "verbatim (Wikiquote)"
+    "confidence": "verbatim (Wikiquote)",
+    "translation_ru": "Сила сильна в этом."
   },
   {
     "title": "Star Wars",
@@ -1521,7 +1531,8 @@
     "auto_vocab": {
       "top1000": 1.0
     },
-    "confidence": "verbatim (Wikiquote)"
+    "confidence": "verbatim (Wikiquote)",
+    "translation_ru": "Вот почему ты проигрываешь."
   },
   {
     "title": "Star Wars",
@@ -1584,7 +1595,8 @@
       "top1000": 0.8
     },
     "confidence": "verbatim (Wikiquote)",
-    "note": "odds — B2"
+    "note": "odds — B2",
+    "translation_ru": "Никогда не говори мне о вероятностях!"
   },
   {
     "title": "Star Wars",
@@ -1633,7 +1645,8 @@
       "top1000": 1.0
     },
     "confidence": "verbatim (Wikiquote)",
-    "note": "раздел манги"
+    "note": "раздел манги",
+    "translation_ru": "Лучше я буду драться за свою жизнь, чем просто жить её."
   },
   {
     "title": "Berserk",
@@ -1650,7 +1663,8 @@
       "top1000": 0.91
     },
     "confidence": "verbatim (Wikiquote)",
-    "note": "раздел манги"
+    "note": "раздел манги",
+    "translation_ru": "В конце концов победитель — всё ещё тот, кто остался на ногах."
   },
   {
     "title": "Berserk",
@@ -1667,7 +1681,8 @@
       "top1000": 1.0
     },
     "confidence": "verbatim (Wikiquote)",
-    "note": "раздел манги"
+    "note": "раздел манги",
+    "translation_ru": "Когда встретишь своего бога, скажи ему, чтобы он оставил меня в покое."
   },
   {
     "title": "Berserk",
@@ -1977,7 +1992,8 @@
     "auto_vocab": {
       "top1000": 1.0
     },
-    "confidence": "verbatim (Wikiquote)"
+    "confidence": "verbatim (Wikiquote)",
+    "translation_ru": "Откажись от мечты и умри!"
   },
   {
     "title": "Attack on Titan",
@@ -1993,7 +2009,8 @@
     "auto_vocab": {
       "top1000": 0.91
     },
-    "confidence": "verbatim (Wikiquote)"
+    "confidence": "verbatim (Wikiquote)",
+    "translation_ru": "Тот, кто ничем не может пожертвовать, ничего никогда не изменит."
   },
   {
     "title": "Attack on Titan",
@@ -2008,7 +2025,8 @@
     "auto_vocab": {
       "top1000": 1.0
     },
-    "confidence": "verbatim (Wikiquote)"
+    "confidence": "verbatim (Wikiquote)",
+    "translation_ru": "Потому что я родился в этом мире!"
   },
   {
     "title": "Attack on Titan",
@@ -2039,7 +2057,8 @@
     "auto_vocab": {
       "top1000": 0.83
     },
-    "confidence": "verbatim (Wikiquote)"
+    "confidence": "verbatim (Wikiquote)",
+    "translation_ru": "Кто здесь настоящий враг?"
   },
   {
     "title": "Attack on Titan",
@@ -2199,7 +2218,8 @@
     "auto_vocab": {
       "top1000": 0.88
     },
-    "confidence": "статья Screen Rant; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован"
+    "confidence": "статья Screen Rant; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
+    "translation_ru": "Под небом и на земле я один — достойный."
   },
   {
     "title": "Jujutsu Kaisen",
