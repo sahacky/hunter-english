@@ -288,3 +288,32 @@ describe('checker: хвосты (M19)', () => {
     expect(['correct', 'correct_typo', 'wrong']).toContain(verdict.verdict)
   })
 })
+
+// M21: GAP-9 «по мере» (specs/09 §8) — вырожденные и unicode-входы
+describe('checker: пустой и unicode-ввод (M21#21.3)', () => {
+  it("judge('') — пустой ввод не крашится и не засчитывается", () => {
+    const result = judge('', task(['I am here']))
+    expect(result.verdict).toBe('wrong')
+  })
+
+  it("judge('', accepted=['']) — пустой эталон против пустого ввода", () => {
+    const result = judge('', task(['']))
+    expect(['correct', 'correct_typo', 'wrong']).toContain(result.verdict)
+  })
+
+  it('unicode-эмодзи и кириллица во вводе — без краша (язык токенов не анализируется)', () => {
+    // 3 «незнакомых» токена против 3-словного эталона — в пределах typo-лимита
+    // (документированное поведение specs/02 §4.4: язык не проверяется)
+    const result = judge('🙂 Привет 🚀', task(['I am here']))
+    expect(['correct_typo', 'wrong']).toContain(result.verdict)
+    expect(result.ref).toBe('I am here')
+  })
+
+  it('unicode во вводе и эталоне — сопоставление без краша', () => {
+    const ok = judge('Café — naïve', task(['Café — naïve']))
+    // одно diacritic-расхождение в 2-словном эталоне — в пределах typo-лимита
+    const near = judge('Café — naïv', task(['Café — naïve']))
+    expect(ok.verdict).toBe('correct')
+    expect(['correct', 'correct_typo']).toContain(near.verdict)
+  })
+})
