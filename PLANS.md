@@ -333,6 +333,14 @@
 - [x] V.5 Тесты: лоадер+группировка (3) + экран (карточка, порядок тем, 🔊 с аудио/TTS, catch-ветка) — 453 unit
 - [x] V.6 Гейты: lint/typecheck/validate:data/i18n/build/e2e 59/coverage 100-90.22-99.71-100 зелёные; WAL/PLANS; PR при зелёном CI
 
+## Долги синка M13 {#sync-debts}
+> Задача разработчика (2026-10-01, выбор 3): осознанные долги M13 — XP-пересчёт при merge (specs/06 §3) и trim очереди гостя. Ветка: `feature/sync-debts`.
+- [x] S.1 mergeLww user_stats: XP = max сторон независимо от победителя по updated_at (агрегат больше не роняется LWW)
+- [x] S.2 reviewXpOf + recalcXpFromReviewLog: «пол» XP из полного журнала после pull (повтор = 1, выпуск Learning→Review = +2 — зеркало SrsScreen); применяется к активному пользователю, max() не даёт двойного счёта
+- [x] S.3 trimQueue: без настроенного синка хвост sync_queue старше 2000 строк удаляется (бутстрап AuthProvider); при входе enqueueAllRows всё равно выгружает актуальные строки
+- [x] S.4 Тесты: reviewXpOf/пол/создание-строки/max-merge 3 сценария/pull-интеграция/trim 2 режима (+auth-мок trimQueue); 459 unit
+- [x] S.5 Гейты + WAL/PLANS + PR при зелёном CI
+
 ## Черновик следующих майлстоунов (детализировать после M1)
 > Решение разработчика (2026-09-27): сторонние сервисы (Supabase и пр.) — в самый конец, после MVP. Прогресс MVP — только локально (Dexie/IndexedDB) + экспорт/импорт JSON.
 - M3: Пайплайн данных — слова (NGSL-S → NGSL → FrequencyWords), переводы (Wiktionary/kaikki — сырьё уже в data/raw), примеры (Tatoeba), неправильные/фразовые глаголы, цитаты (из quotes-ru-merged), аудио (Piper en-GB)
