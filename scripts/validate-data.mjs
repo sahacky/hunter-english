@@ -20,6 +20,7 @@ const KIND_TO_SCHEMA = {
   quotes: 'quote',
   phrasebook: 'phrasebook_dialog',
   traps: 'trap',
+  vocab: 'vocab',
 }
 
 /** каталог data/<dir>/ → единственный допустимый kind его файлов */
@@ -28,6 +29,7 @@ const DIR_TO_KIND = {
   phrases: 'phrases',
   quotes: 'quotes',
   phrasebook: 'phrasebook',
+  vocab: 'vocab',
 }
 
 /** каталог lessons: различаем уроки и упражнения по имени файла */

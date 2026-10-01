@@ -1,0 +1,2738 @@
+{
+ "schema_version": 1,
+ "kind": "vocab",
+ "items": [
+  {
+   "topic": "politeness",
+   "en": "hello",
+   "ru": "привет / здравствуйте",
+   "audio": "audio/words/cori/hello-interjection.opus"
+  },
+  {
+   "topic": "politeness",
+   "en": "hi",
+   "ru": "привет",
+   "audio": "audio/words/cori/hi-interjection.opus"
+  },
+  {
+   "topic": "politeness",
+   "en": "goodbye",
+   "ru": "до свидания",
+   "audio": "audio/words/cori/goodbye-interjection.opus"
+  },
+  {
+   "topic": "politeness",
+   "en": "bye",
+   "ru": "пока",
+   "audio": "audio/words/cori/bye-interjection.opus"
+  },
+  {
+   "topic": "politeness",
+   "en": "please",
+   "ru": "пожалуйста",
+   "audio": "audio/words/cori/please-verb.opus"
+  },
+  {
+   "topic": "politeness",
+   "en": "thank you",
+   "ru": "спасибо"
+  },
+  {
+   "topic": "politeness",
+   "en": "thanks",
+   "ru": "благодарю"
+  },
+  {
+   "topic": "politeness",
+   "en": "you're welcome",
+   "ru": "пожалуйста (ответ)"
+  },
+  {
+   "topic": "politeness",
+   "en": "sorry",
+   "ru": "извините",
+   "audio": "audio/words/cori/sorry-adjective.opus"
+  },
+  {
+   "topic": "politeness",
+   "en": "excuse me",
+   "ru": "извините (обратить внимание)"
+  },
+  {
+   "topic": "politeness",
+   "en": "yes",
+   "ru": "да",
+   "audio": "audio/words/cori/yes-interjection.opus"
+  },
+  {
+   "topic": "politeness",
+   "en": "no",
+   "ru": "нет",
+   "audio": "audio/words/cori/no-determiner.opus"
+  },
+  {
+   "topic": "politeness",
+   "en": "OK",
+   "ru": "хорошо"
+  },
+  {
+   "topic": "politeness",
+   "en": "my name is",
+   "ru": "меня зовут"
+  },
+  {
+   "topic": "politeness",
+   "en": "name",
+   "ru": "имя",
+   "audio": "audio/words/cori/name-noun.opus"
+  },
+  {
+   "topic": "politeness",
+   "en": "I am from",
+   "ru": "я из"
+  },
+  {
+   "topic": "politeness",
+   "en": "Russia",
+   "ru": "Россия"
+  },
+  {
+   "topic": "politeness",
+   "en": "nice to meet you",
+   "ru": "приятно познакомиться"
+  },
+  {
+   "topic": "politeness",
+   "en": "how are you",
+   "ru": "как дела"
+  },
+  {
+   "topic": "politeness",
+   "en": "fine",
+   "ru": "хорошо",
+   "audio": "audio/words/cori/fine-adjective.opus"
+  },
+  {
+   "topic": "politeness",
+   "en": "and you",
+   "ru": "а у вас"
+  },
+  {
+   "topic": "politeness",
+   "en": "I",
+   "ru": "я"
+  },
+  {
+   "topic": "politeness",
+   "en": "you",
+   "ru": "ты/вы",
+   "audio": "audio/words/cori/you-pronoun.opus"
+  },
+  {
+   "topic": "politeness",
+   "en": "he",
+   "ru": "он",
+   "audio": "audio/words/cori/he-pronoun.opus"
+  },
+  {
+   "topic": "politeness",
+   "en": "she",
+   "ru": "она",
+   "audio": "audio/words/cori/she-pronoun.opus"
+  },
+  {
+   "topic": "politeness",
+   "en": "we",
+   "ru": "мы",
+   "audio": "audio/words/cori/we-pronoun.opus"
+  },
+  {
+   "topic": "politeness",
+   "en": "they",
+   "ru": "они",
+   "audio": "audio/words/cori/they-pronoun.opus"
+  },
+  {
+   "topic": "politeness",
+   "en": "friend",
+   "ru": "друг",
+   "audio": "audio/words/cori/friend-noun.opus"
+  },
+  {
+   "topic": "politeness",
+   "en": "tourist",
+   "ru": "турист",
+   "audio": "audio/words/cori/tourist-noun.opus"
+  },
+  {
+   "topic": "politeness",
+   "en": "visitor",
+   "ru": "посетитель",
+   "audio": "audio/words/cori/visitor-noun.opus"
+  },
+  {
+   "topic": "politeness",
+   "en": "help",
+   "ru": "помощь, помогать",
+   "audio": "audio/words/cori/help-noun.opus"
+  },
+  {
+   "topic": "politeness",
+   "en": "problem",
+   "ru": "проблема",
+   "audio": "audio/words/cori/problem-noun.opus"
+  },
+  {
+   "topic": "politeness",
+   "en": "question",
+   "ru": "вопрос",
+   "audio": "audio/words/cori/question-noun.opus"
+  },
+  {
+   "topic": "politeness",
+   "en": "speak",
+   "ru": "говорить",
+   "audio": "audio/words/cori/speak-verb.opus"
+  },
+  {
+   "topic": "politeness",
+   "en": "talk",
+   "ru": "разговаривать",
+   "audio": "audio/words/cori/talk-verb.opus"
+  },
+  {
+   "topic": "politeness",
+   "en": "say",
+   "ru": "сказать",
+   "audio": "audio/words/cori/say-verb.opus"
+  },
+  {
+   "topic": "politeness",
+   "en": "understand",
+   "ru": "понимать",
+   "audio": "audio/words/cori/understand-verb.opus"
+  },
+  {
+   "topic": "politeness",
+   "en": "know",
+   "ru": "знать",
+   "audio": "audio/words/cori/know-verb.opus"
+  },
+  {
+   "topic": "politeness",
+   "en": "want",
+   "ru": "хотеть",
+   "audio": "audio/words/cori/want-verb.opus"
+  },
+  {
+   "topic": "politeness",
+   "en": "need",
+   "ru": "нуждаться",
+   "audio": "audio/words/cori/need-noun.opus"
+  },
+  {
+   "topic": "politeness",
+   "en": "can",
+   "ru": "мочь",
+   "audio": "audio/words/cori/can-verb.opus"
+  },
+  {
+   "topic": "politeness",
+   "en": "could",
+   "ru": "могли бы",
+   "audio": "audio/words/cori/could-verb.opus"
+  },
+  {
+   "topic": "politeness",
+   "en": "may",
+   "ru": "можно",
+   "audio": "audio/words/cori/may-verb.opus"
+  },
+  {
+   "topic": "politeness",
+   "en": "must",
+   "ru": "должен",
+   "audio": "audio/words/cori/must-verb.opus"
+  },
+  {
+   "topic": "politeness",
+   "en": "should",
+   "ru": "следует",
+   "audio": "audio/words/cori/should-verb.opus"
+  },
+  {
+   "topic": "politeness",
+   "en": "let's",
+   "ru": "давай"
+  },
+  {
+   "topic": "communication",
+   "en": "English",
+   "ru": "английский"
+  },
+  {
+   "topic": "communication",
+   "en": "language",
+   "ru": "язык",
+   "audio": "audio/words/cori/language-noun.opus"
+  },
+  {
+   "topic": "communication",
+   "en": "Russian",
+   "ru": "русский"
+  },
+  {
+   "topic": "communication",
+   "en": "do you speak English",
+   "ru": "вы говорите по-английски"
+  },
+  {
+   "topic": "communication",
+   "en": "I don't understand",
+   "ru": "я не понимаю"
+  },
+  {
+   "topic": "communication",
+   "en": "I understand",
+   "ru": "я понимаю"
+  },
+  {
+   "topic": "communication",
+   "en": "slowly",
+   "ru": "медленно",
+   "audio": "audio/words/cori/slowly-adverb.opus"
+  },
+  {
+   "topic": "communication",
+   "en": "again",
+   "ru": "снова",
+   "audio": "audio/words/cori/again-adverb.opus"
+  },
+  {
+   "topic": "communication",
+   "en": "repeat",
+   "ru": "повторить",
+   "audio": "audio/words/cori/repeat-verb.opus"
+  },
+  {
+   "topic": "communication",
+   "en": "mean",
+   "ru": "значить",
+   "audio": "audio/words/cori/mean-verb.opus"
+  },
+  {
+   "topic": "communication",
+   "en": "what does it mean",
+   "ru": "что это значит"
+  },
+  {
+   "topic": "communication",
+   "en": "how do you say",
+   "ru": "как сказать"
+  },
+  {
+   "topic": "communication",
+   "en": "write",
+   "ru": "писать",
+   "audio": "audio/words/cori/write-verb.opus"
+  },
+  {
+   "topic": "communication",
+   "en": "write it down",
+   "ru": "запишите"
+  },
+  {
+   "topic": "communication",
+   "en": "read",
+   "ru": "читать",
+   "audio": "audio/words/cori/read-verb.opus"
+  },
+  {
+   "topic": "communication",
+   "en": "spell",
+   "ru": "произнести по буквам",
+   "audio": "audio/words/cori/spell-noun.opus"
+  },
+  {
+   "topic": "communication",
+   "en": "word",
+   "ru": "слово",
+   "audio": "audio/words/cori/word-noun.opus"
+  },
+  {
+   "topic": "communication",
+   "en": "translate",
+   "ru": "переводить",
+   "audio": "audio/words/cori/translate-verb.opus"
+  },
+  {
+   "topic": "communication",
+   "en": "translator",
+   "ru": "переводчик"
+  },
+  {
+   "topic": "communication",
+   "en": "dictionary",
+   "ru": "словарь"
+  },
+  {
+   "topic": "communication",
+   "en": "phone",
+   "ru": "телефон",
+   "audio": "audio/words/cori/phone-verb.opus"
+  },
+  {
+   "topic": "communication",
+   "en": "app",
+   "ru": "приложение"
+  },
+  {
+   "topic": "communication",
+   "en": "free Wi-Fi",
+   "ru": "бесплатный вай-фай"
+  },
+  {
+   "topic": "communication",
+   "en": "internet",
+   "ru": "интернет"
+  },
+  {
+   "topic": "communication",
+   "en": "charger",
+   "ru": "зарядное устройство"
+  },
+  {
+   "topic": "communication",
+   "en": "message",
+   "ru": "сообщение",
+   "audio": "audio/words/cori/message-noun.opus"
+  },
+  {
+   "topic": "communication",
+   "en": "call",
+   "ru": "звонить",
+   "audio": "audio/words/cori/call-verb.opus"
+  },
+  {
+   "topic": "communication",
+   "en": "number",
+   "ru": "номер",
+   "audio": "audio/words/cori/number-noun.opus"
+  },
+  {
+   "topic": "communication",
+   "en": "ask",
+   "ru": "спрашивать",
+   "audio": "audio/words/cori/ask-verb.opus"
+  },
+  {
+   "topic": "communication",
+   "en": "answer",
+   "ru": "отвечать",
+   "audio": "audio/words/cori/answer-noun.opus"
+  },
+  {
+   "topic": "airport",
+   "en": "airport",
+   "ru": "аэропорт",
+   "audio": "audio/words/cori/airport-noun.opus"
+  },
+  {
+   "topic": "airport",
+   "en": "plane",
+   "ru": "самолёт",
+   "audio": "audio/words/cori/plane-adjective.opus"
+  },
+  {
+   "topic": "airport",
+   "en": "flight",
+   "ru": "рейс",
+   "audio": "audio/words/cori/flight-noun.opus"
+  },
+  {
+   "topic": "airport",
+   "en": "ticket",
+   "ru": "билет",
+   "audio": "audio/words/cori/ticket-noun.opus"
+  },
+  {
+   "topic": "airport",
+   "en": "boarding pass",
+   "ru": "посадочный талон"
+  },
+  {
+   "topic": "airport",
+   "en": "passport",
+   "ru": "паспорт",
+   "audio": "audio/words/cori/passport-noun.opus"
+  },
+  {
+   "topic": "airport",
+   "en": "visa",
+   "ru": "виза"
+  },
+  {
+   "topic": "airport",
+   "en": "ID",
+   "ru": "удостоверение"
+  },
+  {
+   "topic": "airport",
+   "en": "check-in",
+   "ru": "регистрация"
+  },
+  {
+   "topic": "airport",
+   "en": "check in",
+   "ru": "зарегистрироваться"
+  },
+  {
+   "topic": "airport",
+   "en": "gate",
+   "ru": "выход (на посадку)",
+   "audio": "audio/words/cori/gate-noun.opus"
+  },
+  {
+   "topic": "airport",
+   "en": "terminal",
+   "ru": "терминал"
+  },
+  {
+   "topic": "airport",
+   "en": "security",
+   "ru": "служба безопасности",
+   "audio": "audio/words/cori/security-noun.opus"
+  },
+  {
+   "topic": "airport",
+   "en": "customs",
+   "ru": "таможня"
+  },
+  {
+   "topic": "airport",
+   "en": "immigration",
+   "ru": "пограничный контроль",
+   "audio": "audio/words/cori/immigration-noun.opus"
+  },
+  {
+   "topic": "airport",
+   "en": "baggage",
+   "ru": "багаж"
+  },
+  {
+   "topic": "airport",
+   "en": "luggage",
+   "ru": "багаж"
+  },
+  {
+   "topic": "airport",
+   "en": "suitcase",
+   "ru": "чемодан"
+  },
+  {
+   "topic": "airport",
+   "en": "backpack",
+   "ru": "рюкзак"
+  },
+  {
+   "topic": "airport",
+   "en": "bag",
+   "ru": "сумка",
+   "audio": "audio/words/cori/bag-noun.opus"
+  },
+  {
+   "topic": "airport",
+   "en": "carry-on",
+   "ru": "ручная кладь"
+  },
+  {
+   "topic": "airport",
+   "en": "baggage claim",
+   "ru": "выдача багажа"
+  },
+  {
+   "topic": "airport",
+   "en": "lost",
+   "ru": "потерянный",
+   "audio": "audio/words/cori/lost-adjective.opus"
+  },
+  {
+   "topic": "airport",
+   "en": "lost and found",
+   "ru": "бюро находок"
+  },
+  {
+   "topic": "airport",
+   "en": "weigh",
+   "ru": "взвешивать",
+   "audio": "audio/words/cori/weigh-verb.opus"
+  },
+  {
+   "topic": "airport",
+   "en": "overweight",
+   "ru": "перевес"
+  },
+  {
+   "topic": "airport",
+   "en": "board",
+   "ru": "садиться (в самолёт)",
+   "audio": "audio/words/cori/board-noun.opus"
+  },
+  {
+   "topic": "airport",
+   "en": "boarding",
+   "ru": "посадка"
+  },
+  {
+   "topic": "airport",
+   "en": "departure",
+   "ru": "вылет"
+  },
+  {
+   "topic": "airport",
+   "en": "arrival",
+   "ru": "прилёт",
+   "audio": "audio/words/cori/arrival-noun.opus"
+  },
+  {
+   "topic": "airport",
+   "en": "delayed",
+   "ru": "задержан"
+  },
+  {
+   "topic": "airport",
+   "en": "cancelled",
+   "ru": "отменён"
+  },
+  {
+   "topic": "airport",
+   "en": "on time",
+   "ru": "вовремя"
+  },
+  {
+   "topic": "airport",
+   "en": "schedule",
+   "ru": "расписание",
+   "audio": "audio/words/cori/schedule-noun.opus"
+  },
+  {
+   "topic": "airport",
+   "en": "airline",
+   "ru": "авиакомпания",
+   "audio": "audio/words/cori/airline-noun.opus"
+  },
+  {
+   "topic": "airport",
+   "en": "pilot",
+   "ru": "пилот",
+   "audio": "audio/words/cori/pilot-noun.opus"
+  },
+  {
+   "topic": "airport",
+   "en": "flight attendant",
+   "ru": "бортпроводник"
+  },
+  {
+   "topic": "airport",
+   "en": "seat",
+   "ru": "место",
+   "audio": "audio/words/cori/seat-noun.opus"
+  },
+  {
+   "topic": "airport",
+   "en": "window seat",
+   "ru": "место у окна"
+  },
+  {
+   "topic": "airport",
+   "en": "aisle",
+   "ru": "проход"
+  },
+  {
+   "topic": "airport",
+   "en": "aisle seat",
+   "ru": "место у прохода"
+  },
+  {
+   "topic": "airport",
+   "en": "take off",
+   "ru": "взлетать"
+  },
+  {
+   "topic": "airport",
+   "en": "land",
+   "ru": "приземляться",
+   "audio": "audio/words/cori/land-noun.opus"
+  },
+  {
+   "topic": "airport",
+   "en": "turbulence",
+   "ru": "турбулентность"
+  },
+  {
+   "topic": "airport",
+   "en": "safety",
+   "ru": "безопасность",
+   "audio": "audio/words/cori/safety-noun.opus"
+  },
+  {
+   "topic": "airport",
+   "en": "emergency",
+   "ru": "чрезвычайная ситуация",
+   "audio": "audio/words/cori/emergency-noun.opus"
+  },
+  {
+   "topic": "airport",
+   "en": "life jacket",
+   "ru": "спасательный жилет"
+  },
+  {
+   "topic": "airport",
+   "en": "blanket",
+   "ru": "одеяло"
+  },
+  {
+   "topic": "airport",
+   "en": "pillow",
+   "ru": "подушка"
+  },
+  {
+   "topic": "airport",
+   "en": "meal",
+   "ru": "приём пищи/питание",
+   "audio": "audio/words/cori/meal-noun.opus"
+  },
+  {
+   "topic": "airport",
+   "en": "water",
+   "ru": "вода",
+   "audio": "audio/words/cori/water-noun.opus"
+  },
+  {
+   "topic": "airport",
+   "en": "arrival hall",
+   "ru": "зал прилёта"
+  },
+  {
+   "topic": "airport",
+   "en": "transfer",
+   "ru": "пересадка",
+   "audio": "audio/words/cori/transfer-verb.opus"
+  },
+  {
+   "topic": "airport",
+   "en": "connecting flight",
+   "ru": "стыковочный рейс"
+  },
+  {
+   "topic": "airport",
+   "en": "duty free",
+   "ru": "дьюти-фри"
+  },
+  {
+   "topic": "airport",
+   "en": "declare",
+   "ru": "декларировать",
+   "audio": "audio/words/cori/declare-verb.opus"
+  },
+  {
+   "topic": "hotel",
+   "en": "hotel",
+   "ru": "отель",
+   "audio": "audio/words/cori/hotel-noun.opus"
+  },
+  {
+   "topic": "hotel",
+   "en": "hostel",
+   "ru": "хостел"
+  },
+  {
+   "topic": "hotel",
+   "en": "room",
+   "ru": "комната, номер",
+   "audio": "audio/words/cori/room-noun.opus"
+  },
+  {
+   "topic": "hotel",
+   "en": "single room",
+   "ru": "одноместный номер"
+  },
+  {
+   "topic": "hotel",
+   "en": "double room",
+   "ru": "двухместный номер"
+  },
+  {
+   "topic": "hotel",
+   "en": "book",
+   "ru": "бронировать",
+   "audio": "audio/words/cori/book-noun.opus"
+  },
+  {
+   "topic": "hotel",
+   "en": "reservation",
+   "ru": "бронь"
+  },
+  {
+   "topic": "hotel",
+   "en": "booking",
+   "ru": "бронирование"
+  },
+  {
+   "topic": "hotel",
+   "en": "reception",
+   "ru": "стойка регистрации",
+   "audio": "audio/words/cori/reception-noun.opus"
+  },
+  {
+   "topic": "hotel",
+   "en": "front desk",
+   "ru": "ресепшн"
+  },
+  {
+   "topic": "hotel",
+   "en": "receptionist",
+   "ru": "администратор"
+  },
+  {
+   "topic": "hotel",
+   "en": "check in",
+   "ru": "заселиться"
+  },
+  {
+   "topic": "hotel",
+   "en": "check out",
+   "ru": "выселиться"
+  },
+  {
+   "topic": "hotel",
+   "en": "key",
+   "ru": "ключ",
+   "audio": "audio/words/cori/key-noun.opus"
+  },
+  {
+   "topic": "hotel",
+   "en": "key card",
+   "ru": "карта-ключ"
+  },
+  {
+   "topic": "hotel",
+   "en": "floor",
+   "ru": "этаж",
+   "audio": "audio/words/cori/floor-noun.opus"
+  },
+  {
+   "topic": "hotel",
+   "en": "lift/elevator",
+   "ru": "лифт",
+   "audio": "audio/words/cori/lift-verb.opus"
+  },
+  {
+   "topic": "hotel",
+   "en": "stairs",
+   "ru": "лестница"
+  },
+  {
+   "topic": "hotel",
+   "en": "corridor",
+   "ru": "коридор"
+  },
+  {
+   "topic": "hotel",
+   "en": "stay",
+   "ru": "останавливаться, пребывание",
+   "audio": "audio/words/cori/stay-verb.opus"
+  },
+  {
+   "topic": "hotel",
+   "en": "night",
+   "ru": "ночь",
+   "audio": "audio/words/cori/night-noun.opus"
+  },
+  {
+   "topic": "hotel",
+   "en": "per night",
+   "ru": "за ночь"
+  },
+  {
+   "topic": "hotel",
+   "en": "price",
+   "ru": "цена",
+   "audio": "audio/words/cori/price-noun.opus"
+  },
+  {
+   "topic": "hotel",
+   "en": "include",
+   "ru": "включать",
+   "audio": "audio/words/cori/include-verb.opus"
+  },
+  {
+   "topic": "hotel",
+   "en": "breakfast",
+   "ru": "завтрак",
+   "audio": "audio/words/cori/breakfast-noun.opus"
+  },
+  {
+   "topic": "hotel",
+   "en": "included",
+   "ru": "включено"
+  },
+  {
+   "topic": "hotel",
+   "en": "bed",
+   "ru": "кровать",
+   "audio": "audio/words/cori/bed-noun.opus"
+  },
+  {
+   "topic": "hotel",
+   "en": "twin beds",
+   "ru": "две отдельные кровати"
+  },
+  {
+   "topic": "hotel",
+   "en": "pillow",
+   "ru": "подушка"
+  },
+  {
+   "topic": "hotel",
+   "en": "blanket",
+   "ru": "одеяло"
+  },
+  {
+   "topic": "hotel",
+   "en": "towel",
+   "ru": "полотенце"
+  },
+  {
+   "topic": "hotel",
+   "en": "shower",
+   "ru": "душ",
+   "audio": "audio/words/cori/shower-noun.opus"
+  },
+  {
+   "topic": "hotel",
+   "en": "bath",
+   "ru": "ванна",
+   "audio": "audio/words/cori/bath-noun.opus"
+  },
+  {
+   "topic": "hotel",
+   "en": "toilet",
+   "ru": "туалет",
+   "audio": "audio/words/cori/toilet-noun.opus"
+  },
+  {
+   "topic": "hotel",
+   "en": "bathroom",
+   "ru": "ванная",
+   "audio": "audio/words/cori/bathroom-noun.opus"
+  },
+  {
+   "topic": "hotel",
+   "en": "hot water",
+   "ru": "горячая вода"
+  },
+  {
+   "topic": "hotel",
+   "en": "air conditioning",
+   "ru": "кондиционер"
+  },
+  {
+   "topic": "hotel",
+   "en": "heating",
+   "ru": "отопление"
+  },
+  {
+   "topic": "hotel",
+   "en": "noisy",
+   "ru": "шумный"
+  },
+  {
+   "topic": "hotel",
+   "en": "quiet",
+   "ru": "тихий",
+   "audio": "audio/words/cori/quiet-adjective.opus"
+  },
+  {
+   "topic": "hotel",
+   "en": "clean",
+   "ru": "чистый",
+   "audio": "audio/words/cori/clean-adjective.opus"
+  },
+  {
+   "topic": "hotel",
+   "en": "dirty",
+   "ru": "грязный",
+   "audio": "audio/words/cori/dirty-adjective.opus"
+  },
+  {
+   "topic": "hotel",
+   "en": "towels",
+   "ru": "полотенца (мн.)"
+  },
+  {
+   "topic": "hotel",
+   "en": "maid",
+   "ru": "горничная",
+   "audio": "audio/words/cori/maid-noun.opus"
+  },
+  {
+   "topic": "hotel",
+   "en": "safe",
+   "ru": "сейф",
+   "audio": "audio/words/cori/safe-adjective.opus"
+  },
+  {
+   "topic": "hotel",
+   "en": "deposit",
+   "ru": "залог",
+   "audio": "audio/words/cori/deposit-noun.opus"
+  },
+  {
+   "topic": "hotel",
+   "en": "bill",
+   "ru": "счёт",
+   "audio": "audio/words/cori/bill-noun.opus"
+  },
+  {
+   "topic": "hotel",
+   "en": "receipt",
+   "ru": "квитанция"
+  },
+  {
+   "topic": "hotel",
+   "en": "pay",
+   "ru": "платить",
+   "audio": "audio/words/cori/pay-verb.opus"
+  },
+  {
+   "topic": "hotel",
+   "en": "cash",
+   "ru": "наличные",
+   "audio": "audio/words/cori/cash-noun.opus"
+  },
+  {
+   "topic": "hotel",
+   "en": "card",
+   "ru": "карта",
+   "audio": "audio/words/cori/card-noun.opus"
+  },
+  {
+   "topic": "hotel",
+   "en": "refund",
+   "ru": "возврат денег"
+  },
+  {
+   "topic": "hotel",
+   "en": "complain",
+   "ru": "жаловаться",
+   "audio": "audio/words/cori/complain-verb.opus"
+  },
+  {
+   "topic": "hotel",
+   "en": "wake-up call",
+   "ru": "звонок-будильник"
+  },
+  {
+   "topic": "hotel",
+   "en": "luggage storage",
+   "ru": "хранение багажа"
+  },
+  {
+   "topic": "hotel",
+   "en": "available",
+   "ru": "свободный (в наличии)",
+   "audio": "audio/words/cori/available-adjective.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "restaurant",
+   "ru": "ресторан",
+   "audio": "audio/words/cori/restaurant-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "cafe",
+   "ru": "кафе"
+  },
+  {
+   "topic": "restaurant",
+   "en": "bar",
+   "ru": "бар",
+   "audio": "audio/words/cori/bar-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "menu",
+   "ru": "меню",
+   "audio": "audio/words/cori/menu-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "waiter",
+   "ru": "официант",
+   "audio": "audio/words/cori/waiter-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "waitress",
+   "ru": "официантка"
+  },
+  {
+   "topic": "restaurant",
+   "en": "order",
+   "ru": "заказывать, заказ",
+   "audio": "audio/words/cori/order-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "eat",
+   "ru": "есть",
+   "audio": "audio/words/cori/eat-verb.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "drink",
+   "ru": "пить",
+   "audio": "audio/words/cori/drink-verb.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "hungry",
+   "ru": "голодный",
+   "audio": "audio/words/cori/hungry-adjective.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "thirsty",
+   "ru": "хочу пить",
+   "audio": "audio/words/cori/thirsty-adjective.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "breakfast",
+   "ru": "завтрак",
+   "audio": "audio/words/cori/breakfast-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "lunch",
+   "ru": "обед",
+   "audio": "audio/words/cori/lunch-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "dinner",
+   "ru": "ужин",
+   "audio": "audio/words/cori/dinner-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "snack",
+   "ru": "перекус"
+  },
+  {
+   "topic": "restaurant",
+   "en": "starter",
+   "ru": "закуска"
+  },
+  {
+   "topic": "restaurant",
+   "en": "main course",
+   "ru": "основное блюдо"
+  },
+  {
+   "topic": "restaurant",
+   "en": "dessert",
+   "ru": "десерт",
+   "audio": "audio/words/cori/dessert-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "soup",
+   "ru": "суп",
+   "audio": "audio/words/cori/soup-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "salad",
+   "ru": "салат",
+   "audio": "audio/words/cori/salad-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "chicken",
+   "ru": "курица",
+   "audio": "audio/words/cori/chicken-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "beef",
+   "ru": "говядина",
+   "audio": "audio/words/cori/beef-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "pork",
+   "ru": "свинина",
+   "audio": "audio/words/cori/pork-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "fish",
+   "ru": "рыба",
+   "audio": "audio/words/cori/fish-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "seafood",
+   "ru": "морепродукты"
+  },
+  {
+   "topic": "restaurant",
+   "en": "rice",
+   "ru": "рис",
+   "audio": "audio/words/cori/rice-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "pasta",
+   "ru": "паста"
+  },
+  {
+   "topic": "restaurant",
+   "en": "pizza",
+   "ru": "пицца",
+   "audio": "audio/words/cori/pizza-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "bread",
+   "ru": "хлеб",
+   "audio": "audio/words/cori/bread-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "cheese",
+   "ru": "сыр",
+   "audio": "audio/words/cori/cheese-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "egg",
+   "ru": "яйцо",
+   "audio": "audio/words/cori/egg-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "potato",
+   "ru": "картофель",
+   "audio": "audio/words/cori/potato-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "vegetables",
+   "ru": "овощи"
+  },
+  {
+   "topic": "restaurant",
+   "en": "fruit",
+   "ru": "фрукты",
+   "audio": "audio/words/cori/fruit-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "apple",
+   "ru": "яблоко",
+   "audio": "audio/words/cori/apple-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "banana",
+   "ru": "банан"
+  },
+  {
+   "topic": "restaurant",
+   "en": "orange",
+   "ru": "апельсин",
+   "audio": "audio/words/cori/orange-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "juice",
+   "ru": "сок",
+   "audio": "audio/words/cori/juice-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "coffee",
+   "ru": "кофе",
+   "audio": "audio/words/cori/coffee-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "tea",
+   "ru": "чай",
+   "audio": "audio/words/cori/tea-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "milk",
+   "ru": "молоко",
+   "audio": "audio/words/cori/milk-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "beer",
+   "ru": "пиво",
+   "audio": "audio/words/cori/beer-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "wine",
+   "ru": "вино",
+   "audio": "audio/words/cori/wine-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "glass",
+   "ru": "стакан",
+   "audio": "audio/words/cori/glass-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "bottle",
+   "ru": "бутылка",
+   "audio": "audio/words/cori/bottle-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "cup",
+   "ru": "чашка",
+   "audio": "audio/words/cori/cup-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "sugar",
+   "ru": "сахар",
+   "audio": "audio/words/cori/sugar-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "salt",
+   "ru": "соль",
+   "audio": "audio/words/cori/salt-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "pepper",
+   "ru": "перец"
+  },
+  {
+   "topic": "restaurant",
+   "en": "butter",
+   "ru": "масло",
+   "audio": "audio/words/cori/butter-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "ice",
+   "ru": "лёд",
+   "audio": "audio/words/cori/ice-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "still water",
+   "ru": "вода без газа"
+  },
+  {
+   "topic": "restaurant",
+   "en": "sparkling",
+   "ru": "газированный"
+  },
+  {
+   "topic": "restaurant",
+   "en": "bill/check",
+   "ru": "счёт",
+   "audio": "audio/words/cori/bill-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "tip",
+   "ru": "чаевые",
+   "audio": "audio/words/cori/tip-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "delicious",
+   "ru": "вкусно",
+   "audio": "audio/words/cori/delicious-adjective.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "vegetarian",
+   "ru": "вегетарианец"
+  },
+  {
+   "topic": "restaurant",
+   "en": "allergic",
+   "ru": "аллергик"
+  },
+  {
+   "topic": "restaurant",
+   "en": "allergy",
+   "ru": "аллергия"
+  },
+  {
+   "topic": "restaurant",
+   "en": "without",
+   "ru": "без",
+   "audio": "audio/words/cori/without-preposition.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "medium",
+   "ru": "средней прожарки",
+   "audio": "audio/words/cori/medium-noun.opus"
+  },
+  {
+   "topic": "restaurant",
+   "en": "take away",
+   "ru": "с собой"
+  },
+  {
+   "topic": "restaurant",
+   "en": "table for two",
+   "ru": "столик на двоих"
+  },
+  {
+   "topic": "shopping",
+   "en": "shop/store",
+   "ru": "магазин",
+   "audio": "audio/words/cori/shop-noun.opus"
+  },
+  {
+   "topic": "shopping",
+   "en": "shopping",
+   "ru": "покупки"
+  },
+  {
+   "topic": "shopping",
+   "en": "mall",
+   "ru": "торговый центр",
+   "audio": "audio/words/cori/mall-noun.opus"
+  },
+  {
+   "topic": "shopping",
+   "en": "market",
+   "ru": "рынок",
+   "audio": "audio/words/cori/market-noun.opus"
+  },
+  {
+   "topic": "shopping",
+   "en": "supermarket",
+   "ru": "супермаркет"
+  },
+  {
+   "topic": "shopping",
+   "en": "pharmacy",
+   "ru": "аптека"
+  },
+  {
+   "topic": "shopping",
+   "en": "buy",
+   "ru": "покупать",
+   "audio": "audio/words/cori/buy-verb.opus"
+  },
+  {
+   "topic": "shopping",
+   "en": "sell",
+   "ru": "продавать",
+   "audio": "audio/words/cori/sell-verb.opus"
+  },
+  {
+   "topic": "shopping",
+   "en": "pay",
+   "ru": "платить",
+   "audio": "audio/words/cori/pay-verb.opus"
+  },
+  {
+   "topic": "shopping",
+   "en": "price",
+   "ru": "цена",
+   "audio": "audio/words/cori/price-noun.opus"
+  },
+  {
+   "topic": "shopping",
+   "en": "cost",
+   "ru": "стоить",
+   "audio": "audio/words/cori/cost-verb.opus"
+  },
+  {
+   "topic": "shopping",
+   "en": "expensive",
+   "ru": "дорогой",
+   "audio": "audio/words/cori/expensive-adjective.opus"
+  },
+  {
+   "topic": "shopping",
+   "en": "cheap",
+   "ru": "дешёвый",
+   "audio": "audio/words/cori/cheap-adjective.opus"
+  },
+  {
+   "topic": "shopping",
+   "en": "discount",
+   "ru": "скидка",
+   "audio": "audio/words/cori/discount-noun.opus"
+  },
+  {
+   "topic": "shopping",
+   "en": "sale",
+   "ru": "распродажа",
+   "audio": "audio/words/cori/sale-noun.opus"
+  },
+  {
+   "topic": "shopping",
+   "en": "money",
+   "ru": "деньги",
+   "audio": "audio/words/cori/money-noun.opus"
+  },
+  {
+   "topic": "shopping",
+   "en": "cash",
+   "ru": "наличные",
+   "audio": "audio/words/cori/cash-noun.opus"
+  },
+  {
+   "topic": "shopping",
+   "en": "credit card",
+   "ru": "кредитная карта"
+  },
+  {
+   "topic": "shopping",
+   "en": "debit card",
+   "ru": "дебетовая карта"
+  },
+  {
+   "topic": "shopping",
+   "en": "contactless",
+   "ru": "бесконтактный"
+  },
+  {
+   "topic": "shopping",
+   "en": "change",
+   "ru": "сдача, мелочь",
+   "audio": "audio/words/cori/change-verb.opus"
+  },
+  {
+   "topic": "shopping",
+   "en": "receipt",
+   "ru": "чек"
+  },
+  {
+   "topic": "shopping",
+   "en": "refund",
+   "ru": "возврат"
+  },
+  {
+   "topic": "shopping",
+   "en": "exchange",
+   "ru": "обменять",
+   "audio": "audio/words/cori/exchange-noun.opus"
+  },
+  {
+   "topic": "shopping",
+   "en": "currency",
+   "ru": "валюта",
+   "audio": "audio/words/cori/currency-noun.opus"
+  },
+  {
+   "topic": "shopping",
+   "en": "dollar",
+   "ru": "доллар",
+   "audio": "audio/words/cori/dollar-noun.opus"
+  },
+  {
+   "topic": "shopping",
+   "en": "euro",
+   "ru": "евро"
+  },
+  {
+   "topic": "shopping",
+   "en": "pound",
+   "ru": "фунт",
+   "audio": "audio/words/cori/pound-noun.opus"
+  },
+  {
+   "topic": "shopping",
+   "en": "rouble",
+   "ru": "рубль"
+  },
+  {
+   "topic": "shopping",
+   "en": "ATM/cash machine",
+   "ru": "банкомат"
+  },
+  {
+   "topic": "shopping",
+   "en": "bank",
+   "ru": "банк",
+   "audio": "audio/words/cori/bank-noun.opus"
+  },
+  {
+   "topic": "shopping",
+   "en": "open",
+   "ru": "открыт",
+   "audio": "audio/words/cori/open-adjective.opus"
+  },
+  {
+   "topic": "shopping",
+   "en": "closed",
+   "ru": "закрыт"
+  },
+  {
+   "topic": "shopping",
+   "en": "size",
+   "ru": "размер",
+   "audio": "audio/words/cori/size-noun.opus"
+  },
+  {
+   "topic": "shopping",
+   "en": "try on",
+   "ru": "примерить"
+  },
+  {
+   "topic": "shopping",
+   "en": "fit",
+   "ru": "подходить (по размеру)",
+   "audio": "audio/words/cori/fit-adjective.opus"
+  },
+  {
+   "topic": "shopping",
+   "en": "too big",
+   "ru": "слишком большой"
+  },
+  {
+   "topic": "shopping",
+   "en": "too small",
+   "ru": "слишком маленький"
+  },
+  {
+   "topic": "shopping",
+   "en": "colour",
+   "ru": "цвет"
+  },
+  {
+   "topic": "shopping",
+   "en": "white",
+   "ru": "белый",
+   "audio": "audio/words/cori/white-adjective.opus"
+  },
+  {
+   "topic": "shopping",
+   "en": "black",
+   "ru": "чёрный",
+   "audio": "audio/words/cori/black-adjective.opus"
+  },
+  {
+   "topic": "shopping",
+   "en": "red",
+   "ru": "красный",
+   "audio": "audio/words/cori/red-noun.opus"
+  },
+  {
+   "topic": "shopping",
+   "en": "blue",
+   "ru": "синий",
+   "audio": "audio/words/cori/blue-adjective.opus"
+  },
+  {
+   "topic": "shopping",
+   "en": "green",
+   "ru": "зелёный",
+   "audio": "audio/words/cori/green-noun.opus"
+  },
+  {
+   "topic": "shopping",
+   "en": "bag",
+   "ru": "пакет",
+   "audio": "audio/words/cori/bag-noun.opus"
+  },
+  {
+   "topic": "shopping",
+   "en": "souvenir",
+   "ru": "сувенир"
+  },
+  {
+   "topic": "shopping",
+   "en": "gift",
+   "ru": "подарок",
+   "audio": "audio/words/cori/gift-noun.opus"
+  },
+  {
+   "topic": "shopping",
+   "en": "free",
+   "ru": "бесплатный",
+   "audio": "audio/words/cori/free-adjective.opus"
+  },
+  {
+   "topic": "shopping",
+   "en": "just looking",
+   "ru": "просто смотрю"
+  },
+  {
+   "topic": "shopping",
+   "en": "have you got",
+   "ru": "есть ли у вас"
+  },
+  {
+   "topic": "shopping",
+   "en": "how much",
+   "ru": "сколько стоит"
+  },
+  {
+   "topic": "shopping",
+   "en": "wrap",
+   "ru": "упаковать",
+   "audio": "audio/words/cori/wrap-verb.opus"
+  },
+  {
+   "topic": "shopping",
+   "en": "VAT/tax",
+   "ru": "налог"
+  },
+  {
+   "topic": "shopping",
+   "en": "duty free",
+   "ru": "беспошлинный"
+  },
+  {
+   "topic": "transport",
+   "en": "bus",
+   "ru": "автобус",
+   "audio": "audio/words/cori/bus-noun.opus"
+  },
+  {
+   "topic": "transport",
+   "en": "train",
+   "ru": "поезд",
+   "audio": "audio/words/cori/train-noun.opus"
+  },
+  {
+   "topic": "transport",
+   "en": "metro/subway/underground",
+   "ru": "метро"
+  },
+  {
+   "topic": "transport",
+   "en": "taxi/cab",
+   "ru": "такси",
+   "audio": "audio/words/cori/taxi-noun.opus"
+  },
+  {
+   "topic": "transport",
+   "en": "tram",
+   "ru": "трамвай"
+  },
+  {
+   "topic": "transport",
+   "en": "trolleybus",
+   "ru": "троллейбус"
+  },
+  {
+   "topic": "transport",
+   "en": "ferry",
+   "ru": "паром"
+  },
+  {
+   "topic": "transport",
+   "en": "boat",
+   "ru": "лодка, судно",
+   "audio": "audio/words/cori/boat-noun.opus"
+  },
+  {
+   "topic": "transport",
+   "en": "car",
+   "ru": "машина",
+   "audio": "audio/words/cori/car-noun.opus"
+  },
+  {
+   "topic": "transport",
+   "en": "bike/bicycle",
+   "ru": "велосипед",
+   "audio": "audio/words/cori/bike-noun.opus"
+  },
+  {
+   "topic": "transport",
+   "en": "on foot",
+   "ru": "пешком"
+  },
+  {
+   "topic": "transport",
+   "en": "station",
+   "ru": "станция, вокзал",
+   "audio": "audio/words/cori/station-noun.opus"
+  },
+  {
+   "topic": "transport",
+   "en": "stop",
+   "ru": "остановка",
+   "audio": "audio/words/cori/stop-verb.opus"
+  },
+  {
+   "topic": "transport",
+   "en": "platform",
+   "ru": "платформа",
+   "audio": "audio/words/cori/platform-noun.opus"
+  },
+  {
+   "topic": "transport",
+   "en": "track/line",
+   "ru": "путь, линия",
+   "audio": "audio/words/cori/track-noun.opus"
+  },
+  {
+   "topic": "transport",
+   "en": "timetable",
+   "ru": "расписание"
+  },
+  {
+   "topic": "transport",
+   "en": "ticket",
+   "ru": "билет",
+   "audio": "audio/words/cori/ticket-noun.opus"
+  },
+  {
+   "topic": "transport",
+   "en": "single/one-way",
+   "ru": "в один конец",
+   "audio": "audio/words/cori/single-adjective.opus"
+  },
+  {
+   "topic": "transport",
+   "en": "return/round trip",
+   "ru": "туда-обратно",
+   "audio": "audio/words/cori/return-verb.opus"
+  },
+  {
+   "topic": "transport",
+   "en": "fare",
+   "ru": "плата за проезд"
+  },
+  {
+   "topic": "transport",
+   "en": "conductor",
+   "ru": "кондуктор"
+  },
+  {
+   "topic": "transport",
+   "en": "driver",
+   "ru": "водитель",
+   "audio": "audio/words/cori/driver-noun.opus"
+  },
+  {
+   "topic": "transport",
+   "en": "passenger",
+   "ru": "пассажир",
+   "audio": "audio/words/cori/passenger-noun.opus"
+  },
+  {
+   "topic": "transport",
+   "en": "get on",
+   "ru": "сесть (в транспорт)"
+  },
+  {
+   "topic": "transport",
+   "en": "get off",
+   "ru": "выйти (из транспорта)"
+  },
+  {
+   "topic": "transport",
+   "en": "transfer/change",
+   "ru": "сделать пересадку",
+   "audio": "audio/words/cori/transfer-verb.opus"
+  },
+  {
+   "topic": "transport",
+   "en": "next",
+   "ru": "следующий",
+   "audio": "audio/words/cori/next-adjective.opus"
+  },
+  {
+   "topic": "transport",
+   "en": "last",
+   "ru": "последний",
+   "audio": "audio/words/cori/last-adjective.opus"
+  },
+  {
+   "topic": "transport",
+   "en": "first",
+   "ru": "первый",
+   "audio": "audio/words/cori/first-adjective.opus"
+  },
+  {
+   "topic": "transport",
+   "en": "left",
+   "ru": "налево",
+   "audio": "audio/words/cori/left-adjective.opus"
+  },
+  {
+   "topic": "transport",
+   "en": "right",
+   "ru": "направо",
+   "audio": "audio/words/cori/right-adjective.opus"
+  },
+  {
+   "topic": "transport",
+   "en": "straight",
+   "ru": "прямо",
+   "audio": "audio/words/cori/straight-adjective.opus"
+  },
+  {
+   "topic": "transport",
+   "en": "back",
+   "ru": "назад",
+   "audio": "audio/words/cori/back-adjective.opus"
+  },
+  {
+   "topic": "transport",
+   "en": "near",
+   "ru": "рядом",
+   "audio": "audio/words/cori/near-adjective.opus"
+  },
+  {
+   "topic": "transport",
+   "en": "far",
+   "ru": "далеко",
+   "audio": "audio/words/cori/far-adjective.opus"
+  },
+  {
+   "topic": "transport",
+   "en": "here",
+   "ru": "здесь",
+   "audio": "audio/words/cori/here-adverb.opus"
+  },
+  {
+   "topic": "transport",
+   "en": "there",
+   "ru": "там",
+   "audio": "audio/words/cori/there-adverb.opus"
+  },
+  {
+   "topic": "transport",
+   "en": "where",
+   "ru": "где",
+   "audio": "audio/words/cori/where-adverb.opus"
+  },
+  {
+   "topic": "transport",
+   "en": "how far",
+   "ru": "как далеко"
+  },
+  {
+   "topic": "transport",
+   "en": "how long",
+   "ru": "как долго"
+  },
+  {
+   "topic": "transport",
+   "en": "street",
+   "ru": "улица",
+   "audio": "audio/words/cori/street-noun.opus"
+  },
+  {
+   "topic": "transport",
+   "en": "road",
+   "ru": "дорога",
+   "audio": "audio/words/cori/road-noun.opus"
+  },
+  {
+   "topic": "transport",
+   "en": "square",
+   "ru": "площадь",
+   "audio": "audio/words/cori/square-noun.opus"
+  },
+  {
+   "topic": "transport",
+   "en": "bridge",
+   "ru": "мост",
+   "audio": "audio/words/cori/bridge-noun.opus"
+  },
+  {
+   "topic": "transport",
+   "en": "corner",
+   "ru": "угол",
+   "audio": "audio/words/cori/corner-noun.opus"
+  },
+  {
+   "topic": "transport",
+   "en": "crossroads",
+   "ru": "перекрёсток"
+  },
+  {
+   "topic": "transport",
+   "en": "traffic light",
+   "ru": "светофор"
+  },
+  {
+   "topic": "transport",
+   "en": "cross",
+   "ru": "переходить",
+   "audio": "audio/words/cori/cross-noun.opus"
+  },
+  {
+   "topic": "transport",
+   "en": "crosswalk",
+   "ru": "пешеходный переход"
+  },
+  {
+   "topic": "transport",
+   "en": "map",
+   "ru": "карта",
+   "audio": "audio/words/cori/map-noun.opus"
+  },
+  {
+   "topic": "transport",
+   "en": "address",
+   "ru": "адрес",
+   "audio": "audio/words/cori/address-noun.opus"
+  },
+  {
+   "topic": "transport",
+   "en": "city centre/downtown",
+   "ru": "центр города"
+  },
+  {
+   "topic": "transport",
+   "en": "old town",
+   "ru": "старый город"
+  },
+  {
+   "topic": "transport",
+   "en": "museum",
+   "ru": "музей",
+   "audio": "audio/words/cori/museum-noun.opus"
+  },
+  {
+   "topic": "transport",
+   "en": "entrance",
+   "ru": "вход",
+   "audio": "audio/words/cori/entrance-noun.opus"
+  },
+  {
+   "topic": "transport",
+   "en": "exit",
+   "ru": "выход",
+   "audio": "audio/words/cori/exit-noun.opus"
+  },
+  {
+   "topic": "transport",
+   "en": "direction",
+   "ru": "направление",
+   "audio": "audio/words/cori/direction-noun.opus"
+  },
+  {
+   "topic": "health",
+   "en": "doctor",
+   "ru": "врач",
+   "audio": "audio/words/cori/doctor-noun.opus"
+  },
+  {
+   "topic": "health",
+   "en": "nurse",
+   "ru": "медсестра",
+   "audio": "audio/words/cori/nurse-noun.opus"
+  },
+  {
+   "topic": "health",
+   "en": "hospital",
+   "ru": "больница",
+   "audio": "audio/words/cori/hospital-noun.opus"
+  },
+  {
+   "topic": "health",
+   "en": "pharmacy/chemist",
+   "ru": "аптека"
+  },
+  {
+   "topic": "health",
+   "en": "medicine",
+   "ru": "лекарство",
+   "audio": "audio/words/cori/medicine-noun.opus"
+  },
+  {
+   "topic": "health",
+   "en": "pill/tablet",
+   "ru": "таблетка",
+   "audio": "audio/words/cori/pill-noun.opus"
+  },
+  {
+   "topic": "health",
+   "en": "pain",
+   "ru": "боль",
+   "audio": "audio/words/cori/pain-noun.opus"
+  },
+  {
+   "topic": "health",
+   "en": "hurt",
+   "ru": "болеть (у меня болит)",
+   "audio": "audio/words/cori/hurt-verb.opus"
+  },
+  {
+   "topic": "health",
+   "en": "headache",
+   "ru": "головная боль",
+   "audio": "audio/words/cori/headache-noun.opus"
+  },
+  {
+   "topic": "health",
+   "en": "stomachache",
+   "ru": "боль в животе"
+  },
+  {
+   "topic": "health",
+   "en": "toothache",
+   "ru": "зубная боль"
+  },
+  {
+   "topic": "health",
+   "en": "fever",
+   "ru": "температура, жар",
+   "audio": "audio/words/cori/fever-noun.opus"
+  },
+  {
+   "topic": "health",
+   "en": "cough",
+   "ru": "кашель",
+   "audio": "audio/words/cori/cough-verb.opus"
+  },
+  {
+   "topic": "health",
+   "en": "cold",
+   "ru": "простуда",
+   "audio": "audio/words/cori/cold-adjective.opus"
+  },
+  {
+   "topic": "health",
+   "en": "flu",
+   "ru": "грипп"
+  },
+  {
+   "topic": "health",
+   "en": "sore throat",
+   "ru": "больное горло"
+  },
+  {
+   "topic": "health",
+   "en": "sick/ill",
+   "ru": "больной",
+   "audio": "audio/words/cori/sick-adjective.opus"
+  },
+  {
+   "topic": "health",
+   "en": "nauseous",
+   "ru": "тошнота"
+  },
+  {
+   "topic": "health",
+   "en": "dizzy",
+   "ru": "головокружение"
+  },
+  {
+   "topic": "health",
+   "en": "tired",
+   "ru": "уставший"
+  },
+  {
+   "topic": "health",
+   "en": "bleeding",
+   "ru": "кровотечение",
+   "audio": "audio/words/cori/bleeding-adjective.opus"
+  },
+  {
+   "topic": "health",
+   "en": "broken",
+   "ru": "сломанный",
+   "audio": "audio/words/cori/broken-adjective.opus"
+  },
+  {
+   "topic": "health",
+   "en": "cut",
+   "ru": "порез",
+   "audio": "audio/words/cori/cut-verb.opus"
+  },
+  {
+   "topic": "health",
+   "en": "burn",
+   "ru": "ожог",
+   "audio": "audio/words/cori/burn-noun.opus"
+  },
+  {
+   "topic": "health",
+   "en": "allergy",
+   "ru": "аллергия"
+  },
+  {
+   "topic": "health",
+   "en": "prescription",
+   "ru": "рецепт"
+  },
+  {
+   "topic": "health",
+   "en": "antibiotics",
+   "ru": "антибиотики"
+  },
+  {
+   "topic": "health",
+   "en": "painkiller",
+   "ru": "обезболивающее"
+  },
+  {
+   "topic": "health",
+   "en": "plaster/band-aid",
+   "ru": "пластырь"
+  },
+  {
+   "topic": "health",
+   "en": "bandage",
+   "ru": "бинт"
+  },
+  {
+   "topic": "health",
+   "en": "ointment",
+   "ru": "мазь"
+  },
+  {
+   "topic": "health",
+   "en": "drops",
+   "ru": "капли"
+  },
+  {
+   "topic": "health",
+   "en": "vitamins",
+   "ru": "витамины"
+  },
+  {
+   "topic": "health",
+   "en": "insurance",
+   "ru": "страховка",
+   "audio": "audio/words/cori/insurance-noun.opus"
+  },
+  {
+   "topic": "health",
+   "en": "emergency",
+   "ru": "скорая, экстренный",
+   "audio": "audio/words/cori/emergency-noun.opus"
+  },
+  {
+   "topic": "health",
+   "en": "ambulance",
+   "ru": "скорая помощь",
+   "audio": "audio/words/cori/ambulance-noun.opus"
+  },
+  {
+   "topic": "health",
+   "en": "police",
+   "ru": "полиция",
+   "audio": "audio/words/cori/police-noun.opus"
+  },
+  {
+   "topic": "health",
+   "en": "accident",
+   "ru": "несчастный случай",
+   "audio": "audio/words/cori/accident-noun.opus"
+  },
+  {
+   "topic": "health",
+   "en": "injured",
+   "ru": "раненый"
+  },
+  {
+   "topic": "health",
+   "en": "help",
+   "ru": "помогите",
+   "audio": "audio/words/cori/help-noun.opus"
+  },
+  {
+   "topic": "health",
+   "en": "allergic",
+   "ru": "аллергический"
+  },
+  {
+   "topic": "health",
+   "en": "diabetes",
+   "ru": "диабет"
+  },
+  {
+   "topic": "health",
+   "en": "pregnant",
+   "ru": "беременная",
+   "audio": "audio/words/cori/pregnant-adjective.opus"
+  },
+  {
+   "topic": "health",
+   "en": "heart",
+   "ru": "сердце",
+   "audio": "audio/words/cori/heart-noun.opus"
+  },
+  {
+   "topic": "health",
+   "en": "blood",
+   "ru": "кровь",
+   "audio": "audio/words/cori/blood-noun.opus"
+  },
+  {
+   "topic": "health",
+   "en": "how often",
+   "ru": "как часто (принимать)"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "zero",
+   "ru": "ноль",
+   "audio": "audio/words/cori/zero-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "one",
+   "ru": "один",
+   "audio": "audio/words/cori/one-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "two",
+   "ru": "два",
+   "audio": "audio/words/cori/two-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "three",
+   "ru": "три",
+   "audio": "audio/words/cori/three-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "four",
+   "ru": "четыре",
+   "audio": "audio/words/cori/four-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "five",
+   "ru": "пять",
+   "audio": "audio/words/cori/five-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "six",
+   "ru": "шесть",
+   "audio": "audio/words/cori/six-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "seven",
+   "ru": "семь",
+   "audio": "audio/words/cori/seven-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "eight",
+   "ru": "восемь",
+   "audio": "audio/words/cori/eight-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "nine",
+   "ru": "девять",
+   "audio": "audio/words/cori/nine-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "ten",
+   "ru": "десять",
+   "audio": "audio/words/cori/ten-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "eleven",
+   "ru": "одиннадцать",
+   "audio": "audio/words/cori/eleven-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "twelve",
+   "ru": "двенадцать",
+   "audio": "audio/words/cori/twelve-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "thirteen",
+   "ru": "тринадцать"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "fourteen",
+   "ru": "четырнадцать"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "fifteen",
+   "ru": "пятнадцать",
+   "audio": "audio/words/cori/fifteen-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "sixteen",
+   "ru": "шестнадцать"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "seventeen",
+   "ru": "семнадцать"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "eighteen",
+   "ru": "восемнадцать"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "nineteen",
+   "ru": "девятнадцать",
+   "audio": "audio/words/cori/nineteen-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "twenty",
+   "ru": "двадцать",
+   "audio": "audio/words/cori/twenty-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "thirty",
+   "ru": "тридцать",
+   "audio": "audio/words/cori/thirty-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "forty",
+   "ru": "сорок",
+   "audio": "audio/words/cori/forty-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "fifty",
+   "ru": "пятьдесят",
+   "audio": "audio/words/cori/fifty-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "sixty",
+   "ru": "шестьдесят",
+   "audio": "audio/words/cori/sixty-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "seventy",
+   "ru": "семьдесят",
+   "audio": "audio/words/cori/seventy-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "eighty",
+   "ru": "восемьдесят",
+   "audio": "audio/words/cori/eighty-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "ninety",
+   "ru": "девяносто",
+   "audio": "audio/words/cori/ninety-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "hundred",
+   "ru": "сто",
+   "audio": "audio/words/cori/hundred-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "thousand",
+   "ru": "тысяча",
+   "audio": "audio/words/cori/thousand-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "Monday",
+   "ru": "понедельник"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "Tuesday",
+   "ru": "вторник"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "Wednesday",
+   "ru": "среда"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "Thursday",
+   "ru": "четверг"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "Friday",
+   "ru": "пятница"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "Saturday",
+   "ru": "суббота"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "Sunday",
+   "ru": "воскресенье"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "January",
+   "ru": "январь"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "February",
+   "ru": "февраль"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "March",
+   "ru": "март",
+   "audio": "audio/words/cori/march-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "April",
+   "ru": "апрель"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "May",
+   "ru": "май",
+   "audio": "audio/words/cori/may-verb.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "June",
+   "ru": "июнь"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "July",
+   "ru": "июль"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "August",
+   "ru": "август",
+   "audio": "audio/words/cori/august-adjective.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "September",
+   "ru": "сентябрь"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "October",
+   "ru": "октябрь"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "November",
+   "ru": "ноябрь"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "December",
+   "ru": "декабрь"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "hundred",
+   "ru": "сто",
+   "audio": "audio/words/cori/hundred-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "thousand",
+   "ru": "тысяча",
+   "audio": "audio/words/cori/thousand-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "half",
+   "ru": "половина",
+   "audio": "audio/words/cori/half-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "quarter",
+   "ru": "четверть",
+   "audio": "audio/words/cori/quarter-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "time",
+   "ru": "время",
+   "audio": "audio/words/cori/time-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "hour",
+   "ru": "час",
+   "audio": "audio/words/cori/hour-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "minute",
+   "ru": "минута",
+   "audio": "audio/words/cori/minute-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "second",
+   "ru": "секунда",
+   "audio": "audio/words/cori/second-adjective.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "day",
+   "ru": "день",
+   "audio": "audio/words/cori/day-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "week",
+   "ru": "неделя",
+   "audio": "audio/words/cori/week-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "month",
+   "ru": "месяц",
+   "audio": "audio/words/cori/month-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "year",
+   "ru": "год",
+   "audio": "audio/words/cori/year-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "today",
+   "ru": "сегодня",
+   "audio": "audio/words/cori/today-adverb.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "tomorrow",
+   "ru": "завтра",
+   "audio": "audio/words/cori/tomorrow-adverb.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "yesterday",
+   "ru": "вчера",
+   "audio": "audio/words/cori/yesterday-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "now",
+   "ru": "сейчас",
+   "audio": "audio/words/cori/now-adverb.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "later",
+   "ru": "позже",
+   "audio": "audio/words/cori/later-adverb.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "morning",
+   "ru": "утро",
+   "audio": "audio/words/cori/morning-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "afternoon",
+   "ru": "день (после полудня)",
+   "audio": "audio/words/cori/afternoon-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "evening",
+   "ru": "вечер",
+   "audio": "audio/words/cori/evening-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "night",
+   "ru": "ночь",
+   "audio": "audio/words/cori/night-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "what time is it",
+   "ru": "сколько времени"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "at 7 o'clock",
+   "ru": "в 7 часов"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "o'clock",
+   "ru": "ровно (час)"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "half past",
+   "ru": "пол (седьмого)"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "a.m./p.m.",
+   "ru": "до/после полудня"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "early",
+   "ru": "рано",
+   "audio": "audio/words/cori/early-adjective.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "late",
+   "ru": "поздно",
+   "audio": "audio/words/cori/late-adjective.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "date",
+   "ru": "дата",
+   "audio": "audio/words/cori/date-noun.opus"
+  },
+  {
+   "topic": "numbers-time",
+   "en": "open 24 hours",
+   "ru": "открыто 24 часа"
+  }
+ ]
+}
