@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-30T20:59:49Z",
+  "generated_at": "2026-10-01T10:52:47Z",
   "files": [
     {
       "path": "lessons/exercises-a.json",
@@ -42,7 +42,7 @@
       "kind": "exercises",
       "schema_version": 1,
       "items": 741,
-      "sha256": "9c80bbed72c7ca8913cf6c6771f2a3ee0d74fff7a509f6fca920dd4023a17e1e"
+      "sha256": "eab72f75c1118ea5dd7e1561640b380292234849bd17fae9155b81c150d44e41"
     },
     {
       "path": "lessons/lessons-a.json",
@@ -84,7 +84,7 @@
       "kind": "lessons",
       "schema_version": 1,
       "items": 15,
-      "sha256": "7a697d5c13e27b755628b0b854ff029878f1898bde06997b02bfb9e82d698f79"
+      "sha256": "2d8e36380270c3a57110caadbfca90fbb493256d4ec967de22b8aae68238628a"
     },
     {
       "path": "phrasebook/airport.json",
@@ -119,7 +119,7 @@
       "kind": "phrasebook",
       "schema_version": 1,
       "items": 2,
-      "sha256": "88330ddd33ccaccdfb1bfbb3c8d988a56cf1472270c7bc6329f0f3f442d5c02a"
+      "sha256": "912fa48302a15bc2e0c7be521f302a9ab85762acd6aca12e3847a1978c541a9b"
     },
     {
       "path": "phrasebook/passport.json",
@@ -203,7 +203,7 @@
       "kind": "phrases",
       "schema_version": 1,
       "items": 451,
-      "sha256": "b733aa4d12b8a0eeefa378bb5a166c511eb3685fcb144e9d5d70a0baefed31ec"
+      "sha256": "193df50d34fa65c56a8c65fee668a4c0db778849e2b7072fc8b6e308d19c9647"
     },
     {
       "path": "quotes/attack-on-titan.json",
@@ -314,8 +314,8 @@
       "path": "traps.json",
       "kind": "traps",
       "schema_version": 1,
-      "items": 25,
-      "sha256": "c8bd673df0fe0b2d0dfbe5809e8562c905d0fdd28997bc0e6b363741913c0949"
+      "items": 31,
+      "sha256": "8e42fc1a6388d1cacf531899193e1405d4d326f85466250576533f8403ab9456"
     },
     {
       "path": "words/words-0001-0500.json",

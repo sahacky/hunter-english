@@ -110,6 +110,15 @@ Retention в FSRS держим **0,90** (дефолт). Выше 0,95 нагру
 | Косвенный вопрос | Tell me where is the station? | Tell me where the station is. | B |
 | Запятая перед that | I think, that… | I think that… | пунктуация |
 | very перед глаголом | I very like it. | I like it very much. | D (дополнение из параллельного ресёрча) |
+| despite of | Despite of the rain… | Despite the rain… / In spite of the rain… | B (ЛТ-23, M20) |
+| сленг в формальном контексте | I'm gonna submit the report… | I'm going to submit the report… | S — регистр (ЛТ-24, M20) |
+| ложные друзья EN-RU | This topic is very actual. | This topic is very topical. | B — лексика (ЛТ-25, M20) |
+| explain + адресат без to | Explain me this. | Explain this **to** me. | D (ЛТ-26, дополнение из параллельного ресёрча 2026-10-01) |
+| предлог с last/next/this | **In** last week I was in Rome. | Last week I was in Rome. | D (ЛТ-27, дополнение из параллельного ресёрча) |
+| согласование времён в косвенной речи | She said she **will** come. | She said she **would** come. | B (ЛТ-28, дополнение из параллельного ресёрча) |
+| since/for без перфекта | I'm here **since** Monday. | I'**ve been** here since Monday. | C–B (ЛТ-29, дополнение из параллельного ресёрча) |
+| to после модального | Can you **to** help me? | Can you help me? | E–D (ЛТ-30, дополнение из параллельного ресёрча) |
+| двойная степень сравнения | It's **more** better. | It's **much** better. | C (ЛТ-31, дополнение из параллельного ресёрча) |
 
 ---
 

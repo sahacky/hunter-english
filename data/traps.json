@@ -260,7 +260,7 @@
    "title_ru": "very перед глаголом",
    "wrong_en": "I very like it.",
    "right_en": "I like it very much.",
-   "explanation_ru": "Very усиливает только прилагательные и наречия, не глаголы. С глаголом — very much в конце или усиленный синоним: I really like it. Экстремальные прилагательные (freezing, exhausted, brilliant) не усиливаются very — только absolutely/utterly: It's absolutely freezing, I'm utterly exhausted.",
+   "explanation_ru": "Very усиливает только прилагательные и наречия, не глаголы. С глаголом — very much в конце или усиленный синоним: I really like it.",
    "tags": [
     "trap",
     "adverbs"
@@ -272,7 +272,7 @@
    "title_ru": "despite of",
    "wrong_en": "Despite of the rain, we went out.",
    "right_en": "Despite the rain, we went out.",
-   "explanation_ru": "Despite используется без of: despite the traffic. Синоним с of — in spite of: in spite of the traffic. Смешивать нельзя: «despite of» — типичная ошибка для русских.",
+   "explanation_ru": "Despite используется без of: despite the traffic. Синоним с of — in spite of: in spite of the traffic.",
    "tags": [
     "trap",
     "connectors"
@@ -284,11 +284,10 @@
    "title_ru": "сленг в формальном контексте",
    "wrong_en": "I'm gonna submit the report to the committee.",
    "right_en": "I'm going to submit the report to the committee.",
-   "explanation_ru": "gonna/wanna/gotta/ain't — только в разговорной речи. В письмах, документах и на экзамене — полные формы: going to, want to, have got to. Распознавать сленг на слух обязательно, писать — только в неформальном регистре.",
+   "explanation_ru": "gonna/wanna/gotta/ain't — только в разговорной речи. В письмах, документах и на экзамене — полные формы.",
    "tags": [
     "trap",
-    "register",
-    "slang"
+    "register"
    ]
   },
   {
@@ -297,10 +296,82 @@
    "title_ru": "ложные друзья EN-RU",
    "wrong_en": "This topic is very actual.",
    "right_en": "This topic is very topical.",
-   "explanation_ru": "Ложные друзья: actual = фактический, реальный (актуальный = topical). pretend = притворяться (претендовать = apply for / claim). sympathy = сочувствие (симпатия = a soft spot / attraction). complexion = цвет лица (комплекция = build). accurate = точный (аккуратный = neat).",
+   "explanation_ru": "Ложные друзья: actual = фактический, реальный (актуальный = topical). pretend = притворяться (претендовать = apply for/claim).",
    "tags": [
     "trap",
     "false-friends"
+   ]
+  },
+  {
+   "id": "trap-explain-to",
+   "lt_id": "ЛТ-26",
+   "title_ru": "explain + адресат без to",
+   "wrong_en": "Explain me this.",
+   "right_en": "Explain this to me.",
+   "explanation_ru": "Explain требует адресата через to: explain something to somebody. По той же модели describe и suggest. А tell и ask — наоборот, без to: tell me, ask me.",
+   "tags": [
+    "trap",
+    "verbs"
+   ]
+  },
+  {
+   "id": "trap-prep-last-next",
+   "lt_id": "ЛТ-27",
+   "title_ru": "предлог с last/next/this",
+   "wrong_en": "In last week I was in Rome.",
+   "right_en": "Last week I was in Rome.",
+   "explanation_ru": "С last, next, this, every предлоги не нужны: last week, next month, this year, every day. Предлог in — с месяцами и годами: in May, in 2026.",
+   "tags": [
+    "trap",
+    "prepositions"
+   ]
+  },
+  {
+   "id": "trap-sequence-of-tenses",
+   "lt_id": "ЛТ-28",
+   "title_ru": "согласование времён в косвенной речи",
+   "wrong_en": "She said she will come.",
+   "right_en": "She said she would come.",
+   "explanation_ru": "В косвенной речи после прошедшего (said) будущее сдвигается на шаг назад: will → would, can → could, have → had.",
+   "tags": [
+    "trap",
+    "verbs-of-speech"
+   ]
+  },
+  {
+   "id": "trap-since-present-perfect",
+   "lt_id": "ЛТ-29",
+   "title_ru": "since/for без перфекта",
+   "wrong_en": "I'm here since Monday.",
+   "right_en": "I've been here since Monday.",
+   "explanation_ru": "«До сих пор» с since/for — это Present Perfect (Continuous), не Present Simple: I've been here since Monday. Сравни: I am here (сейчас).",
+   "tags": [
+    "trap",
+    "present-perfect"
+   ]
+  },
+  {
+   "id": "trap-modal-no-to",
+   "lt_id": "ЛТ-30",
+   "title_ru": "to после модального",
+   "wrong_en": "Can you to help me?",
+   "right_en": "Can you help me?",
+   "explanation_ru": "После модального глагола (can, must, should, may) инфинитив без to. To нужен после want/need/like и в конструкции have to.",
+   "tags": [
+    "trap",
+    "infinitive"
+   ]
+  },
+  {
+   "id": "trap-double-comparative",
+   "lt_id": "ЛТ-31",
+   "title_ru": "двойная степень сравнения",
+   "wrong_en": "It's more better.",
+   "right_en": "It's much better.",
+   "explanation_ru": "Две степени сравнения сразу нельзя: more не добавляется к -er или к исключениям. Усиление — much/far: much better, far more interesting.",
+   "tags": [
+    "trap",
+    "adjectives"
    ]
   }
  ]

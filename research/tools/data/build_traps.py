@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Сборка data/traps.json — каталог ловушек русскоязычных (plan://M3#3.6).
 
-Источник: research/03-methods-and-exercises.md §4 (ЛТ-01…ЛТ-22, таблица «Неправильно/Правильно/Тема»).
+Источник: research/03-methods-and-exercises.md §4 (ЛТ-01…ЛТ-31, таблица «Неправильно/Правильно/Тема»).
+ЛТ-23–25 добавлены в M20 (данные правились напрямую — синхронизированы обратно в билдер),
+ЛТ-26–31 — из параллельного ресёрча study_eng (2026-10-01).
 Контракт полей: id (^trap-[a-z0-9-]+$), lt_id (^ЛТ-[0-9]{2}$), title_ru, wrong_en, right_en,
 explanation_ru, tags — все обязательны (схема trap, добавляемая в specs/05). Обёртка файла —
 specs/05 §0: {schema_version, kind: "traps", items}.
@@ -110,6 +112,43 @@ TRAPS = [
      "I very like it.", "I like it very much.",
      "Very усиливает только прилагательные и наречия, не глаголы. С глаголом — very much в конце или усиленный синоним: I really like it.",
      "adverbs"),
+    ("ЛТ-23", "despite-of", "despite of",
+     "Despite of the rain, we went out.", "Despite the rain, we went out.",
+     "Despite используется без of: despite the traffic. Синоним с of — in spite of: in spite of the traffic.",
+     "connectors"),
+    ("ЛТ-24", "slang-register", "сленг в формальном контексте",
+     "I'm gonna submit the report to the committee.",
+     "I'm going to submit the report to the committee.",
+     "gonna/wanna/gotta/ain't — только в разговорной речи. В письмах, документах и на экзамене — полные формы.",
+     "register"),
+    ("ЛТ-25", "false-friends", "ложные друзья EN-RU",
+     "This topic is very actual.", "This topic is very topical.",
+     "Ложные друзья: actual = фактический, реальный (актуальный = topical). pretend = притворяться (претендовать = apply for/claim).",
+     "false-friends"),
+    ("ЛТ-26", "explain-to", "explain + адресат без to",
+     "Explain me this.", "Explain this to me.",
+     "Explain требует адресата через to: explain something to somebody. По той же модели describe и suggest. А tell и ask — наоборот, без to: tell me, ask me.",
+     "verbs"),
+    ("ЛТ-27", "prep-last-next", "предлог с last/next/this",
+     "In last week I was in Rome.", "Last week I was in Rome.",
+     "С last, next, this, every предлоги не нужны: last week, next month, this year, every day. Предлог in — с месяцами и годами: in May, in 2026.",
+     "prepositions"),
+    ("ЛТ-28", "sequence-of-tenses", "согласование времён в косвенной речи",
+     "She said she will come.", "She said she would come.",
+     "В косвенной речи после прошедшего (said) будущее сдвигается на шаг назад: will → would, can → could, have → had.",
+     "verbs-of-speech"),
+    ("ЛТ-29", "since-present-perfect", "since/for без перфекта",
+     "I'm here since Monday.", "I've been here since Monday.",
+     "«До сих пор» с since/for — это Present Perfect (Continuous), не Present Simple: I've been here since Monday. Сравни: I am here (сейчас).",
+     "present-perfect"),
+    ("ЛТ-30", "modal-no-to", "to после модального",
+     "Can you to help me?", "Can you help me?",
+     "После модального глагола (can, must, should, may) инфинитив без to. To нужен после want/need/like и в конструкции have to.",
+     "infinitive"),
+    ("ЛТ-31", "double-comparative", "двойная степень сравнения",
+     "It's more better.", "It's much better.",
+     "Две степени сравнения сразу нельзя: more не добавляется к -er или к исключениям. Усиление — much/far: much better, far more interesting.",
+     "adjectives"),
 ]
 
 
