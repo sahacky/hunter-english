@@ -21,6 +21,7 @@ test('тач-цели: кнопки ответов SRS ≥ 44px по высот�
 
 test('reduced-motion: media-правила для волны и тоста присутствуют в стилях', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' })
+  await page.addInitScript(() => localStorage.setItem('hunter-onboarding-done', '1'))
   await page.goto('/#/')
   const hasRules = await page.evaluate(() => {
     let wave = false

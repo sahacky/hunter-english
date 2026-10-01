@@ -1,6 +1,7 @@
 import { expect, test } from '@playwright/test'
 
 test('dashboard renders quest and status windows (M7)', async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem('hunter-onboarding-done', '1'))
   await page.goto('/#/')
   await expect(page.getByText('[Ежедневный квест]')).toBeVisible({ timeout: 8000 })
   await expect(page.getByText('[Статус]')).toBeVisible()
@@ -9,6 +10,7 @@ test('dashboard renders quest and status windows (M7)', async ({ page }) => {
 })
 
 test('navigation to srs works', async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem('hunter-onboarding-done', '1'))
   await page.goto('/#/')
   await page.getByRole('link', { name: 'Повторение' }).click()
   await expect(page.getByRole('heading', { name: 'Повторение' })).toBeVisible()
@@ -40,4 +42,31 @@ test('lesson rule step advances to cloze', async ({ page }) => {
     .getByRole('button', { name: /Дальше/ })
     .first()
     .click()
+})
+
+// Implements: plan://onboarding#O.7 — онбординг: первый вход → welcome, «с нуля» ведёт на главную
+test('welcome on first visit: start from scratch lands on dashboard (plan://onboarding)', async ({
+  page,
+}) => {
+  await page.goto('/#/')
+  await expect(page.getByRole('heading', { name: 'Регистрация Охотника' })).toBeVisible({
+    timeout: 8000,
+  })
+  await page.getByRole('button', { name: 'Начать с нуля (ранг E)' }).click()
+  await expect(page.getByRole('heading', { name: /Ежедневный квест|Охотник/ })).toBeVisible({
+    timeout: 8000,
+  })
+  // повторный вход — welcome больше не показывается
+  await page.goto('/#/welcome')
+  await expect(page.getByRole('heading', { name: 'Регистрация Охотника' })).toBeHidden()
+})
+
+test('path screen lists program ranks (plan://onboarding)', async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem('hunter-onboarding-done', '1'))
+  await page.goto('/#/path')
+  await expect(page.getByRole('heading', { name: 'Программа обучения' })).toBeVisible({
+    timeout: 8000,
+  })
+  await expect(page.getByText(/Ранг E · 0\/24 уроков/)).toBeVisible()
+  await expect(page.getByText('ты здесь')).toBeVisible()
 })

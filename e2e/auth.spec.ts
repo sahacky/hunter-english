@@ -13,6 +13,7 @@ test('login screen shows guest mode when sync is not configured', async ({ page 
 })
 
 test('guest continue leads to dashboard and app works', async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem('hunter-onboarding-done', '1'))
   await page.goto('/#/login')
   await page.getByRole('link', { name: /Продолжить как гость/ }).click()
   await expect(page.getByText('[Ежедневный квест]')).toBeVisible({ timeout: 8000 })
@@ -31,6 +32,7 @@ test('guest session loads no supabase chunks (lazy-import behind env gate)', asy
   page.on('response', (response) => {
     if (response.url().includes('supabase')) supabaseRequests.push(response.url())
   })
+  await page.addInitScript(() => localStorage.setItem('hunter-onboarding-done', '1'))
   await page.goto('/#/login')
   await page.getByRole('link', { name: /Продолжить как гость/ }).click()
   await expect(page.getByText('[Ежедневный квест]')).toBeVisible({ timeout: 8000 })
