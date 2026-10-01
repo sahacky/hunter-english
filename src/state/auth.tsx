@@ -5,7 +5,7 @@
 import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from 'react'
 import { getSupabase, isSyncConfigured } from '../data/supabase'
 import { db, getCurrentUserId, remapLocalToUser, setCurrentUserId } from '../data/db'
-import { enqueueAllRows, syncNow } from '../data/sync'
+import { enqueueAllRows, syncNow, trimQueue } from '../data/sync'
 
 export interface AuthState {
   configured: boolean
@@ -41,6 +41,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   })
 
   useEffect(() => {
+    // долг M13: очередь гостя не растёт бесконечно — трим хвоста при бутстрапе
+    void trimQueue(db)
     if (!isSyncConfigured()) {
       // гостю локальный владелец сразу — синхронная инициализация на монтировании
       // eslint-disable-next-line react-hooks/set-state-in-effect -- инициализация гостя без supabase (specs/06 §2)

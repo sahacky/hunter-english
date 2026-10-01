@@ -3,7 +3,18 @@
 import 'fake-indexeddb/auto'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { HunterDb, LOCAL_USER_ID, getCurrentUserId, remapLocalToUser, setCurrentUserId } from './db'
-import { flush, mergeLww, pull, readSyncStatus, syncNow } from './sync'
+import {
+  flush,
+  mergeLww,
+  pull,
+  readSyncStatus,
+  recalcXpFromReviewLog,
+  reviewXpOf,
+  syncNow,
+  trimQueue,
+} from './sync'
+import { emptyStats } from '../domain/game/types'
+import { isSyncConfigured } from './supabase'
 import { uuidv7 } from '../lib/uuidv7'
 
 // обёртки над реальными функциями: дефолтное поведение не меняется,
@@ -815,5 +826,170 @@ describe('client(): путь без sb (env-гейт) — сохранение �
     void fake
     void original
     vi.unstubAllEnvs()
+  })
+})
+
+describe('XP-пол из review_log (долг M13, specs/06 §3)', () => {
+  function log(id: string, state: 0 | 1 | 2 | 3, stateAfter: 0 | 1 | 2 | 3, user = LOCAL_USER_ID) {
+    return {
+      user_id: user,
+      id,
+      card_id: 'c',
+      rating: 3 as const,
+      state,
+      state_after: stateAfter,
+      elapsed_days: 0,
+      scheduled_days: 1,
+      duration_ms: 100,
+      client: 'web' as const,
+      session_id: null,
+      reviewed_at: '2026-09-01T00:00:00Z',
+    }
+  }
+
+  it('reviewXpOf: повтор 1, выпуск Learning→Review 3 (зеркало SrsScreen)', () => {
+    expect(reviewXpOf({ state: 2, state_after: 2 })).toBe(1)
+    expect(reviewXpOf({ state: 1, state_after: 2 })).toBe(3)
+    expect(reviewXpOf({ state: 0, state_after: 1 })).toBe(1)
+    expect(reviewXpOf({ state: 3, state_after: 2 })).toBe(1)
+  })
+
+  it('recalc поднимает xp до пола журнала; чужой user_id не считается', async () => {
+    await db.review_log.bulkPut([
+      log('a', 2, 2),
+      log('b', 1, 2),
+      log('c', 2, 2),
+      log('x', 1, 2, 'u1'),
+    ])
+    await db.user_stats.put({
+      ...emptyStats('2026-09-01T00:00:00Z'),
+      user_id: LOCAL_USER_ID,
+      xp: 1,
+    })
+    await recalcXpFromReviewLog(db, LOCAL_USER_ID)
+    expect((await db.user_stats.get(LOCAL_USER_ID))?.xp).toBe(5) // 1 + 3 + 1
+  })
+
+  it('recalc не трогает строку при xp выше пола; создаёт строку при отсутствии', async () => {
+    await db.review_log.bulkPut([log('a', 2, 2)])
+    await db.user_stats.put({
+      ...emptyStats('2026-09-01T00:00:00Z'),
+      user_id: LOCAL_USER_ID,
+      xp: 100,
+      updated_at: '2026-09-01T00:00:00Z',
+    })
+    await recalcXpFromReviewLog(db, LOCAL_USER_ID)
+    const kept = await db.user_stats.get(LOCAL_USER_ID)
+    expect(kept?.xp).toBe(100)
+    expect(kept?.updated_at).toBe('2026-09-01T00:00:00Z')
+    await db.user_stats.delete(LOCAL_USER_ID)
+    await recalcXpFromReviewLog(db, LOCAL_USER_ID)
+    expect((await db.user_stats.get(LOCAL_USER_ID))?.xp).toBe(1)
+  })
+
+  it('mergeLww user_stats: XP = max сторон независимо от победителя по updated_at', async () => {
+    await db.user_stats.put({
+      ...emptyStats('2026-09-01T00:00:00Z'),
+      user_id: 'u1',
+      xp: 300,
+      updated_at: '2026-09-01T00:00:00Z',
+    })
+    // сервер старее, но XP больше: локаль-победитель наследует серверный XP
+    await mergeLww(db, 'user_stats', [
+      { user_id: 'u1', xp: 500, updated_at: '2026-08-01T00:00:00Z' },
+    ])
+    const raised = await db.user_stats.get('u1')
+    expect(raised?.xp).toBe(500)
+    expect(raised?.updated_at).toBe('2026-09-01T00:00:00Z')
+    // сервер новее с меньшим XP: победитель-сервер не роняет локальный XP
+    await mergeLww(db, 'user_stats', [
+      { user_id: 'u1', xp: 400, updated_at: '2026-09-05T00:00:00Z' },
+    ])
+    expect((await db.user_stats.get('u1'))?.xp).toBe(500)
+    expect((await db.user_stats.get('u1'))?.updated_at).toBe('2026-09-05T00:00:00Z')
+    // сервер новее и XP не меньше: строка уходит как есть (ветка без подъёма)
+    await mergeLww(db, 'user_stats', [
+      { user_id: 'u1', xp: 500, updated_at: '2026-09-06T00:00:00Z' },
+    ])
+    expect((await db.user_stats.get('u1'))?.xp).toBe(500)
+    expect((await db.user_stats.get('u1'))?.updated_at).toBe('2026-09-06T00:00:00Z')
+    // локальной строки нет: серверная пишется без изменений
+    await mergeLww(db, 'user_stats', [{ user_id: 'u2', xp: 0, updated_at: '2026-09-06T00:00:00Z' }])
+    expect((await db.user_stats.get('u2'))?.xp).toBe(0)
+  })
+
+  it('pull восстанавливает xp из смёрженного журнала (интеграция)', async () => {
+    await db.user_stats.put({
+      ...emptyStats('2026-09-01T00:00:00Z'),
+      user_id: LOCAL_USER_ID,
+      xp: 2, // локальные уроки — пол журнала не должен их затирать
+      updated_at: '2026-09-01T00:00:00Z',
+    })
+    const sb = mockPullSupabase({
+      card_states: [[]],
+      lesson_progress: [[]],
+      user_stats: [[]],
+      item_progress: [[]],
+      review_log: [
+        [
+          {
+            user_id: LOCAL_USER_ID,
+            id: 'r1',
+            card_id: 'c',
+            rating: 3,
+            state: 1,
+            state_after: 2,
+            reviewed_at: '2026-09-02T00:00:00Z',
+          },
+          {
+            user_id: LOCAL_USER_ID,
+            id: 'r2',
+            card_id: 'c',
+            rating: 3,
+            state: 2,
+            state_after: 2,
+            reviewed_at: '2026-09-03T00:00:00Z',
+          },
+        ],
+      ],
+    })
+    await pull(db, sb as never)
+    // локальный xp=2 (уроки), пол журнала = 3 + 1 = 4 → берём max
+    expect((await db.user_stats.get(LOCAL_USER_ID))?.xp).toBe(4)
+  })
+})
+
+describe('trimQueue (долг M13: очередь гостя не растёт бесконечно)', () => {
+  it('без синка удаляется хвост старше CAP; при настроенном синке — no-op', async () => {
+    for (let i = 0; i < 5; i++) {
+      await db.sync_queue.add({
+        table: 'review_log',
+        op: 'insert',
+        payload: { id: `l${i}` },
+        tries: 0,
+        created_at: '2026-09-01T00:00:00Z',
+      })
+    }
+    expect(await trimQueue(db, 3)).toBe(2) // два старейших удалены
+    const rest = await db.sync_queue.toArray()
+    expect(rest.map((op) => (op.payload as { id: string }).id)).toEqual(['l2', 'l3', 'l4'])
+    expect(await trimQueue(db, 3)).toBe(0) // повторно удалять нечего
+
+    vi.mocked(isSyncConfigured).mockReturnValue(true)
+    try {
+      for (let i = 5; i < 8; i++) {
+        await db.sync_queue.add({
+          table: 'review_log',
+          op: 'insert',
+          payload: { id: `l${i}` },
+          tries: 0,
+          created_at: '2026-09-01T00:00:00Z',
+        })
+      }
+      expect(await trimQueue(db, 3)).toBe(0)
+      expect(await db.sync_queue.count()).toBe(6)
+    } finally {
+      vi.mocked(isSyncConfigured).mockReturnValue(false)
+    }
   })
 })

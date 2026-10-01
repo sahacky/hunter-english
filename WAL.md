@@ -1,6 +1,8 @@
 # WAL — Hunter English
 
 ## Current Phase
+**Долги синка M13 закрыты** (ветка feature/sync-debts): mergeLww user_stats теперь **XP = max сторон** (агрегат не роняется LWW-победителем); после pull — **recalcXpFromReviewLog**: пол XP из полного журнала (повтор 1 + выпуск Learning→Review 2, зеркало SrsScreen), применяется как max (нет двойного счёта и занижения); **trimQueue** — без env хвост sync_queue старше 2000 удаляется на бутстрапе AuthProvider (при входе enqueueAllRows выгружает актуальное). 459 unit / coverage 100-90.19-99.71-100.
+
 **Мини-словарь путешественника закрыт** (ветка feature/travel-vocab): новый kind данных `vocab` (data/vocab/travel.json — 487 слов / 9 тем, билдер research/tools/vocab/build_travel_vocab.py связывает с датасетом слов по лемме: 297 с готовым аудио, 190 — TTS-фолбэк); схема vocab.schema.json + envelope enum + DIR_TO_KIND/KIND_TO_SCHEMA; лоадер src/content/vocab.ts (groupVocabByTopic); экран `#/phrasebook/vocab` (карточка в списке разговорника, темы, 🔊 аудио/TTS); i18n +12 ключей. 453 unit / 59 e2e / coverage 100-90.22-99.71-100.
 
 **Обновление стека закрыто** (ветка feature/stack-upgrade): React 18.3→**19.3**, react-router-dom 6.26→**7.18.4** (закрыты 2 moderate CVE — npm audit **0 уязвимостей**), i18next 23→**26.4** + react-i18next 15→**17**, Vite 7→**8.3** + @vitejs/plugin-react 4→**6** (oxc-трансформ), eslint: @typescript-eslint/eslint-plugin+parser → пакет **typescript-eslint** (flat), eslint-plugin-react-hooks 5→**7** (новые compiler-правила refs/purity/set-state-in-effect/immutability — локальные disable с обоснованиями), @testing-library/react 16.3.3; пин **@babel/plugin-transform-runtime@7** (конфликт пиров с @babel/core@7 от istanbul-coverage — чинено версией, не --force). Адаптации: SrsScreen (cardShownAt useRef(0), entry до эффекта, preview-block disable), LessonScreen (checkpointRef-зеркало в effect), auth (act-обёртка флаша под React 19). Гейты: 448 unit + 59 e2e + build + coverage 100/90.22/99.7/100 + validate:data + i18n + audit — зелёные.
@@ -66,7 +68,7 @@
 
 ## TODO
 - Разработчику: Supabase-проект (README runbook), затем ручная проверка входа на проде
-- (опц.) B-27 диалог-сценки, XP-пересчёт, trim очереди
+- ~~(опц.) B-27 диалог-сценки, XP-пересчёт, trim очереди~~ — XP-пересчёт и trim ЗАКРЫТЫ 2026-10-01 (feature/sync-debts); B-27 диалог-сценки — осталось (интерактивный формат)
 - Разработчику: сделать репо публичным → деплой GitHub Pages включится сам (deploy.yml готов)
 - ~~(опц.) Докачать 25 уроков Бебриса (research/04 «Не охвачено»), проверить Present Perfect (уроки 2.26–2.45)~~ — ЗАКРЫТО 2026-10-01: докачано 859/1033, Present Perfect = 2.38 (№ 589); без субтитров осталось 17 видео (список в research/04 §5)
 - Черновик travel-словаря (487 слов, 9 тем) в `research/data/travel-vocab-draft.json` — ~~пул слов при расширении data/phrasebook и words~~ реализован как `data/vocab/travel.json` + вид `#/phrasebook/vocab` (2026-10-01); пополнение — правкой черновика + перегон билдера
@@ -208,3 +210,4 @@
 | 2026-10-01 | Интеграция внешнего ресёрча (study_eng): карта Бебриса допроверена по докачанным субтитрам (Present Perfect = 2.38, № 589; «Не охвачено» 25→17), quotes-sample +20 translation_ru, travel-словарь 487 слов (research/data/travel-vocab-draft.json), ловушки ЛТ-23–25 возвращены в билдер + новые ЛТ-26–31 (итого 31); validate:data + 448 unit зелёные | Слияние параллельного ресёрча, задача разработчика |
 | 2026-10-01 | Стек-апгрейд закрыт: React 19.3, react-router-dom 7.18.4 (audit 0 уязвимостей), i18next 26/react-i18next 17, Vite 8.3 + plugin-react 6, typescript-eslint-пакет, react-hooks 7; адаптации под новые правила и act-семантику React 19; 448 unit + 59 e2e + coverage 100/90.2/99.7/100 зелёные | Задача разработчика «обновление стека» |
 | 2026-10-01 | Мини-словарь путешественника закрыт: kind `vocab` (data/vocab/travel.json, 487 слов/9 тем, билдер + схема + валидатор), лоадер + вид #/phrasebook/vocab с аудио/TTS; 453 unit + 59 e2e; ветка feature/travel-vocab | Задача разработчика (выбор 2) |
+| 2026-10-01 | Долги синка M13 закрыты: XP = max при LWW-слиянии user_stats, пол XP из review_log после pull, trim очереди гостя (CAP 2000, бутстрап); 459 unit; ветка feature/sync-debts | Задача разработчика (выбор 3) |
