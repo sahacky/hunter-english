@@ -261,7 +261,7 @@
 | GAP-6 | Supabase: e2e входа с мок-сервером, SQL-тесты RLS, серверный suppress_stale_update | средний | S3 |
 | ~~GAP-7~~ | Контент-лоадеры: schema_version (assertEnvelope), 404-деградация | ~~средний~~ | **закрыт M18** |
 | GAP-8 | E2E: ~~экспорт~~, ~~чанк supabase-js~~ (M18); ~~reduced-motion~~, ~~тач-цели~~ (M21: e2e/polish.spec — media-правила волны/тоста + кнопки SRS ≥44px на 375px). Остались: autoUpdate-reload (нужен реальный деплой SW-обновления), deep-links ?stage= (у нас ?step= — покрыт unit'ом M19; отдельный e2e не требуется) | низкий | S3 |
-| GAP-9 | M21 закрыты: judge('')/unicode-ввод (checker.test), ~~Relearning-возврат~~ (был в scheduler.test), ~~online-триггер~~ (auth.test, M19), ~~слияние секций пересдачи~~ (GAP-5 walk), волна aria-hidden (есть с M6), I18N-сверка в CI (check:i18n, M18). Остались по мере: автосинк-интервал 5 мин (таймер-тест хрупкий — триггер покрыт), safe-area/FOUC (визуальные), ESLint-правило i18n (вне стека, ревью вручную), I18N-persistence после reload, скорость/анимации live | низкий | S3/по мере |
+| GAP-9 | M21 закрыты: judge('')/unicode-ввод (checker.test), ~~Relearning-возврат~~ (был в scheduler.test), ~~online-триггер~~ (auth.test, M19), ~~слияние секций пересдачи~~ (GAP-5 walk), волна aria-hidden (есть с M6), I18N-сверка в CI (check:i18n, M18), ~~I18N-persistence после reload~~ (settings.test «сохранённая локаль применяется» — провайдер читает localStorage при монтировании, 2026-10-01). Остались по мере: автосинк-интервал 5 мин (таймер-тест хрупкий — триггер покрыт), safe-area/FOUC (визуальные), ESLint-правило i18n (вне стека, ревью вручную), скорость/анимации live | низкий | S3/по мере |
 
 Решение о сроках закрытия GAP — за разработчиком (протокол: предложить добавление в PLANS отдельной задачей).
 

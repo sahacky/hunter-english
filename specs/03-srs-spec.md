@@ -27,8 +27,8 @@
 | `maximum_interval` | 36500 | потолок интервала, дней |
 | `enable_fuzz` | true | случайный разброс интервалов, чтобы повторы не сбивались в день |
 | `enable_short_term` | true | минутные интервалы в Learning/Relearning (шаги, см. srs://steps) |
-| `learning_steps` | `['1m', '10m']` | два шага Learning: 1 и 10 минут (srs://steps) — зафиксировано |
-| `relearning_steps` | `['10m']` | один шаг Relearning: 10 минут |
+| `learning_steps` | — (не задаётся) | ts-fsrs 4.x **не конфигурирует шаги**: при `enable_short_term` библиотека ведёт их сама (New: Again 1 м / Hard 5 м / Good 10 м; шаг Relearning 5 м). Синхронизировано с фактом 4.7.1 (REVIEW-маркер в `scheduler.ts`) |
+| `relearning_steps` | — (не задаётся) | см. выше — шаг задан библиотекой, не параметром |
 | веса `w` | дефолтные (FSRS-5/6) | вручную не крутим; оптимизация по `review_log` — возможное будущее, не MVP |
 
 Поля карточки, которые храним (полное соответствие модели `Card` в ts-fsrs):
@@ -96,12 +96,12 @@
 | New | показ, оценка | Learning | минуты (шаг 1) |
 | Learning | «Не вспомнил» | Learning | повтор текущего шага |
 | Learning | «Вспомнил» на последнем шаге | Review | первый дневной интервал (считает FSRS) |
-| Review | «Не вспомнил» (Again) | Relearning | шаг 10 мин |
+| Review | «Не вспомнил» (Again) | Relearning | шаг 5 мин (шаг библиотеки) |
 | Review | Hard / Good / Easy | Review | FSRS-интервал |
-| Relearning | «Не вспомнил» | Relearning | повтор шага 10 мин |
+| Relearning | «Не вспомнил» | Relearning | повтор шага 5 мин |
 | Relearning | «Вспомнил» | Review | FSRS-интервал |
 
-`srs://steps` — **learning steps: 1 мин → 10 мин** (relearning: один шаг 10 мин). Внутри дневных шагов планирование ведёт приложение (минутные интервалы поверх `enable_short_term`; шаги заданы параметрами `learning_steps: ['1m', '10m']` / `relearning_steps: ['10m']`, srs://ts-fsrs). Шаги не «сгорают» на конец дня: карточка с due в прошлом показывается первой при следующем открытии.
+`srs://steps` — минутные шаги задаёт **сама библиотека** при `enable_short_term` (ts-fsrs 4.x: New — Again 1 м / Hard 5 м / Good 10 м; шаг Relearning — 5 м; параметры `learning_steps`/`relearning_steps` в API отсутствуют — синхронизировано с фактом 4.7.1). Внутри дневных шагов планирование ведёт приложение (минутные интервалы поверх `enable_short_term`, srs://ts-fsrs). Шаги не «сгорают» на конец дня: карточка с due в прошлом показывается первой при следующем открытии.
 
 Young / mature: young — интервал < 21 дня, mature — ≥ 21. Порог влияет только на порядок и окраску.
 
