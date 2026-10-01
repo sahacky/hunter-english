@@ -268,11 +268,14 @@ export function QuoteScreen({ repo: repoProp }: { repo?: ProgressRepository }) {
 
   useEffect(() => {
     let alive = true
-    // смена :id сбрасывает прошлое состояние (404/цитата) — ревью M11 м1
+    // смена :id сбрасывает прошлое состояние (404/цитата) — ревью M11 м1;
+    // сброс синхронно в эффекте — осознанный ресет по смене параметра роутера
+    /* eslint-disable react-hooks/set-state-in-effect -- ресет состояния при смене :id (ревью M11 м1) */
     setNotFound(false)
     setState(null)
     setPopover(null)
     setCloze(null)
+    /* eslint-enable react-hooks/set-state-in-effect */
     void (async () => {
       try {
         const quote = await findQuote(params.id ?? '')

@@ -52,8 +52,9 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
   // Защита от двойного ответа, пока saveAnswer в полёте (review_log append-only —
   // дубль нельзя перезаписать, specs/06 §1)
   const busyRef = useRef(false)
-  // Время показа текущей карточки — duration_ms в review_log (specs/06 §1)
-  const cardShownAt = useRef(Date.now())
+  // Время показа текущей карточки — duration_ms в review_log (specs/06 §1);
+  // инициализируется эффектом показа карточки ниже, до этого замеры не снимаются
+  const cardShownAt = useRef(0)
   // Момент показа карточки — единый `now` для превью интервалов И applyAnswer:
   // seed fuzz в ts-fsrs включает review_time (DefaultInitSeedStrategy), поэтому
   // превью и фактический ответ обязаны зваться с одним now — иначе подпись
@@ -182,6 +183,8 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
     [queue, answeredInBlock, repo, sessionId],
   )
 
+  const entry = queue[0]
+
   useEffect(() => {
     if (phase.kind !== 'review') return
     const onKey = (event: KeyboardEvent) => {
@@ -280,9 +283,11 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
     )
   }
 
-  const entry = queue[0]
   // Превью интервалов для кнопок (specs/03 §6): from = замороженный момент показа
-  // (previewNowRef), тот же now уходит в applyAnswer — подпись не врёт (ревью M10 Б1)
+  // (previewNowRef), тот же now уходит в applyAnswer — подпись не врёт (ревью M10 Б1).
+  // Чтение ref в рендере осознанное: previewNow заморожен на показе карточки и не
+  // меняется до следующей (react-hooks/refs vs инвариант M10 — disable локальный)
+  /* eslint-disable react-hooks/refs -- замороженный previewNow: один now для превью и applyAnswer (ревью M10 Б1) */
   const units = {
     m: t('srs.intervalUnits.m'),
     h: t('srs.intervalUnits.h'),
@@ -314,6 +319,7 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
           ),
         }
       : null
+  /* eslint-enable react-hooks/refs -- см. обоснование выше */
   return (
     <section className="panel srs-panel">
       <header className="srs-head">

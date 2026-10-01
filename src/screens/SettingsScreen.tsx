@@ -148,8 +148,10 @@ export default function SettingsScreen({ database }: SettingsScreenProps) {
   }, [database])
   const dbName = useMemo(() => database?.name ?? 'local', [database])
 
-  // внешний источник изменения (импорт/сброс дефолтов) синхронизирует черновик
+  // внешний источник изменения (импорт/сброс дефолтов) синхронизирует черновик;
+  // ресет черновика по изменению пропа — осознанный паттерн «adjust state on change»
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- ресет черновика при внешнем изменении newPerDay
     setNewPerDayDraft(String(settings.newPerDay))
   }, [settings.newPerDay])
 
