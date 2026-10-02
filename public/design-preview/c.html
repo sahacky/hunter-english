@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>C · Codex — Hunter English</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;0,7..72,900;1,7..72,400&family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        --paper: #f4efe6;
+        --paper-2: #ece5d8;
+        --card: #faf7f0;
+        --ink: #26221b;
+        --ink-soft: #5c554a;
+        --wax: #b3423a;
+        --wax-soft: #f3ded9;
+        --forest: #3d6b50;
+        --forest-soft: #e2ecdf;
+        --gold: #8a6d1f;
+        --line: #d8cfbd;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: 'PT Sans', system-ui, sans-serif;
+        color: var(--ink);
+        background:
+          repeating-linear-gradient(0deg, transparent 0 31px, rgba(38, 34, 27, 0.025) 31px 32px),
+          var(--paper);
+        min-height: 100vh;
+        padding: 20px 16px 60px;
+      }
+      .preview-bar {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 780px;
+        margin: 0 auto 22px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        padding: 10px 16px;
+        font-size: 14px;
+        color: var(--ink-soft);
+      }
+      .preview-bar b {
+        font-family: 'Literata', serif;
+        color: var(--ink);
+      }
+      .preview-bar a {
+        color: var(--wax);
+        text-decoration: none;
+        border-bottom: 1px solid rgba(179, 66, 58, 0.35);
+      }
+      .shell {
+        max-width: 780px;
+        margin: 0 auto;
+        display: grid;
+        gap: 22px;
+      }
+
+      .sheet {
+        background: var(--card);
+        border: 1px solid var(--line);
+        box-shadow:
+          0 1px 0 #fff inset,
+          0 10px 22px rgba(38, 34, 27, 0.07);
+        padding: 26px 30px;
+        position: relative;
+      }
+      .sheet::after {
+        content: '';
+        position: absolute;
+        inset: 6px;
+        border: 1px solid rgba(38, 34, 27, 0.07);
+        pointer-events: none;
+      }
+      .sheet h2 {
+        font-family: 'Literata', serif;
+        font-size: 13px;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--ink-soft);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 18px;
+      }
+      .sheet h2::after {
+        content: '';
+        flex: 1;
+        height: 1px;
+        background: var(--line);
+      }
+
+      /* штамп ранга */
+      .status {
+        display: flex;
+        gap: 22px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .stamp {
+        width: 92px;
+        height: 92px;
+        flex: none;
+        border: 3px double var(--wax);
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        color: var(--wax);
+        transform: rotate(-7deg);
+        font-family: 'Literata', serif;
+        background: var(--wax-soft);
+        box-shadow:
+          0 0 0 4px var(--card),
+          0 0 0 5px rgba(179, 66, 58, 0.25);
+      }
+      .stamp b {
+        font-size: 34px;
+        line-height: 1;
+      }
+      .stamp small {
+        display: block;
+        font-size: 11px;
+        letter-spacing: 0.12em;
+        font-weight: 600;
+      }
+      .status-main {
+        flex: 1;
+        min-width: 240px;
+      }
+      .status-main h1 {
+        font-family: 'Literata', serif;
+        font-size: 24px;
+        font-weight: 900;
+      }
+      .status-main .sub {
+        color: var(--ink-soft);
+        margin: 6px 0 12px;
+        font-size: 15px;
+      }
+      .ledger {
+        border-top: 1px solid var(--line);
+      }
+      .ledger div {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--line);
+        padding: 7px 2px;
+        font-size: 14px;
+      }
+      .ledger span {
+        color: var(--ink-soft);
+      }
+      .ledger b {
+        font-variant-numeric: tabular-nums;
+      }
+
+      /* квест — чек-лист экспедиции */
+      .check {
+        display: flex;
+        align-items: baseline;
+        gap: 12px;
+        padding: 10px 2px;
+        border-bottom: 1px dashed var(--line);
+      }
+      .check:last-of-type {
+        border-bottom: 0;
+      }
+      .box {
+        width: 18px;
+        height: 18px;
+        flex: none;
+        position: relative;
+        top: 3px;
+        border: 1.5px solid var(--ink-soft);
+        background: #fff;
+      }
+      .check.done .box {
+        background: var(--forest);
+        border-color: var(--forest);
+      }
+      .check.done .box::after {
+        content: '✓';
+        color: #fff;
+        position: absolute;
+        inset: 0;
+        display: grid;
+        place-items: center;
+        font-size: 13px;
+      }
+      .check .what {
+        flex: 1;
+      }
+      .check.done .what {
+        color: var(--ink-soft);
+        text-decoration: line-through;
+        text-decoration-color: rgba(61, 107, 80, 0.5);
+      }
+      .check .tally {
+        font-variant-numeric: tabular-nums;
+        color: var(--ink-soft);
+        font-size: 14px;
+      }
+      .check.done .tally {
+        color: var(--forest);
+        font-weight: 700;
+      }
+      .dayend {
+        margin-top: 12px;
+        text-align: right;
+        font-size: 13px;
+        color: var(--gold);
+        font-style: italic;
+      }
+
+      /* карточка слова — словарная статья */
+      .entry {
+        text-align: center;
+        padding: 8px 0 2px;
+      }
+      .entry .en {
+        font-family: 'Literata', serif;
+        font-size: 42px;
+        font-weight: 900;
+        letter-spacing: 0.01em;
+      }
+      .entry .ipa {
+        color: var(--ink-soft);
+        font-size: 15px;
+        font-style: italic;
+        margin: 4px 0;
+      }
+      .entry .ru {
+        font-size: 19px;
+        margin-top: 6px;
+      }
+      .entry .listen {
+        margin-top: 10px;
+        display: inline-flex;
+        gap: 10px;
+      }
+      .entry .listen button {
+        font-family: 'PT Sans', sans-serif;
+        font-size: 13px;
+        background: none;
+        border: 1px solid var(--ink-soft);
+        padding: 6px 14px;
+        cursor: pointer;
+        color: var(--ink);
+      }
+      .entry .listen button:hover {
+        background: var(--paper-2);
+      }
+      .verdicts {
+        display: flex;
+        gap: 14px;
+        margin-top: 20px;
+      }
+      .vbtn {
+        flex: 1;
+        padding: 13px 10px;
+        cursor: pointer;
+        font-family: 'Literata', serif;
+        font-weight: 600;
+        font-size: 15px;
+        background: var(--card);
+        border: 1.5px solid var(--ink-soft);
+        color: var(--ink);
+      }
+      .vbtn small {
+        display: block;
+        font-family: 'PT Sans', sans-serif;
+        font-size: 11px;
+        color: var(--ink-soft);
+        margin-top: 3px;
+        font-weight: 400;
+      }
+      .vbtn.forget {
+        border-color: var(--wax);
+        color: var(--wax);
+        background: var(--wax-soft);
+      }
+      .vbtn.recall {
+        border-color: var(--forest);
+        color: var(--forest);
+        background: var(--forest-soft);
+      }
+
+      /* программа — оглавление */
+      .toc-head {
+        font-family: 'Literata', serif;
+        font-weight: 900;
+        font-size: 17px;
+        margin: 14px 0 4px;
+      }
+      .toc-head small {
+        font-family: 'PT Sans', sans-serif;
+        font-weight: 400;
+        color: var(--ink-soft);
+        font-size: 13px;
+      }
+      .toc {
+        border-top: 1px solid var(--line);
+      }
+      .toc a,
+      .toc span.row {
+        display: flex;
+        gap: 12px;
+        align-items: baseline;
+        padding: 9px 2px;
+        border-bottom: 1px solid var(--line);
+        text-decoration: none;
+        color: var(--ink);
+        font-size: 15px;
+      }
+      .toc .no {
+        color: var(--gold);
+        font-variant-numeric: tabular-nums;
+        width: 44px;
+        flex: none;
+      }
+      .toc .t {
+        flex: 1;
+      }
+      .toc .m {
+        color: var(--ink-soft);
+        font-size: 13px;
+        font-style: italic;
+      }
+      .toc .here {
+        color: var(--wax);
+      }
+      .toc .lock {
+        color: var(--ink-soft);
+      }
+      .toc .row.locked .t {
+        color: var(--ink-soft);
+      }
+      .toc .row.current {
+        background: linear-gradient(90deg, rgba(179, 66, 58, 0.06), transparent);
+      }
+      .toc .row.current .t::after {
+        content: ' — ты здесь';
+        color: var(--wax);
+        font-style: italic;
+        font-size: 13px;
+      }
+
+      footer.sig {
+        text-align: center;
+        color: var(--ink-soft);
+        font-size: 12px;
+        margin-top: 4px;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="preview-bar">
+      <a href="./a.html">A · Система 2.0</a> · <a href="./b.html">B · Daylight</a> ·
+      <b>C · Codex</b> ·
+      <a href="../#/">приложение</a>
+    </div>
+
+    <div class="shell">
+      <section class="sheet">
+        <h2>Статус охотника</h2>
+        <div class="status">
+          <div class="stamp">
+            <span><b>E</b><small>A0 · УРОВЕНЬ 3</small></span>
+          </div>
+          <div class="status-main">
+            <h1>Журнал экспедиций</h1>
+            <div class="sub">Охотник E-ранга · 340 XP · до Врат D — 660 XP</div>
+            <div class="ledger">
+              <div><span>Серия дней</span><b>7 (рекорд 21)</b></div>
+              <div><span>Заморозки в запасе</span><b>2</b></div>
+              <div><span>Изучено слов</span><b>214</b></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sheet">
+        <h2>На сегодня</h2>
+        <div class="check done">
+          <div class="box"></div>
+          <div class="what">Повторения</div>
+          <div class="tally">10 / 10</div>
+        </div>
+        <div class="check">
+          <div class="box"></div>
+          <div class="what">Урок дня — E-12 · Present Simple: отрицание</div>
+          <div class="tally">0 / 1</div>
+        </div>
+        <div class="check">
+          <div class="box"></div>
+          <div class="what">Диктант</div>
+          <div class="tally">4 / 8</div>
+        </div>
+        <div class="dayend">игровой день закрывается через 6:42</div>
+      </section>
+
+      <section class="sheet">
+        <h2>Повторение · слова</h2>
+        <div class="entry">
+          <div class="en">airport</div>
+          <div class="ipa">сущ. · аэродром, аэропорт</div>
+          <div class="ru">аэропорт</div>
+          <div class="listen">
+            <button type="button">🔊 произнести</button>
+            <button type="button">🐢 медленно</button>
+          </div>
+        </div>
+        <div class="verdicts">
+          <button class="vbtn forget" type="button">Забыл<small>снова через минуту</small></button>
+          <button class="vbtn recall" type="button">
+            Вспомнил<small>вернётся через 3 дня</small>
+          </button>
+        </div>
+      </section>
+
+      <section class="sheet">
+        <h2>Программа · оглавление</h2>
+        <div class="toc-head">Ранг E — первые шаги <small>A0 · 24 урока · пройден 1</small></div>
+        <div class="toc">
+          <a href="#" class="row done">
+            <span class="no">E-01</span><span class="t">to be: am / is / are</span
+            ><span class="m">✓ к повторению</span>
+          </a>
+          <span class="row current">
+            <span class="no here">E-02</span
+            ><span class="t">to be + прилагательное · артикль a / an</span><span class="m"></span>
+          </span>
+          <span class="row locked">
+            <span class="no lock">D-01</span><span class="t">Present Continuous</span
+            ><span class="m">после Врат D</span>
+          </span>
+          <span class="row locked">
+            <span class="no lock">S-15</span><span class="t">Разбор-колода</span
+            ><span class="m">финальный том</span>
+          </span>
+        </div>
+        <footer class="sig">— записано Системой, подтверждено Вратами —</footer>
+      </section>
+    </div>
+  </body>
+</html>
