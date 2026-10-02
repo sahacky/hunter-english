@@ -135,7 +135,7 @@ describe('WelcomeScreen', () => {
     fireEvent.click(screen.getByRole('button', { name: /Дальше/ }))
     // вердикт: ранг E, low (была ошибка в E)
     expect(await screen.findByText('Система назначает ранг')).toBeInTheDocument()
-    expect(screen.getByText('E')).toBeInTheDocument()
+    expect(screen.getByText('E (A0)')).toBeInTheDocument()
     expect(screen.getByText(/Система сомневалась/)).toBeInTheDocument()
     fireEvent.click(screen.getByText('Начать обучение'))
     await waitFor(() => expect(window.location.hash).toBe('#/'))
@@ -211,7 +211,7 @@ describe('WelcomeScreen', () => {
     )
     fireEvent.click(await screen.findByText('Пройти оценку ранга'))
     expect(await screen.findByText('Система назначает ранг')).toBeInTheDocument()
-    expect(screen.getByText('E')).toBeInTheDocument()
+    expect(screen.getByText('E (A0)')).toBeInTheDocument()
     expect(screen.getByText(/Чистый срез/)).toBeInTheDocument()
     // старт из мгновенного вердикта тоже применяет ранг
     fireEvent.click(screen.getByText('Начать обучение'))

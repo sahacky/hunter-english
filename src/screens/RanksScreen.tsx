@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
-import { levelInfo, NEXT_RANK } from '../domain/game/game'
+import { RANK_CEFR, levelInfo, NEXT_RANK } from '../domain/game/game'
 import type { UserStats } from '../domain/game/types'
 import type { ProgressRepository } from '../domain/progress'
 import { DexieProgressRepository } from '../data/progress-repository'
@@ -94,7 +94,13 @@ export default function RanksScreen({ repo: repoProp }: DashboardProps) {
     <div className="ranks">
       <section className="panel">
         <h2>[{t('ranks.statusTitle')}]</h2>
-        <p>{t('dashboard.rankAndLevel', { rank: stats.rank, level: level.level })}</p>
+        <p>
+          {t('dashboard.rankAndLevel', {
+            rank: stats.rank,
+            cefr: RANK_CEFR[stats.rank],
+            level: level.level,
+          })}
+        </p>
         <div
           className="dash-xp-bar"
           role="progressbar"

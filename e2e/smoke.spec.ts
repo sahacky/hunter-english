@@ -67,6 +67,6 @@ test('path screen lists program ranks (plan://onboarding)', async ({ page }) => 
   await expect(page.getByRole('heading', { name: 'Программа обучения' })).toBeVisible({
     timeout: 8000,
   })
-  await expect(page.getByText(/Ранг E · 0\/24 уроков/)).toBeVisible()
+  await expect(page.getByText(/Ранг E \(A0\) · 0\/24 уроков/)).toBeVisible()
   await expect(page.getByText('ты здесь')).toBeVisible()
 })

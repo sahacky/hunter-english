@@ -29,7 +29,7 @@
       "bonus": "Bonus"
     },
     "quoteTitle": "Quote of the day",
-    "rankAndLevel": "Hunter rank {{rank}}, lv. {{rank}}-{{level}}",
+    "rankAndLevel": "Hunter of rank {{rank}} ({{cefr}}), lvl {{rank}}-{{level}}",
     "startLesson": "Start the day · lesson",
     "startReviews": "Start the day · reviews: {{count}}",
     "statusTitle": "Status",
@@ -173,7 +173,7 @@
     "text": "This page does not exist. Check the address."
   },
   "path": {
-    "rankHeader": "Rank {{rank}} · {{done}}/{{total}} lessons",
+    "rankHeader": "Rank {{rank}} ({{cefr}}) · {{done}}/{{total}} lessons",
     "status": {
       "available": "available",
       "completed": "completed",

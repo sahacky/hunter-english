@@ -103,7 +103,7 @@ describe('PathScreen', () => {
     )
     expect(await screen.findByText('Программа обучения')).toBeInTheDocument()
     // реальный контент: ранг E = 24 урока, зачтён один (waived)
-    expect(screen.getByText(/Ранг E · 1\/24 уроков/)).toBeInTheDocument()
+    expect(screen.getByText(/Ранг E \(A0\) · 1\/24 уроков/)).toBeInTheDocument()
     expect(screen.getByText(/ты здесь/)).toBeInTheDocument()
     expect(screen.getAllByText(/Ранг S/).length).toBeGreaterThan(0)
     // locked-уроки рендерятся span'ами (не ссылками)

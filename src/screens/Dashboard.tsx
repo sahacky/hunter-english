@@ -5,7 +5,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react'
 import { Link, Navigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { dayStart } from '../domain/srs/scheduler'
-import { levelInfo } from '../domain/game/game'
+import { levelInfo, RANK_CEFR } from '../domain/game/game'
 import { createQuestDay } from '../domain/game/game'
 import type { QuestDayState, UserStats } from '../domain/game/types'
 import type { LessonItem, QuoteItem } from '../content/lessons'
@@ -191,6 +191,7 @@ export default function Dashboard({ repo: repoProp }: DashboardProps) {
         <p>
           {t('dashboard.rankAndLevel', {
             rank: data.stats.rank,
+            cefr: RANK_CEFR[data.stats.rank],
             level: level.level,
           })}
         </p>

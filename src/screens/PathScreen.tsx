@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next'
 import { loadLessons, type LessonItem } from '../content/lessons'
 import type { ProgressRepository } from '../domain/progress'
 import { DexieProgressRepository } from '../data/progress-repository'
+import { RANK_CEFR } from '../domain/game/game'
 import type { StoredLessonStatus } from '../domain/lesson/types'
 
 type RowStatus = StoredLessonStatus | 'locked' | 'available'
@@ -91,7 +92,9 @@ export default function PathScreen({ repo: repoProp }: { repo?: ProgressReposito
         ).length
         return (
           <section key={rank} className="pb-vocab-topic">
-            <h3>{t('path.rankHeader', { rank, done, total: rankRows.length })}</h3>
+            <h3>
+              {t('path.rankHeader', { rank, cefr: RANK_CEFR[rank], done, total: rankRows.length })}
+            </h3>
             <ul className="lesson-path">
               {rankRows.map((row) => {
                 const href = `#/lesson/${row.lesson.id.replace(/^les-/, '').toUpperCase()}`

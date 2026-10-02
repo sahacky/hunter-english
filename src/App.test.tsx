@@ -17,7 +17,7 @@ describe('App', () => {
       </HashRouter>,
     )
     expect(await screen.findByText('[Ежедневный квест]', {}, { timeout: 5000 })).toBeInTheDocument()
-    expect(await screen.findByText(/Охотник E-ранга/)).toBeInTheDocument()
+    expect(await screen.findByText(/Охотник E-ранга \(A0\)/)).toBeInTheDocument()
   })
 
   it('renders navigation', () => {
