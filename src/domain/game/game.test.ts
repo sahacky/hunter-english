@@ -113,17 +113,25 @@ describe('квесты (specs/04 §6)', () => {
     expect(createQuestDay('2026-09-28T00:00:00Z', 37).slots.reviews.target).toBe(37)
   })
 
-  it('награды: все 3 слота +30, бонус +15 — единожды', () => {
+  it('награды: все слоты (вкл. аудирование) +30, бонус +15 — единожды', () => {
     const state = createQuestDay('2026-09-28T00:00:00Z', 20)
     expect(questAwards(state)).toEqual({ allDone: 0, bonus: 0 })
     state.slots.reviews.done = 20
     state.slots.dictation.done = 10
     state.slots.lesson.done = 1
     state.bonusDone = state.bonus.target
+    // input-трек не закрыт — общего бонуса нет (plan://curriculum-review#I.1)
+    expect(questAwards(state)).toEqual({ allDone: 0, bonus: 15 })
+    state.slots.listening.done = state.slots.listening.target
     expect(questAwards(state)).toEqual({ allDone: 30, bonus: 15 })
     state.allDoneAwarded = true
     state.bonusAwarded = true
     expect(questAwards(state)).toEqual({ allDone: 0, bonus: 0 })
+  })
+
+  it('цель аудирования — 20 минут (input-трек)', () => {
+    const state = createQuestDay('2026-09-28T00:00:00Z', 20)
+    expect(state.slots.listening).toEqual({ done: 0, target: 20 * 60 })
   })
 })
 

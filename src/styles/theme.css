@@ -1359,3 +1359,34 @@ body {
   max-width: 360px;
   margin: 0 auto 12px;
 }
+
+/* plan://curriculum-review#I.2 — input-трек: список понятых цитат */
+.listen-list {
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+.listen-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  background: var(--surface-2);
+  border-radius: var(--radius-card);
+}
+.listen-row-current {
+  outline: 2px solid var(--primary);
+}
+.listen-text {
+  flex: 1;
+  min-width: 0;
+}
+.listen-text p {
+  margin: 0 0 4px;
+}
+.listen-actions {
+  display: flex;
+  gap: 8px;
+}

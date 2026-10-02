@@ -17,11 +17,12 @@ function renderLayout(route = '/') {
 }
 
 describe('Layout', () => {
-  it('рендерит десктоп-навигацию (8 пунктов)', () => {
+  it('рендерит десктоп-навигацию (9 пунктов, вкл. Слушать)', () => {
     renderLayout()
     const nav = screen.getByRole('navigation', { name: 'Основная навигация' })
     expect(nav).toBeInTheDocument()
-    expect(nav.querySelectorAll('a')).toHaveLength(8)
+    expect(nav.querySelectorAll('a')).toHaveLength(9)
+    expect([...nav.querySelectorAll('a')].some((a) => a.textContent === 'Слушать')).toBe(true)
   })
 
   it('рендерит таб-бар из 5 пунктов с aria-подписью', () => {

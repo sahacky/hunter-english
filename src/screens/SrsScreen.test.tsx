@@ -20,7 +20,13 @@ import { db as globalDb } from '../data/db'
 import { DEFAULT_SETTINGS } from '../domain/settings/types'
 import '../i18n'
 
-vi.mock('../lib/tts', () => ({ speak: vi.fn(), stopSpeak: vi.fn(), setDefaultRate: vi.fn() }))
+vi.mock('../lib/tts', () => ({
+  speak: vi.fn(),
+  stopSpeak: vi.fn(),
+  setDefaultRate: vi.fn(),
+  setListenSink: vi.fn(),
+  currentAudio: vi.fn(() => null),
+}))
 
 const WORDS: Array<[string, string]> = [
   ['house', 'дом'],

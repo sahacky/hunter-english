@@ -188,6 +188,7 @@ describe('DexieProgressRepository', () => {
         reviews: { done: 12, target: 20 },
         lesson: { done: 1, target: 1 },
         dictation: { done: 4, target: 10 },
+        listening: { done: 300, target: 1200 },
       },
       bonus: { id: 'speak-5', target: 5 },
       bonusDone: 2,

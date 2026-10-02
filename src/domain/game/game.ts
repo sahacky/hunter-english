@@ -161,6 +161,8 @@ export const BONUS_POOL: BonusQuest[] = [
 
 export const DICTATION_TARGET = 10
 export const REVIEWS_MIN = 20
+/** Цель аудирования в секундах: 20 мин/день (input-трек, plan://curriculum-review#I.1). */
+export const LISTENING_TARGET_SEC = 20 * 60
 
 /** Seeded выбор бонус-квеста: детерминирован по дате (без переролла). */
 export function pickBonusQuest(studyDayIso: string, pool: BonusQuest[] = BONUS_POOL): BonusQuest {
@@ -177,6 +179,7 @@ export function createQuestDay(studyDayIso: string, dueToday: number): QuestDayS
       reviews: { done: 0, target: Math.max(REVIEWS_MIN, dueToday) },
       lesson: { done: 0, target: 1 },
       dictation: { done: 0, target: DICTATION_TARGET },
+      listening: { done: 0, target: LISTENING_TARGET_SEC },
     },
     bonus: pickBonusQuest(studyDayIso),
     bonusDone: 0,
@@ -201,7 +204,8 @@ export function questAwards(state: QuestDayState): QuestAward {
     !state.allDoneAwarded &&
     state.slots.reviews.done >= state.slots.reviews.target &&
     state.slots.lesson.done >= state.slots.lesson.target &&
-    state.slots.dictation.done >= state.slots.dictation.target
+    state.slots.dictation.done >= state.slots.dictation.target &&
+    state.slots.listening.done >= state.slots.listening.target
       ? 30
       : 0
   const bonus = !state.bonusAwarded && state.bonusDone >= state.bonus.target ? 15 : 0

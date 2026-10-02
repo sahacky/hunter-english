@@ -13,7 +13,7 @@ const initSynth = vi.hoisted(() => {
   return synth
 })
 import { afterEach, describe, expect, it, vi } from 'vitest'
-import { isTtsSupported, speak, stopSpeak } from './tts'
+import { currentAudio, isTtsSupported, setListenSink, speak, stopSpeak } from './tts'
 
 // модуль tts уже инициализировался с initSynth — возвращаем окружение в jsdom-режим
 ;(globalThis as { speechSynthesis?: unknown }).speechSynthesis = undefined
@@ -49,24 +49,37 @@ function mockUtterance() {
 }
 
 function mockAudio() {
+  type Listener = (event: { type: string }) => void
   const instances: {
     src: string
     playbackRate: number
     play: ReturnType<typeof vi.fn>
     pause: ReturnType<typeof vi.fn>
+    addEventListener: (type: string, listener: Listener) => void
+    listeners: Map<string, Listener[]>
   }[] = []
   const Ctor = vi.fn(function AudioLike(this: never, src: string) {
+    const listeners = new Map<string, Listener[]>()
     const instance = {
       src,
       playbackRate: 1,
       play: vi.fn().mockResolvedValue(undefined),
       pause: vi.fn(),
+      listeners,
+      addEventListener: (type: string, listener: Listener) => {
+        const list = listeners.get(type) ?? []
+        list.push(listener)
+        listeners.set(type, list)
+      },
     }
     instances.push(instance)
     return instance
   })
   vi.stubGlobal('Audio', Ctor)
-  return { Ctor, instances }
+  const emit = (instance: (typeof instances)[number], type: string) => {
+    for (const listener of instance.listeners.get(type) ?? []) listener({ type })
+  }
+  return { Ctor, instances, emit }
 }
 
 afterEach(() => {
@@ -130,6 +143,7 @@ describe('tts шлюз (plan://M6#6.1)', () => {
         playbackRate: 1,
         play: vi.fn().mockRejectedValue(new Error('blocked')),
         pause: vi.fn(),
+        addEventListener: () => undefined,
       }
     })
     vi.stubGlobal('Audio', Ctor)
@@ -154,6 +168,7 @@ describe('tts шлюз (plan://M6#6.1)', () => {
               else _resolve()
             }),
           pause: () => paused.push(src),
+          addEventListener: () => undefined,
         }
       })
       vi.stubGlobal('Audio', Ctor)
@@ -181,6 +196,7 @@ describe('tts шлюз (plan://M6#6.1)', () => {
             rejectHolder.reject = reject
           }),
         pause: vi.fn(),
+        addEventListener: () => undefined,
       }
     })
     vi.stubGlobal('Audio', Ctor)
@@ -229,5 +245,73 @@ describe('tts: хвосты (M19)', () => {
     })
     mockUtterance()
     expect(speak('hello')).toBe(false)
+  })
+})
+
+describe('tts счётчик аудирования (plan://curriculum-review#I.1)', () => {
+  it('файл доиграл → sink получает секунды отрезка', () => {
+    vi.useFakeTimers()
+    try {
+      const { instances, emit } = mockAudio()
+      const sink = vi.fn()
+      setListenSink(sink)
+      speak('hello', { src: 'audio/x.opus' })
+      vi.advanceTimersByTime(4000)
+      emit(instances[0]!, 'ended')
+      expect(sink).toHaveBeenCalledTimes(1)
+      expect(sink.mock.calls[0]![0]).toBeCloseTo(4, 1)
+    } finally {
+      setListenSink(null)
+      vi.useRealTimers()
+    }
+  })
+
+  it('stopSpeak досрочно → flush текущего отрезка; новый speak не теряет прошлый', () => {
+    vi.useFakeTimers()
+    try {
+      mockAudio()
+      const sink = vi.fn()
+      setListenSink(sink)
+      speak('one', { src: 'audio/a.opus' })
+      vi.advanceTimersByTime(2000)
+      speak('two', { src: 'audio/b.opus' }) // останавливает первый и флашит его
+      expect(sink).toHaveBeenCalledTimes(1)
+      expect(sink.mock.calls[0]![0]).toBeCloseTo(2, 1)
+      vi.advanceTimersByTime(3000)
+      stopSpeak()
+      expect(sink).toHaveBeenCalledTimes(2)
+      expect(sink.mock.calls[1]![0]).toBeCloseTo(3, 1)
+    } finally {
+      setListenSink(null)
+      vi.useRealTimers()
+    }
+  })
+
+  it('потолок одного отрезка — 600 с (защита от забытой вкладки)', () => {
+    vi.useFakeTimers()
+    try {
+      const { emit } = mockAudio()
+      const sink = vi.fn()
+      setListenSink(sink)
+      speak('long', { src: 'audio/x.opus' })
+      vi.advanceTimersByTime(3_600_000) // час «играет»
+      emit({ listeners: new Map() } as never, 'ended') // без слушателей — flush вручную не сработает
+      stopSpeak()
+      expect(sink.mock.calls[0]![0]).toBe(600)
+    } finally {
+      setListenSink(null)
+      vi.useRealTimers()
+    }
+  })
+})
+
+describe('currentAudio (плейлист input-трека)', () => {
+  it('возвращает активный элемент во время воспроизведения и null после остановки', () => {
+    const { instances } = mockAudio()
+    expect(currentAudio()).toBeNull()
+    speak('hello', { src: 'audio/x.opus' })
+    expect(currentAudio()).toBe(instances[0]!)
+    stopSpeak()
+    expect(currentAudio()).toBeNull()
   })
 })

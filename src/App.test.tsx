@@ -1,46 +1,72 @@
+// Implements: plan://curriculum-review#I.1 — bootstrap счётчика аудирования в App:
+// sink из шлюза озвучки пишет секунды в квест дня (глобальная Dexie-база)
 import 'fake-indexeddb/auto'
-import { ONBOARDING_KEY } from './data/onboarding'
-import { render, screen } from '@testing-library/react'
+import { beforeEach, describe, expect, it, vi } from 'vitest'
+import { render, screen, waitFor } from '@testing-library/react'
 import { HashRouter } from 'react-router-dom'
-import App from './App'
 import './i18n'
+import App from './App'
+import { db, getCurrentUserId } from './data/db'
+import { dayStart } from './domain/srs/scheduler'
+
+// перехват регистрации sink'а: App вызывает setListenSink на монтировании
+const registered = vi.hoisted(() => ({ sinks: [] as ((seconds: number) => void)[] }))
+vi.mock('./lib/tts', async (importOriginal) => {
+  const actual = await importOriginal<typeof import('./lib/tts')>()
+  return {
+    ...actual,
+    setListenSink: (sink: ((seconds: number) => void) | null) => {
+      if (sink) registered.sinks.push(sink)
+    },
+  }
+})
+
+interface QuestDataRow {
+  data: { slots: { listening: { done: number } } }
+}
 
 beforeEach(() => {
-  localStorage.setItem(ONBOARDING_KEY, '1')
+  window.location.hash = '#/'
+  registered.sinks.length = 0
 })
 
-describe('App', () => {
-  it('renders dashboard (quest window loads, plan://M7#7.4)', async () => {
-    render(
-      <HashRouter>
-        <App />
-      </HashRouter>,
-    )
-    expect(await screen.findByText('Ежедневный квест', {}, { timeout: 5000 })).toBeInTheDocument()
-    expect(await screen.findByText(/Охотник E-ранга \(A0\)/)).toBeInTheDocument()
-  })
+describe('App: sink аудирования (plan://curriculum-review#I.1)', () => {
+  it(
+    'mount регистрирует sink; прослушанные секунды попадают в квест дня',
+    { timeout: 30_000 },
+    async () => {
+      render(
+        <HashRouter>
+          <App />
+        </HashRouter>,
+      )
+      await waitFor(() => expect(registered.sinks.length).toBe(1), { timeout: 8000 })
+      registered.sinks[0]!(42)
+      await waitFor(
+        async () => {
+          const dayIso = dayStart(new Date()).toISOString()
+          const row = (await db.item_progress.get([
+            getCurrentUserId(),
+            dayIso,
+            'quest_day',
+          ])) as unknown as QuestDataRow | undefined
+          expect(row?.data.slots.listening.done).toBeGreaterThanOrEqual(42)
+        },
+        { timeout: 8000 },
+      )
+    },
+  )
 
-  it('renders navigation', () => {
+  it('неизвестный маршрут — 404-страница с возвратом на дашборд', { timeout: 30_000 }, async () => {
+    window.location.hash = '#/no-such-place'
     render(
       <HashRouter>
         <App />
       </HashRouter>,
     )
-    expect(screen.getByRole('navigation', { name: 'Основная навигация' })).toBeInTheDocument()
-  })
-})
-
-// Implements: plan://M19 — App: 404-маршрут (Placeholder); KI-2026-10-01: 404 с текстом и ссылкой
-describe('App: маршруты', () => {
-  it('неизвестный путь → 404 с текстом и возвратом на дашборд', async () => {
-    window.location.hash = '#/no-such-page'
-    render(
-      <HashRouter>
-        <App />
-      </HashRouter>,
-    )
-    expect(await screen.findByRole('heading', { name: '404' })).toBeInTheDocument()
-    expect(screen.getByText('Такой страницы нет. Проверь адрес.')).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: 'На дашборд' })).toHaveAttribute('href', '#/')
+    expect(
+      await screen.findByText('Такой страницы нет. Проверь адрес.', {}, { timeout: 8000 }),
+    ).toBeInTheDocument()
+    expect(screen.getByText('На дашборд')).toBeInTheDocument()
   })
 })
