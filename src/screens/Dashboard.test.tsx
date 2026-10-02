@@ -112,8 +112,9 @@ describe('Dashboard', () => {
           <Dashboard repo={repo} />
         </HashRouter>,
       )
-      // find* на фейковых таймерах не поллит — крутим часы до загрузки данных
-      for (let i = 0; i < 100 && !screen.queryByText('[Ежедневный квест]'); i += 1) {
+      // find* на фейковых таймерах не поллит — крутим часы до загрузки данных;
+      // запас 800×100мс: под нагрузкой CI-раннера загрузка идёт дольше (прецедент M17)
+      for (let i = 0; i < 800 && !screen.queryByText('[Ежедневный квест]'); i += 1) {
         await vi.advanceTimersByTimeAsync(100)
       }
       expect(screen.queryByText('[Ежедневный квест]')).toBeInTheDocument()
