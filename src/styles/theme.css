@@ -1351,3 +1351,11 @@ body {
 .lesson-path-locked {
   opacity: 0.65;
 }
+
+/* plan://ux-feedback-2#U.3 — страница-знакомства: иллюстрация по центру */
+.intro-art {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto 12px;
+}

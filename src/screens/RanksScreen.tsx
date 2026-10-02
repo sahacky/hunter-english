@@ -119,11 +119,20 @@ export default function RanksScreen({ repo: repoProp }: DashboardProps) {
         </ul>
         {/* Вход в экзамен ранга — в т.ч. с мобильного таб-бара (решение M9#1) */}
         {stats.rank !== 'S' && (
-          <p style={{ margin: '12px 0 0' }}>
-            <Link className="ranks-gate-link" to={`/gates/${stats.rank}-${NEXT_RANK[stats.rank]}`}>
-              {t('ranks.gatesLink', { from: stats.rank, to: NEXT_RANK[stats.rank] })}
-            </Link>
-          </p>
+          <>
+            <p style={{ margin: '12px 0 0' }}>
+              <Link
+                className="ranks-gate-link"
+                to={`/gates/${stats.rank}-${NEXT_RANK[stats.rank]}`}
+              >
+                {t('ranks.gatesLink', { from: stats.rank, to: NEXT_RANK[stats.rank] })}
+              </Link>
+            </p>
+            {/* plan://ux-feedback-2#U.1 — что такое Врата, на месте ссылки */}
+            <p className="dim" style={{ margin: '8px 0 0' }}>
+              {t('ranks.gatesHint')}
+            </p>
+          </>
         )}
         {stats.rank === 'S' && !stats.gates_history.some((g) => g.gate === 'S-FINAL') && (
           <p style={{ margin: '12px 0 0' }}>

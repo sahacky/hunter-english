@@ -402,6 +402,12 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
         <h2>
           {gate.final ? t('gates.titleFinal') : t('gates.title', { from: gate.from, to: gate.to })}
         </h2>
+        {/* plan://ux-feedback-2#U.1 — строка-легенда: что такое Врата */}
+        <p className="dim">
+          {gate.final
+            ? t('gates.legendFinal')
+            : t('gates.legend', { from: gate.from, to: gate.to })}
+        </p>
         <ul className="gates-checklist">
           <li className={wordsOk ? 'dash-quest-done' : undefined}>
             {t('gates.check.words', { known: wordsKnown, target: gate.wordsTarget })}{' '}

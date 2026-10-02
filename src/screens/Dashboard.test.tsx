@@ -2,7 +2,7 @@
 import 'fake-indexeddb/auto'
 import { ONBOARDING_KEY, PLACEMENT_INFO_KEY } from '../data/onboarding'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
-import { render, screen, waitFor } from '@testing-library/react'
+import { fireEvent, render, screen, waitFor } from '@testing-library/react'
 import { HashRouter } from 'react-router-dom'
 import '../i18n'
 import { HunterDb } from '../data/db'
@@ -126,7 +126,7 @@ describe('Dashboard', () => {
       vi.useRealTimers()
     }
   })
-  it('первый вход без онбординга — редирект на /#/welcome (plan://onboarding#O.4)', async () => {
+  it('первый вход без онбординга — редирект на /#/intro (plan://ux-feedback-2#U.3)', async () => {
     localStorage.removeItem(ONBOARDING_KEY)
     window.location.hash = '#/'
     render(
@@ -134,7 +134,7 @@ describe('Dashboard', () => {
         <Dashboard repo={repo} />
       </HashRouter>,
     )
-    await waitFor(() => expect(window.location.hash).toBe('#/welcome'), { timeout: 8000 })
+    await waitFor(() => expect(window.location.hash).toBe('#/intro'), { timeout: 8000 })
   })
 
   // plan://curriculum-review#P.2 — старт с ранга и объяснение «почему этот урок»
@@ -208,6 +208,72 @@ describe('Dashboard', () => {
     )
     expect(await screen.findByText(/D-02 ·/, {}, { timeout: 8000 })).toBeInTheDocument()
     expect(screen.queryByText(/Ты начал с ранга/)).not.toBeInTheDocument()
+  })
+
+  // plan://ux-feedback-2#U.2 — кнопка «Сохранить прогресс» качает файл экспорта
+  it('«Сохранить прогресс» на дашборде скачивает JSON-дамп с датой', async () => {
+    const createObjectURL = vi.fn(() => 'blob:mock')
+    const revokeObjectURL = vi.fn()
+    const clicks: string[] = []
+    const clickSpy = vi
+      .spyOn(HTMLAnchorElement.prototype, 'click')
+      .mockImplementation(function capture(this: HTMLAnchorElement) {
+        clicks.push(this.download)
+      })
+    const urlSpy = vi
+      .spyOn(URL, 'createObjectURL')
+      .mockImplementation((blob: Blob | MediaSource) => {
+        void blob
+        return createObjectURL()
+      })
+    const revokeSpy = vi.spyOn(URL, 'revokeObjectURL').mockImplementation(revokeObjectURL)
+    window.location.hash = '#/'
+    try {
+      render(
+        <HashRouter>
+          <Dashboard repo={repo} />
+        </HashRouter>,
+      )
+      const button = await screen.findByRole(
+        'button',
+        { name: /Сохранить прогресс/ },
+        { timeout: 8000 },
+      )
+      fireEvent.click(button)
+      await waitFor(() => expect(clicks.length).toBe(1))
+      expect(clicks[0]).toMatch(/^hunter-english-progress-\d{4}-\d{2}-\d{2}\.json$/)
+      expect(screen.getByText(/Прогресс хранится в этом браузере/)).toBeInTheDocument()
+    } finally {
+      clickSpy.mockRestore()
+      urlSpy.mockRestore()
+      revokeSpy.mockRestore()
+    }
+  })
+
+  it('сохранение не удалось → тост об ошибке, кнопка снова активна', async () => {
+    const urlSpy = vi.spyOn(URL, 'createObjectURL').mockImplementation(() => {
+      throw new Error('no blobs here')
+    })
+    const { ToastHost } = await import('../components/ToastHost')
+    window.location.hash = '#/'
+    try {
+      render(
+        <HashRouter>
+          <Dashboard repo={repo} />
+          <ToastHost />
+        </HashRouter>,
+      )
+      const button = await screen.findByRole(
+        'button',
+        { name: /Сохранить прогресс/ },
+        { timeout: 8000 },
+      )
+      fireEvent.click(button)
+      expect(await screen.findByText('Не удалось сохранить файл')).toBeInTheDocument()
+      await waitFor(() => expect(button).not.toBeDisabled())
+    } finally {
+      urlSpy.mockRestore()
+    }
   })
 })
 

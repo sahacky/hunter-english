@@ -14,6 +14,8 @@ import { createFirstCards, loadWordNotes } from '../content/words'
 import { XpDots } from '../components/XpDots'
 import { RANK_INDEX } from '../domain/placement/apply'
 import { getPlacementInfo, type PlacementInfo } from '../data/onboarding'
+import { downloadProgressExport } from '../data/export'
+import { showToast } from '../lib/toast'
 import type { ProgressRepository } from '../domain/progress'
 import { DexieProgressRepository } from '../data/progress-repository'
 import { isOnboarded } from '../data/onboarding'
@@ -58,7 +60,23 @@ export default function Dashboard({ repo: repoProp }: DashboardProps) {
   const repo = repoProp ?? defaultRepo
   const [data, setData] = useState<DashboardData | null>(null)
   const [error, setError] = useState(false)
+  const [saveBusy, setSaveBusy] = useState(false)
   const [timer, setTimer] = useState(() => timeToDayBoundary(new Date()))
+
+  // plan://ux-feedback-2#U.2 — быстрое сохранение прогресса файлом, не заходя в настройки
+  const saveProgress = useCallback(async () => {
+    /* istanbul ignore next @preserve — защита от повторного входа: кнопка disabled на время saveBusy, через UI недостижимо */
+    if (saveBusy) return
+    setSaveBusy(true)
+    try {
+      await downloadProgressExport()
+      showToast(t('dashboard.saveDone'))
+    } catch {
+      showToast(t('dashboard.saveFailed'))
+    } finally {
+      setSaveBusy(false)
+    }
+  }, [saveBusy, t])
 
   useEffect(() => {
     let alive = true
@@ -146,8 +164,8 @@ export default function Dashboard({ repo: repoProp }: DashboardProps) {
     )
   }
   if (data && !data.onboarded) {
-    // первый вход — оценка ранга (plan://onboarding#O.4, specs/07 §2.2)
-    return <Navigate to="/welcome" replace />
+    // первый вход — знакомство и оценка ранга (plan://ux-feedback-2#U.3 → welcome)
+    return <Navigate to="/intro" replace />
   }
   if (!data) {
     return (
@@ -277,6 +295,17 @@ export default function Dashboard({ repo: repoProp }: DashboardProps) {
         <p className="dim">
           <Link to="/path">→ {t('dashboard.programLink')}</Link>
         </p>
+        <div className="lesson-actions" style={{ marginTop: 12 }}>
+          <button
+            type="button"
+            className="srs-btn"
+            disabled={saveBusy}
+            onClick={() => void saveProgress()}
+          >
+            💾 {t('dashboard.saveProgress')}
+          </button>
+        </div>
+        <p className="dim">{t('dashboard.saveProgressHint')}</p>
       </section>
 
       {data.quote && (

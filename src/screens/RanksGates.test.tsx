@@ -45,6 +45,9 @@ describe('RanksScreen /#/ranks', () => {
     expect(screen.getByText(/«Equivalent exchange»/)).toBeInTheDocument()
     // M9: вход в Врата ранга с экрана статуса (доступ с мобильного таб-бара)
     expect(screen.getByRole('link', { name: 'Врата E → D' })).toHaveAttribute('href', '#/gates/E-D')
+    // plan://ux-feedback-2#U.1 — объяснение «что такое Врата» рядом со ссылкой
+    expect(screen.getByText(/экзамен Системы на повышение ранга/)).toBeInTheDocument()
+    expect(screen.getByText(/XP и уровни сами по себе ранг не поднимают/)).toBeInTheDocument()
   })
 })
 
@@ -68,6 +71,8 @@ describe('GatesScreen /#/gates/E-D', () => {
   it('intro: чеклист и вход открывают экзамен', async () => {
     renderGates()
     expect(await screen.findByText('Врата E → D', {}, { timeout: 5000 })).toBeInTheDocument()
+    // plan://ux-feedback-2#U.1 — строка-легенда перед чеклистом
+    expect(screen.getByText(/четыре секции — лексика, грамматика, слух и речь/)).toBeInTheDocument()
     expect(screen.getByText(/Слова \(надёжно\): 0 \/ 300/)).toBeInTheDocument()
     fireEvent.click(screen.getByRole('button', { name: 'Войти' }))
     // первая секция — лексика (выбор из вариантов)

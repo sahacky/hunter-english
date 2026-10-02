@@ -46,11 +46,17 @@ test('lesson rule step advances to cloze', async ({ page }) => {
     .click()
 })
 
-// Implements: plan://onboarding#O.7 — онбординг: первый вход → welcome, «с нуля» ведёт на главную
+// Implements: plan://ux-feedback-2#U.3 — первый вход: intro (лор) → «Начать» → welcome
 test('welcome on first visit: start from scratch lands on dashboard (plan://onboarding)', async ({
   page,
 }) => {
   await page.goto('/#/')
+  await expect(page.getByRole('heading', { name: 'Hunter English' })).toBeVisible({
+    timeout: 8000,
+  })
+  // лор и суть — на странице знакомства
+  await expect(page.getByText(/Ты — Охотник, а это — Система/)).toBeVisible()
+  await page.getByRole('button', { name: /Начать/ }).click()
   await expect(page.getByRole('heading', { name: 'Регистрация Охотника' })).toBeVisible({
     timeout: 8000,
   })
@@ -69,6 +75,10 @@ test('assessment: two «не знаю» close band E → verdict E low → appli
   page,
 }) => {
   await page.goto('/#/')
+  await expect(page.getByRole('heading', { name: 'Hunter English' })).toBeVisible({
+    timeout: 8000,
+  })
+  await page.getByRole('button', { name: /Начать/ }).click()
   await expect(page.getByRole('heading', { name: 'Регистрация Охотника' })).toBeVisible({
     timeout: 8000,
   })

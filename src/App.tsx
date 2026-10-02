@@ -5,6 +5,7 @@ import { ToastHost } from './components/ToastHost'
 import { SettingsProvider } from './state/settings'
 import { AuthProvider } from './state/auth'
 import Dashboard from './screens/Dashboard'
+import IntroScreen from './screens/IntroScreen'
 import WelcomeScreen from './screens/WelcomeScreen'
 import PathScreen from './screens/PathScreen'
 import GatesScreen from './screens/GatesScreen'
@@ -36,6 +37,7 @@ export default function App() {
         <Routes>
           <Route element={<Layout />}>
             <Route index element={<Dashboard />} />
+            <Route path="intro" element={<IntroScreen />} />
             <Route path="welcome" element={<WelcomeScreen />} />
             <Route path="path" element={<PathScreen />} />
             <Route path="lesson/:id" element={<LessonScreen />} />
