@@ -52,6 +52,8 @@ describe('placement info (P.2)', () => {
   it('повреждённые/невалидные данные → null (не ломаем дашборд)', async () => {
     localStorage.setItem(PLACEMENT_INFO_KEY, '{not json')
     expect(await getPlacementInfo()).toBeNull()
+    localStorage.setItem(PLACEMENT_INFO_KEY, '5') // валидный JSON, не объект
+    expect(await getPlacementInfo()).toBeNull()
     localStorage.setItem(PLACEMENT_INFO_KEY, JSON.stringify({ rank: 'S', mode: 'hack' }))
     expect(await getPlacementInfo()).toBeNull()
     localStorage.setItem(
