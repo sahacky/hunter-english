@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "content_version": 2,
-  "generated_at": "2026-10-02T12:51:37Z",
+  "generated_at": "2026-10-02T13:23:52Z",
   "files": [
     {
       "path": "lessons/exercises-a.json",
@@ -301,8 +301,8 @@
       "path": "quotes/supernatural.json",
       "kind": "quotes",
       "schema_version": 1,
-      "items": 25,
-      "sha256": "9807ab7abc40541c6943e1a598ef83c295bcee2743ddc4405244a4e74e1c2984"
+      "items": 41,
+      "sha256": "990365ef7b9f8516bd906f2a57463d7fecb2db6e2b0055ffab3b2dfd8ff513d1"
     },
     {
       "path": "quotes/the-100.json",

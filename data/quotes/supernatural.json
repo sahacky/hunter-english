@@ -558,6 +558,344 @@
    "audio": {
     "en_gb": "audio/quotes/cori/q-supernatural-0025.opus"
    }
+  },
+  {
+   "id": "q-supernatural-0026",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_2)",
+   "season_episode": "S02E01 «In My Time Of Dying»",
+   "speaker": "Sam",
+   "text": "Where were you last night?",
+   "translation_ru": "Где ты был прошлой ночью?",
+   "grammar_tags": [
+    "was/were",
+    "вопрос"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 0.8
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Where%20were%20you%20last%20night%3F",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-supernatural-0026.opus"
+   }
+  },
+  {
+   "id": "q-supernatural-0027",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_2)",
+   "season_episode": "S02E02 «Everybody Loves A Clown»",
+   "speaker": "Sam",
+   "text": "You were right.",
+   "translation_ru": "Ты был прав.",
+   "grammar_tags": [
+    "was/were"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 0.67
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=You%20were%20right.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-supernatural-0027.opus"
+   }
+  },
+  {
+   "id": "q-supernatural-0028",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_2)",
+   "season_episode": "S02E01 «In My Time Of Dying»",
+   "speaker": "Dean",
+   "text": "Fine, I guess. I'm alive.",
+   "translation_ru": "Нормально, наверное. Я жив.",
+   "grammar_tags": [
+    "to be"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 0.6
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Fine%2C%20I%20guess.%20I%27m%20alive.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-supernatural-0028.opus"
+   }
+  },
+  {
+   "id": "q-supernatural-0029",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_2)",
+   "season_episode": "S02E01 «In My Time Of Dying»",
+   "speaker": "Dean",
+   "text": "Oh, you've got to be kidding me.",
+   "translation_ru": "О да ладно, ты издеваешься.",
+   "grammar_tags": [
+    "have got to"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 0.29
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Oh%2C%20you%27ve%20got%20to%20be%20kidding%20me.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-supernatural-0029.opus"
+   }
+  },
+  {
+   "id": "q-supernatural-0030",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_2)",
+   "season_episode": "S02E05 «Simon Said»",
+   "speaker": "Dean",
+   "text": "We hunt demons.",
+   "translation_ru": "Мы охотимся на демонов.",
+   "grammar_tags": [
+    "present simple"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 0.33
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=We%20hunt%20demons.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-supernatural-0030.opus"
+   }
+  },
+  {
+   "id": "q-supernatural-0031",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_3)",
+   "season_episode": "S03E06 «Red Sky at Morning»",
+   "speaker": "Dean",
+   "text": "We help people.",
+   "translation_ru": "Мы помогаем людям.",
+   "grammar_tags": [
+    "present simple"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 1.0
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=We%20help%20people.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-supernatural-0031.opus"
+   }
+  },
+  {
+   "id": "q-supernatural-0032",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_3)",
+   "season_episode": "S03E07 «Fresh Blood»",
+   "speaker": "Dean",
+   "text": "First things first.",
+   "translation_ru": "Сначала — самое важное.",
+   "grammar_tags": [
+    "фиксированная фраза"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.67
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=First%20things%20first.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-supernatural-0032.opus"
+   }
+  },
+  {
+   "id": "q-supernatural-0033",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_3)",
+   "season_episode": "S03E03 «Bad Day at Black Rock»",
+   "speaker": "Sam",
+   "text": "I lost my shoe.",
+   "translation_ru": "Я потерял ботинок.",
+   "grammar_tags": [
+    "past simple (lose/lost)"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 0.25
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20lost%20my%20shoe.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-supernatural-0033.opus"
+   }
+  },
+  {
+   "id": "q-supernatural-0034",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_3)",
+   "season_episode": "S03E07 «Fresh Blood»",
+   "speaker": "Sam",
+   "text": "That's not funny.",
+   "translation_ru": "Это не смешно.",
+   "grammar_tags": [
+    "to be + прилагательное"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.33
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=That%27s%20not%20funny.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-supernatural-0034.opus"
+   }
+  },
+  {
+   "id": "q-supernatural-0035",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_3)",
+   "season_episode": "S03E07 «Fresh Blood»",
+   "speaker": "Dean",
+   "text": "It's a little funny.",
+   "translation_ru": "Немного смешно.",
+   "grammar_tags": [
+    "to be + наречие"
+   ],
+   "est_rank": "E",
+   "auto_vocab": {
+    "top1000": 0.5
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=It%27s%20a%20little%20funny.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-supernatural-0035.opus"
+   }
+  },
+  {
+   "id": "q-supernatural-0036",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_4)",
+   "season_episode": "S04E06 «Yellow Fever»",
+   "speaker": "Sam",
+   "text": "We're hunting a ghost.",
+   "translation_ru": "Мы охотимся на призрака.",
+   "grammar_tags": [
+    "present continuous"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 0.25
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=We%27re%20hunting%20a%20ghost.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-supernatural-0036.opus"
+   }
+  },
+  {
+   "id": "q-supernatural-0037",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_4)",
+   "season_episode": "S04E08 «Wishful Thinking»",
+   "speaker": "Dean",
+   "text": "Careful what you wish for.",
+   "translation_ru": "Осторожнее с желаниями.",
+   "grammar_tags": [
+    "wish"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.8
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Careful%20what%20you%20wish%20for.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-supernatural-0037.opus"
+   }
+  },
+  {
+   "id": "q-supernatural-0038",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_5)",
+   "season_episode": "S05E17 «99 Problems»",
+   "speaker": "Castiel",
+   "text": "I found a liquor store.",
+   "translation_ru": "Я нашёл винный магазин.",
+   "grammar_tags": [
+    "past simple (find/found)"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 0.6
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20found%20a%20liquor%20store.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-supernatural-0038.opus"
+   }
+  },
+  {
+   "id": "q-supernatural-0039",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_5)",
+   "season_episode": "S05E04 «The End»",
+   "speaker": "Dean",
+   "text": "We make our own future.",
+   "translation_ru": "Мы сами создаём своё будущее.",
+   "grammar_tags": [
+    "present simple",
+    "будущее"
+   ],
+   "est_rank": "C",
+   "auto_vocab": {
+    "top1000": 0.8
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=We%20make%20our%20own%20future.",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-supernatural-0039.opus"
+   }
+  },
+  {
+   "id": "q-supernatural-0040",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_5)",
+   "season_episode": "S05E04 «The End»",
+   "speaker": "Sam",
+   "text": "So what do we do now?",
+   "translation_ru": "Так что нам теперь делать?",
+   "grammar_tags": [
+    "do-вопрос"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 1.0
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=So%20what%20do%20we%20do%20now%3F",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-supernatural-0040.opus"
+   }
+  },
+  {
+   "id": "q-supernatural-0041",
+   "title": "Supernatural",
+   "source_url": "https://en.wikiquote.org/wiki/Supernatural_(season_5)",
+   "season_episode": "S05E17 «99 Problems»",
+   "speaker": "Sam",
+   "text": "What the hell happened to you?",
+   "translation_ru": "Что, чёрт возьми, с тобой случилось?",
+   "grammar_tags": [
+    "вопрос к подлежащему (прошедшее)"
+   ],
+   "est_rank": "D",
+   "auto_vocab": {
+    "top1000": 0.67
+   },
+   "confidence": "verbatim (Wikiquote)",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=What%20the%20hell%20happened%20to%20you%3F",
+   "audio": {
+    "en_gb": "audio/quotes/cori/q-supernatural-0041.opus"
+   }
   }
  ]
 }
