@@ -166,6 +166,18 @@ export default function ListenScreen({ repo: repoProp }: ListenProps) {
               </p>
             </div>
             <div className="listen-actions">
+              {quote.link_playphrase && (
+                <a
+                  className="srs-btn"
+                  href={quote.link_playphrase}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={t('listen.video')}
+                  title={t('listen.video')}
+                >
+                  🎬
+                </a>
+              )}
               <button type="button" className="srs-btn" onClick={() => play(quote)}>
                 🔊
               </button>

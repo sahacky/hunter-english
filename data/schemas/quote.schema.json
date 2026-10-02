@@ -36,6 +36,11 @@
     "confidence": { "type": "string", "minLength": 1 },
     "note": { "type": "string" },
     "link_playphrase": { "type": "string", "format": "uri" },
+    "link_video": {
+      "type": "string",
+      "format": "uri",
+      "description": "YouTube-момент сцены (watch?v=…&t=SS) — проверяется oEmbed валидатором (plan://curriculum-review#M.1)"
+    },
     "audio": {
       "type": "object",
       "required": ["en_gb"],

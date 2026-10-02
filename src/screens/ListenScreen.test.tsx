@@ -64,9 +64,13 @@ describe('ListenScreen', () => {
         await screen.findByText(/Сегодня: 2 \/ 20 мин/, {}, { timeout: 8000 }),
       ).toBeInTheDocument()
       expect(screen.getByText(/\d+ понятых цитат/)).toBeInTheDocument()
-      // у каждой цитаты — 🔊 и 🐢
+      // у каждой цитаты — 🔊 и 🐢; видео-момент (M.1): у всех цитат данных
+      // есть link_playphrase → 🎬-ссылка на строке
       const rows = screen.getAllByRole('listitem')
       expect(rows.length).toBeGreaterThan(0)
+      const video = screen.getAllByRole('link', { name: 'Видео-момент с оригиналом' })
+      expect(video.length).toBe(rows.length)
+      expect(video[0]!).toHaveAttribute('href', expect.stringContaining('playphrase.me'))
       const fast = screen.getAllByRole('button', { name: '🔊' })
       expect(fast.length).toBe(rows.length)
       fireEvent.click(fast[0]!)

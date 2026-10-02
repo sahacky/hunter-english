@@ -409,6 +409,7 @@
     "total": "{{count}} understood quotes",
     "playAll": "Play all on loop",
     "stopAll": "Stop",
-    "markOutside": "+{{minutes}} min outside the app"
+    "markOutside": "+{{minutes}} min outside the app",
+    "video": "Video moment (original)"
   }
 }

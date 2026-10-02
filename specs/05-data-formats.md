@@ -503,7 +503,8 @@ data/
 | `auto_vocab` | object | ✅ | `{ "top1000": 0.0–1.0 }` — доля слов из топ-1000, показ цитаты при ≥ 0.9; `null` у 94/274 — M3 дозаполняет |
 | `confidence` | string | ✅ | фактические значения: `verbatim (Wikiquote)`, `verbatim (parallel research) — needs source check`, `verbatim (IMDb)`, `Polygon`, `KYM`; значение `fragment` появится после курации |
 | `note` | string | — | комментарий курации (уже встречается в merged-файле, 69 шт.) |
-| `link_playphrase` | string (uri) | — | «послушать в оригинале»: поиск фразы на PlayPhrase.me |
+| `link_playphrase` | string (uri) | — | «послушать в оригинале»: поиск фразы на PlayPhrase.me — короткий клип с моментом сцены (кнопка 🎬 на /#/listen, план M.1) |
+| `link_video` | string (uri) | — | YouTube-момент (`watch?v=…&t=SS`), проверяется oEmbed валидатором `npm run validate:links` (план M.1; пока не заполнено) |
 | `audio` | object | — | `{ "en_gb": "<путь>" }` — путь в `audio/` |
 
 ```json

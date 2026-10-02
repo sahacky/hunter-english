@@ -387,6 +387,8 @@ export interface QuoteItem {
   auto_vocab: { top1000: number }
   /** Предзаписанное аудио cori (plan://voice-fix V2.1); нет — Web Speech. */
   audio?: { en_gb?: string }
+  /** Клип с моментом сцены на PlayPhrase (план M.1: «видео-момент» в аудировании). */
+  link_playphrase?: string
 }
 
 interface QuotesFile {
