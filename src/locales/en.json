@@ -37,7 +37,11 @@
     "statusTitle": "Status",
     "streak": "{{days}} d",
     "wordsKnown": "cards known: {{count}}",
-    "xpProgress": "{{xp}} / {{next}} XP to the next level"
+    "xpProgress": "{{xp}} / {{next}} XP to the next level",
+    "saveProgress": "Save progress",
+    "saveProgressHint": "Your progress lives in this browser — no cloud yet. Save the file so you don’t lose it (restore via Settings).",
+    "saveDone": "Progress saved to file",
+    "saveFailed": "Failed to save the file"
   },
   "gates": {
     "notFound": "These gates do not exist.",
@@ -64,7 +68,9 @@
     "retryHint": "Weak sections are retaken; passed ones are kept. Next attempt in 72 hours.",
     "retryWeak": "Retake weak sections",
     "sectionProgress": "{{section}} · section {{index}} of {{total}}",
-    "totalFailHint": "Sections passed but the total is under 85% — retake the full exam after the cooldown."
+    "totalFailHint": "Sections passed but the total is under 85% — retake the full exam after the cooldown.",
+    "legend": "The exam for rank {{from}} → {{to}}: four sections — vocabulary, grammar, listening, speaking. A section passes at ≥80%, the exam at a total of ≥85%.",
+    "legendFinal": "The final trial confirms rank S: same four sections, thresholds ≥80% per section and ≥85% total."
   },
   "lesson": {
     "notFound": "This lesson is not in the program.",
@@ -256,7 +262,8 @@
     "streaks": "Streak: {{current}} d · Best: {{best}} d",
     "gatesPassed": "Gates passed: {{count}} · latest: {{last}}",
     "titles": "Titles",
-    "unlocked": "unlocked"
+    "unlocked": "unlocked",
+    "gatesHint": "Gates are the System's rank-up exam. XP and levels never raise the rank — only passed Gates do. Fail → retake in 72 hours; passed sections are kept."
   },
   "settings": {
     "appearance": {
@@ -381,5 +388,16 @@
     "verdictNote": "You'll choose how to handle lessons below the rank on the next step.",
     "verdictOfferLower": "The System isn't sure about you at this band: a safer start is one rank lower.",
     "verdictTitle": "The System assigns rank"
+  },
+  "intro": {
+    "title": "Hunter English",
+    "subtitle": "English for travel: from zero (A0) to fluent (C1).",
+    "whatTitle": "What is it",
+    "whatText": "A 1-hour-a-day trainer: a short rule → lots of RU→EN phrase building → listening (dictation) → speaking (shadowing) → spaced repetition. The goal is travel: understand people by ear and answer.",
+    "loreTitle": "The lore",
+    "loreText": "You are a Hunter, and this is the System. Ranks E → D → C → B → A → S (matching CEFR levels) are your path. XP and streaks build discipline, but only Gates — the System’s exams — raise your rank. First, the System will assess your level and offer a starting point.",
+    "dayTitle": "How days go",
+    "dayText": "Every day brings quests: reviews, a lesson, dictation. Progress lives in this browser — hit “Save progress” on the dashboard from time to time.",
+    "start": "Start"
   }
 }
