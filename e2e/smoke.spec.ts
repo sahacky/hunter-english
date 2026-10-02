@@ -112,3 +112,18 @@ test('path screen lists program ranks (plan://onboarding)', async ({ page }) => 
   await expect(page.getByText(/Ранг E \(A0\) · 0\/24 уроков/)).toBeVisible()
   await expect(page.getByText('ты здесь')).toBeVisible()
 })
+
+// Implements: plan://curriculum-review#I.2 — input-трек: плейлист понятых цитат и счётчик дня
+test('listen screen: understood quotes playlist with day counter (plan://curriculum-review)', async ({
+  page,
+}) => {
+  await page.addInitScript(() => localStorage.setItem('hunter-onboarding-done', '1'))
+  await page.goto('/#/listen')
+  await expect(page.getByRole('heading', { name: 'Аудирование' })).toBeVisible({ timeout: 8000 })
+  await expect(page.getByText(/Сегодня: 0 \/ 20 мин/)).toBeVisible()
+  await expect(page.getByText(/понятых цитат/)).toBeVisible()
+  await expect(page.getByRole('button', { name: /Играть всё/ })).toBeVisible()
+  // ручная отметка добивает счётчик
+  await page.getByRole('button', { name: /вне приложения/ }).click()
+  await expect(page.getByText(/Сегодня: 20 \/ 20 мин/)).toBeVisible()
+})

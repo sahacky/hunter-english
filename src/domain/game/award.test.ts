@@ -33,7 +33,7 @@ describe('awardXp', () => {
     expect(second.awarded).toBe(0)
   })
 
-  it('все 3 слота закрыты → +30 единожды', async () => {
+  it('все слоты (вкл. аудирование) закрыты → +30 единожды', async () => {
     const dayIso = dayStart(NOW).toISOString()
     const state = createQuestDay(dayIso, 20)
     state.slots.reviews.done = 20
@@ -42,6 +42,10 @@ describe('awardXp', () => {
     const result = await awardXp(repo, NOW, 0, 'uncapped', {})
     expect(result.awarded).toBe(0) // слот урока ещё не закрыт
     state.slots.lesson.done = 1
+    await repo.putQuestDay(state)
+    const noListen = await awardXp(repo, NOW, 0, 'uncapped', {})
+    expect(noListen.awarded).toBe(0) // input-трек: аудирование ещё не закрыто (I.1)
+    state.slots.listening.done = state.slots.listening.target
     await repo.putQuestDay(state)
     const done = await awardXp(repo, NOW, 0, 'uncapped', {})
     expect(done.awarded).toBe(30)
@@ -123,6 +127,7 @@ describe('awardLessonFinish', () => {
     const state = createQuestDay(dayIso, 20)
     state.slots.reviews.done = state.slots.reviews.target
     state.slots.dictation.done = state.slots.dictation.target
+    state.slots.listening.done = state.slots.listening.target // input-трак закрыт заранее
     await repo.putQuestDay(state)
     const result = await awardLessonFinish(repo, NOW, {
       xpByCategory: {},
@@ -169,6 +174,7 @@ describe('award: бонус-слоты (M19)', () => {
         reviews: { done: state.slots.reviews.target, target: state.slots.reviews.target },
         lesson: { done: state.slots.lesson.target, target: state.slots.lesson.target },
         dictation: { done: state.slots.dictation.target, target: state.slots.dictation.target },
+        listening: { done: state.slots.listening.target, target: state.slots.listening.target },
       },
     })
     const result = await closeStudyDay(repo, NOW)

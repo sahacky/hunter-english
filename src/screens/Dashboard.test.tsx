@@ -63,6 +63,9 @@ describe('Dashboard', () => {
     expect(await screen.findByText('Ежедневный квест', {}, { timeout: 5000 })).toBeInTheDocument()
     // дашборд ведёт в повторение/урок
     expect(screen.getByRole('link', { name: /Начать день|Повторение|Урок/ })).toBeTruthy()
+    // input-трек: слот аудирования в списке квестов (plan://curriculum-review#I.1)
+    const listeningRow = screen.getByText(/^Аудирование/).closest('li')
+    expect(listeningRow?.textContent).toContain('0/20')
   })
 
   // Веха S4 (M21#21.4): цитаты не готовы, unmount в загрузке, минутный таймер
@@ -101,6 +104,26 @@ describe('Dashboard', () => {
     unmount()
     // даём дозреть асинхронной загрузке: alive=false — ветка `if (!alive)` срабатывает
     await new Promise((resolve) => setTimeout(resolve, 200))
+    expect(screen.queryByText('[Ежедневный квест]')).not.toBeInTheDocument()
+  })
+
+  it('unmount до разрешения Promise.all — ранний alive-гард, без обновления состояния', async () => {
+    let releaseStats!: (value: Awaited<ReturnType<ProgressRepository['getStats']>>) => void
+    // прототипная делегация (spread ломает this у Dexie-методов — M19)
+    const slow: ProgressRepository = Object.create(repo)
+    slow.getStats = () =>
+      new Promise((resolve) => {
+        releaseStats = resolve
+      })
+    const { unmount } = render(
+      <HashRouter>
+        <Dashboard repo={slow} />
+      </HashRouter>,
+    )
+    await waitFor(() => expect(typeof releaseStats).toBe('function'))
+    unmount()
+    releaseStats(await repo.getStats())
+    await new Promise((resolve) => setTimeout(resolve, 100))
     expect(screen.queryByText('[Ежедневный квест]')).not.toBeInTheDocument()
   })
 

@@ -28,7 +28,8 @@
       "reviews": "Review cards",
       "lesson": "Take a lesson",
       "dictation": "Dictation",
-      "bonus": "Bonus"
+      "bonus": "Bonus",
+      "listening": "Listening"
     },
     "quoteTitle": "Quote of the day",
     "rankAndLevel": "Hunter of rank {{rank}} ({{cefr}}), lvl {{rank}}-{{level}}",
@@ -174,7 +175,8 @@
     "ranks": "Ranks",
     "settings": "Settings",
     "srs": "Review",
-    "tabbarLabel": "Tab bar"
+    "tabbarLabel": "Tab bar",
+    "listen": "Listen"
   },
   "notFound": {
     "title": "404",
@@ -397,7 +399,15 @@
     "loreTitle": "The lore",
     "loreText": "You are a Hunter, and this is the System. Ranks E → D → C → B → A → S (matching CEFR levels) are your path. XP and streaks build discipline, but only Gates — the System’s exams — raise your rank. First, the System will assess your level and offer a starting point.",
     "dayTitle": "How days go",
-    "dayText": "Every day brings quests: reviews, a lesson, dictation. Progress lives in this browser — hit “Save progress” on the dashboard from time to time.",
+    "dayText": "Every day brings quests: reviews, a lesson, dictation. Progress lives in this browser — hit “Save progress” on the dashboard from time to time. Honest milestones: travel conversation (A2) in about 4–6 months, a confident B1 tourist in 12–15 months at 1 h/day plus 20 minutes of listening.",
     "start": "Start"
+  },
+  "listen": {
+    "title": "Listening",
+    "counter": "Today: {{minutes}} / {{target}} min",
+    "total": "{{count}} understood quotes",
+    "playAll": "Play all on loop",
+    "stopAll": "Stop",
+    "markOutside": "+{{minutes}} min outside the app"
   }
 }

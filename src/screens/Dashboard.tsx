@@ -192,6 +192,12 @@ export default function Dashboard({ repo: repoProp }: DashboardProps) {
       done: data.quest.slots.dictation.done,
       target: data.quest.slots.dictation.target,
     },
+    {
+      // input-трек (plan://curriculum-review#I.1): секунды показываем минутами
+      label: t('dashboard.quests.listening'),
+      done: Math.floor((data.quest.slots.listening?.done ?? 0) / 60),
+      target: Math.round((data.quest.slots.listening?.target ?? 1200) / 60),
+    },
   ]
   return (
     <div className="dashboard">

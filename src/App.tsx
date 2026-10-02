@@ -1,9 +1,13 @@
 import { Route, Routes } from 'react-router-dom'
+import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Layout } from './components/Layout'
 import { ToastHost } from './components/ToastHost'
 import { SettingsProvider } from './state/settings'
 import { AuthProvider } from './state/auth'
+import { setListenSink } from './lib/tts'
+import { addListeningSeconds } from './data/listening'
+import { DexieProgressRepository } from './data/progress-repository'
 import Dashboard from './screens/Dashboard'
 import IntroScreen from './screens/IntroScreen'
 import WelcomeScreen from './screens/WelcomeScreen'
@@ -14,6 +18,7 @@ import PhrasebookScreen, { PhrasebookSituationScreen } from './screens/Phraseboo
 import RanksScreen from './screens/RanksScreen'
 import SettingsScreen from './screens/SettingsScreen'
 import SrsScreen from './screens/SrsScreen'
+import ListenScreen from './screens/ListenScreen'
 import LoginScreen from './screens/LoginScreen'
 import QuotesScreen, { QuoteScreen } from './screens/QuotesScreen'
 
@@ -31,6 +36,13 @@ function Placeholder() {
 }
 
 export default function App() {
+  // input-трек (plan://curriculum-review#I.1): всё, что прозвучало из приложения,
+  // пишется секундами в квест дня «аудирование 20 мин»
+  useEffect(() => {
+    const repo = new DexieProgressRepository()
+    setListenSink((seconds) => void addListeningSeconds(repo, seconds))
+    return () => setListenSink(null)
+  }, [])
   return (
     <SettingsProvider>
       <AuthProvider>
@@ -40,6 +52,7 @@ export default function App() {
             <Route path="intro" element={<IntroScreen />} />
             <Route path="welcome" element={<WelcomeScreen />} />
             <Route path="path" element={<PathScreen />} />
+            <Route path="listen" element={<ListenScreen />} />
             <Route path="lesson/:id" element={<LessonScreen />} />
             <Route path="srs" element={<SrsScreen />} />
             <Route path="ranks" element={<RanksScreen />} />

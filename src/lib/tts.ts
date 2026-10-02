@@ -22,6 +22,31 @@ export function setDefaultRate(rate: number): void {
 /** Выбранный en-GB голос speechSynthesis (кэш; голоса появляются асинхронно). */
 let cachedVoice: SpeechSynthesisVoice | null = null
 
+// --- счётчик аудирования (input-трек, plan://curriculum-review#I.1) -----------
+/** Приёмник прослушанных секунд (ставится приложением: пишет в квест дня). */
+let listenSink: ((seconds: number) => void) | null = null
+/** Начало текущего воспроизведения (мс); null — ничего не играет. */
+let listenStartedAt: number | null = null
+/** Потолок одного flush'а: защита от «забытой вкладки» (10 мин). */
+const LISTEN_FLUSH_CAP_SEC = 600
+
+export function setListenSink(sink: ((seconds: number) => void) | null): void {
+  listenSink = sink
+}
+
+/** Завершить текущий отрезок прослушивания и отдать секунды в sink. */
+function flushListening(): void {
+  if (listenStartedAt === null) return
+  const seconds = Math.min(LISTEN_FLUSH_CAP_SEC, (Date.now() - listenStartedAt) / 1000)
+  listenStartedAt = null
+  if (seconds > 0 && listenSink) listenSink(seconds)
+}
+
+function startListening(): void {
+  flushListening() // предыдущий отрезок не теряем
+  listenStartedAt = Date.now()
+}
+
 function speechApi(): SpeechSynthesis | null {
   return typeof window !== 'undefined' ? (window.speechSynthesis ?? null) : null
 }
@@ -67,12 +92,17 @@ export function speak(text: string, options: SpeakOptions = {}): boolean {
     const el = new Audio(options.src)
     audioEl = el
     el.playbackRate = rate
+    // input-трек: считаем реальное время воспроизведения (ended/pause/остановка)
+    startListening()
+    el.addEventListener('ended', flushListening)
+    el.addEventListener('pause', flushListening)
     const playback = el.play()
     if (playback && typeof playback.catch === 'function') {
       playback.catch(() => {
         // актуален ли ещё этот элемент (могли начать новое воспроизведение/отменить)
         if (audioEl !== el) return
         audioEl = null
+        flushListening() // воспроизведение не стартовало — отрезок не считаем
         // pause()-во-загрузки даёт AbortError — это отмена, а не «файла нет»
         speakViaTts(text, rate)
       })
@@ -91,8 +121,12 @@ function speakViaTts(text: string, rate: number): boolean {
   const voice = pickVoice()
   if (voice) utterance.voice = voice
   try {
+    startListening()
+    utterance.onend = flushListening
+    utterance.onerror = flushListening
     api.speak(utterance)
   } catch {
+    flushListening()
     return false
   }
   return true
@@ -106,4 +140,10 @@ export function stopSpeak(): void {
   }
   const api = speechApi()
   if (api) api.cancel()
+  flushListening()
+}
+
+/** Текущий audio-элемент (плейлист input-трека: автопереход по ended). */
+export function currentAudio(): HTMLAudioElement | null {
+  return audioEl
 }
