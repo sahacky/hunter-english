@@ -38,7 +38,7 @@
       "bonus": "Бонус"
     },
     "quoteTitle": "Цитата дня",
-    "rankAndLevel": "Охотник {{rank}}-ранга, ур. {{rank}}-{{level}}",
+    "rankAndLevel": "Охотник {{rank}}-ранга ({{cefr}}), ур. {{rank}}-{{level}}",
     "startLesson": "Начать день · урок",
     "startReviews": "Начать день · повторения: {{count}}",
     "statusTitle": "Статус",
@@ -360,7 +360,7 @@
     "verdictTitle": "Система назначает ранг"
   },
   "path": {
-    "rankHeader": "Ранг {{rank}} · {{done}}/{{total}} уроков",
+    "rankHeader": "Ранг {{rank}} ({{cefr}}) · {{done}}/{{total}} уроков",
     "status": {
       "available": "доступно",
       "completed": "пройдено",

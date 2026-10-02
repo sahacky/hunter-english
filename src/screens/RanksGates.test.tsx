@@ -39,7 +39,7 @@ describe('RanksScreen /#/ranks', () => {
     )
     window.location.hash = '#/ranks'
     expect(await screen.findByText('[Статус охотника]')).toBeInTheDocument()
-    expect(screen.getByText(/Охотник E-ранга/)).toBeInTheDocument()
+    expect(screen.getByText(/Охотник E-ранга \(A0\)/)).toBeInTheDocument()
     expect(screen.getByText(/Суммарный XP: 347/)).toBeInTheDocument()
     expect(screen.getByText(/«Winter is coming»/)).toBeInTheDocument()
     expect(screen.getByText(/«Equivalent exchange»/)).toBeInTheDocument()

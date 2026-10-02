@@ -15,6 +15,7 @@ import {
   type PlacementVerdict,
 } from '../domain/placement/placement'
 import { applyPlacement } from '../domain/placement/apply'
+import { RANK_CEFR } from '../domain/game/game'
 import { buildPlacementTasks } from '../content/placement'
 import { loadLessons, loadPhrases, type LessonItem } from '../content/lessons'
 import { loadWordRanks } from '../content/words'
@@ -51,7 +52,9 @@ function VerdictPane({
     <section className="panel lesson-panel">
       <h2>{t('welcome.verdictTitle')}</h2>
       <p className="dim">
-        <strong>{verdict.rank}</strong>
+        <strong>
+          {verdict.rank} ({RANK_CEFR[verdict.rank]})
+        </strong>
       </p>
       <p className="dim">
         {verdict.confidence === 'low' ? t('welcome.verdictLow') : t('welcome.verdictHigh')}

@@ -40,6 +40,16 @@ export function levelInfo(rankXp: number): LevelInfo {
 
 // --- Дневные капы XP (specs/04 §4.2) ----------------------------------------
 
+/** CEFR-подпись ранга (specs/04 §2.1: E=A0 … S=C1) — для отображения рядом с рангом. */
+export const RANK_CEFR: Record<'E' | 'D' | 'C' | 'B' | 'A' | 'S', string> = {
+  E: 'A0',
+  D: 'A1',
+  C: 'A2',
+  B: 'B1',
+  A: 'B2',
+  S: 'C1',
+}
+
 export const XP_CAPS: Record<Exclude<XpCategory, 'uncapped'>, number> = {
   reviews: 200,
   choice: 30,
