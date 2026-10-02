@@ -109,13 +109,26 @@ export function lessonToCourseId(lessonId: string): string {
   return lessonId.replace(/^les-/, '').toUpperCase()
 }
 
-/** Все уроки всех рангов (для `/#/path`); файлы-чанки грузятся параллельно. */
+/** Порядок рангов курса (specs/01 §1): E → D → C → B → A → S. */
+export const COURSE_RANKS = ['E', 'D', 'C', 'B', 'A', 'S'] as const
+
+/**
+ * Все уроки всех рангов в порядке курса E→S (для `/#/path` и «следующего урока»
+ * дашборда). Чанки данных лежат файлами a…s — glob отдаёт их алфавитом, поэтому
+ * порядок курса восстанавливается здесь (фидбей 2026-10-02: «первый урок» на
+ * дашборде показывался A-01 — алфавитный порядок файлов).
+ */
 export async function loadLessons(): Promise<LessonItem[]> {
   const files = await Promise.all(Object.values(lessonModules).map((load) => load()))
-  return files.flatMap((file, i) => {
+  const lessons = files.flatMap((file, i) => {
     assertEnvelope(file, 'lessons', `data/lessons/lessons #${i}`)
     return file.items
   })
+  const rankOrder = new Map(COURSE_RANKS.map((rank, index) => [rank, index]))
+  return lessons.sort(
+    (a, b) =>
+      (rankOrder.get(a.rank) ?? 0) - (rankOrder.get(b.rank) ?? 0) || a.id.localeCompare(b.id),
+  )
 }
 
 /** Урок по id (напр. `les-e-01`); null — урока нет в данных. */

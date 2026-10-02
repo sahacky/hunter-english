@@ -3,6 +3,7 @@ import { describe, expect, it } from 'vitest'
 import type { StepKind } from '../domain/lesson/types'
 import {
   assembleLesson,
+  COURSE_RANKS,
   courseToLessonId,
   exercisePhraseIds,
   lessonToCourseId,
@@ -301,6 +302,25 @@ describe('loadLessonView (реальные data/ ранга E)', () => {
       for (const pid of lesson.grammar_point.phrase_ids) {
         expect(phraseById.has(pid), `${lesson.id} → ${pid}`).toBe(true)
       }
+    }
+  })
+
+  it('порядок курса: E → D → C → B → A → S, внутри ранга — по id (фидбей 2026-10-02)', async () => {
+    const lessons = await loadLessons()
+    expect(lessons.length).toBe(148)
+    expect(lessons[0]!.id).toBe('les-e-01')
+    expect(lessons.at(-1)!.id).toBe('les-s-15')
+    const rankSeq = lessons.map(({ rank }) => rank)
+    const first = rankSeq.indexOf('E')
+    for (const rank of ['D', 'C', 'B', 'A', 'S'] as const) {
+      expect(rankSeq.indexOf(rank)).toBeGreaterThan(first)
+    }
+    // монотонность: ранг не «возвращается» назад по списку
+    const weights = rankSeq.map((rank) =>
+      COURSE_RANKS.indexOf(rank as (typeof COURSE_RANKS)[number]),
+    )
+    for (let i = 1; i < weights.length; i += 1) {
+      expect(weights[i]).toBeGreaterThanOrEqual(weights[i - 1]!)
     }
   })
 
