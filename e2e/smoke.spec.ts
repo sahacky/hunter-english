@@ -63,6 +63,36 @@ test('welcome on first visit: start from scratch lands on dashboard (plan://onbo
   await expect(page.getByRole('heading', { name: 'Регистрация Охотника' })).toBeHidden()
 })
 
+// Implements: plan://curriculum-review#P.1 — «не знаю» закрывает полосу, вердикт с низкой
+// уверенностью; rank E применяется без экрана выбора (ниже E уроков нет)
+test('assessment: two «не знаю» close band E → verdict E low → applied (plan://curriculum-review)', async ({
+  page,
+}) => {
+  await page.goto('/#/')
+  await expect(page.getByRole('heading', { name: 'Регистрация Охотника' })).toBeVisible({
+    timeout: 8000,
+  })
+  await page.getByRole('button', { name: 'Пройти оценку ранга' }).click()
+  await page.getByRole('button', { name: 'Не знаю' }).click()
+  await expect(page.getByRole('button', { name: /Дальше/ }).first()).toBeVisible()
+  await page
+    .getByRole('button', { name: /Дальше/ })
+    .first()
+    .click()
+  await page.getByRole('button', { name: 'Не знаю' }).click()
+  await page
+    .getByRole('button', { name: /Дальше/ })
+    .first()
+    .click()
+  await expect(page.getByRole('heading', { name: 'Система назначает ранг' })).toBeVisible()
+  await expect(page.getByText('E (A0)', { exact: true })).toBeVisible()
+  await expect(page.getByText(/Система сомневалась/)).toBeVisible()
+  await page.getByRole('button', { name: 'Начать с ранга E (A0)' }).click()
+  await expect(page.getByRole('heading', { name: /Ежедневный квест|Охотник/ })).toBeVisible({
+    timeout: 8000,
+  })
+})
+
 test('path screen lists program ranks (plan://onboarding)', async ({ page }) => {
   await page.addInitScript(() => localStorage.setItem('hunter-onboarding-done', '1'))
   await page.goto('/#/path')

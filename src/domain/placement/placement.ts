@@ -64,6 +64,12 @@ export function placementVerdict(
   return { rank, confidence: (wrongs.get(rank) ?? 0) > 0 ? 'low' : 'high' }
 }
 
+/** Ранг на один ниже (предложение при низкой уверенности, P.1); ниже E нет → null. */
+export function suggestLowerRank(rank: PlacementRank): PlacementRank | null {
+  const index = PLACEMENT_RANKS.indexOf(rank)
+  return index > 0 ? (PLACEMENT_RANKS[index - 1] as PlacementRank) : null
+}
+
 /**
  * Следующая задача потока: задачи идут полосами E→A по порядку; полоса с
  * WRONGS_TO_STOP ошибками закрывает тест (дальше всё слишком сложно).

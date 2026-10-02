@@ -3,6 +3,7 @@ import { describe, expect, it } from 'vitest'
 import {
   nextPlacementTask,
   placementVerdict,
+  suggestLowerRank,
   wrongsByRank,
   type PlacementTask,
   PLACEMENT_RANKS,
@@ -79,6 +80,13 @@ describe('wrongsByRank / placementVerdict', () => {
     ])
     expect(wrongs.get('C')).toBe(2)
     expect(wrongs.has('B')).toBe(false)
+  })
+
+  it('suggestLowerRank: ранг на один ниже; ниже E ничего нет (plan://curriculum-review#P.1)', () => {
+    expect(suggestLowerRank('A')).toBe('B')
+    expect(suggestLowerRank('C')).toBe('D')
+    expect(suggestLowerRank('D')).toBe('E')
+    expect(suggestLowerRank('E')).toBeNull()
   })
 })
 

@@ -1,11 +1,14 @@
-// Implements: plan://onboarding#O.5 — «Путь обучения» /#/path (specs/07 §2.2):
-// ранги → уроки со статусами цепочки, «ты здесь», запуск урока.
+// Implements: plan://onboarding#O.5, plan://curriculum-review#P.2 — «Путь обучения»
+// /#/path (specs/07 §2.2): ранги → уроки со статусами цепочки, «ты здесь»,
+// запуск урока. При старте «с первого урока ранга» уроки ниже ранга доступны
+// (не зачтены) — ранг в user_stats разблокирует их отображение.
 import { useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { loadLessons, type LessonItem } from '../content/lessons'
 import type { ProgressRepository } from '../domain/progress'
 import { DexieProgressRepository } from '../data/progress-repository'
 import { RANK_CEFR } from '../domain/game/game'
+import { RANK_INDEX } from '../domain/placement/apply'
 import type { StoredLessonStatus } from '../domain/lesson/types'
 
 type RowStatus = StoredLessonStatus | 'locked' | 'available'
@@ -16,18 +19,32 @@ export interface PathRow {
   current: boolean
 }
 
-/** Статусы цепочкой: пройден только completed/review_due (isLessonPassed, specs/02 §5). */
+/**
+ * Статусы цепочкой: пройден только completed/review_due (isLessonPassed, specs/02 §5).
+ * startAtRank: уроки ниже ранга и первый урок ранга доступны без прохождения
+ * цепочки (режим «начать с первого урока ранга», P.2); «ты здесь» — на полосе
+ * ранга и выше, нижние остаются фоновыми.
+ */
 export function buildPathRows(
   lessons: readonly LessonItem[],
   rows: readonly (import('../domain/lesson/types').LessonProgress | null)[],
+  opts: { startAtRank?: LessonItem['rank'] } = {},
 ): PathRow[] {
+  const startIdx = opts.startAtRank ? RANK_INDEX[opts.startAtRank] : -1
+  const firstOfStart =
+    startIdx >= 0 ? lessons.find((lesson) => lesson.rank === opts.startAtRank) : undefined
   let prevPassed = true // первый урок доступен всегда
   let currentTaken = false
   return lessons.map((lesson, i) => {
     const stored = rows[i]?.status ?? null
     const passed = stored === 'completed' || stored === 'review_due'
-    const status: RowStatus = stored ?? (prevPassed ? 'available' : 'locked')
-    const current = !currentTaken && !passed && status !== 'locked'
+    const unlockedByStart =
+      startIdx >= 0 &&
+      (RANK_INDEX[lesson.rank] < startIdx ||
+        (lesson.rank === opts.startAtRank && lesson.id === firstOfStart?.id))
+    const status: RowStatus = stored ?? (prevPassed || unlockedByStart ? 'available' : 'locked')
+    const belowStart = startIdx >= 0 && RANK_INDEX[lesson.rank] < startIdx
+    const current = !currentTaken && !passed && status !== 'locked' && !belowStart
     if (current) currentTaken = true
     prevPassed = passed
     return { lesson, status, current }
@@ -53,9 +70,12 @@ export default function PathScreen({ repo: repoProp }: { repo?: ProgressReposito
     let alive = true
     void (async () => {
       const lessons = await loadLessons()
-      const progress = await repo.getManyLessonProgress(lessons.map((lesson) => lesson.id))
+      const [progress, stats] = await Promise.all([
+        repo.getManyLessonProgress(lessons.map((lesson) => lesson.id)),
+        repo.getStats(),
+      ])
       if (!alive) return
-      setRows(buildPathRows(lessons, progress))
+      setRows(buildPathRows(lessons, progress, { startAtRank: stats.rank }))
     })().catch(() => {
       if (alive) setError(true)
     })

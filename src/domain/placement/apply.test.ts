@@ -111,6 +111,22 @@ describe('applyPlacement', () => {
     ])
   })
 
+  it('start_at_rank (P.2): только ранг в статусе — ни зачётов, ни скрытий слов', async () => {
+    const repo = fakeRepo()
+    const result = await applyPlacement({
+      repo,
+      rank: 'C' as PlacementRank,
+      mode: 'start_at_rank',
+      lessons: LESSONS,
+      wordRanks: WORD_RANKS,
+      now: new Date('2026-02-01T00:00:00Z'),
+    })
+    expect(result.rank).toBe('C')
+    expect(repo.stats.rank).toBe('C')
+    expect(repo.lessons.size).toBe(0) // нижние уроки доступны, но не зачтены
+    expect(repo.suspended).toEqual([]) // слова полосы не скрываются
+  })
+
   it('ранг E: ничего не зачитывается и не скрывается (floor 0)', async () => {
     const repo = fakeRepo()
     await applyPlacement({

@@ -12,6 +12,8 @@ import type { LessonItem, QuoteItem } from '../content/lessons'
 import { loadLessons, loadQuotes } from '../content/lessons'
 import { createFirstCards, loadWordNotes } from '../content/words'
 import { XpDots } from '../components/XpDots'
+import { RANK_INDEX } from '../domain/placement/apply'
+import { getPlacementInfo, type PlacementInfo } from '../data/onboarding'
 import type { ProgressRepository } from '../domain/progress'
 import { DexieProgressRepository } from '../data/progress-repository'
 import { isOnboarded } from '../data/onboarding'
@@ -28,6 +30,9 @@ interface DashboardData {
   knownCards: number
   nextLesson: LessonItem | null
   quote: QuoteItem | null
+  placement: PlacementInfo | null
+  /** Первый урок ранга из placement — пока он «следующий», дашборд объясняет выбор. */
+  firstPlacementLesson: LessonItem | null
 }
 
 function pickQuoteOfTheDay(quotes: QuoteItem[], studyDayIso: string): QuoteItem | null {
@@ -81,13 +86,18 @@ export default function Dashboard({ repo: repoProp }: DashboardProps) {
         await repo.putQuestDay(quest)
       }
       let nextLesson: LessonItem | null = null
+      // старт с ранга (P.2): уроки ниже ранга не «следующие» — они доступны в
+      // Программе, но ведут пользователя с полосы placement-ранга
+      const statsRank = RANK_INDEX[stats.rank]
       for (const lesson of lessons) {
+        if (RANK_INDEX[lesson.rank] < statsRank) continue
         const row = await repo.getLessonProgress(lesson.id)
         if (!row || row.status !== 'completed') {
           nextLesson = lesson
           break
         }
       }
+      const placement = await getPlacementInfo()
       if (!alive) return
       setData({
         onboarded,
@@ -97,6 +107,10 @@ export default function Dashboard({ repo: repoProp }: DashboardProps) {
         knownCards: cards.filter((card) => card.state === 2).length,
         nextLesson,
         quote: pickQuoteOfTheDay(quotes, dayIso),
+        placement,
+        firstPlacementLesson: placement
+          ? (lessons.find((lesson) => lesson.rank === placement.rank) ?? null)
+          : null,
       })
     }
     void load().catch(() => {
@@ -247,6 +261,19 @@ export default function Dashboard({ repo: repoProp }: DashboardProps) {
         {data.stats.xp === 0 && data.nextLesson?.id === 'les-e-01' && (
           <p className="dim">{t('dashboard.beginnerHint')}</p>
         )}
+        {data.placement &&
+          data.nextLesson &&
+          data.nextLesson.id === data.firstPlacementLesson?.id &&
+          data.nextLesson.id !== 'les-e-01' && (
+            <p className="dim">
+              {t(
+                data.placement.mode === 'waive'
+                  ? 'dashboard.placementWaive'
+                  : 'dashboard.placementStart',
+                { rank: data.placement.rank, cefr: RANK_CEFR[data.placement.rank] },
+              )}
+            </p>
+          )}
         <p className="dim">
           <Link to="/path">→ {t('dashboard.programLink')}</Link>
         </p>

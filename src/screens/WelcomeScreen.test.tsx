@@ -5,7 +5,7 @@ import { fireEvent, render, screen, waitFor } from '@testing-library/react'
 import { HashRouter } from 'react-router-dom'
 import '../i18n'
 import WelcomeScreen from './WelcomeScreen'
-import { ONBOARDING_KEY } from '../data/onboarding'
+import { ONBOARDING_KEY, PLACEMENT_INFO_KEY } from '../data/onboarding'
 import type { ProgressRepository } from '../domain/progress'
 import type { PlacementTask } from '../domain/placement/placement'
 import type { LessonItem } from '../content/lessons'
@@ -94,6 +94,7 @@ function answer(value: string) {
 
 beforeEach(() => {
   localStorage.removeItem(ONBOARDING_KEY)
+  localStorage.removeItem(PLACEMENT_INFO_KEY)
   window.location.hash = '#/welcome'
 })
 
@@ -115,7 +116,7 @@ describe('WelcomeScreen', () => {
     expect(state.suspended).toEqual([])
   })
 
-  it('оценка: верный ответ с вариантом → вердикт по результатам → применение ранга', async () => {
+  it('оценка: верный ответ с вариантом → вердикт по результатам → применение ранга E', async () => {
     const { state } = renderWelcome()
     fireEvent.click(await screen.findByText('Пройти оценку ранга'))
     // E-1: вариант "I'm fine." принят
@@ -133,17 +134,19 @@ describe('WelcomeScreen', () => {
     answer('wrong 2')
     await screen.findByRole('button', { name: /Дальше/ })
     fireEvent.click(screen.getByRole('button', { name: /Дальше/ }))
-    // вердикт: ранг E, low (была ошибка в E)
+    // вердикт: ранг E, low (была ошибка в E); ниже E предложений нет
     expect(await screen.findByText('Система назначает ранг')).toBeInTheDocument()
     expect(screen.getByText('E (A0)')).toBeInTheDocument()
     expect(screen.getByText(/Система сомневалась/)).toBeInTheDocument()
-    fireEvent.click(screen.getByText('Начать обучение'))
+    expect(screen.queryByText(/Надёжнее/)).not.toBeInTheDocument()
+    // ниже E уроков нет — выбор применения пропускается
+    fireEvent.click(screen.getByText('Начать с ранга E (A0)'))
     await waitFor(() => expect(window.location.hash).toBe('#/'))
     expect(localStorage.getItem(ONBOARDING_KEY)).toBe('1')
     expect(state.stats.rank).toBe('E') // вердикт E — без зачётов, floor 0
   })
 
-  it('оценка без ошибок → ранг D, уроки ниже зачтены, слова полосы скрыты', async () => {
+  it('оценка без ошибок → ранг D → «зачесть нижние» применяет зачёты и скрытие слов', async () => {
     const { state } = renderWelcome()
     fireEvent.click(await screen.findByText('Пройти оценку ранга'))
     for (const value of ['I am fine.', 'She is a doctor.', 'We are at home.', 'They are late.']) {
@@ -152,11 +155,86 @@ describe('WelcomeScreen', () => {
       fireEvent.click(screen.getByRole('button', { name: /Дальше/ }))
     }
     expect(await screen.findByText(/Чистый срез/)).toBeInTheDocument()
-    fireEvent.click(screen.getByText('Начать обучение'))
+    fireEvent.click(screen.getByText('Начать с ранга D (A1)'))
+    // экран применения (P.2): явный выбор режима
+    expect(await screen.findByText('Применение ранга')).toBeInTheDocument()
+    expect(screen.getByText(/Ранг D \(A1\)/)).toBeInTheDocument()
+    fireEvent.click(screen.getByText('Зачесть нижние уроки'))
     await waitFor(() => expect(window.location.hash).toBe('#/'))
     expect(state.stats.rank).toBe('D')
     expect(state.lessons.get('les-e-01')?.status).toBe('completed')
     expect(state.suspended).toEqual(['note_fine-adjective']) // 500 ≤ 1000
+    expect(JSON.parse(localStorage.getItem(PLACEMENT_INFO_KEY)!)).toMatchObject({
+      rank: 'D',
+      mode: 'waive',
+    })
+  })
+
+  it('P.2 «начать с первого урока ранга»: без зачётов и скрытия слов', async () => {
+    const { state } = renderWelcome()
+    fireEvent.click(await screen.findByText('Пройти оценку ранга'))
+    for (const value of ['I am fine.', 'She is a doctor.', 'We are at home.', 'They are late.']) {
+      answer(value)
+      await screen.findByRole('button', { name: /Дальше/ })
+      fireEvent.click(screen.getByRole('button', { name: /Дальше/ }))
+    }
+    await screen.findByText(/Чистый срез/)
+    fireEvent.click(screen.getByText('Начать с ранга D (A1)'))
+    fireEvent.click(await screen.findByText('Начать с первого урока ранга'))
+    await waitFor(() => expect(window.location.hash).toBe('#/'))
+    expect(state.stats.rank).toBe('D')
+    expect(state.lessons.size).toBe(0) // нижние доступны, но не зачтены
+    expect(state.suspended).toEqual([])
+    expect(JSON.parse(localStorage.getItem(PLACEMENT_INFO_KEY)!)).toMatchObject({
+      rank: 'D',
+      mode: 'start_at_rank',
+    })
+  })
+
+  it('P.1 «не знаю» — честный промах: показывает эталон и считается ошибкой', async () => {
+    const { state } = renderWelcome()
+    fireEvent.click(await screen.findByText('Пройти оценку ранга'))
+    // E-1: «не знаю» без ввода
+    fireEvent.click(screen.getByRole('button', { name: 'Не знаю' }))
+    // эталон показан (FeedbackPlate с reference)
+    expect(await screen.findByText(/I am fine\./)).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: /Дальше/ }))
+    // E-2: снова «не знаю» → полоса E закрыта двумя ошибками → вердикт E low
+    fireEvent.click(screen.getByRole('button', { name: 'Не знаю' }))
+    await screen.findByRole('button', { name: /Дальше/ })
+    fireEvent.click(screen.getByRole('button', { name: /Дальше/ }))
+    expect(await screen.findByText('Система назначает ранг')).toBeInTheDocument()
+    expect(screen.getByText(/Система сомневалась/)).toBeInTheDocument()
+    fireEvent.click(screen.getByText('Начать с ранга E (A0)'))
+    await waitFor(() => expect(window.location.hash).toBe('#/'))
+    expect(state.stats.rank).toBe('E')
+  })
+
+  it('P.1 low confidence → явное предложение ранга ниже (D low → E)', async () => {
+    const { state } = renderWelcome()
+    fireEvent.click(await screen.findByText('Пройти оценку ранга'))
+    // E чисто, D с одним промахом → вердикт D low
+    for (const value of ['I am fine.', 'She is a doctor.']) {
+      answer(value)
+      await screen.findByRole('button', { name: /Дальше/ })
+      fireEvent.click(screen.getByRole('button', { name: /Дальше/ }))
+    }
+    answer('nope')
+    await screen.findByRole('button', { name: /Дальше/ })
+    fireEvent.click(screen.getByRole('button', { name: /Дальше/ }))
+    answer('They are late.')
+    await screen.findByRole('button', { name: /Дальше/ })
+    fireEvent.click(screen.getByRole('button', { name: /Дальше/ }))
+    expect(await screen.findByText('Система назначает ранг')).toBeInTheDocument()
+    expect(screen.getByText(/Система в тебе не уверена/)).toBeInTheDocument()
+    // выбираем надёжный ранг ниже (E — применяется сразу, без экрана выбора)
+    fireEvent.click(screen.getByText('Надёжнее: ранг E (A0)'))
+    await waitFor(() => expect(window.location.hash).toBe('#/'))
+    expect(state.stats.rank).toBe('E')
+    expect(JSON.parse(localStorage.getItem(PLACEMENT_INFO_KEY)!)).toMatchObject({
+      rank: 'E',
+      mode: 'waive',
+    })
   })
 
   it('ошибка применения → экран ошибки → повтор работает', async () => {
@@ -214,7 +292,7 @@ describe('WelcomeScreen', () => {
     expect(screen.getByText('E (A0)')).toBeInTheDocument()
     expect(screen.getByText(/Чистый срез/)).toBeInTheDocument()
     // старт из мгновенного вердикта тоже применяет ранг
-    fireEvent.click(screen.getByText('Начать обучение'))
+    fireEvent.click(screen.getByText('Начать с ранга E (A0)'))
     await waitFor(() => expect(window.location.hash).toBe('#/'))
     expect(localStorage.getItem(ONBOARDING_KEY)).toBe('1')
   })

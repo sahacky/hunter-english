@@ -48,9 +48,18 @@ export function waivedLessonProgress(lessonId: string, nowIso: string): LessonPr
   }
 }
 
+export type ApplyPlacementMode = 'waive' | 'start_at_rank'
+
 export interface ApplyPlacementArgs {
   repo: ProgressRepository
   rank: PlacementRank
+  /**
+   * waive — зачитать уроки ниже ранга (completed без XP) и скрыть слова полосы
+   * (поведение O.3); start_at_rank — только ранг в статус, ничего не зачитывается
+   * и не скрывается: пользователь начинает с первого урока ранга, нижние доступны
+   * (plan://curriculum-review#P.2).
+   */
+  mode?: ApplyPlacementMode
   /** Все уроки (id + rank) — зачитываются те, что ниже ранга. */
   lessons: readonly { id: string; rank: 'E' | 'D' | 'C' | 'B' | 'A' | 'S' }[]
   /** entityId слова → лучший частотный ранг (loadWordRanks). */
@@ -63,10 +72,12 @@ export interface ApplyPlacementArgs {
  * перезапишет те же строки. XP не начисляется и не сбрасывается.
  */
 export async function applyPlacement(args: ApplyPlacementArgs): Promise<UserStats> {
-  const { repo, rank, lessons, wordRanks, now } = args
+  const { repo, rank, lessons, wordRanks, now, mode = 'waive' } = args
   const stats = await repo.getStats()
   const next: UserStats = { ...stats, rank, updated_at: now.toISOString() }
   await repo.putStats(next)
+
+  if (mode === 'start_at_rank') return next
 
   const target = RANK_INDEX[rank]
   for (const lesson of lessons) {
