@@ -28,6 +28,13 @@ export const DAY_BOUNDARY_HOUR = 4
 /** Дневной лимит новых по умолчанию (srs://rule-3; настройка профиля 5–50). */
 export const DEFAULT_NEW_LIMIT = 15
 
+/**
+ * Потолок новых карточек колоды words (srs://rule-3a, plan://curriculum-review#V.6):
+ * ≤10 слов/день из полосы — ёмкость SRS ×4, остальной лимит — фразы/цитаты.
+ * Пользовательский newPerDay может быть меньше — потолок не добавляет карточек.
+ */
+export const WORDS_NEW_DAILY_CAP = 10
+
 /** Параметры планировщика — specs/03 §2 (srs://ts-fsrs). */
 export function createScheduler() {
   return fsrs(
@@ -302,7 +309,15 @@ export function buildQueue(items: QueueItem[], options: BuildQueueOptions): Sess
   )
   const wokenLeft = Math.max(0, WAKEUP_DAILY_LIMIT - wokenToday)
   const woken = wakeUps.slice(0, wokenLeft)
-  const fresh = interleaveByDeck(newCards).slice(0, newLimit)
+  // V.6: слова ≤10/день — капаем колоду words ДО интерливинга, порядок внутри
+  // колоды (created_at) сохраняется; остаток лимита достаётся фразам/цитатам
+  const wordsCapped = newCards
+    .filter((card) => card.deck === 'words')
+    .sort((a, b) => a.created_at.localeCompare(b.created_at) || a.card_id.localeCompare(b.card_id))
+    .slice(0, WORDS_NEW_DAILY_CAP)
+  const wordsKept = new Set(wordsCapped.map(({ card_id }) => card_id))
+  const cappedNew = newCards.filter((card) => card.deck !== 'words' || wordsKept.has(card.card_id))
+  const fresh = interleaveByDeck(cappedNew).slice(0, newLimit)
 
   const entries: QueueEntry[] = []
   const push = (cards: CardState[], kind: QueueKind, notes: Map<string, Note>) => {

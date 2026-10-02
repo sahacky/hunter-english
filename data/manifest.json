@@ -1,6 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-01T20:41:00Z",
+  "content_version": 2,
+  "generated_at": "2026-10-02T12:51:37Z",
   "files": [
     {
       "path": "lessons/exercises-a.json",
@@ -49,42 +50,42 @@
       "kind": "lessons",
       "schema_version": 1,
       "items": 22,
-      "sha256": "904ccad34e83f540343b684e6c24453e805553069ce17491fdb1012a17e1f8ad"
+      "sha256": "b1765ee531fad25bd9720a93248608cf17fd410d268ce05a0dcd883101b273b5"
     },
     {
       "path": "lessons/lessons-b.json",
       "kind": "lessons",
       "schema_version": 1,
       "items": 29,
-      "sha256": "180c0e30413f44a9f6de9d3a16147e71648e4620a3ebd825134a1d6eed1f9d9e"
+      "sha256": "0a91fba17b7417941b29a43c3d3131b9a12b2f5435110373ff18f1e3e516a1af"
     },
     {
       "path": "lessons/lessons-c.json",
       "kind": "lessons",
       "schema_version": 1,
-      "items": 30,
-      "sha256": "0c3ca6826a80f50914c8c42fa2db7454221cefa668c98544804f22e7b1255b21"
+      "items": 19,
+      "sha256": "2ae5acf15ae569966e55733a633dddcc4f3e7c0e1a78aefe965db6c68b30ec04"
     },
     {
       "path": "lessons/lessons-d.json",
       "kind": "lessons",
       "schema_version": 1,
-      "items": 28,
-      "sha256": "50fb7b2b7d5188f25a2f8ab37d7975492e5c526288af71c5105a0ca60867e922"
+      "items": 39,
+      "sha256": "ba40b920aed0979652999e0c66872b3c37ddc99926d3286a615665a2521902cc"
     },
     {
       "path": "lessons/lessons-e.json",
       "kind": "lessons",
       "schema_version": 1,
       "items": 24,
-      "sha256": "2d65672f482561ee2625a721b09738f0a9fb45d3fdf67fbfed496c64ee5b4a4c"
+      "sha256": "78ce2bd80e5005cd2310438dced4446802c8b61326e0de0c1021e408e782ded3"
     },
     {
       "path": "lessons/lessons-s.json",
       "kind": "lessons",
       "schema_version": 1,
       "items": 15,
-      "sha256": "2d8e36380270c3a57110caadbfca90fbb493256d4ec967de22b8aae68238628a"
+      "sha256": "6dce772b11c0690a78451a6d19e87488e64bb7bdda85a325f1b130d818e2cbb2"
     },
     {
       "path": "phrasebook/airport.json",
@@ -153,8 +154,8 @@
       "path": "phrasebook/smalltalk.json",
       "kind": "phrasebook",
       "schema_version": 1,
-      "items": 4,
-      "sha256": "f0fd545e587486cd42def6aa3c1cdae5289bd0c6cb8124a779a3202b27d659bf"
+      "items": 5,
+      "sha256": "e33b81481ab9f9cebcaeab539dfa7775ee61525df00695393be9d63b5f763634"
     },
     {
       "path": "phrasebook/taxi.json",

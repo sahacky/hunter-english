@@ -99,6 +99,62 @@
       ]
     },
     {
+      "id": "pb-smalltalk-05",
+      "rank": "C",
+      "topic": "smalltalk",
+      "situation_ru": "Путешествия: был ли ты… (лёгкая версия)",
+      "user_role": "traveler",
+      "lines": [
+        {
+          "role": "local",
+          "audio": "audio/phrasebook/cori/pb-smalltalk-05-l0.opus",
+          "text_en": "Have you been to London?",
+          "translation_ru": "Ты был в Лондоне?"
+        },
+        {
+          "role": "traveler",
+          "audio": "audio/phrasebook/cori/pb-smalltalk-05-l1.opus",
+          "text_en": "Yes, I've been there twice.",
+          "translation_ru": "Да, я был там дважды.",
+          "accepted": [
+            "Yes, I've been there twice.",
+            "I've been there twice.",
+            "Yes, I have been there twice."
+          ]
+        },
+        {
+          "role": "local",
+          "audio": "audio/phrasebook/cori/pb-smalltalk-05-l2.opus",
+          "text_en": "Nice! I've never been to Spain. Is it worth visiting?",
+          "translation_ru": "Здорово! Я никогда не был в Испании. Стоит съездить?"
+        },
+        {
+          "role": "traveler",
+          "audio": "audio/phrasebook/cori/pb-smalltalk-05-l3.opus",
+          "text_en": "Yes, you have to see Barcelona.",
+          "translation_ru": "Да, тебе обязательно нужно увидеть Барселону.",
+          "accepted": ["Yes, you have to see Barcelona.", "You have to see Barcelona."]
+        },
+        {
+          "role": "local",
+          "audio": "audio/phrasebook/cori/pb-smalltalk-05-l4.opus",
+          "text_en": "And have you ever been to Paris?",
+          "translation_ru": "А ты когда-нибудь был в Париже?"
+        },
+        {
+          "role": "traveler",
+          "audio": "audio/phrasebook/cori/pb-smalltalk-05-l5.opus",
+          "text_en": "I've never been to Paris. Maybe next year.",
+          "translation_ru": "Я никогда не был в Париже. Может, в следующем году.",
+          "accepted": [
+            "I've never been to Paris.",
+            "I've never been to Paris. Maybe next year.",
+            "I have never been to Paris."
+          ]
+        }
+      ]
+    },
+    {
       "id": "pb-smalltalk-03",
       "rank": "B",
       "topic": "smalltalk",

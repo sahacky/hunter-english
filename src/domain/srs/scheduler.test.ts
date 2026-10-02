@@ -11,6 +11,7 @@ import {
   newLimitForDebt,
   sameStudyDay,
   studyDay,
+  WORDS_NEW_DAILY_CAP,
 } from './scheduler'
 
 const NOW = new Date(2026, 8, 28, 10, 0, 0) // 2026-09-28 10:00 локально
@@ -334,8 +335,14 @@ describe('buildQueue (srs://session-order)', () => {
         entry(mkCard({ card_id: `w${i}.ru-en`, note_id: `n-w${i}`, type: 'ru-en', state: 0 })),
       )
     }
-    for (let i = 0; i < 20; i += 1) {
+    // v2 (V.6): 10 слов (кап) + 10 фраз — лимит 15 добирается фразами
+    for (let i = 0; i < 10; i += 1) {
       items.push(entry(mkCard({ card_id: `f${i}.en-ru`, note_id: `n-f${i}`, state: 0 })))
+    }
+    for (let i = 0; i < 10; i += 1) {
+      items.push(
+        entry(mkCard({ card_id: `p${i}.en-ru`, note_id: `n-p${i}`, state: 0, deck: 'phrases' })),
+      )
     }
 
     const plan = buildQueue(items, { now: NOW })
@@ -343,10 +350,33 @@ describe('buildQueue (srs://session-order)', () => {
     const fresh = plan.entries.filter(({ kind }) => kind === 'new')
     expect(woken).toHaveLength(5)
     expect(fresh).toHaveLength(DEFAULT_NEW_LIMIT)
+    // интерливинг чередует колоды: слов в лимите ≤ капа V.6 (здесь 8 из 15)
+    expect(fresh.filter(({ card }) => card.deck === 'words').length).toBeLessThanOrEqual(
+      WORDS_NEW_DAILY_CAP,
+    )
     expect(plan.counts.new).toBe(DEFAULT_NEW_LIMIT + 5)
 
     const nextDayPlan = buildQueue(items, { now: NOW, wokenToday: 3 })
     expect(nextDayPlan.entries.filter(({ kind }) => kind === 'wake-up')).toHaveLength(2)
+  })
+
+  it('V.6: новых слов ≤10/день даже при большом newPerDay (plan://curriculum-review#V.6)', () => {
+    const items = [] as ReturnType<typeof entry>[]
+    for (let i = 0; i < 20; i += 1) {
+      const n = String(i).padStart(2, '0')
+      items.push(entry(mkCard({ card_id: `w${n}.en-ru`, note_id: `n-w${n}`, state: 0 })))
+    }
+    const plan = buildQueue(items, { now: NOW, baseNewLimit: 50 })
+    const fresh = plan.entries.filter(({ kind }) => kind === 'new')
+    expect(fresh).toHaveLength(WORDS_NEW_DAILY_CAP)
+    expect(fresh.every(({ card }) => card.deck === 'words')).toBe(true)
+    // кап берёт старые по created_at/card_id слова — первые 10 (паддинг = порядок)
+    expect(fresh.map(({ card }) => card.card_id)).toEqual(
+      Array.from({ length: 10 }, (_, i) => `w${String(i).padStart(2, '0')}.en-ru`),
+    )
+    // пользовательский лимит < капа по-прежнему режет раньше
+    const small = buildQueue(items, { now: NOW, baseNewLimit: 5 })
+    expect(small.entries.filter(({ kind }) => kind === 'new')).toHaveLength(5)
   })
 
   it('suspended и будущие карточки исключены, счётчики только по очереди', () => {

@@ -173,7 +173,8 @@
         "playlist_index": 552,
         "youtube_id": "6Y-aBWo-xFk",
         "title": null
-      }
+      },
+      "order": 1
     },
     {
       "id": "les-d-02",
@@ -346,7 +347,8 @@
         "playlist_index": 567,
         "youtube_id": "VNoNT1ao4O0",
         "title": null
-      }
+      },
+      "order": 2
     },
     {
       "id": "les-d-03",
@@ -519,7 +521,8 @@
         "playlist_index": 812,
         "youtube_id": "GEorr2nlRyw",
         "title": null
-      }
+      },
+      "order": 3
     },
     {
       "id": "les-d-04",
@@ -687,7 +690,8 @@
           "id": "ex-d-1313"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 4
     },
     {
       "id": "les-d-05",
@@ -855,7 +859,8 @@
           "id": "ex-d-1315"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 5
     },
     {
       "id": "les-d-06",
@@ -1028,7 +1033,8 @@
         "playlist_index": 844,
         "youtube_id": "5mFaI_cnaB8",
         "title": null
-      }
+      },
+      "order": 6
     },
     {
       "id": "les-d-07",
@@ -1201,7 +1207,8 @@
         "playlist_index": 845,
         "youtube_id": "y8pcQGaMKI0",
         "title": null
-      }
+      },
+      "order": 7
     },
     {
       "id": "les-d-08",
@@ -1374,7 +1381,8 @@
         "playlist_index": 797,
         "youtube_id": "0vQxLfCmYfI",
         "title": null
-      }
+      },
+      "order": 8
     },
     {
       "id": "les-d-09",
@@ -1542,7 +1550,8 @@
           "id": "ex-d-1323"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 9
     },
     {
       "id": "les-d-10",
@@ -1710,7 +1719,8 @@
           "id": "ex-d-1325"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 10
     },
     {
       "id": "les-d-11",
@@ -1883,7 +1893,8 @@
         "playlist_index": 802,
         "youtube_id": "cpNfQQm8ppk",
         "title": null
-      }
+      },
+      "order": 11
     },
     {
       "id": "les-d-12",
@@ -2056,7 +2067,8 @@
         "playlist_index": 181,
         "youtube_id": "hUWh15C6Pqk",
         "title": null
-      }
+      },
+      "order": 12
     },
     {
       "id": "les-d-13",
@@ -2224,7 +2236,8 @@
           "id": "ex-d-1331"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 13
     },
     {
       "id": "les-d-14",
@@ -2397,7 +2410,8 @@
         "playlist_index": 74,
         "youtube_id": "3pvq0lHmLXM",
         "title": null
-      }
+      },
+      "order": 14
     },
     {
       "id": "les-d-15",
@@ -2565,7 +2579,8 @@
           "id": "ex-d-1335"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 15
     },
     {
       "id": "les-d-16",
@@ -2738,7 +2753,8 @@
         "playlist_index": 48,
         "youtube_id": "mfsalx6Nojs",
         "title": null
-      }
+      },
+      "order": 16
     },
     {
       "id": "les-d-17",
@@ -2906,7 +2922,8 @@
           "id": "ex-d-1339"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 17
     },
     {
       "id": "les-d-18",
@@ -3074,7 +3091,8 @@
           "id": "ex-d-1341"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 18
     },
     {
       "id": "les-d-19",
@@ -3247,7 +3265,8 @@
         "playlist_index": 182,
         "youtube_id": "2bsDP-r-RGk",
         "title": null
-      }
+      },
+      "order": 19
     },
     {
       "id": "les-d-20",
@@ -3415,7 +3434,8 @@
           "id": "ex-d-1345"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 20
     },
     {
       "id": "les-d-21",
@@ -3583,7 +3603,8 @@
           "id": "ex-d-1347"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 21
     },
     {
       "id": "les-d-22",
@@ -3751,7 +3772,8 @@
           "id": "ex-d-1349"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 22
     },
     {
       "id": "les-d-23",
@@ -3919,7 +3941,8 @@
           "id": "ex-d-1351"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 23
     },
     {
       "id": "les-d-24",
@@ -4087,7 +4110,8 @@
           "id": "ex-d-1353"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 24
     },
     {
       "id": "les-d-25",
@@ -4255,12 +4279,1929 @@
           "id": "ex-d-1355"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 25
+    },
+    {
+      "id": "les-c-01",
+      "rank": "D",
+      "module": "mod-d-6",
+      "title": "Past Simple: правильные глаголы (-ed)",
+      "grammar_point": {
+        "id": "gp-c-01",
+        "title_ru": "Прошедшее: правильные глаголы",
+        "rule_md": "**Past Simple: правильные глаголы (+).**\nДействие закончилось в прошлом: visit → visit**ed**, stay → stay**ed**.\nI **visited** London last year. She **cooked** dinner.\nМаркеры: yesterday, last year/week, two days ago, in 2019.",
+        "phrase_ids": ["ph-c-0001", "ph-c-0002", "ph-c-0003", "ph-c-0004", "ph-c-0005"],
+        "trap_id": "trap-didnt-past"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 1961,
+        "to": 2020
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-didnt-past",
+      "quotes_topic": "past",
+      "exercises": [
+        {
+          "id": "ex-c-0001"
+        },
+        {
+          "id": "ex-c-0002"
+        },
+        {
+          "id": "ex-c-0003"
+        },
+        {
+          "id": "ex-c-0004"
+        },
+        {
+          "id": "ex-c-0005"
+        },
+        {
+          "id": "ex-c-0006"
+        },
+        {
+          "id": "ex-c-0007"
+        },
+        {
+          "id": "ex-c-0008"
+        },
+        {
+          "id": "ex-c-0009"
+        },
+        {
+          "id": "ex-c-0010"
+        },
+        {
+          "id": "ex-c-0011"
+        },
+        {
+          "id": "ex-c-0012"
+        },
+        {
+          "id": "ex-c-0013"
+        },
+        {
+          "id": "ex-c-0014"
+        },
+        {
+          "id": "ex-c-0015"
+        },
+        {
+          "id": "ex-c-0016"
+        },
+        {
+          "id": "ex-c-0017"
+        },
+        {
+          "id": "ex-c-0018"
+        },
+        {
+          "id": "ex-c-0019"
+        },
+        {
+          "id": "ex-c-0020"
+        },
+        {
+          "id": "ex-c-0021"
+        },
+        {
+          "id": "ex-c-0022"
+        },
+        {
+          "id": "ex-c-0023"
+        },
+        {
+          "id": "ex-c-0024"
+        },
+        {
+          "id": "ex-c-0025"
+        },
+        {
+          "id": "ex-c-0026"
+        },
+        {
+          "id": "ex-c-0027"
+        },
+        {
+          "id": "ex-c-0028"
+        },
+        {
+          "id": "ex-c-0029"
+        },
+        {
+          "id": "ex-c-0030"
+        },
+        {
+          "id": "ex-c-0031"
+        },
+        {
+          "id": "ex-c-0032"
+        },
+        {
+          "id": "ex-c-0033"
+        },
+        {
+          "id": "ex-c-0034"
+        },
+        {
+          "id": "ex-c-0035"
+        },
+        {
+          "id": "ex-c-0036"
+        },
+        {
+          "id": "ex-c-0037"
+        },
+        {
+          "id": "ex-c-0038"
+        },
+        {
+          "id": "ex-c-0039"
+        },
+        {
+          "id": "ex-c-0040"
+        },
+        {
+          "id": "ex-c-0041"
+        },
+        {
+          "id": "ex-c-0042"
+        },
+        {
+          "id": "ex-c-0043"
+        },
+        {
+          "id": "ex-c-0044"
+        },
+        {
+          "id": "ex-c-0045"
+        },
+        {
+          "id": "ex-c-0046"
+        },
+        {
+          "id": "ex-c-1390"
+        },
+        {
+          "id": "ex-c-1391"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "1.64",
+        "playlist_index": 209,
+        "youtube_id": "oE0epGjQEyc",
+        "title": null
+      },
+      "order": 26
+    },
+    {
+      "id": "les-c-02",
+      "rank": "D",
+      "module": "mod-d-6",
+      "title": "Past Simple: неправильные глаголы I (топ-20)",
+      "grammar_point": {
+        "id": "gp-c-02",
+        "title_ru": "Топ-20 неправильных глаголов",
+        "rule_md": "**Past Simple: неправильные глаголы I (топ-20).**\nВторая форма — из таблицы: go→**went**, make→**made**, see→**saw**,\ntake→**took**, come→**came**, get→**got**, have→**had**, do→**did**,\nsay→**said**, tell→**told**, know→**knew**, think→**thought**, buy→**bought**.\nI **went** to the shop. He **bought** two tickets.",
+        "phrase_ids": ["ph-c-0047", "ph-c-0048", "ph-c-0049", "ph-c-0050", "ph-c-0051"],
+        "trap_id": "trap-didnt-past"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 2021,
+        "to": 2080
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-didnt-past",
+      "quotes_topic": "past",
+      "exercises": [
+        {
+          "id": "ex-c-0047"
+        },
+        {
+          "id": "ex-c-0048"
+        },
+        {
+          "id": "ex-c-0049"
+        },
+        {
+          "id": "ex-c-0050"
+        },
+        {
+          "id": "ex-c-0051"
+        },
+        {
+          "id": "ex-c-0052"
+        },
+        {
+          "id": "ex-c-0053"
+        },
+        {
+          "id": "ex-c-0054"
+        },
+        {
+          "id": "ex-c-0055"
+        },
+        {
+          "id": "ex-c-0056"
+        },
+        {
+          "id": "ex-c-0057"
+        },
+        {
+          "id": "ex-c-0058"
+        },
+        {
+          "id": "ex-c-0059"
+        },
+        {
+          "id": "ex-c-0060"
+        },
+        {
+          "id": "ex-c-0061"
+        },
+        {
+          "id": "ex-c-0062"
+        },
+        {
+          "id": "ex-c-0063"
+        },
+        {
+          "id": "ex-c-0064"
+        },
+        {
+          "id": "ex-c-0065"
+        },
+        {
+          "id": "ex-c-0066"
+        },
+        {
+          "id": "ex-c-0067"
+        },
+        {
+          "id": "ex-c-0068"
+        },
+        {
+          "id": "ex-c-0069"
+        },
+        {
+          "id": "ex-c-0070"
+        },
+        {
+          "id": "ex-c-0071"
+        },
+        {
+          "id": "ex-c-0072"
+        },
+        {
+          "id": "ex-c-0073"
+        },
+        {
+          "id": "ex-c-0074"
+        },
+        {
+          "id": "ex-c-0075"
+        },
+        {
+          "id": "ex-c-0076"
+        },
+        {
+          "id": "ex-c-0077"
+        },
+        {
+          "id": "ex-c-0078"
+        },
+        {
+          "id": "ex-c-0079"
+        },
+        {
+          "id": "ex-c-0080"
+        },
+        {
+          "id": "ex-c-0081"
+        },
+        {
+          "id": "ex-c-0082"
+        },
+        {
+          "id": "ex-c-0083"
+        },
+        {
+          "id": "ex-c-0084"
+        },
+        {
+          "id": "ex-c-0085"
+        },
+        {
+          "id": "ex-c-0086"
+        },
+        {
+          "id": "ex-c-0087"
+        },
+        {
+          "id": "ex-c-0088"
+        },
+        {
+          "id": "ex-c-0089"
+        },
+        {
+          "id": "ex-c-0090"
+        },
+        {
+          "id": "ex-c-0091"
+        },
+        {
+          "id": "ex-c-0092"
+        },
+        {
+          "id": "ex-c-1392"
+        },
+        {
+          "id": "ex-c-1393"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "1.79",
+        "playlist_index": 251,
+        "youtube_id": "oAziZ0eLy68",
+        "title": null
+      },
+      "order": 27
+    },
+    {
+      "id": "les-c-03",
+      "rank": "D",
+      "module": "mod-d-6",
+      "title": "Past Simple: неправильные глаголы II (топ-21–50)",
+      "grammar_point": {
+        "id": "gp-c-03",
+        "title_ru": "Топ-21–50 неправильных глаголов",
+        "rule_md": "**Past Simple: неправильные глаголы II (топ-21–50).**\nlose→**lost**, find→**found**, give→**gave**, meet→**met**, speak→**spoke**,\nleave→**left**, read→**read**, write→**wrote**, eat→**ate**, drink→**drank**,\nsleep→**slept**, fall→**fell**, feel→**felt**, wake→**woke**, understand→**understood**.\nI **lost** my passport. We **met** in 2020.",
+        "phrase_ids": ["ph-c-0091", "ph-c-0092", "ph-c-0093", "ph-c-0094", "ph-c-0095"],
+        "trap_id": "trap-didnt-past"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 2081,
+        "to": 2140
+      },
+      "phrasebook_topic": "emergency",
+      "trap_id": "trap-didnt-past",
+      "quotes_topic": "past",
+      "exercises": [
+        {
+          "id": "ex-c-0093"
+        },
+        {
+          "id": "ex-c-0094"
+        },
+        {
+          "id": "ex-c-0095"
+        },
+        {
+          "id": "ex-c-0096"
+        },
+        {
+          "id": "ex-c-0097"
+        },
+        {
+          "id": "ex-c-0098"
+        },
+        {
+          "id": "ex-c-0099"
+        },
+        {
+          "id": "ex-c-0100"
+        },
+        {
+          "id": "ex-c-0101"
+        },
+        {
+          "id": "ex-c-0102"
+        },
+        {
+          "id": "ex-c-0103"
+        },
+        {
+          "id": "ex-c-0104"
+        },
+        {
+          "id": "ex-c-0105"
+        },
+        {
+          "id": "ex-c-0106"
+        },
+        {
+          "id": "ex-c-0107"
+        },
+        {
+          "id": "ex-c-0108"
+        },
+        {
+          "id": "ex-c-0109"
+        },
+        {
+          "id": "ex-c-0110"
+        },
+        {
+          "id": "ex-c-0111"
+        },
+        {
+          "id": "ex-c-0112"
+        },
+        {
+          "id": "ex-c-0113"
+        },
+        {
+          "id": "ex-c-0114"
+        },
+        {
+          "id": "ex-c-0115"
+        },
+        {
+          "id": "ex-c-0116"
+        },
+        {
+          "id": "ex-c-0117"
+        },
+        {
+          "id": "ex-c-0118"
+        },
+        {
+          "id": "ex-c-0119"
+        },
+        {
+          "id": "ex-c-0120"
+        },
+        {
+          "id": "ex-c-0121"
+        },
+        {
+          "id": "ex-c-0122"
+        },
+        {
+          "id": "ex-c-0123"
+        },
+        {
+          "id": "ex-c-0124"
+        },
+        {
+          "id": "ex-c-0125"
+        },
+        {
+          "id": "ex-c-0126"
+        },
+        {
+          "id": "ex-c-0127"
+        },
+        {
+          "id": "ex-c-0128"
+        },
+        {
+          "id": "ex-c-0129"
+        },
+        {
+          "id": "ex-c-0130"
+        },
+        {
+          "id": "ex-c-0131"
+        },
+        {
+          "id": "ex-c-0132"
+        },
+        {
+          "id": "ex-c-0133"
+        },
+        {
+          "id": "ex-c-0134"
+        },
+        {
+          "id": "ex-c-0135"
+        },
+        {
+          "id": "ex-c-0136"
+        },
+        {
+          "id": "ex-c-0137"
+        },
+        {
+          "id": "ex-c-0138"
+        },
+        {
+          "id": "ex-c-1394"
+        },
+        {
+          "id": "ex-c-1395"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "1.80",
+        "playlist_index": 253,
+        "youtube_id": "sxmNTfmhs9k",
+        "title": null
+      },
+      "order": 28
+    },
+    {
+      "id": "les-c-04",
+      "rank": "D",
+      "module": "mod-d-6",
+      "title": "was / were: +/−/?",
+      "grammar_point": {
+        "id": "gp-c-04",
+        "title_ru": "was/were в прошедшем",
+        "rule_md": "**was / were: +/−/?.**\nI/he/she/it → **was**; you/we/they → **were**.\nI **was** at home. They **were** in Paris.\n−: I **wasn't** at home. ?: **Were** you at the hotel?\nHow **was** your day? — It was great!",
+        "phrase_ids": ["ph-c-0135", "ph-c-0136", "ph-c-0137", "ph-c-0138", "ph-c-0139"],
+        "trap_id": "trap-no-to-be"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 2141,
+        "to": 2200
+      },
+      "phrasebook_topic": "hotel",
+      "trap_id": "trap-no-to-be",
+      "quotes_topic": "past",
+      "exercises": [
+        {
+          "id": "ex-c-0139"
+        },
+        {
+          "id": "ex-c-0140"
+        },
+        {
+          "id": "ex-c-0141"
+        },
+        {
+          "id": "ex-c-0142"
+        },
+        {
+          "id": "ex-c-0143"
+        },
+        {
+          "id": "ex-c-0144"
+        },
+        {
+          "id": "ex-c-0145"
+        },
+        {
+          "id": "ex-c-0146"
+        },
+        {
+          "id": "ex-c-0147"
+        },
+        {
+          "id": "ex-c-0148"
+        },
+        {
+          "id": "ex-c-0149"
+        },
+        {
+          "id": "ex-c-0150"
+        },
+        {
+          "id": "ex-c-0151"
+        },
+        {
+          "id": "ex-c-0152"
+        },
+        {
+          "id": "ex-c-0153"
+        },
+        {
+          "id": "ex-c-0154"
+        },
+        {
+          "id": "ex-c-0155"
+        },
+        {
+          "id": "ex-c-0156"
+        },
+        {
+          "id": "ex-c-0157"
+        },
+        {
+          "id": "ex-c-0158"
+        },
+        {
+          "id": "ex-c-0159"
+        },
+        {
+          "id": "ex-c-0160"
+        },
+        {
+          "id": "ex-c-0161"
+        },
+        {
+          "id": "ex-c-0162"
+        },
+        {
+          "id": "ex-c-0163"
+        },
+        {
+          "id": "ex-c-0164"
+        },
+        {
+          "id": "ex-c-0165"
+        },
+        {
+          "id": "ex-c-0166"
+        },
+        {
+          "id": "ex-c-0167"
+        },
+        {
+          "id": "ex-c-0168"
+        },
+        {
+          "id": "ex-c-0169"
+        },
+        {
+          "id": "ex-c-0170"
+        },
+        {
+          "id": "ex-c-0171"
+        },
+        {
+          "id": "ex-c-0172"
+        },
+        {
+          "id": "ex-c-0173"
+        },
+        {
+          "id": "ex-c-0174"
+        },
+        {
+          "id": "ex-c-0175"
+        },
+        {
+          "id": "ex-c-0176"
+        },
+        {
+          "id": "ex-c-0177"
+        },
+        {
+          "id": "ex-c-0178"
+        },
+        {
+          "id": "ex-c-0179"
+        },
+        {
+          "id": "ex-c-0180"
+        },
+        {
+          "id": "ex-c-0181"
+        },
+        {
+          "id": "ex-c-0182"
+        },
+        {
+          "id": "ex-c-0183"
+        },
+        {
+          "id": "ex-c-0184"
+        },
+        {
+          "id": "ex-c-1396"
+        },
+        {
+          "id": "ex-c-1397"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "1.97",
+        "playlist_index": 297,
+        "youtube_id": "073mRqaAExA",
+        "title": null
+      },
+      "order": 29
+    },
+    {
+      "id": "les-c-05",
+      "rank": "D",
+      "module": "mod-d-6",
+      "title": "Повторение №10: прошлое",
+      "grammar_point": {
+        "id": "gp-c-05",
+        "title_ru": "Повторение: Past Simple + was/were",
+        "rule_md": "**Повторение №10: прошлое.**\nПравильные -ed и неправильные формы; was/were ±?;\nСпецвопросы: What/Where/How **did** you…? (did + 1-я форма!)\ndidn't + 1-я форма: I **didn't go** (не «didn't went»).",
+        "phrase_ids": ["ph-c-0180", "ph-c-0181", "ph-c-0182", "ph-c-0183", "ph-c-0184"],
+        "trap_id": "trap-didnt-past"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 2201,
+        "to": 2260
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-didnt-past",
+      "quotes_topic": "past",
+      "exercises": [
+        {
+          "id": "ex-c-0185"
+        },
+        {
+          "id": "ex-c-0186"
+        },
+        {
+          "id": "ex-c-0187"
+        },
+        {
+          "id": "ex-c-0188"
+        },
+        {
+          "id": "ex-c-0189"
+        },
+        {
+          "id": "ex-c-0190"
+        },
+        {
+          "id": "ex-c-0191"
+        },
+        {
+          "id": "ex-c-0192"
+        },
+        {
+          "id": "ex-c-0193"
+        },
+        {
+          "id": "ex-c-0194"
+        },
+        {
+          "id": "ex-c-0195"
+        },
+        {
+          "id": "ex-c-0196"
+        },
+        {
+          "id": "ex-c-0197"
+        },
+        {
+          "id": "ex-c-0198"
+        },
+        {
+          "id": "ex-c-0199"
+        },
+        {
+          "id": "ex-c-0200"
+        },
+        {
+          "id": "ex-c-0201"
+        },
+        {
+          "id": "ex-c-0202"
+        },
+        {
+          "id": "ex-c-0203"
+        },
+        {
+          "id": "ex-c-0204"
+        },
+        {
+          "id": "ex-c-0205"
+        },
+        {
+          "id": "ex-c-0206"
+        },
+        {
+          "id": "ex-c-0207"
+        },
+        {
+          "id": "ex-c-0208"
+        },
+        {
+          "id": "ex-c-0209"
+        },
+        {
+          "id": "ex-c-0210"
+        },
+        {
+          "id": "ex-c-0211"
+        },
+        {
+          "id": "ex-c-0212"
+        },
+        {
+          "id": "ex-c-0213"
+        },
+        {
+          "id": "ex-c-0214"
+        },
+        {
+          "id": "ex-c-0215"
+        },
+        {
+          "id": "ex-c-0216"
+        },
+        {
+          "id": "ex-c-0217"
+        },
+        {
+          "id": "ex-c-0218"
+        },
+        {
+          "id": "ex-c-0219"
+        },
+        {
+          "id": "ex-c-0220"
+        },
+        {
+          "id": "ex-c-0221"
+        },
+        {
+          "id": "ex-c-0222"
+        },
+        {
+          "id": "ex-c-0223"
+        },
+        {
+          "id": "ex-c-0224"
+        },
+        {
+          "id": "ex-c-0225"
+        },
+        {
+          "id": "ex-c-0226"
+        },
+        {
+          "id": "ex-c-0227"
+        },
+        {
+          "id": "ex-c-0228"
+        },
+        {
+          "id": "ex-c-0229"
+        },
+        {
+          "id": "ex-c-0230"
+        },
+        {
+          "id": "ex-c-1398"
+        },
+        {
+          "id": "ex-c-1399"
+        }
+      ],
+      "bebris_video": null,
+      "order": 30
+    },
+    {
+      "id": "les-c-06",
+      "rank": "D",
+      "module": "mod-d-6",
+      "title": "Past Simple: отрицание didn't",
+      "grammar_point": {
+        "id": "gp-c-06",
+        "title_ru": "didn't + первая форма",
+        "rule_md": "**Past Simple: отрицание didn't.**\ndidn't + первая форма: I **didn't go**. She **didn't come**.\n❌ I didn't went (после didn't — 1-я форма!).\n⚠️ Ловушка: «Я не пошёл» = I didn't go, НЕ «I not went».",
+        "phrase_ids": ["ph-c-0224", "ph-c-0225", "ph-c-0226", "ph-c-0227", "ph-c-0228"],
+        "trap_id": "trap-didnt-past"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 2261,
+        "to": 2320
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-didnt-past",
+      "quotes_topic": "negation",
+      "exercises": [
+        {
+          "id": "ex-c-0231"
+        },
+        {
+          "id": "ex-c-0232"
+        },
+        {
+          "id": "ex-c-0233"
+        },
+        {
+          "id": "ex-c-0234"
+        },
+        {
+          "id": "ex-c-0235"
+        },
+        {
+          "id": "ex-c-0236"
+        },
+        {
+          "id": "ex-c-0237"
+        },
+        {
+          "id": "ex-c-0238"
+        },
+        {
+          "id": "ex-c-0239"
+        },
+        {
+          "id": "ex-c-0240"
+        },
+        {
+          "id": "ex-c-0241"
+        },
+        {
+          "id": "ex-c-0242"
+        },
+        {
+          "id": "ex-c-0243"
+        },
+        {
+          "id": "ex-c-0244"
+        },
+        {
+          "id": "ex-c-0245"
+        },
+        {
+          "id": "ex-c-0246"
+        },
+        {
+          "id": "ex-c-0247"
+        },
+        {
+          "id": "ex-c-0248"
+        },
+        {
+          "id": "ex-c-0249"
+        },
+        {
+          "id": "ex-c-0250"
+        },
+        {
+          "id": "ex-c-0251"
+        },
+        {
+          "id": "ex-c-0252"
+        },
+        {
+          "id": "ex-c-0253"
+        },
+        {
+          "id": "ex-c-0254"
+        },
+        {
+          "id": "ex-c-0255"
+        },
+        {
+          "id": "ex-c-0256"
+        },
+        {
+          "id": "ex-c-0257"
+        },
+        {
+          "id": "ex-c-0258"
+        },
+        {
+          "id": "ex-c-0259"
+        },
+        {
+          "id": "ex-c-0260"
+        },
+        {
+          "id": "ex-c-0261"
+        },
+        {
+          "id": "ex-c-0262"
+        },
+        {
+          "id": "ex-c-0263"
+        },
+        {
+          "id": "ex-c-0264"
+        },
+        {
+          "id": "ex-c-0265"
+        },
+        {
+          "id": "ex-c-0266"
+        },
+        {
+          "id": "ex-c-0267"
+        },
+        {
+          "id": "ex-c-0268"
+        },
+        {
+          "id": "ex-c-0269"
+        },
+        {
+          "id": "ex-c-0270"
+        },
+        {
+          "id": "ex-c-0271"
+        },
+        {
+          "id": "ex-c-0272"
+        },
+        {
+          "id": "ex-c-0273"
+        },
+        {
+          "id": "ex-c-0274"
+        },
+        {
+          "id": "ex-c-0275"
+        },
+        {
+          "id": "ex-c-0276"
+        },
+        {
+          "id": "ex-c-0277"
+        },
+        {
+          "id": "ex-c-1400"
+        },
+        {
+          "id": "ex-c-1401"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "1.94",
+        "playlist_index": 291,
+        "youtube_id": "g8ZbFeoUhb0",
+        "title": null
+      },
+      "order": 31
+    },
+    {
+      "id": "les-c-07",
+      "rank": "D",
+      "module": "mod-d-6",
+      "title": "Past Simple: вопрос Did…? и спецвопросы",
+      "grammar_point": {
+        "id": "gp-c-07",
+        "title_ru": "Вопросы в прошедшем",
+        "rule_md": "**Past Simple: вопросы Did…?**\n**Did** + подлежащее + 1-я форма: **Did** you **see** my bag?\nСпецвопросы: Where **did** you **stay**? What **did** he **say**?\n❌ Did you saw? (после did — 1-я форма).",
+        "phrase_ids": ["ph-c-0269", "ph-c-0270", "ph-c-0271", "ph-c-0272", "ph-c-0273"],
+        "trap_id": "trap-question-word-order"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 2321,
+        "to": 2380
+      },
+      "phrasebook_topic": "emergency",
+      "trap_id": "trap-question-word-order",
+      "quotes_topic": "questions",
+      "exercises": [
+        {
+          "id": "ex-c-0278"
+        },
+        {
+          "id": "ex-c-0279"
+        },
+        {
+          "id": "ex-c-0280"
+        },
+        {
+          "id": "ex-c-0281"
+        },
+        {
+          "id": "ex-c-0282"
+        },
+        {
+          "id": "ex-c-0283"
+        },
+        {
+          "id": "ex-c-0284"
+        },
+        {
+          "id": "ex-c-0285"
+        },
+        {
+          "id": "ex-c-0286"
+        },
+        {
+          "id": "ex-c-0287"
+        },
+        {
+          "id": "ex-c-0288"
+        },
+        {
+          "id": "ex-c-0289"
+        },
+        {
+          "id": "ex-c-0290"
+        },
+        {
+          "id": "ex-c-0291"
+        },
+        {
+          "id": "ex-c-0292"
+        },
+        {
+          "id": "ex-c-0293"
+        },
+        {
+          "id": "ex-c-0294"
+        },
+        {
+          "id": "ex-c-0295"
+        },
+        {
+          "id": "ex-c-0296"
+        },
+        {
+          "id": "ex-c-0297"
+        },
+        {
+          "id": "ex-c-0298"
+        },
+        {
+          "id": "ex-c-0299"
+        },
+        {
+          "id": "ex-c-0300"
+        },
+        {
+          "id": "ex-c-0301"
+        },
+        {
+          "id": "ex-c-0302"
+        },
+        {
+          "id": "ex-c-0303"
+        },
+        {
+          "id": "ex-c-0304"
+        },
+        {
+          "id": "ex-c-0305"
+        },
+        {
+          "id": "ex-c-0306"
+        },
+        {
+          "id": "ex-c-0307"
+        },
+        {
+          "id": "ex-c-0308"
+        },
+        {
+          "id": "ex-c-0309"
+        },
+        {
+          "id": "ex-c-0310"
+        },
+        {
+          "id": "ex-c-0311"
+        },
+        {
+          "id": "ex-c-0312"
+        },
+        {
+          "id": "ex-c-0313"
+        },
+        {
+          "id": "ex-c-0314"
+        },
+        {
+          "id": "ex-c-0315"
+        },
+        {
+          "id": "ex-c-0316"
+        },
+        {
+          "id": "ex-c-0317"
+        },
+        {
+          "id": "ex-c-0318"
+        },
+        {
+          "id": "ex-c-0319"
+        },
+        {
+          "id": "ex-c-0320"
+        },
+        {
+          "id": "ex-c-0321"
+        },
+        {
+          "id": "ex-c-0322"
+        },
+        {
+          "id": "ex-c-0323"
+        },
+        {
+          "id": "ex-c-1402"
+        },
+        {
+          "id": "ex-c-1403"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "1.95",
+        "playlist_index": 293,
+        "youtube_id": "MzvC6xfF4i0",
+        "title": null
+      },
+      "order": 32
+    },
+    {
+      "id": "les-c-08",
+      "rank": "D",
+      "module": "mod-d-6",
+      "title": "Past Simple vs Present Simple: yesterday / usually",
+      "grammar_point": {
+        "id": "gp-c-08",
+        "title_ru": "Контраст времён",
+        "rule_md": "**Past Simple vs Present Simple.**\nОбычно (каждый день) → Present: I **work** every day.\nЗакончилось (yesterday, last week) → Past: I **worked** yesterday.\nСравни: Where **do** you work? / Where **did** you work before?",
+        "phrase_ids": ["ph-c-0315", "ph-c-0316", "ph-c-0317", "ph-c-0318", "ph-c-0319"],
+        "trap_id": "trap-third-person-s"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 2381,
+        "to": 2440
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-third-person-s",
+      "quotes_topic": "mixed",
+      "exercises": [
+        {
+          "id": "ex-c-0324"
+        },
+        {
+          "id": "ex-c-0325"
+        },
+        {
+          "id": "ex-c-0326"
+        },
+        {
+          "id": "ex-c-0327"
+        },
+        {
+          "id": "ex-c-0328"
+        },
+        {
+          "id": "ex-c-0329"
+        },
+        {
+          "id": "ex-c-0330"
+        },
+        {
+          "id": "ex-c-0331"
+        },
+        {
+          "id": "ex-c-0332"
+        },
+        {
+          "id": "ex-c-0333"
+        },
+        {
+          "id": "ex-c-0334"
+        },
+        {
+          "id": "ex-c-0335"
+        },
+        {
+          "id": "ex-c-0336"
+        },
+        {
+          "id": "ex-c-0337"
+        },
+        {
+          "id": "ex-c-0338"
+        },
+        {
+          "id": "ex-c-0339"
+        },
+        {
+          "id": "ex-c-0340"
+        },
+        {
+          "id": "ex-c-0341"
+        },
+        {
+          "id": "ex-c-0342"
+        },
+        {
+          "id": "ex-c-0343"
+        },
+        {
+          "id": "ex-c-0344"
+        },
+        {
+          "id": "ex-c-0345"
+        },
+        {
+          "id": "ex-c-0346"
+        },
+        {
+          "id": "ex-c-0347"
+        },
+        {
+          "id": "ex-c-0348"
+        },
+        {
+          "id": "ex-c-0349"
+        },
+        {
+          "id": "ex-c-0350"
+        },
+        {
+          "id": "ex-c-0351"
+        },
+        {
+          "id": "ex-c-0352"
+        },
+        {
+          "id": "ex-c-0353"
+        },
+        {
+          "id": "ex-c-0354"
+        },
+        {
+          "id": "ex-c-0355"
+        },
+        {
+          "id": "ex-c-0356"
+        },
+        {
+          "id": "ex-c-0357"
+        },
+        {
+          "id": "ex-c-0358"
+        },
+        {
+          "id": "ex-c-0359"
+        },
+        {
+          "id": "ex-c-0360"
+        },
+        {
+          "id": "ex-c-0361"
+        },
+        {
+          "id": "ex-c-0362"
+        },
+        {
+          "id": "ex-c-0363"
+        },
+        {
+          "id": "ex-c-0364"
+        },
+        {
+          "id": "ex-c-0365"
+        },
+        {
+          "id": "ex-c-0366"
+        },
+        {
+          "id": "ex-c-0367"
+        },
+        {
+          "id": "ex-c-0368"
+        },
+        {
+          "id": "ex-c-0369"
+        },
+        {
+          "id": "ex-c-1404"
+        },
+        {
+          "id": "ex-c-1405"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "1.104",
+        "playlist_index": 311,
+        "youtube_id": "Ol4La1-di8o",
+        "title": null
+      },
+      "order": 33
+    },
+    {
+      "id": "les-c-09",
+      "rank": "D",
+      "module": "mod-d-6",
+      "title": "Вопрос к подлежащему в прошедшем: What happened?",
+      "grammar_point": {
+        "id": "gp-c-09",
+        "title_ru": "Who said? What happened?",
+        "rule_md": "**Вопрос к подлежащему в прошедшем.**\nWho/What + 2-я форма БЕЗ did: **Who said** that? **What happened**?\n❌ Who did say? Сравни: **Who won**? vs **Why did** he **win**?",
+        "phrase_ids": ["ph-c-0359", "ph-c-0360", "ph-c-0361", "ph-c-0362", "ph-c-0363"],
+        "trap_id": "trap-question-word-order"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 2441,
+        "to": 2500
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-question-word-order",
+      "quotes_topic": "questions",
+      "exercises": [
+        {
+          "id": "ex-c-0370"
+        },
+        {
+          "id": "ex-c-0371"
+        },
+        {
+          "id": "ex-c-0372"
+        },
+        {
+          "id": "ex-c-0373"
+        },
+        {
+          "id": "ex-c-0374"
+        },
+        {
+          "id": "ex-c-0375"
+        },
+        {
+          "id": "ex-c-0376"
+        },
+        {
+          "id": "ex-c-0377"
+        },
+        {
+          "id": "ex-c-0378"
+        },
+        {
+          "id": "ex-c-0379"
+        },
+        {
+          "id": "ex-c-0380"
+        },
+        {
+          "id": "ex-c-0381"
+        },
+        {
+          "id": "ex-c-0382"
+        },
+        {
+          "id": "ex-c-0383"
+        },
+        {
+          "id": "ex-c-0384"
+        },
+        {
+          "id": "ex-c-0385"
+        },
+        {
+          "id": "ex-c-0386"
+        },
+        {
+          "id": "ex-c-0387"
+        },
+        {
+          "id": "ex-c-0388"
+        },
+        {
+          "id": "ex-c-0389"
+        },
+        {
+          "id": "ex-c-0390"
+        },
+        {
+          "id": "ex-c-0391"
+        },
+        {
+          "id": "ex-c-0392"
+        },
+        {
+          "id": "ex-c-0393"
+        },
+        {
+          "id": "ex-c-0394"
+        },
+        {
+          "id": "ex-c-0395"
+        },
+        {
+          "id": "ex-c-0396"
+        },
+        {
+          "id": "ex-c-0397"
+        },
+        {
+          "id": "ex-c-0398"
+        },
+        {
+          "id": "ex-c-0399"
+        },
+        {
+          "id": "ex-c-0400"
+        },
+        {
+          "id": "ex-c-0401"
+        },
+        {
+          "id": "ex-c-0402"
+        },
+        {
+          "id": "ex-c-0403"
+        },
+        {
+          "id": "ex-c-0404"
+        },
+        {
+          "id": "ex-c-0405"
+        },
+        {
+          "id": "ex-c-0406"
+        },
+        {
+          "id": "ex-c-0407"
+        },
+        {
+          "id": "ex-c-0408"
+        },
+        {
+          "id": "ex-c-0409"
+        },
+        {
+          "id": "ex-c-0410"
+        },
+        {
+          "id": "ex-c-0411"
+        },
+        {
+          "id": "ex-c-0412"
+        },
+        {
+          "id": "ex-c-0413"
+        },
+        {
+          "id": "ex-c-0414"
+        },
+        {
+          "id": "ex-c-0415"
+        },
+        {
+          "id": "ex-c-1406"
+        },
+        {
+          "id": "ex-c-1407"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "1.106",
+        "playlist_index": 313,
+        "youtube_id": "T2rNu1NNnzU",
+        "title": null
+      },
+      "order": 34
+    },
+    {
+      "id": "les-c-10",
+      "rank": "D",
+      "module": "mod-d-6",
+      "title": "Повторение №11: контрольная-тренировка",
+      "grammar_point": {
+        "id": "gp-c-10",
+        "title_ru": "Контрольная: прошедшее время",
+        "rule_md": "**Повторение №11: прошедшее время.**\nPast Simple ±? + was/were + вопросы к подлежащему.\nКонтрольная: найди ошибку, поставь форму, трансформация в прошедшее.\nМаркеры прошедшего: yesterday, ago, last…, in 2019.",
+        "phrase_ids": ["ph-c-0403", "ph-c-0404", "ph-c-0405", "ph-c-0406", "ph-c-0407"],
+        "trap_id": "trap-didnt-past"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 2501,
+        "to": 2560
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-didnt-past",
+      "quotes_topic": "mixed",
+      "exercises": [
+        {
+          "id": "ex-c-0416"
+        },
+        {
+          "id": "ex-c-0417"
+        },
+        {
+          "id": "ex-c-0418"
+        },
+        {
+          "id": "ex-c-0419"
+        },
+        {
+          "id": "ex-c-0420"
+        },
+        {
+          "id": "ex-c-0421"
+        },
+        {
+          "id": "ex-c-0422"
+        },
+        {
+          "id": "ex-c-0423"
+        },
+        {
+          "id": "ex-c-0424"
+        },
+        {
+          "id": "ex-c-0425"
+        },
+        {
+          "id": "ex-c-0426"
+        },
+        {
+          "id": "ex-c-0427"
+        },
+        {
+          "id": "ex-c-0428"
+        },
+        {
+          "id": "ex-c-0429"
+        },
+        {
+          "id": "ex-c-0430"
+        },
+        {
+          "id": "ex-c-0431"
+        },
+        {
+          "id": "ex-c-0432"
+        },
+        {
+          "id": "ex-c-0433"
+        },
+        {
+          "id": "ex-c-0434"
+        },
+        {
+          "id": "ex-c-0435"
+        },
+        {
+          "id": "ex-c-0436"
+        },
+        {
+          "id": "ex-c-0437"
+        },
+        {
+          "id": "ex-c-0438"
+        },
+        {
+          "id": "ex-c-0439"
+        },
+        {
+          "id": "ex-c-0440"
+        },
+        {
+          "id": "ex-c-0441"
+        },
+        {
+          "id": "ex-c-0442"
+        },
+        {
+          "id": "ex-c-0443"
+        },
+        {
+          "id": "ex-c-0444"
+        },
+        {
+          "id": "ex-c-0445"
+        },
+        {
+          "id": "ex-c-0446"
+        },
+        {
+          "id": "ex-c-0447"
+        },
+        {
+          "id": "ex-c-0448"
+        },
+        {
+          "id": "ex-c-0449"
+        },
+        {
+          "id": "ex-c-0450"
+        },
+        {
+          "id": "ex-c-0451"
+        },
+        {
+          "id": "ex-c-0452"
+        },
+        {
+          "id": "ex-c-0453"
+        },
+        {
+          "id": "ex-c-0454"
+        },
+        {
+          "id": "ex-c-0455"
+        },
+        {
+          "id": "ex-c-0456"
+        },
+        {
+          "id": "ex-c-0457"
+        },
+        {
+          "id": "ex-c-0458"
+        },
+        {
+          "id": "ex-c-0459"
+        },
+        {
+          "id": "ex-c-0460"
+        },
+        {
+          "id": "ex-c-0461"
+        },
+        {
+          "id": "ex-c-0462"
+        },
+        {
+          "id": "ex-c-0463"
+        },
+        {
+          "id": "ex-c-0464"
+        },
+        {
+          "id": "ex-c-1408"
+        },
+        {
+          "id": "ex-c-1409"
+        }
+      ],
+      "bebris_video": null,
+      "order": 35
+    },
+    {
+      "id": "les-c-24",
+      "rank": "D",
+      "module": "mod-d-6",
+      "title": "Past Continuous: процесс в прошлом",
+      "grammar_point": {
+        "id": "gp-c-24",
+        "title_ru": "Past Continuous vs Past Simple",
+        "rule_md": "**Past Continuous: процесс в прошлом.**\nwas/were + -ing: I **was waiting** for the bus. It **was raining**.\nФон + событие: I was waiting **when he came** (процесс — Past Cont.,\nсобытие — Past Simple). While I was cooking, she was cleaning.\n−: I wasn't sleeping. ?: What **were** you **doing** at eight?",
+        "phrase_ids": ["ph-c-1048", "ph-c-1049", "ph-c-1050", "ph-c-1051", "ph-c-1052"],
+        "trap_id": "trap-didnt-past"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 3341,
+        "to": 3400
+      },
+      "phrasebook_topic": "taxi",
+      "trap_id": "trap-didnt-past",
+      "quotes_topic": "past",
+      "exercises": [
+        {
+          "id": "ex-c-1068"
+        },
+        {
+          "id": "ex-c-1069"
+        },
+        {
+          "id": "ex-c-1070"
+        },
+        {
+          "id": "ex-c-1071"
+        },
+        {
+          "id": "ex-c-1072"
+        },
+        {
+          "id": "ex-c-1073"
+        },
+        {
+          "id": "ex-c-1074"
+        },
+        {
+          "id": "ex-c-1075"
+        },
+        {
+          "id": "ex-c-1076"
+        },
+        {
+          "id": "ex-c-1077"
+        },
+        {
+          "id": "ex-c-1078"
+        },
+        {
+          "id": "ex-c-1079"
+        },
+        {
+          "id": "ex-c-1080"
+        },
+        {
+          "id": "ex-c-1081"
+        },
+        {
+          "id": "ex-c-1082"
+        },
+        {
+          "id": "ex-c-1083"
+        },
+        {
+          "id": "ex-c-1084"
+        },
+        {
+          "id": "ex-c-1085"
+        },
+        {
+          "id": "ex-c-1086"
+        },
+        {
+          "id": "ex-c-1087"
+        },
+        {
+          "id": "ex-c-1088"
+        },
+        {
+          "id": "ex-c-1089"
+        },
+        {
+          "id": "ex-c-1090"
+        },
+        {
+          "id": "ex-c-1091"
+        },
+        {
+          "id": "ex-c-1092"
+        },
+        {
+          "id": "ex-c-1093"
+        },
+        {
+          "id": "ex-c-1094"
+        },
+        {
+          "id": "ex-c-1095"
+        },
+        {
+          "id": "ex-c-1096"
+        },
+        {
+          "id": "ex-c-1097"
+        },
+        {
+          "id": "ex-c-1098"
+        },
+        {
+          "id": "ex-c-1099"
+        },
+        {
+          "id": "ex-c-1100"
+        },
+        {
+          "id": "ex-c-1101"
+        },
+        {
+          "id": "ex-c-1102"
+        },
+        {
+          "id": "ex-c-1103"
+        },
+        {
+          "id": "ex-c-1104"
+        },
+        {
+          "id": "ex-c-1105"
+        },
+        {
+          "id": "ex-c-1106"
+        },
+        {
+          "id": "ex-c-1107"
+        },
+        {
+          "id": "ex-c-1108"
+        },
+        {
+          "id": "ex-c-1109"
+        },
+        {
+          "id": "ex-c-1110"
+        },
+        {
+          "id": "ex-c-1111"
+        },
+        {
+          "id": "ex-c-1112"
+        },
+        {
+          "id": "ex-c-1113"
+        },
+        {
+          "id": "ex-c-1436"
+        },
+        {
+          "id": "ex-c-1437"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "2.36",
+        "playlist_index": 587,
+        "youtube_id": "nag2dLag6Mw",
+        "title": null
+      },
+      "order": 36
     },
     {
       "id": "les-d-26",
       "rank": "D",
-      "module": "mod-d-6",
+      "module": "mod-d-7",
       "title": "Двойное отрицание: anything / anyone",
       "grammar_point": {
         "id": "gp-d-26",
@@ -4423,17 +6364,18 @@
           "id": "ex-d-1357"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 37
     },
     {
       "id": "les-d-27",
       "rank": "D",
-      "module": "mod-d-6",
+      "module": "mod-d-7",
       "title": "Трансформации: + → − → ?",
       "grammar_point": {
         "id": "gp-d-27",
         "title_ru": "Трансформации предложений",
-        "rule_md": "**Трансформации: ± и ?.**\nУтверждение → отрицание: I know him. → I **don't** know him.\nОтрицание → вопрос: **Do** you know him? (do приезжает, know без -s)\nthere is → Is there…? / has got → Has he got…? / can → Can we…?\nsome → **any** в отрицаниях и вопросах: some money → **any** money.",
+        "rule_md": "**Трансформации: ± и ?.**\nУтверждение → отрицание: I know him. → I **don't** know him.\nОтрицание → вопрос: **Do** you know him? (do приезжает, know без -s)\nthere is → Is there…? / has got → Has he got…? / can → Can we…?\nsome → **any** в отрицаниях и вопросах: some money → **any** money.\n\n**v2:** добавлены трансформации прошедшего времени (didn’t / Did…?) — блок «Прошлое» (C-01…C-10) изучается прямо перед этим уроком.",
         "phrase_ids": ["ph-d-1158", "ph-d-1159", "ph-d-1160", "ph-d-1161", "ph-d-1162"],
         "trap_id": "trap-no-do-negative"
       },
@@ -4634,6 +6576,15 @@
         },
         {
           "id": "ex-d-1359"
+        },
+        {
+          "id": "ex-c-0451"
+        },
+        {
+          "id": "ex-c-0452"
+        },
+        {
+          "id": "ex-c-0453"
         }
       ],
       "bebris_video": {
@@ -4641,17 +6592,18 @@
         "playlist_index": 38,
         "youtube_id": "_z9rz35ks2A",
         "title": null
-      }
+      },
+      "order": 38
     },
     {
       "id": "les-d-28",
       "rank": "D",
-      "module": "mod-d-6",
+      "module": "mod-d-7",
       "title": "Большое повторение перед Вратами C",
       "grammar_point": {
         "id": "gp-d-28",
         "title_ru": "Сборка всего ранга D",
-        "rule_md": "**Большое повторение перед Вратами C.**\nВсё ранга D: there is/are, can, have got, some/any/no, much/many,\nнеисчисляемые, so/such, вопросы к подлежащему, say/tell/ask,\nfeel + предлоги, PS vs PC, do/make, движение, would like,\nдвойное отрицание, трансформации ±?.\nВперёд, Охотник — Врата C ждут.",
+        "rule_md": "**Большое повторение перед Вратами C.**\nВсё ранга D: there is/are, can, have got, some/any/no, much/many,\nнеисчисляемые, so/such, вопросы к подлежащему, say/tell/ask,\nfeel + предлоги, PS vs PC, do/make, движение, would like,\nдвойное отрицание, трансформации ±?.\nВперёд, Охотник — Врата C ждут.\n\n**v2:** финал ранга теперь включает и блок «Прошлое» — Past Simple (утверждения/отрицания didn’t, вопросы Did…?) и Past Continuous: переводы и диктанты подтянуты из уроков C-01…C-10 и C-24.",
         "phrase_ids": ["ph-d-1206", "ph-d-1207", "ph-d-1208", "ph-d-1209", "ph-d-1210"],
         "trap_id": "trap-comma-that"
       },
@@ -4813,9 +6765,25 @@
         },
         {
           "id": "ex-d-1361"
+        },
+        {
+          "id": "ex-c-0247"
+        },
+        {
+          "id": "ex-c-0294"
+        },
+        {
+          "id": "ex-c-1084"
+        },
+        {
+          "id": "ex-c-0267"
+        },
+        {
+          "id": "ex-c-0313"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 39
     }
   ]
 }

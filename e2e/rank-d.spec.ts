@@ -37,7 +37,7 @@ test('phrasebook: directions chapter listed (locked until rank D)', async ({ pag
 test('gates D-C: intro with rank D checklist (plan://M12#12.7)', async ({ page }) => {
   await page.goto('/#/gates/D-C')
   await expect(page.getByRole('heading', { name: 'Врата D → C' })).toBeVisible({ timeout: 8000 })
-  await expect(page.getByText(/Уроки ранга D: \d+ \/ 28/)).toBeVisible()
+  await expect(page.getByText(/Уроки ранга D: \d+ \/ 39/)).toBeVisible()
   await expect(page.getByText(/Слова \(надёжно\): \d+ \/ 1000/)).toBeVisible()
 })
 

@@ -182,9 +182,18 @@ describe('SrsScreen', () => {
   })
 
   it('граница блока: 20 ответов → пауза → «Продолжить» → сессия идёт дальше', async () => {
-    notes = mkNotes(21)
+    // v2 (V.6): слова ≤10/день — пул блока 11 слов + 10 фраз (интерливинг
+    // сохраняет порядок notes: нечётные words, чётные phrases), лимит 50
+    notes = mkNotes(21).map((note, i) =>
+      i % 2 === 0 ? note : { ...note, deck: 'phrases' as const },
+    )
     await bootstrap()
-    renderScreen()
+    await saveSettings(globalDb.meta, { ...DEFAULT_SETTINGS, newPerDay: 50 })
+    render(
+      <SettingsProvider>
+        <SrsScreen repo={repo} notes={notes} />
+      </SettingsProvider>,
+    )
 
     await screen.findByText('house', undefined, { timeout: 4000 })
     for (let i = 0; i < 20; i += 1) {

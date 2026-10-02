@@ -289,7 +289,7 @@ describe('loadLessonView (реальные data/ ранга E)', () => {
     expect(phrases.every(({ audio }) => audio?.en_gb?.startsWith('audio/phrases/cori/'))).toBe(true)
 
     const lessons = await loadLessons()
-    // M20: E (24) + D (28) + C (30) + B (29) + A (22) + S (15) — полный ранг S
+    // v2 (программа v2): E (24) + D (39, вкл. Past Simple/PC) + C (19) + B (29) + A (22) + S (15)
     expect(lessons.length).toBe(148)
     const phraseById = new Set(phrases.map(({ id }) => id))
     for (const lesson of lessons) {
@@ -305,7 +305,7 @@ describe('loadLessonView (реальные data/ ранга E)', () => {
     }
   })
 
-  it('порядок курса: E → D → C → B → A → S, внутри ранга — по id (фидбей 2026-10-02)', async () => {
+  it('порядок курса: E → D → C → B → A → S, внутри ранга — по order (программа v2)', async () => {
     const lessons = await loadLessons()
     expect(lessons.length).toBe(148)
     expect(lessons[0]!.id).toBe('les-e-01')
@@ -322,12 +322,35 @@ describe('loadLessonView (реальные data/ ранга E)', () => {
     for (let i = 1; i < weights.length; i += 1) {
       expect(weights[i]).toBeGreaterThanOrEqual(weights[i - 1]!)
     }
+    // v2 (plan://curriculum-review#V.1–V.3): Past Simple в конце D (до финала
+    // D-26…28), будущее в C открывает going to, ранг A — с «карты времён»
+    const d = lessons.filter((lesson) => lesson.rank === 'D')
+    expect(d.at(-4)!.id).toBe('les-c-24') // Past Continuous
+    expect(d.at(-3)!.id).toBe('les-d-26') // финальный блок D
+    expect(d.filter((l) => l.id.startsWith('les-c-')).map((l) => l.id)).toEqual([
+      ...Array.from({ length: 10 }, (_, i) => `les-c-${String(i + 1).padStart(2, '0')}`),
+      'les-c-24',
+    ])
+    const c = lessons.filter((lesson) => lesson.rank === 'C')
+    expect(c[0]!.id).toBe('les-c-14') // be going to — раньше will
+    expect(c.findIndex((l) => l.id === 'les-c-14')).toBeLessThan(
+      c.findIndex((l) => l.id === 'les-c-11'),
+    )
+    const a = lessons.filter((lesson) => lesson.rank === 'A')
+    expect(a[0]!.id).toBe('les-a-03') // «Карта всех времён» первой
+    expect(a.findIndex((l) => l.id === 'les-a-01')).toBe(9) // Future Continuous — середина
+    // order — плотная последовательность 1..N внутри каждого ранга
+    for (const rank of ['E', 'D', 'C', 'B', 'A', 'S'] as const) {
+      const orders = lessons.filter((lesson) => lesson.rank === rank).map(({ order }) => order)
+      expect(orders).toEqual(Array.from({ length: orders.length }, (_, i) => i + 1))
+    }
   })
 
-  it('D-уроки: ранг, модули, ловушки, цитаты D-ранга (plan://M12#12.3–12.4)', async () => {
+  it('D-уроки: ранг, модули, ловушки, цитаты D-ранга (plan://M12#12.3–12.4 + v2 V.1)', async () => {
     const lessons = await loadLessons()
     const d = lessons.filter((lesson) => lesson.rank === 'D')
-    expect(d).toHaveLength(28)
+    // v2: 28 исходных + Past Simple (les-c-01…10) + Past Continuous (les-c-24)
+    expect(d).toHaveLength(39)
     expect(d.every((lesson) => lesson.module.startsWith('mod-d-'))).toBe(true)
     expect(d.every((lesson) => (lesson.trap_id ?? '').startsWith('trap-'))).toBe(true)
     // первый D-урок собирается в полный шаблон
@@ -360,16 +383,19 @@ describe('loadLessonView (реальные data/ ранга E)', () => {
     }
   })
 
-  it('C-уроки: ранг C, Past Simple/will, transform past/future (plan://M14#14.2–14.3)', async () => {
+  it('C-уроки: ранг C, будущее going to → will, transform (plan://M14#14.2–14.3 + v2 V.1/V.2)', async () => {
     const lessons = await loadLessons()
     const c = lessons.filter((lesson) => lesson.rank === 'C')
-    expect(c).toHaveLength(30)
+    // v2: Past Simple-блок и Past Continuous ушли в конец D — в C 19 уроков
+    expect(c).toHaveLength(19)
     const b = lessons.filter((lesson) => lesson.rank === 'B')
     expect(b).toHaveLength(29)
     const a = lessons.filter((lesson) => lesson.rank === 'A')
     expect(a).toHaveLength(22)
     expect(c.every((lesson) => lesson.module.startsWith('mod-c-'))).toBe(true)
+    // Past Simple-уроки принадлежат рангу D (v2 V.1), маршрут по id жив
     const view = await loadLessonView('les-c-01')
+    expect(view?.lesson.rank).toBe('D')
     expect(view?.lesson.title).toContain('Past Simple')
     expect(view?.steps.map(({ kind }) => kind)).toEqual([
       'rule',
