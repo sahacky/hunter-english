@@ -16,7 +16,9 @@ test('guest continue leads to dashboard and app works', async ({ page }) => {
   await page.addInitScript(() => localStorage.setItem('hunter-onboarding-done', '1'))
   await page.goto('/#/login')
   await page.getByRole('link', { name: /Продолжить как гость/ }).click()
-  await expect(page.getByText('[Ежедневный квест]')).toBeVisible({ timeout: 8000 })
+  await expect(page.getByRole('heading', { name: 'Ежедневный квест' })).toBeVisible({
+    timeout: 8000,
+  })
 })
 
 test('settings shows guest account block', async ({ page }) => {
@@ -35,7 +37,9 @@ test('guest session loads no supabase chunks (lazy-import behind env gate)', asy
   await page.addInitScript(() => localStorage.setItem('hunter-onboarding-done', '1'))
   await page.goto('/#/login')
   await page.getByRole('link', { name: /Продолжить как гость/ }).click()
-  await expect(page.getByText('[Ежедневный квест]')).toBeVisible({ timeout: 8000 })
+  await expect(page.getByRole('heading', { name: 'Ежедневный квест' })).toBeVisible({
+    timeout: 8000,
+  })
   // прогрев навигации: экраны, за которыми может прятаться sync
   await page.goto('/#/settings')
   await expect(page.getByRole('heading', { name: 'Аккаунт' })).toBeVisible({ timeout: 8000 })

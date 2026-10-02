@@ -29,7 +29,9 @@ test('mobile 390: tab bar navigation works', async ({ page }) => {
     .getByRole('navigation', { name: 'Нижняя навигация' })
     .getByRole('link', { name: 'Дашборд' })
     .click()
-  await expect(page.getByText('[Ежедневный квест]')).toBeVisible({ timeout: 8000 })
+  await expect(page.getByRole('heading', { name: 'Ежедневный квест' })).toBeVisible({
+    timeout: 8000,
+  })
 })
 
 test('pwa: manifest and service worker are served (M9)', async ({ request }) => {
@@ -61,7 +63,9 @@ test('offline: app shell and cached audio served by service worker (M9)', async 
 }) => {
   await page.addInitScript(() => localStorage.setItem('hunter-onboarding-done', '1'))
   await page.goto('/#/')
-  await expect(page.getByText('[Ежедневный квест]')).toBeVisible({ timeout: 8000 })
+  await expect(page.getByRole('heading', { name: 'Ежедневный квест' })).toBeVisible({
+    timeout: 8000,
+  })
 
   // ждём активацию SW: контроллер страницы появляется только после claim
   // (Known Issue M9 закрыт: регистрация ≠ активация — прогрев аудио до claim
@@ -87,7 +91,9 @@ test('offline: app shell and cached audio served by service worker (M9)', async 
   try {
     // app shell из SW
     await page.reload()
-    await expect(page.getByText('[Ежедневный квест]')).toBeVisible({ timeout: 8000 })
+    await expect(page.getByRole('heading', { name: 'Ежедневный квест' })).toBeVisible({
+      timeout: 8000,
+    })
 
     // аудио из audio-cache без сети
     const cached = await page.evaluate(async () => {

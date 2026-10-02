@@ -66,7 +66,7 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
         // приватный режим — FOUC-скрипт просто не найдёт зеркало
       }
       const meta = document.querySelector('meta[name="theme-color"]')
-      if (meta) meta.setAttribute('content', resolved === 'light' ? '#f2f6fb' : '#070b14')
+      if (meta) meta.setAttribute('content', resolved === 'light' ? '#f6f8f4' : '#17211c')
     }
     apply(window.matchMedia('(prefers-color-scheme: dark)').matches)
     const mq = window.matchMedia('(prefers-color-scheme: dark)')

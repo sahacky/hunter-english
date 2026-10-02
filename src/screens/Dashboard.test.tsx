@@ -58,7 +58,7 @@ describe('Dashboard', () => {
         <Dashboard repo={repo} />
       </HashRouter>,
     )
-    expect(await screen.findByText('[Ежедневный квест]', {}, { timeout: 5000 })).toBeInTheDocument()
+    expect(await screen.findByText('Ежедневный квест', {}, { timeout: 5000 })).toBeInTheDocument()
     // дашборд ведёт в повторение/урок
     expect(screen.getByRole('link', { name: /Начать день|Повторение|Урок/ })).toBeTruthy()
   })
@@ -72,10 +72,8 @@ describe('Dashboard', () => {
           <Dashboard repo={repo} />
         </HashRouter>,
       )
-      expect(
-        await screen.findByText('[Ежедневный квест]', {}, { timeout: 5000 }),
-      ).toBeInTheDocument()
-      expect(screen.queryByText('[Цитата дня]')).not.toBeInTheDocument()
+      expect(await screen.findByText('Ежедневный квест', {}, { timeout: 5000 })).toBeInTheDocument()
+      expect(screen.queryByText('Цитата дня')).not.toBeInTheDocument()
     } finally {
       lessonsMock.noQuotes = false
     }
@@ -114,10 +112,10 @@ describe('Dashboard', () => {
       )
       // find* на фейковых таймерах не поллит — крутим часы до загрузки данных;
       // запас 800×100мс: под нагрузкой CI-раннера загрузка идёт дольше (прецедент M17)
-      for (let i = 0; i < 800 && !screen.queryByText('[Ежедневный квест]'); i += 1) {
+      for (let i = 0; i < 800 && !screen.queryByText('Ежедневный квест'); i += 1) {
         await vi.advanceTimersByTimeAsync(100)
       }
-      expect(screen.queryByText('[Ежедневный квест]')).toBeInTheDocument()
+      expect(screen.queryByText('Ежедневный квест')).toBeInTheDocument()
       expect(screen.getByText(/до конца дня/)).toBeInTheDocument()
       // тик минутного интервала — setTimer выполняется без сбоев
       await vi.advanceTimersByTimeAsync(60_000)

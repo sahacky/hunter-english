@@ -38,7 +38,7 @@ describe('RanksScreen /#/ranks', () => {
       </HashRouter>,
     )
     window.location.hash = '#/ranks'
-    expect(await screen.findByText('[Статус охотника]')).toBeInTheDocument()
+    expect(await screen.findByText('Статус охотника')).toBeInTheDocument()
     expect(screen.getByText(/Охотник E-ранга \(A0\)/)).toBeInTheDocument()
     expect(screen.getByText(/Суммарный XP: 347/)).toBeInTheDocument()
     expect(screen.getByText(/«Winter is coming»/)).toBeInTheDocument()
@@ -302,7 +302,7 @@ describe('Финальное испытание S-FINAL (M20)', () => {
         </Routes>
       </HashRouter>,
     )
-    await screen.findByText(/\[Титулы\]/)
+    await screen.findByText('Титулы')
     expect(screen.queryByText(/Финальное испытание \(подтверждение S\)/)).not.toBeInTheDocument()
   })
 })

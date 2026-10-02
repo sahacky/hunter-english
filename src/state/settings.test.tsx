@@ -26,8 +26,8 @@ function Probe() {
     <div>
       <span data-testid="ready">{String(ready)}</span>
       <span data-testid="theme">{settings.theme}</span>
-      <button type="button" onClick={() => update({ theme: 'light' })}>
-        light
+      <button type="button" onClick={() => update({ theme: 'dark' })}>
+        dark
       </button>
     </div>
   )
@@ -40,17 +40,17 @@ describe('SettingsProvider', () => {
     await i18n.changeLanguage('ru')
   })
 
-  it('без сохранённых — дефолт: тёмная тема на html', async () => {
+  it('без сохранённых — дефолт: светлая тема Daylight на html', async () => {
     render(
       <SettingsProvider>
         <Probe />
       </SettingsProvider>,
     )
     await act(async () => {})
-    expect(document.documentElement.dataset.theme).toBe('dark')
+    expect(document.documentElement.dataset.theme).toBe('light')
   })
 
-  it('update({theme:"light"}) применяет светлую тему и сохраняет её', async () => {
+  it('update({theme:"dark"}) применяет тёмную тему и сохраняет её', async () => {
     render(
       <SettingsProvider>
         <Probe />
@@ -60,10 +60,10 @@ describe('SettingsProvider', () => {
     await act(async () => {
       document.querySelector('button')?.click()
     })
-    expect(document.documentElement.dataset.theme).toBe('light')
+    expect(document.documentElement.dataset.theme).toBe('dark')
     // roundtrip: значение реально в meta-таблице
     const stored = await db.meta.get('settings')
-    expect(stored?.value).toMatchObject({ theme: 'light' })
+    expect(stored?.value).toMatchObject({ theme: 'dark' })
   })
 
   it('сохранённая локаль применяется к i18n и <html lang>', async () => {
@@ -84,9 +84,9 @@ describe('SettingsProvider', () => {
     render(<Probe />)
     await act(async () => {})
     expect(screen.getByTestId('ready')).toHaveTextContent('false')
-    expect(screen.getByTestId('theme')).toHaveTextContent('dark')
+    expect(screen.getByTestId('theme')).toHaveTextContent('light')
     document.querySelector('button')?.click() // дефолтный update — без эффекта
-    expect(screen.getByTestId('theme')).toHaveTextContent('dark')
+    expect(screen.getByTestId('theme')).toHaveTextContent('light')
   })
 
   it('loadSettings падает → дефолты, ready=true (catch глотает)', async () => {
@@ -98,7 +98,7 @@ describe('SettingsProvider', () => {
     )
     await act(async () => {})
     expect(screen.getByTestId('ready')).toHaveTextContent('true')
-    expect(screen.getByTestId('theme')).toHaveTextContent('dark')
+    expect(screen.getByTestId('theme')).toHaveTextContent('light')
   })
 
   it('тема зеркалится в meta[name=theme-color] (статус-бар PWA)', async () => {
@@ -111,11 +111,11 @@ describe('SettingsProvider', () => {
         </SettingsProvider>,
       )
       await act(async () => {})
-      expect(meta.getAttribute('content')).toBe('#070b14') // тёмная
+      expect(meta.getAttribute('content')).toBe('#f6f8f4') // светлая (Daylight, дефолт)
       await act(async () => {
-        document.querySelector('button')?.click() // light
+        document.querySelector('button')?.click() // dark
       })
-      expect(meta.getAttribute('content')).toBe('#f2f6fb') // светлая
+      expect(meta.getAttribute('content')).toBe('#17211c') // тёмная (Daylight-Dark)
     } finally {
       meta.remove()
     }
@@ -149,8 +149,8 @@ describe('SettingsProvider', () => {
       const event = new Event('change')
       Object.defineProperty(event, 'matches', { value: true })
       act(() => listeners[0]?.(event as MediaQueryListEvent))
-      // тема не system → выбор пользователя сохраняется (тёмная)
-      expect(document.documentElement.dataset.theme).toBe('dark')
+      // тема не system → выбор пользователя сохраняется (светлая, дефолт Daylight)
+      expect(document.documentElement.dataset.theme).toBe('light')
     } finally {
       vi.unstubAllGlobals()
     }
@@ -167,7 +167,7 @@ describe('SettingsProvider', () => {
     await act(async () => {
       document.querySelector('button')?.click()
     })
-    expect(screen.getByTestId('theme')).toHaveTextContent('light')
-    expect(document.documentElement.dataset.theme).toBe('light')
+    expect(screen.getByTestId('theme')).toHaveTextContent('dark')
+    expect(document.documentElement.dataset.theme).toBe('dark')
   })
 })

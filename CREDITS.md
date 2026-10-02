@@ -39,6 +39,7 @@ Wiktionary/NGSL). Уровни CEFR в `data/words/` выведены агент
 
 | Источник                                             | Лицензия |
 | ---------------------------------------------------- | -------- |
+| Nunito (self-host: `public/fonts/`, woff2 variable)  | SIL OFL (https://fonts.google.com/specimen/Nunito) |
 | Tektur, Onest, Russo One, Golos Text, JetBrains Mono | SIL OFL  |
 | lucide-icons                                         | MIT      |
 
