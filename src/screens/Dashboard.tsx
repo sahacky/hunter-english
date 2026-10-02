@@ -11,6 +11,7 @@ import type { QuestDayState, UserStats } from '../domain/game/types'
 import type { LessonItem, QuoteItem } from '../content/lessons'
 import { loadLessons, loadQuotes } from '../content/lessons'
 import { createFirstCards, loadWordNotes } from '../content/words'
+import { XpDots } from '../components/XpDots'
 import type { ProgressRepository } from '../domain/progress'
 import { DexieProgressRepository } from '../data/progress-repository'
 import { isOnboarded } from '../data/onboarding'
@@ -163,22 +164,24 @@ export default function Dashboard({ repo: repoProp }: DashboardProps) {
   return (
     <div className="dashboard">
       <section className="panel dash-quest">
-        <h2>[{t('dashboard.questTitle')}]</h2>
+        <h2>{t('dashboard.questTitle')}</h2>
         <ul className="dash-quest-list">
           {slots.map((slot) => (
             <li
               key={slot.label}
               className={slot.done >= slot.target ? 'dash-quest-done' : undefined}
             >
-              <span aria-hidden="true">{slot.done >= slot.target ? '☑' : '☐'}</span> {slot.label}{' '}
+              <span aria-hidden="true">{slot.done >= slot.target ? '✓' : ''}</span> {slot.label}{' '}
               <span className="dim">
-                [{slot.done}/{slot.target}]
+                {slot.done}/{slot.target}
               </span>
             </li>
           ))}
-          <li className="dim">
-            {t('dashboard.quests.bonus')}: {t(`dashboard.bonus.${data.quest.bonus.id}`)} [
-            {data.quest.bonusDone}/{data.quest.bonus.target}]
+          <li>
+            {t('dashboard.quests.bonus')}: {t(`dashboard.bonus.${data.quest.bonus.id}`)}{' '}
+            <span className="dim">
+              {data.quest.bonusDone}/{data.quest.bonus.target}
+            </span>
           </li>
         </ul>
         <p className="dim">
@@ -187,29 +190,45 @@ export default function Dashboard({ repo: repoProp }: DashboardProps) {
       </section>
 
       <section className="panel dash-status">
-        <h2>[{t('dashboard.statusTitle')}]</h2>
-        <p>
-          {t('dashboard.rankAndLevel', {
-            rank: data.stats.rank,
-            cefr: RANK_CEFR[data.stats.rank],
-            level: level.level,
-          })}
-        </p>
-        <div
-          className="dash-xp-bar"
-          role="progressbar"
-          aria-valuenow={Math.round(level.progress * 100)}
-          aria-valuemin={0}
-          aria-valuemax={100}
-        >
-          <div className="dash-xp-fill" style={{ width: `${Math.round(level.progress * 100)}%` }} />
+        <h2>{t('dashboard.statusTitle')}</h2>
+        <div className="dash-status-grid">
+          <div
+            className="dash-ring"
+            aria-hidden="true"
+            style={{
+              background: `conic-gradient(var(--primary) 0 ${Math.round(level.progress * 100)}%, var(--track) ${Math.round(level.progress * 100)}% 100%)`,
+            }}
+          >
+            <b>
+              {data.stats.rank}
+              <small>{RANK_CEFR[data.stats.rank]}</small>
+            </b>
+          </div>
+          <div className="dash-status-main">
+            <p>
+              {t('dashboard.rankAndLevel', {
+                rank: data.stats.rank,
+                cefr: RANK_CEFR[data.stats.rank],
+                level: level.level,
+              })}
+            </p>
+            <XpDots percent={Math.round(level.progress * 100)} />
+            <p className="dim">
+              {t('dashboard.xpProgress', { xp: level.rankXp, next: level.nextAt })}
+            </p>
+            <div>
+              <span className="dash-chip">
+                🔥 {t('dashboard.streak', { days: data.stats.streak_current })}
+              </span>
+              <span className="dash-chip dash-chip-warm">
+                ❄ {t('dashboard.freezes', { count: data.stats.freezes_left })}
+              </span>
+              <span className="dash-chip">
+                {t('dashboard.wordsKnown', { count: data.knownCards })}
+              </span>
+            </div>
+          </div>
         </div>
-        <p className="dim">{t('dashboard.xpProgress', { xp: level.rankXp, next: level.nextAt })}</p>
-        <p className="dim">
-          🔥 {t('dashboard.streak', { days: data.stats.streak_current })} · ❄{' '}
-          {t('dashboard.freezes', { count: data.stats.freezes_left })} ·{' '}
-          {t('dashboard.wordsKnown', { count: data.knownCards })}
-        </p>
       </section>
 
       <section className="panel dash-start">
@@ -235,7 +254,7 @@ export default function Dashboard({ repo: repoProp }: DashboardProps) {
 
       {data.quote && (
         <section className="panel dash-quote">
-          <h2>[{t('dashboard.quoteTitle')}]</h2>
+          <h2>{t('dashboard.quoteTitle')}</h2>
           <blockquote lang="en">«{data.quote.text}»</blockquote>
           <p className="dim" lang="ru">
             {data.quote.translation_ru} — {data.quote.title}

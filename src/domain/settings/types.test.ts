@@ -37,7 +37,7 @@ describe('normalizeSettings', () => {
       ttsRate: 0.5 as never,
       animations: 'maybe' as never,
     })
-    expect(result.theme).toBe('dark')
+    expect(result.theme).toBe('light')
     expect(result.locale).toBe('ru')
     expect(result.srsButtons).toBe(2)
     expect(result.ttsRate).toBe(1)

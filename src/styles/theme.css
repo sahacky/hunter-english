@@ -1,32 +1,119 @@
-:root {
-  color-scheme: dark;
-  --bg: #070b14;
-  --surface: #0c1c34;
-  --surface-2: #12263f;
-  --border: #1d3a5f;
-  --text: #e8f1fb;
-  --text-dim: #8aa5c2;
-  --primary: #4fc3f7;
-  --accent-2: #a78bfa;
-  --danger: #ff5d6c;
-  --warn: #ffc857;
-  --success: #4ade80;
+/* ===== Тема «Daylight» (plan://theme-daylight, specs/08 §1a) ===== */
+/* Направление B: светлый дружелюбный, скругления, мягкие тени; парная тёмная
+   (Daylight-Dark) — та же геометрия. Неон/glow/скосы «System window» удалены. */
+
+/* --- Nunito self-host (SIL OFL, переменный 200–900 + italic; cyrillic+latin) --- */
+@font-face {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url('/fonts/nunito-cyrillic-ext-wght.woff2') format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url('/fonts/nunito-cyrillic-wght.woff2') format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url('/fonts/nunito-latin-wght.woff2') format('woff2');
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+    U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: Nunito;
+  font-style: italic;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url('/fonts/nunito-italic-cyrillic-ext-wght.woff2') format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-family: Nunito;
+  font-style: italic;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url('/fonts/nunito-italic-cyrillic-wght.woff2') format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: Nunito;
+  font-style: italic;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url('/fonts/nunito-italic-latin-wght.woff2') format('woff2');
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+    U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-/* Светлая тема (specs/08 §2.2): свечение/неон не используются */
+/* --- Токены Daylight (light — основная, specs/08 §1a) --- */
+:root {
+  color-scheme: light;
+  --bg: #f6f8f4;
+  --surface: #ffffff;
+  --surface-2: #f0f7f2;
+  --mint: #d8f3e6;
+  --primary: #2fb47c;
+  --primary-deep: #17845c; /* текст на mint, ссылки */
+  --on-primary: #ffffff; /* текст на primary (кнопки) */
+  --gold: #ffb703; /* «ты здесь», таймер дня */
+  --gold-soft: #fff2d9;
+  --gold-text: #a26a00;
+  --danger: #b3402c; /* текст/рамки ошибок */
+  --danger-bg: #ffe4de; /* фон «не вспомнил» */
+  --sky: #57b8ff;
+  --success: #17845c; /* «верно», зачёт (текстовые пары ≥ 4.5:1) */
+  --warn: #a26a00; /* ловушки, опечатки */
+  --text: #1f2a24;
+  --text-dim: #5f6e66; /* скорректировано по D.5: ≥ 4.5:1 на surface-2 */
+  --border: #e3ece6;
+  --track: #e6efe9; /* фон дорожек прогресса */
+  --shadow: 0 10px 24px rgba(31, 42, 36, 0.08), 0 2px 6px rgba(31, 42, 36, 0.05);
+  --press: 0 3px 0 rgba(31, 42, 36, 0.08); /* «нажатие» кнопок (превью B) */
+  --radius-card: 24px;
+  --radius-btn: 16px;
+  --radius-pill: 999px;
+}
+
+/* --- Daylight-Dark (парная тёмная, specs/08 §1a) --- */
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #17211c;
+  --surface: #1f2b25;
+  --surface-2: #29392f;
+  --mint: #23483a;
+  --primary: #3ec98d;
+  --primary-deep: #7fe3bc; /* ссылки/текст на mint — 6.6:1 на mint, 6.9:1 на surface */
+  --on-primary: #0f2418; /* тёмный текст на яркой зелёной кнопке — 7.7:1 */
+  --gold: #ffc857;
+  --gold-soft: #33290f;
+  --gold-text: #ffd98a;
+  --danger: #ff9d8c;
+  --danger-bg: #3b211d;
+  --sky: #57b8ff;
+  --success: #55d6a4; /* 8:1 на surface */
+  --warn: #ffc857;
+  --text: #e8f2ea;
+  --text-dim: #93a69b;
+  --border: #31443a;
+  --track: #293930;
+  --shadow: 0 10px 24px rgba(0, 0, 0, 0.35), 0 2px 6px rgba(0, 0, 0, 0.25);
+  --press: 0 3px 0 rgba(0, 0, 0, 0.4);
+}
+
+/* Обратная совместимость: light явно выбран — те же значения :root */
 :root[data-theme='light'] {
   color-scheme: light;
-  --bg: #f2f6fb;
-  --surface: #ffffff;
-  --surface-2: #e8f0f9;
-  --border: #c5d5e4;
-  --text: #10233b;
-  --text-dim: #51677f;
-  --primary: #1d7fb8;
-  --accent-2: #6d4fc4;
-  --danger: #d6334e;
-  --warn: #9a6a00;
-  --success: #1e9e6a;
 }
 
 /* Анимации off (настройка M10): гасим все keyframes-анимации на корне */
@@ -44,10 +131,23 @@
 
 body {
   margin: 0;
-  background: var(--bg);
+  background:
+    radial-gradient(600px 300px at 110% -5%, rgba(87, 184, 255, 0.14), transparent 60%),
+    radial-gradient(500px 300px at -10% 10%, rgba(47, 180, 124, 0.12), transparent 55%), var(--bg);
   color: var(--text);
-  font-family: Onest, 'Golos Text', system-ui, sans-serif;
+  font-family: Nunito, 'Golos Text', system-ui, sans-serif;
   line-height: 1.5;
+}
+
+:root[data-theme='dark'] body {
+  background:
+    radial-gradient(600px 300px at 110% -5%, rgba(87, 184, 255, 0.07), transparent 60%),
+    radial-gradient(500px 300px at -10% 10%, rgba(62, 201, 141, 0.07), transparent 55%), var(--bg);
+}
+
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
 }
 
 .app-shell {
@@ -65,15 +165,17 @@ body {
   gap: 12px;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 16px;
+  padding: 12px 20px;
   border: 1px solid var(--border);
+  border-radius: var(--radius-card);
   background: var(--surface);
+  box-shadow: var(--shadow);
 }
 
 .app-title {
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  color: var(--primary);
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  color: var(--primary-deep);
 }
 
 .app-nav {
@@ -85,8 +187,13 @@ body {
 .app-nav a {
   color: var(--text-dim);
   text-decoration: none;
-  padding: 6px 10px;
-  border-radius: 6px;
+  padding: 8px 14px;
+  border-radius: var(--radius-pill);
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition:
+    background 150ms,
+    color 150ms;
 }
 
 .app-nav a:hover {
@@ -95,8 +202,8 @@ body {
 }
 
 .app-nav a.active {
-  color: var(--bg);
-  background: var(--primary);
+  color: var(--on-primary);
+  background: var(--text);
 }
 
 .app-main {
@@ -106,8 +213,10 @@ body {
 
 .panel {
   border: 1px solid var(--border);
+  border-radius: var(--radius-card);
   background: var(--surface);
   padding: 24px;
+  box-shadow: var(--shadow);
 }
 
 .dim {
@@ -121,15 +230,17 @@ body {
 
 /* ===== M9: бейдж «офлайн» (specs/07 §1) ===== */
 .offline-badge {
-  padding: 2px 10px;
-  border-radius: 999px;
-  border: 1px solid var(--warn);
-  color: var(--warn);
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--gold);
+  background: var(--gold-soft);
+  color: var(--gold-text);
   font-size: 0.8rem;
+  font-weight: 700;
   white-space: nowrap;
 }
 
-/* ===== M9: нижний таб-бар <768px (specs/07 §1, specs/08 §2) ===== */
+/* ===== M9: нижний таб-бар <768px (specs/07 §1) — мягкие пилюли ===== */
 .tabbar {
   display: none;
 }
@@ -141,15 +252,18 @@ body {
   gap: 2px;
   min-width: 44px;
   min-height: 44px;
-  padding: 4px 10px;
-  border-radius: 8px;
+  padding: 6px 12px;
+  border-radius: var(--radius-btn);
   color: var(--text-dim);
   text-decoration: none;
   font-size: 0.7rem;
+  font-weight: 700;
+  transition: background 150ms;
 }
 
 .tabbar a.active {
-  color: var(--primary);
+  color: var(--primary-deep);
+  background: var(--mint);
 }
 
 .tabbar svg {
@@ -164,7 +278,8 @@ body {
   }
 
   .app-header {
-    padding: 10px 12px;
+    padding: 10px 14px;
+    border-radius: var(--radius-btn);
   }
 
   .app-nav,
@@ -186,12 +301,15 @@ body {
     justify-content: space-around;
     background: var(--surface);
     border-top: 1px solid var(--border);
+    border-radius: var(--radius-card) var(--radius-card) 0 0;
     padding: 6px calc(4px + env(safe-area-inset-right)) calc(6px + env(safe-area-inset-bottom))
       calc(4px + env(safe-area-inset-left));
+    box-shadow: var(--shadow);
   }
 
   .panel {
     padding: 16px;
+    border-radius: var(--radius-btn);
   }
 
   .srs-card {
@@ -232,19 +350,24 @@ body {
   margin: 0;
 }
 
+/* пилюли-фильтры колод (превью B) */
 .srs-counters {
   display: flex;
-  gap: 10px;
+  gap: 8px;
   list-style: none;
   margin: 0;
   padding: 0;
   font-variant-numeric: tabular-nums;
+  flex-wrap: wrap;
 }
 
 .srs-counter {
-  padding: 2px 10px;
-  border-radius: 999px;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
   border: 1px solid var(--border);
+  background: var(--surface-2);
+  font-size: 0.85rem;
+  font-weight: 700;
 }
 
 .srs-counter-learning {
@@ -256,16 +379,19 @@ body {
 }
 
 .srs-counter-new {
-  color: var(--primary);
+  color: var(--primary-deep);
 }
 
 .srs-finish {
   border: 1px solid var(--border);
-  background: transparent;
+  background: var(--surface-2);
   color: var(--text-dim);
-  padding: 6px 12px;
-  border-radius: 6px;
+  padding: 8px 14px;
+  border-radius: var(--radius-pill);
+  font: inherit;
+  font-weight: 700;
   cursor: pointer;
+  min-height: 44px;
 }
 
 .srs-finish:hover {
@@ -281,6 +407,7 @@ body {
   justify-content: center;
   gap: 12px;
   border: 1px solid var(--border);
+  border-radius: var(--radius-card);
   background: var(--surface-2);
   padding: 32px;
   text-align: center;
@@ -289,7 +416,7 @@ body {
 .srs-front {
   margin: 0;
   font-size: 2.4rem;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .srs-back {
@@ -301,33 +428,89 @@ body {
   display: flex;
   gap: 12px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
+/* кнопки: пилюлевидные карточки с «нажатием» (specs/08 §1a) */
 .srs-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
   padding: 12px 24px;
+  min-height: 44px;
   font-size: 1.05rem;
-  border-radius: 8px;
+  font-weight: 800;
+  font-family: inherit;
+  border-radius: var(--radius-btn);
   border: 1px solid var(--border);
-  background: var(--surface);
+  background: var(--surface-2);
   color: var(--text);
   cursor: pointer;
+  box-shadow: var(--press);
+  transition:
+    background 150ms,
+    border-color 150ms,
+    transform 100ms,
+    box-shadow 100ms;
+}
+
+.srs-btn:hover {
+  border-color: var(--primary);
+}
+
+.srs-btn:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+.srs-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: var(--press);
 }
 
 .srs-btn kbd {
   margin-left: 8px;
   opacity: 0.6;
   font-size: 0.85rem;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
 }
 
-.srs-btn-reveal:hover,
+.srs-btn-good {
+  background: var(--primary);
+  border-color: var(--primary-deep);
+  color: var(--on-primary);
+}
+
 .srs-btn-good:hover {
-  border-color: var(--success);
-  color: var(--success);
+  background: var(--primary-deep);
+  border-color: var(--primary-deep);
+  color: var(--on-primary);
+}
+
+/* REVIEW (D.5): белый на --primary #2FB47C = 2.6:1 — задано спеком 08 §1a;
+   кандидат на primary-deep-фон при следующем проходе доступности */
+.srs-btn-again {
+  background: var(--danger-bg);
+  border-color: var(--danger);
+  color: var(--danger);
 }
 
 .srs-btn-again:hover {
+  background: var(--danger-bg);
   border-color: var(--danger);
   color: var(--danger);
+  filter: brightness(0.97);
+}
+
+.srs-btn-interval {
+  display: block;
+  font-size: 0.78rem;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-weight: 400;
+  opacity: 0.75;
 }
 
 .srs-progress {
@@ -341,10 +524,30 @@ body {
 
 .srs-warning {
   margin: 0;
-  padding: 10px 14px;
+  padding: 12px 16px;
   border: 1px solid var(--danger);
+  border-radius: var(--radius-btn);
   color: var(--danger);
-  background: var(--surface-2);
+  background: var(--danger-bg);
+}
+
+.srs-mode-hint {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.srs-exit-confirm {
+  margin: 0;
+  padding: 12px 16px;
+  border: 1px solid var(--gold);
+  border-radius: var(--radius-btn);
+  color: var(--gold-text);
+  background: var(--gold-soft);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* ===== Урок (plan://M5#5.5, specs/07 §3.3) ===== */
@@ -362,7 +565,7 @@ body {
 }
 .lesson-prompt {
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 .lesson-quote-src {
   font-size: 0.85rem;
@@ -373,8 +576,20 @@ body {
 }
 .lesson-input {
   flex: 1;
-  padding: 10px 12px;
+  padding: 10px 14px;
+  min-height: 44px;
   font-size: 1.05rem;
+  font-family: inherit;
+  border-radius: var(--radius-btn);
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text);
+}
+
+.lesson-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  background: var(--surface);
 }
 .lesson-options {
   list-style: none;
@@ -386,13 +601,16 @@ body {
 .lesson-option {
   width: 100%;
   text-align: left;
-  padding: 10px 14px;
+  padding: 12px 16px;
+  min-height: 44px;
 }
 .lesson-option-correct {
   border-color: var(--success);
+  background: var(--mint);
 }
 .lesson-option-wrong {
   border-color: var(--danger);
+  background: var(--danger-bg);
 }
 .lesson-option-selected {
   outline: 2px solid var(--primary);
@@ -424,9 +642,11 @@ body {
 .lesson-tile {
   padding: 8px 14px;
   font-size: 1rem;
+  border-radius: var(--radius-pill);
 }
 .lesson-tile-slot {
-  font-weight: 600;
+  font-weight: 700;
+  background: var(--surface);
 }
 .lesson-actions {
   display: flex;
@@ -443,15 +663,18 @@ body {
   gap: 8px;
 }
 .lesson-feedback {
-  padding: 12px 14px;
-  border-radius: 8px;
-  border: 1px solid var(--text-dim);
+  padding: 12px 16px;
+  border-radius: var(--radius-btn);
+  border: 1px solid var(--border);
+  background: var(--surface-2);
 }
 .lesson-feedback-ok {
   border-color: var(--success);
+  background: var(--mint);
 }
 .lesson-feedback-bad {
   border-color: var(--danger);
+  background: var(--danger-bg);
 }
 .lesson-verdict-ok {
   color: var(--success);
@@ -463,23 +686,26 @@ body {
   margin-right: 6px;
 }
 .lesson-diff-match {
-  color: var(--success);
+  color: var(--text);
 }
 .lesson-diff-typo {
-  color: var(--warn);
+  color: var(--gold-text);
+  text-decoration: underline;
+  text-decoration-style: wavy;
 }
 .lesson-diff-extra {
   color: var(--danger);
   text-decoration: line-through;
 }
 .lesson-diff-missing {
-  color: var(--danger);
+  color: var(--primary-deep);
+  font-weight: 700;
 }
 .lesson-ref {
-  font-weight: 600;
+  font-weight: 700;
 }
 .lesson-trap {
-  color: var(--warn);
+  color: var(--gold-text);
 }
 .lesson-rule-md p {
   margin: 6px 0;
@@ -544,43 +770,151 @@ body {
   }
 }
 
-/* ===== Дашборд (plan://M7#7.4) ===== */
+/* ===== Дашборд (plan://M7#7.4) — статус-карточка Daylight ===== */
 .dashboard {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
+
+/* строки квеста: карточки-пилюли, выполненные — mint (превью B) */
 .dash-quest-list {
   list-style: none;
   padding: 0;
   margin: 8px 0;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
 }
-.dash-quest-done {
-  color: var(--success);
-}
-.dash-xp-bar {
-  height: 10px;
+
+.dash-quest-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 12px 14px;
+  border-radius: var(--radius-btn);
   border: 1px solid var(--border);
-  border-radius: 5px;
-  overflow: hidden;
-  margin: 8px 0 4px;
+  background: var(--surface-2);
+  font-weight: 700;
 }
-.dash-xp-fill {
-  height: 100%;
+
+.dash-quest-list li span[aria-hidden] {
+  width: 26px;
+  height: 26px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  background: var(--surface);
+  font-size: 0.9rem;
+  flex: none;
+}
+
+.dash-quest-done {
+  background: var(--mint) !important;
+  border-color: var(--primary) !important;
+  color: var(--primary-deep);
+}
+
+.dash-quest-done span[aria-hidden] {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--on-primary);
+}
+
+/* XP: сегменты-точки вместо неоновой полосы (specs/08 §1a) */
+.dash-xp-bar {
+  display: flex;
+  gap: 5px;
+  margin: 10px 0 6px;
+}
+
+.dash-dot {
+  width: 26px;
+  height: 10px;
+  border-radius: var(--radius-pill);
+  background: var(--track);
+  transition: background 250ms ease-out;
+}
+
+.dash-dot.on {
   background: var(--primary);
 }
+
+.dash-xp-fill {
+  display: none; /* разметка v1 (полоса) — скрыта, роль прогресса у точек */
+}
+
+/* кольцо ранга (conic-gradient, превью B) */
+.dash-ring {
+  width: 104px;
+  height: 104px;
+  flex: none;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+}
+
+.dash-ring b {
+  display: grid;
+  place-items: center;
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  background: var(--surface);
+  font-size: 1.7rem;
+  line-height: 1.1;
+}
+
+.dash-ring small {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--text-dim);
+}
+
+.dash-status-grid {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.dash-status-main {
+  flex: 1;
+  min-width: 230px;
+}
+
+/* чипы серии/фактов */
+.dash-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--mint);
+  color: var(--primary-deep);
+  border-radius: var(--radius-pill);
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  margin: 0 8px 8px 0;
+}
+
+.dash-chip-warm {
+  background: var(--gold-soft);
+  color: var(--gold-text);
+}
+
 .dash-start-btn {
   display: inline-block;
-  padding: 14px 24px;
+  padding: 16px 28px;
   font-size: 1.05rem;
-  text-decoration: none;
 }
 .dash-quote blockquote {
   margin: 8px 0 4px;
   font-size: 1.1rem;
+  font-style: italic;
 }
 
 /* ===== Ранги и Врата (plan://M7#7.5–7.6) ===== */
@@ -594,28 +928,54 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 6px;
 }
+
+.ranks-stats li {
+  padding: 8px 14px;
+  border-radius: var(--radius-pill);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  font-weight: 600;
+}
+
 .ranks-titles {
   list-style: none;
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
+}
+.ranks-titles li {
+  padding: 10px 14px;
+  border-radius: var(--radius-btn);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
 }
 .ranks-title-unlocked {
-  color: var(--warn);
+  color: var(--gold-text);
+  background: var(--gold-soft);
+  border-color: var(--gold);
 }
 .ranks-gate-link {
   display: inline-block;
-  padding: 8px 16px;
+  padding: 12px 20px;
+  min-height: 44px;
   border: 1px solid var(--primary);
-  border-radius: 8px;
-  color: var(--primary);
+  border-radius: var(--radius-btn);
+  background: var(--primary);
+  color: var(--on-primary);
+  font-weight: 800;
   text-decoration: none;
+  box-shadow: var(--press);
 }
 .ranks-gate-link:hover {
-  background: var(--surface-2);
+  background: var(--primary-deep);
+  border-color: var(--primary-deep);
+}
+.ranks-gate-link:active {
+  transform: translateY(2px);
+  box-shadow: none;
 }
 .gates-panel {
   max-width: 680px;
@@ -625,16 +985,30 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
   margin: 12px 0;
+}
+.gates-checklist li {
+  padding: 12px 14px;
+  border-radius: var(--radius-btn);
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  font-weight: 700;
 }
 .gates-scores {
   list-style: none;
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 6px;
   margin: 12px 0;
+}
+
+.gates-scores li {
+  padding: 8px 14px;
+  border-radius: var(--radius-pill);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
 }
 
 /* ===== Разговорник (plan://M8#8.1) ===== */
@@ -647,11 +1021,20 @@ body {
 }
 .pb-card {
   display: block;
-  padding: 12px 16px;
+  padding: 14px 18px;
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: var(--radius-btn);
+  background: var(--surface-2);
   text-decoration: none;
   color: var(--text);
+  font-weight: 700;
+  transition:
+    background 150ms,
+    border-color 150ms;
+}
+.pb-card:hover {
+  border-color: var(--primary);
+  background: var(--mint);
 }
 .pb-locked {
   opacity: 0.5;
@@ -664,15 +1047,44 @@ body {
   padding: 12px 0;
 }
 .pb-bubble {
-  padding: 10px 14px;
+  padding: 12px 16px;
   border: 1px solid var(--border);
-  border-radius: 10px;
+  border-radius: var(--radius-card);
+  border-bottom-left-radius: 6px;
+  background: var(--surface-2);
 }
 .pb-bubble-user {
   border-color: var(--primary);
+  background: var(--mint);
 }
 
-/* ===== M10: тосты «Системы» (specs/04 §10) ===== */
+/* мини-словарь путешественника (#/phrasebook/vocab) */
+.pb-vocab-topic {
+  margin: 16px 0;
+}
+.pb-vocab-topic h3 {
+  margin: 0 0 8px;
+}
+.pb-vocab {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.pb-vocab-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 10px 14px;
+  border-radius: var(--radius-btn);
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+}
+
+/* ===== M10: тосты (specs/04 §10) — мягкие карточки ===== */
 .toast-host {
   position: fixed;
   top: calc(12px + env(safe-area-inset-top));
@@ -688,21 +1100,17 @@ body {
   display: flex;
   align-items: baseline;
   gap: 8px;
-  padding: 10px 14px;
-  border: 1px solid var(--primary);
+  padding: 12px 16px;
+  border: 1px solid var(--border);
   background: var(--surface);
-  border-radius: 8px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  border-radius: var(--radius-btn);
+  box-shadow: var(--shadow);
   font-size: 0.9rem;
 }
 
-:root[data-theme='light'] .toast {
-  box-shadow: 0 4px 16px rgba(16, 35, 59, 0.12);
-}
-
 .toast-sigil {
-  color: var(--primary);
-  font-weight: 700;
+  color: var(--primary-deep);
+  font-weight: 800;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -733,8 +1141,9 @@ body {
   background: var(--surface-2);
   color: var(--text);
   border: 1px solid var(--border);
-  border-radius: 6px;
-  padding: 8px 10px;
+  border-radius: var(--radius-btn);
+  padding: 8px 12px;
+  font-family: inherit;
   font-size: 1rem;
   min-height: 44px;
 }
@@ -763,6 +1172,12 @@ body {
   gap: 8px;
   margin: 8px 0 16px;
   min-height: 44px;
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  width: fit-content;
+  font-weight: 700;
 }
 
 .quotes-list {
@@ -778,14 +1193,25 @@ body {
   text-align: left;
   cursor: pointer;
   font: inherit;
-  background: transparent;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-btn);
+  padding: 14px 16px;
   display: flex;
   flex-direction: column;
   gap: 4px;
+  transition:
+    background 150ms,
+    border-color 150ms;
+}
+
+.quotes-card:hover {
+  border-color: var(--primary);
+  background: var(--surface);
 }
 
 .quotes-card-title {
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .quote-text {
@@ -804,7 +1230,7 @@ body {
 }
 
 .quote-word:hover {
-  color: var(--primary);
+  color: var(--primary-deep);
 }
 
 .quote-word-absent {
@@ -818,17 +1244,17 @@ body {
 }
 
 .quote-word-learning {
-  color: var(--warn);
+  color: var(--gold-text);
 }
 
 .quote-word-known {
-  color: var(--success);
+  color: var(--primary-deep);
 }
 
 .quote-popover {
   border: 1px solid var(--border);
   background: var(--surface-2);
-  border-radius: 8px;
+  border-radius: var(--radius-btn);
   padding: 12px 16px;
   margin: 8px 0;
 }
@@ -838,29 +1264,90 @@ body {
   padding-left: 18px;
 }
 
-/* ===== M10: SRS — 4 кнопки и интервалы (specs/03 §6, specs/08 §5 mono) ===== */
-.srs-btn-interval {
-  display: block;
-  font-size: 0.78rem;
-  font-family: 'JetBrains Mono', ui-monospace, monospace;
-  opacity: 0.75;
+/* ===== Программа /#/path (plan://onboarding#O.5) — карточки с плитками (превью B) ===== */
+.lesson-path {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.srs-mode-hint {
-  margin: 0;
+.lesson-path-row {
+  border-radius: var(--radius-btn);
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.lesson-path-row a,
+.lesson-path-row span {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  min-height: 44px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.lesson-path-row a:hover {
+  background: var(--surface-2);
+}
+
+.path-num {
+  width: 40px;
+  height: 40px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: var(--surface-2);
+  color: var(--text-dim);
+  font-weight: 900;
+  font-size: 0.9rem;
+}
+
+.path-name {
+  flex: 1;
+  font-weight: 700;
+  min-width: 0;
+}
+
+.path-meta {
+  display: block;
+  font-weight: 600;
+  color: var(--text-dim);
   font-size: 0.8rem;
 }
 
-.srs-exit-confirm {
-  margin: 0;
-  padding: 10px 14px;
-  border: 1px solid var(--warn);
-  color: var(--warn);
-  background: var(--surface-2);
-  border-radius: 8px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  align-items: center;
-  justify-content: space-between;
+.lesson-path-done .path-num {
+  background: var(--primary);
+  color: var(--on-primary);
+}
+
+.lesson-path-current {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 2px rgba(255, 183, 3, 0.25);
+}
+
+.lesson-path-current .path-num {
+  background: var(--gold);
+  color: #fff;
+}
+
+.path-go {
+  width: 34px;
+  height: 34px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--mint);
+  color: var(--primary-deep);
+  font-weight: 900;
+}
+
+.lesson-path-locked {
+  opacity: 0.65;
 }

@@ -24,7 +24,7 @@ export interface Settings {
 }
 
 export const DEFAULT_SETTINGS: Settings = {
-  theme: 'dark',
+  theme: 'light', // Daylight — светлая по умолчанию (plan://theme-daylight#D.2)
   locale: 'ru',
   srsButtons: 2,
   showIntervals: false,

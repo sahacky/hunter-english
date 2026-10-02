@@ -32,7 +32,7 @@ describe('loadSettings / saveSettings', () => {
   it('битые значения нормализуются при чтении', async () => {
     await db.meta.put({ key: 'settings', value: { theme: '???', newPerDay: 999 } }, 'settings')
     const loaded = await loadSettings(db.meta)
-    expect(loaded.theme).toBe('dark')
+    expect(loaded.theme).toBe('light')
     expect(loaded.newPerDay).toBe(50)
   })
 })

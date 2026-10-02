@@ -98,18 +98,45 @@ export default function PathScreen({ repo: repoProp }: { repo?: ProgressReposito
             <ul className="lesson-path">
               {rankRows.map((row) => {
                 const href = `#/lesson/${row.lesson.id.replace(/^les-/, '').toUpperCase()}`
-                const label = `${STATUS_ICON[row.status]} ${row.lesson.title}${
-                  row.current ? ` · ${t('path.youAreHere')}` : ''
-                }`
+                const icon = row.current ? '▶' : STATUS_ICON[row.status]
                 return (
-                  <li key={row.lesson.id} className="lesson-path-row">
+                  <li
+                    key={row.lesson.id}
+                    className={[
+                      'lesson-path-row',
+                      row.status === 'completed' || row.status === 'review_due'
+                        ? 'lesson-path-done'
+                        : '',
+                      row.current ? 'lesson-path-current' : '',
+                      row.status === 'locked' ? 'lesson-path-locked' : '',
+                    ]
+                      .filter(Boolean)
+                      .join(' ')}
+                  >
                     {row.status === 'locked' ? (
                       <span className="dim" aria-label={t('path.status.locked')}>
-                        {label}
+                        <span className="path-num" aria-hidden="true">
+                          {icon}
+                        </span>
+                        <span className="path-name">
+                          {row.lesson.title}
+                          <span className="path-meta">{t('path.status.locked')}</span>
+                        </span>
                       </span>
                     ) : (
                       <a href={href} aria-label={t(`path.status.${row.status}`)}>
-                        {label}
+                        <span className="path-num" aria-hidden="true">
+                          {icon}
+                        </span>
+                        <span className="path-name">
+                          {row.lesson.title}
+                          {row.current && (
+                            <span className="path-meta"> · {t('path.youAreHere')}</span>
+                          )}
+                        </span>
+                        <span className="path-go" aria-hidden="true">
+                          →
+                        </span>
                       </a>
                     )}
                   </li>

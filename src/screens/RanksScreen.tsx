@@ -7,6 +7,7 @@ import { RANK_CEFR, levelInfo, NEXT_RANK } from '../domain/game/game'
 import type { UserStats } from '../domain/game/types'
 import type { ProgressRepository } from '../domain/progress'
 import { DexieProgressRepository } from '../data/progress-repository'
+import { XpDots } from '../components/XpDots'
 
 interface DashboardProps {
   repo?: ProgressRepository
@@ -93,7 +94,7 @@ export default function RanksScreen({ repo: repoProp }: DashboardProps) {
   return (
     <div className="ranks">
       <section className="panel">
-        <h2>[{t('ranks.statusTitle')}]</h2>
+        <h2>{t('ranks.statusTitle')}</h2>
         <p>
           {t('dashboard.rankAndLevel', {
             rank: stats.rank,
@@ -101,15 +102,7 @@ export default function RanksScreen({ repo: repoProp }: DashboardProps) {
             level: level.level,
           })}
         </p>
-        <div
-          className="dash-xp-bar"
-          role="progressbar"
-          aria-valuenow={Math.round(level.progress * 100)}
-          aria-valuemin={0}
-          aria-valuemax={100}
-        >
-          <div className="dash-xp-fill" style={{ width: `${Math.round(level.progress * 100)}%` }} />
-        </div>
+        <XpDots percent={Math.round(level.progress * 100)} />
         <p className="dim">{t('dashboard.xpProgress', { xp: level.rankXp, next: level.nextAt })}</p>
         <ul className="ranks-stats">
           <li>{t('ranks.totalXp', { xp: stats.xp })}</li>
@@ -142,7 +135,7 @@ export default function RanksScreen({ repo: repoProp }: DashboardProps) {
         )}
       </section>
       <section className="panel">
-        <h2>[{t('ranks.titles')}]</h2>
+        <h2>{t('ranks.titles')}</h2>
         <ul className="ranks-titles">
           {TITLES.map((title) => {
             const unlocked = title.check(stats)
