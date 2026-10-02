@@ -90,6 +90,42 @@ describe('buildPathRows (цепочка статусов)', () => {
     expect(rows[1]!.current).toBe(true)
     expect(rows[2]!.status).toBe('review_due')
   })
+
+  it('start_at_rank D (P.2): уроки ниже ранга доступны (не зачтены), D-01 доступен и текущий', () => {
+    const rows = buildPathRows(LESSONS, [null, null, null, null, null], { startAtRank: 'D' })
+    // нижние доступны без прохождения цепочки, но «ты здесь» там не ставится
+    expect(rows[0]!.status).toBe('available')
+    expect(rows[0]!.current).toBe(false)
+    expect(rows[1]!.status).toBe('available')
+    expect(rows[1]!.current).toBe(false)
+    expect(rows[2]!.status).toBe('available')
+    expect(rows[2]!.current).toBe(false)
+    // первый урок ранга — доступен и «ты здесь»; выше — цепочка как прежде
+    expect(rows[3]!.status).toBe('available')
+    expect(rows[3]!.current).toBe(true)
+    expect(rows[4]!.status).toBe('locked')
+  })
+
+  it('start_at_rank D: внутри ранга цепочка сохраняется — E-уроки не влияют на D-01', () => {
+    const rows = buildPathRows(
+      [lesson('les-d-01', 'D'), lesson('les-d-02', 'D'), lesson('les-s-01', 'S')],
+      [null, null, null],
+      { startAtRank: 'D' },
+    )
+    expect(rows[0]!.status).toBe('available')
+    expect(rows[1]!.status).toBe('locked') // D-02 откроется после D-01
+    expect(rows[2]!.status).toBe('locked')
+  })
+
+  it('start_at_rank не перекрывает сохранённые статусы (зачтённые остаются completed)', () => {
+    const rows = buildPathRows(
+      LESSONS,
+      [{ status: 'completed' } as never, null, null, null, null],
+      { startAtRank: 'D' },
+    )
+    expect(rows[0]!.status).toBe('completed')
+    expect(rows[1]!.status).toBe('available')
+  })
 })
 
 describe('PathScreen', () => {
@@ -111,13 +147,30 @@ describe('PathScreen', () => {
     expect(spans.length).toBeGreaterThan(0)
   })
 
+  it('ранг D в статусе (start_at_rank, P.2): «ты здесь» — на D-01, уроки E доступны', async () => {
+    const stats = await repo.getStats()
+    await repo.putStats({ ...stats, rank: 'D', updated_at: '2026-02-01T00:00:00Z' })
+    window.location.hash = '#/path'
+    render(
+      <HashRouter>
+        <PathScreen repo={repo} />
+      </HashRouter>,
+    )
+    expect(await screen.findByText('Программа обучения')).toBeInTheDocument()
+    const currentRow = document.querySelector('.lesson-path-current')
+    expect(currentRow).toBeTruthy()
+    expect(currentRow!.textContent).toContain('ты здесь')
+    // текущий урок — в секции ранга D (первый урок ранга)
+    const rankHeader = currentRow!.closest('.pb-vocab-topic')?.querySelector('h3')?.textContent
+    expect(rankHeader).toMatch(/Ранг D/)
+  })
+
   it('ошибка загрузки — панель ошибки', async () => {
-    const failing = {
-      ...repo,
-      getManyLessonProgress: async () => {
-        throw new Error('db')
-      },
-    } as unknown as DexieProgressRepository
+    // прототипная делегация (spread ломает this у Dexie-методов — M19)
+    const failing = Object.create(repo) as DexieProgressRepository
+    failing.getManyLessonProgress = async () => {
+      throw new Error('db')
+    }
     window.location.hash = '#/path'
     render(
       <HashRouter>
@@ -131,13 +184,12 @@ describe('PathScreen', () => {
 
   it('размонтирование до ответа репозитория — без обновления состояния (живой гард)', async () => {
     let resolveProgress!: (rows: never[]) => void
-    const slow = {
-      ...repo,
-      getManyLessonProgress: () =>
-        new Promise((resolve) => {
-          resolveProgress = resolve
-        }),
-    } as unknown as DexieProgressRepository
+    // прототипная делегация (spread ломает this у Dexie-методов — M19)
+    const slow = Object.create(repo) as DexieProgressRepository
+    slow.getManyLessonProgress = (() =>
+      new Promise((resolve) => {
+        resolveProgress = resolve
+      })) as DexieProgressRepository['getManyLessonProgress']
     window.location.hash = '#/path'
     const { unmount } = render(
       <HashRouter>

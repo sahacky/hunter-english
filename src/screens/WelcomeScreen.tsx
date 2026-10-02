@@ -1,5 +1,7 @@
-// Implements: plan://onboarding#O.4 — онбординг /#/welcome (specs/07 §2.2):
-// интро → «Оценка Охотника» (адаптивный тест) → вердикт → применение ранга.
+// Implements: plan://onboarding#O.4, plan://curriculum-review#P.1–P.2 — онбординг /#/welcome
+// (specs/07 §2.2): интро → «Оценка Охотника» (адаптивный тест, «не знаю» —
+// честный промах) → вердикт (low confidence → предложить ранг ниже) → явный
+// выбор применения (зачесть нижние vs начать с первого урока ранга).
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
@@ -9,17 +11,18 @@ import { FeedbackPlate } from '../components/lesson/ExerciseView'
 import {
   nextPlacementTask,
   placementVerdict,
+  suggestLowerRank,
   type PlacementAnswer,
   type PlacementRank,
   type PlacementTask,
   type PlacementVerdict,
 } from '../domain/placement/placement'
-import { applyPlacement } from '../domain/placement/apply'
+import { applyPlacement, type ApplyPlacementMode } from '../domain/placement/apply'
 import { RANK_CEFR } from '../domain/game/game'
 import { buildPlacementTasks } from '../content/placement'
 import { loadLessons, loadPhrases, type LessonItem } from '../content/lessons'
 import { loadWordRanks } from '../content/words'
-import { isOnboarded, markOnboarded } from '../data/onboarding'
+import { isOnboarded, markOnboarded, savePlacementInfo } from '../data/onboarding'
 import type { ProgressRepository } from '../domain/progress'
 import { DexieProgressRepository } from '../data/progress-repository'
 
@@ -36,18 +39,20 @@ type Phase =
   | { kind: 'intro' }
   | { kind: 'quiz'; answers: PlacementAnswer[]; value: string; result: CheckResult | null }
   | { kind: 'verdict'; verdict: PlacementVerdict }
+  | { kind: 'applyChoice'; rank: PlacementRank }
   | { kind: 'applying'; rank: PlacementRank }
   | { kind: 'error' }
 
 /** Экран вердикта: и завершение теста, и мгновенный выход при исчерпании задач. */
 function VerdictPane({
   verdict,
-  onStart,
+  onChoose,
 }: {
   verdict: PlacementVerdict
-  onStart: (rank: PlacementRank) => void
+  onChoose: (rank: PlacementRank) => void
 }) {
   const { t } = useTranslation()
+  const lower = verdict.confidence === 'low' ? suggestLowerRank(verdict.rank) : null
   return (
     <section className="panel lesson-panel">
       <h2>{t('welcome.verdictTitle')}</h2>
@@ -59,15 +64,60 @@ function VerdictPane({
       <p className="dim">
         {verdict.confidence === 'low' ? t('welcome.verdictLow') : t('welcome.verdictHigh')}
       </p>
+      {lower && (
+        <p className="dim">
+          {t('welcome.verdictOfferLower', { rank: lower, cefr: RANK_CEFR[lower] })}
+        </p>
+      )}
       <p className="dim">{t('welcome.verdictNote')}</p>
       <div className="lesson-actions">
         <button
           type="button"
           className="srs-btn srs-btn-good"
-          onClick={() => onStart(verdict.rank)}
+          onClick={() => onChoose(verdict.rank)}
         >
-          {t('welcome.startLearning')}
+          {t('welcome.startAtRank', { rank: verdict.rank, cefr: RANK_CEFR[verdict.rank] })}
         </button>
+        {lower && (
+          <button type="button" className="srs-btn" onClick={() => onChoose(lower)}>
+            {t('welcome.startAtRankLower', { rank: lower, cefr: RANK_CEFR[lower] })}
+          </button>
+        )}
+      </div>
+    </section>
+  )
+}
+
+/** Экран применения вердикта (P.2): явный выбор режима старта. */
+function ApplyChoicePane({
+  rank,
+  onApply,
+}: {
+  rank: PlacementRank
+  onApply: (mode: ApplyPlacementMode) => void
+}) {
+  const { t } = useTranslation()
+  return (
+    <section className="panel lesson-panel">
+      <h2>{t('welcome.applyTitle')}</h2>
+      <p className="dim">{t('welcome.applyQuestion', { rank, cefr: RANK_CEFR[rank] })}</p>
+      <div className="lesson-actions">
+        <div>
+          <button
+            type="button"
+            className="srs-btn srs-btn-good"
+            onClick={() => onApply('start_at_rank')}
+          >
+            {t('welcome.applyStart')}
+          </button>
+          <p className="dim">{t('welcome.applyStartDesc', { rank })}</p>
+        </div>
+        <div>
+          <button type="button" className="srs-btn" onClick={() => onApply('waive')}>
+            {t('welcome.applyWaive')}
+          </button>
+          <p className="dim">{t('welcome.applyWaiveDesc', { rank })}</p>
+        </div>
       </div>
     </section>
   )
@@ -107,14 +157,15 @@ export default function WelcomeScreen({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  const finish = async (rank: PlacementRank) => {
+  const finish = async (rank: PlacementRank, mode: ApplyPlacementMode) => {
     setPhase({ kind: 'applying', rank })
     try {
       const [lessons, wordRanks] = await Promise.all([
         lessonsProp ? Promise.resolve(lessonsProp) : loadLessons(),
         wordRanksProp ? Promise.resolve(wordRanksProp) : loadWordRanks(),
       ])
-      await applyPlacement({ repo, rank, lessons, wordRanks, now: new Date() })
+      await applyPlacement({ repo, rank, mode, lessons, wordRanks, now: new Date() })
+      await savePlacementInfo(rank, mode)
       await markOnboarded()
       navigate('/', { replace: true })
     } catch {
@@ -144,7 +195,7 @@ export default function WelcomeScreen({
           >
             {t('welcome.startAssessment')}
           </button>
-          <button type="button" className="srs-btn" onClick={() => void finish('E')}>
+          <button type="button" className="srs-btn" onClick={() => void finish('E', 'waive')}>
             {t('welcome.startFromZero')}
           </button>
         </div>
@@ -159,12 +210,21 @@ export default function WelcomeScreen({
       return (
         <VerdictPane
           verdict={placementVerdict(tasks ?? [], phase.answers)}
-          onStart={(rank) => void finish(rank)}
+          onChoose={(rank) =>
+            rank === 'E'
+              ? void finish('E', 'waive') // ниже E нет уроков — выбор применения не нужен
+              : setPhase({ kind: 'applyChoice', rank })
+          }
         />
       )
     }
     const submit = () => {
       const verdict = judge(phase.value, { accepted: task.accepted })
+      setPhase({ ...phase, result: verdict })
+    }
+    const dontKnow = () => {
+      // честный промах: сразу показываем эталон (P.1 — защита от угадывания)
+      const verdict = judge('', { accepted: task.accepted })
       setPhase({ ...phase, result: verdict })
     }
     const result = phase.result
@@ -207,6 +267,9 @@ export default function WelcomeScreen({
               <button type="submit" className="srs-btn srs-btn-good" disabled={!phase.value.trim()}>
                 {t('lesson.check')} <kbd>⏎</kbd>
               </button>
+              <button type="button" className="srs-btn" onClick={dontKnow}>
+                {t('welcome.dontKnow')}
+              </button>
             </form>
           )}
           {result && (
@@ -236,7 +299,20 @@ export default function WelcomeScreen({
   }
 
   if (phase.kind === 'verdict') {
-    return <VerdictPane verdict={phase.verdict} onStart={(rank) => void finish(rank)} />
+    return (
+      <VerdictPane
+        verdict={phase.verdict}
+        onChoose={(rank) =>
+          rank === 'E'
+            ? void finish('E', 'waive') // ниже E нет уроков — выбор применения не нужен
+            : setPhase({ kind: 'applyChoice', rank })
+        }
+      />
+    )
+  }
+
+  if (phase.kind === 'applyChoice') {
+    return <ApplyChoicePane rank={phase.rank} onApply={(mode) => void finish(phase.rank, mode)} />
   }
 
   if (phase.kind === 'applying') {

@@ -1,6 +1,6 @@
 // Implements: plan://M19 — Dashboard/RanksScreen error-фазы и дашборд-детали
 import 'fake-indexeddb/auto'
-import { ONBOARDING_KEY } from '../data/onboarding'
+import { ONBOARDING_KEY, PLACEMENT_INFO_KEY } from '../data/onboarding'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { render, screen, waitFor } from '@testing-library/react'
 import { HashRouter } from 'react-router-dom'
@@ -11,6 +11,7 @@ import { uuidv7 } from '../lib/uuidv7'
 import Dashboard from './Dashboard'
 import RanksScreen from './RanksScreen'
 import type { ProgressRepository } from '../domain/progress'
+import { waivedLessonProgress } from '../domain/placement/apply'
 
 // флаг тестов «нет готовых цитат»: loadQuotes отдаёт пустой список (дефолт — реальные данные)
 const lessonsMock = vi.hoisted(() => ({ noQuotes: false }))
@@ -27,6 +28,7 @@ let repo: DexieProgressRepository
 
 beforeEach(() => {
   localStorage.setItem(ONBOARDING_KEY, '1')
+  localStorage.removeItem(PLACEMENT_INFO_KEY)
   db = new HunterDb(`hunter-dash-test-${uuidv7()}`)
   repo = new DexieProgressRepository(db)
 })
@@ -133,6 +135,79 @@ describe('Dashboard', () => {
       </HashRouter>,
     )
     await waitFor(() => expect(window.location.hash).toBe('#/welcome'), { timeout: 8000 })
+  })
+
+  // plan://curriculum-review#P.2 — старт с ранга и объяснение «почему этот урок»
+  it('ранг D в статусе: следующий урок — D-01 (не E-01), уроки ниже ранга пропускаются', async () => {
+    const stats = await repo.getStats()
+    await repo.putStats({ ...stats, rank: 'D', updated_at: '2026-02-01T00:00:00Z' })
+    window.location.hash = '#/'
+    render(
+      <HashRouter>
+        <Dashboard repo={repo} />
+      </HashRouter>,
+    )
+    expect(await screen.findByText('Ежедневный квест', {}, { timeout: 8000 })).toBeInTheDocument()
+    expect(screen.getByText(/D-01 ·/)).toBeInTheDocument()
+    expect(screen.queryByText(/E-01 ·/)).not.toBeInTheDocument()
+  })
+
+  it('placement waive: дашборд объясняет зачёт нижних уроков', async () => {
+    const stats = await repo.getStats()
+    await repo.putStats({ ...stats, rank: 'D', updated_at: '2026-02-01T00:00:00Z' })
+    localStorage.setItem(
+      PLACEMENT_INFO_KEY,
+      JSON.stringify({ rank: 'D', mode: 'waive', appliedAt: '2026-02-01T00:00:00Z' }),
+    )
+    window.location.hash = '#/'
+    render(
+      <HashRouter>
+        <Dashboard repo={repo} />
+      </HashRouter>,
+    )
+    expect(
+      await screen.findByText(/Оценка назначила ранг D \(A1\)/, {}, { timeout: 8000 }),
+    ).toBeInTheDocument()
+    expect(screen.getByText(/зачтены без опыта/)).toBeInTheDocument()
+  })
+
+  it('placement start_at_rank: дашборд объясняет старт с первого урока ранга', async () => {
+    const stats = await repo.getStats()
+    await repo.putStats({ ...stats, rank: 'D', updated_at: '2026-02-01T00:00:00Z' })
+    localStorage.setItem(
+      PLACEMENT_INFO_KEY,
+      JSON.stringify({ rank: 'D', mode: 'start_at_rank', appliedAt: '2026-02-01T00:00:00Z' }),
+    )
+    window.location.hash = '#/'
+    render(
+      <HashRouter>
+        <Dashboard repo={repo} />
+      </HashRouter>,
+    )
+    expect(
+      await screen.findByText(/Ты начал с ранга D \(A1\)/, {}, { timeout: 8000 }),
+    ).toBeInTheDocument()
+    expect(screen.getByText(/уроки ниже не зачтены/)).toBeInTheDocument()
+  })
+
+  it('placement пояснение исчезает, когда первый урок ранга уже пройден', async () => {
+    const stats = await repo.getStats()
+    await repo.putStats({ ...stats, rank: 'D', updated_at: '2026-02-01T00:00:00Z' })
+    localStorage.setItem(
+      PLACEMENT_INFO_KEY,
+      JSON.stringify({ rank: 'D', mode: 'start_at_rank', appliedAt: '2026-02-01T00:00:00Z' }),
+    )
+    await repo.putLessonProgress({
+      ...waivedLessonProgress('les-d-01', '2026-02-01T00:00:00Z'),
+    })
+    window.location.hash = '#/'
+    render(
+      <HashRouter>
+        <Dashboard repo={repo} />
+      </HashRouter>,
+    )
+    expect(await screen.findByText(/D-02 ·/, {}, { timeout: 8000 })).toBeInTheDocument()
+    expect(screen.queryByText(/Ты начал с ранга/)).not.toBeInTheDocument()
   })
 })
 
