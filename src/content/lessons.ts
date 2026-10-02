@@ -45,6 +45,8 @@ export interface ExerciseItem {
 export interface LessonItem {
   id: string
   rank: 'E' | 'D' | 'C' | 'B' | 'A' | 'S'
+  /** Порядок внутри ранга (программа v2, plan://curriculum-review#V.5). */
+  order?: number
   module: string
   title: string
   grammar_point: {
@@ -114,9 +116,8 @@ export const COURSE_RANKS = ['E', 'D', 'C', 'B', 'A', 'S'] as const
 
 /**
  * Все уроки всех рангов в порядке курса E→S (для `/#/path` и «следующего урока»
- * дашборда). Чанки данных лежат файлами a…s — glob отдаёт их алфавитом, поэтому
- * порядок курса восстанавливается здесь (фидбей 2026-10-02: «первый урок» на
- * дашборде показывался A-01 — алфавитный порядок файлов).
+ * дашборда). Внутри ранга порядок — явное поле `order` (программа v2: Past Simple
+ * в конце D, ранг A с консолидации); у синтетики без `order` — номер из id.
  */
 export async function loadLessons(): Promise<LessonItem[]> {
   const files = await Promise.all(Object.values(lessonModules).map((load) => load()))
@@ -125,9 +126,13 @@ export async function loadLessons(): Promise<LessonItem[]> {
     return file.items
   })
   const rankOrder = new Map(COURSE_RANKS.map((rank, index) => [rank, index]))
+  const orderOf = (lesson: LessonItem): number =>
+    lesson.order ?? Number(/(\d+)$/.exec(lesson.id)?.[1] ?? 0)
   return lessons.sort(
     (a, b) =>
-      (rankOrder.get(a.rank) ?? 0) - (rankOrder.get(b.rank) ?? 0) || a.id.localeCompare(b.id),
+      (rankOrder.get(a.rank) ?? 0) - (rankOrder.get(b.rank) ?? 0) ||
+      orderOf(a) - orderOf(b) ||
+      a.id.localeCompare(b.id),
   )
 }
 

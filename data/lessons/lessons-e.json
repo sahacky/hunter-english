@@ -173,7 +173,8 @@
         "playlist_index": 69,
         "youtube_id": "bB4K-WblSIk",
         "title": null
-      }
+      },
+      "order": 1
     },
     {
       "id": "les-e-02",
@@ -346,7 +347,8 @@
         "playlist_index": 71,
         "youtube_id": "EmmoAPtgllA",
         "title": null
-      }
+      },
+      "order": 2
     },
     {
       "id": "les-e-03",
@@ -519,7 +521,8 @@
         "playlist_index": 79,
         "youtube_id": "9omB2YuL1Z8",
         "title": null
-      }
+      },
+      "order": 3
     },
     {
       "id": "les-e-04",
@@ -692,7 +695,8 @@
         "playlist_index": 82,
         "youtube_id": "mRQMPhB6c_Y",
         "title": null
-      }
+      },
+      "order": 4
     },
     {
       "id": "les-e-05",
@@ -856,7 +860,8 @@
           "id": "ex-e-1114"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 5
     },
     {
       "id": "les-e-06",
@@ -1026,7 +1031,8 @@
         "playlist_index": 88,
         "youtube_id": "sQ6HMW37Xh4",
         "title": null
-      }
+      },
+      "order": 6
     },
     {
       "id": "les-e-07",
@@ -1196,7 +1202,8 @@
         "playlist_index": 9,
         "youtube_id": "nPXmJZx60K0",
         "title": null
-      }
+      },
+      "order": 7
     },
     {
       "id": "les-e-08",
@@ -1361,7 +1368,8 @@
           "id": "ex-e-1117"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 8
     },
     {
       "id": "les-e-09",
@@ -1526,7 +1534,8 @@
           "id": "ex-e-1118"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 9
     },
     {
       "id": "les-e-10",
@@ -1687,7 +1696,8 @@
           "id": "ex-e-1119"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 10
     },
     {
       "id": "les-e-11",
@@ -1857,7 +1867,8 @@
         "playlist_index": 1,
         "youtube_id": "Hp9wUEDasY4",
         "title": null
-      }
+      },
+      "order": 11
     },
     {
       "id": "les-e-12",
@@ -2030,7 +2041,8 @@
         "playlist_index": 3,
         "youtube_id": "nXI9CN5a6ew",
         "title": null
-      }
+      },
+      "order": 12
     },
     {
       "id": "les-e-13",
@@ -2203,7 +2215,8 @@
         "playlist_index": 17,
         "youtube_id": "8O2JICbDthQ",
         "title": null
-      }
+      },
+      "order": 13
     },
     {
       "id": "les-e-14",
@@ -2379,7 +2392,8 @@
         "playlist_index": 19,
         "youtube_id": "82Z289SJSYA",
         "title": null
-      }
+      },
+      "order": 14
     },
     {
       "id": "les-e-15",
@@ -2546,7 +2560,8 @@
           "id": "ex-e-1130"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 15
     },
     {
       "id": "les-e-16",
@@ -2719,7 +2734,8 @@
         "playlist_index": 32,
         "youtube_id": "s2mDQEUY9ac",
         "title": null
-      }
+      },
+      "order": 16
     },
     {
       "id": "les-e-17",
@@ -2892,7 +2908,8 @@
         "playlist_index": 34,
         "youtube_id": "IlSNy49QRm0",
         "title": null
-      }
+      },
+      "order": 17
     },
     {
       "id": "les-e-18",
@@ -3065,7 +3082,8 @@
         "playlist_index": 40,
         "youtube_id": "a7FIdktMwS8",
         "title": null
-      }
+      },
+      "order": 18
     },
     {
       "id": "les-e-19",
@@ -3235,7 +3253,8 @@
         "playlist_index": 13,
         "youtube_id": "g54X7P-QMQ8",
         "title": null
-      }
+      },
+      "order": 19
     },
     {
       "id": "les-e-20",
@@ -3399,7 +3418,8 @@
           "id": "ex-e-1139"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 20
     },
     {
       "id": "les-e-21",
@@ -3569,7 +3589,8 @@
         "playlist_index": 21,
         "youtube_id": "RQL8lICKsiA",
         "title": null
-      }
+      },
+      "order": 21
     },
     {
       "id": "les-e-22",
@@ -3742,7 +3763,8 @@
         "playlist_index": 25,
         "youtube_id": "3k4L-qZs-_0",
         "title": null
-      }
+      },
+      "order": 22
     },
     {
       "id": "les-e-23",
@@ -3912,7 +3934,8 @@
         "playlist_index": 572,
         "youtube_id": "VZ4sZGdG1L0",
         "title": null
-      }
+      },
+      "order": 23
     },
     {
       "id": "les-e-24",
@@ -4085,7 +4108,8 @@
         "playlist_index": 562,
         "youtube_id": "Dt6YcGWfAq8",
         "title": null
-      }
+      },
+      "order": 24
     }
   ]
 }

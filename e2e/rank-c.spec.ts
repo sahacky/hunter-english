@@ -46,7 +46,7 @@ test('lesson C-16 must/have to opens', async ({ page }) => {
 test('gates C-B: intro with rank C checklist (plan://M14#14.7)', async ({ page }) => {
   await page.goto('/#/gates/C-B')
   await expect(page.getByRole('heading', { name: 'Врата C → B' })).toBeVisible({ timeout: 8000 })
-  await expect(page.getByText(/Уроки ранга C: \d+ \/ 30/)).toBeVisible()
+  await expect(page.getByText(/Уроки ранга C: \d+ \/ 19/)).toBeVisible()
   await expect(page.getByText(/Слова \(надёжно\): \d+ \/ 1800/)).toBeVisible()
 })
 

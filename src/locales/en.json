@@ -284,7 +284,8 @@
       "buttons2": "2: Good / Again",
       "buttons4": "4: + Hard / Easy",
       "intervals": "Interval on buttons",
-      "note": "Switching the mode does not change accumulated card state."
+      "note": "Switching the mode does not change accumulated card state.",
+      "wordsCapHint": "New word cards are capped at 10 per day; the rest of the limit goes to phrases and quotes."
     },
     "voice": {
       "title": "Voice",

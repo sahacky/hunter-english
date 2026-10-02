@@ -160,6 +160,7 @@ export default function SettingsScreen({ database }: SettingsScreenProps) {
             onBlur={() => update({ newPerDay: Number(newPerDayDraft) })}
           />
         </label>
+        <p className="dim">{t('settings.srs.wordsCapHint')}</p>
         <label className="settings-row">
           <span>{t('settings.srs.buttons')}</span>
           <select

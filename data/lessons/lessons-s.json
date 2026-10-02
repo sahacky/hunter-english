@@ -173,7 +173,8 @@
         "playlist_index": 882,
         "youtube_id": "i2cHBmDAuHk",
         "title": null
-      }
+      },
+      "order": 1
     },
     {
       "id": "les-s-02",
@@ -341,7 +342,8 @@
           "id": "ex-s-0712"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 2
     },
     {
       "id": "les-s-03",
@@ -509,7 +511,8 @@
           "id": "ex-s-0714"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 3
     },
     {
       "id": "les-s-04",
@@ -677,7 +680,8 @@
           "id": "ex-s-0716"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 4
     },
     {
       "id": "les-s-05",
@@ -845,7 +849,8 @@
           "id": "ex-s-0718"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 5
     },
     {
       "id": "les-s-06",
@@ -1013,7 +1018,8 @@
           "id": "ex-s-0720"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 6
     },
     {
       "id": "les-s-07",
@@ -1205,7 +1211,8 @@
           "id": "ex-s-0722"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 7
     },
     {
       "id": "les-s-08",
@@ -1373,7 +1380,8 @@
           "id": "ex-s-0724"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 8
     },
     {
       "id": "les-s-09",
@@ -1546,7 +1554,8 @@
         "playlist_index": 777,
         "youtube_id": "k30PW6j0i50",
         "title": null
-      }
+      },
+      "order": 9
     },
     {
       "id": "les-s-10",
@@ -1714,7 +1723,8 @@
           "id": "ex-s-0728"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 10
     },
     {
       "id": "les-s-11",
@@ -1891,7 +1901,8 @@
           "id": "ex-s-0733"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 11
     },
     {
       "id": "les-s-12",
@@ -2059,7 +2070,8 @@
           "id": "ex-s-0735"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 12
     },
     {
       "id": "les-s-13",
@@ -2221,7 +2233,8 @@
           "id": "ex-s-0737"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 13
     },
     {
       "id": "les-s-14",
@@ -2401,7 +2414,8 @@
           "id": "ex-s-0739"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 14
     },
     {
       "id": "les-s-15",
@@ -2593,7 +2607,8 @@
           "id": "ex-s-0741"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 15
     }
   ]
 }

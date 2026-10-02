@@ -38,6 +38,9 @@ def main():
         )
     manifest = {
         "schema_version": 1,
+        # план v2 (plan://curriculum-review#V.5): Past Simple в D, going to → will,
+        # ранг A с консолидации, порядок — поле order у уроков
+        "content_version": 2,
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "files": files,
     }

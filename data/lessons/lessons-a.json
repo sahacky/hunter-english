@@ -3,352 +3,6 @@
   "kind": "lessons",
   "items": [
     {
-      "id": "les-a-01",
-      "rank": "A",
-      "module": "mod-a-1",
-      "title": "Future Continuous: she'll be cooking",
-      "grammar_point": {
-        "id": "gp-a-01",
-        "title_ru": "Процесс в будущем",
-        "rule_md": "**Future Continuous: will be + V-ing.**\nПроцесс в будущем: This time tomorrow I'**ll be flying** to Rome.\n«Занят в момент»: Don't call at eight — I'**ll be cooking**.\nЗапрос вежливо: **Will** you **be using** the car tomorrow?",
-        "phrase_ids": ["ph-a-0001", "ph-a-0002", "ph-a-0003", "ph-a-0004", "ph-a-0005"],
-        "trap_id": "trap-present-perfect"
-      },
-      "vocab_band": {
-        "list": "ngsl-spoken",
-        "from": 5501,
-        "to": 5560
-      },
-      "phrasebook_topic": "smalltalk",
-      "trap_id": "trap-present-perfect",
-      "quotes_topic": "future",
-      "exercises": [
-        {
-          "id": "ex-a-0001"
-        },
-        {
-          "id": "ex-a-0002"
-        },
-        {
-          "id": "ex-a-0003"
-        },
-        {
-          "id": "ex-a-0004"
-        },
-        {
-          "id": "ex-a-0005"
-        },
-        {
-          "id": "ex-a-0006"
-        },
-        {
-          "id": "ex-a-0007"
-        },
-        {
-          "id": "ex-a-0008"
-        },
-        {
-          "id": "ex-a-0009"
-        },
-        {
-          "id": "ex-a-0010"
-        },
-        {
-          "id": "ex-a-0011"
-        },
-        {
-          "id": "ex-a-0012"
-        },
-        {
-          "id": "ex-a-0013"
-        },
-        {
-          "id": "ex-a-0014"
-        },
-        {
-          "id": "ex-a-0015"
-        },
-        {
-          "id": "ex-a-0016"
-        },
-        {
-          "id": "ex-a-0017"
-        },
-        {
-          "id": "ex-a-0018"
-        },
-        {
-          "id": "ex-a-0019"
-        },
-        {
-          "id": "ex-a-0020"
-        },
-        {
-          "id": "ex-a-0021"
-        },
-        {
-          "id": "ex-a-0022"
-        },
-        {
-          "id": "ex-a-0023"
-        },
-        {
-          "id": "ex-a-0024"
-        },
-        {
-          "id": "ex-a-0025"
-        },
-        {
-          "id": "ex-a-0026"
-        },
-        {
-          "id": "ex-a-0027"
-        },
-        {
-          "id": "ex-a-0028"
-        },
-        {
-          "id": "ex-a-0029"
-        },
-        {
-          "id": "ex-a-0030"
-        },
-        {
-          "id": "ex-a-0031"
-        },
-        {
-          "id": "ex-a-0032"
-        },
-        {
-          "id": "ex-a-0033"
-        },
-        {
-          "id": "ex-a-0034"
-        },
-        {
-          "id": "ex-a-0035"
-        },
-        {
-          "id": "ex-a-0036"
-        },
-        {
-          "id": "ex-a-0037"
-        },
-        {
-          "id": "ex-a-0038"
-        },
-        {
-          "id": "ex-a-0039"
-        },
-        {
-          "id": "ex-a-0040"
-        },
-        {
-          "id": "ex-a-0041"
-        },
-        {
-          "id": "ex-a-0042"
-        },
-        {
-          "id": "ex-a-0043"
-        },
-        {
-          "id": "ex-a-0044"
-        },
-        {
-          "id": "ex-a-0045"
-        },
-        {
-          "id": "ex-a-0046"
-        },
-        {
-          "id": "ex-a-1011"
-        },
-        {
-          "id": "ex-a-1012"
-        }
-      ],
-      "bebris_video": {
-        "lesson": "2.196",
-        "playlist_index": 747,
-        "youtube_id": "6k6QwYL6NzA",
-        "title": null
-      }
-    },
-    {
-      "id": "les-a-02",
-      "rank": "A",
-      "module": "mod-a-1",
-      "title": "Future Perfect: he'll have finished",
-      "grammar_point": {
-        "id": "gp-a-02",
-        "title_ru": "Завершённость к моменту",
-        "rule_md": "**Future Perfect: will have + V3.**\nЗавершённость к моменту: By next year, he'**ll have finished**.\nМаркеры: by then, by the time, by 2030, in two years.\nShe'**ll have left** by then. = «уже уедет к тому времени».",
-        "phrase_ids": ["ph-a-0032", "ph-a-0033", "ph-a-0034", "ph-a-0035", "ph-a-0036"],
-        "trap_id": "trap-present-perfect"
-      },
-      "vocab_band": {
-        "list": "ngsl-spoken",
-        "from": 5561,
-        "to": 5620
-      },
-      "phrasebook_topic": null,
-      "trap_id": "trap-present-perfect",
-      "quotes_topic": "future",
-      "exercises": [
-        {
-          "id": "ex-a-0047"
-        },
-        {
-          "id": "ex-a-0048"
-        },
-        {
-          "id": "ex-a-0049"
-        },
-        {
-          "id": "ex-a-0050"
-        },
-        {
-          "id": "ex-a-0051"
-        },
-        {
-          "id": "ex-a-0052"
-        },
-        {
-          "id": "ex-a-0053"
-        },
-        {
-          "id": "ex-a-0054"
-        },
-        {
-          "id": "ex-a-0055"
-        },
-        {
-          "id": "ex-a-0056"
-        },
-        {
-          "id": "ex-a-0057"
-        },
-        {
-          "id": "ex-a-0058"
-        },
-        {
-          "id": "ex-a-0059"
-        },
-        {
-          "id": "ex-a-0060"
-        },
-        {
-          "id": "ex-a-0061"
-        },
-        {
-          "id": "ex-a-0062"
-        },
-        {
-          "id": "ex-a-0063"
-        },
-        {
-          "id": "ex-a-0064"
-        },
-        {
-          "id": "ex-a-0065"
-        },
-        {
-          "id": "ex-a-0066"
-        },
-        {
-          "id": "ex-a-0067"
-        },
-        {
-          "id": "ex-a-0068"
-        },
-        {
-          "id": "ex-a-0069"
-        },
-        {
-          "id": "ex-a-0070"
-        },
-        {
-          "id": "ex-a-0071"
-        },
-        {
-          "id": "ex-a-0072"
-        },
-        {
-          "id": "ex-a-0073"
-        },
-        {
-          "id": "ex-a-0074"
-        },
-        {
-          "id": "ex-a-0075"
-        },
-        {
-          "id": "ex-a-0076"
-        },
-        {
-          "id": "ex-a-0077"
-        },
-        {
-          "id": "ex-a-0078"
-        },
-        {
-          "id": "ex-a-0079"
-        },
-        {
-          "id": "ex-a-0080"
-        },
-        {
-          "id": "ex-a-0081"
-        },
-        {
-          "id": "ex-a-0082"
-        },
-        {
-          "id": "ex-a-0083"
-        },
-        {
-          "id": "ex-a-0084"
-        },
-        {
-          "id": "ex-a-0085"
-        },
-        {
-          "id": "ex-a-0086"
-        },
-        {
-          "id": "ex-a-0087"
-        },
-        {
-          "id": "ex-a-0088"
-        },
-        {
-          "id": "ex-a-0089"
-        },
-        {
-          "id": "ex-a-0090"
-        },
-        {
-          "id": "ex-a-0091"
-        },
-        {
-          "id": "ex-a-0092"
-        },
-        {
-          "id": "ex-a-1013"
-        },
-        {
-          "id": "ex-a-1014"
-        }
-      ],
-      "bebris_video": {
-        "lesson": "2.211",
-        "playlist_index": 762,
-        "youtube_id": "JSHrZuAy9uo",
-        "title": null
-      }
-    },
-    {
       "id": "les-a-03",
       "rank": "A",
       "module": "mod-a-1",
@@ -519,7 +173,8 @@
         "playlist_index": 744,
         "youtube_id": "fhiXo0tmZTM",
         "title": null
-      }
+      },
+      "order": 1
     },
     {
       "id": "les-a-04",
@@ -692,7 +347,8 @@
         "playlist_index": 777,
         "youtube_id": "k30PW6j0i50",
         "title": null
-      }
+      },
+      "order": 2
     },
     {
       "id": "les-a-05",
@@ -865,7 +521,8 @@
         "playlist_index": 772,
         "youtube_id": "_QTpE9YRIog",
         "title": null
-      }
+      },
+      "order": 3
     },
     {
       "id": "les-a-06",
@@ -1033,7 +690,8 @@
           "id": "ex-a-1022"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 4
     },
     {
       "id": "les-a-07",
@@ -1206,7 +864,8 @@
         "playlist_index": 848,
         "youtube_id": "RIPD00DDXEk",
         "title": null
-      }
+      },
+      "order": 5
     },
     {
       "id": "les-a-08",
@@ -1379,7 +1038,8 @@
         "playlist_index": 854,
         "youtube_id": "eE_sqWpL-lo",
         "title": null
-      }
+      },
+      "order": 6
     },
     {
       "id": "les-a-09",
@@ -1552,7 +1212,8 @@
         "playlist_index": 861,
         "youtube_id": "a2NXNeUKhcU",
         "title": null
-      }
+      },
+      "order": 7
     },
     {
       "id": "les-a-10",
@@ -1725,7 +1386,8 @@
         "playlist_index": 870,
         "youtube_id": "EEMmcyY2nvc",
         "title": null
-      }
+      },
+      "order": 8
     },
     {
       "id": "les-a-11",
@@ -1893,12 +1555,361 @@
           "id": "ex-a-1032"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 9
+    },
+    {
+      "id": "les-a-01",
+      "rank": "A",
+      "module": "mod-a-3",
+      "title": "Future Continuous: she'll be cooking",
+      "grammar_point": {
+        "id": "gp-a-01",
+        "title_ru": "Процесс в будущем",
+        "rule_md": "**Future Continuous: will be + V-ing.**\nПроцесс в будущем: This time tomorrow I'**ll be flying** to Rome.\n«Занят в момент»: Don't call at eight — I'**ll be cooking**.\nЗапрос вежливо: **Will** you **be using** the car tomorrow?",
+        "phrase_ids": ["ph-a-0001", "ph-a-0002", "ph-a-0003", "ph-a-0004", "ph-a-0005"],
+        "trap_id": "trap-present-perfect"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 5501,
+        "to": 5560
+      },
+      "phrasebook_topic": "smalltalk",
+      "trap_id": "trap-present-perfect",
+      "quotes_topic": "future",
+      "exercises": [
+        {
+          "id": "ex-a-0001"
+        },
+        {
+          "id": "ex-a-0002"
+        },
+        {
+          "id": "ex-a-0003"
+        },
+        {
+          "id": "ex-a-0004"
+        },
+        {
+          "id": "ex-a-0005"
+        },
+        {
+          "id": "ex-a-0006"
+        },
+        {
+          "id": "ex-a-0007"
+        },
+        {
+          "id": "ex-a-0008"
+        },
+        {
+          "id": "ex-a-0009"
+        },
+        {
+          "id": "ex-a-0010"
+        },
+        {
+          "id": "ex-a-0011"
+        },
+        {
+          "id": "ex-a-0012"
+        },
+        {
+          "id": "ex-a-0013"
+        },
+        {
+          "id": "ex-a-0014"
+        },
+        {
+          "id": "ex-a-0015"
+        },
+        {
+          "id": "ex-a-0016"
+        },
+        {
+          "id": "ex-a-0017"
+        },
+        {
+          "id": "ex-a-0018"
+        },
+        {
+          "id": "ex-a-0019"
+        },
+        {
+          "id": "ex-a-0020"
+        },
+        {
+          "id": "ex-a-0021"
+        },
+        {
+          "id": "ex-a-0022"
+        },
+        {
+          "id": "ex-a-0023"
+        },
+        {
+          "id": "ex-a-0024"
+        },
+        {
+          "id": "ex-a-0025"
+        },
+        {
+          "id": "ex-a-0026"
+        },
+        {
+          "id": "ex-a-0027"
+        },
+        {
+          "id": "ex-a-0028"
+        },
+        {
+          "id": "ex-a-0029"
+        },
+        {
+          "id": "ex-a-0030"
+        },
+        {
+          "id": "ex-a-0031"
+        },
+        {
+          "id": "ex-a-0032"
+        },
+        {
+          "id": "ex-a-0033"
+        },
+        {
+          "id": "ex-a-0034"
+        },
+        {
+          "id": "ex-a-0035"
+        },
+        {
+          "id": "ex-a-0036"
+        },
+        {
+          "id": "ex-a-0037"
+        },
+        {
+          "id": "ex-a-0038"
+        },
+        {
+          "id": "ex-a-0039"
+        },
+        {
+          "id": "ex-a-0040"
+        },
+        {
+          "id": "ex-a-0041"
+        },
+        {
+          "id": "ex-a-0042"
+        },
+        {
+          "id": "ex-a-0043"
+        },
+        {
+          "id": "ex-a-0044"
+        },
+        {
+          "id": "ex-a-0045"
+        },
+        {
+          "id": "ex-a-0046"
+        },
+        {
+          "id": "ex-a-1011"
+        },
+        {
+          "id": "ex-a-1012"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "2.196",
+        "playlist_index": 747,
+        "youtube_id": "6k6QwYL6NzA",
+        "title": null
+      },
+      "order": 10
+    },
+    {
+      "id": "les-a-02",
+      "rank": "A",
+      "module": "mod-a-3",
+      "title": "Future Perfect: he'll have finished",
+      "grammar_point": {
+        "id": "gp-a-02",
+        "title_ru": "Завершённость к моменту",
+        "rule_md": "**Future Perfect: will have + V3.**\nЗавершённость к моменту: By next year, he'**ll have finished**.\nМаркеры: by then, by the time, by 2030, in two years.\nShe'**ll have left** by then. = «уже уедет к тому времени».",
+        "phrase_ids": ["ph-a-0032", "ph-a-0033", "ph-a-0034", "ph-a-0035", "ph-a-0036"],
+        "trap_id": "trap-present-perfect"
+      },
+      "vocab_band": {
+        "list": "ngsl-spoken",
+        "from": 5561,
+        "to": 5620
+      },
+      "phrasebook_topic": null,
+      "trap_id": "trap-present-perfect",
+      "quotes_topic": "future",
+      "exercises": [
+        {
+          "id": "ex-a-0047"
+        },
+        {
+          "id": "ex-a-0048"
+        },
+        {
+          "id": "ex-a-0049"
+        },
+        {
+          "id": "ex-a-0050"
+        },
+        {
+          "id": "ex-a-0051"
+        },
+        {
+          "id": "ex-a-0052"
+        },
+        {
+          "id": "ex-a-0053"
+        },
+        {
+          "id": "ex-a-0054"
+        },
+        {
+          "id": "ex-a-0055"
+        },
+        {
+          "id": "ex-a-0056"
+        },
+        {
+          "id": "ex-a-0057"
+        },
+        {
+          "id": "ex-a-0058"
+        },
+        {
+          "id": "ex-a-0059"
+        },
+        {
+          "id": "ex-a-0060"
+        },
+        {
+          "id": "ex-a-0061"
+        },
+        {
+          "id": "ex-a-0062"
+        },
+        {
+          "id": "ex-a-0063"
+        },
+        {
+          "id": "ex-a-0064"
+        },
+        {
+          "id": "ex-a-0065"
+        },
+        {
+          "id": "ex-a-0066"
+        },
+        {
+          "id": "ex-a-0067"
+        },
+        {
+          "id": "ex-a-0068"
+        },
+        {
+          "id": "ex-a-0069"
+        },
+        {
+          "id": "ex-a-0070"
+        },
+        {
+          "id": "ex-a-0071"
+        },
+        {
+          "id": "ex-a-0072"
+        },
+        {
+          "id": "ex-a-0073"
+        },
+        {
+          "id": "ex-a-0074"
+        },
+        {
+          "id": "ex-a-0075"
+        },
+        {
+          "id": "ex-a-0076"
+        },
+        {
+          "id": "ex-a-0077"
+        },
+        {
+          "id": "ex-a-0078"
+        },
+        {
+          "id": "ex-a-0079"
+        },
+        {
+          "id": "ex-a-0080"
+        },
+        {
+          "id": "ex-a-0081"
+        },
+        {
+          "id": "ex-a-0082"
+        },
+        {
+          "id": "ex-a-0083"
+        },
+        {
+          "id": "ex-a-0084"
+        },
+        {
+          "id": "ex-a-0085"
+        },
+        {
+          "id": "ex-a-0086"
+        },
+        {
+          "id": "ex-a-0087"
+        },
+        {
+          "id": "ex-a-0088"
+        },
+        {
+          "id": "ex-a-0089"
+        },
+        {
+          "id": "ex-a-0090"
+        },
+        {
+          "id": "ex-a-0091"
+        },
+        {
+          "id": "ex-a-0092"
+        },
+        {
+          "id": "ex-a-1013"
+        },
+        {
+          "id": "ex-a-1014"
+        }
+      ],
+      "bebris_video": {
+        "lesson": "2.211",
+        "playlist_index": 762,
+        "youtube_id": "JSHrZuAy9uo",
+        "title": null
+      },
+      "order": 11
     },
     {
       "id": "les-a-12",
       "rank": "A",
-      "module": "mod-a-3",
+      "module": "mod-a-4",
       "title": "have something done: мне сделали",
       "grammar_point": {
         "id": "gp-a-12",
@@ -2069,12 +2080,13 @@
         "playlist_index": 885,
         "youtube_id": "NzG1Hio8rO0",
         "title": null
-      }
+      },
+      "order": 12
     },
     {
       "id": "les-a-13",
       "rank": "A",
-      "module": "mod-a-3",
+      "module": "mod-a-4",
       "title": "get used to / feel like doing",
       "grammar_point": {
         "id": "gp-a-13",
@@ -2245,12 +2257,13 @@
         "playlist_index": 885,
         "youtube_id": "NzG1Hio8rO0",
         "title": null
-      }
+      },
+      "order": 13
     },
     {
       "id": "les-a-14",
       "rank": "A",
-      "module": "mod-a-3",
+      "module": "mod-a-4",
       "title": "Сложные relative clauses",
       "grammar_point": {
         "id": "gp-a-14",
@@ -2416,12 +2429,13 @@
           "id": "ex-a-1041"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 14
     },
     {
       "id": "les-a-15",
       "rank": "A",
-      "module": "mod-a-3",
+      "module": "mod-a-4",
       "title": "Повторение №23: контрольная",
       "grammar_point": {
         "id": "gp-a-15",
@@ -2587,12 +2601,13 @@
           "id": "ex-a-1044"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 15
     },
     {
       "id": "les-a-16",
       "rank": "A",
-      "module": "mod-a-3",
+      "module": "mod-a-4",
       "title": "Фразовые глаголы B2",
       "grammar_point": {
         "id": "gp-a-16",
@@ -2763,12 +2778,13 @@
         "playlist_index": 905,
         "youtube_id": "6rFJkFq5f0s",
         "title": null
-      }
+      },
+      "order": 16
     },
     {
       "id": "les-a-17",
       "rank": "A",
-      "module": "mod-a-4",
+      "module": "mod-a-5",
       "title": "Усилители: highly unlikely",
       "grammar_point": {
         "id": "gp-a-17",
@@ -2930,12 +2946,13 @@
         "playlist_index": 873,
         "youtube_id": "cTtcmycgs9o",
         "title": null
-      }
+      },
+      "order": 17
     },
     {
       "id": "les-a-18",
       "rank": "A",
-      "module": "mod-a-4",
+      "module": "mod-a-5",
       "title": "there's no point in…",
       "grammar_point": {
         "id": "gp-a-18",
@@ -3106,12 +3123,13 @@
         "playlist_index": 879,
         "youtube_id": "dmbTKXB2SNY",
         "title": null
-      }
+      },
+      "order": 18
     },
     {
       "id": "les-a-19",
       "rank": "A",
-      "module": "mod-a-4",
+      "module": "mod-a-5",
       "title": "Инверсия: Little did they know",
       "grammar_point": {
         "id": "gp-a-19",
@@ -3282,12 +3300,13 @@
         "playlist_index": 882,
         "youtube_id": "i2cHBmDAuHk",
         "title": null
-      }
+      },
+      "order": 19
     },
     {
       "id": "les-a-20",
       "rank": "A",
-      "module": "mod-a-4",
+      "module": "mod-a-5",
       "title": "Повторение №24: контрольная",
       "grammar_point": {
         "id": "gp-a-20",
@@ -3453,12 +3472,13 @@
           "id": "ex-a-1059"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 20
     },
     {
       "id": "les-a-21",
       "rank": "A",
-      "module": "mod-a-4",
+      "module": "mod-a-5",
       "title": "Капсула: разбор сцены",
       "grammar_point": {
         "id": "gp-a-21",
@@ -3627,12 +3647,13 @@
           "id": "ex-a-1062"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 21
     },
     {
       "id": "les-a-22",
       "rank": "A",
-      "module": "mod-a-4",
+      "module": "mod-a-5",
       "title": "Большое повторение ранга A",
       "grammar_point": {
         "id": "gp-a-22",
@@ -3798,7 +3819,8 @@
           "id": "ex-a-1065"
         }
       ],
-      "bebris_video": null
+      "bebris_video": null,
+      "order": 22
     }
   ]
 }

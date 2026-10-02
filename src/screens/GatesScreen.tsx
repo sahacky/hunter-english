@@ -64,10 +64,12 @@ function mkExercise(
   }
 }
 
-/** Сборка экзамена из данных ранга E (решение M7#1: рантайм-генерация). */
+/** Сборка экзамена из данных ранга (решение M7#1: рантайм-генерация).
+ * Пул фраз — из уроков ранга входа (v2: Past Simple ушёл в D с фразами ph-c-*,
+ * префиксы больше не отражают состав ранга — plan://curriculum-review#V.5). */
 async function buildExam(
   attemptSeed: string,
-  phrasePrefix: string,
+  fromRank: Rank,
   wordsMaxRank: number,
 ): Promise<ExamItem[]> {
   const [allWordNotes, phrases, lessons, wordRanks] = await Promise.all([
@@ -81,7 +83,12 @@ async function buildExam(
   const wordNotes = allWordNotes.filter(
     (note) => (wordRanks.get(note.entityId) ?? 0) <= wordsMaxRank,
   )
-  const rankPhrases = phrases.filter((phrase) => phrase.id.startsWith(phrasePrefix))
+  const rankPhraseIds = new Set(
+    lessons
+      .filter((lesson) => lesson.rank === fromRank)
+      .flatMap((lesson) => lesson.grammar_point.phrase_ids),
+  )
+  const rankPhrases = phrases.filter((phrase) => rankPhraseIds.has(phrase.id))
   const items: ExamItem[] = []
   // Лексика 20: RU → выбор EN из заметок слов
   const words = seededPick(wordNotes, 20, `vocab-${attemptSeed}`)
@@ -138,7 +145,6 @@ async function buildExam(
     )
     items.push({ section: 'speaking', exercise, phrase })
   })
-  void lessons
   return items
 }
 
@@ -177,7 +183,6 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
       to: Rank
       /** ключ попытки в item_progress: целевой ранг, для Финала — 'S-FINAL' (plan://M20#20.4) */
       attemptId: GateId
-      phrasePrefix: string
       wordsTarget: number
       lessonsOkAt: number
       wordsMaxRank: number
@@ -189,7 +194,6 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
       from: 'E',
       to: 'D',
       attemptId: 'D',
-      phrasePrefix: 'ph-e-',
       wordsTarget: 300,
       lessonsOkAt: 5,
       wordsMaxRank: 2809,
@@ -198,25 +202,22 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
       from: 'D',
       to: 'C',
       attemptId: 'C',
-      phrasePrefix: 'ph-d-',
       wordsTarget: 1000,
-      lessonsOkAt: 14,
+      lessonsOkAt: 20,
       wordsMaxRank: 1960,
     },
     'C-B': {
       from: 'C',
       to: 'B',
       attemptId: 'B',
-      phrasePrefix: 'ph-c-',
       wordsTarget: 1800,
-      lessonsOkAt: 15,
+      lessonsOkAt: 10,
       wordsMaxRank: 2809,
     },
     'B-A': {
       from: 'B',
       to: 'A',
       attemptId: 'A',
-      phrasePrefix: 'ph-b-',
       wordsTarget: 2800,
       lessonsOkAt: 15,
       wordsMaxRank: 2809,
@@ -225,7 +226,6 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
       from: 'A',
       to: 'S',
       attemptId: 'S',
-      phrasePrefix: 'ph-a-',
       wordsTarget: 4000,
       lessonsOkAt: 22,
       wordsMaxRank: 2809,
@@ -235,7 +235,6 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
       from: 'S',
       to: 'S',
       attemptId: 'S-FINAL',
-      phrasePrefix: 'ph-s-',
       wordsTarget: 5000,
       lessonsOkAt: 15,
       // весь NGSL-датасет (суб-полоса в экзамен не попадает — ревью M12 М-6)
@@ -284,7 +283,7 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
   const startExam = useCallback(
     async (sections: ExamItem['section'][]) => {
       const seed = `${gateId}-${Date.now()}`
-      const exam = await buildExam(seed, gate.phrasePrefix, gate.wordsMaxRank)
+      const exam = await buildExam(seed, gate.from, gate.wordsMaxRank)
       const filtered = exam.filter((item) => sections.includes(item.section))
       correctRef.current = { vocab: 0, grammar: 0, listening: 0, speaking: 0 }
       setItems(filtered)
