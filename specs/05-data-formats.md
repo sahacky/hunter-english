@@ -188,7 +188,7 @@ data/
 | 8 | `choose_translation` | выбери перевод из 3–4 | recognition |
 | 9 | `match_pairs` | найди пары EN↔RU | recognition |
 | 10 | `find_error` | найди и исправь ошибку | ловушки |
-| 11 | `answer_question` | ответь на вопрос голосом | output |
+| 11 | `answer_question` | ответь на вопрос голосом | output; B-27 «на скорости»: реплика собеседника разговорника (`situation_ru` + `audio`) + `free_form`-самопроверка, эталоны в `answer.accepted` |
 | 12 | `dialog` | диалог-сценка из разговорника | разговор в ситуации |
 | 13 | `verb_tense` | поставь глагол в нужное время по маркеру | времена |
 | 14 | `transform` | трансформация (утверждение → вопрос → отрицание → прошедшее) | drill |
@@ -287,11 +287,14 @@ data/
           "trap_id":   { "type": "string" } } },
       { "$comment": "11 answer_question",
         "type": "object", "additionalProperties": false,
-        "required": ["kind", "question_en", "phrase_id"],
+        "required": ["kind", "question_en"],
         "properties": {
           "kind": { "const": "answer_question" },
           "question_en": { "type": "string" },
-          "phrase_id":   { "type": "string", "description": "эталонный ответ (phrase)" } } },
+          "phrase_id":   { "type": "string", "description": "эталонный ответ (phrase); для сценок разговорника (B-27) не задаётся — ответы в answer.accepted" },
+          "situation_ru": { "type": "string", "description": "сценка: подпись ситуации над репликой собеседника (B-27)" },
+          "audio":       { "type": "string", "pattern": "^audio/", "description": "предзаписанная реплика собеседника (audio/phrasebook/…)" },
+          "free_form":   { "type": "boolean", "description": "самопроверка «Сказал своими словами» сразу — свобода важнее точности (B-27)" } } },
       { "$comment": "12 dialog",
         "type": "object", "additionalProperties": false,
         "required": ["kind", "dialog_id"],
@@ -693,7 +696,7 @@ data/
 - **Минорные** изменения (новое опциональное поле, новые элементы) версию схемы файла **не** поднимают — схемы данных аддитивны.
 - Правило совместимости приложения: код поддерживает текущую и предыдущую мажорные версии; файл с неизвестной версией → предупреждение и отказ от загрузки (не молча).
 - Контентные правки (перевод, новая цитата, новый урок) — просто новые коммиты в `data/`, версия не меняется; откат — средствами git.
-- `content_version: <int>` — в `data/manifest.json` (с генератора `build_manifest.py`): маркер **эпохи программы**. v2 = Past Simple в D / going to → will / ранг A с консолидации (plan://curriculum-review#V.5); v1 — исходная раскладка. На миграцию прогресса не влияет (id стабильны) — это семафор для кэшей и ревью.
+- `content_version: <int>` — в `data/manifest.json` (с генератора `build_manifest.py`): маркер **эпохи программы**. v2 = Past Simple в D / going to → will / ранг A с консолидации (plan://curriculum-review#V.5; в эпоху v2 же добавлен урок B-27, ранг B = 30); v1 — исходная раскладка. На миграцию прогресса не влияет (id стабильны) — это семафор для кэшей и ревью.
 - Манифест сборки (`data/manifest.json`, генерируется пайплайном M3): список файлов, их `schema_version`, количество записей, дата сборки — по нему приложение понимает, что докэшировать (PWA).
 
 ## 8. Пайплайн подготовки (M3) {#data-pipeline}

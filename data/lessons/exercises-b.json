@@ -25652,6 +25652,194 @@
         "skill": "grammar",
         "xp": 3
       }
+    },
+    {
+      "id": "ex-b-1401",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "Let me ___ for a second.",
+        "gap_answers": ["think"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-b-1402",
+      "type": "cloze",
+      "payload": {
+        "kind": "cloze",
+        "text_with_gap": "It's up to ___.",
+        "gap_answers": ["you"]
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "exact"
+      },
+      "meta": {
+        "skill": "grammar",
+        "xp": 2
+      }
+    },
+    {
+      "id": "ex-b-1403",
+      "type": "answer_question",
+      "payload": {
+        "kind": "answer_question",
+        "question_en": "Have you ever been abroad?",
+        "situation_ru": "Раунд 1 из 2 — Путешествия: опыт",
+        "audio": "audio/phrasebook/cori/pb-smalltalk-03-l0.opus",
+        "free_form": true
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "accepted": ["Yes, I have been to three countries.", "I have been to three countries."],
+        "speech_threshold": 0.85,
+        "hint_ru": "Импровизация: засчитывается любой уместный ответ — можно своими словами."
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-b-1404",
+      "type": "answer_question",
+      "payload": {
+        "kind": "answer_question",
+        "question_en": "Which one did you like best?",
+        "situation_ru": "Раунд 1 из 2 — Путешествия: опыт",
+        "audio": "audio/phrasebook/cori/pb-smalltalk-03-l2.opus",
+        "free_form": true
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "accepted": ["Italy, I think.", "Italy, I think. I went there last spring."],
+        "speech_threshold": 0.85,
+        "hint_ru": "Импровизация: засчитывается любой уместный ответ — можно своими словами."
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-b-1405",
+      "type": "answer_question",
+      "payload": {
+        "kind": "answer_question",
+        "question_en": "How long have you been learning English?",
+        "situation_ru": "Раунд 1 из 2 — Путешествия: опыт",
+        "audio": "audio/phrasebook/cori/pb-smalltalk-03-l4.opus",
+        "free_form": true
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "accepted": ["For about two years now.", "Two years."],
+        "speech_threshold": 0.85,
+        "hint_ru": "Импровизация: засчитывается любой уместный ответ — можно своими словами."
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-b-1406",
+      "type": "answer_question",
+      "payload": {
+        "kind": "answer_question",
+        "question_en": "Good evening. A table for two?",
+        "situation_ru": "Раунд 2 из 2 — Заказ в ресторане",
+        "audio": "audio/phrasebook/cori/pb-restaurant-01-l0.opus",
+        "free_form": true
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "accepted": ["Yes, please. We didn't book.", "A table for two, please."],
+        "speech_threshold": 0.85,
+        "hint_ru": "Импровизация: засчитывается любой уместный ответ — можно своими словами."
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-b-1407",
+      "type": "answer_question",
+      "payload": {
+        "kind": "answer_question",
+        "question_en": "This way, please. Here is the menu.",
+        "situation_ru": "Раунд 2 из 2 — Заказ в ресторане",
+        "audio": "audio/phrasebook/cori/pb-restaurant-01-l2.opus",
+        "free_form": true
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "accepted": ["What do you recommend?"],
+        "speech_threshold": 0.85,
+        "hint_ru": "Импровизация: засчитывается любой уместный ответ — можно своими словами."
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-b-1408",
+      "type": "answer_question",
+      "payload": {
+        "kind": "answer_question",
+        "question_en": "No problem, the kitchen will be careful. Anything to drink?",
+        "situation_ru": "Раунд 2 из 2 — Заказ в ресторане",
+        "audio": "audio/phrasebook/cori/pb-restaurant-01-l6.opus",
+        "free_form": true
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "accepted": ["Sparkling water, please."],
+        "speech_threshold": 0.85,
+        "hint_ru": "Импровизация: засчитывается любой уместный ответ — можно своими словами."
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-b-1409",
+      "type": "answer_question",
+      "payload": {
+        "kind": "answer_question",
+        "question_en": "Of course. Everything was OK?",
+        "situation_ru": "Раунд 2 из 2 — Заказ в ресторане",
+        "audio": "audio/phrasebook/cori/pb-restaurant-01-l10.opus",
+        "free_form": true
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "accepted": ["Everything was delicious.", "Everything was delicious. Keep the change."],
+        "speech_threshold": 0.85,
+        "hint_ru": "Импровизация: засчитывается любой уместный ответ — можно своими словами."
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
     }
   ]
 }

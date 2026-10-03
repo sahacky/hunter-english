@@ -672,6 +672,77 @@ describe('ExerciseView: хвосты (M19)', () => {
     fireEvent.submit(input.closest('form')!) // пустое значение — guard
     expect(screen.queryByText(/Верно|Неверно/)).not.toBeInTheDocument()
   })
+
+  it('сценка B-27: ситуация, аудио собеседника, подсказка и «Сказал своими словами» сразу', async () => {
+    speechMock.supported = true
+    speechMock.heard = null
+    const scene = ex('answer_question', {
+      question_en: 'Have you ever been abroad?',
+      situation_ru: 'Раунд 1 из 2 — Путешествия: опыт',
+      audio: 'audio/phrasebook/cori/pb-smalltalk-03-l0.opus',
+      free_form: true,
+    })
+    scene.answer = {
+      normalization: 'default',
+      typo: 'allow',
+      accepted: ['Yes, I have been to three countries.', 'I have been to three countries.'],
+      speech_threshold: 0.85,
+      hint_ru: 'Импровизация: засчитывается любой уместный ответ — можно своими словами.',
+    }
+    const s = spy()
+    render(
+      <VoiceExercise
+        mode="answer"
+        exercise={scene}
+        phrase={null}
+        trap={null}
+        onAnswer={s.onAnswer}
+        onDispute={s.onDispute}
+        onNext={s.onNext}
+      />,
+    )
+    expect(screen.getByText('Раунд 1 из 2 — Путешествия: опыт')).toBeInTheDocument()
+    expect(screen.getByText('Have you ever been abroad?')).toBeInTheDocument()
+    expect(screen.getByText(/Импровизация: засчитывается любой/)).toBeInTheDocument()
+    // предзаписанная реплика собеседника — кнопки 🔊/🐢 без лимита прослушиваний
+    expect(screen.getByRole('button', { name: /🔊/ })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: /🐢/ })).toBeInTheDocument()
+    // микрофон доступен и попыток 0, но free_form: самопроверка сразу (B-27)
+    fireEvent.click(screen.getByRole('button', { name: 'Сказал своими словами' }))
+    expect(s.calls).toEqual([{ outcome: 'self_reported', attempts: 1 }])
+    expect(s.onNext).toHaveBeenCalledTimes(1)
+  })
+
+  it('сценка B-27: голос дал верный ответ → correct (эталоны из accepted[])', async () => {
+    speechMock.supported = true
+    speechMock.heard = 'Yes, I have been to three countries.'
+    const scene = ex('answer_question', {
+      question_en: 'Have you ever been abroad?',
+      situation_ru: 'Раунд 1 из 2 — Путешествия: опыт',
+      free_form: true,
+    })
+    scene.answer = {
+      normalization: 'default',
+      typo: 'allow',
+      accepted: ['Yes, I have been to three countries.'],
+      speech_threshold: 0.85,
+    }
+    const s = spy()
+    render(
+      <VoiceExercise
+        mode="answer"
+        exercise={scene}
+        phrase={null}
+        trap={null}
+        onAnswer={s.onAnswer}
+        onDispute={s.onDispute}
+        onNext={s.onNext}
+      />,
+    )
+    fireEvent.click(screen.getByRole('button', { name: /Скажи/ }))
+    expect(await screen.findByText('Верно!')).toBeInTheDocument()
+    expect(s.calls).toEqual([{ outcome: 'correct', attempts: 1 }])
+  })
 })
 
 // Implements: план M21#21.4 (веха S4) — хвосты покрытия ExerciseView

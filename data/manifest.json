@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "content_version": 2,
-  "generated_at": "2026-10-02T13:23:52Z",
+  "generated_at": "2026-10-03T08:11:48Z",
   "files": [
     {
       "path": "lessons/exercises-a.json",
@@ -14,8 +14,8 @@
       "path": "lessons/exercises-b.json",
       "kind": "exercises",
       "schema_version": 1,
-      "items": 1400,
-      "sha256": "3cae9492daf375c551b5d977f1ceed78b458897e87b161cdf6efcaf7c61ac3a3"
+      "items": 1409,
+      "sha256": "140045de1ff7c3b9b155c0bb670bc48d63be7351f75809ed9787fc98defa283d"
     },
     {
       "path": "lessons/exercises-c.json",
@@ -56,8 +56,8 @@
       "path": "lessons/lessons-b.json",
       "kind": "lessons",
       "schema_version": 1,
-      "items": 29,
-      "sha256": "0a91fba17b7417941b29a43c3d3131b9a12b2f5435110373ff18f1e3e516a1af"
+      "items": 30,
+      "sha256": "98aacda5162df6a2e1eabbf4172264c0e3d7601ddf86bc6a3113ca0d5820529a"
     },
     {
       "path": "lessons/lessons-c.json",

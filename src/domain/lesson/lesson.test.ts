@@ -175,6 +175,21 @@ describe('recordAnswer и переходы шагов', () => {
     expect(next?.stepIndex).toBe(2)
   })
 
+  it('переход перескакивает пропущенные блоки шаблона (B-27: правило → речь → колода)', () => {
+    // groupIntoSteps пропускает пустые блоки: у сценочного урока шаги 1, 5, 7
+    const steps = [
+      { index: 1, kind: 'rule' as const, exerciseIds: ['ex-cloze-1'] },
+      { index: 5, kind: 'speaking' as const, exerciseIds: ['ex-aq-1'] },
+      { index: 7, kind: 'deck' as const, exerciseIds: [] },
+    ]
+    let cp = createCheckpoint()
+    cp = recordAnswer(cp, steps, 'ex-cloze-1', 'correct', 1)
+    cp = advanceStep(cp, steps)!
+    expect(cp.stepIndex).toBe(5)
+    cp = recordAnswer(cp, steps, 'ex-aq-1', 'self_reported', 1)
+    expect(advanceStep(cp, steps)?.stepIndex).toBe(7)
+  })
+
   it('шаг 7 «В колоду» без заданий завершается явным finishPass', () => {
     let cp = createCheckpoint()
     cp = { ...cp, stepIndex: 7 }
