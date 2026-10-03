@@ -101,6 +101,34 @@ describe('LessonScreen /#/lesson/:id', () => {
     })
   })
 
+  it('B-27: правило → 2 cloze → сразу «Речь»-сценки (пустые блоки пропущены)', async () => {
+    renderScreen('B-27')
+    expect(
+      await screen.findByText('Диалог без подготовки', {}, { timeout: 4000 }),
+    ).toBeInTheDocument()
+    // примеры правила — фразы других уроков B (кросс-урочный резолв)
+    expect(screen.getByText('It depends.')).toBeInTheDocument()
+    expect(screen.getByText("It's up to you.")).toBeInTheDocument()
+    expect(screen.getByText('Maybe next time.')).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: /Понятно/ }))
+    // 2 cloze правила
+    for (const gap of ['think', 'you']) {
+      const input = await screen.findByRole('textbox')
+      fireEvent.change(input, { target: { value: gap } })
+      fireEvent.click(screen.getByRole('button', { name: /Проверить/ }))
+      expect(await screen.findByText('Верно!')).toBeInTheDocument()
+      fireEvent.click(screen.getByRole('button', { name: /^Дальше/ }))
+    }
+    // разогрев/построение/слух пусты: «Речь» — шаг 2 из 3, первая сценка
+    expect(await screen.findByText('Речь · шаг 2 из 3')).toBeInTheDocument()
+    expect(screen.getByText('Раунд 1 из 2 — Путешествия: опыт')).toBeInTheDocument()
+    expect(screen.getByText('Have you ever been abroad?')).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: 'Сказал своими словами' })).toBeInTheDocument()
+    // самопроверка проходит сцену без распознавания (свобода важнее точности)
+    fireEvent.click(screen.getByRole('button', { name: 'Сказал своими словами' }))
+    expect(await screen.findByText('Which one did you like best?')).toBeInTheDocument()
+  })
+
   it('guard «Продолжить» при незавершённом уроке (specs/07 §4.4)', async () => {
     // готовая запись с шага 3
     await repo.putLessonProgress({

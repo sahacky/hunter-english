@@ -97,6 +97,7 @@
     "speechUnavailable": "Microphone unavailable in this browser — type it or self-check",
     "typeInstead": "Type instead",
     "saidIt": "Said it",
+    "saidItFree": "Said it in my own words",
     "voiceFallbackPrompt": "Type the phrase",
     "voiceRetry": "Didn't catch that. Try again.",
     "voiceRetryHint": "Unlimited attempts; you can type it or self-check",

@@ -104,9 +104,12 @@ export function advanceStep(
 ): LessonCheckpoint | null {
   const evaluation = currentStepEvaluation(checkpoint, steps)
   if (!evaluation || !evaluation.passed) return null
-  const nextIndex = checkpoint.stepIndex + 1
-  const next = findStep(steps, nextIndex)
-  return next ? { ...checkpoint, stepIndex: nextIndex } : null
+  // Пустые блоки шаблона пропускаются группировкой (groupIntoSteps): следующий
+  // шаг — первый с бОльшим индексом, а не строго index+1. Уроки с сокращённым
+  // шаблоном (B-27 сценки: правило → речь → колода; S-13 без «Из сериала»)
+  // иначе застревают на границе пропущенного блока.
+  const next = steps.find((step) => step.index > checkpoint.stepIndex)
+  return next ? { ...checkpoint, stepIndex: next.index } : null
 }
 
 /** Завершает проход: фиксирует точность, сбрасывает позицию на проход +1 / шаг 1. */

@@ -589,7 +589,11 @@ export default function LessonScreen({
             <p className="dim">{t('lesson.repeatNote')}</p>
           </>
         ) : (
-          <p>{t('lesson.resumePrompt', { step: phase.stepIndex })}</p>
+          <p>
+            {t('lesson.resumePrompt', {
+              step: Math.max(1, view.steps.findIndex((s) => s.index === phase.stepIndex) + 1),
+            })}
+          </p>
         )}
         <div className="lesson-actions">
           <button
@@ -722,13 +726,19 @@ export default function LessonScreen({
   // --- активный шаг ----------------------------------------------------------
   const current = stepExercises[exerciseIndex]
   const isRuleStep = step?.kind === 'rule'
+  // позиция шага в уроке (пустые блоки шаблона пропускаются — B-27: 1,5,7 → 1,2,3);
+  // синтетический вид без текущего шага (тесты) — считаем первой
+  const stepPosition = Math.max(
+    1,
+    view.steps.findIndex((s) => s.index === checkpoint.stepIndex) + 1,
+  )
   return (
     <section className="panel lesson-panel">
       <header className="lesson-head">
         <h2 lang="ru">{view.lesson.title}</h2>
         <p className="dim">
           {t(`lesson.steps.${step?.kind ?? 'rule'}`)} ·{' '}
-          {t('lesson.stepProgress', { current: checkpoint.stepIndex, total: view.steps.length })}
+          {t('lesson.stepProgress', { current: stepPosition, total: view.steps.length })}
         </p>
         <button type="button" className="srs-finish" onClick={() => setConfirmExit(true)}>
           ✕ {t('lesson.exit')}
@@ -741,7 +751,7 @@ export default function LessonScreen({
           role="alertdialog"
           aria-label={t('lesson.exitConfirmTitle')}
         >
-          <span>{t('lesson.exitConfirm', { step: checkpoint.stepIndex })}</span>
+          <span>{t('lesson.exitConfirm', { step: stepPosition })}</span>
           <span className="srs-actions">
             <button type="button" className="srs-btn" onClick={() => setConfirmExit(false)}>
               {t('lesson.exitCancel')}

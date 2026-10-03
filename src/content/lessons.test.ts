@@ -289,10 +289,19 @@ describe('loadLessonView (реальные data/ ранга E)', () => {
     expect(phrases.every(({ audio }) => audio?.en_gb?.startsWith('audio/phrases/cori/'))).toBe(true)
 
     const lessons = await loadLessons()
-    // v2 (программа v2): E (24) + D (39, вкл. Past Simple/PC) + C (19) + B (29) + A (22) + S (15)
-    expect(lessons.length).toBe(148)
+    // v2 (программа v2): E (24) + D (39, вкл. Past Simple/PC) + C (19) + B (30) + A (22) + S (15)
+    expect(lessons.length).toBe(149)
     const phraseById = new Set(phrases.map(({ id }) => id))
     for (const lesson of lessons) {
+      // B-27 — сценочный урок разговорника (specs/01 §8): своего пула дрилл-фраз нет,
+      // правило ссылается на 3 фразы-примера других уроков B
+      if (lesson.id === 'les-b-27') {
+        expect(lesson.grammar_point.phrase_ids).toHaveLength(3)
+        for (const pid of lesson.grammar_point.phrase_ids) {
+          expect(phraseById.has(pid), `${lesson.id} → ${pid}`).toBe(true)
+        }
+        continue
+      }
       const lessonPhrases = phrases.filter(
         ({ grammar_point_id }) => grammar_point_id === lesson.grammar_point.id,
       )
@@ -307,7 +316,7 @@ describe('loadLessonView (реальные data/ ранга E)', () => {
 
   it('порядок курса: E → D → C → B → A → S, внутри ранга — по order (программа v2)', async () => {
     const lessons = await loadLessons()
-    expect(lessons.length).toBe(148)
+    expect(lessons.length).toBe(149)
     expect(lessons[0]!.id).toBe('les-e-01')
     expect(lessons.at(-1)!.id).toBe('les-s-15')
     const rankSeq = lessons.map(({ rank }) => rank)
@@ -389,7 +398,7 @@ describe('loadLessonView (реальные data/ ранга E)', () => {
     // v2: Past Simple-блок и Past Continuous ушли в конец D — в C 19 уроков
     expect(c).toHaveLength(19)
     const b = lessons.filter((lesson) => lesson.rank === 'B')
-    expect(b).toHaveLength(29)
+    expect(b).toHaveLength(30)
     const a = lessons.filter((lesson) => lesson.rank === 'A')
     expect(a).toHaveLength(22)
     expect(c.every((lesson) => lesson.module.startsWith('mod-c-'))).toBe(true)
@@ -425,6 +434,52 @@ describe('loadLessonView (реальные data/ ранга E)', () => {
     const topics = new Set(lessons.map((lesson) => lesson.phrasebook_topic).filter(Boolean))
     for (const t of ['passport', 'restaurant', 'pharmacy', 'airport'])
       expect(topics.has(t), t).toBe(true)
+  })
+
+  it('B-27 «диалог-сценки на скорости»: правило + 2 раунда сцен разговорника (specs/01 §8)', async () => {
+    const lessons = await loadLessons()
+    const b = lessons.filter((lesson) => lesson.rank === 'B')
+    // B-27 встал между b-26 и b-28 (order-миграция v2 без смены id)
+    expect(b.slice(25, 28).map((lesson) => lesson.id)).toEqual(['les-b-26', 'les-b-27', 'les-b-28'])
+    expect(b.map((lesson) => lesson.order)).toEqual([...Array(30).keys()].map((i) => i + 1))
+    const view = await loadLessonView('les-b-27')
+    if (!view) throw new Error('нет данных урока les-b-27')
+    // шаблон сокращён естественным образом: правило → речь (сценки) → колода
+    expect(view.steps.map(({ kind }) => kind)).toEqual(['rule', 'speaking', 'deck'])
+    expect(view.content[1]!.every(({ exercise }) => exercise.type === 'cloze')).toBe(true)
+    const scenes = view.content[5]!
+    expect(scenes).toHaveLength(7)
+    expect(scenes.every(({ exercise }) => exercise.type === 'answer_question')).toBe(true)
+    // 2 раунда = 2 ситуации разговорника (фиксируются в данных, specs/01 §8)
+    const situations = new Set(
+      scenes.map(({ exercise }) => (exercise.payload as Record<string, unknown>).situation_ru),
+    )
+    expect(situations.size).toBe(2)
+    // фразы-примеры правила пришиты из других уроков B — доступны экрану
+    // (RuleCard с озвучкой, шаг 7 «В колоду»), своего пула у сцен нет
+    for (const pid of view.lesson.grammar_point.phrase_ids) {
+      const phrase = view.phrasesById[pid]
+      expect(phrase, pid).toBeTruthy()
+      expect(phrase.audio?.en_gb).toMatch(/^audio\/phrases\/cori\//)
+    }
+    expect(Object.keys(view.phrasesById)).toHaveLength(3)
+    for (const { exercise } of scenes) {
+      const payload = exercise.payload as unknown as {
+        question_en: string
+        situation_ru: string
+        audio: string
+        free_form: boolean
+      }
+      expect(payload.question_en.length).toBeGreaterThan(0)
+      expect(payload.situation_ru.length).toBeGreaterThan(0)
+      // реплика собеседника — предзаписанное аудио разговорника, без новых файлов
+      expect(payload.audio).toMatch(/^audio\/phrasebook\/cori\/pb-/)
+      expect(payload.free_form).toBe(true)
+      expect(exercise.answer.accepted?.length).toBeGreaterThanOrEqual(1)
+      expect(exercise.answer.speech_threshold).toBe(0.85)
+      expect(exercise.answer.hint_ru).toBeTruthy()
+      expect(exercise.meta.skill).toBe('speaking')
+    }
   })
 })
 
