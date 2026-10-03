@@ -41,7 +41,7 @@ export interface StepScore {
   total: number
   /** Отвечено (включая «неверно» и «пропуск» — они двигают урок дальше, specs/02 §3). */
   answered: number
-  /** Верно с первой попытки (correct/disputed/self_reported). */
+  /** Верно с первой попытки (correct/disputed; self_reported — только XP, specs/02 §3). */
   firstTryCorrect: number
 }
 
