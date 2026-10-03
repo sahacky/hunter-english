@@ -142,8 +142,8 @@ describe('PathScreen', () => {
     expect(screen.getByText(/Ранг E \(A0\) · 1\/24 уроков/)).toBeInTheDocument()
     expect(screen.getByText(/ты здесь/)).toBeInTheDocument()
     expect(screen.getAllByText(/Ранг S/).length).toBeGreaterThan(0)
-    // locked-уроки рендерятся span'ами (не ссылками)
-    const spans = document.querySelectorAll('.lesson-path-row span.dim')
+    // locked-уроки рендерятся span'ами (не ссылками) с 🔒-бейджем (ux-фикс тёмной темы)
+    const spans = document.querySelectorAll('.lesson-path-row .lesson-path-lockrow')
     expect(spans.length).toBeGreaterThan(0)
   })
 

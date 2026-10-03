@@ -176,6 +176,8 @@ body {
   font-weight: 900;
   letter-spacing: 0.02em;
   color: var(--primary-deep);
+  /* ссылка на главную (ux-feedback-3) — без ссылочного стиля */
+  text-decoration: none;
 }
 
 .app-nav {
@@ -1349,7 +1351,22 @@ body {
 }
 
 .lesson-path-locked {
-  opacity: 0.65;
+  opacity: 0.8;
+}
+
+/* фидбей ux: «закрыто» не читалось в тёмной теме (dim × opacity гасили текст) */
+.lesson-path-locked .path-meta {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.lesson-path-lockrow {
+  cursor: default;
+}
+
+.path-go-off {
+  background: var(--surface-2);
+  color: var(--text-dim);
 }
 
 /* plan://ux-feedback-2#U.3 — страница-знакомства: иллюстрация по центру */

@@ -17,6 +17,12 @@ function renderLayout(route = '/') {
 }
 
 describe('Layout', () => {
+  it('лейбл «Hunter English» — ссылка на главную (ux-feedback-3)', () => {
+    renderLayout('/srs')
+    const label = screen.getByRole('link', { name: 'Hunter English' })
+    expect(label).toHaveAttribute('href', '/')
+  })
+
   it('рендерит десктоп-навигацию (9 пунктов, вкл. Слушать)', () => {
     renderLayout()
     const nav = screen.getByRole('navigation', { name: 'Основная навигация' })

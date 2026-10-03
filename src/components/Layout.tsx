@@ -1,4 +1,4 @@
-import { NavLink, Outlet } from 'react-router-dom'
+import { Link, NavLink, Outlet } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { OnlineBadge } from './OnlineBadge'
 import { BookIcon, CardsIcon, GatesIcon, GearIcon, ShieldIcon } from './icons'
@@ -29,7 +29,11 @@ export function Layout() {
   return (
     <div className="app-shell">
       <header className="app-header">
-        <span className="app-title">{t('app.title')}</span>
+        {/* лейбл — ссылка на главную (фидбей ux-feedback-3: «жму Hunter English —
+            жду дашборд»); h1 не нужен: заголовок страницы рендерит каждый экран */}
+        <Link className="app-title" to="/" aria-label={t('app.title')}>
+          {t('app.title')}
+        </Link>
         <OnlineBadge />
         <nav className="app-nav" aria-label={t('nav.label')}>
           {NAV.map((item) => (
