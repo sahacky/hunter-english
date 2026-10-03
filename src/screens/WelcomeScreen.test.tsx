@@ -21,6 +21,7 @@ function fakeRepo() {
   }
   const repo: ProgressRepository = {
     ensureCards: async () => undefined,
+    unsuspendNotes: async () => {},
     suspendNotes: async (ids) => {
       state.suspended.push(...ids)
     },

@@ -46,6 +46,32 @@ export class DexieProgressRepository implements ProgressRepository {
     })
   }
 
+  async unsuspendNotes(noteIds: string[]): Promise<void> {
+    // Implements: plan://curriculum-review#U3.2 — миграция v1-флора оценки:
+    // вернуть в колоду слова полосы текущего ранга (зеркало suspendNotes)
+    if (noteIds.length === 0) return
+    await this.db.transaction('rw', this.db.card_states, this.db.sync_queue, async () => {
+      const rows = await this.db.card_states
+        .where('note_id')
+        .anyOf(noteIds)
+        .filter((row) => row.user_id === getCurrentUserId() && row.suspended)
+        .toArray()
+      if (rows.length === 0) return
+      const updated = rows.map((row) => ({ ...row, suspended: false }))
+      await this.db.card_states.bulkPut(updated)
+      const created_at = new Date().toISOString()
+      await this.db.sync_queue.bulkAdd(
+        updated.map((row) => ({
+          table: 'card_states' as const,
+          op: 'upsert' as const,
+          payload: row,
+          tries: 0,
+          created_at,
+        })),
+      )
+    })
+  }
+
   async suspendNotes(noteIds: string[]): Promise<void> {
     // Implements: plan://onboarding#O.3 — suspend идемпотентен: повторный вызов
     // не меняет уже скрытые карточки; в sync_queue уходит по одному снимку на карточку

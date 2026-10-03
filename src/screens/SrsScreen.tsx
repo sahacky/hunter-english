@@ -19,6 +19,7 @@ import {
   makeWordBandFilter,
 } from '../content/words'
 import { loadPhraseNotes } from '../content/lessons'
+import { fixV1WordFloor, floorV2Done } from '../data/migrations'
 import type { ProgressRepository } from '../domain/progress'
 import { DexieProgressRepository } from '../data/progress-repository'
 import { uuidv7 } from '../lib/uuidv7'
@@ -81,6 +82,12 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
         // но заметки нужны для разрешения note_id → контент в очереди повторения.
         const phraseNotes = notes ? [] : await loadPhraseNotes()
         const allNotes = [...wordNotes, ...phraseNotes]
+        // U3.2-миграция (одноразовая): v1-флор оценки скрыл полосу текущего
+        // ранга — вернуть её, иначе новые слова не придут вовсе
+        if (!floorV2Done() && !notes) {
+          const [st, rk] = await Promise.all([repo.getStats(), loadWordRanks()])
+          await fixV1WordFloor(repo, st.rank, rk)
+        }
         // rule-1: при первом запуске материализуем первую карточку каждой заметки СЛОВ
         // (фразы материализует урок — specs/02 §2 шаг 7, не здесь)
         await repo.ensureCards(createFirstCards(wordNotes, new Date()))

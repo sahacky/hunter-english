@@ -13,6 +13,8 @@ export interface ProgressRepository {
   getAllCards(): Promise<CardState[]>
   /** Скрыть карточки заметок из колоды (suspend: стартовая полоса оценки, plan://onboarding#O.3). */
   suspendNotes(noteIds: string[]): Promise<void>
+  /** Снять suspend (миграция v1-флора — U3.2). */
+  unsuspendNotes(noteIds: string[]): Promise<void>
   /** Ответ: upsert card_state + append review_log — одна транзакция (specs/06 §1). */
   saveAnswer(next: CardState, log: ReviewLogEntry): Promise<void>
   /**

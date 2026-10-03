@@ -31,6 +31,7 @@ function fakeRepo(): ProgressRepository & {
     suspendNotes: async (noteIds) => {
       state.suspended.push(...noteIds)
     },
+    unsuspendNotes: async () => {},
     getAllCards: async () => [],
     saveAnswer: async (_next: never, _log: never) => undefined,
     countNewAnsweredSince: async () => 0,
