@@ -176,6 +176,8 @@ body {
   font-weight: 900;
   letter-spacing: 0.02em;
   color: var(--primary-deep);
+  /* ссылка на главную (ux-feedback-3) — без ссылочного стиля */
+  text-decoration: none;
 }
 
 .app-nav {
