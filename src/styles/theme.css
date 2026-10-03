@@ -779,6 +779,21 @@ body {
   gap: 16px;
 }
 
+/* фидбей ux: квест + статус рядом на одной линии — компактнее, и сразу видно
+   и состояние квеста, и кнопку «начать»; на узких экранах — снова в столбец */
+.dash-top {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 16px;
+  align-items: stretch;
+}
+
+@media (max-width: 767px) {
+  .dash-top {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
 /* строки квеста: карточки-пилюли, выполненные — mint (превью B) */
 .dash-quest-list {
   list-style: none;
@@ -1303,6 +1318,7 @@ body {
   flex: none;
   display: grid;
   place-items: center;
+  line-height: 1;
   border-radius: 14px;
   background: var(--surface-2);
   color: var(--text-dim);
@@ -1344,6 +1360,7 @@ body {
   flex: none;
   display: grid;
   place-items: center;
+  line-height: 1; /* глифы →/🔒 стояли на базовой линии и «уезжали» из центра */
   border-radius: 50%;
   background: var(--mint);
   color: var(--primary-deep);
