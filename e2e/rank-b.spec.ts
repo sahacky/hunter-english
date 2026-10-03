@@ -50,9 +50,19 @@ test('lesson B-20 passive voice opens', async ({ page }) => {
   await expect(page.getByText(/be \+ V3/).first()).toBeVisible()
 })
 
+test('lesson B-27 speed scenes opens with rule (specs/01 §8)', async ({ page }) => {
+  await page.goto('/#/lesson/B-27')
+  await expect(page.getByRole('heading', { name: 'Диалог-сценки на скорости' })).toBeVisible({
+    timeout: 8000,
+  })
+  // правило «пример до термина»: живой обмен → термин → правила скорости
+  await expect(page.getByText(/диалог-сценка на скорости/).first()).toBeVisible()
+  await expect(page.getByText(/своими словами можно всегда/).first()).toBeVisible()
+})
+
 test('gates B-A: intro with rank B checklist (plan://M15#15.4)', async ({ page }) => {
   await page.goto('/#/gates/B-A')
   await expect(page.getByRole('heading', { name: 'Врата B → A' })).toBeVisible({ timeout: 8000 })
-  await expect(page.getByText(/Уроки ранга B: \d+ \/ 29/)).toBeVisible()
+  await expect(page.getByText(/Уроки ранга B: \d+ \/ 30/)).toBeVisible()
   await expect(page.getByText(/Слова \(надёжно\): \d+ \/ 2800/)).toBeVisible()
 })
