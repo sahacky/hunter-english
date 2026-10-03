@@ -134,13 +134,17 @@ export default function PathScreen({ repo: repoProp }: { repo?: ProgressReposito
                       .join(' ')}
                   >
                     {row.status === 'locked' ? (
-                      <span className="dim" aria-label={t('path.status.locked')}>
+                      <span className="lesson-path-lockrow" aria-label={t('path.status.locked')}>
                         <span className="path-num" aria-hidden="true">
                           {icon}
                         </span>
                         <span className="path-name">
                           {row.lesson.title}
                           <span className="path-meta">{t('path.status.locked')}</span>
+                        </span>
+                        {/* симметрия со стрелкой доступных строк — иначе строка «едет» */}
+                        <span className="path-go path-go-off" aria-hidden="true">
+                          🔒
                         </span>
                       </span>
                     ) : (
