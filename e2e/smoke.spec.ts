@@ -123,7 +123,7 @@ test('listen screen: understood quotes playlist with day counter (plan://curricu
   await expect(page.getByText(/Сегодня: 0 \/ 20 мин/)).toBeVisible()
   await expect(page.getByText(/понятых цитат/)).toBeVisible()
   await expect(page.getByRole('button', { name: /Играть всё/ })).toBeVisible()
-  // ручная отметка добивает счётчик
-  await page.getByRole('button', { name: /вне приложения/ }).click()
+  // ручные минуты (U3.1): +20 добивает счётчик, −5 корректирует
+  await page.getByRole('button', { name: '+20' }).click()
   await expect(page.getByText(/Сегодня: 20 \/ 20 мин/)).toBeVisible()
 })

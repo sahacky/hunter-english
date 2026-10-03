@@ -163,7 +163,8 @@ describe('WelcomeScreen', () => {
     await waitFor(() => expect(window.location.hash).toBe('#/'))
     expect(state.stats.rank).toBe('D')
     expect(state.lessons.get('les-e-01')?.status).toBe('completed')
-    expect(state.suspended).toEqual(['note_fine-adjective']) // 500 ≤ 1000
+    // U3.2: старт D скрывает полосу НИЖЕ ранга (≤300): fine(500) — уже полоса D, учим
+    expect(state.suspended).toEqual([])
     expect(JSON.parse(localStorage.getItem(PLACEMENT_INFO_KEY)!)).toMatchObject({
       rank: 'D',
       mode: 'waive',

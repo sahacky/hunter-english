@@ -12,13 +12,19 @@ import {
   type QueueItem,
 } from '../domain/srs/scheduler'
 import type { Note, QueueEntry, SessionPlan } from '../domain/srs/types'
-import { createFirstCards, loadWordNotes } from '../content/words'
+import {
+  createFirstCards,
+  loadWordNotes,
+  loadWordRanks,
+  makeWordBandFilter,
+} from '../content/words'
 import { loadPhraseNotes } from '../content/lessons'
 import type { ProgressRepository } from '../domain/progress'
 import { DexieProgressRepository } from '../data/progress-repository'
 import { uuidv7 } from '../lib/uuidv7'
 import { speak, stopSpeak } from '../lib/tts'
 import { anySlotDone, awardXp, closeStudyDay } from '../domain/game/award'
+import { RANK_WORD_TARGET, rankOfFreq } from '../domain/game/game'
 import { useSettings } from '../state/settings'
 import { showToast } from '../lib/toast'
 
@@ -49,6 +55,8 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
   const [answeredInBlock, setAnsweredInBlock] = useState(0)
   const [confirmExit, setConfirmExit] = useState(false)
   const [sessionId] = useState(() => uuidv7())
+  // Ранги слов для бейджа «Полоса ранга X» (U3.2); null — инъекция notes (тесты)
+  const [wordRanks, setWordRanks] = useState<Map<string, number> | null>(null)
   // Защита от двойного ответа, пока saveAnswer в полёте (review_log append-only —
   // дубль нельзя перезаписать, specs/06 §1)
   const busyRef = useRef(false)
@@ -76,8 +84,23 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
         // rule-1: при первом запуске материализуем первую карточку каждой заметки СЛОВ
         // (фразы материализует урок — specs/02 §2 шаг 7, не здесь)
         await repo.ensureCards(createFirstCards(wordNotes, new Date()))
-        const cards = await repo.getAllCards()
+        const [cards, stats, ranksMap] = await Promise.all([
+          repo.getAllCards(),
+          notes ? Promise.resolve(null) : repo.getStats(),
+          notes ? Promise.resolve(null) : loadWordRanks(),
+        ])
         const byId = new Map(allNotes.map((note) => [note.id, note]))
+        // U3.2: новые слова — только из полосы текущего ранга (связь с уроками:
+        // полоса ранга = лексика изучаемых уроков); повторы/пробуждения не фильтруем
+        const wordCeiling = stats && ranksMap ? RANK_WORD_TARGET[stats.rank] : null
+        const allowNew =
+          wordCeiling !== null
+            ? makeWordBandFilter(
+                wordCeiling,
+                ranksMap!,
+                new Map(allNotes.map((note) => [note.id, note.entityId])),
+              )
+            : undefined
         const items: QueueItem[] = cards
           .map((card) => {
             const note = byId.get(card.note_id)
@@ -92,8 +115,10 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
         const nextPlan = buildQueue(items, {
           now,
           baseNewLimit: Math.max(0, settings.newPerDay - newShownToday),
+          allowNew,
         })
         if (!alive) return
+        setWordRanks(ranksMap)
         setPlan(nextPlan)
         setQueue(nextPlan.entries)
         cardShownAt.current = Date.now()
@@ -184,6 +209,11 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
   )
 
   const entry = queue[0]
+  // Полоса ранга слова на карточке (U3.2): субтитровое/без ранга — полоса S
+  const bandRank =
+    entry && wordRanks
+      ? rankOfFreq(wordRanks.get(entry.note.entityId) ?? Number.POSITIVE_INFINITY)
+      : null
 
   useEffect(() => {
     if (phase.kind !== 'review') return
@@ -343,6 +373,9 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
       {plan && plan.debt > 200 && <p className="srs-warning">{t('srs.loadReduced')}</p>}
 
       <div className="srs-card">
+        {entry.note.deck === 'words' && bandRank && (
+          <p className="dim srs-band">{t('srs.band', { rank: bandRank })}</p>
+        )}
         <p className="srs-front" lang="en">
           {entry.note.en}
         </p>

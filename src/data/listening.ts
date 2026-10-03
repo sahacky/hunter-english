@@ -15,6 +15,36 @@ export function questWithListening(row: QuestDayState): QuestDayState {
 }
 
 /**
+ * Ручная корректировка минут «вне приложения» (U3.1): дельта может быть
+ * отрицательной (ошибся/нажал лишнего). Ручная доля хранится отдельно
+ * (`manual`), автосчёт tts-sink не трогаем; границы: manual ≥ 0, done ≥ 0.
+ */
+export async function addManualListeningSeconds(
+  repo: ProgressRepository,
+  deltaSec: number,
+  now: Date = new Date(),
+): Promise<void> {
+  if (!Number.isFinite(deltaSec) || deltaSec === 0) return
+  const dayIso = dayStart(now).toISOString()
+  const existing = await repo.getQuestDay(dayIso)
+  const row = questWithListening(existing ?? createQuestDay(dayIso, 0))
+  const prevManual = row.slots.listening.manual ?? 0
+  const manual = Math.max(0, prevManual + deltaSec)
+  const auto = row.slots.listening.done - prevManual
+  await repo.putQuestDay({
+    ...row,
+    slots: {
+      ...row.slots,
+      listening: {
+        ...row.slots.listening,
+        manual,
+        done: auto + manual,
+      },
+    },
+  })
+}
+
+/**
  * Добавить секунды прослушанного аудирования в квест дня (создаёт запись дня,
  * если её ещё нет). Вызывается часто и малыми порциями: put маленькой строки
  * дешевле потери буфера при закрытии вкладки.

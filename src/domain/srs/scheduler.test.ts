@@ -360,6 +360,31 @@ describe('buildQueue (srs://session-order)', () => {
     expect(nextDayPlan.entries.filter(({ kind }) => kind === 'wake-up')).toHaveLength(2)
   })
 
+  it('U3.2: allowNew — слова вне полосы ранга не вводятся, фразы и пробуждения не фильтруются', () => {
+    const items = [] as ReturnType<typeof entry>[]
+    // пробуждение: пассив + обратная карточка
+    items.push(
+      entry(mkCard({ card_id: 'w0.en-ru', note_id: 'n-w0', state: 2, scheduled_days: 12 })),
+    )
+    items.push(entry(mkCard({ card_id: 'w0.ru-en', note_id: 'n-w0', type: 'ru-en', state: 0 })))
+    // слова полосы D (допуск) и полосы A (вне допуска), фраза (без фильтра)
+    items.push(entry(mkCard({ card_id: 'wd1.en-ru', note_id: 'n-wd1', state: 0 })))
+    items.push(entry(mkCard({ card_id: 'wa1.en-ru', note_id: 'n-wa1', state: 0 })))
+    items.push(entry(mkCard({ card_id: 'p1.en-ru', note_id: 'n-p1', state: 0, deck: 'phrases' })))
+    const ceiling = 1000 // полоса ранга D
+    const allow = (card: CardState) => card.deck !== 'words' || card.card_id.startsWith('wd')
+
+    const plan = buildQueue(items, { now: NOW, baseNewLimit: 15, allowNew: allow })
+    const fresh = plan.entries.filter(({ kind }) => kind === 'new')
+    // интерливинг: колода words идёт первой в раунде (DECK_ORDER)
+    expect(fresh.map(({ card }) => card.card_id)).toEqual(['wd1.en-ru', 'p1.en-ru'])
+    // пробуждённая обратная карточка пришла, несмотря на фильтр новых
+    expect(
+      plan.entries.filter(({ kind }) => kind === 'wake-up').map(({ card }) => card.card_id),
+    ).toEqual(['w0.ru-en'])
+    void ceiling
+  })
+
   it('V.6: новых слов ≤10/день даже при большом newPerDay (plan://curriculum-review#V.6)', () => {
     const items = [] as ReturnType<typeof entry>[]
     for (let i = 0; i < 20; i += 1) {

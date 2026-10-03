@@ -13,6 +13,8 @@ import {
   pickBonusQuest,
   questAwards,
   xpCategory,
+  RANK_WORD_TARGET,
+  rankOfFreq,
 } from './game'
 import { emptyStats } from './types'
 
@@ -169,5 +171,25 @@ describe('Врата (specs/04 §3)', () => {
   it('ранг за Вратами', () => {
     expect(NEXT_RANK.E).toBe('D')
     expect(NEXT_RANK.S).toBe('S')
+  })
+})
+
+describe('RANK_WORD_TARGET / rankOfFreq (U3.2: слова — из полосы ранга)', () => {
+  it('цели словаря по рангам — канон specs/01 §2', () => {
+    expect(RANK_WORD_TARGET).toEqual({ E: 300, D: 1000, C: 1800, B: 2800, A: 4000, S: 5000 })
+  })
+
+  it('ранг полосы по частотному рангу (границы включительно)', () => {
+    expect(rankOfFreq(1)).toBe('E')
+    expect(rankOfFreq(300)).toBe('E')
+    expect(rankOfFreq(301)).toBe('D')
+    expect(rankOfFreq(1000)).toBe('D')
+    expect(rankOfFreq(1001)).toBe('C')
+    expect(rankOfFreq(1800)).toBe('C')
+    expect(rankOfFreq(1801)).toBe('B')
+    expect(rankOfFreq(2800)).toBe('B')
+    expect(rankOfFreq(4000)).toBe('A')
+    expect(rankOfFreq(4001)).toBe('S')
+    expect(rankOfFreq(Number.POSITIVE_INFINITY)).toBe('S')
   })
 })

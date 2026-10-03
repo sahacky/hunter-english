@@ -191,6 +191,31 @@ export function createQuestDay(studyDayIso: string, dueToday: number): QuestDayS
   }
 }
 
+/**
+ * Цель словаря ранга (specs/01 §2): E 300 → D 1000 → C 1800 → B 2800 → A 4000 → S 5000.
+ * Полоса ранга R = (target(R−1), target(R)]; новые слова дня идут только из
+ * полосы текущего ранга (plan://curriculum-review U3.2 — связь слов с уроками:
+ * полоса совпадает с лексикой изучаемых уроков ранга).
+ */
+export const RANK_WORD_TARGET: Record<Rank, number> = {
+  E: 300,
+  D: 1000,
+  C: 1800,
+  B: 2800,
+  A: 4000,
+  S: 5000,
+}
+
+/** Ранг полосы слова по частотному рангу (для бейджа «Полоса ранга X»). */
+export function rankOfFreq(freq: number): Rank {
+  if (freq <= 300) return 'E'
+  if (freq <= 1000) return 'D'
+  if (freq <= 1800) return 'C'
+  if (freq <= 2800) return 'B'
+  if (freq <= 4000) return 'A'
+  return 'S'
+}
+
 export interface QuestAward {
   /** +30 за все 3 слота (game://quest-all). */
   allDone: number

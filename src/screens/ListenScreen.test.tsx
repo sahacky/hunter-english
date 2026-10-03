@@ -82,13 +82,26 @@ describe('ListenScreen', () => {
     }
   })
 
-  it('ручная отметка «вне приложения» добивает счётчик до цели', async () => {
+  it('ручные минуты: +20 добивает цель, ±5 корректируют, «убрать» обнуляет (U3.1)', async () => {
     renderListen()
     expect(
       await screen.findByText(/Сегодня: 0 \/ 20 мин/, {}, { timeout: 8000 }),
     ).toBeInTheDocument()
-    fireEvent.click(screen.getByRole('button', { name: /вне приложения/ }))
+    fireEvent.click(screen.getByRole('button', { name: '+20' }))
     await waitFor(() => expect(screen.getByText(/Сегодня: 20 \/ 20 мин/)).toBeInTheDocument(), {
+      timeout: 8000,
+    })
+    fireEvent.click(screen.getByRole('button', { name: '+5' }))
+    await waitFor(() => expect(screen.getByText(/Сегодня: 25 \/ 20 мин/)).toBeInTheDocument(), {
+      timeout: 8000,
+    })
+    fireEvent.click(screen.getByRole('button', { name: '−5' }))
+    await waitFor(() => expect(screen.getByText(/Сегодня: 20 \/ 20 мин/)).toBeInTheDocument(), {
+      timeout: 8000,
+    })
+    const reset = await screen.findByRole('button', { name: /убрать ручные 20 мин/ })
+    fireEvent.click(reset)
+    await waitFor(() => expect(screen.getByText(/Сегодня: 0 \/ 20 мин/)).toBeInTheDocument(), {
       timeout: 8000,
     })
   })

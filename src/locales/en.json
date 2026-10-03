@@ -265,7 +265,8 @@
     "gatesPassed": "Gates passed: {{count}} · latest: {{last}}",
     "titles": "Titles",
     "unlocked": "unlocked",
-    "gatesHint": "Gates are the System's rank-up exam. XP and levels never raise the rank — only passed Gates do. Fail → retake in 72 hours; passed sections are kept."
+    "gatesHint": "Gates are the System's rank-up exam. XP and levels never raise the rank — only passed Gates do. Fail → retake in 72 hours; passed sections are kept.",
+    "titlesHint": "Titles are honorary badges for real actions (streak, XP, Gates): they do not affect rank or XP — these are milestones. Granted automatically once the condition is met."
   },
   "settings": {
     "appearance": {
@@ -358,7 +359,8 @@
       "h": "h",
       "d": "d",
       "y": "y"
-    }
+    },
+    "band": "Rank {{rank}} band · words follow rank lessons"
   },
   "toast": {
     "questDone": "Daily quest complete. The system logs your progress.",
@@ -409,7 +411,8 @@
     "total": "{{count}} understood quotes",
     "playAll": "Play all on loop",
     "stopAll": "Stop",
-    "markOutside": "+{{minutes}} min outside the app",
-    "video": "Video moment (original)"
+    "video": "Video moment (original)",
+    "outside": "Listened outside the app (minutes):",
+    "resetManual": "remove manual {{minutes}} min"
   }
 }

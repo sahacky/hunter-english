@@ -1,7 +1,13 @@
 // Implements: plan://M4#4.3 — тесты загрузчика контента на реальных data/words
 import { describe, expect, it } from 'vitest'
 import { YOUNG_MATURE_DAYS, WORD_CARD_ORDER } from '../domain/srs/types'
-import { cardId, createFirstCards, loadWordNotes } from './words'
+import {
+  cardId,
+  createFirstCards,
+  loadWordNotes,
+  makeWordBandFilter,
+  wordBandAllowed,
+} from './words'
 
 const NOW = new Date(2026, 8, 28, 10, 0, 0)
 
@@ -64,5 +70,44 @@ describe('loadWordRanks (ветки полос)', () => {
     // суб-полоса (words-2810-4000 и далее) — Infinity
     const sub = [...ranks.entries()].filter(([, rank]) => rank === Number.POSITIVE_INFINITY)
     expect(sub.length).toBeGreaterThan(100)
+  })
+})
+
+describe('wordBandAllowed (U3.2: слова — из полосы текущего ранга)', () => {
+  const ranks = new Map([
+    ['house-noun', 500],
+    ['mislead-verb', 3900],
+    ['sub-word', Number.POSITIVE_INFINITY],
+  ])
+
+  it('в полосе — да; выше полосы — нет; субтитровые — только на полосе S', () => {
+    expect(wordBandAllowed('house-noun', 1000, ranks)).toBe(true)
+    expect(wordBandAllowed('mislead-verb', 1000, ranks)).toBe(false)
+    expect(wordBandAllowed('mislead-verb', 4000, ranks)).toBe(true)
+    expect(wordBandAllowed('sub-word', 4000, ranks)).toBe(false)
+    expect(wordBandAllowed('sub-word', 5000, ranks)).toBe(true)
+  })
+
+  it('не-слова (нет в карте рангов) — всегда допуск', () => {
+    expect(wordBandAllowed('ph-c-0001', 300, ranks)).toBe(true)
+  })
+})
+
+describe('makeWordBandFilter (U3.2: фильтр новых карточек дня)', () => {
+  const ranks = new Map([
+    ['house-noun', 500],
+    ['mislead-verb', 3900],
+  ])
+  const notes = new Map([
+    ['note_house-noun', 'house-noun'],
+    ['note_mislead-verb', 'mislead-verb'],
+  ])
+  const allow = makeWordBandFilter(1000, ranks, notes)
+
+  it('не-слова и заметки без entityId — проходят; слова — по полосе', () => {
+    expect(allow({ deck: 'phrases', note_id: 'note_ph-1' })).toBe(true)
+    expect(allow({ deck: 'words', note_id: 'note_unknown' })).toBe(true)
+    expect(allow({ deck: 'words', note_id: 'note_house-noun' })).toBe(true)
+    expect(allow({ deck: 'words', note_id: 'note_mislead-verb' })).toBe(false)
   })
 })
