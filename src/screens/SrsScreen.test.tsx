@@ -65,6 +65,7 @@ function delayRepo(inner: DexieProgressRepository, ms: number): ProgressReposito
   return {
     ensureCards: (cards) => inner.ensureCards(cards),
     suspendNotes: (noteIds) => inner.suspendNotes(noteIds),
+    unsuspendNotes: (noteIds) => inner.unsuspendNotes(noteIds),
     getAllCards: () => inner.getAllCards(),
     countNewAnsweredSince: (iso) => inner.countNewAnsweredSince(iso),
     saveAnswer: async (next, log) => {

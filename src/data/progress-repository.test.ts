@@ -219,6 +219,42 @@ describe('DexieProgressRepository', () => {
   })
 })
 
+describe('unsuspendNotes (миграция v1-флора, plan://curriculum-review#U3.2)', () => {
+  it('снимает suspend только с указанных заметок и пишет sync_queue', async () => {
+    const repo = new DexieProgressRepository(new HunterDb(`hunter-unsuspend-${uuidv7()}`))
+    const base = {
+      type: 'en-ru' as const,
+      deck: 'words' as const,
+      due: new Date().toISOString(),
+      stability: 0,
+      difficulty: 0,
+      elapsed_days: 0,
+      scheduled_days: 0,
+      reps: 0,
+      lapses: 0,
+      state: 0 as const,
+      last_review: null,
+      cloze_index: null,
+      created_at: new Date().toISOString(),
+      updated_at: new Date().toISOString(),
+    }
+    await repo.ensureCards([
+      { ...base, card_id: 'a.en-ru', note_id: 'note_a', suspended: true },
+      { ...base, card_id: 'b.en-ru', note_id: 'note_b', suspended: true },
+    ])
+    await repo.unsuspendNotes(['note_a'])
+    const cards = await repo.getAllCards()
+    expect(cards.find((c) => c.note_id === 'note_a')?.suspended).toBe(false)
+    expect(cards.find((c) => c.note_id === 'note_b')?.suspended).toBe(true)
+    // повтор по тем же заметкам — ранний выход (нет suspended), no-op
+    await repo.unsuspendNotes(['note_a'])
+    await repo.unsuspendNotes([])
+    const after = await repo.getAllCards()
+    expect(after.find((c) => c.note_id === 'note_a')?.suspended).toBe(false)
+    expect(after.length).toBe(2)
+  })
+})
+
 describe('suspendNotes + getManyLessonProgress (plan://onboarding#O.3)', () => {
   it('suspend прячет карточки заметок (идемпотентно) и кладёт снимки в sync_queue', async () => {
     const { createFirstCards } = await import('../content/words')
