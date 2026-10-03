@@ -4502,6 +4502,54 @@
       "order": 26
     },
     {
+      "id": "les-b-27",
+      "rank": "B",
+      "module": "mod-b-5",
+      "title": "Диалог-сценки на скорости",
+      "grammar_point": {
+        "id": "gp-b-27",
+        "title_ru": "Диалог без подготовки",
+        "rule_md": "— Are you ready to order? — Yes, a coffee, please.\n— Have you ever been abroad? — Yes, I have been to three countries.\n**Это и есть диалог-сценка на скорости**: реплика собеседника — и твой ответ сразу, без подготовки и без перевода в голове.\nПравила скорости:\n1. Отвечай в ту же секунду и коротко: чем проще фраза, тем быстрее диалог.\n2. Не помнишь слово — скажи иначе: своими словами можно всегда, точность не главное.\n3. Тяни время красиво: Well… / Let me think… / Actually…\n4. Универсальные ответы выручают везде: It depends. / It's up to you. / Maybe next time.",
+        "phrase_ids": ["ph-b-0466", "ph-b-0553", "ph-b-1197"],
+        "trap_id": null
+      },
+      "vocab_band": null,
+      "phrasebook_topic": null,
+      "trap_id": null,
+      "quotes_topic": null,
+      "exercises": [
+        {
+          "id": "ex-b-1401"
+        },
+        {
+          "id": "ex-b-1402"
+        },
+        {
+          "id": "ex-b-1403"
+        },
+        {
+          "id": "ex-b-1404"
+        },
+        {
+          "id": "ex-b-1405"
+        },
+        {
+          "id": "ex-b-1406"
+        },
+        {
+          "id": "ex-b-1407"
+        },
+        {
+          "id": "ex-b-1408"
+        },
+        {
+          "id": "ex-b-1409"
+        }
+      ],
+      "bebris_video": null,
+      "order": 27
+    },
+    {
       "id": "les-b-28",
       "rank": "B",
       "module": "mod-b-5",
@@ -4673,7 +4721,7 @@
         "youtube_id": "cTtcmycgs9o",
         "title": null
       },
-      "order": 27
+      "order": 28
     },
     {
       "id": "les-b-29",
@@ -4842,7 +4890,7 @@
         }
       ],
       "bebris_video": null,
-      "order": 28
+      "order": 29
     },
     {
       "id": "les-b-30",
@@ -5020,7 +5068,7 @@
         }
       ],
       "bebris_video": null,
-      "order": 29
+      "order": 30
     }
   ]
 }
