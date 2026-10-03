@@ -8,7 +8,7 @@ import { loadQuotes, type QuoteItem } from '../content/lessons'
 import { speak, stopSpeak, currentAudio } from '../lib/tts'
 import { dayStart } from '../domain/srs/scheduler'
 import { createQuestDay, LISTENING_TARGET_SEC } from '../domain/game/game'
-import { addListeningSeconds, questWithListening } from '../data/listening'
+import { addManualListeningSeconds, questWithListening } from '../data/listening'
 import type { ProgressRepository } from '../domain/progress'
 import { DexieProgressRepository } from '../data/progress-repository'
 
@@ -28,6 +28,7 @@ export default function ListenScreen({ repo: repoProp }: ListenProps) {
   const [quotes, setQuotes] = useState<QuoteItem[] | null>(null)
   const [error, setError] = useState(false)
   const [secondsToday, setSecondsToday] = useState(0)
+  const [manualSec, setManualSec] = useState(0)
   const [playingAll, setPlayingAll] = useState(false)
   const [currentId, setCurrentId] = useState<string | null>(null)
   const playAllRef = useRef(false)
@@ -37,6 +38,7 @@ export default function ListenScreen({ repo: repoProp }: ListenProps) {
     const existing = await repo.getQuestDay(dayIso)
     const row = questWithListening(existing ?? createQuestDay(dayIso, 0))
     setSecondsToday(row.slots.listening.done)
+    setManualSec(row.slots.listening.manual ?? 0)
   }
 
   useEffect(() => {
@@ -104,8 +106,8 @@ export default function ListenScreen({ repo: repoProp }: ListenProps) {
     stopSpeak()
   }
 
-  const markOutside = async () => {
-    await addListeningSeconds(repo, LISTENING_TARGET_SEC)
+  const markOutside = async (minutes: number) => {
+    await addManualListeningSeconds(repo, minutes * 60)
     await refresh()
   }
 
@@ -124,6 +126,7 @@ export default function ListenScreen({ repo: repoProp }: ListenProps) {
     )
   }
   const minutes = Math.floor(secondsToday / 60)
+  const manualMin = Math.floor(manualSec / 60)
   const targetMin = LISTENING_TARGET_SEC / 60
   return (
     <section className="panel lesson-panel">
@@ -149,9 +152,24 @@ export default function ListenScreen({ repo: repoProp }: ListenProps) {
             ▶ {t('listen.playAll')}
           </button>
         )}
-        <button type="button" className="srs-btn" onClick={() => void markOutside()}>
-          {t('listen.markOutside', { minutes: targetMin })}
+      </div>
+      {/* U3.1: ручные минуты — ввод с корректировкой (передобавил — убери минусом) */}
+      <div className="lesson-actions listen-manual">
+        <span className="dim">{t('listen.outside')}</span>
+        <button type="button" className="srs-btn" onClick={() => void markOutside(-5)}>
+          −5
         </button>
+        <button type="button" className="srs-btn" onClick={() => void markOutside(5)}>
+          +5
+        </button>
+        <button type="button" className="srs-btn" onClick={() => void markOutside(20)}>
+          +20
+        </button>
+        {manualMin > 0 && (
+          <button type="button" className="srs-btn" onClick={() => void markOutside(-manualMin)}>
+            {t('listen.resetManual', { minutes: manualMin })}
+          </button>
+        )}
       </div>
       <ul className="listen-list">
         {quotes.map((quote) => (

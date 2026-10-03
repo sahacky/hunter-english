@@ -263,6 +263,10 @@ describe('SrsScreen', () => {
     expect(
       await screen.findByText(/Пройдено 0 из/, undefined, { timeout: 10_000 }),
     ).toBeInTheDocument()
+    // U3.2: бейдж «Полоса ранга X» на карточке слова (реальные ранги загружены)
+    expect(
+      await screen.findByText(/Полоса ранга [EDCBS]/, undefined, { timeout: 8000 }),
+    ).toBeInTheDocument()
   })
 })
 

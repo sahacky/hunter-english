@@ -88,7 +88,7 @@ describe('waivedLessonProgress', () => {
 })
 
 describe('applyPlacement', () => {
-  it('ранг C: уроки E/D зачтены, C+ нет; ранг в статусе; XP не тронут; слова ≤1800 скрыты', async () => {
+  it('ранг C: уроки E/D зачтены, C+ нет; ранг в статусе; XP не тронут; слова ≤1000 скрыты', async () => {
     const repo = fakeRepo()
     repo.stats.xp = 500
     const result = await applyPlacement({
@@ -103,12 +103,9 @@ describe('applyPlacement', () => {
     expect(repo.stats.xp).toBe(500) // оценка не работает XP
     expect([...repo.lessons.keys()].sort()).toEqual(['les-d-01', 'les-e-01', 'les-e-02'])
     expect(repo.lessons.get('les-e-01')!.status).toBe('completed')
-    // полоса C = 1800: the(1), airport(900), hotel(1700) скрыты; declare(2600) — нет
-    expect(repo.suspended.sort()).toEqual([
-      'note_airport-noun',
-      'note_hotel-noun',
-      'note_the-determiner',
-    ])
+    // U3.2: старт C — скрыта полоса НИЖЕ ранга (≤1000, полоса D):
+    // the(1), airport(900) скрыты; hotel(1700) — нет (это уже полоса C)
+    expect(repo.suspended.sort()).toEqual(['note_airport-noun', 'note_the-determiner'])
   })
 
   it('start_at_rank (P.2): только ранг в статусе — ни зачётов, ни скрытий слов', async () => {
@@ -141,7 +138,7 @@ describe('applyPlacement', () => {
     expect(repo.stats.rank).toBe('E')
   })
 
-  it('ранг A: S-уроки не зачитываются; полоса 4000 скрывает почти всё NGSL', async () => {
+  it('ранг A: S-уроки не зачитываются; полоса 2800 (ниже A) скрывает NGSL-ядро', async () => {
     const repo = fakeRepo()
     await applyPlacement({
       repo,
@@ -152,8 +149,9 @@ describe('applyPlacement', () => {
     })
     expect(repo.lessons.has('les-s-01')).toBe(false)
     expect(repo.lessons.has('les-b-01')).toBe(true)
-    expect(repo.suspended).toContain('note_mislead-verb')
-    expect(repo.suspended).not.toContain('note_sub-word') // Infinity ≤ 4000 — false
-    expect(PLACEMENT_WORD_FLOOR.A).toBe(4000)
+    expect(repo.suspended).toContain('note_declare-verb') // 2600 ≤ 2800 (полоса B)
+    expect(repo.suspended).not.toContain('note_mislead-verb') // 3900 — полоса A, учим
+    expect(repo.suspended).not.toContain('note_sub-word') // Infinity — субтитровые
+    expect(PLACEMENT_WORD_FLOOR.A).toBe(2800) // U3.2: старт A → скрыта полоса B, не A
   })
 })

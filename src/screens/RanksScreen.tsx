@@ -145,6 +145,7 @@ export default function RanksScreen({ repo: repoProp }: DashboardProps) {
       </section>
       <section className="panel">
         <h2>{t('ranks.titles')}</h2>
+        <p className="dim">{t('ranks.titlesHint')}</p>
         <ul className="ranks-titles">
           {TITLES.map((title) => {
             const unlocked = title.check(stats)

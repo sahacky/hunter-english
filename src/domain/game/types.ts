@@ -60,8 +60,9 @@ export interface QuestSlots {
   lesson: { done: number; target: number }
   /** «Диктант»: фразы / 10. */
   dictation: { done: number; target: number }
-  /** «Аудирование»: секунды / 20 мин (input-трек, plan://curriculum-review#I.1). */
-  listening: { done: number; target: number }
+  /** «Аудирование»: секунды / 20 мин (input-трек, plan://curriculum-review#I.1);
+   * manual — доля, добавленная кнопками «вне приложения» (U3.1: видно и отменяемо). */
+  listening: { done: number; target: number; manual?: number }
 }
 
 /** Бонус-квест дня (seeded по дате, без переролла — specs/04 §6). */

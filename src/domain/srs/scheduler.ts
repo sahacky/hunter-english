@@ -211,6 +211,12 @@ export interface BuildQueueOptions {
   baseNewLimit?: number
   /** Сколько пробуждений уже потрачено сегодня (srs://limits-new). */
   wokenToday?: number
+  /**
+   * Допуск новой карточки в дневную выборку (plan://curriculum-review#U3.2:
+   * слова — только из полосы текущего ранга). Пробуждения и повторы не
+   * фильтруются; не прошедшие допуск карточки остаются New и придут позже.
+   */
+  allowNew?: (card: CardState) => boolean
 }
 
 const DECK_ORDER: Deck[] = ['words', 'phrases', 'quotes', 'phrasebook']
@@ -256,7 +262,7 @@ function interleaveByDeck(cards: CardState[]): CardState[] {
  * Карточки с due в будущем и suspended не попадают в очередь.
  */
 export function buildQueue(items: QueueItem[], options: BuildQueueOptions): SessionPlan {
-  const { now, baseNewLimit = DEFAULT_NEW_LIMIT, wokenToday = 0 } = options
+  const { now, baseNewLimit = DEFAULT_NEW_LIMIT, wokenToday = 0, allowNew } = options
   const nowIso = now.toISOString()
   const startIso = dayStart(now).toISOString()
 
@@ -311,12 +317,15 @@ export function buildQueue(items: QueueItem[], options: BuildQueueOptions): Sess
   const woken = wakeUps.slice(0, wokenLeft)
   // V.6: слова ≤10/день — капаем колоду words ДО интерливинга, порядок внутри
   // колоды (created_at) сохраняется; остаток лимита достаётся фразам/цитатам
-  const wordsCapped = newCards
+  // V.6: слова ≤10/день; U3.2: допуск новой карточки в дневную выборку
+  // (слова — только из полосы текущего ранга). Порядок: допуск → кап → интерливинг
+  const eligible = allowNew ? newCards.filter((card) => allowNew(card)) : newCards
+  const wordsCapped = eligible
     .filter((card) => card.deck === 'words')
     .sort((a, b) => a.created_at.localeCompare(b.created_at) || a.card_id.localeCompare(b.card_id))
     .slice(0, WORDS_NEW_DAILY_CAP)
   const wordsKept = new Set(wordsCapped.map(({ card_id }) => card_id))
-  const cappedNew = newCards.filter((card) => card.deck !== 'words' || wordsKept.has(card.card_id))
+  const cappedNew = eligible.filter((card) => card.deck !== 'words' || wordsKept.has(card.card_id))
   const fresh = interleaveByDeck(cappedNew).slice(0, newLimit)
 
   const entries: QueueEntry[] = []

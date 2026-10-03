@@ -61,6 +61,40 @@ export async function loadWordRanks(): Promise<Map<string, number>> {
   return ranks
 }
 
+/**
+ * Допуск слова в новые карточки дня (plan://curriculum-review#U3.2): частотный
+ * ранг в пределах `ceiling` (RANK_WORD_TARGET ранга пользователя). Субтитровые
+ * слова (ранг Infinity) открываются только на полосе S (5000). Не-слова
+ * (нет в карте рангов) всегда допускаются — фильтр только про колоду words.
+ */
+export function wordBandAllowed(
+  entityId: string,
+  ceiling: number,
+  ranks: ReadonlyMap<string, number>,
+): boolean {
+  const freq = ranks.get(entityId)
+  if (freq === undefined) return true
+  if (Number.isFinite(freq)) return freq <= ceiling
+  return ceiling >= 5000
+}
+
+/**
+ * Фильтр новых карточек дня для buildQueue (U3.2): не-слова проходят всегда;
+ * слово — по полосе ранга (wordBandAllowed). noteIdToEntity — заметка → entityId.
+ */
+export function makeWordBandFilter(
+  ceiling: number,
+  ranks: ReadonlyMap<string, number>,
+  noteIdToEntity: ReadonlyMap<string, string>,
+): (card: { deck: string; note_id: string }) => boolean {
+  return (card) => {
+    if (card.deck !== 'words') return true
+    const entityId = noteIdToEntity.get(card.note_id)
+    if (entityId === undefined) return true
+    return wordBandAllowed(entityId, ceiling, ranks)
+  }
+}
+
 function toNote(item: WordItem): Note {
   return {
     id: `note_${item.id}`,

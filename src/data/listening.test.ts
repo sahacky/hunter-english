@@ -1,7 +1,7 @@
 // Implements: plan://curriculum-review#I.1 — учёт минут аудирования дня
 import 'fake-indexeddb/auto'
 import { beforeEach, describe, expect, it } from 'vitest'
-import { addListeningSeconds, questWithListening } from './listening'
+import { addListeningSeconds, addManualListeningSeconds, questWithListening } from './listening'
 import { HunterDb } from './db'
 import { DexieProgressRepository } from './progress-repository'
 import { createQuestDay, LISTENING_TARGET_SEC } from '../domain/game/game'
@@ -47,6 +47,36 @@ describe('addListeningSeconds', () => {
     const dayIso = dayStart(now).toISOString()
     const row = await repo.getQuestDay(dayIso)
     expect(row?.slots.listening.done).toBe(120 + LISTENING_TARGET_SEC)
+  })
+})
+
+describe('addManualListeningSeconds (U3.1: ручные минуты — видимы и отменяемы)', () => {
+  const now = new Date('2026-03-04T12:00:00Z')
+
+  it('+минуты пишутся в manual, автосчёт не трогается', async () => {
+    await addListeningSeconds(repo, 100, now) // автосчёт tts-sink
+    await addManualListeningSeconds(repo, 5 * 60, now)
+    const row = await repo.getQuestDay(dayStart(now).toISOString())
+    expect(row?.slots.listening.done).toBe(100 + 300)
+    expect(row?.slots.listening.manual).toBe(300)
+  })
+
+  it('минус убирает лишнее, но не ниже нуля и не трогает автосчёт', async () => {
+    await addManualListeningSeconds(repo, 20 * 60, now)
+    await addManualListeningSeconds(repo, -5 * 60, now)
+    let row = await repo.getQuestDay(dayStart(now).toISOString())
+    expect(row?.slots.listening.manual).toBe(15 * 60)
+    expect(row?.slots.listening.done).toBe(15 * 60)
+    await addManualListeningSeconds(repo, -99 * 60, now) // кламп: manual ≥ 0
+    row = await repo.getQuestDay(dayStart(now).toISOString())
+    expect(row?.slots.listening.manual).toBe(0)
+    expect(row?.slots.listening.done).toBe(0)
+  })
+
+  it('нулевая дельта ничего не делает', async () => {
+    await addManualListeningSeconds(repo, 0, now)
+    const dayIso = dayStart(now).toISOString()
+    expect(await repo.getQuestDay(dayIso)).toBeNull()
   })
 })
 
