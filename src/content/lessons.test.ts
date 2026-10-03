@@ -440,11 +440,7 @@ describe('loadLessonView (реальные data/ ранга E)', () => {
     const lessons = await loadLessons()
     const b = lessons.filter((lesson) => lesson.rank === 'B')
     // B-27 встал между b-26 и b-28 (order-миграция v2 без смены id)
-    expect(b.slice(25, 28).map((lesson) => lesson.id)).toEqual([
-      'les-b-26',
-      'les-b-27',
-      'les-b-28',
-    ])
+    expect(b.slice(25, 28).map((lesson) => lesson.id)).toEqual(['les-b-26', 'les-b-27', 'les-b-28'])
     expect(b.map((lesson) => lesson.order)).toEqual([...Array(30).keys()].map((i) => i + 1))
     const view = await loadLessonView('les-b-27')
     if (!view) throw new Error('нет данных урока les-b-27')
@@ -456,13 +452,19 @@ describe('loadLessonView (реальные data/ ранга E)', () => {
     expect(scenes.every(({ exercise }) => exercise.type === 'answer_question')).toBe(true)
     // 2 раунда = 2 ситуации разговорника (фиксируются в данных, specs/01 §8)
     const situations = new Set(
-      scenes.map(
-        ({ exercise }) => (exercise.payload as { situation_ru: string }).situation_ru,
-      ),
+      scenes.map(({ exercise }) => (exercise.payload as Record<string, unknown>).situation_ru),
     )
     expect(situations.size).toBe(2)
+    // фразы-примеры правила пришиты из других уроков B — доступны экрану
+    // (RuleCard с озвучкой, шаг 7 «В колоду»), своего пула у сцен нет
+    for (const pid of view.lesson.grammar_point.phrase_ids) {
+      const phrase = view.phrasesById[pid]
+      expect(phrase, pid).toBeTruthy()
+      expect(phrase.audio?.en_gb).toMatch(/^audio\/phrases\/cori\//)
+    }
+    expect(Object.keys(view.phrasesById)).toHaveLength(3)
     for (const { exercise } of scenes) {
-      const payload = exercise.payload as {
+      const payload = exercise.payload as unknown as {
         question_en: string
         situation_ru: string
         audio: string

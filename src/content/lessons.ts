@@ -228,16 +228,21 @@ export function assembleLesson(
   )
   // Кросс-урочные ссылки (transform-цепочки, find_error, answer_question —
   // ревью M12 Б-1): фразы, на которые ссылаются упражнения урока, доступны
-  // экрану через view.phrasesById, даже если они из другого урока
+  // экрану через view.phrasesById, даже если они из другого урока.
+  // Плюс фразы-примеры правила (grammar_point.phrase_ids): у сценочных уроков
+  // без своего пула (B-27) они пришиты из других уроков ранга — RuleCard
+  // показывает их с озвучкой, а шаг 7 «В колоду» идемпотентно доначисляет.
+  const crossRefs = new Set<string>(lesson.grammar_point.phrase_ids)
   for (const { id } of lesson.exercises) {
     const exercise = exerciseById.get(id)
     /* istanbul ignore start — дубль проверки: отсутствующее упражнение уже дало throw выше */
     if (!exercise) continue
     /* istanbul ignore stop */
-    for (const refId of exercisePhraseIds(exercise)) {
-      const ref = phraseById.get(refId)
-      if (ref && !(ref.id in lessonPhrases)) lessonPhrases[ref.id] = ref
-    }
+    for (const refId of exercisePhraseIds(exercise)) crossRefs.add(refId)
+  }
+  for (const refId of crossRefs) {
+    const ref = phraseById.get(refId)
+    if (ref && !(ref.id in lessonPhrases)) lessonPhrases[ref.id] = ref
   }
   return { lesson, steps, content, phrasesById: lessonPhrases }
 }
