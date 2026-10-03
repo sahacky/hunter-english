@@ -161,11 +161,27 @@
           "$comment": "11 answer_question",
           "type": "object",
           "additionalProperties": false,
-          "required": ["kind", "question_en", "phrase_id"],
+          "required": ["kind", "question_en"],
           "properties": {
             "kind": { "const": "answer_question" },
             "question_en": { "type": "string" },
-            "phrase_id": { "type": "string", "description": "эталонный ответ (phrase)" }
+            "phrase_id": {
+              "type": "string",
+              "description": "эталонный ответ (phrase); для сценок разговорника (B-27) не задаётся — ответы в answer.accepted"
+            },
+            "situation_ru": {
+              "type": "string",
+              "description": "сценка разговорника: подпись ситуации над репликой собеседника (B-27)"
+            },
+            "audio": {
+              "type": "string",
+              "pattern": "^audio/",
+              "description": "предзаписанная реплика собеседника (audio/phrasebook/…)"
+            },
+            "free_form": {
+              "type": "boolean",
+              "description": "самопроверка «Сказал своими словами» доступна сразу — свобода важнее точности (B-27)"
+            }
           }
         },
         {
