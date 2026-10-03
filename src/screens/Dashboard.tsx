@@ -201,73 +201,75 @@ export default function Dashboard({ repo: repoProp }: DashboardProps) {
   ]
   return (
     <div className="dashboard">
-      <section className="panel dash-quest">
-        <h2>{t('dashboard.questTitle')}</h2>
-        <ul className="dash-quest-list">
-          {slots.map((slot) => (
-            <li
-              key={slot.label}
-              className={slot.done >= slot.target ? 'dash-quest-done' : undefined}
-            >
-              <span aria-hidden="true">{slot.done >= slot.target ? '✓' : ''}</span> {slot.label}{' '}
+      <div className="dash-top">
+        <section className="panel dash-quest">
+          <h2>{t('dashboard.questTitle')}</h2>
+          <ul className="dash-quest-list">
+            {slots.map((slot) => (
+              <li
+                key={slot.label}
+                className={slot.done >= slot.target ? 'dash-quest-done' : undefined}
+              >
+                <span aria-hidden="true">{slot.done >= slot.target ? '✓' : ''}</span> {slot.label}{' '}
+                <span className="dim">
+                  {slot.done}/{slot.target}
+                </span>
+              </li>
+            ))}
+            <li>
+              {t('dashboard.quests.bonus')}: {t(`dashboard.bonus.${data.quest.bonus.id}`)}{' '}
               <span className="dim">
-                {slot.done}/{slot.target}
+                {data.quest.bonusDone}/{data.quest.bonus.target}
               </span>
             </li>
-          ))}
-          <li>
-            {t('dashboard.quests.bonus')}: {t(`dashboard.bonus.${data.quest.bonus.id}`)}{' '}
-            <span className="dim">
-              {data.quest.bonusDone}/{data.quest.bonus.target}
-            </span>
-          </li>
-        </ul>
-        <p className="dim">
-          ⏱ {t('dashboard.dayLeft')} {timer}
-        </p>
-      </section>
+          </ul>
+          <p className="dim">
+            ⏱ {t('dashboard.dayLeft')} {timer}
+          </p>
+        </section>
 
-      <section className="panel dash-status">
-        <h2>{t('dashboard.statusTitle')}</h2>
-        <div className="dash-status-grid">
-          <div
-            className="dash-ring"
-            aria-hidden="true"
-            style={{
-              background: `conic-gradient(var(--primary) 0 ${Math.round(level.progress * 100)}%, var(--track) ${Math.round(level.progress * 100)}% 100%)`,
-            }}
-          >
-            <b>
-              {data.stats.rank}
-              <small>{RANK_CEFR[data.stats.rank]}</small>
-            </b>
-          </div>
-          <div className="dash-status-main">
-            <p>
-              {t('dashboard.rankAndLevel', {
-                rank: data.stats.rank,
-                cefr: RANK_CEFR[data.stats.rank],
-                level: level.level,
-              })}
-            </p>
-            <XpDots percent={Math.round(level.progress * 100)} />
-            <p className="dim">
-              {t('dashboard.xpProgress', { xp: level.rankXp, next: level.nextAt })}
-            </p>
-            <div>
-              <span className="dash-chip">
-                🔥 {t('dashboard.streak', { days: data.stats.streak_current })}
-              </span>
-              <span className="dash-chip dash-chip-warm">
-                ❄ {t('dashboard.freezes', { count: data.stats.freezes_left })}
-              </span>
-              <span className="dash-chip">
-                {t('dashboard.wordsKnown', { count: data.knownCards })}
-              </span>
+        <section className="panel dash-status">
+          <h2>{t('dashboard.statusTitle')}</h2>
+          <div className="dash-status-grid">
+            <div
+              className="dash-ring"
+              aria-hidden="true"
+              style={{
+                background: `conic-gradient(var(--primary) 0 ${Math.round(level.progress * 100)}%, var(--track) ${Math.round(level.progress * 100)}% 100%)`,
+              }}
+            >
+              <b>
+                {data.stats.rank}
+                <small>{RANK_CEFR[data.stats.rank]}</small>
+              </b>
+            </div>
+            <div className="dash-status-main">
+              <p>
+                {t('dashboard.rankAndLevel', {
+                  rank: data.stats.rank,
+                  cefr: RANK_CEFR[data.stats.rank],
+                  level: level.level,
+                })}
+              </p>
+              <XpDots percent={Math.round(level.progress * 100)} />
+              <p className="dim">
+                {t('dashboard.xpProgress', { xp: level.rankXp, next: level.nextAt })}
+              </p>
+              <div>
+                <span className="dash-chip">
+                  🔥 {t('dashboard.streak', { days: data.stats.streak_current })}
+                </span>
+                <span className="dash-chip dash-chip-warm">
+                  ❄ {t('dashboard.freezes', { count: data.stats.freezes_left })}
+                </span>
+                <span className="dash-chip">
+                  {t('dashboard.wordsKnown', { count: data.knownCards })}
+                </span>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
       <section className="panel dash-start">
         <Link className="srs-btn srs-btn-good dash-start-btn" to={startDayHref()}>
