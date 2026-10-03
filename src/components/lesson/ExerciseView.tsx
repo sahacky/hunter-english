@@ -553,7 +553,13 @@ export function VoiceExercise({
   mode,
 }: ExerciseViewProps & { mode: 'speak' | 'shadowing' | 'answer' }) {
   const { t } = useTranslation()
-  const p = payload<{ prompt_ru?: string; question_en?: string }>(exercise)
+  const p = payload<{
+    prompt_ru?: string
+    question_en?: string
+    situation_ru?: string
+    audio?: string
+    free_form?: boolean
+  }>(exercise)
   const supported = isSpeechSupported()
   const [listening, setListening] = useState(false)
   const [feedback, setFeedback] = useState<CheckResult | null>(null)
@@ -612,15 +618,23 @@ export function VoiceExercise({
         ? ((p.question_en as string) ?? '')
         : (phrase?.text_en ?? '')
 
-  const canSelfReport = !supported || attempts >= 2
+  // сценка разговорника (B-27): свобода важнее точности — самопроверка сразу
+  const canSelfReport = !supported || attempts >= 2 || p.free_form === true
 
   return (
     <div className="lesson-exercise">
+      {mode === 'answer' && p.situation_ru && (
+        <p className="lesson-quote-src dim">{p.situation_ru}</p>
+      )}
       <p className="lesson-prompt" lang={mode === 'speak' ? 'ru' : 'en'}>
         {prompt}
       </p>
       {mode === 'shadowing' && phrase?.audio?.en_gb && (
         <AudioButtons text={phrase.text_en} src={phrase.audio.en_gb} />
+      )}
+      {mode === 'answer' && p.audio && <AudioButtons text={prompt} src={p.audio} />}
+      {mode === 'answer' && exercise.answer.hint_ru && !done && (
+        <p className="dim">{exercise.answer.hint_ru}</p>
       )}
       {listening && (
         <div className="lesson-wave" aria-hidden="true">
@@ -664,13 +678,13 @@ export function VoiceExercise({
         {canSelfReport && !done && (
           <button
             type="button"
-            className="srs-btn"
+            className="srs-btn srs-btn-good"
             onClick={() => {
               finish('self_reported', attempts + 1)
               onNext()
             }}
           >
-            {t('lesson.saidIt')}
+            {p.free_form ? t('lesson.saidItFree') : t('lesson.saidIt')}
           </button>
         )}
       </div>
