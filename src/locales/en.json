@@ -361,7 +361,12 @@
       "d": "d",
       "y": "y"
     },
-    "band": "Rank {{rank}} band · words follow rank lessons"
+    "band": "Rank {{rank}} band · words follow rank lessons",
+    "cheat": {
+      "title": "Cheat sheet of learned rules",
+      "empty": "Nothing yet: finish your first lesson and its rule will appear here.",
+      "rank": "Rank {{rank}}"
+    }
   },
   "toast": {
     "questDone": "Daily quest complete. The system logs your progress.",
