@@ -28,6 +28,7 @@ import { anySlotDone, awardXp, closeStudyDay } from '../domain/game/award'
 import { RANK_WORD_TARGET, rankOfFreq } from '../domain/game/game'
 import { useSettings } from '../state/settings'
 import { showToast } from '../lib/toast'
+import RulesCheatSheet from '../components/RulesCheatSheet'
 
 const BLOCK_SIZE = 20
 
@@ -293,6 +294,9 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
         <h2>{t('srs.title')}</h2>
         <p>{phase.empty ? t('srs.empty') : t('srs.sessionDone')}</p>
         <p className="dim">{t('srs.answered', { count: answeredTotal })}</p>
+        {/* Шпаргалка пройденного (план {#cheat-sheet}): пауза между сессиями —
+            момент «пробежать глазами»; в активной сессии не показываем (фокус) */}
+        <RulesCheatSheet repo={repo} />
       </section>
     )
   }
@@ -316,6 +320,7 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
             {t('srs.finish')}
           </button>
         </div>
+        <RulesCheatSheet repo={repo} />
       </section>
     )
   }
