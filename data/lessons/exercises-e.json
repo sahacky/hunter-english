@@ -2515,7 +2515,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "___ you busy?",
+        "text_with_gap": "— ___ you busy? — Yes, I am.",
         "gap_answers": ["Are"]
       },
       "answer": {
@@ -2532,7 +2532,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "___ she your sister?",
+        "text_with_gap": "— ___ she your sister? — No, she isn't.",
         "gap_answers": ["Is"]
       },
       "answer": {
@@ -2549,7 +2549,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "___ I late?",
+        "text_with_gap": "— ___ I late? — No, you aren't.",
         "gap_answers": ["Am"]
       },
       "answer": {
@@ -4172,7 +4172,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "___ is your name?",
+        "text_with_gap": "— ___ is your name? — Ivan.",
         "gap_answers": ["What"]
       },
       "answer": {
@@ -4189,7 +4189,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "___ are you from?",
+        "text_with_gap": "— ___ are you from? — From Russia.",
         "gap_answers": ["Where"]
       },
       "answer": {
@@ -4206,7 +4206,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "How ___ are you?",
+        "text_with_gap": "— How ___ are you? — I'm twenty-five.",
         "gap_answers": ["old"]
       },
       "answer": {
@@ -12651,7 +12651,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "___ you work here?",
+        "text_with_gap": "— ___ you work here? — Yes, I do.",
         "gap_answers": ["Do"]
       },
       "answer": {
@@ -12668,7 +12668,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "___ you like coffee?",
+        "text_with_gap": "— ___ you like coffee? — No, I don't.",
         "gap_answers": ["Do"]
       },
       "answer": {
@@ -12685,7 +12685,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "___ they live here?",
+        "text_with_gap": "— ___ they live here? — Yes, they do.",
         "gap_answers": ["Do"]
       },
       "answer": {
@@ -13497,7 +13497,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "___ he work here?",
+        "text_with_gap": "— ___ he work in a bank? — Yes, he does.",
         "gap_answers": ["Does"]
       },
       "answer": {
@@ -13514,8 +13514,8 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "___ she like tea?",
-        "gap_answers": ["Does"]
+        "text_with_gap": "— Does he work in a bank ___ in a shop? — In a bank.",
+        "gap_answers": ["or"]
       },
       "answer": {
         "normalization": "default",
@@ -13531,8 +13531,8 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "___ it work?",
-        "gap_answers": ["Does"]
+        "text_with_gap": "— Where ___ he work? — In a bank.",
+        "gap_answers": ["does"]
       },
       "answer": {
         "normalization": "default",
@@ -14343,7 +14343,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "___ do you work?",
+        "text_with_gap": "— ___ do you work? — In an office.",
         "gap_answers": ["Where"]
       },
       "answer": {
@@ -14360,7 +14360,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "___ does the train leave?",
+        "text_with_gap": "— ___ does the train leave? — At nine.",
         "gap_answers": ["When"]
       },
       "answer": {
@@ -14377,7 +14377,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "___ does it cost?",
+        "text_with_gap": "— ___ does it cost? — Two pounds.",
         "gap_answers": ["How much"]
       },
       "answer": {
@@ -19401,7 +19401,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "___ you sleeping?",
+        "text_with_gap": "— ___ you sleeping? — No, I'm not.",
         "gap_answers": ["Are"]
       },
       "answer": {
@@ -19418,7 +19418,7 @@
       "type": "cloze",
       "payload": {
         "kind": "cloze",
-        "text_with_gap": "What ___ you doing?",
+        "text_with_gap": "— What ___ you doing? — I'm reading.",
         "gap_answers": ["are"]
       },
       "answer": {
