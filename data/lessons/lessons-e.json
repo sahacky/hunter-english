@@ -10,7 +10,7 @@
       "grammar_point": {
         "id": "gp-e-01",
         "title_ru": "Глагол to be в настоящем времени",
-        "rule_md": "По-русски «я — Иван» можно сказать без глагола. По-английски — нельзя: нужен глагол-связка **to be**.\n\n- **I am** Ivan. — Я Иван.\n- **He / She / It is** from Canada. — Он из Канады.\n- **You / We / They are** friends. — Мы друзья.\n\nСокращения: I am = I'm, he is = he's, we are = we're.\n\n⚠️ Ловушка ЛТ-01: «I hungry» — так нельзя! Нужен am/is/are: I'm hungry.",
+        "rule_md": "**I am** Ivan. — Я Иван. **She is** from Japan. — Она из Японии.\n\nЭто глагол-связка **to be** («быть») — нужен там, где по-русски достаточно «—».\n\n**Формула:** кто + am / is / are\n- I → am; he / she / it → is; you / we / they → are\n- We **are** friends. — Мы друзья.\n\nПо-русски «я — Иван» живёт без глагола; по-английски без am/is/are так нельзя.\n\nСокращения: I am = I'm, he is = he's, we are = we're.\n\n⚠️ Ловушка ЛТ-01: ❌ I hungry → ✔ I**'m** hungry.\n\nПроверь себя: She ___ from Japan. → is",
         "phrase_ids": ["ph-e-0001", "ph-e-0002", "ph-e-0003", "ph-e-0004", "ph-e-0005"],
         "trap_id": "trap-no-to-be"
       },
@@ -184,7 +184,7 @@
       "grammar_point": {
         "id": "gp-e-02",
         "title_ru": "to be + свойство; артикль a/an",
-        "rule_md": "После to be можно ставить прилагательное или существительное: I am **tired**. She is a **doctor**.\n\nПеред одним исчисляемым существительным нужен артикль **a**: I am a student. He is a good doctor.\n\nПеред гласным звуком — **an**: She is an artist. It is an old house.\n\n⚠️ Ловушка ЛТ-06: «I have brother» — нельзя! Артикль обязателен: I have **a** brother.",
+        "rule_md": "I am **tired**. — Я устал. She is a **doctor**. — Она врач.\n\nПосле to be — прилагательное или существительное; перед существительным — артикль.\n\n**Формула:** один предмет → a / an + существительное\n- a student, a good doctor; перед гласным звуком — an artist, an old house\n\nПо-русски артикля нет («я студент»); по-английски a / an = «один, какой-то».\n\n⚠️ Ловушка ЛТ-06: ❌ I have brother → ✔ I have **a** brother.\n\nПроверь себя: She is ___ artist. → an",
         "phrase_ids": ["ph-e-0044", "ph-e-0045", "ph-e-0046", "ph-e-0047", "ph-e-0048"],
         "trap_id": "trap-articles"
       },
@@ -358,7 +358,7 @@
       "grammar_point": {
         "id": "gp-e-03",
         "title_ru": "Отрицание с to be",
-        "rule_md": "Отрицание с to be — частица **not** после глагола:\n\n- I am **not** a teacher. (сокращение только I'm not)\n- He / She / It **is not** = **isn't** here.\n- You / We / They **are not** = **aren't** ready.\n\nСемья: mother, father, brother, sister, parents, family.\n\nМножественное число без артикля: My parents are doctors. My friends are students.",
+        "rule_md": "I am **not** a teacher. — Я не учитель. He **isn't** here. — Его нет здесь.\n\nОтрицание с to be — **not** сразу после глагола.\n\n**Формула:** am / is / are + not\n- is not = **isn't**, are not = **aren't**; у I — только **I'm not**\n\nПо-русски «не» стоит перед словом; по-английски — после am / is / are.\n\n⚠️ Сокращение: ❌ I amn't → ✔ I**'m not**.\n\nМножественное число — без артикля: My parents are doctors.\n\nСемья: mother, father, brother, sister, parents, family.\n\nПроверь себя: They ___ not ready. → are",
         "phrase_ids": ["ph-e-0087", "ph-e-0088", "ph-e-0089", "ph-e-0090", "ph-e-0091"],
         "trap_id": "trap-articles"
       },
@@ -532,7 +532,7 @@
       "grammar_point": {
         "id": "gp-e-04",
         "title_ru": "Вопрос с to be и краткие ответы",
-        "rule_md": "Вопрос с to be: глагол выходит на первое место.\n\n- **Are** you tired? **Are** they here?\n- **Is** she your sister? **Is** it true?\n- **Am** I late?\n\nКраткие ответы — глагол, не повторяем всё: Yes, I am. / No, I'm not. Yes, it is. / No, it isn't.\n\nСостояния: hungry, thirsty, tired, busy, cold, happy.",
+        "rule_md": "**Are** you tired? — Yes, I am. **Is** she your sister? — No, she isn't.\n\nВопрос с to be: глагол выходит на первое место.\n\n**Формула:** Am / Is / Are + подлежащее …?\n- **Are** you tired? **Is** it true? **Am** I late?\n\nКраткие ответы — глагол, не повторяем всё: Yes, I am. / No, I'm not.\n\nПо-русски вопрос узнают по интонации («ты устал?»); по-английски — порядок слов: глагол вперёд.\n\nСостояния: hungry, thirsty, tired, busy, cold, happy.\n\nПроверь себя: ___ she your sister? → Is",
         "phrase_ids": ["ph-e-0131", "ph-e-0132", "ph-e-0133", "ph-e-0134", "ph-e-0135"],
         "trap_id": null
       },
@@ -706,7 +706,7 @@
       "grammar_point": {
         "id": "gp-e-05",
         "title_ru": "Повторение: to be +, −, ?; Small talk",
-        "rule_md": "Повторение E-01…E-04 — коротко:\n\n- **+**: I am Ivan. She is a doctor. We are friends.\n- **−**: I am not tired. He isn't here. They aren't ready.\n- **?**: Are you hungry? Is it true? Am I late? — Yes, I am. / No, it isn't.\n- Артикль: a student, an artist, a big city.\n\nSmall talk: How are you? — I'm fine, thanks. And you?",
+        "rule_md": "I **am** Ivan. She **is** a doctor. We **are** friends.\n\nПовторение E-01…E-04 — коротко:\n- **+**: am / is / are — I am Ivan, she is a doctor, we are friends.\n- **−**: + not — I'm not tired, he isn't here, they aren't ready.\n- **?**: глагол вперёд — Are you hungry? Is it true? Am I late?\n- Артикль: a student, an artist; множественное — без артикля.\n\nПо-русски связки и артикля нет; по-английски оба обязательны.\n\nSmall talk: How are you? — I'm fine, thanks. And you?\n\nПроверь себя: It ___ not a problem. → is",
         "phrase_ids": ["ph-e-0175", "ph-e-0176", "ph-e-0177", "ph-e-0178", "ph-e-0179"],
         "trap_id": null
       },
@@ -871,7 +871,7 @@
       "grammar_point": {
         "id": "gp-e-06",
         "title_ru": "Спецвопросы с to be",
-        "rule_md": "Спецвопрос с to be: вопросительное слово + am/is/are.\n\n- **What** is your name? — что/как\n- **Where** are you from? — где/откуда\n- **How** old are you? — как (сколько лет)\n- **Who** is she? — кто\n\nПорядок слов: вопросительное слово → глагол → подлежащее. Без to be вопрос не строится.",
+        "rule_md": "**What** is your name? — Ivan. **Where** are you from? — From Russia.\n\nСпецвопрос с to be: вопросительное слово + глагол + подлежащее.\n\n**Формула:** Wh-слово + am / is / are + …?\n- **What** is your name? **Where** are you from? **How** old are you? **Who** is she?\n\nПо-русски «как тебя зовут?»; по-английски дословно «что есть твоё имя?» — What is your name?\n\nПорядок слов: вопросительное слово → глагол → подлежащее.\n\nПроверь себя: ___ are you from? → Where",
         "phrase_ids": ["ph-e-0219", "ph-e-0220", "ph-e-0221", "ph-e-0222", "ph-e-0223"],
         "trap_id": null
       },
@@ -1042,7 +1042,7 @@
       "grammar_point": {
         "id": "gp-e-07",
         "title_ru": "Указательные местоимения",
-        "rule_md": "Указательные местоимения:\n\n- **this / these** — близко: This is my phone. These are my keys.\n- **that / those** — далеко: That is your house. Those are her shoes.\n\nЕдинственное — this/that, множественное — these/those.",
+        "rule_md": "**This** is my phone. — Этот, рядом. **Those** are her shoes. — Те, вон там.\n\nУказательные местоимения: близко — **this / these**, далеко — **that / those**.\n\n**Формула:** рядом → this (ед.) / these (мн.); далеко → that (ед.) / those (мн.)\n- This is my phone. These are my keys. That is your house.\n\nПо-русски важна только близость (этот / тот); по-английски ещё число: these keys, those shoes.\n\nПроверь себя: ___ are my friends. → These",
         "phrase_ids": ["ph-e-0263", "ph-e-0264", "ph-e-0265", "ph-e-0266", "ph-e-0267"],
         "trap_id": null
       },
@@ -1213,7 +1213,7 @@
       "grammar_point": {
         "id": "gp-e-08",
         "title_ru": "Притяжательные местоимения и падеж ’s",
-        "rule_md": "Притяжательные: **my, your, his, her, its, our, their** — чей.\n\n- His name is Dima. Her sister is an artist.\n- Притяжательный падеж: **Dima's sister** = сестра Димы ('s).\n\nВозраст: I am 25. My brother is 14.",
+        "rule_md": "**His** name is Dima. — Его зовут Дима. **Her** sister is an artist. — Её сестра художница.\n\nПритяжательные: **my, your, his, her, its, our, their** — чей.\n\n**Формула:** притяжательное + существительное\n- my phone, his name, her sister, their friends\n- Чей именно? **Dima's** sister = сестра Димы ('s у владельца)\n\nПо-русски «чей» выражается падежом — «сестра Димы»; по-английски — 's: Dima**'s** sister.\n\nВозраст: I am 25. My brother is 14.\n\nПроверь себя: This is ___ sister. (Dima) → Dima's",
         "phrase_ids": ["ph-e-0307", "ph-e-0308", "ph-e-0309", "ph-e-0310", "ph-e-0311"],
         "trap_id": null
       },
@@ -1379,7 +1379,7 @@
       "grammar_point": {
         "id": "gp-e-09",
         "title_ru": "Множественное число существительных",
-        "rule_md": "Множественное число:\n\n- Большинство: +**s** — books, keys, apples.\n- После шипящих: +**es** — boxes, buses.\n- Особые: **men, women, children, people, feet, teeth**.\n\nМножественное без артикля: These are books. Числа: twenty, thirty... a hundred.",
+        "rule_md": "one book → two **books**. one child → two **children**.\n\nМножественное число: обычно **+s**.\n\n**Формула:** один → +s; после шипящего → +es; особые — запомнить\n- books, keys, apples; boxes, buses\n- **men, women, children, people, feet, teeth**\n\nПо-русски число тоже меняет слово (книга → книги); ловушка в особых: ❌ childs → ✔ **children**.\n\nМножественное — без артикля: These are books. Числа: twenty, thirty… a hundred.\n\nПроверь себя: The ___ are happy. → children",
         "phrase_ids": ["ph-e-0351", "ph-e-0352", "ph-e-0353", "ph-e-0354", "ph-e-0355"],
         "trap_id": null
       },
@@ -1545,7 +1545,7 @@
       "grammar_point": {
         "id": "gp-e-10",
         "title_ru": "Повторение: wh-вопросы, указательные, притяжательные, множественное",
-        "rule_md": "Повторение E-06...E-09 — коротко:\n\n- **Wh-вопросы**: What/Where/How/Who + is/are.\n- **this/these/that/those** — близко/далеко, ед./мн. число.\n- **Притяжательные**: my/his/her/their + Dima's sister.\n- **Множественное**: +s/-es; men, women, children — особые.",
+        "rule_md": "**What** is your name? **These** are my keys. **Her** brother is a student.\n\nПовторение E-06…E-09 — коротко:\n- **Wh-вопросы**: What / Where / How / Who + is / are.\n- **this / these / that / those** — близко / далеко × ед. / мн.\n- **Притяжательные**: my / his / her / their + Dima's sister.\n- **Множественное**: +s / -es; men, women, children — особые.\n\nПо-русски вопрос и «чей» держатся на падежах; по-английски — на порядке слов и 's.\n\nПроверь себя: The ___ are here. → men",
         "phrase_ids": ["ph-e-0395", "ph-e-0396", "ph-e-0397", "ph-e-0398", "ph-e-0399"],
         "trap_id": null
       },
@@ -1707,7 +1707,7 @@
       "grammar_point": {
         "id": "gp-e-11",
         "title_ru": "Present Simple — утверждение",
-        "rule_md": "Present Simple — утверждение: подлежащее + глагол в начальной форме.\n\n- **I / we / you / they** work, live, know, want, like.\n- I work in an office. They live in London.\n\nПовседневные, регулярные действия. Глагол не меняется для I/we/you/they.",
+        "rule_md": "I **work** in an office. — Я работаю в офисе. They **live** in London. — про обычную жизнь.\n\nЭто **Present Simple** — регулярные действия («всегда, обычно»), не «прямо сейчас».\n\n**Формула:** I / we / you / they + глагол **без изменений**\n- I work. We live. You know. They want.\n\nПо-русски окончание меняется по лицам (работаю / работаешь / работаем);\nпо-английски для I / we / you / they форма **одна**.\n\nПроверь себя: They ___ (speak) English. → speak",
         "phrase_ids": ["ph-e-0440", "ph-e-0441", "ph-e-0442", "ph-e-0443", "ph-e-0444"],
         "trap_id": null
       },
@@ -1878,7 +1878,7 @@
       "grammar_point": {
         "id": "gp-e-12",
         "title_ru": "Present Simple — третье лицо (-s)",
-        "rule_md": "Present Simple с he / she / it: глагол получает **-s**.\n\n- He work**s** in a bank. She live**s** in Paris. It open**s** at nine.\n- После шипящих: -es (watches, goes); y → ies (studies).\n\n⚠️ Ловушка ЛТ-03: «He live here» — нельзя! He live**s** here.",
+        "rule_md": "He work**s** in a bank. — Он работает в банке. She live**s** in Paris.\n\nPresent Simple с he / she / it: глагол получает **-s**.\n\n**Формула:** he / she / it + глагол + **-s**\n- He works in a bank. It opens at nine.\n- после шипящего → -es (watches, goes); согласная + y → -ies (studies)\n\nПо-русски лицо видно из окончания (работает); по-английски -s появляется только у he / she / it.\n\n⚠️ Ловушка ЛТ-03: ❌ He live here → ✔ He live**s** here.\n\nПроверь себя: She ___ (live) in Paris. → lives",
         "phrase_ids": ["ph-e-0484", "ph-e-0485", "ph-e-0486", "ph-e-0487", "ph-e-0488"],
         "trap_id": "trap-third-person-s"
       },
@@ -2052,7 +2052,7 @@
       "grammar_point": {
         "id": "gp-e-13",
         "title_ru": "Present Simple — отрицание (don't)",
-        "rule_md": "Отрицание Present Simple: **don't** + глагол.\n\n- I / we / you / they **don't** work. I don't know. We don't understand.\n\n⚠️ Ловушка ЛТ-04: «I no speak English» — нельзя! I **don't** speak English.",
+        "rule_md": "I **don't** know. — Я не знаю. We **don't** understand. — Мы не понимаем.\n\nОтрицание Present Simple: **don't** + глагол в чистой форме.\n\n**Формула:** I / we / you / they + don't + глагол\n- I don't know. They don't live here.\n\nПо-русски достаточно «не» («я не знаю»); по-английски нужен помощник: do + not = **don't**.\n\n⚠️ Ловушка ЛТ-04: ❌ I no speak English → ✔ I **don't** speak English.\n\nПроверь себя: We ___ understand. → don't",
         "phrase_ids": ["ph-e-0528", "ph-e-0529", "ph-e-0530", "ph-e-0531", "ph-e-0532"],
         "trap_id": "trap-no-do-negative"
       },
@@ -2226,7 +2226,7 @@
       "grammar_point": {
         "id": "gp-e-14",
         "title_ru": "Present Simple — отрицание 3-го лица",
-        "rule_md": "Отрицание с he / she / it: **doesn't** + глагол БЕЗ -s.\n\n- He doesn't work. She doesn't know. It doesn't work.\n- Ошибка: «He doesn't works» — после doesn't глагол чистый.\n\nЗакрепление ЛТ-03/ЛТ-04: does + чистый глагол, don't + чистый глагол.",
+        "rule_md": "He **doesn't** work here. — Он здесь не работает.\n\nОтрицание с he / she / it: **doesn't** + глагол БЕЗ -s.\n\n**Формула:** he / she / it + doesn't + глагол (чистый)\n- He doesn't work. She doesn't know. It doesn't work.\n\n⚠️ -s уже живёт в does: ❌ He doesn't works → ✔ He doesn't **work**.\n\nПо-русски «не» одно на все лица; по-английски don't (I / we / you / they) или doesn't (he / she / it).\n\nЗакрепление ЛТ-03/ЛТ-04: после don't / doesn't глагол всегда чистый.\n\nПроверь себя: She ___ speak English. → doesn't",
         "phrase_ids": ["ph-e-0572", "ph-e-0573", "ph-e-0574", "ph-e-0575", "ph-e-0576"],
         "trap_id": "trap-third-person-s"
       },
@@ -2403,7 +2403,7 @@
       "grammar_point": {
         "id": "gp-e-15",
         "title_ru": "Повторение: Present Simple +/−, Экстренные-I",
-        "rule_md": "Повторение E-11…E-14 — коротко:\n\n- **+**: I work. He work**s**.\n- **−**: I **don't** work. He **doesn't** work (глагол без -s!).\n- Экстренные фразы: Help! I'm lost. I don't understand. Where is the police station?\n\nКонтрольная-тренировка: найди ошибку + поставь время.",
+        "rule_md": "I **work**. He work**s**. I **don't** know. He **doesn't** work.\n\nПовторение E-11…E-14 — коротко:\n- **+**: I work. He works (he / she / it + -s).\n- **−**: I don't work. He doesn't work (глагол без -s!).\n\nПо-русски лицо меняет окончание глагола; по-английски -s только у he / she / it и исчезает после doesn't.\n\nЭкстренные фразы: Help! I'm lost. I don't understand. Where is the police station?\n\nПроверь себя: He ___ (work) in a bank. → works",
         "phrase_ids": ["ph-e-0616", "ph-e-0617", "ph-e-0618", "ph-e-0619", "ph-e-0620"],
         "trap_id": null
       },
@@ -2571,7 +2571,7 @@
       "grammar_point": {
         "id": "gp-e-16",
         "title_ru": "Do-вопросы и краткие ответы",
-        "rule_md": "Вопрос Present Simple: **Do** + подлежащее + глагол.\n\n- **Do** you work here? **Do** they live in London?\n- Краткие ответы: Yes, I **do**. / No, I **don't**.\n\n⚠️ Ловушка ЛТ-19: «Where you live?» — нельзя! Where **do** you live?",
+        "rule_md": "**Do** you work here? — Yes, I do. — Вы здесь работаете? — Да.\n\nВопрос Present Simple: **Do** + подлежащее + глагол.\n\n**Формула:** Do + I / you / we / they + глагол …?\n- Do you work here? Do they live in London?\n- Краткие ответы: Yes, I **do**. / No, I **don't**.\n\nПо-русски вопрос задаёт интонация («ты работаешь здесь?»); по-английски вперёд выходит do.\n\n⚠️ Ловушка ЛТ-19: ❌ Where you live? → ✔ Where **do** you live?\n\nПроверь себя: ___ you like coffee? → Do",
         "phrase_ids": ["ph-e-0660", "ph-e-0661", "ph-e-0662", "ph-e-0663", "ph-e-0664"],
         "trap_id": "trap-question-word-order"
       },
@@ -2745,7 +2745,7 @@
       "grammar_point": {
         "id": "gp-e-17",
         "title_ru": "Does-вопросы и краткие ответы",
-        "rule_md": "Вопрос с he/she/it: **Does** + подлежащее + глагол БЕЗ -s.\n\n- **Does** he work here? **Does** she like tea?\n- Краткие: Yes, he **does**. / No, she **doesn't**.\n- Спецвопросы: What **does** he do? Where **does** she work?\n\nПосле does глагол всегда в начальной форме (-s уходит в does).",
+        "rule_md": "He works in a bank. — **Does** he work in a bank? — Yes, he does.\n\nВопрос с he / she / it: **Does** + подлежащее + глагол БЕЗ -s (-s ушла в does).\n\n**Формула:** Does + he / she / it + глагол …?\n- Does he work here? Does she like tea?\n- Спецвопрос: What **does** he do? Where **does** she work?\n\nПо-русски «он работает?» — форма та же; по-английски -s исчезает: works → Does he work?\n\nКраткие: Yes, he does. / No, she doesn't.\n\nПроверь себя: Where ___ he work? → does",
         "phrase_ids": ["ph-e-0704", "ph-e-0705", "ph-e-0706", "ph-e-0707", "ph-e-0708"],
         "trap_id": null
       },
@@ -2919,7 +2919,7 @@
       "grammar_point": {
         "id": "gp-e-18",
         "title_ru": "Wh-вопросы в Present Simple",
-        "rule_md": "Спецвопросы Present Simple: Wh-слово + do/does + подлежащее + глагол.\n\n- **Where** do you work? **When** does the train leave?\n- **What** do you do? — вопрос о работе/занятии.\n- How do you say it in English? How much does it cost?\n\nПунктуация: заглавная I всегда; дни недели и месяцы — с заглавной (Monday, April).",
+        "rule_md": "**Where** do you work? — In an office. **When** does the train leave? — At nine.\n\nСпецвопрос Present Simple: Wh-слово + do / does + подлежащее + глагол.\n\n**Формула:** Where / When / Why / How + do / does + кто + глагол\n- Where do you work? How much does it cost?\n- **What do you do?** — чем занимаешься? (о работе)\n\n⚠️ Ловушка ЛТ-19: ❌ When the train leaves? → ✔ When **does** the train leave?\n\nПо-русски «где ты работаешь?» — без помощника; по-английски do / does обязателен.\n\nПунктуация: дни и месяцы — с заглавной: Monday, April.\n\nПроверь себя: ___ does the train leave? → When",
         "phrase_ids": ["ph-e-0748", "ph-e-0749", "ph-e-0750", "ph-e-0751", "ph-e-0752"],
         "trap_id": "trap-question-word-order"
       },
@@ -3093,7 +3093,7 @@
       "grammar_point": {
         "id": "gp-e-19",
         "title_ru": "Желания и вежливые просьбы",
-        "rule_md": "want / like / need + would like:\n\n- I **want** a coffee. I **want to** sleep. (want to + глагол)\n- I **like** tea. I **need** a ticket. I need **to** go.\n- Вежливо: **I'd like** a coffee, please. (I would like)\n\nI'd like — «я бы хотел»: в кафе, отеле, магазине.",
+        "rule_md": "I **want** a coffee. — Хочу кофе. I want **to** sleep. — Хочу спать.\n\nwant / like / need — желания; перед действием — **to**.\n\n**Формула:** want / need + to + глагол; + существительное — без to\n- I want **a coffee**. I want **to** sleep. I need **to** go.\n- Вежливо: **I'd like** a coffee, please. (= I would like)\n\nПо-русски «хочу спать» — глаголы рядом; по-английски их склеивает to.\n\nI'd like — «я бы хотел»: в кафе, отеле, магазине.\n\nПроверь себя: I want ___ sleep. → to",
         "phrase_ids": ["ph-e-0792", "ph-e-0793", "ph-e-0794", "ph-e-0795", "ph-e-0796"],
         "trap_id": null
       },
@@ -3264,7 +3264,7 @@
       "grammar_point": {
         "id": "gp-e-20",
         "title_ru": "Повторение: вопросы, желания, апостроф",
-        "rule_md": "Повторение E-16…E-19 — коротко:\n\n- **Do/Does**-вопросы и краткие ответы (do/does в ответе, не глагол).\n- Спецвопросы: Wh + do/does + подлежащее + глагол.\n- **want/like/need (+ to)**; вежливое **I'd like**.\n- Пунктуация: апостроф — don't, doesn't, I'd, John's (притяжательный).",
+        "rule_md": "**Do** you work? **Does** he want coffee? — Yes, he does.\n\nПовторение E-16…E-19 — коротко:\n- **Do / Does**-вопросы и краткие ответы (do / does, не глагол).\n- Спецвопросы: Wh + do / does + подлежащее + глагол.\n- **want / like / need (+ to)**; вежливое **I'd like**.\n\nПо-английски без do / does вопроса нет; по-русски хватает интонации.\n\nПунктуация: апостроф — don't, doesn't, I'd, John's (притяжательный).\n\nПроверь себя: ___ he want coffee? → Does",
         "phrase_ids": ["ph-e-0836", "ph-e-0837", "ph-e-0838", "ph-e-0839", "ph-e-0840"],
         "trap_id": null
       },
@@ -3429,7 +3429,7 @@
       "grammar_point": {
         "id": "gp-e-21",
         "title_ru": "want/need/have + to + глагол",
-        "rule_md": "Правило двух глаголов: после want / need / have — частица **to** + глагол.\n\n- I want **to** sleep. I need **to** work. I have **to** go.\n- Отрицание: I don't want **to** wait.\n\nwant + существительное (I want a coffee) — без to; want + действие — с to.",
+        "rule_md": "I want **to** sleep. I need **to** work. I have **to** go.\n\nПравило двух глаголов: want / need / have + **to** + действие.\n\n**Формула:** want / need / have + to + глагол\n- I want to sleep. I have to go.\n- Отрицание: I don't want **to** wait.\n\nПо-русски «хочу спать» — глаголы стоят рядом; по-английски их соединяет to.\n\nwant + предмет — без to (I want a coffee); want + действие — с to.\n\nПроверь себя: I need ___ go. → to",
         "phrase_ids": ["ph-e-0880", "ph-e-0881", "ph-e-0882", "ph-e-0883", "ph-e-0884"],
         "trap_id": null
       },
@@ -3600,7 +3600,7 @@
       "grammar_point": {
         "id": "gp-e-22",
         "title_ru": "always / often / never и порядок слов",
-        "rule_md": "Наречия частотности: **always, usually, often, sometimes, never**.\n\n- Стоят ПЕРЕД обычным глаголом: I **always** get up at seven.\n- После to be: I am **always** hungry.\n- never = уже отрицание: I never smoke (не «don't never»).\n\nПорядок слов: подлежащее → глагол → остальное (I speak English slowly).",
+        "rule_md": "I **always** get up at seven. — Я всегда встаю в семь.\n\nНаречия частотности: **always, usually, often, sometimes, never**.\n\n**Формула:** частотное наречие — ПЕРЕД обычным глаголом, ПОСЛЕ to be\n- I **always** get up at seven. He **often** plays tennis.\n- I am **always** hungry.\n\n⚠️ never — уже отрицание: ❌ I don't never smoke → ✔ I **never** smoke.\n\nПо-русски «всегда» гуляет по фразе свободно; по-английски место строгое.\n\nПорядок слов: подлежащее → глагол → остальное: I speak English slowly.\n\nПроверь себя: He ___ plays tennis. → often",
         "phrase_ids": ["ph-e-0924", "ph-e-0925", "ph-e-0926", "ph-e-0927", "ph-e-0928"],
         "trap_id": null
       },
@@ -3774,7 +3774,7 @@
       "grammar_point": {
         "id": "gp-e-23",
         "title_ru": "Present Continuous — утверждение",
-        "rule_md": "Present Simple vs Present Continuous: «сейчас» vs «всегда».\n\n- Сейчас: **am/is/are + глагол-ing** — I **am working** now. It **is raining**.\n- Всегда: Present Simple — I work every day.\n\nСигналы «сейчас»: now, look!, listen!",
+        "rule_md": "I **am working** now. — Я сейчас работаю. It **is raining**. — Идёт дождь.\n\n**Present Continuous** — процесс прямо сейчас.\n\n**Формула:** am / is / are + глагол + **-ing**\n- I am working now. He is sleeping. They are talking.\n\nПо-русски одно «работаю» на всё; по-английски «сейчас» и «всегда» — разные формы:\nI am working now, но I work every day.\n\nСигналы «сейчас»: now, look!, listen!\n\nПроверь себя: They ___ talking. → are",
         "phrase_ids": ["ph-e-0967", "ph-e-0968", "ph-e-0969", "ph-e-0970", "ph-e-0971"],
         "trap_id": null
       },
@@ -3945,7 +3945,7 @@
       "grammar_point": {
         "id": "gp-e-24",
         "title_ru": "Present Continuous — отрицание и вопросы",
-        "rule_md": "Present Continuous: отрицание и вопрос.\n\n- −: I am **not** working. He is**n't** sleeping.\n- ?: **Are** you working? **Is** he sleeping? — краткие: Yes, I am / No, I'm not.\n- Спецвопрос: What **are you doing**? Where **are you going**?\n\nПовтор экстренных: Help! I'm lost! Please help me!",
+        "rule_md": "I am **not** working. — Я сейчас не работаю. **Are** you working? — No, I'm not.\n\nPresent Continuous: отрицание и вопрос.\n\n**Формула:** − am / is / are + not + -ing; ? Am / Is / Are + подлежащее + -ing?\n- He is**n't** sleeping. **Is** he working?\n- Спецвопрос: What **are** you doing? Where **are** you going?\n\nПо-русски «не» и вопрос — интонацией; по-английски not стоит после глагола, а в вопросе глагол выходит вперёд.\n\nЭкстренные (повтор): Help! I'm lost! Please help me!\n\nПроверь себя: What ___ you doing? → are",
         "phrase_ids": ["ph-e-1011", "ph-e-1012", "ph-e-1013", "ph-e-1014", "ph-e-1015"],
         "trap_id": null
       },
