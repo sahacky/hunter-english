@@ -203,11 +203,12 @@ describe('LessonScreen /#/lesson/:id', () => {
     const summaryXp = Number((screen.getByText(/XP: \d+/).textContent ?? '').match(/\d+/)?.[0] ?? 0)
     expect(summaryXp).toBe(stats.xp)
     expect(row?.checkpoint.passesDone).toBe(1)
-    // фразы урока материализованы карточками en-ru (rule-1)
+    // фразы урока материализованы карточками en-ru (rule-1); чанк-фразы — ещё и chunk (Q2.2)
     const cards = await repo.getAllCards()
     const phraseCards = cards.filter((card) => card.note_id.startsWith('note_ph-e-'))
     expect(phraseCards.length).toBeGreaterThanOrEqual(40)
-    expect(phraseCards.every((card) => card.type === 'en-ru')).toBe(true)
+    expect(phraseCards.every((card) => card.type === 'en-ru' || card.type === 'chunk')).toBe(true)
+    expect(phraseCards.some((card) => card.type === 'chunk')).toBe(true)
   })
 
   it('финал: проход по ошибкам — только ошибочные задания, без XP/персиста (M11#11.3)', async () => {

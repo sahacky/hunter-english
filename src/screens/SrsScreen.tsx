@@ -11,7 +11,7 @@ import {
   previewDue,
   type QueueItem,
 } from '../domain/srs/scheduler'
-import type { Note, QueueEntry, SessionPlan } from '../domain/srs/types'
+import { chunkTemplate, type Note, type QueueEntry, type SessionPlan } from '../domain/srs/types'
 import {
   createFirstCards,
   loadWordNotes,
@@ -388,9 +388,16 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
         {entry.note.deck === 'words' && bandRank && (
           <p className="dim srs-band">{t('srs.band', { rank: bandRank })}</p>
         )}
-        <p className="srs-front" lang="en">
-          {entry.note.en}
-        </p>
+        {/* chunk-карточка (Q2.2): фронт — шаблон со слотом «___»; бэк — слот + фраза */}
+        {entry.card.type === 'chunk' && entry.note.chunkSlot ? (
+          <p className="srs-front" lang="en">
+            {chunkTemplate(entry.note.en, entry.note.chunkSlot)}
+          </p>
+        ) : (
+          <p className="srs-front" lang="en">
+            {entry.note.en}
+          </p>
+        )}
         <div className="lesson-audio" aria-label={t('srs.audioLabel')}>
           <button
             type="button"
@@ -408,9 +415,16 @@ export default function SrsScreen({ repo: repoProp, notes }: SrsScreenProps) {
           </button>
         </div>
         {revealed ? (
-          <p className="srs-back" lang="ru">
-            {entry.note.ru}
-          </p>
+          entry.card.type === 'chunk' && entry.note.chunkSlot ? (
+            <p className="srs-back" lang="en">
+              <strong>{entry.note.chunkSlot}</strong>
+              {` — ${entry.note.en} · ${entry.note.ru}`}
+            </p>
+          ) : (
+            <p className="srs-back" lang="ru">
+              {entry.note.ru}
+            </p>
+          )
         ) : (
           <p className="srs-back dim">{t('srs.hint')}</p>
         )}

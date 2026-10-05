@@ -16,6 +16,8 @@ export interface PhrasebookDialog {
     accepted?: string[]
     /** Предзаписанное аудио cori (plan://voice-fix V2.2); нет — Web Speech. */
     audio?: string
+    /** Слово-слот чанк-шаблона (план {#teaching-quality} Q2.2). */
+    chunk_slot?: string
   }[]
 }
 
@@ -61,10 +63,11 @@ export function toPhrasebookNotes(dialogs: readonly PhrasebookDialog[]): Note[] 
       .filter((line) => line.role === dialog.user_role)
       .map((line, index) => ({
         id: `note_${dialog.id}-l${index}`,
-        deck: 'phrasebook',
+        deck: 'phrasebook' as const,
         entityId: `${dialog.id}-l${index}`,
         en: line.text_en,
         ru: line.translation_ru,
+        chunkSlot: line.chunk_slot,
       })),
   )
 }

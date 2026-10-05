@@ -620,4 +620,17 @@ describe('сцены разговорника: info-gap контракт (пла
       }
     }
   })
+
+  it('chunk-разметка (Q2.2): 150+ фраз со слотом, слот присутствует в text_en', async () => {
+    const phrases = await loadPhrases()
+    const chunks = phrases.filter((phrase) => phrase.chunk_slot)
+    expect(chunks.length).toBeGreaterThanOrEqual(150)
+    for (const chunk of chunks) {
+      expect(chunk.chunk_slot, chunk.id).toMatch(/^[a-z]+$/)
+      expect(
+        new RegExp(`\\b${chunk.chunk_slot}\\b`, 'i').test(chunk.text_en),
+        `${chunk.id}: «${chunk.chunk_slot}» ∈ «${chunk.text_en}»`,
+      ).toBe(true)
+    }
+  })
 })

@@ -15,6 +15,8 @@ export interface PhraseItem {
   grammar_point_id: string | null
   variants: string[]
   audio?: { en_gb?: string }
+  /** Слово-слот чанк-шаблона (план {#teaching-quality} Q2.2). */
+  chunk_slot?: string
 }
 
 /** Блок answer упражнения — specs/05 §3. */
@@ -351,11 +353,12 @@ export function withWarmupVariant(view: LessonView, rng: () => number = Math.ran
 export function toPhraseNotes(phrases: readonly PhraseItem[]): Note[] {
   return phrases.map((phrase) => ({
     id: `note_${phrase.id}`,
-    deck: 'phrases',
+    deck: 'phrases' as const,
     entityId: phrase.id,
     en: phrase.text_en,
     ru: phrase.translation_ru,
     audio: phrase.audio?.en_gb,
+    chunkSlot: phrase.chunk_slot,
   }))
 }
 

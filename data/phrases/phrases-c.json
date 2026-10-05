@@ -4380,7 +4380,8 @@
       "variants": ["I want to tell you about my trip."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-0438.opus"
-      }
+      },
+      "chunk_slot": "tell"
     },
     {
       "id": "ph-c-0439",
@@ -5390,7 +5391,8 @@
       "variants": ["Let's see what happens."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-0539.opus"
-      }
+      },
+      "chunk_slot": "see"
     },
     {
       "id": "ph-c-0540",
@@ -5890,7 +5892,8 @@
       "variants": ["I'm going to travel this summer."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-0589.opus"
-      }
+      },
+      "chunk_slot": "travel"
     },
     {
       "id": "ph-c-0590",
@@ -5940,7 +5943,8 @@
       "variants": ["I'm going to call the police.", "I am going to call the police."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-0594.opus"
-      }
+      },
+      "chunk_slot": "call"
     },
     {
       "id": "ph-c-0595",
@@ -6090,7 +6094,8 @@
       "variants": ["I'm going to protect my family."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-0609.opus"
-      }
+      },
+      "chunk_slot": "protect"
     },
     {
       "id": "ph-c-0610",
@@ -6110,7 +6115,8 @@
       "variants": ["I'm going to try.", "I'll try."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-0611.opus"
-      }
+      },
+      "chunk_slot": "try"
     },
     {
       "id": "ph-c-0612",
@@ -6140,7 +6146,8 @@
       "variants": ["I'm going to say what I think."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-0614.opus"
-      }
+      },
+      "chunk_slot": "say"
     },
     {
       "id": "ph-c-0615",
@@ -6170,7 +6177,8 @@
       "variants": ["I'm going to bed."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-0617.opus"
-      }
+      },
+      "chunk_slot": "bed"
     },
     {
       "id": "ph-c-0618",
@@ -6270,7 +6278,8 @@
       "variants": ["I'm going to remember this moment."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-0627.opus"
-      }
+      },
+      "chunk_slot": "remember"
     },
     {
       "id": "ph-c-0628",
@@ -6300,7 +6309,8 @@
       "variants": ["I'm going to start next Monday."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-0630.opus"
-      }
+      },
+      "chunk_slot": "start"
     },
     {
       "id": "ph-c-0631",
@@ -6360,7 +6370,8 @@
       "variants": ["I'm going to visit my aunt."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-0636.opus"
-      }
+      },
+      "chunk_slot": "visit"
     },
     {
       "id": "ph-c-0637",
@@ -6460,7 +6471,8 @@
       "variants": ["I'm going to start a new job.", "I will start a new job."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-0646.opus"
-      }
+      },
+      "chunk_slot": "start"
     },
     {
       "id": "ph-c-0647",
@@ -6910,7 +6922,8 @@
       "variants": ["I have to work tomorrow."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-0691.opus"
-      }
+      },
+      "chunk_slot": "work"
     },
     {
       "id": "ph-c-0692",
@@ -7490,7 +7503,8 @@
       "variants": ["I have a headache."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-0749.opus"
-      }
+      },
+      "chunk_slot": "headache"
     },
     {
       "id": "ph-c-0750",
@@ -7500,7 +7514,8 @@
       "variants": ["I have a sore throat."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-0750.opus"
-      }
+      },
+      "chunk_slot": "sore"
     },
     {
       "id": "ph-c-0751",
@@ -7510,7 +7525,8 @@
       "variants": ["I have a temperature."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-0751.opus"
-      }
+      },
+      "chunk_slot": "temperature"
     },
     {
       "id": "ph-c-0752",
@@ -7520,7 +7536,8 @@
       "variants": ["I have a bad cough."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-0752.opus"
-      }
+      },
+      "chunk_slot": "bad"
     },
     {
       "id": "ph-c-0753",
@@ -8080,7 +8097,8 @@
       "variants": ["Would you like something to drink?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-0808.opus"
-      }
+      },
+      "chunk_slot": "something"
     },
     {
       "id": "ph-c-0809",
@@ -8560,7 +8578,8 @@
       "variants": ["I can't eat spicy food."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-0856.opus"
-      }
+      },
+      "chunk_slot": "eat"
     },
     {
       "id": "ph-c-0857",
@@ -8610,7 +8629,8 @@
       "variants": ["I'd rather stay at home."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-0861.opus"
-      }
+      },
+      "chunk_slot": "stay"
     },
     {
       "id": "ph-c-0862",
@@ -8700,7 +8720,8 @@
       "variants": ["I have to work tomorrow."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-0870.opus"
-      }
+      },
+      "chunk_slot": "work"
     },
     {
       "id": "ph-c-0871",
@@ -8810,7 +8831,8 @@
       "variants": ["I have a headache."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-0881.opus"
-      }
+      },
+      "chunk_slot": "headache"
     },
     {
       "id": "ph-c-0882",
@@ -9400,7 +9422,8 @@
       "variants": ["Do you have a bigger room?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-0940.opus"
-      }
+      },
+      "chunk_slot": "bigger"
     },
     {
       "id": "ph-c-0941",
@@ -9410,7 +9433,8 @@
       "variants": ["Do you have a cheaper one?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-0941.opus"
-      }
+      },
+      "chunk_slot": "cheaper"
     },
     {
       "id": "ph-c-0942",
@@ -9420,7 +9444,8 @@
       "variants": ["Is there a faster way?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-0942.opus"
-      }
+      },
+      "chunk_slot": "faster"
     },
     {
       "id": "ph-c-0943",
@@ -10300,7 +10325,8 @@
       "variants": ["Thank you for everything."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-1030.opus"
-      }
+      },
+      "chunk_slot": "everything"
     },
     {
       "id": "ph-c-1031",
@@ -11100,7 +11126,8 @@
       "variants": ["Thank you for everything."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-1110.opus"
-      }
+      },
+      "chunk_slot": "everything"
     },
     {
       "id": "ph-c-1111",
@@ -11190,7 +11217,8 @@
       "variants": ["Do you have a bigger room?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-1119.opus"
-      }
+      },
+      "chunk_slot": "bigger"
     },
     {
       "id": "ph-c-1120",
@@ -11400,7 +11428,8 @@
       "variants": ["What time does boarding start?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-1140.opus"
-      }
+      },
+      "chunk_slot": "boarding"
     },
     {
       "id": "ph-c-1141",
@@ -11590,7 +11619,8 @@
       "variants": ["Have a nice flight!"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-1159.opus"
-      }
+      },
+      "chunk_slot": "flight"
     },
     {
       "id": "ph-c-1160",
@@ -11960,7 +11990,8 @@
       "variants": ["Do you have a return ticket?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-1196.opus"
-      }
+      },
+      "chunk_slot": "return"
     },
     {
       "id": "ph-c-1197",
@@ -12230,7 +12261,8 @@
       "variants": ["Have a nice day."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-1223.opus"
-      }
+      },
+      "chunk_slot": "day"
     },
     {
       "id": "ph-c-1224",
@@ -12270,7 +12302,8 @@
       "variants": ["I have a reservation."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-1227.opus"
-      }
+      },
+      "chunk_slot": "reservation"
     },
     {
       "id": "ph-c-1228",
@@ -12470,7 +12503,8 @@
       "variants": ["Is there a safe in the room?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-1247.opus"
-      }
+      },
+      "chunk_slot": "safe"
     },
     {
       "id": "ph-c-1248",
@@ -12500,7 +12534,8 @@
       "variants": ["Is there a gym in the hotel?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-1250.opus"
-      }
+      },
+      "chunk_slot": "gym"
     },
     {
       "id": "ph-c-1251",
@@ -12570,7 +12605,8 @@
       "variants": ["I'd like to pay by card."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-1257.opus"
-      }
+      },
+      "chunk_slot": "pay"
     },
     {
       "id": "ph-c-1258",
@@ -12740,7 +12776,8 @@
       "variants": ["Do you have a reservation?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-1274.opus"
-      }
+      },
+      "chunk_slot": "reservation"
     },
     {
       "id": "ph-c-1275",
@@ -13230,7 +13267,8 @@
       "variants": ["I have a reservation."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-1323.opus"
-      }
+      },
+      "chunk_slot": "reservation"
     },
     {
       "id": "ph-c-1324",
@@ -13500,7 +13538,8 @@
       "variants": ["I have to work tomorrow."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-1350.opus"
-      }
+      },
+      "chunk_slot": "work"
     },
     {
       "id": "ph-c-1351",
@@ -13570,7 +13609,8 @@
       "variants": ["I'm going to travel this summer."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-1357.opus"
-      }
+      },
+      "chunk_slot": "travel"
     },
     {
       "id": "ph-c-1358",

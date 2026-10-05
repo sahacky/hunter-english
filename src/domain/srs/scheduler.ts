@@ -278,7 +278,7 @@ export function buildQueue(items: QueueItem[], options: BuildQueueOptions): Sess
   }
   const isWakeUp = (card: CardState): boolean =>
     card.state === State.New &&
-    REVERSE_CARD_TYPES.includes(card.type) &&
+    (REVERSE_CARD_TYPES.includes(card.type) || card.type === 'chunk') &&
     matureByNote.has(card.note_id)
 
   const learning: CardState[] = []
@@ -289,7 +289,9 @@ export function buildQueue(items: QueueItem[], options: BuildQueueOptions): Sess
   for (const { card } of active) {
     if (card.state === State.New) {
       if (isWakeUp(card)) wakeUps.push(card)
-      else newCards.push(card)
+      // чанк-карточки (Q2.2) не расходуют дневной лимит новых: до зрелости note
+      // они остаются New и придут только через пробуждение (rule-2)
+      else if (card.type !== 'chunk') newCards.push(card)
       continue
     }
     if (card.due > nowIso) continue

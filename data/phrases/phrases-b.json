@@ -670,7 +670,8 @@
       "variants": ["Have you ever tried Korean food?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0067.opus"
-      }
+      },
+      "chunk_slot": "tried"
     },
     {
       "id": "ph-b-0068",
@@ -680,7 +681,8 @@
       "variants": ["Have you ever seen this film?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0068.opus"
-      }
+      },
+      "chunk_slot": "seen"
     },
     {
       "id": "ph-b-0069",
@@ -690,7 +692,8 @@
       "variants": ["Have you ever flown at night?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0069.opus"
-      }
+      },
+      "chunk_slot": "flown"
     },
     {
       "id": "ph-b-0070",
@@ -830,7 +833,8 @@
       "variants": ["Have you ever missed a flight?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0083.opus"
-      }
+      },
+      "chunk_slot": "missed"
     },
     {
       "id": "ph-b-0084",
@@ -850,7 +854,8 @@
       "variants": ["Have you ever lost your luggage?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0085.opus"
-      }
+      },
+      "chunk_slot": "lost"
     },
     {
       "id": "ph-b-0086",
@@ -950,7 +955,8 @@
       "variants": ["Have you ever won a prize?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0095.opus"
-      }
+      },
+      "chunk_slot": "won"
     },
     {
       "id": "ph-b-0096",
@@ -2050,7 +2056,8 @@
       "variants": ["Have you ever tried Indian food?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0205.opus"
-      }
+      },
+      "chunk_slot": "tried"
     },
     {
       "id": "ph-b-0206",
@@ -2330,7 +2337,8 @@
       "variants": ["Have you ever driven at night?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0233.opus"
-      }
+      },
+      "chunk_slot": "driven"
     },
     {
       "id": "ph-b-0234",
@@ -4970,7 +4978,8 @@
       "variants": ["I'd rather fight for my life than live it."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0497.opus"
-      }
+      },
+      "chunk_slot": "fight"
     },
     {
       "id": "ph-b-0498",
@@ -5630,7 +5639,8 @@
       "variants": ["I used to live in London."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0563.opus"
-      }
+      },
+      "chunk_slot": "live"
     },
     {
       "id": "ph-b-0564",
@@ -5640,7 +5650,8 @@
       "variants": ["I used to live here."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0564.opus"
-      }
+      },
+      "chunk_slot": "live"
     },
     {
       "id": "ph-b-0565",
@@ -5660,7 +5671,8 @@
       "variants": ["I used to play the piano."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0566.opus"
-      }
+      },
+      "chunk_slot": "play"
     },
     {
       "id": "ph-b-0567",
@@ -5700,7 +5712,8 @@
       "variants": ["I used to like it."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0570.opus"
-      }
+      },
+      "chunk_slot": "like"
     },
     {
       "id": "ph-b-0571",
@@ -6150,7 +6163,8 @@
       "variants": ["I used to live in Rome."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0615.opus"
-      }
+      },
+      "chunk_slot": "live"
     },
     {
       "id": "ph-b-0616",
@@ -7260,7 +7274,8 @@
       "variants": ["I need to rest."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0726.opus"
-      }
+      },
+      "chunk_slot": "rest"
     },
     {
       "id": "ph-b-0727",
@@ -7280,7 +7295,8 @@
       "variants": ["I decided to leave."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0728.opus"
-      }
+      },
+      "chunk_slot": "leave"
     },
     {
       "id": "ph-b-0729",
@@ -7320,7 +7336,8 @@
       "variants": ["I hope to see you soon."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0732.opus"
-      }
+      },
+      "chunk_slot": "see"
     },
     {
       "id": "ph-b-0733",
@@ -7350,7 +7367,8 @@
       "variants": ["I plan to start next week."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0735.opus"
-      }
+      },
+      "chunk_slot": "start"
     },
     {
       "id": "ph-b-0736",
@@ -7360,7 +7378,8 @@
       "variants": ["I'd like to book a table."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0736.opus"
-      }
+      },
+      "chunk_slot": "book"
     },
     {
       "id": "ph-b-0737",
@@ -7370,7 +7389,8 @@
       "variants": ["I'd love to visit Japan."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0737.opus"
-      }
+      },
+      "chunk_slot": "visit"
     },
     {
       "id": "ph-b-0738",
@@ -7410,7 +7430,8 @@
       "variants": ["I learned to swim."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0741.opus"
-      }
+      },
+      "chunk_slot": "swim"
     },
     {
       "id": "ph-b-0742",
@@ -7690,7 +7711,8 @@
       "variants": ["Let's set off before the traffic."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0769.opus"
-      }
+      },
+      "chunk_slot": "set"
     },
     {
       "id": "ph-b-0770",
@@ -7830,7 +7852,8 @@
       "variants": ["It's time to set off."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0783.opus"
-      }
+      },
+      "chunk_slot": "set"
     },
     {
       "id": "ph-b-0784",
@@ -7920,7 +7943,8 @@
       "variants": ["I need to check in for my flight."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0792.opus"
-      }
+      },
+      "chunk_slot": "check"
     },
     {
       "id": "ph-b-0793",
@@ -8410,7 +8434,8 @@
       "variants": ["I can't wait!"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0841.opus"
-      }
+      },
+      "chunk_slot": "wait"
     },
     {
       "id": "ph-b-0842",
@@ -8490,7 +8515,8 @@
       "variants": ["I need to figure it out."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0849.opus"
-      }
+      },
+      "chunk_slot": "figure"
     },
     {
       "id": "ph-b-0850",
@@ -8500,7 +8526,8 @@
       "variants": ["I can't figure it out."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0850.opus"
-      }
+      },
+      "chunk_slot": "figure"
     },
     {
       "id": "ph-b-0851",
@@ -8810,7 +8837,8 @@
       "variants": ["I decided to leave."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0881.opus"
-      }
+      },
+      "chunk_slot": "leave"
     },
     {
       "id": "ph-b-0882",
@@ -8920,7 +8948,8 @@
       "variants": ["I hope to see you soon."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0892.opus"
-      }
+      },
+      "chunk_slot": "see"
     },
     {
       "id": "ph-b-0893",
@@ -8970,7 +8999,8 @@
       "variants": ["I'd love to visit Japan."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0897.opus"
-      }
+      },
+      "chunk_slot": "visit"
     },
     {
       "id": "ph-b-0898",
@@ -9000,7 +9030,8 @@
       "variants": ["I can't figure it out."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-0900.opus"
-      }
+      },
+      "chunk_slot": "figure"
     },
     {
       "id": "ph-b-0901",
@@ -10560,7 +10591,8 @@
       "variants": ["There's a problem, isn't there?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-1056.opus"
-      }
+      },
+      "chunk_slot": "problem"
     },
     {
       "id": "ph-b-1057",
@@ -10790,7 +10822,8 @@
       "variants": ["I'm interested in history."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-1079.opus"
-      }
+      },
+      "chunk_slot": "history"
     },
     {
       "id": "ph-b-1080",
@@ -11090,7 +11123,8 @@
       "variants": ["I'm sorry for being late."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-1109.opus"
-      }
+      },
+      "chunk_slot": "being"
     },
     {
       "id": "ph-b-1110",
@@ -11200,7 +11234,8 @@
       "variants": ["I'm interested in history."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-1120.opus"
-      }
+      },
+      "chunk_slot": "history"
     },
     {
       "id": "ph-b-1121",
@@ -11560,7 +11595,8 @@
       "variants": ["Let's eat out tonight."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-1156.opus"
-      }
+      },
+      "chunk_slot": "eat"
     },
     {
       "id": "ph-b-1157",
@@ -11720,7 +11756,8 @@
       "variants": ["I can't put up with this noise."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-1172.opus"
-      }
+      },
+      "chunk_slot": "put"
     },
     {
       "id": "ph-b-1173",
@@ -11840,7 +11877,8 @@
       "variants": ["Take care of yourself."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-1184.opus"
-      }
+      },
+      "chunk_slot": "yourself"
     },
     {
       "id": "ph-b-1185",
@@ -12990,7 +13028,8 @@
       "variants": ["Let's eat out tonight."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-1299.opus"
-      }
+      },
+      "chunk_slot": "eat"
     },
     {
       "id": "ph-b-1300",
@@ -13160,7 +13199,8 @@
       "variants": ["I'm interested in history."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-1316.opus"
-      }
+      },
+      "chunk_slot": "history"
     },
     {
       "id": "ph-b-1317",
@@ -13280,7 +13320,8 @@
       "variants": ["I used to live in London."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-1328.opus"
-      }
+      },
+      "chunk_slot": "live"
     },
     {
       "id": "ph-b-1329",
@@ -13410,7 +13451,8 @@
       "variants": ["I used to smoke."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-1341.opus"
-      }
+      },
+      "chunk_slot": "smoke"
     },
     {
       "id": "ph-b-1342",
@@ -13710,7 +13752,8 @@
       "variants": ["Let's eat out tonight."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-1371.opus"
-      }
+      },
+      "chunk_slot": "eat"
     },
     {
       "id": "ph-b-1372",

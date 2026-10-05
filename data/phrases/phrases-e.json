@@ -90,7 +90,8 @@
       "variants": ["Welcome to Moscow."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0009.opus"
-      }
+      },
+      "chunk_slot": "moscow"
     },
     {
       "id": "ph-e-0010",
@@ -790,7 +791,8 @@
       "variants": ["I have a brother."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0079.opus"
-      }
+      },
+      "chunk_slot": "brother"
     },
     {
       "id": "ph-e-0080",
@@ -800,7 +802,8 @@
       "variants": ["I have a sister."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0080.opus"
-      }
+      },
+      "chunk_slot": "sister"
     },
     {
       "id": "ph-e-0081",
@@ -810,7 +813,8 @@
       "variants": ["I have a question."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0081.opus"
-      }
+      },
+      "chunk_slot": "question"
     },
     {
       "id": "ph-e-0082",
@@ -820,7 +824,8 @@
       "variants": ["I have an idea."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0082.opus"
-      }
+      },
+      "chunk_slot": "idea"
     },
     {
       "id": "ph-e-0083",
@@ -3670,7 +3675,8 @@
       "variants": ["I have a hundred rubles."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0367.opus"
-      }
+      },
+      "chunk_slot": "hundred"
     },
     {
       "id": "ph-e-0368",
@@ -4430,7 +4436,8 @@
       "variants": ["I want a coffee."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0443.opus"
-      }
+      },
+      "chunk_slot": "coffee"
     },
     {
       "id": "ph-e-0444",
@@ -4630,7 +4637,8 @@
       "variants": ["I want to learn English."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0463.opus"
-      }
+      },
+      "chunk_slot": "learn"
     },
     {
       "id": "ph-e-0464",
@@ -4640,7 +4648,8 @@
       "variants": ["I like to read books."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0464.opus"
-      }
+      },
+      "chunk_slot": "read"
     },
     {
       "id": "ph-e-0465",
@@ -4770,7 +4779,8 @@
       "variants": ["I want to stay here."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0477.opus"
-      }
+      },
+      "chunk_slot": "stay"
     },
     {
       "id": "ph-e-0478",
@@ -5600,7 +5610,8 @@
       "variants": ["I don't want to work today."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0560.opus"
-      }
+      },
+      "chunk_slot": "work"
     },
     {
       "id": "ph-e-0561",
@@ -5690,7 +5701,8 @@
       "variants": ["I don't want to sleep."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0569.opus"
-      }
+      },
+      "chunk_slot": "sleep"
     },
     {
       "id": "ph-e-0570",
@@ -6270,7 +6282,8 @@
       "variants": ["I need a doctor."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0627.opus"
-      }
+      },
+      "chunk_slot": "doctor"
     },
     {
       "id": "ph-e-0628",
@@ -6350,7 +6363,8 @@
       "variants": ["I don't want to stay home."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0635.opus"
-      }
+      },
+      "chunk_slot": "stay"
     },
     {
       "id": "ph-e-0636",
@@ -6620,7 +6634,8 @@
       "variants": ["Do you know him?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0662.opus"
-      }
+      },
+      "chunk_slot": "him"
     },
     {
       "id": "ph-e-0663",
@@ -6670,7 +6685,8 @@
       "variants": ["Do you have a pen?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0667.opus"
-      }
+      },
+      "chunk_slot": "pen"
     },
     {
       "id": "ph-e-0668",
@@ -7770,7 +7786,8 @@
       "variants": ["Where can I eat?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0777.opus"
-      }
+      },
+      "chunk_slot": "eat"
     },
     {
       "id": "ph-e-0778",
@@ -7920,7 +7937,8 @@
       "variants": ["I want a coffee, please."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0792.opus"
-      }
+      },
+      "chunk_slot": "coffee"
     },
     {
       "id": "ph-e-0793",
@@ -7950,7 +7968,8 @@
       "variants": ["I want to eat."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0795.opus"
-      }
+      },
+      "chunk_slot": "eat"
     },
     {
       "id": "ph-e-0796",
@@ -7960,7 +7979,8 @@
       "variants": ["I want to sleep."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0796.opus"
-      }
+      },
+      "chunk_slot": "sleep"
     },
     {
       "id": "ph-e-0797",
@@ -7970,7 +7990,8 @@
       "variants": ["I want to stay here."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0797.opus"
-      }
+      },
+      "chunk_slot": "stay"
     },
     {
       "id": "ph-e-0798",
@@ -7990,7 +8011,8 @@
       "variants": ["I want to learn English."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0799.opus"
-      }
+      },
+      "chunk_slot": "learn"
     },
     {
       "id": "ph-e-0800",
@@ -8000,7 +8022,8 @@
       "variants": ["I want to travel."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0800.opus"
-      }
+      },
+      "chunk_slot": "travel"
     },
     {
       "id": "ph-e-0801",
@@ -8010,7 +8033,8 @@
       "variants": ["I want to help you."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0801.opus"
-      }
+      },
+      "chunk_slot": "help"
     },
     {
       "id": "ph-e-0802",
@@ -8070,7 +8094,8 @@
       "variants": ["I need a ticket."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0807.opus"
-      }
+      },
+      "chunk_slot": "ticket"
     },
     {
       "id": "ph-e-0808",
@@ -8080,7 +8105,8 @@
       "variants": ["I need a map."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0808.opus"
-      }
+      },
+      "chunk_slot": "map"
     },
     {
       "id": "ph-e-0809",
@@ -8090,7 +8116,8 @@
       "variants": ["I need a room."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0809.opus"
-      }
+      },
+      "chunk_slot": "room"
     },
     {
       "id": "ph-e-0810",
@@ -8100,7 +8127,8 @@
       "variants": ["I need a doctor."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0810.opus"
-      }
+      },
+      "chunk_slot": "doctor"
     },
     {
       "id": "ph-e-0811",
@@ -8120,7 +8148,8 @@
       "variants": ["I need to work."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0812.opus"
-      }
+      },
+      "chunk_slot": "work"
     },
     {
       "id": "ph-e-0813",
@@ -8130,7 +8159,8 @@
       "variants": ["I need to rest."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0813.opus"
-      }
+      },
+      "chunk_slot": "rest"
     },
     {
       "id": "ph-e-0814",
@@ -8190,7 +8220,8 @@
       "variants": ["I'd like to book a ticket."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0819.opus"
-      }
+      },
+      "chunk_slot": "book"
     },
     {
       "id": "ph-e-0820",
@@ -8320,7 +8351,8 @@
       "variants": ["I want to find my friend."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0832.opus"
-      }
+      },
+      "chunk_slot": "find"
     },
     {
       "id": "ph-e-0833",
@@ -8330,7 +8362,8 @@
       "variants": ["I want to hear it."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0833.opus"
-      }
+      },
+      "chunk_slot": "hear"
     },
     {
       "id": "ph-e-0834",
@@ -8470,7 +8503,8 @@
       "variants": ["I want to eat something."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0847.opus"
-      }
+      },
+      "chunk_slot": "eat"
     },
     {
       "id": "ph-e-0848",
@@ -8480,7 +8514,8 @@
       "variants": ["I need to buy a ticket."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0848.opus"
-      }
+      },
+      "chunk_slot": "buy"
     },
     {
       "id": "ph-e-0849",
@@ -8670,7 +8705,8 @@
       "variants": ["I'd like to ask a question."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0867.opus"
-      }
+      },
+      "chunk_slot": "ask"
     },
     {
       "id": "ph-e-0868",
@@ -8770,7 +8806,8 @@
       "variants": ["I need to call my mother."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0877.opus"
-      }
+      },
+      "chunk_slot": "call"
     },
     {
       "id": "ph-e-0878",
@@ -8800,7 +8837,8 @@
       "variants": ["I want to stay."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0880.opus"
-      }
+      },
+      "chunk_slot": "stay"
     },
     {
       "id": "ph-e-0881",
@@ -8810,7 +8848,8 @@
       "variants": ["I want to work."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0881.opus"
-      }
+      },
+      "chunk_slot": "work"
     },
     {
       "id": "ph-e-0882",
@@ -8820,7 +8859,8 @@
       "variants": ["I want to read."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0882.opus"
-      }
+      },
+      "chunk_slot": "read"
     },
     {
       "id": "ph-e-0883",
@@ -8830,7 +8870,8 @@
       "variants": ["I want to buy a ticket."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0883.opus"
-      }
+      },
+      "chunk_slot": "buy"
     },
     {
       "id": "ph-e-0884",
@@ -8840,7 +8881,8 @@
       "variants": ["I want to open the window."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0884.opus"
-      }
+      },
+      "chunk_slot": "open"
     },
     {
       "id": "ph-e-0885",
@@ -8850,7 +8892,8 @@
       "variants": ["I want to ask a question."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0885.opus"
-      }
+      },
+      "chunk_slot": "ask"
     },
     {
       "id": "ph-e-0886",
@@ -8860,7 +8903,8 @@
       "variants": ["I want to call a taxi."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0886.opus"
-      }
+      },
+      "chunk_slot": "call"
     },
     {
       "id": "ph-e-0887",
@@ -8880,7 +8924,8 @@
       "variants": ["I need to work today."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0888.opus"
-      }
+      },
+      "chunk_slot": "work"
     },
     {
       "id": "ph-e-0889",
@@ -8890,7 +8935,8 @@
       "variants": ["I need to buy bread."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0889.opus"
-      }
+      },
+      "chunk_slot": "buy"
     },
     {
       "id": "ph-e-0890",
@@ -8900,7 +8946,8 @@
       "variants": ["I need to call my mother."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0890.opus"
-      }
+      },
+      "chunk_slot": "call"
     },
     {
       "id": "ph-e-0891",
@@ -8910,7 +8957,8 @@
       "variants": ["I need to find my friend."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0891.opus"
-      }
+      },
+      "chunk_slot": "find"
     },
     {
       "id": "ph-e-0892",
@@ -8920,7 +8968,8 @@
       "variants": ["I need to sleep."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0892.opus"
-      }
+      },
+      "chunk_slot": "sleep"
     },
     {
       "id": "ph-e-0893",
@@ -9060,7 +9109,8 @@
       "variants": ["I don't want to wait."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0906.opus"
-      }
+      },
+      "chunk_slot": "wait"
     },
     {
       "id": "ph-e-0907",
@@ -9090,7 +9140,8 @@
       "variants": ["I have to work."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0909.opus"
-      }
+      },
+      "chunk_slot": "work"
     },
     {
       "id": "ph-e-0910",
@@ -9110,7 +9161,8 @@
       "variants": ["I want to learn English."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0911.opus"
-      }
+      },
+      "chunk_slot": "learn"
     },
     {
       "id": "ph-e-0912",
@@ -9120,7 +9172,8 @@
       "variants": ["I want to speak English."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0912.opus"
-      }
+      },
+      "chunk_slot": "speak"
     },
     {
       "id": "ph-e-0913",
@@ -9130,7 +9183,8 @@
       "variants": ["I want to understand you."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0913.opus"
-      }
+      },
+      "chunk_slot": "understand"
     },
     {
       "id": "ph-e-0914",
@@ -9140,7 +9194,8 @@
       "variants": ["I need to understand it."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0914.opus"
-      }
+      },
+      "chunk_slot": "understand"
     },
     {
       "id": "ph-e-0915",
@@ -9220,7 +9275,8 @@
       "variants": ["I need a break."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-0922.opus"
-      }
+      },
+      "chunk_slot": "break"
     },
     {
       "id": "ph-e-0923",

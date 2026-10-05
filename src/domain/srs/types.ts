@@ -1,8 +1,8 @@
 // Implements: plan://M4#4.1 — общие типы SRS-домена (specs/03, specs/06 §1)
 // Чистый TS без знания о хранилище и React (архитектурный «шов», PLANS → M4).
 
-/** Типы карточек — specs/03 §3 (srs://card-types). */
-export type CardType = 'en-ru' | 'ru-en' | 'dictation' | 'cloze' | 'speak' | 'grammar'
+/** Типы карточек — specs/03 §3 (srs://card-types); chunk — план {#teaching-quality} Q2.2. */
+export type CardType = 'en-ru' | 'ru-en' | 'dictation' | 'cloze' | 'speak' | 'grammar' | 'chunk'
 
 /** Колоды — specs/06 §1 card_states.deck. */
 export type Deck = 'words' | 'phrases' | 'quotes' | 'phrasebook'
@@ -23,6 +23,13 @@ export interface Note {
   ru: string
   /** Путь аудио из контента, напр. `audio/words/cori/house-noun.opus`. */
   audio?: string
+  /**
+   * Слово-слот чанк-шаблона (план {#teaching-quality} Q2.2): фраза вида
+   * «I'd like to book…» со слотом «book» → карточка типа 'chunk':
+   * фронт «I'd like to ___…», проверка слота. Пробуждается по rule-2
+   * (mature-сиблинг), дневной лимит новых не расходует.
+   */
+  chunkSlot?: string
 }
 
 /**
@@ -116,6 +123,14 @@ export const REVERSE_CARD_TYPES: CardType[] = ['ru-en', 'speak']
 
 /** Интервал пассивной карточки (дней), открывающий обратные (srs://rule-2). */
 export const WAKEUP_THRESHOLD_DAYS = 7
+
+/** Максимум пробуждений в день (srs://rule-2). */
+
+/** Шаблон чанк-карточки: фраза с заменённым слотом (Q2.2). */
+export function chunkTemplate(en: string, slot: string): string {
+  const pattern = new RegExp(`\\b${slot.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i')
+  return en.replace(pattern, '___')
+}
 
 /** Максимум пробуждений в день (srs://rule-2). */
 export const WAKEUP_DAILY_LIMIT = 5

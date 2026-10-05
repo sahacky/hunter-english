@@ -220,7 +220,8 @@
           "audio": "audio/phrasebook/cori/pb-smalltalk-04-l1.opus",
           "text_en": "I used to play football every day.",
           "translation_ru": "Я раньше каждый день играл в футбол.",
-          "accepted": ["I used to play football every day.", "I used to play football."]
+          "accepted": ["I used to play football every day.", "I used to play football."],
+          "chunk_slot": "play"
         },
         {
           "role": "local",

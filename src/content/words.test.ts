@@ -1,6 +1,6 @@
 // Implements: plan://M4#4.3 — тесты загрузчика контента на реальных data/words
 import { describe, expect, it } from 'vitest'
-import { YOUNG_MATURE_DAYS, WORD_CARD_ORDER } from '../domain/srs/types'
+import { YOUNG_MATURE_DAYS, WORD_CARD_ORDER, type Note } from '../domain/srs/types'
 import {
   cardId,
   createFirstCards,
@@ -57,6 +57,28 @@ describe('createFirstCards (srs://rule-1)', () => {
     const notes = await loadWordNotes()
     const cards = createFirstCards(notes, NOW)
     expect(new Set(cards.map(({ card_id }) => card_id)).size).toBe(cards.length)
+  })
+
+  it('chunkSlot-заметка получает вторую карточку chunk (Q2.2)', () => {
+    const notes: Note[] = [
+      {
+        id: 'note_ph-1',
+        deck: 'phrases',
+        entityId: 'ph-1',
+        en: "I'd like to book a table.",
+        ru: 'Я хотел бы забронировать столик.',
+        chunkSlot: 'book',
+      },
+    ]
+    const cards = createFirstCards(notes, NOW)
+    expect(cards.map(({ type }) => type)).toEqual(['en-ru', 'chunk'])
+    expect(cards[1]).toMatchObject({
+      card_id: 'ph-1.chunk',
+      note_id: 'note_ph-1',
+      deck: 'phrases',
+      state: 0,
+      suspended: false,
+    })
   })
 })
 

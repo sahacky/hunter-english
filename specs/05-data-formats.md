@@ -133,6 +133,7 @@ data/
 | `translation_ru` | string | ✅ | задание для перевода RU→EN |
 | `grammar_point_id` | string \| null | ✅ | ссылка на грамматическую точку урока (`gp-e-03`); `null` для лексических фраз |
 | `variants` | string[] (≥ 1) | ✅ | все допустимые EN-варианты ответа, включая `text_en` (§3 проверка) |
+| `chunk_slot` | string | — | слово-слот чанк-шаблона (план {#teaching-quality} Q2.2): обязано присутствовать в `text_en`; фраза получает chunk-карточку SRS (фронт `___`, specs/03 {#interleaving-policy}) |
 | `audio` | object | — | `{ "en_gb": "audio/phrases/cori/ph-e-0042.opus" }` |
 
 ```json
@@ -606,7 +607,7 @@ data/
 | `user_role` | string | ✅ | роль пользователя (`passenger`) |
 | `lines` | array | ✅ | реплики по порядку |
 
-Реплика: `{ "role": "npc|passenger", "text_en", "translation_ru", "accepted?" }`; для реплик пользователя (`role = user_role`) поле `accepted: string[]` (≥ 1 вариант) обязательно — по нему идёт проверка (нормализация + `typo: "allow"`, распознанная речь — `speech_threshold`).
+Реплика: `{ "role": "npc|passenger", "text_en", "translation_ru", "accepted?" }`; для реплик пользователя (`role = user_role`) поле `accepted: string[]` (≥ 1 вариант) обязательно — по нему идёт проверка (нормализация + `typo: "allow"`, распознанная речь — `speech_threshold`). Опциональное `chunk_slot` у реплик пользователя — чанк-разметка Q2.2 (как у phrase, §2).
 
 ```json
 {

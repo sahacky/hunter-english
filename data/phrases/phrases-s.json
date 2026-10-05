@@ -390,7 +390,8 @@
       "variants": ["Let's hit the road early."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-s-0039.opus"
-      }
+      },
+      "chunk_slot": "hit"
     },
     {
       "id": "ph-s-0040",
@@ -470,7 +471,8 @@
       "variants": ["Let's call it a day."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-s-0047.opus"
-      }
+      },
+      "chunk_slot": "call"
     },
     {
       "id": "ph-s-0048",
@@ -770,7 +772,8 @@
       "variants": ["I'd rather stay in tonight."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-s-0077.opus"
-      }
+      },
+      "chunk_slot": "stay"
     },
     {
       "id": "ph-s-0078",
@@ -1750,7 +1753,8 @@
       "variants": ["Let's call it a day."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-s-0175.opus"
-      }
+      },
+      "chunk_slot": "call"
     },
     {
       "id": "ph-s-0176",
@@ -3110,7 +3114,8 @@
       "variants": ["Let me think for a second."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-s-0311.opus"
-      }
+      },
+      "chunk_slot": "think"
     },
     {
       "id": "ph-s-0312",
@@ -3340,7 +3345,8 @@
       "variants": ["Let's agree to disagree."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-s-0334.opus"
-      }
+      },
+      "chunk_slot": "agree"
     },
     {
       "id": "ph-s-0335",
@@ -3800,7 +3806,8 @@
       "variants": ["Can you help me real quick?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-s-0380.opus"
-      }
+      },
+      "chunk_slot": "real"
     },
     {
       "id": "ph-s-0381",
@@ -3990,7 +3997,8 @@
       "variants": ["Let me think for a second."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-s-0399.opus"
-      }
+      },
+      "chunk_slot": "think"
     },
     {
       "id": "ph-s-0400",
@@ -4060,7 +4068,8 @@
       "variants": ["Let's agree to disagree."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-s-0406.opus"
-      }
+      },
+      "chunk_slot": "agree"
     },
     {
       "id": "ph-s-0407",

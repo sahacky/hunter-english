@@ -56,7 +56,8 @@
           "audio": "audio/phrasebook/cori/pb-directions-02-l0.opus",
           "text_en": "Is there a pharmacy near here?",
           "translation_ru": "Здесь рядом есть аптека?",
-          "accepted": ["Is there a pharmacy near here?", "Is there a pharmacy nearby?"]
+          "accepted": ["Is there a pharmacy near here?", "Is there a pharmacy nearby?"],
+          "chunk_slot": "pharmacy"
         },
         {
           "role": "local",

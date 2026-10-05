@@ -910,7 +910,8 @@
       "variants": ["There is a bank in this street."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0091.opus"
-      }
+      },
+      "chunk_slot": "bank"
     },
     {
       "id": "ph-d-0092",
@@ -920,7 +921,8 @@
       "variants": ["There is a pharmacy next door."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0092.opus"
-      }
+      },
+      "chunk_slot": "pharmacy"
     },
     {
       "id": "ph-d-0093",
@@ -930,7 +932,8 @@
       "variants": ["There is a park in our city."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0093.opus"
-      }
+      },
+      "chunk_slot": "park"
     },
     {
       "id": "ph-d-0094",
@@ -940,7 +943,8 @@
       "variants": ["There is a problem."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0094.opus"
-      }
+      },
+      "chunk_slot": "problem"
     },
     {
       "id": "ph-d-0095",
@@ -950,7 +954,8 @@
       "variants": ["There is a way out."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0095.opus"
-      }
+      },
+      "chunk_slot": "way"
     },
     {
       "id": "ph-d-0096",
@@ -960,7 +965,8 @@
       "variants": ["There is a hotel near the station."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0096.opus"
-      }
+      },
+      "chunk_slot": "hotel"
     },
     {
       "id": "ph-d-0097",
@@ -990,7 +996,8 @@
       "variants": ["There is a market on Sundays."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0099.opus"
-      }
+      },
+      "chunk_slot": "market"
     },
     {
       "id": "ph-d-0100",
@@ -1010,7 +1017,8 @@
       "variants": ["There are many people in the street."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0101.opus"
-      }
+      },
+      "chunk_slot": "many"
     },
     {
       "id": "ph-d-0102",
@@ -1040,7 +1048,8 @@
       "variants": ["There are three rooms in the house."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0104.opus"
-      }
+      },
+      "chunk_slot": "three"
     },
     {
       "id": "ph-d-0105",
@@ -1050,7 +1059,8 @@
       "variants": ["There are good restaurants in this area."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0105.opus"
-      }
+      },
+      "chunk_slot": "good"
     },
     {
       "id": "ph-d-0106",
@@ -1080,7 +1090,8 @@
       "variants": ["There is a solution."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0108.opus"
-      }
+      },
+      "chunk_slot": "solution"
     },
     {
       "id": "ph-d-0109",
@@ -1090,7 +1101,8 @@
       "variants": ["There is a church on the square."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0109.opus"
-      }
+      },
+      "chunk_slot": "church"
     },
     {
       "id": "ph-d-0110",
@@ -1100,7 +1112,8 @@
       "variants": ["There is a bridge over the river."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0110.opus"
-      }
+      },
+      "chunk_slot": "bridge"
     },
     {
       "id": "ph-d-0111",
@@ -1110,7 +1123,8 @@
       "variants": ["There is a hospital in this town."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0111.opus"
-      }
+      },
+      "chunk_slot": "hospital"
     },
     {
       "id": "ph-d-0112",
@@ -1120,7 +1134,8 @@
       "variants": ["There is an ATM near the shop."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0112.opus"
-      }
+      },
+      "chunk_slot": "atm"
     },
     {
       "id": "ph-d-0113",
@@ -1140,7 +1155,8 @@
       "variants": ["There is a mistake in the text."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0114.opus"
-      }
+      },
+      "chunk_slot": "mistake"
     },
     {
       "id": "ph-d-0115",
@@ -1150,7 +1166,8 @@
       "variants": ["There is a metro station nearby."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0115.opus"
-      }
+      },
+      "chunk_slot": "metro"
     },
     {
       "id": "ph-d-0116",
@@ -1160,7 +1177,8 @@
       "variants": ["There is a bus stop here."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0116.opus"
-      }
+      },
+      "chunk_slot": "bus"
     },
     {
       "id": "ph-d-0117",
@@ -1170,7 +1188,8 @@
       "variants": ["There is a post office in the centre."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0117.opus"
-      }
+      },
+      "chunk_slot": "post"
     },
     {
       "id": "ph-d-0118",
@@ -1180,7 +1199,8 @@
       "variants": ["There is a big mall in this district."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0118.opus"
-      }
+      },
+      "chunk_slot": "big"
     },
     {
       "id": "ph-d-0119",
@@ -1190,7 +1210,8 @@
       "variants": ["There are flowers in the room."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0119.opus"
-      }
+      },
+      "chunk_slot": "flowers"
     },
     {
       "id": "ph-d-0120",
@@ -1200,7 +1221,8 @@
       "variants": ["There are books on the table."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0120.opus"
-      }
+      },
+      "chunk_slot": "books"
     },
     {
       "id": "ph-d-0121",
@@ -1210,7 +1232,8 @@
       "variants": ["There are clouds in the sky."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0121.opus"
-      }
+      },
+      "chunk_slot": "clouds"
     },
     {
       "id": "ph-d-0122",
@@ -1220,7 +1243,8 @@
       "variants": ["There are children in the yard."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0122.opus"
-      }
+      },
+      "chunk_slot": "children"
     },
     {
       "id": "ph-d-0123",
@@ -1230,7 +1254,8 @@
       "variants": ["There are old houses in this street."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0123.opus"
-      }
+      },
+      "chunk_slot": "old"
     },
     {
       "id": "ph-d-0124",
@@ -1240,7 +1265,8 @@
       "variants": ["There are many places to see."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0124.opus"
-      }
+      },
+      "chunk_slot": "many"
     },
     {
       "id": "ph-d-0125",
@@ -1260,7 +1286,8 @@
       "variants": ["Is there a problem?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0126.opus"
-      }
+      },
+      "chunk_slot": "problem"
     },
     {
       "id": "ph-d-0127",
@@ -1270,7 +1297,8 @@
       "variants": ["Is there a hotel in the town?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0127.opus"
-      }
+      },
+      "chunk_slot": "hotel"
     },
     {
       "id": "ph-d-0128",
@@ -1690,7 +1718,8 @@
       "variants": ["Is there a pharmacy near here?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0169.opus"
-      }
+      },
+      "chunk_slot": "pharmacy"
     },
     {
       "id": "ph-d-0170",
@@ -1720,7 +1749,8 @@
       "variants": ["Is there a toilet here?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0172.opus"
-      }
+      },
+      "chunk_slot": "toilet"
     },
     {
       "id": "ph-d-0173",
@@ -1850,7 +1880,8 @@
       "variants": ["There are many shops in the centre."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0185.opus"
-      }
+      },
+      "chunk_slot": "many"
     },
     {
       "id": "ph-d-0186",
@@ -1950,7 +1981,8 @@
       "variants": ["I want to know the truth."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0195.opus"
-      }
+      },
+      "chunk_slot": "know"
     },
     {
       "id": "ph-d-0196",
@@ -2090,7 +2122,8 @@
       "variants": ["Is there a problem?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0209.opus"
-      }
+      },
+      "chunk_slot": "problem"
     },
     {
       "id": "ph-d-0210",
@@ -2310,7 +2343,8 @@
       "variants": ["I can't swim."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0231.opus"
-      }
+      },
+      "chunk_slot": "swim"
     },
     {
       "id": "ph-d-0232",
@@ -2330,7 +2364,8 @@
       "variants": ["I can't hear you."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0233.opus"
-      }
+      },
+      "chunk_slot": "hear"
     },
     {
       "id": "ph-d-0234",
@@ -2370,7 +2405,8 @@
       "variants": ["I can't find my phone."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0237.opus"
-      }
+      },
+      "chunk_slot": "find"
     },
     {
       "id": "ph-d-0238",
@@ -2380,7 +2416,8 @@
       "variants": ["I can't open the door."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0238.opus"
-      }
+      },
+      "chunk_slot": "open"
     },
     {
       "id": "ph-d-0239",
@@ -2410,7 +2447,8 @@
       "variants": ["I can't believe it."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0241.opus"
-      }
+      },
+      "chunk_slot": "believe"
     },
     {
       "id": "ph-d-0242",
@@ -2500,7 +2538,8 @@
       "variants": ["Where can I buy a ticket?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0250.opus"
-      }
+      },
+      "chunk_slot": "buy"
     },
     {
       "id": "ph-d-0251",
@@ -2700,7 +2739,8 @@
       "variants": ["Can you speak slowly?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0270.opus"
-      }
+      },
+      "chunk_slot": "slowly"
     },
     {
       "id": "ph-d-0271",
@@ -3110,7 +3150,8 @@
       "variants": ["I have a ticket."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0311.opus"
-      }
+      },
+      "chunk_slot": "ticket"
     },
     {
       "id": "ph-d-0312",
@@ -3180,7 +3221,8 @@
       "variants": ["I have a question."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0318.opus"
-      }
+      },
+      "chunk_slot": "question"
     },
     {
       "id": "ph-d-0319",
@@ -3190,7 +3232,8 @@
       "variants": ["Do you have a pen?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0319.opus"
-      }
+      },
+      "chunk_slot": "pen"
     },
     {
       "id": "ph-d-0320",
@@ -3540,7 +3583,8 @@
       "variants": ["Do you have a room?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0354.opus"
-      }
+      },
+      "chunk_slot": "room"
     },
     {
       "id": "ph-d-0355",
@@ -3550,7 +3594,8 @@
       "variants": ["I have a reservation."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0355.opus"
-      }
+      },
+      "chunk_slot": "reservation"
     },
     {
       "id": "ph-d-0356",
@@ -4050,7 +4095,8 @@
       "variants": ["I can't find my keys."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0405.opus"
-      }
+      },
+      "chunk_slot": "find"
     },
     {
       "id": "ph-d-0406",
@@ -4360,7 +4406,8 @@
       "variants": ["I want to help you."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0436.opus"
-      }
+      },
+      "chunk_slot": "help"
     },
     {
       "id": "ph-d-0437",
@@ -4410,7 +4457,8 @@
       "variants": ["Can you speak slowly, please?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0441.opus"
-      }
+      },
+      "chunk_slot": "slowly"
     },
     {
       "id": "ph-d-0442",
@@ -4640,7 +4688,8 @@
       "variants": ["I can't see any people."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0464.opus"
-      }
+      },
+      "chunk_slot": "see"
     },
     {
       "id": "ph-d-0465",
@@ -4810,7 +4859,8 @@
       "variants": ["Do you know anything about him?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0481.opus"
-      }
+      },
+      "chunk_slot": "anything"
     },
     {
       "id": "ph-d-0482",
@@ -4820,7 +4870,8 @@
       "variants": ["I want to tell you something."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0482.opus"
-      }
+      },
+      "chunk_slot": "tell"
     },
     {
       "id": "ph-d-0483",
@@ -5100,7 +5151,8 @@
       "variants": ["There are many shops here."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0510.opus"
-      }
+      },
+      "chunk_slot": "many"
     },
     {
       "id": "ph-d-0511",
@@ -5120,7 +5172,8 @@
       "variants": ["I have a lot of work."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0512.opus"
-      }
+      },
+      "chunk_slot": "lot"
     },
     {
       "id": "ph-d-0513",
@@ -5280,7 +5333,8 @@
       "variants": ["Where can I buy this?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0528.opus"
-      }
+      },
+      "chunk_slot": "buy"
     },
     {
       "id": "ph-d-0529",
@@ -5290,7 +5344,8 @@
       "variants": ["Do you have a bigger one?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0529.opus"
-      }
+      },
+      "chunk_slot": "bigger"
     },
     {
       "id": "ph-d-0530",
@@ -5300,7 +5355,8 @@
       "variants": ["Do you have a smaller one?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0530.opus"
-      }
+      },
+      "chunk_slot": "smaller"
     },
     {
       "id": "ph-d-0531",
@@ -5590,7 +5646,8 @@
       "variants": ["There are many people here."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0559.opus"
-      }
+      },
+      "chunk_slot": "many"
     },
     {
       "id": "ph-d-0560",
@@ -5720,7 +5777,8 @@
       "variants": ["I have a lot of work."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0572.opus"
-      }
+      },
+      "chunk_slot": "lot"
     },
     {
       "id": "ph-d-0573",
@@ -6430,7 +6488,8 @@
       "variants": ["There are many people here."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0643.opus"
-      }
+      },
+      "chunk_slot": "many"
     },
     {
       "id": "ph-d-0644",
@@ -6590,7 +6649,8 @@
       "variants": ["Do you know anything about it?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0659.opus"
-      }
+      },
+      "chunk_slot": "anything"
     },
     {
       "id": "ph-d-0660",
@@ -6660,7 +6720,8 @@
       "variants": ["Do you have a bigger one?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0666.opus"
-      }
+      },
+      "chunk_slot": "bigger"
     },
     {
       "id": "ph-d-0667",
@@ -7190,7 +7251,8 @@
       "variants": ["I can't agree with that."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0719.opus"
-      }
+      },
+      "chunk_slot": "agree"
     },
     {
       "id": "ph-d-0720",
@@ -7580,7 +7642,8 @@
       "variants": ["Let's agree to differ."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0758.opus"
-      }
+      },
+      "chunk_slot": "agree"
     },
     {
       "id": "ph-d-0759",
@@ -8290,7 +8353,8 @@
       "variants": ["Thanks for everything."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0829.opus"
-      }
+      },
+      "chunk_slot": "everything"
     },
     {
       "id": "ph-d-0830",
@@ -8460,7 +8524,8 @@
       "variants": ["I need a painkiller."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0846.opus"
-      }
+      },
+      "chunk_slot": "painkiller"
     },
     {
       "id": "ph-d-0847",
@@ -9520,7 +9585,8 @@
       "variants": ["Let's make a plan."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0952.opus"
-      }
+      },
+      "chunk_slot": "make"
     },
     {
       "id": "ph-d-0953",
@@ -9740,7 +9806,8 @@
       "variants": ["I need to make a call."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-0974.opus"
-      }
+      },
+      "chunk_slot": "make"
     },
     {
       "id": "ph-d-0975",
@@ -10260,7 +10327,8 @@
       "variants": ["I would like to order."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-1026.opus"
-      }
+      },
+      "chunk_slot": "order"
     },
     {
       "id": "ph-d-1027",
@@ -10290,7 +10358,8 @@
       "variants": ["I'd like to pay now."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-1029.opus"
-      }
+      },
+      "chunk_slot": "pay"
     },
     {
       "id": "ph-d-1030",
@@ -10300,7 +10369,8 @@
       "variants": ["Would you like anything else?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-1030.opus"
-      }
+      },
+      "chunk_slot": "anything"
     },
     {
       "id": "ph-d-1031",
@@ -10610,7 +10680,8 @@
       "variants": ["I'd like to change my ticket."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-1061.opus"
-      }
+      },
+      "chunk_slot": "change"
     },
     {
       "id": "ph-d-1062",
@@ -10680,7 +10751,8 @@
       "variants": ["Have a nice day!"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-1068.opus"
-      }
+      },
+      "chunk_slot": "day"
     },
     {
       "id": "ph-d-1069",
@@ -10900,7 +10972,8 @@
       "variants": ["I'd like to pay now."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-1090.opus"
-      }
+      },
+      "chunk_slot": "pay"
     },
     {
       "id": "ph-d-1091",
@@ -10920,7 +10993,8 @@
       "variants": ["Would you like anything else?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-1092.opus"
-      }
+      },
+      "chunk_slot": "anything"
     },
     {
       "id": "ph-d-1093",
@@ -11120,7 +11194,8 @@
       "variants": ["Have a nice day!"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-1112.opus"
-      }
+      },
+      "chunk_slot": "day"
     },
     {
       "id": "ph-d-1113",
@@ -11240,7 +11315,8 @@
       "variants": ["I can't see anything."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-1124.opus"
-      }
+      },
+      "chunk_slot": "see"
     },
     {
       "id": "ph-d-1125",
@@ -11450,7 +11526,8 @@
       "variants": ["I can't believe anything he says."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-1145.opus"
-      }
+      },
+      "chunk_slot": "believe"
     },
     {
       "id": "ph-d-1146",
@@ -11600,7 +11677,8 @@
       "variants": ["Do you know him?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-1160.opus"
-      }
+      },
+      "chunk_slot": "him"
     },
     {
       "id": "ph-d-1161",
@@ -11640,7 +11718,8 @@
       "variants": ["There is a bank here."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-1164.opus"
-      }
+      },
+      "chunk_slot": "bank"
     },
     {
       "id": "ph-d-1165",
@@ -11660,7 +11739,8 @@
       "variants": ["Is there a bank here?"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-1166.opus"
-      }
+      },
+      "chunk_slot": "bank"
     },
     {
       "id": "ph-d-1167",
@@ -12080,7 +12160,8 @@
       "variants": ["There is a bank here."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-1208.opus"
-      }
+      },
+      "chunk_slot": "bank"
     },
     {
       "id": "ph-d-1209",
@@ -12490,7 +12571,8 @@
       "variants": ["I can't see anything."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-1249.opus"
-      }
+      },
+      "chunk_slot": "see"
     },
     {
       "id": "ph-d-1250",
@@ -12500,7 +12582,8 @@
       "variants": ["Have a nice day!"],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-d-1250.opus"
-      }
+      },
+      "chunk_slot": "day"
     }
   ]
 }
