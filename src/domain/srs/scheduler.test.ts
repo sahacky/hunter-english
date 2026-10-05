@@ -446,6 +446,40 @@ describe('buildQueue (srs://session-order)', () => {
       'quotes',
     ])
   })
+
+  it('интерливинг-политика: внутри колоды слова НЕ перемешиваются и очередь детерминирована (план {#teaching-quality} Q1.4, specs/03 {#session-order})', () => {
+    const cards = [] as ReturnType<typeof entry>[]
+    // words: 5 новых с намеренно «обратным» порядком вставки относительно card_id
+    for (const i of [4, 2, 0, 3, 1]) {
+      cards.push(entry(mkCard({ card_id: `w${i}.en-ru`, note_id: `n-w${i}`, state: 0 })))
+    }
+    // phrases: 2 новых (deck задаётся в mkCard, второй аргумент entry — note)
+    for (const i of [1, 0]) {
+      cards.push(
+        entry(
+          mkCard({
+            card_id: `p${i}.ru-en`,
+            note_id: `n-p${i}`,
+            type: 'ru-en',
+            deck: 'phrases',
+            state: 0,
+          }),
+        ),
+      )
+    }
+    const build = () => buildQueue(cards, { now: NOW }).entries.filter(({ kind }) => kind === 'new')
+    const first = build()
+    // 1) детерминизм: два прогона на том же входе дают идентичную очередь (без RNG)
+    expect(build().map(({ card }) => card.card_id)).toEqual(first.map(({ card }) => card.card_id))
+    // 2) внутри колоды words порядок = card_id (созданы одной секундой), НЕ случайный
+    const wordsInQueue = first
+      .filter(({ card }) => card.deck === 'words')
+      .map(({ card }) => card.card_id)
+    expect(wordsInQueue).toEqual(['w0.en-ru', 'w1.en-ru', 'w2.en-ru', 'w3.en-ru', 'w4.en-ru'])
+    // 3) межколодовый round-robin сохраняется: w0, p0, w1, p1, w2, w3, w4
+    const decks = first.map(({ card }) => card.deck)
+    expect(decks).toEqual(['words', 'phrases', 'words', 'phrases', 'words', 'words', 'words'])
+  })
 })
 
 // Implements: plan://M18 — GAP-3 specs/09 §4.2 (TC-SRS-11)
