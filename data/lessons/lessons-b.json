@@ -174,7 +174,11 @@
         "youtube_id": "e9vi3UqDrNc",
         "title": null
       },
-      "order": 1
+      "order": 1,
+      "curiosity": {
+        "hook": "I have lost my keys — ключи потеряны, и это важно СЕЙЧАС. Perfect — мост между прошлым и настоящим.",
+        "cliffhanger": "Дальше — already, never, ever: три наречия, которые ставят Perfect на место и оживляют разговор."
+      }
     },
     {
       "id": "les-b-02",
@@ -348,7 +352,11 @@
         "youtube_id": "e9vi3UqDrNc",
         "title": null
       },
-      "order": 2
+      "order": 2,
+      "curiosity": {
+        "hook": "Have you ever…? — вопрос, в котором вся магия Perfect: опыт без даты, но с результатом.",
+        "cliffhanger": "Дальше — just, yet, recently: точная настройка. I've just eaten и I haven't eaten yet — полные противоположности."
+      }
     },
     {
       "id": "les-b-03",
@@ -517,7 +525,11 @@
         }
       ],
       "bebris_video": null,
-      "order": 3
+      "order": 3,
+      "curiosity": {
+        "hook": "just = только что, yet = «уже/пока» в вопросах и минусах. Два слова — и Perfect звучит по-настоящему.",
+        "cliffhanger": "Дальше — третья форма: топ-50 неправильных. have + V3 — таблица из C-ранга выходит на сцену снова."
+      }
     },
     {
       "id": "les-b-04",
@@ -691,7 +703,11 @@
         "youtube_id": "Zkc-HfcTxYg",
         "title": null
       },
-      "order": 4
+      "order": 4,
+      "curiosity": {
+        "hook": "go → went → gone: третья форма — паспорт неправильного глагола в мире Perfect. Пятьдесят штук решают всё.",
+        "cliffhanger": "Дальше — повторение №15 и диктант: Perfect на слух. Здесь ухо тренируется быстрее глаза."
+      }
     },
     {
       "id": "les-b-05",
@@ -860,7 +876,11 @@
         }
       ],
       "bebris_video": null,
-      "order": 5
+      "order": 5,
+      "curiosity": {
+        "hook": "have lost / had lost / will have lost — три века Perfect в одном диктанте. Проверим, что осело.",
+        "cliffhanger": "Дальше — главное противостояние: Present Perfect vs Past Simple. I have seen и I saw — в чём разница на самом деле."
+      }
     },
     {
       "id": "les-b-06",
@@ -1029,7 +1049,11 @@
         }
       ],
       "bebris_video": null,
-      "order": 6
+      "order": 6,
+      "curiosity": {
+        "hook": "Есть дата → Past Simple (I saw it yesterday). Нет даты, есть результат → Perfect (I have seen it). Всё.",
+        "cliffhanger": "Дальше — Present Perfect Continuous: I have been waiting for an hour. Процесс, который ещё не кончился."
+      }
     },
     {
       "id": "les-b-07",
@@ -1203,7 +1227,11 @@
         "youtube_id": "IxjdanDgqWE",
         "title": null
       },
-      "order": 7
+      "order": 7,
+      "curiosity": {
+        "hook": "have been + -ing: не «сделал», а «делаю до сих пор». Английский показывает длительность через результат.",
+        "cliffhanger": "Дальше — Past Perfect: had + V3. Прошлое раньше прошлого — для историй с двумя событиями."
+      }
     },
     {
       "id": "les-b-08",
@@ -1377,7 +1405,11 @@
         "youtube_id": "fNZOGDWS1bI",
         "title": null
       },
-      "order": 8
+      "order": 8,
+      "curiosity": {
+        "hook": "had done — «уже сделал ДО другого прошлого события». Время сюжетных твистов.",
+        "cliffhanger": "Дальше — повторение №16: контрольная по всей семье Perfect. Самая тяжёлая тема курса — на проверку."
+      }
     },
     {
       "id": "les-b-09",
@@ -1555,7 +1587,11 @@
         }
       ],
       "bebris_video": null,
-      "order": 9
+      "order": 9,
+      "curiosity": {
+        "hook": "Perfect во всех временах — самый «взрослый» блок курса. Контроль покажет, где доработать.",
+        "cliffhanger": "Дальше — условные 0 и 1: if + will. «Если будет дождь, я останусь» — одна формула."
+      }
     },
     {
       "id": "les-b-10",
@@ -1729,7 +1765,11 @@
         "youtube_id": "MC0EPmPnTH8",
         "title": null
       },
-      "order": 10
+      "order": 10,
+      "curiosity": {
+        "hook": "If it rains, I'll stay. Ноль — законы природы, один — реальные планы. После if — настоящее, даже про будущее.",
+        "cliffhanger": "Дальше — условное 2: If I had a million… Мечты и нереальное настоящее. Прошлая форма меняет всё."
+      }
     },
     {
       "id": "les-b-11",
@@ -1903,7 +1943,11 @@
         "youtube_id": "V5PCgdjBQf8",
         "title": null
       },
-      "order": 11
+      "order": 11,
+      "curiosity": {
+        "hook": "If I had time, I would travel — «если БЫ». Форма прошлого при смысле настоящего — главная хитрость условных.",
+        "cliffhanger": "Дальше — wish: I wish I knew. Сожаление в одной фразе. Красиво, грустно и очень по-английски."
+      }
     },
     {
       "id": "les-b-12",
@@ -2077,7 +2121,11 @@
         "youtube_id": "EEMmcyY2nvc",
         "title": null
       },
-      "order": 12
+      "order": 12,
+      "curiosity": {
+        "hook": "I wish I knew — «жаль, что не знаю». Глагол в прошлом, смысл в настоящем. Инверсия логики лечится практикой.",
+        "cliffhanger": "Дальше — used to: I used to smoke. «Раньше да, теперь нет» — прошлое-привычка без таблиц."
+      }
     },
     {
       "id": "les-b-13",
@@ -2251,7 +2299,11 @@
         "youtube_id": "NzG1Hio8rO0",
         "title": null
       },
-      "order": 13
+      "order": 13,
+      "curiosity": {
+        "hook": "used to + глагол — единственный способ сказать «бывало». Did you use to…? — и прошлое оживает в вопросах.",
+        "cliffhanger": "Дальше — повторение №17: условные, wish, used to. Сентиментальная тема — на прогон."
+      }
     },
     {
       "id": "les-b-14",
@@ -2426,7 +2478,11 @@
         }
       ],
       "bebris_video": null,
-      "order": 14
+      "order": 14,
+      "curiosity": {
+        "hook": "Мечты, сожаления, «бывало» — речь стала личной. Проверим прочность под контролем.",
+        "cliffhanger": "Дальше — relative clauses: who / which / that. Одно слово склеивает два предложения."
+      }
     },
     {
       "id": "les-b-15",
@@ -2595,7 +2651,11 @@
         }
       ],
       "bebris_video": null,
-      "order": 15
+      "order": 15,
+      "curiosity": {
+        "hook": "The hotel WHERE we stayed, the man WHO helped — придаточные клеятся одним словом, без союзной гимнастики.",
+        "cliffhanger": "Дальше — герундий против инфинитива: enjoy doing, но want to do. Кому какой глагол что разрешает."
+      }
     },
     {
       "id": "les-b-16",
@@ -2769,7 +2829,11 @@
         "youtube_id": "UxX1Ca2w7iY",
         "title": null
       },
-      "order": 16
+      "order": 16,
+      "curiosity": {
+        "hook": "enjoy + -ing, decide + to… Список короткий, а ошибок на нём больше, чем в любых временах.",
+        "cliffhanger": "Дальше — фразовые глаголы I: take off, check in. Путешественник без них как без рук."
+      }
     },
     {
       "id": "les-b-17",
@@ -2943,7 +3007,11 @@
         "youtube_id": "fGxRBo8Prko",
         "title": null
       },
-      "order": 17
+      "order": 17,
+      "curiosity": {
+        "hook": "take off — взлететь И снять куртку. Предлог меняет смысл целиком, учатся они парами.",
+        "cliffhanger": "Дальше — фразовые глаголы II: look for, find out, give up. Поиск, решение, капитуляция."
+      }
     },
     {
       "id": "les-b-18",
@@ -3117,7 +3185,11 @@
         "youtube_id": "HkFu9dLvRfQ",
         "title": null
       },
-      "order": 18
+      "order": 18,
+      "curiosity": {
+        "hook": "find out = узнать, give up = сдаться. Носители так говорят в девяти случаях из десяти — и мы тоже.",
+        "cliffhanger": "Дальше — повторение №18: придаточные, герундий, фразовые. Микс живого разговора."
+      }
     },
     {
       "id": "les-b-19",
@@ -3286,7 +3358,11 @@
         }
       ],
       "bebris_video": null,
-      "order": 19
+      "order": 19,
+      "curiosity": {
+        "hook": "Сложные предложения собраны. Контрольная — момент истины для связок.",
+        "cliffhanger": "Дальше — пассив: be + V3. «Меня обманули» — кто? Неважно. Английский умеет обходиться без виновника."
+      }
     },
     {
       "id": "les-b-20",
@@ -3460,7 +3536,11 @@
         "youtube_id": "lx-HhzfqGVM",
         "title": null
       },
-      "order": 20
+      "order": 20,
+      "curiosity": {
+        "hook": "The flight was cancelled — когда важнее факт, чем виновник. Пассив — стиль новостей и объявлений.",
+        "cliffhanger": "Дальше — косвенная речь: He said he was busy. Чужие слова — своими, с одним сдвигом времени."
+      }
     },
     {
       "id": "les-b-21",
@@ -3634,7 +3714,11 @@
         "youtube_id": "62kfQH0uwIU",
         "title": null
       },
-      "order": 21
+      "order": 21,
+      "curiosity": {
+        "hook": "He said he WAS busy — почему время сдвигается? «Сказал» — уже прошлое. Логика, а не список правил.",
+        "cliffhanger": "Дальше — разделительные вопросы: isn't it? Хвостик-подтверждение, без которого не живёт small talk."
+      }
     },
     {
       "id": "les-b-22",
@@ -3808,7 +3892,11 @@
         "youtube_id": "HGwwoQB0BIA",
         "title": null
       },
-      "order": 22
+      "order": 22,
+      "curiosity": {
+        "hook": "You're coming, aren't you? — утверждение + хвостик = приглашение к согласию. Британцы живут на хвостиках.",
+        "cliffhanger": "Дальше — afraid of, good at: предлоги после прилагательных. Прилипают намертво, как у глаголов."
+      }
     },
     {
       "id": "les-b-23",
@@ -3982,7 +4070,11 @@
         "youtube_id": "qjb3rtyG8po",
         "title": null
       },
-      "order": 23
+      "order": 23,
+      "curiosity": {
+        "hook": "afraid OF, good AT, interested IN — три предлога, три типичные ошибки русских. Сейчас закроем вопрос.",
+        "cliffhanger": "Дальше — повторение №19: пассив, косвенная речь, хвостики. Техника речи — на контроль."
+      }
     },
     {
       "id": "les-b-24",
@@ -4151,7 +4243,11 @@
         }
       ],
       "bebris_video": null,
-      "order": 24
+      "order": 24,
+      "curiosity": {
+        "hook": "Техника речи за спиной. Контрольная покажет, что стало автоматом.",
+        "cliffhanger": "Дальше — фразовые глаголы III: быт и отношения. get on with, look after — разговоры о людях."
+      }
     },
     {
       "id": "les-b-25",
@@ -4325,7 +4421,11 @@
         "youtube_id": "dkBIfciHgew",
         "title": null
       },
-      "order": 25
+      "order": 25,
+      "curiosity": {
+        "hook": "get on with = ладить, look after = заботиться. Фразовые, на которых держатся разговоры о людях.",
+        "cliffhanger": "Дальше — модальный микс: must, should, 'd better. Три градуса «надо» — от приказа до совета."
+      }
     },
     {
       "id": "les-b-26",
@@ -4499,7 +4599,11 @@
         "youtube_id": "H4-rXitQBN8",
         "title": null
       },
-      "order": 26
+      "order": 26,
+      "curiosity": {
+        "hook": "must — железно, should — разумно, 'd better — «а не то…». Выбор модального — это выбор тона.",
+        "cliffhanger": "Дальше — диалог-сценки на скорости: 7 живых ситуаций без подсказок. Спринт всей разговорной техники."
+      }
     },
     {
       "id": "les-b-27",
@@ -4547,7 +4651,11 @@
         }
       ],
       "bebris_video": null,
-      "order": 27
+      "order": 27,
+      "curiosity": {
+        "hook": "Семь сцен подряд — от ресторана до потери багажа. Здесь не учат, здесь ПОГОВАРИВАЮТ.",
+        "cliffhanger": "Дальше — наречия и усилители: quite, really, a bit. Три слова, которые делают речь живой, а не учебной."
+      }
     },
     {
       "id": "les-b-28",
@@ -4721,7 +4829,11 @@
         "youtube_id": "cTtcmycgs9o",
         "title": null
       },
-      "order": 28
+      "order": 28,
+      "curiosity": {
+        "hook": "quite good ≠ very good: градация, которую слышат все. Один нюанс — и звучишь своим.",
+        "cliffhanger": "Дальше — повторение №20 и диктант-микс. Последний прогон перед большим повторением ранга B."
+      }
     },
     {
       "id": "les-b-29",
@@ -4890,7 +5002,11 @@
         }
       ],
       "bebris_video": null,
-      "order": 29
+      "order": 29,
+      "curiosity": {
+        "hook": "Усилители в диктанте — тончайший слуховой тест курса. Послушаем, как ловятся quite и really.",
+        "cliffhanger": "Дальше — большое повторение перед Вратами A. Ранг B почти собран. Держи темп."
+      }
     },
     {
       "id": "les-b-30",
@@ -5068,7 +5184,11 @@
         }
       ],
       "bebris_video": null,
-      "order": 30
+      "order": 30,
+      "curiosity": {
+        "hook": "Все 30 уроков ранга B — от Perfect до сценок. Генеральная репетиция перед экзаменом.",
+        "cliffhanger": "Врата A на горизонте. А после них — карта всех времён: весь английский целиком, на одном экране."
+      }
     }
   ]
 }

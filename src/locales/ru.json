@@ -200,6 +200,8 @@
     "repeatStep": "Повторить шаг",
     "deckTitle": "В колоду",
     "deckText": "{{count}} фраз урока уйдут в колоду повторений (первая карточка — узнавание).",
+    "hookTitle": "Любопытно",
+    "cliffhangerTitle": "Что дальше",
     "finishLesson": "Завершить урок",
     "lessonDone": "Урок завершён",
     "summaryXp": "XP: {{xp}}",

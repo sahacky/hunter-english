@@ -1161,4 +1161,31 @@ describe('LessonScreen: хвосты покрытия (M21#21.4)', () => {
     fireEvent.keyDown(window, { key: 'Enter' })
     expect(screen.getByText(/шаг 1 из 1/)).toBeInTheDocument()
   })
+
+  it('curiosity: зацепка — первая строка шага правила (план {#teaching-quality} Q1.2)', async () => {
+    renderScreen('E-01')
+    expect(await screen.findByText(/Любопытно:/)).toBeInTheDocument()
+    expect(screen.getByText(/русского глагола нет/)).toBeInTheDocument()
+  })
+
+  it('curiosity: клиффхэнгер на шаге 7 «В колоду» (план {#teaching-quality} Q1.2)', async () => {
+    await seedRowStep7()
+    const view = await loadLessonView('les-e-01')
+    if (!view) throw new Error('нет данных урока les-e-01')
+    renderScreen('E-01', repo, view)
+    fireEvent.click(await screen.findByRole('button', { name: /Продолжить/ }))
+    expect(await screen.findByText('В колоду')).toBeInTheDocument()
+    expect(screen.getByText(/Что дальше/)).toBeInTheDocument()
+    expect(screen.getByText(/превратить предмет в «предмет вообще»/)).toBeInTheDocument()
+  })
+
+  it('curiosity: поле отсутствует — блоки не рендерятся (синтетика без поля)', async () => {
+    const view = await loadLessonView('les-e-01')
+    if (!view) throw new Error('нет данных урока les-e-01')
+    const bare: LessonView = { ...view, lesson: { ...view.lesson, curiosity: null } }
+    renderScreen('E-01', repo, bare)
+    expect(await screen.findByText('Понятно')).toBeInTheDocument()
+    expect(screen.queryByText(/Любопытно:/)).not.toBeInTheDocument()
+    expect(screen.queryByText(/Что дальше/)).not.toBeInTheDocument()
+  })
 })

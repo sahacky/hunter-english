@@ -760,6 +760,21 @@ body {
 .lesson-rule-md p {
   margin: 6px 0;
 }
+.lesson-hook {
+  margin: 0 0 8px;
+  padding: 8px 12px;
+  border-left: 3px solid var(--gold-text);
+  background: var(--surface-2);
+  border-radius: 8px;
+  font-style: italic;
+}
+.lesson-cliffhanger {
+  margin: 12px 0;
+  padding: 10px 12px;
+  border-left: 3px solid var(--primary);
+  background: var(--surface-2);
+  border-radius: 8px;
+}
 .lesson-rule-examples {
   list-style: none;
   padding: 0;

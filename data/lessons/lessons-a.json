@@ -174,7 +174,11 @@
         "youtube_id": "fhiXo0tmZTM",
         "title": null
       },
-      "order": 1
+      "order": 1,
+      "curiosity": {
+        "hook": "12 времён на одном экране. Их логика — одна матрица: форма + точка зрения на событие.",
+        "cliffhanger": "Дальше — пассив в Continuous и Perfect: is being built, has been built. Пассив растёт вместе с тобой."
+      }
     },
     {
       "id": "les-a-04",
@@ -348,7 +352,11 @@
         "youtube_id": "k30PW6j0i50",
         "title": null
       },
-      "order": 2
+      "order": 2,
+      "curiosity": {
+        "hook": "The road is being repaired — ремонт идёт СЕЙЧАС, и пассив это показывает. Редкая форма, частая в новостях.",
+        "cliffhanger": "Дальше — пассив будущего и модальных: will be built, must be done. Закрываем пассив целиком."
+      }
     },
     {
       "id": "les-a-05",
@@ -522,7 +530,11 @@
         "youtube_id": "_QTpE9YRIog",
         "title": null
       },
-      "order": 3
+      "order": 3,
+      "curiosity": {
+        "hook": "will be done, must be done: после модального — всегда голый be + V3. Единый механизм для всех.",
+        "cliffhanger": "Дальше — повторение №21: контрольная по продвинутому пассиву и карте времён."
+      }
     },
     {
       "id": "les-a-06",
@@ -691,7 +703,11 @@
         }
       ],
       "bebris_video": null,
-      "order": 4
+      "order": 4,
+      "curiosity": {
+        "hook": "Карта времён и полный пассив — техника уровня B2+. Проверим её на скорость.",
+        "cliffhanger": "Дальше — must have / can't have: догадки о прошлом. He must have missed the train — и ты уже детектив."
+      }
     },
     {
       "id": "les-a-07",
@@ -865,7 +881,11 @@
         "youtube_id": "RIPD00DDXEk",
         "title": null
       },
-      "order": 5
+      "order": 5,
+      "curiosity": {
+        "hook": "must have done — «наверняка сделал», can't have done — «не мог сделать». Прошлое плюс логика.",
+        "cliffhanger": "Дальше — should have done: I should have called. Сожаления о прошлом — изящнее, чем по-русски."
+      }
     },
     {
       "id": "les-a-08",
@@ -1039,7 +1059,11 @@
         "youtube_id": "eE_sqWpL-lo",
         "title": null
       },
-      "order": 6
+      "order": 6,
+      "curiosity": {
+        "hook": "should have + V3 — «надо было, но не». Форма, в которой живут все запоздалые «а вот если бы…».",
+        "cliffhanger": "Дальше — третье условное: If I had studied… «Что было, то было» по-английски отменяется."
+      }
     },
     {
       "id": "les-a-09",
@@ -1213,7 +1237,11 @@
         "youtube_id": "a2NXNeUKhcU",
         "title": null
       },
-      "order": 7
+      "order": 7,
+      "curiosity": {
+        "hook": "If I had studied, I would have passed — прошлое, которое нельзя изменить, но можно переиграть в речи.",
+        "cliffhanger": "Дальше — смешанные условные и wish глубже. Время будет течь между ветвями — держись."
+      }
     },
     {
       "id": "les-a-10",
@@ -1387,7 +1415,11 @@
         "youtube_id": "EEMmcyY2nvc",
         "title": null
       },
-      "order": 8
+      "order": 8,
+      "curiosity": {
+        "hook": "Условные перестают быть таблицей — становятся способом думать о причинах и следствиях на разных таймлайнах.",
+        "cliffhanger": "Дальше — повторение №22: контрольная по условным высшего порядка. Самая хитрая проверка курса."
+      }
     },
     {
       "id": "les-a-11",
@@ -1556,7 +1588,11 @@
         }
       ],
       "bebris_video": null,
-      "order": 9
+      "order": 9,
+      "curiosity": {
+        "hook": "Дедукция, сожаления, таймлайны — мышление на уровне B2. Контрольная закрепит.",
+        "cliffhanger": "Дальше — Future Continuous: she'll be cooking at 8. Будущее в моменте — и вежливые вопросы без усилий."
+      }
     },
     {
       "id": "les-a-01",
@@ -1730,7 +1766,11 @@
         "youtube_id": "6k6QwYL6NzA",
         "title": null
       },
-      "order": 10
+      "order": 10,
+      "curiosity": {
+        "hook": "Will you be using this? — вежливее, чем Do you…? Future Continuous смягчает всё, к чему прикасается.",
+        "cliffhanger": "Дальше — Future Perfect: he'll have finished by 5. Будущее, которое посмотрит на себя назад."
+      }
     },
     {
       "id": "les-a-02",
@@ -1904,7 +1944,11 @@
         "youtube_id": "JSHrZuAy9uo",
         "title": null
       },
-      "order": 11
+      "order": 11,
+      "curiosity": {
+        "hook": "By June I'll have finished — «завершу К июню». Дедлайны и планы обретают точность.",
+        "cliffhanger": "Дальше — have something done: I had my hair cut. Постригли не сам — уникальная конструкция «через кого-то»."
+      }
     },
     {
       "id": "les-a-12",
@@ -2081,7 +2125,11 @@
         "youtube_id": "NzG1Hio8rO0",
         "title": null
       },
-      "order": 12
+      "order": 12,
+      "curiosity": {
+        "hook": "I had my car repaired — сам не чинил, нанял. Английский различает «сам» и «через кого-то» грамматически.",
+        "cliffhanger": "Дальше — get used to / feel like doing: привыкаю к… и мне хочется… Половина разговоров о себе."
+      }
     },
     {
       "id": "les-a-13",
@@ -2258,7 +2306,11 @@
         "youtube_id": "NzG1Hio8rO0",
         "title": null
       },
-      "order": 13
+      "order": 13,
+      "curiosity": {
+        "hook": "get used to + -ing — «привыкаю», feel like + -ing — «в настроении». После них to не выживает.",
+        "cliffhanger": "Дальше — сложные relative clauses: кому which, кому that, и когда запятая меняет смысл."
+      }
     },
     {
       "id": "les-a-14",
@@ -2430,7 +2482,11 @@
         }
       ],
       "bebris_video": null,
-      "order": 14
+      "order": 14,
+      "curiosity": {
+        "hook": "My brother, who lives in Rome, … и my brother who lives in Rome — запятая решает, сколько у тебя братьев.",
+        "cliffhanger": "Дальше — повторение №23: контрольная по будущим временам и конструкциям B2."
+      }
     },
     {
       "id": "les-a-15",
@@ -2602,7 +2658,11 @@
         }
       ],
       "bebris_video": null,
-      "order": 15
+      "order": 15,
+      "curiosity": {
+        "hook": "Будущее в двух видовых плоскостях и have something done — уровень бытовых разговоров носителей.",
+        "cliffhanger": "Дальше — фразовые глаголы B2: put up with, come across. Слой, после которого сериалы звучат понятнее."
+      }
     },
     {
       "id": "les-a-16",
@@ -2779,7 +2839,11 @@
         "youtube_id": "6rFJkFq5f0s",
         "title": null
       },
-      "order": 16
+      "order": 16,
+      "curiosity": {
+        "hook": "put up with = терпеть, come across = случайно наткнуться. Словарь C1 начинается с таких связок.",
+        "cliffhanger": "Дальше — усилители: highly unlikely, deeply concerned. Наречия, которые выбирают носители, а не учебники."
+      }
     },
     {
       "id": "les-a-17",
@@ -2947,7 +3011,11 @@
         "youtube_id": "cTtcmycgs9o",
         "title": null
       },
-      "order": 17
+      "order": 17,
+      "curiosity": {
+        "hook": "highly unlikely — «в высшей степени маловероятно». Усилители высокой кухни: связки, а не very + слово.",
+        "cliffhanger": "Дальше — there's no point in…: «нет смысла». Структура, которой носители обрывают споры."
+      }
     },
     {
       "id": "les-a-18",
@@ -3124,7 +3192,11 @@
         "youtube_id": "dmbTKXB2SNY",
         "title": null
       },
-      "order": 18
+      "order": 18,
+      "curiosity": {
+        "hook": "There's no point in arguing — аргументированное «сдаюсь». После in — только -ing.",
+        "cliffhanger": "Дальше — инверсия: Little did they know. Приём из романов и сериалов — драма одним порядком слов."
+      }
     },
     {
       "id": "les-a-19",
@@ -3301,7 +3373,11 @@
         "youtube_id": "i2cHBmDAuHk",
         "title": null
       },
-      "order": 19
+      "order": 19,
+      "curiosity": {
+        "hook": "Little did they know — вспомогательный глагол выпрыгивает перед подлежащим, и фраза звучит как заклинание.",
+        "cliffhanger": "Дальше — повторение №24: контрольная по продвинутым конструкциям. Штурмовой прогон перед капсулой."
+      }
     },
     {
       "id": "les-a-20",
@@ -3473,7 +3549,11 @@
         }
       ],
       "bebris_video": null,
-      "order": 20
+      "order": 20,
+      "curiosity": {
+        "hook": "Инверсия, усилители, no point — арсенал красивой речи. Контроль закрепит перед разбором сцены.",
+        "cliffhanger": "Дальше — капсула: разбор реальной сцены. Смотри, как всё выученное работает одновременно."
+      }
     },
     {
       "id": "les-a-21",
@@ -3648,7 +3728,11 @@
         }
       ],
       "bebris_video": null,
-      "order": 21
+      "order": 21,
+      "curiosity": {
+        "hook": "Настоящая сцена из сериала: 12 времён, пассив, инверсия — всё в двух минутах диалога.",
+        "cliffhanger": "Дальше — большое повторение ранга A. Последний шаг перед рангом S. Он самый объёмный."
+      }
     },
     {
       "id": "les-a-22",
@@ -3820,7 +3904,11 @@
         }
       ],
       "bebris_video": null,
-      "order": 22
+      "order": 22,
+      "curiosity": {
+        "hook": "22 урока ранга A — от карты времён до капсулы. Финальный прогон перед рангом S.",
+        "cliffhanger": "Ранг S открывается. Дальше — инверсия продвинутая: Not only…, No sooner… Речь C1 начинается здесь."
+      }
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "content_version": 2,
-  "generated_at": "2026-10-04T06:58:26Z",
+  "generated_at": "2026-10-05T07:24:54Z",
   "files": [
     {
       "path": "lessons/exercises-a.json",
@@ -50,42 +50,42 @@
       "kind": "lessons",
       "schema_version": 1,
       "items": 22,
-      "sha256": "b1765ee531fad25bd9720a93248608cf17fd410d268ce05a0dcd883101b273b5"
+      "sha256": "76ebbb1f556f7b95939783e2f2988ef2d0c63a6f8eaf858d9f069743e47ab7ef"
     },
     {
       "path": "lessons/lessons-b.json",
       "kind": "lessons",
       "schema_version": 1,
       "items": 30,
-      "sha256": "6362c778ff71665cae9945f06769087852780de3af7a1d9133074f78cd87fa38"
+      "sha256": "8c47dcc45a9a92b611b101103fa53e908e275347b831b4a13d165907d6a444a2"
     },
     {
       "path": "lessons/lessons-c.json",
       "kind": "lessons",
       "schema_version": 1,
       "items": 19,
-      "sha256": "2ae5acf15ae569966e55733a633dddcc4f3e7c0e1a78aefe965db6c68b30ec04"
+      "sha256": "10958c97a2268b1edba30253a712baccca7266c3b530fd934f55daeb170c4c00"
     },
     {
       "path": "lessons/lessons-d.json",
       "kind": "lessons",
       "schema_version": 1,
       "items": 39,
-      "sha256": "ba40b920aed0979652999e0c66872b3c37ddc99926d3286a615665a2521902cc"
+      "sha256": "80a6e1ac66db83f85492ea9090d91b3601a19bceee4aba54f2baaf1f278369ab"
     },
     {
       "path": "lessons/lessons-e.json",
       "kind": "lessons",
       "schema_version": 1,
       "items": 24,
-      "sha256": "77bb72e8e181f5d47a65a8266db60bbfb11d51c74f257eaa81fe87a9fae658ad"
+      "sha256": "2e3740ae86c58bc117926128e17ff5ad44732ffff14e1d9d1247778d1498e4b6"
     },
     {
       "path": "lessons/lessons-s.json",
       "kind": "lessons",
       "schema_version": 1,
       "items": 15,
-      "sha256": "6dce772b11c0690a78451a6d19e87488e64bb7bdda85a325f1b130d818e2cbb2"
+      "sha256": "8df5cf6feadc274d52bce23949b036f560009fc8d62f3a4c43042cf49314c9f8"
     },
     {
       "path": "phrasebook/airport.json",
