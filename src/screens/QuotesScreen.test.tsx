@@ -15,7 +15,11 @@ import QuotesScreen, { QuoteScreen } from './QuotesScreen'
 // S4: обёртки для точечных rejectOnce в тестах ошибок загрузки (остальное — real)
 vi.mock('../content/quotes', async (importOriginal) => {
   const actual = await importOriginal<typeof import('../content/quotes')>()
-  return { ...actual, loadQuoteTitles: vi.fn(actual.loadQuoteTitles) }
+  return {
+    ...actual,
+    loadQuoteTitles: vi.fn(actual.loadQuoteTitles),
+    findQuote: vi.fn(actual.findQuote),
+  }
 })
 vi.mock('../content/words', async (importOriginal) => {
   const actual = await importOriginal<typeof import('../content/words')>()
@@ -418,5 +422,35 @@ describe('QuotesScreen/QuoteScreen: хвосты покрытия (S4)', () => {
     const input = await screen.findByRole('textbox')
     fireEvent.keyDown(input, { key: 'r' })
     expect(speakMock).toHaveBeenCalledTimes(2)
+  })
+})
+
+describe('QuoteScreen: кадр сцены (план M.3, фидбей-инфраструктура 2026-10-05)', () => {
+  const stillQuote = {
+    id: 'q-still-test',
+    title: 'Test Title',
+    season_episode: 'S01E01',
+    speaker: 'Tester',
+    text: 'The still must degrade silently.',
+    translation_ru: 'Кадр должен тихо деградировать.',
+    auto_vocab: { top1000: 1 },
+    link_image: 'media/scenes/test-title/q-still-test.webp',
+  }
+
+  it('link_image: кнопка «Кадр сцены» раскрывает <img>; onError прячет блок', async () => {
+    vi.mocked(findQuote).mockResolvedValueOnce(stillQuote)
+    renderAt(`#/quotes/${stillQuote.id}`)
+    expect(await screen.findByText('Показать перевод')).toBeInTheDocument()
+    // без кадра кнопки нет
+    expect(screen.queryByRole('button', { name: /Кадр сцены/ })).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: /Кадр сцены/ }))
+    const img = screen.getByRole('img', { name: /кадр сцены/ })
+    expect(img).toHaveAttribute('src', 'media/scenes/test-title/q-still-test.webp')
+    // файла нет (кэш вне git) — тихая деградация: блок удаляется
+    fireEvent.error(img)
+    expect(screen.queryByRole('img')).not.toBeInTheDocument()
+    // повторное раскрытие не ломает экран
+    fireEvent.click(screen.getByRole('button', { name: /Скрыть кадр/ }))
+    expect(screen.getByRole('button', { name: /Кадр сцены/ })).toBeInTheDocument()
   })
 })

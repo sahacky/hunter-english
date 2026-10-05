@@ -533,6 +533,7 @@ data/
 | `confidence` | string | ✅ | фактические значения: `verbatim (Wikiquote)`, `verbatim (parallel research) — needs source check`, `verbatim (IMDb)`, `Polygon`, `KYM`; значение `fragment` появится после курации |
 | `note` | string | — | комментарий курации (уже встречается в merged-файле, 69 шт.) |
 | `link_playphrase` | string (uri) | — | «послушать в оригинале»: поиск фразы на PlayPhrase.me — короткий клип с моментом сцены (кнопка 🎬 на /#/listen, план M.1) |
+| `link_image` | string | — | кадр/GIF сцены к фразе (план M.3): путь `media/scenes/<тайтл>/<id>.webp` — файлы лежат в `public/media/scenes/` **вне git** (авторские права: в публичный прод не попадают); при отсутствии файла UI скрывает блок (деградация) |
 | `link_video` | string (uri) | — | YouTube-момент (`watch?v=…&t=SS`), проверяется oEmbed валидатором `npm run validate:links` (план M.1; пока не заполнено) |
 | `audio` | object | — | `{ "en_gb": "<путь>" }` — путь в `audio/` |
 

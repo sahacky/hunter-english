@@ -399,6 +399,8 @@ export interface QuoteItem {
   audio?: { en_gb?: string }
   /** Клип с моментом сцены на PlayPhrase (план M.1: «видео-момент» в аудировании). */
   link_playphrase?: string
+  /** Кадр/GIF сцены (план M.3): путь в public/media/scenes/… — вне git, деградация без файла. */
+  link_image?: string
 }
 
 interface QuotesFile {

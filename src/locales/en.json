@@ -281,6 +281,8 @@
     "showRu": "Show translation",
     "hideRu": "Hide translation",
     "playphrase": "Hear it in the original",
+    "showImage": "🖼 Scene still",
+    "hideImage": "Hide still",
     "cloze": "Cloze this quote",
     "clozePrompt": "Fill in the missing word:",
     "markUnderstood": "Understood without translation",

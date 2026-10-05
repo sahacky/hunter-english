@@ -259,6 +259,8 @@ export function QuoteScreen({ repo: repoProp }: { repo?: ProgressRepository }) {
   const [state, setState] = useState<QuoteScreenState | null>(null)
   const [notFound, setNotFound] = useState(false)
   const [showRu, setShowRu] = useState(false)
+  const [showImage, setShowImage] = useState(false)
+  const [stillMissing, setStillMissing] = useState(false)
   const [popover, setPopover] = useState<string | null>(null)
   const [cloze, setCloze] = useState<{
     word: string
@@ -390,6 +392,19 @@ export function QuoteScreen({ repo: repoProp }: { repo?: ProgressRepository }) {
         </p>
       </header>
 
+      {showImage && quote.link_image && !stillMissing && (
+        <figure className="quote-scene">
+          <img
+            src={quote.link_image}
+            alt={quote.speaker ? `${quote.speaker} — кадр сцены` : 'кадр сцены'}
+            onError={() => {
+              // файл вне git и может отсутствовать (M.3): тихо прячем блок
+              setStillMissing(true)
+            }}
+          />
+        </figure>
+      )}
+
       <p className="quote-text" lang="en">
         {segments.map((segment, index) =>
           segment.kind === 'text' ? (
@@ -466,6 +481,13 @@ export function QuoteScreen({ repo: repoProp }: { repo?: ProgressRepository }) {
           <a className="srs-btn" href={quote.link_playphrase} target="_blank" rel="noreferrer">
             {t('quotes.playphrase')}
           </a>
+        )}
+        {/* Кадр сцены (план M.3): файлы вне git — при отсутствии картинка
+            скрывается (деградация), кнопка не остаётся битой */}
+        {quote.link_image && (
+          <button type="button" className="srs-btn" onClick={() => setShowImage((prev) => !prev)}>
+            {showImage ? t('quotes.hideImage') : t('quotes.showImage')}
+          </button>
         )}
         <button
           type="button"
