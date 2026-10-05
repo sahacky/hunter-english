@@ -872,49 +872,57 @@ function ExerciseRouter({
   const { t } = useTranslation()
   const { exercise, phrase } = current
   const common = { exercise, phrase, trap, onAnswer, onDispute, onNext }
-  switch (exercise.type) {
-    case 'translate':
-      return <InputCheckExercise mode="translate" {...common} support={adaptive === 'support'} />
-    case 'dictation':
-      return <InputCheckExercise mode="dictation" {...common} />
-    case 'cloze':
-      // cloze правила: ошибки не штрафуются XP (specs/02 §2 шаг 1)
-      return <InputCheckExercise mode="cloze" {...common} lenient />
-    case 'choose_translation':
-      return <ChooseTranslationExercise {...common} />
-    case 'match_pairs':
-      return <MatchPairsExercise {...common} />
-    case 'word_bank':
-      return <WordBankExercise {...common} challenge={adaptive === 'challenge'} />
-    case 'find_error':
-      return <InputCheckExercise mode="find_error" {...common} />
-    case 'verb_tense':
-      return <InputCheckExercise mode="verb_tense" {...common} />
-    case 'transform':
-      return <TransformExercise {...common} phrasesById={phrasesById} />
-    case 'speak':
-      return <VoiceExercise mode="speak" {...common} />
-    case 'shadowing':
-      return <VoiceExercise mode="shadowing" {...common} />
-    case 'answer_question':
-      return <VoiceExercise mode="answer" {...common} />
-    case 'retell':
-      // обратный цикл EN→RU→EN (Q3.1) — фраза уже разрешена в current.phrase
-      return <RetellTask phrase={current.phrase} onAnswer={onAnswer} onNext={onNext} />
-    default:
-      // типы перечислены схемой exercise (specs/05 §3) — default недостижим
-      /* istanbul ignore next */
-      return (
-        <div className="lesson-exercise">
-          <p className="dim">{t('lesson.unknownExercise', { type: exercise.type })}</p>
-          <div className="lesson-actions">
-            <button type="button" className="srs-btn srs-btn-good" onClick={onNext}>
-              {t('lesson.next')} <kbd>⏎</kbd>
-            </button>
+  const body = (() => {
+    switch (exercise.type) {
+      case 'translate':
+        return <InputCheckExercise mode="translate" {...common} support={adaptive === 'support'} />
+      case 'dictation':
+        return <InputCheckExercise mode="dictation" {...common} />
+      case 'cloze':
+        // cloze правила: ошибки не штрафуются XP (specs/02 §2 шаг 1)
+        return <InputCheckExercise mode="cloze" {...common} lenient />
+      case 'choose_translation':
+        return <ChooseTranslationExercise {...common} />
+      case 'match_pairs':
+        return <MatchPairsExercise {...common} />
+      case 'word_bank':
+        return <WordBankExercise {...common} challenge={adaptive === 'challenge'} />
+      case 'find_error':
+        return <InputCheckExercise mode="find_error" {...common} />
+      case 'verb_tense':
+        return <InputCheckExercise mode="verb_tense" {...common} />
+      case 'transform':
+        return <TransformExercise {...common} phrasesById={phrasesById} />
+      case 'speak':
+        return <VoiceExercise mode="speak" {...common} />
+      case 'shadowing':
+        return <VoiceExercise mode="shadowing" {...common} />
+      case 'answer_question':
+        return <VoiceExercise mode="answer" {...common} />
+      case 'retell':
+        // обратный цикл EN→RU→EN (Q3.1) — фраза уже разрешена в current.phrase
+        return <RetellTask phrase={current.phrase} onAnswer={onAnswer} onNext={onNext} />
+      default:
+        // типы перечислены схемой exercise (specs/05 §3) — default недостижим
+        /* istanbul ignore next */
+        return (
+          <div className="lesson-exercise">
+            <p className="dim">{t('lesson.unknownExercise', { type: exercise.type })}</p>
+            <div className="lesson-actions">
+              <button type="button" className="srs-btn srs-btn-good" onClick={onNext}>
+                {t('lesson.next')} <kbd>⏎</kbd>
+              </button>
+            </div>
           </div>
-        </div>
-      )
-  }
+        )
+    }
+  })()
+  // data-exercise-id: якорь для e2e-подобных драйверов и отладки
+  return (
+    <div className="lesson-slot" data-exercise-id={exercise.id}>
+      {body}
+    </div>
+  )
 }
 
 /** XP исхода по правилам попыток (specs/02 §3; канон значений — meta.xp). */

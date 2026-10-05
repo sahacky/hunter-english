@@ -769,7 +769,7 @@ describe('LessonScreen: хвосты покрытия (M21#21.4)', () => {
     }
     // cloze исчерпал 3 попытки → вердикт wrong → доступен спор
     fireEvent.click(await screen.findByRole('button', { name: /Я был прав/ }))
-    expect(await screen.findByText(/ответ оспорен/)).toBeInTheDocument()
+    expect(await screen.findByText(/засчитано как верный/)).toBeInTheDocument()
     await waitFor(async () => {
       const row = await repo.getLessonProgress('les-e-01')
       expect(row?.checkpoint.results['ex-e-0001']).toMatchObject({ outcome: 'disputed' })

@@ -131,7 +131,7 @@ export default function IntroScreen() {
     return null
   }
   return (
-    <section className="panel lesson-panel intro-panel">
+    <section className="panel lesson-panel intro-panel landing-panel">
       <IntroArt />
       <h2>{t('intro.title')}</h2>
       <p className="dim">{t('intro.subtitle')}</p>

@@ -150,7 +150,7 @@ export default function RanksScreen({ repo: repoProp }: DashboardProps) {
           })}
         </ul>
       </section>
-      <section className="panel">
+      <section className="panel ranks-titles-panel">
         <h2>{t('ranks.titles')}</h2>
         <p className="dim">{t('ranks.titlesHint')}</p>
         <ul className="ranks-titles">

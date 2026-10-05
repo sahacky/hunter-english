@@ -194,7 +194,9 @@ export function InputCheckExercise({
         onSubmit={(event) => {
           event.preventDefault()
           if (finished) onNext()
-          else if (!result && value.trim()) check()
+          // фидбей 2026-10-05: Enter при показанном «Неверно» — вторая попытка
+          // с правками прямо в поле (раньше Enter уходил вхолостую)
+          else if (value.trim()) check()
         }}
       >
         <input
@@ -321,30 +323,44 @@ export function ChooseTranslationExercise({ exercise, onAnswer, onNext }: Exerci
 export function MatchPairsExercise({ exercise, onAnswer, onNext }: ExerciseViewProps) {
   const { t } = useTranslation()
   const p = payload<{ pairs: { en: string; ru: string }[] }>(exercise)
-  const [matchedEn, setMatchedEn] = useState<string[]>([])
-  const [selectedRu, setSelectedRu] = useState<number | null>(null)
+  /** Симметричный выбор (фидбей 2026-10-05): первой можно выбрать любую колонку. */
+  const [selected, setSelected] = useState<{ side: 'en' | 'ru'; index: number } | null>(null)
+  const [matched, setMatched] = useState<number[]>([])
   const [mistakes, setMistakes] = useState(0)
+
+  const pick = (side: 'en' | 'ru', index: number) => {
+    if (!selected) {
+      setSelected({ side, index })
+      return
+    }
+    if (selected.side === side) {
+      // повторный клик по той же плитке — снять; по другой — перевыбор
+      setSelected(selected.index === index ? null : { side, index })
+      return
+    }
+    // выбрана плитка другой колонки — пробуем соединить
+    if (selected.index === index) setMatched((prev) => [...prev, index])
+    else setMistakes((n) => n + 1)
+    setSelected(null)
+  }
+
+  const isSelected = (side: 'en' | 'ru', index: number) =>
+    selected?.side === side && selected.index === index
+
   return (
     <div className="lesson-exercise">
       <p className="lesson-prompt">{t('lesson.matchPrompt')}</p>
       <div className="lesson-match">
         <ul className="lesson-match-column">
-          {p.pairs.map(({ en }) => (
+          {p.pairs.map(({ en }, index) => (
             <li key={en}>
               <button
                 type="button"
-                className="lesson-option"
+                className={`lesson-option ${isSelected('en', index) ? 'lesson-option-selected' : ''}`}
                 lang="en"
-                disabled={matchedEn.includes(en)}
-                onClick={() => {
-                  if (selectedRu === null) return
-                  if (p.pairs[selectedRu].en === en) {
-                    setMatchedEn((prev) => [...prev, en])
-                  } else {
-                    setMistakes((n) => n + 1)
-                  }
-                  setSelectedRu(null)
-                }}
+                aria-pressed={isSelected('en', index)}
+                disabled={matched.includes(index)}
+                onClick={() => pick('en', index)}
               >
                 {en}
               </button>
@@ -352,26 +368,23 @@ export function MatchPairsExercise({ exercise, onAnswer, onNext }: ExerciseViewP
           ))}
         </ul>
         <ul className="lesson-match-column">
-          {p.pairs.map(({ ru }, index) => {
-            const isMatched = matchedEn.includes(p.pairs[index].en)
-            return (
-              <li key={`${ru}-${index}`}>
-                <button
-                  type="button"
-                  className={`lesson-option ${selectedRu === index ? 'lesson-option-selected' : ''}`}
-                  lang="ru"
-                  aria-pressed={selectedRu === index}
-                  disabled={isMatched}
-                  onClick={() => setSelectedRu(selectedRu === index ? null : index)}
-                >
-                  {ru}
-                </button>
-              </li>
-            )
-          })}
+          {p.pairs.map(({ ru }, index) => (
+            <li key={`${ru}-${index}`}>
+              <button
+                type="button"
+                className={`lesson-option ${isSelected('ru', index) ? 'lesson-option-selected' : ''}`}
+                lang="ru"
+                aria-pressed={isSelected('ru', index)}
+                disabled={matched.includes(index)}
+                onClick={() => pick('ru', index)}
+              >
+                {ru}
+              </button>
+            </li>
+          ))}
         </ul>
       </div>
-      {matchedEn.length === p.pairs.length && (
+      {matched.length === p.pairs.length && (
         <div className="lesson-actions" role="status">
           <p className="lesson-verdict-ok">
             {mistakes === 0
@@ -871,7 +884,7 @@ export function FeedbackPlate({
         {result.verdict === 'retry' && t('lesson.voiceRetry')}
         {disputed && ` · ${t('lesson.disputed')}`}
       </p>
-      {result.diff.length > 0 && (
+      {result.diff.length > 0 && result.verdict === 'wrong' && (
         <p className="lesson-diff" lang="en">
           {result.diff.map((token, index) => (
             <span key={index} className={`lesson-diff-${token.status}`}>
