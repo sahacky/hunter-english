@@ -1,20 +1,18 @@
+/* global document */
 // QA-скриншот-тур (research/11-qa/PLAN.md §5). Запуск:
 //   npm run build && npx vite preview --port 4173 &
 //   node scripts/qa-tour.mjs [baseURL]
 // Скрины: test-results/qa/<ctx>/<page>.png. Тур «best-effort»: шаги в try/catch,
 // ошибки страницы пишутся в test-results/qa/console-errors.log.
 import { chromium, devices } from '@playwright/test'
-import { mkdirSync, appendFileSync, readFileSync } from 'node:fs'
+import { mkdirSync, appendFileSync, readFileSync, writeFileSync } from 'node:fs'
+// readFileSync нужен для exercises-e.json ниже
 
 const BASE = process.argv[2] || 'http://localhost:4173'
 const OUT = 'test-results/qa'
 mkdirSync(OUT, { recursive: true })
 const logFile = `${OUT}/console-errors.log`
-try {
-  readFileSync(logFile)
-  // начинаем лог заново на каждый прогон
-  import('node:fs').then(({ writeFileSync }) => writeFileSync(logFile, ''))
-} catch {}
+writeFileSync(logFile, '')
 
 const logErr = (ctx, page, msg) => appendFileSync(logFile, `[${ctx}] ${page}: ${msg}\n`)
 
@@ -39,7 +37,9 @@ async function makeContext(name, { mobile = false, onboarded = true } = {}) {
   page.on('console', (m) => {
     if (m.type() === 'error') logErr(name, page.url().replace(BASE, ''), m.text().slice(0, 200))
   })
-  page.on('pageerror', (e) => logErr(name, page.url().replace(BASE, ''), `PAGEERROR ${e.message.slice(0, 200)}`))
+  page.on('pageerror', (e) =>
+    logErr(name, page.url().replace(BASE, ''), `PAGEERROR ${e.message.slice(0, 200)}`),
+  )
   return { ctx, page }
 }
 
@@ -55,8 +55,7 @@ const go = async (page, hash) => {
 
 // эталоны урока E-01 из данных (для интерактива)
 const exercises = JSON.parse(readFileSync('data/lessons/exercises-e.json', 'utf8')).items
-const phrases = JSON.parse(readFileSync('data/phrases/phrases-e.json', 'utf8')).items
-const phraseText = (id) => phrases.find((p) => p.id === id)?.text_en ?? ''
+// фразы E-ранга (эталоны построения — при расширении интерактива)
 const exById = new Map(exercises.map((e) => [e.id, e]))
 
 // ---------------------------------------------------------------- контексты
@@ -96,33 +95,54 @@ const exById = new Map(exercises.map((e) => [e.id, e]))
   // урок E-01: правило → «Понятно» → первые задания всех типов
   await go(page, '/lesson/E-01')
   await shot(page, 'guest-desktop', '02-lesson-rule')
-  await page.getByRole('button', { name: /Понятно/ }).click().catch(() => {})
+  await page
+    .getByRole('button', { name: /Понятно/ })
+    .click()
+    .catch(() => {})
   await sleep(500)
   // cloze правила (ex-e-0002: gap am)
   const first = exById.get('ex-e-0002')
   if (first) {
     const gap = first.payload.gap_answers?.[0] ?? 'am'
-    await page.locator('.lesson-input').fill(gap).catch(() => {})
-    await page.locator('.lesson-input').press('Enter').catch(() => {})
+    await page
+      .locator('.lesson-input')
+      .fill(gap)
+      .catch(() => {})
+    await page
+      .locator('.lesson-input')
+      .press('Enter')
+      .catch(() => {})
     await sleep(500)
   }
   await shot(page, 'guest-desktop', '03-lesson-cloze-verdict')
-  await page.getByRole('button', { name: /^Дальше/ }).click().catch(() => {})
+  await page
+    .getByRole('button', { name: /^Дальше/ })
+    .click()
+    .catch(() => {})
   await sleep(500)
   await shot(page, 'guest-desktop', '04-lesson-warmup-choose')
   // верная опция первого choose (ex-e-0004)
   const choose = exById.get('ex-e-0004')
   if (choose) {
-    await page.getByRole('button', { name: choose.payload.options[choose.payload.correct], exact: true }).click().catch(() => {})
+    await page
+      .getByRole('button', { name: choose.payload.options[choose.payload.correct], exact: true })
+      .click()
+      .catch(() => {})
     await sleep(400)
   }
-  await page.getByRole('button', { name: /^Дальше/ }).click().catch(() => {})
+  await page
+    .getByRole('button', { name: /^Дальше/ })
+    .click()
+    .catch(() => {})
   await sleep(500)
   await shot(page, 'guest-desktop', '05-lesson-build-wordbank')
   // сессия SRS после ensureCards
   await go(page, '/srs')
   await shot(page, 'guest-desktop', '06-srs-overview')
-  await page.getByRole('button', { name: /Начать/ }).click().catch(() => {})
+  await page
+    .getByRole('button', { name: /Начать/ })
+    .click()
+    .catch(() => {})
   await sleep(700)
   await shot(page, 'guest-desktop', '07-srs-card-front')
   await page.keyboard.press(' ')
@@ -174,7 +194,11 @@ const exById = new Map(exercises.map((e) => [e.id, e]))
 {
   const { ctx, page } = await makeContext('guest-desktop-dark')
   await go(page, '/settings')
-  await page.locator('select').first().selectOption('dark').catch(() => {})
+  await page
+    .locator('select')
+    .first()
+    .selectOption('dark')
+    .catch(() => {})
   await page
     .waitForFunction(() => document.documentElement.dataset.theme === 'dark', { timeout: 4000 })
     .catch(() => {})
@@ -197,11 +221,18 @@ const exById = new Map(exercises.map((e) => [e.id, e]))
   const { ctx, page } = await makeContext('guest-desktop-en')
   await go(page, '/settings')
   const selects = page.locator('select')
-  await selects.nth(1).selectOption('en').catch(async () => {
-    // запас: второй select мог оказаться не локалью — ищем по значению
-    const n = await selects.count()
-    for (let i = 0; i < n; i += 1) await selects.nth(i).selectOption('en').catch(() => {})
-  })
+  await selects
+    .nth(1)
+    .selectOption('en')
+    .catch(async () => {
+      // запас: второй select мог оказаться не локалью — ищем по значению
+      const n = await selects.count()
+      for (let i = 0; i < n; i += 1)
+        await selects
+          .nth(i)
+          .selectOption('en')
+          .catch(() => {})
+    })
   await sleep(800)
   for (const [hash, name] of [
     ['/', '00-dashboard-en'],
