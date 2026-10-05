@@ -169,7 +169,7 @@
   },
   "nav": {
     "dashboard": "Dashboard",
-    "gates": "Gates",
+    "ranksGates": "Ranks & Gates",
     "label": "Main navigation",
     "lesson": "Lesson",
     "path": "Program",
@@ -261,8 +261,11 @@
   },
   "ranks": {
     "statusTitle": "Hunter status",
-    "gatesLink": "Gates {{from}} → {{to}}",
     "finalLink": "Final trial (S confirmation)",
+    "gatesTitle": "Gates",
+    "gateWords": "words: {{target}}",
+    "gatePassed": "passed",
+    "gateCurrent": "your next step",
     "totalXp": "Total XP: {{xp}}",
     "streaks": "Streak: {{current}} d · Best: {{best}} d",
     "gatesPassed": "Gates passed: {{count}} · latest: {{last}}",

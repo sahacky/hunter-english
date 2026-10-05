@@ -23,12 +23,15 @@ describe('Layout', () => {
     expect(label).toHaveAttribute('href', '/')
   })
 
-  it('рендерит десктоп-навигацию (9 пунктов, вкл. Слушать)', () => {
+  it('рендерит десктоп-навигацию (8 пунктов, Ранги и Врата одним разделом)', () => {
     renderLayout()
     const nav = screen.getByRole('navigation', { name: 'Основная навигация' })
     expect(nav).toBeInTheDocument()
-    expect(nav.querySelectorAll('a')).toHaveLength(9)
+    expect(nav.querySelectorAll('a')).toHaveLength(8)
     expect([...nav.querySelectorAll('a')].some((a) => a.textContent === 'Слушать')).toBe(true)
+    // фидбей 2026-10-05: «слишком большой хедер» — Врата слились с Рангами, отдельного пункта нет
+    expect([...nav.querySelectorAll('a')].some((a) => a.textContent === 'Ранги и Врата')).toBe(true)
+    expect([...nav.querySelectorAll('a')].some((a) => a.textContent === 'Врата')).toBe(false)
   })
 
   it('рендерит таб-бар из 5 пунктов с aria-подписью', () => {

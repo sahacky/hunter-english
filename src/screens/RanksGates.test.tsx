@@ -43,11 +43,51 @@ describe('RanksScreen /#/ranks', () => {
     expect(screen.getByText(/Суммарный XP: 347/)).toBeInTheDocument()
     expect(screen.getByText(/«Winter is coming»/)).toBeInTheDocument()
     expect(screen.getByText(/«Equivalent exchange»/)).toBeInTheDocument()
-    // M9: вход в Врата ранга с экрана статуса (доступ с мобильного таб-бара)
+    // M9: вход в Врата ранга (доступ с мобильного таб-бара) — из единой панели «Врата»
     expect(screen.getByRole('link', { name: 'Врата E → D' })).toHaveAttribute('href', '#/gates/E-D')
-    // plan://ux-feedback-2#U.1 — объяснение «что такое Врата» рядом со ссылкой
+    // план://ux-feedback-2#U.1 — объяснение «что такое Врата» рядом со списком
     expect(screen.getByText(/экзамен Системы на повышение ранга/)).toBeInTheDocument()
     expect(screen.getByText(/XP и уровни сами по себе ранг не поднимают/)).toBeInTheDocument()
+  })
+
+  it('панель «Врата»: все 6 экзаменов, цели по словам, отметки «твой шаг»/«пройдено» (единый раздел)', async () => {
+    await repo.putStats({
+      xp: 347,
+      streak_current: 9,
+      streak_best: 12,
+      freezes_left: 3,
+      rank: 'D',
+      gates_history: [{ gate: 'D', passed_at: '2026-10-01T10:00:00.000Z', score: 87 }],
+      last_counted_day: null,
+      updated_at: new Date().toISOString(),
+    })
+    render(
+      <HashRouter>
+        <Routes>
+          <Route path="/ranks" element={<RanksScreen repo={repo} />} />
+        </Routes>
+      </HashRouter>,
+    )
+    window.location.hash = '#/ranks'
+    expect(await screen.findByText('Врата')).toBeInTheDocument()
+    // все Врата в списке с корректными ссылками (домен game/gates, GATE_ORDER)
+    for (const [id, name] of [
+      ['E-D', 'Врата E → D'],
+      ['D-C', 'Врата D → C'],
+      ['C-B', 'Врата C → B'],
+      ['B-A', 'Врата B → A'],
+      ['A-S', 'Врата A → S'],
+    ] as const) {
+      expect(screen.getByRole('link', { name })).toHaveAttribute('href', `#/gates/${id}`)
+    }
+    expect(screen.getByRole('link', { name: /Финальное испытание/ })).toHaveAttribute(
+      'href',
+      '#/gates/S-FINAL',
+    )
+    // цели по словам из конфига; пройденные отмечены; текущий ранг — «твой следующий шаг»
+    expect(screen.getByText(/слова: 1000/)).toBeInTheDocument()
+    expect(screen.getByText(/пройдено/)).toBeInTheDocument()
+    expect(screen.getByText(/твой следующий шаг/)).toBeInTheDocument()
   })
 })
 
@@ -308,7 +348,9 @@ describe('Финальное испытание S-FINAL (M20)', () => {
       </HashRouter>,
     )
     await screen.findByText('Титулы')
-    expect(screen.queryByText(/Финальное испытание \(подтверждение S\)/)).not.toBeInTheDocument()
+    // единая панель «Врата» — каталог: Финал остаётся в списке, отмечен «пройдено»
+    expect(screen.getByText(/Финальное испытание \(подтверждение S\)/)).toBeInTheDocument()
+    expect(screen.getAllByText(/пройдено/).length).toBeGreaterThanOrEqual(2)
   })
 })
 

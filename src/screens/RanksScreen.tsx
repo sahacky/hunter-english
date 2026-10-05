@@ -3,7 +3,8 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
-import { RANK_CEFR, levelInfo, NEXT_RANK } from '../domain/game/game'
+import { RANK_CEFR, levelInfo } from '../domain/game/game'
+import { GATES, GATE_ORDER } from '../domain/game/gates'
 import type { UserStats } from '../domain/game/types'
 import type { ProgressRepository } from '../domain/progress'
 import { DexieProgressRepository } from '../data/progress-repository'
@@ -117,31 +118,37 @@ export default function RanksScreen({ repo: repoProp }: DashboardProps) {
             </li>
           )}
         </ul>
-        {/* Вход в экзамен ранга — в т.ч. с мобильного таб-бара (решение M9#1) */}
-        {stats.rank !== 'S' && (
-          <>
-            <p style={{ margin: '12px 0 0' }}>
-              <Link
-                className="ranks-gate-link"
-                to={`/gates/${stats.rank}-${NEXT_RANK[stats.rank]}`}
-              >
-                {t('ranks.gatesLink', { from: stats.rank, to: NEXT_RANK[stats.rank] })}
-              </Link>
-            </p>
-            {/* plan://ux-feedback-2#U.1 — что такое Врата, на месте ссылки */}
-            <p className="dim" style={{ margin: '8px 0 0' }}>
-              {t('ranks.gatesHint')}
-            </p>
-          </>
-        )}
-        {stats.rank === 'S' && !stats.gates_history.some((g) => g.gate === 'S-FINAL') && (
-          <p style={{ margin: '12px 0 0' }}>
-            {/* Финальное испытание — specs/07 §2 (plan://M20#20.4) */}
-            <Link className="ranks-gate-link" to="/gates/S-FINAL">
-              {t('ranks.finalLink')}
-            </Link>
-          </p>
-        )}
+      </section>
+      {/* Врата — единый раздел с Рангами (фидбей: «слишком большой хедер», specs/07 §2.1);
+          вход в экзамен ранга — в т.ч. с мобильного таб-бара (решение M9#1) */}
+      <section className="panel">
+        <h2>{t('ranks.gatesTitle')}</h2>
+        {/* plan://ux-feedback-2#U.1 — что такое Врата, на месте списка */}
+        <p className="dim">{t('ranks.gatesHint')}</p>
+        <ul className="ranks-gates">
+          {GATE_ORDER.map((id) => {
+            const cfg = GATES[id]
+            const passed = stats.gates_history.some((g) => g.gate === id)
+            const current = !cfg.final && stats.rank === cfg.from
+            return (
+              <li key={id} className={current ? 'ranks-gate-current' : undefined}>
+                {cfg.final ? (
+                  <Link to="/gates/S-FINAL">{t('ranks.finalLink')}</Link>
+                ) : (
+                  <Link to={`/gates/${id}`}>
+                    {t('gates.title', { from: cfg.from, to: cfg.to })}
+                  </Link>
+                )}
+                <span className="dim">
+                  {' '}
+                  · {t('ranks.gateWords', { target: cfg.wordsTarget })}
+                  {passed ? ` · ${t('ranks.gatePassed')}` : ''}
+                  {current ? ` · ${t('ranks.gateCurrent')}` : ''}
+                </span>
+              </li>
+            )
+          })}
+        </ul>
       </section>
       <section className="panel">
         <h2>{t('ranks.titles')}</h2>

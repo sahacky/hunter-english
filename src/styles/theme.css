@@ -1037,6 +1037,26 @@ body {
   background: var(--gold-soft);
   border-color: var(--gold);
 }
+/* Врата — единый раздел с Рангами (фидбей «слишком большой хедер»): список на /#/ranks */
+.ranks-gates {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.ranks-gates li {
+  padding: 10px 14px;
+  border-radius: var(--radius-btn);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+}
+.ranks-gates a {
+  font-weight: 700;
+}
+.ranks-gate-current {
+  border-color: var(--primary);
+}
 .ranks-gate-link {
   display: inline-block;
   padding: 12px 20px;
