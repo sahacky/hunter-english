@@ -293,6 +293,16 @@ data/
           "question_en": { "type": "string" },
           "phrase_id":   { "type": "string", "description": "эталонный ответ (phrase); для сценок разговорника (B-27) не задаётся — ответы в answer.accepted" },
           "situation_ru": { "type": "string", "description": "сценка: подпись над репликой собеседника — ситуация + «Задача: …» + «Исход: …» (info-gap/неязыковой исход, план {#teaching-quality} Q1.3, specs/02 {#scenes-tbl})" },
+          "free_output": {
+            "type": "object", "additionalProperties": false,
+            "required": ["seconds", "checklist_ru"],
+            "description": "free-output промпт (план {#teaching-quality} Q1.5): монолог без сверки, expected[] не проверяется, исход self_reported",
+            "properties": {
+              "seconds":     { "type": "integer", "minimum": 30, "maximum": 300 },
+              "checklist_ru": { "type": "array", "minItems": 2, "maxItems": 5,
+                                "items": { "type": "string", "minLength": 1 } }
+            }
+          },
           "audio":       { "type": "string", "pattern": "^audio/", "description": "предзаписанная реплика собеседника (audio/phrasebook/…)" },
           "free_form":   { "type": "boolean", "description": "самопроверка «Сказал своими словами» сразу — свобода важнее точности (B-27)" } } },
       { "$comment": "12 dialog",

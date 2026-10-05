@@ -449,15 +449,17 @@ describe('loadLessonView (реальные data/ ранга E)', () => {
     expect(view.steps.map(({ kind }) => kind)).toEqual(['rule', 'speaking', 'deck'])
     expect(view.content[1]!.every(({ exercise }) => exercise.type === 'cloze')).toBe(true)
     const scenes = view.content[5]!
-    expect(scenes).toHaveLength(7)
+    expect(scenes).toHaveLength(8) // 7 сцен-диалогов + free-output монолог (Q1.5)
     expect(scenes.every(({ exercise }) => exercise.type === 'answer_question')).toBe(true)
     // 2 раунда = 2 базовые ситуации разговорника (фиксируются в данных, specs/01 §8);
     // подпись сцены с Q1.3 дополняется задачей/исходом — база до первой точки
     const situations = new Set(
-      scenes.map(
-        ({ exercise }) =>
-          String((exercise.payload as Record<string, unknown>).situation_ru).split('. ')[0],
-      ),
+      scenes
+        .map(
+          ({ exercise }) =>
+            String((exercise.payload as Record<string, unknown>).situation_ru).split('. ')[0],
+        )
+        .filter((base) => base.startsWith('Раунд')),
     )
     expect(situations.size).toBe(2)
     // фразы-примеры правила пришиты из других уроков B — доступны экрану
@@ -474,16 +476,24 @@ describe('loadLessonView (реальные data/ ранга E)', () => {
         situation_ru: string
         audio: string
         free_form: boolean
+        free_output?: { seconds: number; checklist_ru: string[] }
       }
       expect(payload.question_en.length).toBeGreaterThan(0)
       expect(payload.situation_ru.length).toBeGreaterThan(0)
-      // реплика собеседника — предзаписанное аудио разговорника, без новых файлов
+      expect(exercise.meta.skill).toBe('speaking')
+      if (payload.free_output) {
+        // free-output монолог (Q1.5): без аудио и эталонов — свобода важнее точности
+        expect(payload.free_output.checklist_ru.length).toBeGreaterThanOrEqual(2)
+        expect(payload.audio).toBeUndefined()
+        expect(exercise.answer.accepted).toBeUndefined()
+        continue
+      }
+      // сценка-диалог: реплика собеседника — предзаписанное аудио разговорника
       expect(payload.audio).toMatch(/^audio\/phrasebook\/cori\/pb-/)
       expect(payload.free_form).toBe(true)
       expect(exercise.answer.accepted?.length).toBeGreaterThanOrEqual(1)
       expect(exercise.answer.speech_threshold).toBe(0.85)
       expect(exercise.answer.hint_ru).toBeTruthy()
-      expect(exercise.meta.skill).toBe('speaking')
     }
   })
 })
@@ -545,7 +555,7 @@ describe('сцены разговорника: info-gap контракт (пла
       if (!lesson) throw new Error(`нет урока ${lessonId}`)
       const scenes = lesson.exercises
         .map(({ id }) => byId.get(id))
-        .filter((e) => e?.payload.kind === 'answer_question')
+        .filter((e) => e?.payload.kind === 'answer_question' && !e.payload.free_output)
       expect(scenes.length, lessonId).toBeGreaterThan(0)
       for (const scene of scenes) {
         const situation = String(scene!.payload.situation_ru ?? '')
@@ -584,6 +594,29 @@ describe('сцены разговорника: info-gap контракт (пла
           expect(template, `${scene.id}: ${template}`).toMatch(/\?$/)
         }
         // существование audio-файла проверяет validate:data (specs/05 §9)
+      }
+    }
+  })
+
+  it('free-output промпты: 1+ на каждый разговорник-интенсив (Q1.5), expected[] не проверяется', async () => {
+    const [lessons, exercises] = await Promise.all([loadLessons(), loadExercises()])
+    const byId = new Map(exercises.map((exercise) => [exercise.id, exercise]))
+    for (const lessonId of SCENE_LESSONS) {
+      const lesson = lessons.find((l) => l.id === lessonId)
+      if (!lesson) throw new Error(`нет урока ${lessonId}`)
+      const prompts = lesson.exercises
+        .map(({ id }) => byId.get(id)!)
+        .filter((e) => e.payload.kind === 'answer_question' && e.payload.free_output)
+      expect(prompts.length, lessonId).toBeGreaterThanOrEqual(1)
+      for (const prompt of prompts) {
+        const free = prompt.payload.free_output as { seconds: number; checklist_ru: string[] }
+        expect(free.seconds, prompt.id).toBeGreaterThanOrEqual(30)
+        expect(free.seconds, prompt.id).toBeLessThanOrEqual(300)
+        expect(free.checklist_ru.length, prompt.id).toBeGreaterThanOrEqual(2)
+        // свобода важнее точности: без эталонов и без фразы-эталона
+        expect(prompt.answer.accepted, prompt.id).toBeUndefined()
+        expect(prompt.payload.phrase_id, prompt.id).toBeUndefined()
+        expect(prompt.meta.skill, prompt.id).toBe('speaking')
       }
     }
   })

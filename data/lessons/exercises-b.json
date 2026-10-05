@@ -25848,6 +25848,60 @@
         "skill": "speaking",
         "xp": 4
       }
+    },
+    {
+      "id": "ex-b-1410",
+      "type": "answer_question",
+      "payload": {
+        "kind": "answer_question",
+        "question_en": "Talk about the way you travel.",
+        "situation_ru": "Монолог (60 сек без сверки): как ты обычно путешествуешь — подготовка, привычки, предпочтения. Исход: собеседник знает твой стиль.",
+        "free_output": {
+          "seconds": 60,
+          "checklist_ru": [
+            "планируешь заранее или спонтанно",
+            "что всегда берёшь с собой",
+            "любимый вид транспорта",
+            "история одной поездки в двух словах"
+          ]
+        }
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "hint_ru": "Помогут: I usually…, I always take…, I prefer… because…"
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-b-1411",
+      "type": "answer_question",
+      "payload": {
+        "kind": "answer_question",
+        "question_en": "How has your English changed this year?",
+        "situation_ru": "Монолог (60 сек без сверки): как изменился твой английский за этот год. Исход: прогресс назван словами — самое честное повторение.",
+        "free_output": {
+          "seconds": 60,
+          "checklist_ru": [
+            "что умел(а) в начале",
+            "что можешь сейчас",
+            "что было самым трудным",
+            "что хочешь уметь дальше"
+          ]
+        }
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "hint_ru": "Старт: A year ago I could…, now I can…, the hardest part was…"
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
     }
   ]
 }

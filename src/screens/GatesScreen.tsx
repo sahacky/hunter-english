@@ -12,6 +12,7 @@ import {
   InputCheckExercise,
   VoiceExercise,
 } from '../components/lesson/ExerciseView'
+import { FreeOutputTask } from '../components/lesson/FreeOutputTask'
 import type { ExerciseItem, PhraseItem } from '../content/lessons'
 import { loadLessons, loadPhrases } from '../content/lessons'
 import { createFirstCards, loadWordNotes, loadWordRanks } from '../content/words'
@@ -27,7 +28,8 @@ interface GatesScreenProps {
   repo?: ProgressRepository
 }
 
-type Phase = { kind: 'intro' } | { kind: 'exam' } | { kind: 'result' }
+// intro → exam → (S-FINAL: монолог-ритуал 60 сек, Q1.5) → result
+type Phase = { kind: 'intro' } | { kind: 'exam' } | { kind: 'monologue' } | { kind: 'result' }
 
 interface ExamItem {
   section: 'vocab' | 'grammar' | 'listening' | 'speaking'
@@ -247,7 +249,9 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
         total: result.total,
         weak: result.weakSections.map((s) => s.section),
       })
-      setPhase({ kind: 'result' })
+      // S-FINAL: перед вердиктом — финальный монолог 60 сек без сверки (Q1.5);
+      // на счёт не влияет (самопроверка в экзамене не считается, ревью M7#М9)
+      setPhase(gate.final ? { kind: 'monologue' } : { kind: 'result' })
       const finishedAt = new Date().toISOString()
       await repo.putGateAttempt({
         gate: gate.attemptId,
@@ -370,6 +374,23 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
             {t('gates.enter')}
           </button>
         </div>
+      </section>
+    )
+  }
+  if (phase.kind === 'monologue') {
+    return (
+      <section className="panel gates-panel">
+        <h2>{t('gates.titleFinal')}</h2>
+        <FreeOutputTask
+          seconds={60}
+          checklistRu={t('gates.monologue.checklist', { returnObjects: true }) as string[]}
+          promptEn={t('gates.monologue.prompt')}
+          situationRu={t('gates.monologue.situation')}
+          onAnswer={() => {
+            /* монолог-ритуал: на счёт экзамена не влияет (ревью M7#М9) */
+          }}
+          onNext={() => setPhase({ kind: 'result' })}
+        />
       </section>
     )
   }

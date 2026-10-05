@@ -46,6 +46,16 @@
   },
   "gates": {
     "notFound": "These gates do not exist.",
+    "monologue": {
+      "prompt": "Tell the story of your way — from the first lesson to rank S.",
+      "situation": "Final monologue (60 s without checking): the story of your path. Outcome: the path is told in your own words — the System heard it.",
+      "checklist": [
+        "how it all started — the first lesson",
+        "what was the hardest part",
+        "what changed in you",
+        "what is next — where now"
+      ]
+    },
     "title": "Gates {{from}} → {{to}}",
     "titleFinal": "Final trial: S (C1) confirmation",
     "check": {
@@ -108,6 +118,13 @@
     "deckText": "{{count}} lesson phrases will go into the review deck (first card — recognition).",
     "hookTitle": "Curious",
     "cliffhangerTitle": "What's next",
+    "freeHint": "Speak for {{seconds}} s without checking anything — freely, as it comes. Mistakes are part of the process.",
+    "freeStart": "Start the monologue",
+    "freeLeft": "{{seconds}} s left",
+    "freeDoneSpeaking": "I'm done",
+    "freeChecklist": "Tick what you covered",
+    "freeChecklistHint": "This checklist is self-assessment: nobody checks the ticks — it's feedback for you.",
+    "freeFinish": "Done",
     "finishLesson": "Finish lesson",
     "lessonDone": "Lesson complete",
     "summaryXp": "XP: {{xp}}",

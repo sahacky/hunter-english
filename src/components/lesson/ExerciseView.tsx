@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next'
 import { judge, judgeDictation, judgeVoice } from '../../domain/check/checker'
 import type { CheckResult, CheckTask } from '../../domain/check/types'
 import type { ExerciseOutcome } from '../../domain/lesson/types'
+import { FreeOutputTask } from './FreeOutputTask'
 import { speak } from '../../lib/tts'
 import { cancelListening, isSpeechSupported, listenOnce } from '../../lib/speech'
 import type { ExerciseItem, PhraseItem, TrapItem } from '../../content/lessons'
@@ -559,6 +560,7 @@ export function VoiceExercise({
     situation_ru?: string
     audio?: string
     free_form?: boolean
+    free_output?: { seconds: number; checklist_ru: string[] }
   }>(exercise)
   const supported = isSpeechSupported()
   const [listening, setListening] = useState(false)
@@ -617,6 +619,22 @@ export function VoiceExercise({
       : mode === 'answer'
         ? ((p.question_en as string) ?? '')
         : (phrase?.text_en ?? '')
+
+  // free-output промпт (Q1.5): «60 сек без сверки» + чек-лист самооценки —
+  // отдельный флоу вместо микрофона/expected[]
+  if (mode === 'answer' && p.free_output) {
+    return (
+      <FreeOutputTask
+        seconds={p.free_output.seconds}
+        checklistRu={p.free_output.checklist_ru}
+        promptEn={prompt}
+        situationRu={p.situation_ru}
+        hintRu={exercise.answer.hint_ru}
+        onAnswer={onAnswer}
+        onNext={onNext}
+      />
+    )
+  }
 
   // сценка разговорника (B-27): свобода важнее точности — самопроверка сразу
   const canSelfReport = !supported || attempts >= 2 || p.free_form === true

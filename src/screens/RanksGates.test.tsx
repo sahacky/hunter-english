@@ -542,4 +542,72 @@ describe('GatesScreen: хвосты покрытия (S4)', () => {
     expect(stats.gates_history).toHaveLength(1)
     expect(stats.gates_history[0]?.gate).toBe('D')
   }, 90000)
+
+  it('S-FINAL: между экзаменом и вердиктом — монолог 60 сек без сверки (Q1.5)', async () => {
+    // как в pass-тесте: полный проход недостижим в юните (Known Issue S4) — мокаем вердикт
+    const { judgeGate } = await import('../domain/game/game')
+    vi.mocked(judgeGate).mockReturnValueOnce({ passed: true, total: 100, weakSections: [] })
+
+    renderGatesS4('S-FINAL')
+    expect(
+      await screen.findByText(/Финальное испытание: подтверждение S/, {}, { timeout: 8000 }),
+    ).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: 'Войти' }))
+    expect(
+      await screen.findByText(/Лексика · секция 1 из 4/, {}, { timeout: 8000 }),
+    ).toBeInTheDocument()
+
+    for (let step = 0; step < 600; step += 1) {
+      if (screen.queryByRole('button', { name: /Начать монолог/ })) break
+      const options = screen
+        .getAllByRole('button')
+        .filter((b) => b.className.includes('lesson-option') && !b.hasAttribute('disabled'))
+      if (options.length > 0) {
+        fireEvent.click(options[0]!)
+        continue
+      }
+      const retry = screen.queryByRole('button', { name: /Ещё попытка/ })
+      if (retry) {
+        fireEvent.click(retry)
+        continue
+      }
+      const giveUp = screen.queryByRole('button', { name: /Сдаться/ })
+      if (giveUp) {
+        fireEvent.click(giveUp)
+        continue
+      }
+      const next = screen.queryByRole('button', { name: /^Дальше/ })
+      if (next) {
+        fireEvent.click(next)
+        continue
+      }
+      if (screen.queryByText(/Слушаю/)) {
+        await idle()
+        continue
+      }
+      const say = screen.queryByRole('button', { name: /Скажи/ })
+      if (say) {
+        gatesSpeech.heard = 'zzz'
+        fireEvent.click(say)
+        continue
+      }
+      const input = document.querySelector<HTMLInputElement>('.lesson-input:not([disabled])')
+      if (input) {
+        fireEvent.change(input, { target: { value: 'zzz' } })
+        fireEvent.submit(input.closest('form')!)
+        continue
+      }
+      throw new Error(`экзамен завис ${step}: ${document.body.textContent?.slice(0, 220)}`)
+    }
+
+    // монолог-ритуал: тема, таймер, чек-лист самооценки, «Готово» → вердикт Финала
+    expect(screen.getByText(/Tell the story of your way/)).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: /Начать монолог/ }))
+    expect(screen.getByRole('timer')).toHaveTextContent('Осталось: 60 сек')
+    fireEvent.click(screen.getByRole('button', { name: 'Я закончил(а)' }))
+    expect(screen.getByText('Отметь, что удалось')).toBeInTheDocument()
+    fireEvent.click(screen.getAllByRole('checkbox')[0]!)
+    fireEvent.click(screen.getByRole('button', { name: 'Готово' }))
+    expect(await screen.findByText(/Финальное испытание пройдено/)).toBeInTheDocument()
+  }, 90000)
 })
