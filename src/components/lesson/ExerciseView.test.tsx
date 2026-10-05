@@ -119,7 +119,7 @@ describe('InputCheckExercise', () => {
     expect(s.calls).toEqual([{ outcome: 'skip', attempts: 2 }])
     fireEvent.click(screen.getByRole('button', { name: /Я был прав/ }))
     expect(s.onDispute).toHaveBeenCalledTimes(1)
-    expect(screen.getByText(/ответ оспорен/)).toBeInTheDocument()
+    expect(screen.getByText(/засчитано как верный/)).toBeInTheDocument()
   })
 
   it('опечатка → correct_typo; подсказка раскрывает первое слово и гасит XP', async () => {
@@ -344,6 +344,36 @@ describe('MatchPairsExercise', () => {
     expect(ru).toHaveAttribute('aria-pressed', 'true')
     fireEvent.click(ru)
     expect(ru).toHaveAttribute('aria-pressed', 'false')
+  })
+
+  it('симметричный выбор (фидбей 2026-10-05): первой можно выбрать и EN-колонку', () => {
+    render(
+      <MatchPairsExercise
+        exercise={ex('match_pairs', { pairs })}
+        phrase={null}
+        trap={null}
+        onAnswer={vi.fn()}
+        onDispute={vi.fn()}
+        onNext={vi.fn()}
+      />,
+    )
+    const en = screen.getByRole('button', { name: 'house' })
+    const ru = screen.getByRole('button', { name: 'дом' })
+    // первый клик — по левой (EN) плитке: выбор фиксируется, не матчится вслепую
+    fireEvent.click(en)
+    expect(en).toHaveAttribute('aria-pressed', 'true')
+    // клик по парной RU — соединение, обе плитки закрыты
+    fireEvent.click(ru)
+    expect(en).toBeDisabled()
+    expect(ru).toBeDisabled()
+    // перевыбор внутри одной колонки: клик water заменяет выбор house
+    const water = screen.getByRole('button', { name: 'water' })
+    fireEvent.click(water)
+    expect(water).toHaveAttribute('aria-pressed', 'true')
+    const notPair = screen.getByRole('button', { name: 'друг' })
+    fireEvent.click(notPair)
+    expect(notPair).not.toBeDisabled() // ошибка: не пара — обе плитки открыты
+    expect(water).not.toBeDisabled()
   })
 })
 

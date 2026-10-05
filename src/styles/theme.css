@@ -1525,6 +1525,10 @@ body {
 
 /* Фидбей 2026-10-05: приветственные страницы — лендинг-стиль: контент
    по центру экрана, а не слева на всю ширину панели */
+.lesson-panel {
+  max-width: 720px;
+  margin-inline: auto;
+}
 .landing-panel {
   max-width: 640px;
   margin-inline: auto;

@@ -96,7 +96,7 @@
     "correct": "Correct!",
     "correctWithTypo": "Correct (with a typo)",
     "wrongAnswer": "Wrong",
-    "disputed": "disputed",
+    "disputed": "counted as correct",
     "iWasRight": "I was right",
     "trapHint": "A trap triggered — see the rule",
     "matchPrompt": "Match the pairs",

@@ -180,7 +180,7 @@
     "correct": "Верно!",
     "correctWithTypo": "Верно (с опечаткой)",
     "wrongAnswer": "Неверно",
-    "disputed": "ответ оспорен",
+    "disputed": "засчитано как верный",
     "iWasRight": "Я был прав",
     "trapHint": "Сработала ловушка — смотри правило",
     "matchPrompt": "Соедини пары",
