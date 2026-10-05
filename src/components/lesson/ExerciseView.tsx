@@ -531,6 +531,20 @@ export function WordBankExercise({
             </button>
           )}
         </form>
+        {result && !finished && (
+          <div className="lesson-actions">
+            <button
+              type="button"
+              className="srs-btn"
+              onClick={() => {
+                setResult(null)
+                setTyped('')
+              }}
+            >
+              {t('lesson.tryAgain')}
+            </button>
+          </div>
+        )}
         {result && (
           <FeedbackPlate
             result={result}

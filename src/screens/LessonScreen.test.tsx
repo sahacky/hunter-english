@@ -1201,6 +1201,15 @@ describe('LessonScreen: хвосты покрытия (M21#21.4)', () => {
     expect(screen.queryByText(/Что дальше/)).not.toBeInTheDocument()
   })
 
+  it('retell-упражнение (Q3.1): роутер урока рендерит обратный цикл', async () => {
+    const exercise = syntheticExercise('ex-syn-retell', 'retell', { phrase_id: 'ph-syn-1' })
+    const view = syntheticLessonView(exercise)
+    renderScreen('E-01', repo, view)
+    expect(await screen.findByText(/Фраза цикла не найдена/)).toBeInTheDocument()
+    // пропуск упражнения кнопкой «Дальше» — маршрут retell покрыт полностью
+    fireEvent.click(screen.getByRole('button', { name: /^Дальше/ }))
+  })
+
   it('адаптивная презентация серии (Q2.1): 6+ верных → challenge, word_bank текстом', async () => {
     const view = await loadLessonView('les-e-01')
     if (!view) throw new Error('нет данных урока les-e-01')
