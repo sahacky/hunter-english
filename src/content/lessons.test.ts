@@ -8,6 +8,7 @@ import {
   exercisePhraseIds,
   lessonToCourseId,
   loadLessonView,
+  loadExercises,
   loadLessons,
   loadPhraseNotes,
   loadPhrases,
@@ -450,9 +451,13 @@ describe('loadLessonView (реальные data/ ранга E)', () => {
     const scenes = view.content[5]!
     expect(scenes).toHaveLength(7)
     expect(scenes.every(({ exercise }) => exercise.type === 'answer_question')).toBe(true)
-    // 2 раунда = 2 ситуации разговорника (фиксируются в данных, specs/01 §8)
+    // 2 раунда = 2 базовые ситуации разговорника (фиксируются в данных, specs/01 §8);
+    // подпись сцены с Q1.3 дополняется задачей/исходом — база до первой точки
     const situations = new Set(
-      scenes.map(({ exercise }) => (exercise.payload as Record<string, unknown>).situation_ru),
+      scenes.map(
+        ({ exercise }) =>
+          String((exercise.payload as Record<string, unknown>).situation_ru).split('. ')[0],
+      ),
     )
     expect(situations.size).toBe(2)
     // фразы-примеры правила пришиты из других уроков B — доступны экрану
@@ -518,5 +523,68 @@ describe('assembleLesson: кросс-урочные ссылки (transform, р�
       .flat()
       .filter(({ exercise }) => exercise.type === 'transform')
     expect(transforms.length).toBeGreaterThanOrEqual(15)
+  })
+})
+
+describe('сцены разговорника: info-gap контракт (план {#teaching-quality} Q1.3, specs/02 {#scenes-tbl})', () => {
+  const SCENE_LESSONS = [
+    'les-c-26',
+    'les-c-27',
+    'les-c-28',
+    'les-c-29',
+    'les-c-30',
+    'les-b-27',
+    'les-b-30',
+  ] as const
+
+  it('каждая сцена интенсивов имеет разрыв и неязыковой исход (situation_ru: Задача/Исход/Разрыв)', async () => {
+    const [lessons, exercises] = await Promise.all([loadLessons(), loadExercises()])
+    const byId = new Map(exercises.map((exercise) => [exercise.id, exercise]))
+    for (const lessonId of SCENE_LESSONS) {
+      const lesson = lessons.find((l) => l.id === lessonId)
+      if (!lesson) throw new Error(`нет урока ${lessonId}`)
+      const scenes = lesson.exercises
+        .map(({ id }) => byId.get(id))
+        .filter((e) => e?.payload.kind === 'answer_question')
+      expect(scenes.length, lessonId).toBeGreaterThan(0)
+      for (const scene of scenes) {
+        const situation = String(scene!.payload.situation_ru ?? '')
+        expect(situation, `${lessonId}/${scene!.id}`).toMatch(/Задача:|Разрыв|Разрыв:/)
+        expect(situation, `${lessonId}/${scene!.id}`).toMatch(/Исход:/)
+        // свободная речь: сцена со situation_ru — всегда free_form или с эталонами
+        expect(
+          scene!.payload.free_form === true || scene!.answer.accepted?.length,
+          `${lessonId}/${scene!.id}`,
+        ).toBeTruthy()
+      }
+    }
+  })
+
+  it('info-gap-сцены C-26…C-30/B-30: пользователь спрашивает (accepted — вопросы)', async () => {
+    const [lessons, exercises] = await Promise.all([loadLessons(), loadExercises()])
+    const byId = new Map(exercises.map((exercise) => [exercise.id, exercise]))
+    for (const lessonId of [
+      'les-c-26',
+      'les-c-27',
+      'les-c-28',
+      'les-c-29',
+      'les-c-30',
+      'les-b-30',
+    ]) {
+      const lesson = lessons.find((l) => l.id === lessonId)
+      if (!lesson) throw new Error(`нет урока ${lessonId}`)
+      const scenes = lesson.exercises
+        .map(({ id }) => byId.get(id)!)
+        .filter((e) => e.payload.kind === 'answer_question' && e.payload.free_form === true)
+      expect(scenes.length, lessonId).toBeGreaterThan(0)
+      for (const scene of scenes) {
+        // разрыв: собеседник «знает» — пользователь спрашивает (вопросительные шаблоны)
+        expect(scene.answer.accepted?.length, scene.id).toBeGreaterThan(0)
+        for (const template of scene.answer.accepted ?? []) {
+          expect(template, `${scene.id}: ${template}`).toMatch(/\?$/)
+        }
+        // существование audio-файла проверяет validate:data (specs/05 §9)
+      }
+    }
   })
 })

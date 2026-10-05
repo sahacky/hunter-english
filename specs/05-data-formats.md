@@ -188,7 +188,7 @@ data/
 | 8 | `choose_translation` | выбери перевод из 3–4 | recognition |
 | 9 | `match_pairs` | найди пары EN↔RU | recognition |
 | 10 | `find_error` | найди и исправь ошибку | ловушки |
-| 11 | `answer_question` | ответь на вопрос голосом | output; B-27 «на скорости»: реплика собеседника разговорника (`situation_ru` + `audio`) + `free_form`-самопроверка, эталоны в `answer.accepted` |
+| 11 | `answer_question` | ответь на вопрос голосом | output; B-27 «на скорости» + info-gap-сцены Q1.3 (specs/02 {#scenes-tbl}): реплика собеседника разговорника (`situation_ru` + `audio`) + `free_form`-самопроверка, эталоны в `answer.accepted` |
 | 12 | `dialog` | диалог-сценка из разговорника | разговор в ситуации |
 | 13 | `verb_tense` | поставь глагол в нужное время по маркеру | времена |
 | 14 | `transform` | трансформация (утверждение → вопрос → отрицание → прошедшее) | drill |
@@ -292,7 +292,7 @@ data/
           "kind": { "const": "answer_question" },
           "question_en": { "type": "string" },
           "phrase_id":   { "type": "string", "description": "эталонный ответ (phrase); для сценок разговорника (B-27) не задаётся — ответы в answer.accepted" },
-          "situation_ru": { "type": "string", "description": "сценка: подпись ситуации над репликой собеседника (B-27)" },
+          "situation_ru": { "type": "string", "description": "сценка: подпись над репликой собеседника — ситуация + «Задача: …» + «Исход: …» (info-gap/неязыковой исход, план {#teaching-quality} Q1.3, specs/02 {#scenes-tbl})" },
           "audio":       { "type": "string", "pattern": "^audio/", "description": "предзаписанная реплика собеседника (audio/phrasebook/…)" },
           "free_form":   { "type": "boolean", "description": "самопроверка «Сказал своими словами» сразу — свобода важнее точности (B-27)" } } },
       { "$comment": "12 dialog",

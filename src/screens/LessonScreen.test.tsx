@@ -121,7 +121,7 @@ describe('LessonScreen /#/lesson/:id', () => {
     }
     // разогрев/построение/слух пусты: «Речь» — шаг 2 из 3, первая сценка
     expect(await screen.findByText('Речь · шаг 2 из 3')).toBeInTheDocument()
-    expect(screen.getByText('Раунд 1 из 2 — Путешествия: опыт')).toBeInTheDocument()
+    expect(screen.getByText(/Раунд 1 из 2 — Путешествия: опыт/)).toBeInTheDocument()
     expect(screen.getByText('Have you ever been abroad?')).toBeInTheDocument()
     expect(screen.getByRole('button', { name: 'Сказал своими словами' })).toBeInTheDocument()
     // самопроверка проходит сцену без распознавания (свобода важнее точности)
