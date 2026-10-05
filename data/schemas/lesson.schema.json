@@ -14,7 +14,8 @@
     "trap_id",
     "quotes_topic",
     "exercises",
-    "bebris_video"
+    "bebris_video",
+    "curiosity"
   ],
   "additionalProperties": false,
   "properties": {
@@ -69,6 +70,24 @@
         "additionalProperties": false,
         "required": ["id"],
         "properties": { "id": { "type": "string", "pattern": "^ex-" } }
+      }
+    },
+    "curiosity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["hook", "cliffhanger"],
+      "description": "Curiosity-петля (план {#teaching-quality} Q1.2): зацепка перед правилом и клиффхэнгер в конце урока",
+      "properties": {
+        "hook": {
+          "type": "string",
+          "minLength": 1,
+          "description": "«Любопытная» первая строка шага правила — интригует до чтения rule_md"
+        },
+        "cliffhanger": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Тизер следующей темы программы — показывается на шаге 7 «В колоду»"
+        }
       }
     },
     "bebris_video": {

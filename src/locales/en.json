@@ -106,6 +106,8 @@
     "repeatStep": "Repeat step",
     "deckTitle": "Into the deck",
     "deckText": "{{count}} lesson phrases will go into the review deck (first card — recognition).",
+    "hookTitle": "Curious",
+    "cliffhangerTitle": "What's next",
     "finishLesson": "Finish lesson",
     "lessonDone": "Lesson complete",
     "summaryXp": "XP: {{xp}}",

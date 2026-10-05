@@ -100,13 +100,18 @@ function lessonSrsStats(
   return { total, learned, lapsed }
 }
 
-/** Карточка правила (шаг 1): правило + примеры с озвучкой + «⚠️ Ловушка» (specs/02 §2). */
+/** Карточка правила (шаг 1): зацепка + правило + примеры с озвучкой + «⚠️ Ловушка» (specs/02 §2). */
 function RuleCard({ view, onUnderstood }: { view: LessonView; onUnderstood: () => void }) {
   const { t } = useTranslation()
   const gp = view.lesson.grammar_point
   return (
     <div className="lesson-exercise lesson-rule">
       <h3 lang="ru">{gp.title_ru}</h3>
+      {view.lesson.curiosity?.hook && (
+        <p className="lesson-hook" lang="ru">
+          <strong>{t('lesson.hookTitle')}:</strong> {view.lesson.curiosity.hook}
+        </p>
+      )}
       <div className="lesson-rule-md" lang="ru">
         {gp.rule_md.split('\n').map((line, index) => (
           <p key={index} className={line.startsWith('⚠') ? 'lesson-trap' : undefined}>
@@ -710,6 +715,11 @@ export default function LessonScreen({
       <section className="panel lesson-panel">
         <h2>{t('lesson.deckTitle')}</h2>
         <p className="dim">{t('lesson.deckText', { count: lessonPhrases(view).length })}</p>
+        {view.lesson.curiosity?.cliffhanger && (
+          <p className="lesson-cliffhanger" lang="ru">
+            <strong>🔮 {t('lesson.cliffhangerTitle')}:</strong> {view.lesson.curiosity.cliffhanger}
+          </p>
+        )}
         <div className="lesson-actions">
           <button
             type="button"

@@ -67,6 +67,8 @@ export interface LessonItem {
     youtube_id: string | null
     title: string | null
   } | null
+  /** Curiosity-петля (план {#teaching-quality} Q1.2): зацепка правила + клиффхэнгер финала. */
+  curiosity?: { hook: string; cliffhanger: string } | null
 }
 
 interface LessonsFile {

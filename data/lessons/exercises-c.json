@@ -26467,13 +26467,22 @@
       "type": "answer_question",
       "payload": {
         "kind": "answer_question",
-        "question_en": "Is the flight on time?",
-        "phrase_id": "ph-c-1142"
+        "question_en": "Good afternoon. How can I help you?",
+        "situation_ru": "Сценка (info-gap): табло не видно, ты не знаешь, с какого выхода рейс в Рим. Задача: спросить у сотрудника. Исход: ты у нужного гейта до конца посадки.",
+        "audio": "audio/phrasebook/cori/pb-pharmacy-01-l0.opus",
+        "free_form": true
       },
       "answer": {
         "normalization": "default",
         "typo": "allow",
-        "speech_threshold": 0.85
+        "accepted": [
+          "Which gate is the flight to Rome?",
+          "What gate is the flight to Rome?",
+          "Where does the flight to Rome board?",
+          "Where is the gate for the Rome flight?"
+        ],
+        "speech_threshold": 0.85,
+        "hint_ru": "Спроси своими словами — например: «Which gate is the flight to Rome?»"
       },
       "meta": {
         "skill": "speaking",
@@ -26504,13 +26513,22 @@
       "type": "answer_question",
       "payload": {
         "kind": "answer_question",
-        "question_en": "How long will you stay?",
-        "phrase_id": "ph-c-0723"
+        "question_en": "Good afternoon. How can I help you?",
+        "situation_ru": "Сценка (info-gap): зал прилёта, лента выдачи пуста. Ты не знаешь, где твой чемодан. Задача: спросить сотрудника. Исход: чемодан найден — ты у нужной ленты.",
+        "audio": "audio/phrasebook/cori/pb-pharmacy-01-l0.opus",
+        "free_form": true
       },
       "answer": {
         "normalization": "default",
         "typo": "allow",
-        "speech_threshold": 0.85
+        "accepted": [
+          "Where can I get my luggage?",
+          "Which belt is the flight from Istanbul?",
+          "Where is baggage claim?",
+          "Where is my suitcase?"
+        ],
+        "speech_threshold": 0.85,
+        "hint_ru": "Например: «Where can I get my luggage?» / «Which belt is the flight from Istanbul?»"
       },
       "meta": {
         "skill": "speaking",
@@ -26541,13 +26559,21 @@
       "type": "answer_question",
       "payload": {
         "kind": "answer_question",
-        "question_en": "What time is check-out?",
-        "phrase_id": "ph-c-1236"
+        "question_en": "Good morning. How can I help you?",
+        "situation_ru": "Сценка (info-gap): утро выезда. Ты не знаешь, во сколько освободить номер и включён ли завтрак. Задача: спросить на ресепшене. Исход: номер держат до полудня — завтрак без спешки.",
+        "free_form": true
       },
       "answer": {
         "normalization": "default",
         "typo": "allow",
-        "speech_threshold": 0.85
+        "accepted": [
+          "What time is check-out?",
+          "When do I have to check out?",
+          "Is breakfast included?",
+          "What time is breakfast?"
+        ],
+        "speech_threshold": 0.85,
+        "hint_ru": "Например: «What time is check-out?» / «Is breakfast included?»"
       },
       "meta": {
         "skill": "speaking",
@@ -26578,13 +26604,22 @@
       "type": "answer_question",
       "payload": {
         "kind": "answer_question",
-        "question_en": "What do you recommend?",
-        "phrase_id": "ph-c-1279"
+        "question_en": "This way, please. Here is the menu.",
+        "situation_ru": "Сценка (info-gap): меню без цен. Ты не знаешь, сколько стоит комплексный обед. Задача: спросить официанта до заказа. Исход: сумма известна заранее — сюрпризов в счёте нет.",
+        "audio": "audio/phrasebook/cori/pb-restaurant-01-l2.opus",
+        "free_form": true
       },
       "answer": {
         "normalization": "default",
         "typo": "allow",
-        "speech_threshold": 0.85
+        "accepted": [
+          "How much is the set lunch?",
+          "How much does the set lunch cost?",
+          "What is the price of the set menu?",
+          "How much is the soup?"
+        ],
+        "speech_threshold": 0.85,
+        "hint_ru": "Например: «How much is the set lunch?»"
       },
       "meta": {
         "skill": "speaking",
@@ -26615,13 +26650,22 @@
       "type": "answer_question",
       "payload": {
         "kind": "answer_question",
-        "question_en": "Will everything be OK?",
-        "phrase_id": "ph-c-0466"
+        "question_en": "Where to?",
+        "situation_ru": "Сценка (info-gap): такси в незнакомом городе. Ты не знаешь, сколько ехать до аэропорта. Задача: спросить до отъезда. Исход: 25 минут и фиксированная цена — на рейс успеваешь.",
+        "audio": "audio/phrasebook/cori/pb-taxi-01-l0.opus",
+        "free_form": true
       },
       "answer": {
         "normalization": "default",
         "typo": "allow",
-        "speech_threshold": 0.85
+        "accepted": [
+          "How long does it take to get to the airport?",
+          "How long will it take to the airport?",
+          "How much is it to the airport?",
+          "How long does it take?"
+        ],
+        "speech_threshold": 0.85,
+        "hint_ru": "Например: «How long does it take to get to the airport?»"
       },
       "meta": {
         "skill": "speaking",

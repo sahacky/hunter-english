@@ -169,7 +169,11 @@
         }
       ],
       "bebris_video": null,
-      "order": 1
+      "order": 1,
+      "curiosity": {
+        "hook": "going to — «собираюсь»: будущее, которое уже запланировано. И да, тут снова голый глагол.",
+        "cliffhanger": "Дальше — will: будущее-обещание и прогноз. I'll help — три буквы, которые звучат как «я рядом»."
+      }
     },
     {
       "id": "les-c-11",
@@ -343,7 +347,11 @@
         "youtube_id": "4Tt_XQw5Q9k",
         "title": null
       },
-      "order": 2
+      "order": 2,
+      "curiosity": {
+        "hook": "will не переводится отдельным словом — это маркер будущего. I'll = I will, и всё.",
+        "cliffhanger": "Дальше: won't и Will you…? — как отказываться и просить в будущем времени."
+      }
     },
     {
       "id": "les-c-12",
@@ -517,7 +525,11 @@
         "youtube_id": "aWv9LlHCdhQ",
         "title": null
       },
-      "order": 3
+      "order": 3,
+      "curiosity": {
+        "hook": "won't — самое короткое отрицание языка: две буквы заменяют целое will. Красиво и обманчиво.",
+        "cliffhanger": "Дальше: Where will you stay? и be able to — будущее там, где will ставить нельзя."
+      }
     },
     {
       "id": "les-c-13",
@@ -691,7 +703,11 @@
         "youtube_id": "TNpl9twtT_Q",
         "title": null
       },
-      "order": 4
+      "order": 4,
+      "curiosity": {
+        "hook": "После will вопросы собираются инверсией, а be able to выручает там, где у can нет будущего.",
+        "cliffhanger": "Дальше — повторение №12: будущее и прошедшее встретятся в одном диктанте."
+      }
     },
     {
       "id": "les-c-15",
@@ -869,7 +885,11 @@
         }
       ],
       "bebris_video": null,
-      "order": 5
+      "order": 5,
+      "curiosity": {
+        "hook": "Прошлое, настоящее, будущее — три времени под контролем. Контрольная расставит точки.",
+        "cliffhanger": "Дальше — must / have to: необходимость. Одно — изнутри, другое — извне. Разница дороже, чем кажется."
+      }
     },
     {
       "id": "les-c-16",
@@ -1043,7 +1063,11 @@
         "youtube_id": "H4-rXitQBN8",
         "title": null
       },
-      "order": 6
+      "order": 6,
+      "curiosity": {
+        "hook": "must — «я обязан», have to — «обстоятельства обязывают». Носители чувствуют разницу в каждой фразе.",
+        "cliffhanger": "Дальше — should: советы. You should see this lesson — и это не приказ, а забота."
+      }
     },
     {
       "id": "les-c-17",
@@ -1217,7 +1241,11 @@
         "youtube_id": "H4-rXitQBN8",
         "title": null
       },
-      "order": 7
+      "order": 7,
+      "curiosity": {
+        "hook": "should = «было бы правильно». Совет без давления — форма, которой доверяют.",
+        "cliffhanger": "Дальше — could: тот же can в прошлом и в вежливой просьбе. Could you help me? — отказать сложно."
+      }
     },
     {
       "id": "les-c-18",
@@ -1391,7 +1419,11 @@
         "youtube_id": "y8pcQGaMKI0",
         "title": null
       },
-      "order": 8
+      "order": 8,
+      "curiosity": {
+        "hook": "could хранит след can и смягчает просьбы в настоящем. Один глагол — два сверхмощных применения.",
+        "cliffhanger": "Дальше: like doing и want to do. Почему после like глагол с -ing, а после want — с to."
+      }
     },
     {
       "id": "les-c-19",
@@ -1565,7 +1597,11 @@
         "youtube_id": "UxX1Ca2w7iY",
         "title": null
       },
-      "order": 9
+      "order": 9,
+      "curiosity": {
+        "hook": "I like swimming, I want to swim. Тест простой: занятие вообще → -ing, конкретное желание → to.",
+        "cliffhanger": "Дальше — повторение №13: контрольная-тренировка по модальным и предпочтениям."
+      }
     },
     {
       "id": "les-c-20",
@@ -1740,7 +1776,11 @@
         }
       ],
       "bebris_video": null,
-      "order": 10
+      "order": 10,
+      "curiosity": {
+        "hook": "Модальные, предпочтения, -ing vs to — связки, на которых держится живая речь. Прогоним на скорость.",
+        "cliffhanger": "Дальше — сравнения: bigger, the biggest. «Чем» и «самый» по-английски короче, чем по-русски."
+      }
     },
     {
       "id": "les-c-21",
@@ -1914,7 +1954,11 @@
         "youtube_id": "LBnXzY3pz6g",
         "title": null
       },
-      "order": 11
+      "order": 11,
+      "curiosity": {
+        "hook": "-er / more — для «чем», the …-est — для «самый». Два суффикса — и вся таблица сравнений.",
+        "cliffhanger": "Дальше: as … as, too, enough — «такой же», «слишком», «достаточно». Три слова — миллион сцен."
+      }
     },
     {
       "id": "les-c-22",
@@ -2088,7 +2132,11 @@
         "youtube_id": "LBnXzY3pz6g",
         "title": null
       },
-      "order": 12
+      "order": 12,
+      "curiosity": {
+        "hook": "as big as — «такой же большой», too expensive — «слишком дорого», enough money — «денег хватает». Всё.",
+        "cliffhanger": "Дальше: pay for, depend on — предлоги прилипают к глаголам намертво. Учим парами."
+      }
     },
     {
       "id": "les-c-23",
@@ -2262,7 +2310,11 @@
         "youtube_id": "2bsDP-r-RGk",
         "title": null
       },
-      "order": 13
+      "order": 13,
+      "curiosity": {
+        "hook": "listen TO music, pay FOR tickets, depend ON weather. Предлог — часть глагола, как хвост у самолёта.",
+        "cliffhanger": "Дальше — повторение №14: сравнения и процесс. Последняя тренировка перед сценками аэропорта."
+      }
     },
     {
       "id": "les-c-25",
@@ -2431,7 +2483,11 @@
         }
       ],
       "bebris_video": null,
-      "order": 14
+      "order": 14,
+      "curiosity": {
+        "hook": "Сравнения, too/enough, предлоги — всё, что делает речь живой. Контрольная покажет прочность.",
+        "cliffhanger": "Дальше — аэропорт: сквозная сценка от регистрации до посадки. Первый полностью разговорный урок ранга C."
+      }
     },
     {
       "id": "les-c-26",
@@ -2600,7 +2656,11 @@
         }
       ],
       "bebris_video": null,
-      "order": 15
+      "order": 15,
+      "curiosity": {
+        "hook": "Check-in, boarding pass, gate — аэропорт собран из двадцати фраз, которые ты почти уже знаешь.",
+        "cliffhanger": "Дальше — паспортный контроль и таможня. Пять вопросов офицера — и спокойный ответ на каждый."
+      }
     },
     {
       "id": "les-c-27",
@@ -2769,7 +2829,11 @@
         }
       ],
       "bebris_video": null,
-      "order": 16
+      "order": 16,
+      "curiosity": {
+        "hook": "Business or pleasure? — вопрос, от которого зависит вся беседа у стойки. Ответ короче, чем кажется.",
+        "cliffhanger": "Дальше — отель: заезд, проблемы, выезд. Три диалога, которые случаются в каждой поездке."
+      }
     },
     {
       "id": "les-c-28",
@@ -2938,7 +3002,11 @@
         }
       ],
       "bebris_video": null,
-      "order": 17
+      "order": 17,
+      "curiosity": {
+        "hook": "Бронь подведёт — а ты нет: I have a reservation, the AC doesn't work, late check-out. Всё решаемо.",
+        "cliffhanger": "Дальше — ресторан и аптека: заказ столика и I need something for a headache. Самые практичные фразы курса."
+      }
     },
     {
       "id": "les-c-29",
@@ -3107,7 +3175,11 @@
         }
       ],
       "bebris_video": null,
-      "order": 18
+      "order": 18,
+      "curiosity": {
+        "hook": "Столик на двоих и что-то от головы — две сцены, ради которых всё затевалось. Доведём до автомата.",
+        "cliffhanger": "Дальше — большое повторение перед Вратами B. Ранг C собран полностью. Экзамен ближе, чем кажется."
+      }
     },
     {
       "id": "les-c-30",
@@ -3276,7 +3348,11 @@
         }
       ],
       "bebris_video": null,
-      "order": 19
+      "order": 19,
+      "curiosity": {
+        "hook": "Аэропорт, отель, ресторан, аптека — карта путешественника готова. Генеральная репетиция Врат.",
+        "cliffhanger": "Врата B — следующий рубеж. А за ними — Present Perfect: время, которое меняет представление об «уже» и «ещё»."
+      }
     }
   ]
 }

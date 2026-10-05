@@ -188,7 +188,7 @@ data/
 | 8 | `choose_translation` | выбери перевод из 3–4 | recognition |
 | 9 | `match_pairs` | найди пары EN↔RU | recognition |
 | 10 | `find_error` | найди и исправь ошибку | ловушки |
-| 11 | `answer_question` | ответь на вопрос голосом | output; B-27 «на скорости»: реплика собеседника разговорника (`situation_ru` + `audio`) + `free_form`-самопроверка, эталоны в `answer.accepted` |
+| 11 | `answer_question` | ответь на вопрос голосом | output; B-27 «на скорости» + info-gap-сцены Q1.3 (specs/02 {#scenes-tbl}): реплика собеседника разговорника (`situation_ru` + `audio`) + `free_form`-самопроверка, эталоны в `answer.accepted` |
 | 12 | `dialog` | диалог-сценка из разговорника | разговор в ситуации |
 | 13 | `verb_tense` | поставь глагол в нужное время по маркеру | времена |
 | 14 | `transform` | трансформация (утверждение → вопрос → отрицание → прошедшее) | drill |
@@ -292,7 +292,7 @@ data/
           "kind": { "const": "answer_question" },
           "question_en": { "type": "string" },
           "phrase_id":   { "type": "string", "description": "эталонный ответ (phrase); для сценок разговорника (B-27) не задаётся — ответы в answer.accepted" },
-          "situation_ru": { "type": "string", "description": "сценка: подпись ситуации над репликой собеседника (B-27)" },
+          "situation_ru": { "type": "string", "description": "сценка: подпись над репликой собеседника — ситуация + «Задача: …» + «Исход: …» (info-gap/неязыковой исход, план {#teaching-quality} Q1.3, specs/02 {#scenes-tbl})" },
           "audio":       { "type": "string", "pattern": "^audio/", "description": "предзаписанная реплика собеседника (audio/phrasebook/…)" },
           "free_form":   { "type": "boolean", "description": "самопроверка «Сказал своими словами» сразу — свобода важнее точности (B-27)" } } },
       { "$comment": "12 dialog",
@@ -395,6 +395,7 @@ data/
 | `trap_id` | string \| null | ✅ | id ловушки из `data/traps.json` (`trap-to-home`) |
 | `quotes_topic` | string \| null | ✅ | тег темы для подбора цитат (`family`, `hotel`) |
 | `exercises` | array | ✅ | `[{ "id": "ex-e-0017" }]` — упорядоченные ссылки; порядок = порядок в уроке |
+| `curiosity` | object | ✅ | `{ hook, cliffhanger }` — curiosity-петля (план {#teaching-quality} Q1.2): `hook` — «любопытная» первая строка шага правила (интрига до чтения `rule_md`), `cliffhanger` — тизер следующей темы на шаге 7 «В колоду» |
 | `bebris_video` | object \| null | ✅ | `{ lesson, playlist_index, youtube_id, title }` — «видео по теме» (карта research/04, `youtube_id` из research/04); url собирается при рендере |
 
 ```json
@@ -404,7 +405,8 @@ data/
   "title": "lesson",
   "type": "object",
   "required": ["id", "rank", "module", "title", "grammar_point", "vocab_band",
-               "phrasebook_topic", "trap_id", "quotes_topic", "exercises", "bebris_video"],
+               "phrasebook_topic", "trap_id", "quotes_topic", "exercises", "bebris_video",
+               "curiosity"],
   "additionalProperties": false,
   "properties": {
     "id": { "type": "string", "pattern": "^les-(e|d|c|b|a|s)-[0-9]{2}$" },
@@ -452,6 +454,15 @@ data/
             "youtube_id": { "type": ["string", "null"] },
             "title": { "type": ["string", "null"] } } }
       ]
+    },
+    "curiosity": {
+      "type": "object", "additionalProperties": false,
+      "required": ["hook", "cliffhanger"],
+      "description": "Curiosity-петля (план {#teaching-quality} Q1.2)",
+      "properties": {
+        "hook": { "type": "string", "minLength": 1, "description": "любопытная первая строка шага правила" },
+        "cliffhanger": { "type": "string", "minLength": 1, "description": "тизер следующей темы на шаге 7" }
+      }
     }
   }
 }
@@ -480,7 +491,11 @@ data/
     { "id": "ex-e-0001" }, { "id": "ex-e-0002" }, { "id": "ex-e-0003" },
     { "id": "ex-e-0004" }, { "id": "ex-e-0005" }, { "id": "ex-e-0006" }
   ],
-  "bebris_video": { "lesson": "1.26", "playlist_index": null, "youtube_id": null, "title": null }
+  "bebris_video": { "lesson": "1.26", "playlist_index": null, "youtube_id": null, "title": null },
+  "curiosity": {
+    "hook": "В «я — Иван» русского глагола нет. Английский без глагола обойтись не может — и это меняет всё.",
+    "cliffhanger": "Дальше: как одним словом «a» превратить «человека» в «человека вообще» — и почему это слышно."
+  }
 }
 ```
 
