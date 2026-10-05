@@ -123,13 +123,15 @@ export function cardId(entityId: string, type: string): string {
 /**
  * Первая карточка заметки по rule-1 (srs://rule-1): для слов — en-ru,
  * состояние New из createEmptyCard ts-fsrs; остальные типы создаёт wake-up (rule-2).
+ * Чанк-заметки (chunkSlot, Q2.2) получают вторую карточку 'chunk': она тоже New,
+ * но в дневной лимит новых не попадает — просыпается по зрелости note (rule-2).
  */
 export function createFirstCards(notes: Note[], now: Date): CardState[] {
   const seed = createEmptyCard(now)
-  return notes.map((note) => ({
-    card_id: cardId(note.entityId, WORD_CARD_ORDER[0]),
+  const mkCard = (note: Note, type: string): CardState => ({
+    card_id: cardId(note.entityId, type),
     note_id: note.id,
-    type: WORD_CARD_ORDER[0],
+    type: type as CardState['type'],
     deck: note.deck,
     due: seed.due.toISOString(),
     stability: seed.stability,
@@ -144,5 +146,10 @@ export function createFirstCards(notes: Note[], now: Date): CardState[] {
     cloze_index: null,
     created_at: now.toISOString(),
     updated_at: now.toISOString(),
-  }))
+  })
+  return notes.flatMap((note) => {
+    const cards = [mkCard(note, WORD_CARD_ORDER[0])]
+    if (note.chunkSlot) cards.push(mkCard(note, 'chunk'))
+    return cards
+  })
 }

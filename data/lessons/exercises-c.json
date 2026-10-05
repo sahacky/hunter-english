@@ -26690,6 +26690,189 @@
         "skill": "grammar",
         "xp": 3
       }
+    },
+    {
+      "id": "ex-c-1450",
+      "type": "answer_question",
+      "payload": {
+        "kind": "answer_question",
+        "question_en": "Tell me about your last flight.",
+        "situation_ru": "Монолог (60 сек без сверки): расскажи о последнем полёте — от регистрации до посадки. Исход: история рассказана, слушатель всё понял.",
+        "free_output": {
+          "seconds": 60,
+          "checklist_ru": [
+            "как проходил(а) регистрацию или онлайн-чекин",
+            "что было с багажом",
+            "как прошёл досмотр",
+            "нашёл(ла) ли свой выход вовремя"
+          ]
+        }
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "hint_ru": "Помогут паттерны: I arrived at…, first I…, then…, the security check was…"
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-c-1451",
+      "type": "answer_question",
+      "payload": {
+        "kind": "answer_question",
+        "question_en": "Describe your trip through passport control.",
+        "situation_ru": "Монолог (60 сек без сверки): твой путь через паспортный контроль в другой стране. Исход: офицер остался доволен — вопросы кончились.",
+        "free_output": {
+          "seconds": 60,
+          "checklist_ru": [
+            "зачем приехал(а) (цель поездки)",
+            "насколько долго остаешься",
+            "где остановишься",
+            "как прошёл таможня/досмотр"
+          ]
+        }
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "hint_ru": "Старт: The officer asked me about… I answered that…"
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-c-1452",
+      "type": "answer_question",
+      "payload": {
+        "kind": "answer_question",
+        "question_en": "Describe your ideal hotel.",
+        "situation_ru": "Монолог (60 сек без сверки): опиши идеальный отель для поездки. Исход: бронь «сделана» — ты описал всё, что важно.",
+        "free_output": {
+          "seconds": 60,
+          "checklist_ru": [
+            "где находится и почему",
+            "что есть в номере",
+            "завтрак и другие удобства",
+            "что делать, если что-то не работает"
+          ]
+        }
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "hint_ru": "Старт: My ideal hotel is… It has… The room includes…"
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-c-1453",
+      "type": "answer_question",
+      "payload": {
+        "kind": "answer_question",
+        "question_en": "Order a dinner for you and a friend.",
+        "situation_ru": "Монолог (60 сек без сверки): сделай заказ за двоих — учитывая аллергию друга. Исход: официант записал всё правильно.",
+        "free_output": {
+          "seconds": 60,
+          "checklist_ru": [
+            "приветствие и столик",
+            "что заказываешь себе",
+            "предупреждение об аллергии",
+            "напитки и счёт"
+          ]
+        }
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "hint_ru": "Помогут: I'd like…, Could we have…, My friend is allergic to…"
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-c-1454",
+      "type": "answer_question",
+      "payload": {
+        "kind": "answer_question",
+        "question_en": "Tell me about your travel day: from your door to the gate.",
+        "situation_ru": "Монолог (60 сек без сверки): день путешествия от выхода из дома до гейта. Исход: маршрут собран — ты успел(а) везде.",
+        "free_output": {
+          "seconds": 60,
+          "checklist_ru": [
+            "как добирался(ась) до аэропорта/вокзала",
+            "регистрация и багаж",
+            "досмотр и ожидание",
+            "посадка"
+          ]
+        }
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow",
+        "hint_ru": "Старт: First I took a taxi to…, after that…, finally…"
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-c-9105",
+      "type": "retell",
+      "payload": {
+        "kind": "retell",
+        "phrase_id": "ph-c-0633"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-c-9110",
+      "type": "retell",
+      "payload": {
+        "kind": "retell",
+        "phrase_id": "ph-c-0866"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-c-9114",
+      "type": "retell",
+      "payload": {
+        "kind": "retell",
+        "phrase_id": "ph-c-1093"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
     }
   ]
 }

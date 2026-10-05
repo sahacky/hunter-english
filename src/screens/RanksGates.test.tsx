@@ -43,11 +43,51 @@ describe('RanksScreen /#/ranks', () => {
     expect(screen.getByText(/Суммарный XP: 347/)).toBeInTheDocument()
     expect(screen.getByText(/«Winter is coming»/)).toBeInTheDocument()
     expect(screen.getByText(/«Equivalent exchange»/)).toBeInTheDocument()
-    // M9: вход в Врата ранга с экрана статуса (доступ с мобильного таб-бара)
+    // M9: вход в Врата ранга (доступ с мобильного таб-бара) — из единой панели «Врата»
     expect(screen.getByRole('link', { name: 'Врата E → D' })).toHaveAttribute('href', '#/gates/E-D')
-    // plan://ux-feedback-2#U.1 — объяснение «что такое Врата» рядом со ссылкой
+    // план://ux-feedback-2#U.1 — объяснение «что такое Врата» рядом со списком
     expect(screen.getByText(/экзамен Системы на повышение ранга/)).toBeInTheDocument()
     expect(screen.getByText(/XP и уровни сами по себе ранг не поднимают/)).toBeInTheDocument()
+  })
+
+  it('панель «Врата»: все 6 экзаменов, цели по словам, отметки «твой шаг»/«пройдено» (единый раздел)', async () => {
+    await repo.putStats({
+      xp: 347,
+      streak_current: 9,
+      streak_best: 12,
+      freezes_left: 3,
+      rank: 'D',
+      gates_history: [{ gate: 'D', passed_at: '2026-10-01T10:00:00.000Z', score: 87 }],
+      last_counted_day: null,
+      updated_at: new Date().toISOString(),
+    })
+    render(
+      <HashRouter>
+        <Routes>
+          <Route path="/ranks" element={<RanksScreen repo={repo} />} />
+        </Routes>
+      </HashRouter>,
+    )
+    window.location.hash = '#/ranks'
+    expect(await screen.findByText('Врата')).toBeInTheDocument()
+    // все Врата в списке с корректными ссылками (домен game/gates, GATE_ORDER)
+    for (const [id, name] of [
+      ['E-D', 'Врата E → D'],
+      ['D-C', 'Врата D → C'],
+      ['C-B', 'Врата C → B'],
+      ['B-A', 'Врата B → A'],
+      ['A-S', 'Врата A → S'],
+    ] as const) {
+      expect(screen.getByRole('link', { name })).toHaveAttribute('href', `#/gates/${id}`)
+    }
+    expect(screen.getByRole('link', { name: /Финальное испытание/ })).toHaveAttribute(
+      'href',
+      '#/gates/S-FINAL',
+    )
+    // цели по словам из конфига; пройденные отмечены; текущий ранг — «твой следующий шаг»
+    expect(screen.getByText(/слова: 1000/)).toBeInTheDocument()
+    expect(screen.getByText(/пройдено/)).toBeInTheDocument()
+    expect(screen.getByText(/твой следующий шаг/)).toBeInTheDocument()
   })
 })
 
@@ -308,7 +348,9 @@ describe('Финальное испытание S-FINAL (M20)', () => {
       </HashRouter>,
     )
     await screen.findByText('Титулы')
-    expect(screen.queryByText(/Финальное испытание \(подтверждение S\)/)).not.toBeInTheDocument()
+    // единая панель «Врата» — каталог: Финал остаётся в списке, отмечен «пройдено»
+    expect(screen.getByText(/Финальное испытание \(подтверждение S\)/)).toBeInTheDocument()
+    expect(screen.getAllByText(/пройдено/).length).toBeGreaterThanOrEqual(2)
   })
 })
 
@@ -499,5 +541,73 @@ describe('GatesScreen: хвосты покрытия (S4)', () => {
     })
     expect(stats.gates_history).toHaveLength(1)
     expect(stats.gates_history[0]?.gate).toBe('D')
+  }, 90000)
+
+  it('S-FINAL: между экзаменом и вердиктом — монолог 60 сек без сверки (Q1.5)', async () => {
+    // как в pass-тесте: полный проход недостижим в юните (Known Issue S4) — мокаем вердикт
+    const { judgeGate } = await import('../domain/game/game')
+    vi.mocked(judgeGate).mockReturnValueOnce({ passed: true, total: 100, weakSections: [] })
+
+    renderGatesS4('S-FINAL')
+    expect(
+      await screen.findByText(/Финальное испытание: подтверждение S/, {}, { timeout: 8000 }),
+    ).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: 'Войти' }))
+    expect(
+      await screen.findByText(/Лексика · секция 1 из 4/, {}, { timeout: 8000 }),
+    ).toBeInTheDocument()
+
+    for (let step = 0; step < 600; step += 1) {
+      if (screen.queryByRole('button', { name: /Начать монолог/ })) break
+      const options = screen
+        .getAllByRole('button')
+        .filter((b) => b.className.includes('lesson-option') && !b.hasAttribute('disabled'))
+      if (options.length > 0) {
+        fireEvent.click(options[0]!)
+        continue
+      }
+      const retry = screen.queryByRole('button', { name: /Ещё попытка/ })
+      if (retry) {
+        fireEvent.click(retry)
+        continue
+      }
+      const giveUp = screen.queryByRole('button', { name: /Сдаться/ })
+      if (giveUp) {
+        fireEvent.click(giveUp)
+        continue
+      }
+      const next = screen.queryByRole('button', { name: /^Дальше/ })
+      if (next) {
+        fireEvent.click(next)
+        continue
+      }
+      if (screen.queryByText(/Слушаю/)) {
+        await idle()
+        continue
+      }
+      const say = screen.queryByRole('button', { name: /Скажи/ })
+      if (say) {
+        gatesSpeech.heard = 'zzz'
+        fireEvent.click(say)
+        continue
+      }
+      const input = document.querySelector<HTMLInputElement>('.lesson-input:not([disabled])')
+      if (input) {
+        fireEvent.change(input, { target: { value: 'zzz' } })
+        fireEvent.submit(input.closest('form')!)
+        continue
+      }
+      throw new Error(`экзамен завис ${step}: ${document.body.textContent?.slice(0, 220)}`)
+    }
+
+    // монолог-ритуал: тема, таймер, чек-лист самооценки, «Готово» → вердикт Финала
+    expect(screen.getByText(/Tell the story of your way/)).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: /Начать монолог/ }))
+    expect(screen.getByRole('timer')).toHaveTextContent('Осталось: 60 сек')
+    fireEvent.click(screen.getByRole('button', { name: 'Я закончил(а)' }))
+    expect(screen.getByText('Отметь, что удалось')).toBeInTheDocument()
+    fireEvent.click(screen.getAllByRole('checkbox')[0]!)
+    fireEvent.click(screen.getByRole('button', { name: 'Готово' }))
+    expect(await screen.findByText(/Финальное испытание пройдено/)).toBeInTheDocument()
   }, 90000)
 })

@@ -12,11 +12,13 @@ import {
   InputCheckExercise,
   VoiceExercise,
 } from '../components/lesson/ExerciseView'
+import { FreeOutputTask } from '../components/lesson/FreeOutputTask'
 import type { ExerciseItem, PhraseItem } from '../content/lessons'
 import { loadLessons, loadPhrases } from '../content/lessons'
 import { createFirstCards, loadWordNotes, loadWordRanks } from '../content/words'
 import { cooldownPassed, judgeGate, NEXT_RANK } from '../domain/game/game'
-import type { GateId, Rank } from '../domain/game/types'
+import { GATES, type GateRouteId } from '../domain/game/gates'
+import type { Rank } from '../domain/game/types'
 import type { GateAttempt, GateSectionScore } from '../domain/game/types'
 import type { ProgressRepository } from '../domain/progress'
 import { DexieProgressRepository } from '../data/progress-repository'
@@ -26,7 +28,8 @@ interface GatesScreenProps {
   repo?: ProgressRepository
 }
 
-type Phase = { kind: 'intro' } | { kind: 'exam' } | { kind: 'result' }
+// intro → exam → (S-FINAL: монолог-ритуал 60 сек, Q1.5) → result
+type Phase = { kind: 'intro' } | { kind: 'exam' } | { kind: 'monologue' } | { kind: 'result' }
 
 interface ExamItem {
   section: 'vocab' | 'grammar' | 'listening' | 'speaking'
@@ -175,74 +178,8 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
   const correctRef = useRef({ vocab: 0, grammar: 0, listening: 0, speaking: 0 })
 
   const gateId = (params.id ?? 'E-D').toUpperCase()
-  // Врата E→D (M7)…A→S (M16) и Финал S-FINAL (M20); контент экзамена — соответствующий ранг
-  const GATE_CONFIG: Record<
-    string,
-    {
-      from: Rank
-      to: Rank
-      /** ключ попытки в item_progress: целевой ранг, для Финала — 'S-FINAL' (plan://M20#20.4) */
-      attemptId: GateId
-      wordsTarget: number
-      lessonsOkAt: number
-      wordsMaxRank: number
-      final?: boolean
-    }
-  > = {
-    // wordsMaxRank: лексика секции — только полосы ранга входа (game://gate-content)
-    'E-D': {
-      from: 'E',
-      to: 'D',
-      attemptId: 'D',
-      wordsTarget: 300,
-      lessonsOkAt: 5,
-      wordsMaxRank: 2809,
-    },
-    'D-C': {
-      from: 'D',
-      to: 'C',
-      attemptId: 'C',
-      wordsTarget: 1000,
-      lessonsOkAt: 20,
-      wordsMaxRank: 1960,
-    },
-    'C-B': {
-      from: 'C',
-      to: 'B',
-      attemptId: 'B',
-      wordsTarget: 1800,
-      lessonsOkAt: 10,
-      wordsMaxRank: 2809,
-    },
-    'B-A': {
-      from: 'B',
-      to: 'A',
-      attemptId: 'A',
-      wordsTarget: 2800,
-      lessonsOkAt: 15,
-      wordsMaxRank: 2809,
-    },
-    'A-S': {
-      from: 'A',
-      to: 'S',
-      attemptId: 'S',
-      wordsTarget: 4000,
-      lessonsOkAt: 22,
-      wordsMaxRank: 2809,
-    },
-    // Финальное испытание (specs/07 §2 S-FINAL): ранг не повышает, чеклист — весь ранг S
-    'S-FINAL': {
-      from: 'S',
-      to: 'S',
-      attemptId: 'S-FINAL',
-      wordsTarget: 5000,
-      lessonsOkAt: 15,
-      // весь NGSL-датасет (суб-полоса в экзамен не попадает — ревью M12 М-6)
-      wordsMaxRank: 2810,
-      final: true,
-    },
-  }
-  const gate = GATE_CONFIG[gateId]
+  // Конфиг Врат вынесен в домен (общий с панелью Врат на /#/ranks)
+  const gate = GATES[gateId as GateRouteId]
   const valid = gate !== undefined
 
   useEffect(() => {
@@ -312,7 +249,9 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
         total: result.total,
         weak: result.weakSections.map((s) => s.section),
       })
-      setPhase({ kind: 'result' })
+      // S-FINAL: перед вердиктом — финальный монолог 60 сек без сверки (Q1.5);
+      // на счёт не влияет (самопроверка в экзамене не считается, ревью M7#М9)
+      setPhase(gate.final ? { kind: 'monologue' } : { kind: 'result' })
       const finishedAt = new Date().toISOString()
       await repo.putGateAttempt({
         gate: gate.attemptId,
@@ -435,6 +374,23 @@ export default function GatesScreen({ repo: repoProp }: GatesScreenProps) {
             {t('gates.enter')}
           </button>
         </div>
+      </section>
+    )
+  }
+  if (phase.kind === 'monologue') {
+    return (
+      <section className="panel gates-panel">
+        <h2>{t('gates.titleFinal')}</h2>
+        <FreeOutputTask
+          seconds={60}
+          checklistRu={t('gates.monologue.checklist', { returnObjects: true }) as string[]}
+          promptEn={t('gates.monologue.prompt')}
+          situationRu={t('gates.monologue.situation')}
+          onAnswer={() => {
+            /* монолог-ритуал: на счёт экзамена не влияет (ревью M7#М9) */
+          }}
+          onNext={() => setPhase({ kind: 'result' })}
+        />
       </section>
     )
   }

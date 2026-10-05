@@ -46,6 +46,16 @@
   },
   "gates": {
     "notFound": "These gates do not exist.",
+    "monologue": {
+      "prompt": "Tell the story of your way — from the first lesson to rank S.",
+      "situation": "Final monologue (60 s without checking): the story of your path. Outcome: the path is told in your own words — the System heard it.",
+      "checklist": [
+        "how it all started — the first lesson",
+        "what was the hardest part",
+        "what changed in you",
+        "what is next — where now"
+      ]
+    },
     "title": "Gates {{from}} → {{to}}",
     "titleFinal": "Final trial: S (C1) confirmation",
     "check": {
@@ -108,6 +118,28 @@
     "deckText": "{{count}} lesson phrases will go into the review deck (first card — recognition).",
     "hookTitle": "Curious",
     "cliffhangerTitle": "What's next",
+    "freeHint": "Speak for {{seconds}} s without checking anything — freely, as it comes. Mistakes are part of the process.",
+    "freeStart": "Start the monologue",
+    "freeLeft": "{{seconds}} s left",
+    "freeDoneSpeaking": "I'm done",
+    "freeChecklist": "Tick what you covered",
+    "freeChecklistHint": "This checklist is self-assessment: nobody checks the ticks — it's feedback for you.",
+    "freeFinish": "Done",
+    "adaptiveSupport": "support mode",
+    "adaptiveChallenge": "challenge mode",
+    "supportWord": "💡 Series hint: the first word is {{word}}",
+    "challengeHint": "Your streak is strong — build the phrase from memory, by typing.",
+    "retell": {
+      "title": "Reverse cycle: EN → RU → EN",
+      "listenHint": "Listen to the lesson phrase (up to 3 times).",
+      "toListenDone": "Got it — I'll retell it in Russian",
+      "ruPrompt": "Retell the meaning of the phrase in Russian — in your own words.",
+      "enPrompt": "Now say it again in English — your own way, without peeking.",
+      "selfCheckHint": "Free answer: you only check yourself.",
+      "ruRef": "Meaning: {{ru}}",
+      "enRef": "Reference: {{en}}",
+      "noPhrase": "Cycle phrase not found — skip the task."
+    },
     "finishLesson": "Finish lesson",
     "lessonDone": "Lesson complete",
     "summaryXp": "XP: {{xp}}",
@@ -169,7 +201,7 @@
   },
   "nav": {
     "dashboard": "Dashboard",
-    "gates": "Gates",
+    "ranksGates": "Ranks & Gates",
     "label": "Main navigation",
     "lesson": "Lesson",
     "path": "Program",
@@ -261,8 +293,11 @@
   },
   "ranks": {
     "statusTitle": "Hunter status",
-    "gatesLink": "Gates {{from}} → {{to}}",
     "finalLink": "Final trial (S confirmation)",
+    "gatesTitle": "Gates",
+    "gateWords": "words: {{target}}",
+    "gatePassed": "passed",
+    "gateCurrent": "your next step",
     "totalXp": "Total XP: {{xp}}",
     "streaks": "Streak: {{current}} d · Best: {{best}} d",
     "gatesPassed": "Gates passed: {{count}} · latest: {{last}}",

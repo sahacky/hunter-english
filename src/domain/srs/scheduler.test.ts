@@ -1,6 +1,7 @@
 // Implements: plan://M4#4.1 — unit-тесты доменного ядра SRS (specs/03 §2, §4–§7)
 import { describe, expect, it } from 'vitest'
 import type { CardState, Note } from './types'
+import { chunkTemplate } from './types'
 import {
   applyAnswer,
   buildQueue,
@@ -265,6 +266,50 @@ describe('buildQueue (srs://session-order)', () => {
     expect(plan.counts).toEqual({ learning: 1, review: 2, new: 2 })
   })
 
+  it('chunk-карточки (Q2.2): не расходуют лимит новых, просыпаются по зрелости note', () => {
+    // зрелый пассив note n-d + его chunk-карточка New
+    const passive = mkCard({
+      card_id: 'd.en-ru',
+      note_id: 'n-d',
+      state: 2,
+      scheduled_days: 9,
+      due: new Date(NOW.getTime() + 3 * 86_400_000).toISOString(),
+    })
+    const matured = mkCard({ card_id: 'x.en-ru', note_id: 'n-x', state: 2, scheduled_days: 30 })
+    const chunkReady = mkCard({ card_id: 'd.chunk', note_id: 'n-d', type: 'chunk', state: 0 })
+    // незрелый note n-y: chunk остаётся New и НЕ попадает в свежие
+    const youngPassive = mkCard({
+      card_id: 'y.en-ru',
+      note_id: 'n-y',
+      state: 2,
+      scheduled_days: 3,
+      due: new Date(NOW.getTime() + 86_400_000).toISOString(),
+    })
+    const chunkWaiting = mkCard({ card_id: 'y.chunk', note_id: 'n-y', type: 'chunk', state: 0 })
+
+    const plan = buildQueue(
+      [matured, passive, chunkReady, youngPassive, chunkWaiting].map((card) => entry(card)),
+      { now: NOW },
+    )
+
+    expect(plan.entries.map(({ card, kind }) => [card.card_id, kind])).toEqual([
+      ['x.en-ru', 'review-mature'],
+      ['d.chunk', 'wake-up'],
+    ])
+    // чанк не в fresh-очереди (kind 'new' пуст); лимит новых цел — чанк шёл wake-up'ом
+    expect(plan.entries.filter(({ kind }) => kind === 'new')).toEqual([])
+    expect(plan.counts.new).toBe(1) // счётчик учитывает и пробуждения (M4)
+    expect(plan.newLimit).toBeGreaterThan(0)
+  })
+
+  it('chunkTemplate (Q2.2): слот маскируется, регистр не важен, спецсимволы экранируются', () => {
+    expect(chunkTemplate("I'd like to book a table.", 'book')).toBe("I'd like to ___ a table.")
+    expect(chunkTemplate('Have you ever Missed a flight?', 'missed')).toBe(
+      'Have you ever ___ a flight?',
+    )
+    expect(chunkTemplate('It depends on the weather.', 'the')).toBe('It depends on ___ weather.')
+  })
+
   it('просроченные review идут раньше менее просроченных, будущие не попадают в очередь', () => {
     const late = mkCard({
       card_id: 'late.en-ru',
@@ -445,6 +490,40 @@ describe('buildQueue (srs://session-order)', () => {
       'words',
       'quotes',
     ])
+  })
+
+  it('интерливинг-политика: внутри колоды слова НЕ перемешиваются и очередь детерминирована (план {#teaching-quality} Q1.4, specs/03 {#session-order})', () => {
+    const cards = [] as ReturnType<typeof entry>[]
+    // words: 5 новых с намеренно «обратным» порядком вставки относительно card_id
+    for (const i of [4, 2, 0, 3, 1]) {
+      cards.push(entry(mkCard({ card_id: `w${i}.en-ru`, note_id: `n-w${i}`, state: 0 })))
+    }
+    // phrases: 2 новых (deck задаётся в mkCard, второй аргумент entry — note)
+    for (const i of [1, 0]) {
+      cards.push(
+        entry(
+          mkCard({
+            card_id: `p${i}.ru-en`,
+            note_id: `n-p${i}`,
+            type: 'ru-en',
+            deck: 'phrases',
+            state: 0,
+          }),
+        ),
+      )
+    }
+    const build = () => buildQueue(cards, { now: NOW }).entries.filter(({ kind }) => kind === 'new')
+    const first = build()
+    // 1) детерминизм: два прогона на том же входе дают идентичную очередь (без RNG)
+    expect(build().map(({ card }) => card.card_id)).toEqual(first.map(({ card }) => card.card_id))
+    // 2) внутри колоды words порядок = card_id (созданы одной секундой), НЕ случайный
+    const wordsInQueue = first
+      .filter(({ card }) => card.deck === 'words')
+      .map(({ card }) => card.card_id)
+    expect(wordsInQueue).toEqual(['w0.en-ru', 'w1.en-ru', 'w2.en-ru', 'w3.en-ru', 'w4.en-ru'])
+    // 3) межколодовый round-robin сохраняется: w0, p0, w1, p1, w2, w3, w4
+    const decks = first.map(({ card }) => card.deck)
+    expect(decks).toEqual(['words', 'phrases', 'words', 'phrases', 'words', 'words', 'words'])
   })
 })
 

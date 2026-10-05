@@ -757,6 +757,21 @@ body {
 .lesson-trap {
   color: var(--gold-text);
 }
+/* Mayer signaling (план {#teaching-quality} Q2.3): формула и самопроверка —
+   сигнальные блоки, ловятся глазом до чтения текста */
+.lesson-formula {
+  padding: 8px 12px;
+  border-left: 3px solid var(--primary);
+  background: var(--surface-2);
+  border-radius: 8px;
+  color: var(--primary-deep);
+  font-weight: 700;
+}
+.lesson-check-self {
+  padding: 8px 12px;
+  border: 1px dashed var(--primary);
+  border-radius: var(--radius-btn);
+}
 .lesson-rule-md p {
   margin: 6px 0;
 }
@@ -774,6 +789,37 @@ body {
   border-left: 3px solid var(--primary);
   background: var(--surface-2);
   border-radius: 8px;
+}
+/* Free-output промпт «60 сек без сверки» (план {#teaching-quality} Q1.5) */
+.lesson-free-timer {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--primary-deep);
+  letter-spacing: 0.04em;
+}
+.lesson-free-checklist {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.lesson-free-checklist li {
+  padding: 8px 12px;
+  border-radius: var(--radius-btn);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+}
+.lesson-free-checklist label {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  cursor: pointer;
+}
+.lesson-free-checklist input[type='checkbox'] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--primary);
 }
 .lesson-rule-examples {
   list-style: none;
@@ -1036,6 +1082,26 @@ body {
   color: var(--gold-text);
   background: var(--gold-soft);
   border-color: var(--gold);
+}
+/* Врата — единый раздел с Рангами (фидбей «слишком большой хедер»): список на /#/ranks */
+.ranks-gates {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.ranks-gates li {
+  padding: 10px 14px;
+  border-radius: var(--radius-btn);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+}
+.ranks-gates a {
+  font-weight: 700;
+}
+.ranks-gate-current {
+  border-color: var(--primary);
 }
 .ranks-gate-link {
   display: inline-block;

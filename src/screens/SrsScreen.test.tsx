@@ -269,6 +269,70 @@ describe('SrsScreen', () => {
       await screen.findByText(/Полоса ранга [EDCBS]/, undefined, { timeout: 8000 }),
     ).toBeInTheDocument()
   })
+
+  it('chunk-карточка (Q2.2): фронт-шаблон со слотом ___, бэк — слот + фраза', async () => {
+    // note с chunkSlot; пассив уже зрелый → chunk просыпается wake-up'ом
+    notes = [
+      {
+        id: 'note_ph-0001',
+        deck: 'phrases',
+        entityId: 'ph-0001',
+        en: "I'd like to book a table.",
+        ru: 'Я хотел бы забронировать столик.',
+        chunkSlot: 'book',
+      },
+    ]
+    const now = new Date()
+    await repo.ensureCards([
+      {
+        card_id: 'ph-0001.en-ru',
+        note_id: 'note_ph-0001',
+        type: 'en-ru',
+        deck: 'phrases',
+        due: new Date(now.getTime() + 3 * 86_400_000).toISOString(),
+        stability: 10,
+        difficulty: 5,
+        elapsed_days: 9,
+        scheduled_days: 12,
+        reps: 3,
+        lapses: 0,
+        state: 2,
+        last_review: new Date(now.getTime() - 3 * 86_400_000).toISOString(),
+        suspended: false,
+        cloze_index: null,
+        created_at: now.toISOString(),
+        updated_at: now.toISOString(),
+      },
+      {
+        card_id: 'ph-0001.chunk',
+        note_id: 'note_ph-0001',
+        type: 'chunk',
+        deck: 'phrases',
+        due: now.toISOString(),
+        stability: 0,
+        difficulty: 0,
+        elapsed_days: 0,
+        scheduled_days: 0,
+        reps: 0,
+        lapses: 0,
+        state: 0,
+        last_review: null,
+        suspended: false,
+        cloze_index: null,
+        created_at: now.toISOString(),
+        updated_at: now.toISOString(),
+      },
+    ])
+    renderScreen()
+
+    expect(
+      await screen.findByText("I'd like to ___ a table.", undefined, { timeout: 4000 }),
+    ).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: /Показать ответ/ }))
+    // бэк: слот (strong) + вся фраза + перевод в одном блоке
+    expect(await screen.findByText('book')).toBeInTheDocument()
+    expect(screen.getByText(/· Я хотел бы забронировать столик/)).toBeInTheDocument()
+  })
 })
 
 describe('SrsScreen + настройки (plan://M10#10.3)', () => {

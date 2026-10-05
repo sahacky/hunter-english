@@ -22,7 +22,8 @@
         "answer_question",
         "dialog",
         "verb_tense",
-        "transform"
+        "transform",
+        "retell"
       ]
     },
     "payload": {
@@ -171,7 +172,22 @@
             },
             "situation_ru": {
               "type": "string",
-              "description": "сценка разговорника: подпись ситуации над репликой собеседника (B-27)"
+              "description": "сценка разговорника: подпись ситуации над репликой собеседника (B-27); с Q1.3 — ситуация + «Задача:» + «Исход:»"
+            },
+            "free_output": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["seconds", "checklist_ru"],
+              "description": "free-output промпт (план teaching-quality Q1.5): монолог без сверки, expected[] не проверяется",
+              "properties": {
+                "seconds": { "type": "integer", "minimum": 30, "maximum": 300 },
+                "checklist_ru": {
+                  "type": "array",
+                  "minItems": 2,
+                  "maxItems": 5,
+                  "items": { "type": "string", "minLength": 1 }
+                }
+              }
             },
             "audio": {
               "type": "string",
@@ -229,6 +245,19 @@
                   "phrase_id": { "type": "string" }
                 }
               }
+            }
+          }
+        },
+        {
+          "$comment": "15 retell - обратный цикл EN-RU-EN (план teaching-quality Q3.1)",
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "phrase_id"],
+          "properties": {
+            "kind": { "const": "retell" },
+            "phrase_id": {
+              "type": "string",
+              "description": "фраза урока с аудио: EN слушаем → RU пересказ → EN по-своему (самопроверка)"
             }
           }
         }

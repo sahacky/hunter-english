@@ -203,11 +203,12 @@ describe('LessonScreen /#/lesson/:id', () => {
     const summaryXp = Number((screen.getByText(/XP: \d+/).textContent ?? '').match(/\d+/)?.[0] ?? 0)
     expect(summaryXp).toBe(stats.xp)
     expect(row?.checkpoint.passesDone).toBe(1)
-    // фразы урока материализованы карточками en-ru (rule-1)
+    // фразы урока материализованы карточками en-ru (rule-1); чанк-фразы — ещё и chunk (Q2.2)
     const cards = await repo.getAllCards()
     const phraseCards = cards.filter((card) => card.note_id.startsWith('note_ph-e-'))
     expect(phraseCards.length).toBeGreaterThanOrEqual(40)
-    expect(phraseCards.every((card) => card.type === 'en-ru')).toBe(true)
+    expect(phraseCards.every((card) => card.type === 'en-ru' || card.type === 'chunk')).toBe(true)
+    expect(phraseCards.some((card) => card.type === 'chunk')).toBe(true)
   })
 
   it('финал: проход по ошибкам — только ошибочные задания, без XP/персиста (M11#11.3)', async () => {
@@ -1168,6 +1169,17 @@ describe('LessonScreen: хвосты покрытия (M21#21.4)', () => {
     expect(screen.getByText(/русского глагола нет/)).toBeInTheDocument()
   })
 
+  it('Mayer signaling (Q2.3): формула и «Проверь себя» — сигнальные блоки правила', async () => {
+    renderScreen('E-01')
+    expect(await screen.findByText(/Формула: кто \+ am \/ is \/ are/)).toBeInTheDocument()
+    const formula = screen.getByText(/Формула:/).closest('p')
+    expect(formula).toHaveClass('lesson-formula')
+    const selfCheck = screen.getByText(/Проверь себя:/).closest('p')
+    expect(selfCheck).toHaveClass('lesson-check-self')
+    // ловушка остаётся золотой строкой (сигнал-нарушение)
+    expect(screen.getByText(/Ловушка ЛТ-01/).closest('p')).toHaveClass('lesson-trap')
+  })
+
   it('curiosity: клиффхэнгер на шаге 7 «В колоду» (план {#teaching-quality} Q1.2)', async () => {
     await seedRowStep7()
     const view = await loadLessonView('les-e-01')
@@ -1187,5 +1199,58 @@ describe('LessonScreen: хвосты покрытия (M21#21.4)', () => {
     expect(await screen.findByText('Понятно')).toBeInTheDocument()
     expect(screen.queryByText(/Любопытно:/)).not.toBeInTheDocument()
     expect(screen.queryByText(/Что дальше/)).not.toBeInTheDocument()
+  })
+
+  it('retell-упражнение (Q3.1): роутер урока рендерит обратный цикл', async () => {
+    const exercise = syntheticExercise('ex-syn-retell', 'retell', { phrase_id: 'ph-syn-1' })
+    const view = syntheticLessonView(exercise)
+    renderScreen('E-01', repo, view)
+    expect(await screen.findByText(/Фраза цикла не найдена/)).toBeInTheDocument()
+    // пропуск упражнения кнопкой «Дальше» — маршрут retell покрыт полностью
+    fireEvent.click(screen.getByRole('button', { name: /^Дальше/ }))
+  })
+
+  it('адаптивная презентация серии (Q2.1): 6+ верных → challenge, word_bank текстом', async () => {
+    const view = await loadLessonView('les-e-01')
+    if (!view) throw new Error('нет данных урока les-e-01')
+    // чекпоинт: правило и разогрев отвечены без ошибок, текущий шаг — построение
+    const scores = view.steps.map((step) => ({
+      stepIndex: step.index,
+      total: (view.content[step.index] ?? []).length,
+      answered: step.index < 3 ? (view.content[step.index] ?? []).length : 0,
+      firstTryCorrect: step.index < 3 ? (view.content[step.index] ?? []).length : 0,
+    }))
+    const results: Record<string, { attempts: number; outcome: 'correct' }> = {}
+    for (const step of view.steps) {
+      if (step.index >= 3) break
+      for (const { exercise } of view.content[step.index] ?? []) {
+        results[exercise.id] = { attempts: 1, outcome: 'correct' }
+      }
+    }
+    const buildStep = view.steps.find((step) => step.kind === 'build')
+    if (!buildStep) throw new Error('в E-01 нет шага построения')
+    await repo.putLessonProgress({
+      lesson_id: 'les-e-01',
+      status: 'in_progress',
+      score: null,
+      checkpoint: {
+        passIndex: 0,
+        stepIndex: buildStep.index,
+        scores,
+        srsEnqueued: [],
+        passesDone: 0,
+        results,
+      },
+      completed_at: null,
+      updated_at: new Date().toISOString(),
+    })
+    renderScreen('E-01', repo, view)
+    fireEvent.click(await screen.findByRole('button', { name: /Продолжить/ }))
+    // бейдж режима вызова в шапке
+    expect(await screen.findByText(/режим вызова/)).toBeInTheDocument()
+    // первое задание построения E-01 — word_bank: в challenge ввод текстом, плиток нет
+    const input = await screen.findByRole('textbox')
+    expect(input).toBeInTheDocument()
+    expect(document.querySelector('.lesson-bank')).toBeNull()
   })
 })

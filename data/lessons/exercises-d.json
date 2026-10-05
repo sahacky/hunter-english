@@ -25015,6 +25015,118 @@
         "skill": "grammar",
         "xp": 3
       }
+    },
+    {
+      "id": "ex-d-9105",
+      "type": "retell",
+      "payload": {
+        "kind": "retell",
+        "phrase_id": "ph-d-0178"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-9110",
+      "type": "retell",
+      "payload": {
+        "kind": "retell",
+        "phrase_id": "ph-d-0403"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-9115",
+      "type": "retell",
+      "payload": {
+        "kind": "retell",
+        "phrase_id": "ph-d-0625"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-9120",
+      "type": "retell",
+      "payload": {
+        "kind": "retell",
+        "phrase_id": "ph-d-0848"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-9125",
+      "type": "retell",
+      "payload": {
+        "kind": "retell",
+        "phrase_id": "ph-d-1069"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-9130",
+      "type": "retell",
+      "payload": {
+        "kind": "retell",
+        "phrase_id": "ph-d-0001"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-d-9135",
+      "type": "retell",
+      "payload": {
+        "kind": "retell",
+        "phrase_id": "ph-d-0001"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
     }
   ]
 }

@@ -145,6 +145,30 @@ describe('InputCheckExercise', () => {
     expect(s.calls).toEqual([{ outcome: 'hint', attempts: 1 }])
   })
 
+  it('support-режим (Q2.1): бесплатная подсказка первого слова, без платной кнопки и штрафа', async () => {
+    const s = spy()
+    render(
+      <InputCheckExercise
+        mode="translate"
+        support
+        exercise={ex('translate', { prompt_ru: 'Дом большой', phrase_id: phrase.id })}
+        phrase={phrase}
+        trap={null}
+        onAnswer={s.onAnswer}
+        onDispute={vi.fn()}
+        onNext={s.onNext}
+      />,
+    )
+    expect(screen.getByText(/первое слово — The/)).toBeInTheDocument()
+    expect(screen.queryByRole('button', { name: /Подсказка/ })).not.toBeInTheDocument()
+    const input = document.querySelector<HTMLInputElement>('.lesson-input')!
+    fireEvent.change(input, { target: { value: 'The house is big' } })
+    fireEvent.submit(input.closest('form')!)
+    expect(await screen.findByText('Верно!')).toBeInTheDocument()
+    // XP не снят: обычный correct, не hint
+    expect(s.calls).toEqual([{ outcome: 'correct', attempts: 1 }])
+  })
+
   it('dictation: кнопки озвучки с лимитом, ввод по слуху', async () => {
     const s = spy()
     render(
@@ -324,6 +348,68 @@ describe('MatchPairsExercise', () => {
 })
 
 describe('WordBankExercise', () => {
+  it('challenge-режим (Q2.1): текстовый ввод по памяти вместо плиток', async () => {
+    const s = spy()
+    render(
+      <WordBankExercise
+        challenge
+        exercise={ex('word_bank', {
+          prompt_ru: phrase.translation_ru,
+          tokens: ['The', 'house', 'is', 'big'],
+          phrase_id: phrase.id,
+        })}
+        phrase={phrase}
+        trap={null}
+        onAnswer={s.onAnswer}
+        onDispute={vi.fn()}
+        onNext={s.onNext}
+      />,
+    )
+    expect(screen.getByText(/собери фразу по памяти/i)).toBeInTheDocument()
+    expect(screen.queryByRole('button', { name: 'The' })).not.toBeInTheDocument()
+    const input = document.querySelector<HTMLInputElement>('.lesson-input')!
+    // пустой ввод: сабмит не проверяет (гарда)
+    fireEvent.submit(input.closest('form')!)
+    expect(screen.queryByText('Верно!')).not.toBeInTheDocument()
+    fireEvent.change(input, { target: { value: 'The house is big' } })
+    fireEvent.submit(input.closest('form')!)
+    expect(await screen.findByText('Верно!')).toBeInTheDocument()
+    expect(s.calls).toEqual([{ outcome: 'correct', attempts: 1 }])
+    // сабмит при finished → onNext (клавиша ⏎ на «Дальше»)
+    fireEvent.submit(input.closest('form')!)
+    expect(s.onNext).toHaveBeenCalledTimes(1)
+  })
+
+  it('challenge-режим (Q2.1): двойная ошибка → skip + эталон', async () => {
+    const s = spy()
+    render(
+      <WordBankExercise
+        challenge
+        exercise={ex('word_bank', {
+          prompt_ru: phrase.translation_ru,
+          tokens: ['The', 'house', 'is', 'big'],
+          phrase_id: phrase.id,
+        })}
+        phrase={phrase}
+        trap={null}
+        onAnswer={s.onAnswer}
+        onDispute={vi.fn()}
+        onNext={s.onNext}
+      />,
+    )
+    const input = document.querySelector<HTMLInputElement>('.lesson-input')!
+    for (const wrong of ['zzz', 'xxx']) {
+      fireEvent.change(input, { target: { value: wrong } })
+      fireEvent.submit(input.closest('form')!)
+      expect(await screen.findByText('Неверно')).toBeInTheDocument()
+      // после первой ошибки — «Ещё попытка»; после второй — skip и эталон
+      const retry = screen.queryByRole('button', { name: /Ещё попытка/ })
+      if (retry) fireEvent.click(retry)
+    }
+    expect(s.calls.at(-1)?.outcome).toBe('skip')
+    expect(await screen.findByText(/The house is big/)).toBeInTheDocument()
+  })
+
   /** Клик по свободной (не used) плитке банка — слоты и банк делят имя. */
   function clickBankTile(token: string) {
     const tile = screen
@@ -420,6 +506,34 @@ describe('WordBankExercise', () => {
 
 describe('VoiceExercise', () => {
   const voiceEx = () => ex('speak', { prompt_ru: 'Дом большой', phrase_id: phrase.id })
+
+  it('answer + free_output (Q1.5): рендер уходит в FreeOutputTask вместо микрофона', async () => {
+    const s = spy()
+    render(
+      <VoiceExercise
+        mode="answer"
+        exercise={ex('answer_question', {
+          question_en: 'Tell me about your last flight.',
+          situation_ru: 'Монолог (60 сек без сверки). Исход: история рассказана.',
+          free_output: { seconds: 60, checklist_ru: ['регистрация', 'багаж'] },
+        })}
+        phrase={phrase}
+        trap={null}
+        onAnswer={s.onAnswer}
+        onDispute={vi.fn()}
+        onNext={s.onNext}
+      />,
+    )
+    expect(screen.getByText('Tell me about your last flight.')).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: /Начать монолог/ })).toBeInTheDocument()
+    expect(screen.queryByRole('button', { name: /Скажи/ })).not.toBeInTheDocument()
+    // полный мини-флоу до self_reported
+    fireEvent.click(screen.getByRole('button', { name: /Начать монолог/ }))
+    fireEvent.click(screen.getByRole('button', { name: 'Я закончил(а)' }))
+    fireEvent.click(screen.getByRole('button', { name: 'Готово' }))
+    expect(s.calls).toEqual([{ outcome: 'self_reported', attempts: 1 }])
+    expect(s.onNext).toHaveBeenCalledTimes(1)
+  })
 
   it('микрофон недоступен: самопроверка «Сказал(-а)» → onNext', async () => {
     const s = spy()

@@ -94,7 +94,8 @@
           "audio": "audio/phrasebook/cori/pb-hotel-02-l4.opus",
           "text_en": "Do you have a bigger room?",
           "translation_ru": "У вас есть номер побольше?",
-          "accepted": ["Do you have a bigger room?"]
+          "accepted": ["Do you have a bigger room?"],
+          "chunk_slot": "bigger"
         },
         {
           "role": "receptionist",

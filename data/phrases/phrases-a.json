@@ -4020,7 +4020,8 @@
       "variants": ["I used to live alone."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0402.opus"
-      }
+      },
+      "chunk_slot": "live"
     },
     {
       "id": "ph-a-0403",
@@ -4777,7 +4778,8 @@
       "variants": ["I used to smoke."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0477.opus"
-      }
+      },
+      "chunk_slot": "smoke"
     },
     {
       "id": "ph-a-0478",
@@ -4877,7 +4879,8 @@
       "variants": ["I can't figure out this rule."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0487.opus"
-      }
+      },
+      "chunk_slot": "figure"
     },
     {
       "id": "ph-a-0488",
@@ -5017,7 +5020,8 @@
       "variants": ["I can't put up with the noise."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0501.opus"
-      }
+      },
+      "chunk_slot": "put"
     },
     {
       "id": "ph-a-0502",
@@ -5097,7 +5101,8 @@
       "variants": ["I need to sort out my papers."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0509.opus"
-      }
+      },
+      "chunk_slot": "sort"
     },
     {
       "id": "ph-a-0510",
@@ -5157,7 +5162,8 @@
       "variants": ["Let me think it over."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0515.opus"
-      }
+      },
+      "chunk_slot": "think"
     },
     {
       "id": "ph-a-0516",
@@ -6212,7 +6218,8 @@
       "variants": ["I can't figure out what he wants."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0620.opus"
-      }
+      },
+      "chunk_slot": "figure"
     },
     {
       "id": "ph-a-0621",
@@ -6442,7 +6449,8 @@
       "variants": ["Let me rewatch that moment."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0643.opus"
-      }
+      },
+      "chunk_slot": "rewatch"
     },
     {
       "id": "ph-a-0644",
@@ -6832,7 +6840,8 @@
       "variants": ["I can't put up with this behaviour."],
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0682.opus"
-      }
+      },
+      "chunk_slot": "put"
     },
     {
       "id": "ph-a-0683",

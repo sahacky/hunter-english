@@ -133,6 +133,7 @@ data/
 | `translation_ru` | string | ✅ | задание для перевода RU→EN |
 | `grammar_point_id` | string \| null | ✅ | ссылка на грамматическую точку урока (`gp-e-03`); `null` для лексических фраз |
 | `variants` | string[] (≥ 1) | ✅ | все допустимые EN-варианты ответа, включая `text_en` (§3 проверка) |
+| `chunk_slot` | string | — | слово-слот чанк-шаблона (план {#teaching-quality} Q2.2): обязано присутствовать в `text_en`; фраза получает chunk-карточку SRS (фронт `___`, specs/03 {#interleaving-policy}) |
 | `audio` | object | — | `{ "en_gb": "audio/phrases/cori/ph-e-0042.opus" }` |
 
 ```json
@@ -293,6 +294,16 @@ data/
           "question_en": { "type": "string" },
           "phrase_id":   { "type": "string", "description": "эталонный ответ (phrase); для сценок разговорника (B-27) не задаётся — ответы в answer.accepted" },
           "situation_ru": { "type": "string", "description": "сценка: подпись над репликой собеседника — ситуация + «Задача: …» + «Исход: …» (info-gap/неязыковой исход, план {#teaching-quality} Q1.3, specs/02 {#scenes-tbl})" },
+          "free_output": {
+            "type": "object", "additionalProperties": false,
+            "required": ["seconds", "checklist_ru"],
+            "description": "free-output промпт (план {#teaching-quality} Q1.5): монолог без сверки, expected[] не проверяется, исход self_reported",
+            "properties": {
+              "seconds":     { "type": "integer", "minimum": 30, "maximum": 300 },
+              "checklist_ru": { "type": "array", "minItems": 2, "maxItems": 5,
+                                "items": { "type": "string", "minLength": 1 } }
+            }
+          },
           "audio":       { "type": "string", "pattern": "^audio/", "description": "предзаписанная реплика собеседника (audio/phrasebook/…)" },
           "free_form":   { "type": "boolean", "description": "самопроверка «Сказал своими словами» сразу — свобода важнее точности (B-27)" } } },
       { "$comment": "12 dialog",
@@ -596,7 +607,7 @@ data/
 | `user_role` | string | ✅ | роль пользователя (`passenger`) |
 | `lines` | array | ✅ | реплики по порядку |
 
-Реплика: `{ "role": "npc|passenger", "text_en", "translation_ru", "accepted?" }`; для реплик пользователя (`role = user_role`) поле `accepted: string[]` (≥ 1 вариант) обязательно — по нему идёт проверка (нормализация + `typo: "allow"`, распознанная речь — `speech_threshold`).
+Реплика: `{ "role": "npc|passenger", "text_en", "translation_ru", "accepted?" }`; для реплик пользователя (`role = user_role`) поле `accepted: string[]` (≥ 1 вариант) обязательно — по нему идёт проверка (нормализация + `typo: "allow"`, распознанная речь — `speech_threshold`). Опциональное `chunk_slot` у реплик пользователя — чанк-разметка Q2.2 (как у phrase, §2).
 
 ```json
 {
