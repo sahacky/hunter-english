@@ -260,6 +260,7 @@ export function QuoteScreen({ repo: repoProp }: { repo?: ProgressRepository }) {
   const [notFound, setNotFound] = useState(false)
   const [showRu, setShowRu] = useState(false)
   const [showImage, setShowImage] = useState(false)
+  const [stillMissing, setStillMissing] = useState(false)
   const [popover, setPopover] = useState<string | null>(null)
   const [cloze, setCloze] = useState<{
     word: string
@@ -391,14 +392,14 @@ export function QuoteScreen({ repo: repoProp }: { repo?: ProgressRepository }) {
         </p>
       </header>
 
-      {showImage && quote.link_image && (
+      {showImage && quote.link_image && !stillMissing && (
         <figure className="quote-scene">
           <img
             src={quote.link_image}
             alt={quote.speaker ? `${quote.speaker} — кадр сцены` : 'кадр сцены'}
-            onError={(event) => {
+            onError={() => {
               // файл вне git и может отсутствовать (M.3): тихо прячем блок
-              event.currentTarget.parentElement?.remove()
+              setStillMissing(true)
             }}
           />
         </figure>
