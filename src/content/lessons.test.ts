@@ -633,4 +633,27 @@ describe('сцены разговорника: info-gap контракт (пла
       ).toBe(true)
     }
   })
+
+  it('retell-цикл (Q3.1): каждый урок-повторение имеет retell на фразу с аудио', async () => {
+    const [lessons, exercises, phrases] = await Promise.all([
+      loadLessons(),
+      loadExercises(),
+      loadPhrases(),
+    ])
+    const byId = new Map(exercises.map((exercise) => [exercise.id, exercise]))
+    const phraseById = new Map(phrases.map((phrase) => [phrase.id, phrase]))
+    const reviews = lessons.filter((lesson) => lesson.title.startsWith('Повторение'))
+    expect(reviews.length).toBe(27)
+    for (const lesson of reviews) {
+      const retells = lesson.exercises
+        .map(({ id }) => byId.get(id)!)
+        .filter((e) => e.type === 'retell')
+      expect(retells.length, lesson.id).toBeGreaterThanOrEqual(1)
+      for (const retell of retells) {
+        const phrase = phraseById.get(String(retell.payload.phrase_id))
+        expect(phrase, `${lesson.id}/${retell.id}`).toBeTruthy()
+        expect(phrase?.audio?.en_gb, `${lesson.id}/${retell.id}`).toMatch(/^audio\//)
+      }
+    }
+  })
 })

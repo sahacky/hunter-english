@@ -49,7 +49,7 @@ function taskFor(
 }
 
 /** Аудио-кнопки 🔊/🐢 с клавишами R/S (specs/07 §5.1) и лимитом прослушиваний ≤3 (specs/02 §3 №5). */
-function AudioButtons({
+export function AudioButtons({
   text,
   src,
   limitPlays = 0,

@@ -129,6 +129,17 @@
     "adaptiveChallenge": "challenge mode",
     "supportWord": "💡 Series hint: the first word is {{word}}",
     "challengeHint": "Your streak is strong — build the phrase from memory, by typing.",
+    "retell": {
+      "title": "Reverse cycle: EN → RU → EN",
+      "listenHint": "Listen to the lesson phrase (up to 3 times).",
+      "toListenDone": "Got it — I'll retell it in Russian",
+      "ruPrompt": "Retell the meaning of the phrase in Russian — in your own words.",
+      "enPrompt": "Now say it again in English — your own way, without peeking.",
+      "selfCheckHint": "Free answer: you only check yourself.",
+      "ruRef": "Meaning: {{ru}}",
+      "enRef": "Reference: {{en}}",
+      "noPhrase": "Cycle phrase not found — skip the task."
+    },
     "finishLesson": "Finish lesson",
     "lessonDone": "Lesson complete",
     "summaryXp": "XP: {{xp}}",

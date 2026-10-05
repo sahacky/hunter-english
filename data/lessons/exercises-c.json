@@ -26825,6 +26825,54 @@
         "skill": "speaking",
         "xp": 4
       }
+    },
+    {
+      "id": "ex-c-9105",
+      "type": "retell",
+      "payload": {
+        "kind": "retell",
+        "phrase_id": "ph-c-0633"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-c-9110",
+      "type": "retell",
+      "payload": {
+        "kind": "retell",
+        "phrase_id": "ph-c-0866"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-c-9114",
+      "type": "retell",
+      "payload": {
+        "kind": "retell",
+        "phrase_id": "ph-c-1093"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
     }
   ]
 }

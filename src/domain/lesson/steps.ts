@@ -17,6 +17,7 @@ const EXERCISE_STEP: Record<string, StepKind> = {
   shadowing: 'speaking',
   answer_question: 'speaking',
   dialog: 'speaking',
+  retell: 'speaking',
 }
 
 /** Вход группировки: id + тип упражнения + флаг «cloze в цитате». */

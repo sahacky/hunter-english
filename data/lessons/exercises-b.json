@@ -25902,6 +25902,102 @@
         "skill": "speaking",
         "xp": 4
       }
+    },
+    {
+      "id": "ex-b-9105",
+      "type": "retell",
+      "payload": {
+        "kind": "retell",
+        "phrase_id": "ph-b-0203"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-b-9109",
+      "type": "retell",
+      "payload": {
+        "kind": "retell",
+        "phrase_id": "ph-b-0381"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-b-9114",
+      "type": "retell",
+      "payload": {
+        "kind": "retell",
+        "phrase_id": "ph-b-0609"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-b-9119",
+      "type": "retell",
+      "payload": {
+        "kind": "retell",
+        "phrase_id": "ph-b-0862"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-b-9124",
+      "type": "retell",
+      "payload": {
+        "kind": "retell",
+        "phrase_id": "ph-b-1112"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-b-9129",
+      "type": "retell",
+      "payload": {
+        "kind": "retell",
+        "phrase_id": "ph-b-1289"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
     }
   ]
 }

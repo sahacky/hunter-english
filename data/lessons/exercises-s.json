@@ -13768,6 +13768,54 @@
         "skill": "grammar",
         "xp": 3
       }
+    },
+    {
+      "id": "ex-s-9106",
+      "type": "retell",
+      "payload": {
+        "kind": "retell",
+        "phrase_id": "ph-s-0168"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-s-9110",
+      "type": "retell",
+      "payload": {
+        "kind": "retell",
+        "phrase_id": "ph-s-0284"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-s-9114",
+      "type": "retell",
+      "payload": {
+        "kind": "retell",
+        "phrase_id": "ph-s-0398"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
     }
   ]
 }

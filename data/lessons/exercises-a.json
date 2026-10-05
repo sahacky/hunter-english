@@ -19685,6 +19685,70 @@
         "skill": "grammar",
         "xp": 3
       }
+    },
+    {
+      "id": "ex-a-9104",
+      "type": "retell",
+      "payload": {
+        "kind": "retell",
+        "phrase_id": "ph-a-0145"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-a-9109",
+      "type": "retell",
+      "payload": {
+        "kind": "retell",
+        "phrase_id": "ph-a-0314"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-a-9115",
+      "type": "retell",
+      "payload": {
+        "kind": "retell",
+        "phrase_id": "ph-a-0457"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
+    },
+    {
+      "id": "ex-a-9120",
+      "type": "retell",
+      "payload": {
+        "kind": "retell",
+        "phrase_id": "ph-a-0609"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "speaking",
+        "xp": 4
+      }
     }
   ]
 }

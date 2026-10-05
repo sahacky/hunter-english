@@ -44,6 +44,7 @@ import {
   VoiceExercise,
   WordBankExercise,
 } from '../components/lesson/ExerciseView'
+import { RetellTask } from '../components/lesson/RetellTask'
 
 const COURSE_ID_RE = /^(E|D|C|B|A|S)-\d{2}$/
 
@@ -897,6 +898,9 @@ function ExerciseRouter({
       return <VoiceExercise mode="shadowing" {...common} />
     case 'answer_question':
       return <VoiceExercise mode="answer" {...common} />
+    case 'retell':
+      // обратный цикл EN→RU→EN (Q3.1) — фраза уже разрешена в current.phrase
+      return <RetellTask phrase={current.phrase} onAnswer={onAnswer} onNext={onNext} />
     default:
       // типы перечислены схемой exercise (specs/05 §3) — default недостижим
       /* istanbul ignore next */

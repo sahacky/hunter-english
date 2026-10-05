@@ -22,7 +22,8 @@
         "answer_question",
         "dialog",
         "verb_tense",
-        "transform"
+        "transform",
+        "retell"
       ]
     },
     "payload": {
@@ -244,6 +245,19 @@
                   "phrase_id": { "type": "string" }
                 }
               }
+            }
+          }
+        },
+        {
+          "$comment": "15 retell - обратный цикл EN-RU-EN (план teaching-quality Q3.1)",
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "phrase_id"],
+          "properties": {
+            "kind": { "const": "retell" },
+            "phrase_id": {
+              "type": "string",
+              "description": "фраза урока с аудио: EN слушаем → RU пересказ → EN по-своему (самопроверка)"
             }
           }
         }
