@@ -36,6 +36,11 @@
     "confidence": { "type": "string", "minLength": 1 },
     "note": { "type": "string" },
     "link_playphrase": { "type": "string", "format": "uri" },
+    "link_image": {
+      "type": "string",
+      "pattern": "^media/scenes/",
+      "description": "кадр/GIF сцены к фразе (план M.3): путь в public/media/scenes/… — хранение ВНЕ git (авторские права; в прод не публикуется), UI деградирует без файла"
+    },
     "link_video": {
       "type": "string",
       "format": "uri",
