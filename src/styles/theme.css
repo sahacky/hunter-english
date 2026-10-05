@@ -1044,10 +1044,20 @@ body {
 }
 
 /* ===== Ранги и Врата (plan://M7#7.5–7.6) ===== */
+/* Фидбей 2026-10-05: панели в ряд на десктопе, плитки Врат вместо синих ссылок */
 .ranks {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 16px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 900px) {
+  .ranks {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+  .ranks-titles-panel {
+    grid-column: 1 / -1;
+  }
 }
 .ranks-stats {
   list-style: none;
@@ -1097,8 +1107,34 @@ body {
   background: var(--surface-2);
   border: 1px solid var(--border);
 }
+/* плитка Врат: название-кнопка без подчёркивания, мета — подписью */
+.ranks-gates li {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
 .ranks-gates a {
+  font-weight: 800;
+  font-size: 1.05rem;
+  text-decoration: none;
+  color: var(--text);
+}
+.ranks-gates a::after {
+  content: ' →';
+  color: var(--primary);
   font-weight: 700;
+}
+.ranks-gates a:hover {
+  color: var(--primary-deep);
+}
+.ranks-gates a:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  border-radius: var(--radius-btn);
+}
+.ranks-gate-current {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 1px var(--primary) inset;
 }
 .ranks-gate-current {
   border-color: var(--primary);
