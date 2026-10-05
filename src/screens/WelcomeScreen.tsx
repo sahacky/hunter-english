@@ -54,7 +54,7 @@ function VerdictPane({
   const { t } = useTranslation()
   const lower = verdict.confidence === 'low' ? suggestLowerRank(verdict.rank) : null
   return (
-    <section className="panel lesson-panel">
+    <section className="panel lesson-panel landing-panel">
       <h2>{t('welcome.verdictTitle')}</h2>
       <p className="dim">
         <strong>
@@ -98,7 +98,7 @@ function ApplyChoicePane({
 }) {
   const { t } = useTranslation()
   return (
-    <section className="panel lesson-panel">
+    <section className="panel lesson-panel landing-panel">
       <h2>{t('welcome.applyTitle')}</h2>
       <p className="dim">{t('welcome.applyQuestion', { rank, cefr: RANK_CEFR[rank] })}</p>
       <div className="lesson-actions">
@@ -175,7 +175,7 @@ export default function WelcomeScreen({
 
   if (phase.kind === 'checking') {
     return (
-      <section className="panel">
+      <section className="panel landing-panel">
         <p className="dim">{t('common.loading')}</p>
       </section>
     )
@@ -183,7 +183,7 @@ export default function WelcomeScreen({
 
   if (phase.kind === 'intro') {
     return (
-      <section className="panel lesson-panel">
+      <section className="panel lesson-panel landing-panel">
         <h2>{t('welcome.title')}</h2>
         <p className="dim">{t('welcome.intro')}</p>
         <div className="lesson-actions">
@@ -238,7 +238,7 @@ export default function WelcomeScreen({
       setPhase({ kind: 'quiz', answers, value: '', result: null })
     }
     return (
-      <section className="panel lesson-panel">
+      <section className="panel lesson-panel landing-panel">
         <header className="lesson-head">
           <h2>{t('welcome.assessmentTitle')}</h2>
           <p className="dim">
@@ -317,7 +317,7 @@ export default function WelcomeScreen({
 
   if (phase.kind === 'applying') {
     return (
-      <section className="panel">
+      <section className="panel landing-panel">
         <p className="dim">{t('welcome.applying')}</p>
       </section>
     )
@@ -325,7 +325,7 @@ export default function WelcomeScreen({
 
   // phase.kind === 'error'
   return (
-    <section className="panel lesson-panel">
+    <section className="panel lesson-panel landing-panel">
       <h2>{t('welcome.errorTitle')}</h2>
       <div className="lesson-actions">
         <button

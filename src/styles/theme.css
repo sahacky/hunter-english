@@ -1523,6 +1523,25 @@ body {
   margin: 0 auto 12px;
 }
 
+/* Фидбей 2026-10-05: приветственные страницы — лендинг-стиль: контент
+   по центру экрана, а не слева на всю ширину панели */
+.landing-panel {
+  max-width: 640px;
+  margin-inline: auto;
+}
+.landing-panel h2,
+.landing-panel h3 {
+  text-align: center;
+}
+.landing-panel .intro-art + h2 {
+  margin-top: 0;
+}
+.landing-panel > p,
+.landing-panel .lesson-actions {
+  text-align: center;
+  justify-content: center;
+}
+
 /* plan://curriculum-review#I.2 — input-трек: список понятых цитат */
 .listen-list {
   list-style: none;
