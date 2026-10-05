@@ -16,6 +16,7 @@ import {
   recordAnswer,
 } from '../domain/lesson/runner'
 import type { ExerciseOutcome, LessonCheckpoint, SrsLessonStats } from '../domain/lesson/types'
+import { adaptiveProfile, type AdaptiveProfile } from '../domain/lesson/adaptive'
 import {
   courseToLessonId,
   loadLessonView,
@@ -190,6 +191,16 @@ export default function LessonScreen({
 
   const courseId = params.id ?? ''
   const valid = COURSE_ID_RE.test(courseId)
+
+  // --- адаптивная презентация серии (Q2.1): точность последних ответов ------
+  // исходы в порядке упражнений урока; состав заданий не меняется (Watch out WAL)
+  const adaptive = useMemo<AdaptiveProfile>(() => {
+    if (!view) return 'standard'
+    const outcomes = view.lesson.exercises.map(
+      ({ id }) => checkpoint.results[id]?.outcome,
+    ) as string[]
+    return adaptiveProfile(outcomes.filter((outcome) => Boolean(outcome)))
+  }, [view, checkpoint.results])
 
   // --- сохранение чекпоинта: очередь «последний выигрывает» ------------------
   const persist = useCallback(
@@ -698,6 +709,7 @@ export default function LessonScreen({
           onAnswer={() => undefined}
           onDispute={() => undefined}
           phrasesById={view.phrasesById}
+          adaptive="standard"
           onNext={() => {
             if (phase.index + 1 < list.length) {
               setPhase({ kind: 'replay', index: phase.index + 1 })
@@ -749,6 +761,8 @@ export default function LessonScreen({
         <p className="dim">
           {t(`lesson.steps.${step?.kind ?? 'rule'}`)} ·{' '}
           {t('lesson.stepProgress', { current: stepPosition, total: view.steps.length })}
+          {adaptive !== 'standard' &&
+            ` · ${t(adaptive === 'support' ? 'lesson.adaptiveSupport' : 'lesson.adaptiveChallenge')}`}
         </p>
         <button type="button" className="srs-finish" onClick={() => setConfirmExit(true)}>
           ✕ {t('lesson.exit')}
@@ -799,6 +813,7 @@ export default function LessonScreen({
           onDispute={() => handleDispute(current.exercise.id)}
           onNext={handleNext}
           phrasesById={view.phrasesById}
+          adaptive={adaptive}
         />
       )}
 
@@ -832,6 +847,7 @@ function ExerciseRouter({
   onDispute,
   onNext,
   phrasesById,
+  adaptive,
 }: {
   current: { exercise: ExerciseItem; phrase: PhraseItem | null }
   trap: TrapItem | null
@@ -839,13 +855,15 @@ function ExerciseRouter({
   onDispute: () => void
   onNext: () => void
   phrasesById: Record<string, PhraseItem>
+  /** Профиль адаптивной презентации серии (Q2.1). */
+  adaptive: AdaptiveProfile
 }) {
   const { t } = useTranslation()
   const { exercise, phrase } = current
   const common = { exercise, phrase, trap, onAnswer, onDispute, onNext }
   switch (exercise.type) {
     case 'translate':
-      return <InputCheckExercise mode="translate" {...common} />
+      return <InputCheckExercise mode="translate" {...common} support={adaptive === 'support'} />
     case 'dictation':
       return <InputCheckExercise mode="dictation" {...common} />
     case 'cloze':
@@ -856,7 +874,7 @@ function ExerciseRouter({
     case 'match_pairs':
       return <MatchPairsExercise {...common} />
     case 'word_bank':
-      return <WordBankExercise {...common} />
+      return <WordBankExercise {...common} challenge={adaptive === 'challenge'} />
     case 'find_error':
       return <InputCheckExercise mode="find_error" {...common} />
     case 'verb_tense':

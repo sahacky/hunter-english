@@ -145,6 +145,30 @@ describe('InputCheckExercise', () => {
     expect(s.calls).toEqual([{ outcome: 'hint', attempts: 1 }])
   })
 
+  it('support-режим (Q2.1): бесплатная подсказка первого слова, без платной кнопки и штрафа', async () => {
+    const s = spy()
+    render(
+      <InputCheckExercise
+        mode="translate"
+        support
+        exercise={ex('translate', { prompt_ru: 'Дом большой', phrase_id: phrase.id })}
+        phrase={phrase}
+        trap={null}
+        onAnswer={s.onAnswer}
+        onDispute={vi.fn()}
+        onNext={s.onNext}
+      />,
+    )
+    expect(screen.getByText(/первое слово — The/)).toBeInTheDocument()
+    expect(screen.queryByRole('button', { name: /Подсказка/ })).not.toBeInTheDocument()
+    const input = document.querySelector<HTMLInputElement>('.lesson-input')!
+    fireEvent.change(input, { target: { value: 'The house is big' } })
+    fireEvent.submit(input.closest('form')!)
+    expect(await screen.findByText('Верно!')).toBeInTheDocument()
+    // XP не снят: обычный correct, не hint
+    expect(s.calls).toEqual([{ outcome: 'correct', attempts: 1 }])
+  })
+
   it('dictation: кнопки озвучки с лимитом, ввод по слуху', async () => {
     const s = spy()
     render(
@@ -324,6 +348,34 @@ describe('MatchPairsExercise', () => {
 })
 
 describe('WordBankExercise', () => {
+  it('challenge-режим (Q2.1): текстовый ввод по памяти вместо плиток', async () => {
+    const s = spy()
+    render(
+      <WordBankExercise
+        challenge
+        exercise={ex('word_bank', {
+          prompt_ru: phrase.translation_ru,
+          tokens: ['The', 'house', 'is', 'big'],
+          phrase_id: phrase.id,
+        })}
+        phrase={phrase}
+        trap={null}
+        onAnswer={s.onAnswer}
+        onDispute={vi.fn()}
+        onNext={s.onNext}
+      />,
+    )
+    expect(screen.getByText(/собери фразу по памяти/i)).toBeInTheDocument()
+    expect(screen.queryByRole('button', { name: 'The' })).not.toBeInTheDocument()
+    const input = document.querySelector<HTMLInputElement>('.lesson-input')!
+    fireEvent.change(input, { target: { value: 'The house is big' } })
+    fireEvent.submit(input.closest('form')!)
+    expect(await screen.findByText('Верно!')).toBeInTheDocument()
+    expect(s.calls).toEqual([{ outcome: 'correct', attempts: 1 }])
+    fireEvent.click(screen.getByRole('button', { name: /^Дальше/ }))
+    expect(s.onNext).toHaveBeenCalledTimes(1)
+  })
+
   /** Клик по свободной (не used) плитке банка — слоты и банк делят имя. */
   function clickBankTile(token: string) {
     const tile = screen

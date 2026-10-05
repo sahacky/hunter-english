@@ -1188,4 +1188,48 @@ describe('LessonScreen: хвосты покрытия (M21#21.4)', () => {
     expect(screen.queryByText(/Любопытно:/)).not.toBeInTheDocument()
     expect(screen.queryByText(/Что дальше/)).not.toBeInTheDocument()
   })
+
+  it('адаптивная презентация серии (Q2.1): 6+ верных → challenge, word_bank текстом', async () => {
+    const view = await loadLessonView('les-e-01')
+    if (!view) throw new Error('нет данных урока les-e-01')
+    // чекпоинт: правило и разогрев отвечены без ошибок, текущий шаг — построение
+    const scores = view.steps.map((step) => ({
+      stepIndex: step.index,
+      total: (view.content[step.index] ?? []).length,
+      answered: step.index < 3 ? (view.content[step.index] ?? []).length : 0,
+      firstTryCorrect: step.index < 3 ? (view.content[step.index] ?? []).length : 0,
+    }))
+    const results: Record<string, { attempts: number; outcome: 'correct' }> = {}
+    for (const step of view.steps) {
+      if (step.index >= 3) break
+      for (const { exercise } of view.content[step.index] ?? []) {
+        results[exercise.id] = { attempts: 1, outcome: 'correct' }
+      }
+    }
+    const buildStep = view.steps.find((step) => step.kind === 'build')
+    if (!buildStep) throw new Error('в E-01 нет шага построения')
+    await repo.putLessonProgress({
+      lesson_id: 'les-e-01',
+      status: 'in_progress',
+      score: null,
+      checkpoint: {
+        passIndex: 0,
+        stepIndex: buildStep.index,
+        scores,
+        srsEnqueued: [],
+        passesDone: 0,
+        results,
+      },
+      completed_at: null,
+      updated_at: new Date().toISOString(),
+    })
+    renderScreen('E-01', repo, view)
+    fireEvent.click(await screen.findByRole('button', { name: /Продолжить/ }))
+    // бейдж режима вызова в шапке
+    expect(await screen.findByText(/режим вызова/)).toBeInTheDocument()
+    // первое задание построения E-01 — word_bank: в challenge ввод текстом, плиток нет
+    const input = await screen.findByRole('textbox')
+    expect(input).toBeInTheDocument()
+    expect(document.querySelector('.lesson-bank')).toBeNull()
+  })
 })

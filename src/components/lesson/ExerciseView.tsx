@@ -105,9 +105,12 @@ export function InputCheckExercise({
   onNext,
   mode,
   lenient = false,
+  support = false,
 }: ExerciseViewProps & {
   mode: 'translate' | 'dictation' | 'cloze' | 'find_error' | 'verb_tense'
   lenient?: boolean
+  /** support-режим (Q2.1): подсказка первого слова без XP-штрафа при точности серии <70%. */
+  support?: boolean
 }) {
   const { t } = useTranslation()
   const [value, setValue] = useState('')
@@ -208,7 +211,12 @@ export function InputCheckExercise({
           </button>
         )}
       </form>
-      {!result && mode === 'translate' && phrase && !hintUsed && (
+      {/* Q2.1 support (<70% серии): бесплатная подсказка первого слова вместо
+          платной кнопки — снижение фрустрации, XP не снимается (specs/02 §2) */}
+      {!result && mode === 'translate' && phrase && support && (
+        <p className="dim">{t('lesson.supportWord', { word: phrase.text_en.split(' ')[0] })}</p>
+      )}
+      {!result && mode === 'translate' && phrase && !hintUsed && !support && (
         <div className="lesson-hint-row">
           <button
             type="button"
@@ -394,7 +402,11 @@ export function WordBankExercise({
   onAnswer,
   onDispute,
   onNext,
-}: ExerciseViewProps) {
+  challenge = false,
+}: ExerciseViewProps & {
+  /** challenge-режим (Q2.1): серия >95% — сбор по памяти текстом, без плиток. */
+  challenge?: boolean
+}) {
   const { t } = useTranslation()
   const p = payload<{ prompt_ru: string; tokens: string[] }>(exercise)
   const [bank, setBank] = useState(() => p.tokens.map((token) => ({ token, used: false })))
@@ -402,9 +414,28 @@ export function WordBankExercise({
   const [attempts, setAttempts] = useState(0)
   const [result, setResult] = useState<CheckResult | null>(null)
   const [revealed, setRevealed] = useState(false)
+  const [typed, setTyped] = useState('')
+  const task = taskFor(exercise, phrase, trap)
   const solved =
     result !== null && (result.verdict === 'correct' || result.verdict === 'correct_typo')
   const finished = solved || revealed
+
+  // challenge (Q2.1): то же задание (id/XP), но ввод по памяти — текстом
+  const checkTyped = () => {
+    if (!typed.trim() || finished) return
+    const nextAttempts = attempts + 1
+    setAttempts(nextAttempts)
+    const verdict = judge(typed, task)
+    setResult(verdict)
+    if (verdict.verdict === 'correct' || verdict.verdict === 'correct_typo') {
+      onAnswer(nextAttempts <= 1 ? 'correct' : 'correct_retry', nextAttempts)
+      return
+    }
+    if (nextAttempts >= 2) {
+      setRevealed(true)
+      onAnswer('skip', nextAttempts)
+    }
+  }
 
   const put = (token: string) => {
     /* istanbul ignore next @preserve */ // плитки disabled при finished — гарда защитная
@@ -452,12 +483,11 @@ export function WordBankExercise({
 
   const check = () => {
     /* istanbul ignore next */ // кнопка скрыта при finished; busyRef — защита от гонки
-    /* istanbul ignore next */ // кнопка скрыта при finished; busy — защита гонки
     if (finished || busyRef.current) return
     busyRef.current = true
     const nextAttempts = attempts + 1
     setAttempts(nextAttempts)
-    const verdict = judge(slots.join(' '), taskFor(exercise, phrase, trap))
+    const verdict = judge(slots.join(' '), task)
     setResult(verdict)
     if (verdict.verdict === 'correct' || verdict.verdict === 'correct_typo') {
       onAnswer(nextAttempts <= 1 ? 'correct' : 'correct_retry', nextAttempts)
@@ -470,6 +500,54 @@ export function WordBankExercise({
     }
     // первая неудача: разрешаем пересобрать и проверить снова
     busyRef.current = false
+  }
+
+  // challenge (Q2.1): сбор по памяти текстом — плитки не показываем
+  if (challenge) {
+    return (
+      <div className="lesson-exercise">
+        <p className="lesson-prompt" lang="ru">
+          {p.prompt_ru}
+        </p>
+        <p className="dim">{t('lesson.challengeHint')}</p>
+        <form
+          className="lesson-input-row"
+          onSubmit={(event) => {
+            event.preventDefault()
+            if (finished) onNext()
+            else checkTyped()
+          }}
+        >
+          <input
+            className="lesson-input"
+            lang="en"
+            value={typed}
+            onChange={(event) => setTyped(event.target.value)}
+            disabled={finished}
+          />
+          {!result && (
+            <button type="submit" className="srs-btn srs-btn-good" disabled={!typed.trim()}>
+              {t('lesson.check')} <kbd>⏎</kbd>
+            </button>
+          )}
+        </form>
+        {result && (
+          <FeedbackPlate
+            result={result}
+            showReference={revealed}
+            phrase={phrase}
+            onDispute={revealed ? onDispute : undefined}
+          />
+        )}
+        {finished && (
+          <div className="lesson-actions">
+            <button type="button" className="srs-btn srs-btn-good" onClick={onNext}>
+              {t('lesson.next')} <kbd>⏎</kbd>
+            </button>
+          </div>
+        )}
+      </div>
+    )
   }
 
   return (
