@@ -114,11 +114,21 @@ function RuleCard({ view, onUnderstood }: { view: LessonView; onUnderstood: () =
         </p>
       )}
       <div className="lesson-rule-md" lang="ru">
-        {gp.rule_md.split('\n').map((line, index) => (
-          <p key={index} className={line.startsWith('⚠') ? 'lesson-trap' : undefined}>
-            {line.replace(/\*\*/g, '')}
-          </p>
-        ))}
+        {gp.rule_md.split('\n').map((line, index) => {
+          const plain = line.replace(/\*\*/g, '')
+          const className = plain.startsWith('⚠')
+            ? 'lesson-trap'
+            : plain.startsWith('Формула:')
+              ? 'lesson-formula'
+              : plain.startsWith('Проверь себя')
+                ? 'lesson-check-self'
+                : undefined
+          return (
+            <p key={index} className={className}>
+              {plain}
+            </p>
+          )
+        })}
       </div>
       <ul className="lesson-rule-examples">
         {gp.phrase_ids.slice(0, 3).map((pid) => {

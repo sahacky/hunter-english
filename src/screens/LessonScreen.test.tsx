@@ -1169,6 +1169,17 @@ describe('LessonScreen: хвосты покрытия (M21#21.4)', () => {
     expect(screen.getByText(/русского глагола нет/)).toBeInTheDocument()
   })
 
+  it('Mayer signaling (Q2.3): формула и «Проверь себя» — сигнальные блоки правила', async () => {
+    renderScreen('E-01')
+    expect(await screen.findByText(/Формула: кто \+ am \/ is \/ are/)).toBeInTheDocument()
+    const formula = screen.getByText(/Формула:/).closest('p')
+    expect(formula).toHaveClass('lesson-formula')
+    const selfCheck = screen.getByText(/Проверь себя:/).closest('p')
+    expect(selfCheck).toHaveClass('lesson-check-self')
+    // ловушка остаётся золотой строкой (сигнал-нарушение)
+    expect(screen.getByText(/Ловушка ЛТ-01/).closest('p')).toHaveClass('lesson-trap')
+  })
+
   it('curiosity: клиффхэнгер на шаге 7 «В колоду» (план {#teaching-quality} Q1.2)', async () => {
     await seedRowStep7()
     const view = await loadLessonView('les-e-01')

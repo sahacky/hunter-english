@@ -757,6 +757,21 @@ body {
 .lesson-trap {
   color: var(--gold-text);
 }
+/* Mayer signaling (план {#teaching-quality} Q2.3): формула и самопроверка —
+   сигнальные блоки, ловятся глазом до чтения текста */
+.lesson-formula {
+  padding: 8px 12px;
+  border-left: 3px solid var(--primary);
+  background: var(--surface-2);
+  border-radius: 8px;
+  color: var(--primary-deep);
+  font-weight: 700;
+}
+.lesson-check-self {
+  padding: 8px 12px;
+  border: 1px dashed var(--primary);
+  border-radius: var(--radius-btn);
+}
 .lesson-rule-md p {
   margin: 6px 0;
 }
