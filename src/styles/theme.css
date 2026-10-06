@@ -218,7 +218,14 @@ body {
   border-radius: var(--radius-card);
   background: var(--surface);
   padding: 24px;
-  box-shadow: var(--shadow);
+}
+
+/* Фидбей 2026-10-05: одинокая панель экрана (srs/quotes/phrasebook/…) —
+   по центру с ограничением ширины, а не растянута на весь экран */
+.app-main > .panel:only-child {
+  width: 100%;
+  max-width: 840px;
+  margin-inline: auto;
 }
 
 .dim {
@@ -1050,7 +1057,7 @@ body {
   gap: 16px;
   grid-template-columns: 1fr;
 }
-@media (min-width: 900px) {
+@media (min-width: 768px) {
   .ranks {
     grid-template-columns: 1fr 1fr;
     align-items: start;
@@ -1097,9 +1104,15 @@ body {
 .ranks-gates {
   list-style: none;
   padding: 0;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 8px;
+  grid-template-columns: 1fr;
+}
+/* плитки Врат — в 2 колонки на широких экранах (фидбей: блок слишком длинный) */
+@media (min-width: 560px) {
+  .ranks-gates {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .ranks-gates li {
   padding: 10px 14px;
