@@ -307,7 +307,9 @@ export function QuoteScreen({ repo: repoProp }: { repo?: ProgressRepository }) {
   // перевешивают слушателя ПОСЛЕ пейнта, и в этом окне старая подписка ещё
   // читала state=null → speak('') (CI-флак «клавиши R/S», фидбей-прогон 2026-10-06)
   const stateRef = useRef(state)
-  stateRef.current = state
+  useEffect(() => {
+    stateRef.current = state
+  })
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
       if (event.ctrlKey || event.metaKey || event.altKey || event.repeat) return
