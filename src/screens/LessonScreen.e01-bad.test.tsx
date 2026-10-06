@@ -163,7 +163,7 @@ describe('LessonScreen E-01: «плохой» пользователь + спо�
         const step2 = view.steps.find((s) => s.index === 2)
         const missing = step2?.exerciseIds.filter((id) => !cp?.results[id]) ?? []
         throw new Error(
-          `ЗАСТРЯЛИ (тик ${tick}): stepIndex=${cp?.stepIndex}, результаты шага2: ${step2?.exerciseIds.map((id) => `${id}=${cp?.results[id]?.outcome ?? '—'}`).join(', ')}; БЕЗ ОТВЕТА: ${missing.join(',') || 'нет'}; упр=${document.querySelector('[data-exercise-id]')?.getAttribute('data-exercise-id')} input=${JSON.stringify(document.querySelector('.lesson-input')?.getAttribute('value') ?? document.querySelector('.lesson-input')?.value ?? null)} placeholder=${JSON.stringify(document.querySelector('.lesson-input')?.getAttribute('placeholder'))}; html: ${document.querySelector('[data-exercise-id]')?.innerHTML.slice(0, 900)}`,
+          `ЗАСТРЯЛИ (тик ${tick}): stepIndex=${cp?.stepIndex}, результаты шага2: ${step2?.exerciseIds.map((id) => `${id}=${cp?.results[id]?.outcome ?? '—'}`).join(', ')}; БЕЗ ОТВЕТА: ${missing.join(',') || 'нет'}; упр=${document.querySelector('[data-exercise-id]')?.getAttribute('data-exercise-id')} input=${JSON.stringify(document.querySelector('.lesson-input')?.getAttribute('value') ?? null)} placeholder=${JSON.stringify(document.querySelector('.lesson-input')?.getAttribute('placeholder'))}; html: ${document.querySelector('[data-exercise-id]')?.innerHTML.slice(0, 900)}`,
         )
       }
       if (!acted) await waitFor(() => undefined, { timeout: 200 })
