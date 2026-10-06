@@ -1,7 +1,7 @@
 // Implements: plan://M11#11.1–11.2 — Цитаты: галерея тайтлов /#/quotes и экран
 // цитаты /#/quotes/:id (specs/07 §2.1). Раскраска слов по состоянию карточек
 // колоды words; «понял без перевода» — item_progress kind='quote'.
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useParams, useSearchParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { judge } from '../domain/check/checker'
@@ -302,20 +302,26 @@ export function QuoteScreen({ repo: repoProp }: { repo?: ProgressRepository }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [params.id])
 
-  // R/S — озвучка обычная/медленная (specs/07 §5.1), пока фокус не в поле ввода
+  // R/S — озвучка обычная/медленная (specs/07 §5.1), пока фокус не в поле ввода.
+  // Подписка живёт один раз, состояние — через ref: пассивные эффекты React
+  // перевешивают слушателя ПОСЛЕ пейнта, и в этом окне старая подписка ещё
+  // читала state=null → speak('') (CI-флак «клавиши R/S», фидбей-прогон 2026-10-06)
+  const stateRef = useRef(state)
+  stateRef.current = state
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
       if (event.ctrlKey || event.metaKey || event.altKey || event.repeat) return
       const target = event.target
       if (target instanceof HTMLInputElement || target instanceof HTMLTextAreaElement) return
       const key = event.key.toLowerCase()
-      if (key === 'r') speak(state?.quote.text ?? '', { src: state?.quote.audio?.en_gb })
-      else if (key === 's')
-        speak(state?.quote.text ?? '', { src: state?.quote.audio?.en_gb, rate: 0.75 })
+      const quote = stateRef.current?.quote
+      if (!quote) return
+      if (key === 'r') speak(quote.text, { src: quote.audio?.en_gb })
+      else if (key === 's') speak(quote.text, { src: quote.audio?.en_gb, rate: 0.75 })
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-  }, [state?.quote.text])
+  }, [])
 
   // уход с экрана останавливает озвучку
   useEffect(() => stopSpeak, [])
