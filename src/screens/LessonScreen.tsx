@@ -381,13 +381,22 @@ export default function LessonScreen({
 
   /** Повтор шага (разогрев <70% с первой попытки — specs/02 §2: блок повторяется). */
   const repeatStep = () => {
+    const step = view?.steps.find((s) => s.index === checkpointRef.current.stepIndex)
+    const stepIds = new Set(step?.exerciseIds ?? [])
     const cp: LessonCheckpoint = {
       ...checkpointRef.current,
       scores: checkpointRef.current.scores.filter(
         (score) => score.stepIndex !== checkpointRef.current.stepIndex,
       ),
+      // результаты шага тоже сбрасываем: recordAnswer при повторе видит previous
+      // и не наращивает answered — иначе шаг навсегда «не завершён» и «Дальше»
+      // мертва (фидбей 2026-10-06: застревание E-01 после «Повторить шаг»)
+      results: Object.fromEntries(
+        Object.entries(checkpointRef.current.results).filter(([id]) => !stepIds.has(id)),
+      ),
     }
     setCheckpoint(cp)
+    void persist(cp)
     setExerciseIndex(0)
   }
 
