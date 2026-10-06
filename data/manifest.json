@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "content_version": 2,
-  "generated_at": "2026-10-06T10:14:46Z",
+  "generated_at": "2026-10-06T10:25:06Z",
   "files": [
     {
       "path": "lessons/exercises-a.json",
@@ -85,7 +85,7 @@
       "kind": "lessons",
       "schema_version": 1,
       "items": 15,
-      "sha256": "e344cfdb5a7568e2959ee0fac671f994590b08012612b83e255022d8660eab92"
+      "sha256": "9afe477edf7abb0415c8397c7d7d6554b344d5c4ee92c7546e5293d722fee852"
     },
     {
       "path": "phrasebook/airport.json",
