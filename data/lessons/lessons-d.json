@@ -10,7 +10,7 @@
       "grammar_point": {
         "id": "gp-d-01",
         "title_ru": "Present Continuous: закрепление",
-        "rule_md": "**Present Continuous — процесс прямо сейчас.**\nam / is / are + глагол+-ing: I **am working** now. She **is sleeping**.\nОтрицание: I **am not** working. Вопрос: **Are** you working?\n**still** = «всё ещё»: I am **still** learning English.\n**these days** = «в последнее время»: These days I am living in Moscow.\nСлова-маркеры: now, still, these days, Look!, Listen!",
+        "rule_md": "I **am working** now. She **is sleeping**. — Действие в процессе прямо сейчас.\n\nPresent Continuous — процесс, а не привычка.\n\n**Формула:** now / Look! / still / these days → am/is/are + глагол-ing\n- I am not working. **Are** you working?\n- **still** = всё ещё: I am **still** learning. **These days** I am living in Moscow.\n\nПо-русски «сейчас работаю» — тем же глаголом; по-английски процесс получает be + -ing.\n\n⚠️ Ловушка (ЛТ-06): ❌ I am working in the Rome → ✔ in **Rome** (города без the).\n\nПроверь себя: Смотри! Идёт дождь: Look! It ___ ___. → is raining",
         "phrase_ids": ["ph-d-0001", "ph-d-0002", "ph-d-0003", "ph-d-0004", "ph-d-0005"],
         "trap_id": "trap-articles"
       },
@@ -188,7 +188,7 @@
       "grammar_point": {
         "id": "gp-d-02",
         "title_ru": "Глаголы состояния без Continuous",
-        "rule_md": "**Глаголы состояния — без Continuous.**\nknow, want, love, like, need, understand, believe, remember, mean, belong —\nэто состояния, а не процессы: I **know** him. She **wants** to help.\n❌ I am knowing him.\n⚠️ Ловушка: «I am thinking» — только о процессе обдумывания («раздумываю»),\nо мнении — I **think** (that) you are right.",
+        "rule_md": "I **know** him. She **wants** to help. — Состояния не «процессируются».\n\nГлаголы состояния — без Continuous.\n\n**Формула:** know/want/love/need/understand/remember → только Present Simple\n- Процесс можно: I **am thinking** (раздумываю); мнение нельзя: I **think** you are right.\n\nПо-русски «знаю/хочу» и так без процесса; по-английски соблазн добавить -ing надо снять.\n\n⚠️ Ловушка (ЛТ-12): ❌ I am knowing him → ✔ I **know** him. И: ❌ I am interesting in → ✔ interest**ed** in.\n\nПроверь себя: Она хочет помочь: She ___ to help. → wants",
         "phrase_ids": ["ph-d-0045", "ph-d-0046", "ph-d-0047", "ph-d-0048", "ph-d-0049"],
         "trap_id": "trap-interested"
       },
@@ -366,7 +366,7 @@
       "grammar_point": {
         "id": "gp-d-03",
         "title_ru": "Конструкция there is / there are",
-        "rule_md": "**there is / there are — «есть, находится».**\nЕдинственное число: **There is** a café near here.\nМножественное: **There are** two cafés here.\nПорядок слов русский↔английский разный: «Здесь есть кафе» → **There is** a café here.\nОтрицание: There is **no** time. / There isn't a bank here.",
+        "rule_md": "**There is** a café near here. **There are** two cafés. — «Есть» по-английски.\n\nthere is/are — указывает на существование чего-то где-то.\n\n**Формула:** есть (ед.ч.) → there is; есть (мн.ч.) → there are\n- Отрицание: There is **no** time. / There isn't a bank here.\n\nПо-русски «здесь есть кафе» — подлежащее первое; по-английски туда встаёт there is, а предмет — после.\n\n⚠️ Ловушка (ЛТ-06): ❌ There is a café → ✔ There is **a** café (артикль обязателен).\n\nПроверь себя: Здесь есть банк: ___ ___ a bank here. → There is",
         "phrase_ids": ["ph-d-0090", "ph-d-0091", "ph-d-0092", "ph-d-0093", "ph-d-0094"],
         "trap_id": "trap-articles"
       },
@@ -544,7 +544,7 @@
       "grammar_point": {
         "id": "gp-d-04",
         "title_ru": "Отрицания/вопросы there is; предлоги места",
-        "rule_md": "**there is/are: вопросы и предлоги места.**\nВопрос: **Is there** a café near here? — Yes, there is. / No, there isn't.\n**Where is** the bank? — It is in Main Street.\nПредлоги места: **in** the bag, **on** the table, **at** the corner,\n**next to** the bank, **under** the table, **between** the shop and the café,\n**in front of** the hotel, **behind** the church.",
+        "rule_md": "**Is there** a café near here? — Yes, there is. The bank? It's **in** Main Street.\n\nВопросы с there и места вокруг.\n\n**Формула:** есть? → Is there…? / Are there…?; где → предлог места\n- **in** the bag, **on** the table, **at** the corner, **next to**, **under**, **between** X and Y, **in front of**, **behind**\n\nПо-русски «где?» — падежом; по-английски — предлог, и он часть ответа.\n\n⚠️ Ловушка (ЛТ-02): ❌ I go to home → ✔ I go **home** (home — без to, как и «here/there»).\n\nПроверь себя: Есть ли поблизости аптека? ___ ___ a pharmacy near here? → Is there",
         "phrase_ids": ["ph-d-0134", "ph-d-0135", "ph-d-0136", "ph-d-0137", "ph-d-0138"],
         "trap_id": "trap-to-home"
       },
@@ -717,7 +717,7 @@
       "grammar_point": {
         "id": "gp-d-05",
         "title_ru": "Повторение модуля D1 + диктант",
-        "rule_md": "**Повторение №5: всё вместе.**\nPresent Continuous ↔ глаголы состояния: What **are** you **doing**? — I **know** him.\nthere is/are ±?: **Is there** a pharmacy near here?\nПредлоги места: next to, between, behind, in front of.\n⚠️ Запятая: в русском перед «что» запятая нужна, в английском перед **that** — нет:\nI know **that** you are right. (без запятой!)",
+        "rule_md": "What **are** you **doing**? — I **know** him. Is there a café? **Next to** the bank.\n\nПовторение №5: Continuous ↔ состояния, there is/are, предлоги места.\n\n- Процесс → be + -ing; состояние → Simple; существование → there is/are\n\nПроверь себя: Она всё ещё спит: She ___ still ___. → is…sleeping",
         "phrase_ids": ["ph-d-0178", "ph-d-0179", "ph-d-0180", "ph-d-0181", "ph-d-0182"],
         "trap_id": "trap-comma-that"
       },
@@ -893,7 +893,7 @@
       "grammar_point": {
         "id": "gp-d-06",
         "title_ru": "Модальный глагол can",
-        "rule_md": "**can — умение и возможность.**\nБез to, без -s: I **can swim**. She **can drive**.\nОтрицание: I **can't** swim. (= cannot)\nВопрос: **Can** you swim? — Yes, I can. / No, I can't.\ncan + глагол всегда в одной форме: ❌ She cans drive.",
+        "rule_md": "I **can swim**. She **can drive**. — Умение одним словом.\n\ncan — возможность и умение, без to и без -s.\n\n**Формула:** умею/можно → can + глагол (голый)\n- − : I **can't** swim. ? : **Can** you swim? — Yes, I can. / No, I can't.\n\nПо-русски «могу плыть» — изменяем «могу»; по-английски can замораживает глагол: никакой -s, никакого to.\n\n⚠️ Ловушка (ЛТ-22): ❌ I very like it → ✔ I like it **very much**. И: ❌ She cans drive → ✔ She **can** drive.\n\nПроверь себя: Он не умеет водить: He ___ ___. → can't drive",
         "phrase_ids": ["ph-d-0222", "ph-d-0223", "ph-d-0224", "ph-d-0225", "ph-d-0226"],
         "trap_id": "trap-very-like"
       },
@@ -1071,7 +1071,7 @@
       "grammar_point": {
         "id": "gp-d-07",
         "title_ru": "Просьбы и разрешения с can",
-        "rule_md": "**Can you…? / Can I…? — просьба и разрешение.**\nВежливая просьба: **Can you** help me, please?\nРазрешение: **Can I** sit here? — Yes, you can. / No, you can't.\nplease делает просьбу вежливой. Ответ: Sure, no problem! / Sorry, I am busy.",
+        "rule_md": "**Can you** help me, please? **Can I** sit here? — Просьба и разрешение.\n\ncan — не только умение: это ключ к вежливому запросу.\n\n**Формула:** попросить → Can you…?; спросить разрешение → Can I…?\n- **please** делает просьбу мягче. Ответы: Sure, no problem! / Sorry, I'm busy.\n\nПо-русски «помоги, пожалуйста» — повелительным; по-английски вопрос Can you…? вежливее приказа.\n\n⚠️ Ловушка (ЛТ-19): ❌ Where you live? → ✔ Where **do** you live? (у Can порядок уже вопросительный — дальше не ломай).\n\nПроверь себя: Можно спросить? ___ I ask? → Can",
         "phrase_ids": ["ph-d-0266", "ph-d-0267", "ph-d-0268", "ph-d-0269", "ph-d-0270"],
         "trap_id": "trap-question-word-order"
       },
@@ -1249,7 +1249,7 @@
       "grammar_point": {
         "id": "gp-d-08",
         "title_ru": "have got и have",
-        "rule_md": "**have got / have — «иметь».**\nБританский вариант: I **have got** a ticket. = I **have** a ticket.\n3-е лицо: She **has got** a phone.\nОтрицание: I **haven't got** money. = I **don't have** money.\nВопрос: **Have you got** a pen? = **Do you have** a pen?",
+        "rule_md": "I **have got** a ticket. = I **have** a ticket. — «Иметь» по-британски и нейтрально.\n\nДва равных способа сказать о владении.\n\n**Формула:** брит. → have/has got; нейтр. → have/has\n- She **has got** a phone. − : I **haven't got** money. = I **don't have** money.\n- ? : **Have you got** a pen? = **Do you have** a pen?\n\nПо-русски «у меня есть» — предложением с «у»; по-английски владение — сам глагол have.\n\n⚠️ Ловушка (ЛТ-06): ❌ I have got a money → ✔ **money** (неисчисляемое — без a).\n\nПроверь себя: У тебя есть ручка? ___ you ___ a pen? → Do…have",
         "phrase_ids": ["ph-d-0311", "ph-d-0312", "ph-d-0313", "ph-d-0314", "ph-d-0315"],
         "trap_id": "trap-articles"
       },
@@ -1427,7 +1427,7 @@
       "grammar_point": {
         "id": "gp-d-09",
         "title_ru": "Повелительное наклонение",
-        "rule_md": "**Повелительное наклонение.**\nГлагол в чистой форме: **Stop!** **Listen!** **Follow me!**\nОтрицание: **Don't** + глагол: **Don't stop.** **Don't be late!**\nВежливость: Please + повелительное: **Please, wait here.**\nУказания маршрута: Turn left. Go straight. Follow the signs.",
+        "rule_md": "**Stop! Listen! Follow me!** — Команды без подлежащего.\n\nПовелительное наклонение: глагол в чистой форме.\n\n**Формула:** команда → глагол; запрет → Don't + глагол\n- **Don't stop. Don't be late!** Вежливо: **Please**, wait here.\n- Маршрут: Turn left. Go straight. Follow the signs.\n\nПо-русски запрет — «не + инфинитив»; по-английски отрицание команды собирает Don't, а не «no».\n\n⚠️ Ловушка (ЛТ-04): ❌ No stop! / Not stop! → ✔ **Don't stop!**\n\nПроверь себя: Не опаздывай: ___ ___ late. → Don't be",
         "phrase_ids": ["ph-d-0358", "ph-d-0359", "ph-d-0360", "ph-d-0361", "ph-d-0362"],
         "trap_id": "trap-no-do-negative"
       },
@@ -1600,7 +1600,7 @@
       "grammar_point": {
         "id": "gp-d-10",
         "title_ru": "Повторение модуля D2",
-        "rule_md": "**Повторение №6: can, have got, повелительное.**\ncan: Can you help me? — Sorry, I can't.\nhave got: Have you got a map? — Yes, I have.\nПовелительное: Don't worry. Follow me.\nВсё вместе: Can I have a coffee? — Sure, have a seat.",
+        "rule_md": "Can you help me? — Have you got a map? — Don't worry. Follow me.\n\nПовторение №6: can, have got, повелительное.\n\n- Всё вместе: Can I have a coffee? — Sure, have a seat.\n\nПроверь себя: У вас есть карта? ___ you ___ a map? → Have…got",
         "phrase_ids": ["ph-d-0403", "ph-d-0404", "ph-d-0405", "ph-d-0406", "ph-d-0407"],
         "trap_id": "trap-third-person-s"
       },
@@ -1776,7 +1776,7 @@
       "grammar_point": {
         "id": "gp-d-11",
         "title_ru": "Квантификаторы some/any/no",
-        "rule_md": "**some / any / no.**\nУтверждение — **some**: I have **some** money.\nОтрицание и вопрос — **any**: I don't have **any** money. / Do you have **any** money?\nУсиленное отрицание — **no**: I have **no** money. (= not any)\nsome также в просьбах/предложениях: Can I have **some** more?",
+        "rule_md": "I have **some** money. — I don't have **any** money. — I have **no** money.\n\nsome/any/no выбираются по типу фразы.\n\n**Формула:** утверждение → some; − и ? → any; усиленно «ничего» → no\n- Просьбы/предложения — some: Can I have **some** more?\n\nПо-русски «сколько-нибудь/никаких» — на слух; по-английски выбор слова жёстко привязан к знаку фразы.\n\n⚠️ Ловушка (ЛТ-07): ❌ I don't have no money → ✔ I don't have **any** money.\n\nПроверь себя: Есть вопросы? Do you have ___ questions? → any",
         "phrase_ids": ["ph-d-0448", "ph-d-0449", "ph-d-0450", "ph-d-0451", "ph-d-0452"],
         "trap_id": "trap-articles"
       },
@@ -1954,7 +1954,7 @@
       "grammar_point": {
         "id": "gp-d-12",
         "title_ru": "much/many, вопрос о цене",
-        "rule_md": "**much / many / how much / how many.**\nНеисчисляемые (money, time, water) — **much**: I don't have **much** time.\nИсчисляемые (people, tickets, apples) — **many**: **Many** people live here.\nВопрос о количестве: **How much** is this? / **How much** money? / **How many** tickets?\nМного обоих типов — **a lot of**: a lot of work, a lot of friends.",
+        "rule_md": "How **much** is this? — How **many** tickets? — Цена против количества.\n\nmuch/many — по типу существительного.\n\n**Формула:** неисчисляемое (money, time, water) → much; исчисляемое (tickets, people) → many\n- Оба типа много → **a lot of**: a lot of work / friends\n\nПо-русски «много» — одно на всё; по-английски тип существительного решает much или many.\n\n⚠️ Ловушка (ЛТ-14): ❌ How many money? → ✔ How **much** money?\n\nПроверь себя: Сколько времени? How ___ time? → much",
         "phrase_ids": ["ph-d-0492", "ph-d-0493", "ph-d-0494", "ph-d-0495", "ph-d-0496"],
         "trap_id": "trap-uncountable-plurals"
       },
@@ -2132,7 +2132,7 @@
       "grammar_point": {
         "id": "gp-d-13",
         "title_ru": "Неисчисляемые существительные",
-        "rule_md": "**Неисчисляемые существительные.**\nadvice, information, money, luggage, water, music, time, food, weather, news, work —\nбез -s, без a/an, с much/нет many: I need **advice**. ❌ advices\nnews — формально множественное, но глагол в ед.ч.: The news **is** good.\nСчёт — через единицы: two **pieces of** luggage, three **bottles of** water.\n⚠️ people = «люди», глагол во мн.ч.: There **are** many people.",
+        "rule_md": "I need **advice**. The news **is** good. — Неисчисляемые не считают штуками.\n\nadvice, information, money, luggage, news, work — без -s, без a/an, с much.\n\n**Формула:** несчитаемое → без -s; счёт — через единицы\n- two **pieces of** luggage, three **bottles of** water; news **is** (глагол ед.ч.)\n- people = «люди» (глагол мн.ч.): people **are**\n\nПо-русски «советы/новости» — во множественном; по-английски это одно целое.\n\n⚠️ Ловушка (ЛТ-14): ❌ advices, moneys → ✔ **advice, money**.\n\nПроверь себя: Дай совет: Give me ___. → advice",
         "phrase_ids": ["ph-d-0536", "ph-d-0537", "ph-d-0538", "ph-d-0539", "ph-d-0540"],
         "trap_id": "trap-uncountable-plurals"
       },
@@ -2305,7 +2305,7 @@
       "grammar_point": {
         "id": "gp-d-14",
         "title_ru": "so и such, восклицания",
-        "rule_md": "**so / such / very / too / a lot.**\nso + прилагательное/наречие: **so** cold, **so** good.\nsuch + a/an + прилагательное + сущ.: **such a** beautiful city (сущ. есть — such!).\nvery — нейтральное усиление: very good; ⚠️ very НЕ перед глаголами (I like it **very much**).\ntoo = «слишком»: too hot, too big. a lot = «сильно/много»: helps **a lot**.\nWhat a + сущ.! = восклицание: **What a** nice day!",
+        "rule_md": "**So** cold! **Such a** beautiful city! — Две упаковки усиления.\n\nso — про признак, such — про предмет с признаком.\n\n**Формула:** прилагательное → so + прил.; прил. + существительное → such + (a) + прил. + сущ.\n- very — нейтральное усиление; too = слишком; a lot = сильно (helps **a lot**)\n- What a + сущ.! What a day!\n\nПо-русски «такой красивый город» — «такой» на всё; по-английски есть ли существительное — решает so/such.\n\n⚠️ Ловушка (ЛТ-22): ❌ I very like it → ✔ I like it **very much**.\n\nПроверь себя: Такой холодный день: ___ ___ cold day. → such a",
         "phrase_ids": ["ph-d-0581", "ph-d-0582", "ph-d-0583", "ph-d-0584", "ph-d-0585"],
         "trap_id": "trap-very-like"
       },
@@ -2483,7 +2483,7 @@
       "grammar_point": {
         "id": "gp-d-15",
         "title_ru": "Повторение модуля D3 + контрольная",
-        "rule_md": "**Повторение №7: количество.**\nsome → any в отрицании/вопросе; no = not any.\nmuch/many по типу существительного; How much…? / How many…?\nНеисчисляемые без -s: advice, money, information.\nso + прилагательное, such + (a) + сущ.",
+        "rule_md": "some → any · much/many · advice без -s · so cold / such a city.\n\nПовторение №7: количество и усиление.\n\n- Тип существительного решает: much/many, a/an или ничего\n\nПроверь себя: Так вкусно: ___ tasty! → so",
         "phrase_ids": ["ph-d-0625", "ph-d-0626", "ph-d-0627", "ph-d-0628", "ph-d-0629"],
         "trap_id": "trap-third-person-s"
       },
@@ -2659,7 +2659,7 @@
       "grammar_point": {
         "id": "gp-d-16",
         "title_ru": "Вопрос к подлежащему без do",
-        "rule_md": "**Вопрос к подлежащему.**\nWho / What + глагол БЕЗ do/does: **Who knows**? **What helps** you?\n❌ Who does know? Сравни: **Who knows** him? vs **Why does** he **know** it?\nГлагол в 3-м лице ед.ч.: Who **wants** tea? Who **is** she?",
+        "rule_md": "**Who knows** the answer? **What helps** you? — Вопрос о самом деятеле.\n\nВопрос к подлежащему: who/what — и глагол сразу, без помощника.\n\n**Формула:** Кто?/Что? → Who/What + глагол (без do/does), глагол в 3-м лице\n- Who **wants** tea? Who **is** she? Сравни: **Why does** he know it? — не о деятеле\n\nПо-русски «кто знает?» — тот же порядок; по-английски отсутствие do — закон, а не вольность.\n\n⚠️ Ловушка (ЛТ-19): ❌ Who does know? → ✔ **Who knows**?\n\nПроверь себя: Кто хочет чаю? Who ___ tea? → wants",
         "phrase_ids": ["ph-d-0669", "ph-d-0670", "ph-d-0671", "ph-d-0672", "ph-d-0673"],
         "trap_id": "trap-question-word-order"
       },
@@ -2837,7 +2837,7 @@
       "grammar_point": {
         "id": "gp-d-17",
         "title_ru": "Согласие; very much / a lot",
-        "rule_md": "**Согласие и степень.**\nagree — ГЛАГОЛ: I **agree** with you. ❌ I am agree.\nМнение: I think so. / I don't think so. / In my opinion…\nСтепень после глагола: I like it **very much** / **a lot** (не «very like»).\ntoo much = «слишком много», quite/really/totally — оттенки усиления.",
+        "rule_md": "I **agree** with you. I like it **very much**. — Согласие без «быть».\n\nagree — глагол; степень — после глагола.\n\n**Формула:** согласен → I agree (with); степень → very much / a lot\n- Мнение: I think so. / I don't think so. / In my opinion…\n- quite/really/totally — оттенки; too much = слишком много\n\nПо-русски «я согласен» — прилагательным; по-английски agree — действие, «am agree» не существует.\n\n⚠️ Ловушка (ЛТ-05): ❌ I am agree → ✔ I **agree**.\n\nПроверь себя: Согласен с тобой: I ___ ___ you. → agree with",
         "phrase_ids": ["ph-d-0715", "ph-d-0716", "ph-d-0717", "ph-d-0718", "ph-d-0719"],
         "trap_id": "trap-im-agree"
       },
@@ -3010,7 +3010,7 @@
       "grammar_point": {
         "id": "gp-d-18",
         "title_ru": "say, tell, ask",
-        "rule_md": "**say / tell / ask.**\n**say** (что-то): say it, say hello, he says that…\n**tell** (кому-то что-то): tell **me** the truth, tell **him** the news.\n❌ say me → **tell me**.\n**ask** (кому-то о чём-то): ask him, ask for help, ask a question.",
+        "rule_md": "**Tell me** the truth. He **says** hello. — Два глагола речи.\n\nsay — что-то, tell — кому-то.\n\n**Формула:** say + что; tell + кому + что; ask + о чём\n- say it / say hello / he says that…; tell **me** the news; ask him / ask **for** help\n\nПо-русски «скажи мне» — одним «скажи»; по-английски адресат требует tell, say его не принимает.\n\n⚠️ Ловушка (ЛТ-11): ❌ Say me → ✔ **Tell me**.\n\nПроверь себя: Скажи ему правду: ___ him the truth. → Tell",
         "phrase_ids": ["ph-d-0759", "ph-d-0760", "ph-d-0761", "ph-d-0762", "ph-d-0763"],
         "trap_id": "trap-said-me"
       },
@@ -3183,7 +3183,7 @@
       "grammar_point": {
         "id": "gp-d-19",
         "title_ru": "feel + глаголы с предлогами",
-        "rule_md": "**feel и глаголы с предлогами.**\nfeel + прилагательное/хорошо-плохо: I **feel** good. How do you **feel**?\n❌ feel myself → **feel** well / **feel** good.\nПредлоги: wait **for**, look **for** (искать), look **at** (смотреть на),\nlisten **to**, thank **for**, think **about**, pay **for**, ask **for**.",
+        "rule_md": "How do you **feel**? — I **feel** good. I'm waiting **for** you.\n\nfeel без «себя» и глаголы со своими предлогами.\n\n**Формула:** самочувствие → feel + прил. (без myself); глагол → свой предлог\n- wait **for**, look **for** (искать), look **at**, listen **to**, thank **for**, think **about**, pay **for**, ask **for**\n\nПо-русски «чувствую себя» — возвратно; по-английски себя не упоминают, а предлог — часть глагола.\n\n⚠️ Ловушка (ЛТ-09): ❌ I feel myself good → ✔ I **feel** good. (ЛТ-10): ❌ wait you → ✔ wait **for** you.\n\nПроверь себя: Жду автобус: I'm waiting ___ the bus. → for",
         "phrase_ids": ["ph-d-0804", "ph-d-0805", "ph-d-0806", "ph-d-0807", "ph-d-0808"],
         "trap_id": "trap-feel-myself"
       },
@@ -3361,7 +3361,7 @@
       "grammar_point": {
         "id": "gp-d-20",
         "title_ru": "Повторение модуля D4",
-        "rule_md": "**Повторение №8: вежливость и предлоги.**\nВопрос к подлежащему: Who knows? What helps you?\nagree как глагол: I (don't) agree with you.\nsay/tell/ask: tell ME the truth, say it again, ask him.\nfeel + предлоги глаголов: wait for, look for, listen to, pay for.",
+        "rule_md": "Who knows? · I agree with you. · Tell me. · wait for, listen to.\n\nПовторение №8: вежливость и предлоги.\n\n- Вопрос о деятеле — без do; согласие — глаголом; адресат — tell\n\nПроверь себя: Слушаю тебя: I'm listening ___ you. → to",
         "phrase_ids": ["ph-d-0848", "ph-d-0849", "ph-d-0850", "ph-d-0851", "ph-d-0852"],
         "trap_id": "trap-wait-for"
       },
@@ -3537,7 +3537,7 @@
       "grammar_point": {
         "id": "gp-d-21",
         "title_ru": "Привычка против процесса",
-        "rule_md": "**Present Simple vs Present Continuous.**\nОбычно/всегда/никогда (habit) — Present Simple: I **usually work** at home.\nСейчас/сегодня/в последнее время (process) — Present Continuous:\nI **am working** at home **now**. **These days** I **am living** in Berlin.\nСравни: What **do** you **usually do**? vs What **are** you **doing** now?",
+        "rule_md": "I **usually work** at home. — I **am working** at home **now**.\n\nПривычка против процесса: решает маркер.\n\n**Формула:** usually/every day → Present Simple; now/these days → Present Continuous\n- What **do** you **usually do**? vs What **are** you **doing** now?\n\nПо-русски «работаю» и «работаю сейчас» — одно время; по-английски маркер фразы меняет конструкцию.\n\n⚠️ Ловушка (ЛТ-03): ❌ He work here → ✔ He **works** here (Simple, 3-е лицо — -s).\n\nПроверь себя: Сейчас читаю: I ___ ___ now. → am reading",
         "phrase_ids": ["ph-d-0893", "ph-d-0894", "ph-d-0895", "ph-d-0896", "ph-d-0897"],
         "trap_id": "trap-third-person-s"
       },
@@ -3710,7 +3710,7 @@
       "grammar_point": {
         "id": "gp-d-22",
         "title_ru": "do и make",
-        "rule_md": "**do / make.**\ndo — работа, обязанности, действия вообще: **do** your job, **do** homework,\n**do** the shopping, **do** a favour, **do** your best.\nmake — создание результата: **make** coffee, **make** money, **make** a mistake,\n**make** a plan, **make** a call, **make** sense.\n⚠️ Русское «делать» — не ориентир: think English!",
+        "rule_md": "**Do** your best. **Make** a mistake. — «Делать» бывает разным.\n\ndo — обязанности и действие вообще; make — создание результата.\n\n**Формула:** работа/обязанность → do; результат/создание → make\n- do: homework, the shopping, a favour; make: coffee, money, a plan, a call, sense\n\nПо-русски «делать» — одно слово; по-английски русское «делать» — не ориентир, думай парой.\n\n⚠️ Ловушка (ЛТ-13): ❌ do a mistake → ✔ **make** a mistake.\n\nПроверь себя: Приготовить кофе: ___ coffee. → make",
         "phrase_ids": ["ph-d-0937", "ph-d-0938", "ph-d-0939", "ph-d-0940", "ph-d-0941"],
         "trap_id": "trap-do-make"
       },
@@ -3883,7 +3883,7 @@
       "grammar_point": {
         "id": "gp-d-23",
         "title_ru": "Глаголы движения",
-        "rule_md": "**Глаголы движения: go, come, get.**\n**go** — туда (от говорящего): I **go** to work. **go home** — БЕЗ to!\n**come** — сюда (к говорящему): **Come** here! He **comes** home late.\n**get** — добираться/становиться: **get** to the station, **get** home,\n**get** tired, **get** up.\nТранспорт: by bus / by metro / by bike / on foot / take a taxi.",
+        "rule_md": "I **go home**. **Come** here! **Get** to the station.\n\nДвижение: go — от себя, come — к себе, get — добираться/становиться.\n\n**Формула:** туда → go; сюда → come; добрался → get\n- **go home** — БЕЗ to! get home, get tired, get up\n- Транспорт: by bus / by metro / on foot / take a taxi\n\nПо-русски «домой/сюда» — падежом; по-английски home выделяется: без to, как here и there.\n\n⚠️ Ловушка (ЛТ-02): ❌ go to home → ✔ go **home**.\n\nПроверь себя: Иду домой: I'm going ___. → home",
         "phrase_ids": ["ph-d-0981", "ph-d-0982", "ph-d-0983", "ph-d-0984", "ph-d-0985"],
         "trap_id": "trap-to-home"
       },
@@ -4056,7 +4056,7 @@
       "grammar_point": {
         "id": "gp-d-24",
         "title_ru": "would like, вежливый заказ",
-        "rule_md": "**Заказ и оплата: would like + can.**\nВежливый заказ: I **would like** a coffee. = I'**d like** a coffee.\n**Would you like**…? — предложение: Would you like some tea?\nОплата: Can I **pay by** card? / **in** cash. **Cash or card?**\nОтвет на «Anything else?»: No, **that's all**, thanks.",
+        "rule_md": "I'**d like** a coffee. — **Would you like** some tea? — Can I **pay by** card?\n\nЗаказ и оплата: вежливость решает.\n\n**Формула:** хочу (вежливо) → I'd like…; предложение → Would you like…?; оплата → pay by card / in cash\n- Anything else? — No, **that's all**, thanks.\n\nПо-русски «дайте кофе» — нормой; по-английски I'd like звучит вежливее want.\n\n⚠️ Ловушка (ЛТ-06): ❌ I'd like a tea → ✔ I'd like **some tea** / **a coffee** (a — перед исчисляемым).\n\nПроверь себя: Можно картой? Can I pay ___ card? → by",
         "phrase_ids": ["ph-d-1025", "ph-d-1026", "ph-d-1027", "ph-d-1028", "ph-d-1029"],
         "trap_id": "trap-articles"
       },
@@ -4229,7 +4229,7 @@
       "grammar_point": {
         "id": "gp-d-25",
         "title_ru": "Повторение модуля D5",
-        "rule_md": "**Повторение №9: движение, заказ, do/make.**\nPS vs PC: обычно vs сейчас. do/make по смыслу.\ngo home (без to!), come here, get to the station.\nI'd like… / Can I pay by card? / that's all, thanks.",
+        "rule_md": "usually vs now · make coffee / do homework · go home · I'd like…, that's all.\n\nПовторение №9: движение и заказ.\n\n- Маркер → время; результат → make; home без to\n\nПроверь себя: Я хотел бы кофе: I'd ___ a coffee. → like",
         "phrase_ids": ["ph-d-1069", "ph-d-1070", "ph-d-1071", "ph-d-1072", "ph-d-1073"],
         "trap_id": "trap-do-make"
       },
@@ -6776,7 +6776,7 @@
       "grammar_point": {
         "id": "gp-d-28",
         "title_ru": "Сборка всего ранга D",
-        "rule_md": "**Большое повторение перед Вратами C.**\nВсё ранга D: there is/are, can, have got, some/any/no, much/many,\nнеисчисляемые, so/such, вопросы к подлежащему, say/tell/ask,\nfeel + предлоги, PS vs PC, do/make, движение, would like,\nдвойное отрицание, трансформации ±?.\nВперёд, Охотник — Врата C ждут.\n\n**v2:** финал ранга теперь включает и блок «Прошлое» — Past Simple (утверждения/отрицания didn’t, вопросы Did…?) и Past Continuous: переводы и диктанты подтянуты из уроков C-01…C-10 и C-24.",
+        "rule_md": "there is · can · some/any · much/many · say/tell · went/didn't go/Did…go.\n\nБольшое повторение перед Вратами C — весь ранг D плюс блок «Прошлое».\n\n- Стратегия: тип слова → much/any; знак фразы → some/any; адресат → tell\n\nПроверь себя: Сколько денег? How ___ money? / Расскажи мне: ___ me. → much / Tell",
         "phrase_ids": ["ph-d-1206", "ph-d-1207", "ph-d-1208", "ph-d-1209", "ph-d-1210"],
         "trap_id": "trap-comma-that"
       },
