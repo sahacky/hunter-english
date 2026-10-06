@@ -10,7 +10,7 @@
       "grammar_point": {
         "id": "gp-b-01",
         "title_ru": "Present Perfect введение",
-        "rule_md": "**Present Perfect: have + V3.**\nhave/has + 3-я форма: I **have finished**. She **has arrived**.\nРезультат сейчас: I **have lost** my keys (и сейчас их нет).\n−: I **haven't finished**. ?: **Have** you **finished**?\nСтоп: это не «прошедшее время» — это настоящее о прошлом!",
+        "rule_md": "I **have finished**. She **has arrived**. — Готово, результат у нас прямо сейчас.\n\nPresent Perfect — настоящее о прошлом: когда именно — не важно, важен результат.\n\n**Формула:** результат сейчас → have/has + 3-я форма\n- I **have lost** my keys (и сейчас их нет). − : I **haven't finished**.\n- ? : **Have** you **finished**?\n\nПо-русски «уже сделал» — прошедшее; по-английски это настоящее время — итог виден сейчас.\n\n⚠️ Ловушка (ЛТ-08): ❌ I have finished yesterday → ✔ I **finished** yesterday (точное время — Past Simple).\n\nПроверь себя: Она уже пришла: She ___ already ___. → has…arrived",
         "phrase_ids": ["ph-b-0001", "ph-b-0002", "ph-b-0003", "ph-b-0004", "ph-b-0005"],
         "trap_id": "trap-didnt-past"
       },
@@ -188,7 +188,7 @@
       "grammar_point": {
         "id": "gp-b-02",
         "title_ru": "Маркеры Present Perfect",
-        "rule_md": "**already / never / ever.**\n**already** = «уже»: I have **already** eaten.\n**never** = «никогда»: I have **never** been to Japan.\n**ever** = «когда-нибудь» (вопросы): **Have** you **ever** been to Italy?\nbeen to = «был (и вернулся)»; gone to = «поехал (там)».",
+        "rule_md": "I have **already** eaten. I have **never** been to Japan. **Have** you **ever** been to Italy?\n\nНаречия опыта встают между have и 3-й формой.\n\n**Формула:** already/never/ever → have + наречие + V3\n- **already** = уже; **never** = никогда; **ever** = когда-нибудь (вопросы)\n- **been to** = был (и вернулся); **gone to** = поехал (там сейчас)\n\nПо-русски «уже/никогда» свободно бегают по фразе; по-английски у них строгое место — сразу после have/has.\n\n⚠️ Ловушка (ЛТ-08): ❌ I never saw this film (опыт без даты) → ✔ I have **never seen** this film.\n\nПроверь себя: Ты когда-нибудь был в Риме? ___ you ___ been to Rome? → Have…ever",
         "phrase_ids": ["ph-b-0054", "ph-b-0055", "ph-b-0056", "ph-b-0057", "ph-b-0058"],
         "trap_id": "trap-didnt-past"
       },
@@ -366,7 +366,7 @@
       "grammar_point": {
         "id": "gp-b-03",
         "title_ru": "just, yet, recently",
-        "rule_md": "**just / yet / recently.**\n**just** = «только что»: I have **just** finished.\n**yet** = «ещё» (−) / «уже» (?): I haven't finished **yet**.\n**recently / lately** = «в последнее время».\nРазница: just now + Past Simple / just + Present Perfect.",
+        "rule_md": "I have **just** finished. I haven't finished **yet**.\n\nСвежесть результата: just/yet подсказывают, что Perfect уместен.\n\n**Формула:** только что → have just + V3; ещё не → haven't + V3 + yet\n- **just** = только что; **yet** = ещё (−) / уже (?); **recently/lately** = в последнее время\n\nПо-русски «только что» согласуется с прошедшим; по-английски just + Present Perfect держит связь с сейчас.\n\n⚠️ Ловушка (ЛТ-08): ❌ I just finished (результат важен сейчас) → ✔ I**'ve just finished**. (just now + Past — о точном моменте).\n\nПроверь себя: Я ещё не поел: I haven't eaten ___. → yet",
         "phrase_ids": ["ph-b-0098", "ph-b-0099", "ph-b-0100", "ph-b-0101", "ph-b-0102"],
         "trap_id": "trap-didnt-past"
       },
@@ -539,7 +539,7 @@
       "grammar_point": {
         "id": "gp-b-04",
         "title_ru": "V3-интенсив",
-        "rule_md": "**3-я форма неправильных глаголов.**\nbe→been, go→gone, see→seen, do→done, take→taken, know→known,\nwrite→written, eat→eaten, speak→spoken, forget→forgotten, break→broken…\nhave/has + V3: He **has gone**. I have never **flown**.\nТоп-50 V3 форм — интенсив-урок.",
+        "rule_md": "He **has gone**. I have never **flown**. — Третья форма в деле.\n\nИнтенсив-урок: топ-50 participles для have/has.\n\n**Формула:** have/has + V3 (третья форма)\n- be→been, go→gone, see→seen, do→done, take→taken, know→known\n- write→written, eat→eaten, speak→spoken, forget→forgotten, break→broken\n\nПо-русски причастие «сделавший» — из прошедшего; по-английски V3 — отдельная форма, учи тройками: go-went-gone.\n\n⚠️ Ловушка (ЛТ-08): ❌ He has went → ✔ He has **gone** (после have — только V3).\n\nПроверь себя: Она написала письмо: She ___ ___ a letter. → has…written",
         "phrase_ids": ["ph-b-0142", "ph-b-0143", "ph-b-0144", "ph-b-0145", "ph-b-0146"],
         "trap_id": "trap-didnt-past"
       },
@@ -717,7 +717,7 @@
       "grammar_point": {
         "id": "gp-b-05",
         "title_ru": "Повторение: Present Perfect база",
-        "rule_md": "**Повторение №15: Present Perfect база.**\nhave/has + V3; already, never, ever, just, yet, recently;\nbeen to vs gone to; have + V3 как «результат сейчас».\nДиктант: маркеры подскажут время — слушай внимательно.",
+        "rule_md": "have/has + V3; **already**, **never**, **ever**, **just**, **yet**; **been** to vs **gone** to.\n\nПовторение №15: база Present Perfect — результат сейчас, опыт без даты.\n\n- Наречие — сразу после have/has; точное время → Past Simple\n\nПроверь себя: Я только что потерял ключи: I've ___ lost my keys. → just",
         "phrase_ids": ["ph-b-0203", "ph-b-0204", "ph-b-0205", "ph-b-0206", "ph-b-0207"],
         "trap_id": "trap-didnt-past"
       },
@@ -893,7 +893,7 @@
       "grammar_point": {
         "id": "gp-b-06",
         "title_ru": "Контраст времён",
-        "rule_md": "**Present Perfect vs Past Simple.**\nРезультат/опыт (когда — не важно): I **have seen** it. — Present Perfect\nМомент в прошлом (yesterday, ago, last…): I **saw** it **yesterday**.\n⚠️ Ловушка ЛТ-16: с точным прошедшим временем — только Past Simple:\n❌ I have seen it yesterday → I **saw** it yesterday.",
+        "rule_md": "I **have seen** it. — I **saw** it yesterday. Одно действие, разные вопросы.\n\nВыбор времени — по маркеру: есть дата прошедшего — Past Simple.\n\n**Формула:** результат/опыт → have + V3; yesterday/ago/last… → Past Simple\n- Have you ever been to Rome? / When **did** you **go** there?\n\nПо-русски «видел/видел вчера» — одно время; по-английски дата в фразе меняет всю конструкцию.\n\n⚠️ Ловушка (ЛТ-16): ❌ I have seen it yesterday → ✔ I **saw** it yesterday.\n\nПроверь себя: Я только что закончил / Я закончил в пять: I ___ just ___. / I ___ at five. → have…finished / finished",
         "phrase_ids": ["ph-b-0248", "ph-b-0249", "ph-b-0250", "ph-b-0251", "ph-b-0252"],
         "trap_id": "trap-present-perfect"
       },
@@ -1066,7 +1066,7 @@
       "grammar_point": {
         "id": "gp-b-07",
         "title_ru": "have been + V-ing",
-        "rule_md": "**Present Perfect Continuous.**\nhave/has been + V-ing: I **have been learning** for two years.\n= «делаю уже сколько-то» (процесс до сих пор):\nHow long **have** you **been waiting**? — I**'ve been waiting** for 20 min.\nРезультат процесса: I'm tired — I **have been running**.",
+        "rule_md": "How long **have** you **been waiting**? — I**'ve been waiting** for 20 minutes.\n\nPresent Perfect Continuous — процесс, который тянется до сих пор.\n\n**Формула:** делаю уже сколько-то → have/has been + V-ing\n- I **have been learning** for two years. Результат процесса: I'm tired — I **have been running**.\n\nПо-русски «жду уже 20 минут» — одним настоящим; по-английски длина процесса получает свою форму.\n\n⚠️ Ловушка (ЛТ-29): ❌ I am here since morning → ✔ I **have been** here since morning (since — Perfect).\n\nПроверь себя: Учу уже год: I ___ ___ ___ for a year. → have been learning",
         "phrase_ids": ["ph-b-0293", "ph-b-0294", "ph-b-0295", "ph-b-0296", "ph-b-0297"],
         "trap_id": "trap-present-perfect"
       },
@@ -1244,7 +1244,7 @@
       "grammar_point": {
         "id": "gp-b-08",
         "title_ru": "Предшествование в прошлом",
-        "rule_md": "**Past Perfect: had + V3.**\nПредшествование: действие ДО другого прошедшего:\nI **had finished** before you **came**. (сначала finished — потом came)\nМаркеры: by the time, before, after, already, never…before.\nShe said she **had** already **eaten**.",
+        "rule_md": "I **had finished** before you **came**. — Сначала закончил, потом ты пришёл.\n\nPast Perfect — «прошлое раньше прошлого».\n\n**Формула:** раньше другого прошедшего → had + V3\n- Маркеры: by the time, before, after, already, never…before\n- She said she **had** already **eaten**.\n\nПо-русски «успел до того, как» — приставкой; по-английски предшествование показывает had + V3.\n\n⚠️ Ловушка (ЛТ-16): ❌ When I came, he already ate → ✔ he **had** already **eaten**.\n\nПроверь себя: Поезд ушёл до прихода: The train ___ ___ before I arrived. → had…left",
         "phrase_ids": ["ph-b-0337", "ph-b-0338", "ph-b-0339", "ph-b-0340", "ph-b-0341"],
         "trap_id": "trap-present-perfect"
       },
@@ -1422,7 +1422,7 @@
       "grammar_point": {
         "id": "gp-b-09",
         "title_ru": "Контрольная: совершенные времена",
-        "rule_md": "**Повторение №16: совершенные времена.**\nPresent Perfect (have+V3), PPC (have been+Ving), Past Perfect (had+V3).\nКонтрольная: выбери время, поставь форму, найди ошибку.\nСтратегия: маркер → время; результат-сейчас → Perfect; процесс → PPC.",
+        "rule_md": "have + V3 / have been + V-ing / had + V3 — три совершенных в один кадр.\n\nПовторение №16: контрольная по Perfect-семье.\n\n- Стратегия: маркер → время; результат-сейчас → Perfect; процесс → PPC; раньше прошлого → Past Perfect\n\nПроверь себя: Жду час (процесс): I ___ ___ ___ for an hour. → have been waiting",
         "phrase_ids": ["ph-b-0381", "ph-b-0382", "ph-b-0383", "ph-b-0384", "ph-b-0385"],
         "trap_id": "trap-present-perfect"
       },
@@ -1607,7 +1607,7 @@
       "grammar_point": {
         "id": "gp-b-10",
         "title_ru": "If it rains, I'll stay",
-        "rule_md": "**Условные 0 и 1.**\n0 (закон): **If** you heat water, it **boils**. (настоящее в обеих)\n1 (реальное будущее): **If it rains**, I **'ll stay**. (if+настоящее, will)\n⚠️ Ловушка ЛТ-17: в if-части НЕТ will: ❌ if it will rain → if it rains.",
+        "rule_md": "**If** you heat water, it **boils**. **If it rains**, I**'ll stay** home.\n\nУсловные 0 и 1: закон и реальное будущее.\n\n**Формула:** 0: if + настоящее → настоящее; 1: if + настоящее → will\n- 0 — законы природы: heat → boils; 1 — реальный план: rains → 'll stay\n\nПо-русски «если будет дождь» — будущее в «если»; по-английски в if-части будущее запрещено.\n\n⚠️ Ловушка (ЛТ-17): ❌ If it will rain… → ✔ **If it rains**, I'll stay.\n\nПроверь себя: Если устану, лягу: If I ___ tired, I'll sleep. → am",
         "phrase_ids": ["ph-b-0432", "ph-b-0433", "ph-b-0434", "ph-b-0435", "ph-b-0436"],
         "trap_id": "trap-if-will"
       },
@@ -1785,7 +1785,7 @@
       "grammar_point": {
         "id": "gp-b-11",
         "title_ru": "Гипотезы и мечты",
-        "rule_md": "**Условное 2 (гипотеза).**\n**If** + Past Simple, **would** + 1-я форма:\nIf I **had** more time, I **would travel**.\nwere для всех лиц: If I **were** you…\nНереально сейчас: мечты, «если бы…».",
+        "rule_md": "**If I had** more time, I **would travel**. — Мечта, не реальность.\n\nУсловное 2 — гипотеза о сейчас.\n\n**Формула:** нереально сейчас → If + Past Simple, would + 1-я форма\n- were для всех лиц: If I **were** you…\n\nПо-русски «если бы» + прошедшее — то же движение мысли; по-английски past в if и would в ответе — строго парами.\n\n⚠️ Ловушка (ЛТ-17): ❌ If I would have time… → ✔ If I **had** time, I would travel.\n\nПроверь себя: На твоём месте я бы пошёл: If I ___ you, I'd go. → were",
         "phrase_ids": ["ph-b-0475", "ph-b-0476", "ph-b-0477", "ph-b-0478", "ph-b-0479"],
         "trap_id": "trap-if-will"
       },
@@ -1963,7 +1963,7 @@
       "grammar_point": {
         "id": "gp-b-12",
         "title_ru": "I wish I were there",
-        "rule_md": "**wish: сожаления.**\n**I wish** + Past Simple = «жаль, что не так сейчас»: I wish I **were** there.\n**I wish** + would = «хотел бы, чтобы перестал»: I wish it **would stop**.\n**If only** = то же, но сильнее: If only I **knew**!\nshould have / could have — упущенные возможности.",
+        "rule_md": "I wish I **were** there. — Жаль, что не так.\n\nwish — сожаление о настоящем.\n\n**Формула:** «жаль, что не так» → I wish + Past Simple\n- I wish it **would stop** — «хотел бы, чтобы перестало»; **If only** = то же, но сильнее\n- Упущенное: should have / could have done\n\nПо-русски «жаль, что я не там» — честным предложением; по-английски сожаление упаковывается в wish + past.\n\n⚠️ Ловушка (ЛТ-17): ❌ I wish I am there → ✔ I wish I **were** there.\n\nПроверь себя: Жаль, что не знаю: I wish I ___. → knew",
         "phrase_ids": ["ph-b-0519", "ph-b-0520", "ph-b-0521", "ph-b-0522", "ph-b-0523"],
         "trap_id": "trap-if-will"
       },
@@ -2141,7 +2141,7 @@
       "grammar_point": {
         "id": "gp-b-13",
         "title_ru": "used to + be used to",
-        "rule_md": "**used to.**\n**used to** + 1-я форма = «раньше было» (сейчас нет):\nI **used to live** in London. ? : **Did** you **use to** play?\nbe/get **used to** + -ing = «привык»: I'**m used to getting** up early.\nРазница: «раньше было» vs «привычка сейчас».",
+        "rule_md": "I **used to live** in London. — Раньше жил, сейчас нет.\n\nused to — привычка из прошлого, которой больше нет.\n\n**Формула:** раньше было → used to + 1-я форма\n- ?: **Did** you **use to** play? be/get **used to** + -ing = «привык (сейчас)»: I'**m used to getting** up early.\n\nПо-русски «раньше» — словом; по-английски вся конструкция меняется, а «привык сейчас» — другая (be used to).\n\n⚠️ Ловушка: ❌ I am used to live there (привычка) → ✔ I **used to live** there (раньше) / I'**m used to living** there (привык).\n\nПроверь себя: Раньше курил: I ___ ___ smoke. → used to",
         "phrase_ids": ["ph-b-0563", "ph-b-0564", "ph-b-0565", "ph-b-0566", "ph-b-0567"],
         "trap_id": "trap-articles"
       },
@@ -2319,7 +2319,7 @@
       "grammar_point": {
         "id": "gp-b-14",
         "title_ru": "Повторение: условия и привычки",
-        "rule_md": "**Повторение №17: условия и привычки.**\nУсловные 0/1/2: if + настоящее/will; if + Past/would; if + had/would have.\nwish + were/would; used to «раньше» vs be used to «привык».\nСтратегия: «реально или гипотеза?» → 1 или 2; «сейчас или раньше?» → be/get.",
+        "rule_md": "If it rains → 'll stay; If I had → would; If I had had → would have.\n\nПовторение №17: условные 0/1/2, wish, used to vs be used to.\n\n- Стратегия: реально → 1; гипотеза → 2; «жаль» → wish + Past; «раньше» → used to\n\nПроверь себя: Если бы знал, позвонил бы: If I ___ ___, I would call. → had known",
         "phrase_ids": ["ph-b-0609", "ph-b-0610", "ph-b-0611", "ph-b-0612", "ph-b-0613"],
         "trap_id": "trap-if-will"
       },
@@ -2501,7 +2501,7 @@
       "grammar_point": {
         "id": "gp-b-15",
         "title_ru": "Придаточные определительные",
-        "rule_md": "**Relative clauses: who / which / that.**\nwho — о людях: the man **who** lives here.\nwhich/that — о вещах: the book **that** I read.\nwhere — о местах: the town **where** I was born.\nМожно опустить that/who, если это не подлежащее:\nthe book (that) I read — можно без that.",
+        "rule_md": "The man **who** lives here. The book **that** I read. The town **where** I was born.\n\nRelative clauses сшивают два предложения в одно.\n\n**Формула:** о ком/о чём → who / which(that) / where\n- who — люди; which/that — вещи; where — места\n- Не подлежащее — можно опустить: the book (that) I read\n\nПо-русски «который» склоняется; по-английски одно слово who/which и строго вперёд.\n\n⚠️ Ловушка: ❌ the man which lives here → ✔ the man **who** lives here.\n\nПроверь себя: Город, где я родился: the town ___ I was born. → where",
         "phrase_ids": ["ph-b-0656", "ph-b-0657", "ph-b-0658", "ph-b-0659", "ph-b-0660"],
         "trap_id": "trap-articles"
       },
@@ -2674,7 +2674,7 @@
       "grammar_point": {
         "id": "gp-b-16",
         "title_ru": "Gerund or infinitive",
-        "rule_md": "**Герундий vs инфинитив.**\nГерундий (-ing) после: enjoy, finish, stop, give up:\nI enjoy **reading**. Stop **talking**.\nИнфинитив (to + V1) после: want, need, decide, hope, promise, plan:\nI want **to go**. She decided **to stay**.\nIt's + прил. + to: It's important **to be** honest.",
+        "rule_md": "I enjoy **reading**. — I want **to go**. Оба глагола рядом с «люблю/хочу».\n\nПосле одних глаголов — -ing, после других — to + 1-я форма.\n\n**Формула:** enjoy/finish/stop/give up → -ing; want/need/decide/hope/plan → to V1\n- It's + прил. + **to**: It's important **to be** honest.\n\nПо-русски инфинитив везде один; по-английски выбор -ing/to — свой у каждого глагола-хозяина.\n\n⚠️ Ловушка (ЛТ-18): ❌ I enjoy to read → ✔ I enjoy **reading**.\n\nПроверь себя: Решил остаться: She decided ___ ___. → to stay",
         "phrase_ids": ["ph-b-0708", "ph-b-0709", "ph-b-0710", "ph-b-0711", "ph-b-0712"],
         "trap_id": "trap-want-that"
       },
@@ -2852,7 +2852,7 @@
       "grammar_point": {
         "id": "gp-b-17",
         "title_ru": "Phrasal verbs: travel",
-        "rule_md": "**Фразовые глаголы I: путешествия.**\ncheck **in/out** — регистрироваться/выезжать\ntake **off** — взлетать; снимать (одежду)\nget **on/off** — садиться/выходить (транспорт)\nset **off** — отправляться\nturn **on/off/up/down** — включить/выключить/громче/тише",
+        "rule_md": "We **checked in**, the plane **took off**, I **got off** at the wrong stop.\n\nФразовые глаголы путешествий: глагол + частица = новый смысл.\n\n**Формула:** ситуация → блок (глагол + частица)\n- check **in/out**; take **off** (взлетать/снимать); get **on/off** (транспорт); set **off** (отправляться)\n- turn **on/off/up/down** — включить/выключить/громче/тише\n\nПо-русски «регистрироваться/взлетать» — одним словом; по-английски смысл меняет частица, учи блоками.\n\n⚠️ Ловушка: ❌ check to the hotel → ✔ **check in** (at the hotel).\n\nПроверь себя: Самолёт взлетел: The plane ___ ___. → took off",
         "phrase_ids": ["ph-b-0752", "ph-b-0753", "ph-b-0754", "ph-b-0755", "ph-b-0756"],
         "trap_id": "trap-articles"
       },
@@ -3030,7 +3030,7 @@
       "grammar_point": {
         "id": "gp-b-18",
         "title_ru": "Phrasal verbs: search & decisions",
-        "rule_md": "**Фразовые глаголы II: поиск и решения.**\nlook **up** — посмотреть (в словаре)\nfind **out** — узнать, выяснить\nturn **out** — оказаться\ngive **up** — сдаваться, бросить\nrun **out of** — закончиться (запас)\nlook forward **to** — ждать с нетерпением\nget **along** — ладить\nwork **out** — сложиться, получиться",
+        "rule_md": "I'll **look it up**. — It **turned out** fine. — We **ran out of** coffee.\n\nФразовые глаголы поиска и решений.\n\n**Формула:** ситуация → блок\n- look **up** (словарь); find **out** (выяснить); turn **out** (оказаться); give **up** (сдаться)\n- run **out of**; look forward **to**; get **along**; work **out**\n\nПо-русски «выяснил/сдался» — корнем слова; по-английски те же смыслы живут в частицах.\n\n⚠️ Ловушка (ЛТ-10): ❌ I'm waiting the news → ✔ waiting **for** — аналогично: run out **of**, look forward **to**: частица — часть блока.\n\nПроверь себя: Ждём с нетерпением: We're looking forward ___ it. → to",
         "phrase_ids": ["ph-b-0818", "ph-b-0819", "ph-b-0820", "ph-b-0821", "ph-b-0822"],
         "trap_id": "trap-wait-for"
       },
@@ -3208,7 +3208,7 @@
       "grammar_point": {
         "id": "gp-b-19",
         "title_ru": "Повторение модуля B3",
-        "rule_md": "**Повторение №18: связные фразы.**\nRelative clauses (who/which/that), герундий vs инфинитив,\nфразовые глаголы I (check in, take off, get on) и II (look up, find out,\nturn out, give up, run out of, look forward to).",
+        "rule_md": "who/which/that · enjoy doing / want to do · check in / look up / run out of.\n\nПовторение №18: связные фразы ранга B.\n\n- Правило хозяина: после enjoy — -ing, после want — to; после фразового — его частица\n\nПроверь себя: Сдался: ___ ___. → give up",
         "phrase_ids": ["ph-b-0862", "ph-b-0863", "ph-b-0864", "ph-b-0865", "ph-b-0866"],
         "trap_id": "trap-want-that"
       },
@@ -3384,7 +3384,7 @@
       "grammar_point": {
         "id": "gp-b-20",
         "title_ru": "Passive voice базово",
-        "rule_md": "**Пассив: be + V3.**\n**is/are made**, **was/were built**, **will be done**:\nThis bridge **was built** in 1900. English **is spoken** here.\nКто делает — не важно; важно — с кем/что делают:\nby + исполнитель: written **by** a famous author.",
+        "rule_md": "This bridge **was built** in 1900. English **is spoken** here.\n\nПассив: важен объект, а не исполнитель.\n\n**Формула:** над кем/чем → be + V3\n- is/are made, was/were built, will be done; исполнитель: **by** a famous author\n\nПо-русски «мост построили» — безликое множественное; по-английски объект становится подлежащим + be + V3.\n\n⚠️ Ловушка (ЛТ-16): ❌ The bridge was build → ✔ was **built** (be + V3).\n\nПроверь себя: Книги продаются здесь: Books ___ ___ here. → are sold",
         "phrase_ids": ["ph-b-0928", "ph-b-0929", "ph-b-0930", "ph-b-0931", "ph-b-0932"],
         "trap_id": "trap-present-perfect"
       },
@@ -3562,7 +3562,7 @@
       "grammar_point": {
         "id": "gp-b-21",
         "title_ru": "Reported speech",
-        "rule_md": "**Косвенная речь.**\nHe said (that) he **was** busy. (was → было)\nShe said she **would** come. (will → would)\nHe said he **had** finished. (have → had)\nВопрос → if/whether + прямой порядок слов:\nHe asked **if I was** ready. (Нет do/does!)\nCould you tell me where the station **is**? (не «where is»)",
+        "rule_md": "He said he **was** busy. She said she **would** come.\n\nКосвенная речь: пересказ уводит время на шаг назад.\n\n**Формула:** чужие слова → said + was/would/had\n- Вопрос → if/whether + прямой порядок: He asked **if I was** ready (без do/does!)\n- Could you tell me where the station **is**? (не «where is»)\n\nПо-русски пересказ не двигает времена; по-английски say-said тянет за собой was/would/had.\n\n⚠️ Ловушка (ЛТ-20): ❌ Tell me where is the station → ✔ where the station **is**.\n\nПроверь себя: Он сказал, что придёт: He said he ___ come. → would",
         "phrase_ids": ["ph-b-0972", "ph-b-0973", "ph-b-0974", "ph-b-0975", "ph-b-0976"],
         "trap_id": "trap-indirect-question"
       },
@@ -3740,7 +3740,7 @@
       "grammar_point": {
         "id": "gp-b-22",
         "title_ru": "Tag questions",
-        "rule_md": "**Разделительные вопросы (tag questions).**\n+, −: You know, **don't you?** / It's cold, **isn't it?**\n−, +: You don't smoke, **do you?** / It isn't raining, **is it?**\nПравило: повторить be/auxiliary в противоположном знаке.\nLet's go, **shall we?** — исключение.",
+        "rule_md": "It's cold, **isn't it?** You don't smoke, **do you?**\n\nTag question — приглашение согласиться.\n\n**Формула:** + → −; − → + (повторить be/помощник)\n- It isn't raining, **is it?** Let's go, **shall we?** — исключение.\n\nПо-русски «не так ли? / да?» — одно на всё; по-английски хвост повторяет глагол фразы с обратным знаком.\n\n⚠️ Ловушка (ЛТ-19): ❌ It's cold, is it? → ✔ It's cold, **isn't it?** (плюс — минус).\n\nПроверь себя: Ты готов, ___ ___? → aren't you",
         "phrase_ids": ["ph-b-1024", "ph-b-1025", "ph-b-1026", "ph-b-1027", "ph-b-1028"],
         "trap_id": "trap-question-word-order"
       },
@@ -3918,7 +3918,7 @@
       "grammar_point": {
         "id": "gp-b-23",
         "title_ru": "Adjective + preposition",
-        "rule_md": "**Предлоги после прилагательных.**\nafraid **of**, good/bad **at**, interested **in**, fond **of**,\nproud **of**, tired/sick **of**, famous **for**, worried **about**,\nangry **with** (чел.) / **about** (о Situation), different **from**,\nsimilar **to**, keen **on**, full **of**, used **to**.",
+        "rule_md": "I'm good **at** it. She's afraid **of** dogs.\n\nПредлог — часть прилагательного.\n\n**Формула:** прилагательное → свой предлог\n- afraid **of**; good/bad **at**; interested **in**; fond/proud/tired **of**; famous **for**; worried **about**\n- angry **with** (чел.) / **about** (о ситуации); different **from**; keen **on**; full **of**\n\nПо-русски падеж заменяет предлог; по-английски пара «прилагательное + предлог» — единый блок.\n\n⚠️ Ловушка (ЛТ-10): ❌ good in English → ✔ good **at** English.\n\nПроверь себя: Горжусь тобой: I'm proud ___ you. → of",
         "phrase_ids": ["ph-b-1068", "ph-b-1069", "ph-b-1070", "ph-b-1071", "ph-b-1072"],
         "trap_id": "trap-wait-for"
       },
@@ -4096,7 +4096,7 @@
       "grammar_point": {
         "id": "gp-b-24",
         "title_ru": "Повторение модуля B4",
-        "rule_md": "**Повторение №19: чужая речь.**\nПассив, косвенная речь, разделительные вопросы,\nпредлоги после прилагательных.\nПунктуация: косвенный вопрос БЕЗ «?»: He asked if I was ready.",
+        "rule_md": "be + V3 · said + was/would · It's cold, isn't it? · afraid of, good at.\n\nПовторение №19: пассив и чужая речь.\n\n- Косвенный вопрос — БЕЗ «?»: He asked if I was ready.\n\nПроверь себя: Она спросила, готов ли я: She asked ___ I was ready. → if",
         "phrase_ids": ["ph-b-1112", "ph-b-1113", "ph-b-1114", "ph-b-1115", "ph-b-1116"],
         "trap_id": "trap-indirect-question"
       },
@@ -4272,7 +4272,7 @@
       "grammar_point": {
         "id": "gp-b-25",
         "title_ru": "Phrasal verbs: life & relationships",
-        "rule_md": "**Фразовые глаголы III: быт и отношения.**\neat **out** — есть вне дома; look forward **to** — ждать с нетерпением;\nget **along** — ладить; run **out of** — закончиться;\nbe fed **up with** — быть сытым по горло; put **up with** — терпеть;\ncome **up with** — придумать; end **up** — оказаться в итоге;\nbump **into** — случайно встретить; come **across** — наткнуться;\ntake **care of** — заботиться.",
+        "rule_md": "We **eat out** on Fridays. I **bumped into** him yesterday.\n\nФразовые глаголы быта и отношений.\n\n**Формула:** ситуация → блок\n- look **after** (заботиться); put **up with** (терпеть); come **up with** (придумать); end **up** (оказаться)\n- bump **into** / come **across** (случайно встретить/наткнуться); be fed **up with**; get **along**\n\nПо-русски «наткнулся/терплю» — разными словами; по-английски семья get/come + частица покрывает их все.\n\n⚠️ Ловушка (ЛТ-10): ❌ take care about → ✔ take care **of**.\n\nПроверь себя: Забочусь о сестре: I look ___ my sister. → after",
         "phrase_ids": ["ph-b-1156", "ph-b-1157", "ph-b-1158", "ph-b-1159", "ph-b-1160"],
         "trap_id": "trap-wait-for"
       },
@@ -4450,7 +4450,7 @@
       "grammar_point": {
         "id": "gp-b-26",
         "title_ru": "Modal verbs mix",
-        "rule_md": "**Модальный микс.**\nmust (обязательно!) / have to (вынужден) / should (совет) /\n'd better (лучше бы) / might (возможно) / can't be (не может быть!).\nУверенные догадки: must be late = «должно быть, поздно»;\ncan't be true = «не может быть правдой».",
+        "rule_md": "You **must** see it! I **have to** work. You**'d better** hurry.\n\nМодальный микс: сила обязанности и уверенность догадки.\n\n**Формула:** степень необходимости → must > have to > should > 'd better\n- Догадки: He **must be** late = «должно быть»; It **can't be** true = «не может быть»\n\nПо-русски «обязательно/вынужден/стоит» — наречиями; по-английски степень выбирает модальный глагол.\n\n⚠️ Ловушка (ЛТ-30): ❌ You must to go → ✔ You **must** go (после модального — без to).\n\nПроверь себя: Должно быть, он спит: He ___ be sleeping. → must",
         "phrase_ids": ["ph-b-1200", "ph-b-1201", "ph-b-1202", "ph-b-1203", "ph-b-1204"],
         "trap_id": "trap-if-will"
       },
@@ -4628,7 +4628,7 @@
       "grammar_point": {
         "id": "gp-b-27",
         "title_ru": "Диалог без подготовки",
-        "rule_md": "— Are you ready to order? — Yes, a coffee, please.\n— Have you ever been abroad? — Yes, I have been to three countries.\n**Это и есть диалог-сценка на скорости**: реплика собеседника — и твой ответ сразу, без подготовки и без перевода в голове.\nПравила скорости:\n1. Отвечай в ту же секунду и коротко: чем проще фраза, тем быстрее диалог.\n2. Не помнишь слово — скажи иначе: своими словами можно всегда, точность не главное.\n3. Тяни время красиво: Well… / Let me think… / Actually…\n4. Универсальные ответы выручают везде: It depends. / It's up to you. / Maybe next time.",
+        "rule_md": "— Are you ready to order? — Yes, a coffee, please.\n\nДиалог-сценка на скорости: реплика собеседника — и твой ответ сразу, без перевода в голове.\n\n**Формула:** услышал вопрос → отвечай в ту же секунду\n1. Коротко: чем проще фраза, тем быстрее диалог.\n2. Не помнишь слово — скажи иначе: своими словами можно всегда.\n3. Сценка имеет исход: заказ принят, столик занят — не только «правильный ответ».\n\nПо-русски мы думаем над ответом; здесь правило то же, но на английском — реплика в ту же секунду.\n\nПроверь себя: Официант: Anything to drink? — Твой ответ: ___. → (Water, please. — любой уместный)",
         "phrase_ids": ["ph-b-0466", "ph-b-0553", "ph-b-1197"],
         "trap_id": null
       },
@@ -4683,7 +4683,7 @@
       "grammar_point": {
         "id": "gp-b-28",
         "title_ru": "Adverbs and intensifiers",
-        "rule_md": "**Наречия и усилители.**\nquite = довольно; really = действительно; a bit = немного;\nvery much = очень; absolutely = абсолютно; completely = полностью;\ntoo = слишком; enough = достаточно (ПОСЛЕ слова!);\nrather = довольно; pretty = довольно (разг.); by far = несомненно.",
+        "rule_md": "**Quite** good. **Really**? Just **a bit**. — Дозировка качества.\n\nУсилители и ослабители встают перед словом, которое меняют.\n\n**Формула:** степень → quite/really/a bit/absolutely + слово\n- too = слишком; enough = достаточно (ПОСЛЕ слова!); rather/pretty = довольно; by far = несомненно\n\nПо-русски «довольно/немножко» тоже дозируют; по-английски главное — место: enough идёт после прилагательного.\n\n⚠️ Ловушка (ЛТ-22): ❌ I very like it → ✔ I like it **very much**.\n\nПроверь себя: Достаточно хорошо: good ___. → enough",
         "phrase_ids": ["ph-b-1244", "ph-b-1245", "ph-b-1246", "ph-b-1247", "ph-b-1248"],
         "trap_id": "trap-very-like"
       },
@@ -4861,7 +4861,7 @@
       "grammar_point": {
         "id": "gp-b-29",
         "title_ru": "Повторение: весь ранг B",
-        "rule_md": "**Повторение №20: весь ранг B.**\nФразовые глаголы III, модальный микс, усилители — плюс всё из B1–B4:\nPresent Perfect семья, условные/wish/used to, пассив, косвенная речь.",
+        "rule_md": "Perfect-семья · условные · пассив · фразовые I–III · quite, a bit.\n\nПовторение №20: весь ранг B перед большими Вратами.\n\n- Диктант-микс: маркеры подскажут время\n\nПроверь себя: quite good / a bit tired / I like it very ___. → much",
         "phrase_ids": ["ph-b-1289", "ph-b-1290", "ph-b-1291", "ph-b-1292", "ph-b-1293"],
         "trap_id": "trap-very-like"
       },
@@ -5037,7 +5037,7 @@
       "grammar_point": {
         "id": "gp-b-30",
         "title_ru": "Сборка всего ранга B",
-        "rule_md": "**Большое повторение перед Вратами A.**\nВСЁ ранга B: PP/PPC/Past Perfect, условные 0/1/2, wish, used to,\nпассив, косвенная речь, tag questions, adj+prep, relative clauses,\nгерундий vs инфинитив, фразовые глаголы I–III, модальный микс,\nусилители. Разговорник: все ситуации.\nВрата A ждут, Охотник!",
+        "rule_md": "Present Perfect семья, условные 0/1/2, wish, used to, пассив, косвенная речь, tag questions, фразовые I–III.\n\nБольшое повторение ранга B — генеральная репетиция Врат A.\n\n- Стратегия на все: маркер → время; хозяин → -ing/to; объект в фокус → пассив\n\nПроверь себя: If I ___ you… / I wish I ___… / She said she ___ come. → were / knew / would",
         "phrase_ids": ["ph-b-1334", "ph-b-1335", "ph-b-1336", "ph-b-1337", "ph-b-1338"],
         "trap_id": "trap-present-perfect"
       },

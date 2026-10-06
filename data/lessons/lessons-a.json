@@ -10,7 +10,7 @@
       "grammar_point": {
         "id": "gp-a-03",
         "title_ru": "Выбор времени по маркеру",
-        "rule_md": "**Карта всех основных времён (11 из 12).**\nPresent: I work / I am working / I have worked / I have been working\nPast: I worked / I was working / I had worked / I had been working\nFuture: I will work / I will be working / I will have worked\nВыбирай время по маркеру: yesterday → Past, now → Pres.Cont., every day → Pres.S.",
+        "rule_md": "I **work** / I **am working** / I **have worked** — один день, четыре картинки настоящего.\n\nКарта времён: время выбирает маркер в фразе, не перевод.\n\n**Формула:** маркер → время\n- every day → Present Simple; now → Present Continuous\n- just/already → Present Perfect; for/since + до сих пор → Perfect Continuous\n- yesterday → Past Simple; at five yesterday → Past Continuous; by then → Future Perfect\n\nПо-русски время чаще в контексте; по-английски слово-маркер прямо диктует форму глагола.\n\n⚠️ Ловушка (ЛТ-16): ❌ I have seen him yesterday → ✔ I **saw** him yesterday.\n\nПроверь себя: Look! It ___ (rain). → is raining",
         "phrase_ids": ["ph-a-0059", "ph-a-0060", "ph-a-0061", "ph-a-0062", "ph-a-0063"],
         "trap_id": "trap-present-perfect"
       },
@@ -188,7 +188,7 @@
       "grammar_point": {
         "id": "gp-a-04",
         "title_ru": "being + V3 / been + V3",
-        "rule_md": "**Пассив: Continuous и Perfect.**\nPres.Cont.Passive: is/are **being** + V3: The road **is being repaired**.\nPres.Perf.Passive: has/have **been** + V3: The bridge **has been built**.\nPast Perf.Passive: had been + V3: The house **had been sold**.",
+        "rule_md": "The road **is being repaired**. — Дорогу чинят прямо сейчас (не она чинит).\n\nПассив Continuous и Perfect: процесс и результат в залоге-объекте.\n\n**Формула:** пассив процесса → is/are being + V3; пассив результата → has/have been + V3\n- The bridge **has been built**. The house **had been sold**.\n\nПо-русски «строят/построили» — безлично; по-английски даже процесс получает свой пассив — being + V3.\n\n⚠️ Ловушка (ЛТ-16): ❌ The road is repairing → ✔ is **being repaired**.\n\nПроверь себя: Мост уже построили: The bridge ___ ___ ___. → has been built",
         "phrase_ids": ["ph-a-0089", "ph-a-0090", "ph-a-0091", "ph-a-0092", "ph-a-0093"],
         "trap_id": "trap-present-perfect"
       },
@@ -366,7 +366,7 @@
       "grammar_point": {
         "id": "gp-a-05",
         "title_ru": "will be / must be done",
-        "rule_md": "**Пассив: будущее и модальные.**\nFuture Passive: will **be** + V3: The results **will be announced**.\nModal Passive: must/can/should **be** + V3: This **must be done**.\nВыбор: актив (кто делает) vs пассив (что происходит).",
+        "rule_md": "The results **will be announced**. This **must be done**.\n\nПассив будущего и модальных: любое время переносится в «be + V3».\n\n**Формула:** will/must/can/should + be + V3\n- Выбор: актив (важен деятель) ↔ пассив (важен объект)\n\nПо-русски «объявят/должны сделать» — безлично; по-английски модальный + be + V3 собирает всё в одну форму.\n\n⚠️ Ловушка (ЛТ-30): ❌ must to be done → ✔ must **be** done.\n\nПроверь себя: Результаты объявят завтра: The results ___ ___ announced. → will be",
         "phrase_ids": ["ph-a-0120", "ph-a-0121", "ph-a-0122", "ph-a-0123", "ph-a-0124"],
         "trap_id": "trap-present-perfect"
       },
@@ -544,7 +544,7 @@
       "grammar_point": {
         "id": "gp-a-06",
         "title_ru": "Повторение модуля A1",
-        "rule_md": "**Повторение №21: все времена + пассив.**\nFuture Continuous/Perfect; все 12 времён по маркерам; пассив всех\nвремен (is made / was built / is being built / has been built / will be done).\nКонтрольная: выбери время и залог.",
+        "rule_md": "is made · was built · is being built · has been built · will be done.\n\nПовторение №21: все времена + пассив всех времён.\n\n- Стратегия: маркер → время; объект в фокус → пассив\n\nПроверь себя: Завтра отремонтируют: It ___ ___ ___ tomorrow. → will be fixed",
         "phrase_ids": ["ph-a-0145", "ph-a-0146", "ph-a-0147", "ph-a-0148", "ph-a-0149"],
         "trap_id": "trap-present-perfect"
       },
@@ -720,7 +720,7 @@
       "grammar_point": {
         "id": "gp-a-07",
         "title_ru": "Модальные + have + V3",
-        "rule_md": "**must have / can't have / may have done.**\n**must have** + V3 = «должно быть» (уверенность):\nHe **must have forgotten**.\n**can't have** + V3 = «не может быть»:\nHe **can't have said** that.\n**may/might have** + V3 = «возможно»:\nShe **may have changed** her mind.",
+        "rule_md": "He **must have forgotten**. — Должно быть, забыл.\n\nДогадки о прошлом: уверенность — модальным + have + V3.\n\n**Формула:** степень уверенности → must/may/can't have + V3\n- точно: must have done; возможно: may/might have done; исключено: can't have done\n\nПо-русски «наверняка/возможно» — наречиями; по-английски степень несёт сам модальный.\n\n⚠️ Ловушка (ЛТ-16): ❌ He must forgot → ✔ He must **have forgotten**.\n\nПроверь себя: Не может быть, что он это сказал: He ___ ___ said that. → can't have",
         "phrase_ids": ["ph-a-0175", "ph-a-0176", "ph-a-0177", "ph-a-0178", "ph-a-0179"],
         "trap_id": "trap-present-perfect"
       },
@@ -898,7 +898,7 @@
       "grammar_point": {
         "id": "gp-a-08",
         "title_ru": "Сожаления и упрёки",
-        "rule_md": "**should have done: сожаления и упрёки.**\n**should have** + V3 = «надо было»: You **should have called**.\n**shouldn't have** + V3 = «не надо было»: I **shouldn't have said** that.\n**could have** + V3 = «мог бы»: We **could have won**.\nwish + had + V3 = «жаль, что не…»: I **wish I had studied**.",
+        "rule_md": "You **should have called**. — Надо было позвонить (а не позвонил).\n\nСожаления и упрёки о прошлом.\n\n**Формула:** надо было / не надо было / мог бы → should(n't) have / could have + V3\n- I **shouldn't have said** that. We **could have won**.\n- I **wish I had studied**. — жаль, что не учился.\n\nПо-русски «надо было/мог бы» — сослагательно и свободно; по-английски упущенное — строго have + V3.\n\n⚠️ Ловушка (ЛТ-16): ❌ You should called → ✔ You should **have called**.\n\nПроверь себя: Мог бы выиграть: We ___ ___ won. → could have",
         "phrase_ids": ["ph-a-0210", "ph-a-0211", "ph-a-0212", "ph-a-0213", "ph-a-0214"],
         "trap_id": "trap-present-perfect"
       },
@@ -1076,7 +1076,7 @@
       "grammar_point": {
         "id": "gp-a-09",
         "title_ru": "Нереальное прошлое",
-        "rule_md": "**3-е условное: нереальное прошлое.**\n**If** + Past Perfect, **would have** + V3:\nIf I **had studied**, I **would have passed**.\nЕсли бы… тогда (обе части — в прошлом, изменить нельзя).\nОтрицание: If he **hadn't lied**, she **would have stayed**.",
+        "rule_md": "If I **had studied**, I **would have passed**. — Не выучил — не сдал.\n\nТретье условное: нереальное прошлое, изменить нельзя.\n\n**Формула:** если бы тогда → If + Past Perfect, would have + V3\n- If he **hadn't lied**, she **would have stayed**.\n\nПо-русски «если бы выучил — сдал бы» — тоже сослагательное; по-английски обе части имеют фиксированные формы.\n\n⚠️ Ловушка (ЛТ-17): ❌ If I would have studied… → ✔ If I **had studied**, I would have passed.\n\nПроверь себя: Если бы знал, позвонил бы: If I ___ ___, I ___ ___ called. → had known / would have",
         "phrase_ids": ["ph-a-0245", "ph-a-0246", "ph-a-0247", "ph-a-0248", "ph-a-0249"],
         "trap_id": "trap-if-will"
       },
@@ -1254,7 +1254,7 @@
       "grammar_point": {
         "id": "gp-a-10",
         "title_ru": "Mixed conditionals",
-        "rule_md": "**Смешанные условные + wish глубже.**\nПрошлое → настоящее: If I **had saved** money, I **would be** rich **now**.\nwish + Past Perfect = «жаль, что не…» в прошлом:\nI wish I **had studied**. (= I didn't study)\nwish + wouldn't = раздражение: I wish it **would stop**.",
+        "rule_md": "If I **had saved** money, I **would be** rich **now**. — Прошлый выбор, сегодняшний итог.\n\nСмешанное условное: времена в частях разные, связь — причинно-следственная.\n\n**Формула:** прошлое → сейчас: If + Past Perfect, would + 1-я форма\n- wish + Past Perfect = «жаль, что не…» тогда: I wish I **had studied**.\n- wish + wouldn't = раздражение: I wish it **would stop**.\n\nПо-русски «если бы тогда… сейчас бы» — свободно; по-английски сдвиг времени виден в формах: had saved → would be.\n\n⚠️ Ловушка (ЛТ-17): ❌ If I had saved, I would have been rich now → ✔ I **would be** rich **now** (итог — в настоящем).\n\nПроверь себя: Жаль, что не спросил: I wish I ___ ___. → had asked",
         "phrase_ids": ["ph-a-0280", "ph-a-0281", "ph-a-0282", "ph-a-0283", "ph-a-0284"],
         "trap_id": "trap-if-will"
       },
@@ -1432,7 +1432,7 @@
       "grammar_point": {
         "id": "gp-a-11",
         "title_ru": "Контрольная: модальные в прошедшем",
-        "rule_md": "**Повторение №22: модальные в прошедшем.**\nmust have / can't have / may have — догадки о прошлом.\nshould(n't) have — сожаления. could have — упущенное.\n3-е условное (if had… would have). wish + had V3.\nКонтрольная: выбери форму, найди ошибку.",
+        "rule_md": "must have · can't have · should have · could have · If I had… would have.\n\nПовторение №22: модальные о прошлом — контрольная.\n\n- Догадка / сожаление / упущенное / нереальное прошлое\n\nПроверь себя: Должно быть, ушёл: He ___ ___ left. → must have",
         "phrase_ids": ["ph-a-0314", "ph-a-0315", "ph-a-0316", "ph-a-0317", "ph-a-0318"],
         "trap_id": "trap-if-will"
       },
@@ -1608,7 +1608,7 @@
       "grammar_point": {
         "id": "gp-a-01",
         "title_ru": "Процесс в будущем",
-        "rule_md": "**Future Continuous: will be + V-ing.**\nПроцесс в будущем: This time tomorrow I'**ll be flying** to Rome.\n«Занят в момент»: Don't call at eight — I'**ll be cooking**.\nЗапрос вежливо: **Will** you **be using** the car tomorrow?",
+        "rule_md": "This time tomorrow I'**ll be flying** to Rome. — Завтра в это же время — в полёте.\n\nFuture Continuous: процесс в будущем.\n\n**Формула:** занят в момент будущего → will be + V-ing\n- Don't call at eight — I'**ll be cooking**.\n- Вежливый запрос: **Will** you **be using** the car tomorrow?\n\nПо-русски «завтра в это время буду лететь» — словами; по-английски длина процесса в будущем — своя форма.\n\n⚠️ Ловушка (ЛТ-16): ❌ I'll flying → ✔ I'**ll be flying**.\n\nПроверь себя: Завтра в пять буду готовить: I ___ ___ ___ at five. → will be cooking",
         "phrase_ids": ["ph-a-0001", "ph-a-0002", "ph-a-0003", "ph-a-0004", "ph-a-0005"],
         "trap_id": "trap-present-perfect"
       },
@@ -1786,7 +1786,7 @@
       "grammar_point": {
         "id": "gp-a-02",
         "title_ru": "Завершённость к моменту",
-        "rule_md": "**Future Perfect: will have + V3.**\nЗавершённость к моменту: By next year, he'**ll have finished**.\nМаркеры: by then, by the time, by 2030, in two years.\nShe'**ll have left** by then. = «уже уедет к тому времени».",
+        "rule_md": "By next year, he'**ll have finished**. — К следующему году уже закончит.\n\nFuture Perfect: завершённость к точке будущего.\n\n**Формула:** к моменту X → will have + V3\n- Маркеры: by then, by the time, by 2030, in two years. She'**ll have left** by then.\n\nПо-русски «уже сделает к тому времени» — уточнением; по-английски предельная точка требует will have + V3.\n\n⚠️ Ловушка (ЛТ-16): ❌ He will finished by then → ✔ He'**ll have finished**.\n\nПроверь себя: К вечеру уже уйдёт: She ___ ___ ___ by evening. → will have left",
         "phrase_ids": ["ph-a-0032", "ph-a-0033", "ph-a-0034", "ph-a-0035", "ph-a-0036"],
         "trap_id": "trap-present-perfect"
       },
@@ -1964,7 +1964,7 @@
       "grammar_point": {
         "id": "gp-a-12",
         "title_ru": "Каузатив: услуга за нас",
-        "rule_md": "**have something done — «мне сделали».**\nРаботу делает кто-то другой для нас: I **had my hair cut** — мне подстригли волосы (не сам стриг).\nСхема: have + объект + V3. She's **having her car repaired** — ей сейчас ремонтируют машину.\nПрошедшее/вопрос через did: Where **did** you **have** it **done**?\nБудущее: I'**ll have** the room **cleaned** — мне уберут номер (отель).",
+        "rule_md": "I **had my hair cut**. — Мне подстригли волосы (не сам стриг).\n\nhave something done: работу делает кто-то для нас.\n\n**Формула:** мне сделали → have + объект + V3\n- She's **having her car repaired**. ?: Where **did** you **have** it **done**?\n- Будущее: I'**ll have** the room **cleaned**.\n\nПо-русски «мне подстригли» — дательным «мне»; по-английски вся услуга упакована в have + объект + V3.\n\n⚠️ Ловушка (ЛТ-13): ❌ I did my hair cut → ✔ I **had** my hair **cut** (услуга — have, не do).\n\nПроверь себя: Мне починили машину: I ___ my car ___. → had…fixed",
         "phrase_ids": ["ph-a-0354", "ph-a-0355", "ph-a-0356", "ph-a-0357", "ph-a-0358"],
         "trap_id": "trap-do-make"
       },
@@ -2145,7 +2145,7 @@
       "grammar_point": {
         "id": "gp-a-13",
         "title_ru": "Привычки и желания",
-        "rule_md": "**get used to / be used to / feel like.**\nget used to = привыкать (процесс): I'**m getting used to** the climate.\nbe used to + герундий/существительное = уже привык: She'**s used to working** nights.\nПосле to — герундий: used to **living**, не «to live».\nfeel like + герундий = хочется: I **feel like eating** out tonight.\nОтдельно: used to + V1 = «раньше»: I **used to live** alone (прошлая привычка, не путай с be used to living).",
+        "rule_md": "I'**m getting used to** the climate. She'**s used to working** nights.\n\nПривыкание: процесс и состояние.\n\n**Формула:** привыкаю → get used to + -ing; привык → be used to + -ing; хочется → feel like + -ing\n- Отдельно: used to + V1 = «раньше»: I **used to live** alone.\n\nПо-русски «привыкаю/привык» — видом глагола; по-английски get (процесс) против be (состояние), и после to — только -ing.\n\n⚠️ Ловушка (ЛТ-09): ❌ I feel myself good → ✔ I **feel** good. И: used to **living** (не «to live»).\n\nПроверь себя: Хочется пройтись: I feel like ___. → walking",
         "phrase_ids": ["ph-a-0388", "ph-a-0389", "ph-a-0390", "ph-a-0391", "ph-a-0392"],
         "trap_id": "trap-feel-myself"
       },
@@ -2326,7 +2326,7 @@
       "grammar_point": {
         "id": "gp-a-14",
         "title_ru": "whose, предлог + whom/which",
-        "rule_md": "**Сложные relative clauses.**\nwhose = чей: The man **whose** car was stolen…\nФормальный стиль — предлог перед whom/which: the people **with whom** I work…\nРазговорный — предлог в конце: the friend I told you **about**.\nЗапятые — только в добавочных уточнениях (о том, кто и так известен): My brother, who lives in Rome, is a chef.",
+        "rule_md": "The man **whose** car was stolen. — Человек, чью машину угнали.\n\nСложные relative clauses: принадлежность и формальный стиль.\n\n**Формула:** чей → whose; формально → предлог + whom/which; разговорно → предлог в конец\n- the people **with whom** I work = the friend I told you **about**\n- Запятые — только в добавочных уточнениях: My brother, who lives in Rome, is a chef.\n\nПо-русски «чей/которым» — согласованием; по-английски whose не меняется, а запятая меняет смысл фразы.\n\n⚠️ Ловушка (ЛТ-21): ❌ I think, that… → ✔ I think **that**… (и без запятой перед that).\n\nПроверь себя: Девушка, чей это телефон: the girl ___ phone this is. → whose",
         "phrase_ids": ["ph-a-0423", "ph-a-0424", "ph-a-0425", "ph-a-0426", "ph-a-0427"],
         "trap_id": "trap-comma-that"
       },
@@ -2502,7 +2502,7 @@
       "grammar_point": {
         "id": "gp-a-15",
         "title_ru": "Контрольная: продвинутые конструкции",
-        "rule_md": "**Повторение №23: продвинутые конструкции.**\nhave something done — мне сделали: I **had** my hair **cut**.\nbe/get used to + герундий: She'**s used to working** under pressure.\nrelative clauses: whose, предлог + whom/which, контактные.\nКонтрольная: найди ошибку, выбери форму.",
+        "rule_md": "had my hair cut · used to working · whose · the people with whom.\n\nПовторение №23: продвинутые конструкции — контрольная.\n\n- Услуга → have + объект + V3; привычка → be/get used to + -ing\n\nПроверь себя: Мне убрали номер: I ___ the room ___. → had…cleaned",
         "phrase_ids": ["ph-a-0457", "ph-a-0458", "ph-a-0459", "ph-a-0460", "ph-a-0461"],
         "trap_id": "trap-do-make"
       },
@@ -2681,7 +2681,7 @@
       "grammar_point": {
         "id": "gp-a-16",
         "title_ru": "figure out, fall through, put up with",
-        "rule_md": "**Фразовые глаголы B2.**\nfigure **out** — разобраться; come **across** — наткнуться.\nbe up **to** — затевать; fall **through** — сорваться.\nturn **out** — оказаться; end **up** — закончить тем, что.\nput up **with** — терпеть; run **out of** — закончиться.\nЧастица меняет смысл — учи глагол целиком.",
+        "rule_md": "I need to **figure out** how it works. The plan **fell through**.\n\nФразовые глаголы B2: смысл держится на частице.\n\n**Формула:** ситуация → блок\n- figure **out** (разобраться); come **across** (наткнуться); be up **to** (затевать)\n- fall **through** (сорваться); turn **out** (оказаться); end **up** (закончить тем, что)\n- put up **with** (терпеть); run **out of** (закончиться)\n\nПо-русски «сорвалось/разобрался» — разными корнями; по-английски одна семья глагол+частица покрывает всё.\n\n⚠️ Ловушка (ЛТ-10): ❌ run out money → ✔ run out **of** money.\n\nПроверь себя: План сорвался: The plan ___ ___. → fell through",
         "phrase_ids": ["ph-a-0487", "ph-a-0488", "ph-a-0489", "ph-a-0490", "ph-a-0491"],
         "trap_id": "trap-wait-for"
       },
@@ -2862,7 +2862,7 @@
       "grammar_point": {
         "id": "gp-a-17",
         "title_ru": "Формальная оценка",
-        "rule_md": "**Усилители.**\nНаречие подбирается к прилагательному:\n**highly** unlikely / successful; **deeply** disappointed / grateful.\n**absolutely / utterly** + «экстремальные» прилагательные: freezing, exhausted, brilliant.\n«Very freezing» — нельзя: freezing уже экстремальное, его не усиливают very.",
+        "rule_md": "**Highly** unlikely. **Deeply** grateful. **Absolutely** freezing.\n\nУсилители подбираются к прилагательному, а не «very» на всё.\n\n**Формула:** обычное прил. → very/quite; экстремальное → absolutely/utterly; брендовое — своим: highly, deeply, bitterly\n- absolutely + freezing/exhausted/brilliant (very freezing — нельзя)\n\nПо-русски «очень» подходит почти везде; по-английски у сильных прилагательных свои усилители.\n\n⚠️ Ловушка (ЛТ-22): ❌ I very like it → ✔ I like it **very much**; ❌ very freezing → ✔ **absolutely** freezing.\n\nПроверь себя: Крайне маловероятно: ___ unlikely. → Highly",
         "phrase_ids": ["ph-a-0519", "ph-a-0520", "ph-a-0521", "ph-a-0522", "ph-a-0523"],
         "trap_id": "trap-very-like"
       },
@@ -3034,7 +3034,7 @@
       "grammar_point": {
         "id": "gp-a-18",
         "title_ru": "Оценка действий: герундий",
-        "rule_md": "**there's no point / have difficulty.**\nThere's no point **in arguing** — нет смысла спорить (герундий!).\nhave difficulty **finding** — трудно найти: We **had difficulty finding** the place.\nIt's no use **complaining**. / It's worth **seeing**.\nПосле этих конструкций — всегда герундий, не инфинитив.",
+        "rule_md": "There's no point **in arguing**. We **had difficulty finding** the place.\n\nГерундиевые конструкции оценки ситуации.\n\n**Формула:** нет смысла / трудно / стоит → + -ing\n- There's no point **in arguing**; have difficulty **finding**; It's no use **complaining**; It's worth **seeing**\n\nПо-русски «нет смысла спорить» — инфинитивом; по-английски эти хозяева принимают только -ing.\n\n⚠️ Ловушка (ЛТ-18): ❌ There's no point to argue → ✔ no point **in arguing**.\n\nПроверь себя: Стоит посмотреть: It's worth ___. → seeing",
         "phrase_ids": ["ph-a-0549", "ph-a-0550", "ph-a-0551", "ph-a-0552", "ph-a-0553"],
         "trap_id": "trap-want-that"
       },
@@ -3215,7 +3215,7 @@
       "grammar_point": {
         "id": "gp-a-19",
         "title_ru": "Эмфаза обратным порядком",
-        "rule_md": "**Инверсия — эмфаза.**\nОтрицательное наречие вперёд + вопросительный порядок слов:\n**Never have I** seen… / **Little did they** know. / Rarely **does he** complain.\nУсловные без if: **Had I** known… = If I had known… / **Were I** you… / **Should you** need…\nNo sooner **had we left** than… — не успели мы выйти, как…",
+        "rule_md": "**Never have I** seen such a thing. **Little did they** know.\n\nИнверсия-эмфаза: отрицание вперёд — порядок слов вопросительный.\n\n**Формула:** Never/Little/Rarely/No sooner… → вспомогательный + подлежащее\n- Условные без if: **Had I** known… / **Were I** you… / **Should you** need…\n- No sooner **had we left** than…\n\nПо-русски «никогда не видел такого» — обычный порядок; по-английски вынос отрицания вперёд включает инверсию.\n\n⚠️ Ловушка (ЛТ-19): ❌ Never I have seen → ✔ Never **have I** seen.\n\nПроверь себя: Мало кто знает: Little ___ they know. → do",
         "phrase_ids": ["ph-a-0579", "ph-a-0580", "ph-a-0581", "ph-a-0582", "ph-a-0583"],
         "trap_id": "trap-question-word-order"
       },
@@ -3396,7 +3396,7 @@
       "grammar_point": {
         "id": "gp-a-20",
         "title_ru": "Контрольная: стиль",
-        "rule_md": "**Повторение №24: стиль.**\nУсилители: highly unlikely, deeply grateful, absolutely freezing.\nГерундий: there's no point in arguing, have difficulty parking, it's worth trying.\nИнверсия: Little did they know… / Never have I… / Had I known…\nФразовые: fall through, figure out, put up with, run out of.",
+        "rule_md": "highly unlikely · no point in arguing · Little did they know · fall through.\n\nПовторение №24: стиль — контрольная.\n\n- Усилители по прилагательным; герундий после оценки; инверсия после отрицания\n\nПроверь себя: Никогда не видел: Never ___ ___ seen it. → have I",
         "phrase_ids": ["ph-a-0609", "ph-a-0610", "ph-a-0611", "ph-a-0612", "ph-a-0613"],
         "trap_id": "trap-very-like"
       },
@@ -3575,7 +3575,7 @@
       "grammar_point": {
         "id": "gp-a-21",
         "title_ru": "Три цитаты уровня B2",
-        "rule_md": "**Капсула: разбор сцены.**\nТри цитаты уровня B2: «My friends… you bow to no one» (LOTR), «It makes them feel invisible» (Black Mirror), «We'll fight to survive» (Berserk).\nВслушайся в регистр: торжественный, бытовой, эпический.\nРазбор сцены: Кто? Что поставлено на карту? Где переломный момент?",
+        "rule_md": "«My friends… you bow to no one» — торжественно. «It makes them **feel** invisible» — буднично.\n\nКапсула: разбор сцены на трёх цитатах B2.\n\n**Формула:** разбор → вопросы сцены\n- Кто говорит и кому? Что поставлено на карту? Где переломный момент?\n- Регистры: торжественный (LOTR), бытовой (Black Mirror), эпический (Berserk)\n\nПо-русски тон слышим переводом; по-английски регистр слышен в выборе слов — вслушайся, прежде чем переводить.\n\n⚠️ Ловушка (ЛТ-09): ❌ It makes them to feel → ✔ makes them **feel** (после make — голый глагол).\n\nПроверь себя: Заставляет чувствовать: It makes them ___. → feel",
         "phrase_ids": ["ph-a-0639", "ph-a-0640", "ph-a-0641", "ph-a-0642", "ph-a-0643"],
         "trap_id": "trap-feel-myself"
       },
@@ -3754,7 +3754,7 @@
       "grammar_point": {
         "id": "gp-a-22",
         "title_ru": "Финальная тренировка перед Вратами S",
-        "rule_md": "**Большое повторение ранга A.**\nВремена: Future Continuous/Perfect, пассив всех времён.\nМодальные в прошедшем: must have / should have / 3-е условное / wish.\nКонструкции: have something done, be/get used to, relative clauses.\nСтиль: фразовые B2, усилители, инверсия, there's no point.\nЭто последняя тренировка перед Вратами S.",
+        "rule_md": "will be cooking · will have finished · must have gone · had my hair cut · Little did they know.\n\nБольшое повторение ранга A — генеральная перед Вратами S.\n\n- Времена: Future Cont./Perf.; пассив всех времён; модальные о прошлом\n- Конструкции: have something done, be/get used to, relative clauses\n- Стиль: фразовые B2, усилители, инверсия, there's no point\n\nПроверь себя: Если бы знал — позвонил бы: Had I ___, I would have called. → known",
         "phrase_ids": ["ph-a-0669", "ph-a-0670", "ph-a-0671", "ph-a-0672", "ph-a-0673"],
         "trap_id": "trap-if-will"
       },

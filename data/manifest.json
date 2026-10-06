@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "content_version": 2,
-  "generated_at": "2026-10-06T10:25:06Z",
+  "generated_at": "2026-10-06T11:28:08Z",
   "files": [
     {
       "path": "lessons/exercises-a.json",
@@ -50,14 +50,14 @@
       "kind": "lessons",
       "schema_version": 1,
       "items": 22,
-      "sha256": "7ac52f4f9f71b8141b670efd558ebcab89b44b7bcd88ff42e15cb611d856d461"
+      "sha256": "c9a9bb3f1c2390b048d3ef828b2188d65957ac931f6ecbbb8c573f643196edd6"
     },
     {
       "path": "lessons/lessons-b.json",
       "kind": "lessons",
       "schema_version": 1,
       "items": 30,
-      "sha256": "d6ef54faca52e9f6be600a3220d6858849e8a523e80281d83e0b2330aafaa948"
+      "sha256": "a2a47216c83f3a840a6a5dec2d0f1ad9d74f1f74f38e556a7449b388577995d8"
     },
     {
       "path": "lessons/lessons-c.json",
