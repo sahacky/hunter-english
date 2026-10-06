@@ -64,16 +64,17 @@ function driveTick(view: LessonView): boolean {
 
   const phrase = view.phrasesById[String(exercise?.payload.phrase_id ?? '')]
   if (exercise?.type === 'word_bank' && input) {
-    fireEvent.change(input, { target: { value: smartMode ? (phrase?.text_en ?? 'zzz') : 'zzz wrong' } })
+    fireEvent.change(input, {
+      target: { value: smartMode ? (phrase?.text_en ?? 'zzz') : 'zzz wrong' },
+    })
     fireEvent.submit(input.closest('form')!)
     return true
   }
   if (input) {
     const gap = exercise?.payload.gap_answers as string[] | undefined
-    const good =
-      ['translate', 'dictation', 'find_error'].includes(exercise?.type ?? '')
-        ? (phrase?.text_en ?? '')
-        : (gap?.[0] ?? '')
+    const good = ['translate', 'dictation', 'find_error'].includes(exercise?.type ?? '')
+      ? (phrase?.text_en ?? '')
+      : (gap?.[0] ?? '')
     fireEvent.change(input, { target: { value: smartMode ? good || 'zzz' : 'zzz' } })
     fireEvent.submit(input.closest('form')!)
     return true
