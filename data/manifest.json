@@ -1,49 +1,49 @@
 {
   "schema_version": 1,
   "content_version": 2,
-  "generated_at": "2026-10-07T07:14:21Z",
+  "generated_at": "2026-10-07T11:33:22Z",
   "files": [
     {
       "path": "lessons/exercises-a.json",
       "kind": "exercises",
       "schema_version": 1,
       "items": 1071,
-      "sha256": "08b103cf435a15bbb8ac1eb600997d18dd3d362169148746a9b6f83b604b3351"
+      "sha256": "4bb47ae816ad6d05accb199531acbe676f5d79a5daf0116fd62792a8415bff8c"
     },
     {
       "path": "lessons/exercises-b.json",
       "kind": "exercises",
       "schema_version": 1,
       "items": 1420,
-      "sha256": "42f0012bdc79121027206983f0679b79003c8059d6e91c8df8e15405f5bbeb73"
+      "sha256": "d451c7acdc30354e0c99df64bfe82623f17a1907e8a40d7bc6f2f52f8db18c50"
     },
     {
       "path": "lessons/exercises-c.json",
       "kind": "exercises",
       "schema_version": 1,
       "items": 1460,
-      "sha256": "90c1a8ee53b7755ac64314e1c7868bf9c03e639fc76d22d996d36a4f1dd42a19"
+      "sha256": "8f3a5882dd5dd74a619f4030d427f38d85c92d9708db9cd6d5f65c8e01e9df6e"
     },
     {
       "path": "lessons/exercises-d.json",
       "kind": "exercises",
       "schema_version": 1,
       "items": 1371,
-      "sha256": "14bc971fc06bec8fe2b17b5fe6950336873573089a4f2c8dee69690c679e4f37"
+      "sha256": "84b66e515d864b7c2c3d22db9e01b3a3ac5427579a494059fd903f5b0665d588"
     },
     {
       "path": "lessons/exercises-e.json",
       "kind": "exercises",
       "schema_version": 1,
       "items": 1151,
-      "sha256": "4e7ca7c6db4bf62e3bdb5cebe16eb5c4853cb118530fb11c90b564b47860135d"
+      "sha256": "1457898e8e07739faf8a3fd769e4c81ab484e18c2f7ae161566d9da93964f493"
     },
     {
       "path": "lessons/exercises-s.json",
       "kind": "exercises",
       "schema_version": 1,
       "items": 745,
-      "sha256": "58dc07f2a43c104ae6da3a7de63cfdf30dcbabb37b44e4f5d1b4900862d1d213"
+      "sha256": "704781c478da15935249e896ec3ea0bde681443f7d06631f9f51e353914b5a43"
     },
     {
       "path": "lessons/lessons-a.json",
@@ -259,8 +259,8 @@
       "path": "quotes/jujutsu-kaisen.json",
       "kind": "quotes",
       "schema_version": 1,
-      "items": 17,
-      "sha256": "95546e880d5e6830257a2b9c61399cc12f77c4c69cb01e682f548cc977f283ee"
+      "items": 16,
+      "sha256": "a94c9dea19e863d8e3f3c4fc3d374ecb40dabddd895dc3d8056d7312941bd02b"
     },
     {
       "path": "quotes/lord-of-the-rings.json",
@@ -281,7 +281,7 @@
       "kind": "quotes",
       "schema_version": 1,
       "items": 15,
-      "sha256": "87c98ed144dfb75909aaf90d86fb643e1c61a8d38dd5474252f39bd301b8aeac"
+      "sha256": "a03b898a296e7299591009d578a46f4fd5f54dce569afcb3c22193a90ae23e34"
     },
     {
       "path": "quotes/star-wars.json",

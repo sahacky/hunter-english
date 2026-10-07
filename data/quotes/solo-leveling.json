@@ -187,7 +187,7 @@
    "source_url": "https://screenrant.com/solo-leveling-best-jinwoo-quotes/",
    "season_episode": "Jinwoo (вебтун гл. 148, эпиграф страницы фан-вики)",
    "speaker": "Jinwoo",
-   "text": "I'm going to protect my family, even if it means turning all the hunters in the world against me",
+   "text": "I'm going to protect my family, even if it means turning all the hunters in the world against me.",
    "translation_ru": "Я защищу свою семью, даже если это значит, что все охотники мира ополчатся на меня.",
    "grammar_tags": [
     "be going to",
@@ -198,7 +198,7 @@
    "auto_vocab": {
     "top1000": 0.63
    },
-   "confidence": "verbatim (parallel research) — needs source check",
+   "confidence": "проверено 2026-10-07: фандом (webtoon гл. 148, Liu Zhigang) + независимые посты",
    "link_playphrase": "https://www.playphrase.me/#/search?q=I%27m%20going%20to%20protect%20my%20family%2C%20even%20if%20it%20means%20turning%20all%20the%20hunters%20in%20the%20world%20against%20me",
    "audio": {
     "en_gb": "audio/quotes/cori/q-solo-leveling-0009.opus"
@@ -208,20 +208,20 @@
    "id": "q-solo-leveling-0010",
    "title": "Solo Leveling",
    "source_url": "https://screenrant.com/solo-leveling-best-jinwoo-quotes/",
-   "season_episode": "Слоган франшизы (офиц. англ. название)",
+   "season_episode": "Слоган франшизы (офиц. англ. название новеллы на Webnovel)",
    "speaker": "Слоган франшизы",
-   "text": "I alone level up",
+   "text": "Only I level up",
    "translation_ru": "Только я прокачиваюсь.",
    "grammar_tags": [
-    "Инверсия",
+    "фокус-вынесение Only I",
     "phrasal level up"
    ],
    "est_rank": "C",
    "auto_vocab": {
     "top1000": 1.0
    },
-   "confidence": "verbatim (parallel research) — needs source check",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=I%20alone%20level%20up",
+   "confidence": "проверено 2026-10-07: Wikipedia + фандом (публикационная история): офиц. «Only I Level Up»; «I alone level up» — фанатский перевод",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Only%20I%20level%20up",
    "audio": {
     "en_gb": "audio/quotes/cori/q-solo-leveling-0010.opus"
    }
@@ -242,7 +242,7 @@
    "auto_vocab": {
     "top1000": 0.5
    },
-   "confidence": "verbatim (parallel research) — needs source check",
+   "confidence": "проверено 2026-10-07: субтитры S1E1 (subslikescript) + фандом-эпитет",
    "link_playphrase": "https://www.playphrase.me/#/search?q=The%20weakest%20hunter%20of%20all%20mankind",
    "audio": {
     "en_gb": "audio/quotes/cori/q-solo-leveling-0011.opus"
@@ -264,7 +264,7 @@
    "auto_vocab": {
     "top1000": 0.83
    },
-   "confidence": "verbatim (parallel research) — needs source check",
+   "confidence": "проверено 2026-10-07: системное окно (webtoon гл. 10–11, on-screen S1E2/E3) — 3+ независимых источника",
    "link_playphrase": "https://www.playphrase.me/#/search?q=You%20have%20acquired%20the%20qualifications%20to%20be%20a%20Player.%20Will%20you%20accept%3F",
    "audio": {
     "en_gb": "audio/quotes/cori/q-solo-leveling-0012.opus"
@@ -274,20 +274,20 @@
    "id": "q-solo-leveling-0013",
    "title": "Solo Leveling",
    "source_url": "https://screenrant.com/solo-leveling-best-jinwoo-quotes/",
-   "season_episode": "Jinwoo (арка Jeju)",
+   "season_episode": "Jinwoo → Король муравьёв (эп. S2E12, субтитры)",
    "speaker": "Jinwoo",
-   "text": "A mere insect",
-   "translation_ru": "Простое насекомое.",
+   "text": "You can talk even though you're just an insect.",
+   "translation_ru": "Ты умеешь говорить, хоть ты и всего лишь насекомое.",
    "grammar_tags": [
-    "mere + существительное",
-    "презрение одним словом"
+    "even though (уступка)",
+    "just + существительное"
    ],
    "est_rank": "D",
    "auto_vocab": {
-    "top1000": 0.33
+    "top1000": 0.67
    },
-   "confidence": "verbatim (parallel research) — needs source check",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=A%20mere%20insect",
+   "confidence": "проверено 2026-10-07: полный транскрипт S2E12 (subslikescript); «A mere insect» — пересказ фандома, репликой не является",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=You%20can%20talk%20even%20though%20you%27re%20just%20an%20insect.",
    "audio": {
     "en_gb": "audio/quotes/cori/q-solo-leveling-0013.opus"
    }
@@ -296,20 +296,21 @@
    "id": "q-solo-leveling-0014",
    "title": "Solo Leveling",
    "source_url": "https://screenrant.com/solo-leveling-best-jinwoo-quotes/",
-   "season_episode": "Jinwoo (адапт. реплика S2, дубляж)",
+   "season_episode": "Jinwoo (эп. 7, субтитры)",
    "speaker": "Jinwoo",
-   "text": "Don't worry about me. I'm stronger than yesterday",
-   "translation_ru": "Не волнуйся за меня. Я сильнее, чем вчера.",
+   "text": "If I'm the only one in the world who can level up, that's a different story.",
+   "translation_ru": "Если я единственный в мире, кто может прокачиваться, — это совсем другая история.",
    "grammar_tags": [
-    "worry about",
-    "сравнительная степень + than"
+    "if + Present Simple (реальное условие)",
+    "the only one who…",
+    "can + инфинитив"
    ],
    "est_rank": "D",
    "auto_vocab": {
-    "top1000": 0.5
+    "top1000": 0.88
    },
-   "confidence": "verbatim (parallel research) — needs source check",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Don%27t%20worry%20about%20me.%20I%27m%20stronger%20than%20yesterday",
+   "confidence": "проверено 2026-10-07: фандом Episode 7; прежний текст «Don't worry about me. I'm stronger than yesterday» не найден в транскриптах S1–S2 — заменён",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=If%20I%27m%20the%20only%20one%20in%20the%20world%20who%20can%20level%20up%2C%20that%27s%20a%20different%20story.",
    "audio": {
     "en_gb": "audio/quotes/cori/q-solo-leveling-0014.opus"
    }
@@ -330,7 +331,7 @@
     "top1000": 1.0
    },
    "confidence": "статья Screen Rant; уточнить по дубляжу/субтитрам: текст взят из статьи-подборки, заголовки там в Title Case — регистр нормализован",
-   "note": "⚠ сверить с дубляжом",
+   "note": "⚠ официальный вариант слогана — «Only I level up» (см. q-solo-leveling-0010); здесь рендеринг Screen Rant",
    "link_playphrase": "https://www.playphrase.me/#/search?q=I%20alone%20level%20up.",
    "audio": {
     "en_gb": "audio/quotes/cori/q-solo-leveling-0015.opus"
