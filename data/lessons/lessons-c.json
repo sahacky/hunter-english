@@ -10,7 +10,7 @@
       "grammar_point": {
         "id": "gp-c-14",
         "title_ru": "going to vs will",
-        "rule_md": "**be going to: планы и намерения.**\nam/is/are going to + 1-я форма: I'**m going to travel** this summer.\nПлан заранее: We **are going to visit** Rome.\nОчевидное будущее: It **is going to** rain (небо тёмное).\nwill — решение сейчас; going to — план заранее.\n⚠️ Ловушка: I'm going **to bed** — это настоящее время («иду спать»), не план!",
+        "rule_md": "I'**m going to travel** this summer. — План уже созрел.\n\nbe going to — будущее, которое запланировано или уже видно.\n\n**Формула:** план заранее / очевидное → am/is/are going to + 1-я форма\n- We **are going to visit** Rome. It **is going to** rain (тучи).\n- will — решение прямо сейчас; going to — план заранее.\n\nПо-русски «собираюсь» — отдельным глаголом; по-английски вся конструкция be + going to + глагол.\n\n⚠️ Ловушка (ЛТ-18): ❌ I want that you come → ✔ I want **you to come**. И: going **to bed** — «иду спать», не будущее.\n\nПроверь себя: Мы собираемся купить машину: We ___ ___ ___ buy a car. → are going to",
         "phrase_ids": ["ph-c-0589", "ph-c-0590", "ph-c-0591", "ph-c-0592", "ph-c-0593"],
         "trap_id": "trap-want-that"
       },
@@ -183,7 +183,7 @@
       "grammar_point": {
         "id": "gp-c-11",
         "title_ru": "will: обещания и прогнозы",
-        "rule_md": "**Future Simple: will (+).**\nwill + 1-я форма: I **will call** you tomorrow. = I'**ll call**.\nОбещания и прогнозы: Everything **will** be fine. I **won't** forget.\nwill одинаков для всех лиц: he will, they will.",
+        "rule_md": "I **will call** you tomorrow. = I'**ll call**. — Обещание на будущее.\n\nwill — решение, обещание, прогноз.\n\n**Формула:** будущее → will + 1-я форма (одна форма для всех лиц)\n- Everything **will** be fine. I **won't** forget. he will / they will\n\nПо-русски будущее — «позвоню»; по-английски его ставит will, сокращай до 'll в речи.\n\n⚠️ Ловушка (ЛТ-17): ❌ I will call you when I will arrive → ✔ when I **arrive** (после when — настоящее).\n\nПроверь себя: Я обещаю: Я не опоздаю: I ___ ___ late. → won't be",
         "phrase_ids": ["ph-c-0453", "ph-c-0454", "ph-c-0455", "ph-c-0456", "ph-c-0457"],
         "trap_id": "trap-if-will"
       },
@@ -361,7 +361,7 @@
       "grammar_point": {
         "id": "gp-c-12",
         "title_ru": "won't и вопросы с will",
-        "rule_md": "**will: − и ?.**\nОтрицание: I **won't** tell anyone. (= will not)\nВопрос: **Will** you help me? — Yes, I will. / No, I won't.\nСпецвопросы: What **will** you do tomorrow? Where **will** you stay?",
+        "rule_md": "I **won't** tell anyone. **Will** you help me? — What **will** you do tomorrow?\n\nwill в минусе и вопросе.\n\n**Формула:** не буду → won't + глагол; буду ли? → Will + кто + глагол?\n- Спецвопросы: Where **will** you stay? — Yes, I will. / No, I won't.\n\nПо-русски вопрос и отрицание — частицей «не» и интонацией; по-английски will переворачивается сам.\n\n⚠️ Ловушка (ЛТ-17): ❌ When will you will arrive? → ✔ When **will** you **arrive**?\n\nПроверь себя: Ты мне поможешь? ___ you help me? → Will",
         "phrase_ids": ["ph-c-0499", "ph-c-0500", "ph-c-0501", "ph-c-0502", "ph-c-0503"],
         "trap_id": "trap-if-will"
       },
@@ -539,7 +539,7 @@
       "grammar_point": {
         "id": "gp-c-13",
         "title_ru": "Возможности: will be able to, managed to",
-        "rule_md": "**will: спецвопросы; be able to / manage to.**\nHow long **will** it take? Who **will** win?\n**will be able to** = «смогу» в будущем: I **will be able to** help tomorrow.\n**managed to** = «смог/удалось» в прошлом: We **managed to catch** the train.",
+        "rule_md": "How long **will** it take? I **will be able to** help tomorrow.\n\nСпецвопросы будущего и «могу» в разных временах.\n\n**Формула:** смогу → will be able to; удалось → managed to\n- How long will it take? Who will win?\n- We **managed to catch** the train. — «успели, смогли» в прошлом.\n\nПо-русски «смогу/смог» — одним «мочь»; по-английски у can нет будущего и прошедшего «смог» — отдельные конструкции.\n\n⚠️ Ловушка (ЛТ-30): ❌ I will can help → ✔ I will **be able to** help.\n\nПроверь себя: Я смогу прийти: I ___ ___ ___ ___ come. → will be able to",
         "phrase_ids": ["ph-c-0543", "ph-c-0544", "ph-c-0545", "ph-c-0546", "ph-c-0547"],
         "trap_id": "trap-if-will"
       },
@@ -717,7 +717,7 @@
       "grammar_point": {
         "id": "gp-c-15",
         "title_ru": "Контрольная: will/going to + Past Simple",
-        "rule_md": "**Повторение №12: будущее и прошедшее.**\nwill vs be going to: решение vs план; won't, Will you…?\nPast Simple маркеры: yesterday, ago, last…; did + 1-я форма.\nКонтрольная: трансформации будущее/прошедшее, was/were, спецвопросы.",
+        "rule_md": "will vs going to · won't, Will you…? · went / didn't go / Did…go?\n\nПовторение №12: будущее и прошедшее — контрольная.\n\n- Решение сейчас → will; план заранее → going to; yesterday → Past Simple\n\nПроверь себя: Решил прямо сейчас: I___ help you. / План: We___ ___ ___ move. → 'll / are going to",
         "phrase_ids": ["ph-c-0633", "ph-c-0634", "ph-c-0635", "ph-c-0636", "ph-c-0637"],
         "trap_id": "trap-didnt-past"
       },
@@ -902,7 +902,7 @@
       "grammar_point": {
         "id": "gp-c-16",
         "title_ru": "must и have to",
-        "rule_md": "**must / have to.**\nmust — сильная необходимость (правило, закон): You **must** show your passport.\nhave to — вынужденная необходимость: I **have to** work tomorrow.\n? только have to: **Do** you **have to** go?\nmustn't = «запрещено» ≠ don't have to = «не нужно».",
+        "rule_md": "You **must** show your passport. I **have to** work tomorrow.\n\nНеобходимость: изнутри — законом, извне — обстоятельствами.\n\n**Формула:** правило/закон → must; вынужден → have to; ? → только have to\n- **Do** you **have to** go? mustn't = «запрещено» ≠ don't have to = «не нужно»\n\nПо-русски «должен» — одно слово; по-английски источник обязанности выбирает must или have to.\n\n⚠️ Ловушка (ЛТ-30): ❌ You must to show → ✔ You **must** show.\n\nПроверь себя: Мне приходится работать: I ___ ___ work. → have to",
         "phrase_ids": ["ph-c-0685", "ph-c-0686", "ph-c-0687", "ph-c-0688", "ph-c-0689"],
         "trap_id": "trap-if-will"
       },
@@ -1080,7 +1080,7 @@
       "grammar_point": {
         "id": "gp-c-17",
         "title_ru": "should для советов",
-        "rule_md": "**should — совет.**\nshould + 1-я форма: You **should** see a doctor. You **shouldn't** eat so fast.\nСпрашиваем совет: What **should** I do?\nhad to — «пришлось» в прошлом: I **had to** wait two hours.",
+        "rule_md": "You **should** see a doctor. — Что мне делать? What **should** I do?\n\nshould — совет без давления.\n\n**Формула:** совет → should / shouldn't + 1-я форма\n- Прошедшая необходимость: I **had to** wait two hours. — «пришлось».\n\nПо-русски «стоит/надо бы» — вводными; по-английски совет живёт в should.\n\n⚠️ Ловушка (ЛТ-05): ❌ I am agree → ✔ I agree — советуй без «быть».\n\nПроверь себя: Тебе стоит отдохнуть: You ___ ___. → should rest",
         "phrase_ids": ["ph-c-0730", "ph-c-0731", "ph-c-0732", "ph-c-0733", "ph-c-0734"],
         "trap_id": "trap-im-agree"
       },
@@ -1258,7 +1258,7 @@
       "grammar_point": {
         "id": "gp-c-18",
         "title_ru": "could: умел и вежливость",
-        "rule_md": "**could — прошедшее и вежливость.**\nПрошлое (умел/мог): When I was young, I **could** run fast. I **couldn't** sleep.\nВежливая просьба: **Could** you help me, please? **Could** I have the menu?\ncould вежливее can — используй с незнакомыми.",
+        "rule_md": "**Could** you help me, please? When I was young, I **could** run fast.\n\ncould — прошлое «мог» и вежливое «могли бы».\n\n**Формула:** умел раньше → could; вежливая просьба → Could you…? / Could I…?\n- I **couldn't** sleep. could вежливее can — с незнакомыми и в сервисе.\n\nПо-русски «не могли бы вы» — сослагательно; по-английски одна форма could закрывает оба случая.\n\n⚠️ Ловушка (ЛТ-11): ❌ Could you say me…? → ✔ Could you **tell** me…?\n\nПроверь себя: Не могли бы вы принести меню? ___ you bring the menu? → Could",
         "phrase_ids": ["ph-c-0777", "ph-c-0778", "ph-c-0779", "ph-c-0780", "ph-c-0781"],
         "trap_id": "trap-said-me"
       },
@@ -1436,7 +1436,7 @@
       "grammar_point": {
         "id": "gp-c-19",
         "title_ru": "Герундий и инфинитивные конструкции",
-        "rule_md": "**like + -ing; want + object + to.**\nlike/enjoy/hate + -ing: I like **reading**. She doesn't like **flying**.\nwant + кого + to: I want **you to understand**. She wants **me to help**.\n❌ I want that you… tell + to: She told me **to wait**.\nask + to: I asked him **to help**.",
+        "rule_md": "I like **reading**. I want **you to understand**. — Два способа поставить глагол рядом.\n\nХозяин глагола решает: -ing или to.\n\n**Формула:** like/enjoy/hate → + -ing; want/tell/ask + кого → + to + глагол\n- She wants **me to help**. She told me **to wait**. I asked him **to help**.\n\nПо-русски «хочу, чтобы ты» — союзом; по-английски прямой объект + to, союза that нет.\n\n⚠️ Ловушка (ЛТ-18): ❌ I want that you understand → ✔ I want **you to understand**.\n\nПроверь себя: Хочу, чтобы ты пришёл: I want ___ ___ come. → you to",
         "phrase_ids": ["ph-c-0822", "ph-c-0823", "ph-c-0824", "ph-c-0825", "ph-c-0826"],
         "trap_id": "trap-want-that"
       },
@@ -1614,7 +1614,7 @@
       "grammar_point": {
         "id": "gp-c-20",
         "title_ru": "Контрольная: должен и могу",
-        "rule_md": "**Повторение №13: должен и могу.**\nmust/have to (mustn't = нельзя!), should (совет), could (умел/вежливо),\nlike + -ing, want + object + to, told/asked + to.\nКонтрольная: найди ошибку, поставь форму, выбери вариант.",
+        "rule_md": "must/have to · should · could · like reading · want you to…\n\nПовторение №13: «должен и могу» — контрольная.\n\n- mustn't = нельзя; don't have to = не нужно\n\nПроверь себя: Запрещено курить: You ___ ___. / Мне советуют отдохнуть: I ___ rest. → mustn't smoke / should",
         "phrase_ids": ["ph-c-0866", "ph-c-0867", "ph-c-0868", "ph-c-0869", "ph-c-0870"],
         "trap_id": "trap-want-that"
       },
@@ -1748,6 +1748,9 @@
           "id": "ex-c-0921"
         },
         {
+          "id": "ex-c-9220"
+        },
+        {
           "id": "ex-c-0922"
         },
         {
@@ -1796,7 +1799,7 @@
       "grammar_point": {
         "id": "gp-c-21",
         "title_ru": "Сравнительная и превосходная степень",
-        "rule_md": "**Сравнения: bigger / the biggest.**\nКороткие: big → **bigger** → **the biggest**; hot → hotter → the hottest.\nДлинные (3+ слога): interesting → **more** interesting → **the most** interesting.\ngood → better → the best; bad → worse → the worst.\nX is bigger **than** Y.",
+        "rule_md": "big → **bigger** → **the biggest**. interesting → **more** interesting → **the most** interesting.\n\nСравнительная лестница: выбор формы — по длине слова.\n\n**Формула:** короткое → -er/-est; длинное → more/the most\n- hot → hotter → the hottest; good → better → the best; bad → worse → the worst\n- X is bigger **than** Y.\n\nПо-русски «больше/самый» — одними словами; по-английски короткие прилагательные растут суффиксом, длинные — словами more/most.\n\n⚠️ Ловушка (ЛТ-31): ❌ more bigger → ✔ **bigger** / **much** bigger.\n\nПроверь себя: Она выше меня: She is ___ ___ me. → taller than",
         "phrase_ids": ["ph-c-0915", "ph-c-0916", "ph-c-0917", "ph-c-0918", "ph-c-0919"],
         "trap_id": "trap-very-like"
       },
@@ -1974,7 +1977,7 @@
       "grammar_point": {
         "id": "gp-c-22",
         "title_ru": "Равенство и достаточность",
-        "rule_md": "**as … as; too / enough.**\nРавенство: **as** tall **as**: He is as tall as his brother.\nОтрицание: not as fast as = «не такой быстрый, как».\n**too** = «слишком» (too hot, too expensive) — ПЕРЕД словом.\n**enough** = «достаточно» (big enough, warm enough) — ПОСЛЕ слова.\ntoo + прил. + to: too tired **to walk**.",
+        "rule_md": "He is **as** tall **as** his brother. too hot. big **enough**.\n\nРавенство и достаточность.\n\n**Формула:** такой же → as + прил. + as; слишком → too + прил. (перед); достаточно → прил. + enough (после)\n- not as fast as = «не такой быстрый»; too tired **to walk**.\n\nПо-русски «такой же/слишком/достаточно» — порядком слов не управляют; по-английски enough строго после прилагательного.\n\n⚠️ Ловушка (ЛТ-22): ❌ I very like it → ✔ I like it very much; ❌ enough big → ✔ big **enough**.\n\nПроверь себя: Достаточно тепло: warm ___. → enough",
         "phrase_ids": ["ph-c-0960", "ph-c-0961", "ph-c-0962", "ph-c-0963", "ph-c-0964"],
         "trap_id": "trap-very-like"
       },
@@ -2152,7 +2155,7 @@
       "grammar_point": {
         "id": "gp-c-23",
         "title_ru": "Предлоги глаголов (закрепление)",
-        "rule_md": "**Глаголы с предлогами.**\npay **for**, depend **on**, look **for** (искать), look **at** (смотреть на),\nwait **for**, ask **for**, listen **to**, thank **for**, think **about**,\ntalk **to**, agree **with**, believe **in**, apologize **for**.\n⚠️ Русское «ждать автобус» = wait **for** the bus (не «wait the bus»).",
+        "rule_md": "pay **for** the coffee, depend **on** the weather, look **for** the keys.\n\nПредлог — часть глагола.\n\n**Формула:** глагол → свой предлог (учи парой)\n- pay for, depend on, look for/look at, wait for, ask for, listen to, thank for, think about, talk to, agree with, believe in, apologize for\n\nПо-русски «жду автобус» — без предлога; по-английски wait без for — уже другая фраза.\n\n⚠️ Ловушка (ЛТ-10): ❌ wait the bus → ✔ wait **for** the bus.\n\nПроверь себя: Это зависит от тебя: It depends ___ you. → on",
         "phrase_ids": ["ph-c-1004", "ph-c-1005", "ph-c-1006", "ph-c-1007", "ph-c-1008"],
         "trap_id": "trap-wait-for"
       },
@@ -2330,7 +2333,7 @@
       "grammar_point": {
         "id": "gp-c-25",
         "title_ru": "Повторение модуля C4",
-        "rule_md": "**Повторение №14: сравнения и процесс.**\nbigger/the biggest, as…as, too/enough; Past Continuous vs Past Simple\n(процесс-фон + событие); глаголы с предлогами.\nПунктуация: **However,** … — запятая после вводного слова;\nкавычки в английском: “ ” (не « »).",
+        "rule_md": "bigger/the biggest · as…as · too/enough · was doing when he came.\n\nПовторение №14: сравнения и процесс.\n\n- Past Continuous — фон, Past Simple — событие внутри него\n\nПроверь себя: Слишком устал, чтобы идти: too tired ___ ___. → to walk",
         "phrase_ids": ["ph-c-1093", "ph-c-1094", "ph-c-1095", "ph-c-1096", "ph-c-1097"],
         "trap_id": "trap-wait-for"
       },
@@ -2506,7 +2509,7 @@
       "grammar_point": {
         "id": "gp-c-26",
         "title_ru": "Аэропорт: от регистрации до посадки",
-        "rule_md": "**Аэропорт: сквозная сценка.**\ncheck-in → security → gate → boarding. Полезные вопросы:\nWhere is the check-in desk? Which gate is my flight?\nIs the flight on time? The flight is delayed.\nРегистрация: window or aisle seat? Here is your boarding pass.\nБезопасность: take out your liquids, empty your pockets.",
+        "rule_md": "Where is the check-in desk? Which gate is my flight? — Аэропорт одной сценой.\n\nСквозная сценка: check-in → security → gate → boarding.\n\n**Формула:** этап аэропорта → готовые фразы\n- Is the flight on time? The flight is delayed. Window or aisle seat?\n- Безопасность: take out your liquids, empty your pockets.\n\nПо-русски в аэропорту говорим по-своему; по-английски каждая точка — 2–3 готовых блока, а не перевод с русского.\n\n⚠️ Ловушка (ЛТ-06): ❌ the gate five → ✔ gate **five** / **the** gate.\n\nПроверь себя: Рейс задержан: The flight is ___. → delayed",
         "phrase_ids": ["ph-c-1138", "ph-c-1139", "ph-c-1140", "ph-c-1141", "ph-c-1142"],
         "trap_id": "trap-articles"
       },
@@ -2682,7 +2685,7 @@
       "grammar_point": {
         "id": "gp-c-27",
         "title_ru": "Паспортный контроль: типовые вопросы",
-        "rule_md": "**Паспортный контроль и таможня.**\nЦель визита: What is the purpose of your visit? — Tourism / Business.\nСколько: How long will you stay? — Two weeks.\nБронь/билеты: Do you have a return ticket?\nТаможня: Anything to declare? — Nothing to declare.\ngreen channel — без декларации, red — с декларацией.",
+        "rule_md": "What is the **purpose** of your visit? — Tourism. — Цель визита одним словом.\n\nПаспортный контроль и таможня: пять вопросов офицера.\n\n**Формула:** вопрос офицера → короткий честный ответ\n- How long will you stay? Do you have a return ticket? — Two weeks. / Yes, here it is.\n- Anything to declare? — Nothing to declare. green/red channel.\n\nПо-русски «с целью туризма» — канцеляритом; по-английски достаточно одного слова Tourism.\n\n⚠️ Ловушка (ЛТ-19): ❌ Where you stay? → ✔ Where **will** you stay?\n\nПроверь себя: Цель визита? What is the ___ of your visit? → purpose",
         "phrase_ids": ["ph-c-1183", "ph-c-1184", "ph-c-1185", "ph-c-1186", "ph-c-1187"],
         "trap_id": "trap-question-word-order"
       },
@@ -2858,7 +2861,7 @@
       "grammar_point": {
         "id": "gp-c-28",
         "title_ru": "Отель: полный цикл",
-        "rule_md": "**Отель: заезд, проблемы, выезд.**\nЗаезд: I have a reservation. For three nights. Breakfast is included.\nПроблемы: The room is too noisy. The air conditioning doesn't work.\nCould you send someone to fix it? Could I change rooms?\nВыезд: What time is check-out? I'm checking out. Could I have the bill?",
+        "rule_md": "I **have a reservation**. The AC **doesn't work**. — Отель от заезда до выезда.\n\nТри сцены: заезд, проблема, выезд.\n\n**Формула:** ситуация → готовая фраза\n- Заезд: For three nights. Breakfast is included.\n- Проблема: The room is too noisy. Could you send someone to fix it?\n- Выезд: What time is check-out? Could I have the bill?\n\nПо-русски «у меня бронь на три ночи» — так и есть; по-английски держи блоки: I have a reservation / for N nights.\n\n⚠️ Ловушка (ЛТ-06): ❌ a breakfast is included → ✔ **Breakfast** is included (вообще, без артикля).\n\nПроверь себя: У меня бронь: I ___ a ___. → have…reservation",
         "phrase_ids": ["ph-c-1227", "ph-c-1228", "ph-c-1229", "ph-c-1230", "ph-c-1231"],
         "trap_id": "trap-articles"
       },
@@ -3034,7 +3037,7 @@
       "grammar_point": {
         "id": "gp-c-29",
         "title_ru": "Ресторан: заказ; аптека: лекарства",
-        "rule_md": "**Ресторан и аптека.**\nРесторан: A table for two. What do you recommend? I'll have the fish.\nI'm allergic to nuts. Could we have the bill? Keep the change.\nАптека: How often should I take it? — Twice a day, after meals.\nDo I need a prescription? Do you have something for a cold?",
+        "rule_md": "A table for two. What do you **recommend**? I'**ll have** the fish.\n\nРесторан и аптека: заказ и здоровье.\n\n**Формула:** точка → готовые фразы\n- Ресторан: I'm allergic to nuts. Could we have the bill? Keep the change.\n- Аптека: How often should I take it? — Twice a day, after meals. Do you have something for a cold?\n\nПо-русски «мне вот это» — пальцем; по-английски I'll have… — стандарт вежливого заказа.\n\n⚠️ Ловушка (ЛТ-06): ❌ I'll have a fish → ✔ I'll have **the fish** (конкретное блюдо меню — the).\n\nПроверь себя: Что посоветуете? What do you ___? → recommend",
         "phrase_ids": ["ph-c-1272", "ph-c-1273", "ph-c-1274", "ph-c-1275", "ph-c-1276"],
         "trap_id": "trap-articles"
       },
@@ -3210,7 +3213,7 @@
       "grammar_point": {
         "id": "gp-c-30",
         "title_ru": "Сборка всего ранга C",
-        "rule_md": "**Большое повторение перед Вратами B.**\nВсё ранга C: Past Simple ±? и was/were, will/going to, must/have to/\nshould/could, like + -ing, want + object + to, сравнения, as…as,\ntoo/enough, глаголы с предлогами, Past Continuous.\nРазговорник: аэропорт, паспорт, отель, ресторан, аптека.\nВперёд, Охотник — Врата B ждут!",
+        "rule_md": "went/didn't go · will/going to · must/should/could · bigger/as…as · was doing when…\n\nБольшое повторение ранга C перед Вратами B.\n\n- Разговорник: аэропорт, паспорт, отель, ресторан, аптека — блоками\n\nПроверь себя: Столик на двоих: A ___ for two. / Дважды в день: ___ a day. → table / Twice",
         "phrase_ids": ["ph-c-1317", "ph-c-1318", "ph-c-1319", "ph-c-1320", "ph-c-1321"],
         "trap_id": "trap-want-that"
       },
@@ -3336,6 +3339,9 @@
         },
         {
           "id": "ex-c-1381"
+        },
+        {
+          "id": "ex-c-9230"
         },
         {
           "id": "ex-c-1382"

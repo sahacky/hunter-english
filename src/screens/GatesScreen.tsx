@@ -16,6 +16,7 @@ import { FreeOutputTask } from '../components/lesson/FreeOutputTask'
 import type { ExerciseItem, PhraseItem } from '../content/lessons'
 import { loadLessons, loadPhrases } from '../content/lessons'
 import { createFirstCards, loadWordNotes, loadWordRanks } from '../content/words'
+import { pickDistractors } from '../domain/game/distractors'
 import { cooldownPassed, judgeGate, NEXT_RANK } from '../domain/game/game'
 import { GATES, type GateRouteId } from '../domain/game/gates'
 import type { Rank } from '../domain/game/types'
@@ -37,17 +38,22 @@ interface ExamItem {
   phrase: PhraseItem | null
 }
 
-function seededPick<T>(items: T[], count: number, seedKey: string): T[] {
+function seededRng(seedKey: string): () => number {
   let hash = 0
   for (const ch of seedKey) hash = (hash * 31 + ch.charCodeAt(0)) | 0
+  let state = Math.abs(hash) || 1
+  return () => {
+    state = (state * 1103515245 + 12345) & 0x7fffffff
+    return state / 0x7fffffff
+  }
+}
+
+function seededPick<T>(items: T[], count: number, seedKey: string): T[] {
+  const rng = seededRng(seedKey)
   const pool = [...items]
   const out: T[] = []
-  let state = Math.abs(hash) || 1
   while (out.length < count && pool.length > 0) {
-    state = (state * 1103515245 + 12345) & 0x7fffffff
-    const index = state % pool.length
-    out.push(pool[index])
-    pool.splice(index, 1)
+    out.push(...pool.splice(Math.floor(rng() * pool.length), 1))
   }
   return out
 }
@@ -96,7 +102,15 @@ async function buildExam(
   // Лексика 20: RU → выбор EN из заметок слов
   const words = seededPick(wordNotes, 20, `vocab-${attemptSeed}`)
   words.forEach((note, index) => {
-    const distractors = wordNotes.filter((w) => w.id !== note.id).slice(index, index + 3)
+    // похожие дистракторы (plan://distractor-quality#D1): та же часть речи,
+    // близкий ранг, похожее написание/перевод — вместо первых слов списка
+    const distractors = pickDistractors(
+      note,
+      wordNotes.filter((w) => w.id !== note.id),
+      wordRanks,
+      3,
+      seededRng(`dis-${attemptSeed}-${index}`),
+    )
     const options = seededPick(
       [note.en, ...distractors.map((d) => d.en)],
       4,

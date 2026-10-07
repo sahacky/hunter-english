@@ -59,13 +59,8 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Я тоже (не).",
-        "options": [
-          "Here comes the train.",
-          "Neither do I.",
-          "Down came the rain.",
-          "Off we went!"
-        ],
-        "correct": 1
+        "options": ["Not a chance.", "Off we went!", "Never again!", "Neither do I."],
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -83,12 +78,12 @@
         "kind": "choose_translation",
         "prompt": "И мы отправились!",
         "options": [
-          "Off we went!",
-          "Neither do I.",
           "Down came the rain.",
-          "Here comes the train."
+          "Neither do I.",
+          "Here comes the train.",
+          "Off we went!"
         ],
-        "correct": 0
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -105,13 +100,8 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Вот идёт поезд.",
-        "options": [
-          "Here comes the train.",
-          "Down came the rain.",
-          "Neither do I.",
-          "Off we went!"
-        ],
-        "correct": 0
+        "options": ["Off we went!", "Here comes the train.", "Never again!", "Down came the rain."],
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -128,13 +118,8 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "И хлынул дождь.",
-        "options": [
-          "Here comes the train.",
-          "Neither do I.",
-          "Off we went!",
-          "Down came the rain."
-        ],
-        "correct": 3
+        "options": ["Here comes the train.", "Down came the rain.", "Off we went!", "Never again!"],
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -945,12 +930,12 @@
         "kind": "choose_translation",
         "prompt": "Полный культурный шок, честно.",
         "options": [
-          "The flight was overbooked.",
           "Total culture shock, honestly.",
-          "Around the corner.",
-          "Red-eye, please."
+          "Red-eye, please.",
+          "The flight was overbooked.",
+          "We travel light, always."
         ],
-        "correct": 1
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -968,12 +953,12 @@
         "kind": "choose_translation",
         "prompt": "Не за горами.",
         "options": [
-          "Red-eye, please.",
-          "Around the corner.",
+          "Sorry, we're running late.",
           "The flight was overbooked.",
-          "Total culture shock, honestly."
+          "We travel light, always.",
+          "Around the corner."
         ],
-        "correct": 1
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -991,12 +976,12 @@
         "kind": "choose_translation",
         "prompt": "Ночной рейс, пожалуйста.",
         "options": [
-          "Total culture shock, honestly.",
           "Red-eye, please.",
-          "The flight was overbooked.",
-          "Around the corner."
+          "Total culture shock, honestly.",
+          "We travel light, always.",
+          "The flight was overbooked."
         ],
-        "correct": 1
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -1014,12 +999,12 @@
         "kind": "choose_translation",
         "prompt": "Рейс был перепродан.",
         "options": [
-          "Total culture shock, honestly.",
           "The flight was overbooked.",
-          "Red-eye, please.",
-          "Around the corner."
+          "We travel light, always.",
+          "Around the corner.",
+          "Sorry, we're running late."
         ],
-        "correct": 1
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -1792,11 +1777,11 @@
         "prompt": "Вполне резонный вопрос.",
         "options": [
           "Might as well.",
+          "You might well ask.",
           "I needn't have rushed.",
-          "I'd rather not say.",
-          "You might well ask."
+          "You'd better hurry up."
         ],
-        "correct": 3
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -1814,8 +1799,8 @@
         "kind": "choose_translation",
         "prompt": "Тебе лучше поторопиться.",
         "options": [
-          "I'd rather not say.",
-          "You might well ask.",
+          "You needn't have worried.",
+          "Better not risk it.",
           "I needn't have rushed.",
           "You'd better hurry up."
         ],
@@ -1837,12 +1822,12 @@
         "kind": "choose_translation",
         "prompt": "Я бы предпочёл не говорить.",
         "options": [
+          "Better not risk it.",
+          "You needn't have worried.",
           "I'd rather not say.",
-          "I needn't have rushed.",
-          "You'd better hurry up.",
-          "You might well ask."
+          "I needn't have rushed."
         ],
-        "correct": 0
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -1860,12 +1845,12 @@
         "kind": "choose_translation",
         "prompt": "Зря я торопился.",
         "options": [
-          "I'd rather not say.",
           "I needn't have rushed.",
-          "You'd better hurry up.",
+          "I'd rather not say.",
+          "You needn't have worried.",
           "You might well ask."
         ],
-        "correct": 1
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -2637,12 +2622,12 @@
         "kind": "choose_translation",
         "prompt": "В результате цены выросли.",
         "options": [
-          "Granted, it takes practice.",
-          "Instead of complaining, act.",
-          "Granted.",
-          "Consequently, prices went up."
+          "Hence the delay, apparently.",
+          "Consequently, prices went up.",
+          "After all.",
+          "Granted."
         ],
-        "correct": 3
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -2660,10 +2645,10 @@
         "kind": "choose_translation",
         "prompt": "Вместо того чтобы жаловаться, действуй.",
         "options": [
-          "Granted.",
           "Consequently, prices went up.",
+          "Granted, it takes practice.",
           "Instead of complaining, act.",
-          "Granted, it takes practice."
+          "After all."
         ],
         "correct": 2
       },
@@ -2683,12 +2668,12 @@
         "kind": "choose_translation",
         "prompt": "Согласен.",
         "options": [
-          "Consequently, prices went up.",
-          "Instead of complaining, act.",
           "Granted, it takes practice.",
-          "Granted."
+          "Granted.",
+          "Instead of complaining, act.",
+          "Consequently, prices went up."
         ],
-        "correct": 3
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -2706,12 +2691,12 @@
         "kind": "choose_translation",
         "prompt": "Согласен, это требует практики.",
         "options": [
+          "After all.",
           "Granted, it takes practice.",
-          "Consequently, prices went up.",
-          "Instead of complaining, act.",
-          "Granted."
+          "Granted.",
+          "Hence the delay, apparently."
         ],
-        "correct": 0
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -3483,10 +3468,10 @@
         "kind": "choose_translation",
         "prompt": "Я опоздаю.",
         "options": [
-          "C'mon, we're late.",
+          "Nothing's gonna change.",
           "I'm gonna be late.",
-          "I wanna go home.",
-          "Nothing's gonna change."
+          "C'mon, we're late.",
+          "He's gonna regret this."
         ],
         "correct": 1
       },
@@ -3506,12 +3491,12 @@
         "kind": "choose_translation",
         "prompt": "Мы успеем.",
         "options": [
-          "I gotta go.",
-          "Lemme think about it.",
-          "She ain't coming.",
-          "We're gonna make it."
+          "We're gonna make it.",
+          "I'm gonna be late.",
+          "He's gonna regret this.",
+          "C'mon, we're late."
         ],
-        "correct": 3
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -3529,12 +3514,12 @@
         "kind": "choose_translation",
         "prompt": "Да ладно, мы опаздываем.",
         "options": [
-          "I wanna go home.",
+          "C'mon, we're late.",
+          "She ain't coming.",
           "Nothing's gonna change.",
-          "I'm gonna be late.",
-          "C'mon, we're late."
+          "I'm gonna be late."
         ],
-        "correct": 3
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -3551,13 +3536,8 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "С дороги!",
-        "options": [
-          "We're gonna make it.",
-          "I'm gonna be late.",
-          "Outta my way!",
-          "C'mon, we're late."
-        ],
-        "correct": 2
+        "options": ["I'm gonna be late.", "Outta my way!", "I wanna go home.", "She ain't coming."],
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -4329,12 +4309,12 @@
         "kind": "choose_translation",
         "prompt": "Погоди секунду.",
         "options": [
-          "Instead of complaining, act.",
+          "The flight was overbooked.",
+          "Gimme a second.",
           "Hang on a sec.",
-          "I gotta go.",
-          "I wanna go home."
+          "You needn't have worried."
         ],
-        "correct": 1
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -4352,10 +4332,10 @@
         "kind": "choose_translation",
         "prompt": "Мне пора бежать.",
         "options": [
-          "I wanna go home.",
+          "The flight was overbooked.",
           "I gotta go.",
-          "Instead of complaining, act.",
-          "Hang on a sec."
+          "I wanna go home.",
+          "You needn't have worried."
         ],
         "correct": 1
       },
@@ -4374,8 +4354,13 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Я хочу домой.",
-        "options": ["I gotta go.", "I'd rather not say.", "Gimme a second.", "I wanna go home."],
-        "correct": 3
+        "options": [
+          "I gotta go.",
+          "I wanna go home.",
+          "You needn't have worried.",
+          "Neither do I."
+        ],
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -4393,9 +4378,9 @@
         "kind": "choose_translation",
         "prompt": "Вместо того чтобы жаловаться, действуй.",
         "options": [
-          "I wanna go home.",
-          "I gotta go.",
-          "Hang on a sec.",
+          "You'd better hurry up.",
+          "Consequently, prices went up.",
+          "Neither do I.",
           "Instead of complaining, act."
         ],
         "correct": 3
@@ -5170,12 +5155,12 @@
         "kind": "choose_translation",
         "prompt": "Это ломает ожидания.",
         "options": [
-          "It's overrated, honestly.",
-          "The premise is unsettling.",
-          "It subverts your expectations.",
-          "Consequences feel permanent."
+          "It's heavy on symbolism.",
+          "It's dark, but compelling.",
+          "Slow burn, worth it.",
+          "It subverts your expectations."
         ],
-        "correct": 2
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -5193,12 +5178,12 @@
         "kind": "choose_translation",
         "prompt": "Последствия ощущаются необратимыми.",
         "options": [
-          "It subverts your expectations.",
-          "The premise is unsettling.",
+          "It's dark, but compelling.",
           "It's overrated, honestly.",
-          "Consequences feel permanent."
+          "Consequences feel permanent.",
+          "The stakes feel real."
         ],
-        "correct": 3
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -5216,10 +5201,10 @@
         "kind": "choose_translation",
         "prompt": "Завязка тревожная.",
         "options": [
-          "Dystopia dressed as entertainment.",
+          "The ending divides fans.",
           "The premise is unsettling.",
-          "Every episode stands alone.",
-          "Consequences feel permanent."
+          "The satire cuts deep.",
+          "The finale paid off."
         ],
         "correct": 1
       },
@@ -5239,12 +5224,12 @@
         "kind": "choose_translation",
         "prompt": "Переоценено, честно.",
         "options": [
-          "It's overrated, honestly.",
-          "Consequences feel permanent.",
-          "The premise is unsettling.",
-          "It subverts your expectations."
+          "Slow burn, worth it.",
+          "The stakes feel real.",
+          "It's dark, but compelling.",
+          "It's overrated, honestly."
         ],
-        "correct": 0
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -6236,8 +6221,8 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Если будет дождь.",
-        "options": ["Were it possible.", "Had I known.", "Should it rain.", "Had they known."],
-        "correct": 2
+        "options": ["Were it possible.", "Had I known.", "Had they known.", "Should it rain."],
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -6254,8 +6239,8 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Если бы это было возможно.",
-        "options": ["Should it rain.", "Had I known.", "Had they known.", "Were it possible."],
-        "correct": 3
+        "options": ["Had they known.", "Should it rain.", "Were it possible.", "Had I known."],
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -7082,12 +7067,12 @@
         "kind": "choose_translation",
         "prompt": "Подтверждено.",
         "options": [
-          "Nothing is known.",
-          "It has been confirmed.",
+          "It was agreed.",
+          "The decision was made.",
           "Measures are being taken.",
-          "It was agreed."
+          "It has been confirmed."
         ],
-        "correct": 1
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -7105,12 +7090,12 @@
         "kind": "choose_translation",
         "prompt": "Меры принимаются.",
         "options": [
-          "It has been confirmed.",
-          "Measures are being taken.",
+          "It was agreed.",
+          "The decision was made.",
           "Nothing is known.",
-          "It was agreed."
+          "Measures are being taken."
         ],
-        "correct": 1
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -7129,9 +7114,9 @@
         "prompt": "Ничего не известно.",
         "options": [
           "Nothing is known.",
+          "It was agreed.",
           "Measures are being taken.",
-          "It has been confirmed.",
-          "It was agreed."
+          "The decision was made."
         ],
         "correct": 0
       },
@@ -7151,12 +7136,12 @@
         "kind": "choose_translation",
         "prompt": "Было согласовано.",
         "options": [
-          "It was agreed.",
           "It has been confirmed.",
-          "Nothing is known.",
+          "It was agreed.",
+          "The decision was made.",
           "Measures are being taken."
         ],
-        "correct": 0
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -7938,12 +7923,12 @@
         "kind": "choose_translation",
         "prompt": "Подтверждено.",
         "options": [
-          "Measures are being taken.",
-          "It's overrated, honestly.",
+          "It has been confirmed.",
           "It subverts your expectations.",
-          "It has been confirmed."
+          "It's overrated, honestly.",
+          "Measures are being taken."
         ],
-        "correct": 3
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -7961,12 +7946,12 @@
         "kind": "choose_translation",
         "prompt": "Переоценено, честно.",
         "options": [
-          "It has been confirmed.",
-          "It subverts your expectations.",
           "Measures are being taken.",
-          "It's overrated, honestly."
+          "It's overrated, honestly.",
+          "It has been confirmed.",
+          "It subverts your expectations."
         ],
-        "correct": 3
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -7984,12 +7969,12 @@
         "kind": "choose_translation",
         "prompt": "Это ломает ожидания.",
         "options": [
-          "Measures are being taken.",
-          "It has been confirmed.",
           "It subverts your expectations.",
-          "It's overrated, honestly."
+          "It's overrated, honestly.",
+          "It has been confirmed.",
+          "Measures are being taken."
         ],
-        "correct": 2
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -8007,12 +7992,12 @@
         "kind": "choose_translation",
         "prompt": "Меры принимаются.",
         "options": [
-          "Measures are being taken.",
-          "It subverts your expectations.",
+          "It has been confirmed.",
           "It's overrated, honestly.",
-          "It has been confirmed."
+          "Measures are being taken.",
+          "It subverts your expectations."
         ],
-        "correct": 0
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -8792,12 +8777,12 @@
         "kind": "choose_translation",
         "prompt": "Сложный вопрос.",
         "options": [
-          "Let's agree to disagree.",
-          "That's beside the point.",
           "That's a tough one.",
-          "I see it differently."
+          "That's a fair point.",
+          "I see it differently.",
+          "Let's agree to disagree."
         ],
-        "correct": 2
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -8815,9 +8800,9 @@
         "kind": "choose_translation",
         "prompt": "Это не по существу.",
         "options": [
-          "That's a tough one.",
-          "I see it differently.",
+          "That's a fair point.",
           "Let's agree to disagree.",
+          "That's a tough one.",
           "That's beside the point."
         ],
         "correct": 3
@@ -8838,12 +8823,12 @@
         "kind": "choose_translation",
         "prompt": "Давай останемся каждый при своём.",
         "options": [
-          "That's beside the point.",
+          "That's a fair point.",
+          "I see it differently.",
           "Let's agree to disagree.",
-          "That's a tough one.",
-          "I see it differently."
+          "That's a tough one."
         ],
-        "correct": 1
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -8861,12 +8846,12 @@
         "kind": "choose_translation",
         "prompt": "Я вижу это иначе.",
         "options": [
-          "That's beside the point.",
           "I see it differently.",
-          "That's a tough one.",
-          "Let's agree to disagree."
+          "That's a fair point.",
+          "That's beside the point.",
+          "That's a tough one."
         ],
-        "correct": 1
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -9639,9 +9624,9 @@
         "prompt": "В общем, на чём мы остановились?",
         "options": [
           "Anyway, where were we?",
-          "Basically, nothing changed.",
-          "Or something like that.",
-          "I guess you're right."
+          "I mean, why not?",
+          "It's sort of complicated.",
+          "Or something like that."
         ],
         "correct": 0
       },
@@ -9661,12 +9646,12 @@
         "kind": "choose_translation",
         "prompt": "Наверное, ты прав.",
         "options": [
-          "Basically, nothing changed.",
-          "Anyway, where were we?",
-          "Or something like that.",
-          "I guess you're right."
+          "I guess you're right.",
+          "If that makes sense.",
+          "It's sort of complicated.",
+          "I mean, why not?"
         ],
-        "correct": 3
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -9684,12 +9669,12 @@
         "kind": "choose_translation",
         "prompt": "Или что-то в этом духе.",
         "options": [
-          "Basically, nothing changed.",
-          "Anyway, where were we?",
           "Or something like that.",
-          "I guess you're right."
+          "If that makes sense.",
+          "I guess you're right.",
+          "Actually, that works better."
         ],
-        "correct": 2
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -9707,12 +9692,12 @@
         "kind": "choose_translation",
         "prompt": "По сути, ничего не изменилось.",
         "options": [
-          "I guess you're right.",
           "Basically, nothing changed.",
-          "Anyway, where were we?",
-          "Or something like that."
+          "I mean, why not?",
+          "It's sort of complicated.",
+          "If that makes sense."
         ],
-        "correct": 1
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -10484,12 +10469,12 @@
         "kind": "choose_translation",
         "prompt": "Спасибо огромное!",
         "options": [
-          "It's a brilliant idea.",
-          "Later!",
-          "Thanks a million!",
-          "Her complexion is pale."
+          "Hi, I'm Dima.",
+          "Her complexion is pale.",
+          "I sympathise with you.",
+          "Thanks a million!"
         ],
-        "correct": 2
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -10507,10 +10492,10 @@
         "kind": "choose_translation",
         "prompt": "Пока!",
         "options": [
-          "Her complexion is pale.",
+          "Kids, dinner's ready!",
           "Later!",
-          "Thanks a million!",
-          "It's a brilliant idea."
+          "Her complexion is pale.",
+          "I sympathise with you."
         ],
         "correct": 1
       },
@@ -10530,12 +10515,12 @@
         "kind": "choose_translation",
         "prompt": "Это блестящая идея.",
         "options": [
-          "Thanks a million!",
-          "It's a brilliant idea.",
+          "I appreciate your assistance.",
           "Her complexion is pale.",
-          "Later!"
+          "I sympathise with you.",
+          "It's a brilliant idea."
         ],
-        "correct": 1
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -10553,12 +10538,12 @@
         "kind": "choose_translation",
         "prompt": "У неё бледный цвет лица.",
         "options": [
-          "It's a brilliant idea.",
-          "Later!",
           "Her complexion is pale.",
-          "Thanks a million!"
+          "I appreciate your assistance.",
+          "It's a brilliant idea.",
+          "I sympathise with you."
         ],
-        "correct": 2
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -11286,12 +11271,12 @@
         "kind": "choose_translation",
         "prompt": "Меня устраивает.",
         "options": [
-          "Works for me.",
-          "Please assist the customer.",
           "It's sort of complicated.",
-          "It's a brilliant idea."
+          "Works for me.",
+          "That's a tough one.",
+          "Let's agree to disagree."
         ],
-        "correct": 0
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -11309,10 +11294,10 @@
         "kind": "choose_translation",
         "prompt": "Это блестящая идея.",
         "options": [
-          "It's sort of complicated.",
+          "Let's agree to disagree.",
           "Please assist the customer.",
           "It's a brilliant idea.",
-          "Works for me."
+          "It's sort of complicated."
         ],
         "correct": 2
       },
@@ -11332,12 +11317,12 @@
         "kind": "choose_translation",
         "prompt": "Пожалуйста, помогите клиенту.",
         "options": [
-          "Works for me.",
           "It's sort of complicated.",
-          "It's a brilliant idea.",
-          "Please assist the customer."
+          "Please assist the customer.",
+          "Let's agree to disagree.",
+          "That's a tough one."
         ],
-        "correct": 3
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -11358,7 +11343,7 @@
           "It's sort of complicated.",
           "It's a brilliant idea.",
           "Works for me.",
-          "Please assist the customer."
+          "Anyway, where were we?"
         ],
         "correct": 0
       },
@@ -12196,12 +12181,12 @@
         "kind": "choose_translation",
         "prompt": "Кинематограф немногих слов.",
         "options": [
+          "The pacing feels deliberate.",
+          "Nothing here is accidental.",
           "Cinema of few words.",
-          "The tension builds slowly.",
-          "It subverts the trope.",
           "It foreshadows the ending."
         ],
-        "correct": 0
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -12219,12 +12204,12 @@
         "kind": "choose_translation",
         "prompt": "Это предвещает финал.",
         "options": [
-          "Read between the lines.",
-          "The pacing feels deliberate.",
+          "It foreshadows the ending.",
           "It subverts the trope.",
-          "It foreshadows the ending."
+          "The ending reframes everything.",
+          "The pacing feels deliberate."
         ],
-        "correct": 3
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -12242,12 +12227,12 @@
         "kind": "choose_translation",
         "prompt": "Это ломает штамп.",
         "options": [
-          "It subverts the trope.",
+          "It foreshadows the ending.",
+          "The silence speaks louder.",
           "The pacing feels deliberate.",
-          "Read between the lines.",
-          "It foreshadows the ending."
+          "It subverts the trope."
         ],
-        "correct": 0
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -12265,12 +12250,12 @@
         "kind": "choose_translation",
         "prompt": "Напряжение нарастает медленно.",
         "options": [
+          "The tension builds slowly.",
+          "Watch the background characters.",
           "It foreshadows the ending.",
-          "Cinema of few words.",
-          "It subverts the trope.",
-          "The tension builds slowly."
+          "Read between the lines."
         ],
-        "correct": 3
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -13815,6 +13800,22 @@
       "meta": {
         "skill": "speaking",
         "xp": 4
+      }
+    },
+    {
+      "id": "ex-s-9210",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-s-0452"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
       }
     }
   ]

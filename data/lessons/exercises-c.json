@@ -60,12 +60,12 @@
         "kind": "choose_translation",
         "prompt": "Я закончил книгу.",
         "options": [
+          "We watched the news.",
           "I finished the book.",
-          "I worked all day.",
-          "The day ended well.",
+          "She printed the tickets.",
           "He cleaned the room."
         ],
-        "correct": 0
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -83,10 +83,10 @@
         "kind": "choose_translation",
         "prompt": "Он убрал комнату.",
         "options": [
-          "I worked all day.",
+          "He checked the time.",
           "He cleaned the room.",
-          "The day ended well.",
-          "I finished the book."
+          "We watched the news.",
+          "He opened the window."
         ],
         "correct": 1
       },
@@ -106,10 +106,10 @@
         "kind": "choose_translation",
         "prompt": "Нам понравилась поездка.",
         "options": [
-          "He opened the window.",
+          "I closed the door.",
           "We enjoyed the trip.",
-          "She answered quickly.",
-          "I missed the bus."
+          "I finished the book.",
+          "We watched the news."
         ],
         "correct": 1
       },
@@ -129,12 +129,12 @@
         "kind": "choose_translation",
         "prompt": "Я закрыл дверь.",
         "options": [
-          "We crossed the street.",
-          "I needed a rest.",
           "We watched the news.",
-          "I closed the door."
+          "I finished the book.",
+          "I closed the door.",
+          "He cleaned the room."
         ],
-        "correct": 3
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -905,8 +905,8 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Он взял мою ручку.",
-        "options": ["He took my pen.", "We got lost.", "I saw him yesterday.", "She did her best."],
-        "correct": 0
+        "options": ["He made coffee.", "He took my pen.", "I did my homework.", "I took a taxi."],
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -923,7 +923,12 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Мы увидели море.",
-        "options": ["We went by bus.", "We saw the sea.", "I took a taxi.", "I got a message."],
+        "options": [
+          "She saw the film.",
+          "We saw the sea.",
+          "We knew the answer.",
+          "I saw him yesterday."
+        ],
         "correct": 1
       },
       "answer": {
@@ -942,12 +947,12 @@
         "kind": "choose_translation",
         "prompt": "Я же тебе говорил.",
         "options": [
-          "They went to Spain.",
-          "Did you see that?",
-          "They came by metro.",
-          "I told you so."
+          "She went home early.",
+          "I told you so.",
+          "I made a mistake.",
+          "Did you see that?"
         ],
-        "correct": 3
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -964,13 +969,8 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Он ничего не сделал.",
-        "options": [
-          "We did it together.",
-          "We brought some food.",
-          "He did nothing.",
-          "He said nothing."
-        ],
-        "correct": 2
+        "options": ["He did nothing.", "He said nothing.", "He got tired.", "He took my pen."],
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -1742,10 +1742,10 @@
         "kind": "choose_translation",
         "prompt": "Вчера мне было плохо.",
         "options": [
+          "She felt much better.",
           "We lost the way.",
-          "She lost her keys.",
           "I felt bad yesterday.",
-          "She felt much better."
+          "I lost my passport."
         ],
         "correct": 2
       },
@@ -1765,12 +1765,12 @@
         "kind": "choose_translation",
         "prompt": "Они всё поняли.",
         "options": [
-          "I slept badly.",
-          "They understood everything.",
-          "He spoke slowly.",
-          "I felt bad yesterday."
+          "I understood you well.",
+          "She lost her keys.",
+          "They found the answer.",
+          "They understood everything."
         ],
-        "correct": 1
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -1788,12 +1788,12 @@
         "kind": "choose_translation",
         "prompt": "Я плохо спал.",
         "options": [
-          "They understood everything.",
-          "He spoke slowly.",
-          "I slept badly.",
-          "I felt bad yesterday."
+          "I found my phone.",
+          "She lost her keys.",
+          "I felt bad yesterday.",
+          "I slept badly."
         ],
-        "correct": 2
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -1811,12 +1811,12 @@
         "kind": "choose_translation",
         "prompt": "Он говорил медленно.",
         "options": [
-          "I felt bad yesterday.",
-          "They understood everything.",
-          "I slept badly.",
-          "He spoke slowly."
+          "He spoke slowly.",
+          "He found the ticket.",
+          "He took my seat.",
+          "We lost the way."
         ],
-        "correct": 3
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -2587,13 +2587,8 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Почему он был злой?",
-        "options": [
-          "Where were you yesterday?",
-          "We were hungry.",
-          "Why was he angry?",
-          "The film was boring."
-        ],
-        "correct": 2
+        "options": ["He was wrong.", "I was at home.", "The room was dirty.", "Why was he angry?"],
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -2612,9 +2607,9 @@
         "prompt": "Где ты был вчера?",
         "options": [
           "Where were you yesterday?",
-          "How was the trip?",
-          "The trip was amazing.",
-          "He was wrong."
+          "The flight was long.",
+          "I was at home.",
+          "They were in Paris."
         ],
         "correct": 0
       },
@@ -2634,12 +2629,12 @@
         "kind": "choose_translation",
         "prompt": "Фильм был скучным.",
         "options": [
-          "Why was he angry?",
-          "We were hungry.",
-          "The film was boring.",
-          "Where were you yesterday?"
+          "The weather was great.",
+          "The wifi was free.",
+          "The room was dirty.",
+          "The film was boring."
         ],
-        "correct": 2
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -2658,9 +2653,9 @@
         "prompt": "Мы были голодны.",
         "options": [
           "We were hungry.",
-          "The film was boring.",
-          "Why was he angry?",
-          "Where were you yesterday?"
+          "They were in Paris.",
+          "Where were you yesterday?",
+          "The room was dirty."
         ],
         "correct": 0
       },
@@ -3434,12 +3429,12 @@
         "kind": "choose_translation",
         "prompt": "Он взял мой багаж.",
         "options": [
-          "They didn't have time.",
+          "We didn't go out.",
+          "We went by plane.",
           "He took my luggage.",
-          "Was the hotel good?",
-          "Where did you go?"
+          "We didn't eat much."
         ],
-        "correct": 1
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -3457,10 +3452,10 @@
         "kind": "choose_translation",
         "prompt": "У них не было времени.",
         "options": [
-          "Where did you go?",
+          "We didn't eat much.",
           "We didn't go out.",
           "They didn't have time.",
-          "Were you tired?"
+          "She didn't feel well."
         ],
         "correct": 2
       },
@@ -3480,12 +3475,12 @@
         "kind": "choose_translation",
         "prompt": "Отель был хороший?",
         "options": [
-          "Where did you go?",
-          "Was the hotel good?",
-          "They didn't have time.",
-          "He took my luggage."
+          "He took my luggage.",
+          "The city was beautiful.",
+          "We didn't go out.",
+          "Was the hotel good?"
         ],
-        "correct": 1
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -3504,11 +3499,11 @@
         "prompt": "Куда ты ходил?",
         "options": [
           "Who did you meet?",
-          "We didn't go out.",
-          "They didn't have time.",
-          "Where did you go?"
+          "Where did you stay?",
+          "Where did you go?",
+          "Were you tired?"
         ],
-        "correct": 3
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -4280,12 +4275,12 @@
         "kind": "choose_translation",
         "prompt": "Мы не завтракали.",
         "options": [
+          "I didn't see him.",
+          "We didn't watch TV.",
           "We didn't have breakfast.",
-          "It didn't matter.",
-          "I didn't say that.",
-          "He didn't call me."
+          "We didn't wait long."
         ],
-        "correct": 0
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -4303,12 +4298,12 @@
         "kind": "choose_translation",
         "prompt": "Это не имело значения.",
         "options": [
-          "We didn't watch TV.",
-          "They didn't stay long.",
-          "Nothing happened.",
-          "It didn't matter."
+          "It didn't rain.",
+          "It didn't matter.",
+          "I didn't say that.",
+          "She didn't tell anyone."
         ],
-        "correct": 3
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -4326,10 +4321,10 @@
         "kind": "choose_translation",
         "prompt": "Я этого не говорил.",
         "options": [
-          "They didn't ask questions.",
+          "They didn't stay long.",
           "I didn't say that.",
-          "They didn't play well.",
-          "He didn't make mistakes."
+          "He didn't call me.",
+          "He didn't buy anything."
         ],
         "correct": 1
       },
@@ -4349,12 +4344,12 @@
         "kind": "choose_translation",
         "prompt": "Он мне не позвонил.",
         "options": [
-          "We didn't have breakfast.",
-          "It didn't matter.",
+          "I didn't need help.",
           "He didn't call me.",
-          "I didn't say that."
+          "I didn't see him.",
+          "He didn't buy anything."
         ],
-        "correct": 2
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -5146,8 +5141,8 @@
         "options": [
           "Where did she work?",
           "What did he say?",
-          "Who did you see?",
-          "What did you do?"
+          "Where did you eat?",
+          "Where did you stay?"
         ],
         "correct": 0
       },
@@ -5168,9 +5163,9 @@
         "prompt": "Я всё проверил дважды.",
         "options": [
           "I checked everything twice.",
+          "Did you pack everything?",
           "Where did she work?",
-          "It cost twenty dollars.",
-          "How did it happen?"
+          "What did you do?"
         ],
         "correct": 0
       },
@@ -5190,12 +5185,12 @@
         "kind": "choose_translation",
         "prompt": "Как это случилось?",
         "options": [
-          "Where did she work?",
-          "What did you do?",
-          "What did they buy?",
-          "How did it happen?"
+          "How did it happen?",
+          "It cost twenty dollars.",
+          "Did you pack everything?",
+          "What did you do?"
         ],
-        "correct": 3
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -5213,10 +5208,10 @@
         "kind": "choose_translation",
         "prompt": "Это стоило двадцать долларов.",
         "options": [
+          "What did you do?",
           "How did it happen?",
-          "Where did she work?",
           "It cost twenty dollars.",
-          "I checked everything twice."
+          "Where did you eat?"
         ],
         "correct": 2
       },
@@ -5993,7 +5988,7 @@
           "She was late again.",
           "I work every day.",
           "Where do you work?",
-          "Time flies."
+          "Tonight we are free."
         ],
         "correct": 2
       },
@@ -6013,12 +6008,12 @@
         "kind": "choose_translation",
         "prompt": "Теперь я понимаю.",
         "options": [
-          "She is often late.",
           "Now I understand.",
-          "She was late again.",
-          "I work every day."
+          "Where do you work?",
+          "I work every day.",
+          "She was late again."
         ],
-        "correct": 1
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -6036,12 +6031,12 @@
         "kind": "choose_translation",
         "prompt": "Она часто опаздывает.",
         "options": [
-          "She is often late.",
+          "Now I understand.",
           "She was late again.",
-          "Everything changes.",
-          "Now I understand."
+          "She is often late.",
+          "Tonight we are free."
         ],
-        "correct": 0
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -6059,12 +6054,12 @@
         "kind": "choose_translation",
         "prompt": "Всё меняется.",
         "options": [
+          "Today I am busy.",
           "She is often late.",
-          "Everything changes.",
-          "Now I understand.",
-          "Where do you work?"
+          "I work every day.",
+          "Everything changes."
         ],
-        "correct": 1
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -6836,12 +6831,12 @@
         "kind": "choose_translation",
         "prompt": "Он всё вспомнил.",
         "options": [
-          "He remembered everything.",
           "Everything went well.",
-          "Then everything changed.",
-          "Who made this decision?"
+          "He remembered everything.",
+          "He fell asleep.",
+          "What happened next?"
         ],
-        "correct": 0
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -6860,9 +6855,9 @@
         "prompt": "Кто оплатил счёт?",
         "options": [
           "Who paid the bill?",
-          "It began to rain.",
-          "What surprised you?",
-          "He remembered everything."
+          "Who lost the keys?",
+          "Who broke the window?",
+          "Who won the game?"
         ],
         "correct": 0
       },
@@ -6881,13 +6876,8 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Начался дождь.",
-        "options": [
-          "Who paid the bill?",
-          "What surprised you?",
-          "It began to rain.",
-          "He remembered everything."
-        ],
-        "correct": 2
+        "options": ["It began to rain.", "Who knew about it?", "What happened?", "Who said that?"],
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -6905,12 +6895,12 @@
         "kind": "choose_translation",
         "prompt": "Что тебя удивило?",
         "options": [
-          "What happened?",
-          "Who called you?",
-          "Who knew about it?",
-          "What surprised you?"
+          "What happened next?",
+          "What made you laugh?",
+          "What surprised you?",
+          "What went wrong?"
         ],
-        "correct": 3
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -7682,12 +7672,12 @@
         "kind": "choose_translation",
         "prompt": "Всё прошло хорошо.",
         "options": [
-          "Everything went fine.",
           "They were happy together.",
-          "I bought nothing special.",
+          "Did you sleep well?",
+          "Everything went fine.",
           "Last summer changed everything."
         ],
-        "correct": 0
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -7705,12 +7695,12 @@
         "kind": "choose_translation",
         "prompt": "Это много стоило?",
         "options": [
+          "Those were great days.",
           "Did it cost much?",
-          "She didn't say why.",
-          "I bought nothing special.",
-          "Was the food good?"
+          "Did you sleep well?",
+          "How did you sleep?"
         ],
-        "correct": 0
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -7728,12 +7718,12 @@
         "kind": "choose_translation",
         "prompt": "Она не сказала почему.",
         "options": [
-          "I bought nothing special.",
-          "Did it cost much?",
-          "Everything went fine.",
-          "She didn't say why."
+          "We didn't stay long.",
+          "She didn't say why.",
+          "Who drove the car?",
+          "Did you sleep well?"
         ],
-        "correct": 3
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -7751,12 +7741,12 @@
         "kind": "choose_translation",
         "prompt": "Я не купил ничего особенного.",
         "options": [
-          "I bought nothing special.",
           "Was the food good?",
-          "We didn't stay long.",
+          "The weather was perfect.",
+          "I bought nothing special.",
           "They were happy together."
         ],
-        "correct": 0
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -8594,10 +8584,10 @@
         "kind": "choose_translation",
         "prompt": "Мне то же самое.",
         "options": [
-          "It won't take long.",
+          "I'll call you tomorrow.",
           "I'll have the same.",
           "I'll never leave you.",
-          "This day will come."
+          "I'll pay for dinner."
         ],
         "correct": 1
       },
@@ -8617,12 +8607,12 @@
         "kind": "choose_translation",
         "prompt": "Она всё поймёт.",
         "options": [
-          "I'll have the same.",
-          "She will understand everything.",
-          "He will help us.",
-          "It won't take long."
+          "Everything will be fine.",
+          "Everything will change.",
+          "We will see.",
+          "She will understand everything."
         ],
-        "correct": 1
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -8640,12 +8630,12 @@
         "kind": "choose_translation",
         "prompt": "Он нам поможет.",
         "options": [
-          "It won't take long.",
-          "I'll have the same.",
-          "He will help us.",
-          "She will understand everything."
+          "Everything will be fine.",
+          "I will help you.",
+          "I will call you.",
+          "He will help us."
         ],
-        "correct": 2
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -8663,12 +8653,12 @@
         "kind": "choose_translation",
         "prompt": "Это не займёт много времени.",
         "options": [
-          "This day will come.",
-          "I'll never leave you.",
+          "I will help you.",
           "It won't take long.",
-          "I'll have the same."
+          "This will be interesting.",
+          "I'll call you tomorrow."
         ],
-        "correct": 2
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -9439,12 +9429,7 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Ты мне поможешь?",
-        "options": [
-          "When will they arrive?",
-          "Everything will be different.",
-          "Will you help me?",
-          "Nothing will change."
-        ],
+        "options": ["Yes, we will.", "Yes, I will.", "Will you help me?", "Will you join us?"],
         "correct": 2
       },
       "answer": {
@@ -9463,10 +9448,10 @@
         "kind": "choose_translation",
         "prompt": "Когда они приедут?",
         "options": [
-          "Will they come tomorrow?",
+          "Yes, we will.",
           "When will they arrive?",
-          "I won't forget you.",
-          "Everything will be different."
+          "Where will you stay?",
+          "Will they come tomorrow?"
         ],
         "correct": 1
       },
@@ -9486,12 +9471,12 @@
         "kind": "choose_translation",
         "prompt": "Всё будет иначе.",
         "options": [
-          "Nothing will change.",
+          "Will they come tomorrow?",
+          "Yes, I will.",
           "Everything will be different.",
-          "Where will you stay?",
-          "Who will win?"
+          "We won't be late."
         ],
-        "correct": 1
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -9509,12 +9494,12 @@
         "kind": "choose_translation",
         "prompt": "Ничего не изменится.",
         "options": [
-          "Where will you stay?",
+          "Will you help me?",
+          "Will you join us?",
           "Nothing will change.",
-          "Everything will be different.",
-          "Who will win?"
+          "Where will you stay?"
         ],
-        "correct": 1
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -10286,12 +10271,12 @@
         "kind": "choose_translation",
         "prompt": "Ты об этом пожалеешь.",
         "options": [
+          "Who will pay?",
+          "You will regret it.",
           "Nobody will know.",
-          "Who will drive?",
-          "They managed to escape.",
-          "You will regret it."
+          "Will it be easy?"
         ],
-        "correct": 3
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -10309,12 +10294,12 @@
         "kind": "choose_translation",
         "prompt": "Никто не узнает.",
         "options": [
+          "Where will we meet?",
           "Nobody will know.",
           "Who will drive?",
-          "They managed to escape.",
-          "You will regret it."
+          "The world will change."
         ],
-        "correct": 0
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -10332,12 +10317,12 @@
         "kind": "choose_translation",
         "prompt": "Кто будет вести машину?",
         "options": [
+          "Who will pay?",
+          "Who will drive?",
           "Nobody will know.",
-          "You will regret it.",
-          "They managed to escape.",
-          "Who will drive?"
+          "The world will change."
         ],
-        "correct": 3
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -10355,12 +10340,12 @@
         "kind": "choose_translation",
         "prompt": "Им удалось сбежать.",
         "options": [
+          "Who will drive?",
           "They managed to escape.",
-          "Nobody will know.",
-          "You will regret it.",
-          "Who will drive?"
+          "Will you marry me?",
+          "Where will we meet?"
         ],
-        "correct": 0
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -11131,13 +11116,8 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Мы победим.",
-        "options": [
-          "We're going to win.",
-          "What's going to happen?",
-          "Watch me.",
-          "I'm going to bed."
-        ],
-        "correct": 0
+        "options": ["Look at the clouds!", "We're going to win.", "I'm going to try.", "Watch me."],
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -11154,13 +11134,8 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Ну смотри.",
-        "options": [
-          "I'm going to bed.",
-          "We're going to win.",
-          "Watch me.",
-          "What's going to happen?"
-        ],
-        "correct": 2
+        "options": ["I'm going to bed.", "We're going to win.", "Look at the clouds!", "Watch me."],
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -11178,12 +11153,12 @@
         "kind": "choose_translation",
         "prompt": "Я иду спать.",
         "options": [
-          "We're going to win.",
-          "Watch me.",
-          "What's going to happen?",
-          "I'm going to bed."
+          "I'm going to try.",
+          "Look at the clouds!",
+          "I'm going to bed.",
+          "What's going to happen?"
         ],
-        "correct": 3
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -11201,12 +11176,12 @@
         "kind": "choose_translation",
         "prompt": "Что будет?",
         "options": [
-          "I'm going to try.",
-          "Look at the clouds!",
-          "What's going to happen?",
-          "We're going to win."
+          "We're going to win.",
+          "I'm going to bed.",
+          "Watch me.",
+          "What's going to happen?"
         ],
-        "correct": 2
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -11977,13 +11952,8 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Он не придёт.",
-        "options": [
-          "Where will you be?",
-          "What will you do?",
-          "He won't come.",
-          "Who told you that?"
-        ],
-        "correct": 2
+        "options": ["We won't be long.", "We will see.", "I will help you.", "He won't come."],
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -12001,12 +11971,12 @@
         "kind": "choose_translation",
         "prompt": "Что ты будешь делать?",
         "options": [
-          "Who told you that?",
+          "Will you help me?",
           "Where will you be?",
-          "He won't come.",
-          "What will you do?"
+          "What will you do?",
+          "Who told you that?"
         ],
-        "correct": 3
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -12023,7 +11993,7 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Доверься мне.",
-        "options": ["I visited my aunt.", "Trust me.", "I visit my aunt.", "Will you help me?"],
+        "options": ["I will call you.", "Trust me.", "We will see.", "Will you help me?"],
         "correct": 1
       },
       "answer": {
@@ -12041,8 +12011,13 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Я тебе помогу.",
-        "options": ["I'll be back.", "We won't be long.", "I will help you.", "Where will you be?"],
-        "correct": 2
+        "options": [
+          "I will help you.",
+          "I will call you.",
+          "Will you help me?",
+          "I call you tomorrow."
+        ],
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -12880,10 +12855,10 @@
         "kind": "choose_translation",
         "prompt": "Тебе нужно поторопиться.",
         "options": [
-          "She must rest.",
+          "She has to study.",
           "You have to hurry.",
           "Anything to declare?",
-          "This is forbidden."
+          "Nothing to declare."
         ],
         "correct": 1
       },
@@ -12902,13 +12877,8 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Ей нужно отдохнуть.",
-        "options": [
-          "You have to hurry.",
-          "Anything to declare?",
-          "This is forbidden.",
-          "She must rest."
-        ],
-        "correct": 3
+        "options": ["You must stop.", "She has to study.", "She must rest.", "We must be careful."],
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -12925,13 +12895,8 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Это запрещено.",
-        "options": [
-          "You have to hurry.",
-          "Anything to declare?",
-          "This is forbidden.",
-          "She must rest."
-        ],
-        "correct": 2
+        "options": ["This is allowed.", "I must go.", "I must say it.", "This is forbidden."],
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -12949,12 +12914,12 @@
         "kind": "choose_translation",
         "prompt": "Есть что декларировать?",
         "options": [
-          "You have to hurry.",
-          "This is forbidden.",
-          "She must rest.",
-          "Anything to declare?"
+          "Nothing to declare.",
+          "She has to study.",
+          "Anything to declare?",
+          "I must go."
         ],
-        "correct": 3
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -13725,13 +13690,8 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "У меня болит спина.",
-        "options": [
-          "You'll feel better soon.",
-          "My back hurts.",
-          "You'd better hurry.",
-          "My stomach hurts."
-        ],
-        "correct": 1
+        "options": ["I have a headache.", "It hurts here.", "My back hurts.", "My stomach hurts."],
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -13749,12 +13709,12 @@
         "kind": "choose_translation",
         "prompt": "Тебе лучше поторопиться.",
         "options": [
-          "You'd better hurry.",
+          "You shouldn't go alone.",
+          "You should rest.",
           "You'll feel better soon.",
-          "My stomach hurts.",
-          "My back hurts."
+          "You'd better hurry."
         ],
-        "correct": 0
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -13771,8 +13731,13 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Я могу тебе помочь.",
-        "options": ["I feel dizzy.", "What should I do?", "It hurts here.", "I can help you."],
-        "correct": 3
+        "options": [
+          "I can help you.",
+          "You should sleep more.",
+          "You look tired.",
+          "I could help you."
+        ],
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -13789,13 +13754,8 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "У меня болит живот.",
-        "options": [
-          "You'll feel better soon.",
-          "My stomach hurts.",
-          "My back hurts.",
-          "You'd better hurry."
-        ],
-        "correct": 1
+        "options": ["It hurts here.", "You should rest.", "My back hurts.", "My stomach hurts."],
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -14567,12 +14527,12 @@
         "kind": "choose_translation",
         "prompt": "Приятного аппетита!",
         "options": [
-          "Anything for you?",
-          "Could you help me?",
-          "Could I sit here?",
-          "Enjoy your meal!"
+          "Could you speak slowly?",
+          "Of course.",
+          "Enjoy your meal!",
+          "Could you help me?"
         ],
-        "correct": 3
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -14589,7 +14549,12 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Можно здесь сесть?",
-        "options": ["Certainly.", "Could I sit here?", "Of course.", "Anything for you?"],
+        "options": [
+          "Sure, no problem.",
+          "Could I sit here?",
+          "Could you help me?",
+          "Could you repeat that?"
+        ],
         "correct": 1
       },
       "answer": {
@@ -14608,12 +14573,12 @@
         "kind": "choose_translation",
         "prompt": "Не могли бы вы помочь?",
         "options": [
-          "Could I sit here?",
           "Anything for you?",
           "Could you help me?",
-          "Enjoy your meal!"
+          "Could you speak slowly?",
+          "Could you repeat that?"
         ],
-        "correct": 2
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -14630,8 +14595,13 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Что-нибудь для вас?",
-        "options": ["Anything for you?", "Sure, no problem.", "Of course.", "Could I sit here?"],
-        "correct": 0
+        "options": [
+          "Could I sit here?",
+          "Could you help me?",
+          "Sure, no problem.",
+          "Anything for you?"
+        ],
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -15403,12 +15373,12 @@
         "kind": "choose_translation",
         "prompt": "Вот всё, чего я хочу.",
         "options": [
+          "She likes cooking.",
           "That's all I want.",
-          "It's up to you.",
-          "I like reading.",
-          "She doesn't like flying."
+          "I don't like waiting.",
+          "I like reading."
         ],
-        "correct": 0
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -15426,12 +15396,12 @@
         "kind": "choose_translation",
         "prompt": "Мне нравится смотреть фильмы.",
         "options": [
-          "I love learning English.",
-          "That's all I want.",
-          "It's up to you.",
-          "I enjoy watching films."
+          "She likes cooking.",
+          "I enjoy watching films.",
+          "Trust me on this.",
+          "He likes travelling."
         ],
-        "correct": 3
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -15449,12 +15419,12 @@
         "kind": "choose_translation",
         "prompt": "Обожаю учить английский.",
         "options": [
-          "That's all I want.",
+          "I don't like waiting.",
+          "They like swimming.",
           "I love learning English.",
-          "She doesn't like flying.",
-          "It's up to you."
+          "I like reading."
         ],
-        "correct": 1
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -15472,12 +15442,12 @@
         "kind": "choose_translation",
         "prompt": "Решать тебе.",
         "options": [
-          "He likes travelling.",
-          "It's up to you.",
-          "That's all I want.",
-          "She likes cooking."
+          "I'm allergic to nuts.",
+          "I like reading.",
+          "Do you like dancing?",
+          "It's up to you."
         ],
-        "correct": 1
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -16249,12 +16219,12 @@
         "kind": "choose_translation",
         "prompt": "Я возьму рыбу.",
         "options": [
-          "What do you recommend?",
-          "I couldn't sleep.",
+          "I'll do that.",
           "Just the bill, please.",
-          "I'll have the fish."
+          "I'll have the fish.",
+          "I have a headache."
         ],
-        "correct": 3
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -16272,12 +16242,12 @@
         "kind": "choose_translation",
         "prompt": "Не могли бы вы повторить?",
         "options": [
-          "I'll have the fish.",
+          "Could you help me?",
+          "That would be great.",
           "Could you repeat that?",
-          "You'd better hurry.",
-          "I have a headache."
+          "I could help you."
         ],
-        "correct": 1
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -16295,12 +16265,12 @@
         "kind": "choose_translation",
         "prompt": "У меня болит голова.",
         "options": [
+          "You mustn't smoke here.",
+          "I like reading.",
           "I have a headache.",
-          "Could you repeat that?",
-          "I'll have the fish.",
-          "You'd better hurry."
+          "I'll have the fish."
         ],
-        "correct": 0
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -16318,12 +16288,12 @@
         "kind": "choose_translation",
         "prompt": "Тебе лучше поторопиться.",
         "options": [
-          "I have a headache.",
-          "I'll have the fish.",
-          "Could you repeat that?",
-          "You'd better hurry."
+          "You'd better hurry.",
+          "Could you help me?",
+          "I couldn't sleep.",
+          "It's up to you."
         ],
-        "correct": 3
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -17139,12 +17109,12 @@
         "kind": "choose_translation",
         "prompt": "Что важнее?",
         "options": [
-          "Which is more important?",
-          "The train is faster.",
           "This room is bigger.",
-          "That room is smaller."
+          "Which is better?",
+          "The train is faster.",
+          "Which is more important?"
         ],
-        "correct": 0
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -17162,12 +17132,12 @@
         "kind": "choose_translation",
         "prompt": "Он больше.",
         "options": [
-          "The shortest way.",
+          "The morning is colder.",
+          "This hotel is better.",
           "It is bigger.",
-          "The older, the wiser.",
-          "Older and wiser."
+          "This room is bigger."
         ],
-        "correct": 1
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -17185,12 +17155,12 @@
         "kind": "choose_translation",
         "prompt": "То кафе хуже.",
         "options": [
-          "That café is worse.",
-          "Which is better?",
-          "Better late than never.",
-          "This hotel is better."
+          "The morning is colder.",
+          "This room is bigger.",
+          "That room is smaller.",
+          "That café is worse."
         ],
-        "correct": 0
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -17208,12 +17178,12 @@
         "kind": "choose_translation",
         "prompt": "Мой телефон новее.",
         "options": [
-          "Better late than never.",
-          "Which is better?",
-          "This hotel is better.",
-          "My phone is newer."
+          "My phone is newer.",
+          "This room is bigger.",
+          "It is bigger.",
+          "That café is worse."
         ],
-        "correct": 3
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -17984,8 +17954,13 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Могло быть и хуже.",
-        "options": ["Perfect!", "It could be worse.", "Comfortable enough.", "Just what I needed."],
-        "correct": 1
+        "options": [
+          "It is too late.",
+          "As soon as possible.",
+          "Too much salt.",
+          "It could be worse."
+        ],
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -18002,12 +17977,7 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Как раз то, что мне нужно.",
-        "options": [
-          "Too many people.",
-          "Just right.",
-          "Just what I needed.",
-          "We're the strongest."
-        ],
+        "options": ["Just right.", "Same as always.", "Just what I needed.", "It is too late."],
         "correct": 2
       },
       "answer": {
@@ -18025,8 +17995,13 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Достаточно удобно.",
-        "options": ["Just what I needed.", "Comfortable enough.", "Perfect!", "It could be worse."],
-        "correct": 1
+        "options": [
+          "Comfortable enough.",
+          "As soon as possible.",
+          "I have enough money.",
+          "Strong enough for both."
+        ],
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -18043,8 +18018,8 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Идеально!",
-        "options": ["It's just perfect.", "Twice as expensive.", "Almost perfect.", "Perfect!"],
-        "correct": 3
+        "options": ["He talks too fast.", "Perfect!", "Twice as expensive.", "It's just perfect."],
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -18816,12 +18791,12 @@
         "kind": "choose_translation",
         "prompt": "Послушай меня.",
         "options": [
-          "Don't wait for me.",
-          "Drop me here, please.",
-          "Listen to me.",
-          "Don't pay for me."
+          "Don't pay for me.",
+          "I listen to podcasts.",
+          "Speak to the manager.",
+          "Listen to me."
         ],
-        "correct": 2
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -18839,12 +18814,12 @@
         "kind": "choose_translation",
         "prompt": "Спасибо за всё.",
         "options": [
-          "I agree with you.",
-          "Thank you for everything.",
-          "I listen to podcasts.",
-          "Everything depends on time."
+          "I'll pay for dinner.",
+          "Everything depends on time.",
+          "Don't pay for me.",
+          "Thank you for everything."
         ],
-        "correct": 1
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -18862,12 +18837,12 @@
         "kind": "choose_translation",
         "prompt": "Извини за опоздание.",
         "options": [
-          "Thank you for everything.",
-          "Listen to me.",
-          "Drop me here, please.",
-          "Apologize for being late."
+          "I'll pay for dinner.",
+          "Apologize for being late.",
+          "Thanks for the help.",
+          "He asked for help."
         ],
-        "correct": 3
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -18885,10 +18860,10 @@
         "kind": "choose_translation",
         "prompt": "Высадите меня здесь.",
         "options": [
-          "Listen to me.",
+          "Don't pay for me.",
           "Drop me here, please.",
-          "Don't wait for me.",
-          "Don't pay for me."
+          "Listen to me.",
+          "It depends on you."
         ],
         "correct": 1
       },
@@ -19662,12 +19637,12 @@
         "kind": "choose_translation",
         "prompt": "Я не спал.",
         "options": [
-          "I wasn't sleeping.",
-          "They were playing outside.",
-          "Where were you going?",
-          "The sun was shining."
+          "He was sleeping.",
+          "The sun was shining.",
+          "We were watching TV.",
+          "I wasn't sleeping."
         ],
-        "correct": 0
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -19685,12 +19660,12 @@
         "kind": "choose_translation",
         "prompt": "Куда ты шёл?",
         "options": [
-          "Where were you going?",
-          "She wasn't listening.",
-          "It was raining.",
-          "Was she crying?"
+          "We were watching TV.",
+          "You weren't listening again.",
+          "He was sleeping.",
+          "Where were you going?"
         ],
-        "correct": 0
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -19708,12 +19683,12 @@
         "kind": "choose_translation",
         "prompt": "Светило солнце.",
         "options": [
-          "I wasn't sleeping.",
-          "Where were you going?",
+          "It was raining.",
           "The sun was shining.",
-          "They were playing outside."
+          "It was getting dark.",
+          "He was sleeping."
         ],
-        "correct": 2
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -19731,12 +19706,12 @@
         "kind": "choose_translation",
         "prompt": "Они играли на улице.",
         "options": [
-          "The sun was shining.",
-          "They were playing outside.",
-          "I wasn't sleeping.",
-          "Where were you going?"
+          "Where were you going?",
+          "Why were they laughing?",
+          "It was raining.",
+          "They were playing outside."
         ],
-        "correct": 1
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -20519,12 +20494,12 @@
         "kind": "choose_translation",
         "prompt": "Лучше поздно, чем никогда.",
         "options": [
-          "Better late than never.",
-          "Could you help me?",
+          "Listen to me.",
           "The more, the better.",
-          "Listen to me."
+          "I agree with you.",
+          "Better late than never."
         ],
-        "correct": 0
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -20542,12 +20517,12 @@
         "kind": "choose_translation",
         "prompt": "Как можно скорее.",
         "options": [
-          "Everything depends on you.",
-          "I agree with you.",
-          "As soon as possible.",
-          "Thank you for everything."
+          "Just what I needed.",
+          "Of course, I remember.",
+          "Unfortunately, we were full.",
+          "As soon as possible."
         ],
-        "correct": 2
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -20565,12 +20540,12 @@
         "kind": "choose_translation",
         "prompt": "Послушай меня.",
         "options": [
-          "Listen to me.",
-          "Better late than never.",
           "Could you help me?",
-          "The more, the better."
+          "Unfortunately, we were full.",
+          "Which is more important?",
+          "Listen to me."
         ],
-        "correct": 0
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -20589,8 +20564,8 @@
         "prompt": "Я люблю путешествовать.",
         "options": [
           "I like travelling.",
-          "As soon as possible.",
-          "Better late than never.",
+          "Of course, I remember.",
+          "Thank you for everything.",
           "Listen to me."
         ],
         "correct": 0
@@ -21365,12 +21340,12 @@
         "kind": "choose_translation",
         "prompt": "Где выход?",
         "options": [
+          "Any sharp objects?",
           "Where is the exit?",
-          "My luggage is missing.",
           "The flight is cancelled.",
-          "Welcome aboard."
+          "My luggage is missing."
         ],
-        "correct": 0
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -21388,12 +21363,12 @@
         "kind": "choose_translation",
         "prompt": "Добро пожаловать на борт.",
         "options": [
+          "Welcome aboard.",
           "The flight is cancelled.",
-          "Where is the exit?",
-          "My luggage is missing.",
-          "Welcome aboard."
+          "We are now boarding.",
+          "It's just a souvenir."
         ],
-        "correct": 3
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -21411,12 +21386,12 @@
         "kind": "choose_translation",
         "prompt": "Мой багаж потерялся.",
         "options": [
+          "It's just a souvenir.",
+          "The flight is cancelled.",
           "My luggage is missing.",
-          "Please take your seats.",
-          "Empty your pockets.",
-          "Take out your liquids."
+          "Any sharp objects?"
         ],
-        "correct": 0
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -21434,12 +21409,12 @@
         "kind": "choose_translation",
         "prompt": "Рейс отменён.",
         "options": [
-          "The flight is cancelled.",
-          "My luggage is missing.",
-          "Welcome aboard.",
-          "Where is the exit?"
+          "Empty your pockets.",
+          "Have a nice flight!",
+          "Where is the exit?",
+          "The flight is cancelled."
         ],
-        "correct": 0
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -22211,12 +22186,12 @@
         "kind": "choose_translation",
         "prompt": "Конечно, без проблем.",
         "options": [
+          "I'm transiting to Tokyo.",
+          "Here is my passport.",
           "Sure, no problem.",
-          "Yes, here it is.",
-          "Yes, the first.",
-          "Where will you stay?"
+          "Passport, please."
         ],
-        "correct": 0
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -22234,12 +22209,12 @@
         "kind": "choose_translation",
         "prompt": "Хорошей поездки.",
         "options": [
-          "I'm visiting friends.",
-          "Sure, no problem.",
-          "Have a good trip.",
-          "I'm transiting to Tokyo."
+          "I'm here on business.",
+          "Have a nice day.",
+          "Here is my passport.",
+          "Have a good trip."
         ],
-        "correct": 2
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -22257,12 +22232,12 @@
         "kind": "choose_translation",
         "prompt": "Я в гостях у друзей.",
         "options": [
-          "I'm visiting friends.",
-          "Sure, no problem.",
           "I'm transiting to Tokyo.",
-          "Have a good trip."
+          "With friends.",
+          "I'm visiting friends.",
+          "Passport, please."
         ],
-        "correct": 0
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -22280,12 +22255,12 @@
         "kind": "choose_translation",
         "prompt": "Я транзитом в Токио.",
         "options": [
-          "I'm visiting friends.",
-          "Sure, no problem.",
-          "Have a good trip.",
-          "I'm transiting to Tokyo."
+          "I'm here on holiday.",
+          "I'm transiting to Tokyo.",
+          "Passport, please.",
+          "Nothing to declare."
         ],
-        "correct": 3
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -23057,12 +23032,12 @@
         "kind": "choose_translation",
         "prompt": "Я выезжаю.",
         "options": [
-          "I'm checking out.",
-          "The TV doesn't work.",
-          "For how many nights?",
-          "I have a reservation."
+          "Check-out is at noon.",
+          "The name is Ivanov.",
+          "What time is check-out?",
+          "I'm checking out."
         ],
-        "correct": 0
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -23080,12 +23055,12 @@
         "kind": "choose_translation",
         "prompt": "Мы нашли ваше зарядное устройство.",
         "options": [
-          "We found your charger.",
           "Enjoy your stay!",
-          "Here is my key.",
-          "Your room is ready."
+          "For how many nights?",
+          "We found your charger.",
+          "We enjoyed our stay."
         ],
-        "correct": 0
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -23103,10 +23078,10 @@
         "kind": "choose_translation",
         "prompt": "На сколько ночей?",
         "options": [
-          "I'm checking out.",
+          "I have a reservation.",
           "For how many nights?",
-          "Could I change rooms?",
-          "The TV doesn't work."
+          "For three nights.",
+          "What time is check-out?"
         ],
         "correct": 1
       },
@@ -23126,12 +23101,12 @@
         "kind": "choose_translation",
         "prompt": "Во сколько выезд?",
         "options": [
+          "Check-out is at noon.",
+          "What time is breakfast?",
           "What time is check-out?",
-          "We found your charger.",
-          "For how many nights?",
-          "I'm checking out."
+          "Where is the lift?"
         ],
-        "correct": 0
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -23903,12 +23878,12 @@
         "kind": "choose_translation",
         "prompt": "Всё было очень вкусно.",
         "options": [
-          "Everything was delicious.",
-          "Any side effects?",
-          "I'm allergic to nuts.",
-          "The food was excellent."
+          "Anything to drink?",
+          "We didn't book.",
+          "The food was excellent.",
+          "Everything was delicious."
         ],
-        "correct": 0
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -23926,12 +23901,12 @@
         "kind": "choose_translation",
         "prompt": "Есть побочные эффекты?",
         "options": [
+          "What do you recommend?",
           "Any side effects?",
-          "Get well soon!",
-          "Keep the change.",
-          "Before or after food?"
+          "I'll have the steak.",
+          "We didn't book."
         ],
-        "correct": 0
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -23950,9 +23925,9 @@
         "prompt": "У меня аллергия на орехи.",
         "options": [
           "I'm allergic to nuts.",
-          "For how many days?",
-          "Here you are.",
-          "Where are the plasters?"
+          "What do you recommend?",
+          "Anything to drink?",
+          "We didn't book."
         ],
         "correct": 0
       },
@@ -23972,10 +23947,10 @@
         "kind": "choose_translation",
         "prompt": "Еда была превосходной.",
         "options": [
-          "Any side effects?",
+          "I'll have the steak.",
           "The food was excellent.",
           "Everything was delicious.",
-          "I'm allergic to nuts."
+          "Before or after food?"
         ],
         "correct": 1
       },
@@ -24749,12 +24724,12 @@
         "kind": "choose_translation",
         "prompt": "Паспорт, пожалуйста.",
         "options": [
-          "Passport, please.",
-          "Will you join us?",
-          "The weather was great.",
-          "I have a reservation."
+          "I have a reservation.",
+          "My flight is delayed.",
+          "For three nights.",
+          "Passport, please."
         ],
-        "correct": 0
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -24772,12 +24747,12 @@
         "kind": "choose_translation",
         "prompt": "Погода была отличная.",
         "options": [
-          "The weather was great.",
-          "I have a reservation.",
-          "Passport, please.",
-          "Will you join us?"
+          "My flight is delayed.",
+          "I'm here on holiday.",
+          "I'll have the fish.",
+          "The weather was great."
         ],
-        "correct": 0
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -24795,12 +24770,12 @@
         "kind": "choose_translation",
         "prompt": "Ты присоединишься к нам?",
         "options": [
-          "Passport, please.",
-          "The weather was great.",
-          "I have a reservation.",
-          "Will you join us?"
+          "Where did you stay?",
+          "Will you join us?",
+          "What do you recommend?",
+          "Could you send someone?"
         ],
-        "correct": 3
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -24818,12 +24793,12 @@
         "kind": "choose_translation",
         "prompt": "У меня бронь.",
         "options": [
+          "I'm here on holiday.",
           "I have a reservation.",
-          "What happened?",
-          "It is bigger.",
-          "I'm checking out."
+          "For three nights.",
+          "I'll have the fish."
         ],
-        "correct": 0
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -26872,6 +26847,54 @@
       "meta": {
         "skill": "speaking",
         "xp": 4
+      }
+    },
+    {
+      "id": "ex-c-9210",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-c-1366"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-c-9220",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-c-1367"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-c-9230",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-c-1368"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
       }
     }
   ]

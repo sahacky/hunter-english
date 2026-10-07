@@ -42,9 +42,54 @@ function clickButton(name: string | RegExp): boolean {
 function currentExercise(view: LessonView): ExerciseItem | undefined {
   const id = document.querySelector('[data-exercise-id]')?.getAttribute('data-exercise-id')
   if (!id) return undefined
-  return Object.values(view.content)
+  const resolved = Object.values(view.content)
     .flat()
     .find(({ exercise }) => exercise.id === id)?.exercise
+  if (resolved) return resolved
+  // R6: «Повторить шаг» на разогреве — экран собрал синтетический вариант
+  // (ex-warmup-r-*); восстанавливаем payload из DOM + пула фраз урока
+  if (!id.startsWith('ex-warmup-r-')) return undefined
+  const prompt = document.querySelector('.lesson-prompt')?.textContent ?? ''
+  const phrase = Object.values(view.phrasesById).find((p) => p.translation_ru === prompt)
+  if (document.querySelector('.lesson-options') && phrase) {
+    const options = Array.from(document.querySelectorAll<HTMLButtonElement>('.lesson-option')).map(
+      (b) => (b.textContent ?? '').trim(),
+    )
+    return {
+      id,
+      type: 'choose_translation',
+      payload: {
+        kind: 'choose_translation',
+        prompt,
+        options,
+        correct: Math.max(0, options.indexOf(phrase.text_en)),
+      },
+      answer: { normalization: 'default', typo: 'exact' },
+      meta: { skill: 'words', xp: 1 },
+    }
+  }
+  // match-вариант: колонки EN/RU в DOM идут в порядке payload — зипуем
+  if (document.querySelector('.lesson-match')) {
+    const en = Array.from(document.querySelectorAll<HTMLButtonElement>('.lesson-option[lang="en"]'))
+      .filter((b) => !b.disabled)
+      .map((b) => (b.textContent ?? '').trim())
+    const ru = Array.from(document.querySelectorAll<HTMLButtonElement>('.lesson-option[lang="ru"]'))
+      .filter((b) => !b.disabled)
+      .map((b) => (b.textContent ?? '').trim())
+    if (en.length > 0 && en.length === ru.length) {
+      return {
+        id,
+        type: 'match_pairs',
+        payload: {
+          kind: 'match_pairs',
+          pairs: en.map((text, index) => ({ en: text, ru: ru[index] })),
+        },
+        answer: { normalization: 'default', typo: 'exact' },
+        meta: { skill: 'words', xp: 1 },
+      }
+    }
+  }
+  return undefined
 }
 
 /** Один тик «плохого» пользователя. */

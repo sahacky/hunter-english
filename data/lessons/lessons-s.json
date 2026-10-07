@@ -10,7 +10,7 @@
       "grammar_point": {
         "id": "gp-s-01",
         "title_ru": "Эмфаза: наречие вперёд — порядок слов как в вопросе",
-        "rule_md": "**Инверсия продвинутая — эмфаза.**\nПосле отрицательных/ограничительных наречий — вопросительный порядок слов:\n**Not only did he** apologise… / **No sooner had we** left **than**… /\n**Hardly had I** sat down **when**… / **Not until midnight did** he call.\n**Only then did** I understand. / **Under no circumstances should** you sign it.\nSo + прилагательное вперёд: **So loud was the music** that…\nОтвет-согласие: **Neither do I. / Nor do I.**",
+        "rule_md": "**Not only did he** apologise. — Мало того, он извинился. **No sooner had we** left than it rained.\n\nЭмфаза: после отрицательного наречия в начале — вопросительный порядок слов (инверсия).\n\n**Формула:** Not only / No sooner / Only then… → вспомогательный глагол перед подлежащим\n- Not only **did he** apologise… / No sooner **had we** left **than**…\n- Hardly **had I** sat down **when**… / Only then **did** I understand.\n- So + прилагательное вперёд: **So loud was the music** that… Ответ-согласие: **Neither do I.**\n\nПо-русски ударение делают «даже/как только» и интонация; по-английски порядок слов сам ставит акцент.\n\n⚠️ Ловушка: ❌ Not only he apologised → ✔ Not only **did he** apologise.\n\nПроверь себя: No sooner ___ we left than… → had",
         "phrase_ids": ["ph-s-0001", "ph-s-0002", "ph-s-0003", "ph-s-0004", "ph-s-0005"],
         "trap_id": "trap-question-word-order"
       },
@@ -188,7 +188,7 @@
       "grammar_point": {
         "id": "gp-s-02",
         "title_ru": "Идиома — цельная единица, не дословный перевод",
-        "rule_md": "**Идиомы путешественника.**\nИдиому учи целиком, смысл не складывается из слов:\n**red-eye** — ночной рейс; **overbooked** — перепродан;\n**at the last minute** — в последний момент; **hit the road** — отправиться в путь;\n**break the bank** — разорить; **jet lag** — сбой биоритмов после перелёта;\n**off the beaten track** — вдали от туристов; **travel light** — налегке;\n**call it a day** — закругляться; **take a rain check** — перенести на потом;\n**under the weather** — неважно себя чувствовать; **a piece of cake** — проще простого;\n**miss the boat** — упустить шанс; **bite the bullet** — собраться с духом;\n**better safe than sorry** — лучше перестраховаться.",
+        "rule_md": "It's a **piece of cake**. — Проще простого. We **hit the road** at dawn.\n\nИдиома — цельный блок: смысл не складывается из слов, учи фразой.\n\n**Формула:** ситуация → готовый блок\n- перелёты: **red-eye** (ночной рейс), **jet lag**, **travel light**, **off the beaten track**\n- решения: **at the last minute**, **take a rain check**, **call it a day**, **bite the bullet**\n- оценки: **a piece of cake**, **break the bank**, **under the weather**, **miss the boat**\n\nПо-русски «кот наплакал» тоже не про кота — идиомы обеих языков живут картинкой, а не пословным переводом.\n\n⚠️ Ловушка: ❌ do the most of it → ✔ **make the most of it** (в идиомах работает закон make).\n\nПроверь себя: Ночной рейс — это a ___. → red-eye",
         "phrase_ids": ["ph-s-0036", "ph-s-0037", "ph-s-0038", "ph-s-0039", "ph-s-0040"],
         "trap_id": "trap-do-make"
       },
@@ -361,7 +361,7 @@
       "grammar_point": {
         "id": "gp-s-03",
         "title_ru": "Догадки о прошлом и упрёки",
-        "rule_md": "**Тонкости модальных: догадки и упрёки.**\nСтепень уверенности о прошлом: **must have** done (наверняка) → **might/may well have** done (возможно) → **can't have** done (исключено).\n**needn't have** done — делал, но было зря: You **needn't have worried**.\n**should have** done — упрёк: He **should have** double-checked.\n**might as well** — не хуже чем: We **might as well** walk.\n**would rather / 'd sooner** — предпочитаю: I**'d rather** stay in.\n**had better ('d better)** — совет с оттенком угрозы: You**'d better** hurry.",
+        "rule_md": "He **must have** missed the train. — Он наверняка опоздал. You **needn't have worried**.\n\nДогадки и упрёки о прошлом: модальный + have + 3-я форма.\n\n**Формула:** степень уверенности → must / might / can't have done\n- наверняка: **must have** done; возможно: **might well have**; исключено: **can't have**\n- зря делал: **needn't have** done; упрёк: **should have** done\n- предпочтение: I**'d rather** stay; совет с оттенком угрозы: You**'d better** hurry; **might as well** walk\n\nПо-русски «наверняка/зря/надо было» — наречия; по-английски оценку несёт сам модальный глагол.\n\nПроверь себя: Он точно ушёл: He ___ ___ left. → must have",
         "phrase_ids": ["ph-s-0070", "ph-s-0071", "ph-s-0072", "ph-s-0073", "ph-s-0074"],
         "trap_id": null
       },
@@ -534,7 +534,7 @@
       "grammar_point": {
         "id": "gp-s-04",
         "title_ru": "Дискурс: противопоставление и уступка",
-        "rule_md": "**Продвинутые связки.**\nПротивопоставление: **however**, **nevertheless**, **nonetheless**, **all the same**, **even so** — «тем не менее».\nСопоставление: **whereas** — тогда как: The north is rich, **whereas** the south is poor.\nУступка: **despite / in spite of** + существительное или герундий (НЕ «despite of»):\n**Despite the rain** / **Despite being tired**. Хотя = **although / even though / though**.\nСледствие: **therefore / consequently / hence**. Добавка: **moreover / furthermore**.",
+        "rule_md": "**Despite the rain**, we went out. The north is rich, **whereas** the south is poor.\n\nСвязки склеивают смысл между частями высказывания.\n\n**Формула:** отношение → связка\n- уступка: **despite / in spite of** + существительное/-ing; **although / even though** + предложение\n- противопоставление: **however / nevertheless**; сопоставление: **whereas**\n- следствие: **therefore / hence**; добавка: **moreover / furthermore**\n\nПо-русски «несмотря на то что» — одна конструкция на всё; по-английски выбор связки зависит от того, что после неё: фраза или целое предложение.\n\n⚠️ Ловушка (ЛТ-23): ❌ Despite of the rain → ✔ **Despite the rain**.\n\nПроверь себя: ___ the traffic, we arrived on time. → Despite",
         "phrase_ids": ["ph-s-0104", "ph-s-0105", "ph-s-0106", "ph-s-0107", "ph-s-0108"],
         "trap_id": "trap-despite-of"
       },
@@ -707,7 +707,7 @@
       "grammar_point": {
         "id": "gp-s-05",
         "title_ru": "Сленг на слух — полные формы на письме",
-        "rule_md": "**Разговорное сжатие: gonna / wanna / gotta / ain't.**\nНа слух обязательно, на письме — только в переписке с друзьями (ЛТ-24).\n**gonna** = going to: I'**m gonna** be late. **wanna** = want to: I **wanna** go home.\n**gotta** = have got to: I **gotta** go. **ain't** = am/is/are not: She **ain't** coming.\nСжатия: **dunno** = don't know, **gimme** = give me, **lemme** = let me,\n**kinda/sorta** = kind of / sort of, **outta** = out of, **whatcha** = what are you.\nВ деловом письме: going to, want to, have to, is not.",
+        "rule_md": "I'**m gonna** be late. — Опоздаю. She **ain't** coming.\n\nРазговорное сжатие: на слух обязательно, узнаётся мгновенно.\n\n**Формула:** going to / want to / have got to → gonna / wanna / gotta\n- **gonna** = going to; **wanna** = want to; **gotta** = have got to; **ain't** = am/is/are not\n- **dunno** = don't know; **gimme** = give me; **lemme** = let me; **kinda** = kind of; **outta** = out of\n\nПо-русски «щас/чё» — сжатие для своих; по-английски то же правило улицы: с друзьями — gonna, в документах — going to.\n\n⚠️ Ловушка (ЛТ-24): ❌ I'm gonna submit the report (деловое письмо) → ✔ I'**m going to** submit the report.\n\nПроверь себя: I ___ go home (разговорно). → wanna",
         "phrase_ids": ["ph-s-0138", "ph-s-0139", "ph-s-0140", "ph-s-0141", "ph-s-0142"],
         "trap_id": "trap-slang-register"
       },
@@ -880,7 +880,7 @@
       "grammar_point": {
         "id": "gp-s-06",
         "title_ru": "Микс модуля «Эмфаза и стиль»",
-        "rule_md": "**Повторение №25: эмфаза и стиль.**\nИнверсия: No sooner had we left… / Neither do I. / So loud was the music…\nИдиомы: red-eye, call it a day, bite the bullet, better safe than sorry.\nМодальные оттенки: needn't have worried, must have left, 'd rather, 'd better.\nСвязки: whereas, despite (без of!), nevertheless. Сленг на слух: gonna, gotta, gimme.",
+        "rule_md": "**No sooner had we** left… / **Despite the rain**… / I'**m gonna**… — три лица стиля S.\n\nПовторение: инверсия-эмфаза, идиомы, модальные оттенки, связки, разговорное сжатие.\n\n- despite — без of; gonna — только для своих\n- must have / needn't have / 'd better hurry\n\nПроверь себя: Not only ___ he apologise… → did",
         "phrase_ids": ["ph-s-0168", "ph-s-0169", "ph-s-0170", "ph-s-0171", "ph-s-0172"],
         "trap_id": "trap-despite-of"
       },
@@ -1056,7 +1056,7 @@
       "grammar_point": {
         "id": "gp-s-07",
         "title_ru": "Лексика обсуждения + cloze по цитатам",
-        "rule_md": "**Колоды C1: JJK и Black Mirror.**\nУрок-колода: десять цитат уровня C1 + cloze + разбор.\nЛексика обсуждения: **plot twist** — поворот сюжета; **pacing** — темп;\n**the finale paid off** — финал оправдал ожидания; **steals the show** — крадёт шоу;\n**subvert expectations** — ломать ожидания; **slow burn** — медленный разгон;\n**binge-watch** — глотать сезонами; **it lingers** — остаётся с тобой.\nСмотри в оригинале: «Watch it subbed, trust me».",
+        "rule_md": "«Watch it subbed, trust me» — и десять цитат C1 для разбора.\n\nУрок-колода: цитаты + словарь кинокритика.\n\n**Формула:** разбор → готовая оценка\n- **plot twist** — поворот; **pacing** — темп; **the finale paid off** — финал оправдал\n- **steals the show**; **subvert expectations**; **slow burn**; **binge-watch**; **it lingers**\n\nПо-русски о сериалах говорим «затянули/порадовал»; по-английски у рецензий свой набор блоков.\n\nПроверь себя: Смотреть сезонами — to ___-watch. → binge",
         "phrase_ids": ["ph-s-0196", "ph-s-0197", "ph-s-0198", "ph-s-0199", "ph-s-0200"],
         "trap_id": null
       },
@@ -1253,7 +1253,7 @@
       "grammar_point": {
         "id": "gp-s-08",
         "title_ru": "Условные без if",
-        "rule_md": "**Инверсия условных: Had I known…, Were it not for…**\nIf исчезает, вспомогательный глагол выходит вперёд:\n**Had I known**, I would have called = If I had known…\n**Were it not for** you = If it weren't for you.\n**Should you need** help = If you should need help (вежливое «вдруг понадобится»).\nРазговорный дубль остаётся нормой: If I had known… — тоже верно.\nИнверсия звучит формально и литературно.",
+        "rule_md": "**Had I known**, I would have called. — Знай я — позвонил бы.\n\nФормальная инверсия условия: if исчезает, вспомогательный глагол выходит вперёд.\n\n**Формула:** If + had/were/should → Had… / Were… / Should…\n- **Had I known** = If I had known; **Were it not for** you = If it weren't for you\n- **Should you need** help = If you should need help\n\nПо-русски «знай я» — одним словом; по-английски ту же литературность даёт порядок слов. Разговорный «If I had known…» тоже верен.\n\n⚠️ Ловушка (ЛТ-17): ❌ Had I known, I will call → ✔ …I **would have** called.\n\nПроверь себя: ___ I known earlier… → Had",
         "phrase_ids": ["ph-s-0220", "ph-s-0221", "ph-s-0222", "ph-s-0223", "ph-s-0224"],
         "trap_id": "trap-if-will"
       },
@@ -1426,7 +1426,7 @@
       "grammar_point": {
         "id": "gp-s-09",
         "title_ru": "Безличный доклад и пассив инфинитива",
-        "rule_md": "**Пассив в формальном стиле.**\nБезличный доклад: **It is believed/reported/thought that…** — считается/сообщается/полагают.\n**He is said to be…** — говорят, он…; **She is expected to resign** — ожидается отставка.\nПерфект/длительный пассив: **has been announced**, **is being looked into**.\n**It cannot be ruled out** — исключить нельзя. **Little is known about…** — мало известно.\nЭто язык новостей и документов — учи блоками.",
+        "rule_md": "**It is believed that** the castle is haunted. — Считается, что в замке водится призрак.\n\nБезличный доклад: пассив прячет автора, звучит как факт.\n\n**Формула:** сообщение → It is believed / reported that…\n- **He is said to be…** — говорят, он…; **She is expected to resign**\n- перфект/длительный: **has been announced**, **is being looked into**\n- **It cannot be ruled out**; **Little is known about…**\n\nПо-русски «считается/сообщается» — безличные глаголы; по-английски ту же дистанцию даёт пассив — язык новостей.\n\n⚠️ Ловушка (ЛТ-29): ❌ It is believed he is here since Monday → ✔ he **has been** here since Monday.\n\nПроверь себя: Говорят, он богат: He is ___ to be rich. → said",
         "phrase_ids": ["ph-s-0252", "ph-s-0253", "ph-s-0254", "ph-s-0255", "ph-s-0256"],
         "trap_id": "trap-present-perfect"
       },
@@ -1604,7 +1604,7 @@
       "grammar_point": {
         "id": "gp-s-10",
         "title_ru": "Микс модуля «Колоды и формальный стиль»",
-        "rule_md": "**Повторение №26: контрольная.**\nКолоды: plot twist, pacing, steals the show, binge-watch.\nИнверсия условных: Had I known… / Were it not for… / Should you need…\nФормальный пассив: It is believed that… / Measures are being taken.\nФорматы Врат: найди ошибку, выбери форму, трансформация.",
+        "rule_md": "**Had I known**… / **It is believed that**… / **plot twist** — контрольная S-ранга.\n\nПовторение: инверсия условных, формальный пассив, лексика кинокритика.\n\n- Were it not for… / Should you need…; Measures are being taken\n- binge-watch, slow burn, the finale paid off\n\nПроверь себя: ___ you need help, call me. → Should",
         "phrase_ids": ["ph-s-0284", "ph-s-0285", "ph-s-0286", "ph-s-0287", "ph-s-0288"],
         "trap_id": "trap-if-will"
       },
@@ -1732,6 +1732,9 @@
           "id": "ex-s-0460"
         },
         {
+          "id": "ex-s-9210"
+        },
+        {
           "id": "ex-s-0461"
         },
         {
@@ -1780,7 +1783,7 @@
       "grammar_point": {
         "id": "gp-s-11",
         "title_ru": "Держать разговор без подготовки",
-        "rule_md": "**Free talk: капсула импровизации.** <!-- REVIEW: спека S-11 требует «7 мин непрерывной речи» — таймер свободной речи за границами движка; реализована импровизация answer_question без подготовки -->\nФункции, которыми держат разговор, когда нечего ответить:\nТянуть время: **That's a tough one. / Let me think for a second. / Off the top of my head…**\nМнение: **The way I see it… / If you ask me… / I'm on the fence about it.**\nУступить или удержать: **That's a fair point. / That's not how I'd put it. / Let's agree to disagree.**\nСжать: **In a nutshell… / Long story short… / What it boils down to is…**\nЗдесь нет «правильного» ответа — только твоя позиция.",
+        "rule_md": "**That's a tough one. Let me think for a second.** — честная пауза вместо паники.\n\nСвободная речь держится на готовых функциях-поддержках. <!-- REVIEW: спека S-11 требует «7 мин непрерывной речи» — таймер за границами движка; реализована импровизация answer_question без подготовки -->\n\n**Формула:** ситуация в разговоре → готовая фраза\n- тянуть время: **That's a tough one. / Let me think… / Off the top of my head…**\n- мнение: **The way I see it… / If you ask me… / I'm on the fence**\n- спор: **That's a fair point. / That's not how I'd put it. / Let's agree to disagree**\n- сжать: **In a nutshell… / Long story short… / What it boils down to is…**\n\nПо-русски паузы заполняют «ну, как бы»; по-английски эти роли у tough one / I mean / sort of.\n\nПроверь себя: «Справедливости ради…» — ___ be fair. → To",
         "phrase_ids": ["ph-s-0310", "ph-s-0311", "ph-s-0312", "ph-s-0313", "ph-s-0314"],
         "trap_id": null
       },
@@ -1962,7 +1965,7 @@
       "grammar_point": {
         "id": "gp-s-12",
         "title_ru": "Связки живой речи",
-        "rule_md": "**Дискурс-маркеры носителей.**\nСлова-связки, на которых держится живая речь:\n**You know what I mean.** — понимаешь, о чём я. **sort of / kind of** — как бы.\n**I mean…** — ну, то есть. **Actually…** — вообще-то. **Basically…** — по сути.\n**To be fair…** — справедливости ради. **At the end of the day…** — в конечном счёте.\n**Works for me.** — меня устраивает. **No worries.** — без проблем. **Mind you…** — между прочим.\n**That said…** — тем не менее. **Apparently…** — судя по всему. **Like I said…** — как я уже говорил.\nНе переводятся дословно — ловятся на слух и вставляются в свою речь.",
+        "rule_md": "**You know what I mean?** — **Actually**, yes. Живая речь держится на мелких связках.\n\nДискурс-маркеры — сигналы отношения говорящего, дословно не переводятся.\n\n**Формула:** отношение → маркер\n- смягчение: **sort of / kind of / I mean**; поправка: **actually / basically**\n- справедливость: **To be fair…**; итог: **At the end of the day… / That said…**\n- согласие: **Works for me. / Fair enough. / No worries.**; вводно: **Apparently… / Like I said…**\n\nПо-русски «вот вообще-то…» играют те же роли; по-английски у каждой роли свой маркер.\n\nПроверь себя: «Меня устраивает» — ___ for me. → Works",
         "phrase_ids": ["ph-s-0340", "ph-s-0341", "ph-s-0342", "ph-s-0343", "ph-s-0344"],
         "trap_id": null
       },
@@ -2135,7 +2138,7 @@
       "grammar_point": {
         "id": "gp-s-13",
         "title_ru": "actual ≠ актуальный; kids ≠ children",
-        "rule_md": "**False friends и стилистические регистры.**\nЛожные друзья (ЛТ-25): **actual** = фактический, реальный (актуальный = **topical**).\n**pretend** = притворяться (претендовать = **apply for**). **sympathy** = сочувствие (симпатия = **a soft spot**).\n**pretext** = отговорка (предлог = **preposition**).\n**complexion** = цвет лица (комплекция = **build/physique**). **brilliant** = отличный, блестящий (бриллиант = **diamond**).\n**accurate** = точный (аккуратный = **neat/careful**).\nРегистры: детям и друзьям — **kids, help, need, start, Later!**;\nв документах и вежливо — **children, assist, require, commence, Regards**.\nСмысл один — окраска разная.",
+        "rule_md": "This topic is very **topical**. — «Актуальный» — не actual.\n\nЛожные друзья: слово похоже на русское, а смысл другой.\n\n**Формула:** похоже на русское → проверь значение\n- **actual** = фактический (актуальный = **topical**); **accurate** = точный (аккуратный = **neat**)\n- **pretend** = притворяться (претендовать = **apply for**); **sympathy** = сочувствие (симпатия = **a soft spot**)\n- **pretext** = отговорка; **complexion** = цвет лица; **brilliant** = отличный\n\nРегистры: друзьям — **kids, help, Later!**; документам — **children, assist, require**.\n\nПо-русски когнаты «акт/актуальный» сами подводят; по-английски держи пару: похожее слово → настоящий перевод.\n\n⚠️ Ловушка (ЛТ-25): ❌ very actual → ✔ very **topical**.\n\nПроверь себя: Точный отчёт — an ___ report. → accurate",
         "phrase_ids": ["ph-s-0370", "ph-s-0371", "ph-s-0372", "ph-s-0373", "ph-s-0374"],
         "trap_id": "trap-false-friends"
       },
@@ -2302,7 +2305,7 @@
       "grammar_point": {
         "id": "gp-s-14",
         "title_ru": "Микс S3 + диктант на скорости",
-        "rule_md": "**Повторение №27 + большой диктант.**\nFree talk: tough one, fair point, on the fence, agree to disagree.\nМаркеры: sort of, actually, fair enough, that said, in other words.\nТочность: actual/topical, pretend/pretext, assist/help.\nБольшой диктант: быстрые фразы из сериалов — слушай два раза, пиши сразу.",
+        "rule_md": "**To be fair**… / **actual ≠ topical** / **tough one** — контрольная перед Финалом.\n\nПовторение: дискурс-маркеры, false friends, регистры, большой диктант.\n\n- That said / Apparently / Fair enough; assist vs help\n- actual/topical, pretend/apply for\n\nПроверь себя: «Судя по всему…» — ___. → Apparently",
         "phrase_ids": ["ph-s-0398", "ph-s-0399", "ph-s-0400", "ph-s-0401", "ph-s-0402"],
         "trap_id": "trap-false-friends"
       },
@@ -2490,7 +2493,7 @@
       "grammar_point": {
         "id": "gp-s-15",
         "title_ru": "Язык кинокритика + cloze по сценам",
-        "rule_md": "**Разбор сцены: колода цитат.** <!-- REVIEW: литеральная «кликабельная читалка» эпизода — отдельная будущая механика (specs/01 §10 «перспектива»); в M20 — разбор-колода на механиках M11 -->\nДесять цитат-сцен + словарь кинокритика:\n**foreshadow** — предвещать; **open to interpretation** — простор для трактовки;\n**read between the lines** — читать между строк; **subvert the trope** — ломать штамп;\n**deliberately ambiguous** — намеренно двусмысленно; **recurring motif** — повторяющийся мотив;\n**the payoff** — отдача, кульминационная награда; **subtext** — подтекст.\nСмотри сцену дважды: **It rewards a second watch.**",
+        "rule_md": "«It **rewards** a second watch» — и словарь кинокритика к десяти сценам. <!-- REVIEW: литеральная «кликабельная читалка» эпизода — отдельная будущая механика (specs/01 §10 «перспектива»); здесь — разбор-колода на механиках M11 -->\n\nФинальная колода: цитаты-сцены + язык разбора.\n\n**Формула:** элемент сцены → термин разбора\n- **foreshadow** — предвещать; **subvert the trope** — ломать штамп; **recurring motif**\n- **deliberately ambiguous**; **subtext**; **the payoff**; **open to interpretation**\n\nПо-русски «недосказанность/фишка»; по-английски это рабочий язык рецензий.\n\nПроверь себя: Читать между строк — to read between ___ ___. → the lines",
         "phrase_ids": ["ph-s-0428", "ph-s-0429", "ph-s-0430", "ph-s-0431", "ph-s-0432"],
         "trap_id": null
       },

@@ -60,12 +60,12 @@
         "kind": "choose_translation",
         "prompt": "Все будут смотреть.",
         "options": [
+          "They'll be watching.",
           "Everyone will be watching.",
-          "He'll be snoring.",
-          "We'll be waiting outside.",
-          "They'll be watching."
+          "She'll be running late.",
+          "He'll be snoring."
         ],
-        "correct": 0
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -83,12 +83,12 @@
         "kind": "choose_translation",
         "prompt": "Они будут смотреть.",
         "options": [
-          "Everyone will be watching.",
           "They'll be watching.",
           "He'll be snoring.",
-          "We'll be waiting outside."
+          "I'll be cooking dinner.",
+          "Everyone will be watching."
         ],
-        "correct": 1
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -107,9 +107,9 @@
         "prompt": "Он будет храпеть.",
         "options": [
           "He'll be snoring.",
-          "They'll be watching.",
-          "Everyone will be watching.",
-          "We'll be waiting outside."
+          "We'll be waiting outside.",
+          "She'll be running late.",
+          "They'll be watching."
         ],
         "correct": 0
       },
@@ -129,12 +129,12 @@
         "kind": "choose_translation",
         "prompt": "Мы будем ждать снаружи.",
         "options": [
-          "Everyone will be watching.",
-          "He'll be snoring.",
           "We'll be waiting outside.",
-          "They'll be watching."
+          "He'll be snoring.",
+          "They'll be watching.",
+          "Everyone will be watching."
         ],
-        "correct": 2
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -918,8 +918,8 @@
         "kind": "choose_translation",
         "prompt": "Они поедят.",
         "options": [
-          "I'll have finished.",
           "He'll have gone.",
+          "Everything will have changed.",
           "We'll have arrived.",
           "They'll have eaten."
         ],
@@ -941,9 +941,9 @@
         "kind": "choose_translation",
         "prompt": "Он уйдёт.",
         "options": [
-          "We'll have arrived.",
-          "I'll have finished.",
           "They'll have eaten.",
+          "Nothing will have happened.",
+          "Everything will have changed.",
           "He'll have gone."
         ],
         "correct": 3
@@ -964,12 +964,12 @@
         "kind": "choose_translation",
         "prompt": "Я закончу.",
         "options": [
-          "I'll have finished.",
           "They'll have eaten.",
-          "We'll have arrived.",
-          "He'll have gone."
+          "She'll have left.",
+          "I'll have finished.",
+          "Everything will have changed."
         ],
-        "correct": 0
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -988,11 +988,11 @@
         "prompt": "Всё изменится.",
         "options": [
           "I'll have finished.",
-          "They'll have eaten.",
-          "He'll have gone.",
-          "Everything will have changed."
+          "Everything will have changed.",
+          "Nothing will have happened.",
+          "He'll have gone."
         ],
-        "correct": 3
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -1788,11 +1788,11 @@
         "prompt": "Он играл на прошлой неделе.",
         "options": [
           "He is playing now.",
-          "I work every day.",
           "He played last week.",
-          "I am working now."
+          "I worked yesterday.",
+          "I will work tomorrow."
         ],
-        "correct": 2
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -1810,12 +1810,12 @@
         "kind": "choose_translation",
         "prompt": "вчера — простое прошедшее",
         "options": [
-          "I worked yesterday.",
-          "I will work tomorrow.",
+          "I work every day.",
           "She cooked yesterday.",
-          "yesterday — Past Simple"
+          "yesterday — Past Simple",
+          "I worked yesterday."
         ],
-        "correct": 3
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -1834,11 +1834,11 @@
         "prompt": "Я работал вчера. (Past Simple)",
         "options": [
           "She cooked yesterday.",
-          "I worked yesterday.",
-          "I will work tomorrow.",
-          "yesterday — Past Simple"
+          "I am working now.",
+          "I work every day.",
+          "I worked yesterday."
         ],
-        "correct": 1
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -1856,12 +1856,12 @@
         "kind": "choose_translation",
         "prompt": "Он играет сейчас.",
         "options": [
-          "He is playing now.",
           "He played last week.",
-          "I work every day.",
-          "I am working now."
+          "He is playing now.",
+          "I am working now.",
+          "now — Present Continuous"
         ],
-        "correct": 0
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -2633,12 +2633,12 @@
         "kind": "choose_translation",
         "prompt": "Дорога закрыта.",
         "options": [
-          "This can be fixed.",
-          "The road is closed.",
+          "The work is done.",
           "It is being built.",
-          "Everything has been arranged."
+          "This can be fixed.",
+          "The road is closed."
         ],
-        "correct": 1
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -2656,12 +2656,12 @@
         "kind": "choose_translation",
         "prompt": "Это строится.",
         "options": [
-          "This can be fixed.",
-          "The road is closed.",
           "It is being built.",
-          "Everything has been arranged."
+          "The road is closed.",
+          "Everything has been arranged.",
+          "The work is done."
         ],
-        "correct": 2
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -2679,12 +2679,12 @@
         "kind": "choose_translation",
         "prompt": "Всё устроено.",
         "options": [
-          "It is being built.",
-          "The road is closed.",
           "Everything has been arranged.",
-          "This can be fixed."
+          "The road is closed.",
+          "This can be fixed.",
+          "It is being built."
         ],
-        "correct": 2
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -2702,10 +2702,10 @@
         "kind": "choose_translation",
         "prompt": "Это можно починить.",
         "options": [
-          "It is being built.",
           "Everything has been arranged.",
+          "The house is sold.",
           "This can be fixed.",
-          "The road is closed."
+          "It is being built."
         ],
         "correct": 2
       },
@@ -3479,12 +3479,12 @@
         "kind": "choose_translation",
         "prompt": "Фотографировать запрещено.",
         "options": [
-          "This could be arranged.",
-          "It is considered rude.",
           "Photography is prohibited.",
-          "This must be done."
+          "It is considered rude.",
+          "This must be done.",
+          "Credit cards are accepted."
         ],
-        "correct": 2
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -3502,12 +3502,12 @@
         "kind": "choose_translation",
         "prompt": "Это можно устроить.",
         "options": [
-          "This must be done.",
-          "Photography is prohibited.",
+          "Credit cards are accepted.",
           "This could be arranged.",
-          "It is considered rude."
+          "This must be done.",
+          "Photography is prohibited."
         ],
-        "correct": 2
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -3525,10 +3525,10 @@
         "kind": "choose_translation",
         "prompt": "Это нужно сделать.",
         "options": [
-          "It is considered rude.",
-          "This must be done.",
           "This could be arranged.",
-          "Photography is prohibited."
+          "This must be done.",
+          "Photography is prohibited.",
+          "Credit cards are accepted."
         ],
         "correct": 1
       },
@@ -3549,9 +3549,9 @@
         "prompt": "Это считается грубым.",
         "options": [
           "It is considered rude.",
-          "This must be done.",
-          "Photography is prohibited.",
-          "This could be arranged."
+          "This could be arranged.",
+          "Credit cards are accepted.",
+          "Photography is prohibited."
         ],
         "correct": 0
       },
@@ -4326,9 +4326,9 @@
         "prompt": "Я работал вчера.",
         "options": [
           "I worked yesterday.",
-          "now — Present Continuous",
-          "I work every day.",
-          "I will work tomorrow."
+          "Everything has been arranged.",
+          "It can be done.",
+          "yesterday — Past Simple"
         ],
         "correct": 0
       },
@@ -4349,9 +4349,9 @@
         "prompt": "сейчас — настоящее длительное",
         "options": [
           "now — Present Continuous",
-          "I will work tomorrow.",
-          "I work every day.",
-          "I worked yesterday."
+          "It can be done.",
+          "I am working now.",
+          "I work every day."
         ],
         "correct": 0
       },
@@ -4371,12 +4371,12 @@
         "kind": "choose_translation",
         "prompt": "Я буду работать завтра.",
         "options": [
-          "I worked yesterday.",
-          "now — Present Continuous",
+          "yesterday — Past Simple",
           "I will work tomorrow.",
+          "It can be done.",
           "I work every day."
         ],
-        "correct": 2
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -4394,12 +4394,12 @@
         "kind": "choose_translation",
         "prompt": "Я работаю каждый день.",
         "options": [
-          "I worked yesterday.",
           "I will work tomorrow.",
-          "I work every day.",
-          "now — Present Continuous"
+          "I am working now.",
+          "yesterday — Past Simple",
+          "I work every day."
         ],
-        "correct": 2
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -5184,12 +5184,12 @@
         "kind": "choose_translation",
         "prompt": "Должно быть, он забыл.",
         "options": [
-          "He must have forgotten.",
-          "She can't have forgotten.",
+          "He could have helped.",
           "You should have called.",
+          "He must have forgotten.",
           "He might have forgotten."
         ],
-        "correct": 0
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -5207,12 +5207,12 @@
         "kind": "choose_translation",
         "prompt": "Возможно, он забыл.",
         "options": [
-          "He might have forgotten.",
           "You should have called.",
-          "She can't have forgotten.",
+          "She could have won.",
+          "He might have forgotten.",
           "He must have forgotten."
         ],
-        "correct": 0
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -5230,10 +5230,10 @@
         "kind": "choose_translation",
         "prompt": "Тебе следовало позвонить.",
         "options": [
-          "He might have forgotten.",
-          "You should have called.",
           "He must have forgotten.",
-          "She can't have forgotten."
+          "You should have called.",
+          "She can't have forgotten.",
+          "He could have helped."
         ],
         "correct": 1
       },
@@ -5253,12 +5253,12 @@
         "kind": "choose_translation",
         "prompt": "Не может быть, чтобы она забыла.",
         "options": [
-          "She can't have forgotten.",
+          "What could have happened?",
           "He might have forgotten.",
           "He must have forgotten.",
-          "You should have called."
+          "She can't have forgotten."
         ],
-        "correct": 0
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -6030,12 +6030,12 @@
         "kind": "choose_translation",
         "prompt": "Человеку свойственно ошибаться.",
         "options": [
+          "What's done is done.",
           "Hindsight is always 20/20.",
-          "Forgive yourself.",
-          "To err is human.",
-          "What's done is done."
+          "You live and learn.",
+          "To err is human."
         ],
-        "correct": 2
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -6053,12 +6053,12 @@
         "kind": "choose_translation",
         "prompt": "Прости себя.",
         "options": [
-          "Hindsight is always 20/20.",
-          "Forgive yourself.",
-          "To err is human.",
-          "What's done is done."
+          "He shouldn't have driven.",
+          "What's done is done.",
+          "You live and learn.",
+          "Forgive yourself."
         ],
-        "correct": 1
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -6076,12 +6076,12 @@
         "kind": "choose_translation",
         "prompt": "Сделанного не воротишь.",
         "options": [
-          "Learn from your mistakes.",
-          "Forgive yourself.",
-          "Better luck next time.",
-          "What's done is done."
+          "He shouldn't have driven.",
+          "Hindsight is always 20/20.",
+          "What's done is done.",
+          "He could have died!"
         ],
-        "correct": 3
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -6100,11 +6100,11 @@
         "prompt": "Задним умом все крепки.",
         "options": [
           "He could have died!",
-          "You live and learn.",
-          "He shouldn't have driven.",
-          "Hindsight is always 20/20."
+          "Hindsight is always 20/20.",
+          "Everyone makes mistakes.",
+          "What's done is done."
         ],
-        "correct": 3
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -6877,9 +6877,9 @@
         "prompt": "Если бы знал!",
         "options": [
           "If only I knew!",
-          "I should have studied.",
           "If only I could!",
-          "I could have passed."
+          "I could have passed.",
+          "I wish I knew."
         ],
         "correct": 0
       },
@@ -6899,12 +6899,12 @@
         "kind": "choose_translation",
         "prompt": "Надо было учиться.",
         "options": [
-          "I could have passed.",
-          "If only I could!",
-          "If only I knew!",
-          "I should have studied."
+          "You died.",
+          "I wish I had.",
+          "I should have studied.",
+          "Who would have thought?"
         ],
-        "correct": 3
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -6922,12 +6922,12 @@
         "kind": "choose_translation",
         "prompt": "Если бы мог!",
         "options": [
-          "If only I could!",
-          "I should have studied.",
+          "If only I knew!",
           "I could have passed.",
-          "If only I knew!"
+          "Who would have thought?",
+          "If only I could!"
         ],
-        "correct": 0
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -6944,8 +6944,8 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Жаль, что не знаю.",
-        "options": ["But the future can.", "I wish I had.", "I wish I could.", "I wish I knew."],
-        "correct": 3
+        "options": ["I wish I could.", "If only I knew!", "I wish I knew.", "I wish I had."],
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -7728,8 +7728,8 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Сделанного не воротишь.",
-        "options": ["I wish I could.", "If only I had!", "What's done is done.", "I wish I knew."],
-        "correct": 2
+        "options": ["If only I had!", "What's done is done.", "If only I knew!", "I wish I knew."],
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -7746,8 +7746,13 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Если бы он у меня был!",
-        "options": ["What's done is done.", "I wish I could.", "I wish I knew.", "If only I had!"],
-        "correct": 3
+        "options": [
+          "If only I had!",
+          "If only I knew!",
+          "If only I could!",
+          "What's done is done."
+        ],
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -7764,8 +7769,8 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Жаль, что не могу.",
-        "options": ["I wish I knew.", "I wish I could.", "If only I had!", "What's done is done."],
-        "correct": 1
+        "options": ["If only I knew!", "I wish I knew.", "I wish I could.", "What's done is done."],
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -7782,8 +7787,13 @@
       "payload": {
         "kind": "choose_translation",
         "prompt": "Жаль, что не знаю.",
-        "options": ["I wish I could.", "What's done is done.", "If only I had!", "I wish I knew."],
-        "correct": 3
+        "options": [
+          "What's done is done.",
+          "I wish I knew.",
+          "If only I could!",
+          "I wish I could."
+        ],
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -8579,12 +8589,12 @@
         "kind": "choose_translation",
         "prompt": "Но будущее — можно.",
         "options": [
-          "You should have called.",
+          "Learn from your mistakes.",
           "Who would have thought?",
-          "I would have helped.",
-          "But the future can."
+          "But the future can.",
+          "He must have forgotten."
         ],
-        "correct": 3
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -8602,12 +8612,12 @@
         "kind": "choose_translation",
         "prompt": "Я бы помог.",
         "options": [
-          "It's too late now.",
-          "Move on.",
-          "You should have called.",
-          "I would have helped."
+          "Learn from your mistakes.",
+          "I would have helped.",
+          "Who would have thought?",
+          "He must have forgotten."
         ],
-        "correct": 3
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -8625,12 +8635,12 @@
         "kind": "choose_translation",
         "prompt": "Тебе следовало позвонить.",
         "options": [
-          "You should have called.",
-          "Move on.",
-          "I would have helped.",
-          "It's too late now."
+          "We could have won.",
+          "He must have forgotten.",
+          "Better late than never.",
+          "You should have called."
         ],
-        "correct": 0
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -8648,12 +8658,12 @@
         "kind": "choose_translation",
         "prompt": "Кто бы мог подумать?",
         "options": [
-          "Better late than never.",
           "We could have won.",
+          "Who would have thought?",
           "Learn from your mistakes.",
-          "Who would have thought?"
+          "I would have helped."
         ],
-        "correct": 3
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -9438,9 +9448,9 @@
         "kind": "choose_translation",
         "prompt": "Я его починю.",
         "options": [
+          "Just get it done.",
           "Consider it done.",
           "We'll get it sorted.",
-          "Just get it done.",
           "I'll get it fixed."
         ],
         "correct": 3
@@ -9461,12 +9471,12 @@
         "kind": "choose_translation",
         "prompt": "Считай, что сделано.",
         "options": [
-          "Consider it done.",
-          "We'll get it sorted.",
           "I'll get it fixed.",
-          "Just get it done."
+          "We'll get it sorted.",
+          "Just get it done.",
+          "Consider it done."
         ],
-        "correct": 0
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -9507,12 +9517,12 @@
         "kind": "choose_translation",
         "prompt": "Мы это уладим.",
         "options": [
-          "Consider it done.",
+          "We'll get it sorted.",
           "Just get it done.",
-          "I'll get it fixed.",
-          "We'll get it sorted."
+          "Consider it done.",
+          "I'll get it fixed."
         ],
-        "correct": 3
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -10281,11 +10291,11 @@
         "prompt": "Я к этому привык.",
         "options": [
           "It feels like rain.",
-          "I feel fine here.",
+          "I'm used to it.",
           "It takes time.",
-          "I'm used to it."
+          "I feel fine here."
         ],
-        "correct": 3
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -10303,12 +10313,12 @@
         "kind": "choose_translation",
         "prompt": "Здесь я чувствую себя хорошо.",
         "options": [
-          "I'm used to it.",
-          "I feel fine here.",
+          "Feel like a coffee?",
           "It takes time.",
+          "I feel fine here.",
           "It feels like rain."
         ],
-        "correct": 1
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -10326,12 +10336,12 @@
         "kind": "choose_translation",
         "prompt": "Похоже, будет дождь.",
         "options": [
-          "It feels like rain.",
           "I'm used to it.",
           "It takes time.",
-          "I feel fine here."
+          "Feel like a coffee?",
+          "It feels like rain."
         ],
-        "correct": 0
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -10349,12 +10359,12 @@
         "kind": "choose_translation",
         "prompt": "Это требует времени.",
         "options": [
+          "Feel like a coffee?",
+          "It feels like rain.",
           "It takes time.",
-          "I feel fine here.",
-          "I'm used to it.",
-          "It feels like rain."
+          "I'm used to it."
         ],
-        "correct": 0
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -11127,8 +11137,8 @@
         "prompt": "Это всё, что у меня есть.",
         "options": [
           "It's all I have.",
-          "Nothing I can't handle.",
           "That's all I need.",
+          "Nothing I can't handle.",
           "That's all I know."
         ],
         "correct": 0
@@ -11172,12 +11182,12 @@
         "kind": "choose_translation",
         "prompt": "Это всё, что мне нужно.",
         "options": [
-          "That's all I know.",
-          "It's all I have.",
           "That's all I need.",
-          "Nothing I can't handle."
+          "It's all I have.",
+          "Nothing I can't handle.",
+          "That's all I know."
         ],
-        "correct": 2
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -11197,10 +11207,10 @@
         "options": [
           "That's all I need.",
           "It's all I have.",
-          "That's all I know.",
-          "Nothing I can't handle."
+          "Nothing I can't handle.",
+          "That's all I know."
         ],
-        "correct": 3
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -11993,12 +12003,12 @@
         "kind": "choose_translation",
         "prompt": "Пусть будет по-твоему.",
         "options": [
-          "I'm used to waiting.",
-          "It feels like home.",
           "I used to smoke.",
-          "Have it your way."
+          "Have it your way.",
+          "Keep moving forward.",
+          "It feels like home."
         ],
-        "correct": 3
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -12016,10 +12026,10 @@
         "kind": "choose_translation",
         "prompt": "Я привык ждать.",
         "options": [
-          "It feels like home.",
+          "Have it your way.",
           "I'm used to waiting.",
           "I used to smoke.",
-          "Have it your way."
+          "It feels like home."
         ],
         "correct": 1
       },
@@ -12040,11 +12050,11 @@
         "prompt": "Раньше я курил.",
         "options": [
           "I'm used to waiting.",
-          "It feels like home.",
-          "I used to smoke.",
-          "Have it your way."
+          "Keep moving forward.",
+          "Have it your way.",
+          "I used to smoke."
         ],
-        "correct": 2
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -12062,12 +12072,12 @@
         "kind": "choose_translation",
         "prompt": "Здесь как дома.",
         "options": [
-          "It feels like home.",
+          "Keep moving forward.",
           "Have it your way.",
-          "I used to smoke.",
+          "It feels like home.",
           "I'm used to waiting."
         ],
-        "correct": 0
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -12839,12 +12849,12 @@
         "kind": "choose_translation",
         "prompt": "В итоге всё закончилось хорошо.",
         "options": [
-          "She's up to something.",
+          "Our trip fell through.",
+          "It turned out well.",
           "She figured it out.",
-          "We sorted it out.",
-          "It turned out well."
+          "The plan fell through."
         ],
-        "correct": 3
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -12862,12 +12872,12 @@
         "kind": "choose_translation",
         "prompt": "Она разгадала это.",
         "options": [
-          "It turned out well.",
           "She figured it out.",
-          "She's up to something.",
-          "We sorted it out."
+          "The plan fell through.",
+          "We sorted it out.",
+          "It turned out well."
         ],
-        "correct": 1
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -12886,11 +12896,11 @@
         "prompt": "Наша поездка не состоялась.",
         "options": [
           "It turned out well.",
-          "Our trip fell through.",
+          "The plan fell through.",
           "We sorted it out.",
-          "She figured it out."
+          "Our trip fell through."
         ],
-        "correct": 1
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -12908,10 +12918,10 @@
         "kind": "choose_translation",
         "prompt": "Мы это уладили.",
         "options": [
-          "She's up to something.",
+          "Our trip fell through.",
           "She figured it out.",
           "We sorted it out.",
-          "It turned out well."
+          "She's up to something."
         ],
         "correct": 2
       },
@@ -13685,12 +13695,12 @@
         "kind": "choose_translation",
         "prompt": "Мы полностью понимаем.",
         "options": [
+          "It's highly unlikely.",
           "We fully understand.",
-          "He's highly successful.",
-          "She hardly ever complains.",
-          "It's absolutely freezing."
+          "I'm terribly sorry.",
+          "She's deeply disappointed."
         ],
-        "correct": 0
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -13708,12 +13718,12 @@
         "kind": "choose_translation",
         "prompt": "Я серьёзно впечатлён.",
         "options": [
+          "I'm totally exhausted.",
           "I'm seriously impressed.",
-          "It's strongly recommended.",
-          "He's widely respected.",
-          "I'm totally exhausted."
+          "I'm terribly sorry.",
+          "That's completely absurd."
         ],
-        "correct": 0
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -13731,12 +13741,12 @@
         "kind": "choose_translation",
         "prompt": "Это жизненно важно.",
         "options": [
-          "She's deeply disappointed.",
-          "We fully understand.",
-          "I'm seriously impressed.",
-          "It's vitally important."
+          "It's vitally important.",
+          "It's highly unlikely.",
+          "It's almost perfect.",
+          "It's barely possible."
         ],
-        "correct": 3
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -13754,12 +13764,12 @@
         "kind": "choose_translation",
         "prompt": "Она глубоко разочарована.",
         "options": [
-          "She's deeply disappointed.",
-          "I'm seriously impressed.",
-          "It's vitally important.",
-          "We fully understand."
+          "She hardly ever complains.",
+          "She's bitterly disappointed.",
+          "I deeply regret it.",
+          "She's deeply disappointed."
         ],
-        "correct": 0
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -14477,12 +14487,12 @@
         "kind": "choose_translation",
         "prompt": "Стоит попробовать.",
         "options": [
-          "It's worth trying.",
+          "Is it worth reading?",
           "She had difficulty breathing.",
-          "It's worth seeing.",
-          "Is it worth reading?"
+          "It's worth trying.",
+          "It's worth seeing."
         ],
-        "correct": 0
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -14500,12 +14510,12 @@
         "kind": "choose_translation",
         "prompt": "Это стоит посмотреть.",
         "options": [
-          "She had difficulty breathing.",
-          "Is it worth reading?",
           "It's worth seeing.",
+          "It's no use complaining.",
+          "She had difficulty breathing.",
           "It's worth trying."
         ],
-        "correct": 2
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -14523,12 +14533,12 @@
         "kind": "choose_translation",
         "prompt": "Стоит ли это читать?",
         "options": [
-          "It's worth seeing.",
           "It's worth trying.",
-          "Is it worth reading?",
-          "She had difficulty breathing."
+          "It's no good pretending.",
+          "It's worth seeing.",
+          "Is it worth reading?"
         ],
-        "correct": 2
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -14546,12 +14556,12 @@
         "kind": "choose_translation",
         "prompt": "Бесполезно жаловаться.",
         "options": [
-          "It's no use complaining.",
-          "It's worth seeing.",
           "Is it worth reading?",
-          "It's worth trying."
+          "It's worth trying.",
+          "It's no good pretending.",
+          "It's no use complaining."
         ],
-        "correct": 0
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -15323,10 +15333,10 @@
         "kind": "choose_translation",
         "prompt": "Он редко жалуется.",
         "options": [
-          "Little does he care.",
+          "Never will I return.",
           "Rarely does he complain.",
           "Little did they know.",
-          "Never will I return."
+          "Little does he care."
         ],
         "correct": 1
       },
@@ -15346,12 +15356,12 @@
         "kind": "choose_translation",
         "prompt": "Я никогда не вернусь.",
         "options": [
+          "Little did they know.",
           "Never will I return.",
           "Little does he care.",
-          "Rarely does he complain.",
-          "Little did they know."
+          "Rarely does he complain."
         ],
-        "correct": 0
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -15370,11 +15380,11 @@
         "prompt": "Его это мало волнует.",
         "options": [
           "Rarely does he complain.",
-          "Little did they know.",
           "Never will I return.",
-          "Little does he care."
+          "Little does he care.",
+          "Little did they know."
         ],
-        "correct": 3
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -15392,12 +15402,12 @@
         "kind": "choose_translation",
         "prompt": "Они и не подозревали.",
         "options": [
+          "Rarely does he complain.",
           "Little does he care.",
           "Little did they know.",
-          "Never will I return.",
-          "Rarely does he complain."
+          "Never will I return."
         ],
-        "correct": 1
+        "correct": 2
       },
       "answer": {
         "normalization": "default",
@@ -16165,10 +16175,10 @@
         "kind": "choose_translation",
         "prompt": "Об этом едва ли стоит упоминать.",
         "options": [
-          "It was utterly hopeless.",
-          "It's worth every penny.",
+          "We had difficulty parking.",
+          "It's absolutely freezing today.",
           "It's barely worth mentioning.",
-          "We had difficulty parking."
+          "It's worth every penny."
         ],
         "correct": 2
       },
@@ -16188,12 +16198,12 @@
         "kind": "choose_translation",
         "prompt": "Это было совершенно безнадёжно.",
         "options": [
-          "It's barely worth mentioning.",
-          "We had difficulty parking.",
           "It was utterly hopeless.",
+          "It's absolutely freezing today.",
+          "We had difficulty parking.",
           "It's worth every penny."
         ],
-        "correct": 2
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -16211,12 +16221,12 @@
         "kind": "choose_translation",
         "prompt": "Оно стоит каждого пенни.",
         "options": [
-          "It was utterly hopeless.",
-          "We had difficulty parking.",
+          "It's barely worth mentioning.",
           "It's worth every penny.",
-          "It's barely worth mentioning."
+          "It was utterly hopeless.",
+          "It's absolutely freezing today."
         ],
-        "correct": 2
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -16235,11 +16245,11 @@
         "prompt": "Нам было сложно припарковаться.",
         "options": [
           "It was utterly hopeless.",
-          "It's worth every penny.",
-          "We had difficulty parking.",
-          "It's barely worth mentioning."
+          "Never say never.",
+          "It's barely worth mentioning.",
+          "We had difficulty parking."
         ],
-        "correct": 2
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -17011,12 +17021,12 @@
         "kind": "choose_translation",
         "prompt": "Смертны, но не сломлены.",
         "options": [
-          "The prophecy came true.",
-          "Mortal but unbroken.",
           "What's going on here?",
-          "No words were needed."
+          "They fought to survive.",
+          "She refuses to surrender.",
+          "Mortal but unbroken."
         ],
-        "correct": 1
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -17034,10 +17044,10 @@
         "kind": "choose_translation",
         "prompt": "Горе превратилось в ярость.",
         "options": [
-          "The prophecy came true.",
-          "Mortal but unbroken.",
+          "What's going on here?",
+          "They knelt in silence.",
           "Grief turned into rage.",
-          "They fought to survive."
+          "She refuses to surrender."
         ],
         "correct": 2
       },
@@ -17057,12 +17067,12 @@
         "kind": "choose_translation",
         "prompt": "Пророчество сбылось.",
         "options": [
-          "Mortal but unbroken.",
-          "No words were needed.",
           "The prophecy came true.",
-          "What's going on here?"
+          "The battle was fierce.",
+          "Pure chills.",
+          "The crowd fell silent."
         ],
-        "correct": 2
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -17080,8 +17090,8 @@
         "kind": "choose_translation",
         "prompt": "Они сражались, чтобы выжить.",
         "options": [
-          "Grief turned into rage.",
-          "The prophecy came true.",
+          "Pure chills.",
+          "They knelt in silence.",
           "They fought to survive.",
           "Mortal but unbroken."
         ],
@@ -17880,11 +17890,11 @@
         "prompt": "Это определённо стоит просмотра.",
         "options": [
           "I'm deeply grateful.",
-          "The deal fell through.",
           "It's absolutely worth watching.",
+          "The deal fell through.",
           "Success is highly unlikely."
         ],
-        "correct": 2
+        "correct": 1
       },
       "answer": {
         "normalization": "default",
@@ -17902,12 +17912,12 @@
         "kind": "choose_translation",
         "prompt": "Я глубоко благодарен.",
         "options": [
-          "Success is highly unlikely.",
-          "It's absolutely worth watching.",
           "I'm deeply grateful.",
-          "The deal fell through."
+          "It's absolutely worth watching.",
+          "The deal fell through.",
+          "Success is highly unlikely."
         ],
-        "correct": 2
+        "correct": 0
       },
       "answer": {
         "normalization": "default",
@@ -17925,12 +17935,12 @@
         "kind": "choose_translation",
         "prompt": "Успех крайне маловероятен.",
         "options": [
-          "Success is highly unlikely.",
-          "The deal fell through.",
           "I'm deeply grateful.",
-          "It's absolutely worth watching."
+          "It's absolutely worth watching.",
+          "The deal fell through.",
+          "Success is highly unlikely."
         ],
-        "correct": 0
+        "correct": 3
       },
       "answer": {
         "normalization": "default",
@@ -19748,6 +19758,38 @@
       "meta": {
         "skill": "speaking",
         "xp": 4
+      }
+    },
+    {
+      "id": "ex-a-9211",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-a-0700"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
+    },
+    {
+      "id": "ex-a-9222",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-a-0701"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
       }
     }
   ]
