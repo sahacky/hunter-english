@@ -219,6 +219,50 @@ describe('withWarmupVariant (план M21#21.1 — разогрев повтор
     )
   })
 
+  it('дистракторы choose — похожие на цель (общие слова/перевод), не случайные (D2)', () => {
+    // пул: две фразы-конкурента цели (общие EN-слова / общее RU-слово) + случайный хвост
+    const near = [
+      phrase('ph-9001', { text_en: 'I am fine.', translation_ru: 'Я в порядке.' }),
+      phrase('ph-9002', { text_en: 'I am here.', translation_ru: 'Я тут.' }),
+      phrase('ph-9003', { text_en: 'We are fine.', translation_ru: 'Мы в порядке.' }),
+    ]
+    const far = Array.from({ length: 9 }, (_, i) =>
+      phrase(`ph-9${String(i + 10).padStart(3, '0')}`, {
+        text_en: `Strange sentence number ${i}.`,
+        translation_ru: `Странное предложение номер ${i}.`,
+      }),
+    )
+    const phrases = [...near, ...far]
+    const phraseById = new Map(phrases.map((p) => [p.id, p]))
+    const exercises = [
+      exercise('ex-w-01', 'choose_translation', {
+        prompt: 'Я голоден.',
+        options: ['a'],
+        correct: 0,
+      }),
+      exercise('ex-w-02', 'translate', { prompt_ru: 'Я голоден.', phrase_id: 'ph-9001' }),
+    ]
+    const byId = new Map(exercises.map((e) => [e.id, e]))
+    const view = assembleLesson(lesson(['ex-w-01', 'ex-w-02']), byId, phraseById)
+    // все варианты rng дают одинаковый слот близости: 3 «похожих» всегда бьют случайный хвост
+    for (const seed of [1, 7, 42, 99]) {
+      const variant = withWarmupVariant(view, seeded(seed))
+      const warmup = variant.content[variant.steps.find((s) => s.kind === 'warmup')!.index] ?? []
+      const choose = warmup.filter(({ exercise }) => exercise.type === 'choose_translation')
+      for (const { exercise } of choose) {
+        const payload = exercise.payload as unknown as { prompt: string; options: string[] }
+        const prompt = payload.prompt
+        // цель — одна из near-фраз (переводы far уникальны, но полностью чужды)
+        const target = phrases.find((p) => p.translation_ru === prompt)
+        if (!target || !near.includes(target)) continue
+        const distractors = payload.options.filter((o) => o !== target.text_en)
+        const nearDistractors = distractors.filter((o) => near.some((p) => p.text_en === o)).length
+        // у цели «I am fine.» конкуренты делят AM/FINE или «порядке» — хотя бы 1
+        expect(nearDistractors).toBeGreaterThanOrEqual(1)
+      }
+    }
+  })
+
   it('правило не затирается: вариант пишется в шаг warmup (баг M21, R6)', () => {
     // урок с правилом: rule=1, warmup=2 — вариант обязан заменить только warmup
     const ids = Array.from({ length: 12 }, (_, i) => `ph-${String(i + 1).padStart(4, '0')}`)

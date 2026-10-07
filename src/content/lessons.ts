@@ -273,6 +273,60 @@ function pickUnique<T>(pool: readonly T[], count: number, rng: () => number): T[
   return out
 }
 
+/** Окно разнообразия дистракторов-фраз: лучший всегда, остальные — по rng. */
+const PHRASE_DIVERSITY_POOL = 6
+
+/**
+ * Скоринг похожести фразы-кандидата на цель (plan://distractor-quality#D2):
+ * общие EN-слова (структура «I am …» против «She is …») + пересечение токенов
+ * перевода — выбор должен заставлять вчитываться, а не отсекать случайное.
+ */
+function phraseDistractorScore(target: PhraseItem, candidate: PhraseItem): number {
+  const words = new Set(
+    target.text_en
+      .toLowerCase()
+      .split(/[^a-z']+/)
+      .filter((w) => w.length >= 2),
+  )
+  let shared = 0
+  for (const word of candidate.text_en.toLowerCase().split(/[^a-z']+/)) {
+    if (word.length >= 2 && words.has(word)) shared += 1
+  }
+  let score = shared * 1.5
+  const ruWords = new Set(
+    target.translation_ru
+      .toLowerCase()
+      .split(/[^a-zа-яё]+/)
+      .filter((w) => w.length >= 3),
+  )
+  for (const word of candidate.translation_ru.toLowerCase().split(/[^a-zа-яё]+/)) {
+    if (word.length >= 3 && ruWords.has(word)) {
+      score += 1
+      break
+    }
+  }
+  return score
+}
+
+/** Топ-похожие дистракторы: лучший гарантирован, остальные — из окна по rng. */
+function pickPhraseDistractors(
+  target: PhraseItem,
+  candidates: readonly PhraseItem[],
+  count: number,
+  rng: () => number,
+): PhraseItem[] {
+  const scored = candidates
+    .map((candidate) => ({ candidate, score: phraseDistractorScore(target, candidate) }))
+    .sort((a, b) => b.score - a.score || (a.candidate.id < b.candidate.id ? -1 : 1))
+  const pool = scored.slice(0, Math.max(count, PHRASE_DIVERSITY_POOL)).map((s) => s.candidate)
+  const out: PhraseItem[] = []
+  if (count > 0 && pool.length > 0) out.push(...pool.splice(0, 1))
+  while (out.length < count && pool.length > 0) {
+    out.push(...pool.splice(Math.floor(rng() * pool.length), 1))
+  }
+  return out
+}
+
 /**
  * Разогрев «с новыми заданиями» (план M21#21.1 — повтор урока; R6 — повтор
  * шага): шаг warmup заменяется на свежесобранные choose_translation и
@@ -299,7 +353,8 @@ export function withWarmupVariant(view: LessonView, rng: () => number = Math.ran
   const targets = pickUnique(pool, 4, rng)
   for (const target of targets) {
     used.add(target.id)
-    const distractors = pickUnique(
+    const distractors = pickPhraseDistractors(
+      target,
       pool.filter((p) => p.id !== target.id && p.translation_ru !== target.translation_ru),
       3,
       rng,

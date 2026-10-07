@@ -1,91 +1,91 @@
 {
   "schema_version": 1,
   "content_version": 2,
-  "generated_at": "2026-10-07T06:50:09Z",
+  "generated_at": "2026-10-07T07:14:21Z",
   "files": [
     {
       "path": "lessons/exercises-a.json",
       "kind": "exercises",
       "schema_version": 1,
       "items": 1071,
-      "sha256": "5de892fcd1ed8845125e7ee84407de420de97c7699ea1026717cc10e0a97c1bf"
+      "sha256": "08b103cf435a15bbb8ac1eb600997d18dd3d362169148746a9b6f83b604b3351"
     },
     {
       "path": "lessons/exercises-b.json",
       "kind": "exercises",
       "schema_version": 1,
       "items": 1420,
-      "sha256": "455162343db6ed2c336e373b0c94a15a6034ed6c5062024291bdb3e22802a5ec"
+      "sha256": "42f0012bdc79121027206983f0679b79003c8059d6e91c8df8e15405f5bbeb73"
     },
     {
       "path": "lessons/exercises-c.json",
       "kind": "exercises",
       "schema_version": 1,
       "items": 1460,
-      "sha256": "94217562bf31e2141ecc6609886a1e71c86a6150e0d87df3610b126d376e3f40"
+      "sha256": "90c1a8ee53b7755ac64314e1c7868bf9c03e639fc76d22d996d36a4f1dd42a19"
     },
     {
       "path": "lessons/exercises-d.json",
       "kind": "exercises",
       "schema_version": 1,
       "items": 1371,
-      "sha256": "36d9578b42997544adb38593cf19c4ba046a5569e68ed39b7ebddb3878346430"
+      "sha256": "14bc971fc06bec8fe2b17b5fe6950336873573089a4f2c8dee69690c679e4f37"
     },
     {
       "path": "lessons/exercises-e.json",
       "kind": "exercises",
       "schema_version": 1,
       "items": 1151,
-      "sha256": "1f3abf205778cbfe4748560d3139c342c07c154216f62299a53a61dbea499b79"
+      "sha256": "4e7ca7c6db4bf62e3bdb5cebe16eb5c4853cb118530fb11c90b564b47860135d"
     },
     {
       "path": "lessons/exercises-s.json",
       "kind": "exercises",
       "schema_version": 1,
       "items": 745,
-      "sha256": "97a35fe9d3bc730590369f933ce49c4fb9cae95f3444874fb822f426e9dd6334"
+      "sha256": "58dc07f2a43c104ae6da3a7de63cfdf30dcbabb37b44e4f5d1b4900862d1d213"
     },
     {
       "path": "lessons/lessons-a.json",
       "kind": "lessons",
       "schema_version": 1,
       "items": 22,
-      "sha256": "62329209aff698b8c935436220136c7a14cdcef01bb4636926f135086a7dd072"
+      "sha256": "67e0fad84be1e206bdb8fd4fcd382ea8fba4a7c1ae9b3bf2ab3ab740f91ba4a6"
     },
     {
       "path": "lessons/lessons-b.json",
       "kind": "lessons",
       "schema_version": 1,
       "items": 30,
-      "sha256": "adfb81b4ac8e3eeada7b8a77c27f8a2eee2fa99516c1aa77b71cc21c6095992c"
+      "sha256": "4e9df3313fcb373a373ae6014ad9f0552df0b0dbcc045d21f63194598e3c9fc5"
     },
     {
       "path": "lessons/lessons-c.json",
       "kind": "lessons",
       "schema_version": 1,
       "items": 19,
-      "sha256": "ba05a3f99d51877b90c5d7203d2b2654068df5ea720b557faa18a07f873bcace"
+      "sha256": "d087a9c14dcb79664ef553623f0238f87fe196ef6e8a9b07ca0eb48c94c3800d"
     },
     {
       "path": "lessons/lessons-d.json",
       "kind": "lessons",
       "schema_version": 1,
       "items": 39,
-      "sha256": "81359f777777e7664dbf425da63bb097a939865a358917890d8c611e7bd4fc1f"
+      "sha256": "33bcd7008a1cb61b4a94f6c1e092392dde2192b5c3763dbe45caa886b896c728"
     },
     {
       "path": "lessons/lessons-e.json",
       "kind": "lessons",
       "schema_version": 1,
       "items": 24,
-      "sha256": "bcebeed2e229012a27b7e1fbad3a2ea9260b3ac36d09be96dcab37b50e28acf6"
+      "sha256": "76c5d80b4406addccab4d89388f336e56347afa5d767342fa89179a38c3ecb7d"
     },
     {
       "path": "lessons/lessons-s.json",
       "kind": "lessons",
       "schema_version": 1,
       "items": 15,
-      "sha256": "f551505cb6d83f8381705f6b788d947d18207688aa1c9d1bd81815afeeb375e2"
+      "sha256": "72b38e5158878a419ff42a7959a1fc851aaebcccf8563f2a17b96012cb84ac09"
     },
     {
       "path": "phrasebook/airport.json",
@@ -169,42 +169,42 @@
       "kind": "phrases",
       "schema_version": 1,
       "items": 701,
-      "sha256": "ae7afba837e9fe81a21e682450d9e925dd6e8df97f0e305e834954366545fe9f"
+      "sha256": "6ba5b47d2d84b3231c478bb4e3427f1709b8bef889306d7a0344cc5b74c7e3c9"
     },
     {
       "path": "phrases/phrases-b.json",
       "kind": "phrases",
       "schema_version": 1,
       "items": 1380,
-      "sha256": "4b22968107fb435cd674186b9c1a7a2d71c66f0b5b73ab3b5c1ff54218398dc1"
+      "sha256": "914209b0424ae8753dfce98580b7ced3d567a168ad85783ec89a6331a4a2d16e"
     },
     {
       "path": "phrases/phrases-c.json",
       "kind": "phrases",
       "schema_version": 1,
       "items": 1368,
-      "sha256": "889b682acc0dc5c45dbcb8be70d5b7085c50c016efcf779f9c8a1f7c9ebeb8f7"
+      "sha256": "5d8f14702f0cc4e4178ced7e83ba8670e41dc85df4fcf36be27aa3e2cea72bc5"
     },
     {
       "path": "phrases/phrases-d.json",
       "kind": "phrases",
       "schema_version": 1,
       "items": 1253,
-      "sha256": "d8541b9a3379be485b2d2b8249c5596cc722c0ae66992cc6c4558017d7c78240"
+      "sha256": "194518aab74238ce299d14d7fd8242bf0e34442f751ec627d74099f5ef11d0a1"
     },
     {
       "path": "phrases/phrases-e.json",
       "kind": "phrases",
       "schema_version": 1,
       "items": 1056,
-      "sha256": "18531d59f0c7fa0c173e97edc732bbc4f8205e4332d4ba9a6d0bdbf42c20df86"
+      "sha256": "b4da4e8c17ae83c366003b96ec552c0b6ff761909377b4ebaf90a8ca302cefb9"
     },
     {
       "path": "phrases/phrases-s.json",
       "kind": "phrases",
       "schema_version": 1,
       "items": 452,
-      "sha256": "697d14494b774682b3a1a9a0d8cae61a4a7d0f4ae0a976653c395f715d1de58e"
+      "sha256": "e7a8b9c4496ba92df61a61d48bccbacada231b73d3765070541b080a7418e697"
     },
     {
       "path": "quotes/attack-on-titan.json",
