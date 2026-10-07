@@ -1,10 +1,10 @@
 # WAL — Hunter English
 
 ## Current Phase
-**{#distractor-quality} D1–D4 закрыт (2026-10-07, ветка content/rules-ba-ranks)**. Дистракторы «выбери перевод» теперь похожие, а не случайные: D1 Врата — `src/domain/game/distractors.ts` (скоринг: часть речи ×2, окно ранга ±300 до ×2, Левенштейн от 0.45 до ×2.5, пересечение RU ×1.5; лучший гарантирован + 2 из окна ×8 seeded rng) вместо `slice(index, index+3)` («they/as/the»); D2 разогрев — pickPhraseDistractors (общие EN-слова ×1.5 + RU ×1, окно 6); D3 — пост-обработчик `research/tools/lessons/rebuild_choose_distractors.py` перевыбрал 587/592 офлайн-choose по тому же принципу (детерминизм random.Random(exercise_id), идемпотентен; пример: «Есть билеты?» → «Is there a problem?»). Прогон после D1–D4: 625 unit + 65 e2e + validate:data + lint/typecheck — зелёные. Ранее в ветке: R5 (14 strange-диктантов, зона ex-92xx) и R6 (повтор разогрева «с новыми заданиями» + фикс бага M21: вариант затирал content[1]-правило, повтор урока был мёртв; steps теперь синхронизируется с вариантом).
+**PR #74 смержен в main (2026-10-07), CI/Deploy зелёные.** Ветка content/rules-ba-ranks принесла: ревизию правил S/B/A/D+C (R1–R4, прошлые сессии), R5 (14 strange-диктантов, зона ex-92xx), R6 (повтор разогрева «с новыми заданиями» + фикс бага M21: вариант затирал content[1]-правило, повтор урока был мёртв), {#distractor-quality} D1–D4 (коварные дистракторы: Врата — скоринг-модуль src/domain/game/distractors.ts вместо slice «they/as/the»; разогрев — pickPhraseDistractors; офлайн — rebuild_choose_distractors.py перевыбрал 587/592 choose). По дороге: e2e-ожидания подогнаны под ревизию правил (локально маскировал устаревший preview-сервер — reuseExistingServer), покрытие 100% statements восстановлено. **Инцидент**: GitHub Pages слетел (configure-pages Not Found) — включён обратно через API (build_type workflow), деплой перезапущен, зелёный; если повторится — проверить Settings → Pages. 626 unit + 65 e2e зелёные.
 
 ## In Progress
-- Пуш ветки content/rules-ba-ranks + PR/мерж (ждёт команды «пуш и мердж»)
+- (пусто — план {#rules-revision} и {#distractor-quality} закрыты полностью)
 
 ## TODO
 - (по желанию) прогон scripts/qa-tour.mjs для визуальной оценки новых дистракторов в живом UI
@@ -28,6 +28,7 @@
 
 | Дата | Изменение | Причина |
 |------|-----------|---------|
+| 2026-10-07 | PR #74 смержен (R5, R6, D1–D4 + e2e-фиксы под ревизию правил + покрытие); GitHub Pages слетел — включен через API, Deploy зелёный | Команда «делай и мерджи» |
 | 2026-10-07 | {#distractor-quality} D1–D4 закрыты: скоринг-модуль Врат + pickPhraseDistractors разогрева + перевыбор 587 офлайн-choose; 625 unit + 65 e2e зелёные | plan://distractor-quality D1–D4 |
 | 2026-10-07 | R5 закрыт: 14 strange-диктантов (+аудио, +манифест); R6 закрыт: повтор разогрева «с новыми заданиями» + фикс бага M21 (вариант затирал шаг правила, повтор урока мёртв) | plan://rules-revision R5/R6 + фидбек разработчика по дистракторам |
 | 2026-10-06 | {#rules-revision} R1 закрыт: 13 уроков «Прошлое» — rule_md по чек-листу §5.1; 614 unit + validate:data зелёные | План {#rules-revision} R1, команда «продолжай» |
