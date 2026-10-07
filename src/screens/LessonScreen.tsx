@@ -184,11 +184,18 @@ export default function LessonScreen({
   /** прошлый статус записи: повтор пройденного не затирает оригинал (specs/07 §4.4) */
   const previousRowRef = useRef<{ status: string; score: number | null } | null>(null)
   const checkpointRef = useRef(checkpoint)
-  // зеркало актуального чекпоинта для асинхронных сохранений — запись в эффекте,
-  // не в рендере (react-hooks/refs; семантика та же: к моменту колбэков commit прошёл)
+  // зеркало актуального чекпоинта: колбэки упражнений читают ref СРАЗУ после
+  // onAnswer (match/retell/free-output зовут onAnswer+onNext одним кликом),
+  // поэтому запись в ref — синхронно в applyCheckpoint, а не только эффектом
+  // после коммита (квэрк «Дальше» со второго клика на границе шага)
   useEffect(() => {
     checkpointRef.current = checkpoint
   })
+  /** Единственная точка записи чекпоинта: state + синхронное зеркало в ref. */
+  const applyCheckpoint = useCallback((next: LessonCheckpoint) => {
+    checkpointRef.current = next
+    setCheckpoint(next)
+  }, [])
   const saveBusy = useRef(false)
   const pendingRef = useRef<LessonCheckpoint | null>(null)
   // setState после размонтирования — unhandled rejection в CI (прецедент M19)
@@ -277,12 +284,12 @@ export default function LessonScreen({
       }
       // guard: незавершённый первый проход ИЛИ повтор уже пройденного урока
       if (row && row.checkpoint.passesDone === 0 && row.checkpoint.stepIndex > 1) {
-        setCheckpoint({ ...startCp, stepIndex: firstStep.index })
+        applyCheckpoint({ ...startCp, stepIndex: firstStep.index })
         setPhase({ kind: 'guard', stepIndex: firstStep.index, repeat: false })
         return
       }
       if (row && row.checkpoint.passesDone >= 1) {
-        setCheckpoint(createCheckpoint())
+        applyCheckpoint(createCheckpoint())
         setPhase({ kind: 'guard', stepIndex: 1, repeat: true })
         return
       }
@@ -296,13 +303,13 @@ export default function LessonScreen({
           return
         }
         const cp = { ...startCp, stepIndex: requested }
-        setCheckpoint(cp)
+        applyCheckpoint(cp)
         setRuleShown(requested > 1)
         setPhase(requested === 7 ? { kind: 'deck' } : { kind: 'step' })
         return
       }
       const cp = { ...startCp, stepIndex: firstStep.index }
-      setCheckpoint(cp)
+      applyCheckpoint(cp)
       setRuleShown(cp.stepIndex > 1)
       setPhase(cp.stepIndex === 7 ? { kind: 'deck' } : { kind: 'step' })
     }
@@ -339,7 +346,7 @@ export default function LessonScreen({
       if (!view) return
       /* istanbul ignore stop */
       const next = recordAnswer(checkpointRef.current, view.steps, exerciseId, outcome, attempts)
-      setCheckpoint(next)
+      applyCheckpoint(next)
       void persist(next)
     },
     [view, persist],
@@ -354,7 +361,7 @@ export default function LessonScreen({
       const result = checkpointRef.current.results[exerciseId]
       const attempts = result?.attempts ?? 1
       const next = recordAnswer(checkpointRef.current, view.steps, exerciseId, 'disputed', attempts)
-      setCheckpoint(next)
+      applyCheckpoint(next)
       void persist(next)
     },
     [view, persist],
@@ -371,7 +378,7 @@ export default function LessonScreen({
     }
     const next = advanceStep(checkpointRef.current, view.steps)
     if (next) {
-      setCheckpoint(next)
+      applyCheckpoint(next)
       void persist(next)
       setExerciseIndex(0)
       setRuleShown(false)
@@ -399,7 +406,7 @@ export default function LessonScreen({
         Object.entries(checkpointRef.current.results).filter(([id]) => !stepIds.has(id)),
       ),
     }
-    setCheckpoint(cp)
+    applyCheckpoint(cp)
     void persist(cp)
     setExerciseIndex(0)
     if (step?.kind === 'warmup' && view) setView(withWarmupVariant(view))
@@ -428,7 +435,7 @@ export default function LessonScreen({
       ...checkpointRef.current,
       srsEnqueued: lessonPhrases(view).map((phrase) => phrase.id),
     }
-    setCheckpoint(cp)
+    applyCheckpoint(cp)
     void persist(cp)
   }, [view, repo, persist])
 
@@ -488,7 +495,7 @@ export default function LessonScreen({
               return { status: stored, score: accuracy }
             })()
       const cp = finishPass(finished)
-      setCheckpoint(cp)
+      applyCheckpoint(cp)
       await repo.putLessonProgress({
         lesson_id: view.lesson.id,
         status: stored.status,
@@ -643,7 +650,7 @@ export default function LessonScreen({
             onClick={() => {
               if (phase.repeat) {
                 const fresh = createCheckpoint()
-                setCheckpoint(fresh)
+                applyCheckpoint(fresh)
                 // разогрев «с новыми заданиями» при повторе (план M21#21.1)
                 if (view) setView(withWarmupVariant(view))
               }

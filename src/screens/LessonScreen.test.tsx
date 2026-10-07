@@ -883,14 +883,9 @@ describe('LessonScreen: хвосты покрытия (M21#21.4)', () => {
       fireEvent.click(screen.getByRole('button', { name: en()[0] }))
       fireEvent.click(screen.getByRole('button', { name: ru()[0] }))
     }
-    // квёрк синхронного onAnswer+onNext матча: чекпоинт-реф обновляется эффектом
-    // после клика — переход срабатывает со второго «Дальше» (давнее поведение)
-    const advance = async () => {
-      const next = await screen.findByRole('button', { name: /^Дальше/ })
-      fireEvent.click(next)
-      fireEvent.click(next)
-    }
-    await advance()
+    // фикс квирка onAnswer+onNext одним кликом: ref-зеркало синхронно —
+    // переход с последнего матча шага работает с первого «Дальше»
+    fireEvent.click(await screen.findByRole('button', { name: /^Дальше/ }))
     // все синтетические ответы посчитаны → шаг пройден, переход в «Построение»
     expect(await screen.findByText(/шаг 3 из 7/)).toBeInTheDocument()
   })
