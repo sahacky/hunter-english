@@ -211,8 +211,8 @@
    "source_url": "https://screenrant.com/best-jujutsu-kaisen-quotes/",
    "season_episode": "Gojo (эп. 7, дубляж)",
    "speaker": "Gojo",
-   "text": "Don't worry. I'm the strongest",
-   "translation_ru": "Не волнуйся. Я сильнейший.",
+   "text": "Don't worry, I'm the strongest.",
+   "translation_ru": "Не волнуйся, я сильнейший.",
    "grammar_tags": [
     "Императив don't worry + превосходная степень"
    ],
@@ -220,8 +220,8 @@
    "auto_vocab": {
     "top1000": 0.4
    },
-   "confidence": "verbatim (parallel research) — needs source check",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Don%27t%20worry.%20I%27m%20the%20strongest",
+   "confidence": "проверено 2026-10-07: офиц. EN-аккаунт JJK + дубляж (Kaiji Tang), эп. 7",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Don%27t%20worry%2C%20I%27m%20the%20strongest.",
    "audio": {
     "en_gb": "audio/quotes/cori/q-jujutsu-kaisen-0010.opus"
    }
@@ -230,10 +230,10 @@
    "id": "q-jujutsu-kaisen-0011",
    "title": "Jujutsu Kaisen",
    "source_url": "https://screenrant.com/best-jujutsu-kaisen-quotes/",
-   "season_episode": "Sukuna → Jogo (эп. 17, дубляж)",
+   "season_episode": "Sukuna → Jogo (эп. 40 / S2E16, субтитры)",
    "speaker": "Sukuna → Jogo",
-   "text": "Stand proud. You're strong",
-   "translation_ru": "Будь гордым. Ты силён.",
+   "text": "Stand proud, you're strong.",
+   "translation_ru": "Гордись, ты силён.",
    "grammar_tags": [
     "Императив stand proud",
     "be + прилагательное"
@@ -242,8 +242,8 @@
    "auto_vocab": {
     "top1000": 0.5
    },
-   "confidence": "verbatim (parallel research) — needs source check",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=Stand%20proud.%20You%27re%20strong",
+   "confidence": "проверено 2026-10-07: фандом Episode 40 (дословно); эпизод был указан неверно (17)",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=Stand%20proud%2C%20you%27re%20strong.",
    "audio": {
     "en_gb": "audio/quotes/cori/q-jujutsu-kaisen-0011.opus"
    }
@@ -252,20 +252,20 @@
    "id": "q-jujutsu-kaisen-0012",
    "title": "Jujutsu Kaisen",
    "source_url": "https://screenrant.com/best-jujutsu-kaisen-quotes/",
-   "season_episode": "Todo (Goodwill Event, дубляж)",
+   "season_episode": "Todo → Юдзи (эп. 15, Goodwill Event)",
    "speaker": "Todo",
-   "text": "What kind of women do you like?",
-   "translation_ru": "Какие женщины тебе нравятся?",
+   "text": "What type of girls do you like?",
+   "translation_ru": "Какого типа девушки тебе нравятся?",
    "grammar_tags": [
-    "what kind of…",
+    "what type of…",
     "Present Simple вопрос"
    ],
    "est_rank": "E",
    "auto_vocab": {
     "top1000": 0.86
    },
-   "confidence": "verbatim (parallel research) — needs source check",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=What%20kind%20of%20women%20do%20you%20like%3F",
+   "confidence": "проверено 2026-10-07: фандом Episode 15 (к Юдзи); вариант «What kind of woman is your type?» — вопрос Мегуми в эп. 8 (см. q-jujutsu-kaisen-0006)",
+   "link_playphrase": "https://www.playphrase.me/#/search?q=What%20type%20of%20girls%20do%20you%20like%3F",
    "audio": {
     "en_gb": "audio/quotes/cori/q-jujutsu-kaisen-0012.opus"
    }
@@ -287,7 +287,7 @@
    "auto_vocab": {
     "top1000": 0.82
    },
-   "confidence": "verbatim (parallel research) — needs source check",
+   "confidence": "частично проверено 2026-10-07: смысл подтверждён (фандом Wasuke/Episode 1), дословная формулировка дубляжа не верифицирована",
    "link_playphrase": "https://www.playphrase.me/#/search?q=You%27re%20a%20strong%20kid%2C%20so%20help%20people.%20Die%20surrounded%20by%20people",
    "audio": {
     "en_gb": "audio/quotes/cori/q-jujutsu-kaisen-0013.opus"
@@ -297,8 +297,8 @@
    "id": "q-jujutsu-kaisen-0014",
    "title": "Jujutsu Kaisen",
    "source_url": "https://screenrant.com/best-jujutsu-kaisen-quotes/",
-   "season_episode": "Nanami (дубляж)",
-   "speaker": "Nanami",
+   "season_episode": "Gojo (эп. 23, тренировка Мегуми, субтитры)",
+   "speaker": "Gojo → Megumi",
    "text": "Dying to win and risking death to win are completely different",
    "translation_ru": "Умереть ради победы и рисковать смертью ради победы — совершенно разные вещи.",
    "grammar_tags": [
@@ -308,7 +308,7 @@
    "auto_vocab": {
     "top1000": 0.73
    },
-   "confidence": "verbatim (parallel research) — needs source check",
+   "confidence": "проверено 2026-10-07: фандом гл. 58/эп. 23 — реплика Годжо (атрибуция Nanami — ошибка агрегаторов); концовка «…things» вероятна, но не подтверждена",
    "link_playphrase": "https://www.playphrase.me/#/search?q=Dying%20to%20win%20and%20risking%20death%20to%20win%20are%20completely%20different",
    "audio": {
     "en_gb": "audio/quotes/cori/q-jujutsu-kaisen-0014.opus"
@@ -318,7 +318,7 @@
    "id": "q-jujutsu-kaisen-0015",
    "title": "Jujutsu Kaisen",
    "source_url": "https://screenrant.com/best-jujutsu-kaisen-quotes/",
-   "season_episode": "Megumi (эп. 23, дубляж)",
+   "season_episode": "Megumi (эп. 5)",
    "speaker": "Megumi",
    "text": "I'm not a hero. I'm a jujutsu sorcerer",
    "translation_ru": "Я не герой. Я маг.",
@@ -329,31 +329,10 @@
    "auto_vocab": {
     "top1000": 0.38
    },
-   "confidence": "verbatim (parallel research) — needs source check",
+   "confidence": "проверено 2026-10-07: фандом-галерея Мегуми — дословно; эпизод был указан неверно (23)",
    "link_playphrase": "https://www.playphrase.me/#/search?q=I%27m%20not%20a%20hero.%20I%27m%20a%20jujutsu%20sorcerer",
    "audio": {
     "en_gb": "audio/quotes/cori/q-jujutsu-kaisen-0015.opus"
-   }
-  },
-  {
-   "id": "q-jujutsu-kaisen-0016",
-   "title": "Jujutsu Kaisen",
-   "source_url": "https://screenrant.com/best-jujutsu-kaisen-quotes/",
-   "season_episode": "Sukuna (дубляж, ранние эпизоды)",
-   "speaker": "Sukuna",
-   "text": "It's your fault for being weak",
-   "translation_ru": "Это твоя вина — быть слабым.",
-   "grammar_tags": [
-    "fault for + gerund"
-   ],
-   "est_rank": "C",
-   "auto_vocab": {
-    "top1000": 0.17
-   },
-   "confidence": "verbatim (parallel research) — needs source check",
-   "link_playphrase": "https://www.playphrase.me/#/search?q=It%27s%20your%20fault%20for%20being%20weak",
-   "audio": {
-    "en_gb": "audio/quotes/cori/q-jujutsu-kaisen-0016.opus"
    }
   },
   {
