@@ -58,7 +58,7 @@
           },
           "audio": {
             "type": "string",
-            "pattern": "^audio/phrasebook/cori/[a-z0-9-]+\\.opus$"
+            "pattern": "^audio/phrasebook/[a-z0-9_-]+/[a-z0-9-]+\\.opus$"
           }
         }
       }

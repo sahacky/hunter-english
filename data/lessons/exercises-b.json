@@ -25708,7 +25708,7 @@
         "kind": "answer_question",
         "question_en": "Good afternoon. How can I help you?",
         "situation_ru": "Сценка (info-gap): телефон разряжен, нужно узнать, во сколько закрывается музей. Задача: спросить у сотрудника. Исход: музей работает до 18:00 — план на вечер готов.",
-        "audio": "audio/phrasebook/cori/pb-pharmacy-01-l0.opus",
+        "audio": "audio/phrasebook/emma/pb-pharmacy-01-l0.opus",
         "free_form": true
       },
       "answer": {
@@ -25787,7 +25787,7 @@
         "kind": "answer_question",
         "question_en": "Have you ever been abroad?",
         "situation_ru": "Раунд 1 из 2 — Путешествия: опыт. Разрыв (opinion gap): твой опыт известен только тебе — расскажи. Исход: знакомство состоялось.",
-        "audio": "audio/phrasebook/cori/pb-smalltalk-03-l0.opus",
+        "audio": "audio/phrasebook/emma/pb-smalltalk-03-l0.opus",
         "free_form": true
       },
       "answer": {
@@ -25809,7 +25809,7 @@
         "kind": "answer_question",
         "question_en": "Which one did you like best?",
         "situation_ru": "Раунд 1 из 2 — Путешествия: опыт. Разрыв: «какая страна лучше» знает только ты. Исход: собеседник получил совет.",
-        "audio": "audio/phrasebook/cori/pb-smalltalk-03-l2.opus",
+        "audio": "audio/phrasebook/emma/pb-smalltalk-03-l2.opus",
         "free_form": true
       },
       "answer": {
@@ -25831,7 +25831,7 @@
         "kind": "answer_question",
         "question_en": "How long have you been learning English?",
         "situation_ru": "Раунд 1 из 2 — Путешествия: опыт. Разрыв: твоя история учения — только твой рассказ. Исход: собеседник удивлён прогрессом.",
-        "audio": "audio/phrasebook/cori/pb-smalltalk-03-l4.opus",
+        "audio": "audio/phrasebook/emma/pb-smalltalk-03-l4.opus",
         "free_form": true
       },
       "answer": {
@@ -25853,7 +25853,7 @@
         "kind": "answer_question",
         "question_en": "Good evening. A table for two?",
         "situation_ru": "Раунд 2 из 2 — Заказ в ресторане. Задача: занять стол. Исход: стол получен — вы у окна.",
-        "audio": "audio/phrasebook/cori/pb-restaurant-01-l0.opus",
+        "audio": "audio/phrasebook/emma/pb-restaurant-01-l0.opus",
         "free_form": true
       },
       "answer": {
@@ -25875,7 +25875,7 @@
         "kind": "answer_question",
         "question_en": "This way, please. Here is the menu.",
         "situation_ru": "Раунд 2 из 2 — Заказ в ресторане. Разрыв (info-gap): состав блюд знает официант — спроси рекомендацию. Исход: ты выбрал блюдо.",
-        "audio": "audio/phrasebook/cori/pb-restaurant-01-l2.opus",
+        "audio": "audio/phrasebook/emma/pb-restaurant-01-l2.opus",
         "free_form": true
       },
       "answer": {
@@ -25897,7 +25897,7 @@
         "kind": "answer_question",
         "question_en": "No problem, the kitchen will be careful. Anything to drink?",
         "situation_ru": "Раунд 2 из 2 — Заказ в ресторане. Задача: доложить про напитки. Исход: заказ принят — официант ушёл на кухню.",
-        "audio": "audio/phrasebook/cori/pb-restaurant-01-l6.opus",
+        "audio": "audio/phrasebook/emma/pb-restaurant-01-l6.opus",
         "free_form": true
       },
       "answer": {
@@ -25919,7 +25919,7 @@
         "kind": "answer_question",
         "question_en": "Of course. Everything was OK?",
         "situation_ru": "Раунд 2 из 2 — Заказ в ресторане. Задача: подвести итог и попрощаться. Исход: счёт оплачен, чаевые оставлены.",
-        "audio": "audio/phrasebook/cori/pb-restaurant-01-l10.opus",
+        "audio": "audio/phrasebook/emma/pb-restaurant-01-l10.opus",
         "free_form": true
       },
       "answer": {
