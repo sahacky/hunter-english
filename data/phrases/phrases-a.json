@@ -7012,6 +7012,26 @@
       "audio": {
         "en_gb": "audio/phrases/cori/ph-a-0699.opus"
       }
+    },
+    {
+      "id": "ph-a-0700",
+      "text_en": "I shouldn't have eaten the map.",
+      "translation_ru": "Мне не следовало есть карту.",
+      "grammar_point_id": "gp-a-11",
+      "variants": ["I shouldn't have eaten the map."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-a-0700.opus"
+      }
+    },
+    {
+      "id": "ph-a-0701",
+      "text_en": "Little did the moon know.",
+      "translation_ru": "Луна и не подозревала.",
+      "grammar_point_id": "gp-a-22",
+      "variants": ["Little did the moon know."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-a-0701.opus"
+      }
     }
   ]
 }

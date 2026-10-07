@@ -13816,6 +13816,22 @@
         "skill": "speaking",
         "xp": 4
       }
+    },
+    {
+      "id": "ex-s-9210",
+      "type": "dictation",
+      "payload": {
+        "kind": "dictation",
+        "phrase_id": "ph-s-0452"
+      },
+      "answer": {
+        "normalization": "default",
+        "typo": "allow"
+      },
+      "meta": {
+        "skill": "listening",
+        "xp": 3
+      }
     }
   ]
 }

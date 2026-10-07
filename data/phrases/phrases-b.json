@@ -13814,6 +13814,36 @@
       "audio": {
         "en_gb": "audio/phrases/cori/ph-b-1377.opus"
       }
+    },
+    {
+      "id": "ph-b-1378",
+      "text_en": "Somebody has stolen my shadow.",
+      "translation_ru": "Кто-то украл мою тень.",
+      "grammar_point_id": "gp-b-09",
+      "variants": ["Somebody has stolen my shadow."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-b-1378.opus"
+      }
+    },
+    {
+      "id": "ph-b-1379",
+      "text_en": "I enjoy talking to my fridge.",
+      "translation_ru": "Я люблю разговаривать с холодильником.",
+      "grammar_point_id": "gp-b-19",
+      "variants": ["I enjoy talking to my fridge."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-b-1379.opus"
+      }
+    },
+    {
+      "id": "ph-b-1380",
+      "text_en": "The car ran out of dreams.",
+      "translation_ru": "У машины закончились сны.",
+      "grammar_point_id": "gp-b-29",
+      "variants": ["The car ran out of dreams."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-b-1380.opus"
+      }
     }
   ]
 }

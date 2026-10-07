@@ -4520,6 +4520,16 @@
       "audio": {
         "en_gb": "audio/phrases/cori/ph-s-0451.opus"
       }
+    },
+    {
+      "id": "ph-s-0452",
+      "text_en": "Mistakes were made by the pizza.",
+      "translation_ru": "Ошибки были совершены пиццей.",
+      "grammar_point_id": "gp-s-10",
+      "variants": ["Mistakes were made by the pizza."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-s-0452.opus"
+      }
     }
   ]
 }

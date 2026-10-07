@@ -13691,6 +13691,36 @@
       "audio": {
         "en_gb": "audio/phrases/cori/ph-c-1365.opus"
       }
+    },
+    {
+      "id": "ph-c-1366",
+      "text_en": "The dinosaurs ate my homework.",
+      "translation_ru": "Динозавры съели мою домашку.",
+      "grammar_point_id": "gp-c-10",
+      "variants": ["The dinosaurs ate my homework."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-c-1366.opus"
+      }
+    },
+    {
+      "id": "ph-c-1367",
+      "text_en": "You mustn't dance with wolves.",
+      "translation_ru": "Нельзя танцевать с волками.",
+      "grammar_point_id": "gp-c-20",
+      "variants": ["You mustn't dance with wolves."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-c-1367.opus"
+      }
+    },
+    {
+      "id": "ph-c-1368",
+      "text_en": "Grandma is stronger than gravity.",
+      "translation_ru": "Бабушка сильнее гравитации.",
+      "grammar_point_id": "gp-c-30",
+      "variants": ["Grandma is stronger than gravity."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-c-1368.opus"
+      }
     }
   ]
 }

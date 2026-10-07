@@ -12584,6 +12584,36 @@
         "en_gb": "audio/phrases/cori/ph-d-1250.opus"
       },
       "chunk_slot": "day"
+    },
+    {
+      "id": "ph-d-1251",
+      "text_en": "A ghost is drinking my coffee.",
+      "translation_ru": "Призрак пьёт мой кофе.",
+      "grammar_point_id": "gp-d-05",
+      "variants": ["A ghost is drinking my coffee."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-1251.opus"
+      }
+    },
+    {
+      "id": "ph-d-1252",
+      "text_en": "This soup has too many opinions.",
+      "translation_ru": "У этого супа слишком много мнений.",
+      "grammar_point_id": "gp-d-15",
+      "variants": ["This soup has too many opinions."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-1252.opus"
+      }
+    },
+    {
+      "id": "ph-d-1253",
+      "text_en": "I'd like a table for penguins.",
+      "translation_ru": "Мне нужен столик для пингвинов.",
+      "grammar_point_id": "gp-d-25",
+      "variants": ["I'd like a table for penguins."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-d-1253.opus"
+      }
     }
   ]
 }

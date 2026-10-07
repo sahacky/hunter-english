@@ -10597,6 +10597,26 @@
       "audio": {
         "en_gb": "audio/phrases/cori/ph-e-1054.opus"
       }
+    },
+    {
+      "id": "ph-e-1055",
+      "text_en": "My cat is an alien.",
+      "translation_ru": "Мой кот — инопланетянин.",
+      "grammar_point_id": "gp-e-05",
+      "variants": ["My cat is an alien."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1055.opus"
+      }
+    },
+    {
+      "id": "ph-e-1056",
+      "text_en": "My hamster doesn't believe in Mondays.",
+      "translation_ru": "Мой хомяк не верит в понедельники.",
+      "grammar_point_id": "gp-e-15",
+      "variants": ["My hamster doesn't believe in Mondays."],
+      "audio": {
+        "en_gb": "audio/phrases/cori/ph-e-1056.opus"
+      }
     }
   ]
 }
