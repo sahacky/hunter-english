@@ -7,7 +7,8 @@ test('lesson D-01 opens with rule step (Present Continuous)', async ({ page }) =
   await expect(
     page.getByRole('heading', { name: 'Present Continuous: процесс. still, these days' }),
   ).toBeVisible({ timeout: 8000 })
-  await expect(page.getByText('am / is / are + глагол+-ing')).toBeVisible()
+  // ревизия R3: формула правила — «now / Look! / still / these days → am/is/are + глагол-ing»
+  await expect(page.getByText('am/is/are + глагол-ing')).toBeVisible()
   await expect(page.getByRole('button', { name: /Понятно/ })).toBeVisible()
 })
 

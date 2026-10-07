@@ -25,7 +25,8 @@ test('lesson B-10 conditionals mentions if without will', async ({ page }) => {
   await expect(page.getByRole('heading', { name: /Условные 0 и 1/ })).toBeVisible({
     timeout: 8000,
   })
-  await expect(page.getByText(/if it will rain/)).toBeVisible()
+  // ревизия правил R3: ловушка ЛТ-17 — ❌ If it will rain… → ✔ If it rains
+  await expect(page.getByText(/If it will rain/).first()).toBeVisible()
 })
 
 test('lesson B-13 used to mentions arrow in the knee', async ({ page }) => {
@@ -33,8 +34,9 @@ test('lesson B-13 used to mentions arrow in the knee', async ({ page }) => {
   await expect(page.getByRole('heading', { name: 'used to: «раньше»' })).toBeVisible({
     timeout: 8000,
   })
-  await expect(page.getByText(/«раньше было»/).first()).toBeVisible()
-  await expect(page.getByText(/«привык»/).first()).toBeVisible()
+  // ревизия R3: формула без кавычек — «раньше было → used to», be used to = «привык»
+  await expect(page.getByText(/раньше было/).first()).toBeVisible()
+  await expect(page.getByText(/привык/).first()).toBeVisible()
 })
 
 test('lesson B-15 relative clauses opens', async ({ page }) => {
@@ -55,8 +57,8 @@ test('lesson B-27 speed scenes opens with rule (specs/01 §8)', async ({ page })
   await expect(page.getByRole('heading', { name: 'Диалог-сценки на скорости' })).toBeVisible({
     timeout: 8000,
   })
-  // правило «пример до термина»: живой обмен → термин → правила скорости
-  await expect(page.getByText(/диалог-сценка на скорости/).first()).toBeVisible()
+  // правило «пример до термина» (ревизия R3): живой обмен → термин → правила скорости
+  await expect(page.getByText(/Диалог-сценка на скорости/).first()).toBeVisible()
   await expect(page.getByText(/своими словами можно всегда/).first()).toBeVisible()
 })
 
