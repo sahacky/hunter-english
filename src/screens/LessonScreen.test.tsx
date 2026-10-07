@@ -781,11 +781,6 @@ describe('LessonScreen: хвосты покрытия (M21#21.4)', () => {
     if (!view) throw new Error('нет данных урока les-e-01')
     const warmup = view.content[2] ?? []
     expect(warmup.length).toBe(5)
-    const firstPayload = warmup[0]?.exercise.payload as unknown as {
-      options: string[]
-      correct: number
-    }
-    const wrongFirst = firstPayload.options.find((_, index) => index !== firstPayload.correct) ?? ''
     renderScreen('E-01')
     fireEvent.click(await screen.findByRole('button', { name: /Понятно/ }))
     // шаг 1 — три cloze правила: отвечаем верно, чтобы дойти до разогрева
@@ -821,9 +816,83 @@ describe('LessonScreen: хвосты покрытия (M21#21.4)', () => {
     // 0 верных с первой попытки из 5 → блок не пройден
     expect(await screen.findByText(/Шаг не пройден/)).toBeInTheDocument()
     fireEvent.click(screen.getByRole('button', { name: /Повторить шаг/ }))
-    // блок сброшен: первое задание разогрева заново, плашка ушла
-    expect(await screen.findByRole('button', { name: wrongFirst })).toBeInTheDocument()
+    // блок сброшен «с новыми заданиями» (specs/02 §2, R6): синтетический
+    // вариант разогрева — 4 choose с 4 опциями; плашка ушла
+    await waitFor(() => {
+      expect(
+        document.querySelector('[data-exercise-id]')?.getAttribute('data-exercise-id'),
+      ).toMatch(/^ex-warmup-r-1$/)
+    })
+    expect(document.querySelectorAll('.lesson-option')).toHaveLength(4)
     expect(screen.queryByText(/Шаг не пройден/)).not.toBeInTheDocument()
+  })
+
+  it('повтор урока: правило intact, разогрев — вариант, синтетические id засчитываются (R6, баг M21)', async () => {
+    const view = await loadLessonView('les-e-01')
+    if (!view) throw new Error('нет данных урока les-e-01')
+    await repo.putLessonProgress({
+      lesson_id: 'les-e-01',
+      status: 'completed',
+      score: 100,
+      checkpoint: {
+        passIndex: 1,
+        stepIndex: 1,
+        scores: [],
+        srsEnqueued: [],
+        passesDone: 1,
+        results: {},
+      },
+      completed_at: new Date().toISOString(),
+      updated_at: new Date().toISOString(),
+    })
+    renderScreen('E-01')
+    fireEvent.click(await screen.findByRole('button', { name: /Пройти повторно/ }))
+    // шаг 1 — ПРАВИЛО (3 cloze с полем ввода), не разогрев-вариант (баг M21)
+    fireEvent.click(await screen.findByRole('button', { name: /Понятно/ }))
+    for (const { exercise } of view.content[1] ?? []) {
+      const answers = exercise.payload.gap_answers as string[]
+      const input = await screen.findByRole('textbox')
+      fireEvent.change(input, { target: { value: answers[0] ?? 'am' } })
+      fireEvent.click(screen.getByRole('button', { name: /Проверить/ }))
+      fireEvent.click(await screen.findByRole('button', { name: /^Дальше/ }))
+    }
+    // шаг 2 — синтетический вариант разогрева: 4 choose + 1 match
+    await waitFor(() => {
+      expect(document.querySelector('[data-exercise-id]')?.getAttribute('data-exercise-id')).toBe(
+        'ex-warmup-r-1',
+      )
+    })
+    for (let index = 0; index < 4; index += 1) {
+      const prompt = document.querySelector('.lesson-prompt')?.textContent ?? ''
+      const phrase = Object.values(view.phrasesById).find((p) => p.translation_ru === prompt)
+      expect(phrase).toBeDefined()
+      fireEvent.click(await screen.findByRole('button', { name: phrase!.text_en }))
+      fireEvent.click(await screen.findByRole('button', { name: /^Дальше/ }))
+    }
+    // match: колонки EN/RU в порядке payload — зип по индексу
+    const en = () =>
+      Array.from(document.querySelectorAll<HTMLButtonElement>('.lesson-option[lang="en"]'))
+        .filter((b) => !b.disabled)
+        .map((b) => b.textContent ?? '')
+    const ru = () =>
+      Array.from(document.querySelectorAll<HTMLButtonElement>('.lesson-option[lang="ru"]'))
+        .filter((b) => !b.disabled)
+        .map((b) => b.textContent ?? '')
+    await waitFor(() => expect(en().length).toBe(5))
+    for (let index = 0; index < 5; index += 1) {
+      fireEvent.click(screen.getByRole('button', { name: en()[0] }))
+      fireEvent.click(screen.getByRole('button', { name: ru()[0] }))
+    }
+    // квёрк синхронного onAnswer+onNext матча: чекпоинт-реф обновляется эффектом
+    // после клика — переход срабатывает со второго «Дальше» (давнее поведение)
+    const advance = async () => {
+      const next = await screen.findByRole('button', { name: /^Дальше/ })
+      fireEvent.click(next)
+      fireEvent.click(next)
+    }
+    await advance()
+    // все синтетические ответы посчитаны → шаг пройден, переход в «Построение»
+    expect(await screen.findByText(/шаг 3 из 7/)).toBeInTheDocument()
   })
 
   it('финал: SRS-статистика фраз — выучено/просело/чужие карточки (specs/02 §5)', async () => {

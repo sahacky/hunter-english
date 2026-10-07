@@ -178,9 +178,10 @@ describe('withWarmupVariant (план M21#21.1 — разогрев повтор
     return seed / 0x7fffffff
   }
 
-  it('шаг 1 заменён на 4 choose + 1 match с синтетическими id и xp=1', () => {
+  it('шаг warmup заменён на 4 choose + 1 match с синтетическими id и xp=1', () => {
     const view = withWarmupVariant(bigPoolView(), seeded(7))
-    const warmup = view.content[1] ?? []
+    // groupIntoSteps не перенумеровывает шаги: warmup всегда индекс 2
+    const warmup = view.content[view.steps.find((s) => s.kind === 'warmup')!.index] ?? []
     expect(warmup).toHaveLength(5)
     expect(warmup.map(({ exercise }) => exercise.type)).toEqual([
       'choose_translation',
@@ -204,7 +205,7 @@ describe('withWarmupVariant (план M21#21.1 — разогрев повтор
 
   it('match-пары уникальны по RU и цели choose не дублируются', () => {
     const view = withWarmupVariant(bigPoolView(), seeded(42))
-    const warmup = view.content[1] ?? []
+    const warmup = view.content[view.steps.find((s) => s.kind === 'warmup')!.index] ?? []
     const prompts = warmup.slice(0, 4).map(({ exercise }) => exercise.payload.prompt)
     expect(new Set(prompts).size).toBe(4)
     const pairs = (warmup[4].exercise.payload as unknown as { pairs: { ru: string[] }[] }).pairs
@@ -215,6 +216,39 @@ describe('withWarmupVariant (план M21#21.1 — разогрев повтор
   it('детерминизм: один rng — один результат', () => {
     expect(withWarmupVariant(bigPoolView(), seeded(1))).toEqual(
       withWarmupVariant(bigPoolView(), seeded(1)),
+    )
+  })
+
+  it('правило не затирается: вариант пишется в шаг warmup (баг M21, R6)', () => {
+    // урок с правилом: rule=1, warmup=2 — вариант обязан заменить только warmup
+    const ids = Array.from({ length: 12 }, (_, i) => `ph-${String(i + 1).padStart(4, '0')}`)
+    const phrases = ids.map((id) => phrase(id))
+    const phraseById = new Map(phrases.map((p) => [p.id, p]))
+    const exercises = [
+      exercise('ex-r-01', 'cloze', { text_with_gap: 'I ___ Ivan.', gap_answers: ['am'] }),
+      exercise('ex-w-01', 'choose_translation', {
+        prompt: 'Перевод ph-0001',
+        options: ['a'],
+        correct: 0,
+      }),
+      exercise('ex-b-01', 'translate', { prompt_ru: 'Я голоден.', phrase_id: 'ph-0001' }),
+    ]
+    const byId = new Map(exercises.map((e) => [e.id, e]))
+    const view = assembleLesson(lesson(['ex-r-01', 'ex-w-01', 'ex-b-01']), byId, phraseById)
+    const after = withWarmupVariant(view, seeded(7))
+    const warmupIndex = after.steps.find((s) => s.kind === 'warmup')!.index
+    // шаг правила не тронут
+    expect(after.content[1]?.map(({ exercise }) => exercise.id)).toEqual(['ex-r-01'])
+    // вариант — в шаге warmup, steps синхронизирован с content (recordAnswer)
+    expect(after.content[warmupIndex]?.map(({ exercise }) => exercise.id)).toEqual([
+      'ex-warmup-r-1',
+      'ex-warmup-r-2',
+      'ex-warmup-r-3',
+      'ex-warmup-r-4',
+      'ex-warmup-r-5',
+    ])
+    expect(after.steps.find((s) => s.kind === 'warmup')?.exerciseIds).toEqual(
+      after.content[warmupIndex]?.map(({ exercise }) => exercise.id),
     )
   })
 

@@ -379,7 +379,9 @@ export default function LessonScreen({
     }
   }, [view, step, exerciseIndex, stepExercises.length, persist])
 
-  /** Повтор шага (разогрев <70% с первой попытки — specs/02 §2: блок повторяется). */
+  /** Повтор шага (разогрев <70% с первой попытки — specs/02 §2: блок повторяется
+   * «с новыми заданиями» — план rules-revision#R6: на warmup-шаге собирается
+   * свежий вариант разогрева; малый пул → те же задания, как раньше). */
   const repeatStep = () => {
     const step = view?.steps.find((s) => s.index === checkpointRef.current.stepIndex)
     const stepIds = new Set(step?.exerciseIds ?? [])
@@ -390,7 +392,9 @@ export default function LessonScreen({
       ),
       // результаты шага тоже сбрасываем: recordAnswer при повторе видит previous
       // и не наращивает answered — иначе шаг навсегда «не завершён» и «Дальше»
-      // мертва (фидбей 2026-10-06: застревание E-01 после «Повторить шаг»)
+      // мертва (фидбей 2026-10-06: застревание E-01 после «Повторить шаг»).
+      // Синтетические id варианта разогрева (ex-warmup-r-*) входят в stepIds —
+      // steps синхронизируется withWarmupVariant
       results: Object.fromEntries(
         Object.entries(checkpointRef.current.results).filter(([id]) => !stepIds.has(id)),
       ),
@@ -398,6 +402,7 @@ export default function LessonScreen({
     setCheckpoint(cp)
     void persist(cp)
     setExerciseIndex(0)
+    if (step?.kind === 'warmup' && view) setView(withWarmupVariant(view))
   }
 
   const stepEvaluation = useMemo(
