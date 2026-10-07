@@ -53,7 +53,7 @@ test('pwa: icons and audio sample are served from dist', async ({ request }) => 
   const icon = await request.get('./icons/icon-192.png')
   expect(icon.status()).toBe(200)
 
-  const audio = await request.get('./audio/words/cori/house-noun.opus')
+  const audio = await request.get('./audio/words/emma/house-noun.opus')
   expect(audio.status()).toBe(200)
 })
 
@@ -82,7 +82,7 @@ test('offline: app shell and cached audio served by service worker (M9)', async 
 
   // прогреваем аудио через страницу (runtime-кэш CacheFirst)
   const warm = await page.evaluate(async () => {
-    const res = await fetch('audio/words/cori/house-noun.opus')
+    const res = await fetch('audio/words/emma/house-noun.opus')
     return res.status
   })
   expect(warm).toBe(200)
@@ -97,7 +97,7 @@ test('offline: app shell and cached audio served by service worker (M9)', async 
 
     // аудио из audio-cache без сети
     const cached = await page.evaluate(async () => {
-      const res = await fetch('audio/words/cori/house-noun.opus')
+      const res = await fetch('audio/words/emma/house-noun.opus')
       return { status: res.status, size: (await res.arrayBuffer()).byteLength }
     })
     expect(cached.status).toBe(200)

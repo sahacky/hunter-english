@@ -6,7 +6,7 @@
 русскоязычного пользователя. Цель — путешествия: понимать людей на слух и отвечать.
 Методика: короткое правило → построение фраз RU→EN → диктант → shadowing →
 интервальные повторения (FSRS). Мотивация в стиле Solo Leveling: ты — «Охотник»,
-ранги E→S, «Врата», XP и стрики. Озвучка — британский английский (Piper `cori`).
+ранги E→S, «Врата», XP и стрики. Озвучка — британский английский (Kokoro `bf_emma`, мягкий женский).
 
 ## Стек
 
@@ -22,13 +22,13 @@ Supabase — синхронизация M13 (см. «Синхронизация�
 | `research/` | ресёрч, методика, лицензии; `research/tools/` — скрипты пайплайна данных | да (источник правды) |
 | `specs/` | спецификации (курс, уроки, SRS, геймификация, форматы данных, экраны, дизайн) | да, через план |
 | `data/` | учебные данные (CC BY-SA 4.0), генерируются пайплайном | `data/raw/` — нет (gitignored), остальное перегенерируется |
-| `audio/` | озвучка слов (Piper en_GB `cori`, Opus) | генерируется `research/tools/audio/gen_audio.py` |
+| `audio/` | озвучка курса (Kokoro en_GB `bf_emma`, Opus) | генерируется `research/tools/audio/gen_audio_kokoro.py` |
 | `src/` | код приложения | да |
 | `scripts/` | служебные скрипты (`validate-data.mjs`) | да |
 
 ## Сборка данных с нуля
 
-Нужны: Node 22, Python 3.10+, ffmpeg в PATH, `pip3 install --user piper-tts`.
+Нужны: Node 22, Python 3.10+, ffmpeg в PATH, `pip3 install --user piper-tts kokoro-onnx soundfile`.
 Сырьё (`data/raw/`, в git не попадает): NGSL CSV, kaikki-дампы, Tatoeba-экспорты.
 Порядок (каждый шаг возобновляемый):
 
@@ -42,7 +42,7 @@ python3 research/tools/data/fetch_kaikki.py
 python3 research/tools/data/build_examples.py
 # 4. Слова: data/words/*.json (переводы, CEFR, теги, примеры)
 python3 research/tools/data/build_words.py
-# 5. Аудио: Piper en_GB cori (модель rhasspy/piper-voices -> data/raw/models/piper/)
+# 5. Аудио: Kokoro en_GB bf_emma (модель -> data/raw/models/kokoro/; ранее Piper cori)
 python3 research/tools/audio/gen_audio.py --words 'data/words/*.json'
 # 6. Цитаты и ловушки
 python3 research/tools/quotes/build_quotes.py

@@ -25,9 +25,10 @@ Wiktionary/NGSL). Уровни CEFR в `data/words/` выведены агент
 
 | Источник                   | Лицензия                         |
 | -------------------------- | -------------------------------- |
-| Piper voice `cori` (en_GB) | датасет public domain (LibriVox) |
+| Kokoro 82M v1.0, голос `bf_emma` (en_GB) — основная озвучка курса | Apache 2.0 (hexgrad/Kokoro-82M) |
+| kokoro-onnx (рантайм генерации) | MIT (thewh1teagle/kokoro-onnx) |
+| Piper voice `cori` (en_GB) — прежняя озвучка (история git) | датасет public domain (LibriVox) |
 | Piper voices repo + piper-tts | MIT (rhasspy/piper-voices, OHF-voice/piper1-gpl) |
-| Kokoro `bm_george`         | Apache 2.0                       |
 
 ## Цитаты
 

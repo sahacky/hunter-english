@@ -1,10 +1,10 @@
 // Implements: plan://M6#6.1 — единый шлюз озвучки (research/02 §2 «гибрид»):
-// предзаписанное аудио (Piper cori, opus) — основной путь; всё без записи —
+// предзаписанное аудио (Kokoro bf_emma, opus) — основной путь; всё без записи —
 // фолбэк Web Speech speechSynthesis с выбором en-GB голоса (specs/01 §9).
 // Настройки скорости и выбора голоса — с экраном настроек (M10, решение M6#5).
 
 export interface SpeakOptions {
-  /** Путь предзаписанного файла (напр. audio/phrases/cori/ph-e-0001.opus). */
+  /** Путь предзаписанного файла (напр. audio/phrases/emma/ph-e-0001.opus). */
   src?: string
   /** 1 — обычный темп, 0.75 — «медленно» (🐢). */
   rate?: number
@@ -57,9 +57,12 @@ function pickVoice(): SpeechSynthesisVoice | null {
   const voices = api.getVoices()
   if (cachedVoice && voices.includes(cachedVoice)) return cachedVoice
   if (voices.length === 0) return null
-  // приоритет: en-GB → любой English; системные Google/Microsoft предпочитаем
+  // приоритет: en-GB женский (консистентно с озвучкой курса emma) → en-GB →
+  // любой English (системные Google/Microsoft предпочитаем)
   const english = voices.filter((voice) => voice.lang?.toLowerCase().startsWith('en'))
+  const female = /female|sonia|libby|liberty|kate|serena|emma|maisie/i
   cachedVoice =
+    english.find((voice) => voice.lang.toLowerCase() === 'en-gb' && female.test(voice.name)) ??
     english.find((voice) => voice.lang.toLowerCase() === 'en-gb') ??
     english.find((voice) => /en_GB/i.test(voice.lang)) ??
     english[0] ??

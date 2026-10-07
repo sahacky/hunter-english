@@ -11,13 +11,13 @@
       "lines": [
         {
           "role": "local",
-          "audio": "audio/phrasebook/cori/pb-emergency-01-l0.opus",
+          "audio": "audio/phrasebook/emma/pb-emergency-01-l0.opus",
           "text_en": "Good afternoon. Do you need help?",
           "translation_ru": "Добрый день. Вам помочь?"
         },
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/cori/pb-emergency-01-l1.opus",
+          "audio": "audio/phrasebook/emma/pb-emergency-01-l1.opus",
           "text_en": "Sorry, I don't understand. Please speak slowly.",
           "translation_ru": "Извините, я не понимаю. Пожалуйста, говорите медленнее.",
           "accepted": [
@@ -27,20 +27,20 @@
         },
         {
           "role": "local",
-          "audio": "audio/phrasebook/cori/pb-emergency-01-l2.opus",
+          "audio": "audio/phrasebook/emma/pb-emergency-01-l2.opus",
           "text_en": "Sure. Do you need help?",
           "translation_ru": "Конечно. Вам помочь?"
         },
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/cori/pb-emergency-01-l3.opus",
+          "audio": "audio/phrasebook/emma/pb-emergency-01-l3.opus",
           "text_en": "Yes, please. I don't speak English well.",
           "translation_ru": "Да, пожалуйста. Я плохо говорю по-английски.",
           "accepted": ["Yes, please. I don't speak English well."]
         },
         {
           "role": "local",
-          "audio": "audio/phrasebook/cori/pb-emergency-01-l4.opus",
+          "audio": "audio/phrasebook/emma/pb-emergency-01-l4.opus",
           "text_en": "No problem. I can help you.",
           "translation_ru": "Без проблем. Я могу помочь."
         }
@@ -55,20 +55,20 @@
       "lines": [
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/cori/pb-emergency-02-l0.opus",
+          "audio": "audio/phrasebook/emma/pb-emergency-02-l0.opus",
           "text_en": "Help me, please!",
           "translation_ru": "Помогите мне, пожалуйста!",
           "accepted": ["Help me, please!", "Help me!"]
         },
         {
           "role": "local",
-          "audio": "audio/phrasebook/cori/pb-emergency-02-l1.opus",
+          "audio": "audio/phrasebook/emma/pb-emergency-02-l1.opus",
           "text_en": "What is the problem?",
           "translation_ru": "В чём проблема?"
         },
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/cori/pb-emergency-02-l2.opus",
+          "audio": "audio/phrasebook/emma/pb-emergency-02-l2.opus",
           "text_en": "I am lost. Where is the police station?",
           "translation_ru": "Я потерялся. Где полицейский участок?",
           "accepted": [
@@ -78,13 +78,13 @@
         },
         {
           "role": "local",
-          "audio": "audio/phrasebook/cori/pb-emergency-02-l3.opus",
+          "audio": "audio/phrasebook/emma/pb-emergency-02-l3.opus",
           "text_en": "It is near the station. Follow me.",
           "translation_ru": "Это рядом с вокзалом. Идите за мной."
         },
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/cori/pb-emergency-02-l4.opus",
+          "audio": "audio/phrasebook/emma/pb-emergency-02-l4.opus",
           "text_en": "Thank you very much!",
           "translation_ru": "Большое спасибо!",
           "accepted": ["Thank you very much!", "Thanks a lot!"]
@@ -100,7 +100,7 @@
       "lines": [
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/cori/pb-emergency-03-l0.opus",
+          "audio": "audio/phrasebook/emma/pb-emergency-03-l0.opus",
           "text_en": "Excuse me, I lost my passport. What should I do?",
           "translation_ru": "Извините, я потерял паспорт. Что мне делать?",
           "accepted": [
@@ -110,13 +110,13 @@
         },
         {
           "role": "local",
-          "audio": "audio/phrasebook/cori/pb-emergency-03-l1.opus",
+          "audio": "audio/phrasebook/emma/pb-emergency-03-l1.opus",
           "text_en": "You should go to the police station. It is two streets from here.",
           "translation_ru": "Вам следует пойти в полицию. Это в двух кварталах отсюда."
         },
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/cori/pb-emergency-03-l2.opus",
+          "audio": "audio/phrasebook/emma/pb-emergency-03-l2.opus",
           "text_en": "Did anyone find a bag here? I left it on the bench.",
           "translation_ru": "Никто не находил здесь сумку? Я оставил её на скамейке.",
           "accepted": [
@@ -126,13 +126,13 @@
         },
         {
           "role": "local",
-          "audio": "audio/phrasebook/cori/pb-emergency-03-l3.opus",
+          "audio": "audio/phrasebook/emma/pb-emergency-03-l3.opus",
           "text_en": "A man found a bag and gave it to security. Check there first.",
           "translation_ru": "Мужчина нашёл сумку и отдал охране. Сначала проверьте там."
         },
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/cori/pb-emergency-03-l4.opus",
+          "audio": "audio/phrasebook/emma/pb-emergency-03-l4.opus",
           "text_en": "Thank you so much. You made my day!",
           "translation_ru": "Большое спасибо. Вы меня так выручили!",
           "accepted": ["Thank you so much.", "Thank you so much. You made my day!"]

@@ -62,7 +62,7 @@ data/
 | `freq_rank_spoken` | integer ≥ 1 | — | ранг по NGSL-Spoken (если слово входит в разговорные 719) |
 | `tags` | string[] | ✅ | напр. `ngsl`, `subtitles` (полоса 2807–5000, M11), `spoken-top719`, `irregular-verb`, `phrasal-have` (M5+), `trap:to-home` |
 | `example_en` / `example_ru` | string | ✅ | фраза-пример (Tatoeba / урок / цитата); EN и RU заполняются парой |
-| `audio` | object | ✅ | `{ "en_gb": "<путь>" }` — путь в `audio/`, формат `audio/words/cori/<id>.opus` |
+| `audio` | object | ✅ | `{ "en_gb": "<путь>" }` — путь в `audio/`, формат `audio/words/emma/<id>.opus` |
 
 ```json
 {
@@ -116,7 +116,7 @@ data/
   "tags": ["ngsl", "spoken-top719"],
   "example_en": "The house is big.",
   "example_ru": "Дом большой.",
-  "audio": { "en_gb": "audio/words/cori/house-noun.opus" }
+  "audio": { "en_gb": "audio/words/emma/house-noun.opus" }
 }
 ```
 
@@ -134,7 +134,7 @@ data/
 | `grammar_point_id` | string \| null | ✅ | ссылка на грамматическую точку урока (`gp-e-03`); `null` для лексических фраз |
 | `variants` | string[] (≥ 1) | ✅ | все допустимые EN-варианты ответа, включая `text_en` (§3 проверка) |
 | `chunk_slot` | string | — | слово-слот чанк-шаблона (план {#teaching-quality} Q2.2): обязано присутствовать в `text_en`; фраза получает chunk-карточку SRS (фронт `___`, specs/03 {#interleaving-policy}) |
-| `audio` | object | — | `{ "en_gb": "audio/phrases/cori/ph-e-0042.opus" }` |
+| `audio` | object | — | `{ "en_gb": "audio/phrases/emma/ph-e-0042.opus" }` |
 
 ```json
 {
@@ -167,7 +167,7 @@ data/
   "translation_ru": "У вас есть бронь?",
   "grammar_point_id": "gp-e-03",
   "variants": ["Do you have a reservation?", "Have you got a reservation?"],
-  "audio": { "en_gb": "audio/phrases/cori/ph-e-0042.opus" }
+  "audio": { "en_gb": "audio/phrases/emma/ph-e-0042.opus" }
 }
 ```
 
@@ -379,7 +379,7 @@ data/
     "text_with_gap": "I ___ do this alone.",
     "gap_answers": ["can't", "cannot", "can not"],
     "quote": { "title": "Supernatural", "season_episode": "S01E01 «Pilot»" },
-    "audio": "audio/quotes/cori/q-0001.opus"
+    "audio": "audio/quotes/emma/q-0001.opus"
   },
   "answer": { "normalization": "default", "typo": "exact",
               "hint_ru": "can't = cannot", "speech_threshold": 0.85 },
@@ -740,7 +740,7 @@ FrequencyWords   ──┘        │                       │
                                         ▼
                      data/words/*.json (schema 05 §1) + примеры из Tatoeba/цитат/уроков
                                         ▼
-                     аудио: Piper cori + Kokoro bm_george → audio/ (Opus, ~75 МБ)
+                     аудио: Kokoro bf_emma → audio/ (Opus; ранее Piper cori — история git)
 ```
 
 Уже скачано в `data/raw/` (в git не попадает):
@@ -754,7 +754,7 @@ FrequencyWords   ──┘        │                       │
 | `raw/kaikki/target_words.txt` | 1 800 целевых слов для перевода | ✅ |
 | `raw/kaikki/words/*.jsonl` | ответы kaikki по слову (лог `fetch.log`) | 🔄 качается (~180/1800 на 2026-09-27) |
 
-Этапы (реализация M3, `research/tools/`): автоотбор переводов kaikki → CURATED-слой ручной курации (`build_words.py`: функциональные леммы — одна запись с главной POS, ручные переводы/примеры; топ-1000 покрывается курацией) → сборка файлов `data/words/` фиксированными диапазонами → примеры (Tatoeba CC BY 2.0 FR, цитаты) → **CEFR выводится только из частотного ранга** (Oxford-разметка не используется и не публикуется — Watch out в WAL) → генерация аудио (Piper cori, гейт длительности 0.3–2.5 с) → `manifest.json` (с sha256 файлов). Атрибуция всех источников — `CREDITS.md`; производные словарные данные — CC BY-SA 4.0 (требование ShareAlike Wiktionary/NGSL).
+Этапы (реализация M3, `research/tools/`): автоотбор переводов kaikki → CURATED-слой ручной курации (`build_words.py`: функциональные леммы — одна запись с главной POS, ручные переводы/примеры; топ-1000 покрывается курацией) → сборка файлов `data/words/` фиксированными диапазонами → примеры (Tatoeba CC BY 2.0 FR, цитаты) → **CEFR выводится только из частотного ранга** (Oxford-разметка не используется и не публикуется — Watch out в WAL) → генерация аудио (Kokoro bf_emma, скорость 0.9; ранее Piper cori) → `manifest.json` (с sha256 файлов). Атрибуция всех источников — `CREDITS.md`; производные словарные данные — CC BY-SA 4.0 (требование ShareAlike Wiktionary/NGSL).
 
 Цитаты: из `research/data/quotes-ru-merged.json` (274, источник) → досев и курация до ~300 для MVP → разбивка по тайтлам в `data/quotes/`, дозаполнение `translation_ru`, добавление `link_playphrase`, ручная сверка `est_rank`.
 
@@ -777,4 +777,4 @@ FrequencyWords   ──┘        │                       │
 4. ~~Слова вне NGSL-Spoken~~ — ЗАКРЫТО в M3: `freq_rank_spoken` отсутствует у не-spoken слов; у spoken-only лемм (без ранга NGSL) `freq_rank_ngsl` = sentinel `100000+spoken_rank`, файл `words-spoken-only.json`; сортировка в UI — по `freq_rank_spoken ?? freq_rank_ngsl`.
 5. ~~Разбивка `data/words/`~~ — ЗАКРЫТО в M3: фиксированные диапазоны `freq_rank_ngsl` (см. §0), имена файлов стабильны при пересборках.
 6. ~~Каталог `traps.json`~~ — ЗАКРЫТО в M3: полная схема §6.5.
-7. Аудио для цитат/фраз: слова — в репо (`audio/words/cori`, ~17 МБ на 4 тыс. записей); при росте (цитаты/фразы в M6+) — GitHub Releases; валидатору заложить режим `VALIDATE_AUDIO=local|remote|off` до переезда.
+7. Аудио для цитат/фраз: слова — в репо (`audio/words/emma`, ~17 МБ на 4 тыс. записей); при росте (цитаты/фразы в M6+) — GitHub Releases; валидатору заложить режим `VALIDATE_AUDIO=local|remote|off` до переезда.

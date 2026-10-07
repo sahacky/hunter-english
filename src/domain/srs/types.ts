@@ -21,7 +21,7 @@ export interface Note {
   en: string
   /** RU-сторона (перевод; для ввода — эталон и варианты). */
   ru: string
-  /** Путь аудио из контента, напр. `audio/words/cori/house-noun.opus`. */
+  /** Путь аудио из контента, напр. `audio/words/emma/house-noun.opus`. */
   audio?: string
   /**
    * Слово-слот чанк-шаблона (план {#teaching-quality} Q2.2): фраза вида

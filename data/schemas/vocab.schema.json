@@ -21,7 +21,7 @@
     },
     "audio": {
       "type": "string",
-      "pattern": "^audio/(words|vocab)/cori/[a-z0-9-]+\\.opus$"
+      "pattern": "^audio/(words|vocab)/[a-z0-9_-]+/[a-z0-9-]+\\.opus$"
     }
   }
 }

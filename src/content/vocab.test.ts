@@ -12,7 +12,7 @@ describe('loadTravelVocab', () => {
       expect(entry.en.length).toBeGreaterThan(0)
       expect(entry.ru.length).toBeGreaterThan(0)
       // существование файлов аудио проверяет validate:data (шаг CI)
-      if (entry.audio) expect(entry.audio).toMatch(/^audio\/(words|vocab)\/cori\/[a-z0-9-]+\.opus$/)
+      if (entry.audio) expect(entry.audio).toMatch(/^audio\/(words|vocab)\/emma\/[a-z0-9-]+\.opus$/)
     }
   })
 })

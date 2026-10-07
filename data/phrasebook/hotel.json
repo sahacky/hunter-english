@@ -11,13 +11,13 @@
       "lines": [
         {
           "role": "receptionist",
-          "audio": "audio/phrasebook/cori/pb-hotel-01-l0.opus",
+          "audio": "audio/phrasebook/emma/pb-hotel-01-l0.opus",
           "text_en": "Good afternoon. Do you have a booking?",
           "translation_ru": "Добрый день. У вас есть бронь?"
         },
         {
           "role": "guest",
-          "audio": "audio/phrasebook/cori/pb-hotel-01-l1.opus",
+          "audio": "audio/phrasebook/emma/pb-hotel-01-l1.opus",
           "text_en": "Yes, my booking was for two nights. The name is Ivanov.",
           "translation_ru": "Да, моя бронь была на две ночи. Фамилия Иванов.",
           "accepted": [
@@ -27,26 +27,26 @@
         },
         {
           "role": "receptionist",
-          "audio": "audio/phrasebook/cori/pb-hotel-01-l2.opus",
+          "audio": "audio/phrasebook/emma/pb-hotel-01-l2.opus",
           "text_en": "I found it. A single room, breakfast included?",
           "translation_ru": "Нашёл. Одноместный номер, завтрак включён?"
         },
         {
           "role": "guest",
-          "audio": "audio/phrasebook/cori/pb-hotel-01-l3.opus",
+          "audio": "audio/phrasebook/emma/pb-hotel-01-l3.opus",
           "text_en": "Yes. Was breakfast included in the price?",
           "translation_ru": "Да. Завтрак был включён в цену?",
           "accepted": ["Yes. Was breakfast included in the price?", "Was breakfast included?"]
         },
         {
           "role": "receptionist",
-          "audio": "audio/phrasebook/cori/pb-hotel-01-l4.opus",
+          "audio": "audio/phrasebook/emma/pb-hotel-01-l4.opus",
           "text_en": "It was, yes. Here is your key — room 305, third floor.",
           "translation_ru": "Да, был включён. Вот ваш ключ — номер 305, третий этаж."
         },
         {
           "role": "guest",
-          "audio": "audio/phrasebook/cori/pb-hotel-01-l5.opus",
+          "audio": "audio/phrasebook/emma/pb-hotel-01-l5.opus",
           "text_en": "Thank you. What time is breakfast?",
           "translation_ru": "Спасибо. Во сколько завтрак?",
           "accepted": ["Thank you. What time is breakfast?", "What time is breakfast?"]
@@ -62,7 +62,7 @@
       "lines": [
         {
           "role": "guest",
-          "audio": "audio/phrasebook/cori/pb-hotel-02-l0.opus",
+          "audio": "audio/phrasebook/emma/pb-hotel-02-l0.opus",
           "text_en": "Excuse me, I have a problem with my room.",
           "translation_ru": "Извините, у меня проблема с номером.",
           "accepted": [
@@ -72,26 +72,26 @@
         },
         {
           "role": "receptionist",
-          "audio": "audio/phrasebook/cori/pb-hotel-02-l1.opus",
+          "audio": "audio/phrasebook/emma/pb-hotel-02-l1.opus",
           "text_en": "What is the problem, sir?",
           "translation_ru": "В чём проблема, сэр?"
         },
         {
           "role": "guest",
-          "audio": "audio/phrasebook/cori/pb-hotel-02-l2.opus",
+          "audio": "audio/phrasebook/emma/pb-hotel-02-l2.opus",
           "text_en": "The room was dirty, and the wifi didn't work.",
           "translation_ru": "Номер был грязный, и вайфай не работал.",
           "accepted": ["The room was dirty, and the wifi didn't work.", "The wifi didn't work."]
         },
         {
           "role": "receptionist",
-          "audio": "audio/phrasebook/cori/pb-hotel-02-l3.opus",
+          "audio": "audio/phrasebook/emma/pb-hotel-02-l3.opus",
           "text_en": "I'm sorry about that. We will clean it right away.",
           "translation_ru": "Приношу извинения. Мы уберём сразу же."
         },
         {
           "role": "guest",
-          "audio": "audio/phrasebook/cori/pb-hotel-02-l4.opus",
+          "audio": "audio/phrasebook/emma/pb-hotel-02-l4.opus",
           "text_en": "Do you have a bigger room?",
           "translation_ru": "У вас есть номер побольше?",
           "accepted": ["Do you have a bigger room?"],
@@ -99,7 +99,7 @@
         },
         {
           "role": "receptionist",
-          "audio": "audio/phrasebook/cori/pb-hotel-02-l5.opus",
+          "audio": "audio/phrasebook/emma/pb-hotel-02-l5.opus",
           "text_en": "We did have one on the fifth floor. I will move you there.",
           "translation_ru": "У нас был один на пятом этаже. Я вас переселю туда."
         }
