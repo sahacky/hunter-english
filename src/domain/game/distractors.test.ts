@@ -42,6 +42,32 @@ describe('scoreDistractor', () => {
     // только часть речи (×2): написание water/river ~0.2 — ниже порога, перевод не пересекается
     expect(score).toBeCloseTo(2)
   })
+
+  it('защитные ветки: без ранга/дефиса, пустые и одинаковые строки', () => {
+    // кандидат без ранга в Map — компонент ранга просто не начисляется
+    const noRank = scoreDistractor(
+      cand('water-noun', 'water', 'вода'),
+      cand('river-noun', 'river', 'река'),
+      new Map([['water-noun', 300]]),
+    )
+    expect(noRank).toBeCloseTo(2) // только часть речи
+    // entityId без дефиса → posOf '' (не совпадает с noun)
+    expect(
+      scoreDistractor(cand('water-noun', 'water', 'вода'), cand('river', 'river', 'река'), new Map()),
+    ).toBeCloseTo(0)
+    // одинаковые написания (a === b → dist 0) — только часть речи + полное совпадение
+    expect(
+      scoreDistractor(cand('tea-noun', 'tea', 'чай'), cand('tee-noun', 'tea', 'чайок'), new Map()),
+    ).toBeCloseTo(2 + 2.5)
+    // пустые строки: похожесть 0 (max === 0), левенштейн с пустым аргументом
+    expect(scoreDistractor(cand('a-noun', '', ''), cand('b-verb', 'abc', 'ххх'), new Map())).toBe(
+      0,
+    )
+    expect(scoreDistractor(cand('a-noun', 'abc', 'ххх'), cand('b-verb', '', ''), new Map())).toBe(
+      0,
+    )
+    expect(scoreDistractor(cand('a-noun', '', ''), cand('b-verb', '', ''), new Map())).toBe(0)
+  })
 })
 
 describe('pickDistractors', () => {
