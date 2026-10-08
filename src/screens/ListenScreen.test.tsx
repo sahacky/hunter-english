@@ -54,7 +54,7 @@ function renderListen() {
 }
 
 describe('ListenScreen', () => {
-  it('счётчик дня + подборка понятых цитат (top1000 ≥ 0.9) с кнопками озвучки', async () => {
+  it('счётчик дня + эфир: понятые цитаты (top1000 ≥ 0.8) с кнопками озвучки', async () => {
     const now = new Date('2026-03-01T10:00:00Z')
     vi.setSystemTime(now)
     try {
@@ -63,7 +63,7 @@ describe('ListenScreen', () => {
       expect(
         await screen.findByText(/Сегодня: 2 \/ 20 мин/, {}, { timeout: 8000 }),
       ).toBeInTheDocument()
-      expect(screen.getByText(/\d+ понятых цитат/)).toBeInTheDocument()
+      expect(screen.getByText(/\d+ треков в эфире/)).toBeInTheDocument()
       // у каждой цитаты — 🔊 и 🐢; видео-момент (M.1): у всех цитат данных
       // есть link_playphrase → 🎬-ссылка на строке
       const rows = screen.getAllByRole('listitem')
@@ -181,5 +181,33 @@ describe('ListenScreen', () => {
     expect(
       await screen.findByText(/Сегодня: 0 \/ 20 мин/, {}, { timeout: 8000 }),
     ).toBeInTheDocument()
+  })
+
+  it('эфир дня (V6): фразы начатого урока попадают в плейлист; порядок дня стабилен', async () => {
+    // E-01 начат → его фразы в эфире; без записи — только цитаты
+    await repo.putLessonProgress({
+      lesson_id: 'les-e-01',
+      status: 'in_progress',
+      score: null,
+      checkpoint: {
+        passIndex: 0,
+        stepIndex: 3,
+        scores: [],
+        srsEnqueued: [],
+        passesDone: 0,
+        results: {},
+      },
+      completed_at: null,
+      updated_at: new Date().toISOString(),
+    })
+    renderListen()
+    await screen.findByText(/треков в эфире/, {}, { timeout: 8000 })
+    // строки-фразы урока: источник «Урок E-01», без 🎬-ссылки (это не цитаты)
+    const lessonRows = screen.getAllByText(/— Урок E-01/)
+    expect(lessonRows.length).toBeGreaterThan(0)
+    // у цитат остаются видео-ссылки — микс на месте
+    expect(
+      screen.getAllByRole('link', { name: 'Видео-момент с оригиналом' }).length,
+    ).toBeGreaterThan(0)
   })
 })
