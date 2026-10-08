@@ -122,7 +122,6 @@ describe('самовосстановление перехода шага (фид
         await new Promise((r) => setTimeout(r, 10))
       }
     }
-    const rowDbg = await repo.getLessonProgress('les-e-01')
     // без фикса здесь мёртвый «Дальше»: шаг 3 не пройден при answered 27/28
     expect(await screen.findByText(/шаг 4 из 7/, {}, { timeout: 4000 })).toBeInTheDocument()
   }, 60000)
