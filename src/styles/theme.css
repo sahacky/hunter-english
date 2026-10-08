@@ -1684,3 +1684,62 @@ body {
   display: flex;
   gap: 8px;
 }
+
+/* ===== V3: пре-урок «Азбука и первые слова» (/#/basics) ===== */
+.basics-panel h3 {
+  margin: 18px 0 8px;
+}
+.basics-alphabet {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
+  gap: 8px;
+}
+.basics-letter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 8px 4px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface-2);
+  cursor: pointer;
+}
+.basics-letter-glyph {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+.basics-letter-name {
+  font-size: 0.72rem;
+}
+.basics-word {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface-2);
+  max-width: 480px;
+}
+.basics-word-en {
+  font-size: 1.3rem;
+  font-weight: 700;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 0;
+}
+.basics-footer {
+  margin-top: 18px;
+}
+.path-basics-card {
+  padding: 10px 14px;
+  border: 1px dashed var(--primary);
+  border-radius: 12px;
+  background: var(--mint);
+}

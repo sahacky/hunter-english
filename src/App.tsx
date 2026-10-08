@@ -11,6 +11,7 @@ import { DexieProgressRepository } from './data/progress-repository'
 import Dashboard from './screens/Dashboard'
 import IntroScreen from './screens/IntroScreen'
 import WelcomeScreen from './screens/WelcomeScreen'
+import BasicsScreen from './screens/BasicsScreen'
 import PathScreen from './screens/PathScreen'
 import GatesScreen from './screens/GatesScreen'
 import LessonScreen from './screens/LessonScreen'
@@ -51,6 +52,7 @@ export default function App() {
             <Route index element={<Dashboard />} />
             <Route path="intro" element={<IntroScreen />} />
             <Route path="welcome" element={<WelcomeScreen />} />
+            <Route path="basics" element={<BasicsScreen />} />
             <Route path="path" element={<PathScreen />} />
             <Route path="listen" element={<ListenScreen />} />
             <Route path="lesson/:id" element={<LessonScreen />} />

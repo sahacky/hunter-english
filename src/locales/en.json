@@ -234,7 +234,9 @@
       "review_due": "review due"
     },
     "title": "Training program",
-    "youAreHere": "you are here"
+    "youAreHere": "you are here",
+    "basicsHint": "Полный новичок с нуля? Сначала азбука и первые слова (5 минут).",
+    "basicsLink": "Начать с азбуки →"
   },
   "phrasebook": {
     "title": "Phrasebook",
@@ -467,5 +469,20 @@
     "video": "Video moment (original)",
     "outside": "Listened outside the app (minutes):",
     "resetManual": "remove manual {{minutes}} min"
+  },
+  "basics": {
+    "title": "Alphabet and first words",
+    "sub": "A pre-lesson for absolute beginners: listen to the letters and type the first words - so lesson E-01 never asks you to type the unfamiliar. Skippable.",
+    "alphabet": "Alphabet",
+    "words": "First words",
+    "typePrompt": "Type the word in English and press Check",
+    "check": "Check",
+    "next": "Next",
+    "correct": "Correct!",
+    "wrong": "Spelled like this:",
+    "skip": "Skip -> to the program",
+    "finish": "Start lesson E-01 ->",
+    "done": "All words done!",
+    "play": "Play"
   }
 }

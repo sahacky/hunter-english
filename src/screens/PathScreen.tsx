@@ -100,9 +100,17 @@ export default function PathScreen({ repo: repoProp }: { repo?: ProgressReposito
   }
 
   const ranks = ['E', 'D', 'C', 'B', 'A', 'S'] as const
+  // пре-урок E-00 (V3): карточка для полного новичка — пока E-01 не начат
+  const showBasics = rows.find((row) => row.lesson.id === 'les-e-01')?.status === 'available'
   return (
     <section className="panel">
       <h2>{t('path.title')}</h2>
+      {showBasics && (
+        <p className="path-basics-card">
+          <span lang="ru">{t('path.basicsHint')}</span>{' '}
+          <a href="#/basics">{t('path.basicsLink')}</a>
+        </p>
+      )}
       {ranks.map((rank) => {
         const rankRows = rows.filter((row) => row.lesson.rank === rank)
         /* istanbul ignore next @preserve — контент содержит все ранги E–S; защита от пустого файла данных */
