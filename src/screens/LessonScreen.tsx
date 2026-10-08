@@ -102,10 +102,15 @@ function lessonSrsStats(
   return { total, learned, lapsed }
 }
 
-/** Карточка правила (шаг 1): зацепка + правило + примеры с озвучкой + «⚠️ Ловушка» (specs/02 §2). */
+/** Карточка правила (шаг 1): зацепка + правило + примеры с озвучкой + «⚠️ Ловушка» (specs/02 §2).
+ * Фидбей 2026-10-08 (A0-новичок): перед тестами нужно видеть НАПИСАНИЕ всей
+ * лексики урока — под примерами сворачиваемый словарь «Фразы урока». */
 function RuleCard({ view, onUnderstood }: { view: LessonView; onUnderstood: () => void }) {
   const { t } = useTranslation()
   const gp = view.lesson.grammar_point
+  const [vocabOpen, setVocabOpen] = useState(false)
+  // пул урока — те же фразы, что пойдут в построение/диктант
+  const pool = Object.values(view.phrasesById).filter((phrase) => phrase.grammar_point_id === gp.id)
   return (
     <div className="lesson-exercise lesson-rule">
       <h3 lang="ru">{gp.title_ru}</h3>
@@ -116,7 +121,7 @@ function RuleCard({ view, onUnderstood }: { view: LessonView; onUnderstood: () =
       )}
       <div className="lesson-rule-md" lang="ru">
         {gp.rule_md.split('\n').map((line, index) => {
-          const plain = line.replace(/\*\*/g, '')
+          const plain = line.replace(/\**/g, '')
           const className = plain.startsWith('⚠')
             ? 'lesson-trap'
             : plain.startsWith('Формула:')
@@ -150,6 +155,36 @@ function RuleCard({ view, onUnderstood }: { view: LessonView; onUnderstood: () =
           )
         })}
       </ul>
+      {pool.length > 3 && (
+        <div className="lesson-rule-vocab">
+          <button type="button" className="srs-btn" onClick={() => setVocabOpen(!vocabOpen)}>
+            {t('lesson.vocabToggle', { count: pool.length })} {vocabOpen ? '▲' : '▼'}
+          </button>
+          {vocabOpen && (
+            <ul className="lesson-vocab-list" title="lesson-vocab-list">
+              {pool.map((phrase) => (
+                <li key={phrase.id}>
+                  <span lang="en">{phrase.text_en}</span>
+                  <span className="dim" lang="ru">
+                    {' '}
+                    — {phrase.translation_ru}
+                  </span>
+                  {phrase.audio?.en_gb && (
+                    <button
+                      type="button"
+                      className="srs-btn"
+                      aria-label={t('lesson.vocabPlay')}
+                      onClick={() => speak(phrase.text_en, { src: phrase.audio?.en_gb })}
+                    >
+                      🔊
+                    </button>
+                  )}
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      )}
       <div className="lesson-actions">
         <button type="button" className="srs-btn srs-btn-good" onClick={onUnderstood}>
           {t('lesson.gotIt')} <kbd>⏎</kbd>

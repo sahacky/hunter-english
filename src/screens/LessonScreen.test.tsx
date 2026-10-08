@@ -1,7 +1,7 @@
 // Implements: plan://M5#5.5–5.6 — тесты экрана урока на данных пилота E1 (specs/02 §2, §5)
 import 'fake-indexeddb/auto'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
-import { fireEvent, render, screen, waitFor } from '@testing-library/react'
+import { fireEvent, render, screen, waitFor, within } from '@testing-library/react'
 import { HashRouter, Route, Routes } from 'react-router-dom'
 import '../i18n'
 import {
@@ -99,6 +99,25 @@ describe('LessonScreen /#/lesson/:id', () => {
       expect(row).not.toBeNull()
       expect(row!.checkpoint.scores[0].answered).toBeGreaterThan(0)
     })
+  })
+
+  it('шаг 1: словарь урока — написание+перевод+озвучка перед тестами (фидбей 2026-10-08)', async () => {
+    renderScreen('E-01')
+    expect(
+      await screen.findByText('Глагол to be в настоящем времени', {}, { timeout: 4000 }),
+    ).toBeInTheDocument()
+    // свёрнут по умолчанию: правило не перегружено
+    const toggle = screen.getByRole('button', { name: /Фразы урока \(\d+\)/ })
+    expect(screen.queryByTitle('lesson-vocab-list')).not.toBeInTheDocument()
+    fireEvent.click(toggle)
+    // в списке — фразы построения с написанием и переводом
+    const list = await screen.findByTitle('lesson-vocab-list')
+    expect(within(list).getByText('I am Ivan.')).toBeInTheDocument()
+    expect(within(list).getAllByText(/—/).length).toBeGreaterThan(10)
+    // у каждой фразы — кнопка озвучки
+    expect(within(list).getAllByRole('button', { name: 'Прослушать' }).length).toBeGreaterThan(10)
+    fireEvent.click(toggle)
+    expect(screen.queryByTitle('lesson-vocab-list')).not.toBeInTheDocument()
   })
 
   it('B-27: правило → 2 cloze → сразу «Речь»-сценки (пустые блоки пропущены)', async () => {

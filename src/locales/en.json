@@ -186,7 +186,9 @@
         "past": "Put it into the past",
         "future": "Put it into the future"
       }
-    }
+    },
+    "vocabToggle": "Lesson phrases ({{count}}) — spelling and audio",
+    "vocabPlay": "Play"
   },
   "login": {
     "title": "Sign in",
