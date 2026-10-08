@@ -11,13 +11,13 @@
       "lines": [
         {
           "role": "agent",
-          "audio": "audio/phrasebook/emma/pb-airport-01-l0.opus",
+          "audio": "audio/phrasebook/sonia/pb-airport-01-l0.opus",
           "text_en": "Good morning. Your passport and ticket, please.",
           "translation_ru": "Доброе утро. Ваш паспорт и билет, пожалуйста."
         },
         {
           "role": "passenger",
-          "audio": "audio/phrasebook/emma/pb-airport-01-l1.opus",
+          "audio": "audio/phrasebook/sonia/pb-airport-01-l1.opus",
           "text_en": "Here is my passport and here is my ticket.",
           "translation_ru": "Вот мой паспорт, а вот билет.",
           "accepted": [
@@ -27,33 +27,33 @@
         },
         {
           "role": "agent",
-          "audio": "audio/phrasebook/emma/pb-airport-01-l2.opus",
+          "audio": "audio/phrasebook/sonia/pb-airport-01-l2.opus",
           "text_en": "Do you have any bags to check in?",
           "translation_ru": "У вас есть багаж для сдачи?"
         },
         {
           "role": "passenger",
-          "audio": "audio/phrasebook/emma/pb-airport-01-l3.opus",
+          "audio": "audio/phrasebook/sonia/pb-airport-01-l3.opus",
           "text_en": "I have one bag.",
           "translation_ru": "У меня один чемодан.",
           "accepted": ["I have one bag.", "Just one bag."]
         },
         {
           "role": "agent",
-          "audio": "audio/phrasebook/emma/pb-airport-01-l4.opus",
+          "audio": "audio/phrasebook/sonia/pb-airport-01-l4.opus",
           "text_en": "Window or aisle seat?",
           "translation_ru": "Место у окна или у прохода?"
         },
         {
           "role": "passenger",
-          "audio": "audio/phrasebook/emma/pb-airport-01-l5.opus",
+          "audio": "audio/phrasebook/sonia/pb-airport-01-l5.opus",
           "text_en": "A window seat, please. Where is gate 5?",
           "translation_ru": "У окна, пожалуйста. Где пятый выход?",
           "accepted": ["A window seat, please. Where is gate 5?", "A window seat, please."]
         },
         {
           "role": "agent",
-          "audio": "audio/phrasebook/emma/pb-airport-01-l6.opus",
+          "audio": "audio/phrasebook/sonia/pb-airport-01-l6.opus",
           "text_en": "Gate 5 is on the left, after passport control. Have a nice flight!",
           "translation_ru": "Выход 5 слева, после паспортного контроля. Хорошего полёта!"
         }
@@ -68,46 +68,46 @@
       "lines": [
         {
           "role": "officer",
-          "audio": "audio/phrasebook/emma/pb-airport-02-l0.opus",
+          "audio": "audio/phrasebook/sonia/pb-airport-02-l0.opus",
           "text_en": "Put your bag on the belt, please. Take out your liquids.",
           "translation_ru": "Положите сумку на ленту, пожалуйста. Достаньте жидкости."
         },
         {
           "role": "passenger",
-          "audio": "audio/phrasebook/emma/pb-airport-02-l1.opus",
+          "audio": "audio/phrasebook/sonia/pb-airport-02-l1.opus",
           "text_en": "Sure. Laptop in a separate tray?",
           "translation_ru": "Конечно. Ноутбук в отдельный лоток?",
           "accepted": ["Sure. Laptop in a separate tray?", "Laptop in a separate tray?"]
         },
         {
           "role": "officer",
-          "audio": "audio/phrasebook/emma/pb-airport-02-l2.opus",
+          "audio": "audio/phrasebook/sonia/pb-airport-02-l2.opus",
           "text_en": "Yes, please. Step through the scanner.",
           "translation_ru": "Да, пожалуйста. Пройдите через сканер."
         },
         {
           "role": "passenger",
-          "audio": "audio/phrasebook/emma/pb-airport-02-l3.opus",
+          "audio": "audio/phrasebook/sonia/pb-airport-02-l3.opus",
           "text_en": "Excuse me, where is gate 5?",
           "translation_ru": "Извините, где выход 5?",
           "accepted": ["Excuse me, where is gate 5?", "Where is gate 5?"]
         },
         {
           "role": "officer",
-          "audio": "audio/phrasebook/emma/pb-airport-02-l4.opus",
+          "audio": "audio/phrasebook/sonia/pb-airport-02-l4.opus",
           "text_en": "Follow the signs — gate 5 is this way. Boarding starts in twenty minutes.",
           "translation_ru": "Следуйте за указателями — выход 5 в эту сторону. Посадка через двадцать минут."
         },
         {
           "role": "passenger",
-          "audio": "audio/phrasebook/emma/pb-airport-02-l5.opus",
+          "audio": "audio/phrasebook/sonia/pb-airport-02-l5.opus",
           "text_en": "Is the flight on time?",
           "translation_ru": "Рейс по расписанию?",
           "accepted": ["Is the flight on time?"]
         },
         {
           "role": "officer",
-          "audio": "audio/phrasebook/emma/pb-airport-02-l6.opus",
+          "audio": "audio/phrasebook/sonia/pb-airport-02-l6.opus",
           "text_en": "Yes, on time. Final call will be announced. Have a nice flight!",
           "translation_ru": "Да, по расписанию. Объявят последний вызов. Хорошего полёта!"
         }

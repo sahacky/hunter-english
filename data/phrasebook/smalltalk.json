@@ -11,39 +11,39 @@
       "lines": [
         {
           "role": "local",
-          "audio": "audio/phrasebook/emma/pb-smalltalk-01-l0.opus",
+          "audio": "audio/phrasebook/sonia/pb-smalltalk-01-l0.opus",
           "text_en": "Hello!",
           "translation_ru": "Привет!"
         },
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/emma/pb-smalltalk-01-l1.opus",
+          "audio": "audio/phrasebook/sonia/pb-smalltalk-01-l1.opus",
           "text_en": "Hi! My name is Ivan.",
           "translation_ru": "Привет! Меня зовут Иван.",
           "accepted": ["Hi! My name is Ivan.", "Hi, my name is Ivan.", "Hello! My name is Ivan."]
         },
         {
           "role": "local",
-          "audio": "audio/phrasebook/emma/pb-smalltalk-01-l2.opus",
+          "audio": "audio/phrasebook/sonia/pb-smalltalk-01-l2.opus",
           "text_en": "Nice to meet you, Ivan. I am Anna.",
           "translation_ru": "Приятно познакомиться, Иван. Я Анна."
         },
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/emma/pb-smalltalk-01-l3.opus",
+          "audio": "audio/phrasebook/sonia/pb-smalltalk-01-l3.opus",
           "text_en": "Nice to meet you too. How are you?",
           "translation_ru": "Мне тоже приятно. Как дела?",
           "accepted": ["Nice to meet you too. How are you?"]
         },
         {
           "role": "local",
-          "audio": "audio/phrasebook/emma/pb-smalltalk-01-l4.opus",
+          "audio": "audio/phrasebook/sonia/pb-smalltalk-01-l4.opus",
           "text_en": "I am fine, thanks. And you?",
           "translation_ru": "Хорошо, спасибо. А ты?"
         },
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/emma/pb-smalltalk-01-l5.opus",
+          "audio": "audio/phrasebook/sonia/pb-smalltalk-01-l5.opus",
           "text_en": "Not bad, thank you.",
           "translation_ru": "Неплохо, спасибо.",
           "accepted": ["Not bad, thank you.", "Not bad, thanks."]
@@ -59,39 +59,39 @@
       "lines": [
         {
           "role": "local",
-          "audio": "audio/phrasebook/emma/pb-smalltalk-02-l0.opus",
+          "audio": "audio/phrasebook/sonia/pb-smalltalk-02-l0.opus",
           "text_en": "Where are you from?",
           "translation_ru": "Откуда ты?"
         },
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/emma/pb-smalltalk-02-l1.opus",
+          "audio": "audio/phrasebook/sonia/pb-smalltalk-02-l1.opus",
           "text_en": "I am from Russia. And you?",
           "translation_ru": "Я из России. А ты?",
           "accepted": ["I am from Russia. And you?", "I'm from Russia. And you?"]
         },
         {
           "role": "local",
-          "audio": "audio/phrasebook/emma/pb-smalltalk-02-l2.opus",
+          "audio": "audio/phrasebook/sonia/pb-smalltalk-02-l2.opus",
           "text_en": "I am from Canada. What do you do?",
           "translation_ru": "Я из Канады. Чем ты занимаешься?"
         },
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/emma/pb-smalltalk-02-l3.opus",
+          "audio": "audio/phrasebook/sonia/pb-smalltalk-02-l3.opus",
           "text_en": "I am a student. Are you a teacher?",
           "translation_ru": "Я студент. Ты учитель?",
           "accepted": ["I am a student. Are you a teacher?", "I'm a student. Are you a teacher?"]
         },
         {
           "role": "local",
-          "audio": "audio/phrasebook/emma/pb-smalltalk-02-l4.opus",
+          "audio": "audio/phrasebook/sonia/pb-smalltalk-02-l4.opus",
           "text_en": "No, I am a doctor.",
           "translation_ru": "Нет, я врач."
         },
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/emma/pb-smalltalk-02-l5.opus",
+          "audio": "audio/phrasebook/sonia/pb-smalltalk-02-l5.opus",
           "text_en": "It is nice to talk to you. See you later!",
           "translation_ru": "Приятно было поговорить. До встречи!",
           "accepted": ["It is nice to talk to you. See you later!"]
@@ -107,13 +107,13 @@
       "lines": [
         {
           "role": "local",
-          "audio": "audio/phrasebook/emma/pb-smalltalk-05-l0.opus",
+          "audio": "audio/phrasebook/sonia/pb-smalltalk-05-l0.opus",
           "text_en": "Have you been to London?",
           "translation_ru": "Ты был в Лондоне?"
         },
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/emma/pb-smalltalk-05-l1.opus",
+          "audio": "audio/phrasebook/sonia/pb-smalltalk-05-l1.opus",
           "text_en": "Yes, I've been there twice.",
           "translation_ru": "Да, я был там дважды.",
           "accepted": [
@@ -124,26 +124,26 @@
         },
         {
           "role": "local",
-          "audio": "audio/phrasebook/emma/pb-smalltalk-05-l2.opus",
+          "audio": "audio/phrasebook/sonia/pb-smalltalk-05-l2.opus",
           "text_en": "Nice! I've never been to Spain. Is it worth visiting?",
           "translation_ru": "Здорово! Я никогда не был в Испании. Стоит съездить?"
         },
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/emma/pb-smalltalk-05-l3.opus",
+          "audio": "audio/phrasebook/sonia/pb-smalltalk-05-l3.opus",
           "text_en": "Yes, you have to see Barcelona.",
           "translation_ru": "Да, тебе обязательно нужно увидеть Барселону.",
           "accepted": ["Yes, you have to see Barcelona.", "You have to see Barcelona."]
         },
         {
           "role": "local",
-          "audio": "audio/phrasebook/emma/pb-smalltalk-05-l4.opus",
+          "audio": "audio/phrasebook/sonia/pb-smalltalk-05-l4.opus",
           "text_en": "And have you ever been to Paris?",
           "translation_ru": "А ты когда-нибудь был в Париже?"
         },
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/emma/pb-smalltalk-05-l5.opus",
+          "audio": "audio/phrasebook/sonia/pb-smalltalk-05-l5.opus",
           "text_en": "I've never been to Paris. Maybe next year.",
           "translation_ru": "Я никогда не был в Париже. Может, в следующем году.",
           "accepted": [
@@ -163,39 +163,39 @@
       "lines": [
         {
           "role": "local",
-          "audio": "audio/phrasebook/emma/pb-smalltalk-03-l0.opus",
+          "audio": "audio/phrasebook/sonia/pb-smalltalk-03-l0.opus",
           "text_en": "Have you ever been abroad?",
           "translation_ru": "Ты когда-нибудь был за границей?"
         },
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/emma/pb-smalltalk-03-l1.opus",
+          "audio": "audio/phrasebook/sonia/pb-smalltalk-03-l1.opus",
           "text_en": "Yes, I have been to three countries.",
           "translation_ru": "Да, я был в трёх странах.",
           "accepted": ["Yes, I have been to three countries.", "I have been to three countries."]
         },
         {
           "role": "local",
-          "audio": "audio/phrasebook/emma/pb-smalltalk-03-l2.opus",
+          "audio": "audio/phrasebook/sonia/pb-smalltalk-03-l2.opus",
           "text_en": "Which one did you like best?",
           "translation_ru": "Какая понравилась больше всего?"
         },
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/emma/pb-smalltalk-03-l3.opus",
+          "audio": "audio/phrasebook/sonia/pb-smalltalk-03-l3.opus",
           "text_en": "Italy, I think. I went there last spring.",
           "translation_ru": "Италия, думаю. Я ездил туда прошлой весной.",
           "accepted": ["Italy, I think.", "Italy, I think. I went there last spring."]
         },
         {
           "role": "local",
-          "audio": "audio/phrasebook/emma/pb-smalltalk-03-l4.opus",
+          "audio": "audio/phrasebook/sonia/pb-smalltalk-03-l4.opus",
           "text_en": "How long have you been learning English?",
           "translation_ru": "Как долго ты учишь английский?"
         },
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/emma/pb-smalltalk-03-l5.opus",
+          "audio": "audio/phrasebook/sonia/pb-smalltalk-03-l5.opus",
           "text_en": "For about two years now.",
           "translation_ru": "Около двух лет уже.",
           "accepted": ["For about two years now.", "Two years."]
@@ -211,13 +211,13 @@
       "lines": [
         {
           "role": "local",
-          "audio": "audio/phrasebook/emma/pb-smalltalk-04-l0.opus",
+          "audio": "audio/phrasebook/sonia/pb-smalltalk-04-l0.opus",
           "text_en": "Did you use to play any sports as a child?",
           "translation_ru": "Ты в детстве занимался спортом?"
         },
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/emma/pb-smalltalk-04-l1.opus",
+          "audio": "audio/phrasebook/sonia/pb-smalltalk-04-l1.opus",
           "text_en": "I used to play football every day.",
           "translation_ru": "Я раньше каждый день играл в футбол.",
           "accepted": ["I used to play football every day.", "I used to play football."],
@@ -225,26 +225,26 @@
         },
         {
           "role": "local",
-          "audio": "audio/phrasebook/emma/pb-smalltalk-04-l2.opus",
+          "audio": "audio/phrasebook/sonia/pb-smalltalk-04-l2.opus",
           "text_en": "Do you still play?",
           "translation_ru": "Ты всё ещё играешь?"
         },
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/emma/pb-smalltalk-04-l3.opus",
+          "audio": "audio/phrasebook/sonia/pb-smalltalk-04-l3.opus",
           "text_en": "Not anymore. I don't have time now.",
           "translation_ru": "Уже нет. Сейчас нет времени.",
           "accepted": ["Not anymore.", "Not anymore. I don't have time now."]
         },
         {
           "role": "local",
-          "audio": "audio/phrasebook/emma/pb-smalltalk-04-l4.opus",
+          "audio": "audio/phrasebook/sonia/pb-smalltalk-04-l4.opus",
           "text_en": "Those were the days!",
           "translation_ru": "Вот это были времена!"
         },
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/emma/pb-smalltalk-04-l5.opus",
+          "audio": "audio/phrasebook/sonia/pb-smalltalk-04-l5.opus",
           "text_en": "Indeed! It feels like yesterday.",
           "translation_ru": "Точно! Кажется, это было вчера.",
           "accepted": ["Indeed!", "Indeed! It feels like yesterday."]

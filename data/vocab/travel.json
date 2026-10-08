@@ -6,2923 +6,2923 @@
    "topic": "politeness",
    "en": "hello",
    "ru": "привет / здравствуйте",
-   "audio": "audio/words/emma/hello-interjection.opus"
+   "audio": "audio/words/sonia/hello-interjection.opus"
   },
   {
    "topic": "politeness",
    "en": "hi",
    "ru": "привет",
-   "audio": "audio/words/emma/hi-interjection.opus"
+   "audio": "audio/words/sonia/hi-interjection.opus"
   },
   {
    "topic": "politeness",
    "en": "goodbye",
    "ru": "до свидания",
-   "audio": "audio/words/emma/goodbye-interjection.opus"
+   "audio": "audio/words/sonia/goodbye-interjection.opus"
   },
   {
    "topic": "politeness",
    "en": "bye",
    "ru": "пока",
-   "audio": "audio/words/emma/bye-interjection.opus"
+   "audio": "audio/words/sonia/bye-interjection.opus"
   },
   {
    "topic": "politeness",
    "en": "please",
    "ru": "пожалуйста",
-   "audio": "audio/words/emma/please-verb.opus"
+   "audio": "audio/words/sonia/please-verb.opus"
   },
   {
    "topic": "politeness",
    "en": "thank you",
    "ru": "спасибо",
-   "audio": "audio/vocab/emma/politeness-thank-you.opus"
+   "audio": "audio/vocab/sonia/politeness-thank-you.opus"
   },
   {
    "topic": "politeness",
    "en": "thanks",
    "ru": "благодарю",
-   "audio": "audio/vocab/emma/politeness-thanks.opus"
+   "audio": "audio/vocab/sonia/politeness-thanks.opus"
   },
   {
    "topic": "politeness",
    "en": "you're welcome",
    "ru": "пожалуйста (ответ)",
-   "audio": "audio/vocab/emma/politeness-you-re-welcome.opus"
+   "audio": "audio/vocab/sonia/politeness-you-re-welcome.opus"
   },
   {
    "topic": "politeness",
    "en": "sorry",
    "ru": "извините",
-   "audio": "audio/words/emma/sorry-adjective.opus"
+   "audio": "audio/words/sonia/sorry-adjective.opus"
   },
   {
    "topic": "politeness",
    "en": "excuse me",
    "ru": "извините (обратить внимание)",
-   "audio": "audio/vocab/emma/politeness-excuse-me.opus"
+   "audio": "audio/vocab/sonia/politeness-excuse-me.opus"
   },
   {
    "topic": "politeness",
    "en": "yes",
    "ru": "да",
-   "audio": "audio/words/emma/yes-interjection.opus"
+   "audio": "audio/words/sonia/yes-interjection.opus"
   },
   {
    "topic": "politeness",
    "en": "no",
    "ru": "нет",
-   "audio": "audio/words/emma/no-determiner.opus"
+   "audio": "audio/words/sonia/no-determiner.opus"
   },
   {
    "topic": "politeness",
    "en": "OK",
    "ru": "хорошо",
-   "audio": "audio/vocab/emma/politeness-ok.opus"
+   "audio": "audio/vocab/sonia/politeness-ok.opus"
   },
   {
    "topic": "politeness",
    "en": "my name is",
    "ru": "меня зовут",
-   "audio": "audio/vocab/emma/politeness-my-name-is.opus"
+   "audio": "audio/vocab/sonia/politeness-my-name-is.opus"
   },
   {
    "topic": "politeness",
    "en": "name",
    "ru": "имя",
-   "audio": "audio/words/emma/name-noun.opus"
+   "audio": "audio/words/sonia/name-noun.opus"
   },
   {
    "topic": "politeness",
    "en": "I am from",
    "ru": "я из",
-   "audio": "audio/vocab/emma/politeness-i-am-from.opus"
+   "audio": "audio/vocab/sonia/politeness-i-am-from.opus"
   },
   {
    "topic": "politeness",
    "en": "Russia",
    "ru": "Россия",
-   "audio": "audio/vocab/emma/politeness-russia.opus"
+   "audio": "audio/vocab/sonia/politeness-russia.opus"
   },
   {
    "topic": "politeness",
    "en": "nice to meet you",
    "ru": "приятно познакомиться",
-   "audio": "audio/vocab/emma/politeness-nice-to-meet-you.opus"
+   "audio": "audio/vocab/sonia/politeness-nice-to-meet-you.opus"
   },
   {
    "topic": "politeness",
    "en": "how are you",
    "ru": "как дела",
-   "audio": "audio/vocab/emma/politeness-how-are-you.opus"
+   "audio": "audio/vocab/sonia/politeness-how-are-you.opus"
   },
   {
    "topic": "politeness",
    "en": "fine",
    "ru": "хорошо",
-   "audio": "audio/words/emma/fine-adjective.opus"
+   "audio": "audio/words/sonia/fine-adjective.opus"
   },
   {
    "topic": "politeness",
    "en": "and you",
    "ru": "а у вас",
-   "audio": "audio/vocab/emma/politeness-and-you.opus"
+   "audio": "audio/vocab/sonia/politeness-and-you.opus"
   },
   {
    "topic": "politeness",
    "en": "I",
    "ru": "я",
-   "audio": "audio/vocab/emma/politeness-i.opus"
+   "audio": "audio/vocab/sonia/politeness-i.opus"
   },
   {
    "topic": "politeness",
    "en": "you",
    "ru": "ты/вы",
-   "audio": "audio/words/emma/you-pronoun.opus"
+   "audio": "audio/words/sonia/you-pronoun.opus"
   },
   {
    "topic": "politeness",
    "en": "he",
    "ru": "он",
-   "audio": "audio/words/emma/he-pronoun.opus"
+   "audio": "audio/words/sonia/he-pronoun.opus"
   },
   {
    "topic": "politeness",
    "en": "she",
    "ru": "она",
-   "audio": "audio/words/emma/she-pronoun.opus"
+   "audio": "audio/words/sonia/she-pronoun.opus"
   },
   {
    "topic": "politeness",
    "en": "we",
    "ru": "мы",
-   "audio": "audio/words/emma/we-pronoun.opus"
+   "audio": "audio/words/sonia/we-pronoun.opus"
   },
   {
    "topic": "politeness",
    "en": "they",
    "ru": "они",
-   "audio": "audio/words/emma/they-pronoun.opus"
+   "audio": "audio/words/sonia/they-pronoun.opus"
   },
   {
    "topic": "politeness",
    "en": "friend",
    "ru": "друг",
-   "audio": "audio/words/emma/friend-noun.opus"
+   "audio": "audio/words/sonia/friend-noun.opus"
   },
   {
    "topic": "politeness",
    "en": "tourist",
    "ru": "турист",
-   "audio": "audio/words/emma/tourist-noun.opus"
+   "audio": "audio/words/sonia/tourist-noun.opus"
   },
   {
    "topic": "politeness",
    "en": "visitor",
    "ru": "посетитель",
-   "audio": "audio/words/emma/visitor-noun.opus"
+   "audio": "audio/words/sonia/visitor-noun.opus"
   },
   {
    "topic": "politeness",
    "en": "help",
    "ru": "помощь, помогать",
-   "audio": "audio/words/emma/help-noun.opus"
+   "audio": "audio/words/sonia/help-noun.opus"
   },
   {
    "topic": "politeness",
    "en": "problem",
    "ru": "проблема",
-   "audio": "audio/words/emma/problem-noun.opus"
+   "audio": "audio/words/sonia/problem-noun.opus"
   },
   {
    "topic": "politeness",
    "en": "question",
    "ru": "вопрос",
-   "audio": "audio/words/emma/question-noun.opus"
+   "audio": "audio/words/sonia/question-noun.opus"
   },
   {
    "topic": "politeness",
    "en": "speak",
    "ru": "говорить",
-   "audio": "audio/words/emma/speak-verb.opus"
+   "audio": "audio/words/sonia/speak-verb.opus"
   },
   {
    "topic": "politeness",
    "en": "talk",
    "ru": "разговаривать",
-   "audio": "audio/words/emma/talk-verb.opus"
+   "audio": "audio/words/sonia/talk-verb.opus"
   },
   {
    "topic": "politeness",
    "en": "say",
    "ru": "сказать",
-   "audio": "audio/words/emma/say-verb.opus"
+   "audio": "audio/words/sonia/say-verb.opus"
   },
   {
    "topic": "politeness",
    "en": "understand",
    "ru": "понимать",
-   "audio": "audio/words/emma/understand-verb.opus"
+   "audio": "audio/words/sonia/understand-verb.opus"
   },
   {
    "topic": "politeness",
    "en": "know",
    "ru": "знать",
-   "audio": "audio/words/emma/know-verb.opus"
+   "audio": "audio/words/sonia/know-verb.opus"
   },
   {
    "topic": "politeness",
    "en": "want",
    "ru": "хотеть",
-   "audio": "audio/words/emma/want-verb.opus"
+   "audio": "audio/words/sonia/want-verb.opus"
   },
   {
    "topic": "politeness",
    "en": "need",
    "ru": "нуждаться",
-   "audio": "audio/words/emma/need-noun.opus"
+   "audio": "audio/words/sonia/need-noun.opus"
   },
   {
    "topic": "politeness",
    "en": "can",
    "ru": "мочь",
-   "audio": "audio/words/emma/can-verb.opus"
+   "audio": "audio/words/sonia/can-verb.opus"
   },
   {
    "topic": "politeness",
    "en": "could",
    "ru": "могли бы",
-   "audio": "audio/words/emma/could-verb.opus"
+   "audio": "audio/words/sonia/could-verb.opus"
   },
   {
    "topic": "politeness",
    "en": "may",
    "ru": "можно",
-   "audio": "audio/words/emma/may-verb.opus"
+   "audio": "audio/words/sonia/may-verb.opus"
   },
   {
    "topic": "politeness",
    "en": "must",
    "ru": "должен",
-   "audio": "audio/words/emma/must-verb.opus"
+   "audio": "audio/words/sonia/must-verb.opus"
   },
   {
    "topic": "politeness",
    "en": "should",
    "ru": "следует",
-   "audio": "audio/words/emma/should-verb.opus"
+   "audio": "audio/words/sonia/should-verb.opus"
   },
   {
    "topic": "politeness",
    "en": "let's",
    "ru": "давай",
-   "audio": "audio/vocab/emma/politeness-let-s.opus"
+   "audio": "audio/vocab/sonia/politeness-let-s.opus"
   },
   {
    "topic": "communication",
    "en": "English",
    "ru": "английский",
-   "audio": "audio/vocab/emma/communication-english.opus"
+   "audio": "audio/vocab/sonia/communication-english.opus"
   },
   {
    "topic": "communication",
    "en": "language",
    "ru": "язык",
-   "audio": "audio/words/emma/language-noun.opus"
+   "audio": "audio/words/sonia/language-noun.opus"
   },
   {
    "topic": "communication",
    "en": "Russian",
    "ru": "русский",
-   "audio": "audio/vocab/emma/communication-russian.opus"
+   "audio": "audio/vocab/sonia/communication-russian.opus"
   },
   {
    "topic": "communication",
    "en": "do you speak English",
    "ru": "вы говорите по-английски",
-   "audio": "audio/vocab/emma/communication-do-you-speak-english.opus"
+   "audio": "audio/vocab/sonia/communication-do-you-speak-english.opus"
   },
   {
    "topic": "communication",
    "en": "I don't understand",
    "ru": "я не понимаю",
-   "audio": "audio/vocab/emma/communication-i-don-t-understand.opus"
+   "audio": "audio/vocab/sonia/communication-i-don-t-understand.opus"
   },
   {
    "topic": "communication",
    "en": "I understand",
    "ru": "я понимаю",
-   "audio": "audio/vocab/emma/communication-i-understand.opus"
+   "audio": "audio/vocab/sonia/communication-i-understand.opus"
   },
   {
    "topic": "communication",
    "en": "slowly",
    "ru": "медленно",
-   "audio": "audio/words/emma/slowly-adverb.opus"
+   "audio": "audio/words/sonia/slowly-adverb.opus"
   },
   {
    "topic": "communication",
    "en": "again",
    "ru": "снова",
-   "audio": "audio/words/emma/again-adverb.opus"
+   "audio": "audio/words/sonia/again-adverb.opus"
   },
   {
    "topic": "communication",
    "en": "repeat",
    "ru": "повторить",
-   "audio": "audio/words/emma/repeat-verb.opus"
+   "audio": "audio/words/sonia/repeat-verb.opus"
   },
   {
    "topic": "communication",
    "en": "mean",
    "ru": "значить",
-   "audio": "audio/words/emma/mean-verb.opus"
+   "audio": "audio/words/sonia/mean-verb.opus"
   },
   {
    "topic": "communication",
    "en": "what does it mean",
    "ru": "что это значит",
-   "audio": "audio/vocab/emma/communication-what-does-it-mean.opus"
+   "audio": "audio/vocab/sonia/communication-what-does-it-mean.opus"
   },
   {
    "topic": "communication",
    "en": "how do you say",
    "ru": "как сказать",
-   "audio": "audio/vocab/emma/communication-how-do-you-say.opus"
+   "audio": "audio/vocab/sonia/communication-how-do-you-say.opus"
   },
   {
    "topic": "communication",
    "en": "write",
    "ru": "писать",
-   "audio": "audio/words/emma/write-verb.opus"
+   "audio": "audio/words/sonia/write-verb.opus"
   },
   {
    "topic": "communication",
    "en": "write it down",
    "ru": "запишите",
-   "audio": "audio/vocab/emma/communication-write-it-down.opus"
+   "audio": "audio/vocab/sonia/communication-write-it-down.opus"
   },
   {
    "topic": "communication",
    "en": "read",
    "ru": "читать",
-   "audio": "audio/words/emma/read-verb.opus"
+   "audio": "audio/words/sonia/read-verb.opus"
   },
   {
    "topic": "communication",
    "en": "spell",
    "ru": "произнести по буквам",
-   "audio": "audio/words/emma/spell-noun.opus"
+   "audio": "audio/words/sonia/spell-noun.opus"
   },
   {
    "topic": "communication",
    "en": "word",
    "ru": "слово",
-   "audio": "audio/words/emma/word-noun.opus"
+   "audio": "audio/words/sonia/word-noun.opus"
   },
   {
    "topic": "communication",
    "en": "translate",
    "ru": "переводить",
-   "audio": "audio/words/emma/translate-verb.opus"
+   "audio": "audio/words/sonia/translate-verb.opus"
   },
   {
    "topic": "communication",
    "en": "translator",
    "ru": "переводчик",
-   "audio": "audio/vocab/emma/communication-translator.opus"
+   "audio": "audio/vocab/sonia/communication-translator.opus"
   },
   {
    "topic": "communication",
    "en": "dictionary",
    "ru": "словарь",
-   "audio": "audio/vocab/emma/communication-dictionary.opus"
+   "audio": "audio/vocab/sonia/communication-dictionary.opus"
   },
   {
    "topic": "communication",
    "en": "phone",
    "ru": "телефон",
-   "audio": "audio/words/emma/phone-verb.opus"
+   "audio": "audio/words/sonia/phone-verb.opus"
   },
   {
    "topic": "communication",
    "en": "app",
    "ru": "приложение",
-   "audio": "audio/vocab/emma/communication-app.opus"
+   "audio": "audio/vocab/sonia/communication-app.opus"
   },
   {
    "topic": "communication",
    "en": "free Wi-Fi",
    "ru": "бесплатный вай-фай",
-   "audio": "audio/vocab/emma/communication-free-wi-fi.opus"
+   "audio": "audio/vocab/sonia/communication-free-wi-fi.opus"
   },
   {
    "topic": "communication",
    "en": "internet",
    "ru": "интернет",
-   "audio": "audio/vocab/emma/communication-internet.opus"
+   "audio": "audio/vocab/sonia/communication-internet.opus"
   },
   {
    "topic": "communication",
    "en": "charger",
    "ru": "зарядное устройство",
-   "audio": "audio/vocab/emma/communication-charger.opus"
+   "audio": "audio/vocab/sonia/communication-charger.opus"
   },
   {
    "topic": "communication",
    "en": "message",
    "ru": "сообщение",
-   "audio": "audio/words/emma/message-noun.opus"
+   "audio": "audio/words/sonia/message-noun.opus"
   },
   {
    "topic": "communication",
    "en": "call",
    "ru": "звонить",
-   "audio": "audio/words/emma/call-verb.opus"
+   "audio": "audio/words/sonia/call-verb.opus"
   },
   {
    "topic": "communication",
    "en": "number",
    "ru": "номер",
-   "audio": "audio/words/emma/number-noun.opus"
+   "audio": "audio/words/sonia/number-noun.opus"
   },
   {
    "topic": "communication",
    "en": "ask",
    "ru": "спрашивать",
-   "audio": "audio/words/emma/ask-verb.opus"
+   "audio": "audio/words/sonia/ask-verb.opus"
   },
   {
    "topic": "communication",
    "en": "answer",
    "ru": "отвечать",
-   "audio": "audio/words/emma/answer-noun.opus"
+   "audio": "audio/words/sonia/answer-noun.opus"
   },
   {
    "topic": "airport",
    "en": "airport",
    "ru": "аэропорт",
-   "audio": "audio/words/emma/airport-noun.opus"
+   "audio": "audio/words/sonia/airport-noun.opus"
   },
   {
    "topic": "airport",
    "en": "plane",
    "ru": "самолёт",
-   "audio": "audio/words/emma/plane-adjective.opus"
+   "audio": "audio/words/sonia/plane-adjective.opus"
   },
   {
    "topic": "airport",
    "en": "flight",
    "ru": "рейс",
-   "audio": "audio/words/emma/flight-noun.opus"
+   "audio": "audio/words/sonia/flight-noun.opus"
   },
   {
    "topic": "airport",
    "en": "ticket",
    "ru": "билет",
-   "audio": "audio/words/emma/ticket-noun.opus"
+   "audio": "audio/words/sonia/ticket-noun.opus"
   },
   {
    "topic": "airport",
    "en": "boarding pass",
    "ru": "посадочный талон",
-   "audio": "audio/vocab/emma/airport-boarding-pass.opus"
+   "audio": "audio/vocab/sonia/airport-boarding-pass.opus"
   },
   {
    "topic": "airport",
    "en": "passport",
    "ru": "паспорт",
-   "audio": "audio/words/emma/passport-noun.opus"
+   "audio": "audio/words/sonia/passport-noun.opus"
   },
   {
    "topic": "airport",
    "en": "visa",
    "ru": "виза",
-   "audio": "audio/vocab/emma/airport-visa.opus"
+   "audio": "audio/vocab/sonia/airport-visa.opus"
   },
   {
    "topic": "airport",
    "en": "ID",
    "ru": "удостоверение",
-   "audio": "audio/vocab/emma/airport-id.opus"
+   "audio": "audio/vocab/sonia/airport-id.opus"
   },
   {
    "topic": "airport",
    "en": "check-in",
    "ru": "регистрация",
-   "audio": "audio/vocab/emma/airport-check-in.opus"
+   "audio": "audio/vocab/sonia/airport-check-in.opus"
   },
   {
    "topic": "airport",
    "en": "check in",
    "ru": "зарегистрироваться",
-   "audio": "audio/vocab/emma/airport-check-in-2.opus"
+   "audio": "audio/vocab/sonia/airport-check-in-2.opus"
   },
   {
    "topic": "airport",
    "en": "gate",
    "ru": "выход (на посадку)",
-   "audio": "audio/words/emma/gate-noun.opus"
+   "audio": "audio/words/sonia/gate-noun.opus"
   },
   {
    "topic": "airport",
    "en": "terminal",
    "ru": "терминал",
-   "audio": "audio/vocab/emma/airport-terminal.opus"
+   "audio": "audio/vocab/sonia/airport-terminal.opus"
   },
   {
    "topic": "airport",
    "en": "security",
    "ru": "служба безопасности",
-   "audio": "audio/words/emma/security-noun.opus"
+   "audio": "audio/words/sonia/security-noun.opus"
   },
   {
    "topic": "airport",
    "en": "customs",
    "ru": "таможня",
-   "audio": "audio/vocab/emma/airport-customs.opus"
+   "audio": "audio/vocab/sonia/airport-customs.opus"
   },
   {
    "topic": "airport",
    "en": "immigration",
    "ru": "пограничный контроль",
-   "audio": "audio/words/emma/immigration-noun.opus"
+   "audio": "audio/words/sonia/immigration-noun.opus"
   },
   {
    "topic": "airport",
    "en": "baggage",
    "ru": "багаж",
-   "audio": "audio/vocab/emma/airport-baggage.opus"
+   "audio": "audio/vocab/sonia/airport-baggage.opus"
   },
   {
    "topic": "airport",
    "en": "luggage",
    "ru": "багаж",
-   "audio": "audio/vocab/emma/airport-luggage.opus"
+   "audio": "audio/vocab/sonia/airport-luggage.opus"
   },
   {
    "topic": "airport",
    "en": "suitcase",
    "ru": "чемодан",
-   "audio": "audio/vocab/emma/airport-suitcase.opus"
+   "audio": "audio/vocab/sonia/airport-suitcase.opus"
   },
   {
    "topic": "airport",
    "en": "backpack",
    "ru": "рюкзак",
-   "audio": "audio/vocab/emma/airport-backpack.opus"
+   "audio": "audio/vocab/sonia/airport-backpack.opus"
   },
   {
    "topic": "airport",
    "en": "bag",
    "ru": "сумка",
-   "audio": "audio/words/emma/bag-noun.opus"
+   "audio": "audio/words/sonia/bag-noun.opus"
   },
   {
    "topic": "airport",
    "en": "carry-on",
    "ru": "ручная кладь",
-   "audio": "audio/vocab/emma/airport-carry-on.opus"
+   "audio": "audio/vocab/sonia/airport-carry-on.opus"
   },
   {
    "topic": "airport",
    "en": "baggage claim",
    "ru": "выдача багажа",
-   "audio": "audio/vocab/emma/airport-baggage-claim.opus"
+   "audio": "audio/vocab/sonia/airport-baggage-claim.opus"
   },
   {
    "topic": "airport",
    "en": "lost",
    "ru": "потерянный",
-   "audio": "audio/words/emma/lost-adjective.opus"
+   "audio": "audio/words/sonia/lost-adjective.opus"
   },
   {
    "topic": "airport",
    "en": "lost and found",
    "ru": "бюро находок",
-   "audio": "audio/vocab/emma/airport-lost-and-found.opus"
+   "audio": "audio/vocab/sonia/airport-lost-and-found.opus"
   },
   {
    "topic": "airport",
    "en": "weigh",
    "ru": "взвешивать",
-   "audio": "audio/words/emma/weigh-verb.opus"
+   "audio": "audio/words/sonia/weigh-verb.opus"
   },
   {
    "topic": "airport",
    "en": "overweight",
    "ru": "перевес",
-   "audio": "audio/vocab/emma/airport-overweight.opus"
+   "audio": "audio/vocab/sonia/airport-overweight.opus"
   },
   {
    "topic": "airport",
    "en": "board",
    "ru": "садиться (в самолёт)",
-   "audio": "audio/words/emma/board-noun.opus"
+   "audio": "audio/words/sonia/board-noun.opus"
   },
   {
    "topic": "airport",
    "en": "boarding",
    "ru": "посадка",
-   "audio": "audio/vocab/emma/airport-boarding.opus"
+   "audio": "audio/vocab/sonia/airport-boarding.opus"
   },
   {
    "topic": "airport",
    "en": "departure",
    "ru": "вылет",
-   "audio": "audio/vocab/emma/airport-departure.opus"
+   "audio": "audio/vocab/sonia/airport-departure.opus"
   },
   {
    "topic": "airport",
    "en": "arrival",
    "ru": "прилёт",
-   "audio": "audio/words/emma/arrival-noun.opus"
+   "audio": "audio/words/sonia/arrival-noun.opus"
   },
   {
    "topic": "airport",
    "en": "delayed",
    "ru": "задержан",
-   "audio": "audio/vocab/emma/airport-delayed.opus"
+   "audio": "audio/vocab/sonia/airport-delayed.opus"
   },
   {
    "topic": "airport",
    "en": "cancelled",
    "ru": "отменён",
-   "audio": "audio/vocab/emma/airport-cancelled.opus"
+   "audio": "audio/vocab/sonia/airport-cancelled.opus"
   },
   {
    "topic": "airport",
    "en": "on time",
    "ru": "вовремя",
-   "audio": "audio/vocab/emma/airport-on-time.opus"
+   "audio": "audio/vocab/sonia/airport-on-time.opus"
   },
   {
    "topic": "airport",
    "en": "schedule",
    "ru": "расписание",
-   "audio": "audio/words/emma/schedule-noun.opus"
+   "audio": "audio/words/sonia/schedule-noun.opus"
   },
   {
    "topic": "airport",
    "en": "airline",
    "ru": "авиакомпания",
-   "audio": "audio/words/emma/airline-noun.opus"
+   "audio": "audio/words/sonia/airline-noun.opus"
   },
   {
    "topic": "airport",
    "en": "pilot",
    "ru": "пилот",
-   "audio": "audio/words/emma/pilot-noun.opus"
+   "audio": "audio/words/sonia/pilot-noun.opus"
   },
   {
    "topic": "airport",
    "en": "flight attendant",
    "ru": "бортпроводник",
-   "audio": "audio/vocab/emma/airport-flight-attendant.opus"
+   "audio": "audio/vocab/sonia/airport-flight-attendant.opus"
   },
   {
    "topic": "airport",
    "en": "seat",
    "ru": "место",
-   "audio": "audio/words/emma/seat-noun.opus"
+   "audio": "audio/words/sonia/seat-noun.opus"
   },
   {
    "topic": "airport",
    "en": "window seat",
    "ru": "место у окна",
-   "audio": "audio/vocab/emma/airport-window-seat.opus"
+   "audio": "audio/vocab/sonia/airport-window-seat.opus"
   },
   {
    "topic": "airport",
    "en": "aisle",
    "ru": "проход",
-   "audio": "audio/vocab/emma/airport-aisle.opus"
+   "audio": "audio/vocab/sonia/airport-aisle.opus"
   },
   {
    "topic": "airport",
    "en": "aisle seat",
    "ru": "место у прохода",
-   "audio": "audio/vocab/emma/airport-aisle-seat.opus"
+   "audio": "audio/vocab/sonia/airport-aisle-seat.opus"
   },
   {
    "topic": "airport",
    "en": "take off",
    "ru": "взлетать",
-   "audio": "audio/vocab/emma/airport-take-off.opus"
+   "audio": "audio/vocab/sonia/airport-take-off.opus"
   },
   {
    "topic": "airport",
    "en": "land",
    "ru": "приземляться",
-   "audio": "audio/words/emma/land-noun.opus"
+   "audio": "audio/words/sonia/land-noun.opus"
   },
   {
    "topic": "airport",
    "en": "turbulence",
    "ru": "турбулентность",
-   "audio": "audio/vocab/emma/airport-turbulence.opus"
+   "audio": "audio/vocab/sonia/airport-turbulence.opus"
   },
   {
    "topic": "airport",
    "en": "safety",
    "ru": "безопасность",
-   "audio": "audio/words/emma/safety-noun.opus"
+   "audio": "audio/words/sonia/safety-noun.opus"
   },
   {
    "topic": "airport",
    "en": "emergency",
    "ru": "чрезвычайная ситуация",
-   "audio": "audio/words/emma/emergency-noun.opus"
+   "audio": "audio/words/sonia/emergency-noun.opus"
   },
   {
    "topic": "airport",
    "en": "life jacket",
    "ru": "спасательный жилет",
-   "audio": "audio/vocab/emma/airport-life-jacket.opus"
+   "audio": "audio/vocab/sonia/airport-life-jacket.opus"
   },
   {
    "topic": "airport",
    "en": "blanket",
    "ru": "одеяло",
-   "audio": "audio/vocab/emma/airport-blanket.opus"
+   "audio": "audio/vocab/sonia/airport-blanket.opus"
   },
   {
    "topic": "airport",
    "en": "pillow",
    "ru": "подушка",
-   "audio": "audio/vocab/emma/airport-pillow.opus"
+   "audio": "audio/vocab/sonia/airport-pillow.opus"
   },
   {
    "topic": "airport",
    "en": "meal",
    "ru": "приём пищи/питание",
-   "audio": "audio/words/emma/meal-noun.opus"
+   "audio": "audio/words/sonia/meal-noun.opus"
   },
   {
    "topic": "airport",
    "en": "water",
    "ru": "вода",
-   "audio": "audio/words/emma/water-noun.opus"
+   "audio": "audio/words/sonia/water-noun.opus"
   },
   {
    "topic": "airport",
    "en": "arrival hall",
    "ru": "зал прилёта",
-   "audio": "audio/vocab/emma/airport-arrival-hall.opus"
+   "audio": "audio/vocab/sonia/airport-arrival-hall.opus"
   },
   {
    "topic": "airport",
    "en": "transfer",
    "ru": "пересадка",
-   "audio": "audio/words/emma/transfer-verb.opus"
+   "audio": "audio/words/sonia/transfer-verb.opus"
   },
   {
    "topic": "airport",
    "en": "connecting flight",
    "ru": "стыковочный рейс",
-   "audio": "audio/vocab/emma/airport-connecting-flight.opus"
+   "audio": "audio/vocab/sonia/airport-connecting-flight.opus"
   },
   {
    "topic": "airport",
    "en": "duty free",
    "ru": "дьюти-фри",
-   "audio": "audio/vocab/emma/airport-duty-free.opus"
+   "audio": "audio/vocab/sonia/airport-duty-free.opus"
   },
   {
    "topic": "airport",
    "en": "declare",
    "ru": "декларировать",
-   "audio": "audio/words/emma/declare-verb.opus"
+   "audio": "audio/words/sonia/declare-verb.opus"
   },
   {
    "topic": "hotel",
    "en": "hotel",
    "ru": "отель",
-   "audio": "audio/words/emma/hotel-noun.opus"
+   "audio": "audio/words/sonia/hotel-noun.opus"
   },
   {
    "topic": "hotel",
    "en": "hostel",
    "ru": "хостел",
-   "audio": "audio/vocab/emma/hotel-hostel.opus"
+   "audio": "audio/vocab/sonia/hotel-hostel.opus"
   },
   {
    "topic": "hotel",
    "en": "room",
    "ru": "комната, номер",
-   "audio": "audio/words/emma/room-noun.opus"
+   "audio": "audio/words/sonia/room-noun.opus"
   },
   {
    "topic": "hotel",
    "en": "single room",
    "ru": "одноместный номер",
-   "audio": "audio/vocab/emma/hotel-single-room.opus"
+   "audio": "audio/vocab/sonia/hotel-single-room.opus"
   },
   {
    "topic": "hotel",
    "en": "double room",
    "ru": "двухместный номер",
-   "audio": "audio/vocab/emma/hotel-double-room.opus"
+   "audio": "audio/vocab/sonia/hotel-double-room.opus"
   },
   {
    "topic": "hotel",
    "en": "book",
    "ru": "бронировать",
-   "audio": "audio/words/emma/book-noun.opus"
+   "audio": "audio/words/sonia/book-noun.opus"
   },
   {
    "topic": "hotel",
    "en": "reservation",
    "ru": "бронь",
-   "audio": "audio/vocab/emma/hotel-reservation.opus"
+   "audio": "audio/vocab/sonia/hotel-reservation.opus"
   },
   {
    "topic": "hotel",
    "en": "booking",
    "ru": "бронирование",
-   "audio": "audio/vocab/emma/hotel-booking.opus"
+   "audio": "audio/vocab/sonia/hotel-booking.opus"
   },
   {
    "topic": "hotel",
    "en": "reception",
    "ru": "стойка регистрации",
-   "audio": "audio/words/emma/reception-noun.opus"
+   "audio": "audio/words/sonia/reception-noun.opus"
   },
   {
    "topic": "hotel",
    "en": "front desk",
    "ru": "ресепшн",
-   "audio": "audio/vocab/emma/hotel-front-desk.opus"
+   "audio": "audio/vocab/sonia/hotel-front-desk.opus"
   },
   {
    "topic": "hotel",
    "en": "receptionist",
    "ru": "администратор",
-   "audio": "audio/vocab/emma/hotel-receptionist.opus"
+   "audio": "audio/vocab/sonia/hotel-receptionist.opus"
   },
   {
    "topic": "hotel",
    "en": "check in",
    "ru": "заселиться",
-   "audio": "audio/vocab/emma/hotel-check-in.opus"
+   "audio": "audio/vocab/sonia/hotel-check-in.opus"
   },
   {
    "topic": "hotel",
    "en": "check out",
    "ru": "выселиться",
-   "audio": "audio/vocab/emma/hotel-check-out.opus"
+   "audio": "audio/vocab/sonia/hotel-check-out.opus"
   },
   {
    "topic": "hotel",
    "en": "key",
    "ru": "ключ",
-   "audio": "audio/words/emma/key-noun.opus"
+   "audio": "audio/words/sonia/key-noun.opus"
   },
   {
    "topic": "hotel",
    "en": "key card",
    "ru": "карта-ключ",
-   "audio": "audio/vocab/emma/hotel-key-card.opus"
+   "audio": "audio/vocab/sonia/hotel-key-card.opus"
   },
   {
    "topic": "hotel",
    "en": "floor",
    "ru": "этаж",
-   "audio": "audio/words/emma/floor-noun.opus"
+   "audio": "audio/words/sonia/floor-noun.opus"
   },
   {
    "topic": "hotel",
    "en": "lift/elevator",
    "ru": "лифт",
-   "audio": "audio/words/emma/lift-verb.opus"
+   "audio": "audio/words/sonia/lift-verb.opus"
   },
   {
    "topic": "hotel",
    "en": "stairs",
    "ru": "лестница",
-   "audio": "audio/vocab/emma/hotel-stairs.opus"
+   "audio": "audio/vocab/sonia/hotel-stairs.opus"
   },
   {
    "topic": "hotel",
    "en": "corridor",
    "ru": "коридор",
-   "audio": "audio/vocab/emma/hotel-corridor.opus"
+   "audio": "audio/vocab/sonia/hotel-corridor.opus"
   },
   {
    "topic": "hotel",
    "en": "stay",
    "ru": "останавливаться, пребывание",
-   "audio": "audio/words/emma/stay-verb.opus"
+   "audio": "audio/words/sonia/stay-verb.opus"
   },
   {
    "topic": "hotel",
    "en": "night",
    "ru": "ночь",
-   "audio": "audio/words/emma/night-noun.opus"
+   "audio": "audio/words/sonia/night-noun.opus"
   },
   {
    "topic": "hotel",
    "en": "per night",
    "ru": "за ночь",
-   "audio": "audio/vocab/emma/hotel-per-night.opus"
+   "audio": "audio/vocab/sonia/hotel-per-night.opus"
   },
   {
    "topic": "hotel",
    "en": "price",
    "ru": "цена",
-   "audio": "audio/words/emma/price-noun.opus"
+   "audio": "audio/words/sonia/price-noun.opus"
   },
   {
    "topic": "hotel",
    "en": "include",
    "ru": "включать",
-   "audio": "audio/words/emma/include-verb.opus"
+   "audio": "audio/words/sonia/include-verb.opus"
   },
   {
    "topic": "hotel",
    "en": "breakfast",
    "ru": "завтрак",
-   "audio": "audio/words/emma/breakfast-noun.opus"
+   "audio": "audio/words/sonia/breakfast-noun.opus"
   },
   {
    "topic": "hotel",
    "en": "included",
    "ru": "включено",
-   "audio": "audio/vocab/emma/hotel-included.opus"
+   "audio": "audio/vocab/sonia/hotel-included.opus"
   },
   {
    "topic": "hotel",
    "en": "bed",
    "ru": "кровать",
-   "audio": "audio/words/emma/bed-noun.opus"
+   "audio": "audio/words/sonia/bed-noun.opus"
   },
   {
    "topic": "hotel",
    "en": "twin beds",
    "ru": "две отдельные кровати",
-   "audio": "audio/vocab/emma/hotel-twin-beds.opus"
+   "audio": "audio/vocab/sonia/hotel-twin-beds.opus"
   },
   {
    "topic": "hotel",
    "en": "pillow",
    "ru": "подушка",
-   "audio": "audio/vocab/emma/hotel-pillow.opus"
+   "audio": "audio/vocab/sonia/hotel-pillow.opus"
   },
   {
    "topic": "hotel",
    "en": "blanket",
    "ru": "одеяло",
-   "audio": "audio/vocab/emma/hotel-blanket.opus"
+   "audio": "audio/vocab/sonia/hotel-blanket.opus"
   },
   {
    "topic": "hotel",
    "en": "towel",
    "ru": "полотенце",
-   "audio": "audio/vocab/emma/hotel-towel.opus"
+   "audio": "audio/vocab/sonia/hotel-towel.opus"
   },
   {
    "topic": "hotel",
    "en": "shower",
    "ru": "душ",
-   "audio": "audio/words/emma/shower-noun.opus"
+   "audio": "audio/words/sonia/shower-noun.opus"
   },
   {
    "topic": "hotel",
    "en": "bath",
    "ru": "ванна",
-   "audio": "audio/words/emma/bath-noun.opus"
+   "audio": "audio/words/sonia/bath-noun.opus"
   },
   {
    "topic": "hotel",
    "en": "toilet",
    "ru": "туалет",
-   "audio": "audio/words/emma/toilet-noun.opus"
+   "audio": "audio/words/sonia/toilet-noun.opus"
   },
   {
    "topic": "hotel",
    "en": "bathroom",
    "ru": "ванная",
-   "audio": "audio/words/emma/bathroom-noun.opus"
+   "audio": "audio/words/sonia/bathroom-noun.opus"
   },
   {
    "topic": "hotel",
    "en": "hot water",
    "ru": "горячая вода",
-   "audio": "audio/vocab/emma/hotel-hot-water.opus"
+   "audio": "audio/vocab/sonia/hotel-hot-water.opus"
   },
   {
    "topic": "hotel",
    "en": "air conditioning",
    "ru": "кондиционер",
-   "audio": "audio/vocab/emma/hotel-air-conditioning.opus"
+   "audio": "audio/vocab/sonia/hotel-air-conditioning.opus"
   },
   {
    "topic": "hotel",
    "en": "heating",
    "ru": "отопление",
-   "audio": "audio/vocab/emma/hotel-heating.opus"
+   "audio": "audio/vocab/sonia/hotel-heating.opus"
   },
   {
    "topic": "hotel",
    "en": "noisy",
    "ru": "шумный",
-   "audio": "audio/vocab/emma/hotel-noisy.opus"
+   "audio": "audio/vocab/sonia/hotel-noisy.opus"
   },
   {
    "topic": "hotel",
    "en": "quiet",
    "ru": "тихий",
-   "audio": "audio/words/emma/quiet-adjective.opus"
+   "audio": "audio/words/sonia/quiet-adjective.opus"
   },
   {
    "topic": "hotel",
    "en": "clean",
    "ru": "чистый",
-   "audio": "audio/words/emma/clean-adjective.opus"
+   "audio": "audio/words/sonia/clean-adjective.opus"
   },
   {
    "topic": "hotel",
    "en": "dirty",
    "ru": "грязный",
-   "audio": "audio/words/emma/dirty-adjective.opus"
+   "audio": "audio/words/sonia/dirty-adjective.opus"
   },
   {
    "topic": "hotel",
    "en": "towels",
    "ru": "полотенца (мн.)",
-   "audio": "audio/vocab/emma/hotel-towels.opus"
+   "audio": "audio/vocab/sonia/hotel-towels.opus"
   },
   {
    "topic": "hotel",
    "en": "maid",
    "ru": "горничная",
-   "audio": "audio/words/emma/maid-noun.opus"
+   "audio": "audio/words/sonia/maid-noun.opus"
   },
   {
    "topic": "hotel",
    "en": "safe",
    "ru": "сейф",
-   "audio": "audio/words/emma/safe-adjective.opus"
+   "audio": "audio/words/sonia/safe-adjective.opus"
   },
   {
    "topic": "hotel",
    "en": "deposit",
    "ru": "залог",
-   "audio": "audio/words/emma/deposit-noun.opus"
+   "audio": "audio/words/sonia/deposit-noun.opus"
   },
   {
    "topic": "hotel",
    "en": "bill",
    "ru": "счёт",
-   "audio": "audio/words/emma/bill-noun.opus"
+   "audio": "audio/words/sonia/bill-noun.opus"
   },
   {
    "topic": "hotel",
    "en": "receipt",
    "ru": "квитанция",
-   "audio": "audio/vocab/emma/hotel-receipt.opus"
+   "audio": "audio/vocab/sonia/hotel-receipt.opus"
   },
   {
    "topic": "hotel",
    "en": "pay",
    "ru": "платить",
-   "audio": "audio/words/emma/pay-verb.opus"
+   "audio": "audio/words/sonia/pay-verb.opus"
   },
   {
    "topic": "hotel",
    "en": "cash",
    "ru": "наличные",
-   "audio": "audio/words/emma/cash-noun.opus"
+   "audio": "audio/words/sonia/cash-noun.opus"
   },
   {
    "topic": "hotel",
    "en": "card",
    "ru": "карта",
-   "audio": "audio/words/emma/card-noun.opus"
+   "audio": "audio/words/sonia/card-noun.opus"
   },
   {
    "topic": "hotel",
    "en": "refund",
    "ru": "возврат денег",
-   "audio": "audio/vocab/emma/hotel-refund.opus"
+   "audio": "audio/vocab/sonia/hotel-refund.opus"
   },
   {
    "topic": "hotel",
    "en": "complain",
    "ru": "жаловаться",
-   "audio": "audio/words/emma/complain-verb.opus"
+   "audio": "audio/words/sonia/complain-verb.opus"
   },
   {
    "topic": "hotel",
    "en": "wake-up call",
    "ru": "звонок-будильник",
-   "audio": "audio/vocab/emma/hotel-wake-up-call.opus"
+   "audio": "audio/vocab/sonia/hotel-wake-up-call.opus"
   },
   {
    "topic": "hotel",
    "en": "luggage storage",
    "ru": "хранение багажа",
-   "audio": "audio/vocab/emma/hotel-luggage-storage.opus"
+   "audio": "audio/vocab/sonia/hotel-luggage-storage.opus"
   },
   {
    "topic": "hotel",
    "en": "available",
    "ru": "свободный (в наличии)",
-   "audio": "audio/words/emma/available-adjective.opus"
+   "audio": "audio/words/sonia/available-adjective.opus"
   },
   {
    "topic": "restaurant",
    "en": "restaurant",
    "ru": "ресторан",
-   "audio": "audio/words/emma/restaurant-noun.opus"
+   "audio": "audio/words/sonia/restaurant-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "cafe",
    "ru": "кафе",
-   "audio": "audio/vocab/emma/restaurant-cafe.opus"
+   "audio": "audio/vocab/sonia/restaurant-cafe.opus"
   },
   {
    "topic": "restaurant",
    "en": "bar",
    "ru": "бар",
-   "audio": "audio/words/emma/bar-noun.opus"
+   "audio": "audio/words/sonia/bar-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "menu",
    "ru": "меню",
-   "audio": "audio/words/emma/menu-noun.opus"
+   "audio": "audio/words/sonia/menu-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "waiter",
    "ru": "официант",
-   "audio": "audio/words/emma/waiter-noun.opus"
+   "audio": "audio/words/sonia/waiter-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "waitress",
    "ru": "официантка",
-   "audio": "audio/vocab/emma/restaurant-waitress.opus"
+   "audio": "audio/vocab/sonia/restaurant-waitress.opus"
   },
   {
    "topic": "restaurant",
    "en": "order",
    "ru": "заказывать, заказ",
-   "audio": "audio/words/emma/order-noun.opus"
+   "audio": "audio/words/sonia/order-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "eat",
    "ru": "есть",
-   "audio": "audio/words/emma/eat-verb.opus"
+   "audio": "audio/words/sonia/eat-verb.opus"
   },
   {
    "topic": "restaurant",
    "en": "drink",
    "ru": "пить",
-   "audio": "audio/words/emma/drink-verb.opus"
+   "audio": "audio/words/sonia/drink-verb.opus"
   },
   {
    "topic": "restaurant",
    "en": "hungry",
    "ru": "голодный",
-   "audio": "audio/words/emma/hungry-adjective.opus"
+   "audio": "audio/words/sonia/hungry-adjective.opus"
   },
   {
    "topic": "restaurant",
    "en": "thirsty",
    "ru": "хочу пить",
-   "audio": "audio/words/emma/thirsty-adjective.opus"
+   "audio": "audio/words/sonia/thirsty-adjective.opus"
   },
   {
    "topic": "restaurant",
    "en": "breakfast",
    "ru": "завтрак",
-   "audio": "audio/words/emma/breakfast-noun.opus"
+   "audio": "audio/words/sonia/breakfast-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "lunch",
    "ru": "обед",
-   "audio": "audio/words/emma/lunch-noun.opus"
+   "audio": "audio/words/sonia/lunch-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "dinner",
    "ru": "ужин",
-   "audio": "audio/words/emma/dinner-noun.opus"
+   "audio": "audio/words/sonia/dinner-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "snack",
    "ru": "перекус",
-   "audio": "audio/vocab/emma/restaurant-snack.opus"
+   "audio": "audio/vocab/sonia/restaurant-snack.opus"
   },
   {
    "topic": "restaurant",
    "en": "starter",
    "ru": "закуска",
-   "audio": "audio/vocab/emma/restaurant-starter.opus"
+   "audio": "audio/vocab/sonia/restaurant-starter.opus"
   },
   {
    "topic": "restaurant",
    "en": "main course",
    "ru": "основное блюдо",
-   "audio": "audio/vocab/emma/restaurant-main-course.opus"
+   "audio": "audio/vocab/sonia/restaurant-main-course.opus"
   },
   {
    "topic": "restaurant",
    "en": "dessert",
    "ru": "десерт",
-   "audio": "audio/words/emma/dessert-noun.opus"
+   "audio": "audio/words/sonia/dessert-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "soup",
    "ru": "суп",
-   "audio": "audio/words/emma/soup-noun.opus"
+   "audio": "audio/words/sonia/soup-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "salad",
    "ru": "салат",
-   "audio": "audio/words/emma/salad-noun.opus"
+   "audio": "audio/words/sonia/salad-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "chicken",
    "ru": "курица",
-   "audio": "audio/words/emma/chicken-noun.opus"
+   "audio": "audio/words/sonia/chicken-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "beef",
    "ru": "говядина",
-   "audio": "audio/words/emma/beef-noun.opus"
+   "audio": "audio/words/sonia/beef-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "pork",
    "ru": "свинина",
-   "audio": "audio/words/emma/pork-noun.opus"
+   "audio": "audio/words/sonia/pork-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "fish",
    "ru": "рыба",
-   "audio": "audio/words/emma/fish-noun.opus"
+   "audio": "audio/words/sonia/fish-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "seafood",
    "ru": "морепродукты",
-   "audio": "audio/vocab/emma/restaurant-seafood.opus"
+   "audio": "audio/vocab/sonia/restaurant-seafood.opus"
   },
   {
    "topic": "restaurant",
    "en": "rice",
    "ru": "рис",
-   "audio": "audio/words/emma/rice-noun.opus"
+   "audio": "audio/words/sonia/rice-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "pasta",
    "ru": "паста",
-   "audio": "audio/vocab/emma/restaurant-pasta.opus"
+   "audio": "audio/vocab/sonia/restaurant-pasta.opus"
   },
   {
    "topic": "restaurant",
    "en": "pizza",
    "ru": "пицца",
-   "audio": "audio/words/emma/pizza-noun.opus"
+   "audio": "audio/words/sonia/pizza-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "bread",
    "ru": "хлеб",
-   "audio": "audio/words/emma/bread-noun.opus"
+   "audio": "audio/words/sonia/bread-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "cheese",
    "ru": "сыр",
-   "audio": "audio/words/emma/cheese-noun.opus"
+   "audio": "audio/words/sonia/cheese-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "egg",
    "ru": "яйцо",
-   "audio": "audio/words/emma/egg-noun.opus"
+   "audio": "audio/words/sonia/egg-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "potato",
    "ru": "картофель",
-   "audio": "audio/words/emma/potato-noun.opus"
+   "audio": "audio/words/sonia/potato-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "vegetables",
    "ru": "овощи",
-   "audio": "audio/vocab/emma/restaurant-vegetables.opus"
+   "audio": "audio/vocab/sonia/restaurant-vegetables.opus"
   },
   {
    "topic": "restaurant",
    "en": "fruit",
    "ru": "фрукты",
-   "audio": "audio/words/emma/fruit-noun.opus"
+   "audio": "audio/words/sonia/fruit-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "apple",
    "ru": "яблоко",
-   "audio": "audio/words/emma/apple-noun.opus"
+   "audio": "audio/words/sonia/apple-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "banana",
    "ru": "банан",
-   "audio": "audio/vocab/emma/restaurant-banana.opus"
+   "audio": "audio/vocab/sonia/restaurant-banana.opus"
   },
   {
    "topic": "restaurant",
    "en": "orange",
    "ru": "апельсин",
-   "audio": "audio/words/emma/orange-noun.opus"
+   "audio": "audio/words/sonia/orange-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "juice",
    "ru": "сок",
-   "audio": "audio/words/emma/juice-noun.opus"
+   "audio": "audio/words/sonia/juice-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "coffee",
    "ru": "кофе",
-   "audio": "audio/words/emma/coffee-noun.opus"
+   "audio": "audio/words/sonia/coffee-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "tea",
    "ru": "чай",
-   "audio": "audio/words/emma/tea-noun.opus"
+   "audio": "audio/words/sonia/tea-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "milk",
    "ru": "молоко",
-   "audio": "audio/words/emma/milk-noun.opus"
+   "audio": "audio/words/sonia/milk-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "beer",
    "ru": "пиво",
-   "audio": "audio/words/emma/beer-noun.opus"
+   "audio": "audio/words/sonia/beer-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "wine",
    "ru": "вино",
-   "audio": "audio/words/emma/wine-noun.opus"
+   "audio": "audio/words/sonia/wine-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "glass",
    "ru": "стакан",
-   "audio": "audio/words/emma/glass-noun.opus"
+   "audio": "audio/words/sonia/glass-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "bottle",
    "ru": "бутылка",
-   "audio": "audio/words/emma/bottle-noun.opus"
+   "audio": "audio/words/sonia/bottle-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "cup",
    "ru": "чашка",
-   "audio": "audio/words/emma/cup-noun.opus"
+   "audio": "audio/words/sonia/cup-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "sugar",
    "ru": "сахар",
-   "audio": "audio/words/emma/sugar-noun.opus"
+   "audio": "audio/words/sonia/sugar-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "salt",
    "ru": "соль",
-   "audio": "audio/words/emma/salt-noun.opus"
+   "audio": "audio/words/sonia/salt-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "pepper",
    "ru": "перец",
-   "audio": "audio/vocab/emma/restaurant-pepper.opus"
+   "audio": "audio/vocab/sonia/restaurant-pepper.opus"
   },
   {
    "topic": "restaurant",
    "en": "butter",
    "ru": "масло",
-   "audio": "audio/words/emma/butter-noun.opus"
+   "audio": "audio/words/sonia/butter-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "ice",
    "ru": "лёд",
-   "audio": "audio/words/emma/ice-noun.opus"
+   "audio": "audio/words/sonia/ice-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "still water",
    "ru": "вода без газа",
-   "audio": "audio/vocab/emma/restaurant-still-water.opus"
+   "audio": "audio/vocab/sonia/restaurant-still-water.opus"
   },
   {
    "topic": "restaurant",
    "en": "sparkling",
    "ru": "газированный",
-   "audio": "audio/vocab/emma/restaurant-sparkling.opus"
+   "audio": "audio/vocab/sonia/restaurant-sparkling.opus"
   },
   {
    "topic": "restaurant",
    "en": "bill/check",
    "ru": "счёт",
-   "audio": "audio/words/emma/bill-noun.opus"
+   "audio": "audio/words/sonia/bill-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "tip",
    "ru": "чаевые",
-   "audio": "audio/words/emma/tip-noun.opus"
+   "audio": "audio/words/sonia/tip-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "delicious",
    "ru": "вкусно",
-   "audio": "audio/words/emma/delicious-adjective.opus"
+   "audio": "audio/words/sonia/delicious-adjective.opus"
   },
   {
    "topic": "restaurant",
    "en": "vegetarian",
    "ru": "вегетарианец",
-   "audio": "audio/vocab/emma/restaurant-vegetarian.opus"
+   "audio": "audio/vocab/sonia/restaurant-vegetarian.opus"
   },
   {
    "topic": "restaurant",
    "en": "allergic",
    "ru": "аллергик",
-   "audio": "audio/vocab/emma/restaurant-allergic.opus"
+   "audio": "audio/vocab/sonia/restaurant-allergic.opus"
   },
   {
    "topic": "restaurant",
    "en": "allergy",
    "ru": "аллергия",
-   "audio": "audio/vocab/emma/restaurant-allergy.opus"
+   "audio": "audio/vocab/sonia/restaurant-allergy.opus"
   },
   {
    "topic": "restaurant",
    "en": "without",
    "ru": "без",
-   "audio": "audio/words/emma/without-preposition.opus"
+   "audio": "audio/words/sonia/without-preposition.opus"
   },
   {
    "topic": "restaurant",
    "en": "medium",
    "ru": "средней прожарки",
-   "audio": "audio/words/emma/medium-noun.opus"
+   "audio": "audio/words/sonia/medium-noun.opus"
   },
   {
    "topic": "restaurant",
    "en": "take away",
    "ru": "с собой",
-   "audio": "audio/vocab/emma/restaurant-take-away.opus"
+   "audio": "audio/vocab/sonia/restaurant-take-away.opus"
   },
   {
    "topic": "restaurant",
    "en": "table for two",
    "ru": "столик на двоих",
-   "audio": "audio/vocab/emma/restaurant-table-for-two.opus"
+   "audio": "audio/vocab/sonia/restaurant-table-for-two.opus"
   },
   {
    "topic": "shopping",
    "en": "shop/store",
    "ru": "магазин",
-   "audio": "audio/words/emma/shop-noun.opus"
+   "audio": "audio/words/sonia/shop-noun.opus"
   },
   {
    "topic": "shopping",
    "en": "shopping",
    "ru": "покупки",
-   "audio": "audio/vocab/emma/shopping-shopping.opus"
+   "audio": "audio/vocab/sonia/shopping-shopping.opus"
   },
   {
    "topic": "shopping",
    "en": "mall",
    "ru": "торговый центр",
-   "audio": "audio/words/emma/mall-noun.opus"
+   "audio": "audio/words/sonia/mall-noun.opus"
   },
   {
    "topic": "shopping",
    "en": "market",
    "ru": "рынок",
-   "audio": "audio/words/emma/market-noun.opus"
+   "audio": "audio/words/sonia/market-noun.opus"
   },
   {
    "topic": "shopping",
    "en": "supermarket",
    "ru": "супермаркет",
-   "audio": "audio/vocab/emma/shopping-supermarket.opus"
+   "audio": "audio/vocab/sonia/shopping-supermarket.opus"
   },
   {
    "topic": "shopping",
    "en": "pharmacy",
    "ru": "аптека",
-   "audio": "audio/vocab/emma/shopping-pharmacy.opus"
+   "audio": "audio/vocab/sonia/shopping-pharmacy.opus"
   },
   {
    "topic": "shopping",
    "en": "buy",
    "ru": "покупать",
-   "audio": "audio/words/emma/buy-verb.opus"
+   "audio": "audio/words/sonia/buy-verb.opus"
   },
   {
    "topic": "shopping",
    "en": "sell",
    "ru": "продавать",
-   "audio": "audio/words/emma/sell-verb.opus"
+   "audio": "audio/words/sonia/sell-verb.opus"
   },
   {
    "topic": "shopping",
    "en": "pay",
    "ru": "платить",
-   "audio": "audio/words/emma/pay-verb.opus"
+   "audio": "audio/words/sonia/pay-verb.opus"
   },
   {
    "topic": "shopping",
    "en": "price",
    "ru": "цена",
-   "audio": "audio/words/emma/price-noun.opus"
+   "audio": "audio/words/sonia/price-noun.opus"
   },
   {
    "topic": "shopping",
    "en": "cost",
    "ru": "стоить",
-   "audio": "audio/words/emma/cost-verb.opus"
+   "audio": "audio/words/sonia/cost-verb.opus"
   },
   {
    "topic": "shopping",
    "en": "expensive",
    "ru": "дорогой",
-   "audio": "audio/words/emma/expensive-adjective.opus"
+   "audio": "audio/words/sonia/expensive-adjective.opus"
   },
   {
    "topic": "shopping",
    "en": "cheap",
    "ru": "дешёвый",
-   "audio": "audio/words/emma/cheap-adjective.opus"
+   "audio": "audio/words/sonia/cheap-adjective.opus"
   },
   {
    "topic": "shopping",
    "en": "discount",
    "ru": "скидка",
-   "audio": "audio/words/emma/discount-noun.opus"
+   "audio": "audio/words/sonia/discount-noun.opus"
   },
   {
    "topic": "shopping",
    "en": "sale",
    "ru": "распродажа",
-   "audio": "audio/words/emma/sale-noun.opus"
+   "audio": "audio/words/sonia/sale-noun.opus"
   },
   {
    "topic": "shopping",
    "en": "money",
    "ru": "деньги",
-   "audio": "audio/words/emma/money-noun.opus"
+   "audio": "audio/words/sonia/money-noun.opus"
   },
   {
    "topic": "shopping",
    "en": "cash",
    "ru": "наличные",
-   "audio": "audio/words/emma/cash-noun.opus"
+   "audio": "audio/words/sonia/cash-noun.opus"
   },
   {
    "topic": "shopping",
    "en": "credit card",
    "ru": "кредитная карта",
-   "audio": "audio/vocab/emma/shopping-credit-card.opus"
+   "audio": "audio/vocab/sonia/shopping-credit-card.opus"
   },
   {
    "topic": "shopping",
    "en": "debit card",
    "ru": "дебетовая карта",
-   "audio": "audio/vocab/emma/shopping-debit-card.opus"
+   "audio": "audio/vocab/sonia/shopping-debit-card.opus"
   },
   {
    "topic": "shopping",
    "en": "contactless",
    "ru": "бесконтактный",
-   "audio": "audio/vocab/emma/shopping-contactless.opus"
+   "audio": "audio/vocab/sonia/shopping-contactless.opus"
   },
   {
    "topic": "shopping",
    "en": "change",
    "ru": "сдача, мелочь",
-   "audio": "audio/words/emma/change-verb.opus"
+   "audio": "audio/words/sonia/change-verb.opus"
   },
   {
    "topic": "shopping",
    "en": "receipt",
    "ru": "чек",
-   "audio": "audio/vocab/emma/shopping-receipt.opus"
+   "audio": "audio/vocab/sonia/shopping-receipt.opus"
   },
   {
    "topic": "shopping",
    "en": "refund",
    "ru": "возврат",
-   "audio": "audio/vocab/emma/shopping-refund.opus"
+   "audio": "audio/vocab/sonia/shopping-refund.opus"
   },
   {
    "topic": "shopping",
    "en": "exchange",
    "ru": "обменять",
-   "audio": "audio/words/emma/exchange-noun.opus"
+   "audio": "audio/words/sonia/exchange-noun.opus"
   },
   {
    "topic": "shopping",
    "en": "currency",
    "ru": "валюта",
-   "audio": "audio/words/emma/currency-noun.opus"
+   "audio": "audio/words/sonia/currency-noun.opus"
   },
   {
    "topic": "shopping",
    "en": "dollar",
    "ru": "доллар",
-   "audio": "audio/words/emma/dollar-noun.opus"
+   "audio": "audio/words/sonia/dollar-noun.opus"
   },
   {
    "topic": "shopping",
    "en": "euro",
    "ru": "евро",
-   "audio": "audio/vocab/emma/shopping-euro.opus"
+   "audio": "audio/vocab/sonia/shopping-euro.opus"
   },
   {
    "topic": "shopping",
    "en": "pound",
    "ru": "фунт",
-   "audio": "audio/words/emma/pound-noun.opus"
+   "audio": "audio/words/sonia/pound-noun.opus"
   },
   {
    "topic": "shopping",
    "en": "rouble",
    "ru": "рубль",
-   "audio": "audio/vocab/emma/shopping-rouble.opus"
+   "audio": "audio/vocab/sonia/shopping-rouble.opus"
   },
   {
    "topic": "shopping",
    "en": "ATM/cash machine",
    "ru": "банкомат",
-   "audio": "audio/vocab/emma/shopping-atm-cash-machine.opus"
+   "audio": "audio/vocab/sonia/shopping-atm-cash-machine.opus"
   },
   {
    "topic": "shopping",
    "en": "bank",
    "ru": "банк",
-   "audio": "audio/words/emma/bank-noun.opus"
+   "audio": "audio/words/sonia/bank-noun.opus"
   },
   {
    "topic": "shopping",
    "en": "open",
    "ru": "открыт",
-   "audio": "audio/words/emma/open-adjective.opus"
+   "audio": "audio/words/sonia/open-adjective.opus"
   },
   {
    "topic": "shopping",
    "en": "closed",
    "ru": "закрыт",
-   "audio": "audio/vocab/emma/shopping-closed.opus"
+   "audio": "audio/vocab/sonia/shopping-closed.opus"
   },
   {
    "topic": "shopping",
    "en": "size",
    "ru": "размер",
-   "audio": "audio/words/emma/size-noun.opus"
+   "audio": "audio/words/sonia/size-noun.opus"
   },
   {
    "topic": "shopping",
    "en": "try on",
    "ru": "примерить",
-   "audio": "audio/vocab/emma/shopping-try-on.opus"
+   "audio": "audio/vocab/sonia/shopping-try-on.opus"
   },
   {
    "topic": "shopping",
    "en": "fit",
    "ru": "подходить (по размеру)",
-   "audio": "audio/words/emma/fit-adjective.opus"
+   "audio": "audio/words/sonia/fit-adjective.opus"
   },
   {
    "topic": "shopping",
    "en": "too big",
    "ru": "слишком большой",
-   "audio": "audio/vocab/emma/shopping-too-big.opus"
+   "audio": "audio/vocab/sonia/shopping-too-big.opus"
   },
   {
    "topic": "shopping",
    "en": "too small",
    "ru": "слишком маленький",
-   "audio": "audio/vocab/emma/shopping-too-small.opus"
+   "audio": "audio/vocab/sonia/shopping-too-small.opus"
   },
   {
    "topic": "shopping",
    "en": "colour",
    "ru": "цвет",
-   "audio": "audio/vocab/emma/shopping-colour.opus"
+   "audio": "audio/vocab/sonia/shopping-colour.opus"
   },
   {
    "topic": "shopping",
    "en": "white",
    "ru": "белый",
-   "audio": "audio/words/emma/white-adjective.opus"
+   "audio": "audio/words/sonia/white-adjective.opus"
   },
   {
    "topic": "shopping",
    "en": "black",
    "ru": "чёрный",
-   "audio": "audio/words/emma/black-adjective.opus"
+   "audio": "audio/words/sonia/black-adjective.opus"
   },
   {
    "topic": "shopping",
    "en": "red",
    "ru": "красный",
-   "audio": "audio/words/emma/red-noun.opus"
+   "audio": "audio/words/sonia/red-noun.opus"
   },
   {
    "topic": "shopping",
    "en": "blue",
    "ru": "синий",
-   "audio": "audio/words/emma/blue-adjective.opus"
+   "audio": "audio/words/sonia/blue-adjective.opus"
   },
   {
    "topic": "shopping",
    "en": "green",
    "ru": "зелёный",
-   "audio": "audio/words/emma/green-noun.opus"
+   "audio": "audio/words/sonia/green-noun.opus"
   },
   {
    "topic": "shopping",
    "en": "bag",
    "ru": "пакет",
-   "audio": "audio/words/emma/bag-noun.opus"
+   "audio": "audio/words/sonia/bag-noun.opus"
   },
   {
    "topic": "shopping",
    "en": "souvenir",
    "ru": "сувенир",
-   "audio": "audio/vocab/emma/shopping-souvenir.opus"
+   "audio": "audio/vocab/sonia/shopping-souvenir.opus"
   },
   {
    "topic": "shopping",
    "en": "gift",
    "ru": "подарок",
-   "audio": "audio/words/emma/gift-noun.opus"
+   "audio": "audio/words/sonia/gift-noun.opus"
   },
   {
    "topic": "shopping",
    "en": "free",
    "ru": "бесплатный",
-   "audio": "audio/words/emma/free-adjective.opus"
+   "audio": "audio/words/sonia/free-adjective.opus"
   },
   {
    "topic": "shopping",
    "en": "just looking",
    "ru": "просто смотрю",
-   "audio": "audio/vocab/emma/shopping-just-looking.opus"
+   "audio": "audio/vocab/sonia/shopping-just-looking.opus"
   },
   {
    "topic": "shopping",
    "en": "have you got",
    "ru": "есть ли у вас",
-   "audio": "audio/vocab/emma/shopping-have-you-got.opus"
+   "audio": "audio/vocab/sonia/shopping-have-you-got.opus"
   },
   {
    "topic": "shopping",
    "en": "how much",
    "ru": "сколько стоит",
-   "audio": "audio/vocab/emma/shopping-how-much.opus"
+   "audio": "audio/vocab/sonia/shopping-how-much.opus"
   },
   {
    "topic": "shopping",
    "en": "wrap",
    "ru": "упаковать",
-   "audio": "audio/words/emma/wrap-verb.opus"
+   "audio": "audio/words/sonia/wrap-verb.opus"
   },
   {
    "topic": "shopping",
    "en": "VAT/tax",
    "ru": "налог",
-   "audio": "audio/vocab/emma/shopping-vat-tax.opus"
+   "audio": "audio/vocab/sonia/shopping-vat-tax.opus"
   },
   {
    "topic": "shopping",
    "en": "duty free",
    "ru": "беспошлинный",
-   "audio": "audio/vocab/emma/shopping-duty-free.opus"
+   "audio": "audio/vocab/sonia/shopping-duty-free.opus"
   },
   {
    "topic": "transport",
    "en": "bus",
    "ru": "автобус",
-   "audio": "audio/words/emma/bus-noun.opus"
+   "audio": "audio/words/sonia/bus-noun.opus"
   },
   {
    "topic": "transport",
    "en": "train",
    "ru": "поезд",
-   "audio": "audio/words/emma/train-noun.opus"
+   "audio": "audio/words/sonia/train-noun.opus"
   },
   {
    "topic": "transport",
    "en": "metro/subway/underground",
    "ru": "метро",
-   "audio": "audio/vocab/emma/transport-metro-subway-underground.opus"
+   "audio": "audio/vocab/sonia/transport-metro-subway-underground.opus"
   },
   {
    "topic": "transport",
    "en": "taxi/cab",
    "ru": "такси",
-   "audio": "audio/words/emma/taxi-noun.opus"
+   "audio": "audio/words/sonia/taxi-noun.opus"
   },
   {
    "topic": "transport",
    "en": "tram",
    "ru": "трамвай",
-   "audio": "audio/vocab/emma/transport-tram.opus"
+   "audio": "audio/vocab/sonia/transport-tram.opus"
   },
   {
    "topic": "transport",
    "en": "trolleybus",
    "ru": "троллейбус",
-   "audio": "audio/vocab/emma/transport-trolleybus.opus"
+   "audio": "audio/vocab/sonia/transport-trolleybus.opus"
   },
   {
    "topic": "transport",
    "en": "ferry",
    "ru": "паром",
-   "audio": "audio/vocab/emma/transport-ferry.opus"
+   "audio": "audio/vocab/sonia/transport-ferry.opus"
   },
   {
    "topic": "transport",
    "en": "boat",
    "ru": "лодка, судно",
-   "audio": "audio/words/emma/boat-noun.opus"
+   "audio": "audio/words/sonia/boat-noun.opus"
   },
   {
    "topic": "transport",
    "en": "car",
    "ru": "машина",
-   "audio": "audio/words/emma/car-noun.opus"
+   "audio": "audio/words/sonia/car-noun.opus"
   },
   {
    "topic": "transport",
    "en": "bike/bicycle",
    "ru": "велосипед",
-   "audio": "audio/words/emma/bike-noun.opus"
+   "audio": "audio/words/sonia/bike-noun.opus"
   },
   {
    "topic": "transport",
    "en": "on foot",
    "ru": "пешком",
-   "audio": "audio/vocab/emma/transport-on-foot.opus"
+   "audio": "audio/vocab/sonia/transport-on-foot.opus"
   },
   {
    "topic": "transport",
    "en": "station",
    "ru": "станция, вокзал",
-   "audio": "audio/words/emma/station-noun.opus"
+   "audio": "audio/words/sonia/station-noun.opus"
   },
   {
    "topic": "transport",
    "en": "stop",
    "ru": "остановка",
-   "audio": "audio/words/emma/stop-verb.opus"
+   "audio": "audio/words/sonia/stop-verb.opus"
   },
   {
    "topic": "transport",
    "en": "platform",
    "ru": "платформа",
-   "audio": "audio/words/emma/platform-noun.opus"
+   "audio": "audio/words/sonia/platform-noun.opus"
   },
   {
    "topic": "transport",
    "en": "track/line",
    "ru": "путь, линия",
-   "audio": "audio/words/emma/track-noun.opus"
+   "audio": "audio/words/sonia/track-noun.opus"
   },
   {
    "topic": "transport",
    "en": "timetable",
    "ru": "расписание",
-   "audio": "audio/vocab/emma/transport-timetable.opus"
+   "audio": "audio/vocab/sonia/transport-timetable.opus"
   },
   {
    "topic": "transport",
    "en": "ticket",
    "ru": "билет",
-   "audio": "audio/words/emma/ticket-noun.opus"
+   "audio": "audio/words/sonia/ticket-noun.opus"
   },
   {
    "topic": "transport",
    "en": "single/one-way",
    "ru": "в один конец",
-   "audio": "audio/words/emma/single-adjective.opus"
+   "audio": "audio/words/sonia/single-adjective.opus"
   },
   {
    "topic": "transport",
    "en": "return/round trip",
    "ru": "туда-обратно",
-   "audio": "audio/words/emma/return-verb.opus"
+   "audio": "audio/words/sonia/return-verb.opus"
   },
   {
    "topic": "transport",
    "en": "fare",
    "ru": "плата за проезд",
-   "audio": "audio/vocab/emma/transport-fare.opus"
+   "audio": "audio/vocab/sonia/transport-fare.opus"
   },
   {
    "topic": "transport",
    "en": "conductor",
    "ru": "кондуктор",
-   "audio": "audio/vocab/emma/transport-conductor.opus"
+   "audio": "audio/vocab/sonia/transport-conductor.opus"
   },
   {
    "topic": "transport",
    "en": "driver",
    "ru": "водитель",
-   "audio": "audio/words/emma/driver-noun.opus"
+   "audio": "audio/words/sonia/driver-noun.opus"
   },
   {
    "topic": "transport",
    "en": "passenger",
    "ru": "пассажир",
-   "audio": "audio/words/emma/passenger-noun.opus"
+   "audio": "audio/words/sonia/passenger-noun.opus"
   },
   {
    "topic": "transport",
    "en": "get on",
    "ru": "сесть (в транспорт)",
-   "audio": "audio/vocab/emma/transport-get-on.opus"
+   "audio": "audio/vocab/sonia/transport-get-on.opus"
   },
   {
    "topic": "transport",
    "en": "get off",
    "ru": "выйти (из транспорта)",
-   "audio": "audio/vocab/emma/transport-get-off.opus"
+   "audio": "audio/vocab/sonia/transport-get-off.opus"
   },
   {
    "topic": "transport",
    "en": "transfer/change",
    "ru": "сделать пересадку",
-   "audio": "audio/words/emma/transfer-verb.opus"
+   "audio": "audio/words/sonia/transfer-verb.opus"
   },
   {
    "topic": "transport",
    "en": "next",
    "ru": "следующий",
-   "audio": "audio/words/emma/next-adjective.opus"
+   "audio": "audio/words/sonia/next-adjective.opus"
   },
   {
    "topic": "transport",
    "en": "last",
    "ru": "последний",
-   "audio": "audio/words/emma/last-adjective.opus"
+   "audio": "audio/words/sonia/last-adjective.opus"
   },
   {
    "topic": "transport",
    "en": "first",
    "ru": "первый",
-   "audio": "audio/words/emma/first-adjective.opus"
+   "audio": "audio/words/sonia/first-adjective.opus"
   },
   {
    "topic": "transport",
    "en": "left",
    "ru": "налево",
-   "audio": "audio/words/emma/left-adjective.opus"
+   "audio": "audio/words/sonia/left-adjective.opus"
   },
   {
    "topic": "transport",
    "en": "right",
    "ru": "направо",
-   "audio": "audio/words/emma/right-adjective.opus"
+   "audio": "audio/words/sonia/right-adjective.opus"
   },
   {
    "topic": "transport",
    "en": "straight",
    "ru": "прямо",
-   "audio": "audio/words/emma/straight-adjective.opus"
+   "audio": "audio/words/sonia/straight-adjective.opus"
   },
   {
    "topic": "transport",
    "en": "back",
    "ru": "назад",
-   "audio": "audio/words/emma/back-adjective.opus"
+   "audio": "audio/words/sonia/back-adjective.opus"
   },
   {
    "topic": "transport",
    "en": "near",
    "ru": "рядом",
-   "audio": "audio/words/emma/near-adjective.opus"
+   "audio": "audio/words/sonia/near-adjective.opus"
   },
   {
    "topic": "transport",
    "en": "far",
    "ru": "далеко",
-   "audio": "audio/words/emma/far-adjective.opus"
+   "audio": "audio/words/sonia/far-adjective.opus"
   },
   {
    "topic": "transport",
    "en": "here",
    "ru": "здесь",
-   "audio": "audio/words/emma/here-adverb.opus"
+   "audio": "audio/words/sonia/here-adverb.opus"
   },
   {
    "topic": "transport",
    "en": "there",
    "ru": "там",
-   "audio": "audio/words/emma/there-adverb.opus"
+   "audio": "audio/words/sonia/there-adverb.opus"
   },
   {
    "topic": "transport",
    "en": "where",
    "ru": "где",
-   "audio": "audio/words/emma/where-adverb.opus"
+   "audio": "audio/words/sonia/where-adverb.opus"
   },
   {
    "topic": "transport",
    "en": "how far",
    "ru": "как далеко",
-   "audio": "audio/vocab/emma/transport-how-far.opus"
+   "audio": "audio/vocab/sonia/transport-how-far.opus"
   },
   {
    "topic": "transport",
    "en": "how long",
    "ru": "как долго",
-   "audio": "audio/vocab/emma/transport-how-long.opus"
+   "audio": "audio/vocab/sonia/transport-how-long.opus"
   },
   {
    "topic": "transport",
    "en": "street",
    "ru": "улица",
-   "audio": "audio/words/emma/street-noun.opus"
+   "audio": "audio/words/sonia/street-noun.opus"
   },
   {
    "topic": "transport",
    "en": "road",
    "ru": "дорога",
-   "audio": "audio/words/emma/road-noun.opus"
+   "audio": "audio/words/sonia/road-noun.opus"
   },
   {
    "topic": "transport",
    "en": "square",
    "ru": "площадь",
-   "audio": "audio/words/emma/square-noun.opus"
+   "audio": "audio/words/sonia/square-noun.opus"
   },
   {
    "topic": "transport",
    "en": "bridge",
    "ru": "мост",
-   "audio": "audio/words/emma/bridge-noun.opus"
+   "audio": "audio/words/sonia/bridge-noun.opus"
   },
   {
    "topic": "transport",
    "en": "corner",
    "ru": "угол",
-   "audio": "audio/words/emma/corner-noun.opus"
+   "audio": "audio/words/sonia/corner-noun.opus"
   },
   {
    "topic": "transport",
    "en": "crossroads",
    "ru": "перекрёсток",
-   "audio": "audio/vocab/emma/transport-crossroads.opus"
+   "audio": "audio/vocab/sonia/transport-crossroads.opus"
   },
   {
    "topic": "transport",
    "en": "traffic light",
    "ru": "светофор",
-   "audio": "audio/vocab/emma/transport-traffic-light.opus"
+   "audio": "audio/vocab/sonia/transport-traffic-light.opus"
   },
   {
    "topic": "transport",
    "en": "cross",
    "ru": "переходить",
-   "audio": "audio/words/emma/cross-noun.opus"
+   "audio": "audio/words/sonia/cross-noun.opus"
   },
   {
    "topic": "transport",
    "en": "crosswalk",
    "ru": "пешеходный переход",
-   "audio": "audio/vocab/emma/transport-crosswalk.opus"
+   "audio": "audio/vocab/sonia/transport-crosswalk.opus"
   },
   {
    "topic": "transport",
    "en": "map",
    "ru": "карта",
-   "audio": "audio/words/emma/map-noun.opus"
+   "audio": "audio/words/sonia/map-noun.opus"
   },
   {
    "topic": "transport",
    "en": "address",
    "ru": "адрес",
-   "audio": "audio/words/emma/address-noun.opus"
+   "audio": "audio/words/sonia/address-noun.opus"
   },
   {
    "topic": "transport",
    "en": "city centre/downtown",
    "ru": "центр города",
-   "audio": "audio/vocab/emma/transport-city-centre-downtown.opus"
+   "audio": "audio/vocab/sonia/transport-city-centre-downtown.opus"
   },
   {
    "topic": "transport",
    "en": "old town",
    "ru": "старый город",
-   "audio": "audio/vocab/emma/transport-old-town.opus"
+   "audio": "audio/vocab/sonia/transport-old-town.opus"
   },
   {
    "topic": "transport",
    "en": "museum",
    "ru": "музей",
-   "audio": "audio/words/emma/museum-noun.opus"
+   "audio": "audio/words/sonia/museum-noun.opus"
   },
   {
    "topic": "transport",
    "en": "entrance",
    "ru": "вход",
-   "audio": "audio/words/emma/entrance-noun.opus"
+   "audio": "audio/words/sonia/entrance-noun.opus"
   },
   {
    "topic": "transport",
    "en": "exit",
    "ru": "выход",
-   "audio": "audio/words/emma/exit-noun.opus"
+   "audio": "audio/words/sonia/exit-noun.opus"
   },
   {
    "topic": "transport",
    "en": "direction",
    "ru": "направление",
-   "audio": "audio/words/emma/direction-noun.opus"
+   "audio": "audio/words/sonia/direction-noun.opus"
   },
   {
    "topic": "health",
    "en": "doctor",
    "ru": "врач",
-   "audio": "audio/words/emma/doctor-noun.opus"
+   "audio": "audio/words/sonia/doctor-noun.opus"
   },
   {
    "topic": "health",
    "en": "nurse",
    "ru": "медсестра",
-   "audio": "audio/words/emma/nurse-noun.opus"
+   "audio": "audio/words/sonia/nurse-noun.opus"
   },
   {
    "topic": "health",
    "en": "hospital",
    "ru": "больница",
-   "audio": "audio/words/emma/hospital-noun.opus"
+   "audio": "audio/words/sonia/hospital-noun.opus"
   },
   {
    "topic": "health",
    "en": "pharmacy/chemist",
    "ru": "аптека",
-   "audio": "audio/vocab/emma/health-pharmacy-chemist.opus"
+   "audio": "audio/vocab/sonia/health-pharmacy-chemist.opus"
   },
   {
    "topic": "health",
    "en": "medicine",
    "ru": "лекарство",
-   "audio": "audio/words/emma/medicine-noun.opus"
+   "audio": "audio/words/sonia/medicine-noun.opus"
   },
   {
    "topic": "health",
    "en": "pill/tablet",
    "ru": "таблетка",
-   "audio": "audio/words/emma/pill-noun.opus"
+   "audio": "audio/words/sonia/pill-noun.opus"
   },
   {
    "topic": "health",
    "en": "pain",
    "ru": "боль",
-   "audio": "audio/words/emma/pain-noun.opus"
+   "audio": "audio/words/sonia/pain-noun.opus"
   },
   {
    "topic": "health",
    "en": "hurt",
    "ru": "болеть (у меня болит)",
-   "audio": "audio/words/emma/hurt-verb.opus"
+   "audio": "audio/words/sonia/hurt-verb.opus"
   },
   {
    "topic": "health",
    "en": "headache",
    "ru": "головная боль",
-   "audio": "audio/words/emma/headache-noun.opus"
+   "audio": "audio/words/sonia/headache-noun.opus"
   },
   {
    "topic": "health",
    "en": "stomachache",
    "ru": "боль в животе",
-   "audio": "audio/vocab/emma/health-stomachache.opus"
+   "audio": "audio/vocab/sonia/health-stomachache.opus"
   },
   {
    "topic": "health",
    "en": "toothache",
    "ru": "зубная боль",
-   "audio": "audio/vocab/emma/health-toothache.opus"
+   "audio": "audio/vocab/sonia/health-toothache.opus"
   },
   {
    "topic": "health",
    "en": "fever",
    "ru": "температура, жар",
-   "audio": "audio/words/emma/fever-noun.opus"
+   "audio": "audio/words/sonia/fever-noun.opus"
   },
   {
    "topic": "health",
    "en": "cough",
    "ru": "кашель",
-   "audio": "audio/words/emma/cough-verb.opus"
+   "audio": "audio/words/sonia/cough-verb.opus"
   },
   {
    "topic": "health",
    "en": "cold",
    "ru": "простуда",
-   "audio": "audio/words/emma/cold-adjective.opus"
+   "audio": "audio/words/sonia/cold-adjective.opus"
   },
   {
    "topic": "health",
    "en": "flu",
    "ru": "грипп",
-   "audio": "audio/vocab/emma/health-flu.opus"
+   "audio": "audio/vocab/sonia/health-flu.opus"
   },
   {
    "topic": "health",
    "en": "sore throat",
    "ru": "больное горло",
-   "audio": "audio/vocab/emma/health-sore-throat.opus"
+   "audio": "audio/vocab/sonia/health-sore-throat.opus"
   },
   {
    "topic": "health",
    "en": "sick/ill",
    "ru": "больной",
-   "audio": "audio/words/emma/sick-adjective.opus"
+   "audio": "audio/words/sonia/sick-adjective.opus"
   },
   {
    "topic": "health",
    "en": "nauseous",
    "ru": "тошнота",
-   "audio": "audio/vocab/emma/health-nauseous.opus"
+   "audio": "audio/vocab/sonia/health-nauseous.opus"
   },
   {
    "topic": "health",
    "en": "dizzy",
    "ru": "головокружение",
-   "audio": "audio/vocab/emma/health-dizzy.opus"
+   "audio": "audio/vocab/sonia/health-dizzy.opus"
   },
   {
    "topic": "health",
    "en": "tired",
    "ru": "уставший",
-   "audio": "audio/vocab/emma/health-tired.opus"
+   "audio": "audio/vocab/sonia/health-tired.opus"
   },
   {
    "topic": "health",
    "en": "bleeding",
    "ru": "кровотечение",
-   "audio": "audio/words/emma/bleeding-adjective.opus"
+   "audio": "audio/words/sonia/bleeding-adjective.opus"
   },
   {
    "topic": "health",
    "en": "broken",
    "ru": "сломанный",
-   "audio": "audio/words/emma/broken-adjective.opus"
+   "audio": "audio/words/sonia/broken-adjective.opus"
   },
   {
    "topic": "health",
    "en": "cut",
    "ru": "порез",
-   "audio": "audio/words/emma/cut-verb.opus"
+   "audio": "audio/words/sonia/cut-verb.opus"
   },
   {
    "topic": "health",
    "en": "burn",
    "ru": "ожог",
-   "audio": "audio/words/emma/burn-noun.opus"
+   "audio": "audio/words/sonia/burn-noun.opus"
   },
   {
    "topic": "health",
    "en": "allergy",
    "ru": "аллергия",
-   "audio": "audio/vocab/emma/health-allergy.opus"
+   "audio": "audio/vocab/sonia/health-allergy.opus"
   },
   {
    "topic": "health",
    "en": "prescription",
    "ru": "рецепт",
-   "audio": "audio/vocab/emma/health-prescription.opus"
+   "audio": "audio/vocab/sonia/health-prescription.opus"
   },
   {
    "topic": "health",
    "en": "antibiotics",
    "ru": "антибиотики",
-   "audio": "audio/vocab/emma/health-antibiotics.opus"
+   "audio": "audio/vocab/sonia/health-antibiotics.opus"
   },
   {
    "topic": "health",
    "en": "painkiller",
    "ru": "обезболивающее",
-   "audio": "audio/vocab/emma/health-painkiller.opus"
+   "audio": "audio/vocab/sonia/health-painkiller.opus"
   },
   {
    "topic": "health",
    "en": "plaster/band-aid",
    "ru": "пластырь",
-   "audio": "audio/vocab/emma/health-plaster-band-aid.opus"
+   "audio": "audio/vocab/sonia/health-plaster-band-aid.opus"
   },
   {
    "topic": "health",
    "en": "bandage",
    "ru": "бинт",
-   "audio": "audio/vocab/emma/health-bandage.opus"
+   "audio": "audio/vocab/sonia/health-bandage.opus"
   },
   {
    "topic": "health",
    "en": "ointment",
    "ru": "мазь",
-   "audio": "audio/vocab/emma/health-ointment.opus"
+   "audio": "audio/vocab/sonia/health-ointment.opus"
   },
   {
    "topic": "health",
    "en": "drops",
    "ru": "капли",
-   "audio": "audio/vocab/emma/health-drops.opus"
+   "audio": "audio/vocab/sonia/health-drops.opus"
   },
   {
    "topic": "health",
    "en": "vitamins",
    "ru": "витамины",
-   "audio": "audio/vocab/emma/health-vitamins.opus"
+   "audio": "audio/vocab/sonia/health-vitamins.opus"
   },
   {
    "topic": "health",
    "en": "insurance",
    "ru": "страховка",
-   "audio": "audio/words/emma/insurance-noun.opus"
+   "audio": "audio/words/sonia/insurance-noun.opus"
   },
   {
    "topic": "health",
    "en": "emergency",
    "ru": "скорая, экстренный",
-   "audio": "audio/words/emma/emergency-noun.opus"
+   "audio": "audio/words/sonia/emergency-noun.opus"
   },
   {
    "topic": "health",
    "en": "ambulance",
    "ru": "скорая помощь",
-   "audio": "audio/words/emma/ambulance-noun.opus"
+   "audio": "audio/words/sonia/ambulance-noun.opus"
   },
   {
    "topic": "health",
    "en": "police",
    "ru": "полиция",
-   "audio": "audio/words/emma/police-noun.opus"
+   "audio": "audio/words/sonia/police-noun.opus"
   },
   {
    "topic": "health",
    "en": "accident",
    "ru": "несчастный случай",
-   "audio": "audio/words/emma/accident-noun.opus"
+   "audio": "audio/words/sonia/accident-noun.opus"
   },
   {
    "topic": "health",
    "en": "injured",
    "ru": "раненый",
-   "audio": "audio/vocab/emma/health-injured.opus"
+   "audio": "audio/vocab/sonia/health-injured.opus"
   },
   {
    "topic": "health",
    "en": "help",
    "ru": "помогите",
-   "audio": "audio/words/emma/help-noun.opus"
+   "audio": "audio/words/sonia/help-noun.opus"
   },
   {
    "topic": "health",
    "en": "allergic",
    "ru": "аллергический",
-   "audio": "audio/vocab/emma/health-allergic.opus"
+   "audio": "audio/vocab/sonia/health-allergic.opus"
   },
   {
    "topic": "health",
    "en": "diabetes",
    "ru": "диабет",
-   "audio": "audio/vocab/emma/health-diabetes.opus"
+   "audio": "audio/vocab/sonia/health-diabetes.opus"
   },
   {
    "topic": "health",
    "en": "pregnant",
    "ru": "беременная",
-   "audio": "audio/words/emma/pregnant-adjective.opus"
+   "audio": "audio/words/sonia/pregnant-adjective.opus"
   },
   {
    "topic": "health",
    "en": "heart",
    "ru": "сердце",
-   "audio": "audio/words/emma/heart-noun.opus"
+   "audio": "audio/words/sonia/heart-noun.opus"
   },
   {
    "topic": "health",
    "en": "blood",
    "ru": "кровь",
-   "audio": "audio/words/emma/blood-noun.opus"
+   "audio": "audio/words/sonia/blood-noun.opus"
   },
   {
    "topic": "health",
    "en": "how often",
    "ru": "как часто (принимать)",
-   "audio": "audio/vocab/emma/health-how-often.opus"
+   "audio": "audio/vocab/sonia/health-how-often.opus"
   },
   {
    "topic": "numbers-time",
    "en": "zero",
    "ru": "ноль",
-   "audio": "audio/words/emma/zero-noun.opus"
+   "audio": "audio/words/sonia/zero-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "one",
    "ru": "один",
-   "audio": "audio/words/emma/one-noun.opus"
+   "audio": "audio/words/sonia/one-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "two",
    "ru": "два",
-   "audio": "audio/words/emma/two-noun.opus"
+   "audio": "audio/words/sonia/two-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "three",
    "ru": "три",
-   "audio": "audio/words/emma/three-noun.opus"
+   "audio": "audio/words/sonia/three-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "four",
    "ru": "четыре",
-   "audio": "audio/words/emma/four-noun.opus"
+   "audio": "audio/words/sonia/four-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "five",
    "ru": "пять",
-   "audio": "audio/words/emma/five-noun.opus"
+   "audio": "audio/words/sonia/five-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "six",
    "ru": "шесть",
-   "audio": "audio/words/emma/six-noun.opus"
+   "audio": "audio/words/sonia/six-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "seven",
    "ru": "семь",
-   "audio": "audio/words/emma/seven-noun.opus"
+   "audio": "audio/words/sonia/seven-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "eight",
    "ru": "восемь",
-   "audio": "audio/words/emma/eight-noun.opus"
+   "audio": "audio/words/sonia/eight-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "nine",
    "ru": "девять",
-   "audio": "audio/words/emma/nine-noun.opus"
+   "audio": "audio/words/sonia/nine-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "ten",
    "ru": "десять",
-   "audio": "audio/words/emma/ten-noun.opus"
+   "audio": "audio/words/sonia/ten-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "eleven",
    "ru": "одиннадцать",
-   "audio": "audio/words/emma/eleven-noun.opus"
+   "audio": "audio/words/sonia/eleven-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "twelve",
    "ru": "двенадцать",
-   "audio": "audio/words/emma/twelve-noun.opus"
+   "audio": "audio/words/sonia/twelve-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "thirteen",
    "ru": "тринадцать",
-   "audio": "audio/vocab/emma/numbers-time-thirteen.opus"
+   "audio": "audio/vocab/sonia/numbers-time-thirteen.opus"
   },
   {
    "topic": "numbers-time",
    "en": "fourteen",
    "ru": "четырнадцать",
-   "audio": "audio/vocab/emma/numbers-time-fourteen.opus"
+   "audio": "audio/vocab/sonia/numbers-time-fourteen.opus"
   },
   {
    "topic": "numbers-time",
    "en": "fifteen",
    "ru": "пятнадцать",
-   "audio": "audio/words/emma/fifteen-noun.opus"
+   "audio": "audio/words/sonia/fifteen-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "sixteen",
    "ru": "шестнадцать",
-   "audio": "audio/vocab/emma/numbers-time-sixteen.opus"
+   "audio": "audio/vocab/sonia/numbers-time-sixteen.opus"
   },
   {
    "topic": "numbers-time",
    "en": "seventeen",
    "ru": "семнадцать",
-   "audio": "audio/vocab/emma/numbers-time-seventeen.opus"
+   "audio": "audio/vocab/sonia/numbers-time-seventeen.opus"
   },
   {
    "topic": "numbers-time",
    "en": "eighteen",
    "ru": "восемнадцать",
-   "audio": "audio/vocab/emma/numbers-time-eighteen.opus"
+   "audio": "audio/vocab/sonia/numbers-time-eighteen.opus"
   },
   {
    "topic": "numbers-time",
    "en": "nineteen",
    "ru": "девятнадцать",
-   "audio": "audio/words/emma/nineteen-noun.opus"
+   "audio": "audio/words/sonia/nineteen-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "twenty",
    "ru": "двадцать",
-   "audio": "audio/words/emma/twenty-noun.opus"
+   "audio": "audio/words/sonia/twenty-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "thirty",
    "ru": "тридцать",
-   "audio": "audio/words/emma/thirty-noun.opus"
+   "audio": "audio/words/sonia/thirty-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "forty",
    "ru": "сорок",
-   "audio": "audio/words/emma/forty-noun.opus"
+   "audio": "audio/words/sonia/forty-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "fifty",
    "ru": "пятьдесят",
-   "audio": "audio/words/emma/fifty-noun.opus"
+   "audio": "audio/words/sonia/fifty-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "sixty",
    "ru": "шестьдесят",
-   "audio": "audio/words/emma/sixty-noun.opus"
+   "audio": "audio/words/sonia/sixty-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "seventy",
    "ru": "семьдесят",
-   "audio": "audio/words/emma/seventy-noun.opus"
+   "audio": "audio/words/sonia/seventy-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "eighty",
    "ru": "восемьдесят",
-   "audio": "audio/words/emma/eighty-noun.opus"
+   "audio": "audio/words/sonia/eighty-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "ninety",
    "ru": "девяносто",
-   "audio": "audio/words/emma/ninety-noun.opus"
+   "audio": "audio/words/sonia/ninety-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "hundred",
    "ru": "сто",
-   "audio": "audio/words/emma/hundred-noun.opus"
+   "audio": "audio/words/sonia/hundred-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "thousand",
    "ru": "тысяча",
-   "audio": "audio/words/emma/thousand-noun.opus"
+   "audio": "audio/words/sonia/thousand-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "Monday",
    "ru": "понедельник",
-   "audio": "audio/vocab/emma/numbers-time-monday.opus"
+   "audio": "audio/vocab/sonia/numbers-time-monday.opus"
   },
   {
    "topic": "numbers-time",
    "en": "Tuesday",
    "ru": "вторник",
-   "audio": "audio/vocab/emma/numbers-time-tuesday.opus"
+   "audio": "audio/vocab/sonia/numbers-time-tuesday.opus"
   },
   {
    "topic": "numbers-time",
    "en": "Wednesday",
    "ru": "среда",
-   "audio": "audio/vocab/emma/numbers-time-wednesday.opus"
+   "audio": "audio/vocab/sonia/numbers-time-wednesday.opus"
   },
   {
    "topic": "numbers-time",
    "en": "Thursday",
    "ru": "четверг",
-   "audio": "audio/vocab/emma/numbers-time-thursday.opus"
+   "audio": "audio/vocab/sonia/numbers-time-thursday.opus"
   },
   {
    "topic": "numbers-time",
    "en": "Friday",
    "ru": "пятница",
-   "audio": "audio/vocab/emma/numbers-time-friday.opus"
+   "audio": "audio/vocab/sonia/numbers-time-friday.opus"
   },
   {
    "topic": "numbers-time",
    "en": "Saturday",
    "ru": "суббота",
-   "audio": "audio/vocab/emma/numbers-time-saturday.opus"
+   "audio": "audio/vocab/sonia/numbers-time-saturday.opus"
   },
   {
    "topic": "numbers-time",
    "en": "Sunday",
    "ru": "воскресенье",
-   "audio": "audio/vocab/emma/numbers-time-sunday.opus"
+   "audio": "audio/vocab/sonia/numbers-time-sunday.opus"
   },
   {
    "topic": "numbers-time",
    "en": "January",
    "ru": "январь",
-   "audio": "audio/vocab/emma/numbers-time-january.opus"
+   "audio": "audio/vocab/sonia/numbers-time-january.opus"
   },
   {
    "topic": "numbers-time",
    "en": "February",
    "ru": "февраль",
-   "audio": "audio/vocab/emma/numbers-time-february.opus"
+   "audio": "audio/vocab/sonia/numbers-time-february.opus"
   },
   {
    "topic": "numbers-time",
    "en": "March",
    "ru": "март",
-   "audio": "audio/words/emma/march-noun.opus"
+   "audio": "audio/words/sonia/march-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "April",
    "ru": "апрель",
-   "audio": "audio/vocab/emma/numbers-time-april.opus"
+   "audio": "audio/vocab/sonia/numbers-time-april.opus"
   },
   {
    "topic": "numbers-time",
    "en": "May",
    "ru": "май",
-   "audio": "audio/words/emma/may-verb.opus"
+   "audio": "audio/words/sonia/may-verb.opus"
   },
   {
    "topic": "numbers-time",
    "en": "June",
    "ru": "июнь",
-   "audio": "audio/vocab/emma/numbers-time-june.opus"
+   "audio": "audio/vocab/sonia/numbers-time-june.opus"
   },
   {
    "topic": "numbers-time",
    "en": "July",
    "ru": "июль",
-   "audio": "audio/vocab/emma/numbers-time-july.opus"
+   "audio": "audio/vocab/sonia/numbers-time-july.opus"
   },
   {
    "topic": "numbers-time",
    "en": "August",
    "ru": "август",
-   "audio": "audio/words/emma/august-adjective.opus"
+   "audio": "audio/words/sonia/august-adjective.opus"
   },
   {
    "topic": "numbers-time",
    "en": "September",
    "ru": "сентябрь",
-   "audio": "audio/vocab/emma/numbers-time-september.opus"
+   "audio": "audio/vocab/sonia/numbers-time-september.opus"
   },
   {
    "topic": "numbers-time",
    "en": "October",
    "ru": "октябрь",
-   "audio": "audio/vocab/emma/numbers-time-october.opus"
+   "audio": "audio/vocab/sonia/numbers-time-october.opus"
   },
   {
    "topic": "numbers-time",
    "en": "November",
    "ru": "ноябрь",
-   "audio": "audio/vocab/emma/numbers-time-november.opus"
+   "audio": "audio/vocab/sonia/numbers-time-november.opus"
   },
   {
    "topic": "numbers-time",
    "en": "December",
    "ru": "декабрь",
-   "audio": "audio/vocab/emma/numbers-time-december.opus"
+   "audio": "audio/vocab/sonia/numbers-time-december.opus"
   },
   {
    "topic": "numbers-time",
    "en": "hundred",
    "ru": "сто",
-   "audio": "audio/words/emma/hundred-noun.opus"
+   "audio": "audio/words/sonia/hundred-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "thousand",
    "ru": "тысяча",
-   "audio": "audio/words/emma/thousand-noun.opus"
+   "audio": "audio/words/sonia/thousand-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "half",
    "ru": "половина",
-   "audio": "audio/words/emma/half-noun.opus"
+   "audio": "audio/words/sonia/half-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "quarter",
    "ru": "четверть",
-   "audio": "audio/words/emma/quarter-noun.opus"
+   "audio": "audio/words/sonia/quarter-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "time",
    "ru": "время",
-   "audio": "audio/words/emma/time-noun.opus"
+   "audio": "audio/words/sonia/time-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "hour",
    "ru": "час",
-   "audio": "audio/words/emma/hour-noun.opus"
+   "audio": "audio/words/sonia/hour-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "minute",
    "ru": "минута",
-   "audio": "audio/words/emma/minute-noun.opus"
+   "audio": "audio/words/sonia/minute-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "second",
    "ru": "секунда",
-   "audio": "audio/words/emma/second-adjective.opus"
+   "audio": "audio/words/sonia/second-adjective.opus"
   },
   {
    "topic": "numbers-time",
    "en": "day",
    "ru": "день",
-   "audio": "audio/words/emma/day-noun.opus"
+   "audio": "audio/words/sonia/day-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "week",
    "ru": "неделя",
-   "audio": "audio/words/emma/week-noun.opus"
+   "audio": "audio/words/sonia/week-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "month",
    "ru": "месяц",
-   "audio": "audio/words/emma/month-noun.opus"
+   "audio": "audio/words/sonia/month-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "year",
    "ru": "год",
-   "audio": "audio/words/emma/year-noun.opus"
+   "audio": "audio/words/sonia/year-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "today",
    "ru": "сегодня",
-   "audio": "audio/words/emma/today-adverb.opus"
+   "audio": "audio/words/sonia/today-adverb.opus"
   },
   {
    "topic": "numbers-time",
    "en": "tomorrow",
    "ru": "завтра",
-   "audio": "audio/words/emma/tomorrow-adverb.opus"
+   "audio": "audio/words/sonia/tomorrow-adverb.opus"
   },
   {
    "topic": "numbers-time",
    "en": "yesterday",
    "ru": "вчера",
-   "audio": "audio/words/emma/yesterday-noun.opus"
+   "audio": "audio/words/sonia/yesterday-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "now",
    "ru": "сейчас",
-   "audio": "audio/words/emma/now-adverb.opus"
+   "audio": "audio/words/sonia/now-adverb.opus"
   },
   {
    "topic": "numbers-time",
    "en": "later",
    "ru": "позже",
-   "audio": "audio/words/emma/later-adverb.opus"
+   "audio": "audio/words/sonia/later-adverb.opus"
   },
   {
    "topic": "numbers-time",
    "en": "morning",
    "ru": "утро",
-   "audio": "audio/words/emma/morning-noun.opus"
+   "audio": "audio/words/sonia/morning-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "afternoon",
    "ru": "день (после полудня)",
-   "audio": "audio/words/emma/afternoon-noun.opus"
+   "audio": "audio/words/sonia/afternoon-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "evening",
    "ru": "вечер",
-   "audio": "audio/words/emma/evening-noun.opus"
+   "audio": "audio/words/sonia/evening-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "night",
    "ru": "ночь",
-   "audio": "audio/words/emma/night-noun.opus"
+   "audio": "audio/words/sonia/night-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "what time is it",
    "ru": "сколько времени",
-   "audio": "audio/vocab/emma/numbers-time-what-time-is-it.opus"
+   "audio": "audio/vocab/sonia/numbers-time-what-time-is-it.opus"
   },
   {
    "topic": "numbers-time",
    "en": "at 7 o'clock",
    "ru": "в 7 часов",
-   "audio": "audio/vocab/emma/numbers-time-at-7-o-clock.opus"
+   "audio": "audio/vocab/sonia/numbers-time-at-7-o-clock.opus"
   },
   {
    "topic": "numbers-time",
    "en": "o'clock",
    "ru": "ровно (час)",
-   "audio": "audio/vocab/emma/numbers-time-o-clock.opus"
+   "audio": "audio/vocab/sonia/numbers-time-o-clock.opus"
   },
   {
    "topic": "numbers-time",
    "en": "half past",
    "ru": "пол (седьмого)",
-   "audio": "audio/vocab/emma/numbers-time-half-past.opus"
+   "audio": "audio/vocab/sonia/numbers-time-half-past.opus"
   },
   {
    "topic": "numbers-time",
    "en": "a.m./p.m.",
    "ru": "до/после полудня",
-   "audio": "audio/vocab/emma/numbers-time-a-m-p-m.opus"
+   "audio": "audio/vocab/sonia/numbers-time-a-m-p-m.opus"
   },
   {
    "topic": "numbers-time",
    "en": "early",
    "ru": "рано",
-   "audio": "audio/words/emma/early-adjective.opus"
+   "audio": "audio/words/sonia/early-adjective.opus"
   },
   {
    "topic": "numbers-time",
    "en": "late",
    "ru": "поздно",
-   "audio": "audio/words/emma/late-adjective.opus"
+   "audio": "audio/words/sonia/late-adjective.opus"
   },
   {
    "topic": "numbers-time",
    "en": "date",
    "ru": "дата",
-   "audio": "audio/words/emma/date-noun.opus"
+   "audio": "audio/words/sonia/date-noun.opus"
   },
   {
    "topic": "numbers-time",
    "en": "open 24 hours",
    "ru": "открыто 24 часа",
-   "audio": "audio/vocab/emma/numbers-time-open-24-hours.opus"
+   "audio": "audio/vocab/sonia/numbers-time-open-24-hours.opus"
   }
  ]
 }

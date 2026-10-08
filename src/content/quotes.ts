@@ -13,7 +13,7 @@ export interface QuoteItem {
   link_playphrase?: string
   /** Кадр/GIF сцены (план M.3): путь в public/media/scenes/… — вне git, деградация без файла. */
   link_image?: string
-  /** Предзаписанное аудио emma (plan://voice-fix V2.1); нет — Web Speech. */
+  /** Предзаписанное аудио (TTS) (plan://voice-fix V2.1); нет — Web Speech. */
   audio?: { en_gb?: string }
 }
 

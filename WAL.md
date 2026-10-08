@@ -1,6 +1,7 @@
 # WAL — Hunter English
 
 ## Current Phase
+**Голос: Edge SoniaNeural (2026-10-08)**. Кокоро плохо тянул одиночные слова (фонемайзер — на предложениях) — на повторениях звучало «электронно». Все 11 735 клипов перегенерированы edge-tts (en-GB-SoniaNeural, сервис Edge; ~57 мин, 1 зависший запрос — ретрай догенерировал), каталоги audio/*/sonia. gen_audio_edge.py (список заданий общий с kokoro-генератором — collect_jobs по текущим путям данных), switch_voice.py — универсальный regex по всем data/**/*.json. Тесты путей голос-агностичны ([a-z0-9-]+), спеки — генерик <voice>. Piper/Kokoro остаются как инструменты. 626 unit + 65 e2e зелёные.
 **Голос курса: Kokoro bf_emma (2026-10-07)**. Все 11 735 клипов перегенерированы (gen_audio_kokoro.py, 6 воркеров, 70 мин, 0 outlier-ов), каталоги audio/*/emma; пути в данных переключены (switch_voice.py + 12 аудио-ссылок в exercises-b/c + 297 word-ссылок в vocab), схемы ослаблены до свободного голосового сегмента, cori-каталоги удалены (в истории git). Модель data/raw/models/kokoro/ (не в git), pip: kokoro-onnx soundfile. tts-фолбэк теперь предпочитает женские en-GB голоса. README/CREDITS/AGENTS/спеки обновлены. 626 unit + 65 e2e зелёные.
 **PR #74 смержен в main (2026-10-07), CI/Deploy зелёные.** Ветка content/rules-ba-ranks принесла: ревизию правил S/B/A/D+C (R1–R4, прошлые сессии), R5 (14 strange-диктантов, зона ex-92xx), R6 (повтор разогрева «с новыми заданиями» + фикс бага M21: вариант затирал content[1]-правило, повтор урока был мёртв), {#distractor-quality} D1–D4 (коварные дистракторы: Врата — скоринг-модуль src/domain/game/distractors.ts вместо slice «they/as/the»; разогрев — pickPhraseDistractors; офлайн — rebuild_choose_distractors.py перевыбрал 587/592 choose). По дороге: e2e-ожидания подогнаны под ревизию правил (локально маскировал устаревший preview-сервер — reuseExistingServer), покрытие 100% statements восстановлено. **Инцидент**: GitHub Pages слетел (configure-pages Not Found) — включён обратно через API (build_type workflow), деплой перезапущен, зелёный; если повторится — проверить Settings → Pages. 626 unit + 65 e2e зелёные.
 
@@ -29,6 +30,7 @@
 
 | Дата | Изменение | Причина |
 |------|-----------|---------|
+| 2026-10-08 | Голос: Kokoro bf_emma → Edge SoniaNeural (слова звучали «электронно») | Фидбек разработчика |
 | 2026-10-07 | Голос: Piper cori → Kokoro bf_emma, полный регенераций аудио + переключение путей | Фидбек «роботизированный голос», выбор «1» |
 | 2026-10-07 | Сверка 13 цитат JJK/SL (PR-ветка content/quotes-recheck): JJK — «Stand proud, you're strong» (эп. 40), спикер 0014 → Gojo, 0016 удалена (фабрикация); SL — офиц. слоган «Only I level up», 0013/0014 → дословные реплики транскриптов; аудио 6+1; validate:data/links + 626 unit + 65 e2e зелёные | Команда «продолжай» |
 | 2026-10-07 | Квэрк двойного клика «Дальше» закрыт: applyCheckpoint (state+ref синхронно) — match/retell/free-output переходят границу шага с первого клика; 626 unit + 65 e2e зелёные | Команда «продолжай» (Known Issue из WAL) |

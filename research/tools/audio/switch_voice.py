@@ -1,32 +1,34 @@
 #!/usr/bin/env python3
-"""Переключение голоса в путях данных: audio/<kind>/cori/… → audio/<kind>/<new>/…
+"""Переключение голоса в путях данных: audio/<kind>/<старый-голос>/… → <новый>.
 
-Сырая замена подстрок в JSON-файлах данных (сохраняет форматирование файла
-байт-в-байт, без json.dumps). Затрагивает: words, phrases, quotes,
-phrasebook (lines[].audio), vocab (включая ссылки на аудио слов).
+Сырая regex-замена подстрок в JSON-файлах данных (сохраняет форматирование
+файла байт-в-байт). Проходит ВСЕ data/**/*.json (raw/ и schemas/ минус) —
+включая payload.audio упражнений-сценок и word-ссылки в vocab.
 
-Перед запуском: новое аудио уже сгенерировано (gen_audio_kokoro.py).
-После: build_manifest.py + validate:data (проверит существование файлов).
-Запуск из корня: python3 research/tools/audio/switch_voice.py emma
+Перед запуском: новое аудио уже сгенерировано (gen_audio_kokoro.py /
+gen_audio_edge.py). После: build_manifest.py + validate:data.
+Запуск из корня: python3 research/tools/audio/switch_voice.py sonia
 """
+import re
 import sys
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[3]
-KINDS = ["words", "phrases", "quotes", "phrasebook", "vocab"]
+VOICE_RE = re.compile(r"(audio/(?:words|phrases|quotes|phrasebook|vocab)/)[a-z0-9_-]+(/)")
 
 if len(sys.argv) != 2:
-    sys.exit("использование: switch_voice.py <новый-сегмент-каталога> (например: emma)")
+    sys.exit("использование: switch_voice.py <новый-сегмент-каталога> (например: sonia)")
 NEW = sys.argv[1]
 
 total = 0
-for kind in KINDS:
-    for path in sorted((REPO / "data" / kind).glob("*.json")):
-        text = path.read_text(encoding="utf-8")
-        updated = text.replace(f"audio/{kind}/cori/", f"audio/{kind}/{NEW}/")
-        if updated != text:
-            n = text.count(f"audio/{kind}/cori/")
-            path.write_text(updated, encoding="utf-8")
-            total += n
-            print(f"{path.relative_to(REPO)}: {n} путей → {NEW}")
+for path in sorted(REPO.glob("data/**/*.json")):
+    rel = path.relative_to(REPO).as_posix()
+    if rel.startswith(("data/raw/", "data/schemas/", "data/manifest")):
+        continue
+    text = path.read_text(encoding="utf-8")
+    updated, n = VOICE_RE.subn(rf"\g<1>{NEW}\g<2>", text)
+    if n:
+        path.write_text(updated, encoding="utf-8")
+        total += n
+        print(f"{rel}: {n} путей → {NEW}")
 print(f"итого заменено путей: {total}")

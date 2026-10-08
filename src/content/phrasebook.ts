@@ -14,7 +14,7 @@ export interface PhrasebookDialog {
     text_en: string
     translation_ru: string
     accepted?: string[]
-    /** Предзаписанное аудио emma (plan://voice-fix V2.2); нет — Web Speech. */
+    /** Предзаписанное аудио (TTS) (plan://voice-fix V2.2); нет — Web Speech. */
     audio?: string
     /** Слово-слот чанк-шаблона (план {#teaching-quality} Q2.2). */
     chunk_slot?: string

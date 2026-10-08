@@ -6,7 +6,7 @@
 русскоязычного пользователя. Цель — путешествия: понимать людей на слух и отвечать.
 Методика: короткое правило → построение фраз RU→EN → диктант → shadowing →
 интервальные повторения (FSRS). Мотивация в стиле Solo Leveling: ты — «Охотник»,
-ранги E→S, «Врата», XP и стрики. Озвучка — британский английский (Kokoro `bf_emma`, мягкий женский).
+ранги E→S, «Врата», XP и стрики. Озвучка — британский английский (Microsoft Edge `en-GB-SoniaNeural`, живой женский нейро-голос).
 
 ## Стек
 
@@ -22,13 +22,13 @@ Supabase — синхронизация M13 (см. «Синхронизация�
 | `research/` | ресёрч, методика, лицензии; `research/tools/` — скрипты пайплайна данных | да (источник правды) |
 | `specs/` | спецификации (курс, уроки, SRS, геймификация, форматы данных, экраны, дизайн) | да, через план |
 | `data/` | учебные данные (CC BY-SA 4.0), генерируются пайплайном | `data/raw/` — нет (gitignored), остальное перегенерируется |
-| `audio/` | озвучка курса (Kokoro en_GB `bf_emma`, Opus) | генерируется `research/tools/audio/gen_audio_kokoro.py` |
+| `audio/` | озвучка курса (Edge en_GB `SoniaNeural`, Opus) | генерируется `research/tools/audio/gen_audio_edge.py` |
 | `src/` | код приложения | да |
 | `scripts/` | служебные скрипты (`validate-data.mjs`) | да |
 
 ## Сборка данных с нуля
 
-Нужны: Node 22, Python 3.10+, ffmpeg в PATH, `pip3 install --user piper-tts kokoro-onnx soundfile`.
+Нужны: Node 22, Python 3.10+, ffmpeg в PATH, `pip3 install --user piper-tts kokoro-onnx soundfile edge-tts`.
 Сырьё (`data/raw/`, в git не попадает): NGSL CSV, kaikki-дампы, Tatoeba-экспорты.
 Порядок (каждый шаг возобновляемый):
 
@@ -42,7 +42,7 @@ python3 research/tools/data/fetch_kaikki.py
 python3 research/tools/data/build_examples.py
 # 4. Слова: data/words/*.json (переводы, CEFR, теги, примеры)
 python3 research/tools/data/build_words.py
-# 5. Аудио: Kokoro en_GB bf_emma (модель -> data/raw/models/kokoro/; ранее Piper cori)
+# 5. Аудио: edge-tts en-GB-SoniaNeural (сервис Edge; ранее Kokoro bf_emma / Piper cori)
 python3 research/tools/audio/gen_audio.py --words 'data/words/*.json'
 # 6. Цитаты и ловушки
 python3 research/tools/quotes/build_quotes.py
