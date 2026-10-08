@@ -1252,7 +1252,7 @@
       "grammar_point": {
         "id": "gp-d-08",
         "title_ru": "have got и have",
-        "rule_md": "I **have got** a ticket. = I **have** a ticket. — «Иметь» по-британски и нейтрально.\n\nДва равных способа сказать о владении.\n\n**Формула:** брит. → have/has got; нейтр. → have/has\n- She **has got** a phone. − : I **haven't got** money. = I **don't have** money.\n- ? : **Have you got** a pen? = **Do you have** a pen?\n\nПо-русски «у меня есть» — предложением с «у»; по-английски владение — сам глагол have.\n\n⚠️ Ловушка (ЛТ-06): ❌ I have got a money → ✔ **money** (неисчисляемое — без a).\n\nПроверь себя: У тебя есть ручка? ___ you ___ a pen? → Do…have",
+        "rule_md": "I **have got** a ticket. = I **have** a ticket. — «Иметь» по-британски и нейтрально.\n\nДва равных способа сказать о владении.\n\n**Формула:** брит. → have/has got; нейтр. → have/has\n- She **has got** a phone. − : I **haven't got** money. = I **don't have** money.\n- Подлежащее-существительное? девочка = she → has: My sister **has got** a phone.\n- ? : **Have you got** a pen? = **Do you have** a pen?\n\nПо-русски «у меня есть» — предложением с «у»; по-английски владение — сам глагол have.\n\n⚠️ Ловушка (ЛТ-06): ❌ I have got a money → ✔ **money** (неисчисляемое — без a).\n\nПроверь себя: У тебя есть ручка? ___ you ___ a pen? → Do…have",
         "phrase_ids": ["ph-d-0311", "ph-d-0312", "ph-d-0313", "ph-d-0314", "ph-d-0315"],
         "trap_id": "trap-articles"
       },
@@ -4948,7 +4948,7 @@
       "grammar_point": {
         "id": "gp-c-04",
         "title_ru": "was/were в прошедшем",
-        "rule_md": "I **was** at home. They **were** in Paris. — Где вы были вчера?\n\n«Быть» в прошлом — всего две формы (Past Simple to be).\n\n**Формула:** I/he/she/it → was; you/we/they → were\n- − : I wasn't at home. ?: **Were** you at the hotel?\n- How **was** your day? — It was great!\n\nПо-русски «был/была/были» — род и число; по-английски выбор только по подлежащему.\n\n⚠️ Ловушка: ❌ You was late → ✔ You **were** late.\n\nПроверь себя: We ___ at the hotel. → were",
+        "rule_md": "I **was** at home. They **were** in Paris. — Где вы были вчера?\n\n«Быть» в прошлом — всего две формы (Past Simple to be).\n\n**Формула:** I/he/she/it → was; you/we/they → were\n- − : I wasn't at home. ?: **Were** you at the hotel?\n- Подлежащее-существительное? Замени местоимением: поезд = it → was, друзья = they → were: The trip **was** great. My friends **were** tired.\n- How **was** your day? — It was great!\n\nПо-русски «был/была/были» — род и число; по-английски выбор только по подлежащему.\n\n⚠️ Ловушка: ❌ You was late → ✔ You **were** late.\n\nПроверь себя: We ___ at the hotel. → were",
         "phrase_ids": ["ph-c-0135", "ph-c-0136", "ph-c-0137", "ph-c-0138", "ph-c-0139"],
         "trap_id": "trap-no-to-be"
       },

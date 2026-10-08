@@ -10,7 +10,7 @@
       "grammar_point": {
         "id": "gp-e-01",
         "title_ru": "Глагол to be в настоящем времени",
-        "rule_md": "**I am** Ivan. — Я Иван. **She is** from Japan. — Она из Японии.\n\nЭто глагол-связка **to be** («быть») — нужен там, где по-русски достаточно «—».\n\n**Формула:** кто + am / is / are\n- I → am; he / she / it → is; you / we / they → are\n- We **are** friends. — Мы друзья.\n\nПо-русски «я — Иван» живёт без глагола; по-английски без am/is/are так нельзя.\n\nСокращения: I am = I'm, he is = he's, we are = we're.\n\n⚠️ Ловушка ЛТ-01: ❌ I hungry → ✔ I**'m** hungry.\n\nПроверь себя: She ___ from Japan. → is",
+        "rule_md": "**I am** Ivan. — Я Иван. **She is** from Japan. — Она из Японии.\n\nЭто глагол-связка **to be** («быть») — нужен там, где по-русски достаточно «—».\n\n**Формула:** кто + am / is / are\n- I → am; he / she / it → is; you / we / they → are\n- Подлежащее-существительное? Замени местоимением: девочка = she, мужчина = he, окно = it, дети = they → The girl** is** here. The boy**s are** at school.\n- We **are** friends. — Мы друзья.\n\nПо-русски «я — Иван» живёт без глагола; по-английски без am/is/are так нельзя.\n\nСокращения: I am = I'm, he is = he's, we are = we're.\n\n⚠️ Ловушка ЛТ-01: ❌ I hungry → ✔ I**'m** hungry.\n\nПроверь себя: She ___ from Japan. → is",
         "phrase_ids": ["ph-e-0001", "ph-e-0002", "ph-e-0003", "ph-e-0004", "ph-e-0005"],
         "trap_id": "trap-no-to-be"
       },
@@ -1756,7 +1756,7 @@
       "grammar_point": {
         "id": "gp-e-11",
         "title_ru": "Present Simple — утверждение",
-        "rule_md": "I **work** in an office. — Я работаю в офисе. They **live** in London. — про обычную жизнь.\n\nЭто **Present Simple** — регулярные действия («всегда, обычно»), не «прямо сейчас».\n\n**Формула:** I / we / you / they + глагол **без изменений**\n- I work. We live. You know. They want.\n\nПо-русски окончание меняется по лицам (работаю / работаешь / работаем);\nпо-английски для I / we / you / they форма **одна**.\n\nПроверь себя: They ___ (speak) English. → speak",
+        "rule_md": "I **work** in an office. — Я работаю в офисе. They **live** in London. — про обычную жизнь.\n\nЭто **Present Simple** — регулярные действия («всегда, обычно»), не «прямо сейчас».\n\n**Формула:** I / we / you / they + глагол **без изменений**\n- I work. We live. You know. They want.\n- Существительное во множественном = they → My parents **live** here. The shops **open** at nine.\n\nПо-русски окончание меняется по лицам (работаю / работаешь / работаем);\nпо-английски для I / we / you / they форма **одна**.\n\nПроверь себя: They ___ (speak) English. → speak",
         "phrase_ids": ["ph-e-0440", "ph-e-0441", "ph-e-0442", "ph-e-0443", "ph-e-0444"],
         "trap_id": null
       },
@@ -1931,7 +1931,7 @@
       "grammar_point": {
         "id": "gp-e-12",
         "title_ru": "Present Simple — третье лицо (-s)",
-        "rule_md": "He work**s** in a bank. — Он работает в банке. She live**s** in Paris.\n\nPresent Simple с he / she / it: глагол получает **-s**.\n\n**Формула:** he / she / it + глагол + **-s**\n- He works in a bank. It opens at nine.\n- после шипящего → -es (watches, goes); согласная + y → -ies (studies)\n\nПо-русски лицо видно из окончания (работает); по-английски -s появляется только у he / she / it.\n\n⚠️ Ловушка ЛТ-03: ❌ He live here → ✔ He live**s** here.\n\nПроверь себя: She ___ (live) in Paris. → lives",
+        "rule_md": "He work**s** in a bank. — Он работает в банке. She live**s** in Paris.\n\nPresent Simple с he / she / it: глагол получает **-s**.\n\n**Формула:** he / she / it + глагол + **-s**\n- He works in a bank. It opens at nine.\n- Существительное в единственном = he / she / it → девочка, город, кот: My sister work**s** here. The shop open**s** at nine.\n- после шипящего → -es (watches, goes); согласная + y → -ies (studies)\n\nПо-русски лицо видно из окончания (работает); по-английски -s появляется только у he / she / it.\n\n⚠️ Ловушка ЛТ-03: ❌ He live here → ✔ He live**s** here.\n\nПроверь себя: She ___ (live) in Paris. → lives",
         "phrase_ids": ["ph-e-0484", "ph-e-0485", "ph-e-0486", "ph-e-0487", "ph-e-0488"],
         "trap_id": "trap-third-person-s"
       },
@@ -2646,7 +2646,7 @@
       "grammar_point": {
         "id": "gp-e-16",
         "title_ru": "Do-вопросы и краткие ответы",
-        "rule_md": "**Do** you work here? — Yes, I do. — Вы здесь работаете? — Да.\n\nВопрос Present Simple: **Do** + подлежащее + глагол.\n\n**Формула:** Do + I / you / we / they + глагол …?\n- Do you work here? Do they live in London?\n- Краткие ответы: Yes, I **do**. / No, I **don't**.\n\nПо-русски вопрос задаёт интонация («ты работаешь здесь?»); по-английски вперёд выходит do.\n\n⚠️ Ловушка ЛТ-19: ❌ Where you live? → ✔ Where **do** you live?\n\nПроверь себя: ___ you like coffee? → Do",
+        "rule_md": "**Do** you work here? — Yes, I do. — Вы здесь работаете? — Да.\n\nВопрос Present Simple: **Do** + подлежащее + глагол.\n\n**Формула:** Do + I / you / we / they + глагол …?\n- Do you work here? Do they live in London?\n- Существительное во множественном = they → **Do**: **Do** your friends live here?\n- Краткие ответы: Yes, I **do**. / No, I **don't**.\n\nПо-русски вопрос задаёт интонация («ты работаешь здесь?»); по-английски вперёд выходит do.\n\n⚠️ Ловушка ЛТ-19: ❌ Where you live? → ✔ Where **do** you live?\n\nПроверь себя: ___ you like coffee? → Do",
         "phrase_ids": ["ph-e-0660", "ph-e-0661", "ph-e-0662", "ph-e-0663", "ph-e-0664"],
         "trap_id": "trap-question-word-order"
       },
@@ -2824,7 +2824,7 @@
       "grammar_point": {
         "id": "gp-e-17",
         "title_ru": "Does-вопросы и краткие ответы",
-        "rule_md": "He works in a bank. — **Does** he work in a bank? — Yes, he does.\n\nВопрос с he / she / it: **Does** + подлежащее + глагол БЕЗ -s (-s ушла в does).\n\n**Формула:** Does + he / she / it + глагол …?\n- Does he work here? Does she like tea?\n- Спецвопрос: What **does** he do? Where **does** she work?\n\nПо-русски «он работает?» — форма та же; по-английски -s исчезает: works → Does he work?\n\nКраткие: Yes, he does. / No, she doesn't.\n\nПроверь себя: Where ___ he work? → does",
+        "rule_md": "He works in a bank. — **Does** he work in a bank? — Yes, he does.\n\nВопрос с he / she / it: **Does** + подлежащее + глагол БЕЗ -s (-s ушла в does).\n\n**Формула:** Does + he / she / it + глагол …?\n- Does he work here? Does she like tea?\n- Существительное в единственном = he / she / it → **Does**: **Does** your sister work here? **Does** the shop open at nine?\n- Спецвопрос: What **does** he do? Where **does** she work?\n\nПо-русски «он работает?» — форма та же; по-английски -s исчезает: works → Does he work?\n\nКраткие: Yes, he does. / No, she doesn't.\n\nПроверь себя: Where ___ he work? → does",
         "phrase_ids": ["ph-e-0704", "ph-e-0705", "ph-e-0706", "ph-e-0707", "ph-e-0708"],
         "trap_id": null
       },
