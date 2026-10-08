@@ -85,6 +85,9 @@ describe('самовосстановление перехода шага (фид
       if (head.includes('шаг 4')) break
       const id = document.querySelector('[data-exercise-id]')?.getAttribute('data-exercise-id')
       if (!id || seen.has(id)) {
+        // сводка шага открыта (id не меняется) — переходим с неё
+        const goNext = screen.queryByRole('button', { name: /К следующему шагу/ })
+        if (goNext) fireEvent.click(goNext)
         await new Promise((r) => setTimeout(r, 10))
         continue
       }
@@ -112,7 +115,8 @@ describe('самовосстановление перехода шага (фид
         fireEvent.submit(input.closest('form')!)
       }
       for (let tick = 0; tick < 40; tick++) {
-        const next = screen.queryByRole('button', { name: /^Дальше/ })
+        const goNext = screen.queryByRole('button', { name: /К следующему шагу/ })
+        const next = goNext ?? screen.queryByRole('button', { name: /^Дальше/ })
         if (next) {
           fireEvent.click(next)
           break
