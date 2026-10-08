@@ -11,33 +11,33 @@
       "lines": [
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/emma/pb-directions-01-l0.opus",
+          "audio": "audio/phrasebook/sonia/pb-directions-01-l0.opus",
           "text_en": "Excuse me, where is the station?",
           "translation_ru": "Извините, где вокзал?",
           "accepted": ["Excuse me, where is the station?", "Where is the station?"]
         },
         {
           "role": "local",
-          "audio": "audio/phrasebook/emma/pb-directions-01-l1.opus",
+          "audio": "audio/phrasebook/sonia/pb-directions-01-l1.opus",
           "text_en": "The station? It is not far. Go straight and turn left.",
           "translation_ru": "Вокзал? Это недалеко. Идите прямо и поверните налево."
         },
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/emma/pb-directions-01-l2.opus",
+          "audio": "audio/phrasebook/sonia/pb-directions-01-l2.opus",
           "text_en": "Sorry, can you repeat that slowly?",
           "translation_ru": "Извините, можете повторить медленно?",
           "accepted": ["Sorry, can you repeat that slowly?", "Can you repeat that slowly?"]
         },
         {
           "role": "local",
-          "audio": "audio/phrasebook/emma/pb-directions-01-l3.opus",
+          "audio": "audio/phrasebook/sonia/pb-directions-01-l3.opus",
           "text_en": "Sure. Go straight. Turn left at the bank. The station is next to the café.",
           "translation_ru": "Конечно. Идите прямо. Поверните налево у банка. Вокзал рядом с кафе."
         },
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/emma/pb-directions-01-l4.opus",
+          "audio": "audio/phrasebook/sonia/pb-directions-01-l4.opus",
           "text_en": "Thank you very much!",
           "translation_ru": "Большое спасибо!",
           "accepted": ["Thank you very much!", "Thanks a lot!"]
@@ -53,7 +53,7 @@
       "lines": [
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/emma/pb-directions-02-l0.opus",
+          "audio": "audio/phrasebook/sonia/pb-directions-02-l0.opus",
           "text_en": "Is there a pharmacy near here?",
           "translation_ru": "Здесь рядом есть аптека?",
           "accepted": ["Is there a pharmacy near here?", "Is there a pharmacy nearby?"],
@@ -61,33 +61,33 @@
         },
         {
           "role": "local",
-          "audio": "audio/phrasebook/emma/pb-directions-02-l1.opus",
+          "audio": "audio/phrasebook/sonia/pb-directions-02-l1.opus",
           "text_en": "Yes, there is one on Main Street, next to the bank.",
           "translation_ru": "Да, есть одна на Мейн-стрит, рядом с банком."
         },
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/emma/pb-directions-02-l2.opus",
+          "audio": "audio/phrasebook/sonia/pb-directions-02-l2.opus",
           "text_en": "And where can I find an ATM?",
           "translation_ru": "А где я могу найти банкомат?",
           "accepted": ["And where can I find an ATM?", "Where can I find an ATM?"]
         },
         {
           "role": "local",
-          "audio": "audio/phrasebook/emma/pb-directions-02-l3.opus",
+          "audio": "audio/phrasebook/sonia/pb-directions-02-l3.opus",
           "text_en": "There is an ATM at the corner, in front of the hotel.",
           "translation_ru": "Банкомат на углу, напротив отеля."
         },
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/emma/pb-directions-02-l4.opus",
+          "audio": "audio/phrasebook/sonia/pb-directions-02-l4.opus",
           "text_en": "Great. Is it far?",
           "translation_ru": "Отлично. Это далеко?",
           "accepted": ["Great. Is it far?", "Is it far?"]
         },
         {
           "role": "local",
-          "audio": "audio/phrasebook/emma/pb-directions-02-l5.opus",
+          "audio": "audio/phrasebook/sonia/pb-directions-02-l5.opus",
           "text_en": "No, it is five minutes on foot.",
           "translation_ru": "Нет, пять минут пешком."
         }

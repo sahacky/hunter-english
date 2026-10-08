@@ -26,7 +26,7 @@ describe('loadWordNotes (data/words)', () => {
     expect(house?.deck).toBe('words')
     expect(house?.id).toMatch(/^note_/)
     expect(house?.ru.length).toBeGreaterThan(0)
-    expect(house?.audio).toMatch(/^audio\/words\/emma\/.+\.opus$/)
+    expect(house?.audio).toMatch(/^audio\/words\/[a-z0-9-]+\/.+\.opus$/)
 
     const withoutRu = notes.filter(({ ru }) => !ru)
     expect(withoutRu).toEqual([])

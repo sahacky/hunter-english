@@ -25,7 +25,8 @@ Wiktionary/NGSL). Уровни CEFR в `data/words/` выведены агент
 
 | Источник                   | Лицензия                         |
 | -------------------------- | -------------------------------- |
-| Kokoro 82M v1.0, голос `bf_emma` (en_GB) — основная озвучка курса | Apache 2.0 (hexgrad/Kokoro-82M) |
+| Microsoft Edge Online Voices `en-GB-SoniaNeural` — основная озвучка курса (генерация онлайн, воспроизведение офлайн) | сервис Microsoft; пакет edge-tts — MIT |
+| Kokoro 82M v1.0, голос `bf_emma` — прежняя озвучка (история git) | Apache 2.0 (hexgrad/Kokoro-82M) |
 | kokoro-onnx (рантайм генерации) | MIT (thewh1teagle/kokoro-onnx) |
 | Piper voice `cori` (en_GB) — прежняя озвучка (история git) | датасет public domain (LibriVox) |
 | Piper voices repo + piper-tts | MIT (rhasspy/piper-voices, OHF-voice/piper1-gpl) |

@@ -365,7 +365,9 @@ describe('loadLessonView (реальные data/ ранга E)', () => {
     const phrases = await loadPhrases()
     expect(phrases.length).toBeGreaterThanOrEqual(1050)
     expect(new Set(phrases.map(({ id }) => id)).size).toBe(phrases.length)
-    expect(phrases.every(({ audio }) => audio?.en_gb?.startsWith('audio/phrases/emma/'))).toBe(true)
+    expect(
+      phrases.every(({ audio }) => /^audio\/phrases\/[a-z0-9-]+\//.test(audio?.en_gb ?? '')),
+    ).toBe(true)
 
     const lessons = await loadLessons()
     // v2 (программа v2): E (24) + D (39, вкл. Past Simple/PC) + C (19) + B (30) + A (22) + S (15)
@@ -545,7 +547,7 @@ describe('loadLessonView (реальные data/ ранга E)', () => {
     for (const pid of view.lesson.grammar_point.phrase_ids) {
       const phrase = view.phrasesById[pid]
       expect(phrase, pid).toBeTruthy()
-      expect(phrase.audio?.en_gb).toMatch(/^audio\/phrases\/emma\//)
+      expect(phrase.audio?.en_gb).toMatch(/^audio\/phrases\/[a-z0-9-]+\//)
     }
     expect(Object.keys(view.phrasesById)).toHaveLength(3)
     for (const { exercise } of scenes) {
@@ -567,7 +569,7 @@ describe('loadLessonView (реальные data/ ранга E)', () => {
         continue
       }
       // сценка-диалог: реплика собеседника — предзаписанное аудио разговорника
-      expect(payload.audio).toMatch(/^audio\/phrasebook\/emma\/pb-/)
+      expect(payload.audio).toMatch(/^audio\/phrasebook\/[a-z0-9-]+\/pb-/)
       expect(payload.free_form).toBe(true)
       expect(exercise.answer.accepted?.length).toBeGreaterThanOrEqual(1)
       expect(exercise.answer.speech_threshold).toBe(0.85)

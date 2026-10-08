@@ -71,7 +71,14 @@ def synth_one(job: tuple[str, str, str]) -> tuple[str, str, float]:
 
 
 def collect_jobs(dir_name: str) -> list[tuple[str, str, str]]:
-    """Все ссылки audio/<kind>/cori/<file>.opus → задания для <dir_name>."""
+    """Все аудио-ссылки audio/<kind>/<voice>/<file>.opus → задания для <dir_name>.
+
+    Голосовой сегмент любой ([a-z0-9_-]+): задания собираются по ТЕКУЩИМ
+    путям в данных, чтобы повторный запуск (смена голоса) покрывал всё.
+    """
+    import re
+
+    voice_re = re.compile(r"^(audio/(?:words|phrases|quotes|phrasebook|vocab)/)[a-z0-9_-]+(/.+\.opus)$")
     jobs: list[tuple[str, str, str]] = []
     seen: set[str] = set()
 
@@ -84,33 +91,38 @@ def collect_jobs(dir_name: str) -> list[tuple[str, str, str]]:
     for path in sorted((DATA / "words").glob("*.json")):
         for item in json.loads(path.read_text(encoding="utf-8"))["items"]:
             a = item.get("audio", {}).get("en_gb", "")
-            if "/cori/" in a:
-                add(str(REPO / a.replace("/cori/", f"/{dir_name}/")), item["lemma"])
+            m = a and voice_re.match(a)
+            if m:
+                add(f"{REPO}/{m.group(1)}{dir_name}{m.group(2)}", item["lemma"])
 
     for path in sorted((DATA / "phrases").glob("*.json")):
         for item in json.loads(path.read_text(encoding="utf-8"))["items"]:
             a = item.get("audio", {}).get("en_gb", "")
-            if "/cori/" in a:
-                add(str(REPO / a.replace("/cori/", f"/{dir_name}/")), item["text_en"])
+            m = a and voice_re.match(a)
+            if m:
+                add(f"{REPO}/{m.group(1)}{dir_name}{m.group(2)}", item["text_en"])
 
     for path in sorted((DATA / "quotes").glob("*.json")):
         for item in json.loads(path.read_text(encoding="utf-8"))["items"]:
             a = item.get("audio", {}).get("en_gb", "")
-            if "/cori/" in a:
-                add(str(REPO / a.replace("/cori/", f"/{dir_name}/")), item["text"])
+            m = a and voice_re.match(a)
+            if m:
+                add(f"{REPO}/{m.group(1)}{dir_name}{m.group(2)}", item["text"])
 
     for path in sorted((DATA / "phrasebook").glob("*.json")):
         for dialog in json.loads(path.read_text(encoding="utf-8"))["items"]:
             for line in dialog["lines"]:
                 a = line.get("audio", "")
-                if a and "/cori/" in a:
-                    add(str(REPO / a.replace("/cori/", f"/{dir_name}/")), line["text_en"])
+                m = a and voice_re.match(a)
+                if m:
+                    add(f"{REPO}/{m.group(1)}{dir_name}{m.group(2)}", line["text_en"])
 
     for path in sorted((DATA / "vocab").glob("*.json")):
         for item in json.loads(path.read_text(encoding="utf-8"))["items"]:
             a = item.get("audio", "")
-            if a and "/cori/" in a:
-                add(str(REPO / a.replace("/cori/", f"/{dir_name}/")), item["en"])
+            m = a and voice_re.match(a)
+            if m:
+                add(f"{REPO}/{m.group(1)}{dir_name}{m.group(2)}", item["en"])
 
     return jobs
 
