@@ -1,21 +1,17 @@
 // Implements: plan://curriculum-review#I.2 — экран input-трека /#/listen:
-// подборка «понятых» цитат (auto_vocab.top1000 ≥ 0.9 — тот же фильтр, что у
-// цитаты дня) как плейлист с «Играть всё», счётчик минут дня и ручная отметка
-// «послушал вне приложения». Минуты считаются шлюзом озвучки (tts sink).
+// эфир ДНЯ (V6, фидбей 2026-10-08): понятые цитаты (top1000 ≥ 0.8) + фразы
+// начатых уроков, дневной сид-шаффл — каждый день новый состав (было: один
+// статичный список цитат). «Играть всё», счётчик минут, ручная отметка
+// «послушал вне приложения»; минуты считаются шлюзом озвучки (tts sink).
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { loadQuotes, type QuoteItem } from '../content/lessons'
+import { buildDailyTracks, type ListenTrack } from '../data/listening'
 import { speak, stopSpeak, currentAudio } from '../lib/tts'
 import { dayStart } from '../domain/srs/scheduler'
 import { createQuestDay, LISTENING_TARGET_SEC } from '../domain/game/game'
 import { addManualListeningSeconds, questWithListening } from '../data/listening'
 import type { ProgressRepository } from '../domain/progress'
 import { DexieProgressRepository } from '../data/progress-repository'
-
-/** Понятые цитаты — по покрытию топ-1000 NGSL (как «цитата дня» на дашборде). */
-function understoodQuotes(quotes: readonly QuoteItem[]): QuoteItem[] {
-  return quotes.filter((quote) => (quote.auto_vocab?.top1000 ?? 0) >= 0.9)
-}
 
 interface ListenProps {
   repo?: ProgressRepository
@@ -25,7 +21,7 @@ export default function ListenScreen({ repo: repoProp }: ListenProps) {
   const { t } = useTranslation()
   const defaultRepo = useMemo(() => new DexieProgressRepository(), [])
   const repo = repoProp ?? defaultRepo
-  const [quotes, setQuotes] = useState<QuoteItem[] | null>(null)
+  const [tracks, setTracks] = useState<ListenTrack[] | null>(null)
   const [error, setError] = useState(false)
   const [secondsToday, setSecondsToday] = useState(0)
   const [manualSec, setManualSec] = useState(0)
@@ -44,9 +40,9 @@ export default function ListenScreen({ repo: repoProp }: ListenProps) {
   useEffect(() => {
     let alive = true
     void (async () => {
-      const quotes = understoodQuotes(await loadQuotes())
+      const playlist = await buildDailyTracks(repo)
       if (!alive) return
-      setQuotes(quotes)
+      setTracks(playlist)
       await refresh()
     })().catch(() => {
       if (alive) setError(true)
@@ -63,13 +59,13 @@ export default function ListenScreen({ repo: repoProp }: ListenProps) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  const play = (quote: QuoteItem, rate = 1) => {
-    setCurrentId(quote.id)
-    speak(quote.text, { src: quote.audio?.en_gb, rate })
+  const play = (track: ListenTrack, rate = 1) => {
+    setCurrentId(track.id)
+    speak(track.text, { src: track.audio, rate })
   }
 
   /** Последовательное воспроизведение плейлиста по кругу, до «Стоп». */
-  const playAll = async (list: QuoteItem[]) => {
+  const playAll = async (list: ListenTrack[]) => {
     /* istanbul ignore next @preserve — кнопка «Играть всё» disabled при пустом списке: guard недостижим через UI */
     if (list.length === 0) return
     setPlayingAll(true)
@@ -78,8 +74,8 @@ export default function ListenScreen({ repo: repoProp }: ListenProps) {
     const audio = () => {
       /* istanbul ignore next @preserve — кнопка «Играть всё» скрыта на время Стопа: ref всегда true при входе */
       if (!playAllRef.current) return
-      const quote = list[index % list.length]!
-      play(quote)
+      const track = list[index % list.length]!
+      play(track)
       const el = currentAudio()
       if (el) {
         el.addEventListener(
@@ -93,7 +89,7 @@ export default function ListenScreen({ repo: repoProp }: ListenProps) {
         )
       } else {
         // фолбэк TTS без audio-элемента: автоперехода нет — играем текущий
-        setCurrentId(quote.id)
+        setCurrentId(track.id)
       }
     }
     audio()
@@ -118,7 +114,7 @@ export default function ListenScreen({ repo: repoProp }: ListenProps) {
       </section>
     )
   }
-  if (!quotes) {
+  if (!tracks) {
     return (
       <section className="panel">
         <p className="dim">{t('common.loading')}</p>
@@ -134,7 +130,7 @@ export default function ListenScreen({ repo: repoProp }: ListenProps) {
         <h2>{t('listen.title')}</h2>
         <p className="dim">
           {t('listen.counter', { minutes, target: targetMin })} ·{' '}
-          {t('listen.total', { count: quotes.length })}
+          {t('listen.total', { count: tracks.length })} · {t('listen.dailyHint')}
         </p>
       </header>
       <div className="lesson-actions">
@@ -146,8 +142,8 @@ export default function ListenScreen({ repo: repoProp }: ListenProps) {
           <button
             type="button"
             className="srs-btn srs-btn-good"
-            disabled={quotes.length === 0}
-            onClick={() => void playAll(quotes)}
+            disabled={tracks.length === 0}
+            onClick={() => void playAll(tracks)}
           >
             ▶ {t('listen.playAll')}
           </button>
@@ -172,22 +168,22 @@ export default function ListenScreen({ repo: repoProp }: ListenProps) {
         )}
       </div>
       <ul className="listen-list">
-        {quotes.map((quote) => (
+        {tracks.map((track) => (
           <li
-            key={quote.id}
-            className={`listen-row${currentId === quote.id ? ' listen-row-current' : ''}`}
+            key={track.id}
+            className={`listen-row${currentId === track.id ? ' listen-row-current' : ''}`}
           >
             <div className="listen-text">
-              <p lang="en">«{quote.text}»</p>
+              <p lang="en">«{track.text}»</p>
               <p className="dim" lang="ru">
-                {quote.translation_ru} — {quote.title}
+                {track.translationRu} — {track.source}
               </p>
             </div>
             <div className="listen-actions">
-              {quote.link_playphrase && (
+              {track.link && (
                 <a
                   className="srs-btn"
-                  href={quote.link_playphrase}
+                  href={track.link}
                   target="_blank"
                   rel="noreferrer"
                   aria-label={t('listen.video')}
@@ -196,10 +192,10 @@ export default function ListenScreen({ repo: repoProp }: ListenProps) {
                   🎬
                 </a>
               )}
-              <button type="button" className="srs-btn" onClick={() => play(quote)}>
+              <button type="button" className="srs-btn" onClick={() => play(track)}>
                 🔊
               </button>
-              <button type="button" className="srs-btn" onClick={() => play(quote, 0.75)}>
+              <button type="button" className="srs-btn" onClick={() => play(track, 0.75)}>
                 🐢
               </button>
             </div>

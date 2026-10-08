@@ -463,12 +463,13 @@
   "listen": {
     "title": "Listening",
     "counter": "Today: {{minutes}} / {{target}} min",
-    "total": "{{count}} understood quotes",
+    "total": "{{count}} tracks today",
     "playAll": "Play all on loop",
     "stopAll": "Stop",
     "video": "Video moment (original)",
     "outside": "Listened outside the app (minutes):",
-    "resetManual": "remove manual {{minutes}} min"
+    "resetManual": "remove manual {{minutes}} min",
+    "dailyHint": "refreshed daily: quotes + your lesson phrases"
   },
   "basics": {
     "title": "Alphabet and first words",

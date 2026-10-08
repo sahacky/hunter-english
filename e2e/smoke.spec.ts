@@ -121,7 +121,7 @@ test('listen screen: understood quotes playlist with day counter (plan://curricu
   await page.goto('/#/listen')
   await expect(page.getByRole('heading', { name: 'Аудирование' })).toBeVisible({ timeout: 8000 })
   await expect(page.getByText(/Сегодня: 0 \/ 20 мин/)).toBeVisible()
-  await expect(page.getByText(/понятых цитат/)).toBeVisible()
+  await expect(page.getByText(/треков в эфире/)).toBeVisible()
   await expect(page.getByRole('button', { name: /Играть всё/ })).toBeVisible()
   // ручные минуты (U3.1): +20 добивает счётчик, −5 корректирует
   await page.getByRole('button', { name: '+20' }).click()
