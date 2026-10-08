@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Голоса — выбери один</title>
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+      body {
+        margin: 0;
+        padding: 24px 16px 64px;
+        font-family: system-ui, sans-serif;
+        background: #12140f;
+        color: #e8ecdf;
+        line-height: 1.5;
+      }
+      main {
+        max-width: 680px;
+        margin: 0 auto;
+      }
+      h1 {
+        font-size: 20px;
+        margin: 0 0 4px;
+      }
+      p.note {
+        margin: 0 0 20px;
+        color: #9aa58c;
+        font-size: 14px;
+      }
+      ol {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      li {
+        background: #1b1f15;
+        border: 1px solid #2c3324;
+        border-radius: 12px;
+        padding: 12px 14px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+      .name {
+        font-size: 15px;
+        font-weight: 600;
+      }
+      .name small {
+        font-weight: 400;
+        color: #9aa58c;
+        margin-left: 8px;
+      }
+      audio {
+        width: 100%;
+        height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Голоса озвучки курса — 10 вариантов</h1>
+      <p class="note">
+        Один и тот же текст: «House. The house is big. She feels better today. Stand proud, you're
+        strong.» Послушай все и скажи номер или имя — выбранным перегенерирую весь курс (слова,
+        фразы, цитаты, разговорник).
+      </p>
+      <ol>
+        <li>
+          <span class="name">1. Sonia <small>en-GB · британский (текущий)</small></span>
+          <audio controls preload="metadata" src="./voice-samples/en-GB-SoniaNeural.mp3"></audio>
+        </li>
+        <li>
+          <span class="name">2. Libby <small>en-GB · британский</small></span>
+          <audio controls preload="metadata" src="./voice-samples/en-GB-LibbyNeural.mp3"></audio>
+        </li>
+        <li>
+          <span class="name">3. Maisie <small>en-GB · британский, молодой</small></span>
+          <audio controls preload="metadata" src="./voice-samples/en-GB-MaisieNeural.mp3"></audio>
+        </li>
+        <li>
+          <span class="name"
+            >4. Jenny <small>en-US · американский, самый «интернетный»</small></span
+          >
+          <audio controls preload="metadata" src="./voice-samples/en-US-JennyNeural.mp3"></audio>
+        </li>
+        <li>
+          <span class="name">5. Aria <small>en-US · американский</small></span>
+          <audio controls preload="metadata" src="./voice-samples/en-US-AriaNeural.mp3"></audio>
+        </li>
+        <li>
+          <span class="name">6. Michelle <small>en-US · американский</small></span>
+          <audio controls preload="metadata" src="./voice-samples/en-US-MichelleNeural.mp3"></audio>
+        </li>
+        <li>
+          <span class="name">7. Ava <small>en-US · американский, новый</small></span>
+          <audio controls preload="metadata" src="./voice-samples/en-US-AvaNeural.mp3"></audio>
+        </li>
+        <li>
+          <span class="name">8. Emma <small>en-US · американский</small></span>
+          <audio controls preload="metadata" src="./voice-samples/en-US-EmmaNeural.mp3"></audio>
+        </li>
+        <li>
+          <span class="name">9. Natasha <small>en-AU · австралийский</small></span>
+          <audio controls preload="metadata" src="./voice-samples/en-AU-NatashaNeural.mp3"></audio>
+        </li>
+        <li>
+          <span class="name">10. Emily <small>en-IE · ирландский</small></span>
+          <audio controls preload="metadata" src="./voice-samples/en-IE-EmilyNeural.mp3"></audio>
+        </li>
+      </ol>
+    </main>
+  </body>
+</html>
