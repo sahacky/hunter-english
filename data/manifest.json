@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "content_version": 2,
-  "generated_at": "2026-10-08T07:28:18Z",
+  "generated_at": "2026-10-08T09:35:29Z",
   "files": [
     {
       "path": "lessons/exercises-a.json",
@@ -15,14 +15,14 @@
       "kind": "exercises",
       "schema_version": 1,
       "items": 1420,
-      "sha256": "99cea6d4046626a86429b5bbcb6180810da021e9930dcdfca46acdb75d1e2dc2"
+      "sha256": "d7cd9cdce3fe443ef1b1447904ac170804266a94357d2c35bec37ecd0995eda4"
     },
     {
       "path": "lessons/exercises-c.json",
       "kind": "exercises",
       "schema_version": 1,
       "items": 1460,
-      "sha256": "f2d71819efb2eac4e42693686ed5a9f44a9a64ae1f04aa8d6105fe9dc1032ea0"
+      "sha256": "08e8033e7d3e4d53e0cef4cd884b60993f2480efa09ad8a37749059c8ab12868"
     },
     {
       "path": "lessons/exercises-d.json",
@@ -92,224 +92,224 @@
       "kind": "phrasebook",
       "schema_version": 1,
       "items": 2,
-      "sha256": "75d9374e01887d193d89cbc9967da24a964ab5195f40cdd1cb73cc7f3bfb6b25"
+      "sha256": "7b948253a1c555aff95a5401c5f5a463371816ed67686fd66d8f2ba169d4d22a"
     },
     {
       "path": "phrasebook/directions.json",
       "kind": "phrasebook",
       "schema_version": 1,
       "items": 2,
-      "sha256": "35d8baf4d9884ce1eb5e2e887e93d8a4f949a75e04b8111d3e71b0f9f6c4e3a3"
+      "sha256": "1d87893d91541374242b7661659531885dc8046fdb84e54ef47ed7910f814744"
     },
     {
       "path": "phrasebook/emergency.json",
       "kind": "phrasebook",
       "schema_version": 1,
       "items": 3,
-      "sha256": "395a1d9269d9b0bc4bc8ca46fa9fe600d333860e8e2d9ffffbfdbaf8f34bb365"
+      "sha256": "a01bfd371d3c3d92c50b75a7a808133fb850230f2ce59a1820a978890674a8a6"
     },
     {
       "path": "phrasebook/hotel.json",
       "kind": "phrasebook",
       "schema_version": 1,
       "items": 2,
-      "sha256": "f2e50bdcf86c2ae105c85105edb7aca2acd290cee16656979abd5fd774dc7474"
+      "sha256": "07fbefa3abb6bcf21847b4b399e67879f0372b622991ba12c981cab7fcb14dd5"
     },
     {
       "path": "phrasebook/idioms.json",
       "kind": "phrasebook",
       "schema_version": 1,
       "items": 2,
-      "sha256": "5d68a581b54eda2940b839777c6625a6abb7e1d8d5ee918a9f5f977719eebf08"
+      "sha256": "cb8d5453ed92c09e3db14549899170c48a7419e99ca291a8a84dbdf004ef359d"
     },
     {
       "path": "phrasebook/passport.json",
       "kind": "phrasebook",
       "schema_version": 1,
       "items": 2,
-      "sha256": "e0e65bdd27026fccc81fafce8986bdb2e2149793666ad9faa82adc03ad9a538e"
+      "sha256": "f22e322ca3c3d3effa234d98612ce7628373bbda42d73a4fa7679ec288f8d4bf"
     },
     {
       "path": "phrasebook/pharmacy.json",
       "kind": "phrasebook",
       "schema_version": 1,
       "items": 1,
-      "sha256": "3692fe7f0ee754e11cdd49801b95d283d51f093a91526d14db0d67c5420e4033"
+      "sha256": "ff58fcf43192a9ac5e8ace94d0aed635b639c8c04db7e55d9a6cc9b634f8ae98"
     },
     {
       "path": "phrasebook/restaurant.json",
       "kind": "phrasebook",
       "schema_version": 1,
       "items": 1,
-      "sha256": "0b8d95b31e4b218e49f45cb5faa31615b79e26f15fecde0aa3d4f4192bae52ff"
+      "sha256": "d74a40fbe8a27550816ff50b5c8a475d8d3af7f50ecc0a1a7befad0c88cfe19e"
     },
     {
       "path": "phrasebook/shop.json",
       "kind": "phrasebook",
       "schema_version": 1,
       "items": 2,
-      "sha256": "32113ae6f5583c500490b64f58fca855f92f8dbbd212acb73dfcd555bb513f90"
+      "sha256": "c2e1fa802c764b2e2be337d49b5cbce849780c9f38df15f885f03690ae5089ca"
     },
     {
       "path": "phrasebook/smalltalk.json",
       "kind": "phrasebook",
       "schema_version": 1,
       "items": 5,
-      "sha256": "fafac5700b690603ecf19bd721638e1303f513686daae88671180b872ecbde0b"
+      "sha256": "8fbfeb099ce7b91be3be2fcfcf4a0eb45b833e87ecbfdea669a64b6a646db8df"
     },
     {
       "path": "phrasebook/taxi.json",
       "kind": "phrasebook",
       "schema_version": 1,
       "items": 2,
-      "sha256": "4f05e583368151859c44ef435a7c35f0ef2e1f9f53fbba4552a863a131ad432c"
+      "sha256": "6bf31531b99859cffdf301448136cba01b0b076f3a3a8673344ed957701dc051"
     },
     {
       "path": "phrases/phrases-a.json",
       "kind": "phrases",
       "schema_version": 1,
       "items": 701,
-      "sha256": "91581cfa06c0ae425d6b1d60c55029692c79d26be95aed76c0827c6ec44ac60b"
+      "sha256": "f747a0445a81071b94a95daa85e29244282fe74b5b603bb8bd55a35bfa4a866f"
     },
     {
       "path": "phrases/phrases-b.json",
       "kind": "phrases",
       "schema_version": 1,
       "items": 1380,
-      "sha256": "0c949fba0080af776ef99380eb03756c5fe65ef480ebc7272d83ba205cc7dcb0"
+      "sha256": "cd1936629d78e8cd7be96c007072e9511737ea5d1a3b14ef7a3c1f186d17cc02"
     },
     {
       "path": "phrases/phrases-c.json",
       "kind": "phrases",
       "schema_version": 1,
       "items": 1368,
-      "sha256": "a152e6438292e0dbc8a5725f2e332672eef741ee5e879a55abf2be377eaae6e7"
+      "sha256": "347a0c91ebf85a903ccfdf2d483f74cfa5ac2e457af560bd7475b46887e0aaaa"
     },
     {
       "path": "phrases/phrases-d.json",
       "kind": "phrases",
       "schema_version": 1,
       "items": 1253,
-      "sha256": "61c924db989d62786c3b9f191b2de67a0fb074ab73713d76e664fecacf8f853c"
+      "sha256": "160510dfa526762db2c2952a350a94d70cb625d21fe677177c71f621b5aa3343"
     },
     {
       "path": "phrases/phrases-e.json",
       "kind": "phrases",
       "schema_version": 1,
       "items": 1056,
-      "sha256": "87a9019d7854b8aed98ba51e045f809ff35bda1616c1cb7388070166ab14639a"
+      "sha256": "f3c17c34d47fe800090aea23715004b8982edc9aca76e5638fd50bd9b5e56363"
     },
     {
       "path": "phrases/phrases-s.json",
       "kind": "phrases",
       "schema_version": 1,
       "items": 452,
-      "sha256": "9e3a102366e8e589705a2dfb68b2c8daeb9114078198038507c42793e287e6a6"
+      "sha256": "d0e960d0715e8adf64d194d4eb5acc545c339d70307c553723710b3a437d116b"
     },
     {
       "path": "quotes/attack-on-titan.json",
       "kind": "quotes",
       "schema_version": 1,
       "items": 17,
-      "sha256": "77cfa47268f8b87d7df56ed306e8e643e58cae86dfbfcff5080ec14c3a3ae077"
+      "sha256": "c525928293ef6267e79fee499b95e11261dec1a2a965e42191b70388db255138"
     },
     {
       "path": "quotes/berserk.json",
       "kind": "quotes",
       "schema_version": 1,
       "items": 27,
-      "sha256": "ed61c3d3b48a12751406282435f784ffa4b3a8d5fbb22717c334d47561c29bf5"
+      "sha256": "748b33ea5a19fe745a3b80ac0c38ff4a13eae42895aada245999c33ea06c0d9c"
     },
     {
       "path": "quotes/black-mirror.json",
       "kind": "quotes",
       "schema_version": 1,
       "items": 35,
-      "sha256": "2d4e86304ae66050c300188283b0cb8962ea0f7661d823510d5ce6f4495082cd"
+      "sha256": "e6c1ec34ca040eed7ae29879624e7008da6aa455d8171b0a194759d60ce9734c"
     },
     {
       "path": "quotes/breaking-bad.json",
       "kind": "quotes",
       "schema_version": 1,
       "items": 21,
-      "sha256": "17b8cd2c39e65e690d61a15764116dcd60dbb9225e5d959831eef9ff62a23c8c"
+      "sha256": "6f2d4c9c639f9b3c72fcd8adf55a02d1fb1becbe8a243a55456ef1770c8d5bf2"
     },
     {
       "path": "quotes/fma-fma-b.json",
       "kind": "quotes",
       "schema_version": 1,
       "items": 21,
-      "sha256": "3048ad89c87fded0478125bc491feea6e27ef97a38655f81b2f5b2740975f529"
+      "sha256": "85ea0e390210706e8861409aa067abfa4dfa5aefaf2f2150d904fe242349f953"
     },
     {
       "path": "quotes/game-of-thrones.json",
       "kind": "quotes",
       "schema_version": 1,
       "items": 23,
-      "sha256": "b7c1364510e3affd9f48f4aa0146ed0f99d8cdc2b59745cdbe6cb8ecbd90126c"
+      "sha256": "edd02188463a20e19465402a5b9b0547b03dd4d9483e9883855596f9022d1e5a"
     },
     {
       "path": "quotes/igry.json",
       "kind": "quotes",
       "schema_version": 1,
       "items": 16,
-      "sha256": "5a3bcc03f311b8496d62906a840e8895ce48cdb1a208b53b81d73e770f5fbaba"
+      "sha256": "cb831aba640661a523d90873d92c2c73b8c8d90727693f7d104427fb84cbb383"
     },
     {
       "path": "quotes/jujutsu-kaisen.json",
       "kind": "quotes",
       "schema_version": 1,
       "items": 16,
-      "sha256": "080b96f4d9ac97df0d76ea5236d9cd0fe18f865d82fe6687b277bef3978b246b"
+      "sha256": "b5ea10262c6c83dc98c9f2252d4764ee73bdf12084f72c5612aace2211a7390b"
     },
     {
       "path": "quotes/lord-of-the-rings.json",
       "kind": "quotes",
       "schema_version": 1,
       "items": 21,
-      "sha256": "ae825cf15de9a9797aa813186d707872186635aeae19aa63cb2ef58407f19bbc"
+      "sha256": "77cb24efcc5dd3567f213cf228d21e5f2d6b4015d71c3b7fa4eea2da6da31788"
     },
     {
       "path": "quotes/memy.json",
       "kind": "quotes",
       "schema_version": 1,
       "items": 10,
-      "sha256": "28d74f1da533286d54d728b2b964782b1c0dad57e1f41c0b2ef1d54399be8e85"
+      "sha256": "e8bcfb01b42e49f6fd4abb412beadff04885b1e1e9fc388176870d6acfb7d8e3"
     },
     {
       "path": "quotes/solo-leveling.json",
       "kind": "quotes",
       "schema_version": 1,
       "items": 15,
-      "sha256": "02d4c42f2dc8579e5148f8d651675766415422a99e628822b35f4793ffd2d6c6"
+      "sha256": "495c96489848836264b9d541edca0f894d87e36f4a1490f42812208bbebfad22"
     },
     {
       "path": "quotes/star-wars.json",
       "kind": "quotes",
       "schema_version": 1,
       "items": 19,
-      "sha256": "c2a3b6635a225995ccb01c47ebb9aa1596253e43a8d9cc7dfb1b4dd09cb9ad09"
+      "sha256": "04d967ebf8ce4e72d414ff2252d02250823a05362ecef8a45668f8f754ea16d3"
     },
     {
       "path": "quotes/stranger-things.json",
       "kind": "quotes",
       "schema_version": 1,
       "items": 21,
-      "sha256": "2d03d4e8cdca5828dbd723585f50605fe4fc67514fc1240ebe912c0167ba5ea6"
+      "sha256": "fe76072518308e742275054d900e55cb41e0e7767d6ac1204a0d77241e96f35c"
     },
     {
       "path": "quotes/supernatural.json",
       "kind": "quotes",
       "schema_version": 1,
       "items": 41,
-      "sha256": "b32276436307e4fb1d39997d7333888c35997f2e61f7dea467f49ed0e39dff72"
+      "sha256": "c8e1042966fe48fd226f122b1994764086b5a40f48802c779e36464e22a7cd49"
     },
     {
       "path": "quotes/the-100.json",
       "kind": "quotes",
       "schema_version": 1,
       "items": 11,
-      "sha256": "418a3237200aa0bd19d51abba908b74792888fedc55e214bb6eea0f8b08ac205"
+      "sha256": "df3b0e0120091907c99b4d2b48c5f1829dc94022a166e72dabacaf7ded9bbb09"
     },
     {
       "path": "traps.json",
@@ -323,70 +323,70 @@
       "kind": "vocab",
       "schema_version": 1,
       "items": 487,
-      "sha256": "3051fb5d4d7561f3d325cee77bd2312dbcc947f03dc296bef2a655b9e3b0e5b8"
+      "sha256": "7c10e92af8d903ed377b971360d2728734d2627e919c330ca5ef4ec05616a1f1"
     },
     {
       "path": "words/words-0001-0500.json",
       "kind": "words",
       "schema_version": 1,
       "items": 786,
-      "sha256": "6eb8f78e63268f52bfdcd41d8a0f050ec1fc23b7627a475d1698c16bc9fa499c"
+      "sha256": "46d5ea59f7b8721d4dad6cdb78e02aac20e727ddbe893be51827549a01d4c481"
     },
     {
       "path": "words/words-0501-1000.json",
       "kind": "words",
       "schema_version": 1,
       "items": 739,
-      "sha256": "139be4f02e6e7a7850d3e5b51a44f29ff1316d3db74e807da2901706be1f7df9"
+      "sha256": "9d8c767087a6b2b98dae81e7493f1989974fdf76add1b5de99ada43455263336"
     },
     {
       "path": "words/words-1001-1500.json",
       "kind": "words",
       "schema_version": 1,
       "items": 717,
-      "sha256": "906980b0659f245d6d5dde86a07a365858166f797a10dc65019f66f9e2a6b392"
+      "sha256": "63a3b9ba0cb2a775e1ffeca890872f67f60703132437e57babe1a0b553d07e02"
     },
     {
       "path": "words/words-1501-2000.json",
       "kind": "words",
       "schema_version": 1,
       "items": 668,
-      "sha256": "c12df7786b7e6e6d6780f0e9b859fcb0a5cdb6e34eb9b4cd6c26b6213274cade"
+      "sha256": "0a787614b41635e8cac1b9f0063e15cef1644017110f4f26be5b07057f9c56ed"
     },
     {
       "path": "words/words-2001-2400.json",
       "kind": "words",
       "schema_version": 1,
       "items": 528,
-      "sha256": "e8692416cc4c8da8916247df105e1a4833b689dade261fda2686c03cdcdfe4be"
+      "sha256": "5a39e4b67f5a532d3d0cba827babf84daed8a07b5c3492d32cfbef2e36c4ac2d"
     },
     {
       "path": "words/words-2401-2809.json",
       "kind": "words",
       "schema_version": 1,
       "items": 527,
-      "sha256": "a02e50fdcb16c505deda1ad6c87e51297d05ec46b64a5e6115e0ceba4a57cd5a"
+      "sha256": "dd611e4480222a7cdc4eca206894a68375f15c80a4b085141ba17a8a9ae9982a"
     },
     {
       "path": "words/words-2810-4000.json",
       "kind": "words",
       "schema_version": 1,
       "items": 442,
-      "sha256": "9f720930c47ac45e2b9e3cb96b824023452d8030bfd77c9dc17cb258e58d3c51"
+      "sha256": "74995b724a668a4ab33d0e7fc2202ea49c2ddb4ef0b3d1a9b0886529ed352efa"
     },
     {
       "path": "words/words-4001-5000.json",
       "kind": "words",
       "schema_version": 1,
       "items": 441,
-      "sha256": "af23c94908f8895d6c866ce2bf8005a349b0006ea9edc386b3675023c717c468"
+      "sha256": "a1dfabc1fbbd5e263d22bbc81a226d4f0f1db8d1f461b8107712e46b28457865"
     },
     {
       "path": "words/words-spoken-only.json",
       "kind": "words",
       "schema_version": 1,
       "items": 24,
-      "sha256": "b0731a3591c65b6a15c4a485d8166604432afa9e46a4230449a8e14e6f3081ef"
+      "sha256": "99532d7e3693124d323c4f16168fd370b7812d6b29409b2645851b2c569f892d"
     }
   ]
 }

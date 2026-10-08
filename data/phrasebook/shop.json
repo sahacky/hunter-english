@@ -11,26 +11,26 @@
       "lines": [
         {
           "role": "seller",
-          "audio": "audio/phrasebook/sonia/pb-shop-01-l0.opus",
+          "audio": "audio/phrasebook/ava/pb-shop-01-l0.opus",
           "text_en": "Hello. Can I help you?",
           "translation_ru": "Здравствуйте. Чем могу помочь?"
         },
         {
           "role": "buyer",
-          "audio": "audio/phrasebook/sonia/pb-shop-01-l1.opus",
+          "audio": "audio/phrasebook/emma/pb-shop-01-l1.opus",
           "text_en": "Yes, how much is this shirt?",
           "translation_ru": "Да, сколько стоит эта рубашка?",
           "accepted": ["Yes, how much is this shirt?", "How much is this shirt?"]
         },
         {
           "role": "seller",
-          "audio": "audio/phrasebook/sonia/pb-shop-01-l2.opus",
+          "audio": "audio/phrasebook/emily/pb-shop-01-l2.opus",
           "text_en": "It is twenty dollars.",
           "translation_ru": "Она стоит двадцать долларов."
         },
         {
           "role": "buyer",
-          "audio": "audio/phrasebook/sonia/pb-shop-01-l3.opus",
+          "audio": "audio/phrasebook/michelle/pb-shop-01-l3.opus",
           "text_en": "Can I try it on?",
           "translation_ru": "Можно её примерить?",
           "accepted": ["Can I try it on?", "May I try it on?"]
@@ -43,7 +43,7 @@
         },
         {
           "role": "buyer",
-          "audio": "audio/phrasebook/sonia/pb-shop-01-l5.opus",
+          "audio": "audio/phrasebook/maisie/pb-shop-01-l5.opus",
           "text_en": "It fits. I'll take it.",
           "translation_ru": "Она подходит. Я возьму её.",
           "accepted": ["It fits. I'll take it.", "I'll take it."]
@@ -59,39 +59,39 @@
       "lines": [
         {
           "role": "seller",
-          "audio": "audio/phrasebook/sonia/pb-shop-02-l0.opus",
+          "audio": "audio/phrasebook/jenny/pb-shop-02-l0.opus",
           "text_en": "Anything else?",
           "translation_ru": "Что-нибудь ещё?"
         },
         {
           "role": "buyer",
-          "audio": "audio/phrasebook/sonia/pb-shop-02-l1.opus",
+          "audio": "audio/phrasebook/ava/pb-shop-02-l1.opus",
           "text_en": "No, that's all, thanks. How much altogether?",
           "translation_ru": "Нет, это всё, спасибо. Сколько всего?",
           "accepted": ["No, that's all, thanks. How much altogether?", "How much altogether?"]
         },
         {
           "role": "seller",
-          "audio": "audio/phrasebook/sonia/pb-shop-02-l2.opus",
+          "audio": "audio/phrasebook/libby/pb-shop-02-l2.opus",
           "text_en": "That will be thirty-five dollars. Cash or card?",
           "translation_ru": "С вас тридцать пять долларов. Наличные или карта?"
         },
         {
           "role": "buyer",
-          "audio": "audio/phrasebook/sonia/pb-shop-02-l3.opus",
+          "audio": "audio/phrasebook/emma/pb-shop-02-l3.opus",
           "text_en": "Can I pay by card?",
           "translation_ru": "Можно картой?",
           "accepted": ["Can I pay by card?", "By card, please."]
         },
         {
           "role": "seller",
-          "audio": "audio/phrasebook/sonia/pb-shop-02-l4.opus",
+          "audio": "audio/phrasebook/aria/pb-shop-02-l4.opus",
           "text_en": "Of course. Enter your pin, please.",
           "translation_ru": "Конечно. Введите пин-код, пожалуйста."
         },
         {
           "role": "buyer",
-          "audio": "audio/phrasebook/sonia/pb-shop-02-l5.opus",
+          "audio": "audio/phrasebook/emily/pb-shop-02-l5.opus",
           "text_en": "Here you are. Thank you!",
           "translation_ru": "Пожалуйста. Спасибо!",
           "accepted": ["Here you are. Thank you!", "Thank you!"]
