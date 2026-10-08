@@ -25,7 +25,7 @@ Wiktionary/NGSL). Уровни CEFR в `data/words/` выведены агент
 
 | Источник                   | Лицензия                         |
 | -------------------------- | -------------------------------- |
-| Microsoft Edge Online Voices `en-GB-SoniaNeural` — основная озвучка курса (генерация онлайн, воспроизведение офлайн) | сервис Microsoft; пакет edge-tts — MIT |
+| Microsoft Edge Online Voices — 10 женских голосов озвучки курса (Sonia/Libby/Maisie GB, Jenny/Aria/Michelle/Ava/Emma US, Natasha AU, Emily IE; генерация онлайн, воспроизведение офлайн) | сервис Microsoft; пакет edge-tts — MIT |
 | Kokoro 82M v1.0, голос `bf_emma` — прежняя озвучка (история git) | Apache 2.0 (hexgrad/Kokoro-82M) |
 | kokoro-onnx (рантайм генерации) | MIT (thewh1teagle/kokoro-onnx) |
 | Piper voice `cori` (en_GB) — прежняя озвучка (история git) | датасет public domain (LibriVox) |

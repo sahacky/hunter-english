@@ -70,11 +70,13 @@ def synth_one(job: tuple[str, str, str]) -> tuple[str, str, float]:
     return name, status, duration
 
 
-def collect_jobs(dir_name: str) -> list[tuple[str, str, str]]:
-    """Все аудио-ссылки audio/<kind>/<voice>/<file>.opus → задания для <dir_name>.
+def collect_jobs(dir_name: str | None) -> list[tuple[str, str, str]]:
+    """Аудио-ссылки audio/<kind>/<voice>/<file>.opus → задания.
 
     Голосовой сегмент любой ([a-z0-9_-]+): задания собираются по ТЕКУЩИМ
-    путям в данных, чтобы повторный запуск (смена голоса) покрывал всё.
+    путям в данных. dir_name=None — пути как есть (голос уже назначен в
+    данных, напр. assign_voices.py); иначе сегмент заменяется на dir_name
+    (полная смена голоса одним набором).
     """
     import re
 
@@ -82,32 +84,32 @@ def collect_jobs(dir_name: str) -> list[tuple[str, str, str]]:
     jobs: list[tuple[str, str, str]] = []
     seen: set[str] = set()
 
-    def add(out: str, text: str) -> None:
+    def add(out: str, text: str, ref: str | None = None) -> None:
         if out in seen or not text:
             return
         seen.add(out)
-        jobs.append((Path(out).stem, text, out))
+        jobs.append((Path(out).stem, text, out if ref is None else f"{REPO}/{ref}"))
 
     for path in sorted((DATA / "words").glob("*.json")):
         for item in json.loads(path.read_text(encoding="utf-8"))["items"]:
             a = item.get("audio", {}).get("en_gb", "")
             m = a and voice_re.match(a)
             if m:
-                add(f"{REPO}/{m.group(1)}{dir_name}{m.group(2)}", item["lemma"])
+                add(f"{REPO}/{m.group(1)}{dir_name}{m.group(2)}", item["lemma"], ref=m.group(0) if dir_name is None else None)
 
     for path in sorted((DATA / "phrases").glob("*.json")):
         for item in json.loads(path.read_text(encoding="utf-8"))["items"]:
             a = item.get("audio", {}).get("en_gb", "")
             m = a and voice_re.match(a)
             if m:
-                add(f"{REPO}/{m.group(1)}{dir_name}{m.group(2)}", item["text_en"])
+                add(f"{REPO}/{m.group(1)}{dir_name}{m.group(2)}", item["text_en"], ref=m.group(0) if dir_name is None else None)
 
     for path in sorted((DATA / "quotes").glob("*.json")):
         for item in json.loads(path.read_text(encoding="utf-8"))["items"]:
             a = item.get("audio", {}).get("en_gb", "")
             m = a and voice_re.match(a)
             if m:
-                add(f"{REPO}/{m.group(1)}{dir_name}{m.group(2)}", item["text"])
+                add(f"{REPO}/{m.group(1)}{dir_name}{m.group(2)}", item["text"], ref=m.group(0) if dir_name is None else None)
 
     for path in sorted((DATA / "phrasebook").glob("*.json")):
         for dialog in json.loads(path.read_text(encoding="utf-8"))["items"]:
@@ -115,14 +117,14 @@ def collect_jobs(dir_name: str) -> list[tuple[str, str, str]]:
                 a = line.get("audio", "")
                 m = a and voice_re.match(a)
                 if m:
-                    add(f"{REPO}/{m.group(1)}{dir_name}{m.group(2)}", line["text_en"])
+                    add(f"{REPO}/{m.group(1)}{dir_name}{m.group(2)}", line["text_en"], ref=m.group(0) if dir_name is None else None)
 
     for path in sorted((DATA / "vocab").glob("*.json")):
         for item in json.loads(path.read_text(encoding="utf-8"))["items"]:
             a = item.get("audio", "")
             m = a and voice_re.match(a)
             if m:
-                add(f"{REPO}/{m.group(1)}{dir_name}{m.group(2)}", item["en"])
+                add(f"{REPO}/{m.group(1)}{dir_name}{m.group(2)}", item["en"], ref=m.group(0) if dir_name is None else None)
 
     return jobs
 

@@ -11,46 +11,46 @@
       "lines": [
         {
           "role": "officer",
-          "audio": "audio/phrasebook/sonia/pb-passport-01-l0.opus",
+          "audio": "audio/phrasebook/natasha/pb-passport-01-l0.opus",
           "text_en": "Passport, please. What is the purpose of your visit?",
           "translation_ru": "Паспорт, пожалуйста. Какова цель вашего визита?"
         },
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/sonia/pb-passport-01-l1.opus",
+          "audio": "audio/phrasebook/michelle/pb-passport-01-l1.opus",
           "text_en": "Tourism. I'm here for a week.",
           "translation_ru": "Туризм. Я здесь на неделю.",
           "accepted": ["Tourism. I'm here for a week.", "Tourism. I'm here on holiday."]
         },
         {
           "role": "officer",
-          "audio": "audio/phrasebook/sonia/pb-passport-01-l2.opus",
+          "audio": "audio/phrasebook/michelle/pb-passport-01-l2.opus",
           "text_en": "Where will you stay?",
           "translation_ru": "Где вы остановитесь?"
         },
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/sonia/pb-passport-01-l3.opus",
+          "audio": "audio/phrasebook/maisie/pb-passport-01-l3.opus",
           "text_en": "At the Grand Hotel. I have a reservation.",
           "translation_ru": "В «Гранд-отеле». У меня бронь.",
           "accepted": ["At the Grand Hotel.", "At the Grand Hotel. I have a reservation."]
         },
         {
           "role": "officer",
-          "audio": "audio/phrasebook/sonia/pb-passport-01-l4.opus",
+          "audio": "audio/phrasebook/ava/pb-passport-01-l4.opus",
           "text_en": "Do you have a return ticket?",
           "translation_ru": "У вас есть обратный билет?"
         },
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/sonia/pb-passport-01-l5.opus",
+          "audio": "audio/phrasebook/emily/pb-passport-01-l5.opus",
           "text_en": "Yes, here it is.",
           "translation_ru": "Да, вот он.",
           "accepted": ["Yes, here it is.", "Yes."]
         },
         {
           "role": "officer",
-          "audio": "audio/phrasebook/sonia/pb-passport-01-l6.opus",
+          "audio": "audio/phrasebook/aria/pb-passport-01-l6.opus",
           "text_en": "Everything is in order. Enjoy your stay.",
           "translation_ru": "Всё в порядке. Приятного пребывания."
         }
@@ -65,39 +65,39 @@
       "lines": [
         {
           "role": "officer",
-          "audio": "audio/phrasebook/sonia/pb-passport-02-l0.opus",
+          "audio": "audio/phrasebook/natasha/pb-passport-02-l0.opus",
           "text_en": "Anything to declare?",
           "translation_ru": "Есть что декларировать?"
         },
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/sonia/pb-passport-02-l1.opus",
+          "audio": "audio/phrasebook/jenny/pb-passport-02-l1.opus",
           "text_en": "Nothing to declare.",
           "translation_ru": "Нечего декларировать.",
           "accepted": ["Nothing to declare."]
         },
         {
           "role": "officer",
-          "audio": "audio/phrasebook/sonia/pb-passport-02-l2.opus",
+          "audio": "audio/phrasebook/aria/pb-passport-02-l2.opus",
           "text_en": "Open your suitcase, please.",
           "translation_ru": "Откройте чемодан, пожалуйста."
         },
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/sonia/pb-passport-02-l3.opus",
+          "audio": "audio/phrasebook/libby/pb-passport-02-l3.opus",
           "text_en": "Sure, no problem.",
           "translation_ru": "Конечно, без проблем.",
           "accepted": ["Sure, no problem.", "Of course."]
         },
         {
           "role": "officer",
-          "audio": "audio/phrasebook/sonia/pb-passport-02-l4.opus",
+          "audio": "audio/phrasebook/michelle/pb-passport-02-l4.opus",
           "text_en": "What is in this box?",
           "translation_ru": "Что в этой коробке?"
         },
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/sonia/pb-passport-02-l5.opus",
+          "audio": "audio/phrasebook/libby/pb-passport-02-l5.opus",
           "text_en": "It's tea, a gift. For personal use.",
           "translation_ru": "Это чай, подарок. Для личного пользования.",
           "accepted": ["It's tea, a gift.", "It's tea, a gift. For personal use."]

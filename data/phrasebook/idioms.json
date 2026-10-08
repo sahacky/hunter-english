@@ -11,13 +11,13 @@
       "lines": [
         {
           "role": "local",
-          "audio": "audio/phrasebook/sonia/pb-idioms-01-l0.opus",
+          "audio": "audio/phrasebook/natasha/pb-idioms-01-l0.opus",
           "text_en": "I'm afraid your flight was overbooked.",
           "translation_ru": "Боюсь, ваш рейс был перепродан."
         },
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/sonia/pb-idioms-01-l1.opus",
+          "audio": "audio/phrasebook/ava/pb-idioms-01-l1.opus",
           "text_en": "You're kidding. I booked at the last minute as it is.",
           "translation_ru": "Да вы издеваетесь. Я и так бронировал в последний момент.",
           "accepted": [
@@ -27,13 +27,13 @@
         },
         {
           "role": "local",
-          "audio": "audio/phrasebook/sonia/pb-idioms-01-l2.opus",
+          "audio": "audio/phrasebook/ava/pb-idioms-01-l2.opus",
           "text_en": "There's a red-eye tonight. It won't break the bank.",
           "translation_ru": "Есть ночной рейс сегодня. Он не разорит вас."
         },
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/sonia/pb-idioms-01-l3.opus",
+          "audio": "audio/phrasebook/aria/pb-idioms-01-l3.opus",
           "text_en": "Fine, I'll bite the bullet. Better safe than sorry.",
           "translation_ru": "Ладно, соберусь с духом. Лучше перестраховаться.",
           "accepted": [
@@ -44,13 +44,13 @@
         },
         {
           "role": "local",
-          "audio": "audio/phrasebook/sonia/pb-idioms-01-l4.opus",
+          "audio": "audio/phrasebook/maisie/pb-idioms-01-l4.opus",
           "text_en": "Keep an eye on the gate board. It can change at any minute.",
           "translation_ru": "Следите за табло. Оно может измениться в любую минуту."
         },
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/sonia/pb-idioms-01-l5.opus",
+          "audio": "audio/phrasebook/natasha/pb-idioms-01-l5.opus",
           "text_en": "Got it. This trip has hit a snag, but let's hit the road anyway.",
           "translation_ru": "Понял. Поездка пошла наперекосяк, но всё равно двинемся в путь.",
           "accepted": [
@@ -69,13 +69,13 @@
       "lines": [
         {
           "role": "local",
-          "audio": "audio/phrasebook/sonia/pb-idioms-02-l0.opus",
+          "audio": "audio/phrasebook/ava/pb-idioms-02-l0.opus",
           "text_en": "How was the city? Did it grow on you?",
           "translation_ru": "Как вам город? Пришёлся по душе?"
         },
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/sonia/pb-idioms-02-l1.opus",
+          "audio": "audio/phrasebook/michelle/pb-idioms-02-l1.opus",
           "text_en": "Honestly, it's grown on me. Total culture shock at first.",
           "translation_ru": "Честно, он мне понравился со временем. Сначала был полный культурный шок.",
           "accepted": [
@@ -86,13 +86,13 @@
         },
         {
           "role": "local",
-          "audio": "audio/phrasebook/sonia/pb-idioms-02-l2.opus",
+          "audio": "audio/phrasebook/aria/pb-idioms-02-l2.opus",
           "text_en": "You look worn out. Jet lag, I bet.",
           "translation_ru": "Вы выглядите уставшим. Ставку делаю, джетлаг."
         },
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/sonia/pb-idioms-02-l3.opus",
+          "audio": "audio/phrasebook/emma/pb-idioms-02-l3.opus",
           "text_en": "Exactly. I'm a bit under the weather, but it's part of the fun.",
           "translation_ru": "Точно. Я немного неважно себя чувствую, но в этом часть удовольствия.",
           "accepted": [
@@ -102,13 +102,13 @@
         },
         {
           "role": "local",
-          "audio": "audio/phrasebook/sonia/pb-idioms-02-l4.opus",
+          "audio": "audio/phrasebook/michelle/pb-idioms-02-l4.opus",
           "text_en": "Should we call it a day, then?",
           "translation_ru": "Может, закруглимся?"
         },
         {
           "role": "traveler",
-          "audio": "audio/phrasebook/sonia/pb-idioms-02-l5.opus",
+          "audio": "audio/phrasebook/emma/pb-idioms-02-l5.opus",
           "text_en": "Sounds like a plan. It was a once-in-a-lifetime trip.",
           "translation_ru": "Звучит как план. Это была поездка раз в жизни.",
           "accepted": [

@@ -26444,7 +26444,7 @@
         "kind": "answer_question",
         "question_en": "Good afternoon. How can I help you?",
         "situation_ru": "Сценка (info-gap): табло не видно, ты не знаешь, с какого выхода рейс в Рим. Задача: спросить у сотрудника. Исход: ты у нужного гейта до конца посадки.",
-        "audio": "audio/phrasebook/sonia/pb-pharmacy-01-l0.opus",
+        "audio": "audio/phrasebook/ava/pb-pharmacy-01-l0.opus",
         "free_form": true
       },
       "answer": {
@@ -26490,7 +26490,7 @@
         "kind": "answer_question",
         "question_en": "Good afternoon. How can I help you?",
         "situation_ru": "Сценка (info-gap): зал прилёта, лента выдачи пуста. Ты не знаешь, где твой чемодан. Задача: спросить сотрудника. Исход: чемодан найден — ты у нужной ленты.",
-        "audio": "audio/phrasebook/sonia/pb-pharmacy-01-l0.opus",
+        "audio": "audio/phrasebook/ava/pb-pharmacy-01-l0.opus",
         "free_form": true
       },
       "answer": {
@@ -26581,7 +26581,7 @@
         "kind": "answer_question",
         "question_en": "This way, please. Here is the menu.",
         "situation_ru": "Сценка (info-gap): меню без цен. Ты не знаешь, сколько стоит комплексный обед. Задача: спросить официанта до заказа. Исход: сумма известна заранее — сюрпризов в счёте нет.",
-        "audio": "audio/phrasebook/sonia/pb-restaurant-01-l2.opus",
+        "audio": "audio/phrasebook/jenny/pb-restaurant-01-l2.opus",
         "free_form": true
       },
       "answer": {
@@ -26627,7 +26627,7 @@
         "kind": "answer_question",
         "question_en": "Where to?",
         "situation_ru": "Сценка (info-gap): такси в незнакомом городе. Ты не знаешь, сколько ехать до аэропорта. Задача: спросить до отъезда. Исход: 25 минут и фиксированная цена — на рейс успеваешь.",
-        "audio": "audio/phrasebook/sonia/pb-taxi-01-l0.opus",
+        "audio": "audio/phrasebook/jenny/pb-taxi-01-l0.opus",
         "free_form": true
       },
       "answer": {

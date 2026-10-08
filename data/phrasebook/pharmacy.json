@@ -11,13 +11,13 @@
       "lines": [
         {
           "role": "pharmacist",
-          "audio": "audio/phrasebook/sonia/pb-pharmacy-01-l0.opus",
+          "audio": "audio/phrasebook/ava/pb-pharmacy-01-l0.opus",
           "text_en": "Good afternoon. How can I help you?",
           "translation_ru": "Добрый день. Чем могу помочь?"
         },
         {
           "role": "patient",
-          "audio": "audio/phrasebook/sonia/pb-pharmacy-01-l1.opus",
+          "audio": "audio/phrasebook/michelle/pb-pharmacy-01-l1.opus",
           "text_en": "I don't feel well. I need something for a headache.",
           "translation_ru": "Мне нездоровится. Мне нужно что-нибудь от головной боли.",
           "accepted": [
@@ -27,26 +27,26 @@
         },
         {
           "role": "pharmacist",
-          "audio": "audio/phrasebook/sonia/pb-pharmacy-01-l2.opus",
+          "audio": "audio/phrasebook/libby/pb-pharmacy-01-l2.opus",
           "text_en": "When did the pain start?",
           "translation_ru": "Когда началась боль?"
         },
         {
           "role": "patient",
-          "audio": "audio/phrasebook/sonia/pb-pharmacy-01-l3.opus",
+          "audio": "audio/phrasebook/ava/pb-pharmacy-01-l3.opus",
           "text_en": "Since this morning. It is very strong.",
           "translation_ru": "С самого утра. Она очень сильная.",
           "accepted": ["Since morning. It is very strong.", "Since morning."]
         },
         {
           "role": "pharmacist",
-          "audio": "audio/phrasebook/sonia/pb-pharmacy-01-l4.opus",
+          "audio": "audio/phrasebook/michelle/pb-pharmacy-01-l4.opus",
           "text_en": "Take this medicine twice a day, after meals.",
           "translation_ru": "Принимайте это лекарство дважды в день после еды."
         },
         {
           "role": "patient",
-          "audio": "audio/phrasebook/sonia/pb-pharmacy-01-l5.opus",
+          "audio": "audio/phrasebook/libby/pb-pharmacy-01-l5.opus",
           "text_en": "Thank you. How much is it?",
           "translation_ru": "Спасибо. Сколько это стоит?",
           "accepted": ["Thank you. How much is it?", "How much is it?"]

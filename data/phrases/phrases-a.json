@@ -9,7 +9,7 @@
       "grammar_point_id": "gp-a-01",
       "variants": ["This time tomorrow I'll be flying to Rome."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0001.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0001.opus"
       }
     },
     {
@@ -19,7 +19,7 @@
       "grammar_point_id": "gp-a-01",
       "variants": ["Don't call at eight — I'll be cooking."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0002.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0002.opus"
       }
     },
     {
@@ -29,7 +29,7 @@
       "grammar_point_id": "gp-a-01",
       "variants": ["She'll be waiting for us at the airport."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0003.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0003.opus"
       }
     },
     {
@@ -39,7 +39,7 @@
       "grammar_point_id": "gp-a-01",
       "variants": ["We'll be arriving at noon."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0004.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0004.opus"
       }
     },
     {
@@ -49,7 +49,7 @@
       "grammar_point_id": "gp-a-01",
       "variants": ["He'll be sleeping when you get home."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0005.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0005.opus"
       }
     },
     {
@@ -59,7 +59,7 @@
       "grammar_point_id": "gp-a-01",
       "variants": ["They'll be having dinner at seven."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0006.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0006.opus"
       }
     },
     {
@@ -89,7 +89,7 @@
       "grammar_point_id": "gp-a-01",
       "variants": ["What will you be doing this time next week?"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0009.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0009.opus"
       }
     },
     {
@@ -109,7 +109,7 @@
       "grammar_point_id": "gp-a-01",
       "variants": ["Will you be using the car tomorrow?"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0011.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0011.opus"
       }
     },
     {
@@ -119,7 +119,7 @@
       "grammar_point_id": "gp-a-01",
       "variants": ["She won't be working on Friday."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0012.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0012.opus"
       }
     },
     {
@@ -129,7 +129,7 @@
       "grammar_point_id": "gp-a-01",
       "variants": ["We won't be staying long."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0013.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0013.opus"
       }
     },
     {
@@ -139,7 +139,7 @@
       "grammar_point_id": "gp-a-01",
       "variants": ["I won't be needing it."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0014.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0014.opus"
       }
     },
     {
@@ -149,7 +149,7 @@
       "grammar_point_id": "gp-a-01",
       "variants": ["The sun will be setting when we land."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0015.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0015.opus"
       }
     },
     {
@@ -159,7 +159,7 @@
       "grammar_point_id": "gp-a-01",
       "variants": ["Everyone will be watching."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0016.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0016.opus"
       }
     },
     {
@@ -169,7 +169,7 @@
       "grammar_point_id": "gp-a-01",
       "variants": ["The world will be sleeping."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0017.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0017.opus"
       }
     },
     {
@@ -179,7 +179,7 @@
       "grammar_point_id": "gp-a-01",
       "variants": ["I'll be thinking of you."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0018.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0018.opus"
       }
     },
     {
@@ -189,7 +189,7 @@
       "grammar_point_id": "gp-a-01",
       "variants": ["She'll be studying for her exam."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0019.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0019.opus"
       }
     },
     {
@@ -199,7 +199,7 @@
       "grammar_point_id": "gp-a-01",
       "variants": ["We'll be living in Berlin by then."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0020.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0020.opus"
       }
     },
     {
@@ -219,7 +219,7 @@
       "grammar_point_id": "gp-a-01",
       "variants": ["Don't worry — I'll be waiting."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0022.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0022.opus"
       }
     },
     {
@@ -229,7 +229,7 @@
       "grammar_point_id": "gp-a-01",
       "variants": ["While you're sleeping, I'll be working."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0023.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0023.opus"
       }
     },
     {
@@ -239,7 +239,7 @@
       "grammar_point_id": "gp-a-01",
       "variants": ["The children will be playing in the garden."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0024.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0024.opus"
       }
     },
     {
@@ -249,7 +249,7 @@
       "grammar_point_id": "gp-a-01",
       "variants": ["At this rate, we'll be losing money."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0025.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0025.opus"
       }
     },
     {
@@ -259,7 +259,7 @@
       "grammar_point_id": "gp-a-01",
       "variants": ["I'll be sitting in the office."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0026.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0026.opus"
       }
     },
     {
@@ -269,7 +269,7 @@
       "grammar_point_id": "gp-a-01",
       "variants": ["She'll be running late."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0027.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0027.opus"
       }
     },
     {
@@ -279,7 +279,7 @@
       "grammar_point_id": "gp-a-01",
       "variants": ["We'll be waiting outside."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0028.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0028.opus"
       }
     },
     {
@@ -289,7 +289,7 @@
       "grammar_point_id": "gp-a-01",
       "variants": ["They'll be watching."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0029.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0029.opus"
       }
     },
     {
@@ -299,7 +299,7 @@
       "grammar_point_id": "gp-a-01",
       "variants": ["He'll be snoring."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0030.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0030.opus"
       }
     },
     {
@@ -309,7 +309,7 @@
       "grammar_point_id": "gp-a-01",
       "variants": ["I'll be cooking dinner."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0031.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0031.opus"
       }
     },
     {
@@ -319,7 +319,7 @@
       "grammar_point_id": "gp-a-02",
       "variants": ["Yes, I'll have finished by five."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0032.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0032.opus"
       }
     },
     {
@@ -339,7 +339,7 @@
       "grammar_point_id": "gp-a-02",
       "variants": ["By the time you arrive, I'll have cooked dinner."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0034.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0034.opus"
       }
     },
     {
@@ -349,7 +349,7 @@
       "grammar_point_id": "gp-a-02",
       "variants": ["She'll have left by then."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0035.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0035.opus"
       }
     },
     {
@@ -359,7 +359,7 @@
       "grammar_point_id": "gp-a-02",
       "variants": ["We'll have been married for ten years."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0036.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0036.opus"
       }
     },
     {
@@ -369,7 +369,7 @@
       "grammar_point_id": "gp-a-02",
       "variants": ["They'll have sold everything by Friday."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0037.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0037.opus"
       }
     },
     {
@@ -379,7 +379,7 @@
       "grammar_point_id": "gp-a-02",
       "variants": ["I'll have read the book by then."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0038.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0038.opus"
       }
     },
     {
@@ -399,7 +399,7 @@
       "grammar_point_id": "gp-a-02",
       "variants": ["The plane will have landed by six."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0040.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0040.opus"
       }
     },
     {
@@ -409,7 +409,7 @@
       "grammar_point_id": "gp-a-02",
       "variants": ["Will you have finished by five?"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0041.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0041.opus"
       }
     },
     {
@@ -419,7 +419,7 @@
       "grammar_point_id": "gp-a-02",
       "variants": ["She won't have heard the news yet."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0042.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0042.opus"
       }
     },
     {
@@ -429,7 +429,7 @@
       "grammar_point_id": "gp-a-02",
       "variants": ["We won't have arrived by then."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0043.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0043.opus"
       }
     },
     {
@@ -439,7 +439,7 @@
       "grammar_point_id": "gp-a-02",
       "variants": ["In two years, I'll have learned English."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0044.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0044.opus"
       }
     },
     {
@@ -449,7 +449,7 @@
       "grammar_point_id": "gp-a-02",
       "variants": ["By 2030, they'll have built the bridge."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0045.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0045.opus"
       }
     },
     {
@@ -459,7 +459,7 @@
       "grammar_point_id": "gp-a-02",
       "variants": ["By the end of the month, I'll have saved enough."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0046.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0046.opus"
       }
     },
     {
@@ -469,7 +469,7 @@
       "grammar_point_id": "gp-a-02",
       "variants": ["She'll have written three books by then."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0047.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0047.opus"
       }
     },
     {
@@ -489,7 +489,7 @@
       "grammar_point_id": "gp-a-02",
       "variants": ["Everything will have changed."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0049.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0049.opus"
       }
     },
     {
@@ -509,7 +509,7 @@
       "grammar_point_id": "gp-a-02",
       "variants": ["The results will have been announced."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0051.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0051.opus"
       }
     },
     {
@@ -519,7 +519,7 @@
       "grammar_point_id": "gp-a-02",
       "variants": ["It will have been a long journey."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0052.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0052.opus"
       }
     },
     {
@@ -529,7 +529,7 @@
       "grammar_point_id": "gp-a-02",
       "variants": ["I'll have finished."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0053.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0053.opus"
       }
     },
     {
@@ -549,7 +549,7 @@
       "grammar_point_id": "gp-a-02",
       "variants": ["We'll have arrived."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0055.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0055.opus"
       }
     },
     {
@@ -559,7 +559,7 @@
       "grammar_point_id": "gp-a-02",
       "variants": ["They'll have eaten."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0056.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0056.opus"
       }
     },
     {
@@ -569,7 +569,7 @@
       "grammar_point_id": "gp-a-02",
       "variants": ["He'll have gone."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0057.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0057.opus"
       }
     },
     {
@@ -579,7 +579,7 @@
       "grammar_point_id": "gp-a-02",
       "variants": ["He'll have forgotten by tomorrow."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0058.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0058.opus"
       }
     },
     {
@@ -599,7 +599,7 @@
       "grammar_point_id": "gp-a-03",
       "variants": ["I am working now."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0060.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0060.opus"
       }
     },
     {
@@ -609,7 +609,7 @@
       "grammar_point_id": "gp-a-03",
       "variants": ["I have worked here for years."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0061.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0061.opus"
       }
     },
     {
@@ -619,7 +619,7 @@
       "grammar_point_id": "gp-a-03",
       "variants": ["I have been working all morning."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0062.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0062.opus"
       }
     },
     {
@@ -629,7 +629,7 @@
       "grammar_point_id": "gp-a-03",
       "variants": ["I worked yesterday."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0063.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0063.opus"
       }
     },
     {
@@ -649,7 +649,7 @@
       "grammar_point_id": "gp-a-03",
       "variants": ["I had worked before you came."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0065.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0065.opus"
       }
     },
     {
@@ -659,7 +659,7 @@
       "grammar_point_id": "gp-a-03",
       "variants": ["I had been working for hours."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0066.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0066.opus"
       }
     },
     {
@@ -669,7 +669,7 @@
       "grammar_point_id": "gp-a-03",
       "variants": ["I will work tomorrow."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0067.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0067.opus"
       }
     },
     {
@@ -679,7 +679,7 @@
       "grammar_point_id": "gp-a-03",
       "variants": ["I will be working at eight."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0068.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0068.opus"
       }
     },
     {
@@ -689,7 +689,7 @@
       "grammar_point_id": "gp-a-03",
       "variants": ["I will have worked by then."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0069.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0069.opus"
       }
     },
     {
@@ -699,7 +699,7 @@
       "grammar_point_id": "gp-a-03",
       "variants": ["She cooks dinner every day."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0070.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0070.opus"
       }
     },
     {
@@ -709,7 +709,7 @@
       "grammar_point_id": "gp-a-03",
       "variants": ["She is cooking right now."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0071.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0071.opus"
       }
     },
     {
@@ -719,7 +719,7 @@
       "grammar_point_id": "gp-a-03",
       "variants": ["She has cooked the meal."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0072.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0072.opus"
       }
     },
     {
@@ -729,7 +729,7 @@
       "grammar_point_id": "gp-a-03",
       "variants": ["She cooked yesterday."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0073.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0073.opus"
       }
     },
     {
@@ -739,7 +739,7 @@
       "grammar_point_id": "gp-a-03",
       "variants": ["She was cooking when I arrived."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0074.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0074.opus"
       }
     },
     {
@@ -749,7 +749,7 @@
       "grammar_point_id": "gp-a-03",
       "variants": ["She will cook tomorrow."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0075.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0075.opus"
       }
     },
     {
@@ -769,7 +769,7 @@
       "grammar_point_id": "gp-a-03",
       "variants": ["He is playing now."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0077.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0077.opus"
       }
     },
     {
@@ -779,7 +779,7 @@
       "grammar_point_id": "gp-a-03",
       "variants": ["He played last week."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0078.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0078.opus"
       }
     },
     {
@@ -789,7 +789,7 @@
       "grammar_point_id": "gp-a-03",
       "variants": ["He was playing when it started to rain."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0079.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0079.opus"
       }
     },
     {
@@ -799,7 +799,7 @@
       "grammar_point_id": "gp-a-03",
       "variants": ["He will play next Sunday."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0080.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0080.opus"
       }
     },
     {
@@ -809,7 +809,7 @@
       "grammar_point_id": "gp-a-03",
       "variants": ["yesterday — Past Simple"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0081.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0081.opus"
       }
     },
     {
@@ -819,7 +819,7 @@
       "grammar_point_id": "gp-a-03",
       "variants": ["now — Present Continuous"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0082.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0082.opus"
       }
     },
     {
@@ -829,7 +829,7 @@
       "grammar_point_id": "gp-a-03",
       "variants": ["every day — Present Simple"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0083.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0083.opus"
       }
     },
     {
@@ -839,7 +839,7 @@
       "grammar_point_id": "gp-a-03",
       "variants": ["since 2020 — Present Perfect"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0084.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0084.opus"
       }
     },
     {
@@ -849,7 +849,7 @@
       "grammar_point_id": "gp-a-03",
       "variants": ["tomorrow — Future Simple"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0085.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0085.opus"
       }
     },
     {
@@ -859,7 +859,7 @@
       "grammar_point_id": "gp-a-03",
       "variants": ["when I arrived — Past Continuous"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0086.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0086.opus"
       }
     },
     {
@@ -869,7 +869,7 @@
       "grammar_point_id": "gp-a-03",
       "variants": ["by then — Future Perfect"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0087.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0087.opus"
       }
     },
     {
@@ -879,7 +879,7 @@
       "grammar_point_id": "gp-a-03",
       "variants": ["Choose the tense by the marker."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0088.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0088.opus"
       }
     },
     {
@@ -889,7 +889,7 @@
       "grammar_point_id": "gp-a-04",
       "variants": ["The road is being repaired."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0089.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0089.opus"
       }
     },
     {
@@ -899,7 +899,7 @@
       "grammar_point_id": "gp-a-04",
       "variants": ["The house is being built."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0090.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0090.opus"
       }
     },
     {
@@ -909,7 +909,7 @@
       "grammar_point_id": "gp-a-04",
       "variants": ["The problem is being solved."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0091.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0091.opus"
       }
     },
     {
@@ -919,7 +919,7 @@
       "grammar_point_id": "gp-a-04",
       "variants": ["The new law is being discussed."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0092.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0092.opus"
       }
     },
     {
@@ -929,7 +929,7 @@
       "grammar_point_id": "gp-a-04",
       "variants": ["The rooms are being cleaned."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0093.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0093.opus"
       }
     },
     {
@@ -939,7 +939,7 @@
       "grammar_point_id": "gp-a-04",
       "variants": ["The bridge has been built."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0094.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0094.opus"
       }
     },
     {
@@ -949,7 +949,7 @@
       "grammar_point_id": "gp-a-04",
       "variants": ["The work has been finished."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0095.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0095.opus"
       }
     },
     {
@@ -959,7 +959,7 @@
       "grammar_point_id": "gp-a-04",
       "variants": ["The tickets have been booked."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0096.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0096.opus"
       }
     },
     {
@@ -969,7 +969,7 @@
       "grammar_point_id": "gp-a-04",
       "variants": ["The message has been sent."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0097.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0097.opus"
       }
     },
     {
@@ -979,7 +979,7 @@
       "grammar_point_id": "gp-a-04",
       "variants": ["Everything has been arranged."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0098.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0098.opus"
       }
     },
     {
@@ -989,7 +989,7 @@
       "grammar_point_id": "gp-a-04",
       "variants": ["The results have been announced."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0099.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0099.opus"
       }
     },
     {
@@ -999,7 +999,7 @@
       "grammar_point_id": "gp-a-04",
       "variants": ["The letter had been sent before I called."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0100.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0100.opus"
       }
     },
     {
@@ -1009,7 +1009,7 @@
       "grammar_point_id": "gp-a-04",
       "variants": ["The house had been sold by then."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0101.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0101.opus"
       }
     },
     {
@@ -1019,7 +1019,7 @@
       "grammar_point_id": "gp-a-04",
       "variants": ["The room had been cleaned when I arrived."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0102.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0102.opus"
       }
     },
     {
@@ -1029,7 +1029,7 @@
       "grammar_point_id": "gp-a-04",
       "variants": ["The road will have been repaired by June."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0103.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0103.opus"
       }
     },
     {
@@ -1039,7 +1039,7 @@
       "grammar_point_id": "gp-a-04",
       "variants": ["The project will have been completed by Friday."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0104.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0104.opus"
       }
     },
     {
@@ -1049,7 +1049,7 @@
       "grammar_point_id": "gp-a-04",
       "variants": ["The building was being renovated."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0105.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0105.opus"
       }
     },
     {
@@ -1059,7 +1059,7 @@
       "grammar_point_id": "gp-a-04",
       "variants": ["The road was being repaired when we drove past."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0106.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0106.opus"
       }
     },
     {
@@ -1069,7 +1069,7 @@
       "grammar_point_id": "gp-a-04",
       "variants": ["This must be done today."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0107.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0107.opus"
       }
     },
     {
@@ -1079,7 +1079,7 @@
       "grammar_point_id": "gp-a-04",
       "variants": ["The report must be submitted by Monday."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0108.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0108.opus"
       }
     },
     {
@@ -1089,7 +1089,7 @@
       "grammar_point_id": "gp-a-04",
       "variants": ["This can be fixed."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0109.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0109.opus"
       }
     },
     {
@@ -1099,7 +1099,7 @@
       "grammar_point_id": "gp-a-04",
       "variants": ["It should be done carefully."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0110.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0110.opus"
       }
     },
     {
@@ -1109,7 +1109,7 @@
       "grammar_point_id": "gp-a-04",
       "variants": ["The room needs to be cleaned."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0111.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0111.opus"
       }
     },
     {
@@ -1119,7 +1119,7 @@
       "grammar_point_id": "gp-a-04",
       "variants": ["He is said to be rich."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0112.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0112.opus"
       }
     },
     {
@@ -1139,7 +1139,7 @@
       "grammar_point_id": "gp-a-04",
       "variants": ["It is expected to rain."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0114.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0114.opus"
       }
     },
     {
@@ -1149,7 +1149,7 @@
       "grammar_point_id": "gp-a-04",
       "variants": ["It is being built."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0115.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0115.opus"
       }
     },
     {
@@ -1159,7 +1159,7 @@
       "grammar_point_id": "gp-a-04",
       "variants": ["The work is done."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0116.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0116.opus"
       }
     },
     {
@@ -1169,7 +1169,7 @@
       "grammar_point_id": "gp-a-04",
       "variants": ["The road is closed."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0117.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0117.opus"
       }
     },
     {
@@ -1179,7 +1179,7 @@
       "grammar_point_id": "gp-a-04",
       "variants": ["The house is sold."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0118.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0118.opus"
       }
     },
     {
@@ -1199,7 +1199,7 @@
       "grammar_point_id": "gp-a-05",
       "variants": ["This must be done."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0120.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0120.opus"
       }
     },
     {
@@ -1209,7 +1209,7 @@
       "grammar_point_id": "gp-a-05",
       "variants": ["The report must be finished by Monday."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0121.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0121.opus"
       }
     },
     {
@@ -1219,7 +1219,7 @@
       "grammar_point_id": "gp-a-05",
       "variants": ["The form has to be filled in."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0122.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0122.opus"
       }
     },
     {
@@ -1229,7 +1229,7 @@
       "grammar_point_id": "gp-a-05",
       "variants": ["The room should be cleaned."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0123.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0123.opus"
       }
     },
     {
@@ -1239,7 +1239,7 @@
       "grammar_point_id": "gp-a-05",
       "variants": ["It can be done online."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0124.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0124.opus"
       }
     },
     {
@@ -1249,7 +1249,7 @@
       "grammar_point_id": "gp-a-05",
       "variants": ["Tickets can be bought at the station."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0125.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0125.opus"
       }
     },
     {
@@ -1259,7 +1259,7 @@
       "grammar_point_id": "gp-a-05",
       "variants": ["This could be arranged."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0126.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0126.opus"
       }
     },
     {
@@ -1269,7 +1269,7 @@
       "grammar_point_id": "gp-a-05",
       "variants": ["The results will be announced tomorrow."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0127.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0127.opus"
       }
     },
     {
@@ -1279,7 +1279,7 @@
       "grammar_point_id": "gp-a-05",
       "variants": ["A new school will be built here."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0128.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0128.opus"
       }
     },
     {
@@ -1289,7 +1289,7 @@
       "grammar_point_id": "gp-a-05",
       "variants": ["The problem will be solved soon."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0129.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0129.opus"
       }
     },
     {
@@ -1299,7 +1299,7 @@
       "grammar_point_id": "gp-a-05",
       "variants": ["The road is being repaired."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0130.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0130.opus"
       }
     },
     {
@@ -1309,7 +1309,7 @@
       "grammar_point_id": "gp-a-05",
       "variants": ["The house has been sold."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0131.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0131.opus"
       }
     },
     {
@@ -1319,7 +1319,7 @@
       "grammar_point_id": "gp-a-05",
       "variants": ["English is spoken all over the world."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0132.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0132.opus"
       }
     },
     {
@@ -1329,7 +1329,7 @@
       "grammar_point_id": "gp-a-05",
       "variants": ["This brand is made in Italy."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0133.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0133.opus"
       }
     },
     {
@@ -1339,7 +1339,7 @@
       "grammar_point_id": "gp-a-05",
       "variants": ["The winner will be chosen by the jury."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0134.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0134.opus"
       }
     },
     {
@@ -1349,7 +1349,7 @@
       "grammar_point_id": "gp-a-05",
       "variants": ["The best player was selected for the team."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0135.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0135.opus"
       }
     },
     {
@@ -1359,7 +1359,7 @@
       "grammar_point_id": "gp-a-05",
       "variants": ["He was awarded a prize."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0136.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0136.opus"
       }
     },
     {
@@ -1369,7 +1369,7 @@
       "grammar_point_id": "gp-a-05",
       "variants": ["She was given a medal."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0137.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0137.opus"
       }
     },
     {
@@ -1379,7 +1379,7 @@
       "grammar_point_id": "gp-a-05",
       "variants": ["We were invited to the party."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0138.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0138.opus"
       }
     },
     {
@@ -1389,7 +1389,7 @@
       "grammar_point_id": "gp-a-05",
       "variants": ["They were told to wait."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0139.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0139.opus"
       }
     },
     {
@@ -1399,7 +1399,7 @@
       "grammar_point_id": "gp-a-05",
       "variants": ["I was asked to help."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0140.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0140.opus"
       }
     },
     {
@@ -1409,7 +1409,7 @@
       "grammar_point_id": "gp-a-05",
       "variants": ["It is considered rude."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0141.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0141.opus"
       }
     },
     {
@@ -1419,7 +1419,7 @@
       "grammar_point_id": "gp-a-05",
       "variants": ["Smoking is not allowed here."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0142.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0142.opus"
       }
     },
     {
@@ -1429,7 +1429,7 @@
       "grammar_point_id": "gp-a-05",
       "variants": ["Photography is prohibited."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0143.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0143.opus"
       }
     },
     {
@@ -1439,7 +1439,7 @@
       "grammar_point_id": "gp-a-05",
       "variants": ["Credit cards are accepted."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0144.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0144.opus"
       }
     },
     {
@@ -1459,7 +1459,7 @@
       "grammar_point_id": "gp-a-06",
       "variants": ["The house has been sold."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0146.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0146.opus"
       }
     },
     {
@@ -1469,7 +1469,7 @@
       "grammar_point_id": "gp-a-06",
       "variants": ["This must be done today."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0147.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0147.opus"
       }
     },
     {
@@ -1479,7 +1479,7 @@
       "grammar_point_id": "gp-a-06",
       "variants": ["By next year, he'll have finished."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0148.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0148.opus"
       }
     },
     {
@@ -1489,7 +1489,7 @@
       "grammar_point_id": "gp-a-06",
       "variants": ["I'll be flying to Rome tomorrow."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0149.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0149.opus"
       }
     },
     {
@@ -1499,7 +1499,7 @@
       "grammar_point_id": "gp-a-06",
       "variants": ["She'll have left by then."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0150.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0150.opus"
       }
     },
     {
@@ -1509,7 +1509,7 @@
       "grammar_point_id": "gp-a-06",
       "variants": ["I'll be working all day."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0151.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0151.opus"
       }
     },
     {
@@ -1519,7 +1519,7 @@
       "grammar_point_id": "gp-a-06",
       "variants": ["The results will have been announced."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0152.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0152.opus"
       }
     },
     {
@@ -1529,7 +1529,7 @@
       "grammar_point_id": "gp-a-06",
       "variants": ["I work every day."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0153.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0153.opus"
       }
     },
     {
@@ -1539,7 +1539,7 @@
       "grammar_point_id": "gp-a-06",
       "variants": ["I worked yesterday."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0154.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0154.opus"
       }
     },
     {
@@ -1549,7 +1549,7 @@
       "grammar_point_id": "gp-a-06",
       "variants": ["I am working now."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0155.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0155.opus"
       }
     },
     {
@@ -1559,7 +1559,7 @@
       "grammar_point_id": "gp-a-06",
       "variants": ["I was working when you called."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0156.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0156.opus"
       }
     },
     {
@@ -1569,7 +1569,7 @@
       "grammar_point_id": "gp-a-06",
       "variants": ["I have worked here for years."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0157.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0157.opus"
       }
     },
     {
@@ -1579,7 +1579,7 @@
       "grammar_point_id": "gp-a-06",
       "variants": ["I had worked before you came."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0158.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0158.opus"
       }
     },
     {
@@ -1589,7 +1589,7 @@
       "grammar_point_id": "gp-a-06",
       "variants": ["I will work tomorrow."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0159.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0159.opus"
       }
     },
     {
@@ -1599,7 +1599,7 @@
       "grammar_point_id": "gp-a-06",
       "variants": ["She cooks, she is cooking, she cooked."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0160.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0160.opus"
       }
     },
     {
@@ -1609,7 +1609,7 @@
       "grammar_point_id": "gp-a-06",
       "variants": ["The house was built, is being built, will be built."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0161.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0161.opus"
       }
     },
     {
@@ -1619,7 +1619,7 @@
       "grammar_point_id": "gp-a-06",
       "variants": ["Everything has been arranged."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0162.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0162.opus"
       }
     },
     {
@@ -1629,7 +1629,7 @@
       "grammar_point_id": "gp-a-06",
       "variants": ["It can be done."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0163.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0163.opus"
       }
     },
     {
@@ -1639,7 +1639,7 @@
       "grammar_point_id": "gp-a-06",
       "variants": ["The report should be submitted."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0164.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0164.opus"
       }
     },
     {
@@ -1649,7 +1649,7 @@
       "grammar_point_id": "gp-a-06",
       "variants": ["This time tomorrow I'll be lying on a beach."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0165.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0165.opus"
       }
     },
     {
@@ -1659,7 +1659,7 @@
       "grammar_point_id": "gp-a-06",
       "variants": ["By the end of the month, I'll have saved enough."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0166.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0166.opus"
       }
     },
     {
@@ -1669,7 +1669,7 @@
       "grammar_point_id": "gp-a-06",
       "variants": ["Will you have finished by five?"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0167.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0167.opus"
       }
     },
     {
@@ -1679,7 +1679,7 @@
       "grammar_point_id": "gp-a-06",
       "variants": ["What will you be doing next week?"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0168.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0168.opus"
       }
     },
     {
@@ -1689,7 +1689,7 @@
       "grammar_point_id": "gp-a-06",
       "variants": ["The bridge has been built."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0169.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0169.opus"
       }
     },
     {
@@ -1699,7 +1699,7 @@
       "grammar_point_id": "gp-a-06",
       "variants": ["The new law is being discussed."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0170.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0170.opus"
       }
     },
     {
@@ -1729,7 +1729,7 @@
       "grammar_point_id": "gp-a-06",
       "variants": ["by then — Future Perfect"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0173.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0173.opus"
       }
     },
     {
@@ -1739,7 +1739,7 @@
       "grammar_point_id": "gp-a-06",
       "variants": ["Choose the tense by the marker."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0174.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0174.opus"
       }
     },
     {
@@ -1749,7 +1749,7 @@
       "grammar_point_id": "gp-a-07",
       "variants": ["He must have forgotten."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0175.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0175.opus"
       }
     },
     {
@@ -1759,7 +1759,7 @@
       "grammar_point_id": "gp-a-07",
       "variants": ["She must have left already."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0176.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0176.opus"
       }
     },
     {
@@ -1769,7 +1769,7 @@
       "grammar_point_id": "gp-a-07",
       "variants": ["They must have missed the bus."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0177.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0177.opus"
       }
     },
     {
@@ -1779,7 +1779,7 @@
       "grammar_point_id": "gp-a-07",
       "variants": ["It must have rained last night."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0178.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0178.opus"
       }
     },
     {
@@ -1789,7 +1789,7 @@
       "grammar_point_id": "gp-a-07",
       "variants": ["You must have worked hard."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0179.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0179.opus"
       }
     },
     {
@@ -1799,7 +1799,7 @@
       "grammar_point_id": "gp-a-07",
       "variants": ["He can't have said that."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0180.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0180.opus"
       }
     },
     {
@@ -1809,7 +1809,7 @@
       "grammar_point_id": "gp-a-07",
       "variants": ["She can't have forgotten."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0181.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0181.opus"
       }
     },
     {
@@ -1819,7 +1819,7 @@
       "grammar_point_id": "gp-a-07",
       "variants": ["They can't have finished already."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0182.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0182.opus"
       }
     },
     {
@@ -1839,7 +1839,7 @@
       "grammar_point_id": "gp-a-07",
       "variants": ["She may have changed her mind."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0184.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0184.opus"
       }
     },
     {
@@ -1849,7 +1849,7 @@
       "grammar_point_id": "gp-a-07",
       "variants": ["He may have missed the train."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0185.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0185.opus"
       }
     },
     {
@@ -1859,7 +1859,7 @@
       "grammar_point_id": "gp-a-07",
       "variants": ["They may have gone home."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0186.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0186.opus"
       }
     },
     {
@@ -1869,7 +1869,7 @@
       "grammar_point_id": "gp-a-07",
       "variants": ["She might have taken it."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0187.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0187.opus"
       }
     },
     {
@@ -1889,7 +1889,7 @@
       "grammar_point_id": "gp-a-07",
       "variants": ["They might have been delayed."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0189.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0189.opus"
       }
     },
     {
@@ -1899,7 +1899,7 @@
       "grammar_point_id": "gp-a-07",
       "variants": ["She could have won."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0190.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0190.opus"
       }
     },
     {
@@ -1909,7 +1909,7 @@
       "grammar_point_id": "gp-a-07",
       "variants": ["He could have helped."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0191.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0191.opus"
       }
     },
     {
@@ -1919,7 +1919,7 @@
       "grammar_point_id": "gp-a-07",
       "variants": ["We could have caught the train."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0192.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0192.opus"
       }
     },
     {
@@ -1929,7 +1929,7 @@
       "grammar_point_id": "gp-a-07",
       "variants": ["You should have called."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0193.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0193.opus"
       }
     },
     {
@@ -1939,7 +1939,7 @@
       "grammar_point_id": "gp-a-07",
       "variants": ["I should have studied more."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0194.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0194.opus"
       }
     },
     {
@@ -1949,7 +1949,7 @@
       "grammar_point_id": "gp-a-07",
       "variants": ["She shouldn't have said that."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0195.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0195.opus"
       }
     },
     {
@@ -1959,7 +1959,7 @@
       "grammar_point_id": "gp-a-07",
       "variants": ["He shouldn't have driven so fast."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0196.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0196.opus"
       }
     },
     {
@@ -1969,7 +1969,7 @@
       "grammar_point_id": "gp-a-07",
       "variants": ["I shouldn't have eaten so much."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0197.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0197.opus"
       }
     },
     {
@@ -1979,7 +1979,7 @@
       "grammar_point_id": "gp-a-07",
       "variants": ["You should have told me."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0198.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0198.opus"
       }
     },
     {
@@ -1989,7 +1989,7 @@
       "grammar_point_id": "gp-a-07",
       "variants": ["I should have known better."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0199.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0199.opus"
       }
     },
     {
@@ -1999,7 +1999,7 @@
       "grammar_point_id": "gp-a-07",
       "variants": ["We should have booked earlier."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0200.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0200.opus"
       }
     },
     {
@@ -2009,7 +2009,7 @@
       "grammar_point_id": "gp-a-07",
       "variants": ["She must have been tired."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0201.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0201.opus"
       }
     },
     {
@@ -2019,7 +2019,7 @@
       "grammar_point_id": "gp-a-07",
       "variants": ["He must have been in a hurry."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0202.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0202.opus"
       }
     },
     {
@@ -2029,7 +2029,7 @@
       "grammar_point_id": "gp-a-07",
       "variants": ["They can't have been happy."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0203.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0203.opus"
       }
     },
     {
@@ -2059,7 +2059,7 @@
       "grammar_point_id": "gp-a-07",
       "variants": ["It would have been different."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0206.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0206.opus"
       }
     },
     {
@@ -2069,7 +2069,7 @@
       "grammar_point_id": "gp-a-07",
       "variants": ["Who could have done this?"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0207.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0207.opus"
       }
     },
     {
@@ -2079,7 +2079,7 @@
       "grammar_point_id": "gp-a-07",
       "variants": ["What could have happened?"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0208.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0208.opus"
       }
     },
     {
@@ -2089,7 +2089,7 @@
       "grammar_point_id": "gp-a-07",
       "variants": ["Where could she have gone?"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0209.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0209.opus"
       }
     },
     {
@@ -2099,7 +2099,7 @@
       "grammar_point_id": "gp-a-08",
       "variants": ["You should have called me."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0210.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0210.opus"
       }
     },
     {
@@ -2109,7 +2109,7 @@
       "grammar_point_id": "gp-a-08",
       "variants": ["I should have studied harder."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0211.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0211.opus"
       }
     },
     {
@@ -2119,7 +2119,7 @@
       "grammar_point_id": "gp-a-08",
       "variants": ["We should have left earlier."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0212.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0212.opus"
       }
     },
     {
@@ -2129,7 +2129,7 @@
       "grammar_point_id": "gp-a-08",
       "variants": ["She should have asked for help."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0213.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0213.opus"
       }
     },
     {
@@ -2149,7 +2149,7 @@
       "grammar_point_id": "gp-a-08",
       "variants": ["I shouldn't have said that."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0215.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0215.opus"
       }
     },
     {
@@ -2159,7 +2159,7 @@
       "grammar_point_id": "gp-a-08",
       "variants": ["You shouldn't have gone there."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0216.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0216.opus"
       }
     },
     {
@@ -2169,7 +2169,7 @@
       "grammar_point_id": "gp-a-08",
       "variants": ["She shouldn't have spent so much."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0217.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0217.opus"
       }
     },
     {
@@ -2179,7 +2179,7 @@
       "grammar_point_id": "gp-a-08",
       "variants": ["We shouldn't have stayed so late."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0218.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0218.opus"
       }
     },
     {
@@ -2189,7 +2189,7 @@
       "grammar_point_id": "gp-a-08",
       "variants": ["He shouldn't have driven."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0219.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0219.opus"
       }
     },
     {
@@ -2199,7 +2199,7 @@
       "grammar_point_id": "gp-a-08",
       "variants": ["I shouldn't have eaten that cake."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0220.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0220.opus"
       }
     },
     {
@@ -2209,7 +2209,7 @@
       "grammar_point_id": "gp-a-08",
       "variants": ["You could have warned me!"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0221.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0221.opus"
       }
     },
     {
@@ -2219,7 +2219,7 @@
       "grammar_point_id": "gp-a-08",
       "variants": ["She could have been a doctor."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0222.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0222.opus"
       }
     },
     {
@@ -2229,7 +2229,7 @@
       "grammar_point_id": "gp-a-08",
       "variants": ["We could have won the game."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0223.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0223.opus"
       }
     },
     {
@@ -2239,7 +2239,7 @@
       "grammar_point_id": "gp-a-08",
       "variants": ["He could have died!"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0224.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0224.opus"
       }
     },
     {
@@ -2249,7 +2249,7 @@
       "grammar_point_id": "gp-a-08",
       "variants": ["I could have gone to university."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0225.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0225.opus"
       }
     },
     {
@@ -2259,7 +2259,7 @@
       "grammar_point_id": "gp-a-08",
       "variants": ["If only I had known!"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0226.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0226.opus"
       }
     },
     {
@@ -2269,7 +2269,7 @@
       "grammar_point_id": "gp-a-08",
       "variants": ["If only we had more time!"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0227.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0227.opus"
       }
     },
     {
@@ -2279,7 +2279,7 @@
       "grammar_point_id": "gp-a-08",
       "variants": ["If only she had listened!"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0228.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0228.opus"
       }
     },
     {
@@ -2289,7 +2289,7 @@
       "grammar_point_id": "gp-a-08",
       "variants": ["I wish I had studied."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0229.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0229.opus"
       }
     },
     {
@@ -2299,7 +2299,7 @@
       "grammar_point_id": "gp-a-08",
       "variants": ["I wish I had known."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0230.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0230.opus"
       }
     },
     {
@@ -2309,7 +2309,7 @@
       "grammar_point_id": "gp-a-08",
       "variants": ["I wish we had stayed."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0231.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0231.opus"
       }
     },
     {
@@ -2319,7 +2319,7 @@
       "grammar_point_id": "gp-a-08",
       "variants": ["She wishes she had tried harder."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0232.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0232.opus"
       }
     },
     {
@@ -2329,7 +2329,7 @@
       "grammar_point_id": "gp-a-08",
       "variants": ["He wishes he hadn't said it."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0233.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0233.opus"
       }
     },
     {
@@ -2339,7 +2339,7 @@
       "grammar_point_id": "gp-a-08",
       "variants": ["I wish I hadn't gone."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0234.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0234.opus"
       }
     },
     {
@@ -2349,7 +2349,7 @@
       "grammar_point_id": "gp-a-08",
       "variants": ["It's too late now."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0235.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0235.opus"
       }
     },
     {
@@ -2359,7 +2359,7 @@
       "grammar_point_id": "gp-a-08",
       "variants": ["What's done is done."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0236.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0236.opus"
       }
     },
     {
@@ -2369,7 +2369,7 @@
       "grammar_point_id": "gp-a-08",
       "variants": ["No use crying over spilt milk."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0237.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0237.opus"
       }
     },
     {
@@ -2379,7 +2379,7 @@
       "grammar_point_id": "gp-a-08",
       "variants": ["Hindsight is always 20/20."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0238.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0238.opus"
       }
     },
     {
@@ -2389,7 +2389,7 @@
       "grammar_point_id": "gp-a-08",
       "variants": ["You live and learn."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0239.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0239.opus"
       }
     },
     {
@@ -2399,7 +2399,7 @@
       "grammar_point_id": "gp-a-08",
       "variants": ["Learn from your mistakes."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0240.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0240.opus"
       }
     },
     {
@@ -2409,7 +2409,7 @@
       "grammar_point_id": "gp-a-08",
       "variants": ["Better luck next time."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0241.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0241.opus"
       }
     },
     {
@@ -2419,7 +2419,7 @@
       "grammar_point_id": "gp-a-08",
       "variants": ["Everyone makes mistakes."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0242.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0242.opus"
       }
     },
     {
@@ -2429,7 +2429,7 @@
       "grammar_point_id": "gp-a-08",
       "variants": ["To err is human."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0243.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0243.opus"
       }
     },
     {
@@ -2439,7 +2439,7 @@
       "grammar_point_id": "gp-a-08",
       "variants": ["Forgive yourself."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0244.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0244.opus"
       }
     },
     {
@@ -2449,7 +2449,7 @@
       "grammar_point_id": "gp-a-09",
       "variants": ["If I had studied, I would have passed."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0245.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0245.opus"
       }
     },
     {
@@ -2479,7 +2479,7 @@
       "grammar_point_id": "gp-a-09",
       "variants": ["If he had asked me, I would have helped."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0248.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0248.opus"
       }
     },
     {
@@ -2489,7 +2489,7 @@
       "grammar_point_id": "gp-a-09",
       "variants": ["If they had tried harder, they would have won."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0249.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0249.opus"
       }
     },
     {
@@ -2499,7 +2499,7 @@
       "grammar_point_id": "gp-a-09",
       "variants": ["If I had known, I would have told you."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0250.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0250.opus"
       }
     },
     {
@@ -2509,7 +2509,7 @@
       "grammar_point_id": "gp-a-09",
       "variants": ["If she had been there, she would have seen it."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0251.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0251.opus"
       }
     },
     {
@@ -2519,7 +2519,7 @@
       "grammar_point_id": "gp-a-09",
       "variants": ["If we had booked, we would have got a room."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0252.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0252.opus"
       }
     },
     {
@@ -2529,7 +2529,7 @@
       "grammar_point_id": "gp-a-09",
       "variants": ["If I hadn't been so tired, I would have gone."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0253.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0253.opus"
       }
     },
     {
@@ -2539,7 +2539,7 @@
       "grammar_point_id": "gp-a-09",
       "variants": ["If he hadn't lied, she would have stayed."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0254.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0254.opus"
       }
     },
     {
@@ -2559,7 +2559,7 @@
       "grammar_point_id": "gp-a-09",
       "variants": ["I wouldn't have done it if I had known."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0256.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0256.opus"
       }
     },
     {
@@ -2569,7 +2569,7 @@
       "grammar_point_id": "gp-a-09",
       "variants": ["She wouldn't have left if you had asked her."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0257.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0257.opus"
       }
     },
     {
@@ -2579,7 +2579,7 @@
       "grammar_point_id": "gp-a-09",
       "variants": ["We wouldn't have missed it if we had checked."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0258.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0258.opus"
       }
     },
     {
@@ -2589,7 +2589,7 @@
       "grammar_point_id": "gp-a-09",
       "variants": ["Would you have gone if you had known?"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0259.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0259.opus"
       }
     },
     {
@@ -2599,7 +2599,7 @@
       "grammar_point_id": "gp-a-09",
       "variants": ["What would you have done?"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0260.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0260.opus"
       }
     },
     {
@@ -2609,7 +2609,7 @@
       "grammar_point_id": "gp-a-09",
       "variants": ["Where would they have stayed?"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0261.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0261.opus"
       }
     },
     {
@@ -2619,7 +2619,7 @@
       "grammar_point_id": "gp-a-09",
       "variants": ["Who would have thought?"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0262.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0262.opus"
       }
     },
     {
@@ -2629,7 +2629,7 @@
       "grammar_point_id": "gp-a-09",
       "variants": ["I would have helped if I could have."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0263.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0263.opus"
       }
     },
     {
@@ -2639,7 +2639,7 @@
       "grammar_point_id": "gp-a-09",
       "variants": ["If only I had studied!"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0264.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0264.opus"
       }
     },
     {
@@ -2659,7 +2659,7 @@
       "grammar_point_id": "gp-a-09",
       "variants": ["I could have passed."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0266.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0266.opus"
       }
     },
     {
@@ -2669,7 +2669,7 @@
       "grammar_point_id": "gp-a-09",
       "variants": ["If I were you, I would have apologized."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0267.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0267.opus"
       }
     },
     {
@@ -2679,7 +2679,7 @@
       "grammar_point_id": "gp-a-09",
       "variants": ["Being a child is not a sin."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0268.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0268.opus"
       }
     },
     {
@@ -2689,7 +2689,7 @@
       "grammar_point_id": "gp-a-09",
       "variants": ["You died."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0269.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0269.opus"
       }
     },
     {
@@ -2699,7 +2699,7 @@
       "grammar_point_id": "gp-a-09",
       "variants": ["What if it had happened to you?"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0270.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0270.opus"
       }
     },
     {
@@ -2709,7 +2709,7 @@
       "grammar_point_id": "gp-a-09",
       "variants": ["It could have been worse."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0271.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0271.opus"
       }
     },
     {
@@ -2719,7 +2719,7 @@
       "grammar_point_id": "gp-a-09",
       "variants": ["Everything happens for a reason."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0272.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0272.opus"
       }
     },
     {
@@ -2729,7 +2729,7 @@
       "grammar_point_id": "gp-a-09",
       "variants": ["The past cannot be changed."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0273.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0273.opus"
       }
     },
     {
@@ -2739,7 +2739,7 @@
       "grammar_point_id": "gp-a-09",
       "variants": ["But the future can."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0274.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0274.opus"
       }
     },
     {
@@ -2749,7 +2749,7 @@
       "grammar_point_id": "gp-a-09",
       "variants": ["I wish I knew."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0275.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0275.opus"
       }
     },
     {
@@ -2759,7 +2759,7 @@
       "grammar_point_id": "gp-a-09",
       "variants": ["I wish I could."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0276.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0276.opus"
       }
     },
     {
@@ -2769,7 +2769,7 @@
       "grammar_point_id": "gp-a-09",
       "variants": ["I wish I had."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0277.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0277.opus"
       }
     },
     {
@@ -2779,7 +2779,7 @@
       "grammar_point_id": "gp-a-09",
       "variants": ["If only I knew!"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0278.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0278.opus"
       }
     },
     {
@@ -2789,7 +2789,7 @@
       "grammar_point_id": "gp-a-09",
       "variants": ["If only I could!"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0279.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0279.opus"
       }
     },
     {
@@ -2799,7 +2799,7 @@
       "grammar_point_id": "gp-a-10",
       "variants": ["I wish I knew."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0280.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0280.opus"
       }
     },
     {
@@ -2809,7 +2809,7 @@
       "grammar_point_id": "gp-a-10",
       "variants": ["I wish I could."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0281.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0281.opus"
       }
     },
     {
@@ -2819,7 +2819,7 @@
       "grammar_point_id": "gp-a-10",
       "variants": ["If only I knew!"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0282.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0282.opus"
       }
     },
     {
@@ -2829,7 +2829,7 @@
       "grammar_point_id": "gp-a-10",
       "variants": ["If only I could!"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0283.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0283.opus"
       }
     },
     {
@@ -2839,7 +2839,7 @@
       "grammar_point_id": "gp-a-10",
       "variants": ["If only I had!"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0284.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0284.opus"
       }
     },
     {
@@ -2849,7 +2849,7 @@
       "grammar_point_id": "gp-a-10",
       "variants": ["If I had studied, I would have passed."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0285.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0285.opus"
       }
     },
     {
@@ -2859,7 +2859,7 @@
       "grammar_point_id": "gp-a-10",
       "variants": ["If I were rich, I would travel."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0286.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0286.opus"
       }
     },
     {
@@ -2869,7 +2869,7 @@
       "grammar_point_id": "gp-a-10",
       "variants": ["If it rains, I'll stay at home."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0287.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0287.opus"
       }
     },
     {
@@ -2879,7 +2879,7 @@
       "grammar_point_id": "gp-a-10",
       "variants": ["I wish I had known."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0288.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0288.opus"
       }
     },
     {
@@ -2889,7 +2889,7 @@
       "grammar_point_id": "gp-a-10",
       "variants": ["I wish I were there."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0289.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0289.opus"
       }
     },
     {
@@ -2909,7 +2909,7 @@
       "grammar_point_id": "gp-a-10",
       "variants": ["If I had worked harder, I would be rich now."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0291.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0291.opus"
       }
     },
     {
@@ -2919,7 +2919,7 @@
       "grammar_point_id": "gp-a-10",
       "variants": ["If I had learned to swim, I would be at the beach now."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0292.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0292.opus"
       }
     },
     {
@@ -2929,7 +2929,7 @@
       "grammar_point_id": "gp-a-10",
       "variants": ["If she hadn't missed the train, she would be here now."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0293.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0293.opus"
       }
     },
     {
@@ -2939,7 +2939,7 @@
       "grammar_point_id": "gp-a-10",
       "variants": ["If we had booked, we would be inside now."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0294.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0294.opus"
       }
     },
     {
@@ -2959,7 +2959,7 @@
       "grammar_point_id": "gp-a-10",
       "variants": ["If he had studied, he would have passed."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0296.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0296.opus"
       }
     },
     {
@@ -2969,7 +2969,7 @@
       "grammar_point_id": "gp-a-10",
       "variants": ["I didn't know, so I didn't help."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0297.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0297.opus"
       }
     },
     {
@@ -2979,7 +2979,7 @@
       "grammar_point_id": "gp-a-10",
       "variants": ["If I had known, I would have helped."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0298.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0298.opus"
       }
     },
     {
@@ -2989,7 +2989,7 @@
       "grammar_point_id": "gp-a-10",
       "variants": ["She was late, so she missed the meeting."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0299.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0299.opus"
       }
     },
     {
@@ -2999,7 +2999,7 @@
       "grammar_point_id": "gp-a-10",
       "variants": ["If she hadn't been late, she would have seen it."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0300.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0300.opus"
       }
     },
     {
@@ -3009,7 +3009,7 @@
       "grammar_point_id": "gp-a-10",
       "variants": ["I wish I had studied harder at school."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0301.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0301.opus"
       }
     },
     {
@@ -3019,7 +3019,7 @@
       "grammar_point_id": "gp-a-10",
       "variants": ["I wish I had learned to play the piano."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0302.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0302.opus"
       }
     },
     {
@@ -3029,7 +3029,7 @@
       "grammar_point_id": "gp-a-10",
       "variants": ["I wish I hadn't said that."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0303.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0303.opus"
       }
     },
     {
@@ -3049,7 +3049,7 @@
       "grammar_point_id": "gp-a-10",
       "variants": ["He wishes he had taken that job."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0305.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0305.opus"
       }
     },
     {
@@ -3059,7 +3059,7 @@
       "grammar_point_id": "gp-a-10",
       "variants": ["She wishes she hadn't married him."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0306.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0306.opus"
       }
     },
     {
@@ -3069,7 +3069,7 @@
       "grammar_point_id": "gp-a-10",
       "variants": ["If only I could turn back time!"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0307.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0307.opus"
       }
     },
     {
@@ -3079,7 +3079,7 @@
       "grammar_point_id": "gp-a-10",
       "variants": ["What's done is done."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0308.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0308.opus"
       }
     },
     {
@@ -3089,7 +3089,7 @@
       "grammar_point_id": "gp-a-10",
       "variants": ["You can't change the past."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0309.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0309.opus"
       }
     },
     {
@@ -3099,7 +3099,7 @@
       "grammar_point_id": "gp-a-10",
       "variants": ["But you can change the future."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0310.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0310.opus"
       }
     },
     {
@@ -3109,7 +3109,7 @@
       "grammar_point_id": "gp-a-10",
       "variants": ["Mixed: past condition → present result."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0311.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0311.opus"
       }
     },
     {
@@ -3119,7 +3119,7 @@
       "grammar_point_id": "gp-a-10",
       "variants": ["If I had saved money, I would be travelling now."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0312.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0312.opus"
       }
     },
     {
@@ -3129,7 +3129,7 @@
       "grammar_point_id": "gp-a-10",
       "variants": ["If he hadn't overslept, he wouldn't be so stressed."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0313.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0313.opus"
       }
     },
     {
@@ -3139,7 +3139,7 @@
       "grammar_point_id": "gp-a-11",
       "variants": ["He must have forgotten."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0314.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0314.opus"
       }
     },
     {
@@ -3149,7 +3149,7 @@
       "grammar_point_id": "gp-a-11",
       "variants": ["She can't have said that."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0315.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0315.opus"
       }
     },
     {
@@ -3159,7 +3159,7 @@
       "grammar_point_id": "gp-a-11",
       "variants": ["You should have called."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0316.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0316.opus"
       }
     },
     {
@@ -3169,7 +3169,7 @@
       "grammar_point_id": "gp-a-11",
       "variants": ["I shouldn't have said that."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0317.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0317.opus"
       }
     },
     {
@@ -3179,7 +3179,7 @@
       "grammar_point_id": "gp-a-11",
       "variants": ["If I had studied, I would have passed."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0318.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0318.opus"
       }
     },
     {
@@ -3189,7 +3189,7 @@
       "grammar_point_id": "gp-a-11",
       "variants": ["I wish I had known."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0319.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0319.opus"
       }
     },
     {
@@ -3199,7 +3199,7 @@
       "grammar_point_id": "gp-a-11",
       "variants": ["She may have changed her mind."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0320.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0320.opus"
       }
     },
     {
@@ -3209,7 +3209,7 @@
       "grammar_point_id": "gp-a-11",
       "variants": ["They might have been delayed."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0321.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0321.opus"
       }
     },
     {
@@ -3229,7 +3229,7 @@
       "grammar_point_id": "gp-a-11",
       "variants": ["If only I had known!"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0323.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0323.opus"
       }
     },
     {
@@ -3239,7 +3239,7 @@
       "grammar_point_id": "gp-a-11",
       "variants": ["He must have been tired."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0324.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0324.opus"
       }
     },
     {
@@ -3249,7 +3249,7 @@
       "grammar_point_id": "gp-a-11",
       "variants": ["It can't have been easy."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0325.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0325.opus"
       }
     },
     {
@@ -3259,7 +3259,7 @@
       "grammar_point_id": "gp-a-11",
       "variants": ["You could have told me!"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0326.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0326.opus"
       }
     },
     {
@@ -3269,7 +3269,7 @@
       "grammar_point_id": "gp-a-11",
       "variants": ["I would have helped."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0327.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0327.opus"
       }
     },
     {
@@ -3279,7 +3279,7 @@
       "grammar_point_id": "gp-a-11",
       "variants": ["She shouldn't have gone there."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0328.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0328.opus"
       }
     },
     {
@@ -3289,7 +3289,7 @@
       "grammar_point_id": "gp-a-11",
       "variants": ["If she had known, she would have come."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0329.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0329.opus"
       }
     },
     {
@@ -3299,7 +3299,7 @@
       "grammar_point_id": "gp-a-11",
       "variants": ["If we had left earlier, we would have caught it."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0330.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0330.opus"
       }
     },
     {
@@ -3309,7 +3309,7 @@
       "grammar_point_id": "gp-a-11",
       "variants": ["I wish I hadn't said it."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0331.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0331.opus"
       }
     },
     {
@@ -3319,7 +3319,7 @@
       "grammar_point_id": "gp-a-11",
       "variants": ["What would you have done?"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0332.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0332.opus"
       }
     },
     {
@@ -3329,7 +3329,7 @@
       "grammar_point_id": "gp-a-11",
       "variants": ["Where could she have gone?"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0333.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0333.opus"
       }
     },
     {
@@ -3339,7 +3339,7 @@
       "grammar_point_id": "gp-a-11",
       "variants": ["It would have been different."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0334.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0334.opus"
       }
     },
     {
@@ -3349,7 +3349,7 @@
       "grammar_point_id": "gp-a-11",
       "variants": ["Who would have thought?"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0335.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0335.opus"
       }
     },
     {
@@ -3359,7 +3359,7 @@
       "grammar_point_id": "gp-a-11",
       "variants": ["Everything happens for a reason."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0336.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0336.opus"
       }
     },
     {
@@ -3379,7 +3379,7 @@
       "grammar_point_id": "gp-a-11",
       "variants": ["Better late than never."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0338.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0338.opus"
       }
     },
     {
@@ -3389,7 +3389,7 @@
       "grammar_point_id": "gp-a-11",
       "variants": ["If only I could turn back time!"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0339.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0339.opus"
       }
     },
     {
@@ -3399,7 +3399,7 @@
       "grammar_point_id": "gp-a-11",
       "variants": ["The past cannot be changed."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0340.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0340.opus"
       }
     },
     {
@@ -3409,7 +3409,7 @@
       "grammar_point_id": "gp-a-11",
       "variants": ["But the future can."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0341.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0341.opus"
       }
     },
     {
@@ -3419,7 +3419,7 @@
       "grammar_point_id": "gp-a-11",
       "variants": ["I wish I knew."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0342.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0342.opus"
       }
     },
     {
@@ -3429,7 +3429,7 @@
       "grammar_point_id": "gp-a-11",
       "variants": ["I wish I could."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0343.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0343.opus"
       }
     },
     {
@@ -3439,7 +3439,7 @@
       "grammar_point_id": "gp-a-11",
       "variants": ["I wish I had."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0344.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0344.opus"
       }
     },
     {
@@ -3449,7 +3449,7 @@
       "grammar_point_id": "gp-a-11",
       "variants": ["If only I knew!"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0345.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0345.opus"
       }
     },
     {
@@ -3459,7 +3459,7 @@
       "grammar_point_id": "gp-a-11",
       "variants": ["If only I could!"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0346.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0346.opus"
       }
     },
     {
@@ -3469,7 +3469,7 @@
       "grammar_point_id": "gp-a-11",
       "variants": ["I wish I knew."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0347.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0347.opus"
       }
     },
     {
@@ -3479,7 +3479,7 @@
       "grammar_point_id": "gp-a-11",
       "variants": ["I wish I could."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0348.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0348.opus"
       }
     },
     {
@@ -3489,7 +3489,7 @@
       "grammar_point_id": "gp-a-11",
       "variants": ["I wish I had."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0349.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0349.opus"
       }
     },
     {
@@ -3499,7 +3499,7 @@
       "grammar_point_id": "gp-a-11",
       "variants": ["If only I knew!"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0350.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0350.opus"
       }
     },
     {
@@ -3509,7 +3509,7 @@
       "grammar_point_id": "gp-a-11",
       "variants": ["If only I could!"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0351.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0351.opus"
       }
     },
     {
@@ -3529,7 +3529,7 @@
       "grammar_point_id": "gp-a-11",
       "variants": ["Move on."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0353.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0353.opus"
       }
     },
     {
@@ -3539,7 +3539,7 @@
       "grammar_point_id": "gp-a-12",
       "variants": ["I had my hair cut yesterday."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0354.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0354.opus"
       }
     },
     {
@@ -3549,7 +3549,7 @@
       "grammar_point_id": "gp-a-12",
       "variants": ["She's having her car repaired."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0355.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0355.opus"
       }
     },
     {
@@ -3559,7 +3559,7 @@
       "grammar_point_id": "gp-a-12",
       "variants": ["We had the room cleaned."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0356.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0356.opus"
       }
     },
     {
@@ -3569,7 +3569,7 @@
       "grammar_point_id": "gp-a-12",
       "variants": ["I'll have the photos printed."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0357.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0357.opus"
       }
     },
     {
@@ -3589,7 +3589,7 @@
       "grammar_point_id": "gp-a-12",
       "variants": ["You should have it checked."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0359.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0359.opus"
       }
     },
     {
@@ -3599,7 +3599,7 @@
       "grammar_point_id": "gp-a-12",
       "variants": ["I'm having my eyes tested tomorrow."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0360.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0360.opus"
       }
     },
     {
@@ -3609,7 +3609,7 @@
       "grammar_point_id": "gp-a-12",
       "variants": ["We've had the kitchen painted."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0361.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0361.opus"
       }
     },
     {
@@ -3619,7 +3619,7 @@
       "grammar_point_id": "gp-a-12",
       "variants": ["She had her bags delivered."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0362.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0362.opus"
       }
     },
     {
@@ -3639,7 +3639,7 @@
       "grammar_point_id": "gp-a-12",
       "variants": ["I must have this suit dry-cleaned."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0364.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0364.opus"
       }
     },
     {
@@ -3649,7 +3649,7 @@
       "grammar_point_id": "gp-a-12",
       "variants": ["He had his tooth taken out."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0365.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0365.opus"
       }
     },
     {
@@ -3659,7 +3659,7 @@
       "grammar_point_id": "gp-a-12",
       "variants": ["I'll have the Wi-Fi connected."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0366.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0366.opus"
       }
     },
     {
@@ -3679,7 +3679,7 @@
       "grammar_point_id": "gp-a-12",
       "variants": ["She's going to have a dress made."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0368.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0368.opus"
       }
     },
     {
@@ -3689,7 +3689,7 @@
       "grammar_point_id": "gp-a-12",
       "variants": ["I've just had my bike repaired."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0369.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0369.opus"
       }
     },
     {
@@ -3699,7 +3699,7 @@
       "grammar_point_id": "gp-a-12",
       "variants": ["Where did you have it done?"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0370.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0370.opus"
       }
     },
     {
@@ -3709,7 +3709,7 @@
       "grammar_point_id": "gp-a-12",
       "variants": ["They didn't have the car repaired."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0371.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0371.opus"
       }
     },
     {
@@ -3719,7 +3719,7 @@
       "grammar_point_id": "gp-a-12",
       "variants": ["When are you having it cleaned?"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0372.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0372.opus"
       }
     },
     {
@@ -3729,7 +3729,7 @@
       "grammar_point_id": "gp-a-12",
       "variants": ["I'll have the room cleaned."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0373.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0373.opus"
       }
     },
     {
@@ -3739,7 +3739,7 @@
       "grammar_point_id": "gp-a-12",
       "variants": ["Can I have the bill brought up?"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0374.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0374.opus"
       }
     },
     {
@@ -3749,7 +3749,7 @@
       "grammar_point_id": "gp-a-12",
       "variants": ["I'm having lunch delivered today."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0375.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0375.opus"
       }
     },
     {
@@ -3759,7 +3759,7 @@
       "grammar_point_id": "gp-a-12",
       "variants": ["She has her nails done every month."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0376.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0376.opus"
       }
     },
     {
@@ -3769,7 +3769,7 @@
       "grammar_point_id": "gp-a-12",
       "variants": ["We'll have the documents translated."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0377.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0377.opus"
       }
     },
     {
@@ -3779,7 +3779,7 @@
       "grammar_point_id": "gp-a-12",
       "variants": ["He's having a suit made."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0378.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0378.opus"
       }
     },
     {
@@ -3789,7 +3789,7 @@
       "grammar_point_id": "gp-a-12",
       "variants": ["I had my licence renewed."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0379.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0379.opus"
       }
     },
     {
@@ -3799,7 +3799,7 @@
       "grammar_point_id": "gp-a-12",
       "variants": ["Do you have your car serviced here?"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0380.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0380.opus"
       }
     },
     {
@@ -3829,7 +3829,7 @@
       "grammar_point_id": "gp-a-12",
       "variants": ["She's just had her hair dyed."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0383.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0383.opus"
       }
     },
     {
@@ -3839,7 +3839,7 @@
       "grammar_point_id": "gp-a-12",
       "variants": ["Consider it done."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0384.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0384.opus"
       }
     },
     {
@@ -3849,7 +3849,7 @@
       "grammar_point_id": "gp-a-12",
       "variants": ["Just get it done."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0385.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0385.opus"
       }
     },
     {
@@ -3869,7 +3869,7 @@
       "grammar_point_id": "gp-a-12",
       "variants": ["We'll get it sorted."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0387.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0387.opus"
       }
     },
     {
@@ -3879,7 +3879,7 @@
       "grammar_point_id": "gp-a-13",
       "variants": ["I'm getting used to the climate."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0388.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0388.opus"
       }
     },
     {
@@ -3889,7 +3889,7 @@
       "grammar_point_id": "gp-a-13",
       "variants": ["She's used to working nights."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0389.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0389.opus"
       }
     },
     {
@@ -3899,7 +3899,7 @@
       "grammar_point_id": "gp-a-13",
       "variants": ["I can't get used to this weather."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0390.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0390.opus"
       }
     },
     {
@@ -3909,7 +3909,7 @@
       "grammar_point_id": "gp-a-13",
       "variants": ["He's used to being alone."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0391.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0391.opus"
       }
     },
     {
@@ -3919,7 +3919,7 @@
       "grammar_point_id": "gp-a-13",
       "variants": ["Did you get used to driving on the left?"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0392.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0392.opus"
       }
     },
     {
@@ -3929,7 +3929,7 @@
       "grammar_point_id": "gp-a-13",
       "variants": ["I'm not used to spicy food."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0393.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0393.opus"
       }
     },
     {
@@ -3939,7 +3939,7 @@
       "grammar_point_id": "gp-a-13",
       "variants": ["You'll get used to it."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0394.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0394.opus"
       }
     },
     {
@@ -3949,7 +3949,7 @@
       "grammar_point_id": "gp-a-13",
       "variants": ["It takes time to get used to a new city."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0395.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0395.opus"
       }
     },
     {
@@ -3959,7 +3959,7 @@
       "grammar_point_id": "gp-a-13",
       "variants": ["I feel like eating out tonight."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0396.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0396.opus"
       }
     },
     {
@@ -3969,7 +3969,7 @@
       "grammar_point_id": "gp-a-13",
       "variants": ["Do you feel like watching a film?"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0397.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0397.opus"
       }
     },
     {
@@ -3979,7 +3979,7 @@
       "grammar_point_id": "gp-a-13",
       "variants": ["I don't feel like going out."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0398.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0398.opus"
       }
     },
     {
@@ -3989,7 +3989,7 @@
       "grammar_point_id": "gp-a-13",
       "variants": ["She feels like a cup of tea."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0399.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0399.opus"
       }
     },
     {
@@ -3999,7 +3999,7 @@
       "grammar_point_id": "gp-a-13",
       "variants": ["We feel like staying home."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0400.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0400.opus"
       }
     },
     {
@@ -4009,7 +4009,7 @@
       "grammar_point_id": "gp-a-13",
       "variants": ["After a month, I got used to getting up early."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0401.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0401.opus"
       }
     },
     {
@@ -4019,7 +4019,7 @@
       "grammar_point_id": "gp-a-13",
       "variants": ["I used to live alone."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0402.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0402.opus"
       },
       "chunk_slot": "live"
     },
@@ -4030,7 +4030,7 @@
       "grammar_point_id": "gp-a-13",
       "variants": ["He's used to hard work."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0403.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0403.opus"
       }
     },
     {
@@ -4040,7 +4040,7 @@
       "grammar_point_id": "gp-a-13",
       "variants": ["They're getting used to the new rules."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0404.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0404.opus"
       }
     },
     {
@@ -4050,7 +4050,7 @@
       "grammar_point_id": "gp-a-13",
       "variants": ["I'll never get used to this."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0405.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0405.opus"
       }
     },
     {
@@ -4060,7 +4060,7 @@
       "grammar_point_id": "gp-a-13",
       "variants": ["She's not used to being criticised."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0406.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0406.opus"
       }
     },
     {
@@ -4070,7 +4070,7 @@
       "grammar_point_id": "gp-a-13",
       "variants": ["Do you feel like a walk?"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0407.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0407.opus"
       }
     },
     {
@@ -4080,7 +4080,7 @@
       "grammar_point_id": "gp-a-13",
       "variants": ["I feel like I'm at home here."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0408.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0408.opus"
       }
     },
     {
@@ -4090,7 +4090,7 @@
       "grammar_point_id": "gp-a-13",
       "variants": ["We're used to travelling light."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0409.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0409.opus"
       }
     },
     {
@@ -4100,7 +4100,7 @@
       "grammar_point_id": "gp-a-13",
       "variants": ["It feels like rain."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0410.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0410.opus"
       }
     },
     {
@@ -4110,7 +4110,7 @@
       "grammar_point_id": "gp-a-13",
       "variants": ["I don't feel like talking."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0411.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0411.opus"
       }
     },
     {
@@ -4120,7 +4120,7 @@
       "grammar_point_id": "gp-a-13",
       "variants": ["He got used to the noise quickly."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0412.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0412.opus"
       }
     },
     {
@@ -4130,7 +4130,7 @@
       "grammar_point_id": "gp-a-13",
       "variants": ["Are you used to the food here?"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0413.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0413.opus"
       }
     },
     {
@@ -4140,7 +4140,7 @@
       "grammar_point_id": "gp-a-13",
       "variants": ["I feel like something sweet."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0414.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0414.opus"
       }
     },
     {
@@ -4150,7 +4150,7 @@
       "grammar_point_id": "gp-a-13",
       "variants": ["She used to work nights."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0415.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0415.opus"
       }
     },
     {
@@ -4160,7 +4160,7 @@
       "grammar_point_id": "gp-a-13",
       "variants": ["You get used to everything."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0416.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0416.opus"
       }
     },
     {
@@ -4170,7 +4170,7 @@
       "grammar_point_id": "gp-a-13",
       "variants": ["I'm still getting used to it."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0417.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0417.opus"
       }
     },
     {
@@ -4180,7 +4180,7 @@
       "grammar_point_id": "gp-a-13",
       "variants": ["I'm used to living here."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0418.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0418.opus"
       }
     },
     {
@@ -4190,7 +4190,7 @@
       "grammar_point_id": "gp-a-13",
       "variants": ["I feel fine here."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0419.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0419.opus"
       }
     },
     {
@@ -4200,7 +4200,7 @@
       "grammar_point_id": "gp-a-13",
       "variants": ["I'm used to it."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0420.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0420.opus"
       }
     },
     {
@@ -4210,7 +4210,7 @@
       "grammar_point_id": "gp-a-13",
       "variants": ["It takes time."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0421.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0421.opus"
       }
     },
     {
@@ -4220,7 +4220,7 @@
       "grammar_point_id": "gp-a-13",
       "variants": ["Feel like a coffee?"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0422.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0422.opus"
       }
     },
     {
@@ -4230,7 +4230,7 @@
       "grammar_point_id": "gp-a-14",
       "variants": ["The man whose car was stolen called the police."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0423.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0423.opus"
       }
     },
     {
@@ -4240,7 +4240,7 @@
       "grammar_point_id": "gp-a-14",
       "variants": ["That's the woman whose son won the prize."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0424.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0424.opus"
       }
     },
     {
@@ -4260,7 +4260,7 @@
       "grammar_point_id": "gp-a-14",
       "variants": ["The writer, whose books are famous, lives in Paris."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0426.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0426.opus"
       }
     },
     {
@@ -4270,7 +4270,7 @@
       "grammar_point_id": "gp-a-14",
       "variants": ["The people with whom I work are friendly."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0427.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0427.opus"
       }
     },
     {
@@ -4280,7 +4280,7 @@
       "grammar_point_id": "gp-a-14",
       "variants": ["The colleague on whom I rely has left."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0428.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0428.opus"
       }
     },
     {
@@ -4290,7 +4290,7 @@
       "grammar_point_id": "gp-a-14",
       "variants": ["That's the book from which I quoted."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0429.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0429.opus"
       }
     },
     {
@@ -4300,7 +4300,7 @@
       "grammar_point_id": "gp-a-14",
       "variants": ["The house in which I grew up has been sold."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0430.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0430.opus"
       }
     },
     {
@@ -4310,7 +4310,7 @@
       "grammar_point_id": "gp-a-14",
       "variants": ["She's the author about whom everyone is talking."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0431.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0431.opus"
       }
     },
     {
@@ -4320,7 +4320,7 @@
       "grammar_point_id": "gp-a-14",
       "variants": ["The team for which he plays is famous."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0432.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0432.opus"
       }
     },
     {
@@ -4333,7 +4333,7 @@
         "That's the friend about whom I was telling you."
       ],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0433.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0433.opus"
       }
     },
     {
@@ -4343,7 +4343,7 @@
       "grammar_point_id": "gp-a-14",
       "variants": ["The film we talked about was long."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0434.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0434.opus"
       }
     },
     {
@@ -4353,7 +4353,7 @@
       "grammar_point_id": "gp-a-14",
       "variants": ["The place we stayed at was lovely."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0435.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0435.opus"
       }
     },
     {
@@ -4363,7 +4363,7 @@
       "grammar_point_id": "gp-a-14",
       "variants": ["The woman who lives next door is a doctor."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0436.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0436.opus"
       }
     },
     {
@@ -4373,7 +4373,7 @@
       "grammar_point_id": "gp-a-14",
       "variants": ["This is the book which changed my life."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0437.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0437.opus"
       }
     },
     {
@@ -4383,7 +4383,7 @@
       "grammar_point_id": "gp-a-14",
       "variants": ["The people who live here are quiet.", "The people that live here are quiet."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0438.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0438.opus"
       }
     },
     {
@@ -4403,7 +4403,7 @@
       "grammar_point_id": "gp-a-14",
       "variants": ["The only thing that matters is trust."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0440.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0440.opus"
       }
     },
     {
@@ -4413,7 +4413,7 @@
       "grammar_point_id": "gp-a-14",
       "variants": ["My brother, who lives in Rome, is a chef."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0441.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0441.opus"
       }
     },
     {
@@ -4423,7 +4423,7 @@
       "grammar_point_id": "gp-a-14",
       "variants": ["The train that goes to Rome leaves at six."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0442.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0442.opus"
       }
     },
     {
@@ -4433,7 +4433,7 @@
       "grammar_point_id": "gp-a-14",
       "variants": ["I met a girl whose eyes were green."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0443.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0443.opus"
       }
     },
     {
@@ -4443,7 +4443,7 @@
       "grammar_point_id": "gp-a-14",
       "variants": ["He's the man to whom the letter was sent."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0444.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0444.opus"
       }
     },
     {
@@ -4463,7 +4463,7 @@
       "grammar_point_id": "gp-a-14",
       "variants": ["That's the reason why I called."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0446.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0446.opus"
       }
     },
     {
@@ -4473,7 +4473,7 @@
       "grammar_point_id": "gp-a-14",
       "variants": ["It was the day when everything changed."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0447.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0447.opus"
       }
     },
     {
@@ -4483,7 +4483,7 @@
       "grammar_point_id": "gp-a-14",
       "variants": ["She has a friend who speaks Japanese."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0448.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0448.opus"
       }
     },
     {
@@ -4497,7 +4497,7 @@
         "The man that I saw was tall."
       ],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0449.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0449.opus"
       }
     },
     {
@@ -4507,7 +4507,7 @@
       "grammar_point_id": "gp-a-14",
       "variants": ["This is the road that leads to the castle."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0450.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0450.opus"
       }
     },
     {
@@ -4517,7 +4517,7 @@
       "grammar_point_id": "gp-a-14",
       "variants": ["The gift you gave me is precious."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0451.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0451.opus"
       }
     },
     {
@@ -4527,7 +4527,7 @@
       "grammar_point_id": "gp-a-14",
       "variants": ["Nothing that I do is right."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0452.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0452.opus"
       }
     },
     {
@@ -4537,7 +4537,7 @@
       "grammar_point_id": "gp-a-14",
       "variants": ["That's all I know."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0453.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0453.opus"
       }
     },
     {
@@ -4547,7 +4547,7 @@
       "grammar_point_id": "gp-a-14",
       "variants": ["It's all I have."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0454.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0454.opus"
       }
     },
     {
@@ -4557,7 +4557,7 @@
       "grammar_point_id": "gp-a-14",
       "variants": ["Nothing I can't handle."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0455.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0455.opus"
       }
     },
     {
@@ -4567,7 +4567,7 @@
       "grammar_point_id": "gp-a-14",
       "variants": ["That's all I need."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0456.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0456.opus"
       }
     },
     {
@@ -4577,7 +4577,7 @@
       "grammar_point_id": "gp-a-15",
       "variants": ["I had my hair cut last week."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0457.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0457.opus"
       }
     },
     {
@@ -4587,7 +4587,7 @@
       "grammar_point_id": "gp-a-15",
       "variants": ["He's having his laptop repaired."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0458.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0458.opus"
       }
     },
     {
@@ -4607,7 +4607,7 @@
       "grammar_point_id": "gp-a-15",
       "variants": ["I'm getting used to the local food."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0460.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0460.opus"
       }
     },
     {
@@ -4617,7 +4617,7 @@
       "grammar_point_id": "gp-a-15",
       "variants": ["She's used to working under pressure."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0461.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0461.opus"
       }
     },
     {
@@ -4627,7 +4627,7 @@
       "grammar_point_id": "gp-a-15",
       "variants": ["I feel like staying in bed all day."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0462.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0462.opus"
       }
     },
     {
@@ -4637,7 +4637,7 @@
       "grammar_point_id": "gp-a-15",
       "variants": ["She married a man whose name I forgot."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0463.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0463.opus"
       }
     },
     {
@@ -4647,7 +4647,7 @@
       "grammar_point_id": "gp-a-15",
       "variants": ["The film we discussed won a prize."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0464.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0464.opus"
       }
     },
     {
@@ -4657,7 +4657,7 @@
       "grammar_point_id": "gp-a-15",
       "variants": ["Everything that could go wrong went wrong."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0465.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0465.opus"
       }
     },
     {
@@ -4667,7 +4667,7 @@
       "grammar_point_id": "gp-a-15",
       "variants": ["I'll have it done by Friday."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0466.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0466.opus"
       }
     },
     {
@@ -4677,7 +4677,7 @@
       "grammar_point_id": "gp-a-15",
       "variants": ["Did you have your suit cleaned?"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0467.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0467.opus"
       }
     },
     {
@@ -4697,7 +4697,7 @@
       "grammar_point_id": "gp-a-15",
       "variants": ["You'll get used to the accent."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0469.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0469.opus"
       }
     },
     {
@@ -4707,7 +4707,7 @@
       "grammar_point_id": "gp-a-15",
       "variants": ["Do you feel like dancing?"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0470.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0470.opus"
       }
     },
     {
@@ -4717,7 +4717,7 @@
       "grammar_point_id": "gp-a-15",
       "variants": ["The colleague on whom I rely is on holiday."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0471.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0471.opus"
       }
     },
     {
@@ -4727,7 +4727,7 @@
       "grammar_point_id": "gp-a-15",
       "variants": ["The town in which I was born is small."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0472.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0472.opus"
       }
     },
     {
@@ -4737,7 +4737,7 @@
       "grammar_point_id": "gp-a-15",
       "variants": ["That's the book I told you about."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0473.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0473.opus"
       }
     },
     {
@@ -4767,7 +4767,7 @@
       "grammar_point_id": "gp-a-15",
       "variants": ["We're having the roof fixed."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0476.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0476.opus"
       }
     },
     {
@@ -4777,7 +4777,7 @@
       "grammar_point_id": "gp-a-15",
       "variants": ["I used to smoke."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0477.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0477.opus"
       },
       "chunk_slot": "smoke"
     },
@@ -4788,7 +4788,7 @@
       "grammar_point_id": "gp-a-15",
       "variants": ["She didn't use to like coffee."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0478.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0478.opus"
       }
     },
     {
@@ -4798,7 +4798,7 @@
       "grammar_point_id": "gp-a-15",
       "variants": ["Did you use to play tennis?"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0479.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0479.opus"
       }
     },
     {
@@ -4808,7 +4808,7 @@
       "grammar_point_id": "gp-a-15",
       "variants": ["It feels like home."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0480.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0480.opus"
       }
     },
     {
@@ -4818,7 +4818,7 @@
       "grammar_point_id": "gp-a-15",
       "variants": ["Keep moving forward."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0481.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0481.opus"
       }
     },
     {
@@ -4828,7 +4828,7 @@
       "grammar_point_id": "gp-a-15",
       "variants": ["The skills that I learned still help me."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0482.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0482.opus"
       }
     },
     {
@@ -4848,7 +4848,7 @@
       "grammar_point_id": "gp-a-15",
       "variants": ["She had her portrait painted."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0484.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0484.opus"
       }
     },
     {
@@ -4858,7 +4858,7 @@
       "grammar_point_id": "gp-a-15",
       "variants": ["I'm used to waiting."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0485.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0485.opus"
       }
     },
     {
@@ -4868,7 +4868,7 @@
       "grammar_point_id": "gp-a-15",
       "variants": ["It was the moment when everything made sense."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0486.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0486.opus"
       }
     },
     {
@@ -4878,7 +4878,7 @@
       "grammar_point_id": "gp-a-16",
       "variants": ["I can't figure out this rule."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0487.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0487.opus"
       },
       "chunk_slot": "figure"
     },
@@ -4889,7 +4889,7 @@
       "grammar_point_id": "gp-a-16",
       "variants": ["She figured it out."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0488.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0488.opus"
       }
     },
     {
@@ -4899,7 +4899,7 @@
       "grammar_point_id": "gp-a-16",
       "variants": ["We came across an old photo."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0489.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0489.opus"
       }
     },
     {
@@ -4909,7 +4909,7 @@
       "grammar_point_id": "gp-a-16",
       "variants": ["He came across an old friend."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0490.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0490.opus"
       }
     },
     {
@@ -4919,7 +4919,7 @@
       "grammar_point_id": "gp-a-16",
       "variants": ["What are you up to?"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0491.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0491.opus"
       }
     },
     {
@@ -4929,7 +4929,7 @@
       "grammar_point_id": "gp-a-16",
       "variants": ["I'm up to no good."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0492.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0492.opus"
       }
     },
     {
@@ -4939,7 +4939,7 @@
       "grammar_point_id": "gp-a-16",
       "variants": ["She's up to something."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0493.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0493.opus"
       }
     },
     {
@@ -4949,7 +4949,7 @@
       "grammar_point_id": "gp-a-16",
       "variants": ["The plan fell through."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0494.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0494.opus"
       }
     },
     {
@@ -4969,7 +4969,7 @@
       "grammar_point_id": "gp-a-16",
       "variants": ["The deal might fall through."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0496.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0496.opus"
       }
     },
     {
@@ -4979,7 +4979,7 @@
       "grammar_point_id": "gp-a-16",
       "variants": ["It turned out well."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0497.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0497.opus"
       }
     },
     {
@@ -4989,7 +4989,7 @@
       "grammar_point_id": "gp-a-16",
       "variants": ["It turns out he was right."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0498.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0498.opus"
       }
     },
     {
@@ -4999,7 +4999,7 @@
       "grammar_point_id": "gp-a-16",
       "variants": ["We ended up staying home."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0499.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0499.opus"
       }
     },
     {
@@ -5009,7 +5009,7 @@
       "grammar_point_id": "gp-a-16",
       "variants": ["I ended up paying for everyone."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0500.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0500.opus"
       }
     },
     {
@@ -5030,7 +5030,7 @@
       "grammar_point_id": "gp-a-16",
       "variants": ["She came up with a great idea."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0502.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0502.opus"
       }
     },
     {
@@ -5040,7 +5040,7 @@
       "grammar_point_id": "gp-a-16",
       "variants": ["We've run out of time."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0503.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0503.opus"
       }
     },
     {
@@ -5060,7 +5060,7 @@
       "grammar_point_id": "gp-a-16",
       "variants": ["He got away with it."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0505.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0505.opus"
       }
     },
     {
@@ -5070,7 +5070,7 @@
       "grammar_point_id": "gp-a-16",
       "variants": ["I'm looking forward to the trip."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0506.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0506.opus"
       }
     },
     {
@@ -5080,7 +5080,7 @@
       "grammar_point_id": "gp-a-16",
       "variants": ["Catch up with me later."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0507.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0507.opus"
       }
     },
     {
@@ -5090,7 +5090,7 @@
       "grammar_point_id": "gp-a-16",
       "variants": ["It worked out in the end."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0508.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0508.opus"
       }
     },
     {
@@ -5100,7 +5100,7 @@
       "grammar_point_id": "gp-a-16",
       "variants": ["I need to sort out my papers."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0509.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0509.opus"
       },
       "chunk_slot": "sort"
     },
@@ -5111,7 +5111,7 @@
       "grammar_point_id": "gp-a-16",
       "variants": ["We sorted it out."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0510.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0510.opus"
       }
     },
     {
@@ -5121,7 +5121,7 @@
       "grammar_point_id": "gp-a-16",
       "variants": ["Don't bring that up again."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0511.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0511.opus"
       }
     },
     {
@@ -5131,7 +5131,7 @@
       "grammar_point_id": "gp-a-16",
       "variants": ["She brought up an old argument."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0512.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0512.opus"
       }
     },
     {
@@ -5141,7 +5141,7 @@
       "grammar_point_id": "gp-a-16",
       "variants": ["I'm not up to it today."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0513.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0513.opus"
       }
     },
     {
@@ -5151,7 +5151,7 @@
       "grammar_point_id": "gp-a-16",
       "variants": ["The car broke down again."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0514.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0514.opus"
       }
     },
     {
@@ -5161,7 +5161,7 @@
       "grammar_point_id": "gp-a-16",
       "variants": ["Let me think it over."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0515.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0515.opus"
       },
       "chunk_slot": "think"
     },
@@ -5172,7 +5172,7 @@
       "grammar_point_id": "gp-a-16",
       "variants": ["Watch out for the steps."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0516.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0516.opus"
       }
     },
     {
@@ -5182,7 +5182,7 @@
       "grammar_point_id": "gp-a-16",
       "variants": ["I ran into an old classmate."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0517.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0517.opus"
       }
     },
     {
@@ -5192,7 +5192,7 @@
       "grammar_point_id": "gp-a-16",
       "variants": ["Keep up with the group."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0518.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0518.opus"
       }
     },
     {
@@ -5202,7 +5202,7 @@
       "grammar_point_id": "gp-a-17",
       "variants": ["It's highly unlikely."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0519.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0519.opus"
       }
     },
     {
@@ -5212,7 +5212,7 @@
       "grammar_point_id": "gp-a-17",
       "variants": ["She's deeply disappointed."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0520.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0520.opus"
       }
     },
     {
@@ -5222,7 +5222,7 @@
       "grammar_point_id": "gp-a-17",
       "variants": ["I'm fully aware of the risk."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0521.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0521.opus"
       }
     },
     {
@@ -5232,7 +5232,7 @@
       "grammar_point_id": "gp-a-17",
       "variants": ["It's absolutely freezing."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0522.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0522.opus"
       }
     },
     {
@@ -5242,7 +5242,7 @@
       "grammar_point_id": "gp-a-17",
       "variants": ["That's completely absurd."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0523.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0523.opus"
       }
     },
     {
@@ -5252,7 +5252,7 @@
       "grammar_point_id": "gp-a-17",
       "variants": ["I'm terribly sorry."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0524.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0524.opus"
       }
     },
     {
@@ -5272,7 +5272,7 @@
       "grammar_point_id": "gp-a-17",
       "variants": ["The results are highly encouraging."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0526.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0526.opus"
       }
     },
     {
@@ -5307,7 +5307,7 @@
         "I'm completely exhausted."
       ],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0529.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0529.opus"
       }
     },
     {
@@ -5317,7 +5317,7 @@
       "grammar_point_id": "gp-a-17",
       "variants": ["You're sorely mistaken."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0530.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0530.opus"
       }
     },
     {
@@ -5327,7 +5327,7 @@
       "grammar_point_id": "gp-a-17",
       "variants": ["He's highly successful."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0531.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0531.opus"
       }
     },
     {
@@ -5337,7 +5337,7 @@
       "grammar_point_id": "gp-a-17",
       "variants": ["I deeply regret it."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0532.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0532.opus"
       }
     },
     {
@@ -5347,7 +5347,7 @@
       "grammar_point_id": "gp-a-17",
       "variants": ["We fully understand."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0533.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0533.opus"
       }
     },
     {
@@ -5357,7 +5357,7 @@
       "grammar_point_id": "gp-a-17",
       "variants": ["The film was absolutely brilliant."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0534.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0534.opus"
       }
     },
     {
@@ -5367,7 +5367,7 @@
       "grammar_point_id": "gp-a-17",
       "variants": ["It's vitally important."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0535.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0535.opus"
       }
     },
     {
@@ -5377,7 +5377,7 @@
       "grammar_point_id": "gp-a-17",
       "variants": ["She was terribly upset."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0536.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0536.opus"
       }
     },
     {
@@ -5387,7 +5387,7 @@
       "grammar_point_id": "gp-a-17",
       "variants": ["I'm perfectly happy with it."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0537.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0537.opus"
       }
     },
     {
@@ -5397,7 +5397,7 @@
       "grammar_point_id": "gp-a-17",
       "variants": ["The risk is extremely high."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0538.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0538.opus"
       }
     },
     {
@@ -5407,7 +5407,7 @@
       "grammar_point_id": "gp-a-17",
       "variants": ["It's completely wrong."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0539.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0539.opus"
       }
     },
     {
@@ -5417,7 +5417,7 @@
       "grammar_point_id": "gp-a-17",
       "variants": ["He's deeply suspicious."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0540.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0540.opus"
       }
     },
     {
@@ -5437,7 +5437,7 @@
       "grammar_point_id": "gp-a-17",
       "variants": ["The food was absolutely delicious."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0542.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0542.opus"
       }
     },
     {
@@ -5457,7 +5457,7 @@
       "grammar_point_id": "gp-a-17",
       "variants": ["She hardly ever complains."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0544.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0544.opus"
       }
     },
     {
@@ -5467,7 +5467,7 @@
       "grammar_point_id": "gp-a-17",
       "variants": ["I quite agree."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0545.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0545.opus"
       }
     },
     {
@@ -5477,7 +5477,7 @@
       "grammar_point_id": "gp-a-17",
       "variants": ["The room was spotlessly clean."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0546.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0546.opus"
       }
     },
     {
@@ -5487,7 +5487,7 @@
       "grammar_point_id": "gp-a-17",
       "variants": ["It's almost perfect."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0547.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0547.opus"
       }
     },
     {
@@ -5497,7 +5497,7 @@
       "grammar_point_id": "gp-a-17",
       "variants": ["He's widely respected."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0548.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0548.opus"
       }
     },
     {
@@ -5507,7 +5507,7 @@
       "grammar_point_id": "gp-a-18",
       "variants": ["There's no point in arguing.", "There's no point arguing."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0549.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0549.opus"
       }
     },
     {
@@ -5517,7 +5517,7 @@
       "grammar_point_id": "gp-a-18",
       "variants": ["There's no point in waiting."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0550.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0550.opus"
       }
     },
     {
@@ -5527,7 +5527,7 @@
       "grammar_point_id": "gp-a-18",
       "variants": ["There's no point crying over it."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0551.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0551.opus"
       }
     },
     {
@@ -5537,7 +5537,7 @@
       "grammar_point_id": "gp-a-18",
       "variants": ["We had difficulty finding the place."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0552.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0552.opus"
       }
     },
     {
@@ -5557,7 +5557,7 @@
       "grammar_point_id": "gp-a-18",
       "variants": ["I have difficulty understanding him."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0554.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0554.opus"
       }
     },
     {
@@ -5567,7 +5567,7 @@
       "grammar_point_id": "gp-a-18",
       "variants": ["They had difficulty getting tickets."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0555.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0555.opus"
       }
     },
     {
@@ -5577,7 +5577,7 @@
       "grammar_point_id": "gp-a-18",
       "variants": ["It's no use complaining."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0556.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0556.opus"
       }
     },
     {
@@ -5587,7 +5587,7 @@
       "grammar_point_id": "gp-a-18",
       "variants": ["It's no good pretending."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0557.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0557.opus"
       }
     },
     {
@@ -5597,7 +5597,7 @@
       "grammar_point_id": "gp-a-18",
       "variants": ["It's worth seeing."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0558.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0558.opus"
       }
     },
     {
@@ -5607,7 +5607,7 @@
       "grammar_point_id": "gp-a-18",
       "variants": ["Is it worth reading?"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0559.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0559.opus"
       }
     },
     {
@@ -5617,7 +5617,7 @@
       "grammar_point_id": "gp-a-18",
       "variants": ["The film is worth watching."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0560.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0560.opus"
       }
     },
     {
@@ -5627,7 +5627,7 @@
       "grammar_point_id": "gp-a-18",
       "variants": ["What's the point of asking?"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0561.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0561.opus"
       }
     },
     {
@@ -5637,7 +5637,7 @@
       "grammar_point_id": "gp-a-18",
       "variants": ["There's no point in talking to him."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0562.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0562.opus"
       }
     },
     {
@@ -5647,7 +5647,7 @@
       "grammar_point_id": "gp-a-18",
       "variants": ["I had little difficulty convincing them."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0563.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0563.opus"
       }
     },
     {
@@ -5657,7 +5657,7 @@
       "grammar_point_id": "gp-a-18",
       "variants": ["It's not worth the trouble."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0564.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0564.opus"
       }
     },
     {
@@ -5667,7 +5667,7 @@
       "grammar_point_id": "gp-a-18",
       "variants": ["There's no point in rushing."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0565.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0565.opus"
       }
     },
     {
@@ -5677,7 +5677,7 @@
       "grammar_point_id": "gp-a-18",
       "variants": ["He has difficulty expressing himself."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0566.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0566.opus"
       }
     },
     {
@@ -5687,7 +5687,7 @@
       "grammar_point_id": "gp-a-18",
       "variants": ["We had no difficulty finding the hotel."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0567.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0567.opus"
       }
     },
     {
@@ -5697,7 +5697,7 @@
       "grammar_point_id": "gp-a-18",
       "variants": ["It's no use crying over spilt milk."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0568.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0568.opus"
       }
     },
     {
@@ -5707,7 +5707,7 @@
       "grammar_point_id": "gp-a-18",
       "variants": ["There's no point in explaining."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0569.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0569.opus"
       }
     },
     {
@@ -5727,7 +5727,7 @@
       "grammar_point_id": "gp-a-18",
       "variants": ["The museum is worth visiting."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0571.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0571.opus"
       }
     },
     {
@@ -5737,7 +5737,7 @@
       "grammar_point_id": "gp-a-18",
       "variants": ["I have great difficulty waking up."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0572.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0572.opus"
       }
     },
     {
@@ -5747,7 +5747,7 @@
       "grammar_point_id": "gp-a-18",
       "variants": ["It's hardly worth the effort."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0573.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0573.opus"
       }
     },
     {
@@ -5767,7 +5767,7 @@
       "grammar_point_id": "gp-a-18",
       "variants": ["She had difficulty breathing."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0575.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0575.opus"
       }
     },
     {
@@ -5777,7 +5777,7 @@
       "grammar_point_id": "gp-a-18",
       "variants": ["It's worth trying."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0576.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0576.opus"
       }
     },
     {
@@ -5787,7 +5787,7 @@
       "grammar_point_id": "gp-a-18",
       "variants": ["There's no point in lying."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0577.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0577.opus"
       }
     },
     {
@@ -5807,7 +5807,7 @@
       "grammar_point_id": "gp-a-19",
       "variants": ["Little did they know."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0579.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0579.opus"
       }
     },
     {
@@ -5817,7 +5817,7 @@
       "grammar_point_id": "gp-a-19",
       "variants": ["Never have I seen such a thing.", "I have never seen such a thing."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0580.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0580.opus"
       }
     },
     {
@@ -5827,7 +5827,7 @@
       "grammar_point_id": "gp-a-19",
       "variants": ["Rarely does he complain."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0581.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0581.opus"
       }
     },
     {
@@ -5837,7 +5837,7 @@
       "grammar_point_id": "gp-a-19",
       "variants": ["Not only did she win, but she also set a record."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0582.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0582.opus"
       }
     },
     {
@@ -5847,7 +5847,7 @@
       "grammar_point_id": "gp-a-19",
       "variants": ["Had I known, I would have called."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0583.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0583.opus"
       }
     },
     {
@@ -5857,7 +5857,7 @@
       "grammar_point_id": "gp-a-19",
       "variants": ["Were I you, I'd apologise."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0584.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0584.opus"
       }
     },
     {
@@ -5867,7 +5867,7 @@
       "grammar_point_id": "gp-a-19",
       "variants": ["Should you need help, call me."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0585.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0585.opus"
       }
     },
     {
@@ -5887,7 +5887,7 @@
       "grammar_point_id": "gp-a-19",
       "variants": ["Only then did I understand."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0587.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0587.opus"
       }
     },
     {
@@ -5897,7 +5897,7 @@
       "grammar_point_id": "gp-a-19",
       "variants": ["Seldom do we get the chance."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0588.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0588.opus"
       }
     },
     {
@@ -5907,7 +5907,7 @@
       "grammar_point_id": "gp-a-19",
       "variants": ["Under no circumstances should you open it."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0589.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0589.opus"
       }
     },
     {
@@ -5917,7 +5917,7 @@
       "grammar_point_id": "gp-a-19",
       "variants": ["At no point did he lie."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0590.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0590.opus"
       }
     },
     {
@@ -5927,7 +5927,7 @@
       "grammar_point_id": "gp-a-19",
       "variants": ["Never will I return."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0591.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0591.opus"
       }
     },
     {
@@ -5947,7 +5947,7 @@
       "grammar_point_id": "gp-a-19",
       "variants": ["Not until then did it make sense."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0593.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0593.opus"
       }
     },
     {
@@ -5967,7 +5967,7 @@
       "grammar_point_id": "gp-a-19",
       "variants": ["Only later did she realise the truth."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0595.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0595.opus"
       }
     },
     {
@@ -5987,7 +5987,7 @@
       "grammar_point_id": "gp-a-19",
       "variants": ["Nowhere else will you find this."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0597.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0597.opus"
       }
     },
     {
@@ -5997,7 +5997,7 @@
       "grammar_point_id": "gp-a-19",
       "variants": ["Not a word did he say."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0598.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0598.opus"
       }
     },
     {
@@ -6007,7 +6007,7 @@
       "grammar_point_id": "gp-a-19",
       "variants": ["So tired was he that he fell asleep standing."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0599.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0599.opus"
       }
     },
     {
@@ -6017,7 +6017,7 @@
       "grammar_point_id": "gp-a-19",
       "variants": ["Such was his anger that everyone froze."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0600.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0600.opus"
       }
     },
     {
@@ -6027,7 +6027,7 @@
       "grammar_point_id": "gp-a-19",
       "variants": ["Were it not for you, I'd be lost."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0601.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0601.opus"
       }
     },
     {
@@ -6037,7 +6037,7 @@
       "grammar_point_id": "gp-a-19",
       "variants": ["Had he asked, I would have helped."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0602.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0602.opus"
       }
     },
     {
@@ -6047,7 +6047,7 @@
       "grammar_point_id": "gp-a-19",
       "variants": ["Should the weather change, we'll stay in."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0603.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0603.opus"
       }
     },
     {
@@ -6057,7 +6057,7 @@
       "grammar_point_id": "gp-a-19",
       "variants": ["Never in my life have I heard such nonsense."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0604.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0604.opus"
       }
     },
     {
@@ -6067,7 +6067,7 @@
       "grammar_point_id": "gp-a-19",
       "variants": ["Barely had we started when it ended."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0605.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0605.opus"
       }
     },
     {
@@ -6077,7 +6077,7 @@
       "grammar_point_id": "gp-a-19",
       "variants": ["All your base belong to us."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0606.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0606.opus"
       }
     },
     {
@@ -6117,7 +6117,7 @@
       "grammar_point_id": "gp-a-20",
       "variants": ["There's no point in arguing with him."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0610.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0610.opus"
       }
     },
     {
@@ -6127,7 +6127,7 @@
       "grammar_point_id": "gp-a-20",
       "variants": ["Little did they know what was coming."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0611.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0611.opus"
       }
     },
     {
@@ -6137,7 +6137,7 @@
       "grammar_point_id": "gp-a-20",
       "variants": ["I'm terribly sorry for being late."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0612.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0612.opus"
       }
     },
     {
@@ -6147,7 +6147,7 @@
       "grammar_point_id": "gp-a-20",
       "variants": ["We had difficulty parking."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0613.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0613.opus"
       }
     },
     {
@@ -6167,7 +6167,7 @@
       "grammar_point_id": "gp-a-20",
       "variants": ["It's highly unlikely to happen."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0615.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0615.opus"
       }
     },
     {
@@ -6177,7 +6177,7 @@
       "grammar_point_id": "gp-a-20",
       "variants": ["She's deeply involved in the project."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0616.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0616.opus"
       }
     },
     {
@@ -6187,7 +6187,7 @@
       "grammar_point_id": "gp-a-20",
       "variants": ["It's no use hiding the truth."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0617.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0617.opus"
       }
     },
     {
@@ -6197,7 +6197,7 @@
       "grammar_point_id": "gp-a-20",
       "variants": ["Had I known about the delay, I would have stayed home."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0618.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0618.opus"
       }
     },
     {
@@ -6207,7 +6207,7 @@
       "grammar_point_id": "gp-a-20",
       "variants": ["The plan fell through at the last moment."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0619.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0619.opus"
       }
     },
     {
@@ -6228,7 +6228,7 @@
       "grammar_point_id": "gp-a-20",
       "variants": ["It's worth every penny."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0621.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0621.opus"
       }
     },
     {
@@ -6238,7 +6238,7 @@
       "grammar_point_id": "gp-a-20",
       "variants": ["Not only is it cheap, but it's also fast."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0622.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0622.opus"
       }
     },
     {
@@ -6248,7 +6248,7 @@
       "grammar_point_id": "gp-a-20",
       "variants": ["I'm fully aware of the consequences."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0623.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0623.opus"
       }
     },
     {
@@ -6258,7 +6258,7 @@
       "grammar_point_id": "gp-a-20",
       "variants": ["We ran out of options."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0624.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0624.opus"
       }
     },
     {
@@ -6268,7 +6268,7 @@
       "grammar_point_id": "gp-a-20",
       "variants": ["There's no point in crying."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0625.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0625.opus"
       }
     },
     {
@@ -6278,7 +6278,7 @@
       "grammar_point_id": "gp-a-20",
       "variants": ["Only then did the truth come out."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0626.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0626.opus"
       }
     },
     {
@@ -6288,7 +6288,7 @@
       "grammar_point_id": "gp-a-20",
       "variants": ["She came up with a plan."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0627.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0627.opus"
       }
     },
     {
@@ -6298,7 +6298,7 @@
       "grammar_point_id": "gp-a-20",
       "variants": ["It was utterly hopeless."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0628.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0628.opus"
       }
     },
     {
@@ -6308,7 +6308,7 @@
       "grammar_point_id": "gp-a-20",
       "variants": ["I ended up walking home."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0629.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0629.opus"
       }
     },
     {
@@ -6318,7 +6318,7 @@
       "grammar_point_id": "gp-a-20",
       "variants": ["Under no circumstances is he allowed in."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0630.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0630.opus"
       }
     },
     {
@@ -6328,7 +6328,7 @@
       "grammar_point_id": "gp-a-20",
       "variants": ["He got away with murder."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0631.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0631.opus"
       }
     },
     {
@@ -6338,7 +6338,7 @@
       "grammar_point_id": "gp-a-20",
       "variants": ["The results were deeply disappointing."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0632.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0632.opus"
       }
     },
     {
@@ -6348,7 +6348,7 @@
       "grammar_point_id": "gp-a-20",
       "variants": ["It's barely worth mentioning."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0633.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0633.opus"
       }
     },
     {
@@ -6358,7 +6358,7 @@
       "grammar_point_id": "gp-a-20",
       "variants": ["I put up with it for too long."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0634.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0634.opus"
       }
     },
     {
@@ -6368,7 +6368,7 @@
       "grammar_point_id": "gp-a-20",
       "variants": ["Never say never."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0635.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0635.opus"
       }
     },
     {
@@ -6378,7 +6378,7 @@
       "grammar_point_id": "gp-a-20",
       "variants": ["We're looking forward to seeing you."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0636.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0636.opus"
       }
     },
     {
@@ -6388,7 +6388,7 @@
       "grammar_point_id": "gp-a-20",
       "variants": ["So close was the finish that nobody breathed."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0637.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0637.opus"
       }
     },
     {
@@ -6398,7 +6398,7 @@
       "grammar_point_id": "gp-a-20",
       "variants": ["It turned out to be a trap."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0638.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0638.opus"
       }
     },
     {
@@ -6408,7 +6408,7 @@
       "grammar_point_id": "gp-a-21",
       "variants": ["What's going on here?"],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0639.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0639.opus"
       }
     },
     {
@@ -6418,7 +6418,7 @@
       "grammar_point_id": "gp-a-21",
       "variants": ["He's about to give up."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0640.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0640.opus"
       }
     },
     {
@@ -6428,7 +6428,7 @@
       "grammar_point_id": "gp-a-21",
       "variants": ["She refuses to surrender."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0641.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0641.opus"
       }
     },
     {
@@ -6438,7 +6438,7 @@
       "grammar_point_id": "gp-a-21",
       "variants": ["The scene takes place at night."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0642.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0642.opus"
       }
     },
     {
@@ -6448,7 +6448,7 @@
       "grammar_point_id": "gp-a-21",
       "variants": ["Let me rewatch that moment."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0643.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0643.opus"
       },
       "chunk_slot": "rewatch"
     },
@@ -6459,7 +6459,7 @@
       "grammar_point_id": "gp-a-21",
       "variants": ["I didn't quite catch that."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0644.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0644.opus"
       }
     },
     {
@@ -6479,7 +6479,7 @@
       "grammar_point_id": "gp-a-21",
       "variants": ["Pure chills."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0646.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0646.opus"
       }
     },
     {
@@ -6489,7 +6489,7 @@
       "grammar_point_id": "gp-a-21",
       "variants": ["A king bows to no one."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0647.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0647.opus"
       }
     },
     {
@@ -6499,7 +6499,7 @@
       "grammar_point_id": "gp-a-21",
       "variants": ["They knelt in silence."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0648.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0648.opus"
       }
     },
     {
@@ -6509,7 +6509,7 @@
       "grammar_point_id": "gp-a-21",
       "variants": ["He sacrificed everything for his friends."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0649.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0649.opus"
       }
     },
     {
@@ -6519,7 +6519,7 @@
       "grammar_point_id": "gp-a-21",
       "variants": ["Mortal but unbroken."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0650.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0650.opus"
       }
     },
     {
@@ -6529,7 +6529,7 @@
       "grammar_point_id": "gp-a-21",
       "variants": ["They fought to survive."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0651.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0651.opus"
       }
     },
     {
@@ -6539,7 +6539,7 @@
       "grammar_point_id": "gp-a-21",
       "variants": ["The wounded soldier kept walking."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0652.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0652.opus"
       }
     },
     {
@@ -6549,7 +6549,7 @@
       "grammar_point_id": "gp-a-21",
       "variants": ["He felt invisible among them."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0653.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0653.opus"
       }
     },
     {
@@ -6559,7 +6559,7 @@
       "grammar_point_id": "gp-a-21",
       "variants": ["Everyone wanted to be noticed."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0654.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0654.opus"
       }
     },
     {
@@ -6569,7 +6569,7 @@
       "grammar_point_id": "gp-a-21",
       "variants": ["Being shut out hurts."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0655.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0655.opus"
       }
     },
     {
@@ -6579,7 +6579,7 @@
       "grammar_point_id": "gp-a-21",
       "variants": ["The crowd fell silent."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0656.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0656.opus"
       }
     },
     {
@@ -6589,7 +6589,7 @@
       "grammar_point_id": "gp-a-21",
       "variants": ["The audience burst into applause."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0657.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0657.opus"
       }
     },
     {
@@ -6599,7 +6599,7 @@
       "grammar_point_id": "gp-a-21",
       "variants": ["It was a bitter defeat."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0658.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0658.opus"
       }
     },
     {
@@ -6609,7 +6609,7 @@
       "grammar_point_id": "gp-a-21",
       "variants": ["Fate can be cruel."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0659.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0659.opus"
       }
     },
     {
@@ -6619,7 +6619,7 @@
       "grammar_point_id": "gp-a-21",
       "variants": ["Yet hope remains."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0660.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0660.opus"
       }
     },
     {
@@ -6629,7 +6629,7 @@
       "grammar_point_id": "gp-a-21",
       "variants": ["The hero faced his destiny."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0661.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0661.opus"
       }
     },
     {
@@ -6639,7 +6639,7 @@
       "grammar_point_id": "gp-a-21",
       "variants": ["No words were needed."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0662.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0662.opus"
       }
     },
     {
@@ -6649,7 +6649,7 @@
       "grammar_point_id": "gp-a-21",
       "variants": ["That look said it all."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0663.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0663.opus"
       }
     },
     {
@@ -6659,7 +6659,7 @@
       "grammar_point_id": "gp-a-21",
       "variants": ["The battle was fierce."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0664.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0664.opus"
       }
     },
     {
@@ -6669,7 +6669,7 @@
       "grammar_point_id": "gp-a-21",
       "variants": ["Survival was all that mattered."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0665.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0665.opus"
       }
     },
     {
@@ -6679,7 +6679,7 @@
       "grammar_point_id": "gp-a-21",
       "variants": ["Grief turned into rage."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0666.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0666.opus"
       }
     },
     {
@@ -6689,7 +6689,7 @@
       "grammar_point_id": "gp-a-21",
       "variants": ["The prophecy came true."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0667.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0667.opus"
       }
     },
     {
@@ -6699,7 +6699,7 @@
       "grammar_point_id": "gp-a-21",
       "variants": ["It ends where it began."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0668.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0668.opus"
       }
     },
     {
@@ -6709,7 +6709,7 @@
       "grammar_point_id": "gp-a-22",
       "variants": ["This time tomorrow I'll be flying home."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0669.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0669.opus"
       }
     },
     {
@@ -6719,7 +6719,7 @@
       "grammar_point_id": "gp-a-22",
       "variants": ["By Friday, everything will have changed."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0670.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0670.opus"
       }
     },
     {
@@ -6729,7 +6729,7 @@
       "grammar_point_id": "gp-a-22",
       "variants": ["The road is being repaired again."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0671.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0671.opus"
       }
     },
     {
@@ -6739,7 +6739,7 @@
       "grammar_point_id": "gp-a-22",
       "variants": ["He must have missed the train."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0672.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0672.opus"
       }
     },
     {
@@ -6749,7 +6749,7 @@
       "grammar_point_id": "gp-a-22",
       "variants": ["She can't have done that."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0673.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0673.opus"
       }
     },
     {
@@ -6759,7 +6759,7 @@
       "grammar_point_id": "gp-a-22",
       "variants": ["You should have warned me."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0674.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0674.opus"
       }
     },
     {
@@ -6769,7 +6769,7 @@
       "grammar_point_id": "gp-a-22",
       "variants": ["If I had known, I would have stayed."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0675.opus"
+        "en_gb": "audio/phrases/jenny/ph-a-0675.opus"
       }
     },
     {
@@ -6779,7 +6779,7 @@
       "grammar_point_id": "gp-a-22",
       "variants": ["I wish I had listened to you."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0676.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0676.opus"
       }
     },
     {
@@ -6799,7 +6799,7 @@
       "grammar_point_id": "gp-a-22",
       "variants": ["She's used to speaking in public."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0678.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0678.opus"
       }
     },
     {
@@ -6809,7 +6809,7 @@
       "grammar_point_id": "gp-a-22",
       "variants": ["The coach whose advice I trust has retired."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0679.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0679.opus"
       }
     },
     {
@@ -6829,7 +6829,7 @@
       "grammar_point_id": "gp-a-22",
       "variants": ["The deal fell through."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0681.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0681.opus"
       }
     },
     {
@@ -6839,7 +6839,7 @@
       "grammar_point_id": "gp-a-22",
       "variants": ["I can't put up with this behaviour."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0682.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0682.opus"
       },
       "chunk_slot": "put"
     },
@@ -6850,7 +6850,7 @@
       "grammar_point_id": "gp-a-22",
       "variants": ["It turned out to be a mistake."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0683.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0683.opus"
       }
     },
     {
@@ -6860,7 +6860,7 @@
       "grammar_point_id": "gp-a-22",
       "variants": ["We ended up laughing about it."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0684.opus"
+        "en_gb": "audio/phrases/aria/ph-a-0684.opus"
       }
     },
     {
@@ -6870,7 +6870,7 @@
       "grammar_point_id": "gp-a-22",
       "variants": ["Success is highly unlikely."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0685.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0685.opus"
       }
     },
     {
@@ -6880,7 +6880,7 @@
       "grammar_point_id": "gp-a-22",
       "variants": ["I'm deeply grateful."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0686.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0686.opus"
       }
     },
     {
@@ -6890,7 +6890,7 @@
       "grammar_point_id": "gp-a-22",
       "variants": ["There's no point in arguing now."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0687.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0687.opus"
       }
     },
     {
@@ -6900,7 +6900,7 @@
       "grammar_point_id": "gp-a-22",
       "variants": ["We had difficulty finding a taxi."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0688.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0688.opus"
       }
     },
     {
@@ -6920,7 +6920,7 @@
       "grammar_point_id": "gp-a-22",
       "variants": ["Never have I been so wrong."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0690.opus"
+        "en_gb": "audio/phrases/emily/ph-a-0690.opus"
       }
     },
     {
@@ -6930,7 +6930,7 @@
       "grammar_point_id": "gp-a-22",
       "variants": ["Had we left earlier, we would have caught it."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0691.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0691.opus"
       }
     },
     {
@@ -6940,7 +6940,7 @@
       "grammar_point_id": "gp-a-22",
       "variants": ["Not only did he apologise, but he also paid."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0692.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0692.opus"
       }
     },
     {
@@ -6950,7 +6950,7 @@
       "grammar_point_id": "gp-a-22",
       "variants": ["It's absolutely worth watching."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0693.opus"
+        "en_gb": "audio/phrases/libby/ph-a-0693.opus"
       }
     },
     {
@@ -6960,7 +6960,7 @@
       "grammar_point_id": "gp-a-22",
       "variants": ["The results have already been announced."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0694.opus"
+        "en_gb": "audio/phrases/ava/ph-a-0694.opus"
       }
     },
     {
@@ -6970,7 +6970,7 @@
       "grammar_point_id": "gp-a-22",
       "variants": ["You'll get used to the pace."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0695.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0695.opus"
       }
     },
     {
@@ -6980,7 +6980,7 @@
       "grammar_point_id": "gp-a-22",
       "variants": ["I feel like I've been here before."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0696.opus"
+        "en_gb": "audio/phrases/michelle/ph-a-0696.opus"
       }
     },
     {
@@ -7000,7 +7000,7 @@
       "grammar_point_id": "gp-a-22",
       "variants": ["Keep fighting until the end."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0698.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0698.opus"
       }
     },
     {
@@ -7010,7 +7010,7 @@
       "grammar_point_id": "gp-a-22",
       "variants": ["We'll have covered everything by then."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0699.opus"
+        "en_gb": "audio/phrases/maisie/ph-a-0699.opus"
       }
     },
     {
@@ -7020,7 +7020,7 @@
       "grammar_point_id": "gp-a-11",
       "variants": ["I shouldn't have eaten the map."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0700.opus"
+        "en_gb": "audio/phrases/natasha/ph-a-0700.opus"
       }
     },
     {
@@ -7030,7 +7030,7 @@
       "grammar_point_id": "gp-a-22",
       "variants": ["Little did the moon know."],
       "audio": {
-        "en_gb": "audio/phrases/sonia/ph-a-0701.opus"
+        "en_gb": "audio/phrases/emma/ph-a-0701.opus"
       }
     }
   ]
