@@ -983,8 +983,12 @@ body {
 
 .dash-quest-done span[aria-hidden] {
   background: var(--primary);
-  border-color: var(--primary);
+  border-color: var(--primary-deep);
   color: var(--on-primary);
+  font-weight: 800;
+  /* фидбей 2026-10-08: белая ✓ на белом круге — жёсткая обводка исключает
+     потерю галочки в любой теме/при недогруженном CSS */
+  box-shadow: inset 0 0 0 2px var(--primary-deep);
 }
 
 /* XP: сегменты-точки вместо неоновой полосы (specs/08 §1a) */

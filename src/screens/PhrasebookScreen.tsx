@@ -214,6 +214,8 @@ export function PhrasebookSituationScreen() {
               <p className="dim" lang="ru">
                 {line.translation_ru}
               </p>
+              {/* фидбей 2026-10-08: непонятно, что вводить — своя реплика EN */}
+              <p className="dim">{t('phrasebook.typeHint')}</p>
               <form
                 className="lesson-input-row"
                 onSubmit={(event) => {

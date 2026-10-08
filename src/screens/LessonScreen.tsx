@@ -418,8 +418,28 @@ export default function LessonScreen({
       setExerciseIndex(0)
       setRuleShown(false)
       setPhase(next.stepIndex === 7 ? { kind: 'deck' } : { kind: 'step' })
+      return
     }
-  }, [view, step, exerciseIndex, stepExercises.length, persist])
+    // Самовосстановление (фидбей 2026-10-08: «Дальше» мертва без объяснений):
+    // все задания шага отвечены (results полны), но СЧЁТЧИК answered отстал от
+    // total — старый/гоночный чекпоинт. Легитимные ворота (разогрев <70% при
+    // посчитанных ответах) не трогаем — только рассинхрон счёта. Молчать нельзя:
+    // форсим переход на следующий шаг.
+    const score = checkpointRef.current.scores.find((s) => s.stepIndex === step.index)
+    const counterBehind = (score?.answered ?? 0) < stepExercises.length
+    const allAnswered = stepExercises.every(
+      ({ exercise }) => checkpointRef.current.results[exercise.id] !== undefined,
+    )
+    const nextStep = view.steps.find((s) => s.index > checkpointRef.current.stepIndex)
+    if (counterBehind && allAnswered && nextStep) {
+      const healed = { ...checkpointRef.current, stepIndex: nextStep.index }
+      applyCheckpoint(healed)
+      void persist(healed)
+      setExerciseIndex(0)
+      setRuleShown(false)
+      setPhase(nextStep.index === 7 ? { kind: 'deck' } : { kind: 'step' })
+    }
+  }, [view, step, exerciseIndex, stepExercises, persist])
 
   /** Повтор шага (разогрев <70% с первой попытки — specs/02 §2: блок повторяется
    * «с новыми заданиями» — план rules-revision#R6: на warmup-шаге собирается

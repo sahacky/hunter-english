@@ -114,8 +114,11 @@ describe('LessonScreen /#/lesson/:id', () => {
     const list = await screen.findByTitle('lesson-vocab-list')
     expect(within(list).getByText('I am Ivan.')).toBeInTheDocument()
     expect(within(list).getAllByText(/—/).length).toBeGreaterThan(10)
-    // у каждой фразы — кнопка озвучки
-    expect(within(list).getAllByRole('button', { name: 'Прослушать' }).length).toBeGreaterThan(10)
+    // у каждой фразы — кнопка озвучки; клик уходит в speak (мок tts)
+    const playButtons = within(list).getAllByRole('button', { name: 'Прослушать' })
+    expect(playButtons.length).toBeGreaterThan(10)
+    fireEvent.click(playButtons[0]!)
+    expect(speak).toHaveBeenCalled()
     fireEvent.click(toggle)
     expect(screen.queryByTitle('lesson-vocab-list')).not.toBeInTheDocument()
   })
