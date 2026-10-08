@@ -543,6 +543,11 @@ describe('LessonScreen: обход и ветки (M19)', () => {
         fireEvent.click(said)
         return
       }
+      const goNext = screen.queryByRole('button', { name: /К следующему шагу/ })
+      if (goNext) {
+        fireEvent.click(goNext)
+        return
+      }
       const next = screen.queryByRole('button', { name: /^Дальше/ })
       if (next) {
         fireEvent.click(next)
@@ -574,7 +579,7 @@ describe('LessonScreen: обход и ветки (M19)', () => {
     let seenListeningRetry = false
     for (let step = 0; step < 1200 && !done; step += 1) {
       await waitFor(() => undefined, { timeout: 20 })
-      if (screen.queryByText(/Слух просел/)) seenListeningRetry = true
+      if (screen.queryByText(/тяжело на слух/)) seenListeningRetry = true
       if (screen.queryByText('Урок завершён')) {
         done = true
         break
@@ -798,6 +803,44 @@ describe('LessonScreen: хвосты покрытия (M21#21.4)', () => {
     })
   })
 
+  it('итог шага (V9): последняя работа отвечена — точность и «К следующему шагу»', async () => {
+    const view = await loadLessonView('les-e-01')
+    if (!view) throw new Error('нет данных урока les-e-01')
+    renderScreen('E-01')
+    fireEvent.click(await screen.findByRole('button', { name: /Понятно/ }))
+    for (const { exercise } of view.content[1] ?? []) {
+      const answers = exercise.payload.gap_answers as string[]
+      const input = await screen.findByRole('textbox')
+      fireEvent.change(input, { target: { value: answers[0] ?? 'am' } })
+      fireEvent.click(screen.getByRole('button', { name: /Проверить/ }))
+      fireEvent.click(await screen.findByRole('button', { name: /^Дальше/ }))
+    }
+    // разогрев: всё верно с первой попытки; на последнем задании не жмём
+    // «Дальше» — сперва сводка шага (V9)
+    const warmup = view.content[2] ?? []
+    for (let index = 0; index < warmup.length; index += 1) {
+      const { exercise } = warmup[index]!
+      if (exercise.type === 'choose_translation') {
+        const payload = exercise.payload as unknown as { options: string[]; correct: number }
+        fireEvent.click(
+          await screen.findByRole('button', { name: payload.options[payload.correct]! }),
+        )
+      } else {
+        const pairs = (exercise.payload as unknown as { pairs: { en: string; ru: string }[] }).pairs
+        for (const { en, ru } of pairs) {
+          fireEvent.click(await screen.findByRole('button', { name: ru }))
+          fireEvent.click(screen.getByRole('button', { name: en }))
+        }
+      }
+      fireEvent.click(await screen.findByRole('button', { name: /^Дальше/ }))
+    }
+    // сводка шага: последняя работа + 100% + переход
+    expect(await screen.findByText(/последняя работа/)).toBeInTheDocument()
+    expect(screen.getByText('Точность: 100% (5 из 5 с первой попытки)')).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: /К следующему шагу/ }))
+    expect(await screen.findByText(/шаг 3 из 7/)).toBeInTheDocument()
+  })
+
   it('разогрев <70%: «Повторить шаг» сбрасывает блок (specs/02 §2)', async () => {
     const view = await loadLessonView('les-e-01')
     if (!view) throw new Error('нет данных урока les-e-01')
@@ -908,7 +951,8 @@ describe('LessonScreen: хвосты покрытия (M21#21.4)', () => {
     // фикс квирка onAnswer+onNext одним кликом: ref-зеркало синхронно —
     // переход с последнего матча шага работает с первого «Дальше»
     fireEvent.click(await screen.findByRole('button', { name: /^Дальше/ }))
-    // все синтетические ответы посчитаны → шаг пройден, переход в «Построение»
+    // сводка шага (V9) → переход с неё
+    fireEvent.click(await screen.findByRole('button', { name: /К следующему шагу/ }))
     expect(await screen.findByText(/шаг 3 из 7/)).toBeInTheDocument()
   })
 

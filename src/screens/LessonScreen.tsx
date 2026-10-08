@@ -212,6 +212,9 @@ export default function LessonScreen({
   const [checkpoint, setCheckpoint] = useState<LessonCheckpoint>(() => createCheckpoint())
   const [exerciseIndex, setExerciseIndex] = useState(0)
   const [ruleShown, setRuleShown] = useState(false)
+  /** V9: итог шага открыт (индекс шага) — финальная страница после последней
+   * работы шага: точность, вердикт «дальше/перепройти»; переход — только с неё. */
+  const [stepSummaryFor, setStepSummaryFor] = useState<number | null>(null)
   const [summary, setSummary] = useState<PassSummary | null>(null)
   /** Проход по ошибкам (M11#11.3): id заданий, где были ошибки (без XP и персиста). */
   const [replayIds, setReplayIds] = useState<string[]>([])
@@ -402,7 +405,40 @@ export default function LessonScreen({
     [view, persist],
   )
 
-  /** «Дальше»: следующее задание шага или переход шага (specs/02 §2). */
+  /** Переход на следующий шаг: advanceStep, при отстающем счётчике —
+   * самовосстановление (см. handleNext). Вызывается только со сводки шага. */
+  const advanceFromSummary = useCallback(() => {
+    /* istanbul ignore start — двойная гарда: кнопка рендерится только при view/шаге */
+    if (!view || !step) return
+    /* istanbul ignore stop */
+    let target = advanceStep(checkpointRef.current, view.steps)
+    if (target === null) {
+      // Самовосстановление (фидбей 2026-10-08: «Дальше» мертва без объяснений):
+      // все задания шага отвечены (results полны), но СЧЁТЧИК answered отстал —
+      // старый/гоночный чекпоинт. Легитимные ворота не трогаем — только рассинхрон.
+      const score = checkpointRef.current.scores.find((s) => s.stepIndex === step.index)
+      const counterBehind = (score?.answered ?? 0) < stepExercises.length
+      const allAnswered = stepExercises.every(
+        ({ exercise }) => checkpointRef.current.results[exercise.id] !== undefined,
+      )
+      const nextStep = view.steps.find((s) => s.index > checkpointRef.current.stepIndex)
+      if (counterBehind && allAnswered && nextStep) {
+        target = { ...checkpointRef.current, stepIndex: nextStep.index }
+      }
+    }
+    if (target) {
+      applyCheckpoint(target)
+      void persist(target)
+      setExerciseIndex(0)
+      setRuleShown(false)
+      setStepSummaryFor(null)
+      setPhase(target.stepIndex === 7 ? { kind: 'deck' } : { kind: 'step' })
+    }
+  }, [view, step, stepExercises, persist])
+
+  /** «Дальше»: следующее задание шага; последнее — открывает сводку шага (V9),
+   * переход — только кнопкой сводки «К следующему шагу» (финальная страница:
+   * точность, вердикт «дальше/перепройти» — фидбей 2026-10-08). */
   const handleNext = useCallback(() => {
     if (!view || !step) return
     stopSpeak()
@@ -411,35 +447,12 @@ export default function LessonScreen({
       setExerciseIndex(exerciseIndex + 1)
       return
     }
-    const next = advanceStep(checkpointRef.current, view.steps)
-    if (next) {
-      applyCheckpoint(next)
-      void persist(next)
-      setExerciseIndex(0)
-      setRuleShown(false)
-      setPhase(next.stepIndex === 7 ? { kind: 'deck' } : { kind: 'step' })
-      return
+    if (step.kind !== 'rule') {
+      setStepSummaryFor(step.index)
+    } else {
+      advanceFromSummary()
     }
-    // Самовосстановление (фидбей 2026-10-08: «Дальше» мертва без объяснений):
-    // все задания шага отвечены (results полны), но СЧЁТЧИК answered отстал от
-    // total — старый/гоночный чекпоинт. Легитимные ворота (разогрев <70% при
-    // посчитанных ответах) не трогаем — только рассинхрон счёта. Молчать нельзя:
-    // форсим переход на следующий шаг.
-    const score = checkpointRef.current.scores.find((s) => s.stepIndex === step.index)
-    const counterBehind = (score?.answered ?? 0) < stepExercises.length
-    const allAnswered = stepExercises.every(
-      ({ exercise }) => checkpointRef.current.results[exercise.id] !== undefined,
-    )
-    const nextStep = view.steps.find((s) => s.index > checkpointRef.current.stepIndex)
-    if (counterBehind && allAnswered && nextStep) {
-      const healed = { ...checkpointRef.current, stepIndex: nextStep.index }
-      applyCheckpoint(healed)
-      void persist(healed)
-      setExerciseIndex(0)
-      setRuleShown(false)
-      setPhase(nextStep.index === 7 ? { kind: 'deck' } : { kind: 'step' })
-    }
-  }, [view, step, exerciseIndex, stepExercises, persist])
+  }, [view, step, exerciseIndex, stepExercises.length, advanceFromSummary])
 
   /** Повтор шага (разогрев <70% с первой попытки — specs/02 §2: блок повторяется
    * «с новыми заданиями» — план rules-revision#R6: на warmup-шаге собирается
@@ -464,6 +477,7 @@ export default function LessonScreen({
     applyCheckpoint(cp)
     void persist(cp)
     setExerciseIndex(0)
+    setStepSummaryFor(null)
     if (step?.kind === 'warmup' && view) setView(withWarmupVariant(view))
   }
 
@@ -472,13 +486,14 @@ export default function LessonScreen({
     [view, checkpoint],
   )
 
-  const stepNeedsRepeat =
-    stepEvaluation !== null &&
-    !stepEvaluation.passed &&
+  /** V9: шаг «лечим» — счётчик отстал, но все задания отвечены (results полны):
+   *  итог показываем как пройденный, переход делает advanceFromSummary. */
+  const stepHealable =
     step !== undefined &&
     stepExercises.length > 0 &&
-    (checkpoint.scores.find((s) => s.stepIndex === checkpoint.stepIndex)?.answered ?? 0) >=
-      stepExercises.length
+    (checkpoint.scores.find((s) => s.stepIndex === step.index)?.answered ?? 0) <
+      stepExercises.length &&
+    stepExercises.every(({ exercise }) => checkpoint.results[exercise.id] !== undefined)
 
   /** Шаг 7: фразы урока → SRS (rule-1: en-ru первой) — specs/02 §2 шаг 7. */
   const enrollDeck = useCallback(async () => {
@@ -904,22 +919,49 @@ export default function LessonScreen({
         />
       )}
 
-      {stepNeedsRepeat && (
-        <div className="lesson-actions">
-          <p className="dim">{t('lesson.stepIncomplete')}</p>
-          <button type="button" className="srs-btn" onClick={repeatStep}>
-            {t('lesson.repeatStep')}
-          </button>
-        </div>
-      )}
-
-      {/* слух <60%: шаг не блокируем, но предлагаем повтор (specs/02 §2, план M21#21.1) */}
-      {stepEvaluation?.retrySuggested && !stepNeedsRepeat && (
-        <div className="lesson-actions">
-          <p className="dim">{t('lesson.listeningRetryHint')}</p>
-          <button type="button" className="srs-btn" onClick={repeatStep}>
-            {t('lesson.repeatStep')}
-          </button>
+      {/* Итог шага (V9, фидбей 2026-10-08): последняя работа отвечена — экран
+          с точностью и вердиктом «дальше / перепройти» вместо немой тишины */}
+      {step && step.kind !== 'rule' && stepSummaryFor === step.index && stepEvaluation && (
+        <div className="lesson-step-summary" role="status">
+          <p
+            className={
+              stepEvaluation.passed || stepHealable ? 'lesson-verdict-ok' : 'lesson-verdict-bad'
+            }
+          >
+            {stepEvaluation.passed || stepHealable
+              ? t('lesson.stepDoneTitle', { step: t(`lesson.steps.${step.kind}`) })
+              : t('lesson.stepFailedTitle')}
+          </p>
+          <p className="dim">
+            {t('lesson.stepAccuracy', {
+              percent: Math.round((stepEvaluation.accuracy ?? 0) * 100),
+              correct: checkpoint.scores.find((s) => s.stepIndex === step.index)?.firstTryCorrect,
+              total: stepExercises.length,
+            })}
+          </p>
+          <p className="dim">
+            {stepEvaluation.passed || stepHealable
+              ? stepEvaluation.retrySuggested
+                ? t('lesson.stepListeningRetry')
+                : t('lesson.stepPassedHint')
+              : t('lesson.stepFailedHint')}
+          </p>
+          <div className="lesson-actions">
+            {stepEvaluation.passed || stepHealable ? (
+              <button type="button" className="srs-btn srs-btn-good" onClick={advanceFromSummary}>
+                {t('lesson.stepGoNext')}
+              </button>
+            ) : (
+              <button type="button" className="srs-btn srs-btn-again" onClick={repeatStep}>
+                {t('lesson.repeatStep')}
+              </button>
+            )}
+            {(stepEvaluation.passed || stepHealable) && stepEvaluation.retrySuggested && (
+              <button type="button" className="srs-btn" onClick={repeatStep}>
+                {t('lesson.repeatStep')}
+              </button>
+            )}
+          </div>
         </div>
       )}
     </section>
