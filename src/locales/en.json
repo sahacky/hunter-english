@@ -186,7 +186,9 @@
         "past": "Put it into the past",
         "future": "Put it into the future"
       }
-    }
+    },
+    "vocabToggle": "Lesson phrases ({{count}}) — spelling and audio",
+    "vocabPlay": "Play"
   },
   "login": {
     "title": "Sign in",
@@ -265,7 +267,8 @@
       "health": "Health and pharmacy",
       "numbers-time": "Numbers, time and dates"
     },
-    "answerByVoice": "Answer by voice"
+    "answerByVoice": "Answer by voice",
+    "typeHint": "Type this line of yours in English - translate the hint above (typos forgiven)"
   },
   "quotes": {
     "title": "Quotes",
