@@ -5,11 +5,18 @@
 // «послушал вне приложения»; минуты считаются шлюзом озвучки (tts sink).
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { buildDailyTracks, type ListenTrack } from '../data/listening'
 import { speak, stopSpeak, currentAudio } from '../lib/tts'
 import { dayStart } from '../domain/srs/scheduler'
 import { createQuestDay, LISTENING_TARGET_SEC } from '../domain/game/game'
-import { addManualListeningSeconds, questWithListening } from '../data/listening'
+import {
+  addManualListeningSeconds,
+  buildDailyTracks,
+  questWithListening,
+  type ListenTrack,
+} from '../data/listening'
+import { checkText } from '../domain/check/checker'
+import type { CheckTask } from '../domain/check/types'
+import { awardXp } from '../domain/game/award'
 import type { ProgressRepository } from '../domain/progress'
 import { DexieProgressRepository } from '../data/progress-repository'
 
@@ -28,6 +35,12 @@ export default function ListenScreen({ repo: repoProp }: ListenProps) {
   const [playingAll, setPlayingAll] = useState(false)
   const [currentId, setCurrentId] = useState<string | null>(null)
   const playAllRef = useRef(false)
+  // V16 (фидбей 2026-10-08): диктант прямо в «Слушать» — квест «Диктант»
+  // качается и из этой вкладки, не только из уроков
+  const [dictationId, setDictationId] = useState<string | null>(null)
+  const [dictationValue, setDictationValue] = useState('')
+  const [dictationResult, setDictationResult] = useState<'ok' | 'bad' | null>(null)
+  const creditedRef = useRef(new Set<string>())
 
   const refresh = async () => {
     const dayIso = dayStart(new Date()).toISOString()
@@ -100,6 +113,29 @@ export default function ListenScreen({ repo: repoProp }: ListenProps) {
     setPlayingAll(false)
     setCurrentId(null)
     stopSpeak()
+  }
+
+  /** Открыть диктант трека: автопуск + поле ввода. */
+  const openDictation = (track: ListenTrack) => {
+    stopAll()
+    setDictationId(track.id)
+    setDictationValue('')
+    setDictationResult(null)
+    play(track)
+  }
+
+  const checkDictation = async (track: ListenTrack) => {
+    /* istanbul ignore next @preserve — гард: пустой ввод/готовый результат блокированы disabled-кнопкой */
+    if (!dictationValue.trim() || dictationResult === 'ok') return
+    const task: CheckTask = { accepted: [track.text], exactTypos: false }
+    const verdict = checkText(dictationValue, task)
+    const ok = verdict.verdict === 'correct' || verdict.verdict === 'correct_typo'
+    setDictationResult(ok ? 'ok' : 'bad')
+    if (ok && !creditedRef.current.has(track.id)) {
+      creditedRef.current.add(track.id)
+      await awardXp(repo, new Date(), 2, 'dictation', { dictation: 1 })
+      await refresh()
+    }
   }
 
   const markOutside = async (minutes: number) => {
@@ -180,6 +216,15 @@ export default function ListenScreen({ repo: repoProp }: ListenProps) {
               </p>
             </div>
             <div className="listen-actions">
+              <button
+                type="button"
+                className="srs-btn"
+                aria-label={t('listen.dictation')}
+                title={t('listen.dictationHint')}
+                onClick={() => openDictation(track)}
+              >
+                ✍
+              </button>
               {track.link && (
                 <a
                   className="srs-btn"
@@ -199,6 +244,58 @@ export default function ListenScreen({ repo: repoProp }: ListenProps) {
                 🐢
               </button>
             </div>
+            {dictationId === track.id && (
+              <form
+                className="lesson-input-row listen-dictation"
+                onSubmit={(event) => {
+                  event.preventDefault()
+                  if (dictationResult === 'bad') {
+                    setDictationValue('')
+                    setDictationResult(null)
+                    return
+                  }
+                  void checkDictation(track)
+                }}
+              >
+                <input
+                  className="lesson-input"
+                  lang="en"
+                  value={dictationValue}
+                  onChange={(event) => setDictationValue(event.target.value)}
+                  disabled={dictationResult === 'ok'}
+                />
+                {!dictationResult && (
+                  <button
+                    type="submit"
+                    className="srs-btn srs-btn-good"
+                    disabled={!dictationValue.trim()}
+                  >
+                    {t('basics.check')} <kbd>⏎</kbd>
+                  </button>
+                )}
+                {dictationResult === 'ok' && (
+                  <span className="lesson-verdict-ok" role="status">
+                    {t('listen.dictationOk')}
+                  </span>
+                )}
+                {dictationResult === 'bad' && (
+                  <span className="lesson-verdict-bad" role="status">
+                    {t('listen.dictationWrong')} <span lang="en">{track.text}</span>
+                  </span>
+                )}
+                <button
+                  type="button"
+                  className="srs-btn"
+                  onClick={() => {
+                    setDictationId(null)
+                    setDictationResult(null)
+                    setDictationValue('')
+                  }}
+                >
+                  {t('listen.dictationClose')}
+                </button>
+              </form>
+            )}
           </li>
         ))}
       </ul>

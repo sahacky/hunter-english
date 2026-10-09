@@ -1,7 +1,7 @@
 // Implements: plan://curriculum-review#I.2 — экран input-трека /#/listen
 import 'fake-indexeddb/auto'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
-import { fireEvent, render, screen, waitFor } from '@testing-library/react'
+import { fireEvent, render, screen, waitFor, within } from '@testing-library/react'
 import { HashRouter } from 'react-router-dom'
 import '../i18n'
 import ListenScreen from './ListenScreen'
@@ -181,6 +181,51 @@ describe('ListenScreen', () => {
     expect(
       await screen.findByText(/Сегодня: 0 \/ 20 мин/, {}, { timeout: 8000 }),
     ).toBeInTheDocument()
+  })
+
+  it('диктант в «Слушать» (V16): верный ответ — +1 к квесту, повтор трека не двойной', async () => {
+    renderListen()
+    await screen.findByText(/треков в эфире/, {}, { timeout: 8000 })
+    const row = screen.getAllByRole('listitem')[0]!
+    const track = row.querySelector('p[lang="en"]')?.textContent?.replace(/[«»]/g, '')
+    fireEvent.click(within(row).getByRole('button', { name: 'Диктант' }))
+    const input = within(row).getByRole('textbox')
+    fireEvent.change(input, { target: { value: track ?? 'zzz' } })
+    fireEvent.submit(input.closest('form')!)
+    expect(await within(row).findByText(/\+1 к квесту/)).toBeInTheDocument()
+    let quest = await repo.getQuestDay(new Date().toISOString().slice(0, 10))
+    // репо-день: точный ключ — через dayStart; проверим слот любым днём сегодня
+    const dayIso = dayStart(new Date()).toISOString()
+    quest = await repo.getQuestDay(dayIso)
+    expect(quest?.slots.dictation.done).toBe(1)
+    // тот же трек повторно — зачёт один раз (credited-guard)
+    fireEvent.click(within(row).getByRole('button', { name: 'Закрыть' }))
+    fireEvent.click(within(row).getByRole('button', { name: 'Диктант' }))
+    const input2 = within(row).getByRole('textbox')
+    fireEvent.change(input2, { target: { value: track ?? 'zzz' } })
+    fireEvent.submit(input2.closest('form')!)
+    await within(row).findByText(/\+1 к квесту/)
+    quest = await repo.getQuestDay(dayIso)
+    expect(quest?.slots.dictation.done).toBe(1)
+  })
+
+  it('диктант: неверный ответ — показываем правильную фразу, квест не растёт', async () => {
+    renderListen()
+    await screen.findByText(/треков в эфире/, {}, { timeout: 8000 })
+    const row = screen.getAllByRole('listitem')[0]!
+    fireEvent.click(within(row).getByRole('button', { name: 'Диктант' }))
+    const input = within(row).getByRole('textbox')
+    fireEvent.change(input, { target: { value: 'zzz zzz' } })
+    fireEvent.submit(input.closest('form')!)
+    expect(await within(row).findByText(/Правильно так:/)).toBeInTheDocument()
+    // Enter при ошибке — очистка и новая попытка (без закрытия панели)
+    fireEvent.submit(input.closest('form')!)
+    expect(within(row).queryByText(/Правильно так:/)).not.toBeInTheDocument()
+    fireEvent.change(input, { target: { value: 'zzz' } })
+    fireEvent.submit(input.closest('form')!)
+    expect(await within(row).findByText(/Правильно так:/)).toBeInTheDocument()
+    const quest = await repo.getQuestDay(dayStart(new Date()).toISOString())
+    expect(quest?.slots.dictation.done ?? 0).toBe(0)
   })
 
   it('эфир дня (V6): фразы начатого урока попадают в плейлист; порядок дня стабилен', async () => {

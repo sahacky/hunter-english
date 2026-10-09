@@ -1784,3 +1784,8 @@ body {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+
+/* V16: диктант в «Слушать» */
+.listen-dictation {
+  flex-basis: 100%;
+}

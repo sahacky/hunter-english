@@ -502,7 +502,12 @@
     "video": "Video moment (original)",
     "outside": "Listened outside the app (minutes):",
     "resetManual": "remove manual {{minutes}} min",
-    "dailyHint": "refreshed daily: quotes + your lesson phrases"
+    "dailyHint": "refreshed daily: quotes + your lesson phrases",
+    "dictation": "Dictation",
+    "dictationHint": "type what you heard - plus one to the Dictation quest",
+    "dictationOk": "Correct! +1 to the quest",
+    "dictationWrong": "Spelled like this:",
+    "dictationClose": "Close"
   },
   "basics": {
     "title": "Alphabet and first words",
