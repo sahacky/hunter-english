@@ -1772,3 +1772,15 @@ body {
   font-size: 0.78rem;
   font-weight: 400;
 }
+
+/* V14: вся строка квеста ведёт к выполнению */
+.dash-quest-list li {
+  cursor: pointer;
+}
+
+/* V14: ссылки квестов */
+.dash-quest-list a {
+  color: var(--primary-deep);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

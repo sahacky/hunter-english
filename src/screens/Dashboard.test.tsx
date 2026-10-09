@@ -66,6 +66,20 @@ describe('Dashboard', () => {
     // input-трек: слот аудирования в списке квестов (plan://curriculum-review#I.1)
     const listeningRow = screen.getByText(/^Аудирование/).closest('li')
     expect(listeningRow?.textContent).toContain('0/20')
+    // V14: слоты кликабельны и ведут к месту выполнения
+    expect(screen.getByRole('link', { name: 'Аудирование' })).toHaveAttribute('href', '#/listen')
+    expect(screen.getByRole('link', { name: 'Повтори карточки' })).toHaveAttribute('href', '#/srs')
+    // диктант — в урок (следующий незавершённый), не во «Слушать»
+    const dictationLink = screen.getByRole('link', { name: 'Диктант' })
+    expect(dictationLink.getAttribute('href')).toMatch(/^#\/lesson\/[A-Z]-\d+$|^#\/path$/)
+    // бонус-квест — тоже ссылка с подсказкой
+    const bonus = screen.getByText(/Бонус:/).closest('li')
+    expect(bonus?.querySelector('a')).toBeTruthy()
+    expect(bonus?.textContent).toMatch(/в уроке|вкладка «Цитаты»/)
+    // клик по СТРОКE (не по ссылке) — тоже переход к выполнению
+    window.location.hash = '#/'
+    fireEvent.click(listeningRow!)
+    expect(window.location.hash).toBe('#/listen')
   })
 
   // Веха S4 (M21#21.4): цитаты не готовы, unmount в загрузке, минутный таймер
@@ -309,5 +323,13 @@ describe('RanksScreen', () => {
       </HashRouter>,
     )
     expect(await screen.findByText(/Не удалось загрузить|ошибк/i)).toBeInTheDocument()
+  })
+})
+
+describe('bonusHref (V14)', () => {
+  it('цитаты — во вкладку цитат; остальное — в урок', async () => {
+    const { bonusHref } = await import('./Dashboard')
+    expect(bonusHref('quotes-cloze-3', '/lesson/E-01')).toBe('/quotes')
+    expect(bonusHref('shadowing-5', '/lesson/E-01')).toBe('/lesson/E-01')
   })
 })
