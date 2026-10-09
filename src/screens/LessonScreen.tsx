@@ -215,6 +215,9 @@ export default function LessonScreen({
   /** V9: итог шага открыт (индекс шага) — финальная страница после последней
    * работы шага: точность, вердикт «дальше/перепройти»; переход — только с неё. */
   const [stepSummaryFor, setStepSummaryFor] = useState<number | null>(null)
+  /** V11: интро шага показано/закрыто (индекс шага) — приветственный экран
+   * «что делать» в начале каждого шага (кроме правила). */
+  const [introDismissed, setIntroDismissed] = useState<number | null>(null)
   const [summary, setSummary] = useState<PassSummary | null>(null)
   /** Проход по ошибкам (M11#11.3): id заданий, где были ошибки (без XP и персиста). */
   const [replayIds, setReplayIds] = useState<string[]>([])
@@ -488,6 +491,16 @@ export default function LessonScreen({
 
   /** V9: шаг «лечим» — счётчик отстал, но все задания отвечены (results полны):
    *  итог показываем как пройденный, переход делает advanceFromSummary. */
+  /** V11: интро шага сейчас на экране (упражнение скрыто). */
+  const stepIntroOpen =
+    step !== undefined &&
+    step.kind !== 'rule' &&
+    exerciseIndex === 0 &&
+    stepSummaryFor === null &&
+    introDismissed !== step.index &&
+    stepExercises.length > 0 &&
+    !checkpoint.results[step.exerciseIds[0]!]
+
   const stepHealable =
     step !== undefined &&
     stepExercises.length > 0 &&
@@ -906,18 +919,49 @@ export default function LessonScreen({
         />
       )}
 
-      {(ruleShown || !isRuleStep) && current && (
-        <ExerciseRouter
-          key={current.exercise.id}
-          current={current}
-          trap={trap}
-          onAnswer={(outcome, attempts) => handleAnswer(outcome, attempts, current.exercise.id)}
-          onDispute={() => handleDispute(current.exercise.id)}
-          onNext={handleNext}
-          phrasesById={view.phrasesById}
-          adaptive={adaptive}
-        />
+      {/* V11 (фидбей 2026-10-08): приветственный экран шага — что делать;
+          на резюме среди шага (первое задание отвечено) не показываем */}
+      {stepIntroOpen && step && (
+        <div className="lesson-step-intro" role="status">
+          <h3>{t('lesson.stepIntro.title', { step: t(`lesson.steps.${step.kind}`) })}</h3>
+          <p className="dim">{t(`lesson.stepIntro.${step.kind}`)}</p>
+          <p className="dim">{t('lesson.stepIntro.tasks', { count: stepExercises.length })}</p>
+          <div className="lesson-actions">
+            <button
+              type="button"
+              className="srs-btn srs-btn-good"
+              onClick={() => setIntroDismissed(step.index)}
+            >
+              {t('lesson.stepIntro.go')} <kbd>⏎</kbd>
+            </button>
+          </div>
+        </div>
       )}
+
+      {/* счётчик заданий шага (фидбей 2026-10-08: «сколько ещё осталось») */}
+      {current && !stepIntroOpen && stepSummaryFor === null && step && step.kind !== 'rule' && (
+        <p className="dim lesson-task-progress">
+          {t('lesson.taskProgress', { current: exerciseIndex + 1, total: stepExercises.length })}
+        </p>
+      )}
+
+      {/* V10 (фидбей 2026-10-08): сводка шага ЗАМЕНЯЕТ последнее задание —
+          отвеченное упражнение с мёртвым «Дальше» не остаётся на экране */}
+      {(ruleShown || !isRuleStep) &&
+        current &&
+        stepSummaryFor !== step?.index &&
+        !stepIntroOpen && (
+          <ExerciseRouter
+            key={current.exercise.id}
+            current={current}
+            trap={trap}
+            onAnswer={(outcome, attempts) => handleAnswer(outcome, attempts, current.exercise.id)}
+            onDispute={() => handleDispute(current.exercise.id)}
+            onNext={handleNext}
+            phrasesById={view.phrasesById}
+            adaptive={adaptive}
+          />
+        )}
 
       {/* Итог шага (V9, фидбей 2026-10-08): последняя работа отвечена — экран
           с точностью и вердиктом «дальше / перепройти» вместо немой тишины */}

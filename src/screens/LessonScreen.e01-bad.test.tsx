@@ -175,6 +175,7 @@ function driveTick(view: LessonView): boolean {
     badPairDone.clear()
     return true
   }
+  if (clickButton(/Поехали/)) return true
   if (clickButton(/К следующему шагу/)) return true
   if (clickButton(/^Дальше/)) return true
   return clickButton(/Ещё попытка/)

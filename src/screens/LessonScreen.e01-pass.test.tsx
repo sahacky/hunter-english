@@ -121,6 +121,7 @@ function driveTick(view: LessonView): boolean {
     }
   }
 
+  if (clickButton(/Поехали/)) return true
   if (clickButton(/К следующему шагу/)) return true
   if (clickButton(/^Дальше/)) return true
   return clickButton(/Ещё попытка/)
