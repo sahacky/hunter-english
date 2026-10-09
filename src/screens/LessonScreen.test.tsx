@@ -141,6 +141,7 @@ describe('LessonScreen /#/lesson/:id', () => {
       expect(await screen.findByText('Верно!')).toBeInTheDocument()
       fireEvent.click(screen.getByRole('button', { name: /^Дальше/ }))
     }
+    fireEvent.click(await screen.findByRole('button', { name: /Поехали/ }))
     // разогрев/построение/слух пусты: «Речь» — шаг 2 из 3, первая сценка
     expect(await screen.findByText('Речь · шаг 2 из 3')).toBeInTheDocument()
     expect(screen.getByText(/Раунд 1 из 2 — Путешествия: опыт/)).toBeInTheDocument()
@@ -313,6 +314,7 @@ describe('LessonScreen /#/lesson/:id', () => {
     })
     renderScreen('E-01')
     fireEvent.click(await screen.findByRole('button', { name: /Продолжить/ }))
+    fireEvent.click(await screen.findByRole('button', { name: /Поехали/ }))
     expect(await screen.findByText(/шаг 5 из 7/)).toBeInTheDocument()
     // микрофона нет → подсказка недоступности + фолбэки
     expect(await screen.findByText(/Микрофон недоступен/)).toBeInTheDocument()
@@ -541,6 +543,11 @@ describe('LessonScreen: обход и ветки (M19)', () => {
       const said = screen.queryByRole('button', { name: /Сказал\(-а\)/ })
       if (said) {
         fireEvent.click(said)
+        return
+      }
+      const intro = screen.queryByRole('button', { name: /Поехали/ })
+      if (intro) {
+        fireEvent.click(intro)
         return
       }
       const goNext = screen.queryByRole('button', { name: /К следующему шагу/ })
@@ -815,6 +822,8 @@ describe('LessonScreen: хвосты покрытия (M21#21.4)', () => {
       fireEvent.click(screen.getByRole('button', { name: /Проверить/ }))
       fireEvent.click(await screen.findByRole('button', { name: /^Дальше/ }))
     }
+    // интро шага (V11) → Поехали
+    fireEvent.click(await screen.findByRole('button', { name: /Поехали/ }))
     // разогрев: всё верно с первой попытки; на последнем задании не жмём
     // «Дальше» — сперва сводка шага (V9)
     const warmup = view.content[2] ?? []
@@ -856,6 +865,7 @@ describe('LessonScreen: хвосты покрытия (M21#21.4)', () => {
       fireEvent.click(screen.getByRole('button', { name: /Проверить/ }))
       fireEvent.click(await screen.findByRole('button', { name: /^Дальше/ }))
     }
+    fireEvent.click(await screen.findByRole('button', { name: /Поехали/ }))
     // 4 choose_translation — намеренно неверно (исход skip, не first-try)
     for (let index = 0; index < 4; index += 1) {
       const payload = warmup[index]?.exercise.payload as unknown as {
@@ -921,6 +931,8 @@ describe('LessonScreen: хвосты покрытия (M21#21.4)', () => {
       fireEvent.click(screen.getByRole('button', { name: /Проверить/ }))
       fireEvent.click(await screen.findByRole('button', { name: /^Дальше/ }))
     }
+    // интро шага (V11) → вариант разогрева
+    fireEvent.click(await screen.findByRole('button', { name: /Поехали/ }))
     // шаг 2 — синтетический вариант разогрева: 4 choose + 1 match
     await waitFor(() => {
       expect(document.querySelector('[data-exercise-id]')?.getAttribute('data-exercise-id')).toBe(
@@ -1221,12 +1233,13 @@ describe('LessonScreen: хвосты покрытия (M21#21.4)', () => {
   it('неизвестный тип упражнения → заглушка роутера (защита specs/05 §3)', async () => {
     const view = syntheticLessonView(syntheticExercise('ex-mystery', 'mystery_kind'))
     renderScreen('E-01', repo, view)
-    expect(
-      await screen.findByText('Неизвестный тип упражнения: mystery_kind', {}, { timeout: 5000 }),
-    ).toBeInTheDocument()
-    // «Дальше» из заглушки: шаг не пройден → переход заблокирован, экран жив
+    // интро шага (V11) → заглушка на экране
+    fireEvent.click(await screen.findByRole('button', { name: /Поехали/ }, { timeout: 5000 }))
+    expect(await screen.findByText('Неизвестный тип упражнения: mystery_kind')).toBeInTheDocument()
+    // «Дальше» из заглушки: шаг не пройден → сводка шага ЗАМЕНЯЕТ задание (V9/V10)
     fireEvent.click(screen.getByRole('button', { name: /^Дальше/ }))
-    expect(screen.getByText('Неизвестный тип упражнения: mystery_kind')).toBeInTheDocument()
+    expect(await screen.findByText('Шаг не пройден')).toBeInTheDocument()
+    expect(screen.queryByText('Неизвестный тип упражнения: mystery_kind')).not.toBeInTheDocument()
   })
 
   it('transform-упражнение рендерится роутером (specs/02 §3 №14)', async () => {
@@ -1254,6 +1267,7 @@ describe('LessonScreen: хвосты покрытия (M21#21.4)', () => {
       phrasesById,
     )
     renderScreen('E-01', repo, view)
+    fireEvent.click(await screen.findByRole('button', { name: /Поехали/ }, { timeout: 5000 }))
     expect(
       await screen.findByText('Трансформация · шаг 1 из 1', {}, { timeout: 5000 }),
     ).toBeInTheDocument()
@@ -1335,6 +1349,7 @@ describe('LessonScreen: хвосты покрытия (M21#21.4)', () => {
     const exercise = syntheticExercise('ex-syn-retell', 'retell', { phrase_id: 'ph-syn-1' })
     const view = syntheticLessonView(exercise)
     renderScreen('E-01', repo, view)
+    fireEvent.click(await screen.findByRole('button', { name: /Поехали/ }, { timeout: 5000 }))
     expect(await screen.findByText(/Фраза цикла не найдена/)).toBeInTheDocument()
     // пропуск упражнения кнопкой «Дальше» — маршрут retell покрыт полностью
     fireEvent.click(screen.getByRole('button', { name: /^Дальше/ }))
@@ -1376,6 +1391,7 @@ describe('LessonScreen: хвосты покрытия (M21#21.4)', () => {
     })
     renderScreen('E-01', repo, view)
     fireEvent.click(await screen.findByRole('button', { name: /Продолжить/ }))
+    fireEvent.click(await screen.findByRole('button', { name: /Поехали/ }))
     // бейдж режима вызова в шапке
     expect(await screen.findByText(/режим вызова/)).toBeInTheDocument()
     // первое задание построения E-01 — word_bank: в challenge ввод текстом, плиток нет

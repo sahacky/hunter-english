@@ -176,25 +176,30 @@ export default function Dashboard({ repo: repoProp }: DashboardProps) {
   }
 
   const level = levelInfo(data.stats.xp) // уровни считаем от общего XP (ранг E — старт)
+  // V13 (фидбей 2026-10-08): подсказка к каждому слоту — что именно делать
   const slots = [
     {
       label: t('dashboard.quests.reviews'),
+      hint: t('dashboard.questHints.reviews'),
       done: data.quest.slots.reviews.done,
       target: data.quest.slots.reviews.target,
     },
     {
       label: t('dashboard.quests.lesson'),
+      hint: t('dashboard.questHints.lesson'),
       done: data.quest.slots.lesson.done,
       target: data.quest.slots.lesson.target,
     },
     {
       label: t('dashboard.quests.dictation'),
+      hint: t('dashboard.questHints.dictation'),
       done: data.quest.slots.dictation.done,
       target: data.quest.slots.dictation.target,
     },
     {
       // input-трек (plan://curriculum-review#I.1): секунды показываем минутами
       label: t('dashboard.quests.listening'),
+      hint: t('dashboard.questHints.listening'),
       done: Math.floor((data.quest.slots.listening?.done ?? 0) / 60),
       target: Math.round((data.quest.slots.listening?.target ?? 1200) / 60),
     },
@@ -214,6 +219,7 @@ export default function Dashboard({ repo: repoProp }: DashboardProps) {
                 <span className="dim">
                   {slot.done}/{slot.target}
                 </span>
+                <span className="dash-quest-hint dim">{slot.hint}</span>
               </li>
             ))}
             <li>

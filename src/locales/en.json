@@ -42,7 +42,13 @@
     "saveProgress": "Save progress",
     "saveProgressHint": "Your progress lives in this browser — no cloud yet. Save the file so you don’t lose it (restore via Settings).",
     "saveDone": "Progress saved to file",
-    "saveFailed": "Failed to save the file"
+    "saveFailed": "Failed to save the file",
+    "questHints": {
+      "reviews": "Repetition tab: word and phrase cards",
+      "lesson": "Program tab: the next lesson",
+      "dictation": "the Listening step in a lesson: press play and type what you hear",
+      "listening": "Listen tab: play the daily stream - minutes count themselves"
+    }
   },
   "gates": {
     "notFound": "These gates do not exist.",
@@ -193,7 +199,19 @@
     "stepPassedHint": "Threshold passed - moving on",
     "stepFailedHint": "This step needs a retake - accuracy below the threshold",
     "stepListeningRetry": "Was listening hard? You can repeat the step - or move on",
-    "stepGoNext": "To the next step"
+    "stepGoNext": "To the next step",
+    "speakingHint": "Speech step: listen and repeat the phrase out loud after the speaker (shadowing). No microphone needed - the \"Said it\" button is self-check: say it, then press. Answer questions in your own words: fluency over accuracy, mistakes are not penalized.",
+    "stepIntro": {
+      "title": "Step \"{{step}}\"",
+      "go": "Let's go",
+      "tasks": "Tasks in this step: {{count}}",
+      "warmup": "A light warm-up on the lesson vocabulary: pick the right translation out of four and match EN-RU pairs. The bar is 70% on the first try, otherwise the step repeats with new tasks.",
+      "build": "The core of the lesson: build English phrases - first from word tiles, then by translating from Russian. Every fourth phrase is spoken aloud. Mistakes don't block: the phrase comes back for a retry.",
+      "listening": "Listening: press 🔊 (up to 3 plays) and type what you hear in English. Typos and skipped articles are forgiven.",
+      "speaking": "Speaking: listen and repeat the phrase out loud after the speaker (shadowing). No microphone needed - \"Said it\" is a self-check. Answer questions in your own words: fluency over accuracy.",
+      "quotes": "From the series: quotes on the lesson topic - listen and fill the gap. The original clip is one 🎬 click away."
+    },
+    "taskProgress": "Task {{current}} of {{total}}"
   },
   "login": {
     "title": "Sign in",

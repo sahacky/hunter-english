@@ -1747,3 +1747,28 @@ body {
   border-radius: 12px;
   background: var(--mint);
 }
+
+/* V11: приветственный экран шага + счётчик заданий */
+.lesson-step-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px 18px;
+  border: 1px solid var(--primary);
+  border-radius: 12px;
+  background: var(--mint);
+}
+.lesson-step-intro h3 {
+  margin: 0;
+}
+.lesson-task-progress {
+  margin: 0 0 4px;
+  font-size: 0.85rem;
+}
+
+/* V13: подсказка слота квеста */
+.dash-quest-hint {
+  flex-basis: 100%;
+  font-size: 0.78rem;
+  font-weight: 400;
+}
