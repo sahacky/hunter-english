@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { Layout } from './components/Layout'
 import { ToastHost } from './components/ToastHost'
 import { SettingsProvider } from './state/settings'
+import { useReminder } from './state/useReminder'
 import { AuthProvider } from './state/auth'
 import { setListenSink } from './lib/tts'
 import { addListeningSeconds } from './data/listening'
@@ -36,6 +37,11 @@ function Placeholder() {
   )
 }
 
+function ReminderTick() {
+  useReminder()
+  return null
+}
+
 export default function App() {
   // input-трек (plan://curriculum-review#I.1): всё, что прозвучало из приложения,
   // пишется секундами в квест дня «аудирование 20 мин»
@@ -46,6 +52,7 @@ export default function App() {
   }, [])
   return (
     <SettingsProvider>
+      <ReminderTick />
       <AuthProvider>
         <Routes>
           <Route element={<Layout />}>

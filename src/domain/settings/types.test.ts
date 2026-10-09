@@ -18,6 +18,7 @@ describe('normalizeSettings', () => {
       newPerDay: 30,
       ttsRate: 0.75,
       animations: 'off',
+      reminderTime: null,
     }
     expect(normalizeSettings(value)).toEqual(value)
   })

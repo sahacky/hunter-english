@@ -179,6 +179,31 @@ describe('SettingsScreen render', () => {
 })
 
 // Implements: plan://M18 — GAP-3 specs/09 §4.7 (TC-UI-14 сброс — деструктивная операция)
+describe('Настройки: напоминание (аудит W1)', () => {
+  it('строка времени и подсказка', async () => {
+    const { default: SettingsScreen } = await import('./SettingsScreen')
+    const { SettingsProvider } = await import('../state/settings')
+    const { findByLabelText, findByText } = render(
+      <SettingsProvider>
+        <SettingsScreen database={db} />
+      </SettingsProvider>,
+    )
+    const time = await findByLabelText(/Время занятия/)
+    expect(time).toBeInTheDocument()
+    const hint = await findByText(/раз в день/i)
+    expect(hint).toBeInTheDocument()
+    // установка времени: запрашиваем разрешение (permission=default) и
+    // показываем кнопку выключения; выключение убирает её
+    const request = vi.fn()
+    vi.stubGlobal('Notification', { permission: 'default', requestPermission: request })
+    fireEvent.change(time, { target: { value: '19:30' } })
+    expect(request).toHaveBeenCalled()
+    const off = await findByText('Выключить')
+    fireEvent.click(off)
+    await waitFor(() => expect(screen.queryByText('Выключить')).not.toBeInTheDocument())
+  })
+})
+
 describe('SettingsScreen: сброс прогресса (GAP-3)', () => {
   it('подтверждение → таблицы прогресса очищены, meta (настройки) сохранена', async () => {
     // reload отложен на 600мс реального таймера — гасим, чтобы не перезагрузить jsdom.

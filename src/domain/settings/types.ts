@@ -21,6 +21,9 @@ export interface Settings {
   ttsRate: TtsRate
   /** Анимации (волна микрофона и пр.); off — уважает и prefers-reduced-motion. */
   animations: 'on' | 'off'
+  /** Напоминание о занятии (аудит W1): локальное 'HH:MM' или null — выкл.
+   * Срабатывает, пока вкладка открыта (Web Notifications, без сервера). */
+  reminderTime: string | null
 }
 
 export const DEFAULT_SETTINGS: Settings = {
@@ -31,6 +34,7 @@ export const DEFAULT_SETTINGS: Settings = {
   newPerDay: 15,
   ttsRate: 1,
   animations: 'on',
+  reminderTime: null,
 }
 
 const THEMES: ThemeChoice[] = ['dark', 'light', 'system']
@@ -57,6 +61,9 @@ export function normalizeSettings(value: Partial<Settings> | null | undefined): 
     ),
     ttsRate: raw.ttsRate === 0.75 ? 0.75 : 1,
     animations: raw.animations === 'off' ? 'off' : 'on',
+    reminderTime: /^([01]\d|2[0-3]):[0-5]\d$/.test(String(raw.reminderTime))
+      ? String(raw.reminderTime)
+      : null,
   }
 }
 
