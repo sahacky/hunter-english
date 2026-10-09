@@ -8,6 +8,7 @@ import { dayStart } from '../domain/srs/scheduler'
 import { levelInfo, RANK_CEFR } from '../domain/game/game'
 import { createQuestDay } from '../domain/game/game'
 import type { QuestDayState, UserStats } from '../domain/game/types'
+import { passesComplete } from '../domain/lesson/runner'
 import type { LessonItem, QuoteItem } from '../content/lessons'
 import { loadLessons, loadQuotes } from '../content/lessons'
 import { createFirstCards, loadWordNotes } from '../content/words'
@@ -113,14 +114,19 @@ export default function Dashboard({ repo: repoProp }: DashboardProps) {
       // старт с ранга (P.2): уроки ниже ранга не «следующие» — они доступны в
       // Программе, но ведут пользователя с полосы placement-ранга
       const statsRank = RANK_INDEX[stats.rank]
+      let fallback: LessonItem | null = null // всё пройдено — повтор/дозревание
       for (const lesson of lessons) {
         if (RANK_INDEX[lesson.rank] < statsRank) continue
         const row = await repo.getLessonProgress(lesson.id)
-        if (!row || row.status !== 'completed') {
+        if (!row || row.status !== 'completed') fallback ??= lesson
+        // V15: пропускаем уроки с завершёнными проходами (SRS дозревает) —
+        // фидбей «прошёл урок, а квест кидает в него же»
+        if (!row || (row.status !== 'completed' && !passesComplete(row))) {
           nextLesson = lesson
           break
         }
       }
+      nextLesson ??= fallback
       const placement = await getPlacementInfo()
       if (!alive) return
       setData({

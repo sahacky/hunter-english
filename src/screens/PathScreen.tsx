@@ -9,6 +9,7 @@ import type { ProgressRepository } from '../domain/progress'
 import { DexieProgressRepository } from '../data/progress-repository'
 import { RANK_CEFR } from '../domain/game/game'
 import { RANK_INDEX } from '../domain/placement/apply'
+import { passesComplete } from '../domain/lesson/runner'
 import type { StoredLessonStatus } from '../domain/lesson/types'
 
 type RowStatus = StoredLessonStatus | 'locked' | 'available'
@@ -17,6 +18,8 @@ export interface PathRow {
   lesson: LessonItem
   status: RowStatus
   current: boolean
+  /** V15: проход завершён, статус in_progress из-за дозревания фраз в SRS */
+  maturing: boolean
 }
 
 /**
@@ -38,16 +41,20 @@ export function buildPathRows(
   return lessons.map((lesson, i) => {
     const stored = rows[i]?.status ?? null
     const passed = stored === 'completed' || stored === 'review_due'
+    // V15 (фидбей 2026-10-08): проход завершён, фразы дозревают в SRS —
+    // следующий урок ОТКРЫТ (specs/02 §2: теория не блокируется)
+    const passedOrDone = passed || passesComplete(rows[i])
     const unlockedByStart =
       startIdx >= 0 &&
       (RANK_INDEX[lesson.rank] < startIdx ||
         (lesson.rank === opts.startAtRank && lesson.id === firstOfStart?.id))
     const status: RowStatus = stored ?? (prevPassed || unlockedByStart ? 'available' : 'locked')
+    const maturing = stored === 'in_progress' && passesComplete(rows[i])
     const belowStart = startIdx >= 0 && RANK_INDEX[lesson.rank] < startIdx
     const current = !currentTaken && !passed && status !== 'locked' && !belowStart
     if (current) currentTaken = true
-    prevPassed = passed
-    return { lesson, status, current }
+    prevPassed = passedOrDone
+    return { lesson, status, current, maturing }
   })
 }
 
@@ -164,6 +171,9 @@ export default function PathScreen({ repo: repoProp }: { repo?: ProgressReposito
                           {row.lesson.title}
                           {row.current && (
                             <span className="path-meta"> · {t('path.youAreHere')}</span>
+                          )}
+                          {row.maturing && (
+                            <span className="path-meta"> · {t('path.maturing')}</span>
                           )}
                         </span>
                         <span className="path-go" aria-hidden="true">

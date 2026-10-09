@@ -260,7 +260,8 @@
     "title": "Training program",
     "youAreHere": "you are here",
     "basicsHint": "Полный новичок с нуля? Сначала азбука и первые слова (5 минут).",
-    "basicsLink": "Начать с азбуки →"
+    "basicsLink": "Начать с азбуки →",
+    "maturing": "pass done - phrases maturing in review"
   },
   "phrasebook": {
     "title": "Phrasebook",
