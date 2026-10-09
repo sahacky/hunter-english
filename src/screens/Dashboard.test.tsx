@@ -227,6 +227,33 @@ describe('Dashboard', () => {
     expect(screen.getByText(/уроки ниже не зачтены/)).toBeInTheDocument()
   })
 
+  it('V15: E-01 проход завершён (фразы зреют) — квест «Диктант» ведёт в E-02, не в E-01', async () => {
+    await repo.putLessonProgress({
+      lesson_id: 'les-e-01',
+      status: 'in_progress',
+      score: 90,
+      checkpoint: {
+        passIndex: 1,
+        stepIndex: 7,
+        scores: [],
+        srsEnqueued: [],
+        passesDone: 1,
+        results: {},
+      },
+      completed_at: null,
+      updated_at: '2026-10-08T10:00:00Z',
+    })
+    window.location.hash = '#/'
+    render(
+      <HashRouter>
+        <Dashboard repo={repo} />
+      </HashRouter>,
+    )
+    await screen.findByText('Ежедневный квест', {}, { timeout: 8000 })
+    const dictation = screen.getByRole('link', { name: 'Диктант' })
+    expect(dictation.getAttribute('href')).toBe('#/lesson/E-02')
+  })
+
   it('placement пояснение исчезает, когда первый урок ранга уже пройден', async () => {
     const stats = await repo.getStats()
     await repo.putStats({ ...stats, rank: 'D', updated_at: '2026-02-01T00:00:00Z' })

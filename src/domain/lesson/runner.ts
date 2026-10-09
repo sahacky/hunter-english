@@ -178,6 +178,17 @@ export function computeLessonStatus(args: {
   return 'completed'
 }
 
+/** Проходы урока завершены (passesDone ≥ 1): шаги пройдены, статус ещё
+ * "in_progress" только из-за дозревания фраз в SRS (интервал ≥7 дней у ≥90%).
+ * Фидбей 2026-10-08: такой урок НЕ должен запирать следующий (specs/02 §2:
+ * «не блокирует чтение теории следующего урока») и не должен быть целью
+ * «следующего урока» на дашборде. */
+export function passesComplete(
+  row: { checkpoint: { passesDone: number } } | null | undefined,
+): boolean {
+  return (row?.checkpoint?.passesDone ?? 0) >= 1
+}
+
 /**
  * Разблокирован ли следующий урок: предыдущий считается пройденным
  * в completed и review_due (specs/06 §3: review_due — «пройден, к повторению»).

@@ -91,6 +91,19 @@ describe('buildPathRows (цепочка статусов)', () => {
     expect(rows[2]!.status).toBe('review_due')
   })
 
+  it('V15: проход завершён (in_progress + passesDone=1) — следующий урок ОТКРЫТ, плашка дозревания', () => {
+    const rows = buildPathRows(LESSONS, [
+      { status: 'in_progress', checkpoint: { passesDone: 1 } } as never,
+      null,
+      null,
+      null,
+      null,
+    ])
+    expect(rows[1]!.status).toBe('available')
+    expect(rows[0]!.maturing).toBe(true)
+    expect(rows[1]!.maturing).toBe(false)
+  })
+
   it('start_at_rank D (P.2): уроки ниже ранга доступны (не зачтены), D-01 доступен и текущий', () => {
     const rows = buildPathRows(LESSONS, [null, null, null, null, null], { startAtRank: 'D' })
     // нижние доступны без прохождения цепочки, но «ты здесь» там не ставится
