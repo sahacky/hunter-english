@@ -390,6 +390,14 @@
       "failed": "failed: {{count}}",
       "lastSync": "last sync: {{time}}",
       "neverSynced": "never synced"
+    },
+    "reminder": {
+      "title": "Reminder",
+      "time": "Study time",
+      "off": "Turn off",
+      "hint": "Shows one notification a day at the set time - while the app tab is open (no server). The browser will ask for permission on first enable.",
+      "notifyTitle": "Hunter English",
+      "notifyBody": "Study time: 20 minutes of English - the System awaits."
     }
   },
   "srs": {

@@ -202,6 +202,34 @@ export default function SettingsScreen({ database }: SettingsScreenProps) {
       </section>
 
       <section className="panel">
+        <h2>{t('settings.reminder.title')}</h2>
+        <label className="settings-row">
+          <span>{t('settings.reminder.time')}</span>
+          <input
+            type="time"
+            value={settings.reminderTime ?? ''}
+            onChange={(event) => {
+              const value = event.target.value || null
+              update({ reminderTime: value })
+              if (
+                value &&
+                typeof Notification !== 'undefined' &&
+                Notification.permission === 'default'
+              ) {
+                void Notification.requestPermission()
+              }
+            }}
+          />
+        </label>
+        {settings.reminderTime && (
+          <button type="button" className="srs-btn" onClick={() => update({ reminderTime: null })}>
+            {t('settings.reminder.off')}
+          </button>
+        )}
+        <p className="dim settings-note">{t('settings.reminder.hint')}</p>
+      </section>
+
+      <section className="panel">
         <h2>{t('settings.account.title')}</h2>
         <p className="dim">
           {auth.guest
