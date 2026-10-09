@@ -1368,7 +1368,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  /* V8 (фидбей 2026-10-08): блок настроек — по центру экрана, как остальные
+     экраны (было прижато влево: max-width без auto-полей) */
   max-width: 680px;
+  margin-inline: auto;
+  width: 100%;
 }
 
 .settings-row {
