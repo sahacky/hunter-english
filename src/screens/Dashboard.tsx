@@ -54,6 +54,12 @@ export function timeToDayBoundary(now: Date): string {
   return `${hours}:${String(minutes).padStart(2, '0')}`
 }
 
+/** V14: куда ведёт бонус-квест (слоты — выше). */
+export function bonusHref(bonusId: string, lessonHref: string): string {
+  if (bonusId === 'quotes-cloze-3') return '/quotes'
+  return lessonHref // speak/shadowing/match — шаги урока (речь/разогрев)
+}
+
 export default function Dashboard({ repo: repoProp }: DashboardProps) {
   const { t } = useTranslation()
   const defaultRepo = useMemo(() => new DexieProgressRepository(), [])
@@ -177,22 +183,30 @@ export default function Dashboard({ repo: repoProp }: DashboardProps) {
 
   const level = levelInfo(data.stats.xp) // уровни считаем от общего XP (ранг E — старт)
   // V13 (фидбей 2026-10-08): подсказка к каждому слоту — что именно делать
+  // V14 (фидбей 2026-10-08): «где это делать?» — слоты кликабельны и ведут
+  // прямо к месту выполнения (урок/повторение/слушать/цитаты)
+  const lessonHref = data.nextLesson
+    ? `/lesson/${data.nextLesson.id.replace(/^les-/, '').toUpperCase()}`
+    : '/path'
   const slots = [
     {
       label: t('dashboard.quests.reviews'),
       hint: t('dashboard.questHints.reviews'),
+      href: '/srs',
       done: data.quest.slots.reviews.done,
       target: data.quest.slots.reviews.target,
     },
     {
       label: t('dashboard.quests.lesson'),
       hint: t('dashboard.questHints.lesson'),
+      href: lessonHref,
       done: data.quest.slots.lesson.done,
       target: data.quest.slots.lesson.target,
     },
     {
       label: t('dashboard.quests.dictation'),
       hint: t('dashboard.questHints.dictation'),
+      href: lessonHref,
       done: data.quest.slots.dictation.done,
       target: data.quest.slots.dictation.target,
     },
@@ -200,6 +214,7 @@ export default function Dashboard({ repo: repoProp }: DashboardProps) {
       // input-трек (plan://curriculum-review#I.1): секунды показываем минутами
       label: t('dashboard.quests.listening'),
       hint: t('dashboard.questHints.listening'),
+      href: '/listen',
       done: Math.floor((data.quest.slots.listening?.done ?? 0) / 60),
       target: Math.round((data.quest.slots.listening?.target ?? 1200) / 60),
     },
@@ -214,8 +229,16 @@ export default function Dashboard({ repo: repoProp }: DashboardProps) {
               <li
                 key={slot.label}
                 className={slot.done >= slot.target ? 'dash-quest-done' : undefined}
+                /* V14: клик по всей строке квеста — переход к выполнению
+                   (клик по ссылке внутри не дублируется) */
+                onClick={(event) => {
+                  if (!(event.target as HTMLElement).closest('a')) {
+                    window.location.hash = `#${slot.href}`
+                  }
+                }}
               >
-                <span aria-hidden="true">{slot.done >= slot.target ? '✓' : ''}</span> {slot.label}{' '}
+                <span aria-hidden="true">{slot.done >= slot.target ? '✓' : ''}</span>{' '}
+                <a href={`#${slot.href}`}>{slot.label}</a>{' '}
                 <span className="dim">
                   {slot.done}/{slot.target}
                 </span>
@@ -223,9 +246,15 @@ export default function Dashboard({ repo: repoProp }: DashboardProps) {
               </li>
             ))}
             <li>
-              {t('dashboard.quests.bonus')}: {t(`dashboard.bonus.${data.quest.bonus.id}`)}{' '}
+              {t('dashboard.quests.bonus')}:{' '}
+              <a href={`#${bonusHref(data.quest.bonus.id, lessonHref)}`}>
+                {t(`dashboard.bonus.${data.quest.bonus.id}`)}
+              </a>{' '}
               <span className="dim">
                 {data.quest.bonusDone}/{data.quest.bonus.target}
+              </span>
+              <span className="dash-quest-hint dim">
+                {t(`dashboard.bonusHints.${data.quest.bonus.id}`)}
               </span>
             </li>
           </ul>

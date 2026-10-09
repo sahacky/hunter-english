@@ -46,8 +46,14 @@
     "questHints": {
       "reviews": "Repetition tab: word and phrase cards",
       "lesson": "Program tab: the next lesson",
-      "dictation": "the Listening step in a lesson: press play and type what you hear",
+      "dictation": "in a LESSON (tap this): the Listening step - press play and type what you hear. The Listen tab is different: passive listening",
       "listening": "Listen tab: play the daily stream - minutes count themselves"
+    },
+    "bonusHints": {
+      "speak-5": "in a lesson: the Speaking step - phrases with mic/self-check",
+      "shadowing-5": "in a lesson: the Speaking step - listen and repeat",
+      "quotes-cloze-3": "Quotes tab: open a quote and fill the gap",
+      "match-10": "in a lesson: the Warm-up step - match the pairs"
     }
   },
   "gates": {
